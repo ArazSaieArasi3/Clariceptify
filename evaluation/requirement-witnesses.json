@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Frozen ORSD candidate witness/contract integrity only",
+  "fr_cq_pairs": 30,
+  "quality_dispositions": 10,
+  "future_pairs": 8,
+  "unresolved_witness_labels": 0,
+  "negative_cases_rejected": [
+    "unknown requirement",
+    "mismatched CQ",
+    "dangling witness",
+    "narrowed witness set",
+    "fabricated satisfaction",
+    "fabricated answer",
+    "fabricated QR PASS",
+    "future R1 blocker inflation",
+    "altered valid ORSD input digest"
+  ],
+  "checked_mapping_sha256": "f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f",
+  "satisfaction": "not_assessed",
+  "cq_execution": "not_executed",
+  "answers": "not_computed",
+  "repeat_import": "byte_identical"
+}

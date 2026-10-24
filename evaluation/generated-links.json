@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "scope": "Exact current structural/source projection and version integrity; not semantic adequacy",
-  "edges": 1407,
+  "edges": 1815,
   "by_type": {
     "association_source": 174,
     "association_target": 174,
@@ -9,9 +9,11 @@
     "candidate_support": 292,
     "cites": 292,
     "constraint_mention_candidate": 82,
+    "cq_witness_candidate": 204,
     "derived_from_input": 12,
     "generalization_child": 122,
-    "generalization_parent": 122
+    "generalization_parent": 122,
+    "requirement_witness_candidate": 204
   },
   "negative_cases_rejected": [
     "dangling endpoint",
@@ -26,9 +28,9 @@
   ],
   "stable_edge_ids": "preserved on repeat",
   "checked_sha256": {
-    "traceability/links.yaml": "23fa2e265bdf1204002b346e110031ad53101fcf1ef7574d785d8dedaafe6173",
-    "tools/build_trace_links.py": "e63d411a2645c01f14bbf301060b43faf951af0b76e84635cac24cd31fb83798",
-    "tools/check_generated_links.py": "84c7b3f07cbfd6cfba2a5e31fa21f60f670997b19b8ab2bb09f238a5f51539a1"
+    "traceability/links.yaml": "6b745a46d858d709c759a0dbbb045ce45062c2a5706b48f827c715e562cf700f",
+    "tools/build_trace_links.py": "d56d03316e29dbb9e63c27b968710ec013c9654e1c51cb6cc6a20a4b4baf4573",
+    "tools/check_generated_links.py": "7c8f8539d210aeb50c6c4101eeb1b4bb89a6e957a09f52906bf47d8a8b29513f"
   },
   "input_file_sha256": {
     "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b",
@@ -49,13 +51,14 @@
     "traceability/migration/entity-ledger.yaml": "45a40de32998b736a1f4ea66ff7f137e282992aee0d13aaad64ae28b41bc3a8a",
     "traceability/migration/input-integrity.yaml": "c683e54940b501be551e637ef858ac35e6e2056b328043c339f772f40889ef35",
     "traceability/migration/source-manifest.yaml": "f475dc3ddf297e9a7f5f34e5422e1d8070f825f396cae6c8f98b79b4813dcb5b",
+    "traceability/requirements-model.yaml": "f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f",
     "traceability/schema/trace-edge.schema.json": "8a3b454bc233b55ec23dfcf58ace5e175e3225a1c1043f9a0869c6e8cbb642db"
   },
   "limits": [
-    "No requirement/CQ witness links yet; those are separate work.",
+    "Requirement/CQ links, when present, are frozen ORSD candidate witnesses only; satisfaction remains unassessed.",
     "Constraint mentions remain lexical candidates, not adjudicated coverage.",
     "D/B/P support is inherited; full-text and typing approval remain unassessed.",
     "No proves/satisfies links, human acceptance, source ownership transfer or semantic completeness claim."
   ],
-  "repeat_generation": "byte_identical"
+  "previous_edge_ids_preserved": 1407
 }

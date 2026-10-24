@@ -24,6 +24,13 @@ def context():
         nodes.update({(kind, row['id']): data['asset_id'] for row in data['records']})
     refs = read('evidence/source-register.yaml')['records']
     nodes.update({('reference', row['id']): 'CLR-SOURCE-REGISTER' for row in refs})
+    for name, asset_id, kind in [('functional', 'CLR-ORSD-FR', 'requirement'),
+                                ('quality', 'CLR-ORSD-QR', 'requirement'),
+                                ('competency-questions', 'CLR-ORSD-CQ', 'cq')]:
+        nodes.update({(kind, row['id']): asset_id for row in read('requirements/' + name + '.yaml')['records']})
+    future = read('requirements/future.yaml')
+    nodes.update({('requirement', row['id']): 'CLR-ORSD-FUTURE' for row in future['requirements']})
+    nodes.update({('cq', row['id']): 'CLR-ORSD-FUTURE' for row in future['exploratory_questions']})
     nodes.update({('artifact', asset_id): asset_id for asset_id in assets})
     raw = {row['source_id']: row for row in read('traceability/migration/input-integrity.yaml')['records']}
     nodes.update({('input', row['id']): row['id'] for row in read('traceability/migration/source-manifest.yaml')['sources']})
@@ -45,6 +52,12 @@ def context():
         expected.update(('constraint_mention_candidate', row['id'], value, None) for value in row['referenced_ids'])
     expected.update(('candidate_support', source, row['concept_id'], row['support_type'])
                     for row in read('evidence/concept-support.yaml')['records'] for source in row['source_ids'])
+    if (ROOT / 'traceability/requirements-model.yaml').exists():
+        witnesses = read('traceability/requirements-model.yaml')
+        for row in witnesses['records'] + witnesses['future_candidates']:
+            for concept_id in row['candidate_concept_ids']:
+                expected.add(('requirement_witness_candidate', row['requirement_id'], concept_id, None))
+                expected.add(('cq_witness_candidate', row['cq_id'], concept_id, None))
     digest_to_input = {row['sha256']: source_id for source_id, row in raw.items() if row['sha256']}
     for asset_id, asset in assets.items():
         path = asset['location']
