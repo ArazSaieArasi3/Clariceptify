@@ -1,0 +1,392 @@
+schema_version: '1.0'
+source_sha256: d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1
+input_revision: ORSD 0.1; 2026-10-24
+status: retrospectively_reconstructed_review_draft
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+requirements:
+- id: LR-01
+  priority: SHOULD
+  title: Content identity and revision lineage
+  origin: I
+  release_target: R2 candidate
+  capability: The ontology should support an explicit policy for content equivalence,
+    artifact revision and stable historical references.
+  acceptance: Two files with equivalent content and two revisions with changed content
+    remain distinguishable under the chosen identity policy.
+  adverse_case: Equal labels or file hashes alone determine conceptual identity.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-1
+  source_cells:
+  - 'LR-01  SHOULD
+
+    Content identity and revision lineage
+
+    Origin I | R2 candidate'
+  - The ontology should support an explicit policy for content equivalence, artifact
+    revision and stable historical references.
+  - 'AC: Two files with equivalent content and two revisions with changed content
+    remain distinguishable under the chosen identity policy.
+
+    NAC: Equal labels or file hashes alone determine conceptual identity.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-02
+  priority: SHOULD
+  title: Assertion context and competing accounts
+  origin: I
+  release_target: R2 candidate
+  capability: The ontology should qualify incompatible conceptual assertions by their
+    adopting agent, artifact, assumptions and context.
+  acceptance: Two conflicting descriptions can be retained as attributed accounts
+    without asserting both as unqualified world facts.
+  adverse_case: Incompatible source statements are merged or automatically treated
+    as a contradiction in reality.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-2
+  source_cells:
+  - 'LR-02  SHOULD
+
+    Assertion context and competing accounts
+
+    Origin I | R2 candidate'
+  - The ontology should qualify incompatible conceptual assertions by their adopting
+    agent, artifact, assumptions and context.
+  - 'AC: Two conflicting descriptions can be retained as attributed accounts without
+    asserting both as unqualified world facts.
+
+    NAC: Incompatible source statements are merged or automatically treated as a contradiction
+    in reality.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-03
+  priority: SHOULD
+  title: Temporal validity of conceptual claims
+  origin: I
+  release_target: R2 candidate
+  capability: The ontology should distinguish represented validity time from recording
+    time and revision time where the intended question requires it.
+  acceptance: A claim recorded later about an earlier interval retains both temporal
+    roles.
+  adverse_case: A record timestamp is substituted for the period described by the
+    claim.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-3
+  source_cells:
+  - 'LR-03  SHOULD
+
+    Temporal validity of conceptual claims
+
+    Origin I | R2 candidate'
+  - The ontology should distinguish represented validity time from recording time
+    and revision time where the intended question requires it.
+  - 'AC: A claim recorded later about an earlier interval retains both temporal roles.
+
+    NAC: A record timestamp is substituted for the period described by the claim.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-04
+  priority: SHOULD
+  title: Incomplete and tacit conceptualization
+  origin: I
+  release_target: R2 candidate
+  capability: The specification should define a boundary policy for unfinished, tacit
+    or unarticulated conceptualization.
+  acceptance: Choose whether such episodes are outside R1 or modeled by a justified
+    extension; retain the reason.
+  adverse_case: The R1 explicit-artifact assumption is silently removed or claimed
+    universal for all cognition.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-4
+  source_cells:
+  - 'LR-04  SHOULD
+
+    Incomplete and tacit conceptualization
+
+    Origin I | R2 candidate'
+  - The specification should define a boundary policy for unfinished, tacit or unarticulated
+    conceptualization.
+  - 'AC: Choose whether such episodes are outside R1 or modeled by a justified extension;
+    retain the reason.
+
+    NAC: The R1 explicit-artifact assumption is silently removed or claimed universal
+    for all cognition.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-05
+  priority: SHOULD
+  title: Quality measurement and comparability
+  origin: I
+  release_target: R2 candidate
+  capability: The ontology should qualify operational quality assessments by rubric,
+    scale, method and assessment context when measurement is required.
+  acceptance: Two results are compared only after their criteria and measurement conditions
+    are shown compatible.
+  adverse_case: Equal scores on different scales are treated as equivalent quality.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-5
+  source_cells:
+  - 'LR-05  SHOULD
+
+    Quality measurement and comparability
+
+    Origin I | R2 candidate'
+  - The ontology should qualify operational quality assessments by rubric, scale,
+    method and assessment context when measurement is required.
+  - 'AC: Two results are compared only after their criteria and measurement conditions
+    are shown compatible.
+
+    NAC: Equal scores on different scales are treated as equivalent quality.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-06
+  priority: SHOULD
+  title: Domain adequacy contracts
+  origin: I
+  release_target: R2 candidate
+  capability: Each selected domain should receive purpose-specific competency questions
+    and examples sufficient to assess its contribution to conceptualization.
+  acceptance: Demonstrate necessary distinctions and paths for Ontology, Knowledge
+    and other small domains before proposing focused additions.
+  adverse_case: A minimum count such as four concepts is substituted for adequacy
+    evidence.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-6
+  source_cells:
+  - 'LR-06  SHOULD
+
+    Domain adequacy contracts
+
+    Origin I | R2 candidate'
+  - Each selected domain should receive purpose-specific competency questions and
+    examples sufficient to assess its contribution to conceptualization.
+  - 'AC: Demonstrate necessary distinctions and paths for Ontology, Knowledge and
+    other small domains before proposing focused additions.
+
+    NAC: A minimum count such as four concepts is substituted for adequacy evidence.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-07
+  priority: SHOULD
+  title: Alternatives and decision consequences
+  origin: I
+  release_target: R2 candidate
+  capability: The ontology should support explicit links among considered conceptual
+    alternatives, a chosen option and later observed consequences when needed.
+  acceptance: Retain a rejected alternative and distinguish choosing it from realizing
+    or evaluating its outcome.
+  adverse_case: A decision rationale is taken as evidence that the chosen option succeeded.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-7
+  source_cells:
+  - 'LR-07  SHOULD
+
+    Alternatives and decision consequences
+
+    Origin I | R2 candidate'
+  - The ontology should support explicit links among considered conceptual alternatives,
+    a chosen option and later observed consequences when needed.
+  - 'AC: Retain a rejected alternative and distinguish choosing it from realizing
+    or evaluating its outcome.
+
+    NAC: A decision rationale is taken as evidence that the chosen option succeeded.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: LR-08
+  priority: SHOULD
+  title: Evidence stance and uncertainty
+  origin: I
+  release_target: R2 candidate
+  capability: The ontology should distinguish supporting, challenging and limiting
+    evidence and the uncertainty attached to conceptual claims.
+  acceptance: Preserve a source that challenges a claim without converting its citation
+    into support; keep missing confidence unspecified.
+  adverse_case: Source count is treated as truth or unknown confidence is assigned
+    zero.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-7/data-row-8
+  source_cells:
+  - 'LR-08  SHOULD
+
+    Evidence stance and uncertainty
+
+    Origin I | R2 candidate'
+  - The ontology should distinguish supporting, challenging and limiting evidence
+    and the uncertainty attached to conceptual claims.
+  - 'AC: Preserve a source that challenges a claim without converting its citation
+    into support; keep missing confidence unspecified.
+
+    NAC: Source count is treated as truth or unknown confidence is assigned zero.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+exploratory_questions:
+- id: LCQ-01
+  requirement_id: LR-01
+  question: Which revision did a decision concern, and what changed?
+  required_answer_fields: Artifact identity; revision; predecessor; content equivalence
+    policy
+  candidate_existing_witnesses: Conceptual Artifact; Information Object
+  acceptance: Two files with equivalent content and two revisions with changed content
+    remain distinguishable under the chosen identity policy.
+  adverse_case: Equal labels or file hashes alone determine conceptual identity.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-1
+  source_cells:
+  - 'LCQ-01
+
+    LR-01'
+  - 'Which revision did a decision concern, and what changed?
+
+    Answer: Artifact identity; revision; predecessor; content equivalence policy'
+  - Conceptual Artifact; Information Object
+- id: LCQ-02
+  requirement_id: LR-02
+  question: Which conceptual accounts disagree, and under which contexts?
+  required_answer_fields: Accounts; assertions; agents; artifacts; context; conflict
+    basis
+  candidate_existing_witnesses: Concept; Interpretation; Ontological Commitment
+  acceptance: Two conflicting descriptions can be retained as attributed accounts
+    without asserting both as unqualified world facts.
+  adverse_case: Incompatible source statements are merged or automatically treated
+    as a contradiction in reality.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-2
+  source_cells:
+  - 'LCQ-02
+
+    LR-02'
+  - 'Which conceptual accounts disagree, and under which contexts?
+
+    Answer: Accounts; assertions; agents; artifacts; context; conflict basis'
+  - Concept; Interpretation; Ontological Commitment
+- id: LCQ-03
+  requirement_id: LR-03
+  question: When was a conceptual claim valid, recorded and revised?
+  required_answer_fields: Claim; validity interval; recording time; revision time
+  candidate_existing_witnesses: Time; State; Time Representation
+  acceptance: A claim recorded later about an earlier interval retains both temporal
+    roles.
+  adverse_case: A record timestamp is substituted for the period described by the
+    claim.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-3
+  source_cells:
+  - 'LCQ-03
+
+    LR-03'
+  - 'When was a conceptual claim valid, recorded and revised?
+
+    Answer: Claim; validity interval; recording time; revision time'
+  - Time; State; Time Representation
+- id: LCQ-04
+  requirement_id: LR-04
+  question: How should an episode with no explicit artifact be classified?
+  required_answer_fields: Episode; articulation state; scope disposition; rationale
+  candidate_existing_witnesses: Conceptualization; Understanding; Conceptual Artifact
+  acceptance: Choose whether such episodes are outside R1 or modeled by a justified
+    extension; retain the reason.
+  adverse_case: The R1 explicit-artifact assumption is silently removed or claimed
+    universal for all cognition.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-4
+  source_cells:
+  - 'LCQ-04
+
+    LR-04'
+  - 'How should an episode with no explicit artifact be classified?
+
+    Answer: Episode; articulation state; scope disposition; rationale'
+  - Conceptualization; Understanding; Conceptual Artifact
+- id: LCQ-05
+  requirement_id: LR-05
+  question: Under which conditions can quality findings be compared?
+  required_answer_fields: Result; rubric; scale; method; context; compatibility decision
+  candidate_existing_witnesses: Evaluation Criterion; Evaluation Result
+  acceptance: Two results are compared only after their criteria and measurement conditions
+    are shown compatible.
+  adverse_case: Equal scores on different scales are treated as equivalent quality.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-5
+  source_cells:
+  - 'LCQ-05
+
+    LR-05'
+  - 'Under which conditions can quality findings be compared?
+
+    Answer: Result; rubric; scale; method; context; compatibility decision'
+  - Evaluation Criterion; Evaluation Result
+- id: LCQ-06
+  requirement_id: LR-06
+  question: Is each domain adequate for its intended contribution?
+  required_answer_fields: Domain; purpose; CQs; examples; missing distinctions; disposition
+  candidate_existing_witnesses: Ontological Commitment; Domain Knowledge; Taxonomy;
+    State
+  acceptance: Demonstrate necessary distinctions and paths for Ontology, Knowledge
+    and other small domains before proposing focused additions.
+  adverse_case: A minimum count such as four concepts is substituted for adequacy
+    evidence.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-6
+  source_cells:
+  - 'LCQ-06
+
+    LR-06'
+  - 'Is each domain adequate for its intended contribution?
+
+    Answer: Domain; purpose; CQs; examples; missing distinctions; disposition'
+  - Ontological Commitment; Domain Knowledge; Taxonomy; State
+- id: LCQ-07
+  requirement_id: LR-07
+  question: Which alternatives were considered and what followed the choice?
+  required_answer_fields: Decision; alternatives; selected option; consequence; evidence
+  candidate_existing_witnesses: Conceptual Decision; Justification; Evaluation Result
+  acceptance: Retain a rejected alternative and distinguish choosing it from realizing
+    or evaluating its outcome.
+  adverse_case: A decision rationale is taken as evidence that the chosen option succeeded.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-7
+  source_cells:
+  - 'LCQ-07
+
+    LR-07'
+  - 'Which alternatives were considered and what followed the choice?
+
+    Answer: Decision; alternatives; selected option; consequence; evidence'
+  - Conceptual Decision; Justification; Evaluation Result
+- id: LCQ-08
+  requirement_id: LR-08
+  question: Does cited evidence support, challenge or limit a claim?
+  required_answer_fields: Claim; evidence; stance; attribution; uncertainty basis
+  candidate_existing_witnesses: Evidence; Source; Justification; Assumption
+  acceptance: Preserve a source that challenges a claim without converting its citation
+    into support; keep missing confidence unspecified.
+  adverse_case: Source count is treated as truth or unknown confidence is assigned
+    zero.
+  release_target: R2 candidate
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-8/data-row-8
+  source_cells:
+  - 'LCQ-08
+
+    LR-08'
+  - 'Does cited evidence support, challenge or limit a claim?
+
+    Answer: Claim; evidence; stance; attribution; uncertainty basis'
+  - Evidence; Source; Justification; Assumption

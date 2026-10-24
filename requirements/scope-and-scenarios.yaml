@@ -1,0 +1,138 @@
+schema_version: '1.0'
+source_sha256: d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1
+input_revision: ORSD 0.1; 2026-10-24
+status: retrospectively_reconstructed_review_draft
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+profile:
+- - Ontology and purpose
+  - 'Conceptiom is an ontology of conceptualization: how agents form, organize, articulate,
+    represent and interpret conceptual accounts, and justify and assess their conceptual
+    choices.'
+- - Research owner and users
+  - Araz Saie Arasi, doctoral researcher; intended users include conceptual-modeling
+    researchers, ontology designers, analysts, thesis reviewers and ontology evaluators.
+    No external stakeholder interviews or independent acceptance are claimed.
+- - Intended uses
+  - Describe conceptualization episodes; document conceptual artifacts and models;
+    inspect semantic distinctions; trace decisions and evidence; plan quality review;
+    support later formalization and examples.
+- - Baseline
+  - 'Release 1 specification revision 1 dated 24 October 2026: 137 concepts, 174 associations
+    and 122 generalizations across 20 subject domains plus Foundations. The matching
+    full SVG and detail atlas are visualization evidence, not independent requirements
+    elicitation.'
+- - Document status
+  - ORSD 0.1, 24 October 2026. Reconstructed review draft prepared after the conceptual
+    model. Owner acceptance and an independent comparison remain open.
+- - Formality and language
+  - English requirements and definitions; UFO-grounded conceptual distinctions; OntoUML
+    design; textual interpretation constraints. No particular OWL, SQL or query implementation
+    is mandated in R1. Any future translation must declare semantic losses and preserved
+    commitments.
+- - In scope
+  - The selected conceptualization domains and their contribution to the central account.
+    Cross-domain relations, subject descriptions, evaluation and conceptual provenance
+    are included.
+- - Out of scope
+  - A general ontology of Domain Engineering, Ontology Engineering, Research Methodology
+    or digital health; a complete ontology of every contributing discipline; production
+    software, a database implementation, automated diagnosis of thought, or guaranteed
+    truth of represented claims.
+- - Release policy
+  - Keep domain names unchanged. R1 accepts uneven domain sizes, including one-concept
+    Ontology and Knowledge. R2 addresses representational adequacy within the same
+    purpose, with no minimum class quota.
+- - Requirements authority
+  - E means explicit owner instruction in this conversation. R means reconstructed
+    from the current model or its interpretation constraints. I means inferred from
+    purpose or a proposed future use. R is evidence of design intent, not evidence
+    of prior stakeholder agreement.
+scenarios:
+- id: US-01
+  source_cells:
+  - US-01 Form a conceptual account
+  - An analyst conceptualizes software feature knowledge, states a goal and perspective,
+    forms concepts and creates an artifact. Distinguish the subject, mental states,
+    activity and artifact.
+  - FR-01 to FR-12; FR-23; FR-30
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-2/data-row-1
+- id: US-02
+  source_cells:
+  - US-02 Express and interpret content
+  - Two reviewers read a diagram and prose expression of the same artifact. Record
+    their interpretations; vocabulary agreement alone does not establish shared understanding.
+  - FR-06; FR-13 to FR-18; FR-29
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-2/data-row-2
+- id: US-03
+  source_cells:
+  - US-03 Assess and revise
+  - A reviewer assesses clarity against an explicit criterion, records one finding
+    and its rationale, and gives feedback that informs a conceptual decision.
+  - FR-24 to FR-28
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-2/data-row-3
+- id: US-04
+  source_cells:
+  - US-04 Organize and constrain
+  - An analyst organizes a taxonomy, describes instantiation and state change, and
+    records formulas and ontological commitments that restrict the account.
+  - FR-07 to FR-11; FR-19 to FR-22
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-2/data-row-4
+review_roadmap:
+- - ORSD preparation
+  - Retain 48 uniquely identified requirements, 38 CQ contracts, origins, priorities,
+    release targets, positive and adverse expectations, and the pinned design inventory.
+  - Authoring checks complete; stakeholder acceptance still open.
+- - Owner review
+  - Review scope assumptions, MUST priorities and latent candidates; record acceptance
+    or revision by requirement ID.
+  - Reviewed requirements baseline; no silent removal of unmet needs.
+- - Model comparison
+  - For each FR, inspect concept distinctions, full association paths, endpoint typing,
+    multiplicities and the relevant constraints; record fully represented, partly
+    represented, absent or ambiguous.
+  - Every verdict cites exact model evidence or a stated gap.
+- - Executable verification
+  - Create positive fixtures, missing-link variants and misleading-link variants;
+    state entailment and validation regime. Preserve expected and actual tuples plus
+    versioned receipts.
+  - All retained R1 contracts have results or explicit blockers; formal limits documented.
+- - Semantic validation
+  - Use domain-informed reviewers and counterexamples to assess whether the model
+    expresses conceptualization adequately. Separate comprehension, fidelity and usefulness.
+  - Recorded judgments and resolved or accepted issues; no simulated expert validation.
+- - Release closure
+  - Reconcile accepted requirements, concept/relationship tables, constraints and
+    diagrams; record unresolved debt and release scope.
+  - No known unresolved contradiction in accepted R1 scope; evidence-bounded release
+    claims.
+- - R2 adequacy review
+  - Evaluate each unchanged domain against its purpose and questions; prioritize small
+    domains and LR-01 to LR-08 without padding concept counts.
+  - Justified additions or explicit no-change decisions; update all affected contracts.
+scope_decisions:
+- - Explicit artifact boundary
+  - Retained for R1. LR-04 asks whether unfinished or tacit episodes need a later
+    extension.
+- - Information content identity
+  - Content identity is assumed distinct from physical-file identity; the operational
+    equivalence and revision policy remains open under LR-01.
+- - Higher-order and sortal grounding
+  - Model Kind, Type, contextual roles and information-description subclasses require
+    the planned foundational review; the ORSD does not certify their typing.
+- - Quality interpretation
+  - Criteria are specifications. Actual measured values, scales and comparison rules
+    are not silently added; see LR-05.
+- - Evidence and disagreement
+  - Sources can be wrong and accounts can disagree. R1 preserves provenance distinctions;
+    LR-02 and LR-08 sharpen assertion context and evidential stance.
+- - Adequacy versus size
+  - Ontology and Knowledge remain valid domain names with one selected concept each.
+    Adequacy is purpose-relative and will be reviewed in R2, not determined by a fixed
+    quota.
+- - Stakeholder and publication claims
+  - Owner approval, independent semantic validation and a published validated release
+    are not implied by generating this ORSD. No repository or release publication
+    is performed.

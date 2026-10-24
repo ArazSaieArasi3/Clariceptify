@@ -1,0 +1,1778 @@
+schema_version: '1.0'
+source_sha256: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+qualification:
+  D: direct notion support in input screening
+  B: adapted/theoretical basis
+  P: specific passage support pending
+records:
+- concept_id: CLR-C0001
+  input_label: Abstraction
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0020
+  input_reference_display: '[18], [20]'
+  support_scope_and_limit: Selective conceptual abstraction, not every mathematical
+    abstraction principle.
+  input_source_locations: '[18] ch. 3 description; [20] concept structure and acquisition'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-1
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0002
+  input_label: Abstraction Hierarchy
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0018
+  input_reference_display: '[7], [18]'
+  support_scope_and_limit: Levels and abstraction mechanisms; exact quality or information-object
+    reification is project-specific.
+  input_source_locations: '[18] ch. 3 description; [7] type hierarchy discussion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-2
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0003
+  input_label: Abstraction Level
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0018
+  input_reference_display: '[7], [18]'
+  support_scope_and_limit: Levels and abstraction mechanisms; exact quality or information-object
+    reification is project-specific.
+  input_source_locations: '[18] ch. 3 description; [7] type hierarchy discussion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-3
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0004
+  input_label: Agent
+  support_type: D
+  source_ids:
+  - CLR-SRC0011
+  - CLR-SRC0023
+  input_reference_display: '[11], [23]'
+  support_scope_and_limit: Agency and intentional participants; UFO and collective-intentionality
+    perspectives differ.
+  input_source_locations: '[11] sec. 4; [23] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-4
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0005
+  input_label: Analysis Model
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Relevant model-type literature located; each named specialization
+    needs a precise defining passage.
+  input_source_locations: '[18] development tasks/model types; [17] contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-5
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0006
+  input_label: Artificial Language
+  support_type: D
+  source_ids:
+  - CLR-SRC0015
+  - CLR-SRC0051
+  input_reference_display: '[15], [51]'
+  support_scope_and_limit: Natural and formal languages are explicitly distinguished.
+  input_source_locations: '[51] introduction and sec. 2; [15] logic/language companion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-6
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0007
+  input_label: Assumption
+  support_type: B
+  source_ids:
+  - CLR-SRC0028
+  - CLR-SRC0046
+  input_reference_display: '[28], [46]'
+  support_scope_and_limit: Provisional adopted content and background assumptions,
+    not automatically justified belief.
+  input_source_locations: '[46] common ground; [28] knowledge and justification'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-7
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0008
+  input_label: Awareness
+  support_type: B
+  source_ids:
+  - CLR-SRC0021
+  - CLR-SRC0024
+  input_reference_display: '[21], [24]'
+  support_scope_and_limit: Conscious access and mental states; not a single uncontested
+    theory.
+  input_source_locations: '[24] sec. 2; [21] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-8
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0009
+  input_label: Awareness Formation
+  support_type: B
+  source_ids:
+  - CLR-SRC0019
+  - CLR-SRC0024
+  input_reference_display: '[19], [24]'
+  support_scope_and_limit: Project process label for developing awareness.
+  input_source_locations: '[19] attention chapter contents; [24] secs. 2 and 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-9
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0010
+  input_label: Axiom
+  support_type: B
+  source_ids:
+  - CLR-SRC0006
+  - CLR-SRC0051
+  input_reference_display: '[6], [51]'
+  support_scope_and_limit: Formal adopted assertions; Axiom role in an artifact is
+    a separate project commitment.
+  input_source_locations: '[51] formal systems; [6] axioms'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-10
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0011
+  input_label: Business Model
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Relevant model-type literature located; each named specialization
+    needs a precise defining passage.
+  input_source_locations: '[18] development tasks/model types; [17] contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-11
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0012
+  input_label: Categorization
+  support_type: D
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0020
+  input_reference_display: '[18], [20]'
+  support_scope_and_limit: Categorization and classification mechanisms; not an automatic
+    class-membership decision.
+  input_source_locations: '[20] introduction; [18] ch. 3 description'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-12
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0013
+  input_label: Change
+  support_type: B
+  source_ids:
+  - CLR-SRC0010
+  - CLR-SRC0011
+  - CLR-SRC0033
+  input_reference_display: '[10], [11], [33]'
+  support_scope_and_limit: Event-based state transition and temporal context.
+  input_source_locations: '[11] sec. 3; [10] abstract; [33] persistence topics'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-13
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0014
+  input_label: Classification
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0039
+  input_reference_display: '[18], [39]'
+  support_scope_and_limit: Recorded assignment activity; distinguish from taxonomy
+    and language infrastructure.
+  input_source_locations: '[18] ch. 3 description; [39] schemes'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-14
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0015
+  input_label: Cognition
+  support_type: D
+  source_ids:
+  - CLR-SRC0019
+  - CLR-SRC0021
+  input_reference_display: '[19], [21]'
+  support_scope_and_limit: Cognitive processes and mental representation.
+  input_source_locations: '[19] chs. 1 and 11 contents; [21] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-15
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0016
+  input_label: Coherence
+  support_type: B
+  source_ids:
+  - CLR-SRC0008
+  - CLR-SRC0048
+  input_reference_display: '[8], [48]'
+  support_scope_and_limit: Ontology coherence criterion; not automatically identical
+    to graph connectivity.
+  input_source_locations: '[8] design criteria; [48] evaluation criteria'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-16
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0017
+  input_label: Concept
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0020
+  - CLR-SRC0037
+  input_reference_display: '[12], [20], [37]'
+  support_scope_and_limit: SEP surveys mental, ability and abstract accounts; the
+    catalogue reifies an explicit description.
+  input_source_locations: '[20] sec. 1; [12] secs. 3–4; [37] official scope'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-17
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0018
+  input_label: Concept Formation
+  support_type: D
+  source_ids:
+  - CLR-SRC0014
+  - CLR-SRC0020
+  input_reference_display: '[14], [20]'
+  support_scope_and_limit: Concept formation and concept acquisition; output identity
+    remains scoped.
+  input_source_locations: '[14] abstract; [20] secs. 1–3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-18
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0019
+  input_label: Conceptual Artifact
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0034
+  input_reference_display: '[12], [34]'
+  support_scope_and_limit: Explicit product of conceptual activity; broad artifact
+    label is project-defined.
+  input_source_locations: '[12] sec. 3; [34] sec. 1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-19
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0020
+  input_label: Conceptual Connection
+  support_type: B
+  source_ids:
+  - CLR-SRC0013
+  - CLR-SRC0030
+  - CLR-SRC0039
+  input_reference_display: '[13], [30], [39]'
+  support_scope_and_limit: Relation notions, intensional conceptual relations and
+    mapping correspondences; reified descriptions remain project-specific.
+  input_source_locations: '[13] sec. 2.1; [30] introduction; [39] mapping properties'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-20
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0021
+  input_label: Conceptual Decision
+  support_type: B
+  source_ids:
+  - CLR-SRC0041
+  - CLR-SRC0047
+  input_reference_display: '[41], [47]'
+  support_scope_and_limit: Project specialization of recorded rationale and attributed
+    decision content.
+  input_source_locations: '[47] abstract; [41] attribution'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-21
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0022
+  input_label: Conceptual Element
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0039
+  input_reference_display: '[12], [39]'
+  support_scope_and_limit: Project umbrella for explicit description elements.
+  input_source_locations: '[12] secs. 3–4; [39] concepts and schemes'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-22
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0023
+  input_label: Conceptual Model
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0017
+  - CLR-SRC0050
+  input_reference_display: '[12], [17], [50]'
+  support_scope_and_limit: Primary philosophical characterization; [50] is an additional
+    abstract-level lead.
+  input_source_locations: '[12] secs. 3–4; [17] overview; [50] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-23
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0024
+  input_label: Conceptual Modeling
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[12], [17], [18]'
+  support_scope_and_limit: Activity of constructing models; conceptual modeling has
+    a narrower purpose.
+  input_source_locations: '[12] secs. 1–3; [18] overview; [17] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-24
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0025
+  input_label: Conceptual Process
+  support_type: B
+  source_ids:
+  - CLR-SRC0014
+  - CLR-SRC0021
+  input_reference_display: '[14], [21]'
+  support_scope_and_limit: Project umbrella for formative cognitive activities.
+  input_source_locations: '[14] abstract; [21] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-25
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0026
+  input_label: Conceptualization
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0013
+  - CLR-SRC0014
+  input_reference_display: '[12], [13], [14]'
+  support_scope_and_limit: Process reading retained. [13] uses conceptualization as
+    an intensional structure; no equivalence is asserted.
+  input_source_locations: '[12] secs. 3–4; [13] sec. 2.1; [14] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-26
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0027
+  input_label: Conceptualizer
+  support_type: B
+  source_ids:
+  - CLR-SRC0011
+  - CLR-SRC0012
+  input_reference_display: '[11], [12]'
+  support_scope_and_limit: Participating cognitive agent; historicalRoleMixin is a
+    separate design commitment.
+  input_source_locations: '[11] secs. 3–4; [12] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-27
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0028
+  input_label: Consciousness
+  support_type: D
+  source_ids:
+  - CLR-SRC0021
+  - CLR-SRC0024
+  input_reference_display: '[21], [24]'
+  support_scope_and_limit: Established consciousness topic; mode typing is not settled
+    by philosophical citation.
+  input_source_locations: '[24] secs. 2 and 4; [21] sec. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-28
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0029
+  input_label: Consistency
+  support_type: B
+  source_ids:
+  - CLR-SRC0048
+  - CLR-SRC0051
+  input_reference_display: '[48], [51]'
+  support_scope_and_limit: Logical consistency discussed; catalogue class is a criterion
+    specification.
+  input_source_locations: '[48] abstract; [51] model-theoretic semantics'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-29
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0030
+  input_label: Constraint
+  support_type: B
+  source_ids:
+  - CLR-SRC0006
+  - CLR-SRC0051
+  input_reference_display: '[6], [51]'
+  support_scope_and_limit: Formal restrictions and axioms; not all project constraints
+    are expressible in OWL.
+  input_source_locations: '[6] axioms; [51] secs. 2–4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-30
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0031
+  input_label: Correspondence
+  support_type: B
+  source_ids:
+  - CLR-SRC0013
+  - CLR-SRC0030
+  - CLR-SRC0039
+  input_reference_display: '[13], [30], [39]'
+  support_scope_and_limit: Relation notions, intensional conceptual relations and
+    mapping correspondences; reified descriptions remain project-specific.
+  input_source_locations: '[13] sec. 2.1; [30] introduction; [39] mapping properties'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-31
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0032
+  input_label: Definition
+  support_type: D
+  source_ids:
+  - CLR-SRC0029
+  - CLR-SRC0037
+  input_reference_display: '[29], [37]'
+  support_scope_and_limit: Kinds and functions of definition and terminology principles.
+  input_source_locations: '[29] secs. 1–2; [37] official scope'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-32
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0033
+  input_label: Discourse
+  support_type: D
+  source_ids:
+  - CLR-SRC0046
+  - CLR-SRC0052
+  input_reference_display: '[46], [52]'
+  support_scope_and_limit: Communicated content and coordinated discourse; catalogue
+    information-object interpretation retained.
+  input_source_locations: '[46] grounding; [52] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-33
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0034
+  input_label: Domain Knowledge
+  support_type: B
+  source_ids:
+  - CLR-SRC0015
+  - CLR-SRC0028
+  input_reference_display: '[15], [28]'
+  support_scope_and_limit: Explicit subject content is distinguished from knowing
+    and justified belief.
+  input_source_locations: '[15] knowledge-representation companion; [28] secs. 2–3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-34
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0035
+  input_label: Domain Model
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Relevant model-type literature located; each named specialization
+    needs a precise defining passage.
+  input_source_locations: '[18] development tasks/model types; [17] contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-35
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0036
+  input_label: Domain Vocabulary
+  support_type: D
+  source_ids:
+  - CLR-SRC0036
+  - CLR-SRC0037
+  - CLR-SRC0039
+  input_reference_display: '[36], [37], [39]'
+  support_scope_and_limit: Terminology, designations, definitions and organized concept
+    schemes.
+  input_source_locations: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-36
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0037
+  input_label: Domain-Specific Language
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0018
+  input_reference_display: '[12], [18]'
+  support_scope_and_limit: Domain-specific modeling-language discussion.
+  input_source_locations: '[12] sec. 4.3; [18] modeling-language overview'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-37
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0038
+  input_label: Enterprise Modeling
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Relevant book scope located; exact enterprise-modeling
+    definition needs passage checking.
+  input_source_locations: '[18] publisher overview; [17] contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-38
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0039
+  input_label: Evaluation Criterion
+  support_type: D
+  source_ids:
+  - CLR-SRC0047
+  - CLR-SRC0048
+  input_reference_display: '[47], [48]'
+  support_scope_and_limit: Criteria for evaluation and comparison; criterion/content
+    distinction retained.
+  input_source_locations: '[48] abstract; [47] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-39
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0040
+  input_label: Evaluation Result
+  support_type: B
+  source_ids:
+  - CLR-SRC0042
+  - CLR-SRC0048
+  input_reference_display: '[42], [48]'
+  support_scope_and_limit: Result/measurement/annotation distinction supports the
+    project result class; no DQV equivalence is asserted.
+  input_source_locations: '[42] secs. 4.1 and 4.7; [48] evaluation context'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-40
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0041
+  input_label: Event
+  support_type: D
+  source_ids:
+  - CLR-SRC0010
+  - CLR-SRC0011
+  input_reference_display: '[10], [11]'
+  support_scope_and_limit: Occurrence and event modeling foundations.
+  input_source_locations: '[10] publisher abstract; [11] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-41
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0042
+  input_label: Evidence
+  support_type: B
+  source_ids:
+  - CLR-SRC0027
+  - CLR-SRC0041
+  input_reference_display: '[27], [41]'
+  support_scope_and_limit: Evidential role distinguished from mere attribution; not
+    every source is evidence.
+  input_source_locations: '[27] introduction; [41] attribution'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-42
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0043
+  input_label: Experience
+  support_type: D
+  source_ids:
+  - CLR-SRC0024
+  - CLR-SRC0025
+  input_reference_display: '[24], [25]'
+  support_scope_and_limit: Perceptual experience and conscious experience; definitions
+    retain the catalogue scope.
+  input_source_locations: '[25] secs. 1 and 3; [24] secs. 2 and 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-43
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0044
+  input_label: Explanation
+  support_type: B
+  source_ids:
+  - CLR-SRC0022
+  - CLR-SRC0049
+  input_reference_display: '[22], [49]'
+  support_scope_and_limit: Ontological unpacking is one explanation form, not all
+    explanation.
+  input_source_locations: '[49] abstract; [22] sec. 4.1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-44
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0045
+  input_label: Explanatory Adequacy
+  support_type: B
+  source_ids:
+  - CLR-SRC0022
+  - CLR-SRC0049
+  input_reference_display: '[22], [49]'
+  support_scope_and_limit: Project evaluation criterion; not claimed as a standard
+    named ontology metric.
+  input_source_locations: '[22] sec. 4.1; [49] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-45
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0046
+  input_label: Explicit Definition
+  support_type: D
+  source_ids:
+  - CLR-SRC0029
+  - CLR-SRC0051
+  input_reference_display: '[29], [51]'
+  support_scope_and_limit: Explicit and implicit definitional mechanisms; catalogue
+    content reification remains scoped.
+  input_source_locations: '[29] sec. 2, especially 2.6; [51] language and semantics'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-46
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0047
+  input_label: Expression
+  support_type: B
+  source_ids:
+  - CLR-SRC0037
+  - CLR-SRC0051
+  input_reference_display: '[37], [51]'
+  support_scope_and_limit: Expression of content through formal or linguistic designation.
+  input_source_locations: '[51] sec. 2; [37] official scope'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-47
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0048
+  input_label: Feedback
+  support_type: B
+  source_ids:
+  - CLR-SRC0042
+  - CLR-SRC0046
+  input_reference_display: '[42], [46]'
+  support_scope_and_limit: Quality feedback and communication repair support the function;
+    catalogue content is narrower.
+  input_source_locations: '[42] User Quality Feedback; [46] grounding criterion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-48
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0049
+  input_label: Form
+  support_type: B
+  source_ids:
+  - CLR-SRC0034
+  - CLR-SRC0043
+  input_reference_display: '[34], [43]'
+  support_scope_and_limit: Project information-artifact categories for visual or presented
+    form.
+  input_source_locations: '[43] chs. 1 and 5 contents; [34] sec. 1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-49
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0050
+  input_label: Formal Model
+  support_type: B
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0051
+  input_reference_display: '[17], [51]'
+  support_scope_and_limit: Formal-language semantics and model-based specification;
+    broad scoped model class.
+  input_source_locations: '[51] secs. 2–4; [17] formalization overview'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-50
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0051
+  input_label: Formalization
+  support_type: B
+  source_ids:
+  - CLR-SRC0016
+  - CLR-SRC0051
+  input_reference_display: '[16], [51]'
+  support_scope_and_limit: Project activity of constructing explicit formal descriptions.
+  input_source_locations: '[16] languages chapter contents; [51] secs. 2–4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-51
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0052
+  input_label: Formula
+  support_type: D
+  source_ids:
+  - CLR-SRC0015
+  - CLR-SRC0051
+  input_reference_display: '[15], [51]'
+  support_scope_and_limit: Formal well-formed expressions.
+  input_source_locations: '[51] sec. 2; [15] logic companion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-52
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0053
+  input_label: Generalization
+  support_type: B
+  source_ids:
+  - CLR-SRC0003
+  - CLR-SRC0007
+  - CLR-SRC0018
+  input_reference_display: '[3], [7], [18]'
+  support_scope_and_limit: Relations underlying descriptions; named classes reify
+    them separately from diagram connectors.
+  input_source_locations: '[7] ch. 4; [3] abstract; [18] ch. 3 description'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-53
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0054
+  input_label: Goal
+  support_type: B
+  source_ids:
+  - CLR-SRC0011
+  - CLR-SRC0026
+  input_reference_display: '[11], [26]'
+  support_scope_and_limit: Desired propositional content; the catalogue makes articulated
+    content explicit.
+  input_source_locations: '[11] sec. 4; [26] secs. 3–4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-54
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0055
+  input_label: Idea
+  support_type: B
+  source_ids:
+  - CLR-SRC0020
+  - CLR-SRC0021
+  input_reference_display: '[20], [21]'
+  support_scope_and_limit: Mental representation basis; not the explicit information-description
+    Concept class.
+  input_source_locations: '[21] introduction; [20] sec. 1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-55
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0056
+  input_label: Implicit Definition
+  support_type: D
+  source_ids:
+  - CLR-SRC0029
+  - CLR-SRC0051
+  input_reference_display: '[29], [51]'
+  support_scope_and_limit: Explicit and implicit definitional mechanisms; catalogue
+    content reification remains scoped.
+  input_source_locations: '[29] sec. 2, especially 2.6; [51] language and semantics'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-56
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0057
+  input_label: Information Object
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0015
+  input_reference_display: '[12], [15]'
+  support_scope_and_limit: Explicit informational model distinguished from physical
+    support.
+  input_source_locations: '[12] sec. 3; [15] author companion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-57
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0058
+  input_label: Insight
+  support_type: B
+  source_ids:
+  - CLR-SRC0022
+  - CLR-SRC0045
+  input_reference_display: '[22], [45]'
+  support_scope_and_limit: '[45] concerns a sudden occurrence; catalogue Insight denotes
+    a resulting understanding state.'
+  input_source_locations: '[45] abstract; [22] sec. 2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-58
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0059
+  input_label: Instance
+  support_type: B
+  source_ids:
+  - CLR-SRC0003
+  - CLR-SRC0007
+  input_reference_display: '[3], [7]'
+  support_scope_and_limit: Individual/type basis; catalogue Instance is an individual
+    description, not its referent.
+  input_source_locations: '[7] ch. 4; [3] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-59
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0060
+  input_label: Instantiation
+  support_type: B
+  source_ids:
+  - CLR-SRC0003
+  - CLR-SRC0007
+  - CLR-SRC0018
+  input_reference_display: '[3], [7], [18]'
+  support_scope_and_limit: Relations underlying descriptions; named classes reify
+    them separately from diagram connectors.
+  input_source_locations: '[7] ch. 4; [3] abstract; [18] ch. 3 description'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-60
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0061
+  input_label: Intention
+  support_type: D
+  source_ids:
+  - CLR-SRC0011
+  - CLR-SRC0026
+  input_reference_display: '[11], [26]'
+  support_scope_and_limit: Established intention notion; ontology-specific mode grounding
+    requires separate analysis.
+  input_source_locations: '[26] secs. 1–4; [11] sec. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-61
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0062
+  input_label: Interpretation
+  support_type: B
+  source_ids:
+  - CLR-SRC0021
+  - CLR-SRC0022
+  input_reference_display: '[21], [22]'
+  support_scope_and_limit: Mental understanding reading; not a model-theoretic interpretation
+    function.
+  input_source_locations: '[21] semantic mental content; [22] sec. 2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-62
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0063
+  input_label: Interpretation Process
+  support_type: B
+  source_ids:
+  - CLR-SRC0021
+  - CLR-SRC0046
+  input_reference_display: '[21], [46]'
+  support_scope_and_limit: Project activity label for interpreting representations.
+  input_source_locations: '[21] secs. 1–3; [46] grounding criterion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-63
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0064
+  input_label: Interval-Based Time Representation
+  support_type: B
+  source_ids:
+  - CLR-SRC0033
+  - CLR-SRC0040
+  input_reference_display: '[33], [40]'
+  support_scope_and_limit: Instants, intervals and temporal positions support the
+    distinction, not the exact project subclass names.
+  input_source_locations: '[40] secs. 3–4; [33] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-64
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0065
+  input_label: Justification
+  support_type: B
+  source_ids:
+  - CLR-SRC0028
+  - CLR-SRC0047
+  input_reference_display: '[28], [47]'
+  support_scope_and_limit: Explicit rationale versus epistemic justification must
+    be distinguished.
+  input_source_locations: '[47] design justifications; [28] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-65
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0066
+  input_label: Language
+  support_type: D
+  source_ids:
+  - CLR-SRC0015
+  - CLR-SRC0051
+  input_reference_display: '[15], [51]'
+  support_scope_and_limit: Natural and formal languages are explicitly distinguished.
+  input_source_locations: '[51] introduction and sec. 2; [15] logic/language companion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-66
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0067
+  input_label: Languagization
+  support_type: B
+  source_ids:
+  - CLR-SRC0037
+  - CLR-SRC0046
+  input_reference_display: '[37], [46]'
+  support_scope_and_limit: Project activity label for expressing content in language.
+  input_source_locations: '[37] scope; [46] communication grounding'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-67
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0068
+  input_label: Meaningfulness
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0052
+  input_reference_display: '[18], [52]'
+  support_scope_and_limit: Meaningful content and model semantics; catalogue quality
+    is not a universal theory of meaning.
+  input_source_locations: '[52] introduction; [18] quality overview'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-68
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0069
+  input_label: Meronomization
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0032
+  input_reference_display: '[7], [32]'
+  support_scope_and_limit: Project activity label for forming parthood descriptions.
+  input_source_locations: '[7] ch. 5; [32] secs. 1–4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-69
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0070
+  input_label: Message
+  support_type: D
+  source_ids:
+  - CLR-SRC0046
+  - CLR-SRC0052
+  input_reference_display: '[46], [52]'
+  support_scope_and_limit: Communicated content and coordinated discourse; catalogue
+    information-object interpretation retained.
+  input_source_locations: '[46] grounding; [52] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-70
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0071
+  input_label: Metamodel
+  support_type: D
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0038
+  input_reference_display: '[18], [38]'
+  support_scope_and_limit: Modeling-language specification and metamodel infrastructure.
+  input_source_locations: '[38] specification; [18] ch. 3 description'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-71
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0072
+  input_label: Metamodeling
+  support_type: D
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0038
+  input_reference_display: '[18], [38]'
+  support_scope_and_limit: Modeling-language specification and metamodel infrastructure.
+  input_source_locations: '[38] specification; [18] ch. 3 description'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-72
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0073
+  input_label: Model
+  support_type: D
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0034
+  input_reference_display: '[18], [34]'
+  support_scope_and_limit: Representational artifact basis; does not restrict all
+    models to conceptual models.
+  input_source_locations: '[34] introduction; [18] overview'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-73
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0074
+  input_label: Model Kind
+  support_type: B
+  source_ids:
+  - CLR-SRC0003
+  - CLR-SRC0038
+  input_reference_display: '[3], [38]'
+  support_scope_and_limit: Higher-order types versus metamodel infrastructure; no
+    automatic equivalence.
+  input_source_locations: '[3] abstract; [38] modeling infrastructure'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-74
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0076
+  input_label: Model View
+  support_type: P
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0043
+  input_reference_display: '[18], [43]'
+  support_scope_and_limit: Perspective/view literature located; model-specific viewpoint
+    contract needs a precise passage.
+  input_source_locations: '[18] modeling perspectives; [43] ch. 12 contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-75
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0075
+  input_label: Model of Models
+  support_type: B
+  source_ids:
+  - CLR-SRC0003
+  - CLR-SRC0038
+  input_reference_display: '[3], [38]'
+  support_scope_and_limit: Broad project label; do not identify a collection of models
+    with every metamodel.
+  input_source_locations: '[38] metamodel infrastructure; [3] higher-order types'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-76
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0077
+  input_label: Modeling
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[12], [17], [18]'
+  support_scope_and_limit: Activity of constructing models; conceptual modeling has
+    a narrower purpose.
+  input_source_locations: '[12] secs. 1–3; [18] overview; [17] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-77
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0078
+  input_label: Modeling Language
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0018
+  - CLR-SRC0038
+  input_reference_display: '[12], [18], [38]'
+  support_scope_and_limit: Language used to express models and its specification.
+  input_source_locations: '[12] sec. 3; [18] ch. 3; [38] specification'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-78
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0079
+  input_label: Multi-Dimensional Modeling
+  support_type: P
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0043
+  input_reference_display: '[18], [43]'
+  support_scope_and_limit: Candidate support for multiple perspectives and views;
+    not a claim of dimensional data-warehouse semantics.
+  input_source_locations: '[18] modeling perspectives; [43] ch. 12 contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-79
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0080
+  input_label: Multi-Level Modeling
+  support_type: D
+  source_ids:
+  - CLR-SRC0003
+  - CLR-SRC0038
+  input_reference_display: '[3], [38]'
+  support_scope_and_limit: Higher-order classification is directly addressed; MOF
+    is infrastructure context only.
+  input_source_locations: '[3] abstract; [38] modeling infrastructure'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-80
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0081
+  input_label: Naming
+  support_type: D
+  source_ids:
+  - CLR-SRC0036
+  - CLR-SRC0037
+  input_reference_display: '[36], [37]'
+  support_scope_and_limit: Formation of terms and proper names; not an exhaustive
+    philosophical reference theory.
+  input_source_locations: '[37] official scope; [36] vocabulary scope'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-81
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0082
+  input_label: Natural Language
+  support_type: D
+  source_ids:
+  - CLR-SRC0015
+  - CLR-SRC0051
+  input_reference_display: '[15], [51]'
+  support_scope_and_limit: Natural and formal languages are explicitly distinguished.
+  input_source_locations: '[51] introduction and sec. 2; [15] logic/language companion'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-82
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0083
+  input_label: Object
+  support_type: D
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0011
+  input_reference_display: '[7], [11]'
+  support_scope_and_limit: Foundational object/type distinction; does not endorse
+    every catalogue typing.
+  input_source_locations: '[7] chs. 4 and 6; [11] sec. 2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-83
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0084
+  input_label: Observation
+  support_type: B
+  source_ids:
+  - CLR-SRC0019
+  - CLR-SRC0025
+  input_reference_display: '[19], [25]'
+  support_scope_and_limit: Attending to a subject; a purpose-bound process definition
+    rather than a universal philosophical definition.
+  input_source_locations: '[25] sec. 1; [19] visual/auditory cognition contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-84
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0085
+  input_label: Observer
+  support_type: B
+  source_ids:
+  - CLR-SRC0011
+  - CLR-SRC0025
+  input_reference_display: '[11], [25]'
+  support_scope_and_limit: Agent in an observational role; roleMixin choice remains
+    project analysis.
+  input_source_locations: '[25] sec. 1; [11] sec. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-85
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0086
+  input_label: Ontological Commitment
+  support_type: B
+  source_ids:
+  - CLR-SRC0008
+  - CLR-SRC0012
+  - CLR-SRC0013
+  input_reference_display: '[8], [12], [13]'
+  support_scope_and_limit: Commitment conditions are supported; catalogue reifies
+    explicit commitment content.
+  input_source_locations: '[13] sec. 2; [8] sec. 2; [12] sec. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-86
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0087
+  input_label: Ontology-Driven Conceptual Modeling
+  support_type: D
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0009
+  - CLR-SRC0012
+  input_reference_display: '[7], [9], [12]'
+  support_scope_and_limit: Ontology-based grounding and analysis of conceptual models.
+  input_source_locations: '[7] thesis abstract; [9] abstract; [12] sec. 4.4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-87
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0088
+  input_label: Part
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0032
+  input_reference_display: '[7], [32]'
+  support_scope_and_limit: Mereology supports parthood; project classes are roles
+    and descriptions, not automatically physical parts.
+  input_source_locations: '[32] secs. 1–2; [7] ch. 5'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-88
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0089
+  input_label: Part-Whole Relation
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0032
+  input_reference_display: '[7], [32]'
+  support_scope_and_limit: Mereology supports parthood; project classes are roles
+    and descriptions, not automatically physical parts.
+  input_source_locations: '[32] secs. 1–2; [7] ch. 5'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-89
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0090
+  input_label: Pattern
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0044
+  input_reference_display: '[18], [44]'
+  support_scope_and_limit: Reusable ontology pattern is directly addressed; catalogue
+    extends to modeling arrangements.
+  input_source_locations: '[44] abstract; [18] modeling mechanisms'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-90
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0091
+  input_label: Patternization
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0044
+  input_reference_display: '[18], [44]'
+  support_scope_and_limit: Project process of selecting/applying a pattern.
+  input_source_locations: '[44] abstract; [18] modeling mechanisms'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-91
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0092
+  input_label: Perception
+  support_type: D
+  source_ids:
+  - CLR-SRC0024
+  - CLR-SRC0025
+  input_reference_display: '[24], [25]'
+  support_scope_and_limit: Perceptual experience and conscious experience; definitions
+    retain the catalogue scope.
+  input_source_locations: '[25] secs. 1 and 3; [24] secs. 2 and 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-92
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0093
+  input_label: Perspective
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0021
+  input_reference_display: '[12], [21]'
+  support_scope_and_limit: Conceptual filter or mental orientation, not a physical
+    viewpoint.
+  input_source_locations: '[12] sec. 3; [21] secs. 1–3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-93
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0094
+  input_label: Point-Based Time Representation
+  support_type: B
+  source_ids:
+  - CLR-SRC0033
+  - CLR-SRC0040
+  input_reference_display: '[33], [40]'
+  support_scope_and_limit: Instants, intervals and temporal positions support the
+    distinction, not the exact project subclass names.
+  input_source_locations: '[40] secs. 3–4; [33] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-94
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0095
+  input_label: Presentation
+  support_type: B
+  source_ids:
+  - CLR-SRC0034
+  - CLR-SRC0043
+  input_reference_display: '[34], [43]'
+  support_scope_and_limit: Project information-artifact categories for visual or presented
+    form.
+  input_source_locations: '[43] chs. 1 and 5 contents; [34] sec. 1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-95
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0096
+  input_label: Property
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0031
+  input_reference_display: '[7], [31]'
+  support_scope_and_limit: Property as predicable versus explicit feature-description
+    content must remain distinct.
+  input_source_locations: '[31] secs. 1–2; [7] ch. 6'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-96
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0097
+  input_label: Qualitative Evaluation
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0048
+  input_reference_display: '[18], [48]'
+  support_scope_and_limit: Project assessment-activity specializations; exact scope
+    requires local acceptance criteria.
+  input_source_locations: '[48] evaluation criteria/taxonomy errors; [18] quality
+    framework'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-97
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0098
+  input_label: Reference Model
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Relevant model-type literature located; each named specialization
+    needs a precise defining passage.
+  input_source_locations: '[18] development tasks/model types; [17] contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-98
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0099
+  input_label: Relation
+  support_type: B
+  source_ids:
+  - CLR-SRC0013
+  - CLR-SRC0030
+  - CLR-SRC0039
+  input_reference_display: '[13], [30], [39]'
+  support_scope_and_limit: Relation notions, intensional conceptual relations and
+    mapping correspondences; reified descriptions remain project-specific.
+  input_source_locations: '[13] sec. 2.1; [30] introduction; [39] mapping properties'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-99
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0100
+  input_label: Relationization
+  support_type: B
+  source_ids:
+  - CLR-SRC0013
+  - CLR-SRC0018
+  input_reference_display: '[13], [18]'
+  support_scope_and_limit: Project activity label for forming conceptual relation
+    descriptions.
+  input_source_locations: '[13] sec. 2.1; [18] association mechanism'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-100
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0101
+  input_label: Representation
+  support_type: D
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0034
+  input_reference_display: '[12], [34]'
+  support_scope_and_limit: External representations and conceptual-model information
+    content.
+  input_source_locations: '[34] sec. 1; [12] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-101
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0102
+  input_label: Schema
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Conceptual schema literature located; exact general schema
+    definition needs a passage-level review.
+  input_source_locations: '[17] database-schema contents; [18] modeling overview'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-102
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0103
+  input_label: Schematization
+  support_type: B
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Project process of specifying a schema; specific passage
+    checking remains needed.
+  input_source_locations: '[18] overview; [17] database-schema chapter contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-103
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0104
+  input_label: Semantic Completeness
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0048
+  input_reference_display: '[18], [48]'
+  support_scope_and_limit: Coverage relative to scope, not logical deductive completeness.
+  input_source_locations: '[48] abstract; [18] SEQUAL overview'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-104
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0105
+  input_label: Semantic Information
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0052
+  input_reference_display: '[12], [52]'
+  support_scope_and_limit: Semantic content literature includes competing factivity
+    conditions; current meaning-content definition retained.
+  input_source_locations: '[52] secs. 1–2; [12] sec. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-105
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0106
+  input_label: Semantic Interoperability
+  support_type: B
+  source_ids:
+  - CLR-SRC0013
+  - CLR-SRC0049
+  input_reference_display: '[13], [49]'
+  support_scope_and_limit: Ontological commitment and compatible interpretation, not
+    simply matching syntax.
+  input_source_locations: '[49] abstract; [13] secs. 2–3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-106
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0107
+  input_label: Semanticization
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0052
+  input_reference_display: '[12], [52]'
+  support_scope_and_limit: Project activity label for articulating meaning.
+  input_source_locations: '[12] sec. 4; [52] secs. 1–2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-107
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0108
+  input_label: Semantics
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0051
+  input_reference_display: '[12], [51]'
+  support_scope_and_limit: Represented meaning assignments and interpretation conditions;
+    not a single formal semantics.
+  input_source_locations: '[51] sec. 4; [12] sec. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-108
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0109
+  input_label: Shared Understanding
+  support_type: B
+  source_ids:
+  - CLR-SRC0023
+  - CLR-SRC0046
+  input_reference_display: '[23], [46]'
+  support_scope_and_limit: Common ground and jointly directed attitudes; does not
+    prove the catalogue situation pattern.
+  input_source_locations: '[46] grounding criterion; [23] secs. 1 and 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-109
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0110
+  input_label: Source
+  support_type: B
+  source_ids:
+  - CLR-SRC0028
+  - CLR-SRC0041
+  input_reference_display: '[28], [41]'
+  support_scope_and_limit: Provenance and sources of justification; source role may
+    be an agent or content.
+  input_source_locations: '[41] attribution and derivation; [28] sec. 5'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-110
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0111
+  input_label: Specification Model
+  support_type: P
+  source_ids:
+  - CLR-SRC0017
+  - CLR-SRC0018
+  input_reference_display: '[17], [18]'
+  support_scope_and_limit: Relevant model-type literature located; each named specialization
+    needs a precise defining passage.
+  input_source_locations: '[18] development tasks/model types; [17] contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-111
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0112
+  input_label: State
+  support_type: B
+  source_ids:
+  - CLR-SRC0011
+  - CLR-SRC0035
+  input_reference_display: '[11], [35]'
+  support_scope_and_limit: Actual situation scope retained; [35] also discusses non-obtaining
+    states of affairs.
+  input_source_locations: '[11] sec. 3; [35] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-112
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0113
+  input_label: Structural Conceptual Model
+  support_type: D
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0017
+  input_reference_display: '[7], [17]'
+  support_scope_and_limit: Structural-model focus and structure modeling.
+  input_source_locations: '[7] thesis abstract; [17] Structure Modelling contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-113
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0114
+  input_label: Structural Review
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0048
+  input_reference_display: '[18], [48]'
+  support_scope_and_limit: Project assessment-activity specializations; exact scope
+    requires local acceptance criteria.
+  input_source_locations: '[48] evaluation criteria/taxonomy errors; [18] quality
+    framework'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-114
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0115
+  input_label: Structuralization
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0018
+  input_reference_display: '[12], [18]'
+  support_scope_and_limit: Project activity label for organizing conceptual elements.
+  input_source_locations: '[18] abstraction-mechanism chapter; [12] secs. 3–4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-115
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0116
+  input_label: Structure
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0017
+  input_reference_display: '[12], [17]'
+  support_scope_and_limit: Structural organization of descriptions; not every philosophical
+    sense of structure.
+  input_source_locations: '[17] Structure Modelling contents; [12] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-116
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0117
+  input_label: Syntax
+  support_type: D
+  source_ids:
+  - CLR-SRC0038
+  - CLR-SRC0051
+  input_reference_display: '[38], [51]'
+  support_scope_and_limit: Formal syntax and grammar; catalogue description reification
+    remains a design choice.
+  input_source_locations: '[51] sec. 2; [38] specification'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-117
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0118
+  input_label: Syntaxization
+  support_type: B
+  source_ids:
+  - CLR-SRC0038
+  - CLR-SRC0051
+  input_reference_display: '[38], [51]'
+  support_scope_and_limit: Project activity label for organizing syntax.
+  input_source_locations: '[51] sec. 2; [38] modeling-language infrastructure'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-118
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0119
+  input_label: Taxonomy
+  support_type: D
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0039
+  input_reference_display: '[7], [39]'
+  support_scope_and_limit: Hierarchical concept organization; relation semantics must
+    be selected explicitly.
+  input_source_locations: '[39] semantic relations; [7] ch. 4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-119
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0120
+  input_label: Term
+  support_type: D
+  source_ids:
+  - CLR-SRC0036
+  - CLR-SRC0037
+  - CLR-SRC0039
+  input_reference_display: '[36], [37], [39]'
+  support_scope_and_limit: Terminology, designations, definitions and organized concept
+    schemes.
+  input_source_locations: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-120
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0121
+  input_label: Terminology
+  support_type: D
+  source_ids:
+  - CLR-SRC0036
+  - CLR-SRC0037
+  - CLR-SRC0039
+  input_reference_display: '[36], [37], [39]'
+  support_scope_and_limit: Terminology, designations, definitions and organized concept
+    schemes.
+  input_source_locations: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-121
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0122
+  input_label: Terminology Engineering
+  support_type: B
+  source_ids:
+  - CLR-SRC0016
+  - CLR-SRC0037
+  input_reference_display: '[16], [37]'
+  support_scope_and_limit: Systematic terminology work and acquisition; exact project
+    process names are not established by these sources.
+  input_source_locations: '[37] official scope; [16] methodology chapter contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-122
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0123
+  input_label: Time
+  support_type: D
+  source_ids:
+  - CLR-SRC0033
+  - CLR-SRC0040
+  input_reference_display: '[33], [40]'
+  support_scope_and_limit: Temporal positions and extents; philosophical accounts
+    remain disputed.
+  input_source_locations: '[33] introduction; [40] secs. 3–4'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-123
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0124
+  input_label: Time Representation
+  support_type: B
+  source_ids:
+  - CLR-SRC0033
+  - CLR-SRC0040
+  input_reference_display: '[33], [40]'
+  support_scope_and_limit: Instants, intervals and temporal positions support the
+    distinction, not the exact project subclass names.
+  input_source_locations: '[40] secs. 3–4; [33] sec. 3'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-124
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0125
+  input_label: Type
+  support_type: D
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0011
+  input_reference_display: '[7], [11]'
+  support_scope_and_limit: Foundational object/type distinction; does not endorse
+    every catalogue typing.
+  input_source_locations: '[7] chs. 4 and 6; [11] sec. 2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-125
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0126
+  input_label: Understandability
+  support_type: B
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0022
+  input_reference_display: '[18], [22]'
+  support_scope_and_limit: Representation suitability for understanding; not identical
+    to actual understanding.
+  input_source_locations: '[18] SEQUAL overview; [22] secs. 1–2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-126
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0127
+  input_label: Understanding
+  support_type: D
+  source_ids:
+  - CLR-SRC0022
+  - CLR-SRC0028
+  input_reference_display: '[22], [28]'
+  support_scope_and_limit: Understanding distinguished from isolated knowledge.
+  input_source_locations: '[22] secs. 1–2; [28] introduction'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-127
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0128
+  input_label: Valuation
+  support_type: B
+  source_ids:
+  - CLR-SRC0047
+  - CLR-SRC0053
+  input_reference_display: '[47], [53]'
+  support_scope_and_limit: Evaluative judgment and criteria-based assessment support
+    the project activity.
+  input_source_locations: '[53] sec. 1; [47] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-128
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0129
+  input_label: Value
+  support_type: B
+  source_ids:
+  - CLR-SRC0047
+  - CLR-SRC0053
+  input_reference_display: '[47], [53]'
+  support_scope_and_limit: Catalogue Value is a stated standard, not the entirety
+    of axiological value.
+  input_source_locations: '[53] secs. 1–2; [47] abstract'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-129
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0130
+  input_label: View
+  support_type: B
+  source_ids:
+  - CLR-SRC0012
+  - CLR-SRC0043
+  input_reference_display: '[12], [43]'
+  support_scope_and_limit: Selected external presentation, not a mental perspective.
+  input_source_locations: '[12] sec. 3; [43] ch. 12 contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-130
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0131
+  input_label: Viewpoint
+  support_type: P
+  source_ids:
+  - CLR-SRC0018
+  - CLR-SRC0043
+  input_reference_display: '[18], [43]'
+  support_scope_and_limit: Perspective/view literature located; model-specific viewpoint
+    contract needs a precise passage.
+  input_source_locations: '[18] modeling perspectives; [43] ch. 12 contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-131
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0132
+  input_label: Visual
+  support_type: B
+  source_ids:
+  - CLR-SRC0034
+  - CLR-SRC0043
+  input_reference_display: '[34], [43]'
+  support_scope_and_limit: Project information-artifact categories for visual or presented
+    form.
+  input_source_locations: '[43] chs. 1 and 5 contents; [34] sec. 1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-132
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0133
+  input_label: Visualization
+  support_type: D
+  source_ids:
+  - CLR-SRC0034
+  - CLR-SRC0043
+  input_reference_display: '[34], [43]'
+  support_scope_and_limit: Visual representations of data/models; current activity
+    scope retained.
+  input_source_locations: '[43] ch. 1 contents; [34] sec. 1'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-133
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0134
+  input_label: Vocabulary
+  support_type: D
+  source_ids:
+  - CLR-SRC0036
+  - CLR-SRC0037
+  - CLR-SRC0039
+  input_reference_display: '[36], [37], [39]'
+  support_scope_and_limit: Terminology, designations, definitions and organized concept
+    schemes.
+  input_source_locations: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-134
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0135
+  input_label: Vocabulary Elicitation
+  support_type: B
+  source_ids:
+  - CLR-SRC0016
+  - CLR-SRC0037
+  input_reference_display: '[16], [37]'
+  support_scope_and_limit: Systematic terminology work and acquisition; exact project
+    process names are not established by these sources.
+  input_source_locations: '[37] official scope; [16] methodology chapter contents'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-135
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0136
+  input_label: Well-Definedness
+  support_type: B
+  source_ids:
+  - CLR-SRC0008
+  - CLR-SRC0029
+  input_reference_display: '[8], [29]'
+  support_scope_and_limit: Project criterion based on clarity and definitional discipline.
+  input_source_locations: '[8] design criteria; [29] secs. 1–2'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-136
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed
+- concept_id: CLR-C0137
+  input_label: Whole
+  support_type: B
+  source_ids:
+  - CLR-SRC0007
+  - CLR-SRC0032
+  input_reference_display: '[7], [32]'
+  support_scope_and_limit: Mereology supports parthood; project classes are roles
+    and descriptions, not automatically physical parts.
+  input_source_locations: '[32] secs. 1–2; [7] ch. 5'
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-137
+  passage_verification: not_reverified_in_import
+  typing_approval: not_assessed

@@ -38,8 +38,9 @@ traceability:
   concept_registry: model/concepts.yaml
   relation_registry: model/relations.yaml and model/generalizations.yaml
   domain_or_module_registry: model/domains.yaml
-  competency_questions: requirements/competency-questions.yaml (planned)
-  evidence_provenance: evidence/ (planned) and input manifest
+  competency_questions: requirements/competency-questions.yaml
+  evidence_provenance: evidence/source-register.yaml and concept-support.yaml; no
+    fresh full-text verification
   mappings: traceability/migration/entity-ledger.yaml (candidates only)
 validation_and_evaluation:
   selected_layers:

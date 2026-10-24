@@ -4,14 +4,14 @@
     {
       "path": ".research/manifest.yaml",
       "result": "PASS",
-      "input_sha256": "c1fbc68f6f2076a259658701f4b0733ce9ded48462e9bcab8af4ec5d18436c22",
+      "input_sha256": "c05b038e9d752472184799c1ba9f9a3aef0276e832c9c51ef0bcc0e66eb286dc",
       "negative_wrong_contract_version": "rejected",
       "upstream_schema_sha256": "af8ac58a29600b2ce97625ccf06e11bb881a4a42befe512fb325ef9047de03b3"
     },
     {
       "path": ".research/ogcm-rf-profile.yaml",
       "result": "PASS",
-      "input_sha256": "04063ea1809a4abc7134fc65bf2fbd99192b5a75e7606eb8238cd30862874118",
+      "input_sha256": "18e78f353a3ec5050682c20faf286044b37f1ae9df88042fc37bb49eb9a57d8a",
       "negative_wrong_contract_version": "rejected",
       "upstream_schema_sha256": "edce65cdd1ee0896de5068ce6e5a5429039713d837e302c23f07a8acdd7cba91"
     }
