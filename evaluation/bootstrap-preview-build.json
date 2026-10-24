@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_commit": "223df578777afa38743fa20c8c33ace78a8fbfd6",
+  "repeat_build_identical": true,
+  "archive_readback": "PASS",
+  "archive_compression": "stored; avoids zlib-dependent output differences",
+  "workflow_scope": "explicit request path on main; no recurring agent or general semantic CI",
+  "assets": {
+    "SHA256SUMS": "ceae8c2de1a7e29fe18d13da2b50a78197896c4f57f386d210e18c8e67398a20",
+    "clariceptify-v0.1.0-alpha.1-bootstrap.zip": "32440104cc97f04db62d133e70156f3c9b1e10e2d25ab83e339d11a9fdb78d99",
+    "PACKAGE-MANIFEST.json": "3f9a1574ff5c5f0bbc0e678a2b7e9722553716a1235893bda1f08a699936ce2f"
+  }
+}
