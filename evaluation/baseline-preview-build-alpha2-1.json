@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tag": "v0.1.0-alpha.2.1",
+  "source_commit": "fe347d2e62262f1cd43558d2330438f433f64f1d",
+  "source_tree": "5ac2c0e112081479a898d58aa831e55891dcd1ec",
+  "source_files": 76,
+  "archive_members": 79,
+  "checks": [
+    "check_repository_language",
+    "check_bootstrap",
+    "check_model_import",
+    "check_requirements",
+    "check_source_support"
+  ],
+  "assets": {
+    "clariceptify-v0.1.0-alpha.2.1-baseline.zip": "51d8d4419aa81a2747b713e8dd8ba441a9c5a22a0378d43052ca7653c600fe8e",
+    "PACKAGE-MANIFEST.json": "fb3d7e3bd4b3b4d749db0bb565a23a4346fa324e943b17416eba8072340f409d",
+    "CHECK-RESULTS.json": "540874280ad716817a4fdfe28542fcb3f13c12ea8ef53656faa198eceab58245",
+    "SHA256SUMS": "337493ef3d7fc54f506e905697833f10bfbcd096d8049442b26a078339e5118f"
+  },
+  "repeat_build": "all_four_assets_byte_identical",
+  "cross_environment_replay": "Actual alpha.2 local and GitHub reports serialize identically after canonicalization; canonical bytes match the new build.",
+  "regression": "CLR-REL-ORDER-001; preserve check multiplicity and all 98 descriptions",
+  "all_source_files_unchanged": true
+}

@@ -3,14 +3,14 @@ name: Publish explicit baseline checkpoint
 on:
   push:
     branches: [main]
-    paths: ['releases/v0.1.0-alpha.2/request.json']
+    paths: ['releases/v0.1.0-alpha.2.1/request.json']
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: baseline-preview-v0.1.0-alpha.2
+  group: baseline-preview-v0.1.0-alpha.2.1
   cancel-in-progress: false
 
 jobs:
@@ -28,24 +28,24 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements-dev.txt
       - name: Build and read back the frozen input baseline
-        run: python tools/build_baseline_preview.py releases/v0.1.0-alpha.2/request.json dist-baseline
+        run: python tools/build_baseline_preview.py releases/v0.1.0-alpha.2.1/request.json dist-baseline
       - name: Publish a new immutable prerelease payload
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          if gh release view v0.1.0-alpha.2 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+          if gh release view v0.1.0-alpha.2.1 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             echo 'Release already exists; refuse to replace its files.'
             exit 1
           fi
-          if git rev-parse -q --verify refs/tags/v0.1.0-alpha.2 >/dev/null; then
+          if git rev-parse -q --verify refs/tags/v0.1.0-alpha.2.1 >/dev/null; then
             echo 'Tag already exists; refuse to adopt or move it.'
             exit 1
           fi
-          gh release create v0.1.0-alpha.2 dist-baseline/* \
+          gh release create v0.1.0-alpha.2.1 dist-baseline/* \
             --repo "$GITHUB_REPOSITORY" \
             --target fe347d2e62262f1cd43558d2330438f433f64f1d \
-            --title 'v0.1.0-alpha.2 — Controlled candidate baseline' \
-            --notes-file releases/v0.1.0-alpha.2/RELEASE-NOTES.md \
+            --title 'v0.1.0-alpha.2.1 — Controlled candidate baseline' \
+            --notes-file releases/v0.1.0-alpha.2.1/RELEASE-NOTES.md \
             --prerelease --latest=false
