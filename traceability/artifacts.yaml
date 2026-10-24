@@ -1,0 +1,648 @@
+schema_version: 0.1.0
+asset_id: CLR-TRACE-ARTIFACTS
+snapshot_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+auxiliary_inputs:
+- path: evaluation/baseline-preview-publication-alpha2-1.json
+  sha256: 0c6447a4f88f6706c516349fc0b78147fa48e9d1a58029abb0d940c61e90e688
+authority: Project artifact metadata, distinct from the modeled conceptualization
+  classes.
+identity_policy: Stable asset IDs survive locator changes. Family membership and new/retired
+  artifacts require explicit disposition.
+fingerprint_policy: File SHA-256 hashes raw stored bytes. Collection SHA-256 hashes
+  UTF-8 JSON of the sorted path-to-digest map using compact separators. It is a revision
+  fingerprint, not an entity identifier.
+self_binding: This register and its new schema/checker are versioned by their containing
+  commit and later package manifest; they are excluded from their own frozen input
+  fingerprint to avoid recursion.
+package_binding: Engineering package revisions are tracked separately in releases/
+  requests and evaluation/*publication*.json; CLR-PACKAGE is not the model semantic
+  version.
+records:
+- asset_id: CLR-BIBLIOGRAPHY
+  kind: source-evidence
+  owner: ArazSaieArasi3/Clariceptify:evidence
+  status: recorded_baseline
+  location_kind: file
+  location: evidence/bibliography.md
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 5f40248a554ee45badaa33cb7fde8fcd8000609f2b8b3b6160176db486e3c4a9
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-CONCEPT-SUPPORT
+  kind: source-evidence
+  owner: ArazSaieArasi3/Clariceptify:evidence
+  status: recorded_baseline
+  location_kind: file
+  location: evidence/concept-support.yaml
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-DOC-AUTHORITY
+  kind: documentation
+  owner: ArazSaieArasi3/Clariceptify:docs
+  status: recorded_baseline
+  location_kind: file
+  location: docs/decisions/artifact-authority.md
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-DOC-R1-SCOPE
+  kind: documentation
+  owner: ArazSaieArasi3/Clariceptify:docs
+  status: recorded_baseline
+  location_kind: file
+  location: docs/decisions/r1-scope.md
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 2617872787e041a3174fcaa01abc93e1072aba06acd4de2d6f8931ef3a5178f6
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-DOC-RELEASE-POLICY
+  kind: documentation
+  owner: ArazSaieArasi3/Clariceptify:docs
+  status: recorded_baseline
+  location_kind: file
+  location: docs/decisions/release-policy.md
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 55c619764bb6603e0ad8c5952bfb3ee0ed50600d72cb7de3968cdd4b55f68beb
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-DOC-REPO
+  kind: documentation
+  owner: ArazSaieArasi3/Clariceptify:docs
+  status: candidate_collection
+  location_kind: collection
+  location: null
+  component_ids:
+  - CLR-DOC-AUTHORITY
+  - CLR-DOC-VERSIONS
+  - CLR-DOC-RELEASE-POLICY
+  - CLR-DOC-R1-SCOPE
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 7db3089b47d13bf348308f62502dcfc2da9a875851649ec55e312318e8c14fa4
+    fingerprint_scheme: sha256-path-digest-map
+  applicability: Composition fingerprint; not a semantic release number or inherited
+    assessment.
+- asset_id: CLR-DOC-SPEC
+  kind: documentation
+  owner: ArazSaieArasi3/Clariceptify:documentation
+  status: not_generated
+  location_kind: unavailable
+  location: null
+  component_ids: []
+  version:
+    revision: null
+    semantic_version: null
+    source_ref: null
+    content_sha256: null
+    fingerprint_scheme: not_available
+  applicability: Unavailable at this storage snapshot; do not infer implementation
+    or acceptance.
+- asset_id: CLR-DOC-VERSIONS
+  kind: documentation
+  owner: ArazSaieArasi3/Clariceptify:docs
+  status: recorded_baseline
+  location_kind: file
+  location: docs/decisions/artifact-versioning.md
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-ALPHA2-1-BUILD
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/baseline-preview-build-alpha2-1.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: e51fe2ea4c6eb3b9112eaa3d40326718380d78a29b42a5380ce21b7526c4370d
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-ALPHA2-READBACK
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/baseline-preview-publication.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 617f730cef04002e8ee0584e16cd64d99303ff00840e84e3e8cc21ba8cac24e1
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-MODEL-IMPORT
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/model-import-report.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 8a813749945552ade734f4dc3543a4e9b0881483a52443ee806b8775fef4036e
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-MODEL-STRUCTURE
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/model-structure-report.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: d01dfe4ade3d7fc2c7e89509a415a38f0d4ef1aaa48c514b507a778fa81a20a6
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-RELATED-REGISTRATION
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/related-work-registration.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: f20fbb175f5645c7b790d9a7e0648a879a37e9b0bf43c52acb1d0d72c53e2756
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-REQUIREMENTS
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/requirements-integrity.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 30b3c8354dd1d82ad29214560a7d6edff7b49121d2e00101458c73bb45091651
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVAL-SOURCE-SUPPORT
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: recorded_baseline
+  location_kind: file
+  location: evaluation/source-support-integrity.json
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 2f860e5eb3dcbdeeb2a48800e07ecdddfc40a09b2937255b396683fc3c1ff13d
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-EVALUATION
+  kind: evaluation
+  owner: ArazSaieArasi3/Clariceptify:evaluation
+  status: candidate_collection
+  location_kind: collection
+  location: null
+  component_ids:
+  - CLR-EVAL-MODEL-IMPORT
+  - CLR-EVAL-MODEL-STRUCTURE
+  - CLR-EVAL-REQUIREMENTS
+  - CLR-EVAL-SOURCE-SUPPORT
+  - CLR-EVAL-RELATED-REGISTRATION
+  - CLR-EVAL-ALPHA2-READBACK
+  - CLR-EVAL-ALPHA2-1-BUILD
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: d5cf7c3125bbfe33d03d5eee8b9f395c0fd9f9e6e5f0435c9f2bdf34811a1a74
+    fingerprint_scheme: sha256-path-digest-map
+  applicability: Composition fingerprint; not a semantic release number or inherited
+    assessment.
+- asset_id: CLR-FIG-FULL
+  kind: diagram
+  owner: ArazSaieArasi3/Clariceptify:diagram
+  status: not_materialized
+  location_kind: unavailable
+  location: null
+  component_ids: []
+  version:
+    revision: null
+    semantic_version: null
+    source_ref: null
+    content_sha256: null
+    fingerprint_scheme: not_available
+  applicability: Unavailable at this storage snapshot; do not infer implementation
+    or acceptance.
+- asset_id: CLR-INPUT-INTEGRITY
+  kind: migration
+  owner: ArazSaieArasi3/Clariceptify:traceability
+  status: recorded_baseline
+  location_kind: file
+  location: traceability/migration/input-integrity.yaml
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: c683e54940b501be551e637ef858ac35e6e2056b328043c339f772f40889ef35
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-INPUT-MANIFEST
+  kind: migration
+  owner: ArazSaieArasi3/Clariceptify:traceability
+  status: recorded_baseline
+  location_kind: file
+  location: traceability/migration/source-manifest.yaml
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: f475dc3ddf297e9a7f5f34e5422e1d8070f825f396cae6c8f98b79b4813dcb5b
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-MANUSCRIPT
+  kind: manuscript
+  owner: ArazSaieArasi3/Clariceptify:manuscript
+  status: external_draft_not_distributed
+  location_kind: unavailable
+  location: null
+  component_ids: []
+  version:
+    revision: null
+    semantic_version: null
+    source_ref: null
+    content_sha256: null
+    fingerprint_scheme: not_available
+  applicability: Draft input SRC-ARTICLE and its inherited digest remain in the input
+    manifest; no current synchronized manuscript is materialized here.
+- asset_id: CLR-MIGRATION
+  kind: migration
+  owner: ArazSaieArasi3/Clariceptify:traceability
+  status: candidate_collection
+  location_kind: collection
+  location: null
+  component_ids:
+  - CLR-MIGRATION-LEDGER
+  - CLR-INPUT-MANIFEST
+  - CLR-INPUT-INTEGRITY
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 539bf68ccab85dae60d002b40d68e2fe30f127db69a178763ef7c766e4b06242
+    fingerprint_scheme: sha256-path-digest-map
+  applicability: Composition fingerprint; not a semantic release number or inherited
+    assessment.
+- asset_id: CLR-MIGRATION-LEDGER
+  kind: migration
+  owner: ArazSaieArasi3/Clariceptify:traceability
+  status: recorded_baseline
+  location_kind: file
+  location: traceability/migration/entity-ledger.yaml
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 45a40de32998b736a1f4ea66ff7f137e282992aee0d13aaad64ae28b41bc3a8a
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-MODEL
+  kind: conceptual-model
+  owner: ArazSaieArasi3/Clariceptify:model
+  status: candidate_collection
+  location_kind: collection
+  location: null
+  component_ids:
+  - CLR-MODEL-CONCEPT
+  - CLR-MODEL-DOMAIN
+  - CLR-MODEL-RELATION
+  - CLR-MODEL-GENERALIZATION
+  - CLR-MODEL-CONSTRAINT
+  version:
+    revision: input-r1-rev1
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: aa88a84e785dfb0efaaa206cce2e40060066e45af6caf1df3c88763dce3a3c80
+    fingerprint_scheme: sha256-path-digest-map
+  applicability: Composition fingerprint; not a semantic release number or inherited
+    assessment.
+- asset_id: CLR-MODEL-CONCEPT
+  kind: model-registry
+  owner: ArazSaieArasi3/Clariceptify:model
+  status: imported_candidate
+  location_kind: file
+  location: model/concepts.yaml
+  component_ids: []
+  version:
+    revision: input-r1-rev1
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-MODEL-CONSTRAINT
+  kind: model-registry
+  owner: ArazSaieArasi3/Clariceptify:model
+  status: imported_candidate
+  location_kind: file
+  location: model/constraints.yaml
+  component_ids: []
+  version:
+    revision: input-r1-rev1
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-MODEL-DOMAIN
+  kind: model-registry
+  owner: ArazSaieArasi3/Clariceptify:model
+  status: imported_candidate
+  location_kind: file
+  location: model/domains.yaml
+  component_ids: []
+  version:
+    revision: input-r1-rev1
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-MODEL-GENERALIZATION
+  kind: model-registry
+  owner: ArazSaieArasi3/Clariceptify:model
+  status: imported_candidate
+  location_kind: file
+  location: model/generalizations.yaml
+  component_ids: []
+  version:
+    revision: input-r1-rev1
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-MODEL-RELATION
+  kind: model-registry
+  owner: ArazSaieArasi3/Clariceptify:model
+  status: imported_candidate
+  location_kind: file
+  location: model/relations.yaml
+  component_ids: []
+  version:
+    revision: input-r1-rev1
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-ONTOLOGY-FORMAL
+  kind: formal-ontology
+  owner: ArazSaieArasi3/Clariceptify:formal-ontology
+  status: absent
+  location_kind: unavailable
+  location: null
+  component_ids: []
+  version:
+    revision: null
+    semantic_version: null
+    source_ref: null
+    content_sha256: null
+    fingerprint_scheme: not_available
+  applicability: Unavailable at this storage snapshot; do not infer implementation
+    or acceptance.
+- asset_id: CLR-ORSD
+  kind: requirements
+  owner: ArazSaieArasi3/Clariceptify:requirements
+  status: candidate_collection
+  location_kind: collection
+  location: null
+  component_ids:
+  - CLR-ORSD-FR
+  - CLR-ORSD-QR
+  - CLR-ORSD-CQ
+  - CLR-ORSD-FUTURE
+  - CLR-ORSD-SCOPE
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: c0df7cf15d12d1506e52f71d46bfafcbae60cbbebb6e4a1d10f4a734afe0263a
+    fingerprint_scheme: sha256-path-digest-map
+  applicability: Composition fingerprint; not a semantic release number or inherited
+    assessment.
+- asset_id: CLR-ORSD-CQ
+  kind: requirements
+  owner: ArazSaieArasi3/Clariceptify:requirements
+  status: recorded_baseline
+  location_kind: file
+  location: requirements/competency-questions.yaml
+  component_ids: []
+  version:
+    revision: ORSD 0.1; 2026-10-24
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-ORSD-FR
+  kind: requirements
+  owner: ArazSaieArasi3/Clariceptify:requirements
+  status: recorded_baseline
+  location_kind: file
+  location: requirements/functional.yaml
+  component_ids: []
+  version:
+    revision: ORSD 0.1; 2026-10-24
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-ORSD-FUTURE
+  kind: requirements
+  owner: ArazSaieArasi3/Clariceptify:requirements
+  status: recorded_baseline
+  location_kind: file
+  location: requirements/future.yaml
+  component_ids: []
+  version:
+    revision: ORSD 0.1; 2026-10-24
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-ORSD-QR
+  kind: requirements
+  owner: ArazSaieArasi3/Clariceptify:requirements
+  status: recorded_baseline
+  location_kind: file
+  location: requirements/quality.yaml
+  component_ids: []
+  version:
+    revision: ORSD 0.1; 2026-10-24
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-ORSD-SCOPE
+  kind: requirements
+  owner: ArazSaieArasi3/Clariceptify:requirements
+  status: recorded_baseline
+  location_kind: file
+  location: requirements/scope-and-scenarios.yaml
+  component_ids: []
+  version:
+    revision: ORSD 0.1; 2026-10-24
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-PACKAGE
+  kind: release-package
+  owner: ArazSaieArasi3/Clariceptify:releases
+  status: published_prerelease
+  location_kind: external_asset
+  location: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2.1/clariceptify-v0.1.0-alpha.2.1-baseline.zip
+  component_ids: []
+  version:
+    revision: v0.1.0-alpha.2.1
+    semantic_version: null
+    source_ref: tag:v0.1.0-alpha.2.1
+    content_sha256: 51d8d4419aa81a2747b713e8dd8ba441a9c5a22a0378d43052ca7653c600fe8e
+    fingerprint_scheme: sha256-download
+  applicability: Published engineering package, distinct from model semantic acceptance;
+    exact source membership is in its manifest.
+- asset_id: CLR-RDB
+  kind: relational-projection
+  owner: ArazSaieArasi3/Clariceptify:relational-projection
+  status: absent
+  location_kind: unavailable
+  location: null
+  component_ids: []
+  version:
+    revision: null
+    semantic_version: null
+    source_ref: null
+    content_sha256: null
+    fingerprint_scheme: not_available
+  applicability: Unavailable at this storage snapshot; do not infer implementation
+    or acceptance.
+- asset_id: CLR-RELATED-CANDIDATES
+  kind: source-evidence
+  owner: ArazSaieArasi3/Clariceptify:evidence
+  status: recorded_baseline
+  location_kind: file
+  location: evidence/related-work/candidate-register.yaml
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-SOURCE-REGISTER
+  kind: source-evidence
+  owner: ArazSaieArasi3/Clariceptify:evidence
+  status: recorded_baseline
+  location_kind: file
+  location: evidence/source-register.yaml
+  component_ids: []
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+    fingerprint_scheme: sha256-file
+  applicability: Storage revision only. Semantic acceptance and evaluation applicability
+    require their own evidence.
+- asset_id: CLR-SOURCES
+  kind: source-evidence
+  owner: ArazSaieArasi3/Clariceptify:evidence
+  status: candidate_collection
+  location_kind: collection
+  location: null
+  component_ids:
+  - CLR-SOURCE-REGISTER
+  - CLR-CONCEPT-SUPPORT
+  - CLR-BIBLIOGRAPHY
+  - CLR-RELATED-CANDIDATES
+  version:
+    revision: storage-snapshot
+    semantic_version: null
+    source_ref: commit:c5db7525fa3989fce292c6961e686dc4f25c9314
+    content_sha256: 4f62732d29e94ffdc8ea87e48e0ff5c79b1924aa697d5ee9edd8e68f6feb09f6
+    fingerprint_scheme: sha256-path-digest-map
+  applicability: Composition fingerprint; not a semantic release number or inherited
+    assessment.

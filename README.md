@@ -6,7 +6,7 @@ Clariceptify develops a conceptual model of purposeful conceptualization and its
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
-Latest engineering prerelease: [v0.1.0-alpha.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.1). It freezes the earlier contracts station; current main already includes the subsequent candidate model-table import. See the [changelog](CHANGELOG.md) and [publication readback](evaluation/bootstrap-preview-publication.json).
+Latest engineering prerelease: [v0.1.0-alpha.2.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2.1). It freezes the imported candidate model, retrospective requirements/CQ contracts and qualified source baseline at fe347d2e62262f1cd43558d2330438f433f64f1d. It corrects check-report ordering in alpha.2 without changing scientific input. Alpha.1 and alpha.2 remain unchanged. See the [changelog](CHANGELOG.md) and [public readback](evaluation/baseline-preview-publication-alpha2-1.json).
 
 ## Start here
 
@@ -15,6 +15,7 @@ Latest engineering prerelease: [v0.1.0-alpha.1](https://github.com/ArazSaieArasi
 - [Imported model registries](model/) and [import checks](evaluation/model-structure-report.json)
 - [Requirements and CQ contracts](requirements/) and [qualified source support](evidence/)
 - [Model schemas](model/schema/) and [artifact implementation status](docs/artifact-status.yaml)
+- [Artifact identities and typed-link contracts](traceability/)
 - [Input manifest](traceability/migration/source-manifest.yaml), [integrity](traceability/migration/input-integrity.yaml) and [candidate entity ledger](traceability/migration/entity-ledger.yaml)
 - [Identifiers](docs/decisions/stable-identifiers.md), [artifact versions](docs/decisions/artifact-versioning.md), [release policy](docs/decisions/release-policy.md)
 - [Bootstrap verification](evaluation/bootstrap-report.json) and [local check](tools/README.md)

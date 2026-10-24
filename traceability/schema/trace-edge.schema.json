@@ -1,0 +1,547 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CLR-TE[0-9]{6}$"
+    },
+    "link_type": {
+      "enum": [
+        "belongs_to_domain",
+        "association_source",
+        "association_target",
+        "generalization_child",
+        "generalization_parent",
+        "constraint_mention_candidate",
+        "cites",
+        "candidate_support",
+        "requirement_witness_candidate",
+        "cq_witness_candidate",
+        "derived_from_input"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9-]+$"
+        },
+        "kind": {
+          "enum": [
+            "artifact",
+            "association",
+            "concept",
+            "constraint",
+            "cq",
+            "domain",
+            "generalization",
+            "input",
+            "reference",
+            "requirement"
+          ]
+        },
+        "asset_id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9-]+$"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "asset_id"
+      ],
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9-]+$"
+        },
+        "kind": {
+          "enum": [
+            "artifact",
+            "association",
+            "concept",
+            "constraint",
+            "cq",
+            "domain",
+            "generalization",
+            "input",
+            "reference",
+            "requirement"
+          ]
+        },
+        "asset_id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9-]+$"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "asset_id"
+      ],
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "recorded",
+        "candidate",
+        "inherited_qualification"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualification": {
+      "enum": [
+        null,
+        "D",
+        "B",
+        "P"
+      ]
+    },
+    "version_binding": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "object",
+          "properties": {
+            "ref": {
+              "type": "string",
+              "pattern": "^(commit:[0-9a-f]{40}|sha256:[0-9a-f]{64}|tag:v[^ ]+)$"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "ref",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "target": {
+          "type": "object",
+          "properties": {
+            "ref": {
+              "type": "string",
+              "pattern": "^(commit:[0-9a-f]{40}|sha256:[0-9a-f]{64}|tag:v[^ ]+)$"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "ref",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "source",
+        "target"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_locators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "link_type",
+    "source",
+    "target",
+    "status",
+    "rationale",
+    "qualification",
+    "version_binding",
+    "evidence_locators"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "belongs_to_domain"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "domain"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "association_source"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "association"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "association_target"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "association"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "generalization_child"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "generalization"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "generalization_parent"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "generalization"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "constraint_mention_candidate"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "constraint"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "candidate"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "cites"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "reference"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "candidate_support"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "reference"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "inherited_qualification"
+          },
+          "qualification": {
+            "enum": [
+              "D",
+              "B",
+              "P"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "requirement_witness_candidate"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "requirement"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "candidate"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "cq_witness_candidate"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "cq"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "concept"
+              }
+            }
+          },
+          "status": {
+            "const": "candidate"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "link_type": {
+            "const": "derived_from_input"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "kind": {
+                "const": "artifact"
+              }
+            }
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "input"
+              }
+            }
+          },
+          "status": {
+            "const": "recorded"
+          },
+          "qualification": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Initial typed project-traceability edge; proves/satisfies are forbidden"
+}

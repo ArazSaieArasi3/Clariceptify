@@ -1,0 +1,65 @@
+schema_version: 0.1.0
+asset_id: CLR-TRACE-LINK-TYPES
+authority: Project traceability metadata; not instances of the ontology's Relation class.
+status_policy: Recorded structure or inherited qualifications never establish requirement satisfaction, proof or semantic adequacy.
+version_policy: Bind both endpoints to their containing artifact revision and SHA-256. Never resolve an old edge against moving main without revalidation.
+types:
+  belongs_to_domain:
+    source_kind: concept
+    target_kind: domain
+    status: recorded
+    meaning: Primary-domain membership copied from the authoritative concept registry.
+  association_source:
+    source_kind: association
+    target_kind: concept
+    status: recorded
+    meaning: Source endpoint of the named association record, not an inferred OWL axiom.
+  association_target:
+    source_kind: association
+    target_kind: concept
+    status: recorded
+    meaning: Target endpoint of the named association record.
+  generalization_child:
+    source_kind: generalization
+    target_kind: concept
+    status: recorded
+    meaning: Specialized child endpoint; preserve the source record's direction.
+  generalization_parent:
+    source_kind: generalization
+    target_kind: concept
+    status: recorded
+    meaning: General parent endpoint; no completeness/disjointness axiom inferred.
+  constraint_mention_candidate:
+    source_kind: constraint
+    target_kind: concept
+    status: candidate
+    meaning: Lexical mention candidate only; not complete or adjudicated constraint coverage.
+  cites:
+    source_kind: concept
+    target_kind: reference
+    status: recorded
+    meaning: A bibliographic pointer, not proof of passage support or correct typing.
+  candidate_support:
+    source_kind: reference
+    target_kind: concept
+    status: inherited_qualification
+    meaning: Inherited D/B/P screening qualification; passage verification and typing remain unassessed.
+  requirement_witness_candidate:
+    source_kind: requirement
+    target_kind: concept
+    status: candidate
+    meaning: A proposed witness to inspect, not satisfaction of AC/NAC.
+  cq_witness_candidate:
+    source_kind: cq
+    target_kind: concept
+    status: candidate
+    meaning: A proposed conceptual witness, not an executed query or computed answer.
+  derived_from_input:
+    source_kind: artifact
+    target_kind: input
+    status: recorded
+    meaning: Declared input provenance; byte parity and permission require separate evidence.
+reserved_not_permitted:
+  proves: Requires a separately accepted proof protocol, exact premises/conclusion and actual proof evidence; not expressible by this initial edge schema.
+  satisfies: Requires execution/adjudication of the actual requirement contract and adverse case; not expressible by this initial edge schema.
+unknown_policy: Unsupported links are not invented. Missing evidence remains unassessed or blocked; extend the contract through an explicit versioned change.

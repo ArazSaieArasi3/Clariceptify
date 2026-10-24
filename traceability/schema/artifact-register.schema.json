@@ -1,0 +1,363 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "asset_id": {
+      "const": "CLR-TRACE-ARTIFACTS"
+    },
+    "snapshot_ref": {
+      "type": "string",
+      "pattern": "^(commit:[0-9a-f]{40}|sha256:[0-9a-f]{64}|tag:v[^ ]+)$"
+    },
+    "auxiliary_inputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fingerprint_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "self_binding": {
+      "type": "string",
+      "minLength": 1
+    },
+    "package_binding": {
+      "type": "string",
+      "minLength": 1
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "pattern": "^CLR-[A-Z0-9-]+$"
+          },
+          "kind": {
+            "enum": [
+              "conceptual-model",
+              "model-registry",
+              "requirements",
+              "source-evidence",
+              "migration",
+              "evaluation",
+              "diagram",
+              "documentation",
+              "manuscript",
+              "formal-ontology",
+              "relational-projection",
+              "release-package"
+            ]
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "imported_candidate",
+              "recorded_baseline",
+              "candidate_collection",
+              "not_materialized",
+              "not_generated",
+              "external_draft_not_distributed",
+              "absent",
+              "published_prerelease"
+            ]
+          },
+          "location_kind": {
+            "enum": [
+              "file",
+              "collection",
+              "unavailable",
+              "external_asset"
+            ]
+          },
+          "location": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "component_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^CLR-[A-Z0-9-]+$"
+            },
+            "uniqueItems": true
+          },
+          "version": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "semantic_version": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "source_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^(commit:[0-9a-f]{40}|sha256:[0-9a-f]{64}|tag:v[^ ]+)$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "content_sha256": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fingerprint_scheme": {
+                "enum": [
+                  "sha256-file",
+                  "sha256-path-digest-map",
+                  "sha256-download",
+                  "not_available"
+                ]
+              }
+            },
+            "required": [
+              "revision",
+              "semantic_version",
+              "source_ref",
+              "content_sha256",
+              "fingerprint_scheme"
+            ],
+            "additionalProperties": false
+          },
+          "applicability": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "asset_id",
+          "kind",
+          "owner",
+          "status",
+          "location_kind",
+          "location",
+          "component_ids",
+          "version",
+          "applicability"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "location_kind": {
+                  "const": "unavailable"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "location": {
+                  "type": "null"
+                },
+                "component_ids": {
+                  "maxItems": 0
+                },
+                "version": {
+                  "properties": {
+                    "content_sha256": {
+                      "type": "null"
+                    },
+                    "source_ref": {
+                      "type": "null"
+                    },
+                    "revision": {
+                      "type": "null"
+                    },
+                    "fingerprint_scheme": {
+                      "const": "not_available"
+                    }
+                  }
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "version": {
+                  "properties": {
+                    "content_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "source_ref": {
+                      "type": "string",
+                      "pattern": "^(commit:[0-9a-f]{40}|sha256:[0-9a-f]{64}|tag:v[^ ]+)$"
+                    },
+                    "revision": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "location_kind": {
+                  "const": "collection"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "location": {
+                  "type": "null"
+                },
+                "component_ids": {
+                  "minItems": 1
+                },
+                "version": {
+                  "properties": {
+                    "fingerprint_scheme": {
+                      "const": "sha256-path-digest-map"
+                    }
+                  }
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "component_ids": {
+                  "maxItems": 0
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "location_kind": {
+                  "const": "file"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "location": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "version": {
+                  "properties": {
+                    "fingerprint_scheme": {
+                      "const": "sha256-file"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "location_kind": {
+                  "const": "external_asset"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "location": {
+                  "type": "string",
+                  "pattern": "^https://"
+                },
+                "version": {
+                  "properties": {
+                    "fingerprint_scheme": {
+                      "const": "sha256-download"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "asset_id",
+    "snapshot_ref",
+    "auxiliary_inputs",
+    "authority",
+    "identity_policy",
+    "fingerprint_policy",
+    "self_binding",
+    "package_binding",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clariceptify artifact identity and storage-revision register"
+}
