@@ -14,6 +14,8 @@ OUTPUTS = ['model/' + name + '.yaml' for name in
     'requirements/' + name + '.yaml' for name in
     ['functional', 'quality', 'competency-questions', 'future', 'scope-and-scenarios']] + [
     'evidence/source-register.yaml', 'evidence/concept-support.yaml', 'evidence/bibliography.md']
+if (ROOT / 'traceability/requirements-model.yaml').exists():
+    OUTPUTS.append('traceability/requirements-model.yaml')
 
 
 def sha(path):
@@ -40,6 +42,13 @@ def reconstruct(spec, orsd, destination):
         descriptor.loader.exec_module(module)
         module.ROOT = destination
         module.generate(source)
+    if (ROOT / 'traceability/requirements-model.yaml').exists():
+        descriptor = importlib.util.spec_from_file_location('isolated_witnesses', ROOT / 'tools/import_requirement_witnesses.py')
+        module = importlib.util.module_from_spec(descriptor)
+        descriptor.loader.exec_module(module)
+        module.ROOT = destination
+        payload = module.generate(orsd)
+        (destination / 'traceability/requirements-model.yaml').write_text(yaml.safe_dump(payload, sort_keys=False, allow_unicode=True))
 
 
 def check(spec, orsd):
@@ -95,13 +104,15 @@ def check(spec, orsd):
             'source_inventory_dispositions': inventory,
             'intentional_projection_differences': [
                 {'id': 'CLR-MIG-D001', 'difference': 'DOCX tables/paragraphs become controlled YAML and bibliography views.',
-                 'disposition': 'accepted extraction/serialization change; all 13 governed outputs are byte-identical to isolated re-extraction'},
+                 'disposition': 'accepted extraction/serialization change; all compared governed outputs are byte-identical to isolated re-extraction'},
                 {'id': 'CLR-MIG-D002', 'difference': 'One source relationship table partitions into associations and directed generalizations.',
                  'disposition': 'preserve 174 association rows and 122 generalization rows, endpoints, multiplicities and locators; no extra partition axioms'},
                 {'id': 'CLR-MIG-D003', 'difference': 'Input display names/reference numbers receive stable local record IDs.',
                  'disposition': 'controlled record-key allocation; not adjudicated historical identity or source replacement'},
                 {'id': 'CLR-MIG-D004', 'difference': 'ORSD table 6 contains 30 candidate witness rows not in the original requirements import.',
-                 'disposition': 'explicit follow-up #34; missing witness links do not establish unsatisfied or satisfied needs'},
+                 'disposition': ('resolved by #34 in traceability/requirements-model.yaml; candidates remain unassessed'
+                                 if (ROOT / 'traceability/requirements-model.yaml').exists()
+                                 else 'explicit follow-up #34; missing witness links do not establish unsatisfied or satisfied needs')},
                 {'id': 'CLR-MIG-D005', 'difference': 'ORSD table 9 repeats the 21 domain vocabulary views.',
                  'disposition': 'secondary ORSD representation; model/domain and membership authority remains the selected specification; not a second editor'},
                 {'id': 'CLR-MIG-D006', 'difference': 'Stage-1 support was imported from the actual specification, not the separate JSON bytes.',

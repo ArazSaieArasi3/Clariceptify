@@ -10,6 +10,7 @@ python tools/check_requirements.py
 python tools/check_source_support.py
 python tools/check_trace_contracts.py
 python tools/check_generated_links.py
+python tools/check_requirement_witnesses.py
 ```
 
 These checks need no private repository or raw document access. They check record/graph/contract integrity, not adequacy or independent acceptance. Reports live under evaluation/.
@@ -23,3 +24,5 @@ The language guard checks current file paths and UTF-8 text for Arabic/Persian s
 `build_artifact_register.py` rebuilds the declared storage snapshot plus its hash-bound publication receipt. Stable IDs are explicit mappings; update locators without reallocating IDs. `check_trace_contracts.py` checks the snapshot and initial edge schema, including negative integrity/claim cases; it does not claim a complete generated graph.
 
 For the historical alpha.2 builder use commit b0edfdcb99e283eadce94ba11535d8179dbd1f04. The current baseline builder is restricted to the alpha.2.1 correction; it does not replace published assets.
+
+For authorized input reconstruction, `import_requirement_witnesses.py ORSD.docx` imports the original table-6 witness proposals after the ORSD/model imports. Run `build_trace_links.py` afterwards. The optional private-input parity checker now compares all 14 outputs; the public integrity commands need no raw DOCX files.

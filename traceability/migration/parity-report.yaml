@@ -59,6 +59,10 @@ compared_outputs:
   current_sha256: 5f40248a554ee45badaa33cb7fde8fcd8000609f2b8b3b6160176db486e3c4a9
   reconstructed_sha256: 5f40248a554ee45badaa33cb7fde8fcd8000609f2b8b3b6160176db486e3c4a9
   status: identical
+- path: traceability/requirements-model.yaml
+  current_sha256: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+  reconstructed_sha256: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+  status: identical
 source_inventory_dispositions:
 - source_id: SRC-SPEC
   revision: revision 1; 2026-10-24; observed file version 2
@@ -116,8 +120,8 @@ source_inventory_dispositions:
 intentional_projection_differences:
 - id: CLR-MIG-D001
   difference: DOCX tables/paragraphs become controlled YAML and bibliography views.
-  disposition: accepted extraction/serialization change; all 13 governed outputs are
-    byte-identical to isolated re-extraction
+  disposition: accepted extraction/serialization change; all compared governed outputs
+    are byte-identical to isolated re-extraction
 - id: CLR-MIG-D002
   difference: One source relationship table partitions into associations and directed
     generalizations.
@@ -130,8 +134,8 @@ intentional_projection_differences:
 - id: CLR-MIG-D004
   difference: ORSD table 6 contains 30 candidate witness rows not in the original
     requirements import.
-  disposition: 'explicit follow-up #34; missing witness links do not establish unsatisfied
-    or satisfied needs'
+  disposition: 'resolved by #34 in traceability/requirements-model.yaml; candidates
+    remain unassessed'
 - id: CLR-MIG-D005
   difference: ORSD table 9 repeats the 21 domain vocabulary views.
   disposition: secondary ORSD representation; model/domain and membership authority

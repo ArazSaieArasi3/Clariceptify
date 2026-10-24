@@ -116,6 +116,17 @@ def generate(previous=None, retirement_reason=None):
         for reference in row['source_ids']:
             add('candidate_support', reference, row['concept_id'], 'CLR-SOURCE-REGISTER', 'CLR-MODEL-CONCEPT',
                 'evidence/concept-support.yaml#' + row['concept_id'], row['support_type'])
+    witness_path = 'traceability/requirements-model.yaml'
+    if (ROOT / witness_path).exists():
+        witnesses = read(witness_path)
+        for later, rows in [(False, witnesses['records']), (True, witnesses['future_candidates'])]:
+            for row in rows:
+                for concept_id in row['candidate_concept_ids']:
+                    for link_type, source_id, source_asset in [
+                        ('requirement_witness_candidate', row['requirement_id'], 'CLR-ORSD-FUTURE' if later else 'CLR-ORSD-FR'),
+                        ('cq_witness_candidate', row['cq_id'], 'CLR-ORSD-FUTURE' if later else 'CLR-ORSD-CQ')]:
+                        add(link_type, source_id, concept_id, source_asset, 'CLR-MODEL-CONCEPT',
+                            witness_path + '#' + row['requirement_id'] + '/' + row['cq_id'])
     digest_to_input = {row['sha256']: source_id for source_id, row in integrity.items() if row['sha256']}
     for asset in sorted(assets.values(), key=lambda row: row['asset_id']):
         path = asset['location']
@@ -134,7 +145,7 @@ def generate(previous=None, retirement_reason=None):
             'scope': 'Generated project links for the current structural/source baseline; not a complete research graph.',
             'identity_policy': 'Stable allocated edge IDs; existing keys retain IDs; removals require recorded disposition; retired IDs are not reused.',
             'input_file_sha256': dict(sorted(inputs.items())), 'records': records, 'retired_edges': retired,
-            'limits': ['No requirement/CQ witness links yet; those are separate work.',
+            'limits': ['Requirement/CQ links, when present, are frozen ORSD candidate witnesses only; satisfaction remains unassessed.',
                        'Constraint mentions remain lexical candidates, not adjudicated coverage.',
                        'D/B/P support is inherited; full-text and typing approval remain unassessed.',
                        'No proves/satisfies links, human acceptance, source ownership transfer or semantic completeness claim.']}
