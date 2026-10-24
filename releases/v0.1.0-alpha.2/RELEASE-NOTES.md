@@ -1,0 +1,11 @@
+# v0.1.0-alpha.2 — Controlled candidate baseline
+
+This prerelease freezes the imported candidate baseline at commit `fe347d2e62262f1cd43558d2330438f433f64f1d` (76 source files). It is the second R1 engineering checkpoint, not the stable conceptual-model release.
+
+Included: 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints; 48 retrospective needs and 38 CQ contracts; 53 bibliographic records and 137 qualified concept-source bindings; 19 recovered related-work labels; scope/authority/version contracts, migration preparation, local checks and English-only contribution instructions. The source-support classifications remain 44 D, 83 B and 10 Pending; related-work metadata and DOI hints are not freshly verified.
+
+The build executes five frozen-source checks, produces a deterministic ZIP, and reads every member back. PACKAGE-MANIFEST.json binds source commit/tree, file membership/digests and claim boundaries. CHECK-RESULTS.json records actual frozen-source integrity checks. SHA256SUMS excludes itself. The publisher refuses to replace an existing release or tag. Alpha.1 remains unchanged.
+
+The ORSD was reconstructed after model design. Requirements remain not_assessed, CQs not_executed and answers not_computed. Registry integrity is not semantic satisfaction or adequacy. The separate Stage-1 JSON ledger has not been byte-compared. Diagram reconciliation, complete typed traceability, manuscript alignment and focused review remain later checkpoints. Formal OWL/SHACL/FOL modules and a relational projection are absent. No independent expert approval, stable semantic release, complete literature review, novelty conclusion or DOI is claimed.
+
+Raw thesis, manuscript, input specifications and third-party full texts are excluded. Repository-level reuse licensing and final creator/citation metadata remain separate publication tasks. This prerelease does not grant an unstated reuse license. The build/publisher added after the frozen input commit is maintained on main; it is not silently inserted into the older snapshot.

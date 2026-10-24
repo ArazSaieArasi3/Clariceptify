@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tag": "v0.1.0-alpha.2",
+  "source_commit": "fe347d2e62262f1cd43558d2330438f433f64f1d",
+  "source_tree": "5ac2c0e112081479a898d58aa831e55891dcd1ec",
+  "source_files": 76,
+  "archive_members": 79,
+  "checks": [
+    "check_repository_language",
+    "check_bootstrap",
+    "check_model_import",
+    "check_requirements",
+    "check_source_support"
+  ],
+  "assets": {
+    "clariceptify-v0.1.0-alpha.2-baseline.zip": "d0c1b6b03fb8f814eb3a9f5f588ca57954552b52adbc865c17ee8dad8c44bb77",
+    "PACKAGE-MANIFEST.json": "72194bd6c0b94406ca450d44321b47d0744614ced887ff297ec0c3db4cbc42f1",
+    "CHECK-RESULTS.json": "b43619ed1b73db7f01424a23be998131061de0e83f07e531d99f8a71a2c554d5",
+    "SHA256SUMS": "01dc89b559dcb132ff8fc639e8b71b3201ff94baef2b6bd212a96d3394f641b1"
+  },
+  "repeat_build": "byte_identical_all_four_assets",
+  "changed_request": "rejected_before_output_creation",
+  "archive_readback": "all_79_members_read_and_compared",
+  "builder_sha256": "570168cd8b0f98bf265b16e3d5334bc43f8b02c28a101f0c4e38a5ca9396155e"
+}
