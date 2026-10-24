@@ -6,6 +6,8 @@ Clariceptify develops a conceptual model of purposeful conceptualization and its
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
+Latest engineering prerelease: [v0.1.0-alpha.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.1). It freezes the earlier contracts station; current main already includes the subsequent candidate model-table import. See the [changelog](CHANGELOG.md) and [publication readback](evaluation/bootstrap-preview-publication.json).
+
 ## Start here
 
 - [R1 scope and claim boundary](docs/decisions/r1-scope.md)

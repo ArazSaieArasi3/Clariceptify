@@ -32,6 +32,8 @@ identity_and_release:
   development_state: candidate registries imported; evaluation, traceability and diagram
     reconciliation pending
   release_manifest: releases/
+  current_package_release: v0.1.0-alpha.1
+  package_scope: contracts and migration preparation, not the later main model registries
 traceability:
   concept_registry: model/concepts.yaml
   relation_registry: model/relations.yaml and model/generalizations.yaml
