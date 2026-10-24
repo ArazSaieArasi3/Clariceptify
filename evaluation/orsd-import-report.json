@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source_sha256": "d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1",
+  "counts": {
+    "functional": 30,
+    "quality": 10,
+    "future": 8,
+    "cq": 30,
+    "exploratory_cq": 8
+  },
+  "source_cells": "verbatim requirement and question cells retained",
+  "semantic_or_stakeholder_acceptance": "not_assessed",
+  "cq_execution": "not_executed",
+  "limits": [
+    "candidate witness/model links are separate work",
+    "expected answer fields are not computed results",
+    "retrospective reconstruction not independent prospective elicitation"
+  ]
+}

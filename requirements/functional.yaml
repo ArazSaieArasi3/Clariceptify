@@ -1,0 +1,794 @@
+schema_version: '1.0'
+source_sha256: d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1
+input_revision: ORSD 0.1; 2026-10-24
+status: retrospectively_reconstructed_review_draft
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+records:
+- id: FR-01
+  priority: MUST
+  title: Conceptualization and agency
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent conceptualization episodes and the agents
+    participating in them.
+  acceptance: Identify an episode and its participating conceptualizer.
+  adverse_case: Reject an attribution to an agent unrelated to that episode.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-1
+  source_cells:
+  - 'FR-01  MUST
+
+    Conceptualization and agency
+
+    Origin R | R1'
+  - The ontology shall represent conceptualization episodes and the agents participating
+    in them.
+  - 'AC: Identify an episode and its participating conceptualizer.
+
+    NAC: Reject an attribution to an agent unrelated to that episode.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-02
+  priority: MUST
+  title: Subjects of conceptualization
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish object, event, state and type subjects
+    without treating their descriptions as their referents.
+  acceptance: Retrieve a subject through its declared subject category.
+  adverse_case: Reject an episode with no subject across the allowed subject branches.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-2
+  source_cells:
+  - 'FR-02  MUST
+
+    Subjects of conceptualization
+
+    Origin R | R1'
+  - The ontology shall distinguish object, event, state and type subjects without
+    treating their descriptions as their referents.
+  - 'AC: Retrieve a subject through its declared subject category.
+
+    NAC: Reject an episode with no subject across the allowed subject branches.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-03
+  priority: MUST
+  title: Intentions goals and values
+  origin: R
+  release_target: R1
+  capability: The ontology shall connect the purpose of conceptualization to intentions,
+    articulated goals and evaluation values.
+  acceptance: Identify the intention bearer and the articulated goal used in the episode.
+  adverse_case: Reject substitution of the goal content for the mental intention itself.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-3
+  source_cells:
+  - 'FR-03  MUST
+
+    Intentions goals and values
+
+    Origin R | R1'
+  - The ontology shall connect the purpose of conceptualization to intentions, articulated
+    goals and evaluation values.
+  - 'AC: Identify the intention bearer and the articulated goal used in the episode.
+
+    NAC: Reject substitution of the goal content for the mental intention itself.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-04
+  priority: MUST
+  title: Perspectives and views
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent an adopted mental perspective and distinguish
+    it from an explicit view or viewpoint specification.
+  acceptance: Retrieve the adopted perspective and its articulated view where present.
+  adverse_case: Reject identity of a mental perspective with a view document solely
+    because labels agree.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-4
+  source_cells:
+  - 'FR-04  MUST
+
+    Perspectives and views
+
+    Origin R | R1'
+  - The ontology shall represent an adopted mental perspective and distinguish it
+    from an explicit view or viewpoint specification.
+  - 'AC: Retrieve the adopted perspective and its articulated view where present.
+
+    NAC: Reject identity of a mental perspective with a view document solely because
+    labels agree.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-05
+  priority: MUST
+  title: Cognitive activities and states
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish cognitive occurrences from awareness
+    and other agent-dependent mental states.
+  acceptance: Represent an observation of an event and the observer without inventing
+    an object subject.
+  adverse_case: Reject assignment of a mental state to no bearer or to incompatible
+    bearers.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-5
+  source_cells:
+  - 'FR-05  MUST
+
+    Cognitive activities and states
+
+    Origin R | R1'
+  - The ontology shall distinguish cognitive occurrences from awareness and other
+    agent-dependent mental states.
+  - 'AC: Represent an observation of an event and the observer without inventing an
+    object subject.
+
+    NAC: Reject assignment of a mental state to no bearer or to incompatible bearers.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-06
+  priority: MUST
+  title: Individual and shared understanding
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish individual understanding, an interpretation
+    state and a situation of shared understanding.
+  acceptance: Identify at least two distinct bearers and the shared conceptual content.
+  adverse_case: Reject shared understanding inferred from common vocabulary alone
+    or one bearer counted twice.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-6
+  source_cells:
+  - 'FR-06  MUST
+
+    Individual and shared understanding
+
+    Origin R | R1'
+  - The ontology shall distinguish individual understanding, an interpretation state
+    and a situation of shared understanding.
+  - 'AC: Identify at least two distinct bearers and the shared conceptual content.
+
+    NAC: Reject shared understanding inferred from common vocabulary alone or one
+    bearer counted twice.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-07
+  priority: MUST
+  title: Concept formation and abstraction
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent concept formation informed by abstraction,
+    selected features and levels of generality.
+  acceptance: Relate a formation episode to its resulting concept and the abstraction
+    used.
+  adverse_case: Reject treating an abstraction level specification as a new world
+    object.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-7
+  source_cells:
+  - 'FR-07  MUST
+
+    Concept formation and abstraction
+
+    Origin R | R1'
+  - The ontology shall represent concept formation informed by abstraction, selected
+    features and levels of generality.
+  - 'AC: Relate a formation episode to its resulting concept and the abstraction used.
+
+    NAC: Reject treating an abstraction level specification as a new world object.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-08
+  priority: MUST
+  title: Descriptions and referents
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish concepts and instance descriptions from
+    described types and individual referents.
+  acceptance: Retrieve exactly one referent category and referent for an instance
+    description.
+  adverse_case: Reject one instance description denoting incompatible object and event
+    referents simultaneously.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-8
+  source_cells:
+  - 'FR-08  MUST
+
+    Descriptions and referents
+
+    Origin R | R1'
+  - The ontology shall distinguish concepts and instance descriptions from described
+    types and individual referents.
+  - 'AC: Retrieve exactly one referent category and referent for an instance description.
+
+    NAC: Reject one instance description denoting incompatible object and event referents
+    simultaneously.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-09
+  priority: MUST
+  title: Generalization and instantiation descriptions
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent descriptions of conceptual generalization
+    and instantiation separately from OntoUML generalization connectors.
+  acceptance: Identify specific and general concepts, or instance and type descriptions.
+  adverse_case: Reject reading a Generalization information object as an automatic
+    class hierarchy assertion.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-9
+  source_cells:
+  - 'FR-09  MUST
+
+    Generalization and instantiation descriptions
+
+    Origin R | R1'
+  - The ontology shall represent descriptions of conceptual generalization and instantiation
+    separately from OntoUML generalization connectors.
+  - 'AC: Identify specific and general concepts, or instance and type descriptions.
+
+    NAC: Reject reading a Generalization information object as an automatic class
+    hierarchy assertion.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-10
+  priority: MUST
+  title: Relations properties and endpoints
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent relation and property descriptions with
+    explicit conceptual endpoints or described features.
+  acceptance: Identify both endpoints of a relation description and the concept described
+    by a property.
+  adverse_case: Reject specialized endpoints inconsistent with inherited source and
+    target constraints.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-10
+  source_cells:
+  - 'FR-10  MUST
+
+    Relations properties and endpoints
+
+    Origin R | R1'
+  - The ontology shall represent relation and property descriptions with explicit
+    conceptual endpoints or described features.
+  - 'AC: Identify both endpoints of a relation description and the concept described
+    by a property.
+
+    NAC: Reject specialized endpoints inconsistent with inherited source and target
+    constraints.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-11
+  priority: MUST
+  title: Structure and conceptual parthood
+  origin: R
+  release_target: R1
+  capability: The ontology shall organize conceptual elements and distinguish contextual
+    part and whole descriptions.
+  acceptance: Retrieve part and whole within the same parthood description.
+  adverse_case: Reject automatic inference of physical composition from conceptual
+    parthood.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-11
+  source_cells:
+  - 'FR-11  MUST
+
+    Structure and conceptual parthood
+
+    Origin R | R1'
+  - The ontology shall organize conceptual elements and distinguish contextual part
+    and whole descriptions.
+  - 'AC: Retrieve part and whole within the same parthood description.
+
+    NAC: Reject automatic inference of physical composition from conceptual parthood.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-12
+  priority: MUST
+  title: Conceptual artifacts and elements
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish a conceptualization episode from its
+    explicit artifact and the elements belonging to that artifact.
+  acceptance: Identify the produced artifact and its elements, including a selected
+    view.
+  adverse_case: Reject equivalence of an artifact with the activity that produces
+    it.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-12
+  source_cells:
+  - 'FR-12  MUST
+
+    Conceptual artifacts and elements
+
+    Origin R | R1'
+  - The ontology shall distinguish a conceptualization episode from its explicit artifact
+    and the elements belonging to that artifact.
+  - 'AC: Identify the produced artifact and its elements, including a selected view.
+
+    NAC: Reject equivalence of an artifact with the activity that produces it.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-13
+  priority: MUST
+  title: External representation
+  origin: R
+  release_target: R1
+  capability: The ontology shall separate conceptual content from its representations,
+    forms, schemas, patterns and visual expressions.
+  acceptance: Retain two different representations of one conceptual artifact.
+  adverse_case: Reject merging the artifact with a visual file merely because it expresses
+    that artifact.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-13
+  source_cells:
+  - 'FR-13  MUST
+
+    External representation
+
+    Origin R | R1'
+  - The ontology shall separate conceptual content from its representations, forms,
+    schemas, patterns and visual expressions.
+  - 'AC: Retain two different representations of one conceptual artifact.
+
+    NAC: Reject merging the artifact with a visual file merely because it expresses
+    that artifact.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-14
+  priority: MUST
+  title: Language and communication
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent language, syntax, expressions and communication
+    activities without reducing meaning to syntax.
+  acceptance: Identify an expression, its language and syntax, and a message sender
+    or recipient when recorded.
+  adverse_case: Reject inference of equal meaning solely from syntactically well-formed
+    expressions.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-14
+  source_cells:
+  - 'FR-14  MUST
+
+    Language and communication
+
+    Origin R | R1'
+  - The ontology shall represent language, syntax, expressions and communication activities
+    without reducing meaning to syntax.
+  - 'AC: Identify an expression, its language and syntax, and a message sender or
+    recipient when recorded.
+
+    NAC: Reject inference of equal meaning solely from syntactically well-formed expressions.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-15
+  priority: MUST
+  title: Terminology and definitions
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent terms, vocabularies and explicit or implicit
+    definitions for selected concepts.
+  acceptance: Retrieve the concept designated by a term and its vocabulary and definition.
+  adverse_case: Reject merging concepts solely because two terms have identical spelling.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-15
+  source_cells:
+  - 'FR-15  MUST
+
+    Terminology and definitions
+
+    Origin R | R1'
+  - The ontology shall represent terms, vocabularies and explicit or implicit definitions
+    for selected concepts.
+  - 'AC: Retrieve the concept designated by a term and its vocabulary and definition.
+
+    NAC: Reject merging concepts solely because two terms have identical spelling.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-16
+  priority: MUST
+  title: Meaning and interpretation
+  origin: R
+  release_target: R1
+  capability: The ontology shall relate representations to interpreted semantic information
+    and the interpretation activities that produce understanding.
+  acceptance: Identify interpreted content and its representation, retaining the interpreter
+    where recorded.
+  adverse_case: Reject compatibility of interpretations inferred from a shared schema
+    alone.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-16
+  source_cells:
+  - 'FR-16  MUST
+
+    Meaning and interpretation
+
+    Origin R | R1'
+  - The ontology shall relate representations to interpreted semantic information
+    and the interpretation activities that produce understanding.
+  - 'AC: Identify interpreted content and its representation, retaining the interpreter
+    where recorded.
+
+    NAC: Reject compatibility of interpretations inferred from a shared schema alone.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-17
+  priority: MUST
+  title: Models and modeling activities
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish modeling activities, resulting model
+    artifacts and the selected model specializations.
+  acceptance: Represent a modeling activity, its model and a model view.
+  adverse_case: Reject interpreting a domain-model specialization as importing an
+    entire engineering domain.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-17
+  source_cells:
+  - 'FR-17  MUST
+
+    Models and modeling activities
+
+    Origin R | R1'
+  - The ontology shall distinguish modeling activities, resulting model artifacts
+    and the selected model specializations.
+  - 'AC: Represent a modeling activity, its model and a model view.
+
+    NAC: Reject interpreting a domain-model specialization as importing an entire
+    engineering domain.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-18
+  priority: MUST
+  title: Metamodels and classification levels
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish a model, its metamodel, model kinds and
+    modeling across classification levels.
+  acceptance: Identify an explicitly declared model-to-metamodel conformance link
+    and model-kind classification.
+  adverse_case: Reject equating a model instance with its model kind or treating a
+    conformance link as proof.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-18
+  source_cells:
+  - 'FR-18  MUST
+
+    Metamodels and classification levels
+
+    Origin R | R1'
+  - The ontology shall distinguish a model, its metamodel, model kinds and modeling
+    across classification levels.
+  - 'AC: Identify an explicitly declared model-to-metamodel conformance link and model-kind
+    classification.
+
+    NAC: Reject equating a model instance with its model kind or treating a conformance
+    link as proof.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-19
+  priority: MUST
+  title: Categories and taxonomies
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent category formation, recorded classification
+    assignments and taxonomy organization.
+  acceptance: Trace a classification to its assigned category, instance description
+    and assignment record.
+  adverse_case: Reject classification assignments whose category differs from the
+    recorded instantiation type.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-19
+  source_cells:
+  - 'FR-19  MUST
+
+    Categories and taxonomies
+
+    Origin R | R1'
+  - The ontology shall represent category formation, recorded classification assignments
+    and taxonomy organization.
+  - 'AC: Trace a classification to its assigned category, instance description and
+    assignment record.
+
+    NAC: Reject classification assignments whose category differs from the recorded
+    instantiation type.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-20
+  priority: MUST
+  title: Logic and formal assertions
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent formulas, contextually accepted axioms,
+    constraints and formalization activities.
+  acceptance: Retrieve an axiom as a formula accepted in a specified artifact.
+  adverse_case: Reject an axiom interpreted as a context-free claim of empirical truth.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-20
+  source_cells:
+  - 'FR-20  MUST
+
+    Logic and formal assertions
+
+    Origin R | R1'
+  - The ontology shall represent formulas, contextually accepted axioms, constraints
+    and formalization activities.
+  - 'AC: Retrieve an axiom as a formula accepted in a specified artifact.
+
+    NAC: Reject an axiom interpreted as a context-free claim of empirical truth.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-21
+  priority: MUST
+  title: Ontological commitments
+  origin: R
+  release_target: R1
+  capability: The ontology shall connect explicit ontological commitments to the conceptual
+    elements, vocabulary and interpretations they constrain.
+  acceptance: Retrieve the artifact and adopted descriptions associated with one commitment.
+  adverse_case: Reject a commitment whose constrained elements fall outside its stated
+    artifact context.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-21
+  source_cells:
+  - 'FR-21  MUST
+
+    Ontological commitments
+
+    Origin R | R1'
+  - The ontology shall connect explicit ontological commitments to the conceptual
+    elements, vocabulary and interpretations they constrain.
+  - 'AC: Retrieve the artifact and adopted descriptions associated with one commitment.
+
+    NAC: Reject a commitment whose constrained elements fall outside its stated artifact
+    context.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-22
+  priority: MUST
+  title: States change and time
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish a state from a change event and relate
+    change to prior and resulting states and temporal reference.
+  acceptance: Identify prior and resulting states of a change and its affected objects.
+  adverse_case: Reject a purported change with indistinguishable prior and resulting
+    states under the declared comparison.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-22
+  source_cells:
+  - 'FR-22  MUST
+
+    States change and time
+
+    Origin R | R1'
+  - The ontology shall distinguish a state from a change event and relate change to
+    prior and resulting states and temporal reference.
+  - 'AC: Identify prior and resulting states of a change and its affected objects.
+
+    NAC: Reject a purported change with indistinguishable prior and resulting states
+    under the declared comparison.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-23
+  priority: MUST
+  title: Explicit domain knowledge
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent articulated subject knowledge that informs
+    conceptualization, concept formation and interpretation.
+  acceptance: Trace an episode or interpretation to the explicit knowledge content
+    used.
+  adverse_case: Reject equating an explicit knowledge artifact with an agent mental
+    state or guaranteed truth.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-23
+  source_cells:
+  - 'FR-23  MUST
+
+    Explicit domain knowledge
+
+    Origin R | R1'
+  - The ontology shall represent articulated subject knowledge that informs conceptualization,
+    concept formation and interpretation.
+  - 'AC: Trace an episode or interpretation to the explicit knowledge content used.
+
+    NAC: Reject equating an explicit knowledge artifact with an agent mental state
+    or guaranteed truth.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-24
+  priority: MUST
+  title: Semantic quality criteria
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish semantic quality criteria from measured
+    qualities and from assessment results.
+  acceptance: Identify the criterion specification used to assess an artifact.
+  adverse_case: Reject interpreting a Consistency criterion instance as proof that
+    the artifact is consistent.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-24
+  source_cells:
+  - 'FR-24  MUST
+
+    Semantic quality criteria
+
+    Origin R | R1'
+  - The ontology shall distinguish semantic quality criteria from measured qualities
+    and from assessment results.
+  - 'AC: Identify the criterion specification used to assess an artifact.
+
+    NAC: Reject interpreting a Consistency criterion instance as proof that the artifact
+    is consistent.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-25
+  priority: MUST
+  title: Atomic evaluation findings
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent evaluation activities and atomic results
+    bound to one assessed artifact and one criterion.
+  acceptance: Retrieve the assessment, artifact, criterion and rationale for a finding.
+  adverse_case: Reject a result attached to a different artifact or criterion from
+    its generating assessment.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-25
+  source_cells:
+  - 'FR-25  MUST
+
+    Atomic evaluation findings
+
+    Origin R | R1'
+  - The ontology shall represent evaluation activities and atomic results bound to
+    one assessed artifact and one criterion.
+  - 'AC: Retrieve the assessment, artifact, criterion and rationale for a finding.
+
+    NAC: Reject a result attached to a different artifact or criterion from its generating
+    assessment.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-26
+  priority: MUST
+  title: Conceptual decisions and rationale
+  origin: R
+  release_target: R1
+  capability: The ontology shall represent recorded conceptual decision content and
+    its agent, episode, artifact, goal and rationale.
+  acceptance: Trace one recorded decision to its conceptualization, actor and rationale.
+  adverse_case: Reject treating a decision record as the deciding event or proof of
+    successful implementation.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-26
+  source_cells:
+  - 'FR-26  MUST
+
+    Conceptual decisions and rationale
+
+    Origin R | R1'
+  - The ontology shall represent recorded conceptual decision content and its agent,
+    episode, artifact, goal and rationale.
+  - 'AC: Trace one recorded decision to its conceptualization, actor and rationale.
+
+    NAC: Reject treating a decision record as the deciding event or proof of successful
+    implementation.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-27
+  priority: MUST
+  title: Evidence assumptions and sources
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish evidence use, adopted assumptions and
+    cited sources within conceptual justification.
+  acceptance: Retrieve the evidence or assumptions used and the attributed source
+    where present.
+  adverse_case: Reject source attribution interpreted automatically as evidential
+    truth or source agreement.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-27
+  source_cells:
+  - 'FR-27  MUST
+
+    Evidence assumptions and sources
+
+    Origin R | R1'
+  - The ontology shall distinguish evidence use, adopted assumptions and cited sources
+    within conceptual justification.
+  - 'AC: Retrieve the evidence or assumptions used and the attributed source where
+    present.
+
+    NAC: Reject source attribution interpreted automatically as evidential truth or
+    source agreement.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-28
+  priority: MUST
+  title: Feedback and revision
+  origin: R
+  release_target: R1
+  capability: The ontology shall connect feedback and evaluation findings to the conceptualization
+    or artifact whose revision they inform.
+  acceptance: Trace a finding through feedback to its target artifact or a documented
+    revision context.
+  adverse_case: Reject a feedback link that silently transfers a finding to an unrelated
+    artifact.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-28
+  source_cells:
+  - 'FR-28  MUST
+
+    Feedback and revision
+
+    Origin R | R1'
+  - The ontology shall connect feedback and evaluation findings to the conceptualization
+    or artifact whose revision they inform.
+  - 'AC: Trace a finding through feedback to its target artifact or a documented revision
+    context.
+
+    NAC: Reject a feedback link that silently transfers a finding to an unrelated
+    artifact.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-29
+  priority: MUST
+  title: Temporal representations
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish temporal entities from point-based and
+    interval-based representations of them.
+  acceptance: Identify a temporal representation and the time or occurrence it represents.
+  adverse_case: Reject identity of a timestamp expression with the represented time
+    entity.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-29
+  source_cells:
+  - 'FR-29  MUST
+
+    Temporal representations
+
+    Origin R | R1'
+  - The ontology shall distinguish temporal entities from point-based and interval-based
+    representations of them.
+  - 'AC: Identify a temporal representation and the time or occurrence it represents.
+
+    NAC: Reject identity of a timestamp expression with the represented time entity.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: FR-30
+  priority: MUST
+  title: Process composition and artifact creation
+  origin: R
+  release_target: R1
+  capability: The ontology shall distinguish conceptual subprocess containment, creation
+    of new artifacts and revision of existing content.
+  acceptance: Represent an acyclic subprocess structure and distinguish a creation
+    from a revision statement.
+  adverse_case: Reject cyclic subprocess containment or a revision assertion automatically
+    generating a new content identity.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-30
+  source_cells:
+  - 'FR-30  MUST
+
+    Process composition and artifact creation
+
+    Origin R | R1'
+  - The ontology shall distinguish conceptual subprocess containment, creation of
+    new artifacts and revision of existing content.
+  - 'AC: Represent an acyclic subprocess structure and distinguish a creation from
+    a revision statement.
+
+    NAC: Reject cyclic subprocess containment or a revision assertion automatically
+    generating a new content identity.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "ORSD record parity and contract integrity; not satisfaction",
+  "counts": {
+    "requirements": 48,
+    "cq_contracts": 38
+  },
+  "negative_cases_rejected": [
+    "missing adverse expectation",
+    "unresolved CQ requirement",
+    "invented CQ result",
+    "narrowed acceptance contract",
+    "rewritten source capability"
+  ],
+  "input_sha256": "d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1",
+  "files": {
+    "functional.yaml": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608",
+    "quality.yaml": "dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc",
+    "competency-questions.yaml": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5",
+    "future.yaml": "bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e",
+    "scope-and-scenarios.yaml": "38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848"
+  },
+  "satisfaction": "not_assessed",
+  "execution": "not_executed"
+}

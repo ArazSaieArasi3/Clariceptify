@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "source/support registry integrity only",
+  "references": 53,
+  "concept_support_records": 137,
+  "negative_cases_rejected": [
+    "absent source",
+    "fabricated passage verification",
+    "fabricated typing approval"
+  ],
+  "files": {
+    "evidence/source-register.yaml": "3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4",
+    "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b",
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf"
+  },
+  "full_text_verification": "not_assessed"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "repeat_import_byte_identical": true,
+  "changed_valid_inputs_rejected": true,
+  "outputs_unchanged_after_rejection": true,
+  "checked_output_sha256": {
+    "requirements/functional.yaml": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608",
+    "requirements/quality.yaml": "dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc",
+    "requirements/competency-questions.yaml": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5",
+    "requirements/future.yaml": "bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e",
+    "requirements/scope-and-scenarios.yaml": "38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848",
+    "evidence/source-register.yaml": "3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4",
+    "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b",
+    "evidence/bibliography.md": "5f40248a554ee45badaa33cb7fde8fcd8000609f2b8b3b6160176db486e3c4a9",
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf"
+  },
+  "scope": "extraction and input integrity only"
+}

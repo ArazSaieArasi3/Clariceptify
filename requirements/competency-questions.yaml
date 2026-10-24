@@ -1,0 +1,566 @@
+schema_version: '1.0'
+source_sha256: d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1
+input_revision: ORSD 0.1; 2026-10-24
+status: retrospectively_reconstructed_review_draft
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+records:
+- id: CQ-01
+  requirement_id: FR-01
+  question: Who performs a specified conceptualization?
+  required_answer_fields: Episode; agent; participation
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify an episode and its participating conceptualizer.
+  adverse_case: Reject an attribution to an agent unrelated to that episode.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-1
+  source_cells:
+  - 'CQ-01
+
+    FR-01'
+  - Who performs a specified conceptualization?
+  - Episode; agent; participation
+- id: CQ-02
+  requirement_id: FR-02
+  question: What is conceptualized, and what kind of subject is it?
+  required_answer_fields: Episode; subject; subject category
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve a subject through its declared subject category.
+  adverse_case: Reject an episode with no subject across the allowed subject branches.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-2
+  source_cells:
+  - 'CQ-02
+
+    FR-02'
+  - What is conceptualized, and what kind of subject is it?
+  - Episode; subject; subject category
+- id: CQ-03
+  requirement_id: FR-03
+  question: Which intentions, goals and values guide an episode?
+  required_answer_fields: Episode; intention; bearer; goal; value when recorded
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify the intention bearer and the articulated goal used in the episode.
+  adverse_case: Reject substitution of the goal content for the mental intention itself.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-3
+  source_cells:
+  - 'CQ-03
+
+    FR-03'
+  - Which intentions, goals and values guide an episode?
+  - Episode; intention; bearer; goal; value when recorded
+- id: CQ-04
+  requirement_id: FR-04
+  question: From which perspective is a subject conceptualized?
+  required_answer_fields: Episode; perspective; bearer; view if articulated
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve the adopted perspective and its articulated view where present.
+  adverse_case: Reject identity of a mental perspective with a view document solely
+    because labels agree.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-4
+  source_cells:
+  - 'CQ-04
+
+    FR-04'
+  - From which perspective is a subject conceptualized?
+  - Episode; perspective; bearer; view if articulated
+- id: CQ-05
+  requirement_id: FR-05
+  question: Which cognitive activities and mental states inform the conceptualization?
+  required_answer_fields: Activity; observer or bearer; observed subject; state
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Represent an observation of an event and the observer without inventing
+    an object subject.
+  adverse_case: Reject assignment of a mental state to no bearer or to incompatible
+    bearers.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-5
+  source_cells:
+  - 'CQ-05
+
+    FR-05'
+  - Which cognitive activities and mental states inform the conceptualization?
+  - Activity; observer or bearer; observed subject; state
+- id: CQ-06
+  requirement_id: FR-06
+  question: Who understands which content, and when is understanding shared?
+  required_answer_fields: Bearer; understanding; content; distinct participants
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify at least two distinct bearers and the shared conceptual content.
+  adverse_case: Reject shared understanding inferred from common vocabulary alone
+    or one bearer counted twice.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-6
+  source_cells:
+  - 'CQ-06
+
+    FR-06'
+  - Who understands which content, and when is understanding shared?
+  - Bearer; understanding; content; distinct participants
+- id: CQ-07
+  requirement_id: FR-07
+  question: How is a concept formed through abstraction?
+  required_answer_fields: Formation; abstraction; resulting concept; level when represented
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Relate a formation episode to its resulting concept and the abstraction
+    used.
+  adverse_case: Reject treating an abstraction level specification as a new world
+    object.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-7
+  source_cells:
+  - 'CQ-07
+
+    FR-07'
+  - How is a concept formed through abstraction?
+  - Formation; abstraction; resulting concept; level when represented
+- id: CQ-08
+  requirement_id: FR-08
+  question: What does a concept or instance description describe?
+  required_answer_fields: Description; described type or referent; referent category
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve exactly one referent category and referent for an instance
+    description.
+  adverse_case: Reject one instance description denoting incompatible object and event
+    referents simultaneously.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-8
+  source_cells:
+  - 'CQ-08
+
+    FR-08'
+  - What does a concept or instance description describe?
+  - Description; described type or referent; referent category
+- id: CQ-09
+  requirement_id: FR-09
+  question: Which descriptions express generalization or instantiation?
+  required_answer_fields: Relation description; specific/general or instance/type
+    endpoints
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify specific and general concepts, or instance and type descriptions.
+  adverse_case: Reject reading a Generalization information object as an automatic
+    class hierarchy assertion.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-9
+  source_cells:
+  - 'CQ-09
+
+    FR-09'
+  - Which descriptions express generalization or instantiation?
+  - Relation description; specific/general or instance/type endpoints
+- id: CQ-10
+  requirement_id: FR-10
+  question: Which elements are related, and which features are described?
+  required_answer_fields: Relation; source; target; property; described concept
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify both endpoints of a relation description and the concept described
+    by a property.
+  adverse_case: Reject specialized endpoints inconsistent with inherited source and
+    target constraints.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-10
+  source_cells:
+  - 'CQ-10
+
+    FR-10'
+  - Which elements are related, and which features are described?
+  - Relation; source; target; property; described concept
+- id: CQ-11
+  requirement_id: FR-11
+  question: How are conceptual elements structured into parts and wholes?
+  required_answer_fields: Structure; elements; parthood description; part; whole
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve part and whole within the same parthood description.
+  adverse_case: Reject automatic inference of physical composition from conceptual
+    parthood.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-11
+  source_cells:
+  - 'CQ-11
+
+    FR-11'
+  - How are conceptual elements structured into parts and wholes?
+  - Structure; elements; parthood description; part; whole
+- id: CQ-12
+  requirement_id: FR-12
+  question: What explicit conceptual content results from conceptualization?
+  required_answer_fields: Episode; artifact; elements; selected view
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify the produced artifact and its elements, including a selected
+    view.
+  adverse_case: Reject equivalence of an artifact with the activity that produces
+    it.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-12
+  source_cells:
+  - 'CQ-12
+
+    FR-12'
+  - What explicit conceptual content results from conceptualization?
+  - Episode; artifact; elements; selected view
+- id: CQ-13
+  requirement_id: FR-13
+  question: How is conceptual content represented externally?
+  required_answer_fields: Artifact; representations; form; schema or pattern where
+    stated
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retain two different representations of one conceptual artifact.
+  adverse_case: Reject merging the artifact with a visual file merely because it expresses
+    that artifact.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-13
+  source_cells:
+  - 'CQ-13
+
+    FR-13'
+  - How is conceptual content represented externally?
+  - Artifact; representations; form; schema or pattern where stated
+- id: CQ-14
+  requirement_id: FR-14
+  question: In which language and expressions is content communicated?
+  required_answer_fields: Expression; language; syntax; message; sender/recipient
+    if present
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify an expression, its language and syntax, and a message sender
+    or recipient when recorded.
+  adverse_case: Reject inference of equal meaning solely from syntactically well-formed
+    expressions.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-14
+  source_cells:
+  - 'CQ-14
+
+    FR-14'
+  - In which language and expressions is content communicated?
+  - Expression; language; syntax; message; sender/recipient if present
+- id: CQ-15
+  requirement_id: FR-15
+  question: Which terms and definitions designate a concept?
+  required_answer_fields: Concept; term; vocabulary; definition; definition kind
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve the concept designated by a term and its vocabulary and definition.
+  adverse_case: Reject merging concepts solely because two terms have identical spelling.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-15
+  source_cells:
+  - 'CQ-15
+
+    FR-15'
+  - Which terms and definitions designate a concept?
+  - Concept; term; vocabulary; definition; definition kind
+- id: CQ-16
+  requirement_id: FR-16
+  question: What meaning is interpreted from a representation?
+  required_answer_fields: Representation; semantic information; interpretation; interpreter
+    where recorded
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify interpreted content and its representation, retaining the interpreter
+    where recorded.
+  adverse_case: Reject compatibility of interpretations inferred from a shared schema
+    alone.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-16
+  source_cells:
+  - 'CQ-16
+
+    FR-16'
+  - What meaning is interpreted from a representation?
+  - Representation; semantic information; interpretation; interpreter where recorded
+- id: CQ-17
+  requirement_id: FR-17
+  question: Which models and views express the conceptual account?
+  required_answer_fields: Modeling activity; model; model specialization; model view
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Represent a modeling activity, its model and a model view.
+  adverse_case: Reject interpreting a domain-model specialization as importing an
+    entire engineering domain.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-17
+  source_cells:
+  - 'CQ-17
+
+    FR-17'
+  - Which models and views express the conceptual account?
+  - Modeling activity; model; model specialization; model view
+- id: CQ-18
+  requirement_id: FR-18
+  question: Which metamodel and model kind constrain a model?
+  required_answer_fields: Model; metamodel; model kind; declared conformance
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify an explicitly declared model-to-metamodel conformance link
+    and model-kind classification.
+  adverse_case: Reject equating a model instance with its model kind or treating a
+    conformance link as proof.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-18
+  source_cells:
+  - 'CQ-18
+
+    FR-18'
+  - Which metamodel and model kind constrain a model?
+  - Model; metamodel; model kind; declared conformance
+- id: CQ-19
+  requirement_id: FR-19
+  question: How are categories formed and instances classified?
+  required_answer_fields: Categorization; category; classification; instance; assignment;
+    taxonomy
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Trace a classification to its assigned category, instance description
+    and assignment record.
+  adverse_case: Reject classification assignments whose category differs from the
+    recorded instantiation type.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-19
+  source_cells:
+  - 'CQ-19
+
+    FR-19'
+  - How are categories formed and instances classified?
+  - Categorization; category; classification; instance; assignment; taxonomy
+- id: CQ-20
+  requirement_id: FR-20
+  question: Which formal assertions restrict a conceptual artifact?
+  required_answer_fields: Artifact; formula; axiom role; constraint; formalization
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve an axiom as a formula accepted in a specified artifact.
+  adverse_case: Reject an axiom interpreted as a context-free claim of empirical truth.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-20
+  source_cells:
+  - 'CQ-20
+
+    FR-20'
+  - Which formal assertions restrict a conceptual artifact?
+  - Artifact; formula; axiom role; constraint; formalization
+- id: CQ-21
+  requirement_id: FR-21
+  question: Which ontological commitments are adopted in an artifact?
+  required_answer_fields: Artifact; commitment; vocabulary; elements; constrained
+    interpretations
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve the artifact and adopted descriptions associated with one commitment.
+  adverse_case: Reject a commitment whose constrained elements fall outside its stated
+    artifact context.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-21
+  source_cells:
+  - 'CQ-21
+
+    FR-21'
+  - Which ontological commitments are adopted in an artifact?
+  - Artifact; commitment; vocabulary; elements; constrained interpretations
+- id: CQ-22
+  requirement_id: FR-22
+  question: What state changes, and what temporal reference applies?
+  required_answer_fields: Change; prior state; resulting state; affected object; time
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify prior and resulting states of a change and its affected objects.
+  adverse_case: Reject a purported change with indistinguishable prior and resulting
+    states under the declared comparison.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-22
+  source_cells:
+  - 'CQ-22
+
+    FR-22'
+  - What state changes, and what temporal reference applies?
+  - Change; prior state; resulting state; affected object; time
+- id: CQ-23
+  requirement_id: FR-23
+  question: What explicit domain knowledge informs the conceptual account?
+  required_answer_fields: Knowledge content; episode or interpretation; subject concepts
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Trace an episode or interpretation to the explicit knowledge content
+    used.
+  adverse_case: Reject equating an explicit knowledge artifact with an agent mental
+    state or guaranteed truth.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-23
+  source_cells:
+  - 'CQ-23
+
+    FR-23'
+  - What explicit domain knowledge informs the conceptual account?
+  - Knowledge content; episode or interpretation; subject concepts
+- id: CQ-24
+  requirement_id: FR-24
+  question: Against which semantic criteria is an artifact assessed?
+  required_answer_fields: Artifact; criterion; criterion type; guiding goal
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify the criterion specification used to assess an artifact.
+  adverse_case: Reject interpreting a Consistency criterion instance as proof that
+    the artifact is consistent.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-24
+  source_cells:
+  - 'CQ-24
+
+    FR-24'
+  - Against which semantic criteria is an artifact assessed?
+  - Artifact; criterion; criterion type; guiding goal
+- id: CQ-25
+  requirement_id: FR-25
+  question: What finding was produced for which artifact and criterion?
+  required_answer_fields: Evaluation; result; artifact; criterion; justification
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve the assessment, artifact, criterion and rationale for a finding.
+  adverse_case: Reject a result attached to a different artifact or criterion from
+    its generating assessment.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-25
+  source_cells:
+  - 'CQ-25
+
+    FR-25'
+  - What finding was produced for which artifact and criterion?
+  - Evaluation; result; artifact; criterion; justification
+- id: CQ-26
+  requirement_id: FR-26
+  question: Who recorded a conceptual decision, about what and why?
+  required_answer_fields: Decision; agent; episode; artifact; goal; justification
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Trace one recorded decision to its conceptualization, actor and rationale.
+  adverse_case: Reject treating a decision record as the deciding event or proof of
+    successful implementation.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-26
+  source_cells:
+  - 'CQ-26
+
+    FR-26'
+  - Who recorded a conceptual decision, about what and why?
+  - Decision; agent; episode; artifact; goal; justification
+- id: CQ-27
+  requirement_id: FR-27
+  question: Which sources, evidence and assumptions support a rationale?
+  required_answer_fields: Justification; evidence; assumption; source; use context
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Retrieve the evidence or assumptions used and the attributed source
+    where present.
+  adverse_case: Reject source attribution interpreted automatically as evidential
+    truth or source agreement.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-27
+  source_cells:
+  - 'CQ-27
+
+    FR-27'
+  - Which sources, evidence and assumptions support a rationale?
+  - Justification; evidence; assumption; source; use context
+- id: CQ-28
+  requirement_id: FR-28
+  question: Which feedback and findings inform a conceptual revision?
+  required_answer_fields: Feedback; result; target artifact; revision decision where
+    present
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Trace a finding through feedback to its target artifact or a documented
+    revision context.
+  adverse_case: Reject a feedback link that silently transfers a finding to an unrelated
+    artifact.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-28
+  source_cells:
+  - 'CQ-28
+
+    FR-28'
+  - Which feedback and findings inform a conceptual revision?
+  - Feedback; result; target artifact; revision decision where present
+- id: CQ-29
+  requirement_id: FR-29
+  question: How is the time of a represented occurrence expressed?
+  required_answer_fields: Occurrence or time; temporal representation; point/interval
+    form
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Identify a temporal representation and the time or occurrence it represents.
+  adverse_case: Reject identity of a timestamp expression with the represented time
+    entity.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-29
+  source_cells:
+  - 'CQ-29
+
+    FR-29'
+  - How is the time of a represented occurrence expressed?
+  - Occurrence or time; temporal representation; point/interval form
+- id: CQ-30
+  requirement_id: FR-30
+  question: Which activities compose an episode and what do they create or revise?
+  required_answer_fields: Episode; subprocesses; created or revised artifact; operation
+    meaning
+  input_contract: A designated episode, artifact or record identified by the query
+    subject; related records only through declared links.
+  acceptance: Represent an acyclic subprocess structure and distinguish a creation
+    from a revision statement.
+  adverse_case: Reject cyclic subprocess containment or a revision assertion automatically
+    generating a new content identity.
+  test_execution: not_executed
+  answer_status: not_computed
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-30
+  source_cells:
+  - 'CQ-30
+
+    FR-30'
+  - Which activities compose an episode and what do they create or revise?
+  - Episode; subprocesses; created or revised artifact; operation meaning

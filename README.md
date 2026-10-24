@@ -13,6 +13,7 @@ Latest engineering prerelease: [v0.1.0-alpha.1](https://github.com/ArazSaieArasi
 - [R1 scope and claim boundary](docs/decisions/r1-scope.md)
 - [Authority and composition](docs/decisions/artifact-authority.md)
 - [Imported model registries](model/) and [import checks](evaluation/model-structure-report.json)
+- [Requirements and CQ contracts](requirements/) and [qualified source support](evidence/)
 - [Model schemas](model/schema/) and [artifact implementation status](docs/artifact-status.yaml)
 - [Input manifest](traceability/migration/source-manifest.yaml), [integrity](traceability/migration/input-integrity.yaml) and [candidate entity ledger](traceability/migration/entity-ledger.yaml)
 - [Identifiers](docs/decisions/stable-identifiers.md), [artifact versions](docs/decisions/artifact-versioning.md), [release policy](docs/decisions/release-policy.md)
@@ -21,7 +22,7 @@ Latest engineering prerelease: [v0.1.0-alpha.1](https://github.com/ArazSaieArasi
 
 ## Structure and status
 
-`requirements/` owns requirements/CQ contracts; `model/` owns the conceptual registries; `evidence/` owns source support; `traceability/` owns bindings and migration; `evaluation/` owns actual results; `docs/` owns explanations; `releases/` owns frozen package membership; `tools/` owns reproducible commands. Implementation status is explicit: candidate model registries are imported; requirements and source-support bindings remain planned; formal ontology files are absent.
+`requirements/` owns requirements/CQ contracts; `model/` owns the conceptual registries; `evidence/` owns source support; `traceability/` owns bindings and migration; `evaluation/` owns actual results; `docs/` owns explanations; `releases/` owns frozen package membership; `tools/` owns reproducible commands. Implementation status is explicit: candidate model registries are imported; requirements and source-support bindings are imported as review baselines; formal ontology files are absent.
 
 Research identity remains R-001; Portfolio owns research governance and OGCM-RF supplies method contracts. Pinned local profiles record adoption without claiming assessed conformance. Public users can read these local decisions and run the bootstrap check without access to private upstream repositories. Historical inputs and releases retain their identities; this wave does not clean up or change the origin repository.
 

@@ -1,0 +1,281 @@
+schema_version: '1.0'
+source_sha256: d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1
+input_revision: ORSD 0.1; 2026-10-24
+status: retrospectively_reconstructed_review_draft
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+records:
+- id: QR-01
+  priority: MUST
+  title: Scope fidelity
+  origin: E
+  release_target: R1
+  capability: The specification shall keep conceptualization as the central subject
+    and preserve the selected domain names.
+  acceptance: No new engineering or application domain is introduced; one-concept
+    Ontology and Knowledge domains remain allowed in R1.
+  adverse_case: A domain is expanded solely to meet an arbitrary concept quota.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-1
+  source_cells:
+  - 'QR-01  MUST
+
+    Scope fidelity
+
+    Origin E | R1'
+  - The specification shall keep conceptualization as the central subject and preserve
+    the selected domain names.
+  - 'AC: No new engineering or application domain is introduced; one-concept Ontology
+    and Knowledge domains remain allowed in R1.
+
+    NAC: A domain is expanded solely to meet an arbitrary concept quota.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-02
+  priority: MUST
+  title: Baseline preservation
+  origin: E
+  release_target: R1
+  capability: The release package shall identify its exact concept and relationship
+    baseline and record every subsequent change.
+  acceptance: Reconcile catalogues and diagrams against 137 concepts and 296 relationship
+    rows for this baseline; changes have a recorded reason.
+  adverse_case: A class, association, stereotype or multiplicity changes without a
+    change record.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-2
+  source_cells:
+  - 'QR-02  MUST
+
+    Baseline preservation
+
+    Origin E | R1'
+  - The release package shall identify its exact concept and relationship baseline
+    and record every subsequent change.
+  - 'AC: Reconcile catalogues and diagrams against 137 concepts and 296 relationship
+    rows for this baseline; changes have a recorded reason.
+
+    NAC: A class, association, stereotype or multiplicity changes without a change
+    record.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-03
+  priority: MUST
+  title: Foundational and notation consistency
+  origin: R
+  release_target: R1
+  capability: The ontology shall use justified UFO distinctions and valid OntoUML
+    class and relation notation.
+  acceptance: Review identity providers, rigidity, modes and qualities, endpoint categories
+    and higher-order typing; document unresolved issues.
+  adverse_case: A permitted stereotype spelling is accepted as sufficient evidence
+    of semantic correctness.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-3
+  source_cells:
+  - 'QR-03  MUST
+
+    Foundational and notation consistency
+
+    Origin R | R1'
+  - The ontology shall use justified UFO distinctions and valid OntoUML class and
+    relation notation.
+  - 'AC: Review identity providers, rigidity, modes and qualities, endpoint categories
+    and higher-order typing; document unresolved issues.
+
+    NAC: A permitted stereotype spelling is accepted as sufficient evidence of semantic
+    correctness.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-04
+  priority: MUST
+  title: Meaningful connectivity
+  origin: E
+  release_target: R1
+  capability: The model shall contain no isolated concept or disconnected conceptual
+    group and shall justify the contribution of each connection.
+  acceptance: Check one connected component and review meaningful paths to conceptualization;
+    include inherited paths explicitly.
+  adverse_case: Artificial generic edges are added only to obtain a connected graph.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-4
+  source_cells:
+  - 'QR-04  MUST
+
+    Meaningful connectivity
+
+    Origin E | R1'
+  - The model shall contain no isolated concept or disconnected conceptual group and
+    shall justify the contribution of each connection.
+  - 'AC: Check one connected component and review meaningful paths to conceptualization;
+    include inherited paths explicitly.
+
+    NAC: Artificial generic edges are added only to obtain a connected graph.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-05
+  priority: MUST
+  title: Constraint adequacy
+  origin: R
+  release_target: R1
+  capability: The release specification shall retain explicit integrity and interpretation
+    constraints beyond binary links.
+  acceptance: Carry all 24 current constraints into the later review plan and test
+    cross-relation alignment.
+  adverse_case: Graph connectivity is substituted for satisfiability or consistency
+    testing.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-5
+  source_cells:
+  - 'QR-05  MUST
+
+    Constraint adequacy
+
+    Origin R | R1'
+  - The release specification shall retain explicit integrity and interpretation constraints
+    beyond binary links.
+  - 'AC: Carry all 24 current constraints into the later review plan and test cross-relation
+    alignment.
+
+    NAC: Graph connectivity is substituted for satisfiability or consistency testing.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-06
+  priority: MUST
+  title: Definitions and evidence provenance
+  origin: R
+  release_target: R1
+  capability: Each concept shall have an English definition, UFO type, OntoUML stereotype
+    and primary domain, with source status stated.
+  acceptance: Distinguish scoped author definitions from quotations and externally
+    grounded definitions.
+  adverse_case: A reconstructed definition is presented as a verbatim literature definition
+    without evidence.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-6
+  source_cells:
+  - 'QR-06  MUST
+
+    Definitions and evidence provenance
+
+    Origin R | R1'
+  - Each concept shall have an English definition, UFO type, OntoUML stereotype and
+    primary domain, with source status stated.
+  - 'AC: Distinguish scoped author definitions from quotations and externally grounded
+    definitions.
+
+    NAC: A reconstructed definition is presented as a verbatim literature definition
+    without evidence.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-07
+  priority: MUST
+  title: Requirement traceability
+  origin: I
+  release_target: R1
+  capability: Every requirement shall retain a stable identifier, origin, priority,
+    release target and acceptance contract.
+  acceptance: Preserve requirement-to-CQ and candidate witness links; retain superseded
+    IDs and reasons.
+  adverse_case: An unmet need is deleted or narrowed merely to improve reported coverage.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-7
+  source_cells:
+  - 'QR-07  MUST
+
+    Requirement traceability
+
+    Origin I | R1'
+  - Every requirement shall retain a stable identifier, origin, priority, release
+    target and acceptance contract.
+  - 'AC: Preserve requirement-to-CQ and candidate witness links; retain superseded
+    IDs and reasons.
+
+    NAC: An unmet need is deleted or narrowed merely to improve reported coverage.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-08
+  priority: MUST
+  title: Testable answer contracts
+  origin: I
+  release_target: R1
+  capability: Each competency question shall specify input, output fields, positive
+    and adverse expectations, and missing-data treatment.
+  acceptance: Execute positive, missing-link and misleading-link variants with version-pinned
+    expected answers during the later comparison.
+  adverse_case: An empty answer is automatically interpreted as falsity under open-world
+    reasoning.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-8
+  source_cells:
+  - 'QR-08  MUST
+
+    Testable answer contracts
+
+    Origin I | R1'
+  - Each competency question shall specify input, output fields, positive and adverse
+    expectations, and missing-data treatment.
+  - 'AC: Execute positive, missing-link and misleading-link variants with version-pinned
+    expected answers during the later comparison.
+
+    NAC: An empty answer is automatically interpreted as falsity under open-world
+    reasoning.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-09
+  priority: MUST
+  title: Readable and faithful visualization
+  origin: E
+  release_target: R1
+  capability: The delivered visual model shall preserve names, stereotypes, association
+    labels, end multiplicities, correct generalization arrows and domain colours.
+  acceptance: Check exact model-to-figure parity; provide a domain definition and
+    colour guide and readable detail views.
+  adverse_case: Generalizations receive multiplicities or arrows point from a parent
+    to its subtype.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-9
+  source_cells:
+  - 'QR-09  MUST
+
+    Readable and faithful visualization
+
+    Origin E | R1'
+  - The delivered visual model shall preserve names, stereotypes, association labels,
+    end multiplicities, correct generalization arrows and domain colours.
+  - 'AC: Check exact model-to-figure parity; provide a domain definition and colour
+    guide and readable detail views.
+
+    NAC: Generalizations receive multiplicities or arrows point from a parent to its
+    subtype.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
+- id: QR-10
+  priority: MUST
+  title: Bounded release and validation claims
+  origin: E
+  release_target: R1
+  capability: Claims of adequacy and validation shall identify scope, model version,
+    method, evidence and unresolved limitations.
+  acceptance: Separate structural checks, CQ execution and expert validation; schedule
+    domain adequacy for R2 without a fixed minimum class count.
+  adverse_case: A structural pass is reported as complete ontological or stakeholder
+    validation.
+  source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-4/data-row-10
+  source_cells:
+  - 'QR-10  MUST
+
+    Bounded release and validation claims
+
+    Origin E | R1'
+  - Claims of adequacy and validation shall identify scope, model version, method,
+    evidence and unresolved limitations.
+  - 'AC: Separate structural checks, CQ execution and expert validation; schedule
+    domain adequacy for R2 without a fixed minimum class count.
+
+    NAC: A structural pass is reported as complete ontological or stakeholder validation.'
+  satisfaction_status: not_assessed
+  acceptance_status: not_assessed
+  test_execution: not_executed
