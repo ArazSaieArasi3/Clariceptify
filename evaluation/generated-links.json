@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "Exact current structural/source projection and version integrity; not semantic adequacy",
+  "edges": 1407,
+  "by_type": {
+    "association_source": 174,
+    "association_target": 174,
+    "belongs_to_domain": 137,
+    "candidate_support": 292,
+    "cites": 292,
+    "constraint_mention_candidate": 82,
+    "derived_from_input": 12,
+    "generalization_child": 122,
+    "generalization_parent": 122
+  },
+  "negative_cases_rejected": [
+    "dangling endpoint",
+    "wrong endpoint owner",
+    "stale endpoint digest",
+    "stale endpoint revision",
+    "unsupported proof type",
+    "duplicate edge",
+    "missing structural edge",
+    "inflated support qualification",
+    "undispositioned edge removal"
+  ],
+  "stable_edge_ids": "preserved on repeat",
+  "checked_sha256": {
+    "traceability/links.yaml": "23fa2e265bdf1204002b346e110031ad53101fcf1ef7574d785d8dedaafe6173",
+    "tools/build_trace_links.py": "e63d411a2645c01f14bbf301060b43faf951af0b76e84635cac24cd31fb83798",
+    "tools/check_generated_links.py": "84c7b3f07cbfd6cfba2a5e31fa21f60f670997b19b8ab2bb09f238a5f51539a1"
+  },
+  "input_file_sha256": {
+    "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b",
+    "evidence/related-work/candidate-register.yaml": "65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266",
+    "evidence/source-register.yaml": "3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4",
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
+    "model/constraints.yaml": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4",
+    "model/domains.yaml": "1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3",
+    "model/generalizations.yaml": "f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c",
+    "model/relations.yaml": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac",
+    "requirements/competency-questions.yaml": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5",
+    "requirements/functional.yaml": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608",
+    "requirements/future.yaml": "bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e",
+    "requirements/quality.yaml": "dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc",
+    "requirements/scope-and-scenarios.yaml": "38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848",
+    "traceability/artifacts.yaml": "d86cc34ee7894461ca7fa89d06ebee549db1689daa91c6a60c2ef22a4503e116",
+    "traceability/link-types.yaml": "2cd040180419d5433ad924bc24f5565c97ba82d501dfda028981147b3ba27e33",
+    "traceability/migration/entity-ledger.yaml": "45a40de32998b736a1f4ea66ff7f137e282992aee0d13aaad64ae28b41bc3a8a",
+    "traceability/migration/input-integrity.yaml": "c683e54940b501be551e637ef858ac35e6e2056b328043c339f772f40889ef35",
+    "traceability/migration/source-manifest.yaml": "f475dc3ddf297e9a7f5f34e5422e1d8070f825f396cae6c8f98b79b4813dcb5b",
+    "traceability/schema/trace-edge.schema.json": "8a3b454bc233b55ec23dfcf58ace5e175e3225a1c1043f9a0869c6e8cbb642db"
+  },
+  "limits": [
+    "No requirement/CQ witness links yet; those are separate work.",
+    "Constraint mentions remain lexical candidates, not adjudicated coverage.",
+    "D/B/P support is inherited; full-text and typing approval remain unassessed.",
+    "No proves/satisfies links, human acceptance, source ownership transfer or semantic completeness claim."
+  ],
+  "repeat_generation": "byte_identical"
+}
