@@ -1,0 +1,2617 @@
+schema_version: '1.0'
+asset_id: CLR-MODEL-RELATION
+model_revision: input-r1-rev1
+status: imported_candidate
+source_sha256: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+record_schema: schema/relation.schema.json
+records:
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-1
+  id: CLR-R0001
+  label_en: contributes to
+  source_id: CLR-C0001
+  target_id: CLR-C0018
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-2
+  id: CLR-R0002
+  label_en: selects features from
+  source_id: CLR-C0001
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-3
+  id: CLR-R0003
+  label_en: orders
+  source_id: CLR-C0002
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 2..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-4
+  id: CLR-R0004
+  label_en: bears
+  source_id: CLR-C0004
+  target_id: CLR-C0008
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-5
+  id: CLR-R0005
+  label_en: bears
+  source_id: CLR-C0004
+  target_id: CLR-C0028
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-6
+  id: CLR-R0006
+  label_en: bears
+  source_id: CLR-C0004
+  target_id: CLR-C0055
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-7
+  id: CLR-R0007
+  label_en: bears
+  source_id: CLR-C0004
+  target_id: CLR-C0061
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-8
+  id: CLR-R0008
+  label_en: bears
+  source_id: CLR-C0004
+  target_id: CLR-C0093
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-9
+  id: CLR-R0009
+  label_en: bears
+  source_id: CLR-C0004
+  target_id: CLR-C0127
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-10
+  id: CLR-R0010
+  label_en: participates in
+  source_id: CLR-C0004
+  target_id: CLR-C0025
+  source_multiplicity: 1..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: «participation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-11
+  id: CLR-R0011
+  label_en: is adopted in
+  source_id: CLR-C0007
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «role» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-12
+  id: CLR-R0012
+  label_en: concerns
+  source_id: CLR-C0008
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-13
+  id: CLR-R0013
+  label_en: originates
+  source_id: CLR-C0009
+  target_id: CLR-C0008
+  source_multiplicity: 0..1
+  target_multiplicity: 1..*
+  ontouml_stereotype: «creation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at
+    the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-14
+  id: CLR-R0014
+  label_en: is accepted in
+  source_id: CLR-C0010
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «role» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-15
+  id: CLR-R0015
+  label_en: contributes to
+  source_id: CLR-C0012
+  target_id: CLR-C0018
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-16
+  id: CLR-R0016
+  label_en: forms or revises category
+  source_id: CLR-C0012
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-17
+  id: CLR-R0017
+  label_en: uses abstraction
+  source_id: CLR-C0012
+  target_id: CLR-C0001
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-18
+  id: CLR-R0018
+  label_en: affects
+  source_id: CLR-C0013
+  target_id: CLR-C0083
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-19
+  id: CLR-R0019
+  label_en: brings about
+  source_id: CLR-C0013
+  target_id: CLR-C0112
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: «bringsAbout»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «situation». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-20
+  id: CLR-R0020
+  label_en: has prior state
+  source_id: CLR-C0013
+  target_id: CLR-C0112
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «situation». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-21
+  id: CLR-R0021
+  label_en: assigns to category
+  source_id: CLR-C0014
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-22
+  id: CLR-R0022
+  label_en: classifies description
+  source_id: CLR-C0014
+  target_id: CLR-C0059
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-23
+  id: CLR-R0023
+  label_en: records assignment
+  source_id: CLR-C0014
+  target_id: CLR-C0060
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-24
+  id: CLR-R0024
+  label_en: uses category organization
+  source_id: CLR-C0014
+  target_id: CLR-C0119
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-25
+  id: CLR-R0025
+  label_en: occurs with
+  source_id: CLR-C0015
+  target_id: CLR-C0028
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at
+    the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-26
+  id: CLR-R0026
+  label_en: describes type
+  source_id: CLR-C0017
+  target_id: CLR-C0125
+  source_multiplicity: 0..*
+  target_multiplicity: 0..1
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-27
+  id: CLR-R0027
+  label_en: draws on source
+  source_id: CLR-C0018
+  target_id: CLR-C0110
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «roleMixin». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-28
+  id: CLR-R0028
+  label_en: originates
+  source_id: CLR-C0018
+  target_id: CLR-C0017
+  source_multiplicity: 0..1
+  target_multiplicity: 1..*
+  ontouml_stereotype: «creation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-29
+  id: CLR-R0029
+  label_en: adopts commitment
+  source_id: CLR-C0019
+  target_id: CLR-C0086
+  source_multiplicity: 1..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-30
+  id: CLR-R0030
+  label_en: cites source
+  source_id: CLR-C0019
+  target_id: CLR-C0110
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «roleMixin». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-31
+  id: CLR-R0031
+  label_en: has structural specification
+  source_id: CLR-C0019
+  target_id: CLR-C0116
+  source_multiplicity: 0..*
+  target_multiplicity: 0..1
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-32
+  id: CLR-R0032
+  label_en: includes element
+  source_id: CLR-C0019
+  target_id: CLR-C0022
+  source_multiplicity: 1..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-33
+  id: CLR-R0033
+  label_en: states constraint
+  source_id: CLR-C0019
+  target_id: CLR-C0030
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-34
+  id: CLR-R0034
+  label_en: uses taxonomy
+  source_id: CLR-C0019
+  target_id: CLR-C0119
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-35
+  id: CLR-R0035
+  label_en: concerns artifact
+  source_id: CLR-C0021
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-36
+  id: CLR-R0036
+  label_en: has rationale
+  source_id: CLR-C0021
+  target_id: CLR-C0065
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-37
+  id: CLR-R0037
+  label_en: is made by
+  source_id: CLR-C0021
+  target_id: CLR-C0027
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «historicalRoleMixin». Multiplicities
+    are the labels at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-38
+  id: CLR-R0038
+  label_en: responds to finding
+  source_id: CLR-C0021
+  target_id: CLR-C0040
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-39
+  id: CLR-R0039
+  label_en: selects or revises element
+  source_id: CLR-C0021
+  target_id: CLR-C0022
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-40
+  id: CLR-R0040
+  label_en: serves goal
+  source_id: CLR-C0021
+  target_id: CLR-C0054
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-41
+  id: CLR-R0041
+  label_en: produces or revises
+  source_id: CLR-C0024
+  target_id: CLR-C0023
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-42
+  id: CLR-R0042
+  label_en: adopts
+  source_id: CLR-C0026
+  target_id: CLR-C0093
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at
+    the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-43
+  id: CLR-R0043
+  label_en: concerns object
+  source_id: CLR-C0026
+  target_id: CLR-C0083
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-44
+  id: CLR-R0044
+  label_en: concerns occurrence
+  source_id: CLR-C0026
+  target_id: CLR-C0041
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-45
+  id: CLR-R0045
+  label_en: concerns state
+  source_id: CLR-C0026
+  target_id: CLR-C0112
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «situation». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-46
+  id: CLR-R0046
+  label_en: concerns temporal entity
+  source_id: CLR-C0026
+  target_id: CLR-C0123
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «abstract». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-47
+  id: CLR-R0047
+  label_en: concerns type
+  source_id: CLR-C0026
+  target_id: CLR-C0125
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-48
+  id: CLR-R0048
+  label_en: creates
+  source_id: CLR-C0026
+  target_id: CLR-C0019
+  source_multiplicity: '1'
+  target_multiplicity: 1..*
+  ontouml_stereotype: «creation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-49
+  id: CLR-R0049
+  label_en: has subprocess
+  source_id: CLR-C0026
+  target_id: CLR-C0025
+  source_multiplicity: 0..1
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-50
+  id: CLR-R0050
+  label_en: is informed by
+  source_id: CLR-C0026
+  target_id: CLR-C0015
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-51
+  id: CLR-R0051
+  label_en: is motivated by
+  source_id: CLR-C0026
+  target_id: CLR-C0061
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at
+    the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-52
+  id: CLR-R0052
+  label_en: records decision
+  source_id: CLR-C0026
+  target_id: CLR-C0021
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-53
+  id: CLR-R0053
+  label_en: uses domain knowledge
+  source_id: CLR-C0026
+  target_id: CLR-C0034
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-54
+  id: CLR-R0054
+  label_en: participates in
+  source_id: CLR-C0027
+  target_id: CLR-C0026
+  source_multiplicity: 1..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «participation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «historicalRoleMixin» / «event». Multiplicities are
+    the labels at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-55
+  id: CLR-R0055
+  label_en: is expressed by
+  source_id: CLR-C0030
+  target_id: CLR-C0052
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-56
+  id: CLR-R0056
+  label_en: restricts element
+  source_id: CLR-C0030
+  target_id: CLR-C0022
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-57
+  id: CLR-R0057
+  label_en: defines
+  source_id: CLR-C0032
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-58
+  id: CLR-R0058
+  label_en: communicates
+  source_id: CLR-C0033
+  target_id: CLR-C0070
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-59
+  id: CLR-R0059
+  label_en: describes subject concepts
+  source_id: CLR-C0034
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-60
+  id: CLR-R0060
+  label_en: informs formation
+  source_id: CLR-C0034
+  target_id: CLR-C0018
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-61
+  id: CLR-R0061
+  label_en: is scoped by goal
+  source_id: CLR-C0039
+  target_id: CLR-C0054
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-62
+  id: CLR-R0062
+  label_en: assesses artifact
+  source_id: CLR-C0040
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-63
+  id: CLR-R0063
+  label_en: cites evidence
+  source_id: CLR-C0040
+  target_id: CLR-C0042
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «role». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-64
+  id: CLR-R0064
+  label_en: has rationale
+  source_id: CLR-C0040
+  target_id: CLR-C0065
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-65
+  id: CLR-R0065
+  label_en: judges against
+  source_id: CLR-C0040
+  target_id: CLR-C0039
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-66
+  id: CLR-R0066
+  label_en: has temporal extent
+  source_id: CLR-C0041
+  target_id: CLR-C0123
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «abstract». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-67
+  id: CLR-R0067
+  label_en: instantiates
+  source_id: CLR-C0041
+  target_id: CLR-C0125
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «instantiation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-68
+  id: CLR-R0068
+  label_en: is attributed to
+  source_id: CLR-C0042
+  target_id: CLR-C0110
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «role» / «roleMixin». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-69
+  id: CLR-R0069
+  label_en: informs
+  source_id: CLR-C0043
+  target_id: CLR-C0127
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at
+    the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-70
+  id: CLR-R0070
+  label_en: explains
+  source_id: CLR-C0044
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-71
+  id: CLR-R0071
+  label_en: uses language
+  source_id: CLR-C0047
+  target_id: CLR-C0066
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-72
+  id: CLR-R0072
+  label_en: communicates finding
+  source_id: CLR-C0048
+  target_id: CLR-C0040
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-73
+  id: CLR-R0073
+  label_en: informs revision of
+  source_id: CLR-C0048
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-74
+  id: CLR-R0074
+  label_en: reports on
+  source_id: CLR-C0048
+  target_id: CLR-C0026
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-75
+  id: CLR-R0075
+  label_en: contains formula
+  source_id: CLR-C0050
+  target_id: CLR-C0052
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-76
+  id: CLR-R0076
+  label_en: formalizes content
+  source_id: CLR-C0051
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-77
+  id: CLR-R0077
+  label_en: produces or revises
+  source_id: CLR-C0051
+  target_id: CLR-C0050
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-78
+  id: CLR-R0078
+  label_en: uses formal language
+  source_id: CLR-C0051
+  target_id: CLR-C0006
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-79
+  id: CLR-R0079
+  label_en: has general concept
+  source_id: CLR-C0053
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-80
+  id: CLR-R0080
+  label_en: has specific concept
+  source_id: CLR-C0053
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-81
+  id: CLR-R0081
+  label_en: is assessed against
+  source_id: CLR-C0054
+  target_id: CLR-C0129
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-82
+  id: CLR-R0082
+  label_en: is externalized in
+  source_id: CLR-C0055
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-83
+  id: CLR-R0083
+  label_en: describes object
+  source_id: CLR-C0059
+  target_id: CLR-C0083
+  source_multiplicity: 0..*
+  target_multiplicity: 0..1
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-84
+  id: CLR-R0084
+  label_en: describes occurrence
+  source_id: CLR-C0059
+  target_id: CLR-C0041
+  source_multiplicity: 0..*
+  target_multiplicity: 0..1
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-85
+  id: CLR-R0085
+  label_en: describes state
+  source_id: CLR-C0059
+  target_id: CLR-C0112
+  source_multiplicity: 0..*
+  target_multiplicity: 0..1
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «situation». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-86
+  id: CLR-R0086
+  label_en: describes temporal entity
+  source_id: CLR-C0059
+  target_id: CLR-C0123
+  source_multiplicity: 0..*
+  target_multiplicity: 0..1
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «abstract». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-87
+  id: CLR-R0087
+  label_en: has instance description
+  source_id: CLR-C0060
+  target_id: CLR-C0059
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-88
+  id: CLR-R0088
+  label_en: has type description
+  source_id: CLR-C0060
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-89
+  id: CLR-R0089
+  label_en: has desired content
+  source_id: CLR-C0061
+  target_id: CLR-C0054
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-90
+  id: CLR-R0090
+  label_en: assigns content
+  source_id: CLR-C0062
+  target_id: CLR-C0105
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-91
+  id: CLR-R0091
+  label_en: consults source
+  source_id: CLR-C0063
+  target_id: CLR-C0110
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «roleMixin». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-92
+  id: CLR-R0092
+  label_en: draws on
+  source_id: CLR-C0063
+  target_id: CLR-C0034
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-93
+  id: CLR-R0093
+  label_en: interprets
+  source_id: CLR-C0063
+  target_id: CLR-C0101
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-94
+  id: CLR-R0094
+  label_en: originates
+  source_id: CLR-C0063
+  target_id: CLR-C0062
+  source_multiplicity: 0..1
+  target_multiplicity: 1..*
+  ontouml_stereotype: «creation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-95
+  id: CLR-R0095
+  label_en: attributes to source
+  source_id: CLR-C0065
+  target_id: CLR-C0110
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «roleMixin». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-96
+  id: CLR-R0096
+  label_en: cites evidence
+  source_id: CLR-C0065
+  target_id: CLR-C0042
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «role». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-97
+  id: CLR-R0097
+  label_en: uses assumption
+  source_id: CLR-C0065
+  target_id: CLR-C0007
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «role». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-98
+  id: CLR-R0098
+  label_en: has semantic specification
+  source_id: CLR-C0066
+  target_id: CLR-C0108
+  source_multiplicity: 1..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-99
+  id: CLR-R0099
+  label_en: has syntax specification
+  source_id: CLR-C0066
+  target_id: CLR-C0117
+  source_multiplicity: 1..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-100
+  id: CLR-R0100
+  label_en: produces or revises
+  source_id: CLR-C0067
+  target_id: CLR-C0047
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-101
+  id: CLR-R0101
+  label_en: produces or revises
+  source_id: CLR-C0069
+  target_id: CLR-C0089
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-102
+  id: CLR-R0102
+  label_en: has intended recipient
+  source_id: CLR-C0070
+  target_id: CLR-C0004
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-103
+  id: CLR-R0103
+  label_en: has sender
+  source_id: CLR-C0070
+  target_id: CLR-C0004
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-104
+  id: CLR-R0104
+  label_en: produces or revises
+  source_id: CLR-C0072
+  target_id: CLR-C0071
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-105
+  id: CLR-R0105
+  label_en: conforms to
+  source_id: CLR-C0073
+  target_id: CLR-C0071
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-106
+  id: CLR-R0106
+  label_en: is classified by
+  source_id: CLR-C0073
+  target_id: CLR-C0074
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «instantiation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «type». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-107
+  id: CLR-R0107
+  label_en: represents models
+  source_id: CLR-C0075
+  target_id: CLR-C0073
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-108
+  id: CLR-R0108
+  label_en: conforms to viewpoint
+  source_id: CLR-C0076
+  target_id: CLR-C0131
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-109
+  id: CLR-R0109
+  label_en: is view of
+  source_id: CLR-C0076
+  target_id: CLR-C0073
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-110
+  id: CLR-R0110
+  label_en: produces or revises
+  source_id: CLR-C0077
+  target_id: CLR-C0073
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-111
+  id: CLR-R0111
+  label_en: uses
+  source_id: CLR-C0077
+  target_id: CLR-C0078
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-112
+  id: CLR-R0112
+  label_en: assigns term
+  source_id: CLR-C0081
+  target_id: CLR-C0120
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-113
+  id: CLR-R0113
+  label_en: names
+  source_id: CLR-C0081
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-114
+  id: CLR-R0114
+  label_en: instantiates
+  source_id: CLR-C0083
+  target_id: CLR-C0125
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «instantiation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «category» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-115
+  id: CLR-R0115
+  label_en: observes
+  source_id: CLR-C0084
+  target_id: CLR-C0083
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-116
+  id: CLR-R0116
+  label_en: observes occurrence
+  source_id: CLR-C0084
+  target_id: CLR-C0041
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-117
+  id: CLR-R0117
+  label_en: observes state
+  source_id: CLR-C0084
+  target_id: CLR-C0112
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «situation». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-118
+  id: CLR-R0118
+  label_en: participates in
+  source_id: CLR-C0085
+  target_id: CLR-C0084
+  source_multiplicity: 1..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «participation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «roleMixin» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-119
+  id: CLR-R0119
+  label_en: commits to description
+  source_id: CLR-C0086
+  target_id: CLR-C0022
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-120
+  id: CLR-R0120
+  label_en: constrains interpretation
+  source_id: CLR-C0086
+  target_id: CLR-C0062
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-121
+  id: CLR-R0121
+  label_en: interprets vocabulary
+  source_id: CLR-C0086
+  target_id: CLR-C0134
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-122
+  id: CLR-R0122
+  label_en: has part description
+  source_id: CLR-C0089
+  target_id: CLR-C0088
+  source_multiplicity: 1..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «role». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-123
+  id: CLR-R0123
+  label_en: has whole description
+  source_id: CLR-C0089
+  target_id: CLR-C0137
+  source_multiplicity: 1..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «role». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-124
+  id: CLR-R0124
+  label_en: produces or revises
+  source_id: CLR-C0091
+  target_id: CLR-C0090
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-125
+  id: CLR-R0125
+  label_en: provides input to
+  source_id: CLR-C0092
+  target_id: CLR-C0084
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-126
+  id: CLR-R0126
+  label_en: is expressed by
+  source_id: CLR-C0093
+  target_id: CLR-C0131
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-127
+  id: CLR-R0127
+  label_en: presents
+  source_id: CLR-C0095
+  target_id: CLR-C0101
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-128
+  id: CLR-R0128
+  label_en: describes feature of
+  source_id: CLR-C0096
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-129
+  id: CLR-R0129
+  label_en: applies criterion
+  source_id: CLR-C0097
+  target_id: CLR-C0039
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-130
+  id: CLR-R0130
+  label_en: assesses artifact
+  source_id: CLR-C0097
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-131
+  id: CLR-R0131
+  label_en: creates result
+  source_id: CLR-C0097
+  target_id: CLR-C0040
+  source_multiplicity: '1'
+  target_multiplicity: 1..*
+  ontouml_stereotype: «creation»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-132
+  id: CLR-R0132
+  label_en: has source element
+  source_id: CLR-C0099
+  target_id: CLR-C0022
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-133
+  id: CLR-R0133
+  label_en: has target element
+  source_id: CLR-C0099
+  target_id: CLR-C0022
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-134
+  id: CLR-R0134
+  label_en: produces or revises
+  source_id: CLR-C0100
+  target_id: CLR-C0099
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-135
+  id: CLR-R0135
+  label_en: applies pattern
+  source_id: CLR-C0101
+  target_id: CLR-C0090
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-136
+  id: CLR-R0136
+  label_en: bears
+  source_id: CLR-C0101
+  target_id: CLR-C0068
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «quality». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-137
+  id: CLR-R0137
+  label_en: bears
+  source_id: CLR-C0101
+  target_id: CLR-C0126
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-138
+  id: CLR-R0138
+  label_en: bears compatibility disposition
+  source_id: CLR-C0101
+  target_id: CLR-C0106
+  source_multiplicity: '1'
+  target_multiplicity: 0..*
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-139
+  id: CLR-R0139
+  label_en: conforms to schema
+  source_id: CLR-C0101
+  target_id: CLR-C0102
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-140
+  id: CLR-R0140
+  label_en: encodes
+  source_id: CLR-C0101
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-141
+  id: CLR-R0141
+  label_en: has form
+  source_id: CLR-C0101
+  target_id: CLR-C0049
+  source_multiplicity: 0..*
+  target_multiplicity: '1'
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-142
+  id: CLR-R0142
+  label_en: has level
+  source_id: CLR-C0101
+  target_id: CLR-C0003
+  source_multiplicity: '1'
+  target_multiplicity: 0..1
+  ontouml_stereotype: «characterization»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «quality». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-143
+  id: CLR-R0143
+  label_en: produces or revises
+  source_id: CLR-C0103
+  target_id: CLR-C0102
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-144
+  id: CLR-R0144
+  label_en: interprets content of
+  source_id: CLR-C0105
+  target_id: CLR-C0101
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-145
+  id: CLR-R0145
+  label_en: depends on counterpart
+  source_id: CLR-C0106
+  target_id: CLR-C0101
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «externalDependence»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-146
+  id: CLR-R0146
+  label_en: produces or revises
+  source_id: CLR-C0107
+  target_id: CLR-C0108
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-147
+  id: CLR-R0147
+  label_en: constrains interpretation of
+  source_id: CLR-C0108
+  target_id: CLR-C0047
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-148
+  id: CLR-R0148
+  label_en: concerns shared content
+  source_id: CLR-C0109
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «situation» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-149
+  id: CLR-R0149
+  label_en: has participants
+  source_id: CLR-C0109
+  target_id: CLR-C0004
+  source_multiplicity: 0..*
+  target_multiplicity: 2..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «situation» / «category». Multiplicities are the
+    labels at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-150
+  id: CLR-R0150
+  label_en: includes compatible states
+  source_id: CLR-C0109
+  target_id: CLR-C0127
+  source_multiplicity: 0..*
+  target_multiplicity: 2..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «situation» / «mode». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-151
+  id: CLR-R0151
+  label_en: configures objects
+  source_id: CLR-C0112
+  target_id: CLR-C0083
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «situation» / «category». Multiplicities are the
+    labels at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-152
+  id: CLR-R0152
+  label_en: holds at
+  source_id: CLR-C0112
+  target_id: CLR-C0123
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «situation» / «abstract». Multiplicities are the
+    labels at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-153
+  id: CLR-R0153
+  label_en: examines model
+  source_id: CLR-C0114
+  target_id: CLR-C0023
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-154
+  id: CLR-R0154
+  label_en: examines structure
+  source_id: CLR-C0114
+  target_id: CLR-C0116
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-155
+  id: CLR-R0155
+  label_en: produces or revises
+  source_id: CLR-C0115
+  target_id: CLR-C0116
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-156
+  id: CLR-R0156
+  label_en: organizes elements
+  source_id: CLR-C0116
+  target_id: CLR-C0022
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-157
+  id: CLR-R0157
+  label_en: specifies connections
+  source_id: CLR-C0116
+  target_id: CLR-C0099
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-158
+  id: CLR-R0158
+  label_en: produces or revises
+  source_id: CLR-C0118
+  target_id: CLR-C0117
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-159
+  id: CLR-R0159
+  label_en: organizes categories
+  source_id: CLR-C0119
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-160
+  id: CLR-R0160
+  label_en: specifies hierarchical links
+  source_id: CLR-C0119
+  target_id: CLR-C0053
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-161
+  id: CLR-R0161
+  label_en: designates
+  source_id: CLR-C0120
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-162
+  id: CLR-R0162
+  label_en: provides definitions
+  source_id: CLR-C0121
+  target_id: CLR-C0032
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-163
+  id: CLR-R0163
+  label_en: produces or revises
+  source_id: CLR-C0122
+  target_id: CLR-C0121
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-164
+  id: CLR-R0164
+  label_en: denotes temporal entity
+  source_id: CLR-C0124
+  target_id: CLR-C0123
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «abstract». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-165
+  id: CLR-R0165
+  label_en: represents temporal extent of
+  source_id: CLR-C0124
+  target_id: CLR-C0041
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «event». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-166
+  id: CLR-R0166
+  label_en: depends on interpreter
+  source_id: CLR-C0126
+  target_id: CLR-C0004
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: «externalDependence»
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «category». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-167
+  id: CLR-R0167
+  label_en: concerns
+  source_id: CLR-C0127
+  target_id: CLR-C0017
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-168
+  id: CLR-R0168
+  label_en: has articulated content
+  source_id: CLR-C0127
+  target_id: CLR-C0034
+  source_multiplicity: 0..*
+  target_multiplicity: 0..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-169
+  id: CLR-R0169
+  label_en: assesses
+  source_id: CLR-C0128
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-170
+  id: CLR-R0170
+  label_en: uses criterion
+  source_id: CLR-C0128
+  target_id: CLR-C0129
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-171
+  id: CLR-R0171
+  label_en: selects from
+  source_id: CLR-C0130
+  target_id: CLR-C0019
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-172
+  id: CLR-R0172
+  label_en: produces or revises
+  source_id: CLR-C0133
+  target_id: CLR-C0132
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-173
+  id: CLR-R0173
+  label_en: contains terms
+  source_id: CLR-C0134
+  target_id: CLR-C0120
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-174
+  id: CLR-R0174
+  label_en: identifies
+  source_id: CLR-C0135
+  target_id: CLR-C0120
+  source_multiplicity: 0..*
+  target_multiplicity: 1..*
+  ontouml_stereotype: null
+  connector: 'Solid line
+
+    No arrowhead'
+  notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels
+    at the respective diagram ends; no OWL restriction is inferred.'

@@ -1,0 +1,2205 @@
+schema_version: '1.0'
+asset_id: CLR-MODEL-CONCEPT
+model_revision: input-r1-rev1
+status: imported_candidate
+source_sha256: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+record_schema: schema/concept.schema.json
+records:
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-1
+  id: CLR-C0001
+  label_en: Abstraction
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A cognitive process that selects relevant characteristics while suppressing
+    other detail for a stated purpose.
+  is_abstract: null
+  primary_domain_id: CLR-D0004
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [20]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-2
+  id: CLR-C0002
+  label_en: Abstraction Hierarchy
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A structure ordering concepts or representations by explicitly stated
+    abstraction relationships.
+  is_abstract: null
+  primary_domain_id: CLR-D0004
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-3
+  id: CLR-C0003
+  label_en: Abstraction Level
+  ufo_type: Endurant / quality
+  ontouml_stereotype: «quality»
+  definition: A quality locating a representation on a specified scale of abstraction
+    relative to a subject and purpose; the ordering scheme must be declared.
+  is_abstract: null
+  primary_domain_id: CLR-D0004
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-4
+  id: CLR-C0004
+  label_en: Agent
+  ufo_type: Endurant / object
+  ontouml_stereotype: «category»
+  definition: An object capable of intentional participation in conceptual activities,
+    including an individual or an appropriately constituted collective agent.
+  is_abstract: null
+  primary_domain_id: CLR-D0021
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [11], [23]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-5
+  id: CLR-C0005
+  label_en: Analysis Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model organized to support examination and understanding of a subject's
+    relevant characteristics and relationships.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-6
+  id: CLR-C0006
+  label_en: Artificial Language
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A language whose expression and interpretation conventions are deliberately
+    designed.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [15], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-7
+  id: CLR-C0007
+  label_en: Assumption
+  ufo_type: Endurant / information object in a role
+  ontouml_stereotype: «role»
+  definition: An information object expressing a proposition provisionally accepted
+    for a conceptualization without being established within that context.
+  is_abstract: null
+  primary_domain_id: CLR-D0020
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [28], [46]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-8
+  id: CLR-C0008
+  label_en: Awareness
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «mode»
+  definition: An agent-dependent mental state in which a subject or feature is available
+    to attention.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [21], [24]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-9
+  id: CLR-C0009
+  label_en: Awareness Formation
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A cognitive process through which an awareness state comes into existence
+    in an agent.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [19], [24]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-10
+  id: CLR-C0010
+  label_en: Axiom
+  ufo_type: Endurant / information object in a role
+  ontouml_stereotype: «role»
+  definition: A formula playing the role of an accepted starting assertion in a specified
+    theory or conceptual artifact; acceptance may differ between theories.
+  is_abstract: null
+  primary_domain_id: CLR-D0014
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [6], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-11
+  id: CLR-C0011
+  label_en: Business Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model representing business concerns such as value, activities or
+    organization; retained as an optional baseline specialization.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-12
+  id: CLR-C0012
+  label_en: Categorization
+  ufo_type: Event / cognitive process
+  ontouml_stereotype: «event»
+  definition: A cognitive process that forms or applies category boundaries by identifying
+    relevant commonalities and differences among subjects.
+  is_abstract: null
+  primary_domain_id: CLR-D0013
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [20]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-13
+  id: CLR-C0013
+  label_en: Change
+  ufo_type: Event / transition
+  ontouml_stereotype: «event»
+  definition: An event through which a subject passes from one state to another, with
+    the relevant difference explicitly identified.
+  is_abstract: null
+  primary_domain_id: CLR-D0016
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [10], [11], [33]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-14
+  id: CLR-C0014
+  label_en: Classification
+  ufo_type: Event / cognitive process
+  ontouml_stereotype: «event»
+  definition: A process that assigns instance descriptions to established concept
+    categories under stated membership rules. This selected sense distinguishes assignment
+    from forming categories.
+  is_abstract: null
+  primary_domain_id: CLR-D0013
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [39]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-15
+  id: CLR-C0015
+  label_en: Cognition
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A mental process through which an agent acquires, organizes or uses
+    information and understanding.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [19], [21]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-16
+  id: CLR-C0016
+  label_en: Coherence
+  ufo_type: Endurant / criterion specification
+  ontouml_stereotype: «subkind»
+  definition: An evaluation criterion requiring conceptual distinctions and relations
+    to form an intelligible, mutually compatible account of the subject; connectivity
+    alone is insufficient.
+  is_abstract: null
+  primary_domain_id: CLR-D0018
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [8], [48]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-17
+  id: CLR-C0017
+  label_en: Concept
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A conceptual element describing a type or category through selected
+    characteristics; the description is distinct from the universal it describes.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [20], [37]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-18
+  id: CLR-C0018
+  label_en: Concept Formation
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptualization process that originates a concept description by
+    identifying and articulating relevant characteristics.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [14], [20]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-19
+  id: CLR-C0019
+  label_en: Conceptual Artifact
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object produced by conceptualization that assembles explicit
+    conceptual elements into a reviewable account of a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [34]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-20
+  id: CLR-C0020
+  label_en: Conceptual Connection
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A relation description articulating a meaningful connection between
+    conceptual elements without requiring a particular relation family.
+  is_abstract: null
+  primary_domain_id: CLR-D0006
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [13], [30], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-21
+  id: CLR-C0021
+  label_en: Conceptual Decision
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object recording a selected conceptual choice made during
+    one conceptualization episode, including its affected artifact, deciding agent
+    and stated rationale. It is the recorded decision content, not the act of deciding.
+  is_abstract: null
+  primary_domain_id: CLR-D0020
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [41], [47]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-22
+  id: CLR-C0022
+  label_en: Conceptual Element
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object that contributes a concept, relation, property
+    or instance description to a conceptual artifact.
+  is_abstract: null
+  primary_domain_id: CLR-D0021
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [39]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-23
+  id: CLR-C0023
+  label_en: Conceptual Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model expressing a conceptualization through explicit concepts, relations
+    and constraints at the intended level of abstraction.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [17], [50]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-24
+  id: CLR-C0024
+  label_en: Conceptual Modeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A modeling process that articulates concepts, relations and constraints
+    to express a conceptualization of a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [17], [18]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-25
+  id: CLR-C0025
+  label_en: Conceptual Process
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A temporally extended activity through which an agent forms, transforms,
+    interprets or communicates conceptual content.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [14], [21]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-26
+  id: CLR-C0026
+  label_en: Conceptualization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A purposeful process in which agents select and organize features of
+    a subject to form an explicit conceptual artifact from a perspective.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [13], [14]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-27
+  id: CLR-C0027
+  label_en: Conceptualizer
+  ufo_type: Endurant / agent in a historical role
+  ontouml_stereotype: «historicalRoleMixin»
+  definition: An agent classified by its participation in a conceptualization episode,
+    with that historical dependence retained after the episode ends.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [11], [12]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-28
+  id: CLR-C0028
+  label_en: Consciousness
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «mode»
+  definition: An agent-dependent state of subjective awareness within which conscious
+    cognitive activity can occur.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [21], [24]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-29
+  id: CLR-C0029
+  label_en: Consistency
+  ufo_type: Endurant / criterion specification
+  ontouml_stereotype: «subkind»
+  definition: An evaluation criterion requiring the adopted assertions and constraints
+    to admit a joint interpretation under the stated semantics.
+  is_abstract: null
+  primary_domain_id: CLR-D0018
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [48], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-30
+  id: CLR-C0030
+  label_en: Constraint
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying a restriction on admissible conceptual
+    elements, relationships, interpretations or model configurations.
+  is_abstract: null
+  primary_domain_id: CLR-D0014
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [6], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-31
+  id: CLR-C0031
+  label_en: Correspondence
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A relation description stating a specified alignment or mapping between
+    conceptual elements or their represented contents.
+  is_abstract: null
+  primary_domain_id: CLR-D0006
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [13], [30], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-32
+  id: CLR-C0032
+  label_en: Definition
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An expression specifying the intended meaning and delimitation of a
+    concept.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [29], [37]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-33
+  id: CLR-C0033
+  label_en: Discourse
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A communicative conceptual process in which agents exchange and interpret
+    messages about a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [46], [52]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-34
+  id: CLR-C0034
+  label_en: Domain Knowledge
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: Explicitly articulable information content concerning a subject area
+    that informs conceptual choices and interpretations; an agent knowing that content
+    is a separate mental state.
+  is_abstract: null
+  primary_domain_id: CLR-D0017
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [15], [28]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-35
+  id: CLR-C0035
+  label_en: Domain Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model describing concepts and relationships within a selected subject
+    area; it does not import the Domain Engineering domain.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-36
+  id: CLR-C0036
+  label_en: Domain Vocabulary
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A vocabulary collecting terms relevant to a particular subject area.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [36], [37], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-37
+  id: CLR-C0037
+  label_en: Domain-Specific Language
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A language whose constructs and conventions are tailored to a particular
+    subject area or class of concerns.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-38
+  id: CLR-C0038
+  label_en: Enterprise Modeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A modeling process focused on an enterprise's organization, behavior
+    or concerns; retained from the baseline as an optional specialization.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-39
+  id: CLR-C0039
+  label_en: Evaluation Criterion
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying a basis and conditions for judging
+    a conceptual artifact, including what evidence would support the judgment.
+  is_abstract: null
+  primary_domain_id: CLR-D0019
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [47], [48]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-40
+  id: CLR-C0040
+  label_en: Evaluation Result
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object recording one assessment finding about one conceptual
+    artifact against one evaluation criterion, produced by one evaluation episode.
+    A review with several criteria records several results.
+  is_abstract: null
+  primary_domain_id: CLR-D0019
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [42], [48]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-41
+  id: CLR-C0041
+  label_en: Event
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: An occurrence that unfolds in time and may have temporal parts, including
+    conceptual activities and occurrences being conceptualized.
+  is_abstract: null
+  primary_domain_id: CLR-D0021
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [10], [11]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-42
+  id: CLR-C0042
+  label_en: Evidence
+  ufo_type: Endurant / information object in a role
+  ontouml_stereotype: «role»
+  definition: An information object used to support or challenge a conceptual choice,
+    interpretation or evaluative judgment in a specified argumentative context.
+  is_abstract: null
+  primary_domain_id: CLR-D0020
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [27], [41]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-43
+  id: CLR-C0043
+  label_en: Experience
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: An episode of involvement or encounter that can inform an agent's understanding
+    and subsequent conceptualization.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [24], [25]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-44
+  id: CLR-C0044
+  label_en: Explanation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An expression that makes conceptual content intelligible by stating
+    relevant reasons, dependencies or organizing principles.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [22], [49]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-45
+  id: CLR-C0045
+  label_en: Explanatory Adequacy
+  ufo_type: Endurant / criterion specification
+  ontouml_stereotype: «subkind»
+  definition: An evaluation criterion requiring the model to explain relevant distinctions,
+    dependencies and examples at the level needed for its intended purpose.
+  is_abstract: null
+  primary_domain_id: CLR-D0018
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [22], [49]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-46
+  id: CLR-C0046
+  label_en: Explicit Definition
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A definition that directly states the defining characteristics or conditions
+    of a concept.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [29], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-47
+  id: CLR-C0047
+  label_en: Expression
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A representation formulated in a language according to its expression
+    conventions.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [37], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-48
+  id: CLR-C0048
+  label_en: Feedback
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A message reporting an assessment or response that can inform revision
+    of a conceptualization or its artifact.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [42], [46]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-49
+  id: CLR-C0049
+  label_en: Form
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying the structural or presentational organization
+    through which a representation expresses content.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [34], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-50
+  id: CLR-C0050
+  label_en: Formal Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model expressed through a language with explicitly specified syntax
+    and semantics that support formal interpretation.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-51
+  id: CLR-C0051
+  label_en: Formalization
+  ufo_type: Event / conceptual process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that expresses conceptual content in a formal language
+    with explicit syntax and semantics.
+  is_abstract: null
+  primary_domain_id: CLR-D0014
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [16], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-52
+  id: CLR-C0052
+  label_en: Formula
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An expression constructed under the syntax of a formal language and
+    capable of interpretation under its semantics.
+  is_abstract: null
+  primary_domain_id: CLR-D0014
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [15], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-53
+  id: CLR-C0053
+  label_en: Generalization
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A relation description asserting that one concept is more specific than
+    another; this reified description is distinct from an OntoUML generalization connector.
+  is_abstract: null
+  primary_domain_id: CLR-D0004
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [3], [7], [18]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-54
+  id: CLR-C0054
+  label_en: Goal
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying a desired outcome that gives explicit
+    content to an agent's intention.
+  is_abstract: null
+  primary_domain_id: CLR-D0002
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [11], [26]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-55
+  id: CLR-C0055
+  label_en: Idea
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «mode»
+  definition: An agent-dependent mental content or conception that can motivate concept
+    formation and be externalized in a conceptual artifact.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [20], [21]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-56
+  id: CLR-C0056
+  label_en: Implicit Definition
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A definition that fixes a concept's interpretation through its place
+    in a system of constraints or relationships.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [29], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-57
+  id: CLR-C0057
+  label_en: Information Object
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «kind»
+  definition: A repeatable, identifiable unit of information content that may be carried
+    by different physical or digital manifestations; identity follows content under
+    an explicit equivalence policy.
+  is_abstract: null
+  primary_domain_id: CLR-D0021
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [15]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-58
+  id: CLR-C0058
+  label_en: Insight
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «subkind»
+  definition: An understanding state characterized by a newly recognized connection
+    or organizing principle, distinguished from the event that produces it.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [22], [45]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-59
+  id: CLR-C0059
+  label_en: Instance
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A conceptual element describing a particular object or event as an instance
+    of a type; it is distinct from that particular entity.
+  is_abstract: null
+  primary_domain_id: CLR-D0004
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [3], [7]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-60
+  id: CLR-C0060
+  label_en: Instantiation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A relation description linking an instance description to a type description;
+    it is distinct from the ontological instantiation relation itself.
+  is_abstract: null
+  primary_domain_id: CLR-D0004
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [3], [7], [18]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-61
+  id: CLR-C0061
+  label_en: Intention
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «mode»
+  definition: An agent-dependent mental commitment to pursue a goal through a course
+    of action.
+  is_abstract: null
+  primary_domain_id: CLR-D0002
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [11], [26]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-62
+  id: CLR-C0062
+  label_en: Interpretation
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «subkind»
+  definition: An understanding state that assigns meaning to a representation in a
+    context, distinguished from the interpreting process.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [21], [22]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-63
+  id: CLR-C0063
+  label_en: Interpretation Process
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A cognitive process that interprets a representation and brings about
+    or develops an interpretation state.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [21], [46]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-64
+  id: CLR-C0064
+  label_en: Interval-Based Time Representation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A time representation that uses intervals as its primary temporal units.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [33], [40]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-65
+  id: CLR-C0065
+  label_en: Justification
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object giving explicit reasons for a conceptual decision
+    or evaluation result, potentially drawing on evidence, assumptions and attributed
+    sources. It records a rationale without implying that the rationale is sound.
+  is_abstract: null
+  primary_domain_id: CLR-D0020
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [28], [47]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-66
+  id: CLR-C0066
+  label_en: Language
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information system of expression conventions, syntax and semantic
+    rules through which content can be formulated and interpreted.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [15], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-67
+  id: CLR-C0067
+  label_en: Languagization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that expresses conceptual content through a language;
+    a project-specific label for linguistic articulation.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [37], [46]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-68
+  id: CLR-C0068
+  label_en: Meaningfulness
+  ufo_type: Endurant / quality
+  ontouml_stereotype: «quality»
+  definition: A quality of a representation concerning its meaningfulness within a
+    stated interpretive frame; its value space and assessment rule remain to be specified.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [52]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-69
+  id: CLR-C0069
+  label_en: Meronomization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that develops part-whole descriptions of a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0009
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [32]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-70
+  id: CLR-C0070
+  label_en: Message
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An expression communicated or intended to be communicated from an agent
+    to one or more recipients.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [46], [52]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-71
+  id: CLR-C0071
+  label_en: Metamodel
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model specifying the constructs, relationships and well-formedness
+    conditions to which a family of models conforms.
+  is_abstract: null
+  primary_domain_id: CLR-D0012
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [38]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-72
+  id: CLR-C0072
+  label_en: Metamodeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A modeling process that constructs or revises a specification of the
+    constructs and admissible structures of models.
+  is_abstract: null
+  primary_domain_id: CLR-D0012
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [38]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-73
+  id: CLR-C0073
+  label_en: Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A structured representation that selectively describes a subject for
+    a purpose using explicit modeling conventions.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [34]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-74
+  id: CLR-C0074
+  label_en: Model Kind
+  ufo_type: Universal / higher-order type
+  ontouml_stereotype: «type»
+  definition: A higher-order type whose instances are types of models, such as the
+    type Conceptual Model; it is not a particular model artifact.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [3], [38]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-75
+  id: CLR-C0075
+  label_en: Model of Models
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model whose subject includes other models and their relationships;
+    unlike a metamodel, it need not prescribe their admissible form.
+  is_abstract: null
+  primary_domain_id: CLR-D0012
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [3], [38]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-76
+  id: CLR-C0076
+  label_en: Model View
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A representation selecting and presenting aspects of one model according
+    to a viewpoint.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-77
+  id: CLR-C0077
+  label_en: Modeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that constructs or revises a model using modeling
+    conventions and a language.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [17], [18]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-78
+  id: CLR-C0078
+  label_en: Modeling Language
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A language defining constructs and rules for expressing models.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [18], [38]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-79
+  id: CLR-C0079
+  label_en: Multi-Dimensional Modeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A modeling process that organizes a subject through several explicitly
+    distinguished dimensions or analytical perspectives.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-80
+  id: CLR-C0080
+  label_en: Multi-Level Modeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A modeling process that relates multiple classification levels and makes
+    the type-instance distinctions between those levels explicit.
+  is_abstract: null
+  primary_domain_id: CLR-D0012
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [3], [38]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-81
+  id: CLR-C0081
+  label_en: Naming
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that assigns a term to a concept within a naming
+    context or vocabulary.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [36], [37]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-82
+  id: CLR-C0082
+  label_en: Natural Language
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A language whose conventions develop through community use and historical
+    linguistic practice.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [15], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-83
+  id: CLR-C0083
+  label_en: Object
+  ufo_type: Endurant / object
+  ontouml_stereotype: «category»
+  definition: An endurant that persists through change and is wholly present whenever
+    it exists; the broad object category excludes events, moments and types.
+  is_abstract: null
+  primary_domain_id: CLR-D0021
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [11]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-84
+  id: CLR-C0084
+  label_en: Observation
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A cognitive process in which an observer attends to a subject and identifies
+    features relevant to an inquiry.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [19], [25]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-85
+  id: CLR-C0085
+  label_en: Observer
+  ufo_type: Endurant / agent in a role
+  ontouml_stereotype: «roleMixin»
+  definition: An agent in the context-dependent role of attending to a subject in
+    an observation episode.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [11], [25]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-86
+  id: CLR-C0086
+  label_en: Ontological Commitment
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An explicit semantic specification connecting a vocabulary to the entities
+    and relations assumed in an intended conceptualization; here it denotes recorded
+    content, not an agent mental state.
+  is_abstract: null
+  primary_domain_id: CLR-D0015
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [8], [12], [13]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-87
+  id: CLR-C0087
+  label_en: Ontology-Driven Conceptual Modeling
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual modeling process whose modeling decisions are guided by
+    explicit ontological distinctions and commitments.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [9], [12]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-88
+  id: CLR-C0088
+  label_en: Part
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «role»
+  definition: A concept description considered as a constituent in a specified part-whole
+    description; parthood here is a role of the description.
+  is_abstract: null
+  primary_domain_id: CLR-D0009
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [32]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-89
+  id: CLR-C0089
+  label_en: Part-Whole Relation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A relation description specifying how a part concept is connected to
+    a whole concept under stated mereological conditions.
+  is_abstract: null
+  primary_domain_id: CLR-D0009
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [32]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-90
+  id: CLR-C0090
+  label_en: Pattern
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object describing a recurrent arrangement that can be
+    reused in constructing or interpreting representations.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [44]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-91
+  id: CLR-C0091
+  label_en: Patternization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that identifies and articulates a reusable arrangement
+    as a pattern.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [44]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-92
+  id: CLR-C0092
+  label_en: Perception
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A cognitive process through which sensory input is organized into an
+    apprehension of a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [24], [25]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-93
+  id: CLR-C0093
+  label_en: Perspective
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «mode»
+  definition: An agent-dependent orientation that selects what is relevant and how
+    a subject is approached in conceptualization.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [21]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-94
+  id: CLR-C0094
+  label_en: Point-Based Time Representation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A time representation that uses instants or points as its primary temporal
+    units.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [33], [40]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-95
+  id: CLR-C0095
+  label_en: Presentation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A representation that arranges other representations for communication
+    to an intended audience.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [34], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-96
+  id: CLR-C0096
+  label_en: Property
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A conceptual element describing a characteristic attributed to entities
+    falling under a concept.
+  is_abstract: null
+  primary_domain_id: CLR-D0006
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [31]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-97
+  id: CLR-C0097
+  label_en: Qualitative Evaluation
+  ufo_type: Event / assessment process
+  ontouml_stereotype: «event»
+  definition: An assessment process that judges conceptual content against explicit
+    criteria using reasoned interpretation and documented evidence.
+  is_abstract: null
+  primary_domain_id: CLR-D0019
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [48]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-98
+  id: CLR-C0098
+  label_en: Reference Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model designed to provide reusable guidance for constructing or comparing
+    models of related subjects.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-99
+  id: CLR-C0099
+  label_en: Relation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A conceptual element describing a connection between source and target
+    conceptual elements; it is not automatically a UFO relator.
+  is_abstract: null
+  primary_domain_id: CLR-D0006
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [13], [30], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-100
+  id: CLR-C0100
+  label_en: Relationization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that identifies and articulates connections between
+    conceptual elements as relation descriptions.
+  is_abstract: null
+  primary_domain_id: CLR-D0006
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [13], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-101
+  id: CLR-C0101
+  label_en: Representation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object that encodes conceptual content in a form suitable
+    for interpretation or communication.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [34]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-102
+  id: CLR-C0102
+  label_en: Schema
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying a template of admissible elements,
+    organization and constraints for representations.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-103
+  id: CLR-C0103
+  label_en: Schematization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that develops a schema specifying an admissible
+    organization of representations.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-104
+  id: CLR-C0104
+  label_en: Semantic Completeness
+  ufo_type: Endurant / criterion specification
+  ontouml_stereotype: «subkind»
+  definition: An evaluation criterion requiring coverage of the meanings and distinctions
+    needed by the agreed scope and competency questions; it does not demand universal
+    coverage.
+  is_abstract: null
+  primary_domain_id: CLR-D0018
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [48]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-105
+  id: CLR-C0105
+  label_en: Semantic Information
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: Information content that conveys an interpreted meaning about a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [52]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-106
+  id: CLR-C0106
+  label_en: Semantic Interoperability
+  ufo_type: Endurant / externally dependent mode
+  ontouml_stereotype: «mode»
+  definition: A disposition of a representation to support compatible interpretation
+    with another representation under stated semantic conventions.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [13], [49]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-107
+  id: CLR-C0107
+  label_en: Semanticization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that articulates meaning assignments and interpretive
+    rules for expressions or representations.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [52]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-108
+  id: CLR-C0108
+  label_en: Semantics
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying meaning assignments and interpretation
+    rules for a language or representation system.
+  is_abstract: null
+  primary_domain_id: CLR-D0005
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-109
+  id: CLR-C0109
+  label_en: Shared Understanding
+  ufo_type: Situation
+  ontouml_stereotype: «situation»
+  definition: A situation in which at least two agents bear compatible understandings
+    of the same conceptual content in a specified context.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [23], [46]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-110
+  id: CLR-C0110
+  label_en: Source
+  ufo_type: Endurant / object in a role
+  ontouml_stereotype: «roleMixin»
+  definition: An agent or information object treated as an origin or reference for
+    conceptual content within a specified attribution context; events are linked separately
+    as generating activities.
+  is_abstract: null
+  primary_domain_id: CLR-D0020
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [28], [41]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-111
+  id: CLR-C0111
+  label_en: Specification Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A model prescribing required or admissible characteristics of a subject
+    or intended artifact.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [17], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-112
+  id: CLR-C0112
+  label_en: State
+  ufo_type: Situation
+  ontouml_stereotype: «situation»
+  definition: A configuration of entities and their properties or relations that holds
+    under specified conditions and can serve as a subject or precondition of change.
+  is_abstract: null
+  primary_domain_id: CLR-D0016
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [11], [35]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-113
+  id: CLR-C0113
+  label_en: Structural Conceptual Model
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A conceptual model emphasizing the organization of concepts and their
+    structural relationships.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [17]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-114
+  id: CLR-C0114
+  label_en: Structural Review
+  ufo_type: Event / assessment process
+  ontouml_stereotype: «event»
+  definition: A qualitative evaluation process that examines a model organization,
+    type distinctions and relations for defects or missing connections.
+  is_abstract: null
+  primary_domain_id: CLR-D0019
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [48]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-115
+  id: CLR-C0115
+  label_en: Structuralization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that specifies the organization of conceptual elements
+    and their connections.
+  is_abstract: null
+  primary_domain_id: CLR-D0009
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [18]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-116
+  id: CLR-C0116
+  label_en: Structure
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying the arrangement of conceptual elements
+    and the relationships organizing them.
+  is_abstract: null
+  primary_domain_id: CLR-D0009
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [17]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-117
+  id: CLR-C0117
+  label_en: Syntax
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object specifying admissible expression structures and
+    combination rules in a language.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [38], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-118
+  id: CLR-C0118
+  label_en: Syntaxization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that specifies admissible expression forms and
+    their combination rules.
+  is_abstract: null
+  primary_domain_id: CLR-D0010
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [38], [51]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-119
+  id: CLR-C0119
+  label_en: Taxonomy
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A structure organizing concept categories through explicit hierarchical
+    classification relations, usually specialization; it is distinct from the process
+    of classification.
+  is_abstract: null
+  primary_domain_id: CLR-D0013
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [39]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-120
+  id: CLR-C0120
+  label_en: Term
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An expression used within a vocabulary to designate a concept.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [36], [37], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-121
+  id: CLR-C0121
+  label_en: Terminology
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A vocabulary that systematically connects terms to defined concepts
+    and their intended meanings.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [36], [37], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-122
+  id: CLR-C0122
+  label_en: Terminology Engineering
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that organizes terms and definitions into a coherent
+    terminology; retained here only for conceptual articulation.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [16], [37]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-123
+  id: CLR-C0123
+  label_en: Time
+  ufo_type: Abstract temporal entity
+  ontouml_stereotype: «abstract»
+  definition: A temporal position or extent used to locate or order occurrences. In
+    this model the label ranges over instants and intervals, not clocks or representations
+    of them.
+  is_abstract: null
+  primary_domain_id: CLR-D0016
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [33], [40]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-124
+  id: CLR-C0124
+  label_en: Time Representation
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A representation of temporal position or extent using stated temporal
+    conventions.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [33], [40]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-125
+  id: CLR-C0125
+  label_en: Type
+  ufo_type: Universal / type
+  ontouml_stereotype: «category»
+  definition: A universal that classifies entities according to shared characteristics;
+    this category includes types of objects, events and higher-order types.
+  is_abstract: null
+  primary_domain_id: CLR-D0021
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [11]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-126
+  id: CLR-C0126
+  label_en: Understandability
+  ufo_type: Endurant / externally dependent mode
+  ontouml_stereotype: «mode»
+  definition: A disposition of a representation to support understanding by an intended
+    interpreter under specified conditions.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [22]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-127
+  id: CLR-C0127
+  label_en: Understanding
+  ufo_type: Endurant / intrinsic mode
+  ontouml_stereotype: «mode»
+  definition: An agent-dependent mental state that organizes and makes sense of conceptual
+    content sufficiently for a specified purpose.
+  is_abstract: null
+  primary_domain_id: CLR-D0003
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [22], [28]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-128
+  id: CLR-C0128
+  label_en: Valuation
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that assesses an artifact or choice against explicitly
+    adopted values.
+  is_abstract: null
+  primary_domain_id: CLR-D0002
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [47], [53]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-129
+  id: CLR-C0129
+  label_en: Value
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object expressing a principle or evaluative standard
+    used to assess goals, choices or conceptual artifacts.
+  is_abstract: null
+  primary_domain_id: CLR-D0002
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [47], [53]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-130
+  id: CLR-C0130
+  label_en: View
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A representation selecting aspects of conceptual content for a particular
+    concern; it need not be a view of a model.
+  is_abstract: null
+  primary_domain_id: CLR-D0001
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [12], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-131
+  id: CLR-C0131
+  label_en: Viewpoint
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An information object prescribing concerns, selection rules and conventions
+    for constructing and interpreting a view.
+  is_abstract: null
+  primary_domain_id: CLR-D0008
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [18], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-132
+  id: CLR-C0132
+  label_en: Visual
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: A representation that conveys conceptual content through spatial and
+    graphical arrangements.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [34], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-133
+  id: CLR-C0133
+  label_en: Visualization
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A conceptual process that constructs or revises a visual representation
+    of conceptual content.
+  is_abstract: null
+  primary_domain_id: CLR-D0007
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [34], [43]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-134
+  id: CLR-C0134
+  label_en: Vocabulary
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «subkind»
+  definition: An organized information object collecting terms available for use in
+    a specified context.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [36], [37], [39]. Stable source-support bindings
+    await the source-register task. Historical correspondence remains unreviewed in
+    the migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-135
+  id: CLR-C0135
+  label_en: Vocabulary Elicitation
+  ufo_type: Event / process
+  ontouml_stereotype: «event»
+  definition: A terminology activity that identifies terms used or required to express
+    concepts relevant to a subject.
+  is_abstract: null
+  primary_domain_id: CLR-D0011
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [16], [37]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-136
+  id: CLR-C0136
+  label_en: Well-Definedness
+  ufo_type: Endurant / criterion specification
+  ontouml_stereotype: «subkind»
+  definition: An evaluation criterion requiring definitions to delimit intended meaning
+    and distinguish concepts sufficiently for the stated purpose.
+  is_abstract: null
+  primary_domain_id: CLR-D0018
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [8], [29]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
+- lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-137
+  id: CLR-C0137
+  label_en: Whole
+  ufo_type: Endurant / information object
+  ontouml_stereotype: «role»
+  definition: A concept description considered as comprising parts in a specified
+    part-whole description; wholehood here is a role of the description.
+  is_abstract: null
+  primary_domain_id: CLR-D0009
+  aliases: []
+  source_reference_ids: []
+  notes: 'Input reference display: [7], [32]. Stable source-support bindings await
+    the source-register task. Historical correspondence remains unreviewed in the
+    migration ledger.'
