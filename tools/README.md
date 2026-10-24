@@ -11,6 +11,7 @@ python tools/check_source_support.py
 python tools/check_trace_contracts.py
 python tools/check_generated_links.py
 python tools/check_requirement_witnesses.py
+python tools/check_claim_register.py
 ```
 
 These checks need no private repository or raw document access. They check record/graph/contract integrity, not adequacy or independent acceptance. Reports live under evaluation/.
@@ -26,3 +27,5 @@ The language guard checks current file paths and UTF-8 text for Arabic/Persian s
 For the historical alpha.2 builder use commit b0edfdcb99e283eadce94ba11535d8179dbd1f04. The current baseline builder is restricted to the alpha.2.1 correction; it does not replace published assets.
 
 For authorized input reconstruction, `import_requirement_witnesses.py ORSD.docx` imports the original table-6 witness proposals after the ORSD/model imports. Run `build_trace_links.py` afterwards. The optional private-input parity checker now compares all 14 outputs; the public integrity commands need no raw DOCX files.
+
+`build_claim_register.py` records the bounded working claims and explicit draft-manuscript binding. `check_claim_register.py` checks input fingerprints and claim-state boundaries, not philosophical soundness, novelty or peer approval.

@@ -1,6 +1,6 @@
 # Changelog
 
-## Current development — traceability contracts
+## Current development — scoped traceability and claims
 
 - Imported candidate registries: 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints.
 - Preserved input definitions, stereotypes, end multiplicities and source locators; semantic lineage and constraint mention bindings remain unreviewed.
@@ -11,6 +11,11 @@
 - Registered 19 recovered related-work labels with explicit unverified metadata and provisional priorities; no full-text review or novelty conclusion is claimed.
 
 - Added stable artifact identities/storage revisions and typed-link schemas. These contracts do not yet constitute a generated full trace graph.
+
+- Generated structural/source/witness project links now total 1,815; all original 1,407 edge IDs were retained when adding candidate requirement/CQ edges.
+- Reconstructed 14 governed outputs from the actual frozen specification/ORSD in isolation; all bytes match. Missing inputs, excluded history, source ownership and intentional projection differences remain explicit.
+- Imported the original 30 FR/CQ candidate pairs, ten quality-review dispositions and eight future LR/LCQ pairs; satisfaction remains unassessed and questions unexecuted.
+- Registered seven bounded observations/proposals and a draft-manuscript binding. Comparative novelty, philosophical adequacy, current manuscript alignment and figure reconciliation remain unassessed.
 
 ## v0.1.0-alpha.2.1 — 2026-10-25
 
