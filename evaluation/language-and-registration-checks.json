@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "Language correction and candidate-registration change checks",
+  "checks": {
+    "local_repository_script_guard": "PASS; 75 UTF-8 text files, zero matches at validation time",
+    "guard_negative_cases": [
+      "forbidden script in text rejected",
+      "forbidden script in path rejected",
+      "Persian digit rejected"
+    ],
+    "guard_boundaries": [
+      "English Unicode punctuation accepted",
+      "binary content explicitly reported as not inspected"
+    ],
+    "existing_bootstrap": "PASS; 98 checks, five positive and nine negative schema fixtures",
+    "existing_model": "PASS; 478 schema-checked records; missing endpoint, self-cycle and duplicate-ID negative checks",
+    "existing_requirements": "PASS; 48 needs and 38 CQ contracts; five negative cases",
+    "existing_source_support": "PASS; 53 references, 137 concept-support records; three negative cases",
+    "candidate_registration": "PASS; 19 unique IDs and normalized labels; three unverified DOI hints"
+  },
+  "scientific_limits": "No new source verification, semantic acceptance, independent review, release or DOI."
+}

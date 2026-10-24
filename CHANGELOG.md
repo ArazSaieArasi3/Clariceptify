@@ -7,6 +7,9 @@
 - Verified record schemas, endpoint/hierarchy integrity, deterministic re-import and rejection of changed source bytes.
 - Imported 48 retrospective requirements, 38 CQ contracts, 53 bibliographic records and 137 qualified concept-support bindings. Diagram reconciliation, requirement-to-model assessment and full traceability remain subsequent work.
 
+- Corrected all 194 issue titles/bodies and 26 completion comments to English without changing issue numbers, task states or dependencies. Added English-only contribution instructions and a local script-block guard.
+- Registered 19 recovered related-work labels with explicit unverified metadata and provisional priorities; no full-text review or novelty conclusion is claimed.
+
 ## v0.1.0-alpha.1 — 2026-10-24
 
 - First engineering prerelease of the scope, authority, identifier/version contracts, record schemas and migration preparation.

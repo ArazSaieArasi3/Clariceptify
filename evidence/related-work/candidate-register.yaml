@@ -1,0 +1,445 @@
+schema_version: 0.1.0
+task_id: R1-017
+status: initial_screening_only
+input_provenance:
+  approved_plan_id: CLARICEPTIFY-BACKLOG-2026-10-24
+  approved_plan_version: '0.1'
+  recovered_plan_sha256: 893d2346df2928e2b605a9451813ac648d163310f99e95068f444f104da9d579
+  published_recovery_boundary: 'Approved task labels in issues #68 through #86; not
+    a fresh retrieval of the complete References conversation.'
+  origin_note: These labels and three DOI hints were recovered during backlog preparation;
+    hints are not verified bibliographic records.
+screening_rules:
+  deduplication: One stable record per recovered candidate ID; labels are normalized
+    for exact duplicates. Similar names are retained until semantic identity is established.
+  priority: Label-based provisional first pass for descriptions, situations, conceptualization,
+    modeling, representation and reasoning; secondary pass for remaining adjacent
+    candidates.
+  paper_and_artifact: Distinct review tasks; neither substitutes for the other.
+  retrieval_boundary: No fresh web search, publisher verification, full-text download
+    or ontology-file inspection is claimed in this registration.
+  r2_protocol: R2-001 (#67) governs subsequent critical review. Its preparation is
+    not a prerequisite for recovering existing labels.
+  count_scope: 19 recovered labels, not 19 confirmed distinct ontologies, not an exhaustive
+    literature corpus.
+  comparison_claim: No novelty, coverage, class-count, equivalence or superiority
+    conclusion.
+records:
+- candidate_id: CLR-RW-DnS
+  recovered_label: Descriptions and Situations
+  record_kind: candidate_work_label
+  recovered_from_issue: 68
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/68
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 68
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-cDnS
+  recovered_label: c.DnS
+  record_kind: candidate_work_label
+  recovered_from_issue: 69
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/69
+  doi_hint_unverified: 10.1007/s10458-008-9038-9
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 69
+  artifact_inspection_issue: 87
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-DUL
+  recovered_label: DOLCE+DnS Ultralite
+  record_kind: candidate_work_label
+  recovered_from_issue: 70
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/70
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 70
+  artifact_inspection_issue: 88
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-DULConceptualization
+  recovered_label: DUL Conceptualization.owl
+  record_kind: candidate_work_label
+  recovered_from_issue: 71
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/71
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 71
+  artifact_inspection_issue: 89
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-LMM
+  recovered_label: Linguistic Meta-Model / LMM
+  record_kind: candidate_work_label
+  recovered_from_issue: 72
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/72
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 72
+  artifact_inspection_issue: 90
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-O4OA
+  recovered_label: O4OA
+  record_kind: candidate_work_label
+  recovered_from_issue: 73
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/73
+  doi_hint_unverified: 10.1007/978-3-031-47262-6_6
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 73
+  artifact_inspection_issue: 91
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-OntoKADS
+  recovered_label: OntoKADS
+  record_kind: candidate_work_label
+  recovered_from_issue: 74
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/74
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 74
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-OntoLex
+  recovered_label: OntoLex-Lemon
+  record_kind: candidate_work_label
+  recovered_from_issue: 75
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/75
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 75
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-SKOS
+  recovered_label: SKOS
+  record_kind: candidate_work_label
+  recovered_from_issue: 76
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/76
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 76
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-EmotionsCognition
+  recovered_label: Emotions & Cognition
+  record_kind: candidate_work_label
+  recovered_from_issue: 77
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/77
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 77
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-IAO
+  recovered_label: Information Artifact Ontology / IAO
+  record_kind: candidate_work_label
+  recovered_from_issue: 78
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/78
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 78
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-CognitiveAtlas
+  recovered_label: Cognitive Atlas
+  record_kind: candidate_work_label
+  recovered_from_issue: 79
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/79
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 79
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-EFO
+  recovered_label: Epistemic Foundational Ontology / EFO
+  record_kind: candidate_work_label
+  recovered_from_issue: 80
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/80
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 80
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-COM
+  recovered_label: Computational Ontology of Mind / COM
+  record_kind: candidate_work_label
+  recovered_from_issue: 81
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/81
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 81
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-Representation
+  recovered_label: An Ontology of Representation
+  record_kind: candidate_work_label
+  recovered_from_issue: 82
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/82
+  doi_hint_unverified: 10.1177/15705838251337943
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 82
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-CMO
+  recovered_label: CMO
+  record_kind: candidate_work_label
+  recovered_from_issue: 83
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/83
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 83
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-IDA
+  recovered_label: I&DA
+  record_kind: candidate_work_label
+  recovered_from_issue: 84
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/84
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: first_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 84
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-BDI
+  recovered_label: Ontology of Belief/Desire/Intention
+  record_kind: candidate_work_label
+  recovered_from_issue: 85
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/85
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 85
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.
+- candidate_id: CLR-RW-DOLCEMental
+  recovered_label: DOLCE Mental States and Needs
+  record_kind: candidate_work_label
+  recovered_from_issue: 86
+  recovery_url: https://github.com/ArazSaieArasi3/Clariceptify/issues/86
+  doi_hint_unverified: null
+  exact_title: null
+  version: null
+  verified_publication_url: null
+  verified_artifact_url: null
+  class_count: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  closest_work_priority: secondary_pass
+  priority_basis: Provisional label-based triage only; relevance and equivalence not
+    established.
+  paper_review_issue: 86
+  artifact_inspection_issue: null
+  ambiguity_note: Resolve exact title, authors, version and work/artifact identity
+    before comparison.

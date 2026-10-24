@@ -18,6 +18,8 @@ Latest engineering prerelease: [v0.1.0-alpha.1](https://github.com/ArazSaieArasi
 - [Input manifest](traceability/migration/source-manifest.yaml), [integrity](traceability/migration/input-integrity.yaml) and [candidate entity ledger](traceability/migration/entity-ledger.yaml)
 - [Identifiers](docs/decisions/stable-identifiers.md), [artifact versions](docs/decisions/artifact-versioning.md), [release policy](docs/decisions/release-policy.md)
 - [Bootstrap verification](evaluation/bootstrap-report.json) and [local check](tools/README.md)
+- [Contribution and English-only policy](CONTRIBUTING.md)
+- [Related-work candidate register](evidence/related-work/)
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
 ## Structure and status

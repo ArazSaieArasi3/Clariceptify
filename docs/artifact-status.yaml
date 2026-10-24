@@ -6,6 +6,7 @@ contracts:
   versioning: implemented
   record_schemas: implemented
 artifacts:
+  related_work_candidates: registered_unverified_labels
   conceptual_registries: imported_candidate
   requirements_registries: imported_review_draft
   source_support_registry: imported_screening_qualifications

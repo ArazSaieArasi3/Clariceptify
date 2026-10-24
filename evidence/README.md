@@ -5,3 +5,5 @@ The [source register](source-register.yaml), [bibliography](bibliography.md) and
 The [import representation decision](../docs/decisions/source-support-import.md) identifies the exact input and limits. The separately identified JSON ledger bytes have not been compared. Source locators and screening statuses are inherited, not freshly verified. Raw third-party full texts are not included.
 
 Run `python tools/check_source_support.py`. For controlled re-import, the model import must precede `python tools/import_source_support.py INPUT.docx`; see the decision for the order and revision guard. New close-work research and full-text review remain separate tasks.
+
+The [related-work candidate register](related-work/) separately records 19 recovered labels with provisional priorities and unresolved metadata. These are not verified additions to the source bibliography; critical reviews remain scheduled in R2.

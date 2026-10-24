@@ -1,0 +1,31 @@
+{
+  "audit_date": "2026-10-25",
+  "repository": "ArazSaieArasi3/Clariceptify",
+  "purpose": "Correct repository-facing language to English while preserving task content and state",
+  "remote_readback": {
+    "issues": 194,
+    "prs": 5,
+    "comments": 26,
+    "errors": [],
+    "closed": 26
+  },
+  "preserved": [
+    "194 existing issue numbers and URLs",
+    "Stable task IDs and lineage markers",
+    "Issue dependency links and checkbox states",
+    "Technical acceptance/non-acceptance criteria",
+    "26 completion comments with their existing comment IDs",
+    "Open/closed issue states"
+  ],
+  "translation_note": "Descriptive generic AC/NAC labels were translated to English; stable task IDs were not changed.",
+  "current_file_baseline": {
+    "commit": "62fcf00936f75f32b9f523959ecf392ab6fa0f50",
+    "tracked_files": 68,
+    "arabic_persian_script_matches": 0
+  },
+  "limits": [
+    "Audit covers current issue/PR titles and bodies, current top-level comments, and current repository text; historical edit revisions are not erased.",
+    "Published release payloads and tags are not rewritten.",
+    "Script-block checks do not classify every natural language and do not inspect binary contents."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "R1-017",
+  "status": "PASS",
+  "scope": "Recovery, deduplication and explicit initial-screening states only",
+  "records": 19,
+  "unique_candidate_ids": 19,
+  "unique_normalized_labels": 19,
+  "doi_hints_unverified": 3,
+  "null_verified_metadata_preserved": true,
+  "full_text_reviews_performed": 0,
+  "ontology_artifact_inspections_performed": 0,
+  "required_fields_present": true,
+  "input": {
+    "approved_plan_id": "CLARICEPTIFY-BACKLOG-2026-10-24",
+    "approved_plan_version": "0.1",
+    "recovered_plan_sha256": "893d2346df2928e2b605a9451813ac648d163310f99e95068f444f104da9d579",
+    "published_recovery_boundary": "Approved task labels in issues #68 through #86; not a fresh retrieval of the complete References conversation.",
+    "origin_note": "These labels and three DOI hints were recovered during backlog preparation; hints are not verified bibliographic records."
+  },
+  "candidate_register_sha256": "65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266",
+  "limitations": [
+    "Complete original References conversation not re-read in this execution.",
+    "Candidate labels and DOI hints remain unverified.",
+    "No bibliographic source-register IDs assigned before identity resolution.",
+    "The 53-source/137-concept support baseline is unchanged."
+  ]
+}
