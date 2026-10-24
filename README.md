@@ -2,7 +2,7 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 candidate-registry import** station: contracts, schemas and the selected model tables are present. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 traceability-contract preparation** station: the imported candidate baseline is published, and artifact/version and typed-edge contracts are present. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_profiles": [
+    {
+      "path": ".research/manifest.yaml",
+      "status": "PASS",
+      "input_sha256": "eaca28fa6b964ec802fc146de8a4a6017137948c24e7472b9817b00b3203b36c",
+      "scope": "Compatibility with observed pinned upstream schema only; not full conformance"
+    },
+    {
+      "path": ".research/ogcm-rf-profile.yaml",
+      "status": "PASS",
+      "input_sha256": "0354f9c9b16bbadd83c8fa4b51dd602807938bc4a692e105171ecd29ddbe0a52",
+      "scope": "Compatibility with observed pinned upstream schema only; not full conformance"
+    }
+  ],
+  "pinned_schemas": {
+    "portfolio": {
+      "commit": "327c4f31783ba439733bbc3f76f07d330c866240",
+      "path": "schemas/research-manifest.schema.json"
+    },
+    "ogcm_rf": {
+      "commit": "40d39d87973b05f7a65756b88ca38350ce01fd7a",
+      "path": "specification/implementation-profile.schema.json"
+    }
+  },
+  "limits": [
+    "Schema compatibility only; full conformance and semantic acceptance not assessed.",
+    "Older upstream-profile-check.json remains a historical input-bound report."
+  ]
+}
