@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.1",
+  "release_id": 422934034,
+  "tag": "v0.1.0-alpha.1",
+  "prerelease": true,
+  "published_at": "2026-10-24T19:22:13Z",
+  "source_commit": "223df578777afa38743fa20c8c33ace78a8fbfd6",
+  "workflow_run_id": 40124965202,
+  "workflow_conclusion": "success",
+  "checks": [
+    "actual public release is a prerelease",
+    "tag points to frozen bootstrap commit",
+    "all three assets uploaded",
+    "GitHub SHA-256 digests equal local repeat-build digests"
+  ],
+  "assets": [
+    {
+      "name": "clariceptify-v0.1.0-alpha.1-bootstrap.zip",
+      "digest": "sha256:32440104cc97f04db62d133e70156f3c9b1e10e2d25ab83e339d11a9fdb78d99",
+      "size": 249677,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.1/clariceptify-v0.1.0-alpha.1-bootstrap.zip"
+    },
+    {
+      "name": "PACKAGE-MANIFEST.json",
+      "digest": "sha256:3f9a1574ff5c5f0bbc0e678a2b7e9722553716a1235893bda1f08a699936ce2f",
+      "size": 3960,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.1/PACKAGE-MANIFEST.json"
+    },
+    {
+      "name": "SHA256SUMS",
+      "digest": "sha256:ceae8c2de1a7e29fe18d13da2b50a78197896c4f57f386d210e18c8e67398a20",
+      "size": 196,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.1/SHA256SUMS"
+    }
+  ],
+  "scope": "contracts and migration preparation only; later main model registries not included"
+}
