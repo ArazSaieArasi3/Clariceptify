@@ -9,6 +9,7 @@ python tools/check_model_import.py
 python tools/check_requirements.py
 python tools/check_source_support.py
 python tools/check_trace_contracts.py
+python tools/check_generated_links.py
 ```
 
 These checks need no private repository or raw document access. They check record/graph/contract integrity, not adequacy or independent acceptance. Reports live under evaluation/.
