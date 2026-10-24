@@ -1,0 +1,181 @@
+schema_version: 0.1.0
+task_id: R1-019.b
+status: PASS_SCOPED
+scope: Selected specification/ORSD extraction parity and explicit migration dispositions;
+  not semantic equivalence to all historical content
+inputs:
+  SRC-SPEC: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+  SRC-ORSD: d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1
+compared_outputs:
+- path: model/concepts.yaml
+  current_sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  reconstructed_sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  status: identical
+- path: model/domains.yaml
+  current_sha256: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  reconstructed_sha256: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  status: identical
+- path: model/relations.yaml
+  current_sha256: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  reconstructed_sha256: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  status: identical
+- path: model/generalizations.yaml
+  current_sha256: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  reconstructed_sha256: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  status: identical
+- path: model/constraints.yaml
+  current_sha256: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  reconstructed_sha256: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  status: identical
+- path: requirements/functional.yaml
+  current_sha256: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  reconstructed_sha256: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  status: identical
+- path: requirements/quality.yaml
+  current_sha256: dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc
+  reconstructed_sha256: dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc
+  status: identical
+- path: requirements/competency-questions.yaml
+  current_sha256: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  reconstructed_sha256: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  status: identical
+- path: requirements/future.yaml
+  current_sha256: bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e
+  reconstructed_sha256: bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e
+  status: identical
+- path: requirements/scope-and-scenarios.yaml
+  current_sha256: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+  reconstructed_sha256: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+  status: identical
+- path: evidence/source-register.yaml
+  current_sha256: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  reconstructed_sha256: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  status: identical
+- path: evidence/concept-support.yaml
+  current_sha256: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  reconstructed_sha256: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  status: identical
+- path: evidence/bibliography.md
+  current_sha256: 5f40248a554ee45badaa33cb7fde8fcd8000609f2b8b3b6160176db486e3c4a9
+  reconstructed_sha256: 5f40248a554ee45badaa33cb7fde8fcd8000609f2b8b3b6160176db486e3c4a9
+  status: identical
+source_inventory_dispositions:
+- source_id: SRC-SPEC
+  revision: revision 1; 2026-10-24; observed file version 2
+  disposition: reconstructed_selected_projection_byte_identical
+  verification: actual_source_bytes_rehashed_and_imports_replayed
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-ORSD
+  revision: ORSD 0.1; 2026-10-24
+  disposition: reconstructed_selected_projection_byte_identical
+  verification: actual_source_bytes_rehashed_and_imports_replayed
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-THESIS
+  revision: Version30
+  disposition: historical_or_consumer_input; raw redistribution excluded; not whole-model
+    authority
+  verification: inherited_manifest_hash_only_in_this_check
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-ONTOSPK
+  revision: 0.49.6
+  disposition: historical_or_consumer_input; raw redistribution excluded; not whole-model
+    authority
+  verification: inherited_manifest_hash_only_in_this_check
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-ARTICLE
+  revision: '0.1'
+  disposition: historical_or_consumer_input; raw redistribution excluded; not whole-model
+    authority
+  verification: inherited_manifest_hash_only_in_this_check
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-LEDGER
+  revision: Stage 1; 2026-10-24
+  disposition: identified_unmaterialized_input; no byte-parity claim
+  verification: not_verified
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-SVG
+  revision: observed file version 1
+  disposition: identified_unmaterialized_input; no byte-parity claim
+  verification: not_verified
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-FULLPDF
+  revision: observed file version 1
+  disposition: identified_unmaterialized_input; no byte-parity claim
+  verification: not_verified
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-ATLAS
+  revision: observed file version 1
+  disposition: identified_unmaterialized_input; no byte-parity claim
+  verification: not_verified
+  raw_distribution: excluded_from_bootstrap
+- source_id: SRC-CATALOG
+  revision: observed version 2
+  disposition: identified_unmaterialized_input; no byte-parity claim
+  verification: not_verified
+  raw_distribution: excluded_from_bootstrap
+intentional_projection_differences:
+- id: CLR-MIG-D001
+  difference: DOCX tables/paragraphs become controlled YAML and bibliography views.
+  disposition: accepted extraction/serialization change; all 13 governed outputs are
+    byte-identical to isolated re-extraction
+- id: CLR-MIG-D002
+  difference: One source relationship table partitions into associations and directed
+    generalizations.
+  disposition: preserve 174 association rows and 122 generalization rows, endpoints,
+    multiplicities and locators; no extra partition axioms
+- id: CLR-MIG-D003
+  difference: Input display names/reference numbers receive stable local record IDs.
+  disposition: controlled record-key allocation; not adjudicated historical identity
+    or source replacement
+- id: CLR-MIG-D004
+  difference: ORSD table 6 contains 30 candidate witness rows not in the original
+    requirements import.
+  disposition: 'explicit follow-up #34; missing witness links do not establish unsatisfied
+    or satisfied needs'
+- id: CLR-MIG-D005
+  difference: ORSD table 9 repeats the 21 domain vocabulary views.
+  disposition: secondary ORSD representation; model/domain and membership authority
+    remains the selected specification; not a second editor
+- id: CLR-MIG-D006
+  difference: Stage-1 support was imported from the actual specification, not the
+    separate JSON bytes.
+  disposition: representation decision retained; separate JSON byte parity remains
+    not_verified
+- id: CLR-MIG-D007
+  difference: Older core/wider inventory and their previous assessments are not copied
+    wholesale.
+  disposition: deliberate scope exclusion; candidate lineage and unselected records
+    remain in the migration ledger; no old PASS inheritance
+- id: CLR-MIG-D008
+  difference: Diagram, atlas, raw documents and synchronized manuscript are not published
+    model authority.
+  disposition: 'raw inputs excluded; diagram approval/reconciliation #41/#42 and later
+    outputs remain pending'
+- id: CLR-MIG-D009
+  difference: Engineering schemas, metadata, trace links and release controls are
+    new local artifacts.
+  disposition: explicit project metadata; not additional conceptualization classes
+    or a semantic expansion
+input_counts_not_permanent_invariants:
+  concepts: 137
+  subject_domains: 20
+  foundations_layers: 1
+  associations: 174
+  generalizations: 122
+  textual_constraints: 24
+  needs: 48
+  cq_contracts: 38
+  references: 53
+  support_records: 137
+negative_cases:
+- modified reconstructed definition detected
+- changed valid DOCX rejected before output creation
+governed_outputs_unchanged: true
+upstream_edits: false
+canonical_ownership_handover: not_completed
+limits:
+- Only the selected frozen projection is re-extracted; full historical/thesis equivalence
+  is not asserted.
+- No fresh source full-text verification, semantic adequacy, requirement satisfaction
+  or expert approval.
+- Missing inputs, candidate lineage and deferred witness/diagram work remain explicit.

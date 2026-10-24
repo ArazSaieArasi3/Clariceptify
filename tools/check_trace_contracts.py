@@ -104,7 +104,7 @@ def check():
             'input_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest() for name in
                              ['traceability/artifacts.yaml', 'traceability/link-types.yaml',
                               'traceability/schema/artifact-register.schema.json', 'traceability/schema/trace-edge.schema.json']},
-            'limits': ['No generated full trace graph yet', 'Fixture is not a coverage or satisfaction result',
+            'limits': ['This checker covers artifact/edge contracts; generated graph integrity is checked separately', 'Fixture is not a coverage or satisfaction result',
                        'No semantic approval, proof, CQ execution or independent review']}
 
 
