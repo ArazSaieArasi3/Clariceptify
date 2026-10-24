@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clariceptify concept record 1.0",
+  "type": "object",
+  "required": [
+    "id",
+    "label_en",
+    "definition",
+    "ufo_type",
+    "ontouml_stereotype",
+    "primary_domain_id",
+    "lifecycle",
+    "introduced_version",
+    "source_locator"
+  ],
+  "properties": {
+    "lifecycle": {
+      "enum": [
+        "candidate",
+        "accepted",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "introduced_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CLR-C[0-9]{4,}$"
+    },
+    "label_en": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ufo_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ontouml_stereotype": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_abstract": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "primary_domain_id": {
+      "type": "string",
+      "pattern": "^CLR-D[0-9]{4,}$"
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "source_reference_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "legacy_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": false
+}

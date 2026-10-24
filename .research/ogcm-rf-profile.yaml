@@ -1,0 +1,63 @@
+profile_schema_version: '1.0'
+implementation:
+  research_id: R-001
+  repository: ArazSaieArasi3/Clariceptify
+  profile_status: draft
+framework:
+  name: OGCM-RF
+  framework_ref: commit:40d39d87973b05f7a65756b88ca38350ce01fd7a
+  conformance_level: not_assessed
+semantic_scope:
+  semantic_source_of_truth: model/*.yaml after controlled import; schema contracts
+    currently implemented
+  core_boundary: selected conceptualization knowledge model; foundations support,
+    not domain novelty
+  extensions: []
+  historical_or_superseded:
+  - Origin thesis baseline and wider inventory remain historical inputs, not copied
+    wholesale
+modeling:
+  foundational_ontology:
+  - UFO (conceptual alignment)
+  conceptual_modeling_language:
+  - OntoUML
+  ontology_languages: []
+  constraint_languages:
+  - textual interpretation constraints
+  canonical_serialization: YAML conceptual registries; formal serialization absent
+identity_and_release:
+  ontology_iri: null
+  persistent_iri_status: unassigned
+  current_semantic_release: null
+  development_state: bootstrap; model import pending
+  release_manifest: releases/
+traceability:
+  concept_registry: model/concepts.yaml (planned)
+  relation_registry: model/relations.yaml and generalizations.yaml (planned)
+  domain_or_module_registry: model/domains.yaml (planned)
+  competency_questions: requirements/competency-questions.yaml (planned)
+  evidence_provenance: evidence/ (planned) and input manifest
+  mappings: traceability/migration/entity-ledger.yaml (candidates only)
+validation_and_evaluation:
+  selected_layers:
+  - bootstrap structural contract checks
+  reasoning: not_executed for selected model
+  shacl_or_constraints: textual only; not executed
+  cq_regression: not_executed
+  comparative_or_expert: not_assessed
+  reproducibility: local bootstrap check; full release readback pending
+publication_bindings: []
+portfolio_integration:
+  manifest: .research/manifest.yaml
+  contract: '1.1'
+adoption:
+  deviations:
+  - Canonical handover and full conformance not assessed
+  - No formal ontology or registered IRI
+  deferred_capabilities:
+  - formalization
+  - expert review
+  - public generated documentation
+  - relational projection
+  last_reviewed: '2026-10-24'
+  notes: Profile records adopted local choices, not transferred scientific validation.

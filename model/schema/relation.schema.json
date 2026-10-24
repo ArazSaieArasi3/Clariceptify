@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clariceptify association record 1.0",
+  "type": "object",
+  "required": [
+    "id",
+    "label_en",
+    "source_id",
+    "target_id",
+    "source_multiplicity",
+    "target_multiplicity",
+    "ontouml_stereotype",
+    "connector",
+    "lifecycle",
+    "introduced_version",
+    "source_locator"
+  ],
+  "properties": {
+    "lifecycle": {
+      "enum": [
+        "candidate",
+        "accepted",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "introduced_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CLR-R[0-9]{4,}$"
+    },
+    "label_en": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^CLR-C[0-9]{4,}$"
+    },
+    "target_id": {
+      "type": "string",
+      "pattern": "^CLR-C[0-9]{4,}$"
+    },
+    "source_multiplicity": {
+      "type": "string",
+      "pattern": "^(?:[0-9]+|\\*)(?:\\.\\.(?:[0-9]+|\\*))?$"
+    },
+    "target_multiplicity": {
+      "type": "string",
+      "pattern": "^(?:[0-9]+|\\*)(?:\\.\\.(?:[0-9]+|\\*))?$"
+    },
+    "ontouml_stereotype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "connector": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

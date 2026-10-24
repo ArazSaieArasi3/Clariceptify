@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clariceptify domain record 1.0",
+  "type": "object",
+  "required": [
+    "id",
+    "label_en",
+    "purpose",
+    "description",
+    "layer",
+    "lifecycle",
+    "introduced_version",
+    "source_locator"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CLR-D[0-9]{4,}$"
+    },
+    "label_en": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "layer": {
+      "enum": [
+        "subject",
+        "foundations"
+      ]
+    },
+    "lifecycle": {
+      "enum": [
+        "candidate",
+        "accepted",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "introduced_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

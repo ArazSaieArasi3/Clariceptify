@@ -1,0 +1,99 @@
+schema_version: '1.0'
+input_freeze_date: '2026-10-24'
+note: An observed revision is not a semantic approval or an assertion of newest remote
+  bytes. Only actual local bytes are hashed; unavailable inputs remain explicit.
+source_main:
+  repository: ArazSaieArasi3/conceptualization-ontology
+  commit: 80289f07866def38d077a9434803b6c85448d378
+  disposition: historical source; no upstream edits
+sources:
+- id: SRC-SPEC
+  filename: Conceptiom_Release_1_Specification_EN.docx
+  revision: revision 1; 2026-10-24; observed file version 2
+  role: selected conceptual specification
+  access: available_in_preparation_environment
+  locator: Conceptiom_Release_1_Specification_EN.docx
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-ORSD
+  filename: Conceptiom_ORSD_v0_1_EN.docx
+  revision: ORSD 0.1; 2026-10-24
+  role: retrospective requirements input
+  access: available_in_preparation_environment
+  locator: Conceptiom_ORSD_v0_1_EN.docx
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-THESIS
+  filename: ArazSaieArasiPhDThesis-Version30_FinalReview_Clean.docx
+  revision: Version30
+  role: historical evidence; not whole-model authority
+  access: available_in_preparation_environment
+  locator: ArazSaieArasiPhDThesis-Version30_FinalReview_Clean.docx
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-ONTOSPK
+  filename: OntoSPK_Conference_Manuscript_v0_49_6_IEEE.docx
+  revision: 0.49.6
+  role: method/style reference; separate ontology
+  access: available_in_preparation_environment
+  locator: OntoSPK_Conference_Manuscript_v0_49_6_IEEE.docx
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-ARTICLE
+  filename: Conceptualization_Manuscript_v0_1_IEEE.docx
+  revision: '0.1'
+  role: consumer manuscript; figure page placeholder
+  access: available_in_preparation_environment
+  locator: Conceptualization_Manuscript_v0_1_IEEE.docx
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-LEDGER
+  filename: Conceptiom_Concept_Source_Ledger_Stage_1.json
+  revision: Stage 1; 2026-10-24
+  role: selected source qualifications
+  access: identified_not_materialized_in_this_wave
+  locator: Conceptiom_Concept_Source_Ledger_Stage_1.json
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-SVG
+  filename: Conceptiom_Release_1_OntoUML_Full.svg
+  revision: observed file version 1
+  role: diagram input; approval wording not verified
+  access: identified_not_materialized_in_this_wave
+  locator: Conceptiom_Release_1_OntoUML_Full.svg
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-FULLPDF
+  filename: Conceptiom_Release_1_OntoUML_Full.pdf
+  revision: observed file version 1
+  role: diagram distribution input
+  access: identified_not_materialized_in_this_wave
+  locator: Conceptiom_Release_1_OntoUML_Full.pdf
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-ATLAS
+  filename: Conceptiom_Release_1_OntoUML_Atlas_A3.pdf
+  revision: observed file version 1
+  role: detail visualization input
+  access: identified_not_materialized_in_this_wave
+  locator: Conceptiom_Release_1_OntoUML_Atlas_A3.pdf
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.
+- id: SRC-CATALOG
+  filename: Conceptualization_Concept_Catalog_Review_FA.html
+  revision: observed version 2
+  role: 419-entry reference catalogue, not R1 import target
+  access: identified_not_materialized_in_this_wave
+  locator: Conceptualization_Concept_Catalog_Review_FA.html
+  raw_distribution: excluded_from_bootstrap
+  distribution_reason: Project-derived registries may be transferred under the authorized
+    scope; raw documents/third-party content remain separate publication decisions.

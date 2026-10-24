@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clariceptify generalization record 1.0",
+  "type": "object",
+  "required": [
+    "id",
+    "child_id",
+    "parent_id",
+    "lifecycle",
+    "introduced_version",
+    "source_locator"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CLR-G[0-9]{4,}$"
+    },
+    "child_id": {
+      "type": "string",
+      "pattern": "^CLR-C[0-9]{4,}$"
+    },
+    "parent_id": {
+      "type": "string",
+      "pattern": "^CLR-C[0-9]{4,}$"
+    },
+    "lifecycle": {
+      "enum": [
+        "candidate",
+        "accepted",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "introduced_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generalization_set_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "set_completeness": {
+      "enum": [
+        "complete",
+        "incomplete",
+        "unknown"
+      ]
+    },
+    "set_disjointness": {
+      "enum": [
+        "disjoint",
+        "overlapping",
+        "unknown"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

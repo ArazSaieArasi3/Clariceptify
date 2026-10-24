@@ -1,0 +1,27 @@
+schema_version: local-bootstrap-1
+status: declaration_not_conformance_claim
+dependencies:
+- id: method-ogcm
+  role: methodology
+  canonical_owner: ArazSaieArasi3/OGCM-RF
+  ref: 40d39d87973b05f7a65756b88ca38350ce01fd7a
+  runtime_required: false
+  local_application: docs/decisions/
+- id: governance-portfolio
+  role: research_identity_governance
+  canonical_owner: ArazSaieArasi3/araz-research-portfolio
+  ref: 327c4f31783ba439733bbc3f76f07d330c866240
+  runtime_required: false
+  local_application: .research/manifest.yaml
+- id: foundational-ufo
+  role: conceptual_grounding
+  canonical_owner: UFO authors/community
+  ref: null
+  runtime_required: false
+  mapping_status: conceptual_alignment_only_no_owl_import
+- id: source-history
+  role: selective_migration_provenance
+  canonical_owner: ArazSaieArasi3/conceptualization-ontology
+  ref: 80289f07866def38d077a9434803b6c85448d378
+  runtime_required: false
+  mapping_status: candidate_ledger_not_completed_handover
