@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clariceptify constraint record 1.0",
+  "type": "object",
+  "required": [
+    "id",
+    "text",
+    "referenced_ids",
+    "enforcement",
+    "execution_status",
+    "lifecycle",
+    "introduced_version",
+    "source_locator"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CLR-SC[0-9]{4,}$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "referenced_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "enforcement": {
+      "enum": [
+        "textual",
+        "manual",
+        "shacl",
+        "fol",
+        "owl",
+        "mixed"
+      ]
+    },
+    "execution_status": {
+      "enum": [
+        "not_executed",
+        "not_assessed",
+        "pass",
+        "fail",
+        "not_applicable"
+      ]
+    },
+    "lifecycle": {
+      "enum": [
+        "candidate",
+        "accepted",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "introduced_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

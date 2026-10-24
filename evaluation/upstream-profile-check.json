@@ -1,0 +1,17 @@
+{
+  "scope": "compatibility with observed pinned upstream schemas; not full conformance",
+  "checks": [
+    {
+      "path": ".research/manifest.yaml",
+      "result": "PASS",
+      "negative_wrong_contract_version": "rejected",
+      "upstream_schema_sha256": "af8ac58a29600b2ce97625ccf06e11bb881a4a42befe512fb325ef9047de03b3"
+    },
+    {
+      "path": ".research/ogcm-rf-profile.yaml",
+      "result": "PASS",
+      "negative_wrong_contract_version": "rejected",
+      "upstream_schema_sha256": "edce65cdd1ee0896de5068ce6e5a5429039713d837e302c23f07a8acdd7cba91"
+    }
+  ]
+}

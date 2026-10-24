@@ -1,0 +1,4215 @@
+schema_version: '1.0'
+source_spec_sha256: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+status: candidate_reservations_only
+qualification: Local record keys do not replace historical entity identities. Same-label/alias
+  candidates require review; absent candidates do not prove conceptual novelty.
+selected_concepts:
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 1
+  selected_label: Abstraction
+  proposed_record_id: CLR-C0001
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C113
+    source_label: Abstraction
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C113
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Abstraction
+      legacy_local_name: Abstraction
+      previous_local_name: C113_Abstraction
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C114
+    source_label: Abstractionization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C114
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Abstractionization
+      legacy_local_name: Abstractionization
+      previous_local_name: C114_Abstractionization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_alias
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 2
+  selected_label: Abstraction Hierarchy
+  proposed_record_id: CLR-C0002
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C136
+    source_label: Abstraction Hierarchy
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C136
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#AbstractionHierarchy
+      legacy_local_name: AbstractionHierarchy
+      previous_local_name: C136_AbstractionHierarchy
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 3
+  selected_label: Abstraction Level
+  proposed_record_id: CLR-C0003
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C135
+    source_label: Abstraction Level
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C135
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#AbstractionLevel
+      legacy_local_name: AbstractionLevel
+      previous_local_name: C135_AbstractionLevel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 4
+  selected_label: Agent
+  proposed_record_id: CLR-C0004
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/core.yaml
+    source_family: thesis-core
+    source_id: CO-F002
+    source_label: Agent
+    historical_iri_metadata: {}
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 5
+  selected_label: Analysis Model
+  proposed_record_id: CLR-C0005
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C154
+    source_label: Analysis Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C154
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#AnalysisModel
+      legacy_local_name: AnalysisModel
+      previous_local_name: C154_AnalysisModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 6
+  selected_label: Artificial Language
+  proposed_record_id: CLR-C0006
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C096
+    source_label: Artificial Language
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C096
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ArtificialLanguage
+      legacy_local_name: ArtificialLanguage
+      previous_local_name: C096_ArtificialLanguage
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 7
+  selected_label: Assumption
+  proposed_record_id: CLR-C0007
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-07-C301-C350.yaml
+    source_family: inventory
+    source_id: C347
+    source_label: Assumption
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C347
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Assumption
+      legacy_local_name: Assumption
+      previous_local_name: C347_Assumption
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 8
+  selected_label: Awareness
+  proposed_record_id: CLR-C0008
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C001
+    source_label: Awareness
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C001
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Awareness
+      legacy_local_name: Awareness
+      previous_local_name: C001_Awareness
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 9
+  selected_label: Awareness Formation
+  proposed_record_id: CLR-C0009
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C002
+    source_label: Awareness Formation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C002
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#AwarenessFormation
+      legacy_local_name: AwarenessFormation
+      previous_local_name: C002_AwarenessFormation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 10
+  selected_label: Axiom
+  proposed_record_id: CLR-C0010
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C032
+    source_label: Axiom
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C032
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Axiom
+      legacy_local_name: Axiom
+      previous_local_name: C032_Axiom
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 11
+  selected_label: Business Model
+  proposed_record_id: CLR-C0011
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C161
+    source_label: Business Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C161
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#BusinessModel
+      legacy_local_name: BusinessModel
+      previous_local_name: C161_BusinessModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 12
+  selected_label: Categorization
+  proposed_record_id: CLR-C0012
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C140
+    source_label: Categorization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C140
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Categorization
+      legacy_local_name: Categorization
+      previous_local_name: C140_Categorization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 13
+  selected_label: Change
+  proposed_record_id: CLR-C0013
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C036
+    source_label: Change
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C036
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Change
+      legacy_local_name: Change
+      previous_local_name: C036_Change
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 14
+  selected_label: Classification
+  proposed_record_id: CLR-C0014
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C130
+    source_label: Classification
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C130
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Classification_C130
+      legacy_local_name: Classification_C130
+      previous_local_name: C130_Classification
+      disambiguated_in_source: true
+      ambiguous_english_label: true
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C148
+    source_label: Classification
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C148
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Classification_C148
+      legacy_local_name: Classification_C148
+      previous_local_name: C148_Classification
+      disambiguated_in_source: true
+      ambiguous_english_label: true
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 15
+  selected_label: Cognition
+  proposed_record_id: CLR-C0015
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C011
+    source_label: Cognition
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C011
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Cognition
+      legacy_local_name: Cognition
+      previous_local_name: C011_Cognition
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 16
+  selected_label: Coherence
+  proposed_record_id: CLR-C0016
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-06-C251-C300.yaml
+    source_family: inventory
+    source_id: C255
+    source_label: Coherence
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C255
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Coherence
+      legacy_local_name: Coherence
+      previous_local_name: C255_Coherence
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 17
+  selected_label: Concept
+  proposed_record_id: CLR-C0017
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C021
+    source_label: Concept
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C021
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Concept
+      legacy_local_name: Concept
+      previous_local_name: C021_Concept
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 18
+  selected_label: Concept Formation
+  proposed_record_id: CLR-C0018
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C012
+    source_label: Concept Formation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C012
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptFormation
+      legacy_local_name: ConceptFormation
+      previous_local_name: C012_ConceptFormation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 19
+  selected_label: Conceptual Artifact
+  proposed_record_id: CLR-C0019
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C149
+    source_label: Conceptual Artifact
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C149
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptualArtifact
+      legacy_local_name: ConceptualArtifact
+      previous_local_name: C149_ConceptualArtifact
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 20
+  selected_label: Conceptual Connection
+  proposed_record_id: CLR-C0020
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C184
+    source_label: Conceptual Connection
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C184
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptualConnection
+      legacy_local_name: ConceptualConnection
+      previous_local_name: C184_ConceptualConnection
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 21
+  selected_label: Conceptual Decision
+  proposed_record_id: CLR-C0021
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates: []
+  origin_status: no_predecessor_established
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 22
+  selected_label: Conceptual Element
+  proposed_record_id: CLR-C0022
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/core.yaml
+    source_family: thesis-core
+    source_id: CO-C006
+    source_label: Conceptual Element
+    historical_iri_metadata: {}
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 23
+  selected_label: Conceptual Model
+  proposed_record_id: CLR-C0023
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C159
+    source_label: Conceptual Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C159
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptualModel
+      legacy_local_name: ConceptualModel
+      previous_local_name: C159_ConceptualModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 24
+  selected_label: Conceptual Modeling
+  proposed_record_id: CLR-C0024
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C163
+    source_label: Conceptual Modeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C163
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptualModeling
+      legacy_local_name: ConceptualModeling
+      previous_local_name: C163_ConceptualModeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 25
+  selected_label: Conceptual Process
+  proposed_record_id: CLR-C0025
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C013
+    source_label: Conceptual Process
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C013
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptualProcess
+      legacy_local_name: ConceptualProcess
+      previous_local_name: C013_ConceptualProcess
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 26
+  selected_label: Conceptualization
+  proposed_record_id: CLR-C0026
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C014
+    source_label: Conceptualization Process
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C014
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ConceptualizationProcess
+      legacy_local_name: ConceptualizationProcess
+      previous_local_name: C014_ConceptualizationProcess
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_alias
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C022
+    source_label: Conceptualization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C022
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Conceptualization
+      legacy_local_name: Conceptualization
+      previous_local_name: C022_Conceptualization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/core.yaml
+    source_family: thesis-core
+    source_id: CO-C002
+    source_label: Conceptualization
+    historical_iri_metadata: {}
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 27
+  selected_label: Conceptualizer
+  proposed_record_id: CLR-C0027
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C023
+    source_label: Conceptualizer
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C023
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Conceptualizer
+      legacy_local_name: Conceptualizer
+      previous_local_name: C023_Conceptualizer
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/core.yaml
+    source_family: thesis-core
+    source_id: CO-C001
+    source_label: Conceptualizer
+    historical_iri_metadata: {}
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 28
+  selected_label: Consciousness
+  proposed_record_id: CLR-C0028
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C027
+    source_label: Consciousness
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C027
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Consciousness
+      legacy_local_name: Consciousness
+      previous_local_name: C027_Consciousness
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 29
+  selected_label: Consistency
+  proposed_record_id: CLR-C0029
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C237
+    source_label: Consistency
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C237
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Consistency
+      legacy_local_name: Consistency
+      previous_local_name: C237_Consistency
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 30
+  selected_label: Constraint
+  proposed_record_id: CLR-C0030
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C205
+    source_label: Constraint
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C205
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Constraint
+      legacy_local_name: Constraint
+      previous_local_name: C205_Constraint
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 31
+  selected_label: Correspondence
+  proposed_record_id: CLR-C0031
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C198
+    source_label: Correspondence
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C198
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Correspondence
+      legacy_local_name: Correspondence
+      previous_local_name: C198_Correspondence
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 32
+  selected_label: Definition
+  proposed_record_id: CLR-C0032
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C086
+    source_label: Definition
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C086
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Definition
+      legacy_local_name: Definition
+      previous_local_name: C086_Definition
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 33
+  selected_label: Discourse
+  proposed_record_id: CLR-C0033
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C107
+    source_label: Discourse
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C107
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Discourse
+      legacy_local_name: Discourse
+      previous_local_name: C107_Discourse
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 34
+  selected_label: Domain Knowledge
+  proposed_record_id: CLR-C0034
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-06-C251-C300.yaml
+    source_family: inventory
+    source_id: C272
+    source_label: Domain Knowledge
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C272
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#DomainKnowledge
+      legacy_local_name: DomainKnowledge
+      previous_local_name: C272_DomainKnowledge
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 35
+  selected_label: Domain Model
+  proposed_record_id: CLR-C0035
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C155
+    source_label: Domain Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C155
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#DomainModel
+      legacy_local_name: DomainModel
+      previous_local_name: C155_DomainModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 36
+  selected_label: Domain Vocabulary
+  proposed_record_id: CLR-C0036
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C105
+    source_label: Domain Vocabulary
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C105
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#DomainVocabulary
+      legacy_local_name: DomainVocabulary
+      previous_local_name: C105_DomainVocabulary
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 37
+  selected_label: Domain-Specific Language
+  proposed_record_id: CLR-C0037
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C094
+    source_label: Domain-Specific Language
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C094
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#DomainSpecificLanguage
+      legacy_local_name: DomainSpecificLanguage
+      previous_local_name: C094_DomainSpecificLanguage
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 38
+  selected_label: Enterprise Modeling
+  proposed_record_id: CLR-C0038
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-07-C301-C350.yaml
+    source_family: inventory
+    source_id: C306
+    source_label: Enterprise Modeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C306
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#EnterpriseModeling
+      legacy_local_name: EnterpriseModeling
+      previous_local_name: C306_EnterpriseModeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 39
+  selected_label: Evaluation Criterion
+  proposed_record_id: CLR-C0039
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-06-C251-C300.yaml
+    source_family: inventory
+    source_id: C252
+    source_label: Evaluation Criterion
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C252
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#EvaluationCriterion
+      legacy_local_name: EvaluationCriterion
+      previous_local_name: C252_EvaluationCriterion
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 40
+  selected_label: Evaluation Result
+  proposed_record_id: CLR-C0040
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates: []
+  origin_status: no_predecessor_established
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 41
+  selected_label: Event
+  proposed_record_id: CLR-C0041
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates: []
+  origin_status: no_predecessor_established
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 42
+  selected_label: Evidence
+  proposed_record_id: CLR-C0042
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-07-C301-C350.yaml
+    source_family: inventory
+    source_id: C332
+    source_label: Evidence
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C332
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Evidence
+      legacy_local_name: Evidence
+      previous_local_name: C332_Evidence
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 43
+  selected_label: Experience
+  proposed_record_id: CLR-C0043
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C008
+    source_label: Experience
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C008
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Experience
+      legacy_local_name: Experience
+      previous_local_name: C008_Experience
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 44
+  selected_label: Explanation
+  proposed_record_id: CLR-C0044
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C084
+    source_label: Explanation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C084
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Explanation
+      legacy_local_name: Explanation
+      previous_local_name: C084_Explanation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 45
+  selected_label: Explanatory Adequacy
+  proposed_record_id: CLR-C0045
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-06-C251-C300.yaml
+    source_family: inventory
+    source_id: C261
+    source_label: Explanatory Adequacy
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C261
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ExplanatoryAdequacy
+      legacy_local_name: ExplanatoryAdequacy
+      previous_local_name: C261_ExplanatoryAdequacy
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 46
+  selected_label: Explicit Definition
+  proposed_record_id: CLR-C0046
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C087
+    source_label: Explicit Definition
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C087
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ExplicitDefinition
+      legacy_local_name: ExplicitDefinition
+      previous_local_name: C087_ExplicitDefinition
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 47
+  selected_label: Expression
+  proposed_record_id: CLR-C0047
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C083
+    source_label: Expression
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C083
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Expression
+      legacy_local_name: Expression
+      previous_local_name: C083_Expression
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 48
+  selected_label: Feedback
+  proposed_record_id: CLR-C0048
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C006
+    source_label: Feedback
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C006
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Feedback
+      legacy_local_name: Feedback
+      previous_local_name: C006_Feedback
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 49
+  selected_label: Form
+  proposed_record_id: CLR-C0049
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C142
+    source_label: Form
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C142
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Form
+      legacy_local_name: Form
+      previous_local_name: C142_Form
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 50
+  selected_label: Formal Model
+  proposed_record_id: CLR-C0050
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C156
+    source_label: Formal Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C156
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#FormalModel
+      legacy_local_name: FormalModel
+      previous_local_name: C156_FormalModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 51
+  selected_label: Formalization
+  proposed_record_id: CLR-C0051
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C139
+    source_label: Formalization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C139
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Formalization
+      legacy_local_name: Formalization
+      previous_local_name: C139_Formalization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 52
+  selected_label: Formula
+  proposed_record_id: CLR-C0052
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C143
+    source_label: Formula
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C143
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Formula
+      legacy_local_name: Formula
+      previous_local_name: C143_Formula
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 53
+  selected_label: Generalization
+  proposed_record_id: CLR-C0053
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C122
+    source_label: Generalization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C122
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Generalization
+      legacy_local_name: Generalization
+      previous_local_name: C122_Generalization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 54
+  selected_label: Goal
+  proposed_record_id: CLR-C0054
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C026
+    source_label: Goal
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C026
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Goal
+      legacy_local_name: Goal
+      previous_local_name: C026_Goal
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 55
+  selected_label: Idea
+  proposed_record_id: CLR-C0055
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C005
+    source_label: Idea
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C005
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Idea
+      legacy_local_name: Idea
+      previous_local_name: C005_Idea
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 56
+  selected_label: Implicit Definition
+  proposed_record_id: CLR-C0056
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C088
+    source_label: Implicit Definition
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C088
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ImplicitDefinition
+      legacy_local_name: ImplicitDefinition
+      previous_local_name: C088_ImplicitDefinition
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 57
+  selected_label: Information Object
+  proposed_record_id: CLR-C0057
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/core.yaml
+    source_family: thesis-core
+    source_id: CO-F003
+    source_label: Information Object
+    historical_iri_metadata: {}
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 58
+  selected_label: Insight
+  proposed_record_id: CLR-C0058
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C007
+    source_label: Insight
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C007
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Insight
+      legacy_local_name: Insight
+      previous_local_name: C007_Insight
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 59
+  selected_label: Instance
+  proposed_record_id: CLR-C0059
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C145
+    source_label: Instance
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C145
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Instance
+      legacy_local_name: Instance
+      previous_local_name: C145_Instance
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 60
+  selected_label: Instantiation
+  proposed_record_id: CLR-C0060
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C146
+    source_label: Instantiation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C146
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Instantiation
+      legacy_local_name: Instantiation
+      previous_local_name: C146_Instantiation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 61
+  selected_label: Intention
+  proposed_record_id: CLR-C0061
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C018
+    source_label: Intention
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C018
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Intention
+      legacy_local_name: Intention
+      previous_local_name: C018_Intention
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 62
+  selected_label: Interpretation
+  proposed_record_id: CLR-C0062
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C090
+    source_label: Interpretation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C090
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Interpretation
+      legacy_local_name: Interpretation
+      previous_local_name: C090_Interpretation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 63
+  selected_label: Interpretation Process
+  proposed_record_id: CLR-C0063
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C091
+    source_label: Interpretation Process
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C091
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#InterpretationProcess
+      legacy_local_name: InterpretationProcess
+      previous_local_name: C091_InterpretationProcess
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 64
+  selected_label: Interval-Based Time Representation
+  proposed_record_id: CLR-C0064
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C117
+    source_label: Interval-Based Time Representation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C117
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#IntervalBasedTimeRepresentation
+      legacy_local_name: IntervalBasedTimeRepresentation
+      previous_local_name: C117_IntervalBasedTimeRepresentation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 65
+  selected_label: Justification
+  proposed_record_id: CLR-C0065
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates: []
+  origin_status: no_predecessor_established
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 66
+  selected_label: Language
+  proposed_record_id: CLR-C0066
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C092
+    source_label: Language
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C092
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Language
+      legacy_local_name: Language
+      previous_local_name: C092_Language
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 67
+  selected_label: Languagization
+  proposed_record_id: CLR-C0067
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C082
+    source_label: Languagization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C082
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Languagization
+      legacy_local_name: Languagization
+      previous_local_name: C082_Languagization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 68
+  selected_label: Meaningfulness
+  proposed_record_id: CLR-C0068
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C020
+    source_label: Meaningfulness
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C020
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Meaningfulness
+      legacy_local_name: Meaningfulness
+      previous_local_name: C020_Meaningfulness
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 69
+  selected_label: Meronomization
+  proposed_record_id: CLR-C0069
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C124
+    source_label: Meronomization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C124
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Meronomization
+      legacy_local_name: Meronomization
+      previous_local_name: C124_Meronomization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 70
+  selected_label: Message
+  proposed_record_id: CLR-C0070
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C106
+    source_label: Message
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C106
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Message
+      legacy_local_name: Message
+      previous_local_name: C106_Message
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 71
+  selected_label: Metamodel
+  proposed_record_id: CLR-C0071
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C150
+    source_label: Metamodel
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C150
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Metamodel
+      legacy_local_name: Metamodel
+      previous_local_name: C150_Metamodel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 72
+  selected_label: Metamodeling
+  proposed_record_id: CLR-C0072
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C151
+    source_label: Metamodeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C151
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Metamodeling
+      legacy_local_name: Metamodeling
+      previous_local_name: C151_Metamodeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 73
+  selected_label: Model
+  proposed_record_id: CLR-C0073
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C152
+    source_label: Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C152
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Model
+      legacy_local_name: Model
+      previous_local_name: C152_Model
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 74
+  selected_label: Model Kind
+  proposed_record_id: CLR-C0074
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C168
+    source_label: Model Kind
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C168
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ModelKind
+      legacy_local_name: ModelKind
+      previous_local_name: C168_ModelKind
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 75
+  selected_label: Model of Models
+  proposed_record_id: CLR-C0075
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C153
+    source_label: Model of Models
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C153
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ModelOfModels
+      legacy_local_name: ModelOfModels
+      previous_local_name: C153_ModelOfModels
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 76
+  selected_label: Model View
+  proposed_record_id: CLR-C0076
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C166
+    source_label: Model View
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C166
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ModelView
+      legacy_local_name: ModelView
+      previous_local_name: C166_ModelView
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 77
+  selected_label: Modeling
+  proposed_record_id: CLR-C0077
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C162
+    source_label: Modeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C162
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Modeling
+      legacy_local_name: Modeling
+      previous_local_name: C162_Modeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 78
+  selected_label: Modeling Language
+  proposed_record_id: CLR-C0078
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C095
+    source_label: Modeling Language
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C095
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ModelingLanguage
+      legacy_local_name: ModelingLanguage
+      previous_local_name: C095_ModelingLanguage
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 79
+  selected_label: Multi-Dimensional Modeling
+  proposed_record_id: CLR-C0079
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C164
+    source_label: Multi-Dimensional Modeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C164
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#MultiDimensionalModeling
+      legacy_local_name: MultiDimensionalModeling
+      previous_local_name: C164_MultiDimensionalModeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 80
+  selected_label: Multi-Level Modeling
+  proposed_record_id: CLR-C0080
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C165
+    source_label: Multi-Level Modeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C165
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#MultiLevelModeling
+      legacy_local_name: MultiLevelModeling
+      previous_local_name: C165_MultiLevelModeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 81
+  selected_label: Naming
+  proposed_record_id: CLR-C0081
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C100
+    source_label: Naming
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C100
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Naming
+      legacy_local_name: Naming
+      previous_local_name: C100_Naming
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 82
+  selected_label: Natural Language
+  proposed_record_id: CLR-C0082
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C093
+    source_label: Natural Language
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C093
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#NaturalLanguage
+      legacy_local_name: NaturalLanguage
+      previous_local_name: C093_NaturalLanguage
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 83
+  selected_label: Object
+  proposed_record_id: CLR-C0083
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C046
+    source_label: Object
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C046
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Object
+      legacy_local_name: Object
+      previous_local_name: C046_Object
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 84
+  selected_label: Observation
+  proposed_record_id: CLR-C0084
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C019
+    source_label: Observation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C019
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Observation
+      legacy_local_name: Observation
+      previous_local_name: C019_Observation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 85
+  selected_label: Observer
+  proposed_record_id: CLR-C0085
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C025
+    source_label: Observer
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C025
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Observer
+      legacy_local_name: Observer
+      previous_local_name: C025_Observer
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 86
+  selected_label: Ontological Commitment
+  proposed_record_id: CLR-C0086
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C089
+    source_label: Ontological Commitment
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C089
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#OntologicalCommitment
+      legacy_local_name: OntologicalCommitment
+      previous_local_name: C089_OntologicalCommitment
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 87
+  selected_label: Ontology-Driven Conceptual Modeling
+  proposed_record_id: CLR-C0087
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C171
+    source_label: Ontology-Driven Conceptual Modeling
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C171
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#OntologyDrivenConceptualModeling
+      legacy_local_name: OntologyDrivenConceptualModeling
+      previous_local_name: C171_OntologyDrivenConceptualModeling
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 88
+  selected_label: Part
+  proposed_record_id: CLR-C0088
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C123
+    source_label: Part
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C123
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Part
+      legacy_local_name: Part
+      previous_local_name: C123_Part
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 89
+  selected_label: Part-Whole Relation
+  proposed_record_id: CLR-C0089
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C127
+    source_label: Part-Whole Relation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C127
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#PartWholeRelation
+      legacy_local_name: PartWholeRelation
+      previous_local_name: C127_PartWholeRelation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 90
+  selected_label: Pattern
+  proposed_record_id: CLR-C0090
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C111
+    source_label: Pattern
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C111
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Pattern
+      legacy_local_name: Pattern
+      previous_local_name: C111_Pattern
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 91
+  selected_label: Patternization
+  proposed_record_id: CLR-C0091
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C112
+    source_label: Patternization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C112
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Patternization
+      legacy_local_name: Patternization
+      previous_local_name: C112_Patternization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 92
+  selected_label: Perception
+  proposed_record_id: CLR-C0092
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C003
+    source_label: Perception
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C003
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Perception
+      legacy_local_name: Perception
+      previous_local_name: C003_Perception
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 93
+  selected_label: Perspective
+  proposed_record_id: CLR-C0093
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C024
+    source_label: Perspective
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C024
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Perspective
+      legacy_local_name: Perspective
+      previous_local_name: C024_Perspective
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 94
+  selected_label: Point-Based Time Representation
+  proposed_record_id: CLR-C0094
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C118
+    source_label: Point-Based Time Representation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C118
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#PointBasedTimeRepresentation
+      legacy_local_name: PointBasedTimeRepresentation
+      previous_local_name: C118_PointBasedTimeRepresentation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 95
+  selected_label: Presentation
+  proposed_record_id: CLR-C0095
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C078
+    source_label: Presentation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C078
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Presentation
+      legacy_local_name: Presentation
+      previous_local_name: C078_Presentation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 96
+  selected_label: Property
+  proposed_record_id: CLR-C0096
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C217
+    source_label: Property
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C217
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Property
+      legacy_local_name: Property
+      previous_local_name: C217_Property
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 97
+  selected_label: Qualitative Evaluation
+  proposed_record_id: CLR-C0097
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C228
+    source_label: Qualitative Evaluation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C228
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#QualitativeEvaluation
+      legacy_local_name: QualitativeEvaluation
+      previous_local_name: C228_QualitativeEvaluation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 98
+  selected_label: Reference Model
+  proposed_record_id: CLR-C0098
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C157
+    source_label: Reference Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C157
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#ReferenceModel
+      legacy_local_name: ReferenceModel
+      previous_local_name: C157_ReferenceModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 99
+  selected_label: Relation
+  proposed_record_id: CLR-C0099
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C126
+    source_label: Relation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C126
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Relation
+      legacy_local_name: Relation
+      previous_local_name: C126_Relation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 100
+  selected_label: Relationization
+  proposed_record_id: CLR-C0100
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C129
+    source_label: Relationization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C129
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Relationization
+      legacy_local_name: Relationization
+      previous_local_name: C129_Relationization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 101
+  selected_label: Representation
+  proposed_record_id: CLR-C0101
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C115
+    source_label: Representation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C115
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Representation
+      legacy_local_name: Representation
+      previous_local_name: C115_Representation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 102
+  selected_label: Schema
+  proposed_record_id: CLR-C0102
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C110
+    source_label: Schema
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C110
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Schema
+      legacy_local_name: Schema
+      previous_local_name: C110_Schema
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 103
+  selected_label: Schematization
+  proposed_record_id: CLR-C0103
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C138
+    source_label: Schematization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C138
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Schematization
+      legacy_local_name: Schematization
+      previous_local_name: C138_Schematization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 104
+  selected_label: Semantic Completeness
+  proposed_record_id: CLR-C0104
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-06-C251-C300.yaml
+    source_family: inventory
+    source_id: C259
+    source_label: Semantic Completeness
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C259
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#SemanticCompleteness
+      legacy_local_name: SemanticCompleteness
+      previous_local_name: C259_SemanticCompleteness
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 105
+  selected_label: Semantic Information
+  proposed_record_id: CLR-C0105
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C081
+    source_label: Semantic Information
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C081
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#SemanticInformation
+      legacy_local_name: SemanticInformation
+      previous_local_name: C081_SemanticInformation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 106
+  selected_label: Semantic Interoperability
+  proposed_record_id: CLR-C0106
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C103
+    source_label: Semantic Interoperability
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C103
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#SemanticInteroperability
+      legacy_local_name: SemanticInteroperability
+      previous_local_name: C103_SemanticInteroperability
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 107
+  selected_label: Semanticization
+  proposed_record_id: CLR-C0107
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C098
+    source_label: Semanticization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C098
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Semanticization
+      legacy_local_name: Semanticization
+      previous_local_name: C098_Semanticization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 108
+  selected_label: Semantics
+  proposed_record_id: CLR-C0108
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C097
+    source_label: Semantics
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C097
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Semantics
+      legacy_local_name: Semantics
+      previous_local_name: C097_Semantics
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 109
+  selected_label: Shared Understanding
+  proposed_record_id: CLR-C0109
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C016
+    source_label: Shared Understanding
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C016
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#SharedUnderstanding
+      legacy_local_name: SharedUnderstanding
+      previous_local_name: C016_SharedUnderstanding
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 110
+  selected_label: Source
+  proposed_record_id: CLR-C0110
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-07-C301-C350.yaml
+    source_family: inventory
+    source_id: C338
+    source_label: Source
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C338
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Source
+      legacy_local_name: Source
+      previous_local_name: C338_Source
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 111
+  selected_label: Specification Model
+  proposed_record_id: CLR-C0111
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C158
+    source_label: Specification Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C158
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#SpecificationModel
+      legacy_local_name: SpecificationModel
+      previous_local_name: C158_SpecificationModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 112
+  selected_label: State
+  proposed_record_id: CLR-C0112
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C038
+    source_label: State
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C038
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#State
+      legacy_local_name: State
+      previous_local_name: C038_State
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 113
+  selected_label: Structural Conceptual Model
+  proposed_record_id: CLR-C0113
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C160
+    source_label: Structural Conceptual Model
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C160
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#StructuralConceptualModel
+      legacy_local_name: StructuralConceptualModel
+      previous_local_name: C160_StructuralConceptualModel
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 114
+  selected_label: Structural Review
+  proposed_record_id: CLR-C0114
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C232
+    source_label: Structural Review
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C232
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#StructuralReview
+      legacy_local_name: StructuralReview
+      previous_local_name: C232_StructuralReview
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 115
+  selected_label: Structuralization
+  proposed_record_id: CLR-C0115
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C134
+    source_label: Structuralization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C134
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Structuralization
+      legacy_local_name: Structuralization
+      previous_local_name: C134_Structuralization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 116
+  selected_label: Structure
+  proposed_record_id: CLR-C0116
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C133
+    source_label: Structure
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C133
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Structure
+      legacy_local_name: Structure
+      previous_local_name: C133_Structure
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 117
+  selected_label: Syntax
+  proposed_record_id: CLR-C0117
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C101
+    source_label: Syntax
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C101
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Syntax
+      legacy_local_name: Syntax
+      previous_local_name: C101_Syntax
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 118
+  selected_label: Syntaxization
+  proposed_record_id: CLR-C0118
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C102
+    source_label: Syntaxization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C102
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Syntaxization
+      legacy_local_name: Syntaxization
+      previous_local_name: C102_Syntaxization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 119
+  selected_label: Taxonomy
+  proposed_record_id: CLR-C0119
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C121
+    source_label: Taxonomy
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C121
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Taxonomy
+      legacy_local_name: Taxonomy
+      previous_local_name: C121_Taxonomy
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 120
+  selected_label: Term
+  proposed_record_id: CLR-C0120
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C080
+    source_label: Term
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C080
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Term
+      legacy_local_name: Term
+      previous_local_name: C080_Term
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 121
+  selected_label: Terminology
+  proposed_record_id: CLR-C0121
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C085
+    source_label: Terminology
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C085
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Terminology
+      legacy_local_name: Terminology
+      previous_local_name: C085_Terminology
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 122
+  selected_label: Terminology Engineering
+  proposed_record_id: CLR-C0122
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C099
+    source_label: Terminology Engineering
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C099
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#TerminologyEngineering
+      legacy_local_name: TerminologyEngineering
+      previous_local_name: C099_TerminologyEngineering
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 123
+  selected_label: Time
+  proposed_record_id: CLR-C0123
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C044
+    source_label: Time
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C044
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Time
+      legacy_local_name: Time
+      previous_local_name: C044_Time
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 124
+  selected_label: Time Representation
+  proposed_record_id: CLR-C0124
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C116
+    source_label: Time Representation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C116
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#TimeRepresentation
+      legacy_local_name: TimeRepresentation
+      previous_local_name: C116_TimeRepresentation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 125
+  selected_label: Type
+  proposed_record_id: CLR-C0125
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates: []
+  origin_status: no_predecessor_established
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 126
+  selected_label: Understandability
+  proposed_record_id: CLR-C0126
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C017
+    source_label: Understandability
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C017
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Understandability_Cognition
+      legacy_local_name: Understandability_Cognition
+      previous_local_name: C017_Understandability
+      disambiguated_in_source: true
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C247
+    source_label: Understandability
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C247
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Understandability_Quality
+      legacy_local_name: Understandability_Quality
+      previous_local_name: C247_Understandability
+      disambiguated_in_source: true
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 127
+  selected_label: Understanding
+  proposed_record_id: CLR-C0127
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C015
+    source_label: Understanding
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C015
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Understanding
+      legacy_local_name: Understanding
+      previous_local_name: C015_Understanding
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 128
+  selected_label: Valuation
+  proposed_record_id: CLR-C0128
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C030
+    source_label: Valuation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C030
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Valuation
+      legacy_local_name: Valuation
+      previous_local_name: C030_Valuation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 129
+  selected_label: Value
+  proposed_record_id: CLR-C0129
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C029
+    source_label: Value
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C029
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Value
+      legacy_local_name: Value
+      previous_local_name: C029_Value
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 130
+  selected_label: View
+  proposed_record_id: CLR-C0130
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-01-C001-C050.yaml
+    source_family: inventory
+    source_id: C010
+    source_label: View
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C010
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#View
+      legacy_local_name: View
+      previous_local_name: C010_View
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 131
+  selected_label: Viewpoint
+  proposed_record_id: CLR-C0131
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-04-C151-C200.yaml
+    source_family: inventory
+    source_id: C167
+    source_label: Viewpoint
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C167
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Viewpoint
+      legacy_local_name: Viewpoint
+      previous_local_name: C167_Viewpoint
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 132
+  selected_label: Visual
+  proposed_record_id: CLR-C0132
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C119
+    source_label: Visual
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C119
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Visual
+      legacy_local_name: Visual
+      previous_local_name: C119_Visual
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 133
+  selected_label: Visualization
+  proposed_record_id: CLR-C0133
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C120
+    source_label: Visualization
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C120
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Visualization
+      legacy_local_name: Visualization
+      previous_local_name: C120_Visualization
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 134
+  selected_label: Vocabulary
+  proposed_record_id: CLR-C0134
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C104
+    source_label: Vocabulary
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C104
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Vocabulary
+      legacy_local_name: Vocabulary
+      previous_local_name: C104_Vocabulary
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 135
+  selected_label: Vocabulary Elicitation
+  proposed_record_id: CLR-C0135
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-02-C051-C100.yaml
+    source_family: inventory
+    source_id: C079
+    source_label: Vocabulary Elicitation
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C079
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#VocabularyElicitation
+      legacy_local_name: VocabularyElicitation
+      previous_local_name: C079_VocabularyElicitation
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 136
+  selected_label: Well-Definedness
+  proposed_record_id: CLR-C0136
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-05-C201-C250.yaml
+    source_family: inventory
+    source_id: C236
+    source_label: Well-Definedness
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C236
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#WellDefinedness
+      legacy_local_name: WellDefinedness
+      previous_local_name: C236_WellDefinedness
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+- source_artifact_id: SRC-SPEC
+  source_locator: table 2 / data row 137
+  selected_label: Whole
+  proposed_record_id: CLR-C0137
+  reservation_status: reserved_not_semantically_accepted
+  legacy_candidates:
+  - source_repository: ArazSaieArasi3/conceptualization-ontology
+    source_commit: 80289f07866def38d077a9434803b6c85448d378
+    source_registry: catalog/concepts/part-03-C101-C150.yaml
+    source_family: inventory
+    source_id: C147
+    source_label: Whole
+    historical_iri_metadata:
+      proposed_persistent: https://w3id.org/conceptualization/C147
+      legacy_full: https://ontology.arazsaiearasi.ir/conceptualization#Whole
+      legacy_local_name: Whole
+      previous_local_name: C147_Whole
+      disambiguated_in_source: false
+      ambiguous_english_label: false
+    iri_qualification: retained as source metadata; proposed_persistent does not assert
+      a registered resolver
+    correspondence_status: candidate_same_label
+    semantic_identity: not_assessed
+    decision: pending semantic comparison; no exactMatch asserted
+  origin_status: candidate_predecessor_found
+unselected_origin_records:
+- source_family: inventory
+  source_id: C004
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C009
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C028
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C031
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C033
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C034
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C035
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C037
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C039
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C040
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C041
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C042
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C043
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C045
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C047
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C048
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C049
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C050
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C051
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C052
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C053
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C054
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C055
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C056
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C057
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C058
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C059
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C060
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C061
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C062
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C063
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C064
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C065
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C066
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C067
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C068
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C069
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C070
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C071
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C072
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C073
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C074
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C075
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C076
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C077
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C108
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C109
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C125
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C128
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C131
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C132
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C137
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C141
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C144
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C169
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C170
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C172
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C173
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C174
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C175
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C176
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C177
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C178
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C179
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C180
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C181
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C182
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C183
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C185
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C186
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C187
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C188
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C189
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C190
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C191
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C192
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C193
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C194
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C195
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C196
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C197
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C199
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C200
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C201
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C202
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C203
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C204
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C206
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C207
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C208
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C209
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C210
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C211
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C212
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C213
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C214
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C215
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C216
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C218
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C219
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C220
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C221
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C222
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C223
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C224
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C225
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C226
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C227
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C229
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C230
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C231
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C233
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C234
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C235
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C238
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C239
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C240
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C241
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C242
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C243
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C244
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C245
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C246
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C248
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C249
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C250
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C251
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C253
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C254
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C256
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C257
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C258
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C260
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C262
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C263
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C264
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C265
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C266
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C267
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C268
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C269
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C270
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C271
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C273
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C274
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C275
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C276
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C277
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C278
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C279
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C280
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C281
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C282
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C283
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C284
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C285
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C286
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C287
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C288
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C289
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C290
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C291
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C292
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C293
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C294
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C295
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C296
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C297
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C298
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C299
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C300
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C301
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C302
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C303
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C304
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C305
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C307
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C308
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C309
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C310
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C311
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C312
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C313
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C314
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C315
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C316
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C317
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C318
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C319
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C320
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C321
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C322
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C323
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C324
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C325
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C326
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C327
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C328
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C329
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C330
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C331
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C333
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C334
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C335
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C336
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C337
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C339
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C340
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C341
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C342
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C343
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C344
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C345
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C346
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C348
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C349
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C350
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C351
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C352
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C353
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C354
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C355
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C356
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C357
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C358
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C359
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C360
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C361
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C362
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C363
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C364
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C365
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C366
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C367
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C368
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C369
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C370
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C371
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C372
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C373
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C374
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C375
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C376
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C377
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C378
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C379
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C380
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C381
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C382
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C383
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C384
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C385
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C386
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: inventory
+  source_id: C387
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: thesis-core
+  source_id: CO-F001
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: thesis-core
+  source_id: CO-C003
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: thesis-core
+  source_id: CO-C004
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: thesis-core
+  source_id: CO-C005
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: thesis-core
+  source_id: CO-C007
+  disposition: not_selected_for_this_slice_no_deletion
+- source_family: thesis-core
+  source_id: CO-C008
+  disposition: not_selected_for_this_slice_no_deletion
+relationship_lineage:
+  old_core_relation_ids:
+  - CO-R001
+  - CO-R002
+  - CO-R003
+  - CO-R004
+  - CO-R005
+  - CO-R006
+  - CO-R007
+  - CO-R008
+  - CO-R009
+  - CO-R010
+  status: unresolved_not_assumed_equal_to_174_selected_associations
+  next_step: Association/generalization import preserves exact row locators and records
+    any reviewed semantic mapping.

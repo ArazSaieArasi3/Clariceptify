@@ -1,0 +1,18 @@
+station: R1 bootstrap
+contracts:
+  scope: implemented
+  authority: implemented
+  identifiers: implemented
+  versioning: implemented
+  record_schemas: implemented
+artifacts:
+  conceptual_registries: planned
+  requirements_registries: planned
+  source_support_registry: planned
+  candidate_migration_ledger: implemented
+  diagram_reconciliation: planned
+  formal_ontology: absent
+  relational_projection: absent
+  independent_review: not_assessed
+  stable_semantic_release: absent
+  doi: unassigned

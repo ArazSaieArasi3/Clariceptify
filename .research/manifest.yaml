@@ -1,0 +1,64 @@
+schema_version: '1.1'
+research:
+  id: R-001
+  title: Conceptualization Ontology / PhD Foundational Research
+  short_name: Clariceptify
+  primary_program: P1
+  research_line_id: P1-L1
+  research_line: Conceptualization Foundations
+  cross_program_bridges:
+  - P5
+  lifecycle_status: Active
+  priority: A
+repository:
+  name: Clariceptify
+  url: https://github.com/ArazSaieArasi3/Clariceptify
+  default_branch: main
+  visibility: public
+portfolio_bindings:
+  publications: []
+  artifacts: []
+  products: []
+methodology:
+  portfolio:
+    repository: https://github.com/ArazSaieArasi3/araz-research-portfolio
+    framework_ref: commit:327c4f31783ba439733bbc3f76f07d330c866240
+    manifest_contract: '1.1'
+  ogcm_rf:
+    enabled: true
+    framework_ref: commit:40d39d87973b05f7a65756b88ca38350ce01fd7a
+    implementation_profile: .research/ogcm-rf-profile.yaml
+  methods:
+  - UFO/OntoUML conceptual modeling
+  - Requirements and source traceability
+  - Scoped layered evaluation
+execution:
+  current_wave: R1 bootstrap
+  current_workstream: contracts, schemas and selective migration preparation
+  next_gate:
+    name: controlled registry import
+    criteria: input identity and candidate ledger retained; no hidden semantic edits
+  next_action: Import domains and selected concept/relationship tables
+progress:
+  problem_framing: done
+  evidence_base: planned
+  literature_review: planned
+  conceptualization: planned
+  data: not_applicable
+  artifact_design: in_progress
+  implementation: in_progress
+  evaluation: in_progress
+  manuscript: planned
+  reproducibility: planned
+  publication: planned
+verification:
+  last_verified: '2026-10-24'
+  evidence_basis:
+  - docs/decisions/
+  - evaluation/bootstrap-report.json
+  coherence_debt:
+  - Canonical handover pending destination parity
+  - Source/specification approval wording requires reconciliation
+  - Repository license/citation metadata pending
+  note: Local continuation of R-001; no upstream registry mutation or full OGCM conformance
+    assessment.
