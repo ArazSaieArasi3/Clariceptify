@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Claim-register identity, input and state boundaries; not scientific peer review",
+  "claims": 7,
+  "negative_cases_rejected": [
+    "duplicate claim identifier",
+    "unbound evidence",
+    "missing claim boundary",
+    "novelty/contribution inflation",
+    "fabricated requirement satisfaction",
+    "stale evidence fingerprint",
+    "fabricated manuscript alignment",
+    "unissued DOI"
+  ],
+  "register_sha256": "f84ab2dcaeadbb033f11c0695d29d60507663e15a7016c37bccd467f13fd1aec",
+  "input_snapshot_ref": "commit:09531fe2df12f3a68a2239f16228f0f0db621fb6",
+  "manuscript_alignment": "not_assessed",
+  "novelty_review": "pending"
+}

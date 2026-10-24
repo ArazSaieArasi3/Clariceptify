@@ -1,4 +1,4 @@
-station: R1 traceability contracts
+station: R1 scoped traceability and claim baseline; integrity/CI gates next
 contracts:
   scope: implemented
   authority: implemented
@@ -21,4 +21,8 @@ artifacts:
     packaging correction to alpha.2)
   artifact_identity_register: implemented_storage_snapshot
   typed_link_contracts: implemented_initial_schema
-  generated_trace_graph: planned
+  generated_trace_graph: implemented_scoped_structural_source_and_candidate_witness_projection
+  migration_parity: verified_selected_projection_14_outputs
+  requirements_model_witnesses: imported_candidates_not_assessed
+  claim_register: bounded_observations_and_proposals
+  manuscript_alignment: not_assessed

@@ -4,14 +4,14 @@
     {
       "path": ".research/manifest.yaml",
       "status": "PASS",
-      "input_sha256": "eaca28fa6b964ec802fc146de8a4a6017137948c24e7472b9817b00b3203b36c",
-      "scope": "Compatibility with observed pinned upstream schema only; not full conformance"
+      "input_sha256": "d3cf4561a1a3beb1fef9e21a5a2211ae6112adab43ef9ba874e614b726cfc86e",
+      "scope": "Observed pinned schema compatibility only; not full conformance"
     },
     {
       "path": ".research/ogcm-rf-profile.yaml",
       "status": "PASS",
-      "input_sha256": "0354f9c9b16bbadd83c8fa4b51dd602807938bc4a692e105171ecd29ddbe0a52",
-      "scope": "Compatibility with observed pinned upstream schema only; not full conformance"
+      "input_sha256": "0cf2192dd9f0474b7bb0d6035017500a9086fdaecf3840edb6484110e970cdbb",
+      "scope": "Observed pinned schema compatibility only; not full conformance"
     }
   ],
   "pinned_schemas": {

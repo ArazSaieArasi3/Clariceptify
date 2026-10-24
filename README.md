@@ -2,7 +2,7 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 traceability-contract preparation** station: the imported candidate baseline is published, and artifact/version and typed-edge contracts are present. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 traceability and claim-baseline preparation** station: the imported candidate baseline is published; structural/source/witness links, migration parity and bounded claim records are present. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
@@ -15,7 +15,8 @@ Latest engineering prerelease: [v0.1.0-alpha.2.1](https://github.com/ArazSaieAra
 - [Imported model registries](model/) and [import checks](evaluation/model-structure-report.json)
 - [Requirements and CQ contracts](requirements/) and [qualified source support](evidence/)
 - [Model schemas](model/schema/) and [artifact implementation status](docs/artifact-status.yaml)
-- [Artifact identities and typed-link contracts](traceability/)
+- [Artifact identities, generated links and candidate witnesses](traceability/)
+- [Bounded claims and manuscript binding](docs/research/claim-register.yaml)
 - [Input manifest](traceability/migration/source-manifest.yaml), [integrity](traceability/migration/input-integrity.yaml) and [candidate entity ledger](traceability/migration/entity-ledger.yaml)
 - [Identifiers](docs/decisions/stable-identifiers.md), [artifact versions](docs/decisions/artifact-versioning.md), [release policy](docs/decisions/release-policy.md)
 - [Bootstrap verification](evaluation/bootstrap-report.json) and [local check](tools/README.md)

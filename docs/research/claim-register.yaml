@@ -1,0 +1,164 @@
+schema_version: 0.1.0
+asset_id: CLR-CLAIM-REGISTER
+input_snapshot_ref: commit:09531fe2df12f3a68a2239f16228f0f0db621fb6
+status: bounded_working_claims_not_scientific_acceptance
+input_file_sha256:
+  docs/decisions/r1-scope.md: 2617872787e041a3174fcaa01abc93e1072aba06acd4de2d6f8931ef3a5178f6
+  evaluation/baseline-preview-publication-alpha2-1.json: 0c6447a4f88f6706c516349fc0b78147fa48e9d1a58029abb0d940c61e90e688
+  evaluation/generated-links.json: 385a47c5803b9b82112fbc4dbcb89f194350b7ee4a274abf2c9c4dcc07d6595f
+  evaluation/model-structure-report.json: d01dfe4ade3d7fc2c7e89509a415a38f0d4ef1aaa48c514b507a778fa81a20a6
+  evaluation/requirement-witnesses.json: 1ece763bc0914ba0a499dbd80cfb4c463269aee0920c78bc495d05b270d0ad46
+  evaluation/source-support-integrity.json: 2f860e5eb3dcbdeeb2a48800e07ecdddfc40a09b2937255b396683fc3c1ff13d
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/related-work/candidate-register.yaml: 65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/future.yaml: bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e
+  requirements/quality.yaml: dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc
+  traceability/links.yaml: 6b745a46d858d709c759a0dbbb045ce45062c2a5706b48f827c715e562cf700f
+  traceability/migration/input-integrity.yaml: c683e54940b501be551e637ef858ac35e6e2056b328043c339f772f40889ef35
+  traceability/migration/parity-report.yaml: 38016e4eb0c01ac66290a8ecdfaa40295259ecdbd98847de5427aa0cf7df6575
+  traceability/migration/source-manifest.yaml: f475dc3ddf297e9a7f5f34e5422e1d8070f825f396cae6c8f98b79b4813dcb5b
+  traceability/requirements-model.yaml: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+applicability_policy: A claim applies only to its recorded inputs and evidence scope.
+  Changed relevant bytes require re-evaluation, not inherited PASS.
+claims:
+- id: CLR-CL001
+  claim_class: recorded_observation
+  status: supported_within_scope
+  text: The selected specification/ORSD projection is reproducible as the governed
+    model, requirement, source and candidate-witness outputs.
+  facts:
+    compared_outputs: 14
+    model_record_counts:
+      concepts: 137
+      domains: 21
+      relations: 174
+      generalizations: 122
+      constraints: 24
+  evidence_paths:
+  - traceability/migration/parity-report.yaml
+  boundary: Byte-identical extraction of the two frozen inputs only; not equivalence
+    to the entire thesis or wider historical model.
+- id: CLR-CL002
+  claim_class: recorded_observation
+  status: supported_within_scope
+  text: The current project trace graph matches its declared structural/source/witness
+    fields with resolvable endpoints and exact revision/digest bindings.
+  facts:
+    edges: 1815
+    link_types_used: 11
+  evidence_paths:
+  - traceability/links.yaml
+  - evaluation/generated-links.json
+  boundary: A bounded generated projection and integrity result; not semantic sufficiency,
+    satisfiability or complete research-graph coverage.
+- id: CLR-CL003
+  claim_class: recorded_observation
+  status: supported_within_scope
+  text: Retrospective ORSD contracts retain their original IDs and candidate witnesses
+    without reporting satisfaction or computed answers.
+  facts:
+    fr_cq_pairs: 30
+    quality_dispositions: 10
+    future_pairs: 8
+    satisfaction: not_assessed
+    cq_execution: not_executed
+    answers: not_computed
+  evidence_paths:
+  - traceability/requirements-model.yaml
+  - evaluation/requirement-witnesses.json
+  boundary: Transfer/contract integrity only. Retrospective reconstruction is not
+    prospective stakeholder agreement or empirical assessment.
+- id: CLR-CL004
+  claim_class: recorded_observation
+  status: supported_within_scope
+  text: Concept-source records preserve qualified input screening with explicit pending
+    support.
+  facts:
+    source_records: 53
+    concept_support_records: 137
+    D: 44
+    B: 83
+    P: 10
+  evidence_paths:
+  - evidence/source-register.yaml
+  - evidence/concept-support.yaml
+  - evaluation/source-support-integrity.json
+  boundary: Inherited bibliography/screening qualifications; not fresh full-text review,
+    independent source confirmation or typing approval.
+- id: CLR-CL005
+  claim_class: proposed_interpretation
+  status: proposed_for_review
+  text: The model is intended to make purposeful conceptualization inspectable by
+    distinguishing episodes, conceptualizers, goals, perspectives and explicit conceptual
+    artifacts.
+  facts:
+    candidate_concept_ids:
+    - CLR-C0026
+    - CLR-C0027
+    - CLR-C0054
+    - CLR-C0093
+    - CLR-C0019
+  evidence_paths:
+  - model/concepts.yaml
+  - docs/decisions/r1-scope.md
+  boundary: Purpose and explicit representational distinctions, proposed for philosophical/domain
+    review; not philosophical consensus or established ontological adequacy.
+- id: CLR-CL006
+  claim_class: recorded_observation
+  status: supported_within_scope
+  text: An engineering candidate-baseline prerelease is published with verified tag,
+    source membership and public asset digests.
+  facts:
+    tag: v0.1.0-alpha.2.1
+    source_commit: fe347d2e62262f1cd43558d2330438f433f64f1d
+    source_files: 76
+  evidence_paths:
+  - evaluation/baseline-preview-publication-alpha2-1.json
+  boundary: Alpha.2.1 freezes the earlier import baseline; the later graph, witnesses
+    and this register on main are outside that frozen package. No stable semantic
+    release or DOI.
+- id: CLR-CL007
+  claim_class: working_contribution
+  status: proposed_for_review
+  text: A source-traced conceptual account intended to clarify conceptualization commitments
+    and expose their relations to requirements, evidence and assessment.
+  facts:
+    comparison_state: pending_R2_critical_review
+  evidence_paths:
+  - docs/decisions/r1-scope.md
+  - evidence/related-work/candidate-register.yaml
+  boundary: Working contribution wording only. Comparative gap, novelty, coverage,
+    superiority and scientific priority require the planned critical reviews.
+manuscript_binding:
+  asset_id: CLR-MANUSCRIPT
+  working_title: An Ontology for Representing Conceptualization Knowledge
+  source_id: SRC-ARTICLE
+  input_filename: Conceptualization_Manuscript_v0_1_IEEE.docx
+  recorded_revision: '0.1'
+  inherited_input_sha256: 7c573c2badc1ef0cf5a26115f382a185a9615c5f606e334dcbea61c9c15b6a67
+  current_public_manuscript: not_materialized
+  model_evidence_alignment: not_assessed
+  figure_state: Input manifest records a figure-page placeholder; a reconciled current
+    figure is not materialized.
+  figure_state_verification: Inherited source-manifest record; draft layout not freshly
+    inspected in this task.
+  layout_target: IEEE conference; eight-page ceiling; reserved model-figure page
+  public_article_upload: not_performed
+  doi: null
+  next_binding_work: Reconcile figure and evidence first; rewrite/bind the manuscript
+    in PUB-001 through PUB-008.
+deferred_claims:
+- novelty or first-of-kind priority
+- complete semantic adequacy or universal philosophical agreement
+- all-requirement satisfaction or executed CQs
+- independent expert acceptance
+- whole-model formal consistency or joint satisfiability
+- stable semantic release or issued DOI
