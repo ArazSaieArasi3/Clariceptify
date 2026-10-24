@@ -1,0 +1,51 @@
+{
+  "status": "PASS_WITH_REPRODUCIBILITY_LIMITATION",
+  "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2",
+  "release_id": 422989965,
+  "tag": "v0.1.0-alpha.2",
+  "source_commit": "fe347d2e62262f1cd43558d2330438f433f64f1d",
+  "workflow_run_id": 40133994046,
+  "workflow_conclusion": "success",
+  "public_archive_readback": {
+    "source_files": 76,
+    "total_members": 79,
+    "all_source_members_equal_frozen_git_bytes": true,
+    "internal_checksums": "PASS",
+    "external_checksums": "PASS",
+    "manifest_binding": "PASS"
+  },
+  "cross_environment_byte_parity": false,
+  "finding": {
+    "id": "CLR-REL-ORDER-001",
+    "cause": "Only order of the same 98 bootstrap check descriptions differs between local Python and GitHub Python 3.12; all other checker results and source bytes match.",
+    "scope": "Generated check report, manifest hash and ZIP envelope; not model/requirements/source content.",
+    "disposition": "Canonicalize check order in the next packaging prerelease, alpha.2.1; preserve all alpha.2 assets and tag."
+  },
+  "assets": [
+    {
+      "name": "CHECK-RESULTS.json",
+      "digest": "sha256:c476392a024787c78e60eda34ade411f5ca229324e89fccf6a8314eafa4111b6",
+      "size": 18738,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2/CHECK-RESULTS.json"
+    },
+    {
+      "name": "clariceptify-v0.1.0-alpha.2-baseline.zip",
+      "digest": "sha256:2cfb6bca1ad4ad72bac9e5cf46307658d02c59deeb74429d8c2f582d2d88a928",
+      "size": 867566,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2/clariceptify-v0.1.0-alpha.2-baseline.zip"
+    },
+    {
+      "name": "PACKAGE-MANIFEST.json",
+      "digest": "sha256:cd07c245c4137bcbe22a8c8a4f003c3da431e21f5c4f11dd9b9dd07a464625ef",
+      "size": 9287,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2/PACKAGE-MANIFEST.json"
+    },
+    {
+      "name": "SHA256SUMS",
+      "digest": "sha256:6c4a9034b4e925ddf99d442cec7197e0a9f43f628ffed1443438df74f8bbcfab",
+      "size": 280,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2/SHA256SUMS"
+    }
+  ],
+  "scope": "Actual public candidate-baseline readback; not semantic approval or DOI"
+}
