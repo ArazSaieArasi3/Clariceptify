@@ -29,11 +29,12 @@ identity_and_release:
   ontology_iri: null
   persistent_iri_status: unassigned
   current_semantic_release: null
-  development_state: candidate registries imported; evaluation, traceability and diagram
-    reconciliation pending
+  development_state: Candidate baseline published; artifact and typed-edge contracts
+    implemented; full graph, adequacy and diagram reconciliation pending
   release_manifest: releases/
-  current_package_release: v0.1.0-alpha.1
-  package_scope: contracts and migration preparation, not the later main model registries
+  current_package_release: v0.1.0-alpha.2.1
+  package_scope: Frozen candidate model/requirements/source input; packaging correction
+    to alpha.2; no stable semantic release
 traceability:
   concept_registry: model/concepts.yaml
   relation_registry: model/relations.yaml and model/generalizations.yaml
@@ -49,7 +50,8 @@ validation_and_evaluation:
   shacl_or_constraints: textual only; not executed
   cq_regression: not_executed
   comparative_or_expert: not_assessed
-  reproducibility: local bootstrap check; full release readback pending
+  reproducibility: Verified public alpha.2.1 readback; all four asset digests match
+    local builds; source members match frozen Git bytes
 publication_bindings: []
 portfolio_integration:
   manifest: .research/manifest.yaml
@@ -63,5 +65,5 @@ adoption:
   - expert review
   - public generated documentation
   - relational projection
-  last_reviewed: '2026-10-24'
+  last_reviewed: '2026-10-25'
   notes: Profile records adopted local choices, not transferred scientific validation.

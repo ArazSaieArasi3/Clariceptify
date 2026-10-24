@@ -1,4 +1,4 @@
-station: R1 requirements and source import
+station: R1 traceability contracts
 contracts:
   scope: implemented
   authority: implemented
@@ -17,5 +17,8 @@ artifacts:
   independent_review: not_assessed
   stable_semantic_release: absent
   doi: unassigned
-  engineering_package_release: v0.1.0-alpha.1 (contracts snapshot; model import on
-    main is newer)
+  engineering_package_release: v0.1.0-alpha.2.1 (verified frozen candidate baseline;
+    packaging correction to alpha.2)
+  artifact_identity_register: implemented_storage_snapshot
+  typed_link_contracts: implemented_initial_schema
+  generated_trace_graph: planned

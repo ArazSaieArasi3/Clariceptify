@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scope": "Artifact snapshot integrity and initial edge-contract behavior only",
+  "snapshot_ref": "commit:c5db7525fa3989fce292c6961e686dc4f25c9314",
+  "artifact_records": 40,
+  "link_types": 11,
+  "positive_edge_fixtures": 1,
+  "negative_cases_rejected": [
+    "duplicate asset identifier",
+    "missing owner",
+    "stale file digest",
+    "dangling collection member",
+    "fabricated absent-ontology digest",
+    "endpoint kind mismatch",
+    "missing version binding",
+    "invented PASS",
+    "unsupported proves link",
+    "unsupported satisfies link",
+    "unqualified inherited support"
+  ],
+  "input_sha256": {
+    "traceability/artifacts.yaml": "d86cc34ee7894461ca7fa89d06ebee549db1689daa91c6a60c2ef22a4503e116",
+    "traceability/link-types.yaml": "2cd040180419d5433ad924bc24f5565c97ba82d501dfda028981147b3ba27e33",
+    "traceability/schema/artifact-register.schema.json": "38628abe8cab3681a13894b1bad1991b9b901b233b140c4e052e1ab4289b5416",
+    "traceability/schema/trace-edge.schema.json": "8a3b454bc233b55ec23dfcf58ace5e175e3225a1c1043f9a0869c6e8cbb642db"
+  },
+  "limits": [
+    "No generated full trace graph yet",
+    "Fixture is not a coverage or satisfaction result",
+    "No semantic approval, proof, CQ execution or independent review"
+  ],
+  "repeat_generation": "byte_identical"
+}

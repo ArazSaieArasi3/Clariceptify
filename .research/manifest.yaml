@@ -33,13 +33,15 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 requirements and source import
-  current_workstream: model, ORSD and source-support candidate baselines imported
+  current_wave: R1 traceability contracts
+  current_workstream: Verified alpha.2.1 baseline; artifact/version and typed-edge
+    contracts implemented
   next_gate:
-    name: controlled registry import
-    criteria: input identity and candidate ledger retained; no hidden semantic edits
-  next_action: Register and triage new related-work candidates, then bind alpha.2
-    checkpoint
+    name: traceability and integrity checkpoint
+    criteria: generate and reconcile version-bound model/requirement/evidence links;
+      scoped negative checks and CI
+  next_action: Generate typed model/source links (#32), then reconcile migration parity
+    (#33).
 progress:
   problem_framing: done
   evidence_base: planned
@@ -53,10 +55,12 @@ progress:
   reproducibility: planned
   publication: planned
 verification:
-  last_verified: '2026-10-24'
+  last_verified: '2026-10-25'
   evidence_basis:
   - docs/decisions/
   - evaluation/bootstrap-report.json
+  - evaluation/baseline-preview-publication-alpha2-1.json
+  - evaluation/trace-contracts.json
   coherence_debt:
   - Canonical handover pending destination parity
   - Source/specification approval wording requires reconciliation

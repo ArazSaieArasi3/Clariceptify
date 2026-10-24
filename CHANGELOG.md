@@ -1,6 +1,6 @@
 # Changelog
 
-## Current development — selected model tables
+## Current development — traceability contracts
 
 - Imported candidate registries: 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints.
 - Preserved input definitions, stereotypes, end multiplicities and source locators; semantic lineage and constraint mention bindings remain unreviewed.
@@ -9,6 +9,24 @@
 
 - Corrected all 194 issue titles/bodies and 26 completion comments to English without changing issue numbers, task states or dependencies. Added English-only contribution instructions and a local script-block guard.
 - Registered 19 recovered related-work labels with explicit unverified metadata and provisional priorities; no full-text review or novelty conclusion is claimed.
+
+- Added stable artifact identities/storage revisions and typed-link schemas. These contracts do not yet constitute a generated full trace graph.
+
+## v0.1.0-alpha.2.1 — 2026-10-25
+
+- Packaging correction CLR-REL-ORDER-001: sort the same 98 check descriptions before serialization, eliminating filesystem/Python traversal-order differences.
+- Four public asset digests equal both local builds; downloaded public assets, all 79 archive members and all 76 frozen source members were verified.
+- Scientific input remains fe347d2e62262f1cd43558d2330438f433f64f1d. No model, requirement or source record changed. Alpha.2 and alpha.1 remain unchanged.
+
+[Release](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2.1)
+
+## v0.1.0-alpha.2 — 2026-10-25
+
+- Published the controlled candidate baseline (76 frozen source files).
+- Public source bytes and internal/external checksums passed. The same 98 check descriptions had different traversal order across environments, so generated report/manifest/ZIP bytes differed; alpha.2.1 corrects packaging.
+- Diagram reconciliation, complete traceability, semantic acceptance, formal implementation, independent review and DOI remain outside this checkpoint.
+
+[Release](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2)
 
 ## v0.1.0-alpha.1 — 2026-10-24
 

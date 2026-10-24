@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "tag": "v0.1.0-alpha.2.1",
+  "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2.1",
+  "release_id": 422991611,
+  "published_at": "2026-10-24T21:27:23Z",
+  "prerelease": true,
+  "source_commit": "fe347d2e62262f1cd43558d2330438f433f64f1d",
+  "workflow_run_id": 40134271997,
+  "workflow_conclusion": "success",
+  "checks": [
+    "Public tag equals frozen commit",
+    "All four uploaded asset digests equal both local builds",
+    "Local archive readback verified 79 members",
+    "Canonicalized actual local/GitHub alpha.2 check reports match; ordering finding resolved",
+    "All four actual public assets downloaded and hashed",
+    "All 76 public source members equal frozen Git bytes; all 79 ZIP members readable",
+    "Internal and external checksum files validated from downloaded bytes"
+  ],
+  "source_file_count": 76,
+  "archive_member_count": 79,
+  "assets": [
+    {
+      "name": "CHECK-RESULTS.json",
+      "digest": "sha256:540874280ad716817a4fdfe28542fcb3f13c12ea8ef53656faa198eceab58245",
+      "size": 18738,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2.1/CHECK-RESULTS.json"
+    },
+    {
+      "name": "clariceptify-v0.1.0-alpha.2.1-baseline.zip",
+      "digest": "sha256:51d8d4419aa81a2747b713e8dd8ba441a9c5a22a0378d43052ca7653c600fe8e",
+      "size": 867568,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2.1/clariceptify-v0.1.0-alpha.2.1-baseline.zip"
+    },
+    {
+      "name": "PACKAGE-MANIFEST.json",
+      "digest": "sha256:fb3d7e3bd4b3b4d749db0bb565a23a4346fa324e943b17416eba8072340f409d",
+      "size": 9289,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2.1/PACKAGE-MANIFEST.json"
+    },
+    {
+      "name": "SHA256SUMS",
+      "digest": "sha256:337493ef3d7fc54f506e905697833f10bfbcd096d8049442b26a078339e5118f",
+      "size": 282,
+      "url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0-alpha.2.1/SHA256SUMS"
+    }
+  ],
+  "supersedes_packaging": "v0.1.0-alpha.2",
+  "finding_resolved": "CLR-REL-ORDER-001",
+  "limits": [
+    "Same candidate scientific input; no new semantic acceptance",
+    "No stable release, independent review or DOI",
+    "Alpha.2 and alpha.1 payloads unchanged"
+  ]
+}
