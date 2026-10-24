@@ -8,8 +8,8 @@ framework:
   framework_ref: commit:40d39d87973b05f7a65756b88ca38350ce01fd7a
   conformance_level: not_assessed
 semantic_scope:
-  semantic_source_of_truth: model/*.yaml after controlled import; schema contracts
-    currently implemented
+  semantic_source_of_truth: model/*.yaml as controlled imported candidate; no stable
+    semantic release
   core_boundary: selected conceptualization knowledge model; foundations support,
     not domain novelty
   extensions: []
@@ -29,12 +29,13 @@ identity_and_release:
   ontology_iri: null
   persistent_iri_status: unassigned
   current_semantic_release: null
-  development_state: bootstrap; model import pending
+  development_state: candidate registries imported; evaluation, traceability and diagram
+    reconciliation pending
   release_manifest: releases/
 traceability:
-  concept_registry: model/concepts.yaml (planned)
-  relation_registry: model/relations.yaml and generalizations.yaml (planned)
-  domain_or_module_registry: model/domains.yaml (planned)
+  concept_registry: model/concepts.yaml
+  relation_registry: model/relations.yaml and model/generalizations.yaml
+  domain_or_module_registry: model/domains.yaml
   competency_questions: requirements/competency-questions.yaml (planned)
   evidence_provenance: evidence/ (planned) and input manifest
   mappings: traceability/migration/entity-ledger.yaml (candidates only)

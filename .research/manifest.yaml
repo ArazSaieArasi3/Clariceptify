@@ -33,12 +33,13 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 bootstrap
-  current_workstream: contracts, schemas and selective migration preparation
+  current_wave: R1 selected registry import
+  current_workstream: candidate model tables imported; requirements, sources and traceability
+    next
   next_gate:
     name: controlled registry import
     criteria: input identity and candidate ledger retained; no hidden semantic edits
-  next_action: Import domains and selected concept/relationship tables
+  next_action: Import the retrospective ORSD and source-support register
 progress:
   problem_framing: done
   evidence_base: planned

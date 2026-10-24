@@ -1,0 +1,416 @@
+schema_version: '1.0'
+asset_id: CLR-MODEL-CONSTRAINT
+model_revision: input-r1-rev1
+status: imported_candidate
+source_sha256: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+record_schema: schema/constraint.schema.json
+records:
+- id: CLR-SC0001
+  text: Subject coverage. Every Conceptualization concerns at least one subject across
+    Object, Event, Type, State and Time. Every Observation concerns at least one Object,
+    Event or State. Optional individual branches do not permit an empty combined subject.
+  referenced_ids:
+  - CLR-C0026
+  - CLR-C0041
+  - CLR-C0083
+  - CLR-C0084
+  - CLR-C0112
+  - CLR-C0123
+  - CLR-C0125
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-1
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0002
+  text: Instance referent. Each Instance description denotes exactly one referent
+    across Object, Event, State and Time. These referent branches are exclusive in
+    this scope.
+  referenced_ids:
+  - CLR-C0041
+  - CLR-C0059
+  - CLR-C0083
+  - CLR-C0112
+  - CLR-C0123
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-2
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0003
+  text: Agent alignment. The bearers of the Intention and Perspective adopted by a
+    Conceptualization participate in that episode. A Conceptual Decision is made by
+    agents participating in its recording episode.
+  referenced_ids:
+  - CLR-C0004
+  - CLR-C0021
+  - CLR-C0026
+  - CLR-C0061
+  - CLR-C0093
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-3
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0004
+  text: Historical role. Conceptualizer classification is founded on participation
+    in a conceptualization episode and may persist after it. The participation link
+    records that historical episode; it does not imply that the activity is still
+    underway.
+  referenced_ids:
+  - CLR-C0027
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-4
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0005
+  text: Description endpoints. The specific and general concepts of a Generalization
+    equal its source and target elements. The Instance and Concept endpoints of an
+    Instantiation equal its source and target. Part and Whole endpoints similarly
+    refine those of Part-Whole Relation.
+  referenced_ids:
+  - CLR-C0017
+  - CLR-C0053
+  - CLR-C0059
+  - CLR-C0060
+  - CLR-C0088
+  - CLR-C0089
+  - CLR-C0099
+  - CLR-C0137
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-5
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0006
+  text: Classification alignment. Every Instantiation recorded by a Classification
+    links one of its classified Instance descriptions to one of its assigned Concept
+    categories. Each stated classification assignment is represented by such a link.
+  referenced_ids:
+  - CLR-C0014
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0060
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-6
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0007
+  text: Structure alignment. Taxonomy categories are among its organized elements.
+    Its hierarchical links are among its specified connections, and both endpoints
+    belong to its categories. Generalization descriptions form an acyclic hierarchy.
+  referenced_ids:
+  - CLR-C0053
+  - CLR-C0116
+  - CLR-C0119
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-7
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0008
+  text: No fabricated composition. Includes element, has subprocess and part-whole
+    descriptions do not imply UML composition or a specific UFO mereological relation.
+    Any later componentOf or memberOf use must independently satisfy its semantics.
+  referenced_ids: []
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-8
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0009
+  text: Subprocess structure. The has subprocess relation is acyclic and irreflexive;
+    a process is not its own subprocess. Temporal containment must hold for an actual
+    subprocess.
+  referenced_ids: []
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-9
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0010
+  text: Creation and revision. Creation identifies actual origination of a new individual;
+    produces or revises does not assert origination. Each Conceptual Artifact in this
+    scope has one originating Conceptualization. Each Evaluation Result has one creating
+    evaluation.
+  referenced_ids:
+  - CLR-C0019
+  - CLR-C0026
+  - CLR-C0040
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-10
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0011
+  text: Moment identity. Each mode or quality has exactly one bearer through characterization,
+    directly or by inheritance. Distinct Understandability or Semantic Interoperability
+    instances may depend on different interpreters or counterpart representations.
+  referenced_ids:
+  - CLR-C0106
+  - CLR-C0126
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-11
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0012
+  text: Shared understanding. Shared Understanding specializes State. Its Understanding
+    bearers are at least two distinct participating agents; their understandings are
+    compatible about the stated shared artifact. Its configured objects include those
+    agents.
+  referenced_ids:
+  - CLR-C0109
+  - CLR-C0112
+  - CLR-C0127
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-12
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0013
+  text: 'Change and time. Each modeled Change is atomic relative to the chosen granularity:
+    its prior and resulting State differ in at least one relevant feature and concern
+    the affected objects. Time supplies a declared ordering/extent convention; the
+    states and event extents must respect the transition.'
+  referenced_ids:
+  - CLR-C0013
+  - CLR-C0112
+  - CLR-C0123
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-13
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0014
+  text: Temporal representation. The temporal entities denoted by a Time Representation
+    agree with the extents of the events it represents. Point-Based Time Representation
+    denotes instants and Interval-Based Time Representation denotes intervals. Their
+    detailed temporal axioms are deferred.
+  referenced_ids:
+  - CLR-C0064
+  - CLR-C0094
+  - CLR-C0101
+  - CLR-C0123
+  - CLR-C0124
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-14
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0015
+  text: Logical use. A Formula uses a language whose formal syntax and semantics are
+    declared. Axioms are accepted formulas within named Conceptual Artifacts. A Constraint
+    applies to an artifact or at least one element; referenced elements belong to
+    the relevant artifact scope.
+  referenced_ids:
+  - CLR-C0030
+  - CLR-C0052
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-15
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0016
+  text: Commitment alignment. The vocabulary and element descriptions linked by an
+    Ontological Commitment belong to its adopted artifact scope. Existing Term designations
+    and Relation endpoints must agree with the commitment; it is not a second conflicting
+    interpretation.
+  referenced_ids:
+  - CLR-C0086
+  - CLR-C0099
+  - CLR-C0120
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-16
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0017
+  text: Criterion interpretation. The five Quality classes denote criterion specifications
+    specializing Evaluation Criterion. They are not measured bearer qualities or evaluation
+    findings. Criteria are scoped by Goal; Semantic Completeness is relative to those
+    goals and the agreed subject coverage.
+  referenced_ids:
+  - CLR-C0039
+  - CLR-C0054
+  - CLR-C0104
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-17
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0018
+  text: Atomic evaluation result. Each Evaluation Result concerns exactly one artifact
+    and one criterion, both included in its creating evaluation. Multiple criteria
+    produce multiple findings. Its information content records a judgment such as
+    satisfied, not satisfied or undetermined and the rationale for it.
+  referenced_ids:
+  - CLR-C0040
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-18
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0019
+  text: Review alignment. A Structural Review examines structures belonging to its
+    assessed artifacts. Any examined Conceptual Model encodes an assessed artifact.
+    Criterion goals must be relevant to the artifact conceptualization goals.
+  referenced_ids:
+  - CLR-C0023
+  - CLR-C0073
+  - CLR-C0114
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-19
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0020
+  text: Decision alignment. A Conceptual Decision concerns artifacts produced by its
+    recording Conceptualization; selected elements belong to those artifacts. A decision
+    responding to a finding concerns that finding target or an explicitly documented
+    revision of it.
+  referenced_ids:
+  - CLR-C0021
+  - CLR-C0026
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-20
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0021
+  text: Justification and evidence. Every Justification supports at least one Conceptual
+    Decision or Evaluation Result. Every Evidence role instance is cited by at least
+    one justification or result. Source attribution identifies provenance and does
+    not establish evidential truth.
+  referenced_ids:
+  - CLR-C0021
+  - CLR-C0040
+  - CLR-C0042
+  - CLR-C0065
+  - CLR-C0110
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-21
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0022
+  text: Contextual roles. Each Source is an Agent or Information Object cited or attributed
+    in at least one recorded context. Assumption is an Information Object adopted
+    in at least one artifact; Axiom is a Formula accepted in at least one artifact.
+    Roles can vary across contexts.
+  referenced_ids:
+  - CLR-C0004
+  - CLR-C0007
+  - CLR-C0010
+  - CLR-C0052
+  - CLR-C0057
+  - CLR-C0083
+  - CLR-C0110
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-22
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0023
+  text: Identity and metalevel. Do not identify a Concept with its described Type,
+    an Instance description with its referent, or a Model with its Model Kind. Information
+    Object identity follows a declared content-equivalence policy, not the identity
+    of a physical file.
+  referenced_ids:
+  - CLR-C0017
+  - CLR-C0057
+  - CLR-C0059
+  - CLR-C0073
+  - CLR-C0074
+  - CLR-C0083
+  - CLR-C0125
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-23
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.
+- id: CLR-SC0024
+  text: Content-level conformance. A model conforms to a metamodel only if its constructs
+    satisfy that metamodel rules. A stated conformity link is not itself proof. No
+    disjointness or exhaustive partition is inferred merely from two different class
+    names.
+  referenced_ids: []
+  enforcement: textual
+  execution_status: not_executed
+  lifecycle: candidate
+  introduced_version: input-r1-rev1
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-24
+  notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness
+    and contextual interpretation require review. Text is preserved without translation
+    or formalization.

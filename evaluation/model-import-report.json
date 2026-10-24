@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "controlled source extraction and schema parity; not semantic approval",
+  "source_sha256": "c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e",
+  "counts": {
+    "domain": 21,
+    "concept": 137,
+    "relation": 174,
+    "generalization": 122,
+    "constraint": 24
+  },
+  "concept_definitions_and_stereotypes": "preserved exactly from source table",
+  "domain_names": "preserved exactly; 20 subject domains plus Foundations",
+  "relationship_partition": "174 associations and 122 directed specializations; exact source-row locators retained",
+  "constraint_text": "24 paragraphs preserved exactly; not executed",
+  "unresolved_work": [
+    "source-reference stable bindings",
+    "diagram reconciliation",
+    "requirement/CQ alignment",
+    "semantic lineage decisions",
+    "full adequacy and satisfiability checks",
+    "independent review"
+  ]
+}
