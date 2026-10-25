@@ -1,0 +1,45 @@
+schema_version: 0.1.0
+asset_id: CLR-DIAGRAM-APPROVAL
+task_id: R1-024.b
+status: conflict_resolved_as_unverified_semantic_approval
+input_sha256:
+  SRC-SVG: 607eee381cd59144556e00721286b10190f72d79bb8011e0507d51a4bb8b206c
+  SRC-FULLPDF: 92be7427fe9be7dbf986e7cede933068a9d90db74c2cba74bc389c2fbcd140f4
+  SRC-ATLAS: d9be5514156782f59e30644f7a6ff9bdb5050386afcbaff0a0575fd8b87003d8
+  SRC-SPEC: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+evidence:
+- id: DAE-001
+  source_id: SRC-SPEC
+  locator: word/document.xml; paragraph 3, one-based
+  observation: The opening explicitly calls the specification a review candidate.
+- id: DAE-002
+  source_id: SRC-SPEC
+  locator: word/document.xml; paragraph 4, one-based
+  observation: The updated diagram is deferred until owner approval of the specification.
+- id: DAE-003
+  source_id: SRC-SVG
+  locator: /svg/desc
+  observation: The accessibility description calls the input the approved specification;
+    no reviewer, approval date or approval record is embedded.
+- id: DAE-004
+  source_ref: https://chatgpt.com/c/6ad6f6dd-5950-83ed-a119-7bb087e515b8?messageId=bbb21f00-b132-4f77-a648-7e875db46995
+  observation: The owner requested diagram generation from the preceding specification
+    and preservation of concepts, relationships and notation.
+- id: DAE-005
+  source_ref: https://chatgpt.com/c/6ad6f6dd-5950-83ed-a119-7bb087e515b8?messageId=34882682-4ef3-5714-8eff-eccb68637c99
+  observation: The assistant reported diagram delivery and structural checks while
+    separating formal and semantic validation.
+decision:
+  production_authorization: evidenced_by_diagram_request
+  independent_semantic_review: not_assessed
+  human_scientific_acceptance: not_established_by_available_evidence
+  native_ontouml_validation: not_assessed
+  canonical_model_state: imported_candidate
+  wording_policy: The historical SVG approval adjective cannot promote the model or
+    substitute for an explicit scientific review record.
+  derivative_caption: Review-candidate specification; human scientific acceptance
+    and native OntoUML validation are not established.
+  preservation: 'Do not rewrite the frozen original specification or SVG. Apply corrected
+    status and current brand only in a versioned derivative under issue #43.'
+closure_boundary: This resolves evidence interpretation and display policy, not the
+  human approval or scientific validation gate.

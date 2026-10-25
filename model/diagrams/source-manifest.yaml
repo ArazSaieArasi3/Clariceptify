@@ -1,0 +1,80 @@
+schema_version: 0.1.0
+asset_id: CLR-DIAGRAM-SOURCE
+task_id: R1-024.a
+verified_at: '2026-10-25'
+baseline_commit: 4fdc8a0beb038b0276183bd8180538147b7bac07
+status: editable_svg_recovered
+inputs:
+- source_id: SRC-SVG
+  filename: Conceptiom_Release_1_OntoUML_Full.svg
+  sha256: 607eee381cd59144556e00721286b10190f72d79bb8011e0507d51a4bb8b206c
+  size_bytes: 663796
+  availability: recovered_and_read
+  raw_distribution: not_committed
+  source_version: '1'
+- source_id: SRC-FULLPDF
+  filename: Conceptiom_Release_1_OntoUML_Full.pdf
+  sha256: 92be7427fe9be7dbf986e7cede933068a9d90db74c2cba74bc389c2fbcd140f4
+  size_bytes: 139521
+  availability: recovered_and_read
+  raw_distribution: not_committed
+  source_version: '1'
+- source_id: SRC-ATLAS
+  filename: Conceptiom_Release_1_OntoUML_Atlas_A3.pdf
+  sha256: d9be5514156782f59e30644f7a6ff9bdb5050386afcbaff0a0575fd8b87003d8
+  size_bytes: 3016258
+  availability: recovered_and_read
+  raw_distribution: not_committed
+  source_version: '1'
+- source_id: SRC-SPEC
+  filename: Conceptiom_Release_1_Specification_EN.docx
+  sha256: c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e
+  size_bytes: 105889
+  availability: recovered_and_read
+  raw_distribution: not_committed
+  source_version: '2'
+source_delivery: https://chatgpt.com/c/6ad6f6dd-5950-83ed-a119-7bb087e515b8?messageId=34882682-4ef3-5714-8eff-eccb68637c99
+editable_source:
+  source_id: SRC-SVG
+  format: SVG XML with editable vector geometry, text and named node/edge groups
+  nodes: 137
+  edges: 296
+  associations: 174
+  generalizations: 122
+  canvas_points:
+  - 9974.0
+  - 3919.0
+  native_ontouml_project: not_recovered
+  original_generator: not_recovered
+  generator_inference: Graphviz-like group structure is observable, but does not establish
+    the exact generator, version or reproducible invocation.
+outputs:
+- source_id: SRC-FULLPDF
+  pages: 1
+  canvas_points:
+  - 9974.0
+  - 3919.0
+  binding: same delivery; observed text and canvas correspond; byte-identical regeneration
+    not established
+- source_id: SRC-ATLAS
+  pages: 45
+  format: A3 portrait/landscape
+  binding: same delivery; full visual and element parity is the separate R1-025 work
+remaining_gap:
+  id: CLR-DIAGRAM-GAP-001
+  summary: Original generator and native OntoUML project were not recovered with the
+    three delivered artifacts.
+  bounded_path:
+  - Use the recovered editable SVG as the geometry source, not as semantic authority.
+  - Bind every named node and ordered edge to the current model registers.
+  - Record a deterministic controlled derivative for brand/status/identity edits;
+    preserve the original digest.
+  - Generate full/detail PDF views from the same corrected SVG and bind actual rendering
+    dependencies.
+  - Retain native-model validation and exact historical generator recovery as unclaimed.
+  tracked_by:
+  - 43
+  - 44
+  - 45
+claim_ceiling: Recovery of an editable vector source is not native OntoUML validity,
+  semantic approval, or proof that historical PDF/atlas bytes can be regenerated.
