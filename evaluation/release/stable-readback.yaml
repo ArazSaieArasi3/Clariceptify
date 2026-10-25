@@ -1,0 +1,53 @@
+status: PASS
+stage: accepted_stable
+publication_status: NOT_ASSERTED_BY_READBACK
+archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+source_manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+registered_source_members: 375
+archive_members: 378
+checks:
+  check_repository_language:
+    status: PASS
+    result_sha256: ab97c3cd990d2e17a713009762663af2d73802bc774a1f1d4f5372ba4ec08c38
+  check_schemas:
+    status: PASS
+    result_sha256: a9934259cdf38c4f9fdb855d9adfd8303d403196a47bf11b2dd49bd4847bf29c
+  check_model_structure:
+    status: PASS
+    result_sha256: 7f8b886eb39ecd08fb26b3c3073c14b4caf2109652de421bc064c15d7c6be85f
+  check_requirements:
+    status: PASS
+    result_sha256: 30b3c8354dd1d82ad29214560a7d6edff7b49121d2e00101458c73bb45091651
+  check_source_support:
+    status: PASS
+    result_sha256: 2f860e5eb3dcbdeeb2a48800e07ecdddfc40a09b2937255b396683fc3c1ff13d
+  check_traceability:
+    status: PASS
+    result_sha256: 5d21e829ad0bb5b6338c1b3ab422a2b58c807e0c1ddf64be9f32fc0ac5a975e1
+  check_bootstrap:
+    status: PASS
+    result_sha256: 5ffca15da6e4f26e5ea75d0426d6b0ce16a53d8cc897618eb4a9dd7daa5b5075
+  check_reference_views:
+    status: PASS
+    result_sha256: 75d0875b193375d17a1b3a02d64329c11e4fa0783922c54c7f520bdb674cb27b
+  check_conceptualization_fixtures:
+    status: PASS
+    result_sha256: edb6e09d32b44a761d31d1211b34e549b3e58aed61010eb41548ee9ac6b64102
+  check_review_state:
+    status: PASS
+    result_sha256: 77d5e6b39afa1d7887193032d0cd24b7300397ffeabc96ddfb8e0d48d230a68e
+  check_publication_metadata:
+    status: PASS
+    result_sha256: 8a773372364ca596b23e46ff0a83790a5012eebc99057a3a5e6a8984b5e53be2
+environment: Fresh temporary extraction and empty HOME; no Git/private raw inputs/network; declared dependencies
+  already installed in current Python runtime
+runtime:
+  python: 3.12.14
+  PyYAML: 6.0.2
+  jsonschema: 4.26.0
+limitations:
+- Archive verification does not establish actual publication or final owner acceptance.
+- Fresh file tree is not a newly provisioned operating system or independent expert validation.
+source_commit: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
+local_markdown_path_links: 1902
+broken_path_links: []

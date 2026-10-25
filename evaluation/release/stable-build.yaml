@@ -1,0 +1,34 @@
+status: PASS
+stage: accepted_stable
+source_commit: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
+source_manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+archive_bytes: 6929105
+source_members: 375
+archive_members: 378
+two_builds: byte_identical
+builds:
+- status: PASS
+  publication_status: NOT_PUBLISHED_BY_BUILDER
+  stage: accepted_stable
+  members: 375
+  source_manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+  archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+  archive_bytes: 6929105
+  pending_gates: []
+- status: PASS
+  publication_status: NOT_PUBLISHED_BY_BUILDER
+  stage: accepted_stable
+  members: 375
+  source_manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+  archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+  archive_bytes: 6929105
+  pending_gates: []
+boundary_tests:
+  cases: 11
+  result: PASS
+source_main_ci:
+  id: 40200791029
+  head_sha: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
+  conclusion: success
+  url: https://github.com/ArazSaieArasi3/Clariceptify/actions/runs/40200791029
