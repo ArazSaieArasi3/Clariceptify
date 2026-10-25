@@ -1,0 +1,220 @@
+{
+  "artifact_id": "DULConceptualization",
+  "count_policy": "Unique URI subjects explicitly typed owl:Class; local namespace filter; blank-node classes excluded. Import closure is asserted graph union, not inference.",
+  "counts": {
+    "explicit_triples_local_document": 92,
+    "external_named_owl_classes_declared_in_document": 0,
+    "import_closure_named_owl_classes": 80,
+    "inferred_classes": null,
+    "local_named_object_properties": 8,
+    "local_named_owl_classes": 1
+  },
+  "imports": [
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+  ],
+  "license_annotations": [],
+  "license_scope": "Ontology-header license/rights annotations only; absent annotations do not grant redistribution.",
+  "local_named_class_iris": [
+    "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation"
+  ],
+  "ontology_iri": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl",
+  "parser": {
+    "name": "RDFLib",
+    "version": "7.6.0"
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "resolved_closure": [
+    "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+  ],
+  "schema_version": "1.0",
+  "scope": "Syntax, inventories and selected asserted axioms; no OWL profile, satisfiability, equivalence or paper-to-OWL fidelity proof.",
+  "selected_axioms": [
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            {
+              "object": [
+                {
+                  "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses",
+                  "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+                },
+                {
+                  "object": "http://www.w3.org/2002/07/owl#Restriction",
+                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                },
+                {
+                  "object": [
+                    {
+                      "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                      "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+                    },
+                    {
+                      "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy",
+                      "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+                    },
+                    {
+                      "object": "http://www.w3.org/2002/07/owl#Restriction",
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                    }
+                  ],
+                  "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+                }
+              ],
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.w3.org/2002/07/owl#Class",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            {
+              "object": [
+                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+              ],
+              "predicate": "http://www.w3.org/2002/07/owl#unionOf"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#adopts",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAdoptedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.w3.org/2002/07/owl#Class",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            {
+              "object": [
+                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+              ],
+              "predicate": "http://www.w3.org/2002/07/owl#unionOf"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#knows",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isKnownBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    }
+  ],
+  "source_sha256": "75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3",
+  "source_url": "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl",
+  "syntax": "xml",
+  "version_info": [
+    "0.1"
+  ]
+}

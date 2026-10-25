@@ -1,0 +1,46 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-cDnS
+issue: 87
+status: SCOPED_ARTIFACT_INSPECTION_COMPLETE
+input_commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+retrieval_manifest: evidence/related-work/artifact-inputs.yaml
+artifact_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+ontology_iri: http://www.loa-cnr.it/ontologies/cDnS.owl
+counts:
+  explicit_triples_local_document: 411
+  external_named_owl_classes_declared_in_document: 0
+  import_closure_named_owl_classes: 12
+  inferred_classes: null
+  local_named_object_properties: 47
+  local_named_owl_classes: 12
+count_evidence:
+  path: evaluation/related-work/artifacts/cDnS.json
+  sha256: 730ee1284d45cc61e6756794cba87cfde5a7b16a18215e33596cd7b90a233b1f
+selected_iri_locators:
+- http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+- http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+- http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+- http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject
+- http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent
+- http://www.loa-cnr.it/ontologies/cDnS.owl#defines
+- http://www.loa-cnr.it/ontologies/cDnS.owl#classifies
+- http://www.loa-cnr.it/ontologies/cDnS.owl#expresses
+- http://www.loa-cnr.it/ontologies/cDnS.owl#conceptualizes
+inspection_findings:
+- The actual ontology IRI retains the loa-cnr.it namespace although retrieved from ontologydesignpatterns.org.
+- Header version 1.1 explicitly refers to JAAMAS 2008. The 2007 paper has a distinct review identity; axiom
+  identity/fidelity is NOT_ASSESSED.
+- Both official URL paths parse to graph-isomorphic RDF despite different byte hashes.
+- Selected conceptualizes replaces the paper's shares label in this artifact; do not infer complete equivalence.
+license:
+  status: NO_HEADER_LICENSE_OR_RIGHTS_ANNOTATION_FOUND
+  source_redistributed: false
+  permission_inferred: false
+reuse:
+  decision: ALIGNMENT_CANDIDATE_ONLY
+  semantic_equivalence: NOT_ESTABLISHED
+  source_imported_into_Clariceptify: false
+paper_binding: RW-CDNS-2007 is context only; declared artifact alignment is JAAMAS 2008, full text not reviewed.
+limits:
+- No inference, OWL profile check, satisfiability proof or full paper/artifact equivalence assessment.
+- Named OWL class counts are not comparable without qualification to the Clariceptify conceptual catalog.

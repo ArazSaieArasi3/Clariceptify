@@ -1,0 +1,68 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-DnS
+task_id: R2-LIT-DnS
+issue: 68
+review_date: '2026-10-25'
+reviewer:
+  kind: AI-assisted source inspection
+  independent_expert: false
+clariceptify_input:
+  commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+  release: v0.1.0
+  model_revision: input-r1-rev1
+protocol: evidence/related-work/review-protocol.yaml
+identity:
+  work_id: RW-DNS-2003
+  title: Understanding the Semantic Web through Descriptions and Situations
+  authors:
+  - Aldo Gangemi
+  - Peter Mika
+  year: 2003
+  doi: 10.1007/978-3-540-39964-3_44
+  venue: OTM 2003, LNCS 2888
+  publisher_pages: 689-706
+  publisher_url: https://link.springer.com/chapter/10.1007/978-3-540-39964-3_44
+access:
+  state: FULL_TEXT_ACCESSED_SCOPED_REVIEW
+  url: https://www.loa.istc.cnr.it/old/Papers/ODBASE-CONTEXT.pdf
+  sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+  pdf_pages: 18
+  locator_policy: One-based PDF pages, printed Roman I-XVIII; not publisher pagination.
+  review_scope: Sections 1-4; selected numbered axioms and figures. No independent proof or reconstruction
+    of all formal commitments.
+  redistributed: false
+observations:
+- dimension: purpose
+  locator: sec. 2.2, PDF pp. 5-6
+  observation: Reifies descriptions and situations over a ground ontology.
+- dimension: process_product_agency
+  locator: sec. 2.2, PDF pp. 5-9, axioms 1-23
+  observation: Descriptions, roles, courses and parameters organize situations; agent intentionality is relevant.
+- dimension: content_representation_referent
+  locator: sec. 3.1, PDF pp. 11-13; Fig. 3
+  observation: Communication and interpretation connect information objects, expressions, contexts and meanings.
+- dimension: requirements_method_evaluation
+  locator: secs. 2-3.2, PDF pp. 3-16
+  observation: Foundational construction is illustrated through communication and SWAP query resolution; no
+    reusable ORSD/CQ test suite is reported in those sections.
+- dimension: limits
+  locator: sec. 4, PDF pp. 17-18
+  observation: Further contextual and service modeling is future work.
+comparison:
+  disposition: ALIGN_CANDIDATE
+  proposed_interpretation: Contextual descriptions, agent interpretation and process schemas already overlap
+    with the target. Compare Clariceptify episode participation, output provenance and recorded choices against
+    these mechanisms, using scenarios; do not claim that earlier work lacks conceptualization. No automatic
+    DOLCE/UFO equivalence or class import is justified.
+  equivalence: NOT_ESTABLISHED
+  model_change: NONE
+  novelty_priority: NOT_ASSESSED
+limitations:
+- The institutional PDF uses Roman pagination and has not been byte-compared to the publisher PDF.
+- Illustrative applications do not establish independent expert validation or a performance benchmark.
+- The bounded comparison is provisional until the other retained works are reviewed.
+counts:
+  local_asserted: null
+  import_inclusive: null
+  inferred: null
+  reason: Paper/documentation review does not substitute for separately inspected artifact counts.

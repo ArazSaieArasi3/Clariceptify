@@ -1,0 +1,59 @@
+schema_version: '1.0'
+retrieved_on: '2026-10-25'
+baseline_commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+retrieval_note: HTTP official URLs returned parseable bytes; HTTPS alternatives returned
+  503 or timed out. Digests pin this retrieval, not a publisher-assigned immutable
+  version IRI.
+artifacts:
+- id: DUL
+  filename: DUL-http.owl
+  format: turtle
+  url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  ontology_iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  namespace: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#
+  sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  selected_terms:
+  - Agent
+  - Description
+  - Concept
+  - Situation
+  - InformationObject
+  - conceptualizes
+  - expresses
+  - classifies
+  - satisfies
+- id: DULConceptualization
+  filename: Conceptualization.owl
+  format: xml
+  url: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+  ontology_iri: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+  namespace: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#
+  sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+  selected_terms:
+  - InternalRepresentation
+  - assumes
+  - adopts
+  - believes
+  - knows
+- id: cDnS
+  filename: cDnS.owl
+  format: xml
+  url: http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
+  ontology_iri: http://www.loa-cnr.it/ontologies/cDnS.owl
+  namespace: http://www.loa-cnr.it/ontologies/cDnS.owl#
+  sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  selected_terms:
+  - Description
+  - Situation
+  - Concept
+  - InformationObject
+  - SocialAgent
+  - defines
+  - classifies
+  - expresses
+  - conceptualizes
+alias_check:
+  filename: cDnS-dul.owl
+  url: http://www.ontologydesignpatterns.org/ont/dul/cDnS.owl
+  ontology_iri: http://www.loa-cnr.it/ontologies/cDnS.owl
+  sha256: 4ed2a73f0db26f8976bf51a59febfbbe84560596c110d7db90f5995902eee48b

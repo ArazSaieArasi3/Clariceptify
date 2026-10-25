@@ -1,0 +1,55 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-DUL
+task_id: R2-LIT-DUL
+issue: 70
+review_date: '2026-10-25'
+reviewer:
+  kind: AI-assisted source inspection
+  independent_expert: false
+clariceptify_input:
+  commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+  release: v0.1.0
+  model_revision: input-r1-rev1
+protocol: evidence/related-work/review-protocol.yaml
+identity:
+  work_id: RW-DUL-CHAPTER-2016
+  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
+  authors:
+  - Valentina Presutti
+  - Aldo Gangemi
+  year: 2016
+  doi: 10.3233/978-1-61499-676-7-81
+  publisher_pages: 81-103
+  metadata_url: https://cris.unibo.it/handle/11585/629252?mode=full
+  artifact_documentation: DUL.owl 4.2; not evidence of the chapter contents
+access:
+  state: PARTIAL_REVIEW_ACCESS_GAP
+  full_text: NOT_ACCESSED
+  download_attempt:
+    url: https://ebooks.iospress.nl/pdf/doi/10.3233/978-1-61499-676-7-81
+    result: HTTP 403
+  institutional_record: Reports no exposed full text
+  artifact_documentation: Fully accessed separately, see artifacts/DUL.yaml
+observations:
+- dimension: metadata
+  locator: 'Institutional record: title, citation, firstpage, lastpage, allauthors'
+  observation: Chapter identity, author order, year, DOI and page range verified.
+- dimension: paper_purpose_method_evaluation
+  locator: Chapter full text unavailable
+  observation: NOT_ASSESSED; ontology comments are not substituted for a chapter review.
+comparison:
+  disposition: DEFER_FULL_TEXT_REVIEW
+  proposed_interpretation: 'The current formal artifact is a close comparison source, but the 2016 chapter
+    review remains incomplete. Preserve issue #70 open and do not transfer current 4.2 axioms into the historical
+    chapter.'
+  equivalence: NOT_ESTABLISHED
+  model_change: NONE
+  novelty_priority: NOT_ASSESSED
+limitations:
+- 'Issue #70 remains open; artifact technical work alone does not satisfy its full review.'
+- The chapter and current DUL 4.2 are separate versioned evidence objects.
+counts:
+  local_asserted: null
+  import_inclusive: null
+  inferred: null
+  reason: Paper/documentation review does not substitute for separately inspected artifact counts.

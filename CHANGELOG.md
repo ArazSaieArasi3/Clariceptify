@@ -125,3 +125,10 @@
 - This alpha does not contain the later model registries and does not claim a stable semantic release, independent validation or DOI.
 
 [Release](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.1)
+
+## First DnS-family critical review - 2026-10-25
+
+- Review the DnS 2003 institutional full text, the distinct cDnS 2007 Dagstuhl work and the author-issued Conceptualization 0.1 embedded documentation, with exact source identities and locators (#68/#69/#71).
+- Inspect official cDnS 1.1, DUL 4.2 and Conceptualization 0.1 separately; pin bytes/syntax/imports, distinguish local/closure/inferred counts and retain license uncertainty. Preserve the cDnS 2007 paper versus 2008-aligned artifact distinction (#87/#89; #88 technical preparation).
+- Record substantive prior conceptualization/representation overlap and proposed episode/decision/rationale comparison questions without changing the accepted model or claiming novelty.
+- Retain the inaccessible 2016 DUL chapter as a partial review and keep #70/#88 open. Add reproducible inspection and CI evidence-boundary checks; no source full texts or complete ontology copies are redistributed.

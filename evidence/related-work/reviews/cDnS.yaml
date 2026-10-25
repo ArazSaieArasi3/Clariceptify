@@ -1,0 +1,84 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-cDnS
+task_id: R2-LIT-cDnS
+issue: 69
+review_date: '2026-10-25'
+reviewer:
+  kind: AI-assisted source inspection
+  independent_expert: false
+clariceptify_input:
+  commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+  release: v0.1.0
+  model_revision: input-r1-rev1
+protocol: evidence/related-work/review-protocol.yaml
+identity:
+  work_id: RW-CDNS-2007
+  title: Norms and plans as unification criteria for social collectives
+  authors:
+  - Aldo Gangemi
+  - Jos Lehmann
+  - Carola Catenacci
+  year: 2007
+  doi: 10.4230/DagSemProc.07122.20
+  venue: Dagstuhl Seminar Proceedings 07122
+  publisher_pages: 1-40
+  publisher_url: https://drops.dagstuhl.de/entities/document/10.4230/DagSemProc.07122.20
+  related_work_not_identical:
+    title: Norms and plans as unification criteria for social collectives
+    author: Aldo Gangemi
+    year: 2008
+    doi: 10.1007/s10458-008-9038-9
+    publisher_url: https://link.springer.com/article/10.1007/s10458-008-9038-9
+    full_text: NOT_REVIEWED
+    note: The recovered DOI hint names this journal work; this review selects the separately published 2007
+      work and does not transfer its authorship, page locators or axioms to 2008.
+access:
+  state: FULL_TEXT_ACCESSED_SCOPED_REVIEW
+  url: https://drops.dagstuhl.de/storage/16dagstuhl-seminar-proceedings/dsp-vol07122/DagSemProc.07122.20/DagSemProc.07122.20.pdf
+  sha256: ad6204de62649f271b89196dd0a00d301c52dfa19a0b11f8fcbc0ce218160066
+  pdf_pages: 40
+  review_scope: Sections 1, 2.1-2.4, 3.1-3.4 and 4 read for the target distinctions; plans/norms/collective
+    extensions in 3.5-3.7 are not independently axiomatization-audited.
+  locator_policy: One-based PDF pages agree with printed Arabic page numbers.
+  redistributed: false
+observations:
+- dimension: purpose_agency
+  locator: sec. 2.3, PDF pp. 5-8; Table 1
+  observation: Descriptions, situations, concepts, entities, agents, collections, information objects and time
+    contextualize redescription.
+- dimension: mental_content_expression
+  locator: sec. 3.4, PDF pp. 22-25, axioms 84-97
+  observation: Grounded construction relates physical agents, internal representations, descriptions and physical
+    information realizations.
+- dimension: assumption_and_type_instance
+  locator: sec. 3.3, PDF pp. 19-20, axioms 66-76
+  observation: Specialization is distinguished from logical typing; sharing does not entail assumption or belief.
+- dimension: requirements_method_evaluation
+  locator: secs. 3.1-3.4 and 4, PDF pp. 9-25 and 35-38
+  observation: Axiom construction and worked statements support the proposal; the review does not establish
+    an executed CQ suite or controlled expert study.
+- dimension: limits
+  locator: sec. 3.3, PDF p. 20; sec. 4, PDF p. 38
+  observation: Assumption-belief interaction is deliberately not fully axiomatized; further collective distinctions
+    are future work.
+comparison:
+  disposition: ALIGN_CANDIDATE
+  proposed_interpretation: Strong prior overlap includes agent-relative conceptualization, internal representation,
+    social expression, time and context. A potentially useful Clariceptify distinction is the explicit provenance
+    of episode-bound choices and their rationale; its adequacy and any advantage still require source-backed
+    scenario comparison. Constructivism is an explicit commitment to assess, not an automatic replacement for
+    UFO grounding.
+  equivalence: NOT_ESTABLISHED
+  model_change: NONE
+  novelty_priority: NOT_ASSESSED
+limitations:
+- This is not a review of the 2008 journal full text or a proof of FOL-to-OWL faithfulness.
+- cDnS OWL version 1.1 declares alignment to JAAMAS 2008, not this 2007 snapshot; see the separate artifact
+  review.
+- The 2006 technical report cited as reference 27 returned HTTP 404 at the checked institutional archive URL.
+- No exhaustive current literature search or novelty conclusion.
+counts:
+  local_asserted: null
+  import_inclusive: null
+  inferred: null
+  reason: Paper/documentation review does not substitute for separately inspected artifact counts.

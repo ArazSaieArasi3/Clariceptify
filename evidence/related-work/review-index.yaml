@@ -1,0 +1,64 @@
+schema_version: '1.0'
+wave: DNS-FAMILY-2026-10-25
+baseline_commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+scope: 'First bounded family review; not the #126 final corpus synthesis or #135 release gate.'
+completed_deliverables:
+- issue: 68
+  path: evidence/related-work/reviews/DnS.yaml
+- issue: 69
+  path: evidence/related-work/reviews/cDnS.yaml
+- issue: 71
+  path: evidence/related-work/reviews/DULConceptualization.yaml
+- issue: 87
+  path: evidence/related-work/artifacts/cDnS.yaml
+- issue: 89
+  path: evidence/related-work/artifacts/DULConceptualization.yaml
+open_deliverables:
+- issue: 70
+  path: evidence/related-work/reviews/DUL.yaml
+  state: PARTIAL_REVIEW_ACCESS_GAP
+- issue: 88
+  path: evidence/related-work/artifacts/DUL.yaml
+  state: TECHNICAL_INSPECTION_COMPLETE_PREREQUISITE_70_OPEN
+model_bindings:
+- relation: candidate_comparison_target_not_equivalence
+  concept_id: CLR-C0021
+  label: Conceptual Decision
+  definition_sha256: 3d6f7a4f2e63f2a43828f8360696776151d80c16fc0c3956ca92e3e65d2405ed
+- relation: candidate_comparison_target_not_equivalence
+  concept_id: CLR-C0026
+  label: Conceptualization
+  definition_sha256: 8ff0246bfe8b780f13098431079ee018800f9cbfc105ddb3ed773d505da40193
+- relation: candidate_comparison_target_not_equivalence
+  concept_id: CLR-C0027
+  label: Conceptualizer
+  definition_sha256: fb2719ac0f5c816542cac17da4555d7a3568d2d0b17f5373f4d676f4b5fd2802
+- relation: candidate_comparison_target_not_equivalence
+  concept_id: CLR-C0065
+  label: Justification
+  definition_sha256: d0bbd3b203fd6c324d0001ba44638c65173dd430728c234b1990827b0646c4d5
+- relation: candidate_comparison_target_not_equivalence
+  concept_id: CLR-C0093
+  label: Perspective
+  definition_sha256: e874f5e48fce79fde4cec783414775419d4be5102c8770d6dced67266df61b6a
+- relation: candidate_comparison_target_not_equivalence
+  concept_id: CLR-C0101
+  label: Representation
+  definition_sha256: 5f577a3f74f873775c3b1613185084469b028927f1c30393f9a4e673efbe8ee1
+decision: Keep the scientific model and frozen R1 unchanged. Use source-backed overlap to narrow later novelty
+  claims.
+next_order:
+- issue: 70
+  action: Obtain and review the 2016 DUL chapter; retain access gap until actual retrieval.
+- issue: 88
+  action: 'Complete paper/artifact reconciliation after #70; technical evidence already recorded.'
+- issues:
+  - 72
+  - 90
+  action: Review LMM primary work and separately inspect its pinned artifact.
+- issues:
+  - 73
+  - 91
+  action: Review O4OA primary work and separately inspect its pinned artifact.
+- issue: 135
+  action: 'Publish comparison preview only after all exact prerequisites; #126 final synthesis remains separate.'

@@ -1,0 +1,74 @@
+{
+  "additional_checks": {
+    "accepted_R1_scientific_members_unchanged": 233,
+    "changed_source_bytes_rejected_before_parsing": true,
+    "repeated_offline_inspection_equals_committed_json": true,
+    "selected_direct_DUL_disjointness_assertions_absent": true
+  },
+  "baseline_commit": "45415798a6ba307e6e98d7591595ca2ca370e154",
+  "closure_population": [
+    68,
+    69,
+    71,
+    87,
+    89
+  ],
+  "date": "2026-10-25",
+  "executed_test_suites": [
+    {
+      "command": "python tools/test_related_reviews.py",
+      "result": "PASS",
+      "tests": 5
+    },
+    {
+      "command": "python tools/test_release_preparation.py",
+      "result": "PASS",
+      "tests": 11
+    },
+    {
+      "command": "python tools/test_documentation.py",
+      "result": "PASS",
+      "tests": 2
+    }
+  ],
+  "input_bound_files": {
+    "evaluation/related-work/artifacts/DUL.json": "ab1ab419a519a9fae32cea12aaa0e704f062985fbbc7d63168b6d050868699eb",
+    "evaluation/related-work/artifacts/DULConceptualization.json": "290f862999fc09d3a883e4abe8152051b86ca3e51c2e916548551f3c5a7dda41",
+    "evaluation/related-work/artifacts/cDnS.json": "730ee1284d45cc61e6756794cba87cfde5a7b16a18215e33596cd7b90a233b1f",
+    "evidence/related-work/artifacts/DUL.yaml": "1142c21b1940ac5e1012cf01705efe320e05814bcb59f77ba94fd16388c38764",
+    "evidence/related-work/artifacts/DULConceptualization.yaml": "8e6b20ceb8b4fc8b4d211814f0307bda4ad8d174b837856ff16595911ba35dc7",
+    "evidence/related-work/artifacts/cDnS.yaml": "76718bb428b9bb970231650c8226b5ca9351c5bf45f1887b173cad6a27cf7696",
+    "evidence/related-work/reviews/DUL.yaml": "7d1962877655069125362733a0fc520327b5ebc351e12035d36b484ff602e70d",
+    "evidence/related-work/reviews/DULConceptualization.yaml": "b986bb4e8cbfd331ecfd35242386d0c61ee64ee21c0c054fb7a2d68e0aeaedbb",
+    "evidence/related-work/reviews/DnS.yaml": "21608901a17412a5003ac0ec80e5f02567a03223a283e819ff00a11491b427f7",
+    "evidence/related-work/reviews/cDnS.yaml": "e6ddee99e21da6e678ec2f0f27dbaf12de38a222bef92b0af35ce5d43832ac4b"
+  },
+  "local_integrity": {
+    "checks": {
+      "check_bootstrap": "PASS",
+      "check_conceptualization_fixtures": "PASS",
+      "check_documentation": "PASS",
+      "check_model_structure": "PASS",
+      "check_publication_metadata": "PASS",
+      "check_reference_views": "PASS",
+      "check_related_reviews": "PASS",
+      "check_repository_language": "PASS",
+      "check_requirements": "PASS",
+      "check_review_state": "PASS",
+      "check_schemas": "PASS",
+      "check_source_support": "PASS",
+      "check_traceability": "PASS"
+    },
+    "evaluated_working_source_digest": "37672b7a91f8a90c7e0ecb73ac2ed8ced2283351f74391d1208b7e4c877062cb",
+    "receipt_note": "The local integrity pass precedes this additional quality receipt; it is not represented as a clean committed run. Version metadata was subsequently reduced to scalar labels without changing source snapshots, counts or selected logical assertions; PR CI evaluates the final committed files.",
+    "source_binding": "working_tree_differs_from_commit",
+    "status": "PASS"
+  },
+  "open_prerequisites": [
+    70,
+    88
+  ],
+  "r2_global_acceptance": "NOT_ASSESSED",
+  "schema_version": "1.0",
+  "scope": "Local review-wave checks, not independent scientific acceptance. CI execution is identified by the PR checks."
+}
