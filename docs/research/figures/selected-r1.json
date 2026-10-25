@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "status": "DERIVED_SELECTED_VIEW",
+  "scientific_core": "v0.1.0",
+  "model_revision": "input-r1-rev1",
+  "unique_concepts": 13,
+  "selected_associations": 14,
+  "rendered_class_instances": 15,
+  "inputs": {
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
+    "model/relations.yaml": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac"
+  },
+  "output_sha256": "64033c79a1aec0c71aec525aafc53a580e888175d4a3ce310097bd741f678c55",
+  "nodes": [
+    {
+      "instance": "A.conceptualizer",
+      "concept_id": "CLR-C0027",
+      "label": "Conceptualizer",
+      "stereotype": "\u00abhistoricalRoleMixin\u00bb"
+    },
+    {
+      "instance": "A.perspective",
+      "concept_id": "CLR-C0093",
+      "label": "Perspective",
+      "stereotype": "\u00abmode\u00bb"
+    },
+    {
+      "instance": "A.intention",
+      "concept_id": "CLR-C0061",
+      "label": "Intention",
+      "stereotype": "\u00abmode\u00bb"
+    },
+    {
+      "instance": "A.episode",
+      "concept_id": "CLR-C0026",
+      "label": "Conceptualization",
+      "stereotype": "\u00abevent\u00bb"
+    },
+    {
+      "instance": "A.goal",
+      "concept_id": "CLR-C0054",
+      "label": "Goal",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "A.artifact",
+      "concept_id": "CLR-C0019",
+      "label": "Conceptual Artifact",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "A.element",
+      "concept_id": "CLR-C0022",
+      "label": "Conceptual Element",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "B.artifact",
+      "concept_id": "CLR-C0019",
+      "label": "Conceptual Artifact",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "B.representation",
+      "concept_id": "CLR-C0101",
+      "label": "Representation",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "B.process",
+      "concept_id": "CLR-C0063",
+      "label": "Interpretation Process",
+      "stereotype": "\u00abevent\u00bb"
+    },
+    {
+      "instance": "B.interpretation",
+      "concept_id": "CLR-C0062",
+      "label": "Interpretation",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "C.evaluation",
+      "concept_id": "CLR-C0097",
+      "label": "Qualitative Evaluation",
+      "stereotype": "\u00abevent\u00bb"
+    },
+    {
+      "instance": "C.result",
+      "concept_id": "CLR-C0040",
+      "label": "Evaluation Result",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "C.artifact",
+      "concept_id": "CLR-C0019",
+      "label": "Conceptual Artifact",
+      "stereotype": "\u00absubkind\u00bb"
+    },
+    {
+      "instance": "C.criterion",
+      "concept_id": "CLR-C0039",
+      "label": "Evaluation Criterion",
+      "stereotype": "\u00absubkind\u00bb"
+    }
+  ],
+  "associations": [
+    {
+      "id": "CLR-R0054",
+      "label_en": "participates in",
+      "source_id": "CLR-C0027",
+      "target_id": "CLR-C0026",
+      "source_multiplicity": "1..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": "\u00abparticipation\u00bb",
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0042",
+      "label_en": "adopts",
+      "source_id": "CLR-C0026",
+      "target_id": "CLR-C0093",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0051",
+      "label_en": "is motivated by",
+      "source_id": "CLR-C0026",
+      "target_id": "CLR-C0061",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0089",
+      "label_en": "has desired content",
+      "source_id": "CLR-C0061",
+      "target_id": "CLR-C0054",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0048",
+      "label_en": "creates",
+      "source_id": "CLR-C0026",
+      "target_id": "CLR-C0019",
+      "source_multiplicity": "1",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": "\u00abcreation\u00bb",
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0032",
+      "label_en": "includes element",
+      "source_id": "CLR-C0019",
+      "target_id": "CLR-C0022",
+      "source_multiplicity": "1..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0140",
+      "label_en": "encodes",
+      "source_id": "CLR-C0101",
+      "target_id": "CLR-C0019",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0093",
+      "label_en": "interprets",
+      "source_id": "CLR-C0063",
+      "target_id": "CLR-C0101",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0094",
+      "label_en": "originates",
+      "source_id": "CLR-C0063",
+      "target_id": "CLR-C0062",
+      "source_multiplicity": "0..1",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": "\u00abcreation\u00bb",
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0131",
+      "label_en": "creates result",
+      "source_id": "CLR-C0097",
+      "target_id": "CLR-C0040",
+      "source_multiplicity": "1",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": "\u00abcreation\u00bb",
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0130",
+      "label_en": "assesses artifact",
+      "source_id": "CLR-C0097",
+      "target_id": "CLR-C0019",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0129",
+      "label_en": "applies criterion",
+      "source_id": "CLR-C0097",
+      "target_id": "CLR-C0039",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1..*",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0065",
+      "label_en": "judges against",
+      "source_id": "CLR-C0040",
+      "target_id": "CLR-C0039",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    },
+    {
+      "id": "CLR-R0062",
+      "label_en": "assesses artifact",
+      "source_id": "CLR-C0040",
+      "target_id": "CLR-C0019",
+      "source_multiplicity": "0..*",
+      "target_multiplicity": "1",
+      "ontouml_stereotype": null,
+      "connector": "Solid line\nNo arrowhead"
+    }
+  ],
+  "omissions": "All other classes, all generalizations, all other associations and all 24 textual constraints. Repeated classes retain one identity. The complete 137-class/296-relationship model remains the release authority.",
+  "claim_boundary": "Exact selected registry projection; no semantic, native OntoUML or independent review acceptance."
+}

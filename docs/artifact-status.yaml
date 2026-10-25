@@ -26,7 +26,13 @@ artifacts:
   migration_parity: verified_selected_projection_14_outputs
   requirements_model_witnesses: imported_candidates_not_assessed
   claim_register: bounded_observations_and_proposals
-  manuscript_alignment: not_assessed
+  manuscript_alignment: initial_R1_draft_aligned_0.1-r1-aligned.1; final_PUB_and_R2_gates_open;
+    docs/research/manuscript-contract.yaml
+  manuscript_layout: eight_portrait_pages_rendered_and_visually_inspected; selected_13_class_14_association_figure;
+    evaluation/manuscript/r1-draft-review.json
+  wiki_publication: twelve_controlled_guide_pages_plus_sidebar_footer_published_and_exactly_read_back;
+    evaluation/publication/wiki-readback.json
+  pages_publication: current_and_frozen_v0.1.1_published_and_verified; evaluation/publication/pages-readback.json
   public_integrity_gates: implemented_and_executed
   public_ci: actual_PR_and_main_runs_passed
   reference_pages: generated_from_candidate_registries_with_qualified_sources

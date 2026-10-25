@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "state": "PASS_WITH_EXPLICIT_DRAFT_LIMITS",
+  "manuscript_revision": "0.1-r1-aligned.1",
+  "docx_sha256": "530ab84cc2ff52075e19b8f1f22df45c352120daff9d72bd066759ad44476ac7",
+  "pdf_sha256": "f40a0dec707b0c7c5e0e596e451e728a680fc9b466589581c9d1e314947d2ded",
+  "page_count": 8,
+  "all_pages_visually_inspected": true,
+  "method": "Canonical documents renderer to eight portrait A4 page PNGs; visually inspected every page, including all tables, equations, bibliography and the complete selected figure. No margin/font squeezing introduced.",
+  "page_png_sha256": {
+    "page-1.png": "1a1566fbd02bb47380da5c1c925bb86f1e80ec9d5fa9b64545cc336547fc38c3",
+    "page-2.png": "ce95024c86626a4ed17c5232b1e165fcb2abd762384eb24a1fd614a30b0e296b",
+    "page-3.png": "cce7a554be066c28ddd818f10af54778b206ddaf9f1146fdf140fe21e43a1212",
+    "page-4.png": "4a16c811607849aa1aa491e91785b06b53d2bbb998cd3ba7ac2f27d97572fb9b",
+    "page-5.png": "f84be0f102dd92cf83a53e911990d7007e5afe1085d409d52c034ed01d474432",
+    "page-6.png": "0af8d6ffdd4799607351ee035cf94fd3688056a225b19c776ea17439eb2e0cd0",
+    "page-7.png": "99c0d2c04e59ee247444f7c610f0ccaef85333eed4eb767cbb66faeef477461c",
+    "page-8.png": "6c4476543598dc2bd25f117038de0e84c029ca2ef74f7a7abcab264b3733ce0b"
+  },
+  "programmatic_checks": {
+    "creators_exact": [
+      "Araz Saie Arasi",
+      "Hassan Haghighi",
+      "Hossein azgomi"
+    ],
+    "Table_I_domain_counts": "Exact equality with all 21 registry domains, total 137.",
+    "bibliography_entries": 32,
+    "selected_figure": "13 distinct concepts / 14 associations; generated from exact registry rows.",
+    "stale_Conceptiom_reference": "Absent in revised manuscript.",
+    "global_CQ_execution": "No change; not_executed."
+  },
+  "visual_observations": [
+    "All eight pages have readable body text, section headings and bibliography without clipping or overlapping content.",
+    "Previously blank page four now contains the full selected portrait figure and explicit omissions caption.",
+    "Table III continues between columns with its header repeated; all six witness rows remain present.",
+    "Author affiliations preserved and owner creator spelling applied."
+  ],
+  "limitations": [
+    "Initial draft only; full bibliography audit and final closest-work contribution remain open.",
+    "Visual inspection is an editorial check by the assistant, not independent human or semantic approval.",
+    "Rendered PDF/PNGs are internal QA companions; owner-managed Word is the delivered manuscript."
+  ]
+}

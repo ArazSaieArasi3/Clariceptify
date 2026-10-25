@@ -5,6 +5,7 @@
 - Prioritize conceptual Wiki/Pages over unchanged core v0.1.0, using one curated twelve-page guide, complete generated lookup/search and explicit current/frozen source identities. Formal WIDOCO/WebVOWL remain separate.
 - Freeze the R2 critical-review protocol, an OQF-informed operational VVEAA profile and an evidence-bound initial baseline report without promoting unperformed reviews.
 - Register intermediate documentation, manuscript, comparison, adequacy and evaluation checkpoints through stable v0.2.0. Final scientific/manuscript gates remain evidence-dependent.
+- Revise the owner-managed first manuscript to `0.1-r1-aligned.1`: correct release/creator references, distinguish VVEAA functions, reconcile actual evidence and replace the blank figure page with an explicitly selected source-derived view. Bind 33 assets and all 30 CQ candidates; inspect all eight rendered pages. Final comparative, bibliography and submission work remains open.
 
 
 ## v0.1.0 - 2026-10-25

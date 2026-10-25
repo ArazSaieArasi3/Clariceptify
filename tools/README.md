@@ -122,3 +122,5 @@ pages. `build_pages.py` combines current and exact-ref frozen routes. The
 VVEAA planned-versus-actual evidence boundaries. Two negative controls reject
 a missing reader target and a stale profile/report binding. Current primary CI
 has twelve layers; the issued v0.1.0 release retains its original eleven.
+
+`build_manuscript_figure.py --output OUTPUT.svg` derives the selected 13-class/14-association portrait figure and its exact row bindings. `check_documentation.py` rejects stale figure, manuscript asset and evidence identities. The owner-managed article remains a draft; its raw bytes are not part of public CI. `readback_pages.py` compares actual public current/frozen reader bytes against each exact build manifest.

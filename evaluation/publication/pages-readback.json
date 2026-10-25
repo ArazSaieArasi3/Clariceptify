@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "public_url": "https://arazsaiearasi3.github.io/Clariceptify/",
+  "routes": [
+    {
+      "route": "current/",
+      "source_commit": "be5fd9f7b78346f59bdab325d637f5307f747c18",
+      "documentation_version": "v0.1.1",
+      "checked_output_files": 279,
+      "manifest_sha256": "29100695bd59ac484393635f0aee724f86bb19eb9ae8ce090a76848346b679e4",
+      "concepts": 137,
+      "domains": 21,
+      "principal_cqs": 30,
+      "local_link_audit": {
+        "broken_links": 0,
+        "html_pages": 273,
+        "local_links_checked": 10470,
+        "status": "PASS"
+      }
+    },
+    {
+      "route": "releases/v0.1.1/",
+      "source_commit": "afeb66dc97fb3f1a9aa2b0df7ccba1ba729950fc",
+      "documentation_version": "v0.1.1",
+      "checked_output_files": 278,
+      "manifest_sha256": "7e31dc8835001de9c8f328cccf260f61c373de4c6901d7ea2894d7bdc1d7acbb",
+      "concepts": 137,
+      "domains": 21,
+      "principal_cqs": 30,
+      "local_link_audit": {
+        "broken_links": 0,
+        "html_pages": 272,
+        "local_links_checked": 10440,
+        "status": "PASS"
+      }
+    }
+  ],
+  "scope": "Actual HTTP bytes for both route manifests, all HTML/CSS/JS, search index and complete SVG; local link/anchor audit is build evidence. Not semantic or human acceptance.",
+  "workflow_run": 40207162550,
+  "workflow_job": 121210460056,
+  "actual_workflow_result": "success",
+  "record_method": "Exact JSON emitted by the successful public byte readback step, retrieved from workflow job logs.",
+  "artifact": {
+    "id": 12604280653,
+    "sha256": "276a8bb566d978850099672b70a9a525a6740698495699d4007d9ad074509c05",
+    "name": "pages-readback-40207162550-1"
+  },
+  "native_browser_followup": {
+    "version_index": "https://arazsaiearasi3.github.io/Clariceptify/versions.html",
+    "frozen_url": "https://arazsaiearasi3.github.io/Clariceptify/releases/v0.1.1/index.html",
+    "observed": "Version index listed current be5fd9f7b78346f59bdab325d637f5307f747c18 and frozen afeb66dc97fb3f1a9aa2b0df7ccba1ba729950fc. Clicking frozen opened the rendered homepage with that exact source footer; visual layout inspected."
+  }
+}
