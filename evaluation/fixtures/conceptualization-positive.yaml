@@ -1,0 +1,122 @@
+schema_version: '1.0'
+evidence_kind: synthetic_illustrative_fixture
+model_revision: input-r1-rev1
+input_bindings:
+- path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+- path: model/relations.yaml
+  sha256: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+- path: model/generalizations.yaml
+  sha256: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+- path: model/constraints.yaml
+  sha256: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+- path: requirements/functional.yaml
+  sha256: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+- path: requirements/competency-questions.yaml
+  sha256: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+claim_ceiling: A selected conceptual episode and one textual-constraint check, not
+  whole-model conformance, formal reasoning, CQ execution, empirical validation or
+  human approval.
+id: CLR-FIX-POS-001
+title: A fictional inspection conceptualization episode
+scenario: A fictional analyst conceptualizes an equipment inspection from a workflow-coordination
+  perspective. The analyst has a mental intention with an explicit goal; the episode
+  creates a conceptual artifact containing a concept describing an event type. The
+  real-world subject, its category and the descriptive concept remain distinct. This
+  selected slice omits unrelated parts of the model and is not a complete instance
+  model.
+requirement_links:
+- id: FR-01
+  cq_id: CQ-01
+  witness: analyst participates in episode via CLR-R0054
+- id: FR-02
+  cq_id: CQ-02
+  witness: episode concerns inspection through CLR-R0044; subject union is nonempty
+- id: FR-03
+  cq_id: CQ-03
+  witness: intention is borne by analyst and has separate goal content
+- id: FR-04
+  cq_id: CQ-04
+  witness: episode adopts perspective borne by its participating analyst
+required_roles:
+  agent: analyst
+  mental_state: intention
+  goal: goal
+  activity: episode
+  content: inspection-concept
+  product: artifact
+nodes:
+- id: episode
+  concept_id: CLR-C0026
+  description: An analyst organizes a description of a fictional equipment-inspection
+    event.
+- id: analyst
+  concept_id: CLR-C0027
+  description: A fictional participating analyst, not a real research participant.
+- id: intention
+  concept_id: CLR-C0061
+  description: The analyst commits to making the inspection workflow understandable.
+- id: goal
+  concept_id: CLR-C0054
+  description: 'Explicit desired outcome: describe the inspection event and its conceptual
+    category.'
+- id: perspective
+  concept_id: CLR-C0093
+  description: The analyst attends to workflow coordination rather than device physics.
+- id: inspection
+  concept_id: CLR-C0041
+  description: The fictional inspection event that is the subject, not its description.
+- id: artifact
+  concept_id: CLR-C0019
+  description: The newly created conceptual account of this inspection.
+- id: inspection-concept
+  concept_id: CLR-C0017
+  description: An explicit description of the inspection event category.
+- id: inspection-type
+  concept_id: CLR-C0125
+  description: The type described by inspection-concept, kept distinct from that description.
+edges:
+- relation_id: CLR-R0054
+  source: analyst
+  target: episode
+- relation_id: CLR-R0007
+  source: analyst
+  target: intention
+- relation_id: CLR-R0008
+  source: analyst
+  target: perspective
+- relation_id: CLR-R0051
+  source: episode
+  target: intention
+- relation_id: CLR-R0089
+  source: intention
+  target: goal
+- relation_id: CLR-R0042
+  source: episode
+  target: perspective
+- relation_id: CLR-R0044
+  source: episode
+  target: inspection
+- relation_id: CLR-R0048
+  source: episode
+  target: artifact
+- relation_id: CLR-R0032
+  source: artifact
+  target: inspection-concept
+- relation_id: CLR-R0026
+  source: inspection-concept
+  target: inspection-type
+selected_check:
+  constraint_id: CLR-SC0001
+  focus: episode
+  scope: Conceptualization subject-union clause only; Observation clause is not tested.
+  expected: accept
+  expected_violation_codes: []
+unassessed:
+- Native OntoUML validity
+- Other textual constraints
+- Global cardinality conformance
+- Independent semantic evaluation
+- Human approval
+- Empirical adequacy
+- All registered competency-query execution
