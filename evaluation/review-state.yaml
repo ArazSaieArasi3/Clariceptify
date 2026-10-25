@@ -1,0 +1,127 @@
+schema_version: 0.1.0
+task: R1-028.a
+model_revision: input-r1-rev1
+diagram_revision: diagram-r1.2
+state_contract:
+  result_states:
+  - PASS
+  - FAIL
+  - BLOCKED
+  - NOT_ASSESSED
+  - NOT_APPLICABLE
+  finding_states:
+  - OPEN
+  - IN_PROGRESS
+  - RESOLVED
+  - DEFERRED
+  - ACCEPTED_LIMITATION
+  rules:
+  - PASS requires an actual bounded check and inspectable input-bound evidence.
+  - NOT_ASSESSED means no assessment was performed; BLOCKED means a declared prerequisite
+    prevents the check or release gate.
+  - Author, simulated, agent-assisted, machine and independent-expert reviews are
+    distinct.
+  - Changing reviewed inputs invalidates applicability; retain the old result and
+    create a new input-bound review.
+  - Closing an assessment does not resolve its findings. A resolved finding needs
+    resolution evidence.
+  - Only an actual owner decision or recorded delegation can establish owner acceptance;
+    elapsed time or a machine PASS cannot.
+reviews:
+- id: CLR-REV-001
+  type: machine
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: Current diagram-r1.2 element correspondence and scoped rendering integrity
+  result: PASS
+  reviewer: public validation command
+  evidence:
+  - path: evaluation/diagrams/paint-order-element-parity.json
+    sha256: 8ad9ffbacc3432bdd7c68507b25290163bea7a514113005c9d288748616a536a
+- id: CLR-REV-002
+  type: agent_assisted
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: Six corrected windows and all 79 previous machine candidates; scoped CLR-VIS-001
+    disposition
+  result: PASS
+  reviewer: repository maintenance agent
+  evidence:
+  - path: evaluation/diagrams/paint-order-reassessment.yaml
+    sha256: b71184b26b1cd44d4f598e38bcfaff59d9bf056bd555ae7b6f56c7647661341c
+  - path: evaluation/diagrams/paint-order-corrected.png
+    sha256: 3248146ec14321b0a0d957b50ccf0d3d783336b5541f2278f7efe96d54b87349
+- id: CLR-REV-003
+  type: machine
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: Generated concept/domain reference projection; no new source assessment
+  result: PASS
+  reviewer: public validation command
+  evidence:
+  - path: evaluation/reference-concepts.json
+    sha256: 68e4da635d8168561a7b60514d296d848705cd0768eb670b96bdee5abe602969
+- id: CLR-REV-004
+  type: machine
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: Generated relation/constraint views and lossless typed CSV round trip
+  result: PASS
+  reviewer: public validation command
+  evidence:
+  - path: evaluation/reference-relations.json
+    sha256: 4c794d5d035ad58c3c9efb6f3309755583c4d2660ec9c2f8dac0991e8c1d4c37
+- id: CLR-REV-005
+  type: machine
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: One subject-union clause on a bound positive/negative synthetic fixture
+  result: PASS
+  reviewer: public validation command
+  evidence:
+  - path: evaluation/conceptualization-fixtures.json
+    sha256: 33c4c7906ef5de95c4a430e9ceaa5322c4bad30e98eaca1112859874b760bd96
+- id: CLR-REV-006
+  type: author
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: Actual owner acceptance of the final exact R1 package
+  result: NOT_ASSESSED
+  reviewer: not yet assigned/performed
+  evidence: []
+- id: CLR-REV-007
+  type: independent_expert
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes
+    for the generated working snapshot
+  scope: Scientific adequacy and native OntoUML interpretation
+  result: NOT_ASSESSED
+  reviewer: not yet assigned/performed
+  evidence: []
+findings:
+- id: CLR-VIS-001
+  reviewed_ref: 018e6e0b860718718b0845c7902cc070e835d71e; resolution at 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89
+  type: rendering
+  severity: R1 scoped-readability blocker on diagram-r1.1
+  owner: repository maintenance workflow under owner instruction
+  disposition: RESOLVED
+  tracking_issue: 217
+  resolution_evidence:
+  - path: evaluation/diagrams/paint-order-reassessment.yaml
+    sha256: b71184b26b1cd44d4f598e38bcfaff59d9bf056bd555ae7b6f56c7647661341c
+remaining_gates:
+- gate: distribution-license
+  result: BLOCKED
+  tracking_issue: 52
+  reason: A concrete licensing proposal is prepared; actual owner decision is not
+    recorded.
+- gate: package-creators
+  result: BLOCKED
+  tracking_issue: 53
+  reason: Creator order and roles are proposed, not recorded as an actual package
+    decision.
+- gate: final-package-acceptance
+  result: NOT_ASSESSED
+  tracking_issue: 62
+  reason: The exact RC package and its owner disposition are not yet available.
+claim_ceiling: Structured evidence/provenance states, not semantic acceptance, independent
+  validation or a stable release.

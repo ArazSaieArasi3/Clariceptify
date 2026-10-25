@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased - reference and review preparation
+
+- Generate 137 concept and 21 domain pages with qualified source references (#46).
+- Generate association/generalization/constraint tables and eight lossless typed CSV exports (#47).
+- Execute the selected empty-subject counterexample against the positive episode (#49).
+- Register input-bound review/finding states and a six-unit evidence dossier (#50/#51).
+- Prepare concrete license and creator proposals; actual decisions and citation remain pending (#52-#54).
+
+
 ## Unreleased - diagram-r1.2 rendering correction
 
 - Resolve CLR-VIS-001 (#217): render labels after connectors, and retain clear parent triangles with six logged label adjustments.

@@ -1,0 +1,68 @@
+{
+  "claim_ceiling": "A selected conceptual episode and one textual-constraint check, not whole-model conformance, formal reasoning, CQ execution, empirical validation or human approval.",
+  "counts": {
+    "edges": 10,
+    "linked_requirements": 4,
+    "nodes": 9,
+    "textual_constraint_clauses_checked": 1
+  },
+  "evidence_kind": "synthetic_illustrative_fixture_check",
+  "fixture_digests": {
+    "evaluation/fixtures/conceptualization-negative.yaml": "fb354b15bbe55bcba5c4a2109b80cce6885326c9627b0048199479c28775d292",
+    "evaluation/fixtures/conceptualization-positive.yaml": "c3e85e73d99c7ff0d1df4594dcc597e4cd89d9e7a900a6bf8f1bd7685eac6e8e"
+  },
+  "fixture_results": [
+    {
+      "id": "CLR-FIX-POS-001",
+      "result": "accepted_for_selected_check",
+      "violation_codes": []
+    },
+    {
+      "id": "CLR-FIX-NEG-001",
+      "result": "rejected_as_expected",
+      "violation_codes": [
+        "EMPTY_SUBJECT_UNION"
+      ]
+    }
+  ],
+  "global_requirement_cq_status_changed": false,
+  "input_bindings": [
+    {
+      "path": "model/concepts.yaml",
+      "sha256": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf"
+    },
+    {
+      "path": "model/relations.yaml",
+      "sha256": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac"
+    },
+    {
+      "path": "model/generalizations.yaml",
+      "sha256": "f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c"
+    },
+    {
+      "path": "model/constraints.yaml",
+      "sha256": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4"
+    },
+    {
+      "path": "requirements/functional.yaml",
+      "sha256": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608"
+    },
+    {
+      "path": "requirements/competency-questions.yaml",
+      "sha256": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5"
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "positive_and_negative",
+  "status": "PASS",
+  "tool_sha256": "18018323f52b7e3626be0334a45d05cce2e4724b7bceb68fc57c9ab29bbc4fd6",
+  "unassessed": [
+    "Native OntoUML validity",
+    "Other textual constraints",
+    "Global cardinality conformance",
+    "Independent semantic evaluation",
+    "Human approval",
+    "Empirical adequacy",
+    "All registered competency-query execution"
+  ]
+}

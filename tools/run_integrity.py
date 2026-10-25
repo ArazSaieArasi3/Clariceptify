@@ -11,7 +11,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CHECKERS = ['check_repository_language', 'check_schemas', 'check_model_structure',
-            'check_requirements', 'check_source_support', 'check_traceability', 'check_bootstrap']
+            'check_requirements', 'check_source_support', 'check_traceability', 'check_bootstrap',
+            'check_reference_views', 'check_conceptualization_fixtures', 'check_review_state']
 
 
 def encoded(value):

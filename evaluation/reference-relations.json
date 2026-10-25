@@ -1,0 +1,48 @@
+{
+  "task": "R1-026.b",
+  "baseline_commit": "2a48140d8fdb89ce80826a04dd2ab0acd7ddea89",
+  "status": "PASS",
+  "part": "relations",
+  "input_sha256": {
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
+    "model/domains.yaml": "1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3",
+    "model/relations.yaml": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac",
+    "model/generalizations.yaml": "f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c",
+    "model/constraints.yaml": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4",
+    "evidence/source-register.yaml": "3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4",
+    "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b"
+  },
+  "generator_sha256": "eea11ba84b706ee1d91b1ace059b4360f2dbb07197c31b4be79ab49fae34dfe7",
+  "record_counts": {
+    "concepts": 137,
+    "domains": 21,
+    "relations": 174,
+    "generalizations": 122,
+    "constraints": 24
+  },
+  "checks": [
+    "UTF-8 decoding",
+    "all generated local links and source fragments resolve",
+    "all source definitions/membership preserved by direct projection",
+    "all CSV source fields independently round-trip by source type"
+  ],
+  "output_sha256": {
+    "docs/reference/relations/README.md": "9abf808fe465a5b1b35cbb64256c0dec7a445ece5934153a854518b411d5ba15",
+    "docs/reference/relations/generalizations.md": "dd5cb494a7673ec078589e15804997532fe6d552f047a0d529cb1d8230deb509",
+    "docs/reference/constraints/README.md": "d73b45211f446ae6b394200a063e78e059efd7d47ac5135e12d1332f2683740a",
+    "docs/reference/exports/concepts.csv": "bc21a9c51ea803befa4cb86e2376dddf56db9db8c5066a189664f3b03dd10701",
+    "docs/reference/exports/domains.csv": "5f97bf3808a07af4ccddfca34535f3e7c3f28ab21eccd51b042345527f3504b5",
+    "docs/reference/exports/relations.csv": "f40de2166b87d5be2446c4e0e4e23a893803ec946d2f024180ccedd13234cc30",
+    "docs/reference/exports/generalizations.csv": "aae00c5746f4aba80747f2d3c4b7f0da0c37cb1d77430dab16d16b11da04d9a0",
+    "docs/reference/exports/constraints.csv": "363ccb34b3003c7945590b2209d26e87b68560e0d46976ac6bc44b81e0bf0ec9",
+    "docs/reference/exports/sources.csv": "aa3186fc8418918c030770e646e9c4479ea4e9e2ee59ea36bd2fde5b296ce37b",
+    "docs/reference/exports/concept-support.csv": "06f0e56e2897939a2d5feb6cb850f2c13edf2b8f2eacd93e28085515a88b72de",
+    "docs/reference/exports/membership.csv": "a64bd4f5cc0d6eb382b30508fe80ca88c0f658e9dfa4cf45c0ee3ce6a9b2a679",
+    "docs/reference/exports/README.md": "a809681af2618e1c0f71a5a40dd8c8eab29fc64053b42db7335cf1dbb061d4c2"
+  },
+  "limits": [
+    "No source metadata, passage, semantic typing or adequacy is newly verified.",
+    "Historical Word/PDF files remain source evidence.",
+    "No external documentation deployment is claimed."
+  ]
+}

@@ -28,3 +28,7 @@ artifacts:
   manuscript_alignment: not_assessed
   public_integrity_gates: implemented_and_executed
   public_ci: actual_PR_and_main_runs_passed
+  reference_pages: generated_from_candidate_registries_with_qualified_sources
+  relation_constraint_csv_exports: generated_lossless_round_trip_verified
+  selected_negative_fixture: executed_one_subject_union_clause_only
+  review_state_and_queue: structured_with_actual_publication_decisions_pending

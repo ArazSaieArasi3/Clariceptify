@@ -1,0 +1,52 @@
+schema_version: '1.0'
+id: CLR-FIX-NEG-001
+evidence_kind: synthetic_illustrative_fixture
+model_revision: input-r1-rev1
+input_bindings:
+- path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+- path: model/relations.yaml
+  sha256: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+- path: model/generalizations.yaml
+  sha256: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+- path: model/constraints.yaml
+  sha256: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+- path: requirements/functional.yaml
+  sha256: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+- path: requirements/competency-questions.yaml
+  sha256: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+derived_from: CLR-FIX-POS-001
+positive_fixture: evaluation/fixtures/conceptualization-positive.yaml
+title: An episode with no subject across the optional branches
+misinterpretation: Reading every individual 0..* subject branch as permission for
+  the entire conceptualization episode to have no subject.
+constraint_id: CLR-SC0001
+mutation:
+  operation: remove_focus_subject_edges
+  focus: episode
+  relation_ids:
+  - CLR-R0043
+  - CLR-R0044
+  - CLR-R0045
+  - CLR-R0046
+  - CLR-R0047
+expected: reject
+expected_violation_codes:
+- EMPTY_SUBJECT_UNION
+requirement_links:
+- FR-02
+- CQ-02
+method: Derive the episode from the bound positive fixture; remove every outgoing
+  subject-family edge for the selected focus. The selected subject-union clause requires
+  at least one subject across the five branches.
+claim_ceiling: A selected conceptual episode and one textual-constraint check, not
+  whole-model conformance, formal reasoning, CQ execution, empirical validation or
+  human approval.
+unassessed:
+- Native OntoUML validity
+- Other textual constraints
+- Global cardinality conformance
+- Independent semantic evaluation
+- Human approval
+- Empirical adequacy
+- All registered competency-query execution
