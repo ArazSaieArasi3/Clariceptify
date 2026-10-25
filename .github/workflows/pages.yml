@@ -46,3 +46,15 @@ jobs:
       - name: Deploy the verified conceptual portal
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+      - name: Read back exact public current and frozen reader bytes
+        env:
+          PUBLIC_PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python tools/readback_pages.py --build "$RUNNER_TEMP/clariceptify-pages" --url "$PUBLIC_PAGES_URL" --output "$RUNNER_TEMP/publication-receipt/pages-readback.json"
+      - name: Preserve actual publication readback
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: pages-readback-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/publication-receipt/
+          if-no-files-found: warn
+          retention-days: 90
