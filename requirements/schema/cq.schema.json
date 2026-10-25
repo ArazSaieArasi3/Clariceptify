@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R1 retrospective cq contract; not a satisfaction result",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(CQ|LCQ)-[0-9]{2}$"
+    },
+    "requirement_id": {
+      "type": "string",
+      "pattern": "^(FR|LR)-[0-9]{2}$"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "required_answer_fields": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_contract": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adverse_case": {
+      "type": "string",
+      "minLength": 1
+    },
+    "test_execution": {
+      "const": "not_executed"
+    },
+    "answer_status": {
+      "const": "not_computed"
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_cells": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "candidate_existing_witnesses": {
+      "type": "string",
+      "minLength": 1
+    },
+    "release_target": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "id",
+    "requirement_id",
+    "question",
+    "required_answer_fields",
+    "acceptance",
+    "adverse_case",
+    "test_execution",
+    "answer_status",
+    "source_locator",
+    "source_cells"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R1 retrospective need contract; not a satisfaction result",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(FR|QR|LR)-[0-9]{2}$"
+    },
+    "priority": {
+      "enum": [
+        "MUST",
+        "SHOULD"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin": {
+      "enum": [
+        "E",
+        "R",
+        "I"
+      ]
+    },
+    "release_target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adverse_case": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_cells": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "satisfaction_status": {
+      "const": "not_assessed"
+    },
+    "acceptance_status": {
+      "const": "not_assessed"
+    },
+    "test_execution": {
+      "const": "not_executed"
+    }
+  },
+  "required": [
+    "id",
+    "priority",
+    "title",
+    "origin",
+    "release_target",
+    "capability",
+    "acceptance",
+    "adverse_case",
+    "source_locator",
+    "source_cells",
+    "satisfaction_status",
+    "acceptance_status",
+    "test_execution"
+  ],
+  "additionalProperties": false
+}

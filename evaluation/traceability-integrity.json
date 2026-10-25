@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "scope": "Current artifact/link/witness/claim integrity; not semantic validation",
+  "edges": 1815,
+  "layers": {
+    "artifact_contracts": {
+      "status": "PASS",
+      "scope": "Artifact snapshot integrity and initial edge-contract behavior only",
+      "snapshot_ref": "commit:c5db7525fa3989fce292c6961e686dc4f25c9314",
+      "artifact_records": 40,
+      "link_types": 11,
+      "positive_edge_fixtures": 1,
+      "negative_cases_rejected": [
+        "duplicate asset identifier",
+        "missing owner",
+        "stale file digest",
+        "dangling collection member",
+        "fabricated absent-ontology digest",
+        "endpoint kind mismatch",
+        "missing version binding",
+        "invented PASS",
+        "unsupported proves link",
+        "unsupported satisfies link",
+        "unqualified inherited support"
+      ],
+      "input_sha256": {
+        "traceability/artifacts.yaml": "d86cc34ee7894461ca7fa89d06ebee549db1689daa91c6a60c2ef22a4503e116",
+        "traceability/link-types.yaml": "2cd040180419d5433ad924bc24f5565c97ba82d501dfda028981147b3ba27e33",
+        "traceability/schema/artifact-register.schema.json": "38628abe8cab3681a13894b1bad1991b9b901b233b140c4e052e1ab4289b5416",
+        "traceability/schema/trace-edge.schema.json": "8a3b454bc233b55ec23dfcf58ace5e175e3225a1c1043f9a0869c6e8cbb642db"
+      },
+      "limits": [
+        "This checker covers artifact/edge contracts; generated graph integrity is checked separately",
+        "Fixture is not a coverage or satisfaction result",
+        "No semantic approval, proof, CQ execution or independent review"
+      ]
+    },
+    "generated_links": {
+      "status": "PASS",
+      "scope": "Exact current structural/source projection and version integrity; not semantic adequacy",
+      "edges": 1815,
+      "by_type": {
+        "association_source": 174,
+        "association_target": 174,
+        "belongs_to_domain": 137,
+        "candidate_support": 292,
+        "cites": 292,
+        "constraint_mention_candidate": 82,
+        "cq_witness_candidate": 204,
+        "derived_from_input": 12,
+        "generalization_child": 122,
+        "generalization_parent": 122,
+        "requirement_witness_candidate": 204
+      },
+      "negative_cases_rejected": [
+        "dangling endpoint",
+        "wrong endpoint owner",
+        "stale endpoint digest",
+        "stale endpoint revision",
+        "unsupported proof type",
+        "duplicate edge",
+        "missing structural edge",
+        "inflated support qualification",
+        "undispositioned edge removal"
+      ],
+      "stable_edge_ids": "preserved on repeat",
+      "checked_sha256": {
+        "traceability/links.yaml": "6b745a46d858d709c759a0dbbb045ce45062c2a5706b48f827c715e562cf700f",
+        "tools/build_trace_links.py": "d56d03316e29dbb9e63c27b968710ec013c9654e1c51cb6cc6a20a4b4baf4573",
+        "tools/check_generated_links.py": "7c8f8539d210aeb50c6c4101eeb1b4bb89a6e957a09f52906bf47d8a8b29513f"
+      },
+      "input_file_sha256": {
+        "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b",
+        "evidence/related-work/candidate-register.yaml": "65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266",
+        "evidence/source-register.yaml": "3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4",
+        "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
+        "model/constraints.yaml": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4",
+        "model/domains.yaml": "1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3",
+        "model/generalizations.yaml": "f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c",
+        "model/relations.yaml": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac",
+        "requirements/competency-questions.yaml": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5",
+        "requirements/functional.yaml": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608",
+        "requirements/future.yaml": "bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e",
+        "requirements/quality.yaml": "dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc",
+        "requirements/scope-and-scenarios.yaml": "38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848",
+        "traceability/artifacts.yaml": "d86cc34ee7894461ca7fa89d06ebee549db1689daa91c6a60c2ef22a4503e116",
+        "traceability/link-types.yaml": "2cd040180419d5433ad924bc24f5565c97ba82d501dfda028981147b3ba27e33",
+        "traceability/migration/entity-ledger.yaml": "45a40de32998b736a1f4ea66ff7f137e282992aee0d13aaad64ae28b41bc3a8a",
+        "traceability/migration/input-integrity.yaml": "c683e54940b501be551e637ef858ac35e6e2056b328043c339f772f40889ef35",
+        "traceability/migration/source-manifest.yaml": "f475dc3ddf297e9a7f5f34e5422e1d8070f825f396cae6c8f98b79b4813dcb5b",
+        "traceability/requirements-model.yaml": "f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f",
+        "traceability/schema/trace-edge.schema.json": "8a3b454bc233b55ec23dfcf58ace5e175e3225a1c1043f9a0869c6e8cbb642db"
+      },
+      "limits": [
+        "Requirement/CQ links, when present, are frozen ORSD candidate witnesses only; satisfaction remains unassessed.",
+        "Constraint mentions remain lexical candidates, not adjudicated coverage.",
+        "D/B/P support is inherited; full-text and typing approval remain unassessed.",
+        "No proves/satisfies links, human acceptance, source ownership transfer or semantic completeness claim."
+      ]
+    },
+    "requirement_witnesses": {
+      "status": "PASS",
+      "scope": "Frozen ORSD candidate witness/contract integrity only",
+      "fr_cq_pairs": 30,
+      "quality_dispositions": 10,
+      "future_pairs": 8,
+      "unresolved_witness_labels": 0,
+      "negative_cases_rejected": [
+        "unknown requirement",
+        "mismatched CQ",
+        "dangling witness",
+        "narrowed witness set",
+        "fabricated satisfaction",
+        "fabricated answer",
+        "fabricated QR PASS",
+        "future R1 blocker inflation"
+      ],
+      "checked_mapping_sha256": "f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f",
+      "satisfaction": "not_assessed",
+      "cq_execution": "not_executed",
+      "answers": "not_computed"
+    },
+    "claim_register": {
+      "status": "PASS",
+      "scope": "Claim-register identity, input and state boundaries; not scientific peer review",
+      "claims": 7,
+      "negative_cases_rejected": [
+        "duplicate claim identifier",
+        "unbound evidence",
+        "missing claim boundary",
+        "novelty/contribution inflation",
+        "fabricated requirement satisfaction",
+        "stale evidence fingerprint",
+        "fabricated manuscript alignment",
+        "unissued DOI"
+      ],
+      "register_sha256": "f84ab2dcaeadbb033f11c0695d29d60507663e15a7016c37bccd467f13fd1aec",
+      "input_snapshot_ref": "commit:09531fe2df12f3a68a2239f16228f0f0db621fb6",
+      "manuscript_alignment": "not_assessed",
+      "novelty_review": "pending"
+    }
+  },
+  "negative_input_cases_rejected": [
+    "removed model fingerprint",
+    "removed witness fingerprint",
+    "forged source fingerprint",
+    "escaping input locator",
+    "wrong graph contract"
+  ],
+  "input_file_sha256": {
+    "evidence/concept-support.yaml": "c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b",
+    "evidence/related-work/candidate-register.yaml": "65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266",
+    "evidence/source-register.yaml": "3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4",
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
+    "model/constraints.yaml": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4",
+    "model/domains.yaml": "1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3",
+    "model/generalizations.yaml": "f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c",
+    "model/relations.yaml": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac",
+    "requirements/competency-questions.yaml": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5",
+    "requirements/functional.yaml": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608",
+    "requirements/future.yaml": "bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e",
+    "requirements/quality.yaml": "dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc",
+    "requirements/scope-and-scenarios.yaml": "38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848",
+    "traceability/artifacts.yaml": "d86cc34ee7894461ca7fa89d06ebee549db1689daa91c6a60c2ef22a4503e116",
+    "traceability/link-types.yaml": "2cd040180419d5433ad924bc24f5565c97ba82d501dfda028981147b3ba27e33",
+    "traceability/migration/entity-ledger.yaml": "45a40de32998b736a1f4ea66ff7f137e282992aee0d13aaad64ae28b41bc3a8a",
+    "traceability/migration/input-integrity.yaml": "c683e54940b501be551e637ef858ac35e6e2056b328043c339f772f40889ef35",
+    "traceability/migration/source-manifest.yaml": "f475dc3ddf297e9a7f5f34e5422e1d8070f825f396cae6c8f98b79b4813dcb5b",
+    "traceability/requirements-model.yaml": "f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f",
+    "traceability/schema/trace-edge.schema.json": "8a3b454bc233b55ec23dfcf58ace5e175e3225a1c1043f9a0869c6e8cbb642db"
+  },
+  "validator_file_sha256": {
+    "tools/check_traceability.py": "7489302bd3eab2398c84f020c90a84c62f1d6d10921b0680f69176679474df63",
+    "tools/check_trace_contracts.py": "ffa5dca63634b48ccd422f96ba1b2098ae9e576041a824696bbe0a9485e4069f",
+    "tools/check_generated_links.py": "7c8f8539d210aeb50c6c4101eeb1b4bb89a6e957a09f52906bf47d8a8b29513f",
+    "tools/check_requirement_witnesses.py": "d2ed3608b75fdfb68ef02f3b4bf420c7f1581101ac6787d67148d49c39a80e01",
+    "tools/check_claim_register.py": "e746bf3a023e806adb420f2d3f22df60ad3d96684c4fed7433f036ab5b82e7d5"
+  },
+  "limits": [
+    "Layer results retain their own scope and denominators.",
+    "No link-count quality score, inherited PASS, requirement satisfaction, proof or independent approval."
+  ]
+}

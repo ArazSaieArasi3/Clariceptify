@@ -29,3 +29,7 @@ For the historical alpha.2 builder use commit b0edfdcb99e283eadce94ba11535d8179d
 For authorized input reconstruction, `import_requirement_witnesses.py ORSD.docx` imports the original table-6 witness proposals after the ORSD/model imports. Run `build_trace_links.py` afterwards. The optional private-input parity checker now compares all 14 outputs; the public integrity commands need no raw DOCX files.
 
 `build_claim_register.py` records the bounded working claims and explicit draft-manuscript binding. `check_claim_register.py` checks input fingerprints and claim-state boundaries, not philosophical soundness, novelty or peer approval.
+
+## Public integrity gates
+
+`check_schemas.py` validates model and need/CQ record contracts plus stable ID uniqueness. `check_model_structure.py` checks primary domains, both endpoint families and specialization cycles; connectivity is descriptive. `check_traceability.py` freshly runs artifact, generated-link, witness and claim checks, rejecting missing input fingerprints and stale/unsafe bindings. These commands need no private inputs and do not establish semantic adequacy or satisfaction. Reports under evaluation/ record the scoped initial runs; CI must evaluate current bytes rather than inherit those PASS values.
