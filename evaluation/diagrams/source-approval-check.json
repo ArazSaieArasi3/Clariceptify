@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "source IDs unique and complete",
+    "sizes and SHA-256 formats valid",
+    "approval bindings equal source bindings",
+    "native source and generator limitations preserved",
+    "candidate and unverified scientific acceptance preserved",
+    "all four recovered input sizes and digests verified",
+    "SVG named 137 nodes and 296 edges including 122 generalizations",
+    "actual SVG desc approval wording and DOCX paragraphs 3/4 conflict verified"
+  ],
+  "input_sha256": {
+    "SRC-ATLAS": "d9be5514156782f59e30644f7a6ff9bdb5050386afcbaff0a0575fd8b87003d8",
+    "SRC-FULLPDF": "92be7427fe9be7dbf986e7cede933068a9d90db74c2cba74bc389c2fbcd140f4",
+    "SRC-SPEC": "c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e",
+    "SRC-SVG": "607eee381cd59144556e00721286b10190f72d79bb8011e0507d51a4bb8b206c"
+  },
+  "private_input_audit": "performed",
+  "scope": "Source identity and approval evidence only; no semantic acceptance or complete visual parity",
+  "status": "PASS"
+}
