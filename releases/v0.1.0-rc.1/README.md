@@ -1,29 +1,35 @@
-# Target RC station - engineering preparation only
+# R1 candidate station
 
-No RC tag or GitHub Release is created by this directory. The target station is
-v0.1.0-rc.1; the current local bundle is labelled `r1-preparation` and is not an RC.
+The target is v0.1.0-rc.1, a prerelease, not a stable release. Directory presence
+is not publication. The prior preparation manifest remains historical until
+replaced by the exact committed-source candidate inventory in the freeze step.
 
-[manifest.yaml](manifest.yaml) registers each actual source byte and distinguishes
-the base commit from prepared working-snapshot additions/edits. It does not claim
-that the entire payload is the base commit. The manifest is outside its own member
-digest set, then included as a package envelope file; checksum files exclude themselves.
-All private raw source files, external full texts, runtime caches and generated
-package/report directories are excluded. Published alpha payloads are unchanged.
+The final [manifest](manifest.yaml) registers each distributable source byte,
+Git blob identity, license scope and artifact revision against one exact source
+commit. Its own bytes are included separately as a package envelope, outside
+the source-member digest set. SHA256SUMS excludes itself. Private raw inputs,
+third-party full texts, external applications, font programs and caches are
+excluded. Published alpha payloads are immutable.
 
-From the repository root:
+Install requirements-dev.txt, obtain the source commit named in the final
+manifest and the trusted manifest from the freeze commit, then run:
 
 ```sh
-python tools/build_release.py --output /tmp/clariceptify-preparation
-python tools/readback_release.py /tmp/clariceptify-preparation/clariceptify-r1-preparation.zip
+python tools/build_release.py --root /path/to/frozen-source --manifest /path/to/trusted/manifest.yaml --output /tmp/clariceptify-rc
+python tools/readback_release.py /tmp/clariceptify-rc/clariceptify-v0.1.0-rc.1.zip --manifest /path/to/trusted/manifest.yaml
 python tools/test_release_preparation.py
 ```
 
-The builder/readback tool uses Python with requirements-dev.txt installed. Its
-clean extraction is a fresh file tree with an empty HOME and the declared current
-Python dependencies, not a newly provisioned OS or independent validation.
+The builder rejects stale members and unregistered RC identities. Readback
+checks exact membership/digests before fresh temporary extraction and runs all
+declared public checks with an empty HOME, no Git/private source access and
+installed declared Python dependencies. This is not a new OS or expert review.
 
-The license/creator proposals (#52/#53) remain proposals; root citation (#54),
-final reading/limitations acceptance (#55/#56), final manifest/build/readback
-(#57-#59), readiness (#60), RC publication (#61) and later acceptance/stable
-publication (#62-#64) retain their own completion conditions. A preliminary
-technical PASS cannot close those pending gates or grant rights.
+The owner approved research CC-BY-4.0, code MIT and the three creators/order.
+Root CITATION.cff describes this candidate source and omits an unissued
+publication date and DOI. Actual publication time belongs to the GitHub Release
+record. A byte-identical archive can be rebuilt without altering frozen metadata.
+
+#62 records actual acceptance of the exact candidate after #61 publication;
+#63/#64 remain stable publication and its public readback. The license/creator
+instruction does not count as early acceptance of this future package.

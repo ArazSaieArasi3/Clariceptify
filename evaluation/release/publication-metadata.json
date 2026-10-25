@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "creators": [
+    "Araz Saie Arasi",
+    "Hassan Haghighi",
+    "Hossein azgomi"
+  ],
+  "version": "0.1.0-rc.1",
+  "date_released": "omitted: candidate source, not asserted publication",
+  "doi": "unassigned",
+  "cff_schema": "official 1.2.0, vendored with attribution",
+  "license_scopes": {
+    "research": "CC-BY-4.0",
+    "original_software": "MIT",
+    "third_party": "retains upstream rights"
+  },
+  "inputs_sha256": {
+    "CITATION.cff": "743e9021ede4d24097f84e7a37c7b6f5fb9177a8642d5cbd9b07bad3659b1219",
+    "LICENSE": "2a703d442920daf4b2ba3d2c05f822f777a53631463c105648abb5f0698bbfdb",
+    "LICENSE-CC-BY-4.0": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "LICENSE-MIT": "2ad5080e406837564fb3a31b8428178e7afd45553c380304b96661f0c055132d",
+    "THIRD-PARTY-NOTICES.md": "6a0ae5adb097340dee5cfd9eb7cdb6521f7fa6939539e59fde1cae6deaaac801",
+    "docs/decisions/release-license.md": "748e81a711c4e4da16aaf1ed5cdab74db45b94b759cf0c1449092f049f1dc5e7",
+    "docs/decisions/artifact-creators.md": "a990a3e15ab78e76925b09f998c36658a377e33ee15cf7b9d2ec619cf762f383",
+    "tools/vendor/cff-1.2.0.schema.json": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b"
+  },
+  "limits": "Checks metadata correspondence and schema, not rights in third-party works, detailed contributor roles or final package acceptance."
+}

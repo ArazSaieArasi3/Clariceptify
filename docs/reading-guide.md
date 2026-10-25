@@ -1,8 +1,7 @@
-# R1 reading guide - preparation edition
+# R1 candidate reading guide
 
-Status: technically prepared; issue #55 remains open until actual citation
-metadata is available. This guide creates no license or scientific acceptance.
-Base: eeaa4a23d419ed6c3d915155bad3eebaab1a994a; model input-r1-rev1;
+Status: synchronized candidate reader path after the actual license/creator decision.
+Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8; model input-r1-rev1;
 diagram diagram-r1.2; latest published engineering checkpoint v0.1.0-alpha.3.
 
 | Reader goal | Start here | Interpretation |
@@ -16,17 +15,18 @@ diagram diagram-r1.2; latest published engineering checkpoint v0.1.0-alpha.3.
 | Inspect evidence and review | [Review dossier](review/r1-attention-queue.md), [review state](../evaluation/review-state.yaml) | Machine/agent checks and unperformed owner/expert review remain distinct |
 | Run an example | [Positive example](examples/conceptualization-positive.md), [negative example](examples/conceptualization-negative.md) | One selected subject-union clause, not full instance conformance |
 | Inspect traceability | [Trace guide](../traceability/README.md), [artifact register](../traceability/artifacts.yaml) | Declared identities, structural/source links and candidate witnesses; no full research-asset coverage claim |
-| Reuse or cite | [License proposal](decisions/release-license.md), [creator/citation proposal](decisions/artifact-creators.md) | Actual owner decisions and final root CITATION.cff are pending |
+| Reuse or cite | [Scoped licenses](../LICENSE), [creators](decisions/artifact-creators.md), [CITATION.cff](../CITATION.cff) | Owner-declared creators/order and CC-BY-4.0 research / MIT code; candidate citation omits an unissued date/DOI |
 
 All required evidence for the public engineering checks is in this repository.
 Private raw source files are not needed to read these views or run those checks.
 Historical Word/PDF inputs remain provenance, not parallel editing authorities.
 See [known limitations](known-limitations.md) before drawing scientific conclusions.
 
-## Preparation and publication
+## Candidate and publication
 
-The [preparation manifest](../releases/v0.1.0-rc.1/manifest.yaml) registers an exact
-working snapshot for local packaging tests. Its folder names the target station;
-it is not an issued RC tag or a published GitHub Release. License/creator/citation
-decisions, final reading-path acceptance, RC readiness and package acceptance
-must still be recorded against the actual final package.
+The [candidate station](../releases/v0.1.0-rc.1/README.md) explains exact source
+registration, reproducible builds and clean readback. A folder or build does not
+establish publication. Check the [release index](../releases/release-index.yaml)
+and actual GitHub Releases for issued versions. The final package disposition
+under #62 applies to an exact candidate, independently of the owner-approved
+license and creator metadata. No stable version is claimed by this guide.

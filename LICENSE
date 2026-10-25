@@ -1,0 +1,26 @@
+# Clariceptify license scope
+
+Copyright (c) 2026 Araz Saie Arasi, Hassan Haghighi, Hossein azgomi.
+
+Original research material (conceptual registers, requirements, documentation,
+diagrams, traceability and project assessments) is licensed under **CC-BY-4.0**.
+See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).
+
+Original software in `tools/` (except `tools/vendor/`), `.github/workflows/`,
+`model/schema/`, `requirements/schema/`, `traceability/schema/`, and the root
+`requirements*.txt` dependency declarations is licensed under **MIT**.
+See [LICENSE-MIT](LICENSE-MIT). The research content consumed by these tools
+retains its research license. These are scoped licenses, not a choice of either
+license for every file.
+
+Third-party works, bibliographic facts, attributed source excerpts, names and
+identifiers retain their own rights and provenance. This grant covers only the
+project's original contributions; it does not relicense cited publications,
+historical private inputs, dependencies, third-party schemas or font programs.
+Raw thesis/article/full-text inputs and font programs are not distributed.
+See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
+Attribution: the three creators above, *Clariceptify: An Ontology for Representing
+Conceptualization Knowledge*, https://github.com/ArazSaieArasi3/Clariceptify.
+Preserve version/source qualifications and indicate modifications. The owner's
+actual decision is recorded in [release-license.md](docs/decisions/release-license.md).

@@ -1,7 +1,7 @@
-# Known R1 limitations - preparation edition
+# Known R1 candidate limitations
 
-Base: eeaa4a23d419ed6c3d915155bad3eebaab1a994a. Model input-r1-rev1;
-diagram diagram-r1.2. Issue #56 is prepared, not declared complete ahead of #55.
+Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8. Model input-r1-rev1;
+diagram diagram-r1.2. Applies to the documented candidate and its unchanged model inputs.
 
 | Area | Actual evidence boundary | Remaining work |
 | --- | --- | --- |
@@ -15,7 +15,7 @@ diagram diagram-r1.2. Issue #56 is prepared, not declared complete ahead of #55.
 | Traceability | Scoped structural/source and candidate witness projections | Full research-asset/version coverage is not established |
 | Review | Input-bound machine and agent-assisted records | Actual author package disposition and independent expert review remain unperformed |
 | Manuscript | Draft and bounded claims are separately bound | Current manuscript alignment and final submission package are not accepted |
-| Distribution | Public source, no actual stable R1 release or DOI | Actual license/creator decision, citation validation, final package/readiness, acceptance and publication/readback |
+| Distribution | Public source, no actual stable R1 release or DOI | License/creator decisions are recorded; final exact package/readiness, acceptance and publication/readback have separate evidence gates |
 
 Successful syntax, counts, connectivity, checksums, CI or packaging do not establish
 semantic validity, clinical applicability, empirical adequacy or human approval.

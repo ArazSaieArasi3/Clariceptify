@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the exact Clariceptify version you use. This metadata describes
+  the candidate source snapshot 0.1.0-rc.1; a publication date is omitted until
+  actual publication. No DOI has been issued. See LICENSE for scoped reuse.
+type: dataset
+title: 'Clariceptify: An Ontology for Representing Conceptualization Knowledge'
+authors:
+  - given-names: Araz
+    family-names: Saie Arasi
+  - given-names: Hassan
+    family-names: Haghighi
+  - given-names: Hossein
+    family-names: azgomi
+version: 0.1.0-rc.1
+url: https://github.com/ArazSaieArasi3/Clariceptify
+repository-code: https://github.com/ArazSaieArasi3/Clariceptify
+license:
+  - CC-BY-4.0
+  - MIT
+abstract: >-
+  A candidate conceptual-model and requirements baseline for representing
+  purposeful conceptualization knowledge. Imported conceptual commitments,
+  source qualifications and candidate requirements remain explicit. Structural
+  checks and illustrative fixtures do not establish independent semantic or
+  expert acceptance. Research material and software have separate license scopes.

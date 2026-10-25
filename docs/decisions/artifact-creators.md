@@ -1,27 +1,27 @@
-# Proposed package creator and citation record
+# Package creator and citation decision
 
-Status: **PENDING OWNER DECISION**. Issues #53 and #54 remain open. Manuscript
-authorship and affiliation do not by themselves establish package contributor
-roles, order or permission to grant rights.
+Status: **OWNER-DECLARED CREATORS AND ORDER**, 2026-10-25; issues #53/#54.
+Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8. The owner's continuation
+instruction approved the license split and explicitly supplied these creators:
 
-| Proposed order | Proposed creator | Role proposed for confirmation |
+| Order | Exact supplied name | Declared package role |
 | --- | --- | --- |
-| 1 | Araz Saie Arasi | Conceptual modeling, research and artifact curation |
-| 2 | Hossein Azgomi | Scientific supervision and conceptual review |
+| 1 | Araz Saie Arasi | Package creator |
+| 2 | Hassan Haghighi | Package creator |
+| 3 | Hossein azgomi | Package creator |
 
-These names/order follow the known manuscript context, and are a proposal for
-the package. The table does not assert that unperformed review has occurred.
-Agent-assisted transformations, validation runs and generated views are
-engineering actions, not additional human authorship or independent expert review.
+This actual package decision replaces the two-name proposal in PR #220.
+Names, capitalization and order follow the owner. No ORCID, affiliation or
+unperformed scientific review is inferred. Detailed contribution-taxonomy roles
+are **NOT_ASSESSED**: the earlier proposed modeling/supervision/review roles are
+not silently assigned, including to the newly supplied creator. Manuscript
+authorship remains a separate decision. Agent-assisted engineering is not an
+additional human creator or independent expert review.
 
-Proposed citation title: **Clariceptify: An Ontology for Representing
-Conceptualization Knowledge**. Repository:
-https://github.com/ArazSaieArasi3/Clariceptify.
-
-The target stable package is v0.1.0. Its actual publication date is not assigned;
-no DOI is issued or invented. Do not replace the published engineering prerelease
-identity with this future version. After the creator/license decision, prepare
-and validate the single root CITATION.cff against the actual package/version.
-
-Decision requested: confirm the package creators, order, actual roles and the
-licensing scope. Amend any proposed role that does not reflect work performed.
+Citation title: **Clariceptify: An Ontology for Representing Conceptualization
+Knowledge**. Repository: https://github.com/ArazSaieArasi3/Clariceptify.
+The single [root CITATION.cff](../../CITATION.cff) describes source candidate
+version `0.1.0-rc.1`; it does not assert an already published GitHub Release.
+The optional publication date is omitted until actual publication; no DOI is
+assigned. This instruction settles creators and licensing, and does not record
+acceptance of an as-yet unbuilt final package under #62.

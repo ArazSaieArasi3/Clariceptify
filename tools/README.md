@@ -85,3 +85,13 @@ unregistered archive paths and unauthorized preparation-to-RC promotion. A techn
 PASS leaves publication BLOCKED until actual license/creator/citation and final
 package/readiness/acceptance decisions are recorded. Re-register the manifest after
 any input changes; do not update hashes merely to hide a failing content check.
+
+## Candidate publication metadata and package
+
+`python tools/check_publication_metadata.py` validates the official CFF 1.2.0
+schema and owner-declared creators, version and scoped licenses. It is the
+eleventh public integrity layer. The release builder accepts either explicit
+preparation snapshots or a strictly registered `rc_candidate` bound to an exact
+source commit. Readback checks all eleven layers on fresh extraction. See the
+[candidate station](../releases/v0.1.0-rc.1/README.md). Existing historical
+preparation evidence remains input-bound and does not grant RC readiness.
