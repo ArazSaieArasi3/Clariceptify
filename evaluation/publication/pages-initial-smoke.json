@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-25",
+  "status": "PASS",
+  "source_commit": "afeb66dc97fb3f1a9aa2b0df7ccba1ba729950fc",
+  "integrity_run": 40205261721,
+  "deployment_run": 40205305592,
+  "public_url": "https://arazsaiearasi3.github.io/Clariceptify/current/index.html",
+  "observations": [
+    "Homepage and twelve controlled guide routes visible with core/documentation/source identities.",
+    "Search initially rendered 137 concepts; CLR-C0026 returned exactly one result and opened its definition and qualified source-support page.",
+    "Requirements table rendered all 30 principal FR/CQ rows, with not_executed/not_computed dispositions.",
+    "Complete SVG loaded successfully at natural size 13299 by 5225 pixels; same-source PDF and A3 atlas links visible.",
+    "Homepage inspected visually; no overlap or missing assets at the observed desktop viewport."
+  ],
+  "limits": [
+    "Initial current-route smoke test; frozen route is registered separately and requires actual deployment readback.",
+    "Local build audits all reader paths/anchors; this browser sample does not exercise every viewport, external link or assistive technology.",
+    "No semantic, source-passage, global CQ or independent expert acceptance implied."
+  ]
+}

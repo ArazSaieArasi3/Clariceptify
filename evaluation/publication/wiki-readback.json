@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "status": "PUBLISHED_AND_READ_BACK",
+  "date": "2026-10-25",
+  "scientific_core": "v0.1.0",
+  "documentation_version": "v0.1.1",
+  "source_commit": "afeb66dc97fb3f1a9aa2b0df7ccba1ba729950fc",
+  "wiki_url": "https://github.com/ArazSaieArasi3/Clariceptify/wiki",
+  "method": "Published twelve generated guide pages and custom sidebar/footer through native GitHub Wiki UI. After each save, reopened the native editor and compared the complete textarea value with the controlled generated source. SHA-256 of the transferred source matched the exact local build for all fourteen files. Home, reader navigation, sidebar and footer were visible. No Wiki Git commit identity was retrieved.",
+  "files": [
+    {
+      "page": "Citation",
+      "sha256": "84cb716ec333822b269da9b03b7da408e15cd78dde30fba95a61a1777d9a3c95",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Conceptual-Model",
+      "sha256": "6ee2b855b7d4502842a1efc6db3cb2eaa8be8b01dead3f160495ae6cc66cd8e1",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Home",
+      "sha256": "2cfbd85a2e22e50017d22208c843dfcdd60a27cec0ef412425c5f7ddb7bec9cb",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Limitations",
+      "sha256": "8f6c36f55c50e03d6b70ab479324d8ded2d2c6b5b9d6a5fcc8706931761f7eae",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Overview",
+      "sha256": "458512f8092ea64ad5d0bbc33dff81af9c156effef9f9d16ebfe072853f9f1cc",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Quality",
+      "sha256": "2756c58dd15b502e1101e3c717aed582308e5d4e4e1200abc69982f74098db81",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Reproduce",
+      "sha256": "8a2d5c1565700000dcdd02b504bf421c76cddb35d1b3c9992b5d2263a29ebd22",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Requirements-and-CQs",
+      "sha256": "58206411d64a7639b38d20b2deeae7f7a6908764ecde8309be825bc5482a74cf",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Research-Roadmap",
+      "sha256": "5cb5a1432e0a9b47cc86b019ac2f3698644181bc56b20b56b22df19f64386d17",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Sources",
+      "sha256": "5a5307c3af1c7ba12cce2b54cfa8a8a03dab2e73a89a1adf4e6d3f5ccf0f5035",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Versions",
+      "sha256": "10538734ca0d6a17ad869c28c1e7166bd0ce82c18c20d84ae75e68b32cce26cd",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "Visualization",
+      "sha256": "22661bc8d6186ed6622217f89fc8a54c72a62e3558fb33ec6c6d202b4f5787aa",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "_Footer",
+      "sha256": "e1b890be37a0871c1661b4e9751982480069334ff852cbfacd6a640eb253c5c7",
+      "exact_native_editor_readback": true
+    },
+    {
+      "page": "_Sidebar",
+      "sha256": "305f420f749cfc21924383c363334dbb2f3804360e7115cc32432d4abf88e503",
+      "exact_native_editor_readback": true
+    }
+  ],
+  "claim_boundary": "Actual native UI publication/readback of controlled explanatory projection only; not independent scientific approval."
+}

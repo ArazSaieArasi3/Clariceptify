@@ -2,6 +2,9 @@ schema_version: '1.0'
 core_version: v0.1.0
 current_documentation_version: v0.1.1
 current_route: current
-frozen: []
-freeze_state: Registration follows merged source and actual CI; no issued documentation
-  release is claimed by this initial config.
+frozen:
+- version: v0.1.1
+  source_commit: afeb66dc97fb3f1a9aa2b0df7ccba1ba729950fc
+freeze_state: Exact documentation source registered after merged-source Public integrity
+  run 40205261721 and actual Pages deployment 40205305592 succeeded. This is a
+  documentation snapshot over unchanged scientific core v0.1.0, not a new model release.
