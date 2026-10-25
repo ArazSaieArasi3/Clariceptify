@@ -1,0 +1,214 @@
+schema_version: '1.0'
+task: R2-SYN-002.a
+status: operational_profile_adopted_under_owner_instruction
+baseline_commit: 105049edd7c6caf7e3ab7eca1b43788065a7c739
+scientific_core: v0.1.0
+target_assessed_release: v0.2.0
+oqf_reference:
+  repository: ArazSaieArasi3/ontology-quality-framework
+  commit: 90d7dfba29a6a09b1a210ae1b9ba65ebdd893c30
+  path: architecture/W3-VVEAA-LIFECYCLE.md
+  source_state: ANALYSIS_COMPLETE / PROPOSED_FOR_G2A; local operational adoption is not an upstream ontology/gate
+    approval
+nonlinear_contract: Verification and Validation produce distinct evidence; Evaluation governs evidence
+  processes; Assessment produces contextual judgments; gate decisions are separate; Assurance is maintained
+  claim support, not the fifth score in a linear chain.
+states:
+- PASS
+- FAIL
+- BLOCKED
+- NOT_ASSESSED
+- NOT_APPLICABLE
+roles:
+  engineer: Maintain artifact and produce reproducible evidence
+  reviewer: Provide actual scoped domain/semantic evidence; independence recorded
+  assessor: Judge criterion applicability and evidence
+  gate_owner: Make actual release-scope disposition
+  assurance_maintainer: Maintain bounded claim/argument/evidence/assumptions and invalidation triggers
+layers:
+- id: Verification
+  purpose: Check conformance to explicit construction, serialization, identity and structural rules.
+  method: Run input-bound schemas/IDs/links/projections, diagram correspondence, selected fixture controls
+    and package replay; repeat only invalidated checks.
+  evidence:
+  - evaluation/release/published-readback.yaml
+  - evaluation/diagrams/paint-order-reassessment.yaml
+  - evaluation/conceptualization-fixtures.json
+  indicators:
+  - name: Frozen public integrity checks
+    denominator: 11
+    population: v0.1.0 declared extracted check layers
+    baseline_state: 11 executed PASS; scope-specific only
+  - name: Diagram element populations
+    denominator:
+      concepts: 137
+      association_connectors: 174
+      generalization_connectors: 122
+    population: diagram-r1.2 and model input-r1-rev1
+    baseline_state: element parity and scoped paint-order evidence; not native-tool semantic validity
+  r2_tasks:
+  - Relevant-input regression and targeted negative/mutation controls
+  - Check model/source/requirements/representation deltas against their actual refs
+  - If a formal slice is introduced, its actual profile/reasoner/constraint checks remain distinct and
+    versioned
+  issues:
+  - 36
+  - 37
+  - 38
+  - 45
+  - 49
+  - 129
+  claim_boundary: Rule and structure conformance only; not intended-domain adequacy.
+- id: Validation
+  purpose: Examine adequacy for the declared conceptualization use and intended distinctions.
+  method: Review explicit CQ acceptance/adverse cases, domain purpose and coverage, source passages/typing,
+    representative cases and actual author/expert judgments.
+  evidence: []
+  indicators:
+  - name: Principal CQ contracts assessed
+    denominator: 30
+    population: CQ-01 through CQ-30
+    baseline_state: globally not_executed; imported witnesses not_assessed
+  - name: Subject domains assessed
+    denominator: 20
+    population: Twenty subject domains; Foundations is separately recorded
+    baseline_state: not_assessed
+  - name: Pending source-support concepts
+    denominator: 10
+    population: Imported P qualification, distinct from full typing adequacy of all 137 concepts
+    baseline_state: pending; no fresh source-passage approval
+  - name: Independent expert review
+    denominator: null
+    population: Explicitly scoped assigned review(s), expertise and independence recorded when actually
+      assigned
+    baseline_state: not_assessed; no invented reviewer/sample size
+  r2_tasks:
+  - Assess three ten-CQ batches with positive/adverse examples and observed dispositions
+  - Assess twenty domains in their declared purpose/context
+  - Inspect ten Pending concepts in two five-concept batches; maintain uncertainty and typing distinction
+  - Record actual human review, agreement/disagreement and adjudication; package owner acceptance is not
+    expert validation
+  issues:
+  - 92
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 132
+  claim_boundary: Context-relative adequacy evidence; no universal philosophical validity or empirical
+    effectiveness.
+- id: Evaluation
+  purpose: Govern acquisition and interpretation of qualitative/quantitative evidence for the chosen quality
+    profile.
+  method: Use the frozen review protocol, typed evidence register, stated populations and reproducible
+    observations; orchestrate relevant V/V, source/corpus and task methods.
+  evidence:
+  - evidence/related-work/review-protocol.yaml
+  - docs/research/claim-register.yaml
+  indicators:
+  - name: Recovered related-work seeds
+    denominator: 19
+    population: Labels, not confirmed distinct ontologies
+    baseline_state: registered only; full texts/artifacts unreviewed
+  - name: Concept support population
+    denominator: 137
+    population: 44 D / 83 B / 10 P imported screening qualifications
+    baseline_state: recorded, not freshly verified support
+  - name: Scientific assessment coverage
+    denominator: Declared obligations for each actual run
+    population: Profile criteria, not a pooled score across heterogeneous populations
+    baseline_state: missing observations remain null / NOT_ASSESSED
+  r2_tasks:
+  - 'Collect closest-work evidence under #67, including paper and artifact/version distinctions'
+  - Report domain/CQ/source coverage with fixed denominators, missingness and conflicting observations
+  - Keep synthetic demonstrations, empirical tasks, agent assistance and expert evidence separate
+  issues:
+  - 67
+  - 68
+  - 86
+  - 87
+  - 91
+  - 126
+  - 128
+  claim_boundary: Observations and comparison within the frozen corpus/profile; no novelty by keyword
+    absence or zero results.
+- id: Assessment
+  purpose: Judge evidence and unresolved findings against explicit criteria and a release claim.
+  method: Record criterion-level result, applicability, uncertainty, critical findings, explicit exceptions
+    and rationale; keep judgment distinct from a gate decision.
+  evidence:
+  - evaluation/review-state.yaml
+  - evaluation/release/scope-disposition.yaml
+  indicators:
+  - name: R2 criterion dispositions
+    denominator: All applicable profile obligations declared for the exact R2 candidate
+    population: PASS / FAIL / BLOCKED / NOT_ASSESSED / NOT_APPLICABLE with reasons
+    baseline_state: R2 not_assessed
+  - name: Actual R1 owner package-scope decision
+    denominator: 1
+    population: Exact v0.1.0-rc.1 disposition, preserved scientific payload in stable v0.1.0
+    baseline_state: ACCEPTED; not independent scientific review
+  r2_tasks:
+  - Adjudicate domain/CQ/source/model findings and publish evidence-based proposed corrections
+  - Retain every release-scope blocker regardless of favorable metrics
+  - Record actual R2 author/expert decisions and exact-package disposition; gate owner separately decides
+    publication
+  issues:
+  - 127
+  - 128
+  - 129
+  - 132
+  - 133
+  - 134
+  claim_boundary: A contextual judgment and rationale; a numerical score is not truth or automatic release
+    approval.
+- id: Assurance
+  purpose: Maintain justified confidence in a bounded claim using argument, evidence, assumptions and
+    counterevidence.
+  method: Build a version-bound claim-support case; link evidence applicability, assumptions, unresolved
+    findings, limits, owner and reassessment triggers.
+  evidence:
+  - evaluation/assurance/r1-package-case.yaml
+  indicators:
+  - name: Bounded cases with complete claim/argument/evidence/assumption/scope/trigger fields
+    denominator: Explicit claims adopted for the current assurance case
+    population: No aggregate confidence or certification score
+    baseline_state: Engineering package identity case supported; semantic assurance not_assessed
+  r2_tasks:
+  - Maintain an R2 case for each intended release claim using actual evidence
+  - Expose unsupported claims and counterevidence rather than turning missing data into PASS
+  - Invalidate affected support after semantic/input/tool/profile/use changes and record reassessment
+  issues:
+  - 127
+  - 128
+  - 133
+  - 134
+  claim_boundary: Bounded and rebuttable claim support; operational QA, author approval and certification
+    are distinct.
+decision_rules:
+- No average conceals a critical blocker or missing human review.
+- A structural PASS does not promote scientific validity, source support or CQ satisfaction.
+- An author package-scope decision does not become independent expert review.
+- A criterion may be NOT_APPLICABLE only with an explicit scope rationale.
+- Every observed result binds exact inputs, method, tool/config/runtime where relevant, actual execution
+  and limitations.
+- Unperformed tasks remain NOT_ASSESSED; blocked prerequisites remain BLOCKED.
+reassessment_triggers:
+- Semantic/model change
+- Source or requirements/CQ change
+- Rendering/representation change affecting a claim
+- Tool/rule/profile/threshold/population change
+- Intended use change
+- New counterevidence/finding
+- Exception expiry or changed owner decision

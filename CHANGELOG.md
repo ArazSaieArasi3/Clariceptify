@@ -1,5 +1,12 @@
 # Changelog
 
+## Post R1 documentation and evidence planning - 2026-10-25
+
+- Prioritize conceptual Wiki/Pages over unchanged core v0.1.0, using one curated twelve-page guide, complete generated lookup/search and explicit current/frozen source identities. Formal WIDOCO/WebVOWL remain separate.
+- Freeze the R2 critical-review protocol, an OQF-informed operational VVEAA profile and an evidence-bound initial baseline report without promoting unperformed reviews.
+- Register intermediate documentation, manuscript, comparison, adequacy and evaluation checkpoints through stable v0.2.0. Final scientific/manuscript gates remain evidence-dependent.
+
+
 ## v0.1.0 - 2026-10-25
 
 - Publish the actual owner-accepted documented R1 baseline: source 4b587ec12060d1ecd1b6a5bdbf8804dd44356766, freeze/tag def69ba04b472834bd1d37e567f77288128e6b90. All 233 protected scientific members match the accepted RC.

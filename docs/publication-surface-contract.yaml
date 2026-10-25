@@ -1,0 +1,39 @@
+schema_version: '1.0'
+task: DOC-001
+status: adopted_under_owner_instruction
+baseline_commit: 105049edd7c6caf7e3ab7eca1b43788065a7c739
+scientific_core: v0.1.0
+documentation_version: v0.1.1
+curated_source: docs/guide/*.md
+registry_authorities:
+- model/*.yaml
+- requirements/*.yaml
+- evidence/*.yaml
+- traceability/*.yaml
+surfaces:
+  wiki:
+    source: docs/guide
+    projection: Generated wiki-source/ inside the exact documentation build artifact
+    role: Short orientation, methods, scope and links to exact detailed references; not an independent
+      editing authority.
+    publication: 'Actual Wiki UI publication/readback required for #173.'
+  pages:
+    role: Complete conceptual reference and controlled guide, CQ contracts, source/quality/diagram/reproduction/citation
+      navigation.
+    current_route: current/
+    frozen_route: releases/v0.1.1/
+    frozen_rule: Freeze route uses its registered immutable Git source commit; later main deployments
+      must rebuild from that same ref.
+  widoco:
+    state: deferred
+    requires: 'Actual declared OWL formal slice; #174.'
+  webvowl:
+    state: deferred
+    requires: 'Actual supported OWL projection and semantics-loss review; #176.'
+versioning: Scientific core v0.1.0, documentation v0.1.1 and manuscript artifact revision are separate.
+  A route or folder is not publication.
+publication_receipt: evaluation/publication/
+privacy: Public original research/metadata only. No private raw inputs or third-party full texts.
+nonclaims:
+- No OWL or native OntoUML validity is created by HTML/Wiki publication.
+- No new source passage, semantic, CQ, independent expert or manuscript acceptance is inferred.
