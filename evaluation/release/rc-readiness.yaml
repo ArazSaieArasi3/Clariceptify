@@ -1,55 +1,138 @@
 task: R1-032.a
-assessment_kind: preliminary_not_final_RC_gate
-status: BLOCKED
+assessment_kind: exact_candidate_RC_readiness_not_stable_acceptance
+status: PASS_FOR_RC
 target_station: v0.1.0-rc.1
+source_commit: 4780cba43a5aab8f9867073a1e89de824d421d28
+source_manifest_sha256: 48c4dc97578233d3a7b124e17e0f14db4dbe1db432a60ff4a9becedc0b0e3a83
+archive_sha256: b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
+review_type: machine_and_agent_assisted
+rc_blockers: []
+dimensions:
+  technical_integrity:
+    result: PASS
+    evidence:
+    - evaluation/release/rc-build.yaml
+    - evaluation/release/readback.yaml
+    facts: 361 registered source members; 364 archive members; two byte-identical builds; eleven fresh
+      extracted checks; eight boundary tests; successful exact source main CI.
+  semantic_coherence:
+    result: PASS_WITH_DECLARED_LIMITATIONS
+    scope: No new semantic claims or edits; consistency of the declared R1 baseline and its projections.
+      Not full ontological adequacy or native-tool validation.
+    unchanged_protected_files: 43
+    compared_to: d5672a1625193dd62107e089f984178f0c51b6c8
+    protected_member_git_blobs:
+      docs/research/claim-register.yaml: 341d9825b62387a1eb58299b6a98b65a8f37a5b7
+      evidence/README.md: 69bd792944fb95bba345b676951ddfc08151c4b9
+      evidence/bibliography.md: f1583789d99ce3ac6970dedc29ae434758a23d73
+      evidence/concept-support.yaml: 770a42bcda676c6159dcb1daad09e995e4a1c17d
+      evidence/related-work/README.md: 046ab59b4d8d75ef37dc442c7d57370b9c249268
+      evidence/related-work/candidate-register.yaml: 8bb2ce84cbc3fbd4fd785594751a6925b6be59b3
+      evidence/source-register.yaml: 6f4f1725a9d55e47190a2fc15fa38d2cc21d5e92
+      model/README.md: 540bc728b4a936ca1410f169a3ecdb98181c80df
+      model/concepts.yaml: fc20560310a4a63621f97cfec1232a398adc6510
+      model/constraints.yaml: bb5c10ff0aac4d6f6ad25f2dba4150e6cd9baa03
+      model/diagrams/README.md: fbff7dd3a28188e273bfe9f1a5836f96aeaef3bb
+      model/diagrams/approval-state.yaml: e44410835be8288efe639939111d63e4a227c86c
+      model/diagrams/generated/atlas.pdf: 32ef8df49561d815dd6100427877bd971d12ef96
+      model/diagrams/generated/full.pdf: a3680d89631c70af35d9e12ffd5f28e950ad096c
+      model/diagrams/generated/full.svg: 0be308eb0af69267d6f2c25db6d990fb20d5ce84
+      model/diagrams/source-manifest.yaml: 6e17828e6d0987af83b217866f8352057150cf0b
+      model/domains.yaml: fd588d3040606456be05af44bb637e6accd593b5
+      model/generalizations.yaml: a1d9503917d6cc8f72fc44605ce09675f3761d3d
+      model/relations.yaml: e4d18e66cd7d0318c5318878989fee9198da2613
+      model/schema/concept.schema.json: 5334c28f61a66a302d89c78f75cfad76fa50c707
+      model/schema/constraint.schema.json: 0576e4626acdf175da0f2d66c9c6590b1583f98b
+      model/schema/domain.schema.json: 4460d0b36b14b6c5e6e2149a93ee551b7dd1a039
+      model/schema/generalization.schema.json: 1b6c68a339f95f4bae332d773d196f0ef9d74398
+      model/schema/relation.schema.json: d16d98d4ebad790c07fc362d103989bcdb2682ef
+      requirements/README.md: b334ff6caf09501f8305ec156b0b854995b8cf01
+      requirements/competency-questions.yaml: 9e549f2b54f3727c68995043b5249870411b95b1
+      requirements/functional.yaml: ac92c19a722c3887dac3f5faa8284696d4dc936b
+      requirements/future.yaml: b72a9b55b4ed02d498f6088a21840016708613d1
+      requirements/quality.yaml: c524fba5685e7eb8385fce86578d0ae107f57c56
+      requirements/schema/cq.schema.json: 78c6189fcc54735166596bd4f9a148a5a143025c
+      requirements/schema/need.schema.json: 0f287a82309805d19fb63eb7dc9e78915144bed1
+      requirements/scope-and-scenarios.yaml: 92cd689eba3f308dd29a582491a99c12bbc0becd
+      traceability/README.md: d4f16bc3f1f858e119b3383ae65e3a253ec8f327
+      traceability/artifacts.yaml: 8feee2e3c6a7f1dc97cd916adba6af2c8be686f3
+      traceability/link-types.yaml: f9f0a2f5f308070fc02fc4371f2e89232ba4a9fd
+      traceability/links.yaml: 6e49c131e8ad26644cdbd98e132a10deb4d0064e
+      traceability/migration/entity-ledger.yaml: 44b149f5c3966a7614f289a5ed727b8338d20f78
+      traceability/migration/input-integrity.yaml: e385e4ef4e6606fe31e9f3dabb824098977f72b1
+      traceability/migration/parity-report.yaml: 8417c9d50ba6f0f4b5b6f8064097a4d1efc70a68
+      traceability/migration/source-manifest.yaml: 4ba2c7681ec34f48880b6fd18335b0a7699eb554
+      traceability/requirements-model.yaml: 23ebdbcda8cd4263c93b4b230cd82bcb9bf0a0ce
+      traceability/schema/artifact-register.schema.json: af26676d5f482cbf9a89bfb33b17d943ca7060a5
+      traceability/schema/trace-edge.schema.json: 507859132e80cdc1c64c3a77e4578eb3fad564dd
+    evidence:
+    - docs/decisions/r1-scope.md
+    - docs/research/claim-register.yaml
+    - evaluation/diagrams/paint-order-reassessment.yaml
+    - evaluation/conceptualization-fixtures.json
+    disposition: Candidate commitments, pending source passage/typing checks and unexecuted global CQs
+      are preserved. CLR-VIS-001 is resolved for diagram-r1.2; historical negative evidence is retained.
+  narrative_and_claims:
+    result: PASS_WITH_DECLARED_LIMITATIONS
+    evidence:
+    - README.md
+    - docs/reading-guide.md
+    - docs/known-limitations.md
+    - docs/review/r1-attention-queue.md
+    review: Agent read the scope, bounded claims, reader path, limitations and release wording. Counts
+      describe selected input; examples are synthetic; machine checks are not semantic/expert acceptance.
+      No stable release, DOI, full formalization or independent validation is claimed.
+  reader_path:
+    result: PASS
+    archive_local_markdown_path_links: 1878
+    broken_path_links: 0
+    required_public_targets:
+    - model/README.md
+    - requirements/README.md
+    - model/diagrams/README.md
+    - model/diagrams/generated/full.pdf
+    - model/diagrams/generated/atlas.pdf
+    - docs/reference/README.md
+    - docs/reference/sources.md
+    - evaluation/review-state.yaml
+    - CITATION.cff
+    - LICENSE
+    boundary: Path existence and declared public repository navigation; not a complete remote URL/anchor
+      or human usability study.
+  publication_alignment:
+    result: PASS_FOR_PRERELEASE_ONLY
+    licensing: Actual owner-approved scoped CC-BY-4.0 research / MIT code
+    creators:
+    - Araz Saie Arasi
+    - Hassan Haghighi
+    - Hossein azgomi
+    citation: Official CFF 1.2.0 schema validation; source candidate version; optional publication date
+      omitted; DOI unissued
+    evidence:
+    - evaluation/release/publication-metadata.json
+    - docs/decisions/release-license.md
+    - docs/decisions/artifact-creators.md
+    tag_contract: The RC tag identifies the freeze/publication commit; source_commit identifies the registered
+      payload source. The exact manifest is supplied by the freeze commit and embedded byte-for-byte.
+retained_nonblockers:
+- work: Independent expert and scoped semantic/source adequacy review
+  state: NOT_ASSESSED; deferred R2, not represented as complete
+- work: Global CQ execution, full constraint satisfaction and formal implementation
+  state: NOT_EXECUTED/absent; formal slice deferred R3
+- work: Detailed contribution-taxonomy roles
+  state: NOT_ASSESSED; generic owner-declared package creator role only
+- work: Historical preparation-only commands in tools/README.md
+  state: Retained preparation-mode context; current candidate instructions are releases/v0.1.0-rc.1/README.md
+actual_owner_acceptance: NOT_ASSESSED
 issued_rc_release: false
 published_stable_release: false
-actual_owner_acceptance: NOT_ASSESSED
-technical_preparation:
-  guide: docs/reading-guide.md
-  limitations: docs/known-limitations.md
-  manifest: releases/v0.1.0-rc.1/manifest.yaml
-  builder: tools/build_release.py
-  readback: tools/readback_release.py
-  registered_source_members: 350
-  archive_members: 353
-  repeated_builds: byte_identical
-  extracted_checks:
-    check_repository_language: PASS
-    check_schemas: PASS
-    check_model_structure: PASS
-    check_requirements: PASS
-    check_source_support: PASS
-    check_traceability: PASS
-    check_bootstrap: PASS
-    check_reference_views: PASS
-    check_conceptualization_fixtures: PASS
-    check_review_state: PASS
-  negative_tests: 5
-blocking_decisions:
-- issue: 52
-  status: PENDING_ACTUAL_OWNER_DECISION
-  material: docs/decisions/release-license.md
-- issue: 53
-  status: PENDING_ACTUAL_OWNER_DECISION
-  material: docs/decisions/artifact-creators.md
-- issue: 54
-  status: NOT_PERFORMED
-  reason: Root citation needs actual creator/license metadata and version/date qualification.
-remaining_sequence:
-- 'Finalize #55/#56 after citation metadata is available.'
-- 'Register and test the final exact package under #57-#59; current preparation bytes
-  are not silently promoted.'
-- 'Run the final #60 readiness gate and publish #61 RC only when its requirements
-  pass.'
-- 'Record #62 exact-package disposition, then #63/#64 stable publication and public
-  readback.'
+next_steps:
+- 'Publish the exact candidate as an immutable prerelease under #61.'
+- 'Obtain actual #62 owner disposition linked to this exact candidate; license/creator approval is not
+  package acceptance.'
+- 'Only after acceptance, perform stable publication #63 and public readback #64.'
 evidence_sha256:
-  evaluation/release/readback.yaml: dc942a9c96705a915a26d8af50955073dfcf9fca1988f643628be97dbb21c8a6
-  evaluation/release/preparation-build.yaml: 7bd47783918ecff5fde2a4011559fafc2f01e1e05d16901597451bf93894b234
-  releases/v0.1.0-rc.1/manifest.yaml: 51fada40e0f35b86a1c4036e95eb427485d3a9b015c26b6e447d20cb79bd4c17
-closure_policy: No issue is closed solely because its draft/preparation artifact exists;
-  acceptance conditions and pending dependencies remain visible.
-authorization_interpretation: The latest owner message is treated as continuation
-  authorization; no clear license/creator confirmation is inferred from its ambiguous
-  wording.
+  evaluation/release/rc-build.yaml: cc12791abc4bb43eeb1a30310afa8a18bd529e504aa57ddebf933809f548c884
+  evaluation/release/readback.yaml: 357e181803a83488decbf32f077d826bd85e59a864a308f867526c9c595302cc
+  evaluation/release/publication-metadata.json: 955beebaea2b9c23ef7141978f957738b1b29314ab0c0f0e21a7fa3f7cdc082b
+  releases/v0.1.0-rc.1/manifest.yaml: 48c4dc97578233d3a7b124e17e0f14db4dbe1db432a60ff4a9becedc0b0e3a83
