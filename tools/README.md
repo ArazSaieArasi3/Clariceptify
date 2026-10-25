@@ -33,3 +33,9 @@ For authorized input reconstruction, `import_requirement_witnesses.py ORSD.docx`
 ## Public integrity gates
 
 `check_schemas.py` validates model and need/CQ record contracts plus stable ID uniqueness. `check_model_structure.py` checks primary domains, both endpoint families and specialization cycles; connectivity is descriptive. `check_traceability.py` freshly runs artifact, generated-link, witness and claim checks, rejecting missing input fingerprints and stale/unsafe bindings. These commands need no private inputs and do not establish semantic adequacy or satisfaction. Reports under evaluation/ record the scoped initial runs; CI must evaluate current bytes rather than inherit those PASS values.
+
+## CI evidence
+
+`python tools/run_integrity.py --output ../clariceptify-integrity` runs the seven public gate layers and writes reports outside the evaluated tree. It records actual Git commit/tree, every tracked input digest, all validator digests, tool versions, event/run identifiers and per-layer results. A dirty local tree is explicitly labelled and never presented as a clean commit. No stored PASS is inherited.
+
+The single primary `ci.yml` workflow uses read-only repository permissions, declared public path triggers, cancellation of superseded development runs and a retained evidence artifact. It does not run formal reasoners, access private inputs, commit results or publish releases. The separately requested immutable release publishers keep their own non-cancelling publication gates.
