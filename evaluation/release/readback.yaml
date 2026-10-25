@@ -1,14 +1,14 @@
 status: PASS
-stage: preparation_only
-publication_status: BLOCKED
-archive_sha256: 8522381f99210d0b812b9cfac3c1219b2c7d5624d559eda861c8853ba17fa209
-source_manifest_sha256: 51fada40e0f35b86a1c4036e95eb427485d3a9b015c26b6e447d20cb79bd4c17
-registered_source_members: 350
-archive_members: 353
+stage: rc_candidate
+publication_status: NOT_ASSERTED_BY_READBACK
+archive_sha256: b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
+source_manifest_sha256: 48c4dc97578233d3a7b124e17e0f14db4dbe1db432a60ff4a9becedc0b0e3a83
+registered_source_members: 361
+archive_members: 364
 checks:
   check_repository_language:
     status: PASS
-    result_sha256: 7c1a27c13a9a8d19f267e72efa7bfd8e80c49d03fbad5fb1e6a75e22f1093659
+    result_sha256: 825e77c0fa8fe1c66731b7059ebf250c0863276f019bd87cd31baa9d6f0a9bb7
   check_schemas:
     status: PASS
     result_sha256: a9934259cdf38c4f9fdb855d9adfd8303d403196a47bf11b2dd49bd4847bf29c
@@ -26,7 +26,7 @@ checks:
     result_sha256: 5d21e829ad0bb5b6338c1b3ab422a2b58c807e0c1ddf64be9f32fc0ac5a975e1
   check_bootstrap:
     status: PASS
-    result_sha256: 52d0b7782f191c3984c06dde0b63a3c41f6adae359025dce6008f40b41298356
+    result_sha256: 1fdc0d49a459d878f89131b7ed93dd2a4bc19768b4fa4b3c22f0a139be5a9b41
   check_reference_views:
     status: PASS
     result_sha256: 75d0875b193375d17a1b3a02d64329c11e4fa0783922c54c7f520bdb674cb27b
@@ -35,17 +35,23 @@ checks:
     result_sha256: edb6e09d32b44a761d31d1211b34e549b3e58aed61010eb41548ee9ac6b64102
   check_review_state:
     status: PASS
-    result_sha256: 393a3213190a26f9a3aaace9d391230a562d4762d718a1c428f54c05a4421b5b
-environment: Fresh temporary extraction and empty HOME; no Git/private raw inputs/network;
-  declared dependencies already installed in current Python runtime
+    result_sha256: 5745d5ea5c98af9bf3fa962bc23297224aa2e645fded216cff15ea777e65e714
+  check_publication_metadata:
+    status: PASS
+    result_sha256: 955beebaea2b9c23ef7141978f957738b1b29314ab0c0f0e21a7fa3f7cdc082b
+environment: Fresh temporary extraction and empty HOME; no Git/private raw inputs/network; declared dependencies
+  already installed in current Python runtime
 runtime:
   python: 3.12.14
   PyYAML: 6.0.2
   jsonschema: 4.26.0
 limitations:
-- Not an issued RC/stable release, grant of rights or actual owner acceptance.
-- Fresh file tree is not a newly provisioned operating system or independent expert
-  validation.
-record_kind: preliminary_preparation_readback_not_final_rc_acceptance
-tasks_prepared:
-- R1-031.c
+- Archive verification does not establish actual publication or final owner acceptance.
+- Fresh file tree is not a newly provisioned operating system or independent expert validation.
+task: R1-031.c
+source_commit: 4780cba43a5aab8f9867073a1e89de824d421d28
+reader_path:
+  local_markdown_links: 1878
+  broken_path_links: []
+  anchor_and_remote_link_checks: Not comprehensively executed; required targets use public repository
+    paths.
