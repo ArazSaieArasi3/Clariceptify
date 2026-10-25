@@ -37,6 +37,7 @@ class PreparationTests(unittest.TestCase):
                'docs/decisions/release-license.md','docs/decisions/artifact-creators.md','tools/vendor/cff-1.2.0.schema.json']
         for name in paths:
             target=self.root/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source/name,target)
+        citation=self.root/'CITATION.cff';record=yaml.safe_load(citation.read_text());record['version']='0.1.0-rc.1';citation.write_text(yaml.safe_dump(record))
         members=[]
         for name in paths:
             data=(self.root/name).read_bytes()
@@ -61,5 +62,35 @@ class PreparationTests(unittest.TestCase):
         self.record['member_path_digest_sha256']=digest(json.dumps({r['path']:r['sha256'] for r in self.record['members']},sort_keys=True,separators=(',',':')).encode())
         self.manifest.write_text(yaml.safe_dump(self.record))
         with self.assertRaisesRegex(ValueError,'creator names/order'):build(self.root,self.manifest,self.out)
+
+    def stable_record(self):
+        from check_stable_promotion import scientific_path,RC_ARCHIVE_SHA
+        self.rc_record();source=Path(__file__).resolve().parents[1]
+        accepted=yaml.safe_load((source/'releases/v0.1.0-rc.1/manifest.yaml').read_text())
+        extra=[r['path'] for r in accepted['members'] if scientific_path(r['path'])]
+        extra+=['releases/v0.1.0-rc.1/manifest.yaml','evaluation/release/scope-disposition.yaml','docs/decisions/r1-scope-acceptance.md','CITATION.cff']
+        for name in extra:
+            target=self.root/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source/name,target)
+        self.record.update(stage='accepted_stable',target_station='v0.1.0',accepted_candidate={'status':'ACCEPTED','archive_sha256':RC_ARCHIVE_SHA})
+        self.refresh_stable_members()
+
+    def refresh_stable_members(self):
+        members=[]
+        for path in sorted(p for p in self.root.rglob('*') if p.is_file()):
+            data=path.read_bytes();members.append({'path':path.relative_to(self.root).as_posix(),'bytes':len(data),'sha256':digest(data),'git_blob_sha':hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest(),'origin':'exact_source_commit_member','license':'CC-BY-4.0'})
+        self.record['members']=members;self.record['member_path_digest_sha256']=digest(json.dumps({r['path']:r['sha256'] for r in members},sort_keys=True,separators=(',',':')).encode())
+        self.manifest.write_text(yaml.safe_dump(self.record))
+
+    def test_accepted_stable_roundtrip(self):
+        self.stable_record();build(self.root,self.manifest,self.out)
+        self.assertEqual(verify(self.out/'clariceptify-v0.1.0.zip',self.manifest,False)['stage'],'accepted_stable')
+
+    def test_stable_without_acceptance_rejected(self):
+        self.stable_record();self.record['accepted_candidate']['status']='NOT_ASSESSED';self.manifest.write_text(yaml.safe_dump(self.record))
+        with self.assertRaisesRegex(ValueError,'exact accepted candidate'):build(self.root,self.manifest,self.out)
+
+    def test_rehashed_scientific_change_rejected(self):
+        self.stable_record();path=self.root/'model/concepts.yaml';path.write_bytes(path.read_bytes()+b'\n');self.refresh_stable_members()
+        with self.assertRaisesRegex(ValueError,'Accepted scientific bytes changed'):build(self.root,self.manifest,self.out)
 
 if __name__=='__main__':unittest.main()

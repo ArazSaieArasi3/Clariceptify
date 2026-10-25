@@ -1,5 +1,11 @@
 # Changelog
 
+## Stable promotion preparation - 2026-10-25
+
+- Record actual owner acceptance of exact v0.1.0-rc.1 and its declared limitations under #62. Independent expert and semantic/CQ/source assessment states are unchanged.
+- Advance source citation metadata to 0.1.0, with actual publication date supplied by the GitHub Release record; preserve the accepted scientific payload and immutable RC assets.
+
+
 ## v0.1.0-rc.1 - 2026-10-25
 
 - Publish the exact documented conceptual-model candidate from source 4780cba43a5aab8f9867073a1e89de824d421d28 at freeze/tag bcce59992606a22ddb82a49c243aeda6f7f54963.
