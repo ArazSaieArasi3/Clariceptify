@@ -2,7 +2,7 @@
 
 Status: synchronized candidate reader path after the actual license/creator decision.
 Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8; model input-r1-rev1;
-diagram diagram-r1.2; current published candidate v0.1.0-rc.1.
+diagram diagram-r1.2; current published stable baseline v0.1.0.
 
 | Reader goal | Start here | Interpretation |
 | --- | --- | --- |
@@ -33,3 +33,7 @@ license and creator metadata. No stable version is claimed by this guide.
 
 The [actual RC publication and readback](../evaluation/release/rc-publication.yaml)
 and [acceptance packet](review/rc1-acceptance.md) now identify the concrete candidate.
+
+The [actual stable publication/readback](../evaluation/release/published-readback.yaml)
+and [stable station](../releases/v0.1.0/README.md) supersede the RC as the current
+release. Historical candidate records retain their exact source identities.

@@ -72,7 +72,7 @@ metadata decisions. Neither script can manufacture human or scientific approval.
 
 ## Exact release engineering
 
-The current manifest describes the issued RC; use the frozen payload source
+The RC and stable manifests describe their respective issued packages; use the frozen payload source
 commit and its trusted freeze manifest as described in the
 [candidate station](../releases/v0.1.0-rc.1/README.md). Later changes on main
 correctly fail the old exact manifest if passed as the source root.
@@ -107,3 +107,7 @@ the eleventh integrity layer for stable metadata. The stable manifest uses
 `accepted_stable` and its own envelope path. Rebuild instructions are in
 [the stable station](../releases/v0.1.0/README.md). Actual issuance/readback remains
 a separate action; builders do not grant approval or publish.
+
+Current stable publication/readback is recorded in evaluation/release/published-readback.yaml.
+Use the stable station instructions for v0.1.0; historical RC commands retain their
+RC filename and trusted manifest. Eleven boundary cases now cover all three stages.

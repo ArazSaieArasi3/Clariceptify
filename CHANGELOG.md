@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.0 - 2026-10-25
+
+- Publish the actual owner-accepted documented R1 baseline: source 4b587ec12060d1ecd1b6a5bdbf8804dd44356766, freeze/tag def69ba04b472834bd1d37e567f77288128e6b90. All 233 protected scientific members match the accepted RC.
+- Verify all ten issued assets, nine external checksum entries and eleven extracted checks. ZIP SHA256 b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f matches both local builds. Actual publication workflow #40201029903 passed; retained readback evidence was downloaded and verified.
+- Complete #62/#63/#64 within the declared R1 scope. Independent semantic/expert assessment, source/CQ/formal/manuscript work and DOI retain their stated future boundaries. Prior tags/assets are unchanged.
+
+
 ## Stable promotion preparation - 2026-10-25
 
 - Record actual owner acceptance of exact v0.1.0-rc.1 and its declared limitations under #62. Independent expert and semantic/CQ/source assessment states are unchanged.

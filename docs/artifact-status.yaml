@@ -1,4 +1,4 @@
-station: R1 exact scope accepted; stable publication/readback in progress
+station: R1 stable v0.1.0 published and publicly read back; declared R1 scope complete
 contracts:
   scope: implemented
   authority: implemented
@@ -15,9 +15,10 @@ artifacts:
   formal_ontology: absent
   relational_projection: absent
   independent_review: not_assessed
-  stable_semantic_release: absent
+  stable_semantic_release: v0.1.0 documented conceptual baseline; independent semantic/expert acceptance
+    not claimed
   doi: unassigned
-  engineering_package_release: v0.1.0-rc.1 (actual immutable prerelease; seven public assets and eleven
+  engineering_package_release: v0.1.0 (actual stable release; ten assets, nine checksum entries and eleven
     extracted checks verified)
   artifact_identity_register: implemented_storage_snapshot
   typed_link_contracts: implemented_initial_schema
@@ -32,5 +33,6 @@ artifacts:
   relation_constraint_csv_exports: generated_lossless_round_trip_verified
   selected_negative_fixture: executed_one_subject_union_clause_only
   review_state_and_queue: Actual owner scope acceptance recorded; independent expert review not_assessed
-  release_preparation: exact 361-source-member committed RC built and publicly verified
+  release_preparation: exact accepted stable source built and publicly verified
   final_rc_publication: published_and_read_back; evaluation/release/rc-publication.yaml
+  stable_publication: published_and_read_back; evaluation/release/published-readback.yaml

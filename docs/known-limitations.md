@@ -15,7 +15,7 @@ diagram diagram-r1.2. Applies to the documented candidate and its unchanged mode
 | Traceability | Scoped structural/source and candidate witness projections | Full research-asset/version coverage is not established |
 | Review | Input-bound machine and agent-assisted records | Actual owner package scope is accepted; independent expert review remains unperformed |
 | Manuscript | Draft and bounded claims are separately bound | Current manuscript alignment and final submission package are not accepted |
-| Distribution | Public RC and actual owner acceptance; stable publication is a separate recorded action; no DOI | License/creator and package-scope decisions are recorded; stable publication/readback require actual evidence; DOI remains separate |
+| Distribution | Stable v0.1.0 published and read back after actual owner acceptance; no DOI | Actual publication/readback evidence is recorded; archive deposit and DOI remain separate |
 
 Successful syntax, counts, connectivity, checksums, CI or packaging do not establish
 semantic validity, clinical applicability, empirical adequacy or human approval.

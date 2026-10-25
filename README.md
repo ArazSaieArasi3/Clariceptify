@@ -2,9 +2,21 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 accepted baseline, stable publication in progress** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed and the scoped rendering defect in #217 corrected; owner-declared licensing/creators and validated citation are recorded; the exact candidate has passed readiness and public readback. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 stable baseline v0.1.0** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed and the scoped rendering defect in #217 corrected; owner-declared licensing/creators and validated citation are recorded; the exact candidate has passed readiness and public readback. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
+
+Latest stable release: [v0.1.0](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0).
+The actual owner accepted the documented baseline scope and retained limitations.
+All 233 protected scientific members match the accepted RC. The stable ZIP has
+375 registered source members and 378 archive members; all ten issued assets,
+nine checksum entries and eleven extracted checks were verified. See
+[actual stable readback](evaluation/release/published-readback.yaml),
+[the frozen manifest](releases/v0.1.0/manifest.yaml), and
+[stable rebuild instructions](releases/v0.1.0/README.md).
+The accepted model remains input-r1-rev1 and diagram diagram-r1.2; scientific
+adequacy/source/CQ/expert qualifications remain explicit. All R1 work units are
+completed within that declared scope; later research work is tracked separately.
 
 Latest prerelease: [v0.1.0-rc.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1).
 The exact candidate has 361 registered source members and 364 archive members;
@@ -13,7 +25,7 @@ and all eleven public checks passed on actual downloaded archive extraction.
 See [publication evidence](evaluation/release/rc-publication.yaml) and the
 [focused acceptance packet](docs/review/rc1-acceptance.md). The owner accepted the exact candidate with its recorded limitations on 2026-10-25
 ([decision](docs/decisions/r1-scope-acceptance.md)). Stable publication/readback
-under #63/#64 are now in progress.
+under #63/#64 are complete; see the actual stable readback record above.
 
 Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.3). It freezes the scoped traceability/integrity station at f4a3e233fc283c065a2c48297657878a4625d780: 118 source files evaluated by actual main CI, with 1,815 project links, candidate witnesses, bounded claims and public checks. All five public assets and 122 archive members were read back. See the [release index](releases/release-index.yaml), [changelog](CHANGELOG.md) and [public readback](evaluation/traceability-preview-publication.json). Package version does not establish model semantic acceptance.
 
@@ -79,4 +91,4 @@ Follow the [reading guide](docs/reading-guide.md), inspect the
 The [exact manifest](releases/v0.1.0-rc.1/manifest.yaml), readiness and actual
 publication evidence identify the issued RC. Rebuilding requires the frozen
 source commit plus its trusted manifest; later main-branch documentation edits
-do not replace the published package. Stable source metadata now names 0.1.0; actual issuance is established by the GitHub Release and its publication/readback record.
+do not replace the published package. Root CITATION.cff and the issued stable package name 0.1.0. The GitHub Release and its publication/readback record establish actual issuance.

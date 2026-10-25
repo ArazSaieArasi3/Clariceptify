@@ -33,13 +33,14 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 accepted baseline promotion
-  current_workstream: Actual exact RC acceptance recorded; stable publication and public readback in progress
+  current_wave: R1 stable baseline complete
+  current_workstream: v0.1.0 actually published and read back; retained scientific limitations stay explicit
   next_gate:
-    name: 'Stable publication and public readback #63/#64'
-    criteria: Frozen stable source, explicit scientific-byte parity to accepted RC, actual assets/checksums/navigation
-      readback.
-  next_action: Publish v0.1.0 from the dispositioned scientific baseline and verify actual public bytes.
+    name: R2 critical-review protocol and source/CQ adequacy; archival deposit is separate
+    criteria: Future scoped tasks require their own actual source/evidence; stable publication does not
+      complete deferred research.
+  next_action: 'Next proposed scientific unit is #67 review-protocol freeze; limitations/remediation advice
+    is not implemented as an R1 semantic change.'
 progress:
   problem_framing: done
   evidence_base: planned
@@ -66,6 +67,7 @@ verification:
   - evaluation/traceability-preview-publication.json
   - releases/v0.1.0-alpha.3/ci-readback.json
   - evaluation/release/rc-publication.yaml
+  - evaluation/release/published-readback.yaml
   coherence_debt:
   - Canonical handover pending destination parity
   - Source/specification approval wording requires reconciliation

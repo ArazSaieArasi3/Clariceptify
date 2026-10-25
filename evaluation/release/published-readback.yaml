@@ -1,0 +1,200 @@
+task: R1-034.b
+status: PASS
+release_url: https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0
+release_id: 423444464
+tag: v0.1.0
+prerelease: false
+draft: false
+published_at: '2026-10-25T14:11:32Z'
+source_commit: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
+freeze_commit: def69ba04b472834bd1d37e567f77288128e6b90
+tag_commit: def69ba04b472834bd1d37e567f77288128e6b90
+archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+actual_owner_acceptance:
+  status: ACCEPTED
+  record: docs/decisions/r1-scope-acceptance.md
+  accepted_candidate: v0.1.0-rc.1
+  accepted_archive_sha256: b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
+scientific_members_preserved: 233
+source_members: 375
+archive_members: 378
+public_assets:
+- id: 675214845
+  name: CITATION.cff
+  bytes: 1031
+  sha256: 3045e53441d61b458328d82dbf7767ab27258b1743fb30edd5093f13f2eaaafb
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/CITATION.cff
+- id: 675214866
+  name: clariceptify-v0.1.0.zip
+  bytes: 6929105
+  sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/clariceptify-v0.1.0.zip
+- id: 675214846
+  name: PACKAGE-MANIFEST.json
+  bytes: 117337
+  sha256: 00d6b2fc3ecec1dc0d13c15022505abe34fc247594c4c8411bb8c9921aec8c02
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/PACKAGE-MANIFEST.json
+- id: 675214847
+  name: PROMOTION.json
+  bytes: 26428
+  sha256: aebf962e1d37ac6730890f3e4060dd254cc7baffa2bb0e4289b47e4466a1bcdf
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/PROMOTION.json
+- id: 675214848
+  name: READBACK.json
+  bytes: 2513
+  sha256: ad38a559844eb6828dc3aae9c0013f5ade6e4f98af8f22e7abb0f28d1e510208
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/READBACK.json
+- id: 675214849
+  name: SCOPE-DISPOSITION.yaml
+  bytes: 1811
+  sha256: fd34000b9641eb947e5feb4cc94da0e8db6cb65540beab40d9a8a21690ba2746
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/SCOPE-DISPOSITION.yaml
+- id: 675214862
+  name: SHA256SUMS
+  bytes: 763
+  sha256: a37f2e7681a01262061916af8d0c23d02755b112d64fab9d13ad231f636a3cdc
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/SHA256SUMS
+- id: 675214865
+  name: SOURCE-CI.json
+  bytes: 14514
+  sha256: 5c488c8944eb2a15a664cf8ee1916f4a5a879f1658a1f0bb22b1307e2d105f5a
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/SOURCE-CI.json
+- id: 675214863
+  name: SOURCE-MANIFEST.yaml
+  bytes: 93981
+  sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/SOURCE-MANIFEST.yaml
+- id: 675214864
+  name: STABLE-READINESS.yaml
+  bytes: 6167
+  sha256: cc3dc36b37083a26c59bfb6eab048d3183d1d316f159078e578430a4aff3cd7f
+  url: https://github.com/ArazSaieArasi3/Clariceptify/releases/download/v0.1.0/STABLE-READINESS.yaml
+publication_workflow:
+  id: 40201029903
+  url: https://github.com/ArazSaieArasi3/Clariceptify/actions/runs/40201029903
+  job_id: 121192049000
+  conclusion: success
+  steps:
+  - name: Set up job
+    conclusion: success
+  - name: Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+    conclusion: success
+  - name: Select exact reviewed source
+    conclusion: success
+  - name: Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+    conclusion: success
+  - name: Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+    conclusion: success
+  - name: Run python -m pip install -r source/requirements-dev.txt
+    conclusion: success
+  - name: Retrieve actual source CI evidence
+    conclusion: success
+  - name: Rebuild and read back the exact accepted baseline
+    conclusion: success
+  - name: Publish an immutable stable baseline from this freeze record
+    conclusion: success
+  - name: Download and verify the actual public assets
+    conclusion: success
+  - name: Preserve publication readback
+    conclusion: success
+  - name: Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+    conclusion: success
+  - name: Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+    conclusion: success
+  - name: Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+    conclusion: success
+  - name: Complete job
+    conclusion: success
+actual_public_readback:
+  status: PASS
+  stage: accepted_stable
+  publication_status: NOT_ASSERTED_BY_READBACK
+  archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+  source_manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+  registered_source_members: 375
+  archive_members: 378
+  checks:
+    check_repository_language:
+      status: PASS
+      result_sha256: ab97c3cd990d2e17a713009762663af2d73802bc774a1f1d4f5372ba4ec08c38
+    check_schemas:
+      status: PASS
+      result_sha256: a9934259cdf38c4f9fdb855d9adfd8303d403196a47bf11b2dd49bd4847bf29c
+    check_model_structure:
+      status: PASS
+      result_sha256: 7f8b886eb39ecd08fb26b3c3073c14b4caf2109652de421bc064c15d7c6be85f
+    check_requirements:
+      status: PASS
+      result_sha256: 30b3c8354dd1d82ad29214560a7d6edff7b49121d2e00101458c73bb45091651
+    check_source_support:
+      status: PASS
+      result_sha256: 2f860e5eb3dcbdeeb2a48800e07ecdddfc40a09b2937255b396683fc3c1ff13d
+    check_traceability:
+      status: PASS
+      result_sha256: 5d21e829ad0bb5b6338c1b3ab422a2b58c807e0c1ddf64be9f32fc0ac5a975e1
+    check_bootstrap:
+      status: PASS
+      result_sha256: 94625ec3246a8db2d6ac5479467a8851557150642c9538a0dd567d6788e55431
+    check_reference_views:
+      status: PASS
+      result_sha256: 75d0875b193375d17a1b3a02d64329c11e4fa0783922c54c7f520bdb674cb27b
+    check_conceptualization_fixtures:
+      status: PASS
+      result_sha256: edb6e09d32b44a761d31d1211b34e549b3e58aed61010eb41548ee9ac6b64102
+    check_review_state:
+      status: PASS
+      result_sha256: 77d5e6b39afa1d7887193032d0cd24b7300397ffeabc96ddfb8e0d48d230a68e
+    check_publication_metadata:
+      status: PASS
+      result_sha256: 8a773372364ca596b23e46ff0a83790a5012eebc99057a3a5e6a8984b5e53be2
+  environment: Fresh temporary extraction and empty HOME; no Git/private raw inputs/network; declared
+    dependencies already installed in current Python runtime
+  runtime:
+    python: 3.12.15
+    PyYAML: 6.0.2
+    jsonschema: 4.26.0
+  limitations:
+  - Archive verification does not establish actual publication or final owner acceptance.
+  - Fresh file tree is not a newly provisioned operating system or independent expert validation.
+retained_artifact:
+  id: 12601544320
+  name: stable-publication-40201029903
+  sha256: 5da353ecd8621f2b3b79719e597d80c7eed1438dc8b68d1a4c8040ba63a18fe5
+  downloaded_and_verified: true
+  records: 2
+reconciliation:
+  public_assets: 10
+  external_checksum_entries: 9
+  all_checksum_entries_pass: true
+  archive_matches_two_reviewed_builds: true
+  source_manifest_matches_freeze: true
+  citation_asset_matches_registered_source: true
+  citation_version: 0.1.0
+  citation_publication_date: Optional date omitted; actual publication date is this release's published_at.
+  package_navigation:
+    local_markdown_path_links: 1902
+    broken_path_links: 0
+    method: All paths checked in the local reviewed archive; the actual downloaded public ZIP matches
+      that exact archive SHA256 and member digest set.
+    required_targets:
+    - README.md
+    - CITATION.cff
+    - LICENSE
+    - docs/reading-guide.md
+    - docs/known-limitations.md
+    - docs/decisions/r1-scope-acceptance.md
+    - evaluation/release/scope-disposition.yaml
+    - model/diagrams/generated/full.svg
+    - model/diagrams/generated/full.pdf
+    - model/diagrams/generated/atlas.pdf
+  readme_state: Frozen source README explicitly records the pre-publication source stage and stable source
+    version 0.1.0; actual issuance is established by the Release record. Current main README is synchronized
+    after publication.
+  prior_release_assets_unchanged: true
+limitations:
+- Stable means the actual owner-accepted documented conceptual baseline; independent expert and semantic/CQ/source
+  adequacy assessments retain their stated limits.
+- Python 3.12.14 locally and 3.12.15 in CI produced the identical archive; per-run report serialization
+  hashes are not asserted identical.
+- No archive deposit, DOI, complete formalization, empirical case study or new R2/R3 assessment is claimed.

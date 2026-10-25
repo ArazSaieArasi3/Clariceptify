@@ -1,8 +1,8 @@
 {
   "schema_version": "0.1.0",
   "asset_id": "CLR-PACKAGE",
-  "current_engineering_package": "v0.1.0-rc.1",
-  "current_semantic_release": null,
+  "current_engineering_package": "v0.1.0",
+  "current_semantic_release": "v0.1.0",
   "policy": "An append-only engineering release history; package versions are distinct from model semantic acceptance. Published tags/assets are immutable.",
   "records": [
     {
@@ -153,6 +153,60 @@
           "sha256": "48c4dc97578233d3a7b124e17e0f14db4dbe1db432a60ff4a9becedc0b0e3a83"
         }
       ]
+    },
+    {
+      "tag": "v0.1.0",
+      "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0",
+      "source_commit": "4b587ec12060d1ecd1b6a5bdbf8804dd44356766",
+      "freeze_commit": "def69ba04b472834bd1d37e567f77288128e6b90",
+      "prerelease": false,
+      "published_at": "2026-10-25T14:11:32Z",
+      "scope": "Owner-accepted documented conceptual-model and requirements baseline; 233 scientific members preserved from accepted RC",
+      "packaging_note": "New immutable stable release; no earlier asset/tag replaced",
+      "publication_evidence": "evaluation/release/published-readback.yaml",
+      "assets": [
+        {
+          "name": "CITATION.cff",
+          "sha256": "3045e53441d61b458328d82dbf7767ab27258b1743fb30edd5093f13f2eaaafb"
+        },
+        {
+          "name": "clariceptify-v0.1.0.zip",
+          "sha256": "b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f"
+        },
+        {
+          "name": "PACKAGE-MANIFEST.json",
+          "sha256": "00d6b2fc3ecec1dc0d13c15022505abe34fc247594c4c8411bb8c9921aec8c02"
+        },
+        {
+          "name": "PROMOTION.json",
+          "sha256": "aebf962e1d37ac6730890f3e4060dd254cc7baffa2bb0e4289b47e4466a1bcdf"
+        },
+        {
+          "name": "READBACK.json",
+          "sha256": "ad38a559844eb6828dc3aae9c0013f5ade6e4f98af8f22e7abb0f28d1e510208"
+        },
+        {
+          "name": "SCOPE-DISPOSITION.yaml",
+          "sha256": "fd34000b9641eb947e5feb4cc94da0e8db6cb65540beab40d9a8a21690ba2746"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "a37f2e7681a01262061916af8d0c23d02755b112d64fab9d13ad231f636a3cdc"
+        },
+        {
+          "name": "SOURCE-CI.json",
+          "sha256": "5c488c8944eb2a15a664cf8ee1916f4a5a879f1658a1f0bb22b1307e2d105f5a"
+        },
+        {
+          "name": "SOURCE-MANIFEST.yaml",
+          "sha256": "ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a"
+        },
+        {
+          "name": "STABLE-READINESS.yaml",
+          "sha256": "cc3dc36b37083a26c59bfb6eab048d3183d1d316f159078e578430a4aff3cd7f"
+        }
+      ]
     }
-  ]
+  ],
+  "semantic_acceptance_boundary": "Actual owner acceptance of documented baseline scope; independent expert, source/CQ and complete semantic assessment are not claimed."
 }

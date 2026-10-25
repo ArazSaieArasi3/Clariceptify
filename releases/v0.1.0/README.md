@@ -9,8 +9,11 @@ publication/status documentation and reproducibility engineering have an explici
 version delta; no semantic, source, CQ or independent-expert state is promoted.
 The RC and earlier releases remain immutable.
 
-A directory is not publication. The final manifest will bind one exact committed
-source snapshot; publication/readback evidence establishes actual issuance.
+Actual publication: [v0.1.0](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0), 2026-10-25.
+[Public readback evidence](../../evaluation/release/published-readback.yaml) verifies
+all ten assets, nine checksum entries and eleven extracted checks. The final
+manifest binds exact source commit 4b587ec12060d1ecd1b6a5bdbf8804dd44356766;
+freeze/tag commit is def69ba04b472834bd1d37e567f77288128e6b90.
 Its own bytes are supplied by the freeze commit as an envelope, outside its own
 source-member hash set. The Git tag points to that freeze/publication commit.
 The registered payload source commit is separate and explicit.
