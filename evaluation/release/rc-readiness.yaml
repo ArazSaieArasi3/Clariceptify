@@ -1,0 +1,55 @@
+task: R1-032.a
+assessment_kind: preliminary_not_final_RC_gate
+status: BLOCKED
+target_station: v0.1.0-rc.1
+issued_rc_release: false
+published_stable_release: false
+actual_owner_acceptance: NOT_ASSESSED
+technical_preparation:
+  guide: docs/reading-guide.md
+  limitations: docs/known-limitations.md
+  manifest: releases/v0.1.0-rc.1/manifest.yaml
+  builder: tools/build_release.py
+  readback: tools/readback_release.py
+  registered_source_members: 350
+  archive_members: 353
+  repeated_builds: byte_identical
+  extracted_checks:
+    check_repository_language: PASS
+    check_schemas: PASS
+    check_model_structure: PASS
+    check_requirements: PASS
+    check_source_support: PASS
+    check_traceability: PASS
+    check_bootstrap: PASS
+    check_reference_views: PASS
+    check_conceptualization_fixtures: PASS
+    check_review_state: PASS
+  negative_tests: 5
+blocking_decisions:
+- issue: 52
+  status: PENDING_ACTUAL_OWNER_DECISION
+  material: docs/decisions/release-license.md
+- issue: 53
+  status: PENDING_ACTUAL_OWNER_DECISION
+  material: docs/decisions/artifact-creators.md
+- issue: 54
+  status: NOT_PERFORMED
+  reason: Root citation needs actual creator/license metadata and version/date qualification.
+remaining_sequence:
+- 'Finalize #55/#56 after citation metadata is available.'
+- 'Register and test the final exact package under #57-#59; current preparation bytes
+  are not silently promoted.'
+- 'Run the final #60 readiness gate and publish #61 RC only when its requirements
+  pass.'
+- 'Record #62 exact-package disposition, then #63/#64 stable publication and public
+  readback.'
+evidence_sha256:
+  evaluation/release/readback.yaml: dc942a9c96705a915a26d8af50955073dfcf9fca1988f643628be97dbb21c8a6
+  evaluation/release/preparation-build.yaml: 7bd47783918ecff5fde2a4011559fafc2f01e1e05d16901597451bf93894b234
+  releases/v0.1.0-rc.1/manifest.yaml: 51fada40e0f35b86a1c4036e95eb427485d3a9b015c26b6e447d20cb79bd4c17
+closure_policy: No issue is closed solely because its draft/preparation artifact exists;
+  acceptance conditions and pending dependencies remain visible.
+authorization_interpretation: The latest owner message is treated as continuation
+  authorization; no clear license/creator confirmation is inferred from its ambiguous
+  wording.

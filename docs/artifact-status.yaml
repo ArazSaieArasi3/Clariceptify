@@ -1,4 +1,4 @@
-station: R1 post-alpha.3 preparation; diagram and remaining release gates next
+station: R1 technical package preparation; license/creator/citation and final release gates pending
 contracts:
   scope: implemented
   authority: implemented
@@ -32,3 +32,5 @@ artifacts:
   relation_constraint_csv_exports: generated_lossless_round_trip_verified
   selected_negative_fixture: executed_one_subject_union_clause_only
   review_state_and_queue: structured_with_actual_publication_decisions_pending
+  release_preparation: registered_working_snapshot_and_preparation_only_adapter
+  final_rc_publication: blocked_by_actual_license_creator_citation_decisions

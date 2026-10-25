@@ -1,0 +1,51 @@
+status: PASS
+stage: preparation_only
+publication_status: BLOCKED
+archive_sha256: 8522381f99210d0b812b9cfac3c1219b2c7d5624d559eda861c8853ba17fa209
+source_manifest_sha256: 51fada40e0f35b86a1c4036e95eb427485d3a9b015c26b6e447d20cb79bd4c17
+registered_source_members: 350
+archive_members: 353
+checks:
+  check_repository_language:
+    status: PASS
+    result_sha256: 7c1a27c13a9a8d19f267e72efa7bfd8e80c49d03fbad5fb1e6a75e22f1093659
+  check_schemas:
+    status: PASS
+    result_sha256: a9934259cdf38c4f9fdb855d9adfd8303d403196a47bf11b2dd49bd4847bf29c
+  check_model_structure:
+    status: PASS
+    result_sha256: 7f8b886eb39ecd08fb26b3c3073c14b4caf2109652de421bc064c15d7c6be85f
+  check_requirements:
+    status: PASS
+    result_sha256: 30b3c8354dd1d82ad29214560a7d6edff7b49121d2e00101458c73bb45091651
+  check_source_support:
+    status: PASS
+    result_sha256: 2f860e5eb3dcbdeeb2a48800e07ecdddfc40a09b2937255b396683fc3c1ff13d
+  check_traceability:
+    status: PASS
+    result_sha256: 5d21e829ad0bb5b6338c1b3ab422a2b58c807e0c1ddf64be9f32fc0ac5a975e1
+  check_bootstrap:
+    status: PASS
+    result_sha256: 52d0b7782f191c3984c06dde0b63a3c41f6adae359025dce6008f40b41298356
+  check_reference_views:
+    status: PASS
+    result_sha256: 75d0875b193375d17a1b3a02d64329c11e4fa0783922c54c7f520bdb674cb27b
+  check_conceptualization_fixtures:
+    status: PASS
+    result_sha256: edb6e09d32b44a761d31d1211b34e549b3e58aed61010eb41548ee9ac6b64102
+  check_review_state:
+    status: PASS
+    result_sha256: 393a3213190a26f9a3aaace9d391230a562d4762d718a1c428f54c05a4421b5b
+environment: Fresh temporary extraction and empty HOME; no Git/private raw inputs/network;
+  declared dependencies already installed in current Python runtime
+runtime:
+  python: 3.12.14
+  PyYAML: 6.0.2
+  jsonschema: 4.26.0
+limitations:
+- Not an issued RC/stable release, grant of rights or actual owner acceptance.
+- Fresh file tree is not a newly provisioned operating system or independent expert
+  validation.
+record_kind: preliminary_preparation_readback_not_final_rc_acceptance
+tasks_prepared:
+- R1-031.c

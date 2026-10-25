@@ -61,6 +61,8 @@ jobs:
         env:
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: python tools/run_integrity.py --output "$RUNNER_TEMP/clariceptify-integrity"
+      - name: Check preparation package boundaries
+        run: python tools/test_release_preparation.py
       - name: Preserve exact input and validator evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

@@ -34,13 +34,14 @@ methodology:
   - Scoped layered evaluation
 execution:
   current_wave: R1 post-alpha.3 preparation
-  current_workstream: Verified alpha.3 traceability/public-integrity package published
+  current_workstream: Diagram-r1.2, generated reference, fixture and review dossier
+    complete; technical release preparation
   next_gate:
-    name: Diagram source and approval-state reconciliation
-    criteria: identify actual editable source or record a bounded reconstruction path;
-      do not infer approval from graphic labels
-  next_action: "Recover/register diagram source (#41), resolve approval-state evidence\
-    \ (#42), then reconcile/render/check full and detail views (#43\u2013#45)."
+    name: Actual license/creator decisions and validated citation
+    criteria: 'record owner decision for #52/#53; validate #54; finalize #55-#60 against
+      the exact candidate package before RC publication'
+  next_action: Recover/register diagram source (#41), resolve approval-state evidence
+    (#42), then reconcile/render/check full and detail views (#43–#45).
 progress:
   problem_framing: done
   evidence_base: planned

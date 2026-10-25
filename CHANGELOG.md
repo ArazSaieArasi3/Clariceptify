@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased - first-release technical preparation
+
+- Prepare an explicit reading guide and versioned known-limitations view.
+- Register a working-snapshot manifest for deterministic preparation-only packaging and checksums.
+- Add trusted-manifest archive verification, safe extraction and ten fresh public checks.
+- Preserve actual license/creator/citation and RC publication gates; no open task is closed merely by preparing a draft.
+
+
 ## Unreleased - reference and review preparation
 
 - Generate 137 concept and 21 domain pages with qualified source references (#46).
