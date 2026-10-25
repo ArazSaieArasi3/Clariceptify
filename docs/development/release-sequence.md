@@ -32,3 +32,22 @@ instruction. #174/#176 retain their scope and remain open.
 
 Use [the machine-readable sequence](release-sequence.yaml) and the
 [VVEAA profile](../../evaluation/vveaa-profile.yaml) for exact gates.
+
+## Initial manuscript progress
+
+The owner-managed Word draft is now revision `0.1-r1-aligned.1`, bound by the
+[manuscript contract](../research/manuscript-contract.yaml). Its published R1
+references, creator identity, five VVEAA functions and actual evidence boundaries
+are reconciled. A source-derived 13-class/14-association figure replaces the blank
+figure page. All eight rendered pages were inspected. This is completed
+preparatory work for v0.1.2; no v0.1.2 GitHub Release or final PUB acceptance is
+claimed.
+
+| Priority | Next work | Completion evidence |
+| --- | --- | --- |
+| 1 | Verify current/frozen Pages and retain native Wiki receipts | Actual deployed bytes and reader QA; #173/#175. |
+| 2 | Review closest works and ontology files | Exact paper sections/axioms, version, access state and source-backed matrix; #68-#91/#126. |
+| 3 | Review narrow domains and Pending sources | Purpose-specific adequacy findings and exact supporting passages; #104/#106-#108/#112-#113. |
+| 4 | Assess all thirty principal CQ contracts in three batches | Answer fields, valid/adverse examples, witness and failure dispositions; #123-#125. |
+| 5 | Consolidate VVEAA judgments and necessary model changes | Criteria, observations, decisions, unresolved blockers and claim consequences; #128/#129/#132. |
+| 6 | Finalize the manuscript and exact R2 candidate | Actual comparison and evidence support final wording, figure, bibliography and package; #178-#186/#133. |

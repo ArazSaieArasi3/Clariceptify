@@ -1,0 +1,453 @@
+schema_version: '1.0'
+asset_id: CLR-MANUSCRIPT
+task: 'PUB-001 through PUB-008: preparatory R1 alignment, final gates remain open'
+decision_date: '2026-10-25'
+state: INITIAL_DRAFT_ALIGNED_WITH_DECLARED_LIMITS
+working_title: An Ontology for Representing Conceptualization Knowledge
+manuscript_revision: 0.1-r1-aligned.1
+creators:
+- Araz Saie Arasi
+- Hassan Haghighi
+- Hossein azgomi
+input:
+  source_id: SRC-ARTICLE
+  filename: Conceptualization_Manuscript_v0_1_IEEE.docx
+  recorded_revision: '0.1'
+  sha256: 7c573c2badc1ef0cf5a26115f382a185a9615c5f606e334dcbea61c9c15b6a67
+output:
+  filename: Conceptualization_Manuscript_v0_1_IEEE.docx
+  sha256: 530ab84cc2ff52075e19b8f1f22df45c352120daff9d72bd066759ad44476ac7
+  availability: Owner-managed manuscript updated in place; public repository records bindings and the original selected
+    figure, not raw article bytes.
+  publication_state: DRAFT_NOT_SUBMITTED
+  doi: null
+scientific_baseline:
+  release: v0.1.0
+  source_commit: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
+  tag_commit: def69ba04b472834bd1d37e567f77288128e6b90
+  model_revision: input-r1-rev1
+  complete_diagram_revision: diagram-r1.2
+asset_sha256:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  model/diagrams/generated/full.svg: a2cf0a5f663a5b5228d89e83aae4e4734b37679fc9f43853f3af707cc95cac76
+  model/diagrams/source-manifest.yaml: 39bce19865760f1e39b0c563e8d08e206f6e1398b739235596460ea7c2e53731
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  requirements/quality.yaml: dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc
+  requirements/future.yaml: bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e
+  requirements/scope-and-scenarios.yaml: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/related-work/candidate-register.yaml: 65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  traceability/requirements-model.yaml: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+  traceability/links.yaml: 6b745a46d858d709c759a0dbbb045ce45062c2a5706b48f827c715e562cf700f
+  docs/research/claim-register.yaml: f84ab2dcaeadbb033f11c0695d29d60507663e15a7016c37bccd467f13fd1aec
+  docs/research/figures/selected-r1.svg: 64033c79a1aec0c71aec525aafc53a580e888175d4a3ce310097bd741f678c55
+  docs/research/figures/selected-r1.json: d10368d36714475f32516218f37c8bf573ff5aec62ee55cd7899d32d740c0aa5
+  evaluation/model-structure-report.json: d01dfe4ade3d7fc2c7e89509a415a38f0d4ef1aaa48c514b507a778fa81a20a6
+  evaluation/requirement-witnesses.json: 1ece763bc0914ba0a499dbd80cfb4c463269aee0920c78bc495d05b270d0ad46
+  evaluation/source-support-integrity.json: 2f860e5eb3dcbdeeb2a48800e07ecdddfc40a09b2937255b396683fc3c1ff13d
+  evaluation/conceptualization-fixtures.json: 33c4c7906ef5de95c4a430e9ceaa5322c4bad30e98eaca1112859874b760bd96
+  evaluation/vveaa-profile.yaml: 6f5f13a3a19966a7545898d73ab95476c8d34389a3287dab7943459b9614f87d
+  evaluation/vveaa-report.yaml: cb6eab8e844b6d6e8c216cd8356e1fb89e44d8e578cd90e459e0d4687fd79603
+  evaluation/assurance/r1-package-case.yaml: ab4f5a9b7b468dcba8bb83874ac1338a74eb274e0155c68e703e65f797e143aa
+  evaluation/release/published-readback.yaml: 829078d37935331488ff1ab101d08d643c470fbe3f5559ab8fd6c8f779769c1d
+  evaluation/review-state.yaml: 071ba2a9706c9ad4a2a64a9ec124d2cb6b5a371eea9f18dcf7ebffea0317a311
+  CITATION.cff: 3045e53441d61b458328d82dbf7767ab27258b1743fb30edd5093f13f2eaaafb
+  LICENSE: 2a703d442920daf4b2ba3d2c05f822f777a53631463c105648abb5f0698bbfdb
+  docs/publication-surface-contract.yaml: 9cad7ed4763930cc80bf08ac26452c0965e1483a5ad552845ff124129f345052
+alignments:
+- asset: Ontology
+  manuscript_location: IV.A, Table I, IV.C-E
+  result: 137 concepts; 20 subject domains plus Foundations; 174 associations; 122 generalizations; 24 textual constraints.
+    No model bytes changed.
+  scope: Catalogue identity and scope only.
+- asset: Requirements and CQs
+  manuscript_location: II.E, V.B, Table III
+  result: 30 FR/CQ contracts, 10 quality requirements, eight future candidates; six illustrative CQ witnesses remain
+    candidates.
+  scope: No requirement satisfaction or global CQ execution inferred.
+- asset: Diagrams
+  manuscript_location: IV.B, Fig. 1
+  result: Thirteen distinct classes, fourteen selected associations, fifteen displayed boxes; exact source labels,
+    stereotypes, endpoints and multiplicities.
+  scope: All other elements/generalizations/constraints explicitly omitted; full diagram remains authoritative.
+- asset: Sources and Related Work
+  manuscript_location: II.B, III, references [6]-[7]
+  result: Published Clariceptify baseline replaces unpublished Conceptiom references; source qualifications and
+    non-exhaustive review retained.
+  scope: No full source-passage/bibliography audit or completed closest-work synthesis.
+- asset: VVEAA and actual evidence
+  manuscript_location: II.G, V, Table II, VI.D-E, VII
+  result: Five operational functions distinguished; exact engineering evidence, one subject-union fixture family,
+    illustrative case and unassessed R2 judgments separated.
+  scope: No semantic certification, participant effectiveness or independent expert acceptance.
+- asset: Citation, creators and version identities
+  manuscript_location: Author block, I.E, V.A, references [6]-[7]
+  result: Owner creator order/spelling preserved; scientific v0.1.0 separate from docs v0.1.1 and manuscript revision.
+  scope: No DOI or final novelty claim.
+cq_bindings:
+- requirement_id: FR-01
+  cq_id: CQ-01
+  candidate_concept_ids:
+  - CLR-C0026
+  - CLR-C0027
+  - CLR-C0004
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-02
+  cq_id: CQ-02
+  candidate_concept_ids:
+  - CLR-C0026
+  - CLR-C0083
+  - CLR-C0041
+  - CLR-C0112
+  - CLR-C0125
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-03
+  cq_id: CQ-03
+  candidate_concept_ids:
+  - CLR-C0061
+  - CLR-C0054
+  - CLR-C0129
+  - CLR-C0128
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-04
+  cq_id: CQ-04
+  candidate_concept_ids:
+  - CLR-C0093
+  - CLR-C0130
+  - CLR-C0131
+  - CLR-C0026
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-05
+  cq_id: CQ-05
+  candidate_concept_ids:
+  - CLR-C0015
+  - CLR-C0084
+  - CLR-C0092
+  - CLR-C0008
+  - CLR-C0009
+  - CLR-C0028
+  - CLR-C0043
+  - CLR-C0085
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-06
+  cq_id: CQ-06
+  candidate_concept_ids:
+  - CLR-C0127
+  - CLR-C0062
+  - CLR-C0109
+  - CLR-C0004
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-07
+  cq_id: CQ-07
+  candidate_concept_ids:
+  - CLR-C0018
+  - CLR-C0001
+  - CLR-C0017
+  - CLR-C0003
+  - CLR-C0002
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-08
+  cq_id: CQ-08
+  candidate_concept_ids:
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0125
+  - CLR-C0083
+  - CLR-C0041
+  - CLR-C0112
+  - CLR-C0123
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-09
+  cq_id: CQ-09
+  candidate_concept_ids:
+  - CLR-C0053
+  - CLR-C0060
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0099
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-10
+  cq_id: CQ-10
+  candidate_concept_ids:
+  - CLR-C0099
+  - CLR-C0096
+  - CLR-C0020
+  - CLR-C0031
+  - CLR-C0100
+  - CLR-C0022
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-11
+  cq_id: CQ-11
+  candidate_concept_ids:
+  - CLR-C0116
+  - CLR-C0115
+  - CLR-C0089
+  - CLR-C0088
+  - CLR-C0137
+  - CLR-C0069
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-12
+  cq_id: CQ-12
+  candidate_concept_ids:
+  - CLR-C0019
+  - CLR-C0022
+  - CLR-C0026
+  - CLR-C0130
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-13
+  cq_id: CQ-13
+  candidate_concept_ids:
+  - CLR-C0101
+  - CLR-C0049
+  - CLR-C0102
+  - CLR-C0090
+  - CLR-C0095
+  - CLR-C0091
+  - CLR-C0103
+  - CLR-C0132
+  - CLR-C0133
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-14
+  cq_id: CQ-14
+  candidate_concept_ids:
+  - CLR-C0066
+  - CLR-C0117
+  - CLR-C0047
+  - CLR-C0067
+  - CLR-C0118
+  - CLR-C0070
+  - CLR-C0033
+  - CLR-C0044
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-15
+  cq_id: CQ-15
+  candidate_concept_ids:
+  - CLR-C0120
+  - CLR-C0134
+  - CLR-C0032
+  - CLR-C0046
+  - CLR-C0056
+  - CLR-C0121
+  - CLR-C0081
+  - CLR-C0135
+  - CLR-C0036
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-16
+  cq_id: CQ-16
+  candidate_concept_ids:
+  - CLR-C0108
+  - CLR-C0105
+  - CLR-C0063
+  - CLR-C0062
+  - CLR-C0068
+  - CLR-C0126
+  - CLR-C0106
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-17
+  cq_id: CQ-17
+  candidate_concept_ids:
+  - CLR-C0073
+  - CLR-C0077
+  - CLR-C0024
+  - CLR-C0023
+  - CLR-C0076
+  - CLR-C0005
+  - CLR-C0011
+  - CLR-C0035
+  - CLR-C0050
+  - CLR-C0098
+  - CLR-C0111
+  - CLR-C0113
+  - CLR-C0038
+  - CLR-C0079
+  - CLR-C0087
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-18
+  cq_id: CQ-18
+  candidate_concept_ids:
+  - CLR-C0071
+  - CLR-C0072
+  - CLR-C0075
+  - CLR-C0080
+  - CLR-C0074
+  - CLR-C0125
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-19
+  cq_id: CQ-19
+  candidate_concept_ids:
+  - CLR-C0012
+  - CLR-C0014
+  - CLR-C0119
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0060
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-20
+  cq_id: CQ-20
+  candidate_concept_ids:
+  - CLR-C0052
+  - CLR-C0010
+  - CLR-C0030
+  - CLR-C0051
+  - CLR-C0050
+  - CLR-C0006
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-21
+  cq_id: CQ-21
+  candidate_concept_ids:
+  - CLR-C0086
+  - CLR-C0019
+  - CLR-C0022
+  - CLR-C0134
+  - CLR-C0062
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-22
+  cq_id: CQ-22
+  candidate_concept_ids:
+  - CLR-C0112
+  - CLR-C0013
+  - CLR-C0123
+  - CLR-C0083
+  - CLR-C0041
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-23
+  cq_id: CQ-23
+  candidate_concept_ids:
+  - CLR-C0034
+  - CLR-C0026
+  - CLR-C0018
+  - CLR-C0063
+  - CLR-C0127
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-24
+  cq_id: CQ-24
+  candidate_concept_ids:
+  - CLR-C0039
+  - CLR-C0136
+  - CLR-C0029
+  - CLR-C0016
+  - CLR-C0104
+  - CLR-C0045
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-25
+  cq_id: CQ-25
+  candidate_concept_ids:
+  - CLR-C0097
+  - CLR-C0040
+  - CLR-C0039
+  - CLR-C0114
+  - CLR-C0065
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-26
+  cq_id: CQ-26
+  candidate_concept_ids:
+  - CLR-C0021
+  - CLR-C0027
+  - CLR-C0026
+  - CLR-C0019
+  - CLR-C0054
+  - CLR-C0065
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-27
+  cq_id: CQ-27
+  candidate_concept_ids:
+  - CLR-C0042
+  - CLR-C0007
+  - CLR-C0110
+  - CLR-C0065
+  - CLR-C0040
+  - CLR-C0019
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-28
+  cq_id: CQ-28
+  candidate_concept_ids:
+  - CLR-C0048
+  - CLR-C0040
+  - CLR-C0026
+  - CLR-C0019
+  - CLR-C0021
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-29
+  cq_id: CQ-29
+  candidate_concept_ids:
+  - CLR-C0123
+  - CLR-C0124
+  - CLR-C0094
+  - CLR-C0064
+  - CLR-C0041
+  test_execution: not_executed
+  answer_status: not_computed
+- requirement_id: FR-30
+  cq_id: CQ-30
+  candidate_concept_ids:
+  - CLR-C0025
+  - CLR-C0026
+  - CLR-C0041
+  - CLR-C0019
+  - CLR-C0101
+  test_execution: not_executed
+  answer_status: not_computed
+absent_or_unassessed_assets:
+  formal_OWL_SHACL_FOL: Absent; R3 scope
+  relational_projection: Absent; deferred
+  independent_semantic_review: NOT_ASSESSED
+  joint_satisfiability: NOT_ASSESSED
+  global_CQ_execution: NOT_EXECUTED
+  R2_source_domain_adequacy: NOT_ASSESSED
+  DOI: UNASSIGNED
+final_gates:
+- issues:
+  - 126
+  - 178
+  - 180
+  required: Actual closest-work comparison, defensible gap and final contribution/Related Work.
+- issues:
+  - 179
+  - 182
+  required: Final method/assessment wording follows actual R2 evidence and judgments.
+- issues:
+  - 183
+  required: Complete primary-source bibliography and citation audit.
+- issues:
+  - 181
+  - 184
+  - 185
+  - 186
+  required: Final model/figure, venue layout, final eight-page QA and exact submission/release package bindings.
+historical_snapshots: The earlier manuscript_binding in claim-register.yaml and artifact register remains a frozen
+  historical observation; this is a new input-bound draft observation, not a rewrite of its prior evidence.

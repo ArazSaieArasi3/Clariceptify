@@ -1,15 +1,14 @@
 schema_version: '1.0'
 decision_date: '2026-10-25'
-authorization: Owner requested priority decisions, Wiki/Pages now, initial manuscript alignment and an
-  explicit VVEAA plan through R2.
+authorization: Owner requested priority decisions, Wiki/Pages now, initial manuscript alignment and an explicit
+  VVEAA plan through R2.
 baseline:
   release: v0.1.0
   source_commit: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
   tag_commit: def69ba04b472834bd1d37e567f77288128e6b90
   current_source_commit: 105049edd7c6caf7e3ab7eca1b43788065a7c739
-decision: Publish conceptual documentation now; do not make R1 documentation wait for a future OWL artifact.
-  Improve the first manuscript against existing evidence while reserving final comparative claims for
-  R2.
+decision: Publish conceptual documentation now; do not make R1 documentation wait for a future OWL artifact. Improve
+  the first manuscript against existing evidence while reserving final comparative claims for R2.
 stations:
 - version: v0.1.1
   name: Versioned conceptual documentation
@@ -21,11 +20,13 @@ stations:
   - 175
   gate: Actual public Pages and Wiki readback, exact controlled source, current/frozen identities, links/figures
     and limitations.
-  state: in_progress
+  state: published_and_verified_documentation_snapshot
+  progress_record: evaluation/publication/pages-readback.json
+  release_identity: Public frozen documentation route; not a newly issued GitHub ontology release.
 - version: v0.1.2
   name: Initial manuscript and artifact alignment
-  scope: Revise first manuscript wording, baseline references, VVEAA terminology and evidence boundaries;
-    exact manuscript/model/ORSD/CQ/diagram/claim mapping and visually inspected draft.
+  scope: Revise first manuscript wording, baseline references, VVEAA terminology and evidence boundaries; exact
+    manuscript/model/ORSD/CQ/diagram/claim mapping and visually inspected draft.
   issues:
   - 178
   - 179
@@ -35,13 +36,13 @@ stations:
   - 184
   - 185
   - 186
-  gate: Bounded draft alignment only; final title/contribution/Related Work and final submission tasks
-    remain open pending their actual R2 prerequisites.
-  state: planned
+  gate: Bounded draft alignment only; final title/contribution/Related Work and final submission tasks remain open
+    pending their actual R2 prerequisites.
+  state: initial_draft_aligned_final_gates_open
+  progress_record: docs/research/manuscript-contract.yaml
 - version: v0.2.0-alpha.1
   name: Closest-work comparison preview
-  scope: Protocol, selected primary papers and ontology-file inspections; source-backed comparison and
-    gap candidates.
+  scope: Protocol, selected primary papers and ontology-file inspections; source-backed comparison and gap candidates.
   issues:
   - 67
   - 68
@@ -74,8 +75,7 @@ stations:
   state: planned
 - version: v0.2.0-beta.1
   name: Evaluation and manuscript consolidation
-  scope: Complete planned domain/CQ/source review, explicit VVEAA evidence report, claim and manuscript
-    synchronization.
+  scope: Complete planned domain/CQ/source review, explicit VVEAA evidence report, claim and manuscript synchronization.
   issues:
   - 92
   - 111
@@ -89,8 +89,8 @@ stations:
   - 130
   - 131
   - 132
-  gate: All declared R2 evidence obligations accounted for; each missing assessment has a disposition
-    and scope consequence.
+  gate: All declared R2 evidence obligations accounted for; each missing assessment has a disposition and scope
+    consequence.
   state: planned
 - version: v0.2.0-rc.1
   name: Exact R2 candidate
@@ -101,16 +101,15 @@ stations:
   state: planned
 - version: v0.2.0
   name: Assessed conceptual baseline
-  scope: Publish R2 evidence-supported adequacy and corrections with final manuscript alignment and retained
-    limitations.
+  scope: Publish R2 evidence-supported adequacy and corrections with final manuscript alignment and retained limitations.
   issues:
   - 134
   gate: Actual accepted scope and public readback; independent review is claimed only if performed.
   state: planned
 preserved_boundaries:
 - Published v0.1.0 and its accepted scientific bytes are immutable.
-- 'WIDOCO #174 and WebVOWL #176 remain tied to an actual formal slice; the conceptual portal does not
-  impersonate OWL documentation.'
+- 'WIDOCO #174 and WebVOWL #176 remain tied to an actual formal slice; the conceptual portal does not impersonate
+  OWL documentation.'
 - Full OWL/SHACL/FOL remains R3; new scope/version decisions are explicit.
 - DOI/archive remains independent.
 - Manuscript revision identity is separate from ontology and documentation release identities.
@@ -121,5 +120,5 @@ dependency_amendment:
   new_dependencies:
   - 172
   - 173
-  reason: 'Explicit owner priority for current-version Wiki/Pages. The conceptual portal can be complete
-    from R1 registries; formal WIDOCO publication stays #174 and is not claimed complete.'
+  reason: 'Explicit owner priority for current-version Wiki/Pages. The conceptual portal can be complete from R1
+    registries; formal WIDOCO publication stays #174 and is not claimed complete.'

@@ -105,3 +105,5 @@ The [critical-review protocol](evidence/related-work/review-protocol.yaml),
 [VVEAA profile](evaluation/vveaa-profile.yaml) and [initial evidence report](evaluation/vveaa-report.yaml)
 make each function, population, method and missing evidence explicit. Initial
 manuscript alignment precedes final comparative/contribution and submission gates.
+
+The [initial manuscript alignment](docs/research/manuscript-contract.yaml) binds revision `0.1-r1-aligned.1` to the published R1 core and current evidence. The eight-page draft has a source-derived selected figure and explicit limits; final comparison, bibliography and R2 submission gates remain open.
