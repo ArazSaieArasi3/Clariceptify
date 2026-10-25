@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "asset_id": "CLR-PACKAGE",
-  "current_engineering_package": "v0.1.0-alpha.3",
+  "current_engineering_package": "v0.1.0-rc.1",
   "current_semantic_release": null,
   "policy": "An append-only engineering release history; package versions are distinct from model semantic acceptance. Published tags/assets are immutable.",
   "records": [
@@ -110,6 +110,47 @@
         {
           "name": "SHA256SUMS",
           "sha256": "f5be8b9721da551664c6051155bb29dc0dc25922deea0dadd3cb1e85b7dba506"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.0-rc.1",
+      "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1",
+      "source_commit": "4780cba43a5aab8f9867073a1e89de824d421d28",
+      "freeze_commit": "bcce59992606a22ddb82a49c243aeda6f7f54963",
+      "prerelease": true,
+      "published_at": "2026-10-25T13:54:44Z",
+      "scope": "Documented conceptual-model and requirements candidate, diagrams/reference/examples, scoped licenses/citation, exact reproducibility and public readback",
+      "packaging_note": "No existing tag or payload replaced; final exact-package owner acceptance remains NOT_ASSESSED",
+      "publication_evidence": "evaluation/release/rc-publication.yaml",
+      "assets": [
+        {
+          "name": "clariceptify-v0.1.0-rc.1.zip",
+          "sha256": "b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7"
+        },
+        {
+          "name": "PACKAGE-MANIFEST.json",
+          "sha256": "94e8ee43e11171c07e0f49e81885ec928de61eba68a4e620e9aeadb1207484f8"
+        },
+        {
+          "name": "RC-READINESS.yaml",
+          "sha256": "7073718bfee147b54e306fad1a39e7465784dcd2a958013ba057e175afdb2ee8"
+        },
+        {
+          "name": "READBACK.json",
+          "sha256": "56ddc58d004e30f901d5c83b3f18c88cdd03a2d33e042b59f4a926d0899f87bb"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "e37cec28e4d33a81667e154c3541b1bbe6b5cdb24587cb509caed7d8bc5c5a0a"
+        },
+        {
+          "name": "SOURCE-CI.json",
+          "sha256": "a96be44139b7dce3cad217e20a9013c9877b40fcddc843e7ca63748e8d4d74fd"
+        },
+        {
+          "name": "SOURCE-MANIFEST.yaml",
+          "sha256": "48c4dc97578233d3a7b124e17e0f14db4dbe1db432a60ff4a9becedc0b0e3a83"
         }
       ]
     }

@@ -17,20 +17,19 @@ state_contract:
   - ACCEPTED_LIMITATION
   rules:
   - PASS requires an actual bounded check and inspectable input-bound evidence.
-  - NOT_ASSESSED means no assessment was performed; BLOCKED means a declared prerequisite prevents
-    the check or release gate.
+  - NOT_ASSESSED means no assessment was performed; BLOCKED means a declared prerequisite prevents the
+    check or release gate.
   - Author, simulated, agent-assisted, machine and independent-expert reviews are distinct.
-  - Changing reviewed inputs invalidates applicability; retain the old result and create a new
-    input-bound review.
-  - Closing an assessment does not resolve its findings. A resolved finding needs resolution
-    evidence.
-  - Only an actual owner decision or recorded delegation can establish owner acceptance; elapsed
-    time or a machine PASS cannot.
+  - Changing reviewed inputs invalidates applicability; retain the old result and create a new input-bound
+    review.
+  - Closing an assessment does not resolve its findings. A resolved finding needs resolution evidence.
+  - Only an actual owner decision or recorded delegation can establish owner acceptance; elapsed time
+    or a machine PASS cannot.
 reviews:
 - id: CLR-REV-001
   type: machine
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
+    working snapshot
   scope: Current diagram-r1.2 element correspondence and scoped rendering integrity
   result: PASS
   reviewer: public validation command
@@ -39,8 +38,8 @@ reviews:
     sha256: 8ad9ffbacc3432bdd7c68507b25290163bea7a514113005c9d288748616a536a
 - id: CLR-REV-002
   type: agent_assisted
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
+    working snapshot
   scope: Six corrected windows and all 79 previous machine candidates; scoped CLR-VIS-001 disposition
   result: PASS
   reviewer: repository maintenance agent
@@ -51,8 +50,8 @@ reviews:
     sha256: 3248146ec14321b0a0d957b50ccf0d3d783336b5541f2278f7efe96d54b87349
 - id: CLR-REV-003
   type: machine
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
+    working snapshot
   scope: Generated concept/domain reference projection; no new source assessment
   result: PASS
   reviewer: public validation command
@@ -61,8 +60,8 @@ reviews:
     sha256: 68e4da635d8168561a7b60514d296d848705cd0768eb670b96bdee5abe602969
 - id: CLR-REV-004
   type: machine
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
+    working snapshot
   scope: Generated relation/constraint views and lossless typed CSV round trip
   result: PASS
   reviewer: public validation command
@@ -71,8 +70,8 @@ reviews:
     sha256: 4c794d5d035ad58c3c9efb6f3309755583c4d2660ec9c2f8dac0991e8c1d4c37
 - id: CLR-REV-005
   type: machine
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
+    working snapshot
   scope: One subject-union clause on a bound positive/negative synthetic fixture
   result: PASS
   reviewer: public validation command
@@ -81,16 +80,15 @@ reviews:
     sha256: 33c4c7906ef5de95c4a430e9ceaa5322c4bad30e98eaca1112859874b760bd96
 - id: CLR-REV-006
   type: author
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
-  scope: Actual owner acceptance of the final exact R1 package
+  reviewed_ref: v0.1.0-rc.1; freeze bcce59992606a22ddb82a49c243aeda6f7f54963; ZIP SHA256 b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
+  scope: Actual owner acceptance of the exact published R1 candidate; not the prior license/creator decision
   result: NOT_ASSESSED
   reviewer: not yet assigned/performed
   evidence: []
 - id: CLR-REV-007
   type: independent_expert
-  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the
-    generated working snapshot
+  reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
+    working snapshot
   scope: Scientific adequacy and native OntoUML interpretation
   result: NOT_ASSESSED
   reviewer: not yet assigned/performed
@@ -118,6 +116,7 @@ remaining_gates:
 - gate: final-package-acceptance
   result: NOT_ASSESSED
   tracking_issue: 62
-  reason: The exact RC package and its owner disposition are not yet available.
+  reason: Exact candidate is published and verified; actual owner disposition remains unperformed. See
+    docs/review/rc1-acceptance.md.
 claim_ceiling: Structured evidence/provenance states, not semantic acceptance, independent validation
   or a stable release.

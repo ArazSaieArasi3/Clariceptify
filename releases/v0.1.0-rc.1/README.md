@@ -1,8 +1,15 @@
 # R1 candidate station
 
 The target is v0.1.0-rc.1, a prerelease, not a stable release. Directory presence
-is not publication. The prior preparation manifest remains historical until
-replaced by the exact committed-source candidate inventory in the freeze step.
+is not publication. The earlier preparation-only assessment is historical; the final manifest
+registers the issued committed-source candidate.
+
+Actual publication: [v0.1.0-rc.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1),
+2026-10-25. [Public readback evidence](../../evaluation/release/rc-publication.yaml)
+records all seven assets and eleven checks. Source commit:
+`4780cba43a5aab8f9867073a1e89de824d421d28`; freeze/tag commit:
+`bcce59992606a22ddb82a49c243aeda6f7f54963`. The final manifest below is frozen;
+subsequent documentation changes on main do not modify these issued bytes.
 
 The final [manifest](manifest.yaml) registers each distributable source byte,
 Git blob identity, license scope and artifact revision against one exact source

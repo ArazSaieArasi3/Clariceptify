@@ -2,11 +2,19 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 candidate packaging** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed and the scoped rendering defect in #217 corrected; owner-declared licensing/creators and a validated candidate citation are now recorded; exact package/readiness/publication gates follow. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 published candidate** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed and the scoped rendering defect in #217 corrected; owner-declared licensing/creators and validated citation are recorded; the exact candidate has passed readiness and public readback. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
-Latest engineering prerelease: [v0.1.0-alpha.3](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.3). It freezes the scoped traceability/integrity station at f4a3e233fc283c065a2c48297657878a4625d780: 118 source files evaluated by actual main CI, with 1,815 project links, candidate witnesses, bounded claims and public checks. All five public assets and 122 archive members were read back. See the [release index](releases/release-index.yaml), [changelog](CHANGELOG.md) and [public readback](evaluation/traceability-preview-publication.json). Package version does not establish model semantic acceptance.
+Latest prerelease: [v0.1.0-rc.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1).
+The exact candidate has 361 registered source members and 364 archive members;
+two builds are byte-identical. All seven issued assets were downloaded and checked,
+and all eleven public checks passed on actual downloaded archive extraction.
+See [publication evidence](evaluation/release/rc-publication.yaml) and the
+[focused acceptance packet](docs/review/rc1-acceptance.md). Final owner acceptance
+under #62 and stable publication/readback under #63/#64 remain pending.
+
+Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.3). It freezes the scoped traceability/integrity station at f4a3e233fc283c065a2c48297657878a4625d780: 118 source files evaluated by actual main CI, with 1,815 project links, candidate witnesses, bounded claims and public checks. All five public assets and 122 archive members were read back. See the [release index](releases/release-index.yaml), [changelog](CHANGELOG.md) and [public readback](evaluation/traceability-preview-publication.json). Package version does not establish model semantic acceptance.
 
 ## Start here
 
@@ -67,6 +75,7 @@ They do not establish final package acceptance or independent expert review.
 Follow the [reading guide](docs/reading-guide.md), inspect the
 [known limitations](docs/known-limitations.md), and use the
 [candidate build/readback instructions](releases/v0.1.0-rc.1/README.md).
-The exact manifest and release-readiness evidence distinguish engineering
-preparation from actual publication. The latest issued version remains the
-alpha linked above until an actual RC publication record is present.
+The [exact manifest](releases/v0.1.0-rc.1/manifest.yaml), readiness and actual
+publication evidence identify the issued RC. Rebuilding requires the frozen
+source commit plus its trusted manifest; later main-branch documentation edits
+do not replace the published package. No stable version is claimed.

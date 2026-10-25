@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.0-rc.1 - 2026-10-25
+
+- Publish the exact documented conceptual-model candidate from source 4780cba43a5aab8f9867073a1e89de824d421d28 at freeze/tag bcce59992606a22ddb82a49c243aeda6f7f54963.
+- Verify all seven public assets and all eleven checks on the downloaded 364-member archive. Two builds match ZIP SHA256 b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7.
+- Final exact-package owner acceptance and stable publication/readback remain #62/#63/#64; no semantic/expert or DOI state is promoted.
+
+
 ## Candidate metadata and packaging - 2026-10-25
 
 - Record actual CC-BY-4.0 research / MIT code decision and the owner-declared creator order: Araz Saie Arasi, Hassan Haghighi, Hossein azgomi. Detailed contribution roles remain unassessed.

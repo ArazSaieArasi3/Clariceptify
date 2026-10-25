@@ -2,7 +2,7 @@
 
 Status: synchronized candidate reader path after the actual license/creator decision.
 Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8; model input-r1-rev1;
-diagram diagram-r1.2; latest published engineering checkpoint v0.1.0-alpha.3.
+diagram diagram-r1.2; current published candidate v0.1.0-rc.1.
 
 | Reader goal | Start here | Interpretation |
 | --- | --- | --- |
@@ -30,3 +30,6 @@ establish publication. Check the [release index](../releases/release-index.yaml)
 and actual GitHub Releases for issued versions. The final package disposition
 under #62 applies to an exact candidate, independently of the owner-approved
 license and creator metadata. No stable version is claimed by this guide.
+
+The [actual RC publication and readback](../evaluation/release/rc-publication.yaml)
+and [acceptance packet](review/rc1-acceptance.md) now identify the concrete candidate.

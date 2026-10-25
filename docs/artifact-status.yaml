@@ -1,4 +1,4 @@
-station: R1 candidate metadata adopted; exact freeze/readiness/publication in progress
+station: R1 RC published and publicly read back; final exact-package owner disposition pending
 contracts:
   scope: implemented
   authority: implemented
@@ -17,8 +17,8 @@ artifacts:
   independent_review: not_assessed
   stable_semantic_release: absent
   doi: unassigned
-  engineering_package_release: v0.1.0-alpha.3 (verified frozen scoped traceability/integrity
-    checkpoint)
+  engineering_package_release: v0.1.0-rc.1 (actual immutable prerelease; seven public assets and eleven
+    extracted checks verified)
   artifact_identity_register: implemented_storage_snapshot
   typed_link_contracts: implemented_initial_schema
   generated_trace_graph: implemented_scoped_structural_source_and_candidate_witness_projection
@@ -31,7 +31,7 @@ artifacts:
   reference_pages: generated_from_candidate_registries_with_qualified_sources
   relation_constraint_csv_exports: generated_lossless_round_trip_verified
   selected_negative_fixture: executed_one_subject_union_clause_only
-  review_state_and_queue: structured; license and creator decisions recorded; final package
-    acceptance not_assessed
-  release_preparation: exact RC adapter implemented; source freeze follows
-  final_rc_publication: pending_exact_manifest_readback_and_readiness
+  review_state_and_queue: structured; license and creator decisions recorded; final package acceptance
+    not_assessed
+  release_preparation: exact 361-source-member committed RC built and publicly verified
+  final_rc_publication: published_and_read_back; evaluation/release/rc-publication.yaml
