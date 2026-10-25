@@ -25,3 +25,11 @@ version `0.1.0-rc.1`; it does not assert an already published GitHub Release.
 The optional publication date is omitted until actual publication; no DOI is
 assigned. This instruction settles creators and licensing, and does not record
 acceptance of an as-yet unbuilt final package under #62.
+
+## Stable citation continuation - 2026-10-25
+
+After actual exact-candidate scope acceptance and stable publication, the current
+root CFF names version 0.1.0. The prior paragraph describes the initial RC source
+stage. Creator names/order and generic package roles are unchanged. The actual
+stable publication date belongs to the GitHub Release record; optional CFF date
+is omitted and no DOI is issued. See evaluation/release/published-readback.yaml.
