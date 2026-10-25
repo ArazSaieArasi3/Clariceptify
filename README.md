@@ -61,3 +61,11 @@ The [license proposal](docs/decisions/release-license.md) and
 [creator/citation proposal](docs/decisions/artifact-creators.md) await an actual
 owner decision. No root license grant, stable release, DOI or human acceptance is
 created by these generated documentation and review artifacts.
+
+## First-release technical preparation
+
+The [reading guide](docs/reading-guide.md) and [known limitations](docs/known-limitations.md)
+are prepared with citation/publication decisions still pending. The
+[preparation manifest](releases/v0.1.0-rc.1/manifest.yaml) binds an explicit working
+snapshot for local engineering build/readback tests. It does not create an RC
+release or authorize publication. See the [preparation instructions](releases/v0.1.0-rc.1/README.md).

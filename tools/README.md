@@ -69,3 +69,19 @@ change global CQ/constraint execution states. `check_review_state.py` checks evi
 hashes, review types and actual-decision boundaries; it also runs with Python -O.
 See `docs/review/r1-attention-queue.md` for six bounded review units and publication
 metadata decisions. Neither script can manufacture human or scientific approval.
+
+## Preparation-only release engineering
+
+`python tools/build_release.py --output /tmp/clariceptify-preparation` checks the
+exact manifest and creates a deterministic local package, package manifest and
+checksums. It refuses RC/stable promotion and performs no publication.
+`python tools/readback_release.py /tmp/clariceptify-preparation/clariceptify-r1-preparation.zip`
+checks exact archive membership and bytes before extraction, then runs ten public
+checks in a fresh temporary file tree with an empty HOME and the current declared
+Python dependencies. It needs no Git/private raw inputs or network.
+
+`python tools/test_release_preparation.py` exercises changed source/member bytes,
+unregistered archive paths and unauthorized preparation-to-RC promotion. A technical
+PASS leaves publication BLOCKED until actual license/creator/citation and final
+package/readiness/acceptance decisions are recorded. Re-register the manifest after
+any input changes; do not update hashes merely to hide a failing content check.

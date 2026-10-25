@@ -1,0 +1,41 @@
+status: PASS
+publication_status: BLOCKED
+stage: preparation_only
+members: 350
+source_manifest_sha256: 51fada40e0f35b86a1c4036e95eb427485d3a9b015c26b6e447d20cb79bd4c17
+archive_sha256: 8522381f99210d0b812b9cfac3c1219b2c7d5624d559eda861c8853ba17fa209
+archive_bytes: 6647530
+pending_gates:
+- issue: 52
+  state: BLOCKED
+  requirement: Actual license decision
+- issue: 53
+  state: BLOCKED
+  requirement: Actual package creator/order/role decision
+- issue: 54
+  state: BLOCKED
+  requirement: Validated root citation after actual decisions
+- issues:
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  state: PREPARED_OR_NOT_FINAL
+  requirement: Final synchronized guide/limitations/package/readiness assessment on
+    accepted metadata
+- issues:
+  - 61
+  - 62
+  - 63
+  - 64
+  state: NOT_PERFORMED
+  requirement: Actual RC publication, exact-package acceptance, stable publication
+    and public readback
+record_kind: preliminary_preparation_build
+repeat_build_byte_identical: true
+negative_boundary_tests: 5
+builder_sha256: d4de4a2d88dd195c0c70ef808a43fa88e8cfcac496d7a1f00da0fa691640233a
+readback_tool_sha256: 20858223c2d339c9c04d002dc303d066c63a08870e8020ca776ca3d1c0308f51
+base_source_commit: eeaa4a23d419ed6c3d915155bad3eebaab1a994a
