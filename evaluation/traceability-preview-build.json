@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "tag": "v0.1.0-alpha.3",
+  "source_commit": "f4a3e233fc283c065a2c48297657878a4625d780",
+  "source_tree": "2bb9434358dcecce3a54c064462975dc09e3e604",
+  "source_files": 118,
+  "archive_members": 122,
+  "ci_run_id": 40162601573,
+  "ci_gate_result_parity": "all_seven_hashes_equal_actual_CI",
+  "assets": {
+    "clariceptify-v0.1.0-alpha.3-traceability.zip": "80028ee1d43708e25cffd1aa0aec7f4d51ac9de4f35627e14b8e484ac388f098",
+    "PACKAGE-MANIFEST.json": "93bc3ad5bf9e1561676314399fcf7ef9c8ad3bf322f632303353ef73c9f9b677",
+    "CHECK-RESULTS.json": "629ceef1603fd1fc8f18c80dcd3f2fe967ca8ec5c50a4068ea1748c9935ba95b",
+    "CI-READBACK.json": "97b811d89ccf64580ecd64eaf0393ab09444f27d080d3e8a9ada932e9bb42b99",
+    "SHA256SUMS": "f5be8b9721da551664c6051155bb29dc0dc25922deea0dadd3cb1e85b7dba506"
+  },
+  "repeat_build": "all_five_assets_byte_identical",
+  "negative_case": "altered source request rejected before output creation",
+  "archive_readback": "all 122 members read and byte-compared"
+}
