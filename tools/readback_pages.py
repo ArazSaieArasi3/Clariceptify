@@ -47,7 +47,7 @@ def readback(root, base, attempts=6):
         # diagram bytes are bound by the route manifest; sample the actual SVG too.
         paths = [p for p in manifest['output_sha256']
                  if p.endswith(('.html', '.css', '.js')) or p in
-                 {'concept-index.json', 'source/model/diagrams/generated/full.svg'}]
+                 {'concept-index.json', 'wiki-title-map.json', 'source/model/diagrams/generated/full.svg'}]
         def verify(path):
             actual = hashlib.sha256(fetch(base, route + path)).hexdigest()
             if actual != manifest['output_sha256'][path]:

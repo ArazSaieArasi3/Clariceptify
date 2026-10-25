@@ -2,12 +2,14 @@
 from pathlib import Path
 import hashlib,json,tempfile
 import yaml
-from build_documentation import build,GUIDES
+from build_documentation import build,GUIDES,wiki_publication_plan
 from build_manuscript_figure import build as build_figure
 
 ROOT=Path(__file__).resolve().parents[1]
 def check(root=ROOT):
     profile=yaml.safe_load((root/'evaluation/vveaa-profile.yaml').read_text())
+    for item in wiki_publication_plan():
+        if item['native_title'].replace(' ','-')!=item['wiki_slug'] or '-' in item['native_title']:raise ValueError('Native Wiki title does not match controlled link slug')
     if [r['id'] for r in profile['layers']]!=['Verification','Validation','Evaluation','Assessment','Assurance']:raise ValueError('Missing or conflated VVEAA function')
     for layer in profile['layers']:
         if not all(layer.get(k) for k in ['purpose','method','indicators','r2_tasks','claim_boundary']):raise ValueError('Incomplete evidence obligation')

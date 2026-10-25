@@ -40,6 +40,12 @@ def guide_wiki(root,source_ref):
     views['_Footer.md']='Scientific core [v0.1.0]('+REPO+'/releases/tag/v0.1.0) | Documentation v0.1.1 | [Limitations](Limitations)\n'
     return views
 
+def wiki_publication_plan():
+    # GitHub's native title is not the Markdown filename stem: literal hyphens
+    # become a different page from the controlled space-separated title slug.
+    return [{'source_file':name+'.md','native_title':name.replace('-',' '),
+             'wiki_slug':name} for name in GUIDES+['_Sidebar','_Footer']]
+
 class Links(HTMLParser):
     def __init__(self):super().__init__();self.links=[];self.ids=set()
     def handle_starttag(self,tag,attrs):
@@ -137,6 +143,7 @@ def build(root,output,source_ref,version='v0.1.1'):
     write('index.html',shell('Conceptualization knowledge',home,'index.html'))
     wiki=guide_wiki(root,source_ref);wiki_dir=output/'wiki-source';wiki_dir.mkdir()
     for name,text in wiki.items():(wiki_dir/name).write_text(text)
+    write('wiki-title-map.json',encoded(wiki_publication_plan()))
     write('publication-manifest.json',encoded({'status':'BUILD_IN_PROGRESS'}))
     audit=audit_site(output)
     outputs={p.relative_to(output).as_posix():digest(p.read_bytes()) for p in sorted(output.rglob('*')) if p.is_file() and p.relative_to(output).as_posix()!='publication-manifest.json'}
