@@ -2,6 +2,7 @@
 from pathlib import Path
 from urllib.parse import quote
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 from concurrent.futures import ThreadPoolExecutor
 import argparse, hashlib, json, time
 
@@ -10,10 +11,13 @@ def fetch(base, path):
     request = Request(base.rstrip('/') + '/' + quote(path, safe='/'),
                       headers={'User-Agent': 'Clariceptify-publication-readback/1.0',
                                'Cache-Control': 'no-cache'})
-    with urlopen(request, timeout=45) as response:
-        if response.status != 200:
-            raise ValueError(f'Unexpected public response: {path}')
-        return response.read()
+    try:
+        with urlopen(request, timeout=45) as response:
+            if response.status != 200:
+                raise ValueError(f'Unexpected public response: {path}')
+            return response.read()
+    except HTTPError as error:
+        raise ValueError(f'Public readback HTTP {error.code}: {path}') from error
 
 
 def readback(root, base, attempts=6):
