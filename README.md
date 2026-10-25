@@ -2,7 +2,7 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 post-alpha.3 preparation** station: scoped traceability and public integrity/CI are published; diagram reconciliation and the remaining R1 review/documentation/package gates are next. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 post-alpha.3 preparation** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed, with a blocking readability correction tracked in #217; remaining R1 review/documentation/package gates follow. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
@@ -32,4 +32,13 @@ Research identity remains R-001; Portfolio owns research governance and OGCM-RF 
 
 ## Limits and reuse status
 
-No full OWL/SHACL/FOL implementation, relational projection, all-CQ execution, joint satisfiability proof, independent expert acceptance, complete literature review or novelty priority is claimed. Diagrams and source passages still require reconciliation. No DOI or registered ontology IRI is assigned here. The repository-level reuse license and final creator/citation metadata remain to be settled in the dedicated publication tasks; public visibility alone is not a reuse license. Raw thesis, article and third-party full texts are not distributed in this bootstrap.
+No full OWL/SHACL/FOL implementation, relational projection, all-CQ execution, joint satisfiability proof, independent expert acceptance, complete literature review or novelty priority is claimed. Diagram element parity is assessed, while the rendering/readability defect in #217 and source-passage reconciliation remain open. No DOI or registered ontology IRI is assigned here. The repository-level reuse license and final creator/citation metadata remain to be settled in the dedicated publication tasks; public visibility alone is not a reuse license. Raw thesis, article and third-party full texts are not distributed in this bootstrap.
+
+## Diagram assessment
+
+The [visual assessment](evaluation/diagram-parity.yaml) binds the current complete
+SVG, vector PDF and A3 atlas to the model. Element parity passed; readability did
+not pass because later connector strokes obscure some labels. See the
+[evidence plate](evaluation/diagrams/readability-findings.png) and
+[blocking correction #217](https://github.com/ArazSaieArasi3/Clariceptify/issues/217).
+This completed review is neither a rendering repair nor scientific acceptance.

@@ -1,0 +1,202 @@
+schema_version: 0.1.0
+task: R1-025.c
+baseline_commit: 018e6e0b860718718b0845c7902cc070e835d71e
+diagram_revision: diagram-r1.1
+model_revision: input-r1-rev1
+assessment_status: COMPLETED_WITH_FINDINGS
+parity_result: PASS
+readability_result: FAIL
+r1_readability_gate: BLOCKED
+blocking_issue: https://github.com/ArazSaieArasi3/Clariceptify/issues/217
+input_sha256:
+  model/diagrams/generated/full.svg: a13f3d543eb076646bbacc437d2a8e8425a37300d87c7aa51589560d3472e0ba
+  model/diagrams/generated/full.pdf: 4e4f1b780d91f11745090c5f0721f54c9e00eacf9cdd0c6804a2e047dcf18275
+  model/diagrams/generated/atlas.pdf: f8854252f66770f13158013179cfe0166faf3c100b22abc1543bb0138abc3e65
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evaluation/diagrams/pdf-atlas-build.json: 8e2fe05ecd94682e9894c7a5661e1ff7856de1090b84a944c45bdb02cb9fd40b
+machine_report:
+  path: evaluation/diagrams/visual-element-parity.json
+  sha256: 23b2cf469a4119cc9408129b67d53fdeaa3615ebfd10a2766679e0c00740b033
+checks:
+  registry_correspondence: PASS - 137 concepts, 174 associations, 122 generalizations
+  pdf_node_geometry_and_domain_fill: PASS - 137 of 137
+  pdf_complete_connector_geometry: PASS - 296 of 296; all cubic control points or bounded collinear simplification
+    checked to 0.02 pt
+  pdf_hollow_parent_triangles: PASS - 122 of 122; position, visible hollow shape and source direction preserved
+  multiplicity_end_proximity: PASS - 174 of 174; target value closer to target endpoint and source value closer
+    to source endpoint
+  model_text_pdf_correspondence: PASS - 837 of 837 at source baselines/anchors within 0.02 pt
+  model_text_atlas_correspondence: PASS - 837 of 837 wholly preserved in at least one detail page at matching position,
+    size and color
+  complete_node_atlas_coverage: PASS - 137 of 137 in at least one detail tile
+  later_stroke_text_intersection_screen: 79 machine candidates affecting 57 label-owning edges; 6 inspected and
+    confirmed; 73 not visually adjudicated
+  text_text_overlap_screen: No candidates at the stated >10% ink-band-area threshold
+  text_node_occlusion_screen: No candidates at the stated >20% ink-band-area threshold
+visual_review:
+  type: agent_assisted_visual_inspection
+  human_review: NOT_ASSESSED
+  independent_expert_review: NOT_ASSESSED
+  confirmed_cases:
+  - candidate_id: CLR-VIS-CAND-001
+    label_edge: CLR-R0004
+    text: '1'
+    later_line_edge: CLR-R0009
+    full_pdf_page: 1
+    full_pdf_bbox_pt:
+    - 5347.48193359375
+    - 483.69000000000034
+    - 5353.59814453125
+    - 491.61000000000035
+    atlas_pages:
+    - 7
+    status: machine_candidate_requires_visual_judgment
+    visual_status: confirmed_by_agent_visual_review
+    render_crop_bbox_pt:
+    - 5307.48193359375
+    - 458.69000000000034
+    - 5393.59814453125
+    - 516.6100000000004
+    evidence_panel: 1
+  - candidate_id: CLR-VIS-CAND-005
+    label_edge: CLR-R0067
+    text: «instantiation»
+    later_line_edge: CLR-R0151
+    full_pdf_page: 1
+    full_pdf_bbox_pt:
+    - 9605.8603515625
+    - 2837.04
+    - 9670.3369140625
+    - 2844.24
+    atlas_pages:
+    - 56
+    status: machine_candidate_requires_visual_judgment
+    visual_status: confirmed_by_agent_visual_review
+    render_crop_bbox_pt:
+    - 9565.8603515625
+    - 2812.04
+    - 9710.3369140625
+    - 2869.24
+    evidence_panel: 2
+  - candidate_id: CLR-VIS-CAND-012
+    label_edge: CLR-R0090
+    text: assigns content
+    later_line_edge: CLR-G0040
+    full_pdf_page: 1
+    full_pdf_bbox_pt:
+    - 1094.9599609375
+    - 2299.3
+    - 1171.3878173828125
+    - 2307.22
+    atlas_pages:
+    - 36
+    status: machine_candidate_requires_visual_judgment
+    visual_status: confirmed_by_agent_visual_review
+    render_crop_bbox_pt:
+    - 1054.9599609375
+    - 2274.3
+    - 1211.3878173828125
+    - 2332.22
+    evidence_panel: 3
+  - candidate_id: CLR-VIS-CAND-031
+    label_edge: CLR-R0110
+    text: 1..*
+    later_line_edge: CLR-G0046
+    full_pdf_page: 1
+    full_pdf_bbox_pt:
+    - 3280.084228515625
+    - 2291.9000000000005
+    - 3296.595458984375
+    - 2299.82
+    atlas_pages:
+    - 38
+    status: machine_candidate_requires_visual_judgment
+    visual_status: confirmed_by_agent_visual_review
+    render_crop_bbox_pt:
+    - 3240.084228515625
+    - 2266.9000000000005
+    - 3336.595458984375
+    - 2324.82
+    evidence_panel: 4
+  - candidate_id: CLR-VIS-CAND-051
+    label_edge: CLR-R0079
+    text: '1'
+    later_line_edge: CLR-R0161
+    full_pdf_page: 1
+    full_pdf_bbox_pt:
+    - 6859.43212890625
+    - 2454.039437251523
+    - 6865.54833984375
+    - 2461.9594372515226
+    atlas_pages:
+    - 42
+    status: machine_candidate_requires_visual_judgment
+    visual_status: confirmed_by_agent_visual_review
+    render_crop_bbox_pt:
+    - 6819.43212890625
+    - 2429.039437251523
+    - 6905.54833984375
+    - 2486.9594372515226
+    evidence_panel: 5
+  - candidate_id: CLR-VIS-CAND-079
+    label_edge: CLR-R0038
+    text: responds to finding
+    later_line_edge: CLR-R0036
+    full_pdf_page: 1
+    full_pdf_bbox_pt:
+    - 4908.56005859375
+    - 1278.72
+    - 5001.50146484375
+    - 1286.64
+    atlas_pages:
+    - 18
+    status: machine_candidate_requires_visual_judgment
+    visual_status: confirmed_by_agent_visual_review
+    render_crop_bbox_pt:
+    - 4868.56005859375
+    - 1253.72
+    - 5041.50146484375
+    - 1311.64
+    evidence_panel: 6
+  evidence:
+    path: evaluation/diagrams/readability-findings.png
+    sha256: 3b49ddbf4d509285429fb35623a919968ca4062e9eeb5fd1f7830efc3bea901d
+  method: Render exact full-PDF windows at 4x; inspect later strokes crossing text or multiplicity glyphs; report
+    original atlas page and full-PDF coordinates.
+findings:
+- id: CLR-VIS-001
+  type: rendering_paint_order
+  severity: R1_readability_blocker
+  status: OPEN
+  owner_issue: 217
+  observation: Connector strokes painted later obscure earlier relation labels or multiplicity glyphs. This source
+    defect is faithfully preserved in both full PDF and atlas.
+  recommended_scope: Correct rendering order without changing registries, stable IDs, paths or semantic commitments;
+    regenerate and reassess all candidates.
+  candidate_count: 79
+  confirmed_count: 6
+acceptance_disposition:
+  AC-1: 'Completed: element-level, edge-level and visual evidence recorded; discrepancies are explicit.'
+  AC-2: 'Completed: actual input/model/runtime/tool/output hashes and limitations recorded.'
+  AC-Deliverable: Completed at evaluation/diagram-parity.yaml.
+  AC-Evidence: 'Completed: exact page/windows, IDs, numerical correspondence and inspected crops retained.'
+  AC-Scope: 'Completed: review only; independent corrective issue #217 remains open.'
+  closure_meaning: 'Closing #45 completes this assessment. It does not pass readability or close #217.'
+negative_verification:
+- Stale atlas bytes are rejected against the build receipt.
+- A 2 pt horizontal displacement is rejected for connector geometry and text position even after the PDF receipt
+  hash is updated.
+limitations:
+- The line/text screen samples each cubic at 32 intervals and uses a baseline-relative text band. Its candidates
+  are not an exact glyph-visibility proof.
+- Only the six recorded candidate windows received detailed agent visual adjudication; the other 73 remain candidates.
+- Quantitative PDF/atlas parity is exhaustive for declared model elements and text; it is not comprehensive human
+  visual approval.
+- Historical private inputs were not reopened in this task. Source identity and prior recovery evidence are inherited
+  as provenance; current public bytes were freshly checked.
+- Native OntoUML validity, semantic adequacy, independent expert acceptance and constraint satisfaction remain NOT_ASSESSED.
+- No diagram source, model registry or published release asset was changed by this audit.

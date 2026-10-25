@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased - input-bound visual assessment
+
+- Complete #45 with per-element SVG/PDF/atlas correspondence and negative tests.
+- Preserve the negative readability result: six confirmed later-stroke-over-text examples; 79 machine candidates overall.
+- Track the independent blocking correction as CLR-VIS-001 / #217; no diagram or model bytes changed.
+
+
 ## Unreleased - R1 PDF and atlas generation
 
 - Generate the complete vector PDF and a 69-page A3 reading atlas from diagram-r1.1 (#44).
