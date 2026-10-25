@@ -5,8 +5,8 @@
     "Hassan Haghighi",
     "Hossein azgomi"
   ],
-  "version": "0.1.0-rc.1",
-  "date_released": "omitted: candidate source, not asserted publication",
+  "version": "0.1.0",
+  "date_released": "optional field omitted; actual date belongs to the GitHub Release record",
   "doi": "unassigned",
   "cff_schema": "official 1.2.0, vendored with attribution",
   "license_scopes": {
@@ -15,7 +15,7 @@
     "third_party": "retains upstream rights"
   },
   "inputs_sha256": {
-    "CITATION.cff": "743e9021ede4d24097f84e7a37c7b6f5fb9177a8642d5cbd9b07bad3659b1219",
+    "CITATION.cff": "3045e53441d61b458328d82dbf7767ab27258b1743fb30edd5093f13f2eaaafb",
     "LICENSE": "2a703d442920daf4b2ba3d2c05f822f777a53631463c105648abb5f0698bbfdb",
     "LICENSE-CC-BY-4.0": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
     "LICENSE-MIT": "2ad5080e406837564fb3a31b8428178e7afd45553c380304b96661f0c055132d",

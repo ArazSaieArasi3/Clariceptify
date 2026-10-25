@@ -1,7 +1,7 @@
 # Exact R1 candidate acceptance packet
 
-Status: **AWAITING ACTUAL OWNER DISPOSITION**, issue #62. This page makes the
-published candidate reviewable; it records no acceptance on the owner's behalf.
+Status: **ACCEPTED BY ACTUAL OWNER**, 2026-10-25; issue #62. The direct
+continuation instruction accepted this exact candidate with its recorded limitations.
 
 Candidate: [v0.1.0-rc.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1).
 Source: `4780cba43a5aab8f9867073a1e89de824d421d28`.
@@ -16,7 +16,7 @@ ZIP SHA256: `b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7`.
 | Readiness | [Input-bound readiness](../../evaluation/release/rc-readiness.yaml): PASS_FOR_RC, no blockers for that declared claim; independent expert review NOT_ASSESSED |
 | Limitations | [Known limitations](../known-limitations.md): pending source/typing/CQs, absent full formalization/native-tool validation/expert review/paper/DOI |
 | Rights and creators | [Scoped LICENSE](../../LICENSE), [creators](../decisions/artifact-creators.md), [CITATION.cff](../../CITATION.cff): owner-approved metadata; detailed roles unassessed |
-| Actual decision | [Scope disposition record](../../evaluation/release/scope-disposition.yaml): NOT_ASSESSED until an actual decision is recorded |
+| Actual decision | [Scope disposition record](../../evaluation/release/scope-disposition.yaml): ACCEPTED; direct owner decision recorded on 2026-10-25 |
 
 Decision requested: accept this exact candidate's declared scope and retained
 limitations as the R1 baseline, or identify required changes. Acceptance concerns
@@ -27,3 +27,6 @@ separate. No new license or creator confirmation is needed.
 After actual acceptance, #63/#64 publish and read back stable v0.1.0. Requested
 scientific/content changes require an explicit delta and a new candidate rather
 than silently replacing issued assets.
+
+Actual decision: [R1 scope acceptance](../decisions/r1-scope-acceptance.md).
+The earlier decision-request wording above is retained as the question that was answered.

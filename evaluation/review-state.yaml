@@ -82,9 +82,13 @@ reviews:
   type: author
   reviewed_ref: v0.1.0-rc.1; freeze bcce59992606a22ddb82a49c243aeda6f7f54963; ZIP SHA256 b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
   scope: Actual owner acceptance of the exact published R1 candidate; not the prior license/creator decision
-  result: NOT_ASSESSED
-  reviewer: not yet assigned/performed
-  evidence: []
+  result: PASS
+  reviewer: Actual repository owner, direct scope-acceptance instruction 2026-10-25
+  evidence:
+  - path: docs/decisions/r1-scope-acceptance.md
+    sha256: d40bea3d0a183c80cade994be81bc63236aec66f01ccb2aa872d3782c7bce7f1
+  actual_decision_record: docs/decisions/r1-scope-acceptance.md
+  reviewed_package_ref: v0.1.0-rc.1; archive SHA256 b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
 - id: CLR-REV-007
   type: independent_expert
   reviewed_ref: 2a48140d8fdb89ce80826a04dd2ab0acd7ddea89 plus explicit evidence hashes for the generated
@@ -114,9 +118,8 @@ remaining_gates:
   tracking_issue: 53
   reason: Actual owner instruction on 2026-10-25; decision recorded in docs/decisions/artifact-creators.md
 - gate: final-package-acceptance
-  result: NOT_ASSESSED
+  result: PASS
   tracking_issue: 62
-  reason: Exact candidate is published and verified; actual owner disposition remains unperformed. See
-    docs/review/rc1-acceptance.md.
+  reason: Actual owner accepted this exact published RC with recorded limitations on 2026-10-25; docs/decisions/r1-scope-acceptance.md.
 claim_ceiling: Structured evidence/provenance states, not semantic acceptance, independent validation
   or a stable release.

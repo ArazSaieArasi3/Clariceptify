@@ -1,4 +1,4 @@
-# Known R1 candidate limitations
+# Known R1 baseline limitations
 
 Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8. Model input-r1-rev1;
 diagram diagram-r1.2. Applies to the documented candidate and its unchanged model inputs.
@@ -13,9 +13,9 @@ diagram diagram-r1.2. Applies to the documented candidate and its unchanged mode
 | Formalization | No complete public OWL/SHACL/FOL implementation at R1 | Declared formal slice, profile/reasoner, SHACL and query evidence in R3 |
 | Diagram | Element correspondence and scoped paint-order correction; six original windows reinspected; all prior machine candidates reassessed | No native OntoUML project recovery, native-tool validity or comprehensive human visual approval |
 | Traceability | Scoped structural/source and candidate witness projections | Full research-asset/version coverage is not established |
-| Review | Input-bound machine and agent-assisted records | Actual author package disposition and independent expert review remain unperformed |
+| Review | Input-bound machine and agent-assisted records | Actual owner package scope is accepted; independent expert review remains unperformed |
 | Manuscript | Draft and bounded claims are separately bound | Current manuscript alignment and final submission package are not accepted |
-| Distribution | Public source, no actual stable R1 release or DOI | License/creator decisions are recorded; final exact package/readiness, acceptance and publication/readback have separate evidence gates |
+| Distribution | Public RC and actual owner acceptance; stable publication is a separate recorded action; no DOI | License/creator and package-scope decisions are recorded; stable publication/readback require actual evidence; DOI remains separate |
 
 Successful syntax, counts, connectivity, checksums, CI or packaging do not establish
 semantic validity, clinical applicability, empirical adequacy or human approval.

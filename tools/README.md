@@ -98,3 +98,12 @@ preparation snapshots or a strictly registered `rc_candidate` bound to an exact
 source commit. Readback checks all eleven layers on fresh extraction. See the
 [candidate station](../releases/v0.1.0-rc.1/README.md). Existing historical
 preparation evidence remains input-bound and does not grant RC readiness.
+
+## Accepted stable promotion
+
+`check_stable_promotion.py` compares every protected scientific member with the
+exact accepted RC manifest, checks actual owner disposition, and is called by
+the eleventh integrity layer for stable metadata. The stable manifest uses
+`accepted_stable` and its own envelope path. Rebuild instructions are in
+[the stable station](../releases/v0.1.0/README.md). Actual issuance/readback remains
+a separate action; builders do not grant approval or publish.

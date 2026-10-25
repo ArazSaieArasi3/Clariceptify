@@ -1,7 +1,8 @@
 task: R1-033
-status: NOT_ASSESSED
-actual_owner_decision: null
-decision_date: null
+status: ACCEPTED
+actual_owner_decision: Owner explicitly answered yes to acceptance of this exact RC and its recorded limitations,
+  and instructed stable publication and issue completion.
+decision_date: '2026-10-25'
 delegation_record: null
 release_url: https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1
 tag: v0.1.0-rc.1
@@ -19,9 +20,10 @@ retained_limitations:
   absent or deferred.
 - Detailed contribution-taxonomy roles remain NOT_ASSESSED; owner-declared creators/order and licenses
   are adopted.
-scope_boundary: The owner approved licenses and creators, but has not yet dispositioned this exact published
-  candidate.
+scope_boundary: Actual acceptance of the declared R1 package scope and stable promotion; not an independent
+  expert or all-CQ/semantic assessment.
 next_if_accepted: 'Promote the dispositioned scientific payload to v0.1.0 with explicit package-version
   metadata and unchanged declared scientific limits; publish and read back stable assets under #63/#64.'
 next_if_changes_requested: Record the requested delta; rebuild/reassess and issue a new candidate without
   replacing v0.1.0-rc.1.
+actual_decision_record: docs/decisions/r1-scope-acceptance.md
