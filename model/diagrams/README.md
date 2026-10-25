@@ -8,7 +8,7 @@ Model registries remain the semantic authority. Do not correct or reinterpret th
 
 Run `python tools/check_diagram_sources.py` to check the public source/approval contracts. With authorized recovered originals, add `--inputs /path/to/input-directory` to verify all four exact hashes and the XML/DOCX evidence. The stored [source audit](../../evaluation/diagrams/source-approval-check.json) records an actual private-input check; a later public-only invocation reports that input audit as not run. These checks also passed under Python optimization; altered source bytes were rejected in both modes.
 
-## Current complete view (diagram-r1.1)
+## Complete view and lineage (diagram-r1.2)
 
 [generated/full.svg](generated/full.svg) is a controlled derivative of the exact recovered SVG, not a newly recovered native model or historical generator. It preserves all node/edge geometry, labels, direction, multiplicity and domain colors; adds stable registry identifiers and model hash bindings; changes the diagram brand to Clariceptify; corrects unsupported approval metadata; and removes embedded third-party font programs. Sans-serif fallback fonts are not distributed here. The manuscript title is unchanged.
 
@@ -29,7 +29,7 @@ The [generation review](../../evaluation/diagrams/pdf-atlas-review.md) records a
 coverage, vector, reproducibility and sampled visual checks and their limitations.
 Neither generated PDF is an independent semantic authority. The #45 assessment found a blocking paint-order defect; see #217.
 
-## Current parity and readability verdict
+## Historical diagram-r1.1 assessment
 
 The [R1-025.c assessment](../../evaluation/diagram-parity.yaml) reports **element
 parity PASS, readability FAIL, R1 readability gate BLOCKED** on the exact
@@ -51,3 +51,21 @@ with `requirements-diagrams.txt` installed. This uses actual text positions,
 curve controls, node fills, parent triangles and atlas coordinates; it does not
 infer readability from counts or checksums. The line/text screen is approximate,
 and agent visual review is distinct from human or expert acceptance.
+
+## Current diagram-r1.2 correction
+
+[Paint-order reassessment](../../evaluation/diagrams/paint-order-reassessment.yaml)
+resolves CLR-VIS-001 for the declared rendering gate. All connectors are painted
+before the 174 edge-label groups. Six small label-block adjustments with leaders
+keep label backgrounds clear of parent triangles. All 137 node geometries, 296
+connector geometries, label values, IDs and model hashes are preserved. The
+original 79 candidate intersections were reassessed; the current screen has zero
+later connector/text intersections, and six original windows were inspected again.
+The full PDF and 69-page atlas were regenerated from the same diagram-r1.2 SVG.
+
+Reproduce from the exact diagram-r1.1 public SVG at commit
+`8b24132a41b49f08dd81153bba09aa05f9571af9` using
+`python tools/fix_diagram_paint_order.py /path/to/diagram-r1.1.svg`, then the PDF
+adapter and visual-parity command. The predecessor SHA-256 is enforced. The old
+negative report is retained; it is not the current gate result. Human/expert and
+native OntoUML acceptance remain unassessed.

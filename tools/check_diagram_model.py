@@ -4,6 +4,7 @@ Requires PyYAML and lxml. Outputs detailed JSON to stdout; exits 1 on mismatch.
 Geometry checks assume the original SVG's untransformed node/edge coordinates,
 M/C path grammar and rectangular polygons. Unsupported geometry fails explicitly.
 """
+import copy
 import argparse, collections, hashlib, json, math, re
 from pathlib import Path
 import yaml
@@ -16,6 +17,13 @@ def points(s):
     if len(a)%2: raise ValueError('Odd coordinate count')
     return list(zip(a[::2],a[1::2]))
 def texts(e): return [''.join(t.itertext()) for t in e.xpath('.//s:text',namespaces=NS)]
+def edge_view(root,edge):
+    merged=copy.deepcopy(edge)
+    for label in root.xpath('//s:g[@class="edge-labels"]',namespaces=NS):
+        if label.get('data-edge-ref')==edge.get('id'):
+            for child in label:merged.append(copy.deepcopy(child))
+    return merged
+
 def norm(s): return (s or '').replace('«','').replace('»','').replace('—','').strip()
 def boundary_distance(p,box):
     x,y=p; x0,y0,x1,y1=box
@@ -25,7 +33,7 @@ def audit(repo, inputs, svg_override=None):
     def records(name):return yaml.safe_load((repo/'model'/f'{name}.yaml').read_text())['records']
     cs,rs,gs,ds=[records(n) for n in ['concepts','relations','generalizations','domains']]
     concepts={c['label_en']:c for c in cs};byid={c['id']:c for c in cs};domains={d['id']:d for d in ds}
-    svg=svg_override or inputs/'Conceptiom_Release_1_OntoUML_Full.svg';root=ET.parse(str(svg));nodes=root.xpath('//s:g[@class="node"]',namespaces=NS);edges=root.xpath('//s:g[@class="edge"]',namespaces=NS)
+    svg=svg_override or inputs/'Conceptiom_Release_1_OntoUML_Full.svg';root=ET.parse(str(svg));nodes=root.xpath('//s:g[@class="node"]',namespaces=NS);edges=[edge_view(root,e) for e in root.xpath('//s:g[@class="edge"]',namespaces=NS)]
     failures=[]; nr=[];er=[];boxes={};colors=collections.defaultdict(set)
     def check(result,name,ok):
         result.setdefault('checks',{})[name]=bool(ok)
@@ -69,12 +77,20 @@ def audit(repo, inputs, svg_override=None):
     check(aggregate,'historical_source_binding',metadata.get('historical_source_sha256')==next(r['sha256'] for r in yaml.safe_load((repo/'model/diagrams/source-manifest.yaml').read_text())['inputs'] if r['source_id']=='SRC-SVG') and metadata.get('artifact_id')=='CLR-DIAGRAM-FULL')
     check(aggregate,'visible_candidate_state','R1 REVIEW CANDIDATE' in ' '.join(texts(root)) and 'Review candidate' in root.find('s:title',NS).text and 'approved specification' not in root.find('s:desc',NS).text)
     check(aggregate,'candidate_state',metadata.get('semantic_approval')=='not_established' and metadata.get('native_ontouml_validation')=='not_assessed')
-    check(aggregate,'revision_binding',metadata.get('diagram_revision')==root.getroot().get('data-artifact-version')=='diagram-r1.1' and metadata.get('model_revision')==root.getroot().get('data-model-revision')=='input-r1-rev1')
+    check(aggregate,'revision_binding',metadata.get('diagram_revision')==root.getroot().get('data-artifact-version') and metadata.get('diagram_revision') in ('diagram-r1.1','diagram-r1.2') and metadata.get('model_revision')==root.getroot().get('data-model-revision')=='input-r1-rev1')
     check(aggregate,'model_hash_bindings',all(hashlib.sha256((repo/path).read_bytes()).hexdigest()==digest for path,digest in metadata['model_sha256'].items()) and set(metadata['model_sha256'])=={'model/'+n+'.yaml' for n in ['concepts','domains','relations','generalizations','constraints']})
     check(aggregate,'node_set_exact',collections.Counter(n.get('data-concept') for n in nodes)==collections.Counter(list(concepts)))
     check(aggregate,'edge_set_exact',seen==collections.Counter(list(associations)+list(generals)))
     check(aggregate,'all_domain_colors_single',all(len(v)==1 for v in colors.values()))
     check(aggregate,'domain_colors_distinct',len(set(c for v in colors.values() for c in v))==len(ds)==len(colors))
+    if metadata.get('diagram_revision')=='diagram-r1.2':
+        graph=root.xpath('//s:g[@class="graph"]',namespaces=NS)[0]
+        layers=graph.xpath('./s:g[@id="edge-label-layer"]',namespaces=NS)
+        labels=root.xpath('//s:g[@class="edge-labels"]',namespaces=NS)
+        originals=root.xpath('//s:g[@class="edge"]',namespaces=NS)
+        expected={e.get('id'):e.get('data-registry-id') for e in originals if e.get('data-stereotype')!='Generalization'}
+        check(aggregate,'label_layer_identity',len(layers)==1 and len(labels)==len(expected) and collections.Counter(l.get('data-edge-ref') for l in labels)==collections.Counter(expected.keys()) and all(l.get('data-registry-id')==expected.get(l.get('data-edge-ref')) and l.getparent() is layers[0] and not l.get('transform') for l in labels))
+        check(aggregate,'label_layer_order',len(layers)==1 and all(graph.index(e)<graph.index(layers[0]) for e in originals) and all(graph.index(n)>graph.index(layers[0]) for n in root.xpath('//s:g[@class="node"]',namespaces=NS)))
     alltext=' '.join(texts(root));legend=[]
     for d in ds:
         r={'registry_id':d['id'],'label':d['label_en']};check(r,'legend_description_present',d['description'] in alltext);legend.append(r)

@@ -13,10 +13,10 @@ import subprocess
 import sys
 import fitz
 from lxml import etree as ET
-from check_diagram_model import NS, points
+from check_diagram_model import NS, points, edge_view
 
 ROOT = Path(__file__).resolve().parents[1]
-BASELINE = '018e6e0b860718718b0845c7902cc070e835d71e'
+BASELINE = '8b24132a41b49f08dd81153bba09aa05f9571af9'
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -43,7 +43,7 @@ def segment_intersects(a,b,r):
             if lo>hi: return False
     return True
 
-def run():
+def run(baseline=BASELINE):
     inputs=['model/diagrams/generated/'+n for n in ('full.svg','full.pdf','atlas.pdf')]
     inputs+=['model/'+n+'.yaml' for n in ('concepts','domains','relations','generalizations','constraints')]
     inputs+=['evaluation/diagrams/pdf-atlas-build.json']
@@ -64,6 +64,7 @@ def run():
     atlas_text={i:spans(atlas[i]) for i in range(len(atlas))}
     labels=[];elements=[];paths=[];failures=[];nodes=[]
     for group in svg.xpath('//s:g[@class="node" or @class="edge"]',namespaces=NS):
+        if group.get('class')=='edge':group=edge_view(svg,group)
         rid=group.get('data-registry-id');kind=group.get('class')
         item={'registry_id':rid,'svg_id':group.get('id'),'kind':kind,'checks':{}}
         def check(name,condition):
@@ -166,7 +167,7 @@ def run():
             if rid==label['registry_id'] or seq<label['paint_sequence'] or not band.intersects(box):continue
             if any(segment_intersects(a,b,band) for a,b in zip(flat,flat[1:])):
                 candidates.append({'candidate_id':f'CLR-VIS-CAND-{len(candidates)+1:03d}','label_edge':label['registry_id'],'text':label['text'],'later_line_edge':rid,'full_pdf_page':1,'full_pdf_bbox_pt':list(band),'atlas_pages':label['atlas_complete_pages'],'status':'machine_candidate_requires_visual_judgment'})
-    report={'baseline_commit':BASELINE,'task':'R1-025.c','status':'FAIL' if failures else 'PARITY_PASS_WITH_READABILITY_CANDIDATES','input_sha256':{p:sha(ROOT/p) for p in inputs},'validator_sha256':sha(Path(__file__)),'runtime':{'python':sys.version.split()[0],'pymupdf':fitz.VersionBind,'mupdf':fitz.VersionFitz},'counts':{'nodes':len(nodes),'edges':len(paths),'model_text_labels':len(labels),'occlusion_candidates':len(candidates),'text_text_candidates':len(text_text_candidates),'text_node_candidates':len(text_node_candidates)},'elements':elements,'labels':labels,'occlusion_candidates':candidates,'text_text_candidates':text_text_candidates,'text_node_candidates':text_node_candidates,'failures':failures,'limitations':['Curve intersections use 32 linear intervals per cubic and a baseline-relative text band; not an exhaustive glyph visibility proof.','Visual judgment and semantic acceptance are distinct from PDF element parity.','Legacy input identity and current model correspondence were freshly checked; historical PDF byte reproduction is not claimed.']}
+    report={'baseline_commit':baseline,'task':'R1-025.c','status':'FAIL' if failures else ('PARITY_PASS_WITH_READABILITY_CANDIDATES' if candidates else 'PASS_SCOPED_ELEMENT_PARITY'),'input_sha256':{p:sha(ROOT/p) for p in inputs},'validator_sha256':sha(Path(__file__)),'runtime':{'python':sys.version.split()[0],'pymupdf':fitz.VersionBind,'mupdf':fitz.VersionFitz},'counts':{'nodes':len(nodes),'edges':len(paths),'model_text_labels':len(labels),'occlusion_candidates':len(candidates),'text_text_candidates':len(text_text_candidates),'text_node_candidates':len(text_node_candidates)},'elements':elements,'labels':labels,'occlusion_candidates':candidates,'text_text_candidates':text_text_candidates,'text_node_candidates':text_node_candidates,'failures':failures,'limitations':['Curve intersections use 32 linear intervals per cubic and a baseline-relative text band; not an exhaustive glyph visibility proof.','Visual judgment and semantic acceptance are distinct from PDF element parity.','Legacy input identity and current model correspondence were freshly checked; historical PDF byte reproduction is not claimed.']}
     return report
 
 if __name__=='__main__':
