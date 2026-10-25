@@ -13,8 +13,12 @@ on:
       - '.research/**'
       - 'tools/**'
       - '*.md'
-      - 'requirements-dev.txt'
-      - '.github/workflows/ci.yml'
+      - 'requirements*.txt'
+      - '.github/workflows/**'
+      - 'releases/**'
+      - '.gitignore'
+      - 'CITATION.cff'
+      - 'LICENSE*'
   pull_request:
     paths:
       - 'model/**'
@@ -26,8 +30,12 @@ on:
       - '.research/**'
       - 'tools/**'
       - '*.md'
-      - 'requirements-dev.txt'
-      - '.github/workflows/ci.yml'
+      - 'requirements*.txt'
+      - '.github/workflows/**'
+      - 'releases/**'
+      - '.gitignore'
+      - 'CITATION.cff'
+      - 'LICENSE*'
   workflow_dispatch:
 
 permissions:
