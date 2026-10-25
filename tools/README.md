@@ -45,4 +45,12 @@ The single primary `ci.yml` workflow uses read-only repository permissions, decl
 Install `requirements-diagrams.txt`, then run `python tools/build_diagram_pdfs.py`.
 This generates the vector overview and exact A3 reading atlas from the current
 hash-bound public SVG after its registry audit. See `model/diagrams/README.md`
-and `evaluation/diagrams/pdf-atlas-build.json`. Exhaustive visual review is #45.
+and `evaluation/diagrams/pdf-atlas-build.json`. The #45 assessment reports preserved element parity but blocked readability (#217).
+
+`check_diagram_visual_parity.py --output /tmp/visual-parity.json` performs the
+input-bound SVG/PDF/atlas element audit and approximate later-stroke/text
+intersection screen. `test_diagram_visual_parity.py` verifies rejection of stale
+PDF bytes and displaced geometry/text even after an updated output checksum.
+Read `evaluation/diagram-parity.yaml` for the actual human/agent/machine review
+boundaries and the open rendering correction. A successful parity command does
+not mean the R1 readability gate passed.
