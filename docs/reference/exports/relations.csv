@@ -1,0 +1,349 @@
+lifecycle,introduced_version,source_locator,id,label_en,source_id,target_id,source_multiplicity,target_multiplicity,ontouml_stereotype,connector,notes
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-1,CLR-R0001,contributes to,CLR-C0001,CLR-C0018,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-2,CLR-R0002,selects features from,CLR-C0001,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-3,CLR-R0003,orders,CLR-C0002,CLR-C0017,0..*,2..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-4,CLR-R0004,bears,CLR-C0004,CLR-C0008,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-5,CLR-R0005,bears,CLR-C0004,CLR-C0028,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-6,CLR-R0006,bears,CLR-C0004,CLR-C0055,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-7,CLR-R0007,bears,CLR-C0004,CLR-C0061,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-8,CLR-R0008,bears,CLR-C0004,CLR-C0093,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-9,CLR-R0009,bears,CLR-C0004,CLR-C0127,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-10,CLR-R0010,participates in,CLR-C0004,CLR-C0025,1..*,0..*,«participation»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-11,CLR-R0011,is adopted in,CLR-C0007,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «role» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-12,CLR-R0012,concerns,CLR-C0008,CLR-C0017,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-13,CLR-R0013,originates,CLR-C0009,CLR-C0008,0..1,1..*,«creation»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-14,CLR-R0014,is accepted in,CLR-C0010,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «role» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-15,CLR-R0015,contributes to,CLR-C0012,CLR-C0018,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-16,CLR-R0016,forms or revises category,CLR-C0012,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-17,CLR-R0017,uses abstraction,CLR-C0012,CLR-C0001,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-18,CLR-R0018,affects,CLR-C0013,CLR-C0083,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-19,CLR-R0019,brings about,CLR-C0013,CLR-C0112,0..*,1,«bringsAbout»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «situation». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-20,CLR-R0020,has prior state,CLR-C0013,CLR-C0112,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «situation». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-21,CLR-R0021,assigns to category,CLR-C0014,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-22,CLR-R0022,classifies description,CLR-C0014,CLR-C0059,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-23,CLR-R0023,records assignment,CLR-C0014,CLR-C0060,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-24,CLR-R0024,uses category organization,CLR-C0014,CLR-C0119,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-25,CLR-R0025,occurs with,CLR-C0015,CLR-C0028,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-26,CLR-R0026,describes type,CLR-C0017,CLR-C0125,0..*,0..1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-27,CLR-R0027,draws on source,CLR-C0018,CLR-C0110,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «roleMixin». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-28,CLR-R0028,originates,CLR-C0018,CLR-C0017,0..1,1..*,«creation»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-29,CLR-R0029,adopts commitment,CLR-C0019,CLR-C0086,1..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-30,CLR-R0030,cites source,CLR-C0019,CLR-C0110,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «roleMixin». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-31,CLR-R0031,has structural specification,CLR-C0019,CLR-C0116,0..*,0..1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-32,CLR-R0032,includes element,CLR-C0019,CLR-C0022,1..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-33,CLR-R0033,states constraint,CLR-C0019,CLR-C0030,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-34,CLR-R0034,uses taxonomy,CLR-C0019,CLR-C0119,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-35,CLR-R0035,concerns artifact,CLR-C0021,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-36,CLR-R0036,has rationale,CLR-C0021,CLR-C0065,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-37,CLR-R0037,is made by,CLR-C0021,CLR-C0027,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «historicalRoleMixin». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-38,CLR-R0038,responds to finding,CLR-C0021,CLR-C0040,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-39,CLR-R0039,selects or revises element,CLR-C0021,CLR-C0022,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-40,CLR-R0040,serves goal,CLR-C0021,CLR-C0054,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-41,CLR-R0041,produces or revises,CLR-C0024,CLR-C0023,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-42,CLR-R0042,adopts,CLR-C0026,CLR-C0093,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-43,CLR-R0043,concerns object,CLR-C0026,CLR-C0083,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-44,CLR-R0044,concerns occurrence,CLR-C0026,CLR-C0041,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-45,CLR-R0045,concerns state,CLR-C0026,CLR-C0112,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «situation». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-46,CLR-R0046,concerns temporal entity,CLR-C0026,CLR-C0123,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «abstract». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-47,CLR-R0047,concerns type,CLR-C0026,CLR-C0125,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-48,CLR-R0048,creates,CLR-C0026,CLR-C0019,1,1..*,«creation»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-49,CLR-R0049,has subprocess,CLR-C0026,CLR-C0025,0..1,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-50,CLR-R0050,is informed by,CLR-C0026,CLR-C0015,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-51,CLR-R0051,is motivated by,CLR-C0026,CLR-C0061,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-52,CLR-R0052,records decision,CLR-C0026,CLR-C0021,1,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-53,CLR-R0053,uses domain knowledge,CLR-C0026,CLR-C0034,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-54,CLR-R0054,participates in,CLR-C0027,CLR-C0026,1..*,1..*,«participation»,"Solid line
+No arrowhead",Input end stereotypes: «historicalRoleMixin» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-55,CLR-R0055,is expressed by,CLR-C0030,CLR-C0052,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-56,CLR-R0056,restricts element,CLR-C0030,CLR-C0022,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-57,CLR-R0057,defines,CLR-C0032,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-58,CLR-R0058,communicates,CLR-C0033,CLR-C0070,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-59,CLR-R0059,describes subject concepts,CLR-C0034,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-60,CLR-R0060,informs formation,CLR-C0034,CLR-C0018,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-61,CLR-R0061,is scoped by goal,CLR-C0039,CLR-C0054,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-62,CLR-R0062,assesses artifact,CLR-C0040,CLR-C0019,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-63,CLR-R0063,cites evidence,CLR-C0040,CLR-C0042,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «role». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-64,CLR-R0064,has rationale,CLR-C0040,CLR-C0065,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-65,CLR-R0065,judges against,CLR-C0040,CLR-C0039,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-66,CLR-R0066,has temporal extent,CLR-C0041,CLR-C0123,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «abstract». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-67,CLR-R0067,instantiates,CLR-C0041,CLR-C0125,0..*,1..*,«instantiation»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-68,CLR-R0068,is attributed to,CLR-C0042,CLR-C0110,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «role» / «roleMixin». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-69,CLR-R0069,informs,CLR-C0043,CLR-C0127,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-70,CLR-R0070,explains,CLR-C0044,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-71,CLR-R0071,uses language,CLR-C0047,CLR-C0066,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-72,CLR-R0072,communicates finding,CLR-C0048,CLR-C0040,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-73,CLR-R0073,informs revision of,CLR-C0048,CLR-C0019,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-74,CLR-R0074,reports on,CLR-C0048,CLR-C0026,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-75,CLR-R0075,contains formula,CLR-C0050,CLR-C0052,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-76,CLR-R0076,formalizes content,CLR-C0051,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-77,CLR-R0077,produces or revises,CLR-C0051,CLR-C0050,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-78,CLR-R0078,uses formal language,CLR-C0051,CLR-C0006,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-79,CLR-R0079,has general concept,CLR-C0053,CLR-C0017,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-80,CLR-R0080,has specific concept,CLR-C0053,CLR-C0017,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-81,CLR-R0081,is assessed against,CLR-C0054,CLR-C0129,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-82,CLR-R0082,is externalized in,CLR-C0055,CLR-C0019,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-83,CLR-R0083,describes object,CLR-C0059,CLR-C0083,0..*,0..1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-84,CLR-R0084,describes occurrence,CLR-C0059,CLR-C0041,0..*,0..1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-85,CLR-R0085,describes state,CLR-C0059,CLR-C0112,0..*,0..1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «situation». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-86,CLR-R0086,describes temporal entity,CLR-C0059,CLR-C0123,0..*,0..1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «abstract». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-87,CLR-R0087,has instance description,CLR-C0060,CLR-C0059,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-88,CLR-R0088,has type description,CLR-C0060,CLR-C0017,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-89,CLR-R0089,has desired content,CLR-C0061,CLR-C0054,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-90,CLR-R0090,assigns content,CLR-C0062,CLR-C0105,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-91,CLR-R0091,consults source,CLR-C0063,CLR-C0110,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «roleMixin». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-92,CLR-R0092,draws on,CLR-C0063,CLR-C0034,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-93,CLR-R0093,interprets,CLR-C0063,CLR-C0101,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-94,CLR-R0094,originates,CLR-C0063,CLR-C0062,0..1,1..*,«creation»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-95,CLR-R0095,attributes to source,CLR-C0065,CLR-C0110,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «roleMixin». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-96,CLR-R0096,cites evidence,CLR-C0065,CLR-C0042,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «role». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-97,CLR-R0097,uses assumption,CLR-C0065,CLR-C0007,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «role». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-98,CLR-R0098,has semantic specification,CLR-C0066,CLR-C0108,1..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-99,CLR-R0099,has syntax specification,CLR-C0066,CLR-C0117,1..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-100,CLR-R0100,produces or revises,CLR-C0067,CLR-C0047,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-101,CLR-R0101,produces or revises,CLR-C0069,CLR-C0089,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-102,CLR-R0102,has intended recipient,CLR-C0070,CLR-C0004,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-103,CLR-R0103,has sender,CLR-C0070,CLR-C0004,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-104,CLR-R0104,produces or revises,CLR-C0072,CLR-C0071,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-105,CLR-R0105,conforms to,CLR-C0073,CLR-C0071,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-106,CLR-R0106,is classified by,CLR-C0073,CLR-C0074,0..*,1..*,«instantiation»,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «type». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-107,CLR-R0107,represents models,CLR-C0075,CLR-C0073,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-108,CLR-R0108,conforms to viewpoint,CLR-C0076,CLR-C0131,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-109,CLR-R0109,is view of,CLR-C0076,CLR-C0073,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-110,CLR-R0110,produces or revises,CLR-C0077,CLR-C0073,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-111,CLR-R0111,uses,CLR-C0077,CLR-C0078,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-112,CLR-R0112,assigns term,CLR-C0081,CLR-C0120,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-113,CLR-R0113,names,CLR-C0081,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-114,CLR-R0114,instantiates,CLR-C0083,CLR-C0125,0..*,1..*,«instantiation»,"Solid line
+No arrowhead",Input end stereotypes: «category» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-115,CLR-R0115,observes,CLR-C0084,CLR-C0083,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-116,CLR-R0116,observes occurrence,CLR-C0084,CLR-C0041,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-117,CLR-R0117,observes state,CLR-C0084,CLR-C0112,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «situation». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-118,CLR-R0118,participates in,CLR-C0085,CLR-C0084,1..*,1..*,«participation»,"Solid line
+No arrowhead",Input end stereotypes: «roleMixin» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-119,CLR-R0119,commits to description,CLR-C0086,CLR-C0022,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-120,CLR-R0120,constrains interpretation,CLR-C0086,CLR-C0062,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-121,CLR-R0121,interprets vocabulary,CLR-C0086,CLR-C0134,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-122,CLR-R0122,has part description,CLR-C0089,CLR-C0088,1..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «role». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-123,CLR-R0123,has whole description,CLR-C0089,CLR-C0137,1..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «role». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-124,CLR-R0124,produces or revises,CLR-C0091,CLR-C0090,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-125,CLR-R0125,provides input to,CLR-C0092,CLR-C0084,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-126,CLR-R0126,is expressed by,CLR-C0093,CLR-C0131,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-127,CLR-R0127,presents,CLR-C0095,CLR-C0101,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-128,CLR-R0128,describes feature of,CLR-C0096,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-129,CLR-R0129,applies criterion,CLR-C0097,CLR-C0039,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-130,CLR-R0130,assesses artifact,CLR-C0097,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-131,CLR-R0131,creates result,CLR-C0097,CLR-C0040,1,1..*,«creation»,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-132,CLR-R0132,has source element,CLR-C0099,CLR-C0022,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-133,CLR-R0133,has target element,CLR-C0099,CLR-C0022,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-134,CLR-R0134,produces or revises,CLR-C0100,CLR-C0099,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-135,CLR-R0135,applies pattern,CLR-C0101,CLR-C0090,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-136,CLR-R0136,bears,CLR-C0101,CLR-C0068,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «quality». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-137,CLR-R0137,bears,CLR-C0101,CLR-C0126,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-138,CLR-R0138,bears compatibility disposition,CLR-C0101,CLR-C0106,1,0..*,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-139,CLR-R0139,conforms to schema,CLR-C0101,CLR-C0102,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-140,CLR-R0140,encodes,CLR-C0101,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-141,CLR-R0141,has form,CLR-C0101,CLR-C0049,0..*,1,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-142,CLR-R0142,has level,CLR-C0101,CLR-C0003,1,0..1,«characterization»,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «quality». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-143,CLR-R0143,produces or revises,CLR-C0103,CLR-C0102,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-144,CLR-R0144,interprets content of,CLR-C0105,CLR-C0101,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-145,CLR-R0145,depends on counterpart,CLR-C0106,CLR-C0101,0..*,1..*,«externalDependence»,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-146,CLR-R0146,produces or revises,CLR-C0107,CLR-C0108,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-147,CLR-R0147,constrains interpretation of,CLR-C0108,CLR-C0047,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-148,CLR-R0148,concerns shared content,CLR-C0109,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «situation» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-149,CLR-R0149,has participants,CLR-C0109,CLR-C0004,0..*,2..*,null,"Solid line
+No arrowhead",Input end stereotypes: «situation» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-150,CLR-R0150,includes compatible states,CLR-C0109,CLR-C0127,0..*,2..*,null,"Solid line
+No arrowhead",Input end stereotypes: «situation» / «mode». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-151,CLR-R0151,configures objects,CLR-C0112,CLR-C0083,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «situation» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-152,CLR-R0152,holds at,CLR-C0112,CLR-C0123,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «situation» / «abstract». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-153,CLR-R0153,examines model,CLR-C0114,CLR-C0023,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-154,CLR-R0154,examines structure,CLR-C0114,CLR-C0116,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-155,CLR-R0155,produces or revises,CLR-C0115,CLR-C0116,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-156,CLR-R0156,organizes elements,CLR-C0116,CLR-C0022,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-157,CLR-R0157,specifies connections,CLR-C0116,CLR-C0099,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-158,CLR-R0158,produces or revises,CLR-C0118,CLR-C0117,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-159,CLR-R0159,organizes categories,CLR-C0119,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-160,CLR-R0160,specifies hierarchical links,CLR-C0119,CLR-C0053,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-161,CLR-R0161,designates,CLR-C0120,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-162,CLR-R0162,provides definitions,CLR-C0121,CLR-C0032,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-163,CLR-R0163,produces or revises,CLR-C0122,CLR-C0121,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-164,CLR-R0164,denotes temporal entity,CLR-C0124,CLR-C0123,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «abstract». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-165,CLR-R0165,represents temporal extent of,CLR-C0124,CLR-C0041,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «event». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-166,CLR-R0166,depends on interpreter,CLR-C0126,CLR-C0004,0..*,1..*,«externalDependence»,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «category». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-167,CLR-R0167,concerns,CLR-C0127,CLR-C0017,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-168,CLR-R0168,has articulated content,CLR-C0127,CLR-C0034,0..*,0..*,null,"Solid line
+No arrowhead",Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-169,CLR-R0169,assesses,CLR-C0128,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-170,CLR-R0170,uses criterion,CLR-C0128,CLR-C0129,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-171,CLR-R0171,selects from,CLR-C0130,CLR-C0019,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-172,CLR-R0172,produces or revises,CLR-C0133,CLR-C0132,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-173,CLR-R0173,contains terms,CLR-C0134,CLR-C0120,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.
+candidate,input-r1-rev1,SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-174,CLR-R0174,identifies,CLR-C0135,CLR-C0120,0..*,1..*,null,"Solid line
+No arrowhead",Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective diagram ends; no OWL restriction is inferred.

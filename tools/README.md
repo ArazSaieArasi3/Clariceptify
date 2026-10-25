@@ -54,3 +54,18 @@ PDF bytes and displaced geometry/text even after an updated output checksum.
 Read `evaluation/diagram-parity.yaml` for the actual human/agent/machine review
 boundaries and the open rendering correction. A successful parity command does
 not mean the R1 readability gate passed.
+
+## Reference views, fixtures and review states
+
+`build_reference_pages.py --part concepts --baseline COMMIT` generates concept/domain
+pages and qualified source displays. Run `--part relations` afterwards for relation,
+generalization and textual-constraint tables and eight typed CSV exports. Every
+source field round-trips; model/evidence YAML remains the editable authority.
+Manifests are `evaluation/reference-concepts.json` and `reference-relations.json`.
+
+`check_conceptualization_fixtures.py --output /tmp/fixtures.json` exercises the
+positive episode and the one-clause empty-subject counterexample. This does not
+change global CQ/constraint execution states. `check_review_state.py` checks evidence
+hashes, review types and actual-decision boundaries; it also runs with Python -O.
+See `docs/review/r1-attention-queue.md` for six bounded review units and publication
+metadata decisions. Neither script can manufacture human or scientific approval.

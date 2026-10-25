@@ -47,3 +47,17 @@ Current diagram-r1.2: [scoped rendering reassessment](evaluation/diagrams/paint-
 records the #217 correction, zero current connector-over-text candidates, exact
 geometry/label-value preservation and regenerated same-source PDFs. Historical
 negative evidence remains intact. This is not human scientific acceptance.
+
+## Reference and review path
+
+- [Concept/domain/source reference](docs/reference/README.md)
+- [Relations and generalizations](docs/reference/relations/README.md)
+- [Textual constraints](docs/reference/constraints/README.md)
+- [Lossless CSV export contract](docs/reference/exports/README.md)
+- [Positive and negative example result](evaluation/conceptualization-fixtures.json)
+- [Review state](evaluation/review-state.yaml) and [six-unit dossier](docs/review/r1-attention-queue.md)
+
+The [license proposal](docs/decisions/release-license.md) and
+[creator/citation proposal](docs/decisions/artifact-creators.md) await an actual
+owner decision. No root license grant, stable release, DOI or human acceptance is
+created by these generated documentation and review artifacts.
