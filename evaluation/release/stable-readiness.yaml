@@ -1,0 +1,109 @@
+status: PASS_FOR_STABLE
+source_commit: 4b587ec12060d1ecd1b6a5bdbf8804dd44356766
+source_manifest_sha256: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+blockers: []
+actual_owner_acceptance:
+  status: ACCEPTED
+  decision_date: '2026-10-25'
+  candidate_archive_sha256: b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
+  record: docs/decisions/r1-scope-acceptance.md
+scope: Accepted documented conceptual-model and requirements baseline with retained limitations; not comprehensive
+  semantic/expert acceptance.
+checks:
+  repeat_builds: byte_identical
+  extracted_public_integrity_layers: 11
+  all_results: PASS
+  boundary_tests: 11
+  source_main_ci: 40200791029
+  scientific_members_byte_identical: 233
+  archive_local_markdown_path_links: 1902
+  broken_path_links: 0
+  citation_version: 0.1.0
+  citation_date: Optional field intentionally omitted; actual GitHub Release record supplies publication
+    date.
+  doi: unassigned
+version_delta:
+  from_tag: v0.1.0-rc.1
+  to_tag: v0.1.0
+  scientific_members_byte_identical: 233
+  changed_non_scientific_paths:
+  - path: .research/manifest.yaml
+    old_sha256: b351c3a417286b7a85524323f2d8e26436d87eda206681153b58907b6cb43d61
+    new_sha256: 05d829f528909b79471791308719c3800de3ce7d2c75ed777c9914efc764dab4
+  - path: CHANGELOG.md
+    old_sha256: 93c6a7d7e24165bc582986058e22583fc158acf200f4c89dc4682cefa99ce640
+    new_sha256: 6e78ce4e6a5f3bf7c9461c9596b7747e35f1e5ba108f01cf27bae19f907d5183
+  - path: CITATION.cff
+    old_sha256: 743e9021ede4d24097f84e7a37c7b6f5fb9177a8642d5cbd9b07bad3659b1219
+    new_sha256: 3045e53441d61b458328d82dbf7767ab27258b1743fb30edd5093f13f2eaaafb
+  - path: README.md
+    old_sha256: d5c14fe3b2078283759c43b7a59f93fbf6efe53ece2dd3c0a61f632e7cea4f65
+    new_sha256: 10787b1f9ca448544dad75a8ae0d8cb9cfdcd8e28db0049a1ed85bfc7ddc6f79
+  - path: docs/artifact-status.yaml
+    old_sha256: 369a7d0edf6184fb17325093885bde5ae5a412b14150b69cdf1ffcb9d87d7a91
+    new_sha256: d34748e57d9064cfb95ecaa5c061fed5214f8fe0ab323ceb801e8bc2dc8a3b41
+  - path: docs/known-limitations.md
+    old_sha256: 7b8520b743ea808e7fd1570baeb76eee701c86c66f41afd7e4698408016f50b9
+    new_sha256: ff1629b42628969ad61eac0925b922b33f95267b6b2b111058553f94ad099457
+  - path: docs/reading-guide.md
+    old_sha256: 19af042d87671ccb9aadbe20df3e5e1c6e8ce8053ad8530390b28ad329b4f858
+    new_sha256: 6ff98de48bd9dd3b74cb7d03391726bbae0e103a1187127bc87a78117369df9c
+  - path: evaluation/release/publication-metadata.json
+    old_sha256: 955beebaea2b9c23ef7141978f957738b1b29314ab0c0f0e21a7fa3f7cdc082b
+    new_sha256: 8a773372364ca596b23e46ff0a83790a5012eebc99057a3a5e6a8984b5e53be2
+  - path: evaluation/review-state.yaml
+    old_sha256: a6b9571e6bb635179559e69a01fa8e5bf62d1973319bca6a20d3afc078cdfcc5
+    new_sha256: 071ba2a9706c9ad4a2a64a9ec124d2cb6b5a371eea9f18dcf7ebffea0317a311
+  - path: releases/release-index.yaml
+    old_sha256: 7daa60c1338ff6f7b4ced91fc19edf76118b655ad8c700397767a64d299a7408
+    new_sha256: fa1c18319d62757c386087687400b0552609e2d7b14d4ebee48916334f4bbdf3
+  - path: releases/v0.1.0-rc.1/README.md
+    old_sha256: 3739b69e6cd2d87e65c8c7e4ed4fedd4d8c8c50c5e3a5a11d9bcbc4fc49ff552
+    new_sha256: 4324677f4dcf545e1df7a1faa324a380b18e13cf4269e67d96b83e05be0bd439
+  - path: tools/README.md
+    old_sha256: 2b4a19d86cdfc398e9765ddf30a4aa58af88d1c50e3d243708402563d7e0aa73
+    new_sha256: 4186a1973c3321d84d0a94cdf4c7a597f1531518d690b270b839c0db155c37cd
+  - path: tools/build_release.py
+    old_sha256: a2845d0cc57c701c00b5fe57cbeff9613e0f7e449d7feaa26a35f3ada93277e8
+    new_sha256: 5142d030fcb205acc453e2429dfa10602882005c77e48e42d364d83bf39fc279
+  - path: tools/check_publication_metadata.py
+    old_sha256: 94df2ec9d47a299d7e08798d779a91327f926e87bd421b4064a8d129495f8917
+    new_sha256: 10d604622b0537925963fd526ad8b281aa57204288b3192d237b66e18d16bed5
+  - path: tools/readback_release.py
+    old_sha256: 36b5dabbdd975240cfe6358e96fc8fe9832d5651830b572a6e05374d00cf2918
+    new_sha256: 45b4e0925a80b6baf53da3c31ea507679d1131dc3c88f311da661a1c1818d6fe
+  - path: tools/test_release_preparation.py
+    old_sha256: 090898770766013b66a15c8a93a78a5e874a526bdf2e0e285fef7205596b7e02
+    new_sha256: d50509146a36b0f9567d87ebfc555f59ecb205718a6c326541a9d25db58e45ea
+  added_non_scientific_paths:
+  - .github/workflows/stable-release.yml
+  - docs/decisions/r1-scope-acceptance.md
+  - docs/review/rc1-acceptance.md
+  - evaluation/release/rc-build.yaml
+  - evaluation/release/rc-publication.yaml
+  - evaluation/release/rc-readiness.yaml
+  - evaluation/release/readback.yaml
+  - evaluation/release/scope-disposition.yaml
+  - releases/v0.1.0-rc.1/RELEASE-NOTES.md
+  - releases/v0.1.0-rc.1/manifest.yaml
+  - releases/v0.1.0-rc.1/request.json
+  - releases/v0.1.0/README.md
+  - tools/check_stable_promotion.py
+  - tools/verify_stable_request.py
+  removed_source_paths: []
+  meaning: Publication/version metadata, actual acceptance/status, historical release evidence and reproducibility
+    engineering only. Scientific/model/source/requirement/reference/fixture/claim members are unchanged.
+retained_limitations:
+- Candidate conceptual commitments and domain adequacy need scoped R2 review.
+- Source passages/typing and globally unexecuted CQs remain unassessed where recorded.
+- No complete OWL/SHACL/FOL implementation, joint satisfiability proof, native-tool validity, independent
+  expert acceptance, empirical study, final paper or DOI.
+- Detailed contribution roles remain unassessed; owner-declared creators/order and licenses remain adopted.
+publication_state_at_assessment: Not yet issued; workflow must rebuild and actually publish/read back
+  the exact reviewed bytes.
+evidence_sha256:
+  releases/v0.1.0/manifest.yaml: ef434e22377a8b4813e193a7cf0831be1bff67419338a261abf9c2d8d003ad3a
+  evaluation/release/stable-build.yaml: 9876a1ae143579c986387f0a4a96209c400586f8943cf0475f78a640ddab93d6
+  evaluation/release/stable-readback.yaml: e270d48468b7555bb2ba417977a2263fbb360f73dc7259273d41c95d01e24e66
+  evaluation/release/scope-disposition.yaml: fd34000b9641eb947e5feb4cc94da0e8db6cb65540beab40d9a8a21690ba2746
