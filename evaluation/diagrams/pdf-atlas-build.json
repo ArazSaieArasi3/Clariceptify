@@ -1,12 +1,12 @@
 {
-  "task": "R1-025.b",
-  "baseline_commit": "cc2a75c09ad2065bebbd11749a5a291742a6a6c1",
+  "task": "R1-FIX-VIS-001",
+  "baseline_commit": "8b24132a41b49f08dd81153bba09aa05f9571af9",
   "status": "PASS",
   "scope": "Same-source vector PDF generation and complete overlapping tile coverage; exhaustive visual parity/readability is issue #45.",
   "source": {
     "path": "model/diagrams/generated/full.svg",
-    "sha256": "a13f3d543eb076646bbacc437d2a8e8425a37300d87c7aa51589560d3472e0ba",
-    "diagram_revision": "diagram-r1.1",
+    "sha256": "a2cf0a5f663a5b5228d89e83aae4e4734b37679fc9f43853f3af707cc95cac76",
+    "diagram_revision": "diagram-r1.2",
     "model_sha256": {
       "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
       "model/constraints.yaml": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4",
@@ -17,7 +17,7 @@
   },
   "generator": {
     "path": "tools/build_diagram_pdfs.py",
-    "sha256": "ca261ec21e6ba1741b19a68406dc89c8ee8009a0294e3343a583caba71ca442c",
+    "sha256": "55f9c5b8f9581c4ee625f23b1264cb2ea64d54b588affc3d045b2a497b147063",
     "pymupdf": "1.26.6",
     "mupdf": "1.26.11",
     "python": "3.12.14"
@@ -1230,8 +1230,8 @@
   },
   "outputs": {
     "full.pdf": {
-      "sha256": "4e4f1b780d91f11745090c5f0721f54c9e00eacf9cdd0c6804a2e047dcf18275",
-      "bytes": 114580,
+      "sha256": "cf61d6673e6c57e2c3d2dab098f4215ba6e5da322424e01b9e6f21022080e436",
+      "bytes": 113357,
       "pages": 1,
       "page_sizes_pt": [
         [
@@ -1244,8 +1244,8 @@
       "image_objects": 0
     },
     "atlas.pdf": {
-      "sha256": "f8854252f66770f13158013179cfe0166faf3c100b22abc1543bb0138abc3e65",
-      "bytes": 245415,
+      "sha256": "c7583389f4b42dc769aa3c8d392d5dc178c4b388594f184f5a445d89538684a3",
+      "bytes": 244205,
       "pages": 69,
       "page_sizes_pt": [
         [

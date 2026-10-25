@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
-BASELINE = 'cc2a75c09ad2065bebbd11749a5a291742a6a6c1'
+BASELINE = '8b24132a41b49f08dd81153bba09aa05f9571af9'
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -26,10 +26,11 @@ def build():
     parity = json.loads(audit.stdout)
     svg = ET.parse(source).getroot()
     bindings = json.loads(svg.find('{http://www.w3.org/2000/svg}metadata').text)
+    revision=bindings['diagram_revision']
     out = source.parent
     with fitz.open(source) as vector:
         full = fitz.open(stream=vector.convert_to_pdf(), filetype='pdf')
-    metadata = {'title':'Clariceptify - complete conceptual model - diagram-r1.1',
+    metadata = {'title':f'Clariceptify - complete conceptual model - {revision}',
                 'subject':f'Review candidate; source SHA256 {digest(source)}; model input-r1-rev1',
                 'creator':f'build_diagram_pdfs.py; PyMuPDF {fitz.VersionBind}',
                 'producer':f'PyMuPDF {fitz.VersionBind}'}
@@ -44,7 +45,7 @@ def build():
     rows = math.ceil((height-overlap_y)/(th-overlap_y))
     atlas = fitz.open()
     guide = atlas.new_page(width=pw, height=ph)
-    guide.insert_text((28,30), 'CLARICEPTIFY | diagram-r1.1 | A3 reading atlas', fontsize=18)
+    guide.insert_text((28,30), f'CLARICEPTIFY | {revision} | A3 reading atlas', fontsize=18)
     guide.insert_text((28,51), 'Review candidate | Print at 100% / Actual size | Detail pages preserve source scale (1 pt = 1 pt).', fontsize=11)
     guide.insert_text((28,69), 'Read left to right, then top to bottom. Adjacent tiles overlap by 240 pt horizontally and 96 pt vertically. Follow row/column labels across pages.', fontsize=11)
     guide.insert_text((28,87), 'The complete overview needs zoom. Semantic acceptance and exhaustive visual parity are not established.', fontsize=11)
@@ -61,7 +62,7 @@ def build():
             page_number = len(tiles)+2
             page = atlas.new_page(width=pw,height=ph)
             label = f'R{row+1:02d} C{col+1:02d}'
-            page.insert_text((28,23), f'CLARICEPTIFY | diagram-r1.1 | {label} | page {page_number}', fontsize=13)
+            page.insert_text((28,23), f'CLARICEPTIFY | {revision} | {label} | page {page_number}', fontsize=13)
             page.insert_text((28,40), f'Source window: x={x:.1f}..{clip.x1:.1f}, y={y:.1f}..{clip.y1:.1f} pt | 100% scale | 240 / 96 pt overlap', fontsize=9)
             dest = fitz.Rect(margin,top,margin+clip.width,top+clip.height)
             page.show_pdf_page(dest,full,0,clip=clip,keep_proportion=False)
@@ -93,14 +94,14 @@ def build():
         needed = len(lines)*15+12
         if cursor+needed > ph-40:
             page=atlas.new_page(width=pw,height=ph)
-            page.insert_text((28,30),'CLARICEPTIFY | Source legend and reading notes | diagram-r1.1',fontsize=16)
+            page.insert_text((28,30),f'CLARICEPTIFY | Source legend and reading notes | {revision}',fontsize=16)
             page.insert_text((28,49),'Exact source wording, reflowed for reading. Review candidate; no new scientific acceptance.',fontsize=10)
             cursor=80
         for line in lines:
             page.insert_text((36,cursor),line,fontsize=11 if size!=22 else 12)
             cursor+=15
         cursor+=12
-    atlas.set_metadata({**metadata,'title':'Clariceptify - A3 reading atlas - diagram-r1.1'})
+    atlas.set_metadata({**metadata,'title':f'Clariceptify - A3 reading atlas - {revision}'})
     atlas.set_toc([[1,'Overview and tile navigation',1]]+[[1,f"Row {r+1}",2+r*cols] for r in range(rows)]+[[1,'Source legend and reading notes',appendix_start]])
     atlas.save(out/'atlas.pdf',garbage=4,deflate=True,no_new_id=True)
     outputs = {}
@@ -108,7 +109,7 @@ def build():
         path=out/name
         with fitz.open(path) as pdf:
             outputs[name]={'sha256':digest(path),'bytes':path.stat().st_size,'pages':len(pdf),'page_sizes_pt':sorted(set(tuple(p.rect) for p in pdf)),'image_objects':sum(len(p.get_images()) for p in pdf)}
-    report={'task':'R1-025.b','baseline_commit':BASELINE,'status':'PASS',
+    report={'task':'R1-FIX-VIS-001' if revision=='diagram-r1.2' else 'R1-025.b','baseline_commit':BASELINE,'status':'PASS',
             'scope':'Same-source vector PDF generation and complete overlapping tile coverage; exhaustive visual parity/readability is issue #45.',
             'source':{'path':str(source.relative_to(ROOT)),'sha256':digest(source),'diagram_revision':bindings['diagram_revision'],'model_sha256':bindings['model_sha256']},
             'generator':{'path':'tools/build_diagram_pdfs.py','sha256':digest(Path(__file__)),'pymupdf':fitz.VersionBind,'mupdf':fitz.VersionFitz,'python':sys.version.split()[0]},

@@ -1,0 +1,467 @@
+task: R1-FIX-VIS-001
+baseline_commit: 8b24132a41b49f08dd81153bba09aa05f9571af9
+finding_id: CLR-VIS-001
+finding_disposition: RESOLVED_FOR_SCOPED_RENDERING_GATE
+diagram_revision: diagram-r1.2
+predecessor:
+  commit: 8b24132a41b49f08dd81153bba09aa05f9571af9
+  sha256: a13f3d543eb076646bbacc437d2a8e8425a37300d87c7aa51589560d3472e0ba
+current_svg_sha256: a2cf0a5f663a5b5228d89e83aae4e4734b37679fc9f43853f3af707cc95cac76
+model_registry_hashes_unchanged:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+connector_and_node_geometry_exactly_preserved: true
+label_values_and_ids_exactly_preserved: true
+label_adjustments:
+- new_background:
+  - 5153.192000031471
+  - -2727.34
+  - 5163.307999968529
+  - -2713.76
+  offset_pt:
+  - 0
+  - -18
+  old_background:
+  - 5153.192000031471
+  - -2709.34
+  - 5163.307999968529
+  - -2695.76
+  registry_id: CLR-R0005
+  text:
+  - '1'
+- new_background:
+  - 5250.836718657233
+  - -2714.674718625761
+  - 5260.952718594291
+  - -2701.0947186257613
+  offset_pt:
+  - -2
+  - 8
+  old_background:
+  - 5252.836718657233
+  - -2722.674718625761
+  - 5262.952718594291
+  - -2709.0947186257613
+  registry_id: CLR-R0009
+  text:
+  - '1'
+- new_background:
+  - 5129.94450007081
+  - -2710.56
+  - 5150.4554999291895
+  - -2696.98
+  offset_pt:
+  - -2
+  - 0
+  old_background:
+  - 5131.94450007081
+  - -2710.56
+  - 5152.4554999291895
+  - -2696.98
+  registry_id: CLR-R0166
+  text:
+  - 1..*
+- new_background:
+  - 1931.7945000708103
+  - -762.93
+  - 1952.3054999291896
+  - -749.3499999999999
+  offset_pt:
+  - 2
+  - 0
+  old_background:
+  - 1929.7945000708103
+  - -762.93
+  - 1950.3054999291896
+  - -749.3499999999999
+  registry_id: CLR-R0100
+  text:
+  - 1..*
+- new_background:
+  - 1083.196072946064
+  - -584.9484271247462
+  - 1103.7070728044434
+  - -571.3684271247462
+  offset_pt:
+  - 4
+  - 0
+  old_background:
+  - 1079.196072946064
+  - -584.9484271247462
+  - 1099.7070728044434
+  - -571.3684271247462
+  registry_id: CLR-R0135
+  text:
+  - 0..*
+- new_background:
+  - 3318.8345000708105
+  - -922.84
+  - 3339.34549992919
+  - -909.26
+  offset_pt:
+  - 2
+  - 0
+  old_background:
+  - 3316.8345000708105
+  - -922.84
+  - 3337.34549992919
+  - -909.26
+  registry_id: CLR-R0107
+  text:
+  - 1..*
+method: 174 label groups are drawn after every connector and before node boxes. Six
+  label blocks were moved 2-18 pt to clear triangle backgrounds; leaders preserve
+  the origin association.
+reassessment:
+  element_parity: PASS_SCOPED_ELEMENT_PARITY
+  current_counts:
+    nodes: 137
+    edges: 296
+    model_text_labels: 837
+    occlusion_candidates: 0
+    text_text_candidates: 0
+    text_node_candidates: 0
+  original_candidates: 79
+  all_original_candidate_dispositions:
+  - candidate_id: CLR-VIS-CAND-001
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0004
+    line_edge: CLR-R0009
+  - candidate_id: CLR-VIS-CAND-002
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0004
+    line_edge: CLR-R0007
+  - candidate_id: CLR-VIS-CAND-003
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0009
+    line_edge: CLR-R0007
+  - candidate_id: CLR-VIS-CAND-004
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0009
+    line_edge: CLR-R0149
+  - candidate_id: CLR-VIS-CAND-005
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0067
+    line_edge: CLR-R0151
+  - candidate_id: CLR-VIS-CAND-006
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0150
+    line_edge: CLR-G0053
+  - candidate_id: CLR-VIS-CAND-007
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0012
+    line_edge: CLR-G0013
+  - candidate_id: CLR-VIS-CAND-008
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0167
+    line_edge: CLR-R0021
+  - candidate_id: CLR-VIS-CAND-009
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0089
+    line_edge: CLR-R0036
+  - candidate_id: CLR-VIS-CAND-010
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0082
+    line_edge: CLR-R0073
+  - candidate_id: CLR-VIS-CAND-011
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0145
+    line_edge: CLR-G0086
+  - candidate_id: CLR-VIS-CAND-012
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0090
+    line_edge: CLR-G0040
+  - candidate_id: CLR-VIS-CAND-013
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0090
+    line_edge: CLR-G0008
+  - candidate_id: CLR-VIS-CAND-014
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0051
+    line_edge: CLR-R0042
+  - candidate_id: CLR-VIS-CAND-015
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0048
+    line_edge: CLR-R0011
+  - candidate_id: CLR-VIS-CAND-016
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0048
+    line_edge: CLR-R0035
+  - candidate_id: CLR-VIS-CAND-017
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0045
+    line_edge: CLR-R0074
+  - candidate_id: CLR-VIS-CAND-018
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0053
+    line_edge: CLR-R0060
+  - candidate_id: CLR-VIS-CAND-019
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0025
+    line_edge: CLR-R0173
+  - candidate_id: CLR-VIS-CAND-020
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0025
+    line_edge: CLR-R0059
+  - candidate_id: CLR-VIS-CAND-021
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0028
+    line_edge: CLR-R0021
+  - candidate_id: CLR-VIS-CAND-022
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0002
+    line_edge: CLR-R0026
+  - candidate_id: CLR-VIS-CAND-023
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0002
+    line_edge: CLR-R0128
+  - candidate_id: CLR-VIS-CAND-024
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0002
+    line_edge: CLR-R0088
+  - candidate_id: CLR-VIS-CAND-025
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0002
+    line_edge: CLR-R0016
+  - candidate_id: CLR-VIS-CAND-026
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0002
+    line_edge: CLR-R0074
+  - candidate_id: CLR-VIS-CAND-027
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0013
+    line_edge: CLR-R0021
+  - candidate_id: CLR-VIS-CAND-028
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0013
+    line_edge: CLR-G0012
+  - candidate_id: CLR-VIS-CAND-029
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0093
+    line_edge: CLR-G0063
+  - candidate_id: CLR-VIS-CAND-030
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0110
+    line_edge: CLR-R0031
+  - candidate_id: CLR-VIS-CAND-031
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0110
+    line_edge: CLR-G0046
+  - candidate_id: CLR-VIS-CAND-032
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0110
+    line_edge: CLR-R0109
+  - candidate_id: CLR-VIS-CAND-033
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0111
+    line_edge: CLR-G0047
+  - candidate_id: CLR-VIS-CAND-034
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0104
+    line_edge: CLR-R0154
+  - candidate_id: CLR-VIS-CAND-035
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0112
+    line_edge: CLR-G0083
+  - candidate_id: CLR-VIS-CAND-036
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0112
+    line_edge: CLR-G0111
+  - candidate_id: CLR-VIS-CAND-037
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0101
+    line_edge: CLR-R0024
+  - candidate_id: CLR-VIS-CAND-038
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0155
+    line_edge: CLR-R0059
+  - candidate_id: CLR-VIS-CAND-039
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0143
+    line_edge: CLR-G0038
+  - candidate_id: CLR-VIS-CAND-040
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0163
+    line_edge: CLR-R0059
+  - candidate_id: CLR-VIS-CAND-041
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0163
+    line_edge: CLR-R0174
+  - candidate_id: CLR-VIS-CAND-042
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0032
+    line_edge: CLR-G0069
+  - candidate_id: CLR-VIS-CAND-043
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0031
+    line_edge: CLR-G0105
+  - candidate_id: CLR-VIS-CAND-044
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0031
+    line_edge: CLR-R0034
+  - candidate_id: CLR-VIS-CAND-045
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0033
+    line_edge: CLR-G0038
+  - candidate_id: CLR-VIS-CAND-046
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0132
+    line_edge: CLR-G0090
+  - candidate_id: CLR-VIS-CAND-047
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0133
+    line_edge: CLR-R0056
+  - candidate_id: CLR-VIS-CAND-048
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0083
+    line_edge: CLR-G0112
+  - candidate_id: CLR-VIS-CAND-049
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0084
+    line_edge: CLR-R0164
+  - candidate_id: CLR-VIS-CAND-050
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0086
+    line_edge: CLR-G0112
+  - candidate_id: CLR-VIS-CAND-051
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0079
+    line_edge: CLR-R0161
+  - candidate_id: CLR-VIS-CAND-052
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0088
+    line_edge: CLR-R0021
+  - candidate_id: CLR-VIS-CAND-053
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0088
+    line_edge: CLR-R0087
+  - candidate_id: CLR-VIS-CAND-054
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0081
+    line_edge: CLR-R0040
+  - candidate_id: CLR-VIS-CAND-055
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0140
+    line_edge: CLR-G0069
+  - candidate_id: CLR-VIS-CAND-056
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0140
+    line_edge: CLR-G0115
+  - candidate_id: CLR-VIS-CAND-057
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0139
+    line_edge: CLR-G0027
+  - candidate_id: CLR-VIS-CAND-058
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0139
+    line_edge: CLR-R0135
+  - candidate_id: CLR-VIS-CAND-059
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0135
+    line_edge: CLR-G0038
+  - candidate_id: CLR-VIS-CAND-060
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0135
+    line_edge: CLR-G0066
+  - candidate_id: CLR-VIS-CAND-061
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0135
+    line_edge: CLR-G0112
+  - candidate_id: CLR-VIS-CAND-062
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0135
+    line_edge: CLR-G0117
+  - candidate_id: CLR-VIS-CAND-063
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0135
+    line_edge: CLR-G0043
+  - candidate_id: CLR-VIS-CAND-064
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0075
+    line_edge: CLR-G0005
+  - candidate_id: CLR-VIS-CAND-065
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0107
+    line_edge: CLR-G0068
+  - candidate_id: CLR-VIS-CAND-066
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0109
+    line_edge: CLR-G0027
+  - candidate_id: CLR-VIS-CAND-067
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0070
+    line_edge: CLR-R0014
+  - candidate_id: CLR-VIS-CAND-068
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0057
+    line_edge: CLR-R0162
+  - candidate_id: CLR-VIS-CAND-069
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0161
+    line_edge: CLR-R0003
+  - candidate_id: CLR-VIS-CAND-070
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0099
+    line_edge: CLR-G0106
+  - candidate_id: CLR-VIS-CAND-071
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0173
+    line_edge: CLR-R0162
+  - candidate_id: CLR-VIS-CAND-072
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0156
+    line_edge: CLR-R0157
+  - candidate_id: CLR-VIS-CAND-073
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0021
+    line_edge: CLR-R0023
+  - candidate_id: CLR-VIS-CAND-074
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0024
+    line_edge: CLR-R0121
+  - candidate_id: CLR-VIS-CAND-075
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0055
+    line_edge: CLR-G0008
+  - candidate_id: CLR-VIS-CAND-076
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0076
+    line_edge: CLR-R0078
+  - candidate_id: CLR-VIS-CAND-077
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0151
+    line_edge: CLR-R0018
+  - candidate_id: CLR-VIS-CAND-078
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0065
+    line_edge: CLR-R0038
+  - candidate_id: CLR-VIS-CAND-079
+    status: corrected_by_label_after_connector_order
+    label_edge: CLR-R0038
+    line_edge: CLR-R0036
+  visual_examples_rechecked:
+  - CLR-VIS-CAND-001
+  - CLR-VIS-CAND-005
+  - CLR-VIS-CAND-012
+  - CLR-VIS-CAND-031
+  - CLR-VIS-CAND-051
+  - CLR-VIS-CAND-079
+  agent_visual_review: six original windows inspected after correction; no later strokes
+    obscure the recorded glyphs
+  human_expert_review: NOT_ASSESSED
+  repeat_build: two builds have identical PDF hashes
+evidence:
+  evaluation/diagrams/paint-order-element-parity.json: 8ad9ffbacc3432bdd7c68507b25290163bea7a514113005c9d288748616a536a
+  evaluation/diagrams/paint-order-corrected.png: 3248146ec14321b0a0d957b50ccf0d3d783336b5541f2278f7efe96d54b87349
+  evaluation/diagrams/pdf-atlas-build.json: b314a6febaa18fb94a976263f37023cef860088d83601f4f058ff4ab8f22150b
+readability_gate: PASS_FOR_DECLARED_PAINT_ORDER_AND_ELEMENT_COVERAGE_SCOPE
+limits:
+- Historical negative assessment remains unchanged and valid for diagram-r1.1.
+- Scoped rendering repair is not comprehensive human approval or semantic/native OntoUML
+  validation.
+- All 79 machine candidates were reassessed structurally; six underwent detailed agent
+  visual review.
+- No model registry, published tag or release asset changed.

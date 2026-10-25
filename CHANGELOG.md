@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased - diagram-r1.2 rendering correction
+
+- Resolve CLR-VIS-001 (#217): render labels after connectors, and retain clear parent triangles with six logged label adjustments.
+- Preserve node/connector geometry, IDs, label values and model hashes; regenerate vector PDF and atlas.
+- Reassess all 79 previous candidates; zero current later-connector/text candidates. Retain the historical negative assessment.
+
+
 ## Unreleased - input-bound visual assessment
 
 - Complete #45 with per-element SVG/PDF/atlas correspondence and negative tests.
