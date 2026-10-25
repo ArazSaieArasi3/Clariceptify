@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased - R1 PDF and atlas generation
+
+- Generate the complete vector PDF and a 69-page A3 reading atlas from diagram-r1.1 (#44).
+- Bind source/model/tool/output hashes; preserve the model and source geometry.
+- Record coverage, repeat-build and sampled visual checks; exhaustive visual parity remains #45.
+
+
 ## Current development — post-alpha.3 R1 preparation
 
 - Imported candidate registries: 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints.

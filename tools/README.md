@@ -39,3 +39,10 @@ For authorized input reconstruction, `import_requirement_witnesses.py ORSD.docx`
 `python tools/run_integrity.py --output ../clariceptify-integrity` runs the seven public gate layers and writes reports outside the evaluated tree. It records actual Git commit/tree, every tracked input digest, all validator digests, tool versions, event/run identifiers and per-layer results. A dirty local tree is explicitly labelled and never presented as a clean commit. No stored PASS is inherited.
 
 The single primary `ci.yml` workflow uses read-only repository permissions, declared public path triggers, cancellation of superseded development runs and a retained evidence artifact. It does not run formal reasoners, access private inputs, commit results or publish releases. The separately requested immutable release publishers keep their own non-cancelling publication gates.
+
+## Same-source diagram PDFs
+
+Install `requirements-diagrams.txt`, then run `python tools/build_diagram_pdfs.py`.
+This generates the vector overview and exact A3 reading atlas from the current
+hash-bound public SVG after its registry audit. See `model/diagrams/README.md`
+and `evaluation/diagrams/pdf-atlas-build.json`. Exhaustive visual review is #45.

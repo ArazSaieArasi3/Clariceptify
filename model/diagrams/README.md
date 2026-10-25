@@ -12,4 +12,19 @@ Run `python tools/check_diagram_sources.py` to check the public source/approval 
 
 [generated/full.svg](generated/full.svg) is a controlled derivative of the exact recovered SVG, not a newly recovered native model or historical generator. It preserves all node/edge geometry, labels, direction, multiplicity and domain colors; adds stable registry identifiers and model hash bindings; changes the diagram brand to Clariceptify; corrects unsupported approval metadata; and removes embedded third-party font programs. Sans-serif fallback fonts are not distributed here. The manuscript title is unchanged.
 
-Reproduce with `python tools/derive_complete_diagram.py /authorized/path/Conceptiom_Release_1_OntoUML_Full.svg`. The historical input SHA-256 is enforced. The public SVG remains editable without that private input. Install `requirements-diagrams.txt`, then run `python tools/check_diagram_model.py`. The [complete-model report](../../evaluation/diagrams/complete-model-parity.json) binds each of 137 nodes and 296 edges to its registry ID, checks visible labels/stereotypes, ordered endpoints, multiplicity text, endpoint geometry, all 21 domain colors/legend descriptions and current model hashes. It is not scientific approval or native OntoUML validation. The overall map requires substantial zoom and is not a printable reading view; readable PDF detail views and full visual parity remain issues #44 and #45.
+Reproduce with `python tools/derive_complete_diagram.py /authorized/path/Conceptiom_Release_1_OntoUML_Full.svg`. The historical input SHA-256 is enforced. The public SVG remains editable without that private input. Install `requirements-diagrams.txt`, then run `python tools/check_diagram_model.py`. The [complete-model report](../../evaluation/diagrams/complete-model-parity.json) binds each of 137 nodes and 296 edges to its registry ID, checks visible labels/stereotypes, ordered endpoints, multiplicity text, endpoint geometry, all 21 domain colors/legend descriptions and current model hashes. It is not scientific approval or native OntoUML validation. The overall map requires substantial zoom and is not a printable reading view; PDF detail views are now generated under #44; exhaustive visual parity remains issue #45.
+
+## PDF overview and A3 reading atlas
+
+[generated/full.pdf](generated/full.pdf) preserves the complete vector canvas.
+[generated/atlas.pdf](generated/atlas.pdf) provides 69 exact A3 landscape pages:
+a linked overview, 66 overlapping detail tiles at source scale and two reflowed
+legend/note pages. Print at actual size; follow row/column and neighbor labels.
+
+Run `python tools/build_diagram_pdfs.py` with `requirements-diagrams.txt` installed.
+The adapter reads the public current SVG, first audits its registry bindings and
+records exact source/model/tool/output fingerprints in
+[pdf-atlas-build.json](../../evaluation/diagrams/pdf-atlas-build.json).
+The [generation review](../../evaluation/diagrams/pdf-atlas-review.md) records actual
+coverage, vector, reproducibility and sampled visual checks and their limitations.
+Neither generated PDF is an independent semantic authority. Issue #45 remains open.
