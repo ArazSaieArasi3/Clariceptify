@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "Model/need/CQ record shapes and identifier uniqueness only",
+  "counts": {
+    "concept": 137,
+    "domain": 21,
+    "relation": 174,
+    "generalization": 122,
+    "constraint": 24,
+    "FR": 30,
+    "QR": 10,
+    "LR": 8,
+    "CQ": 30,
+    "LCQ": 8
+  },
+  "negative_cases_rejected": [
+    "missing model definition",
+    "missing record ID",
+    "duplicate concept ID",
+    "duplicate requirement ID",
+    "missing adverse case",
+    "invalid origin",
+    "wrong CQ namespace",
+    "fabricated computed answer"
+  ],
+  "input_file_sha256": {
+    "model/concepts.yaml": "4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf",
+    "model/schema/concept.schema.json": "9e60713829bb19da10625e80e61de2ebc92051cd8741eb2608c3ead7724fe906",
+    "model/domains.yaml": "1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3",
+    "model/schema/domain.schema.json": "65f73da0de3a501e3f051ad4a1d61fb94cd763f32c42e0f38c69479d0402d527",
+    "model/relations.yaml": "6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac",
+    "model/schema/relation.schema.json": "7d0e4bb3f5b8e4e99957b056f959644a8e7c717ef33eb455bba9cebe8b63117e",
+    "model/generalizations.yaml": "f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c",
+    "model/schema/generalization.schema.json": "e8ef3c94f56062ae4add8d94b1b5d9f39fd559b35a6503545bf93e4843d0973c",
+    "model/constraints.yaml": "337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4",
+    "model/schema/constraint.schema.json": "411228fabf0aca7ccbe5722c14d9d88772fd055de01ade5ae68a870f7843252a",
+    "requirements/functional.yaml": "1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608",
+    "requirements/schema/need.schema.json": "313955965c642d8146e96af50457418503094d8f2a4942778cef1c009fd16add",
+    "requirements/quality.yaml": "dcae41d4d49af2195aa142fc454764d9e94a220727dd95c464a37e481b9156dc",
+    "requirements/future.yaml": "bb89ce5a8830eed39b9ec67b4594178165747d522e74e8475d30abc84ab5d53e",
+    "requirements/competency-questions.yaml": "144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5",
+    "requirements/schema/cq.schema.json": "a77fdd13507453c53687ba3dc3deec8df588d0cd93f0a716ab3b8cb538248c98"
+  },
+  "limits": [
+    "Counts describe the observed input, not fixed adequacy thresholds.",
+    "Schema validity does not establish endpoint integrity, satisfaction or philosophical soundness."
+  ]
+}
