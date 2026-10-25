@@ -38,8 +38,8 @@ def expression(graph, node, trail=()):
     return sorted(rows, key=lambda row: json.dumps(row, sort_keys=True))
 
 
-def inspect(source_dir):
-    manifest = yaml.safe_load((ROOT / 'evidence/related-work/artifact-inputs.yaml').read_text())
+def inspect(source_dir, manifest_path=None):
+    manifest = yaml.safe_load((manifest_path or ROOT / 'evidence/related-work/artifact-inputs.yaml').read_text())
     graphs = {}
     for spec in manifest['artifacts']:
         data = (source_dir / spec['filename']).read_bytes()
@@ -105,7 +105,9 @@ def inspect(source_dir):
             'reasoner_execution': 'NOT_EXECUTED',
             'count_policy': 'Unique URI subjects explicitly typed owl:Class; local namespace filter; blank-node classes excluded. Import closure is asserted graph union, not inference.',
             'scope': 'Syntax, inventories and selected asserted axioms; no OWL profile, satisfiability, equivalence or paper-to-OWL fidelity proof.'}
-    alias = manifest['alias_check']
+    alias = manifest.get('alias_check')
+    if not alias:
+        return results
     data = (source_dir / alias['filename']).read_bytes()
     if hashlib.sha256(data).hexdigest() != alias['sha256']:
         raise ValueError('Changed alias bytes')
@@ -120,10 +122,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source-dir', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
+    parser.add_argument('--manifest', type=Path)
     args = parser.parse_args()
     if args.source_dir.resolve().is_relative_to(ROOT):
         raise ValueError('Keep third-party source files outside the public repository')
-    reports = inspect(args.source_dir)
+    reports = inspect(args.source_dir, args.manifest)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     for key, report in reports.items():
         (args.output_dir / (key + '.json')).write_text(json.dumps(report, indent=2, sort_keys=True) + '\n')
