@@ -33,15 +33,14 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 candidate freeze
-  current_workstream: Owner-approved licenses and three creators; validated citation and synchronized
-    reader path
+  current_wave: R1 published candidate
+  current_workstream: v0.1.0-rc.1 issued and read back; exact-package owner disposition pending
   next_gate:
-    name: Exact RC freeze, readback and readiness
-    criteria: 'Complete #57-#60 on exact committed source, publish #61, then obtain #62 exact-package
-      disposition.'
-  next_action: Freeze the synchronized candidate source and run all package gates before RC
-    publication.
+    name: Actual owner disposition on the exact published candidate (#62)
+    criteria: Record actual acceptance, rejection or requested changes against the RC tag and archive
+      digest; only acceptance authorizes stable promotion.
+  next_action: 'Review docs/review/rc1-acceptance.md and record actual #62 disposition before #63/#64
+    stable publication/readback.'
 progress:
   problem_framing: done
   evidence_base: planned
@@ -67,8 +66,8 @@ verification:
   - evaluation/claim-register.json
   - evaluation/traceability-preview-publication.json
   - releases/v0.1.0-alpha.3/ci-readback.json
+  - evaluation/release/rc-publication.yaml
   coherence_debt:
   - Canonical handover pending destination parity
   - Source/specification approval wording requires reconciliation
-  note: Local continuation of R-001; no upstream registry mutation or full OGCM conformance
-    assessment.
+  note: Local continuation of R-001; no upstream registry mutation or full OGCM conformance assessment.

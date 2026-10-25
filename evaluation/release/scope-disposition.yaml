@@ -1,0 +1,27 @@
+task: R1-033
+status: NOT_ASSESSED
+actual_owner_decision: null
+decision_date: null
+delegation_record: null
+release_url: https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-rc.1
+tag: v0.1.0-rc.1
+source_commit: 4780cba43a5aab8f9867073a1e89de824d421d28
+freeze_commit: bcce59992606a22ddb82a49c243aeda6f7f54963
+archive_sha256: b27b14c9ec602734085762c4472938e55c2b33614ccd1fe0ea7240720efac7c7
+manifest_sha256: 48c4dc97578233d3a7b124e17e0f14db4dbe1db432a60ff4a9becedc0b0e3a83
+declared_claim: Versioned reconstructable conceptual-model and requirements baseline, with explicit candidate
+  scientific commitments, traceability and scoped checks. No independent semantic/expert acceptance or
+  completed formal/empirical evaluation.
+rc_blockers: []
+retained_limitations:
+- Source passage/typing adequacy and global CQs remain unverified/unexecuted where recorded.
+- Full OWL/SHACL/FOL, native OntoUML validation, independent expert review, final manuscript and DOI are
+  absent or deferred.
+- Detailed contribution-taxonomy roles remain NOT_ASSESSED; owner-declared creators/order and licenses
+  are adopted.
+scope_boundary: The owner approved licenses and creators, but has not yet dispositioned this exact published
+  candidate.
+next_if_accepted: 'Promote the dispositioned scientific payload to v0.1.0 with explicit package-version
+  metadata and unchanged declared scientific limits; publish and read back stable assets under #63/#64.'
+next_if_changes_requested: Record the requested delta; rebuild/reassess and issue a new candidate without
+  replacing v0.1.0-rc.1.

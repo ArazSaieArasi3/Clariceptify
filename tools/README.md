@@ -70,21 +70,24 @@ hashes, review types and actual-decision boundaries; it also runs with Python -O
 See `docs/review/r1-attention-queue.md` for six bounded review units and publication
 metadata decisions. Neither script can manufacture human or scientific approval.
 
-## Preparation-only release engineering
+## Exact release engineering
 
-`python tools/build_release.py --output /tmp/clariceptify-preparation` checks the
-exact manifest and creates a deterministic local package, package manifest and
-checksums. It refuses RC/stable promotion and performs no publication.
-`python tools/readback_release.py /tmp/clariceptify-preparation/clariceptify-r1-preparation.zip`
-checks exact archive membership and bytes before extraction, then runs ten public
-checks in a fresh temporary file tree with an empty HOME and the current declared
-Python dependencies. It needs no Git/private raw inputs or network.
+The current manifest describes the issued RC; use the frozen payload source
+commit and its trusted freeze manifest as described in the
+[candidate station](../releases/v0.1.0-rc.1/README.md). Later changes on main
+correctly fail the old exact manifest if passed as the source root.
 
-`python tools/test_release_preparation.py` exercises changed source/member bytes,
-unregistered archive paths and unauthorized preparation-to-RC promotion. A technical
-PASS leaves publication BLOCKED until actual license/creator/citation and final
-package/readiness/acceptance decisions are recorded. Re-register the manifest after
-any input changes; do not update hashes merely to hide a failing content check.
+`build_release.py` emits a deterministic archive, package manifest and checksums;
+`readback_release.py` validates exact membership/bytes before extracting and
+running eleven public checks. It needs no Git/private raw inputs or network.
+The fresh file tree uses declared installed Python dependencies, not a new OS.
+`test_release_preparation.py` runs eight preparation/RC boundary cases.
+
+Historical `preparation_only` manifests produce `clariceptify-r1-preparation.zip`;
+strictly registered `rc_candidate` manifests produce `clariceptify-v0.1.0-rc.1.zip`.
+Neither command publishes a release or grants final owner acceptance.
+Re-register a changed source as a new candidate/version record; never overwrite
+an issued payload or merely update hashes to conceal a failing content check.
 
 ## Candidate publication metadata and package
 
