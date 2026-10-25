@@ -111,3 +111,14 @@ a separate action; builders do not grant approval or publish.
 Current stable publication/readback is recorded in evaluation/release/published-readback.yaml.
 Use the stable station instructions for v0.1.0; historical RC commands retain their
 RC filename and trusted manifest. Eleven boundary cases now cover all three stages.
+
+## Controlled conceptual documentation
+
+Install requirements-docs.txt as well as requirements-dev.txt.
+`build_documentation.py --source-ref COMMIT --output /tmp/site` creates the
+complete conceptual portal and fourteen Wiki projections from twelve guide
+pages. `build_pages.py` combines current and exact-ref frozen routes. The
+`check_documentation.py` layer validates reader completeness, paths/anchors and
+VVEAA planned-versus-actual evidence boundaries. Two negative controls reject
+a missing reader target and a stale profile/report binding. Current primary CI
+has twelve layers; the issued v0.1.0 release retains its original eleven.

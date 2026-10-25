@@ -1,0 +1,33 @@
+schema_version: '1.0'
+case_id: CLR-AS-R1-PACKAGE
+claim: The actually issued v0.1.0 package preserves the accepted R1 scientific payload and can be reconstructed/read
+  back within its declared runtime and scope.
+status: SUPPORTED_WITHIN_ENGINEERING_SCOPE
+scope: Exact stable release, not scientific adequacy, native-tool validity, full CQ execution or certification.
+argument:
+- Actual owner accepted exact RC scope with retained limitations.
+- All 233 protected scientific member hashes are preserved in the stable package.
+- Two builds match the actual public archive SHA256; public assets/checksums and eleven extracted checks
+  passed.
+evidence:
+- path: evaluation/release/scope-disposition.yaml
+  sha256: fd34000b9641eb947e5feb4cc94da0e8db6cb65540beab40d9a8a21690ba2746
+- path: evaluation/release/stable-build.yaml
+  sha256: 9876a1ae143579c986387f0a4a96209c400586f8943cf0475f78a640ddab93d6
+- path: evaluation/release/published-readback.yaml
+  sha256: 829078d37935331488ff1ab101d08d643c470fbe3f5559ab8fd6c8f779769c1d
+assumptions:
+- The recorded GitHub release/tag and asset identities identify the intended public object.
+- Declared installed Python dependencies are available for replay.
+counterevidence_and_limits:
+- Source/CQ/typing/independent-review limits are retained; this case supplies no semantic assurance.
+- Fresh extraction is not a complete independent expert or empirical validation.
+owner: Repository owner for scope; repository maintenance workflow for evidence upkeep
+source_commit: 105049edd7c6caf7e3ab7eca1b43788065a7c739
+release: v0.1.0
+archive_sha256: b7aea84c82a57d097cc14b23bf9b04491a613179f1912c13b70e6e16f256d44f
+reassessment_triggers:
+- Changed relevant source/member/validator/runtime assumptions
+- New public readback mismatch or confirmed defect
+- Changed intended release claim or owner disposition
+certification: not_claimed

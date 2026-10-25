@@ -1,0 +1,256 @@
+schema_version: '1.0'
+task_id: R2-001
+status: protocol_frozen_not_review_execution
+baseline_commit: 105049edd7c6caf7e3ab7eca1b43788065a7c739
+candidate_register_sha256: 65559f110b210bfb528b5a2239e0d9eef9d40705d3e97ca7e59a2325e29c9266
+research_question: Which existing ontologies explicitly represent purposeful conceptualization activity,
+  its mental orientation, conceptual content/representation/referents and justified conceptual decisions,
+  and how does the selected Clariceptify baseline compare?
+boundary:
+  initial_population: 19 recovered labels, not 19 confirmed distinct ontologies
+  search_cutoff: 2026-10-25 for this protocol; later searches record actual execution date and revised
+    cutoff
+  primary_sources:
+  - Publisher/author paper
+  - Official versioned ontology repository/file
+  - Official standards and archived scholarly reference entries
+  secondary_sources: Discovery only; verify substantive/count claims against primary content
+  languages: Record actual source language and availability; English public summaries only
+  full_text_execution: not_performed_by_this_protocol
+  artifact_execution: not_performed_by_this_protocol
+search_plan:
+  status: not_executed
+  query_families:
+  - - conceptualization ontology
+    - conceptualisation knowledge ontology
+    - ontology of conceptualization process
+  - - conceptual model mental representation ontology
+    - concept formation ontology
+    - conceptualization descriptions situations
+  - - modeling knowledge ontology conceptual decisions
+    - ontology design rationale conceptualization
+    - ontological commitment metamodel
+  - - Descriptions and Situations conceptualization
+    - Linguistic Meta Model ontology
+    - knowledge acquisition conceptualization ontology
+  snowballing: Record backward/forward citation links and provenance; deduplicate paper, work and artifact
+    identities separately.
+  stop_rule: At least one full pass of each query family and citation expansion for retained close candidates;
+    record actual yields and saturation limits, never infer exhaustiveness from zero hits.
+inclusion:
+- Explicit ontology/model of at least one target distinction, with inspectable purpose and artifact/paper
+  evidence
+- Retain adjacent philosophical/terminological/provenance work with explicit relevance class rather than
+  calling all items equivalent ontologies
+exclusion:
+- Keyword coincidence with no supported semantic overlap
+- Duplicate version/paper records masquerading as independent ontologies
+- Unavailable full text/artifact counted as reviewed or as zero concepts
+comparison_dimensions:
+- Purpose and unit of conceptualization
+- Activity versus intensional structure
+- Conceptualizer/agency and mental orientation
+- Mental state/content/expression separation
+- Conceptual content versus representation/referent
+- Type/instance and classification level
+- Conceptual decisions, justification and evidence
+- Requirements/CQs and usage scope
+- Foundational grounding and representation language
+- Constraints and formal assumptions
+- Evaluation/review evidence and actual populations
+- Version/license/access and reuse boundary
+- Coverage overlap, differences and counterexamples
+- Limits on any gap/novelty conclusion
+counts:
+  local_asserted: Count unique named class IRIs asserted/defined in the inspected local artifact, report
+    inclusion/exclusion rules and hash/ref.
+  import_inclusive: Report resolved import closure separately, with exact versions/access failures.
+  inferred: Report reasoner/version/profile/ontology closure and inference policy separately.
+  paper_reported: Quote/count only as author-reported, with page/table and exact version. Do not equate
+    with independently counted classes.
+  unavailable: null / not_assessed, never 0
+  cross_language: Conceptual catalogue classes, OWL classes and descriptions/records remain distinct populations.
+review_record_required:
+- Stable work/artifact/version IDs
+- Exact title/authors/publication metadata and authoritative locator
+- Actual access/full-text status and file digest
+- Exact page/section/axiom/IRI supporting each comparison
+- Local/imported/inferred count populations and method
+- Counterevidence and limitations
+- Reviewer/method/date/type and input ref
+- Supported finding versus proposed interpretation
+- Definition/model delta kept separate from reviewed evidence
+seed_access_register:
+- candidate_id: CLR-RW-DnS
+  label: Descriptions and Situations
+  paper_issue: 68
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-cDnS
+  label: c.DnS
+  paper_issue: 69
+  artifact_issue: 87
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-DUL
+  label: DOLCE+DnS Ultralite
+  paper_issue: 70
+  artifact_issue: 88
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-DULConceptualization
+  label: DUL Conceptualization.owl
+  paper_issue: 71
+  artifact_issue: 89
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-LMM
+  label: Linguistic Meta-Model / LMM
+  paper_issue: 72
+  artifact_issue: 90
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-O4OA
+  label: O4OA
+  paper_issue: 73
+  artifact_issue: 91
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-OntoKADS
+  label: OntoKADS
+  paper_issue: 74
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-OntoLex
+  label: OntoLex-Lemon
+  paper_issue: 75
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-SKOS
+  label: SKOS
+  paper_issue: 76
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-EmotionsCognition
+  label: Emotions & Cognition
+  paper_issue: 77
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-IAO
+  label: Information Artifact Ontology / IAO
+  paper_issue: 78
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-CognitiveAtlas
+  label: Cognitive Atlas
+  paper_issue: 79
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-EFO
+  label: Epistemic Foundational Ontology / EFO
+  paper_issue: 80
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-COM
+  label: Computational Ontology of Mind / COM
+  paper_issue: 81
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-Representation
+  label: An Ontology of Representation
+  paper_issue: 82
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-CMO
+  label: CMO
+  paper_issue: 83
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-IDA
+  label: I&DA
+  paper_issue: 84
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-BDI
+  label: Ontology of Belief/Desire/Intention
+  paper_issue: 85
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+- candidate_id: CLR-RW-DOLCEMental
+  label: DOLCE Mental States and Needs
+  paper_issue: 86
+  artifact_issue: null
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  ontology_artifact_review: not_assessed
+  class_count: null
+closure: 'Freeze and validate the protocol and initial access states; subsequent #68-#91 tasks require
+  actual retrieval/review evidence. No comparative gap is concluded by this protocol.'

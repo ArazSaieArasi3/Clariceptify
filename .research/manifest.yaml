@@ -33,14 +33,15 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 stable baseline complete
-  current_workstream: v0.1.0 actually published and read back; retained scientific limitations stay explicit
+  current_wave: Post-R1 documentation and R2 evidence planning
+  current_workstream: Controlled Wiki/Pages and first manuscript alignment, followed by explicit VVEAA/source/domain/CQ
+    assessment
   next_gate:
-    name: R2 critical-review protocol and source/CQ adequacy; archival deposit is separate
-    criteria: Future scoped tasks require their own actual source/evidence; stable publication does not
-      complete deferred research.
-  next_action: 'Next proposed scientific unit is #67 review-protocol freeze; limitations/remediation advice
-    is not implemented as an R1 semantic change.'
+    name: Actual conceptual Wiki/Pages publication and frozen-route readback
+    criteria: One controlled guide, complete R1 reference, exact source/ref, current versus frozen routes,
+      rendering/navigation and missing scientific evidence explicit.
+  next_action: Publish v0.1.1 documentation over unchanged v0.1.0 core; improve the first manuscript under
+    a separate revision and preserve final R2 prerequisites.
 progress:
   problem_framing: done
   evidence_base: planned

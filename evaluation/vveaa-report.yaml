@@ -1,0 +1,66 @@
+schema_version: '1.0'
+task: R2-SYN-002.b
+report_kind: Initial evidence-bound R1 baseline and R2 evidence obligations, not completed R2 assessment
+baseline_commit: 105049edd7c6caf7e3ab7eca1b43788065a7c739
+profile_sha256: 6f5f13a3a19966a7545898d73ab95476c8d34389a3287dab7943459b9614f87d
+layers:
+- function: Verification
+  actual_evidence:
+  - path: evaluation/release/published-readback.yaml
+    sha256: 829078d37935331488ff1ab101d08d643c470fbe3f5559ab8fd6c8f779769c1d
+  - path: evaluation/diagrams/paint-order-reassessment.yaml
+    sha256: b71184b26b1cd44d4f598e38bcfaff59d9bf056bd555ae7b6f56c7647661341c
+  - path: evaluation/conceptualization-fixtures.json
+    sha256: 33c4c7906ef5de95c4a430e9ceaa5322c4bad30e98eaca1112859874b760bd96
+  baseline_observation: 11 executed PASS; scope-specific only; element parity and scoped paint-order evidence;
+    not native-tool semantic validity
+  r2_execution: NOT_ASSESSED
+  missing_evidence_visible: true
+  claim_boundary: Rule and structure conformance only; not intended-domain adequacy.
+- function: Validation
+  actual_evidence: []
+  baseline_observation: globally not_executed; imported witnesses not_assessed; not_assessed; pending;
+    no fresh source-passage approval; not_assessed; no invented reviewer/sample size
+  r2_execution: NOT_ASSESSED
+  missing_evidence_visible: true
+  claim_boundary: Context-relative adequacy evidence; no universal philosophical validity or empirical
+    effectiveness.
+- function: Evaluation
+  actual_evidence:
+  - path: evidence/related-work/review-protocol.yaml
+    sha256: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  - path: docs/research/claim-register.yaml
+    sha256: f84ab2dcaeadbb033f11c0695d29d60507663e15a7016c37bccd467f13fd1aec
+  baseline_observation: registered only; full texts/artifacts unreviewed; recorded, not freshly verified
+    support; missing observations remain null / NOT_ASSESSED
+  r2_execution: NOT_ASSESSED
+  missing_evidence_visible: true
+  claim_boundary: Observations and comparison within the frozen corpus/profile; no novelty by keyword
+    absence or zero results.
+- function: Assessment
+  actual_evidence:
+  - path: evaluation/review-state.yaml
+    sha256: 071ba2a9706c9ad4a2a64a9ec124d2cb6b5a371eea9f18dcf7ebffea0317a311
+  - path: evaluation/release/scope-disposition.yaml
+    sha256: fd34000b9641eb947e5feb4cc94da0e8db6cb65540beab40d9a8a21690ba2746
+  baseline_observation: R2 not_assessed; ACCEPTED; not independent scientific review
+  r2_execution: NOT_ASSESSED
+  missing_evidence_visible: true
+  claim_boundary: A contextual judgment and rationale; a numerical score is not truth or automatic release
+    approval.
+- function: Assurance
+  actual_evidence:
+  - path: evaluation/assurance/r1-package-case.yaml
+    sha256: ab4f5a9b7b468dcba8bb83874ac1338a74eb274e0155c68e703e65f797e143aa
+  baseline_observation: Engineering package identity case supported; semantic assurance not_assessed
+  r2_execution: NOT_ASSESSED
+  missing_evidence_visible: true
+  claim_boundary: Bounded and rebuttable claim support; operational QA, author approval and certification
+    are distinct.
+blockers_for_r2:
+- Planned source/domain/CQ/closest-work reviews are not executed by profile preparation.
+- Independent expert review and final R2 owner disposition require actual evidence.
+overall_quality_score: null
+certification: null
+closure_boundary: The initial report is generated from actual existing evidence and explicitly missing
+  planned evidence. It does not close downstream reviews or declare R2 ready.

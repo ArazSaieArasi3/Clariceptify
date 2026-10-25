@@ -92,3 +92,16 @@ The [exact manifest](releases/v0.1.0-rc.1/manifest.yaml), readiness and actual
 publication evidence identify the issued RC. Rebuilding requires the frozen
 source commit plus its trusted manifest; later main-branch documentation edits
 do not replace the published package. Root CITATION.cff and the issued stable package name 0.1.0. The GitHub Release and its publication/readback record establish actual issuance.
+
+## Documentation and next research increment
+
+The [shared reader guide](docs/guide/Home.md), [publication-surface contract](docs/publication-surface-contract.yaml)
+and [release sequence](docs/development/release-sequence.md) prioritize Wiki and
+conceptual Pages now, over unchanged scientific core v0.1.0. Publication receipts
+will distinguish preparation, actual deployment and frozen routes. WIDOCO/WebVOWL
+remain dependent on an actual formal slice.
+
+The [critical-review protocol](evidence/related-work/review-protocol.yaml),
+[VVEAA profile](evaluation/vveaa-profile.yaml) and [initial evidence report](evaluation/vveaa-report.yaml)
+make each function, population, method and missing evidence explicit. Initial
+manuscript alignment precedes final comparative/contribution and submission gates.
