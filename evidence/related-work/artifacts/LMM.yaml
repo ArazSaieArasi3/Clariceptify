@@ -1,0 +1,75 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-LMM
+issue: 90
+state: SCOPED_ARTIFACT_INSPECTION_COMPLETE
+baseline_commit: 29cc41372e046da9791534019b23a899c105c3f5
+input_manifest: evidence/related-work/corpus/lmm-inputs.yaml
+modules:
+- id: DUL
+  version:
+  - '4.2'
+  counts:
+    explicit_triples_local_document: 1917
+    external_named_owl_classes_declared_in_document: 1
+    import_closure_named_owl_classes: 79
+    inferred_classes: null
+    local_named_object_properties: 113
+    local_named_owl_classes: 78
+  report: evaluation/related-work/lmm/DUL.json
+  report_sha256: ab1ab419a519a9fae32cea12aaa0e704f062985fbbc7d63168b6d050868699eb
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+- id: IOLite
+  version:
+  - '1.8'
+  counts:
+    explicit_triples_local_document: 666
+    external_named_owl_classes_declared_in_document: 20
+    import_closure_named_owl_classes: 125
+    inferred_classes: null
+    local_named_object_properties: 31
+    local_named_owl_classes: 46
+  report: evaluation/related-work/lmm/IOLite.json
+  report_sha256: b160b97d1a520d501ad83307b3e17f3436ce1be259dc4a371c09561711c652ff
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+- id: LMM_L1
+  version:
+  - '1.8'
+  counts:
+    explicit_triples_local_document: 305
+    external_named_owl_classes_declared_in_document: 11
+    import_closure_named_owl_classes: 133
+    inferred_classes: null
+    local_named_object_properties: 9
+    local_named_owl_classes: 8
+  report: evaluation/related-work/lmm/LMM_L1.json
+  report_sha256: 8008281157ae152b7f3147534a7ae8fbc4f547f3ee051a651aaf40fae8b1d3ed
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+- id: LMM_L2
+  version:
+  - '1.2'
+  counts:
+    explicit_triples_local_document: 305
+    external_named_owl_classes_declared_in_document: 20
+    import_closure_named_owl_classes: 154
+    inferred_classes: null
+    local_named_object_properties: 7
+    local_named_owl_classes: 21
+  report: evaluation/related-work/lmm/LMM_L2.json
+  report_sha256: fb16204bdb1c33c6067e3b82eed3376405b49e8aa4b17bf34b2ec637a54891ab
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+paper_binding:
+  review: evidence/related-work/reviews/LMM.yaml
+  paper_sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+  historical_axiom_fidelity: NOT_ASSESSED
+selected_findings:
+- LMM_L1 1.8 has eight locally declared named owl:Class IRIs; its full asserted import closure contains 133
+  named class IRIs.
+- LMM_L2 1.2 has 21 local named owl:Class IRIs; its asserted import closure contains 154. Local counts do not
+  include redeclared imported classes.
+- The import chain is LMM_L2 -> LMM_L1 -> IOLite 1.8 -> DUL 4.2, resolved entirely from pinned bytes.
+- Selected Meaning/Expression/Reference, denotes/hasInterpretant and concept/reference/typing assertions were
+  structurally inspected. No reasoner execution or class-equivalence mapping is inferred.
+license:
+  state: No license/right annotation found in inspected ontology headers; no redistribution permission inferred
+  raw_sources_in_public_repo: false
+decision: Candidate alignment only; no model change or whole-discipline superiority claim.

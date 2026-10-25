@@ -1,0 +1,183 @@
+{
+  "artifact_id": "IOLite",
+  "count_policy": "Unique URI subjects explicitly typed owl:Class; local namespace filter; blank-node classes excluded. Import closure is asserted graph union, not inference.",
+  "counts": {
+    "explicit_triples_local_document": 666,
+    "external_named_owl_classes_declared_in_document": 20,
+    "import_closure_named_owl_classes": 125,
+    "inferred_classes": null,
+    "local_named_object_properties": 31,
+    "local_named_owl_classes": 46
+  },
+  "imports": [
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+  ],
+  "license_annotations": [],
+  "license_scope": "Ontology-header license/rights annotations only; absent annotations do not grant redistribution.",
+  "local_named_class_iris": [
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing"
+  ],
+  "ontology_iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl",
+  "parser": {
+    "name": "RDFLib",
+    "version": "7.6.0"
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "resolved_closure": [
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl"
+  ],
+  "schema_version": "1.0",
+  "scope": "Syntax, inventories and selected asserted axioms; no OWL profile, satisfiability, equivalence or paper-to-OWL fidelity proof.",
+  "selected_axioms": [
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#hasRepresentationLanguage",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+              "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#encodes",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#isEncodedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    }
+  ],
+  "source_sha256": "15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f",
+  "source_url": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl",
+  "syntax": "xml",
+  "version_info": [
+    "1.8"
+  ]
+}

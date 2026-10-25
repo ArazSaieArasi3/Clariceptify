@@ -1,0 +1,343 @@
+[
+  {
+    "id": "R2-CORPUS-001",
+    "title": "Archive accessible research sources and publish the complete access inventory",
+    "path": "evidence/related-work/corpus/access-inventory.yaml",
+    "scope": "Freeze the access state of the 19 original candidate labels and explicitly separate additional versions/works. Preserve acquired PDFs, formal files and repository snapshots in an owner-accessible archive; publish only hashes, provenance, acquisition limits and a download-request table.",
+    "acs": [
+      "Record actual source URLs, file hashes, retrieval dates, repository commits and archive membership; validate archived bytes.",
+      "Distinguish full text acquired, blocked access, documentation-only, ambiguous identity and not yet reviewed; no anti-bot HTML may count as full text.",
+      "Provide title/link/verified DOI (or explicit unknown) for every requested missing full text; preserve archive privately without blanket relicensing."
+    ],
+    "issue": 234,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/234"
+  },
+  {
+    "id": "R2-ART-DnS",
+    "title": "Locate and inspect one original DnS formal artifact",
+    "path": "evidence/related-work/artifacts/DnS.yaml",
+    "deps": [
+      68
+    ],
+    "scope": "Historical DnS 2003 work; do not substitute current cDnS or DUL. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 235,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/235"
+  },
+  {
+    "id": "R2-ART-OntoKADS",
+    "title": "Locate and inspect one OntoKADS formal artifact",
+    "path": "evidence/related-work/artifacts/OntoKADS.yaml",
+    "deps": [
+      74
+    ],
+    "scope": "2005 primary paper is acquired; artifact/version identity remains to be resolved. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 236,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/236"
+  },
+  {
+    "id": "R2-ART-OntoLex",
+    "title": "Inspect the OntoLex core and its declared import boundary",
+    "path": "evidence/related-work/artifacts/OntoLex.yaml",
+    "deps": [
+      75
+    ],
+    "scope": "W3C core bytes acquired; detect RDF/XML regardless of the downloaded .ttl filename; other modules remain separate. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 237,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/237"
+  },
+  {
+    "id": "R2-ART-SKOS",
+    "title": "Inspect the W3C SKOS schema and selected integrity commitments",
+    "path": "evidence/related-work/artifacts/SKOS.yaml",
+    "deps": [
+      76
+    ],
+    "scope": "Official SKOS RDF and Recommendation acquired; distinguish RDFS/OWL populations and informal integrity conditions. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 238,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/238"
+  },
+  {
+    "id": "R2-ART-EmotionsCognition",
+    "title": "Inspect the Emotions and Cognition module and legacy imports",
+    "path": "evidence/related-work/artifacts/EmotionsCognition.yaml",
+    "deps": [
+      77
+    ],
+    "scope": "2015/12 and current file bytes acquired; pin legacy DUL/IOLite/ofntb separately; do not conflate the 2014 EmotionsOnto paper with the later extension. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 239,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/239"
+  },
+  {
+    "id": "R2-ART-IAO",
+    "title": "Inspect one pinned IAO release and its information-content commitments",
+    "path": "evidence/related-work/artifacts/IAO.yaml",
+    "deps": [
+      78
+    ],
+    "scope": "Whole tracked repository snapshot acquired; choose one root release, not the sum of every historical OWL file. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 240,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/240"
+  },
+  {
+    "id": "R2-ART-CognitiveAtlas",
+    "title": "Inspect one Cognitive Atlas OWL snapshot and its generator provenance",
+    "path": "evidence/related-work/artifacts/CognitiveAtlas.yaml",
+    "deps": [
+      79
+    ],
+    "scope": "Two distinct official repository snapshots acquired; choose cogat.v2.owl and document its link to the 2011 article. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 241,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/241"
+  },
+  {
+    "id": "R2-ART-EFO",
+    "title": "Resolve the EFO formal artifact and inspect selected FOL commitments",
+    "path": "evidence/related-work/artifacts/EFO.yaml",
+    "deps": [
+      80
+    ],
+    "scope": "Publisher PDF acquired; a dedicated OWL file/repository is not established. Treat printed FOL and an executable artifact separately. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 242,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/242"
+  },
+  {
+    "id": "R2-ART-COM",
+    "title": "Resolve the COM formal artifact and inspect its mental-state commitments",
+    "path": "evidence/related-work/artifacts/COM.yaml",
+    "deps": [
+      81
+    ],
+    "scope": "FOIS 2004 institutional PDF acquired; distinguish the same-title 2005 Aerospace version. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 243,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/243"
+  },
+  {
+    "id": "R2-ART-Representation",
+    "title": "Locate the formal representation artifact linked to the 2025 article",
+    "path": "evidence/related-work/artifacts/Representation.yaml",
+    "deps": [
+      82
+    ],
+    "scope": "Exact 2025 journal article identified; its full text remains inaccessible. Do not substitute the distinct 2021 work without an explicit mapping. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 244,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/244"
+  },
+  {
+    "id": "R2-ART-CMO",
+    "title": "Recover one Conceptual Model Ontology artifact and its version identity",
+    "path": "evidence/related-work/artifacts/CMO.yaml",
+    "deps": [
+      83
+    ],
+    "scope": "CEUR paper acquired, with defective text extraction; do not confuse Conceptual Model Ontology with similarly named resources. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 245,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/245"
+  },
+  {
+    "id": "R2-ART-IDA",
+    "title": "Locate one authoritative I&DA formal artifact and provenance chain",
+    "path": "evidence/related-work/artifacts/IDA.yaml",
+    "deps": [
+      84
+    ],
+    "scope": "2004 Fortier/Kassel paper is cited by acquired primary literature; exact DOI/full text remain unresolved. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 246,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/246"
+  },
+  {
+    "id": "R2-ART-BDI2020",
+    "title": "Inspect the formal commitments and artifact availability of the 2020 BDI work",
+    "path": "evidence/related-work/artifacts/BDI2020.yaml",
+    "deps": [
+      85
+    ],
+    "scope": "2020 Toyoshima/Barton/Grenier PDF acquired; do not reuse the distinct 2026 FOSSR ontology as its artifact. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 247,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/247"
+  },
+  {
+    "id": "R2-ART-DOLCEMental",
+    "title": "Inspect the pinned DOLCE mental-states and needs formal file",
+    "path": "evidence/related-work/artifacts/DOLCEMental.yaml",
+    "deps": [
+      86
+    ],
+    "scope": "Official repository snapshot contains dolce_needs.p; inspect its actual formal language, not an invented OWL translation. Limit execution to one identified module, at most eight selected commitments and its declared direct imports. Preserve discovery failures explicitly.",
+    "acs": [
+      "Resolve authoritative owner/work/artifact/version and pin exact source bytes or record bounded unsuccessful discovery.",
+      "Inspect selected commitments with exact IRIs or formula locators; separate local/imported/inferred counts and record syntax, license and unresolved imports.",
+      "Record a bounded reuse/align/defer decision, one positive scenario and one counterexample; no equivalence or reasoner claim without execution."
+    ],
+    "issue": 248,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/248"
+  },
+  {
+    "id": "R2-LIT-BDI2026",
+    "title": "Review the distinct 2026 BDI ontology paper and its preprint identity",
+    "path": "evidence/related-work/reviews/BDI2026.yaml",
+    "scope": "One additional primary work, DOI 10.1016/j.websem.2026.100885, with acquired arXiv:2511.17162. Keep the journal and preprint versions distinct; this does not replace the original #85 review.",
+    "acs": [
+      "Pin reviewed full-text version and verify title/authors/DOI; explicitly distinguish preprint from final journal text.",
+      "Record purpose, commitments, method, reported evaluation populations and limitations with exact pages/sections.",
+      "Relate the work to the FOSSR repository without asserting exact paper/repository release equivalence; retain a source-backed overlap/reuse decision."
+    ],
+    "issue": 249,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/249"
+  },
+  {
+    "id": "R2-ART-BDI2026",
+    "title": "Inspect one FOSSR BDI module and its existing test fixtures",
+    "path": "evidence/related-work/artifacts/BDI2026.yaml",
+    "scope": "The FOSSR repository snapshot is acquired. Inspect the bdi module and bdi-dul alignment only; exclude unrelated survey and RISIS modules from semantic counts. Link to the additional BDI2026 paper task.",
+    "acs": [
+      "Pin one BDI module and the alignment source; separate local module, alignment and import populations.",
+      "Inspect at most eight mental-state/agency commitments, license boundaries and the existing test inventory.",
+      "Report which tests were actually executed versus merely acquired; no 2020/2026 ontology equivalence or unexecuted validation claim."
+    ],
+    "issue": 250,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/250"
+  },
+  {
+    "id": "R2-CMP-001",
+    "title": "Build the source-backed comparison batch: DnS, cDnS, DUL, DULConceptualization",
+    "path": "evidence/related-work/comparisons/batch-1.yaml",
+    "scope": "One batch of 4 original candidate labels: DnS, cDnS, DUL, DULConceptualization. Compare four dimensions only: agency/activity, content/expression/referent, episode/decision/rationale, and formal/evaluation limits. Depends on the existing paper reviews and corresponding artifact tasks; do not execute a missing review inside this issue.",
+    "acs": [
+      "Each matrix cell links an exact versioned source locator or explicitly states unknown/access gap; retain contrary evidence.",
+      "Use one common conceptualization scenario and one adverse example; distinguish native support, required specialization and unsupported inference.",
+      "Bind actual Clariceptify element IDs, retain candidate mappings separately from equivalences and export the batch for #126 synthesis."
+    ],
+    "issue": 251,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/251"
+  },
+  {
+    "id": "R2-CMP-002",
+    "title": "Build the source-backed comparison batch: LMM, O4OA, OntoKADS",
+    "path": "evidence/related-work/comparisons/batch-2.yaml",
+    "scope": "One batch of 3 original candidate labels: LMM, O4OA, OntoKADS. Compare four dimensions only: agency/activity, content/expression/referent, episode/decision/rationale, and formal/evaluation limits. Depends on the existing paper reviews and corresponding artifact tasks; do not execute a missing review inside this issue.",
+    "acs": [
+      "Each matrix cell links an exact versioned source locator or explicitly states unknown/access gap; retain contrary evidence.",
+      "Use one common conceptualization scenario and one adverse example; distinguish native support, required specialization and unsupported inference.",
+      "Bind actual Clariceptify element IDs, retain candidate mappings separately from equivalences and export the batch for #126 synthesis."
+    ],
+    "issue": 252,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/252"
+  },
+  {
+    "id": "R2-CMP-003",
+    "title": "Build the source-backed comparison batch: OntoLex, SKOS, EmotionsCognition",
+    "path": "evidence/related-work/comparisons/batch-3.yaml",
+    "scope": "One batch of 3 original candidate labels: OntoLex, SKOS, EmotionsCognition. Compare four dimensions only: agency/activity, content/expression/referent, episode/decision/rationale, and formal/evaluation limits. Depends on the existing paper reviews and corresponding artifact tasks; do not execute a missing review inside this issue.",
+    "acs": [
+      "Each matrix cell links an exact versioned source locator or explicitly states unknown/access gap; retain contrary evidence.",
+      "Use one common conceptualization scenario and one adverse example; distinguish native support, required specialization and unsupported inference.",
+      "Bind actual Clariceptify element IDs, retain candidate mappings separately from equivalences and export the batch for #126 synthesis."
+    ],
+    "issue": 253,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/253"
+  },
+  {
+    "id": "R2-CMP-004",
+    "title": "Build the source-backed comparison batch: IAO, CognitiveAtlas, EFO",
+    "path": "evidence/related-work/comparisons/batch-4.yaml",
+    "scope": "One batch of 3 original candidate labels: IAO, CognitiveAtlas, EFO. Compare four dimensions only: agency/activity, content/expression/referent, episode/decision/rationale, and formal/evaluation limits. Depends on the existing paper reviews and corresponding artifact tasks; do not execute a missing review inside this issue.",
+    "acs": [
+      "Each matrix cell links an exact versioned source locator or explicitly states unknown/access gap; retain contrary evidence.",
+      "Use one common conceptualization scenario and one adverse example; distinguish native support, required specialization and unsupported inference.",
+      "Bind actual Clariceptify element IDs, retain candidate mappings separately from equivalences and export the batch for #126 synthesis."
+    ],
+    "issue": 254,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/254"
+  },
+  {
+    "id": "R2-CMP-005",
+    "title": "Build the source-backed comparison batch: COM, Representation, CMO",
+    "path": "evidence/related-work/comparisons/batch-5.yaml",
+    "scope": "One batch of 3 original candidate labels: COM, Representation, CMO. Compare four dimensions only: agency/activity, content/expression/referent, episode/decision/rationale, and formal/evaluation limits. Depends on the existing paper reviews and corresponding artifact tasks; do not execute a missing review inside this issue.",
+    "acs": [
+      "Each matrix cell links an exact versioned source locator or explicitly states unknown/access gap; retain contrary evidence.",
+      "Use one common conceptualization scenario and one adverse example; distinguish native support, required specialization and unsupported inference.",
+      "Bind actual Clariceptify element IDs, retain candidate mappings separately from equivalences and export the batch for #126 synthesis."
+    ],
+    "issue": 255,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/255"
+  },
+  {
+    "id": "R2-CMP-006",
+    "title": "Build the source-backed comparison batch: IDA, BDI, DOLCEMental",
+    "path": "evidence/related-work/comparisons/batch-6.yaml",
+    "scope": "One batch of 3 original candidate labels: IDA, BDI, DOLCEMental. Compare four dimensions only: agency/activity, content/expression/referent, episode/decision/rationale, and formal/evaluation limits. Depends on the existing paper reviews and corresponding artifact tasks; do not execute a missing review inside this issue.",
+    "acs": [
+      "Each matrix cell links an exact versioned source locator or explicitly states unknown/access gap; retain contrary evidence.",
+      "Use one common conceptualization scenario and one adverse example; distinguish native support, required specialization and unsupported inference.",
+      "Bind actual Clariceptify element IDs, retain candidate mappings separately from equivalences and export the batch for #126 synthesis."
+    ],
+    "issue": 256,
+    "url": "https://github.com/ArazSaieArasi3/Clariceptify/issues/256"
+  }
+]

@@ -1,0 +1,53 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-LMM
+issue: 72
+review_date: '2026-10-25'
+baseline_commit: 29cc41372e046da9791534019b23a899c105c3f5
+identity:
+  title: 'LMM: an OWL-DL MetaModel to Represent Heterogeneous Lexical Knowledge'
+  authors:
+  - Davide Picca
+  - Alfio Massimiliano Gliozzo
+  - Aldo Gangemi
+  year: 2008
+  venue: LREC 2008
+  printed_pages: 2413-2419
+  anthology_id: L08-1268
+  doi: null
+  doi_note: No DOI supplied by the primary ACL record or its downloaded BibTeX.
+access:
+  state: FULL_TEXT_ACCESSED_SCOPED_REVIEW
+  url: https://aclanthology.org/L08-1268.pdf
+  sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+  pdf_pages: 7
+  review_scope: Sections 1-6 and Figures 1-6; no independent correctness proof.
+observations:
+- dimension: purpose
+  locator: sec. 1, p. 2413
+  observation: Integrates heterogeneous lexical knowledge through a semiotic-cognitive metamodel.
+- dimension: content_expression_referent
+  locator: secs. 2-3.3, pp. 2414-2416; Figs. 1-6
+  observation: Meaning, Expression and Reference are separated; conceptual and linguistic levels are connected
+    to descriptions, contexts and reference structures.
+- dimension: agency_and_process
+  locator: sec. 2, p. 2414; sec. 3.3, p. 2416
+  observation: Interpretation depends on speech acts, agents, communicative intention and context; this is
+    not a full episode/provenance management specification.
+- dimension: requirements_method_evaluation
+  locator: secs. 1, 4-5, pp. 2413 and 2416-2419
+  observation: Semiotic modeling and reported lexical-resource alignments illustrate coverage; no executed
+    Clariceptify CQ contract or independent comparative effectiveness study is established.
+- dimension: limitations
+  locator: sec. 5, p. 2419
+  observation: Automatic DBpedia/YAGO connection is described as planned; reported alignment is not reproduced
+    here.
+decision:
+  action: ALIGN_CANDIDATE
+  proposed_interpretation: Prior work directly covers the expression/meaning/reference separation. Compare
+    episode-bound decisions and rationale using explicit scenarios; no absence or superiority claim follows
+    from the metamodel distinction.
+  equivalence: NOT_ESTABLISHED
+  model_change: NONE
+version_boundary: The acquired LMM_L1 1.8 and LMM_L2 1.2 files are present-day snapshots, not proven byte-identical
+  or axiom-identical to the 2008 paper version.
+reviewer: AI-assisted source inspection, not independent expert review

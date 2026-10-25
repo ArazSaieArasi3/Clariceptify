@@ -1,0 +1,42 @@
+date: '2026-10-25'
+scope: All currently identified missing texts in this frozen access inventory; new discoveries may add rows.
+requests:
+- id: CLR-RW-DUL
+  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
+  doi: 10.3233/978-1-61499-676-7-81
+  url: https://doi.org/10.3233/978-1-61499-676-7-81
+  note: 2016 chapter inaccessible at checked endpoint; DUL 4.2 formal file acquired.
+- id: CLR-RW-O4OA
+  title: The Ontology for Conceptual Characterization of Ontologies
+  doi: 10.1007/978-3-031-47262-6_6
+  url: https://research.utwente.nl/en/publications/the-ontology-forconceptual-characterization-ofontologies/
+  note: Institutional final PDF returns 403. O4OA specification v2.6 download returns an anti-bot HTML page,
+    not a PDF.
+- id: CLR-RW-Representation
+  title: An Ontology of Representation
+  doi: 10.1177/15705838251337943
+  url: https://journals.sagepub.com/doi/10.1177/15705838251337943
+  note: 2025 journal article identified; publisher PDF returns 403. Distinct 2021 Towards paper not substituted.
+- id: CLR-RW-IDA
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  doi: null
+  url: https://scholar.google.com/scholar?q=Managing+Knowledge+at+the+Information+Level+Fortier+Kassel
+  note: Exact title and authors cited in the acquired OntoKADS primary report, reference 8; no authoritative
+    standalone full text or DOI resolved. Link is a title lookup, not a publisher page.
+- id: CLR-RW-DOLCEMental
+  title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
+  doi: 10.3233/FAIA200666
+  url: https://iris.unitn.it/handle/11572/336248
+  note: Paper full text not acquired from checked publisher/author endpoints; complete official repository
+    snapshot includes dolce_needs.p.
+- id: cDnS-journal-2008
+  title: Norms and plans as unification criteria for social collectives
+  doi: 10.1007/s10458-008-9038-9
+  url: https://link.springer.com/article/10.1007/s10458-008-9038-9
+  note: 2008 version named by cDnS OWL 1.1; do not replace with the acquired 2007 work.
+- id: Emotions-2015
+  title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
+  doi: 10.1016/j.chb.2014.11.100
+  url: https://doi.org/10.1016/j.chb.2014.11.100
+  note: Author publication page identifies this related 2015 work; exact correspondence to the later cognition
+    extension remains unassessed.

@@ -1,0 +1,261 @@
+schema_version: '1.0'
+date: '2026-10-25'
+baseline_commit: 29cc41372e046da9791534019b23a899c105c3f5
+original_candidate_population: 19
+scope: Access inventory, not completed literature review or a claim of 19 distinct ontologies.
+records:
+- candidate_id: CLR-RW-DnS
+  label: DnS
+  title: Understanding the Semantic Web through Descriptions and Situations
+  doi: 10.1007/978-3-540-39964-3_44
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://link.springer.com/chapter/10.1007/978-3-540-39964-3_44
+  access_status: ACQUIRED
+  filename: DnS.pdf
+  sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+  review_status: SCOPED_REVIEW_RECORDED
+  note: Paper reviewed in prior wave; historical formal artifact remains a separate task.
+- candidate_id: CLR-RW-cDnS
+  label: cDnS
+  title: Norms and plans as unification criteria for social collectives
+  doi: 10.4230/DagSemProc.07122.20
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://drops.dagstuhl.de/entities/document/10.4230/DagSemProc.07122.20
+  access_status: ACQUIRED
+  filename: cDnS-2007.pdf
+  sha256: ad6204de62649f271b89196dd0a00d301c52dfa19a0b11f8fcbc0ce218160066
+  review_status: SCOPED_REVIEW_RECORDED
+  note: 2007 three-author work acquired; the 2008 journal work is separate.
+- candidate_id: CLR-RW-DUL
+  label: DUL
+  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
+  doi: 10.3233/978-1-61499-676-7-81
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://doi.org/10.3233/978-1-61499-676-7-81
+  access_status: FULL_TEXT_NOT_ACQUIRED
+  filename: null
+  sha256: null
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: 2016 chapter inaccessible at checked endpoint; DUL 4.2 formal file acquired.
+- candidate_id: CLR-RW-DULConceptualization
+  label: DULConceptualization
+  title: Conceptualization.owl
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+  access_status: ACQUIRED
+  filename: Conceptualization.owl
+  sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+  review_status: SCOPED_REVIEW_RECORDED
+  note: Embedded documentation; no separate paper or DOI established.
+- candidate_id: CLR-RW-LMM
+  label: LMM
+  title: 'LMM: an OWL-DL MetaModel to Represent Heterogeneous Lexical Knowledge'
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://aclanthology.org/L08-1268/
+  access_status: ACQUIRED
+  filename: LMM-2008.pdf
+  sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+  review_status: SCOPED_REVIEW_RECORDED
+  note: ACL record and downloaded BibTeX contain no DOI; do not promote a secondary DOI hint.
+- candidate_id: CLR-RW-O4OA
+  label: O4OA
+  title: The Ontology for Conceptual Characterization of Ontologies
+  doi: 10.1007/978-3-031-47262-6_6
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://research.utwente.nl/en/publications/the-ontology-forconceptual-characterization-ofontologies/
+  access_status: FULL_TEXT_NOT_ACQUIRED
+  filename: null
+  sha256: null
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Institutional final PDF returns 403. O4OA specification v2.6 download returns an anti-bot HTML page,
+    not a PDF.
+- candidate_id: CLR-RW-OntoKADS
+  label: OntoKADS
+  title: An Ontological approach to the construction of problem-solving models
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://arxiv.org/abs/cs/0505081
+  access_status: ACQUIRED
+  filename: OntoKADS.pdf
+  sha256: 040ad09c7efc2b988fdb0720c9ed580bce1778fa6494cdb484d827359d95026b
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Reviewed bytes are the May 2005 research report; publisher version/DOI not established.
+- candidate_id: CLR-RW-OntoLex
+  label: OntoLex
+  title: 'Lexicon Model for Ontologies: Community Report, 10 May 2016'
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://www.w3.org/2016/05/ontolex/
+  access_status: ACQUIRED
+  filename: OntoLex-specification.html
+  sha256: ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Official specification, not a journal paper. Acquired core resource has RDF/XML syntax despite requested
+    .ttl suffix.
+- candidate_id: CLR-RW-SKOS
+  label: SKOS
+  title: SKOS Simple Knowledge Organization System Reference, W3C Recommendation 18 August 2009
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://www.w3.org/TR/2009/REC-skos-reference-20090818/
+  access_status: ACQUIRED
+  filename: SKOS-reference.html
+  sha256: 3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Official specification and RDF schema acquired; no paper DOI assigned here.
+- candidate_id: CLR-RW-EmotionsCognition
+  label: EmotionsCognition
+  title: Emotions & Cognition Ontology
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
+  access_status: ACQUIRED
+  filename: EmotionsCognition-guide.html
+  sha256: 8154ceeac9a3d8953d89663be8e52ac7d981c139516ea8ff24e8d46fdcd0d0a9
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Author documentation and 2015/12/current OWL acquired. The 2014 predecessor paper is separately acquired;
+    the 2015 related paper is not yet acquired.
+- candidate_id: CLR-RW-IAO
+  label: IAO
+  title: 'Aboutness: Towards Foundations for the Information Artifact Ontology'
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://ceur-ws.org/Vol-1515/regular10.pdf
+  access_status: ACQUIRED
+  filename: IAO-2015.pdf
+  sha256: 11c3413eb339aadc8baed9c6991a986c9f489d0ff2ca2b16508bb2688ff77b37
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Full author paper in CEUR 1515 acquired. DOI not established. Repository snapshot acquired separately.
+- candidate_id: CLR-RW-CognitiveAtlas
+  label: CognitiveAtlas
+  title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
+  doi: 10.3389/fninf.2011.00017
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2011.00017/full
+  access_status: ACQUIRED
+  filename: CognitiveAtlas-2011.pdf
+  sha256: c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Publisher PDF and two repository snapshots acquired; the PMC response is an anti-bot page and is excluded
+    as full text.
+- candidate_id: CLR-RW-EFO
+  label: EFO
+  title: Fundamental choices in EFO
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175
+  access_status: ACQUIRED
+  filename: EFO-publisher.pdf
+  sha256: 8cf3372ac6bd19b88dfc15f07485695a6aab0f45d91d7864afef6f5f353729a6
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: 'Publisher text acquired. Preserve title/date conflict: journal page publishes in 2026 in the 2025
+    issue; author archive uses the expanded title and 2025. The Zenodo DOI identifies an archive deposit, not
+    an established journal DOI.'
+- candidate_id: CLR-RW-COM
+  label: COM
+  title: Towards a Computational Ontology of Mind
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
+  access_status: ACQUIRED
+  filename: COM-FOIS.pdf
+  sha256: 16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Institutional FOIS 2004 text acquired. Same-title 2005 Aerospace work is not substituted.
+- candidate_id: CLR-RW-Representation
+  label: Representation
+  title: An Ontology of Representation
+  doi: 10.1177/15705838251337943
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://journals.sagepub.com/doi/10.1177/15705838251337943
+  access_status: FULL_TEXT_NOT_ACQUIRED
+  filename: null
+  sha256: null
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: 2025 journal article identified; publisher PDF returns 403. Distinct 2021 Towards paper not substituted.
+- candidate_id: CLR-RW-CMO
+  label: CMO
+  title: Towards an Ontology for Conceptual Modeling
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://ceur-ws.org/Vol-833/paper25.pdf
+  access_status: ACQUIRED
+  filename: CMO.pdf
+  sha256: 344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Full PDF acquired; font encoding corrupts text extraction. Visual/OCR review remains to be done, not
+    a lack of PDF access.
+- candidate_id: CLR-RW-IDA
+  label: IDA
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  doi: null
+  doi_status: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  url: https://scholar.google.com/scholar?q=Managing+Knowledge+at+the+Information+Level+Fortier+Kassel
+  access_status: FULL_TEXT_NOT_ACQUIRED
+  filename: null
+  sha256: null
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Exact title and authors cited in the acquired OntoKADS primary report, reference 8; no authoritative
+    standalone full text or DOI resolved. Link is a title lookup, not a publisher page.
+- candidate_id: CLR-RW-BDI
+  label: BDI
+  title: Foundations for an Ontology of Belief, Desire and Intention
+  doi: 10.3233/FAIA200667
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://journals.sagepub.com/doi/full/10.3233/FAIA200667
+  access_status: ACQUIRED
+  filename: BDI-2020-author-copy.pdf
+  sha256: 61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: 2020 Toyoshima/Barton/Grenier text acquired; a distinct 2026 FOSSR paper/module is separately registered.
+- candidate_id: CLR-RW-DOLCEMental
+  label: DOLCEMental
+  title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
+  doi: 10.3233/FAIA200666
+  doi_status: PRIMARY_METADATA_VERIFIED
+  url: https://iris.unitn.it/handle/11572/336248
+  access_status: FULL_TEXT_NOT_ACQUIRED
+  filename: null
+  sha256: null
+  review_status: NOT_REVIEWED_BY_ACQUISITION
+  note: Paper full text not acquired from checked publisher/author endpoints; complete official repository
+    snapshot includes dolce_needs.p.
+additional_work_or_version_records:
+- id: cDnS-journal-2008
+  title: Norms and plans as unification criteria for social collectives
+  doi: 10.1007/s10458-008-9038-9
+  url: https://link.springer.com/article/10.1007/s10458-008-9038-9
+  status: FULL_TEXT_NOT_ACQUIRED
+  why: 2008 version named by cDnS OWL 1.1; do not replace with the acquired 2007 work.
+- id: Emotions-2015
+  title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
+  doi: 10.1016/j.chb.2014.11.100
+  url: https://doi.org/10.1016/j.chb.2014.11.100
+  status: FULL_TEXT_NOT_ACQUIRED
+  why: Author publication page identifies this related 2015 work; exact correspondence to the later cognition
+    extension remains unassessed.
+- id: EmotionsOnto-2014
+  title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
+  doi: 10.3217/jucs-020-13-1813
+  url: https://www.jucs.org/jucs_20_13/emotions_onto_an_ontology.html
+  status: ACQUIRED
+  filename: EmotionsOnto-2014.pdf
+  sha256: 351bddf40462ec68b7ff990837b2a7cf144b8f239dc86bf76d2d9d0ec618d610
+  why: Predecessor of the cognition extension; not the same version.
+- id: BDI-2026
+  title: The Belief-Desire-Intention ontology for modelling mental reality and agency
+  doi: 10.1016/j.websem.2026.100885
+  url: https://arxiv.org/abs/2511.17162
+  status: PREPRINT_ACQUIRED_FINAL_NOT_BYTE_COMPARED
+  filename: BDI-2025-preprint.pdf
+  sha256: e4fbe911555a62050b8ccc1f07b6c13e0aa36af486ad6767c3d6ed446681c676
+  why: 'Distinct from original BDI 2020 candidate; new paper and artifact tasks #249/#250.'
+archive_policy: Raw third-party PDFs, formal files and tracked repository snapshots are retained in an owner-accessible
+  archive; public repository holds provenance/hashes and analyses, not blanket-relicensed source copies.
+rejected_content:
+- filename: CognitiveAtlas-2011.html
+  reason: PMC anti-bot response, not full text; publisher PDF obtained instead.
+- resource: O4OA-specification.pdf
+  reason: Institutional download returned anti-bot HTML, not a PDF; not included as a specification.

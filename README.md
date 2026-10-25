@@ -109,3 +109,5 @@ manuscript alignment precedes final comparative/contribution and submission gate
 The [initial manuscript alignment](docs/research/manuscript-contract.yaml) binds revision `0.1-r1-aligned.1` to the published R1 core and current evidence. The eight-page draft has a source-derived selected figure and explicit limits; final comparison, bibliography and R2 submission gates remain open.
 
 The [first DnS-family comparison](docs/research/dns-family-comparison.md) records scoped primary-source reviews and pinned artifact inspections. See the [execution guide](evidence/related-work/execution-guide.md) for evidence and reproducible counts; full corpus synthesis and two DUL prerequisites remain open.
+
+The [source-access and archive report](docs/research/corpus-access.md) records all 19 original candidates, seven requested texts, five pinned repository snapshots and the completed LMM paper/artifact review. The [23 medium-sized extension tasks](evidence/related-work/corpus/extension-tasks.json) preserve the original plan and keep source access separate from comparative evaluation.

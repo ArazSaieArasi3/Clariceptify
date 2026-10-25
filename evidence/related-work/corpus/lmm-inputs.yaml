@@ -1,0 +1,60 @@
+schema_version: '1.0'
+retrieved_on: '2026-10-25'
+baseline_commit: 29cc41372e046da9791534019b23a899c105c3f5
+artifacts:
+- id: DUL
+  filename: DUL-http.owl
+  format: turtle
+  url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  ontology_iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  namespace: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#
+  sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  selected_terms:
+  - Agent
+  - Description
+  - Concept
+  - Situation
+  - InformationObject
+  - conceptualizes
+  - expresses
+  - classifies
+  - satisfies
+- id: IOLite
+  filename: IOLite.owl
+  format: xml
+  url: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl
+  ontology_iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl
+  namespace: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#
+  sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  selected_terms:
+  - Language
+  - LinguisticObject
+  - FormalLanguage
+  - encodes
+- id: LMM_L1
+  filename: LMM_L1.owl
+  format: xml
+  url: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl
+  ontology_iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl
+  namespace: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#
+  sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  selected_terms:
+  - Meaning
+  - Expression
+  - Reference
+  - denotes
+  - hasInterpretant
+  - relatedMeaning
+- id: LMM_L2
+  filename: LMM_L2.owl
+  format: xml
+  url: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
+  ontology_iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
+  namespace: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#
+  sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  selected_terms:
+  - ConceptExpression
+  - ConceptReference
+  - IndividualReference
+  - lexicalizesOE
+  - isInstanceOf

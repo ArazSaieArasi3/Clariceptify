@@ -132,3 +132,9 @@
 - Inspect official cDnS 1.1, DUL 4.2 and Conceptualization 0.1 separately; pin bytes/syntax/imports, distinguish local/closure/inferred counts and retain license uncertainty. Preserve the cDnS 2007 paper versus 2008-aligned artifact distinction (#87/#89; #88 technical preparation).
 - Record substantive prior conceptualization/representation overlap and proposed episode/decision/rationale comparison questions without changing the accepted model or claiming novelty.
 - Retain the inaccessible 2016 DUL chapter as a partial review and keep #70/#88 open. Add reproducible inspection and CI evidence-boundary checks; no source full texts or complete ontology copies are redistributed.
+
+## Source access, owner archive and LMM review - 2026-10-25
+
+- Preserve an owner-accessible 62-member corpus with 12 validated PDFs, acquired formal resources and five complete tracked-tree repository snapshots. Record all 19 original candidates, distinct versions and seven missing-text requests; reject anti-bot content as full text (#234).
+- Complete the scoped LMM 2008 paper review and pinned L1/L2 artifact/import inspection (#72/#90); keep historical compatibility, inference and equivalence unassessed.
+- Register 23 owner-authorized medium-sized artifact/review/comparison tasks without replacing the original denominator or reopening R1. Raw source bytes stay outside the public repository.
