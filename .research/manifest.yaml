@@ -33,15 +33,14 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 scoped traceability and claim baseline
-  current_workstream: Version-bound links, selected migration parity, candidate witnesses
-    and bounded claim register implemented
+  current_wave: R1 post-alpha.3 preparation
+  current_workstream: Verified alpha.3 traceability/public-integrity package published
   next_gate:
-    name: alpha.3 integrity and CI checkpoint
-    criteria: schema, graph and version-integrity checks plus input-bound public CI;
-      no semantic PASS inheritance
-  next_action: Implement/check schema and identifier gate (#36), model structure (#37),
-    traceability integrity (#38) and CI (#39), then publish alpha.3 (#40).
+    name: Diagram source and approval-state reconciliation
+    criteria: identify actual editable source or record a bounded reconstruction path;
+      do not infer approval from graphic labels
+  next_action: "Recover/register diagram source (#41), resolve approval-state evidence\
+    \ (#42), then reconcile/render/check full and detail views (#43\u2013#45)."
 progress:
   problem_framing: done
   evidence_base: planned
@@ -65,6 +64,8 @@ verification:
   - traceability/migration/parity-report.yaml
   - evaluation/requirement-witnesses.json
   - evaluation/claim-register.json
+  - evaluation/traceability-preview-publication.json
+  - releases/v0.1.0-alpha.3/ci-readback.json
   coherence_debt:
   - Canonical handover pending destination parity
   - Source/specification approval wording requires reconciliation

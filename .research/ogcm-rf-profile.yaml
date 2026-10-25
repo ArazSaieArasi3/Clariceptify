@@ -29,13 +29,12 @@ identity_and_release:
   ontology_iri: null
   persistent_iri_status: unassigned
   current_semantic_release: null
-  development_state: Candidate baseline published; scoped structural/source/witness
-    graph, migration parity and bounded claims implemented on newer main; semantic/diagram/manuscript
-    assessments pending
+  development_state: Scoped traceability and public integrity/CI published; diagram,
+    synchronized manuscript, focused review and remaining R1 gates pending
   release_manifest: releases/
-  current_package_release: v0.1.0-alpha.2.1
-  package_scope: Frozen candidate model/requirements/source input; packaging correction
-    to alpha.2; no stable semantic release
+  current_package_release: v0.1.0-alpha.3
+  package_scope: Frozen scoped traceability/integrity station; not a stable semantic
+    release
 traceability:
   concept_registry: model/concepts.yaml
   relation_registry: model/relations.yaml and model/generalizations.yaml
@@ -56,8 +55,8 @@ validation_and_evaluation:
   shacl_or_constraints: textual only; not executed
   cq_regression: not_executed
   comparative_or_expert: not_assessed
-  reproducibility: Verified public alpha.2.1 readback; all four asset digests match
-    local builds; source members match frozen Git bytes
+  reproducibility: Actual PR/main CI passed; five public alpha.3 assets and 122 archive
+    members verified; seven frozen gate results equal actual CI
 publication_bindings: []
 portfolio_integration:
   manifest: .research/manifest.yaml
