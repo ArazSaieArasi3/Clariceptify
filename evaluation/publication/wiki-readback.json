@@ -79,5 +79,35 @@
       "exact_native_editor_readback": true
     }
   ],
-  "claim_boundary": "Actual native UI publication/readback of controlled explanatory projection only; not independent scientific approval."
+  "claim_boundary": "Actual native UI publication/readback of controlled explanatory projection only; not independent scientific approval.",
+  "native_navigation_followup": {
+    "status": "PASS_AFTER_TITLE_CORRECTION",
+    "initial_finding": "Three multi-word native titles had literal hyphens. Their page bodies were correct, but controlled ASCII-hyphen links opened the new-page form instead of the intended page.",
+    "correction": "Renamed existing native pages using spaces; source Markdown bodies and SHA-256 values remain identical. No duplicate page was created.",
+    "pages": [
+      {
+        "source_file": "Conceptual-Model.md",
+        "native_title": "Conceptual Model",
+        "actual_url": "https://github.com/ArazSaieArasi3/Clariceptify/wiki/Conceptual-Model",
+        "home_link_opened_rendered_page": true,
+        "exact_editor_body_readback": true
+      },
+      {
+        "source_file": "Requirements-and-CQs.md",
+        "native_title": "Requirements and CQs",
+        "actual_url": "https://github.com/ArazSaieArasi3/Clariceptify/wiki/Requirements-and-CQs",
+        "home_link_opened_rendered_page": true,
+        "exact_editor_body_readback": true
+      },
+      {
+        "source_file": "Research-Roadmap.md",
+        "native_title": "Research Roadmap",
+        "actual_url": "https://github.com/ArazSaieArasi3/Clariceptify/wiki/Research-Roadmap",
+        "home_link_opened_rendered_page": true,
+        "exact_editor_body_readback": true
+      }
+    ],
+    "remaining_pages": "Nine single-word reader titles already matched their controlled link slugs and had exact native editor readbacks. Home, all twelve guide links, sidebar and footer retain the controlled source.",
+    "publication_map": "Generated wiki-title-map.json records native titles separately from source filenames and slugs; check_documentation enforces the mapping."
+  }
 }
