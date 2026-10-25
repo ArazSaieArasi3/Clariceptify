@@ -1,0 +1,349 @@
+{
+  "artifact_id": "DUL",
+  "count_policy": "Unique URI subjects explicitly typed owl:Class; local namespace filter; blank-node classes excluded. Import closure is asserted graph union, not inference.",
+  "counts": {
+    "explicit_triples_local_document": 1917,
+    "external_named_owl_classes_declared_in_document": 1,
+    "import_closure_named_owl_classes": 79,
+    "inferred_classes": null,
+    "local_named_object_properties": 113,
+    "local_named_owl_classes": 78
+  },
+  "imports": [],
+  "license_annotations": [],
+  "license_scope": "Ontology-header license/rights annotations only; absent annotations do not grant redistribution.",
+  "local_named_class_iris": [
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution"
+  ],
+  "ontology_iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+  "parser": {
+    "name": "RDFLib",
+    "version": "7.6.0"
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "resolved_closure": [
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+  ],
+  "schema_version": "1.0",
+  "scope": "Syntax, inventories and selected asserted axioms; no OWL profile, satisfiability, equivalence or paper-to-OWL fidelity proof.",
+  "selected_axioms": [
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+              "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+            },
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2002/07/owl#equivalentClass"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+            "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"
+          ],
+          "predicate": "http://www.w3.org/2002/07/owl#propertyChainAxiom"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
+      "logical_assertions": [
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    }
+  ],
+  "source_sha256": "e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66",
+  "source_url": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+  "syntax": "turtle",
+  "version_info": [
+    "4.2"
+  ]
+}

@@ -1,0 +1,48 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-DUL
+issue: 88
+status: SCOPED_ARTIFACT_INSPECTION_COMPLETE
+input_commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+retrieval_manifest: evidence/related-work/artifact-inputs.yaml
+artifact_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+ontology_iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+counts:
+  explicit_triples_local_document: 1917
+  external_named_owl_classes_declared_in_document: 1
+  import_closure_named_owl_classes: 79
+  inferred_classes: null
+  local_named_object_properties: 113
+  local_named_owl_classes: 78
+count_evidence:
+  path: evaluation/related-work/artifacts/DUL.json
+  sha256: ab1ab419a519a9fae32cea12aaa0e704f062985fbbc7d63168b6d050868699eb
+selected_iri_locators:
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+inspection_findings:
+- Actual 4.2 version is asserted at the ontology header; the .owl resource is Turtle, not RDF/XML.
+- The version history reports dropping Situation top-level disjointness in 4.0, Description/Concept disjointness
+  in 4.1, and InformationObject/Description/Concept disjointness in 4.2.
+- Current asserted graph inspection finds no direct disjointWith assertions for those pairs; absence is not
+  a satisfiability or non-entailment proof.
+- 'The 2016 chapter full text remains unavailable under #70. #88 retains that dependency and is not closed
+  by this report.'
+license:
+  status: NO_HEADER_LICENSE_OR_RIGHTS_ANNOTATION_FOUND
+  source_redistributed: false
+  permission_inferred: false
+reuse:
+  decision: ALIGNMENT_CANDIDATE_ONLY
+  semantic_equivalence: NOT_ESTABLISHED
+  source_imported_into_Clariceptify: false
+paper_binding: RW-DUL-CHAPTER-2016 metadata only; no exact version correspondence established.
+limits:
+- No inference, OWL profile check, satisfiability proof or full paper/artifact equivalence assessment.
+- Named OWL class counts are not comparable without qualification to the Clariceptify conceptual catalog.

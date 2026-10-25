@@ -1,0 +1,427 @@
+{
+  "alias_check": {
+    "byte_identical": false,
+    "filename": "cDnS-dul.owl",
+    "ontology_iri": "http://www.loa-cnr.it/ontologies/cDnS.owl",
+    "rdf_isomorphic": true,
+    "sha256": "4ed2a73f0db26f8976bf51a59febfbbe84560596c110d7db90f5995902eee48b",
+    "url": "http://www.ontologydesignpatterns.org/ont/dul/cDnS.owl"
+  },
+  "artifact_id": "cDnS",
+  "count_policy": "Unique URI subjects explicitly typed owl:Class; local namespace filter; blank-node classes excluded. Import closure is asserted graph union, not inference.",
+  "counts": {
+    "explicit_triples_local_document": 411,
+    "external_named_owl_classes_declared_in_document": 0,
+    "import_closure_named_owl_classes": 12,
+    "inferred_classes": null,
+    "local_named_object_properties": 47,
+    "local_named_owl_classes": 12
+  },
+  "imports": [],
+  "license_annotations": [],
+  "license_scope": "Ontology-header license/rights annotations only; absent annotations do not grant redistribution.",
+  "local_named_class_iris": [
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+  ],
+  "ontology_iri": "http://www.loa-cnr.it/ontologies/cDnS.owl",
+  "parser": {
+    "name": "RDFLib",
+    "version": "7.6.0"
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "resolved_closure": [
+    "http://www.loa-cnr.it/ontologies/cDnS.owl"
+  ],
+  "schema_version": "1.0",
+  "scope": "Syntax, inventories and selected asserted axioms; no OWL profile, satisfiability, equivalence or paper-to-OWL fidelity proof.",
+  "selected_axioms": [
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isExpressedBy",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptualizedBy",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#satisfies",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            {
+              "object": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#int",
+                "value": "1"
+              },
+              "predicate": "http://www.w3.org/2002/07/owl#cardinality"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#Class",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isIntroducedBy",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": [
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity",
+              "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+            },
+            {
+              "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isActedBy",
+              "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+            },
+            {
+              "object": "http://www.w3.org/2002/07/owl#Restriction",
+              "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            }
+          ],
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#defines",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#classifies",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isClassifiedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#expresses",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isExpressedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/cDnS.owl#conceptualizes",
+      "logical_assertions": [
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptualizedBy",
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        {
+          "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ]
+    }
+  ],
+  "source_sha256": "f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a",
+  "source_url": "http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl",
+  "syntax": "xml",
+  "version_info": [
+    "1.1"
+  ]
+}

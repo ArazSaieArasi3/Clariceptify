@@ -1,0 +1,45 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-DULConceptualization
+issue: 89
+status: SCOPED_ARTIFACT_INSPECTION_COMPLETE
+input_commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+retrieval_manifest: evidence/related-work/artifact-inputs.yaml
+artifact_sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+ontology_iri: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+counts:
+  explicit_triples_local_document: 92
+  external_named_owl_classes_declared_in_document: 0
+  import_closure_named_owl_classes: 80
+  inferred_classes: null
+  local_named_object_properties: 8
+  local_named_owl_classes: 1
+count_evidence:
+  path: evaluation/related-work/artifacts/DULConceptualization.json
+  sha256: 290f862999fc09d3a883e4abe8152051b86ca3e51c2e916548551f3c5a7dda41
+selected_iri_locators:
+- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation
+- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes
+- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#adopts
+- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes
+- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#knows
+inspection_findings:
+- One local named class is not the imported DUL class inventory; the explicit closure has 80 named owl:Class
+  IRIs, including external owl:Thing.
+- All eight local object properties are asserted; selected nested existential restrictions and property chains
+  were read structurally.
+- No same-agent constraint is added by nesting unrelated existential variables; comments are not extra OWL
+  axioms.
+- The import points to a mutable DUL URL. This inspection resolves exactly the pinned 4.2 snapshot and does
+  not prove historical compatibility.
+license:
+  status: NO_HEADER_LICENSE_OR_RIGHTS_ANNOTATION_FOUND
+  source_redistributed: false
+  permission_inferred: false
+reuse:
+  decision: ALIGNMENT_CANDIDATE_ONLY
+  semantic_equivalence: NOT_ESTABLISHED
+  source_imported_into_Clariceptify: false
+paper_binding: RW-DUL-CONCEPTUALIZATION-0.1, same bytes as embedded-documentation review.
+limits:
+- No inference, OWL profile check, satisfiability proof or full paper/artifact equivalence assessment.
+- Named OWL class counts are not comparable without qualification to the Clariceptify conceptual catalog.

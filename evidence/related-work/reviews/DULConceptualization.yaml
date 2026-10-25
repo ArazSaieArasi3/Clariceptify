@@ -1,0 +1,65 @@
+schema_version: '1.0'
+candidate_id: CLR-RW-DULConceptualization
+task_id: R2-LIT-DULConceptualization
+issue: 71
+review_date: '2026-10-25'
+reviewer:
+  kind: AI-assisted source inspection
+  independent_expert: false
+clariceptify_input:
+  commit: 45415798a6ba307e6e98d7591595ca2ca370e154
+  release: v0.1.0
+  model_revision: input-r1-rev1
+protocol: evidence/related-work/review-protocol.yaml
+identity:
+  work_id: RW-DUL-CONCEPTUALIZATION-0.1
+  title: Conceptualization.owl
+  author: Aldo Gangemi
+  version: 0.1; marked very preliminary
+  work_kind: Author-issued ontology with embedded primary documentation; no separate paper established
+  primary_url: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+  doi: null
+access:
+  state: COMPLETE_EMBEDDED_DOCUMENTATION_SCOPED_AXIOM_REVIEW
+  url: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+  sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+  format: RDF/XML
+  redistributed: false
+observations:
+- dimension: purpose
+  locator: owl:Ontology/rdfs:comment
+  observation: Patterns relate agents and social objects through different conceptualization attitudes.
+- dimension: mental_representation
+  locator: Conceptualization.owl#InternalRepresentation, comment and rdfs:subClassOf
+  observation: InternalRepresentation is an InformationRealization with nested realizes/expresses/isConceptualizedBy
+    existential restrictions.
+- dimension: attitude_distinctions
+  locator: 'Conceptualization.owl#assumes, #adopts, #believes, #knows'
+  observation: Assumption and adoption target descriptions/concepts; belief and knowledge target situations.
+- dimension: requirements_method_evaluation
+  locator: Ontology header and all eight local property declarations
+  observation: Embedded examples and preliminary pattern documentation are present; no ORSD, executed CQ suite
+    or empirical evaluation is supplied by this file.
+- dimension: limits
+  locator: owl:versionInfo; selected restriction and property definitions
+  observation: The file labels itself preliminary and imports a mutable DUL URL.
+comparison:
+  disposition: REUSE_OR_ALIGN_CANDIDATE
+  proposed_interpretation: Direct prior work on conceptualization relations rules out a broad absence claim.
+    In particular, the nested existential axiom does not force the conceptualizing Agent to be identical to
+    the cognitive system realizing the representation; comments alone cannot establish that identity. A formal
+    Clariceptify mapping must state this constraint explicitly if required. Recorded decisions, rationale and
+    episode outputs remain comparison targets, not established gaps.
+  equivalence: NOT_ESTABLISHED
+  model_change: NONE
+  novelty_priority: NOT_ASSESSED
+limitations:
+- The documentation review is not evidence for an unidentified standalone paper.
+- No reasoner run, epistemic-logic semantics or co-reference entailment is claimed.
+- The resolved imported snapshot is DUL 4.2; compatibility with the original 0.1 author environment is not
+  established.
+counts:
+  local_asserted: null
+  import_inclusive: null
+  inferred: null
+  reason: Paper/documentation review does not substitute for separately inspected artifact counts.
