@@ -1,0 +1,117 @@
+{
+  "schema_version": "0.1.0",
+  "asset_id": "CLR-PACKAGE",
+  "current_engineering_package": "v0.1.0-alpha.3",
+  "current_semantic_release": null,
+  "policy": "An append-only engineering release history; package versions are distinct from model semantic acceptance. Published tags/assets are immutable.",
+  "records": [
+    {
+      "tag": "v0.1.0-alpha.1",
+      "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.1",
+      "source_commit": "223df578777afa38743fa20c8c33ace78a8fbfd6",
+      "prerelease": true,
+      "published_at": "2026-10-24T19:22:13Z",
+      "scope": "Contracts and migration preparation",
+      "packaging_note": "No payload replacement",
+      "assets": [
+        {
+          "name": "clariceptify-v0.1.0-alpha.1-bootstrap.zip",
+          "sha256": "32440104cc97f04db62d133e70156f3c9b1e10e2d25ab83e339d11a9fdb78d99"
+        },
+        {
+          "name": "PACKAGE-MANIFEST.json",
+          "sha256": "3f9a1574ff5c5f0bbc0e678a2b7e9722553716a1235893bda1f08a699936ce2f"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "ceae8c2de1a7e29fe18d13da2b50a78197896c4f57f386d210e18c8e67398a20"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.0-alpha.2",
+      "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2",
+      "source_commit": "fe347d2e62262f1cd43558d2330438f433f64f1d",
+      "prerelease": true,
+      "published_at": "2026-10-24T21:23:40Z",
+      "scope": "Controlled candidate import baseline",
+      "packaging_note": "Cross-environment report-order difference; corrected by alpha.2.1 without replacing this payload",
+      "assets": [
+        {
+          "name": "CHECK-RESULTS.json",
+          "sha256": "c476392a024787c78e60eda34ade411f5ca229324e89fccf6a8314eafa4111b6"
+        },
+        {
+          "name": "clariceptify-v0.1.0-alpha.2-baseline.zip",
+          "sha256": "2cfb6bca1ad4ad72bac9e5cf46307658d02c59deeb74429d8c2f582d2d88a928"
+        },
+        {
+          "name": "PACKAGE-MANIFEST.json",
+          "sha256": "cd07c245c4137bcbe22a8c8a4f003c3da431e21f5c4f11dd9b9dd07a464625ef"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "6c4a9034b4e925ddf99d442cec7197e0a9f43f628ffed1443438df74f8bbcfab"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.0-alpha.2.1",
+      "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2.1",
+      "source_commit": "fe347d2e62262f1cd43558d2330438f433f64f1d",
+      "prerelease": true,
+      "published_at": "2026-10-24T21:27:23Z",
+      "scope": "Controlled candidate import baseline",
+      "packaging_note": "Packaging correction to alpha.2; same scientific input",
+      "assets": [
+        {
+          "name": "CHECK-RESULTS.json",
+          "sha256": "540874280ad716817a4fdfe28542fcb3f13c12ea8ef53656faa198eceab58245"
+        },
+        {
+          "name": "clariceptify-v0.1.0-alpha.2.1-baseline.zip",
+          "sha256": "51d8d4419aa81a2747b713e8dd8ba441a9c5a22a0378d43052ca7653c600fe8e"
+        },
+        {
+          "name": "PACKAGE-MANIFEST.json",
+          "sha256": "fb3d7e3bd4b3b4d749db0bb565a23a4346fa324e943b17416eba8072340f409d"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "337493ef3d7fc54f506e905697833f10bfbcd096d8049442b26a078339e5118f"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.0-alpha.3",
+      "release_url": "https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.3",
+      "source_commit": "f4a3e233fc283c065a2c48297657878a4625d780",
+      "prerelease": true,
+      "published_at": "2026-10-25T04:44:51Z",
+      "scope": "Scoped model/source/witness traceability, bounded claims and public integrity/CI",
+      "packaging_note": "No payload replacement",
+      "assets": [
+        {
+          "name": "CHECK-RESULTS.json",
+          "sha256": "629ceef1603fd1fc8f18c80dcd3f2fe967ca8ec5c50a4068ea1748c9935ba95b"
+        },
+        {
+          "name": "CI-READBACK.json",
+          "sha256": "97b811d89ccf64580ecd64eaf0393ab09444f27d080d3e8a9ada932e9bb42b99"
+        },
+        {
+          "name": "clariceptify-v0.1.0-alpha.3-traceability.zip",
+          "sha256": "80028ee1d43708e25cffd1aa0aec7f4d51ac9de4f35627e14b8e484ac388f098"
+        },
+        {
+          "name": "PACKAGE-MANIFEST.json",
+          "sha256": "93bc3ad5bf9e1561676314399fcf7ef9c8ad3bf322f632303353ef73c9f9b677"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "f5be8b9721da551664c6051155bb29dc0dc25922deea0dadd3cb1e85b7dba506"
+        }
+      ]
+    }
+  ]
+}

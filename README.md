@@ -2,11 +2,11 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 traceability and claim-baseline preparation** station: the imported candidate baseline is published; structural/source/witness links, migration parity and bounded claim records are present. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 post-alpha.3 preparation** station: scoped traceability and public integrity/CI are published; diagram reconciliation and the remaining R1 review/documentation/package gates are next. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
-Latest engineering prerelease: [v0.1.0-alpha.2.1](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.2.1). It freezes the imported candidate model, retrospective requirements/CQ contracts and qualified source baseline at fe347d2e62262f1cd43558d2330438f433f64f1d. It corrects check-report ordering in alpha.2 without changing scientific input. Alpha.1 and alpha.2 remain unchanged. See the [changelog](CHANGELOG.md) and [public readback](evaluation/baseline-preview-publication-alpha2-1.json).
+Latest engineering prerelease: [v0.1.0-alpha.3](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.3). It freezes the scoped traceability/integrity station at f4a3e233fc283c065a2c48297657878a4625d780: 118 source files evaluated by actual main CI, with 1,815 project links, candidate witnesses, bounded claims and public checks. All five public assets and 122 archive members were read back. See the [release index](releases/release-index.yaml), [changelog](CHANGELOG.md) and [public readback](evaluation/traceability-preview-publication.json). Package version does not establish model semantic acceptance.
 
 ## Start here
 

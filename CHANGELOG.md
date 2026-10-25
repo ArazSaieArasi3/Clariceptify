@@ -1,6 +1,6 @@
 # Changelog
 
-## Current development — scoped traceability and claims
+## Current development — post-alpha.3 R1 preparation
 
 - Imported candidate registries: 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints.
 - Preserved input definitions, stereotypes, end multiplicities and source locators; semantic lineage and constraint mention bindings remain unreviewed.
@@ -16,6 +16,16 @@
 - Reconstructed 14 governed outputs from the actual frozen specification/ORSD in isolation; all bytes match. Missing inputs, excluded history, source ownership and intentional projection differences remain explicit.
 - Imported the original 30 FR/CQ candidate pairs, ten quality-review dispositions and eight future LR/LCQ pairs; satisfaction remains unassessed and questions unexecuted.
 - Registered seven bounded observations/proposals and a draft-manuscript binding. Comparative novelty, philosophical adequacy, current manuscript alignment and figure reconciliation remain unassessed.
+
+## v0.1.0-alpha.3 — 2026-10-25
+
+- Published the scoped traceability/public-integrity checkpoint from f4a3e233fc283c065a2c48297657878a4625d780 (118 source files).
+- Public schema, structure and traceability gates pass their targeted negative cases. One read-only primary CI records exact input/validator fingerprints and actual tool/run provenance.
+- Seven frozen gate results equal the downloaded actual CI reports. Two builds have identical bytes; all five public assets, 122 archive members, 118 source members and internal/external checksums were verified.
+- Includes scoped links, candidate witnesses and bounded claims. Diagram/manuscript reconciliation, review, final licensing/citation and stable release remain pending. No semantic acceptance or DOI is inferred.
+- Older published tags/assets are unchanged; the engineering release index preserves their distinct scopes.
+
+[Release](https://github.com/ArazSaieArasi3/Clariceptify/releases/tag/v0.1.0-alpha.3)
 
 ## v0.1.0-alpha.2.1 — 2026-10-25
 
