@@ -1,22 +1,28 @@
-# Proposed R1 licensing decision
+# R1 licensing decision
 
-Status: **PENDING OWNER DECISION**. Issue #52 remains open. No license grant is
-created by this proposal; repository visibility is not a substitute for a grant.
+Status: **ADOPTED BY ACTUAL OWNER INSTRUCTION**, 2026-10-25; issue #52.
+Input baseline: d5672a1625193dd62107e089f984178f0c51b6c8; model input-r1-rev1;
+diagram diagram-r1.2. This changes distribution metadata, not model semantics.
 
-| Material | Proposed treatment |
+The owner explicitly approved CC-BY-4.0 for research and MIT for code in the
+continuation instruction on this date. This actual decision replaces the
+proposal from PR #220. The instruction also supplied the three package creators
+recorded in [artifact-creators.md](artifact-creators.md).
+
+| Material | Adopted treatment |
 | --- | --- |
-| Original conceptual registries, requirements, documentation, diagrams and project assessments | CC-BY-4.0, subject to confirmation of the applicable rights |
-| Original utility scripts and schemas | MIT, in a separately scoped software license notice |
-| Third-party publications and original raw input files | Excluded from distribution and from the proposed grant |
-| Imported bibliographic metadata and attributed conceptual source support | Preserve provenance, attribution and qualification; the project grant does not relicense third-party works |
-| Embedded third-party font programs | Not distributed; the diagram derivative uses runtime fallback fonts |
+| Original conceptual registries, requirements, documentation, diagrams, traceability and project assessments | CC-BY-4.0 |
+| Original utility scripts, workflow code, schemas and dependency declarations | MIT, with paths scoped by the root LICENSE notice |
+| Third-party publications, historical private raw inputs and font programs | Excluded from the grant and, for raw/full-text/font inputs, from distribution |
+| Imported bibliographic metadata and attributed support | Preserve provenance and qualifications; no relicensing of underlying works |
+| Vendored CFF schema | Upstream CC-BY-4.0, separately attributed in THIRD-PARTY-NOTICES.md |
 
-The exact candidate material is the repository snapshot after PR #219, extended
-by the generated reference and review artifacts. Model revision is input-r1-rev1;
-diagram revision is diagram-r1.2. The eventual package manifest must enumerate
-the actual distributable files and notices, and exclude private raw inputs.
+The [root notice](../../LICENSE) and full [research](../../LICENSE-CC-BY-4.0)
+and [software](../../LICENSE-MIT) texts implement the split. The grant covers
+applicable rights in original project contributions; it does not assert
+third-party consent or ownership of third-party works. The final manifest
+will enumerate exact members, per-file license scope and exclusions.
 
-Decision requested: accept the proposed split, or specify another license and
-its scope. After an actual decision, add scoped license texts/notices, update
-the package metadata and rerun distribution checks. This proposal records no
-decision on behalf of either researcher or any third-party rights holder.
+Verification: license text provenance/hashes, creator order and CFF validation
+are recorded in evaluation/release/publication-metadata.json. Actual final
+package acceptance, expert review and DOI issuance remain separate.

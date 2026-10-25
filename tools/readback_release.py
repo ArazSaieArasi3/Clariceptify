@@ -2,9 +2,9 @@
 from pathlib import Path
 import argparse,hashlib,importlib.metadata,json,os,site,subprocess,sys,tempfile,zipfile
 import yaml
-from build_release import safe_path,digest,MANIFEST_PATH
+from build_release import safe_path,digest,MANIFEST_PATH,package_record
 ROOT=Path(__file__).resolve().parents[1]
-CHECKERS=['check_repository_language','check_schemas','check_model_structure','check_requirements','check_source_support','check_traceability','check_bootstrap','check_reference_views','check_conceptualization_fixtures','check_review_state']
+CHECKERS=['check_repository_language','check_schemas','check_model_structure','check_requirements','check_source_support','check_traceability','check_bootstrap','check_reference_views','check_conceptualization_fixtures','check_review_state','check_publication_metadata']
 
 def verify(archive_path,manifest_path,run_checks=True):
     raw=Path(manifest_path).read_bytes();manifest=yaml.safe_load(raw)
@@ -20,7 +20,7 @@ def verify(archive_path,manifest_path,run_checks=True):
         files={name:archive.read(name) for name in names}
     if files[MANIFEST_PATH]!=raw:raise ValueError('Embedded source manifest differs from the trusted manifest')
     envelope=json.loads(files['PACKAGE-MANIFEST.json'])
-    if envelope['source_manifest_sha256']!=digest(raw) or envelope['members']!=manifest['members'] or envelope['publication_eligible'] is not False or envelope['base_source_commit']!=manifest['base_source_commit'] or envelope['snapshot_binding']!=manifest['snapshot_binding'] or envelope['model_version']!=manifest['artifact_versions']['model'] or envelope['diagram_version']!=manifest['artifact_versions']['diagram'] or envelope['pending_gates']!=manifest['pending_gates']:raise ValueError('Package envelope mismatch')
+    if envelope!=package_record(manifest,raw):raise ValueError('Package envelope mismatch')
     for name,row in registered.items():
         if digest(files[name])!=row['sha256'] or len(files[name])!=row['bytes']:raise ValueError('Member digest differs: '+name)
     expected_sums=''.join(digest(data)+'  '+name+'\n' for name,data in sorted(files.items()) if name!='SHA256SUMS').encode()
@@ -45,7 +45,7 @@ def verify(archive_path,manifest_path,run_checks=True):
                 except json.JSONDecodeError:raise ValueError(name+': '+(run.stderr or run.stdout)[-2000:])
                 if run.returncode or record.get('status')!='PASS':raise ValueError('Extracted check failed: '+name)
                 results[name]={'status':'PASS','result_sha256':digest(run.stdout.encode())}
-    return {'status':'PASS','stage':'preparation_only','publication_status':'BLOCKED','archive_sha256':digest(Path(archive_path).read_bytes()),'source_manifest_sha256':digest(raw),'registered_source_members':len(registered),'archive_members':len(files),'checks':results,'environment':'Fresh temporary extraction and empty HOME; no Git/private raw inputs/network; declared dependencies already installed in current Python runtime','runtime':{'python':sys.version.split()[0],'PyYAML':importlib.metadata.version('PyYAML'),'jsonschema':importlib.metadata.version('jsonschema')},'limitations':['Not an issued RC/stable release, grant of rights or actual owner acceptance.','Fresh file tree is not a newly provisioned operating system or independent expert validation.']}
+    return {'status':'PASS','stage':manifest['stage'],'publication_status':'NOT_ASSERTED_BY_READBACK','archive_sha256':digest(Path(archive_path).read_bytes()),'source_manifest_sha256':digest(raw),'registered_source_members':len(registered),'archive_members':len(files),'checks':results,'environment':'Fresh temporary extraction and empty HOME; no Git/private raw inputs/network; declared dependencies already installed in current Python runtime','runtime':{'python':sys.version.split()[0],'PyYAML':importlib.metadata.version('PyYAML'),'jsonschema':importlib.metadata.version('jsonschema')},'limitations':['Archive verification does not establish actual publication or final owner acceptance.','Fresh file tree is not a newly provisioned operating system or independent expert validation.']}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('archive',type=Path);p.add_argument('--manifest',type=Path,default=ROOT/MANIFEST_PATH);p.add_argument('--output',type=Path);a=p.parse_args();result=verify(a.archive,a.manifest)

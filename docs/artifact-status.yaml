@@ -1,4 +1,4 @@
-station: R1 technical package preparation; license/creator/citation and final release gates pending
+station: R1 candidate metadata adopted; exact freeze/readiness/publication in progress
 contracts:
   scope: implemented
   authority: implemented
@@ -31,6 +31,7 @@ artifacts:
   reference_pages: generated_from_candidate_registries_with_qualified_sources
   relation_constraint_csv_exports: generated_lossless_round_trip_verified
   selected_negative_fixture: executed_one_subject_union_clause_only
-  review_state_and_queue: structured_with_actual_publication_decisions_pending
-  release_preparation: registered_working_snapshot_and_preparation_only_adapter
-  final_rc_publication: blocked_by_actual_license_creator_citation_decisions
+  review_state_and_queue: structured; license and creator decisions recorded; final package
+    acceptance not_assessed
+  release_preparation: exact RC adapter implemented; source freeze follows
+  final_rc_publication: pending_exact_manifest_readback_and_readiness

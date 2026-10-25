@@ -33,15 +33,15 @@ methodology:
   - Requirements and source traceability
   - Scoped layered evaluation
 execution:
-  current_wave: R1 post-alpha.3 preparation
-  current_workstream: Diagram-r1.2, generated reference, fixture and review dossier
-    complete; technical release preparation
+  current_wave: R1 candidate freeze
+  current_workstream: Owner-approved licenses and three creators; validated citation and synchronized
+    reader path
   next_gate:
-    name: Actual license/creator decisions and validated citation
-    criteria: 'record owner decision for #52/#53; validate #54; finalize #55-#60 against
-      the exact candidate package before RC publication'
-  next_action: Recover/register diagram source (#41), resolve approval-state evidence
-    (#42), then reconcile/render/check full and detail views (#43–#45).
+    name: Exact RC freeze, readback and readiness
+    criteria: 'Complete #57-#60 on exact committed source, publish #61, then obtain #62 exact-package
+      disposition.'
+  next_action: Freeze the synchronized candidate source and run all package gates before RC
+    publication.
 progress:
   problem_framing: done
   evidence_base: planned
@@ -70,6 +70,5 @@ verification:
   coherence_debt:
   - Canonical handover pending destination parity
   - Source/specification approval wording requires reconciliation
-  - Repository license/citation metadata pending
   note: Local continuation of R-001; no upstream registry mutation or full OGCM conformance
     assessment.

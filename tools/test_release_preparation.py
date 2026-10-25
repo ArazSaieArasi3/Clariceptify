@@ -1,6 +1,6 @@
 """Boundary tests for the exact preparation manifest and untrusted archive bytes."""
 from pathlib import Path
-import json,tempfile,unittest,zipfile
+import hashlib,json,shutil,tempfile,unittest,zipfile
 import yaml
 from build_release import build,digest
 from readback_release import verify
@@ -30,5 +30,36 @@ class PreparationTests(unittest.TestCase):
     def test_rc_promotion_rejected(self):
         self.record['stage']='rc';self.record['publication_eligible']=True;self.manifest.write_text(yaml.safe_dump(self.record))
         with self.assertRaisesRegex(ValueError,'preparation packages only'):build(self.root,self.manifest,self.out)
+
+    def rc_record(self):
+        source=Path(__file__).resolve().parents[1]
+        paths=['CITATION.cff','LICENSE','LICENSE-MIT','LICENSE-CC-BY-4.0','THIRD-PARTY-NOTICES.md',
+               'docs/decisions/release-license.md','docs/decisions/artifact-creators.md','tools/vendor/cff-1.2.0.schema.json']
+        for name in paths:
+            target=self.root/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source/name,target)
+        members=[]
+        for name in paths:
+            data=(self.root/name).read_bytes()
+            members.append({'path':name,'bytes':len(data),'sha256':digest(data),'git_blob_sha':hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest(),'origin':'exact_source_commit_member','license':'CC-BY-4.0'})
+        self.record.update(stage='rc_candidate',publication_eligible=True,target_station='v0.1.0-rc.1',source_commit='a'*40,snapshot_binding='exact_registered_source_commit',members=members,
+                           member_path_digest_sha256=digest(json.dumps({r['path']:r['sha256'] for r in members},sort_keys=True,separators=(',',':')).encode()))
+        self.manifest.write_text(yaml.safe_dump(self.record))
+
+    def test_registered_rc_roundtrip(self):
+        self.rc_record();build(self.root,self.manifest,self.out)
+        self.assertEqual(verify(self.out/'clariceptify-v0.1.0-rc.1.zip',self.manifest,False)['stage'],'rc_candidate')
+
+    def test_rc_git_identity_rejected(self):
+        self.rc_record();self.record['members'][0]['git_blob_sha']='b'*40;self.manifest.write_text(yaml.safe_dump(self.record))
+        with self.assertRaisesRegex(ValueError,'Git member identity'):build(self.root,self.manifest,self.out)
+
+    def test_rc_changed_creator_rejected(self):
+        self.rc_record();p=self.root/'CITATION.cff';p.write_text(p.read_text().replace('Hassan','Wrong'))
+        for row in self.record['members']:
+            if row['path']=='CITATION.cff':
+                data=p.read_bytes();row.update(bytes=len(data),sha256=digest(data),git_blob_sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest())
+        self.record['member_path_digest_sha256']=digest(json.dumps({r['path']:r['sha256'] for r in self.record['members']},sort_keys=True,separators=(',',':')).encode())
+        self.manifest.write_text(yaml.safe_dump(self.record))
+        with self.assertRaisesRegex(ValueError,'creator names/order'):build(self.root,self.manifest,self.out)
 
 if __name__=='__main__':unittest.main()

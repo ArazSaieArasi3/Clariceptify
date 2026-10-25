@@ -2,7 +2,7 @@
 
 An Ontology for Representing Conceptualization Knowledge
 
-Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 post-alpha.3 preparation** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed and the scoped rendering defect in #217 corrected; remaining R1 review/documentation/package gates follow. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
+Clariceptify develops a conceptual model of purposeful conceptualization and its explicit products. This repository is currently at the **R1 candidate packaging** station: scoped traceability and public integrity/CI are published; diagram element parity has been assessed and the scoped rendering defect in #217 corrected; owner-declared licensing/creators and a validated candidate citation are now recorded; exact package/readiness/publication gates follow. Definitions and modeling commitments are preserved from the selected input. No stable semantic release or completed semantic acceptance is claimed.
 
 The selected input comprises 137 concepts, 20 subject domains plus Foundations, 174 associations, 122 generalizations and 24 textual constraints. These are input counts, not a claim of semantic completeness. R1 will publish a documented conceptual-model/requirements baseline; R2 assesses scoped adequacy and sources; R3 formalizes a declared subset.
 
@@ -32,11 +32,11 @@ Research identity remains R-001; Portfolio owns research governance and OGCM-RF 
 
 ## Limits and reuse status
 
-No full OWL/SHACL/FOL implementation, relational projection, all-CQ execution, joint satisfiability proof, independent expert acceptance, complete literature review or novelty priority is claimed. Diagram element parity and the scoped paint-order correction are assessed; source-passage reconciliation remains open. No DOI or registered ontology IRI is assigned here. The repository-level reuse license and final creator/citation metadata remain to be settled in the dedicated publication tasks; public visibility alone is not a reuse license. Raw thesis, article and third-party full texts are not distributed in this bootstrap.
+No full OWL/SHACL/FOL implementation, relational projection, all-CQ execution, joint satisfiability proof, independent expert acceptance, complete literature review or novelty priority is claimed. Diagram element parity and the scoped paint-order correction are assessed; source-passage reconciliation remains open. No DOI or registered ontology IRI is assigned here. Original research material is CC-BY-4.0 and original code is MIT under the [scoped LICENSE notice](LICENSE). The owner-declared creators, in order, are Araz Saie Arasi, Hassan Haghighi and Hossein azgomi. See [CITATION.cff](CITATION.cff) for the candidate citation and [third-party notices](THIRD-PARTY-NOTICES.md) for exclusions. Raw thesis, article and third-party full texts are not distributed in this bootstrap.
 
 ## Historical diagram-r1.1 assessment
 
-The [visual assessment](evaluation/diagram-parity.yaml) binds the current complete
+The [visual assessment](evaluation/diagram-parity.yaml) binds the historical diagram-r1.1 complete
 SVG, vector PDF and A3 atlas to the model. Element parity passed; readability did
 not pass because later connector strokes obscure some labels. See the
 [evidence plate](evaluation/diagrams/readability-findings.png) and
@@ -57,15 +57,16 @@ negative evidence remains intact. This is not human scientific acceptance.
 - [Positive and negative example result](evaluation/conceptualization-fixtures.json)
 - [Review state](evaluation/review-state.yaml) and [six-unit dossier](docs/review/r1-attention-queue.md)
 
-The [license proposal](docs/decisions/release-license.md) and
-[creator/citation proposal](docs/decisions/artifact-creators.md) await an actual
-owner decision. No root license grant, stable release, DOI or human acceptance is
-created by these generated documentation and review artifacts.
+The [license decision](docs/decisions/release-license.md) and
+[creator/citation decision](docs/decisions/artifact-creators.md) record the actual
+owner instruction of 2026-10-25. Detailed contribution roles remain unassessed.
+They do not establish final package acceptance or independent expert review.
 
-## First-release technical preparation
+## First-release candidate
 
-The [reading guide](docs/reading-guide.md) and [known limitations](docs/known-limitations.md)
-are prepared with citation/publication decisions still pending. The
-[preparation manifest](releases/v0.1.0-rc.1/manifest.yaml) binds an explicit working
-snapshot for local engineering build/readback tests. It does not create an RC
-release or authorize publication. See the [preparation instructions](releases/v0.1.0-rc.1/README.md).
+Follow the [reading guide](docs/reading-guide.md), inspect the
+[known limitations](docs/known-limitations.md), and use the
+[candidate build/readback instructions](releases/v0.1.0-rc.1/README.md).
+The exact manifest and release-readiness evidence distinguish engineering
+preparation from actual publication. The latest issued version remains the
+alpha linked above until an actual RC publication record is present.

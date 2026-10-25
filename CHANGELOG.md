@@ -1,5 +1,12 @@
 # Changelog
 
+## Candidate metadata and packaging - 2026-10-25
+
+- Record actual CC-BY-4.0 research / MIT code decision and the owner-declared creator order: Araz Saie Arasi, Hassan Haghighi, Hossein azgomi. Detailed contribution roles remain unassessed.
+- Add scoped license texts, third-party notices and schema-validated candidate CITATION.cff without an unissued publication date or DOI.
+- Synchronize the reader path and limitations; extend exact build/readback to committed RC candidates, separately from publication and final acceptance.
+
+
 ## Unreleased - first-release technical preparation
 
 - Prepare an explicit reading guide and versioned known-limitations view.
