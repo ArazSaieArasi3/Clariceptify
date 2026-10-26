@@ -3,6 +3,7 @@
 This owner-authorized research wave reviews prior work. It makes no changes to the Clariceptify ontology, requirements, fixtures, manuscript or release state. Suggested future uses remain proposals until the owner supplies the next-version instructions.
 
 - [Protocol](protocol.yaml): ten common dimensions, exact locators, evidence vocabulary, complete paper coverage and closure conditions.
+- [Coverage guide](coverage-guide.md): full paper, all-declaration artifact census and semantic execution are separate; current per-paper boundaries are explicit.
 - [Ordered register](register.yaml): twelve acquired PDFs (185 pages), seven waiting-for-owner texts and separately identified standards/module documentation. Exactly one current primary deep-review issue per paper.
 - [Synthesis procedure](synthesis-protocol.yaml): partial acquired-source synthesis, six bounded comparison batches, then evidence-qualified final #126 synthesis and an owner decision.
 - [Baseline protection](baseline-protection.json): protected scientific source fingerprint, including added/deleted members.

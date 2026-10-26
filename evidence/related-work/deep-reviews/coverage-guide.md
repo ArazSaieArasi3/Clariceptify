@@ -1,0 +1,39 @@
+# What a completed deep review does and does not cover
+
+A primary-paper review and a technical artifact inspection are different deliverables. Closing one does not automatically close the other. Every source/version and execution state must remain visible.
+
+## Three coverage layers
+
+| Layer | Required coverage | Completion does not establish |
+|---|---|---|
+| Full paper | Every page, section, figure, table, appendix, footnote and relevant bibliography; every ontology-bearing category/distinction, relation, constraint, numbered formula, example and evaluation claim | Every class in a different or later released ontology, correctness of all arguments, or independent expert acceptance |
+| Retained artifact | Exact bytes/version, all explicitly declared local named classes/properties and their constraints when a full census is recorded; actual imports and dependencies, license/version limits and paper correspondence | Missing external modules, an unacquired historical version, inferred classes or full semantic equivalence |
+| Semantic execution | Explicitly named profile/reasoner/SHACL/query/FOL runs, fixtures, expected outcomes, tool versions, results and limitations | Tests that were not run, all logically possible consequences, human validation or global adequacy |
+
+The complete paper catalog has no eight-concept limit. The existing eight-selected-commitment limit belongs to bounded semantic artifact checks. It is compatible with a full declaration census: inventory every declared entity, then use medium follow-ups for deeper semantic obligations. Inventory and source inspection must never be described as a completed exhaustive inference proof.
+
+## Current completed-paper boundaries
+
+| Paper dossier | Full-paper coverage | Retained artifact coverage | Remaining technical work |
+|---|---|---|---|
+| OntoKADS2005, #74 | Complete paper-level catalog and labeled formulas | No corresponding version-pinned executable distribution identified in the retained corpus | #236 discovery and inspection |
+| IAO2015, #78 | Complete paper-level definitions, arguments, examples and table | Repository retained; release/development identity checked, current root distinguished from the 2015 proposal | #240 root selection, imports, full census and bounded semantic tests |
+| EFO, #80 | Complete category map, all labeled formulas and arguments | Printed FOL outline available; separate machine-readable distribution not identified in the retained corpus | #242 artifact discovery and technical inspection |
+| cDnS2007, #259 | All 40 pages, 141 numbered displays including examples, all paper categories/relations, one table and both figures | Entire retained cDnS1.1 parsed; all 12 named classes manually reviewed; all 47 object properties and their declared constraints inventoried; no declared imports | #267 profile and eight correspondence checks; #263 distinct 2008 paper |
+
+The cDnS core is not the complete plan/norm/collective theory in the paper. The absence of those classes in that one file is neither absence in the paper nor proof that no related module exists. Its header binds it to the 2008 article, whose full text has not been acquired.
+
+## Shared analytical dimensions
+
+1. Identity, versions, bibliographic discrepancies and complete reading coverage.
+2. Problem, research questions, contributions and supported gap claims.
+3. Research and ontology-engineering method, sources and construction process.
+4. Scope, users, requirements, competency questions and positive/adverse scenarios.
+5. Concepts, categories, definitions, hierarchy, reuse and classification level.
+6. Relations, signatures, cardinality, constraints, formulas and local consequences.
+7. Foundations, identity, dependence, agency, mental/content/expression/referent distinctions, time and context.
+8. Repository/files/modules/imports, licenses, source/version correspondence and reproducibility.
+9. Verification, Validation, Evaluation, Assessment and Assurance, with actual evidence populations.
+10. Strengths, weaknesses, contrary evidence, validity limits, open questions and candidate later uses.
+
+Every substantive observation has a stable evidence ID and an exact locator. Author-reported, reviewer-interpreted, executed, not-reported and unknown evidence remain distinct. All later uses await the owner's decision after synthesis; this research does not alter Clariceptify.

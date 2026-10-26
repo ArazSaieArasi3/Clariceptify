@@ -1,8 +1,9 @@
 """Adverse tests for unsupported review closure and evidence promotion."""
 import copy
+import json
 import unittest
 import yaml
-from check_deep_reviews import ROOT, BASE, validate_dossier
+from check_deep_reviews import ROOT, BASE, validate_dossier, validate_artifact_census
 
 
 class ReviewBoundaryTests(unittest.TestCase):
@@ -42,6 +43,40 @@ class ReviewBoundaryTests(unittest.TestCase):
 
     def test_unbound_artifact_task(self):
         self.reject(lambda d: d['artifact'].update(issue=999999))
+
+    def cdns(self):
+        entry = next(e for e in self.register['acquired_papers'] if e['id'] == 'cDnS2007')
+        d = yaml.safe_load((self.base / 'cDnS2007/review.yaml').read_text())
+        return d, entry
+
+    def test_numbered_display_omission(self):
+        d, entry = self.cdns()
+        d['commitments'].pop(20)
+        with self.assertRaisesRegex(ValueError, 'numbered-display ledger'):
+            validate_dossier(d, entry, self.dimensions)
+
+    def test_numbered_display_duplicate(self):
+        d, entry = self.cdns()
+        d['commitments'][1]['formula_number'] = 1
+        with self.assertRaisesRegex(ValueError, 'numbered-display ledger'):
+            validate_dossier(d, entry, self.dimensions)
+
+    def reject_census(self, mutation, message):
+        d, _ = self.cdns()
+        binding = d['artifact']['census']
+        report = json.loads((ROOT / binding['path']).read_text())
+        mutation(report)
+        with self.assertRaisesRegex(ValueError, message):
+            validate_artifact_census(report, binding)
+
+    def test_named_class_omission(self):
+        self.reject_census(lambda r: r['classes'].pop(), 'named-entity inventory')
+
+    def test_census_source_substitution(self):
+        self.reject_census(lambda r: r.update(source_sha256='0' * 64), 'source substitution')
+
+    def test_census_is_not_inference(self):
+        self.reject_census(lambda r: r.update(inference_counts=123), 'promoted to inference')
 
 
 if __name__ == '__main__':
