@@ -46,12 +46,14 @@ jobs:
         run: tar --dereference --hard-dereference --directory "$RUNNER_TEMP/clariceptify-pages" -cf "$RUNNER_TEMP/artifact.tar" .
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: github-pages
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
       - name: Deploy the verified conceptual portal
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Read back exact public current and frozen reader bytes
         env:
           PUBLIC_PAGES_URL: ${{ steps.deployment.outputs.page_url }}

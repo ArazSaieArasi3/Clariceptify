@@ -7,17 +7,20 @@ from concurrent.futures import ThreadPoolExecutor
 import argparse, hashlib, json, time
 
 
-def fetch(base, path):
+def fetch(base, path, attempts=4):
     request = Request(base.rstrip('/') + '/' + quote(path, safe='/'),
                       headers={'User-Agent': 'Clariceptify-publication-readback/1.0',
                                'Cache-Control': 'no-cache'})
-    try:
-        with urlopen(request, timeout=45) as response:
-            if response.status != 200:
-                raise ValueError(f'Unexpected public response: {path}')
-            return response.read()
-    except HTTPError as error:
-        raise ValueError(f'Public readback HTTP {error.code}: {path}') from error
+    for attempt in range(attempts):
+        try:
+            with urlopen(request, timeout=45) as response:
+                if response.status != 200:
+                    raise ValueError(f'Unexpected public response: {path}')
+                return response.read()
+        except HTTPError as error:
+            if error.code not in {429, 500, 502, 503, 504} or attempt + 1 == attempts:
+                raise ValueError(f'Public readback HTTP {error.code}: {path}') from error
+            time.sleep(2 ** attempt)
 
 
 def readback(root, base, attempts=6):

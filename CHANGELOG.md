@@ -1,5 +1,9 @@
 # Changelog
 
+## Public documentation readback reliability - 2026-10-26
+
+- Address observed #265: retry transient HTTP readback failures with four bounded attempts and preserve exact byte/manifest checks. Use matched run/attempt-bound Pages artifact names so reruns cannot select duplicate artifacts. Permanent errors and exhausted retries still fail; historical failures remain recorded.
+
 ## Deep primary-paper research - 2026-10-26
 
 - Establish a shared ten-dimension evidence contract, one primary deep-review issue per paper, twelve acquired PDFs and seven waiting-for-owner texts. Plan partial and final synthesis with explicit source/version boundaries and owner-controlled later use.
