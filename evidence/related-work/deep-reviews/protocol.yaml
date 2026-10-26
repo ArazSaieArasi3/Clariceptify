@@ -4,6 +4,13 @@ issue: 258
 approved_date: '2026-10-26'
 baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
 status: OWNER_AUTHORIZED_RESEARCH_ONLY
+supplementary_contract:
+  issue: 269
+  authorized_on: '2026-10-26'
+  definitions: evidence/related-work/deep-reviews/catalog-contract.yaml
+  source_status: evidence/related-work/deep-reviews/source-audit.yaml
+  mandatory: Repository discovery, all-class definition availability and source-bound foundation family/edition/relation
+  historical_rule: Earlier paper or selected-artifact closures remain valid within their recorded scope; supplementary technical work is separately tracked.
 dimensions:
   D1_identity_coverage: Exact work/version and complete paper coverage
   D2_problem_contribution: Problem, gap, questions and supported contributions

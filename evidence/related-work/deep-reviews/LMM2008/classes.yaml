@@ -1,0 +1,781 @@
+schema_version: '1.0'
+work_id: LMM2008
+issue: 270
+checked_on: '2026-10-26'
+status: ALL_LOCAL_CLASSES_ACCOUNTED_FOR_DEFINITION_GAPS_EXPLICIT
+population_policy: All explicitly declared local named owl:Class IRIs in selected documents. External redeclarations
+  are retained in censuses, not relabeled local. No inference.
+modules:
+- id: LMM_L1
+  source_filename: LMM_L1.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  namespace: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#
+  version:
+  - "1.8\n1.2 \n- contains fine-tuning of cross-context relations. Now, the formalization pathway goes from expression\
+    \ to meaning to reference to formal entity to formal expression.\n1.3 \n- has all elements with English labels.\
+    \ Moreover, I added the relatedMeaning property, which allows to query across all object properties that have\
+    \ a Meaning in both domain and range.\n1.4 \n- has a new relation: hasInterpretant, based on Peirce's semiotics,\
+    \ which is applied between any two Expression(s), where the second provides an interpretive context for the\
+    \ first.\n1.5 \n- fixes a bug in the domain and range of isContextOf, now both generalized to dul:Entity, and\
+    \ consequently, Context is equivalently defined as anything that isContextOf some dul:Entity; some comments\
+    \ have also been edited.\n1.6 \n- added equivalentClass axiom between lmm:Meaning and dul:SocialObject (simplifies\
+    \ applications).\n1.7 \n- aligned all locally defined object properties to dul:associatedWith.\n1.8\n- simplified\
+    \ several restrictions in the semiotic pattern core, for improving reasoning performance."
+  census_path: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json
+  census_sha256: 32487fa34ff6ea92a1e9157ef2050e1c532592ad489943d02658fdb353d61322
+  declared_named_classes: 19
+  local_named_classes: 8
+  external_named_class_redeclarations: 11
+  actual_imports:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl
+  license: No explicit license/right annotation found in the inspected ontology header; redistribution permission
+    is not inferred.
+  property_populations:
+    object_properties:
+      local_declared: 9
+      external_redeclarations: 46
+    datatype_properties:
+      local_declared: 0
+      external_redeclarations: 0
+    annotation_properties:
+      local_declared: 0
+      external_redeclarations: 0
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    class_position_iris_not_declared_owl_or_rdfs_class: []
+    anonymous_owl_class_declarations: 7
+    anonymous_restrictions: 12
+    builtin_class_position_iris: []
+    reference_policy: Named class positions in subclass/equivalence/disjointness/complement, quantified fillers,
+      class unions/intersections and non-XSD domain/range. Not all URI mentions or inferred types.
+- id: LMM_L2
+  source_filename: LMM_L2.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  namespace: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#
+  version:
+  - '1.2
+
+    1.1
+
+    - Edited annotations
+
+    - Added class: Gloss
+
+    - Added property: hasCoInterpretant
+
+    1.2
+
+    - Simplified several restrictions (in non-lossy way) in order to reduce complexity of reasoning'
+  census_path: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json
+  census_sha256: a40c1b44e7df1c63943dc3e99231a30cc832f08bcde4956e10d2736acc09694f
+  declared_named_classes: 41
+  local_named_classes: 21
+  external_named_class_redeclarations: 20
+  actual_imports:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl
+  license: No explicit license/right annotation found in the inspected ontology header; redistribution permission
+    is not inferred.
+  property_populations:
+    object_properties:
+      local_declared: 7
+      external_redeclarations: 17
+    datatype_properties:
+      local_declared: 0
+      external_redeclarations: 0
+    annotation_properties:
+      local_declared: 0
+      external_redeclarations: 0
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    class_position_iris_not_declared_owl_or_rdfs_class: []
+    anonymous_owl_class_declarations: 4
+    anonymous_restrictions: 26
+    builtin_class_position_iris: []
+    reference_policy: Named class positions in subclass/equivalence/disjointness/complement, quantified fillers,
+      class unions/intersections and non-XSD domain/range. Not all URI mentions or inferred types.
+classes:
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText
+  label: Co-text
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: b32e1e892da5d0483cbcfb8a1ac40d18d9e238c1caf954aa8e57d2be1a97bf4a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Textual surroundings selected by a construction rule.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule
+  label: ConstructionRule
+  label_basis: IRI_LOCAL_NAME
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: dac507496825e8cf0717bded320cdd391a2d1fc7c25f76681b28928f4d8b5c0a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A specification for producing an entity.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context
+  label: Contesto
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c6fd427e4d1dc8ebdc44e9352c9033ef9432d7ed7a972c19f70b006947038196
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Something providing a setting for another entity.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression
+  label: Expression
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 4ee627aa9587b80190696723f241b743334f2d019a4b54af750350b43d5fa8a9
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Information conveying meaning or denoting a referent.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity
+  label: "Comunit\xE0 di conoscenza {it}"
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 035458340296938f6350e32a27838a8e55e3e942a16aade7d633d693c8477917
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Agents sharing a conceptual paradigm.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning
+  label: Meaning
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 85172d25b3466af786be7160aaa77a170b36399f4856fc4b9c9251c0c4456850
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A conceptualization connected to expression or interpretation.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm
+  label: Paradigm
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 9fbdf47e0676c986907f63528bbec0100a3abb7028f65a0ca6e6c76adeded569
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: The conceptual setting of an expressed meaning.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference
+  label: Reference
+  label_basis: RDFS_LABEL
+  module: LMM_L1
+  source_sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c5aebc9d8247166d33df38ac41fa6631afd44c69d6812eea1ccaa31c818c27c9
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An entity denoted or interpreted within the semiotic model.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L1-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature
+  label: Analytic feature
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 04ad31b4d578ec80ddc558f0db06821a1d47dd922672099a024244f067b239cc
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A role identifying evidence used during analysis.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext
+  label: Associative context
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: b248417ba2a0604b16504381f481610e36035bce84bb6e877f2f4c096bd9a787
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Textual surroundings selected through corpus associations.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext]
+  notes:
+  - 'The comment starts by calling this an associative rule although its declared superclass is CoText; annotation
+    wording needs paper/artifact reconciliation in #260.'
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule
+  label: Associative rule
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule (no rdfs:comment definition
+      candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule]
+  notes:
+  - The superclass is recorded separately; it does not supply an author definition. No definition was invented from
+    the class name.
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression
+  label: Concept expression
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 4e62d6544050fb4716bab4e6c784393ae12d1e0a52f2f031109106fe16da521f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A term conveying meaning and denoting a collection.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference
+  label: Concept reference
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 2234a9a4c238a56a3edbb7ae3972cfb907d8ed86c25e3ffca6189b13e95ece74
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: The collection of individuals sharing a named type.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression
+  label: Contextual expression
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 16d8fba1a98ed08cc238231f21ea09770bdb0711a780ac366306290e385c7974
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A term whose referent depends on deixis or anaphora.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference
+  label: Contextual reference
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 1020b1a6a230be6196c427a40f28f231c50948627249dcd94ef73da62c477365
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An individual referent identified through contextual expression.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression
+  label: Enumerated expression
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 9928debcc5f0265013c490b73b2a3d8bea359ecfbfc050b9048d8a3c12157f3b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A contextual expression listing a plural referent.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression]
+  notes:
+  - 'The comment names a category not used as the declared superclass here; preserve the original terminology for
+    correspondence analysis in #260.'
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting
+  label: Experimental setting
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 58e4f5031d0b469c68f6f52fd72380b00e107b735d2e1dfb3bdada4108d887cf
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A plan specifying an experiment and its analytical roles.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference
+  label: Extensional reference
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 4236c455ffa11c5ef68017c2c36fb0b9a4b383b7980a6114fdf9279201d6050a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A collection identified through an explicit or contextual enumeration.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss
+  label: Gloss
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 0ebf6e10b81b0f0f661136f09bc1acf752492e0837e7fe3d1d010dc48c8c35b7
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Text explaining a lexical item informally.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference
+  label: Individual reference
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: cccf371befeaf1673fc4dbfca9b9e0d10170df877160517f5dbd04925c85be04
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A referent instantiated under a concept.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule
+  label: LSA rule
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule (no rdfs:comment definition candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule]
+  notes:
+  - The superclass is recorded separately; it does not supply an author definition. No definition was invented from
+    the class name.
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext
+  label: Latent context
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext (no rdfs:comment definition
+      candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext]
+  notes:
+  - The superclass is recorded separately; it does not supply an author definition. No definition was invented from
+    the class name.
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference
+  label: Multiple reference
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 3b81735613907bed60bf6567ec72c0a252f242c82f83fb8aef972f3372778cf8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A collection serving as a semiotic referent.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name
+  label: Name
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 9b842754262831945362b882cfa724e815b27445ad59632b5e7cf5cd207048f8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A proper noun identifying an individual referent.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity
+  label: Named entity
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 2dd4e12fd8cf7439ff35ff1ac6e5c6c8ce021d49dac3f0a87c6f2f953af811ac
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An individual referent identified through a name.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression
+  label: Polyrhematic concept expression
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: b2905188d3c31f81aeecf3da082edb8f5ddabf3706d6888f6090fd3f90801bd1
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A multiword concept expression with a potential head word.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression
+  label: Simple concept expression
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: ba2da8fff574278654f93638c4d43c37e7350ffdf90cd4bb5b26816c7edfc9a6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A simple expression identifying a class-related referent.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression]
+  notes:
+  - 'The comment names a category not used as the declared superclass here; preserve the original terminology for
+    correspondence analysis in #260.'
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext
+  label: Syntactic context
+  label_basis: RDFS_LABEL
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: cd2f1a37134ad0c472b21718b3aa3b0a9f3ce907af36f25c47f9ab45dfa10ba7
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Textual surroundings determined by syntactic structure.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule
+  label: SyntacticRule
+  label_basis: IRI_LOCAL_NAME
+  module: LMM_L2
+  source_sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule (no rdfs:comment definition
+      candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule]
+  notes:
+  - The superclass is recorded separately; it does not supply an author definition. No definition was invented from
+    the class name.
+imported_glossary:
+  state: PENDING_DEFINITION_GLOSSARY
+  asserted_closure_unique_named_classes: 154
+  unique_external_classes_pending: 125
+  next_issues:
+  - 88
+  - 271
+  - 260
+  limitation: The 125 remaining unique IRIs are 124 local DUL/IOLite classes plus owl:Thing. Existing pinned import
+    inspection supplies IRI counts; their definition review is not complete. No inferred count.
+logical_inference: NOT_EXECUTED
+historical_paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
+counts:
+  local_classes: 29
+  source_definition_candidates: 25
+  missing_source_definitions: 4
+  reviewer_reconstructions: 0
+  inferred_classes: null

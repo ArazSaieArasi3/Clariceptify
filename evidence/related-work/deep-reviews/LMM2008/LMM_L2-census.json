@@ -1,0 +1,1981 @@
+{
+  "annotation_properties": [],
+  "anonymous_restrictions": 26,
+  "classes": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isSyntacticFunctionOf"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasSyntacticFunction"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#specializes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isUnifiedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "1"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#maxCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasSyntacticFunction"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isDenotedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "anonymous_expression": [
+                    {
+                      "object": {
+                        "iri": "http://www.w3.org/2002/07/owl#Class"
+                      },
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                    },
+                    {
+                      "object": {
+                        "anonymous_expression": [
+                          {
+                            "object": {
+                              "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference"
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                          },
+                          {
+                            "object": {
+                              "anonymous_expression": [
+                                {
+                                  "object": {
+                                    "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                                },
+                                {
+                                  "object": {
+                                    "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                                }
+                              ]
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                          }
+                        ]
+                      },
+                      "predicate": "http://www.w3.org/2002/07/owl#unionOf"
+                    }
+                  ]
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "1"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#maxCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasSyntacticFunction"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#disjointWith"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isDenotedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "anonymous_expression": [
+                    {
+                      "object": {
+                        "iri": "http://www.w3.org/2002/07/owl#Class"
+                      },
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                    },
+                    {
+                      "object": {
+                        "anonymous_expression": [
+                          {
+                            "object": {
+                              "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                          },
+                          {
+                            "object": {
+                              "anonymous_expression": [
+                                {
+                                  "object": {
+                                    "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                                },
+                                {
+                                  "object": {
+                                    "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                                }
+                              ]
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                          }
+                        ]
+                      },
+                      "predicate": "http://www.w3.org/2002/07/owl#unionOf"
+                    }
+                  ]
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "anonymous_expression": [
+                    {
+                      "object": {
+                        "iri": "http://www.w3.org/2002/07/owl#Class"
+                      },
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                    },
+                    {
+                      "object": {
+                        "anonymous_expression": [
+                          {
+                            "object": {
+                              "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference"
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                          },
+                          {
+                            "object": {
+                              "anonymous_expression": [
+                                {
+                                  "object": {
+                                    "anonymous_expression": [
+                                      {
+                                        "object": {
+                                          "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                                        },
+                                        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                                      },
+                                      {
+                                        "object": {
+                                          "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                                          "language": null,
+                                          "literal": "1"
+                                        },
+                                        "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+                                      },
+                                      {
+                                        "object": {
+                                          "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"
+                                        },
+                                        "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+                                      }
+                                    ]
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                                },
+                                {
+                                  "object": {
+                                    "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                                }
+                              ]
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                          }
+                        ]
+                      },
+                      "predicate": "http://www.w3.org/2002/07/owl#intersectionOf"
+                    }
+                  ]
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isDenotedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isInterpretantFor"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isInstanceOf"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isUnifiedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "anonymous_expression": [
+                    {
+                      "object": {
+                        "iri": "http://www.w3.org/2002/07/owl#Class"
+                      },
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                    },
+                    {
+                      "object": {
+                        "anonymous_expression": [
+                          {
+                            "object": {
+                              "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference"
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                          },
+                          {
+                            "object": {
+                              "anonymous_expression": [
+                                {
+                                  "object": {
+                                    "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                                },
+                                {
+                                  "object": {
+                                    "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+                                  },
+                                  "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                                }
+                              ]
+                            },
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                          }
+                        ]
+                      },
+                      "predicate": "http://www.w3.org/2002/07/owl#unionOf"
+                    }
+                  ]
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "1"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#maxCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasSyntacticFunction"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isDenotedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isUnifiedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              },
+              {
+                "object": {
+                  "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.w3.org/2002/07/owl#Thing"
+    }
+  ],
+  "counts": {
+    "annotation_properties": 0,
+    "classes": 41,
+    "datatype_properties": 0,
+    "named_individuals": 0,
+    "object_properties": 24
+  },
+  "datatype_properties": [],
+  "declared_import_iris": [
+    "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl"
+  ],
+  "explicit_triples": 305,
+  "generator": {
+    "path": "tools/inventory_review_artifact.py",
+    "python": "3.12.14",
+    "rdflib": "7.6.0",
+    "sha256": "a47c1835ecd4e2ef680e9b2127bf4e90dea6559bb7526b78bbab7f3bb59e0758"
+  },
+  "import_resolution": "NO_NETWORK_IMPORTS",
+  "inference_counts": null,
+  "named_individuals": [],
+  "object_properties": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isUnifiedBy"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#specializes"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#isLexicalizedBy"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#lexicalizes"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isDenotedBy"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isInterpretantFor"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#relatedMeaning"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#isLexicalizedBy"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#lexicalizesOE"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#OEisLexicalizedBy"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#SymmetricProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#relatedMeaning"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasCoInterpretant"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasInstance"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isSyntacticFunctionOf"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasSyntacticFunction"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#hasInstance"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isInstanceOf"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isSyntacticFunctionOf"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#lexicalizes"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#lexicalizesOE"
+    }
+  ],
+  "ontology_iris": [
+    "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl"
+  ],
+  "reasoner_execution": "NOT_EXECUTED",
+  "schema_version": "1.0",
+  "scope": "All explicitly declared named entities and their outgoing constraints in this one document; annotation text excluded. This is not all entities of an unacquired paper version or all inferred consequences.",
+  "semantic_acceptance": "NOT_ASSESSED",
+  "source_redistributed": false,
+  "source_sha256": "512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240",
+  "source_syntax": "RDF/XML"
+}

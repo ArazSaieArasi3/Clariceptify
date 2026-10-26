@@ -1,0 +1,90 @@
+schema_version: '1.0'
+work_id: shared-foundations/Conceptualization
+issue: 272
+checked_on: '2026-10-26'
+status: ALL_LOCAL_CLASSES_ACCOUNTED_FOR_DEFINITION_GAPS_EXPLICIT
+population_policy: All explicitly declared local named owl:Class IRIs in selected documents. External redeclarations
+  are retained in censuses, not relabeled local. No inference.
+modules:
+- id: DULConceptualization
+  source_filename: Conceptualization.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+  source_sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+  namespace: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#
+  version:
+  - '0.1
+
+    Very preliminary as of now.
+
+    Author: Aldo Gangemi'
+  census_path: evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+  census_sha256: 2dea2c82858ec2ab810886a198528a6bd9787d4f12e3a823b5f8f4d0e4bca338
+  declared_named_classes: 1
+  local_named_classes: 1
+  external_named_class_redeclarations: 0
+  actual_imports:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  license: No explicit license/right annotation found in the inspected ontology header; redistribution permission
+    is not inferred.
+  property_populations:
+    object_properties:
+      local_declared: 8
+      external_redeclarations: 0
+    datatype_properties:
+      local_declared: 0
+      external_redeclarations: 0
+    annotation_properties:
+      local_declared: 0
+      external_redeclarations: 0
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    class_position_iris_not_declared_owl_or_rdfs_class:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+    anonymous_owl_class_declarations: 2
+    anonymous_restrictions: 3
+    builtin_class_position_iris: []
+    reference_policy: Named class positions in subclass/equivalence/disjointness/complement, quantified fillers,
+      class unions/intersections and non-XSD domain/range. Not all URI mentions or inferred types.
+classes:
+- iri: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation
+  label: Internal representation
+  label_basis: RDFS_LABEL
+  module: DULConceptualization
+  source_sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 8fec2b5d380d1b78255a41696c7edfd931d44623f83de67eab65c398798813a0
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A cognitive realization of information conveying a conceptualized social object.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+    classes[iri=http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation]
+  notes: []
+imported_glossary:
+  state: PENDING_DEFINITION_GLOSSARY
+  unique_external_classes_pending: null
+  next_issues:
+  - 88
+  limitation: 'The exact DUL import is retained; imported definitions remain #88. No reasoner executed.'
+logical_inference: NOT_EXECUTED
+historical_paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
+counts:
+  local_classes: 1
+  source_definition_candidates: 1
+  missing_source_definitions: 0
+  reviewer_reconstructions: 0
+  inferred_classes: null

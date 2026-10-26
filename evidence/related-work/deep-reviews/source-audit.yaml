@@ -1,0 +1,1112 @@
+schema_version: '1.0'
+issue: 269
+checked_on: '2026-10-26'
+population:
+  paper_or_version_records: 19
+  separate_document_sources: 4
+  total_records: 23
+scope: A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery.
+  Original 19 candidate labels are not the same population as 19 exact paper/version records.
+repository_observations:
+- repository: information-artifact-ontology/IAO
+  url: https://github.com/information-artifact-ontology/IAO
+  checked_on: '2026-10-26'
+  visibility: public
+  archived: false
+  disabled: false
+  pushed_at: '2026-04-10T21:00:29Z'
+  default_branch: master
+  license_spdx: CC-BY-4.0
+  retained_commit: 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+  snapshot_sha256: 0ee89d39f9a0bac8874e36157191236ff487fd9379672cbaea7b53643a27d95a
+  tracked_files: 201
+- repository: diporello/DOLCE-mental_states-needs
+  url: https://github.com/diporello/DOLCE-mental_states-needs
+  checked_on: '2026-10-26'
+  visibility: public
+  archived: false
+  disabled: false
+  pushed_at: '2020-05-14T10:22:23Z'
+  default_branch: master
+  license_spdx: null
+  retained_commit: 93734dbe35c931338b3b9aba66b75c250baf6655
+  snapshot_sha256: 637881abc9d68574cad0785ab0c994c056fca497537f21385a836a15d5d435c3
+  tracked_files: 2
+- repository: CognitiveAtlas/cogat-ontology
+  url: https://github.com/CognitiveAtlas/cogat-ontology
+  checked_on: '2026-10-26'
+  visibility: public
+  archived: false
+  disabled: false
+  pushed_at: '2015-06-10T23:02:37Z'
+  default_branch: master
+  license_spdx: null
+  retained_commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+  snapshot_sha256: 493d1093ebba32f764ddc488fd946aedba85ef98c0cda5bd2857cca6029ef5c5
+  tracked_files: 13
+- repository: CognitiveAtlas/ontology
+  url: https://github.com/CognitiveAtlas/ontology
+  checked_on: '2026-10-26'
+  visibility: public
+  archived: false
+  disabled: false
+  pushed_at: '2017-09-12T16:46:53Z'
+  default_branch: master
+  license_spdx: MIT
+  retained_commit: 85f06454b7beac4945be0af545a0097901c9532a
+  snapshot_sha256: b1ae03f63b6bc0403ba931c83d91b4e02464db7d418dcf9018c27825d5582419
+  tracked_files: 2
+- repository: fossr-project/ontology
+  url: https://github.com/fossr-project/ontology
+  checked_on: '2026-10-26'
+  visibility: public
+  archived: false
+  disabled: false
+  pushed_at: '2026-05-05T14:12:37Z'
+  default_branch: main
+  license_spdx: MIT
+  retained_commit: 57a91037d803519db5ee8d65d53c14901e28a0d1
+  snapshot_sha256: 81ffb05b0748352a58992c2f989718faeb11dd0afaa6be8d1fcd97fb761fa073
+  tracked_files: 198
+discovery_attempts:
+- query: OntoKADS
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G01
+- query: '"Epistemic Foundational Ontology"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G02
+- query: '"Conceptual Model Ontology"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned:
+  - MussaOmer/ConceptualModelOntology
+  - cmomm4fair/cmomm4fair.github.io
+  - cmomm4fair2023/cmomm4fair2023.github.io
+  - AsenP-old/cmomm4fair2023
+  - jonimoreira/cmomm4fair.github.io
+  - pedropaulofb/cmomm4fair2023.github.io
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G03
+- query: '"Computational Ontology of Mind"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G04
+- query: '"Ontology of Representation"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G05
+- query: '"I&DA" ontology'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G06
+- query: EmotionsOnto
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G07
+- query: '"LMM" ontology'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned:
+  - ryuzakace/ADE_ontology_LMM
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G08
+- query: '"cDnS"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned:
+  - cdnjs/cdnjs
+  - Bob123a1/CDNSP-GUI
+  - LoveesYe/cdnflydadao
+  - jquery/codeorigin.jquery.com
+  - leandromoreira/cdn-up-and-running
+  - semigodking/cdns
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G09
+- query: '"Descriptions and Situations"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Name/description repository search; not all code, hosts, branches or private repositories. Results
+    are candidates, not authorship/correspondence proof.
+  id: G10
+- query: Conceptualization ontology Gangemi
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Bounded name/description search only; standalone official Conceptualization.owl already retained.
+    No universal repository absence inferred.
+  id: G11
+- id: W01
+  method: WEB_SEARCH_AND_PRIMARY_PAGE
+  checked_on: '2026-10-26'
+  query: O4OA Beatriz Martins Gitlab ontology
+  checked_urls:
+  - https://gitlab.com/bfmartins/o4oa
+  - https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa
+  - https://gitlab.com/api/v4/projects/46249263/repository/tree?per_page=100
+  - https://bfmartins.gitlab.io/o4oa/content/o4oa.html
+  outcome: Public GitLab project 46249263 and author documentation verified. Public API metadata responds 200; repository
+    tree responds 403. Documentation describes OntoUML/UFO-A/B/C, gUFO/gO4OA and MongoDB implementation.
+  limitation: Public project metadata is not an acquired repository tree; no source commit, complete model census,
+    exact foundation edition or 2023-paper equivalence established.
+- id: W02
+  method: WEB_SEARCH_AND_PRIMARY_PAGE
+  checked_on: '2026-10-26'
+  query: Epistemic Foundational Ontology github owl
+  checked_urls:
+  - https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175
+  - https://philarchive.org/rec/KASFCI
+  outcome: Selected EFO publication identified; no authoritative executable distribution identified by these checks.
+  limitation: Do not substitute the unrelated Experimental Factor Ontology, Emotion Frame Ontology or EFO1 follow-on
+    papers for this source. Not a universal repository-absence claim.
+- id: W03
+  method: WEB_SEARCH_AND_PRIMARY_FILE
+  checked_on: '2026-10-26'
+  query: Conceptual Model Ontology McCusker download
+  checked_urls:
+  - https://ceur-ws.org/Vol-833/paper25.pdf
+  - http://purl.org/twc/ontologies/cmo.owl
+  - https://github.com/MussaOmer/ConceptualModelOntology/blob/master/ConceptualModelOntology.owl
+  outcome: Paper-linked cmo.owl endpoint returns HTTP404. Name-match candidate uses semanticweb.org/mussa/ontologies/2017/7/ConceptualModelOntology,
+    not the paper namespace; not accepted as corresponding distribution.
+  limitation: A same-name candidate and a broken link do not establish nonexistence elsewhere; the unrelated Clinical
+    Measurement Ontology is excluded.
+- id: W04
+  method: WEB_SEARCH_AND_PRIMARY_PAGE
+  checked_on: '2026-10-26'
+  query: EmotionsOnto github ontology
+  checked_urls:
+  - https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
+  outcome: Author documentation supplies 2015/12/current cognition OWL and 2010/11,2013/02,2015/05 predecessor links;
+    formal bytes already retained for the cognition module.
+  limitation: Separate 2014 paper, 2015 paper and dated OWL; exact paper-to-file correspondence remains an inspection
+    task, not assumed.
+- id: W05
+  method: WEB_SEARCH_AND_PRIMARY_METADATA
+  checked_on: '2026-10-26'
+  query: LMM ontologydesignpatterns LMM_L1 github
+  checked_urls:
+  - https://aclanthology.org/L08-1268/
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl
+  - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
+  outcome: Exact 2008 work and retained official L1/L2 formal files identified; no corresponding author-controlled
+    development repository confirmed.
+  limitation: Repository-name matches and third-party ontology mirrors do not establish author control or the historical
+    2008 alignment distribution.
+- id: R01
+  method: RETAINED_SOURCE_AND_API_METADATA
+  checked_on: '2026-10-26'
+  query: Five previously retained repository snapshots
+  checked_urls:
+  - https://github.com/information-artifact-ontology/IAO
+  - https://github.com/diporello/DOLCE-mental_states-needs
+  - https://github.com/CognitiveAtlas/cogat-ontology
+  - https://github.com/CognitiveAtlas/ontology
+  - https://github.com/fossr-project/ontology
+  outcome: All five are public, not archived and not disabled in the observed GitHub API metadata. Exact retained
+    commits remain the analysis inputs.
+  limitation: A last-push timestamp or archive flag does not establish maintenance, usability, ontology quality
+    or historical paper correspondence.
+- id: G12
+  query: '"Foundations for an Ontology of Belief"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
+    is not universal repository absence.
+- id: G13
+  query: '"DOLCE+DnS"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned:
+  - FSCHOEN/CO-PLM
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
+    is not universal repository absence.
+- id: G14
+  query: ontolex
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned:
+  - ontolex/ontolex
+  - ontolex/lexinfo
+  - ontolex/frequency-attestation-corpus-information
+  - ontolex/morph
+  - elexis-eu/tei2ontolex
+  - acoli-repo/ontolex-frac
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
+    is not universal repository absence.
+- id: G15
+  query: '"SKOS" user:w3c'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-26'
+  result_limit: 6
+  returned: []
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
+    is not universal repository absence.
+- id: W06
+  method: OFFICIAL_COMMUNITY_PAGE_AND_GITHUB_API
+  checked_on: '2026-10-26'
+  query: Follow official OntoLex community Github repository link
+  checked_urls:
+  - https://www.w3.org/community/ontolex/
+  - https://api.github.com/repos/cimiano/ontolex
+  - https://api.github.com/repos/ontolex/ontolex
+  outcome: Official group page links cimiano/ontolex; API reports moved repository ID20124549, identical to ontolex/ontolex.
+    Public repository verified, not archived; observed last push2026-10-23T11:10:53Z. Complete snapshot not yet
+    acquired.
+  limitation: 'Current repository activity does not establish that every module matches the 2016 core specification.
+    Snapshot/commit acquisition and per-module verification remain #237.'
+records:
+- id: OntoKADS2005
+  title: An Ontological approach to the construction of problem-solving models
+  primary_issue: 74
+  source_state: REVIEW_COMPLETE
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G01
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: NOT_IDENTIFIED
+  foundation:
+    family: DOLCE
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: OntoKADS2005/review.yaml D7_grounding; E03/E04/E05/E09/E10
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 236
+- id: IAO2015
+  title: 'Aboutness: Towards Foundations for the Information Artifact Ontology'
+  primary_issue: 78
+  source_state: REVIEW_COMPLETE
+  repository:
+    state: PUBLIC_REPOSITORY_PINNED
+    urls:
+    - https://github.com/information-artifact-ontology/IAO
+    evidence:
+    - R01
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_FILES_TECHNICAL_REVIEW_PENDING
+  foundation:
+    family: BFO; MFO extension
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: REVIEWER_INTERPRETATION
+    locator: IAO2015/review.yaml D7_grounding; E01/E02/E03/E05/E09
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 240
+- id: EFO
+  title: Fundamental choices in EFO
+  primary_issue: 80
+  source_state: REVIEW_COMPLETE
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G02
+    - W02
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PAPER_FORMALISM_ONLY
+  foundation:
+    family: EFO
+    edition: null
+    relation: INDEPENDENT_FOUNDATION
+    basis: AUTHOR_REPORTED
+    locator: EFO/review.yaml D7_grounding; E02/E06/E07/E09/E13/E14
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Independent subject-relative foundation; no BFO/UFO parent is inferred from comparison with other
+      ontologies.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 242
+- id: cDnS2007
+  title: Norms and plans as unification criteria for social collectives
+  primary_issue: 259
+  source_state: REVIEW_COMPLETE
+  repository:
+    state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - G09
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_CORE_FULL_CENSUS
+  foundation:
+    family: Foundation-neutral constructive framework
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: cDnS2007/review.yaml D7_grounding; E03/E04/E13/E15/E21
+    artifact_imports: []
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Paper claims independence from a specific ground ontology. Retained cDnS1.1 has no declared imports
+      and is header-aligned to the distinct 2008 paper; DOLCE association is not an actual import.
+  class_coverage:
+    state: ALL_SELECTED_LOCAL_CLASSES_GLOSSARY_COMPLETE
+    local_classes: 12
+    source_definition_candidates: 12
+    missing_source_definitions: 0
+    catalog_path: evidence/related-work/deep-reviews/cDnS2007/classes.yaml
+    imported_definitions_complete: true
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 267
+  - 263
+- id: LMM2008
+  title: 'LMM: an OWL-DL MetaModel to Represent Heterogeneous Lexical Knowledge'
+  primary_issue: 260
+  source_state: QUEUED
+  repository:
+    state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - G08
+    - W05
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: TWO_LOCAL_MODULES_AND_IMPORTS_RETAINED
+  foundation:
+    family: DOLCE via DUL and IOLite
+    edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2
+    relation: ACTUAL_IMPORT
+    basis: EXECUTED
+    locator: evidence/related-work/artifacts/LMM.yaml; lmm-inputs.yaml; paper sec.1/3.2/4
+    artifact_imports:
+    - LMM_L2 -> LMM_L1
+    - LMM_L1 -> IOLite
+    - IOLite -> DUL
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: 'Pinned import parsing executed in #90; no reasoner. Current versions are not proven identical
+      to the 2008 paper.'
+    edition_evidence: evidence/related-work/artifacts/LMM.yaml; lmm-inputs.yaml; paper sec.1/3.2/4
+  class_coverage:
+    state: ALL_SELECTED_LOCAL_CLASSES_GLOSSARY_COMPLETE
+    local_classes: 29
+    source_definition_candidates: 25
+    missing_source_definitions: 4
+    catalog_path: evidence/related-work/deep-reviews/LMM2008/classes.yaml
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 260
+  - 88
+  - 271
+- id: DnS2003
+  title: Understanding the Semantic Web through Descriptions and Situations
+  primary_issue: 261
+  source_state: QUEUED
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G10
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: HISTORICAL_DISTRIBUTION_NOT_PINNED
+  foundation:
+    family: DOLCE
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: DnS.pdf abstract and sec.2; paper describes a DOLCE plug-in adaptable to other foundations
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 235
+- id: CMO
+  title: Towards an Ontology for Conceptual Modeling
+  primary_issue: 83
+  source_state: QUEUED
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G03
+    - W03
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PAPER_LINK_404_CANDIDATE_NOT_MATCHED
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Not yet established for this exact source
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 245
+- id: COM2004
+  title: Towards a Computational Ontology of Mind
+  primary_issue: 81
+  source_state: QUEUED
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G04
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PAPER_FORMALISM_ONLY
+  foundation:
+    family: DOLCE
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: COM-FOIS.pdf abstract and sec.3 import list; Fig.1 integrated taxonomy
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 243
+- id: BDI2020
+  title: Foundations for an Ontology of Belief, Desire and Intention
+  primary_issue: 85
+  source_state: QUEUED
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G12
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PAPER_FORMALISM_VERSION_MATCH_PENDING
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: BDI2020 paper cites UFO-C and MF as related work; that mention alone does not establish the proposed
+      theory grounding.
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 247
+- id: BDI2026Preprint
+  title: The Belief-Desire-Intention ontology for modelling mental reality and agency
+  primary_issue: 249
+  source_state: QUEUED
+  repository:
+    state: PUBLIC_REPOSITORY_PINNED
+    urls:
+    - https://github.com/fossr-project/ontology
+    evidence:
+    - R01
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_FILES_TECHNICAL_REVIEW_PENDING
+  foundation:
+    family: DOLCE-0; DUL alignment
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: 'BDI-2025-preprint.pdf secs.3-4; statement grounded in DOLCE-0 and separate DUL alignment; exact artifact
+      imports remain #250'
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 250
+- id: CognitiveAtlas2011
+  title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
+  primary_issue: 79
+  source_state: QUEUED
+  repository:
+    state: PUBLIC_REPOSITORY_PINNED
+    urls:
+    - https://github.com/CognitiveAtlas/cogat-ontology
+    - https://github.com/CognitiveAtlas/ontology
+    evidence:
+    - R01
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_FILES_TECHNICAL_REVIEW_PENDING
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Not yet established for this exact source
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 241
+- id: EmotionsOnto2014
+  title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
+  primary_issue: 262
+  source_state: QUEUED
+  repository:
+    state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - G07
+    - W04
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: AUTHOR_PREDECESSOR_LINKS_MATCH_PENDING
+  foundation:
+    family: DOLCE / DnS
+    edition: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: EmotionsOnto-2014.pdf sec.3; Fig.2
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: 'Paper family statement only; dated predecessor-file identity and imports remain #239.'
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 239
+- id: CLR-RW-DUL
+  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
+  primary_issue: 70
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - G13
+    - W05
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_DUL4_2
+  foundation:
+    family: DOLCE + DnS
+    edition: Retained DUL4.2
+    relation: INDEPENDENT_FOUNDATION
+    basis: EXECUTED
+    locator: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not an owl:imports
+      claim'
+    artifact_imports: []
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: DUL is itself a light foundation, not a declared import of DOLCE. Missing 2016 chapter cannot be
+      replaced by current bytes.
+    edition_evidence: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not an owl:imports
+      claim'
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 88
+- id: CLR-RW-O4OA
+  title: The Ontology for Conceptual Characterization of Ontologies
+  primary_issue: 73
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: PUBLIC_PROJECT_METADATA_TREE_403
+    urls:
+    - https://gitlab.com/bfmartins/o4oa
+    evidence:
+    - W01
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING
+  foundation:
+    family: UFO-A/B/C; gUFO for light OWL model
+    edition: null
+    relation: DOCUMENTATION_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: Author project documentation content/o4oa.html sections2 and3.1
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: This is project documentation, not the missing 2023 article. Describes grounding through OntoUML
+      and a gO4OA variant; no model download/import check or edition established.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 91
+- id: CLR-RW-Representation
+  title: An Ontology of Representation
+  primary_issue: 82
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G05
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: NOT_ACQUIRED
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Not yet established for this exact source
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 244
+- id: CLR-RW-IDA
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  primary_issue: 84
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G06
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: NOT_IDENTIFIED
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Not yet established for this exact source
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 246
+- id: CLR-RW-DOLCEMental
+  title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
+  primary_issue: 86
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: PUBLIC_REPOSITORY_PINNED
+    urls:
+    - https://github.com/diporello/DOLCE-mental_states-needs
+    evidence:
+    - R01
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_FORMAL_FILE_PAPER_BLOCKED
+  foundation:
+    family: DOLCE
+    edition: null
+    relation: ALIGNMENT_OR_REUSE
+    basis: AUTHOR_REPORTED
+    locator: Pinned diporello/DOLCE-mental_states-needs README and dolce_needs.p
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: FOL/TPTP-style repository, not OWL. Paper unavailable; proof claims remain author-reported.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 248
+- id: cDnS-journal-2008
+  title: Norms and plans as unification criteria for social collectives
+  primary_issue: 263
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - G09
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: HEADER_LINKED_CORE_PAPER_BLOCKED
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Retained cDnS1.1 header names this paper; full journal text missing. Do not transfer the 2007 paper
+      foundation claims without review.
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 267
+  - 263
+- id: Emotions-2015
+  title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
+  primary_issue: 77
+  source_state: BLOCKED_ON_FULL_TEXT
+  repository:
+    state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - W04
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: COGNITION_FILES_RETAINED_PAPER_BLOCKED
+  foundation:
+    family: DOLCE / DnS
+    edition: null
+    relation: DOCUMENTATION_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: Emotions & Cognition author guide opening paragraph
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: 'Documentation-level grounding; exact 2015 article/module correspondence remains #77/#239.'
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 239
+- id: Conceptualization
+  title: Conceptualization
+  primary_issue: 71
+  source_state: SCOPED_DOCUMENT_REVIEW_CLOSED
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G11
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_CONCEPTUALIZATION0_1
+  foundation:
+    family: DUL
+    edition: Retained Conceptualization0.1; DUL source snapshot
+    relation: ACTUAL_IMPORT
+    basis: EXECUTED
+    locator: artifact-inputs.yaml and artifacts/DULConceptualization.yaml; retained Conceptualization.owl imports
+      header
+    artifact_imports:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+    edition_evidence: artifact-inputs.yaml and artifacts/DULConceptualization.yaml; retained Conceptualization.owl
+      imports header
+  class_coverage:
+    state: ALL_SELECTED_LOCAL_CLASSES_GLOSSARY_COMPLETE
+    local_classes: 1
+    source_definition_candidates: 1
+    missing_source_definitions: 0
+    catalog_path: evidence/related-work/deep-reviews/shared-foundations/Conceptualization/classes.yaml
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 272
+  - 88
+- id: OntoLex
+  title: OntoLex
+  primary_issue: 75
+  source_state: QUEUED
+  repository:
+    state: PUBLIC_REPOSITORY_IDENTIFIED_SNAPSHOT_PENDING
+    urls:
+    - https://github.com/ontolex/ontolex
+    evidence:
+    - G14
+    - W06
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_CORE_AND_SPECIFICATION
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Not yet established for this exact source
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 237
+- id: SKOS
+  title: SKOS
+  primary_issue: 76
+  source_state: QUEUED
+  repository:
+    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls: []
+    evidence:
+    - G15
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_SCHEMA_AND_SPECIFICATION
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN
+    basis: UNKNOWN
+    locator: Not yet established for this exact source
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: Edition and exact implementation correspondence remain unassessed.
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 238
+- id: EmotionsCognition-guide
+  title: EmotionsCognition-guide
+  primary_issue: 77
+  source_state: AUTHOR_DOCUMENTATION_AVAILABLE_PAPER_BLOCKED
+  repository:
+    state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
+    urls: []
+    evidence:
+    - W04
+    global_absence_claim: false
+    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+  artifact_state: PINNED_OWL_AND_GUIDE
+  foundation:
+    family: DOLCE / DnS
+    edition: null
+    relation: DOCUMENTATION_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: https://rhizomik.net/html/ontologies/emotions%26cognitionontology/ opening paragraph
+    artifact_imports: null
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+    limitations: 'Author documentation is explicit; retained OWL import chain and exact paper correspondence require
+      #239.'
+  class_coverage:
+    state: PENDING_FULL_CATALOG
+    local_classes: null
+    source_definition_candidates: null
+    missing_source_definitions: null
+    catalog_path: null
+    imported_definitions_complete: false
+    reasoner_execution: NOT_EXECUTED
+  next_issues:
+  - 239
+boundary:
+  model_change: NONE
+  final_synthesis: OPEN_126
+  universal_repository_absence: NEVER_INFERRED
+  semantic_acceptance: NOT_ASSESSED
+execution_record:
+  path: evaluation/related-work/class-catalogs/raw-source-reconciliation.json
+  sha256: cb7284d8e04521dcc7b52f1e4b963e17e522ca5c3d03997c9ff6bddbd0dc6e0f
+  state: EXECUTED_SELECTED_RAW_SOURCE_RECONCILIATION
+  semantic_reasoning: NOT_EXECUTED
+issue_supplement:
+  issues:
+  - 70
+  - 73
+  - 77
+  - 79
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 88
+  - 91
+  - 126
+  - 235
+  - 236
+  - 237
+  - 238
+  - 239
+  - 240
+  - 241
+  - 242
+  - 243
+  - 244
+  - 245
+  - 246
+  - 247
+  - 248
+  - 249
+  - 250
+  - 251
+  - 252
+  - 253
+  - 254
+  - 255
+  - 256
+  - 260
+  - 261
+  - 262
+  - 263
+  - 267
+  status: UPDATED_AND_READ_BACK_OPEN
+  count: 40
+additional_public_repository_observations:
+- id: 20124549
+  repository: ontolex/ontolex
+  url: https://github.com/ontolex/ontolex
+  checked_on: '2026-10-26'
+  archived: false
+  pushed_at: '2026-10-23T11:10:53Z'
+  default_branch: master
+  source: https://www.w3.org/community/ontolex/ links cimiano/ontolex; API redirects repository ID20124549 to the
+    same ID observed for ontolex/ontolex.
+  snapshot_state: NOT_YET_ACQUIRED

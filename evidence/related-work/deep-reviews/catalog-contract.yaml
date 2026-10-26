@@ -1,0 +1,72 @@
+schema_version: '1.0'
+issue: 269
+owner_authorized_on: '2026-10-26'
+scope: Mandatory supplementary artifact contract for every source, including already closed paper reviews. Historical
+  closures are not silently expanded.
+repository_discovery:
+- For each exact work, inspect paper links, author/project pages, repository hosts and source headers; record the
+  queries and endpoints actually checked.
+- Distinguish public repository, public project metadata with blocked tree, standalone formal file, candidate mirror,
+  not yet searched and not identified after bounded search.
+- Pin retained commit/hash and file tree. Record observed archival flags, last push, license, tests and paper correspondence
+  separately. No maintenance/quality verdict from timestamps.
+- Not identified is date- and search-bound, never a universal claim that a repository does not exist.
+class_population:
+- Inventory all declared named owl:Class and rdfs:Class IRIs, referenced but undeclared class IRIs, anonymous expressions,
+  deprecated entities and builtin vocabulary separately. State the declaration policy.
+- Separate local classes, external redeclarations, full asserted import closure and actual inferred results. Deduplicate
+  by IRI; never sum historical releases or serialization copies.
+- Choose one exact release/root and module boundary. Enumerate every included/excluded module and unresolved import.
+  A complete local glossary does not complete imported definitions.
+- Paper concepts and relations remain a separate catalog; a conceptual FOL/OntoUML theory is not forced into an
+  invented OWL class list.
+class_fields:
+- iri
+- label
+- label_basis
+- module
+- source_sha256
+- population
+- deprecated
+- source_definition
+- reviewer_definition
+- named_superclasses
+- equivalent_expressions
+- constraint_ref
+- notes
+definition_policy:
+- Locate actual author definition annotations, paper definitions and formal equivalences independently; comments
+  may be examples or editorial notes, not sufficient logical definitions.
+- Publish short attributed reviewer paraphrases with exact IRI/predicate/page provenance. Retain raw definitions
+  privately with source digest and annotation hash; do not bulk redistribute annotations without checked rights.
+- Use NOT_REPORTED_IN_SELECTED_SOURCE and null when an explicit definition is missing. A hierarchy-based reconstruction
+  is labeled REVIEWER_RECONSTRUCTION and never AUTHOR_DEFINITION.
+- Report total classes, source definition candidates, accepted source definitions, missing definitions, reviewer
+  reconstructions and imported glossary coverage separately. No completion claim from row count alone.
+foundation_fields:
+- family
+- edition
+- relation
+- basis
+- locator
+- artifact_imports
+- alignment_status
+- limitations
+foundation_policy:
+- Distinguish PAPER_STATED_GROUNDING, ACTUAL_IMPORT, ALIGNMENT_OR_REUSE, INDEPENDENT_FOUNDATION and UNKNOWN. A comparison/reference
+  to BFO/UFO is not evidence of grounding.
+- Record exact foundation edition/version only if source evidence establishes it. Unversioned BFO or UFO never becomes
+  BFO1/UFO1. UFO-A/B/C are modules, not release numbers.
+- Allow an independent foundational theory or foundation-neutral framework; do not force every work under BFO, UFO
+  or DOLCE.
+- Keep paper grounding, current implementation imports and historically unverified correspondence in separate fields.
+  Imports alone do not prove conceptual adequacy or accepted alignment.
+closure: A source audit is complete only within its explicit discovery scope. All-class/definition completion requires
+  exact set reconciliation and every missing or ambiguous definition accounted for; semantic tests retain independent
+  issue/status.
+synthesis: 'Final matrix must include repository/file availability, paper/artifact versions, all class populations,
+  definition availability, foundation family/edition/relation, evidence, unresolved imports and open issue per source.
+  Final #126 remains open until its prerequisites are met.'
+owner_boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED

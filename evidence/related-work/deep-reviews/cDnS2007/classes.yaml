@@ -1,0 +1,329 @@
+schema_version: '1.0'
+work_id: cDnS2007
+issue: 269
+checked_on: '2026-10-26'
+status: ALL_LOCAL_CLASSES_ACCOUNTED_FOR_DEFINITION_GAPS_EXPLICIT
+population_policy: All explicitly declared local named owl:Class IRIs in selected documents. External redeclarations
+  are retained in censuses, not relabeled local. No inference.
+modules:
+- id: cDnS
+  source_filename: cDnS.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  namespace: http://www.loa-cnr.it/ontologies/cDnS.owl#
+  version:
+  - '1.1'
+  - 'Created by Aldo Gangemi
+
+    Version 1.1 aligns cDnS with the axiomatization in the article JAAMAS 2008.'
+  census_path: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json
+  census_sha256: 194d074dba0c8a5b93709fcee53a9c3c28c873c843b93c3bdbddf5aa86f1c07c
+  declared_named_classes: 12
+  local_named_classes: 12
+  external_named_class_redeclarations: 0
+  actual_imports: []
+  license: No explicit license/right annotation found in the inspected ontology header; redistribution permission
+    is not inferred.
+  property_populations:
+    object_properties:
+      local_declared: 47
+      external_redeclarations: 0
+    datatype_properties:
+      local_declared: 0
+      external_redeclarations: 0
+    annotation_properties:
+      local_declared: 0
+      external_redeclarations: 0
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    class_position_iris_not_declared_owl_or_rdfs_class:
+    - http://www.w3.org/2002/07/owl#Thing
+    anonymous_owl_class_declarations: 1
+    anonymous_restrictions: 14
+    builtin_class_position_iris:
+    - http://www.w3.org/2002/07/owl#Thing
+    reference_policy: Named class positions in subclass/equivalence/disjointness/complement, quantified fillers,
+      class unions/intersections and non-XSD domain/range. Not all URI mentions or inferred types.
+classes:
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  label: Entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Entity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 4fe22975a04377947170513c828427ec18f648312eeb2343ebb0430919de4235
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Anything admitted within the selected domain.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.w3.org/2002/07/owl#Thing
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Entity]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  label: Schematic entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 11d01048709ba16e3bcae9f2c0246976c9727f22a44ef9bde5f3c312ec45ffb8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A primitive used to construct social reality.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+  label: Non-schematic entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 777e8c80a8b1bda8cea3af1a5b7f66c58f0dfd91e4c2e929b095d5cee4bd5697
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An entity outside the schematic category; source wording is ambiguous.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity]
+  notes:
+  - The comment negates schematic membership but its following explanation can be read inconsistently. Use the declared
+    disjointness as a separate formal observation; do not silently repair the source.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  label: Description
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Description rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 06e709fbce5c7b33ea6bfedb522cdb1fc93f278fa91e28bc5c4316bfe011196c
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A communicable conceptualization dependent on social agents.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Description]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+  label: Situation
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Situation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 89d331f5bafd2b18c03b89e5446a9a803abd7b05a761498d2e00d75cbc15ffcc
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A relational context viewed through a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Situation]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+  label: Concept
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Concept rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: be0d2c59382d59e76b020ecc02da669becac7024a0130b358525bd4ae5b96783
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A category defined within one description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Concept]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent
+  label: Social agent
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 5ef60237f1ce3265e6304a76cf2ed56f8fe5ce7b7cf5f36fe60b1a626ba6c88d
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A socially constituted bearer of shared conceptualizations.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+  label: Collection
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Collection rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 85d7274f9ea65bd5beb46fafa1e870c1fef271318b2d457f735390c34b0186e9
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A group whose membership has shared criteria.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Collection]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject
+  label: Information object
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: cae0445ff613cad693ccf8f698f77ac47f52c84fb03c4aa8ba3f87a2bee9d1f7
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Historically situated information independent of a particular physical carrier.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  label: Ground entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c4b009799eb2e6b0c4456d191cc0f084aaa35f17fd7496e6a41d7d1c1d8584e6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An entity contextualized through description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle
+  label: Bundle
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 20a1ae76efbc0125ab61f3152a43bce9c1459db5cbba7b238964f31fe0c6a3de
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Multiple descriptions combined through common satisfaction or collection characterization.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle]
+  notes: []
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration
+  label: Configuration
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 05a2d71918628234c27f5997f4c1b288e72733ed87d7fd4a617d8e12abe2b993
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A collection of parts unified by a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration]
+  notes: []
+imported_glossary:
+  state: NO_DECLARED_IMPORTS
+  unique_external_classes_pending: 0
+  next_issues:
+  - 267
+  - 263
+  limitation: No declared imports in this one retained core; related unacquired modules remain outside its scope.
+logical_inference: NOT_EXECUTED
+historical_paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
+counts:
+  local_classes: 12
+  source_definition_candidates: 12
+  missing_source_definitions: 0
+  reviewer_reconstructions: 0
+  inferred_classes: null

@@ -1,5 +1,11 @@
 # Changelog
 
+## Research source and class checkpoint - 2026-10-26
+
+- Record all 23 exact paper/version/documentation sources in a repository, file-access, foundation and class-coverage audit (#269), with dated bounded discovery outcomes and explicit unknowns.
+- Reconcile complete selected local class glossaries for cDnS1.1 (12), LMM L1/L2 (29, #270) and Conceptualization0.1 (1, #272). Four LMM definition comments are missing; imported DUL/IOLite definitions stay #88/#271.
+- Add source/census/glossary provenance validation, optional private annotation reconciliation and eight adverse boundary tests. Paper-review queue, final synthesis and the protected Clariceptify scientific baseline remain unchanged.
+
 ## Complete cDnS primary-paper review - 2026-10-26
 
 - Complete #259 across all 40 pages, 141 numbered displays, the table and both figures; retain exact formula labels, examples, assumptions, critical discrepancies and the separate 2008 work boundary.

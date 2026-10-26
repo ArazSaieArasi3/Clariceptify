@@ -23,3 +23,9 @@ python tools/test_deep_reviews.py
 ```
 
 Raw third-party PDFs and repository snapshots remain in the retained source archive. Public dossiers contain original critical paraphrases, locators, digests and links. Unknown counts are null. Full-text gaps remain visible and are never replaced by a different paper, abstract or current OWL file.
+
+## Supplementary source and class contract
+
+The owner-authorized repository/class-definition/foundation requirement is specified in [catalog-contract.yaml](catalog-contract.yaml). The [23-source audit](source-audit.md) records actual repository versus standalone-file discovery, retained versions, foundation evidence, all-class glossary coverage and explicit gaps. This is supplementary technical coverage; earlier paper review closures do not imply all imported classes or semantic tests are complete.
+
+Current complete local glossaries: [cDnS1.1](cDnS2007/classes.md), [LMM L1/L2](LMM2008/classes.md) and [Conceptualization0.1](shared-foundations/Conceptualization/classes.md). LMM has four missing source definition comments; imported DUL/IOLite definitions remain #88/#271. Research-only boundary: no Clariceptify model change.
