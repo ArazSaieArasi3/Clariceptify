@@ -1,0 +1,892 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: IAO2015
+issue: 78
+review_date: '2026-10-26'
+reviewer: AI-assisted primary-source critical inspection; no independent expert review
+baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
+status: REVIEW_COMPLETE
+identity:
+  title: 'Aboutness: Towards Foundations for the Information Artifact Ontology'
+  version: Smith and Ceusters, CEUR Workshop Proceedings 1515, 2015, pp.1-5
+  boundary: Barry Smith and Werner Ceusters. This five-page conceptual proposal critiques and extends the then-current
+    IAO; it is not a release note for the current repository. Printed and PDF pages coincide. No DOI is established
+    in the acquired primary paper. BFO/MFO commitments and proposed changes are kept distinct from current OWL implementation.
+  authors:
+  - Barry Smith
+  - Werner Ceusters
+  year: 2015
+  doi: null
+  url: https://ceur-ws.org/Vol-1515/regular10.pdf
+source:
+  filename: IAO-2015.pdf
+  sha256: 11c3413eb339aadc8baed9c6991a986c9f489d0ff2ca2b16508bb2688ff77b37
+  pdf_pages: 5
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+closure_boundary: 'This completes a source-bound critical paper dossier, not independent scientific acceptance, a
+  reasoner run, author-experiment reproduction, formal-artifact completion or a Clariceptify model change. Named findings
+  and technical tasks remain unresolved where stated. Disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS; supported overlap
+  is recorded, but no reuse/alignment/extension/rejection is applied to Clariceptify.'
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: p.1, title/abstract and sec.1 Introduction
+  summary: IAO scope, existing ICE definition, BFO generic/specific dependence and proposed embedding in MFO.
+- id: E02
+  pages:
+  - 1
+  - 2
+  locator: pp.1-2, sec.1 definitions and examples
+  summary: IQE as quality concretizing ICE; dispositions versus mental qualities; material artifacts and information
+    artifacts; processes creating/understanding/communicating ICEs.
+- id: E03
+  pages:
+  - 2
+  locator: p.2, sec.2 Aboutness and portions of reality
+  summary: Aboutness extends reference to cognitive directedness; nurse/pulse grounding; created historical/indexical
+    ICEs; targets generalized to portions of reality including universals, relations, other ICEs and configurations.
+- id: E04
+  pages:
+  - 2
+  - 3
+  locator: pp.2-3, sec.3 Information and mis-information
+  summary: Component versus composite aboutness, false and fictional expressions, time-indexical truth, primacy of
+    intentionality, sensor counterfactual and Vulcan reference failure.
+- id: E05
+  pages:
+  - 3
+  - 4
+  locator: pp.3-4, sec.4 Representation and reference
+  summary: Representation as quality with successful or intended aboutness; mental quality and cognitive representation;
+    hypothesized inheritance from continuant representation to cognitive processes.
+- id: E06
+  pages:
+  - 4
+  locator: p.4, sec.4 numbered list 1-5 and Table1
+  summary: RRU/NRU/UNRU/RNRU/RUC distinctions and time-dependent classifications. Table first row says RU while prose
+    uses RRU; RUC is a non-independently-referring component.
+- id: E07
+  pages:
+  - 4
+  locator: p.4, sec.5.1 Primitives and elucidations
+  summary: is_about with veridicality, concretizes at t, and direct cognitive representation via target-initiated
+    causal process; primitives are elucidated, not a complete executable axiom set.
+- id: E08
+  pages:
+  - 4
+  - 5
+  locator: pp.4-5, sec.5.2 Definitions
+  summary: is_a_representation_of adds successful aboutness; is_conformant_to relates IQE and cognitive representation
+    through a shared generically dependent continuant.
+- id: E09
+  pages:
+  - 5
+  locator: p.5, sec.6 Discussion
+  summary: Targets may be past, unknown by type or believed before evidence; physical basis of mental quality remains
+    uncertain; unconscious representations deferred.
+- id: E10
+  pages:
+  - 5
+  locator: p.5, sec.7 Conclusion; acknowledgements and references
+  summary: Proposed integration with MFO and future Language Ontology/document acts; no completed empirical or executable
+    validation study is presented.
+- id: R01
+  source_kind: REPOSITORY
+  commit: 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+  path: README.md
+  sha256: 6e3cd3dc7a60001efb42952d75cae1d04c4f306ccfede6598fe6c5705cd56de9
+  locator: README.md, Files and development import list
+  summary: Release iao.owl and development iao-edit.owl are distinguished; dependencies are enumerated.
+- id: R02
+  source_kind: REPOSITORY
+  commit: 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+  path: iao.owl
+  sha256: c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41
+  locator: iao.owl, ontology header/versionIRI/versionInfo/license
+  summary: Pinned root declares 2026-03-30 release identity and CC-BY4.0 metadata, not 2015 proposal identity.
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  catalog_boundary: All five pages, all seven numbered sections, subsections5.1/5.2, numbered unit categories, the
+    single table and the bibliography were inspected. All explicitly defined/elucidated ontology terms and their foundational
+    categories are catalogued below, along with the semantic distinction families used in examples. Incidental object
+    names are examples, not a new ontology class population.
+  units:
+  - unit: Title, abstract and sec.1 Introduction
+    status: REVIEWED
+    evidence:
+    - E01
+    - E02
+  - unit: Sec.2 Aboutness and portions of reality
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Sec.3 Information and mis-information
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Sec.4 Representation and reference; list1-5
+    status: REVIEWED
+    evidence:
+    - E05
+    - E06
+  - unit: Sec.5.1 Primitives and elucidations
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Sec.5.2 Definitions
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Sec.6 Discussion
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Sec.7 Conclusion
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Table1 representational units
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Acknowledgements and bibliography; no figures or appendices
+    status: REVIEWED
+    evidence:
+    - E10
+dimensions:
+  D1_identity_coverage:
+    statement: The selected work is the 2015 five-page Smith/Ceusters proposal, reviewed in full. It critiques an
+      existing ICE definition and proposes broader aboutness/representation foundations; those proposals are not assumed
+      to be accepted by current IAO releases.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E10
+  D2_problem_contribution:
+    statement: Existing IAO treatment of ICE, cognitive representation and aboutness is insufficient for information
+      creation, reference failure, misinformation, fiction and time/context. The proposed contribution links content
+      and material/mental concretizations, broadens targets to portions of reality and distinguishes successful reference
+      from intended reference.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E03
+    - E04
+    - E05
+    - E07
+    - E08
+  D3_method:
+    statement: 'The method is foundational conceptual analysis: critique a definition, distinguish dependency/representation
+      levels, analyze counterexamples and propose English logical definitions and elucidations. Nurse/pulse, false
+      presidential claims, fiction and Vulcan are argumentative cases; there is no implemented study protocol or formal-model
+      experiment in this text.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E03
+    - E04
+    - E06
+    - E07
+    - E08
+  D4_requirements:
+    statement: The paper targets domain-neutral information modeling, especially scientific/biomedical records. A
+      satisfactory account should handle shareable content across bearers, cognitive grounding, past or misidentified
+      targets, false composites and corrected reference beliefs. These are reconstructed requirements from the paper
+      arguments, not author-declared competency questions or a passing CQ suite.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E04
+    - E06
+    - E09
+  D5_concepts:
+    statement: ICE is generically dependent content, IQE its specifically dependent quality concretization and an
+      information artifact its material bearer. Cognitive representation is a mental quality; Representation allows
+      intended reference to fail. Referring/non-referring units and recognition status distinguish what exists, what
+      is intended and what is believed. ICE is explicitly historical rather than an abstract proposition.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E02
+    - E03
+    - E05
+    - E06
+  D6_relations_formalization:
+    statement: Definitions and primitive elucidations are inventoried without turning them into OWL axioms. Successful
+      is_about entails target existence; intended-to-be-about does not. Conformity shares a GDC and alone does not
+      encode truth, reliable observation or identity of targets. Time is explicit for concretization/dependence and
+      context-dependent reference histories require more than a static class label.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E07
+    - E08
+  D7_grounding:
+    statement: BFO dependence and material/quality/GDC distinctions ground the account; MFO adds mental qualities
+      and cognitive representation. Intentional acts ground artifact aboutness. A target need not exist contemporaneously
+      with its representation, and veridical representation need not identify its target universal correctly. These
+      realist commitments differ from treating all content as private DOLCE mental objects or as atemporal propositions.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E02
+    - E03
+    - E05
+    - E09
+  D8_artifact_correspondence:
+    statement: 'The retained IAO repository contains current release/development roots and many historical releases.
+      The reviewed 2015 proposal does not pin that repository commit or show adoption of every proposal. Repository
+      README distinguishes iao.owl and iao-edit.owl; the retained release root identifies 2026-03-30. Detailed selection/import/count/axiom
+      work remains #240, with no summation across release directories.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E07
+    - E10
+    - R01
+    - R02
+  D9_evaluation:
+    statement: Arguments are illustrated by philosophical/clinical examples; no recruited expert sample, quantitative
+      experiment, full CQ suite or executed consistency proof is reported. Neuroscientific grounding is explicitly
+      uncertain and several language/mental questions are future work. Reviewer critical analysis is separate from
+      author evidence and independent scientific acceptance.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E06
+    - E09
+    - E10
+  D10_critical_synthesis:
+    statement: Useful prior distinctions cover content versus carrier/quality, intentional versus successful reference,
+      temporal provenance and representational error. Weak points for computational reuse are the lack of an operational
+      account of intention/recognition, an executable configuration semantics and a complete identity rule across
+      contexts. Their resolution is not supplied by generic aboutness or a current IAO class count.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E06
+    - E07
+    - E08
+    - E09
+catalog:
+- id: C01
+  label: Entity
+  statement: 'FOUNDATIONAL/CONTENT: Superclass in the existing ICE definition; the POR proposal broadens the target
+    beyond BFO entities.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C02
+  label: InformationContentEntity / ICE
+  statement: 'FOUNDATIONAL/CONTENT: Generically dependent information content about some target; existing and proposed
+    definitions must be distinguished.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C03
+  label: GenericallyDependentContinuant / GDC
+  statement: 'FOUNDATIONAL/CONTENT: Content dependent on some appropriate bearer rather than one specific bearer.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C04
+  label: MaterialEntity
+  statement: 'FOUNDATIONAL/CONTENT: Bearer category; information artifacts are material, ICEs are not.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C05
+  label: SpecificallyDependentEntity
+  statement: 'FOUNDATIONAL/CONTENT: Dependency on a particular bearer; the quality that concretizes content is of
+    this kind.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C06
+  label: Quality
+  statement: 'FOUNDATIONAL/CONTENT: All concretizations are qualities in the adopted BFO framework.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C07
+  label: Universal
+  statement: 'FOUNDATIONAL/CONTENT: Type quantified over in generic dependence and included among proposed aboutness
+    targets.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C08
+  label: Continuant / Occurrent
+  statement: 'FOUNDATIONAL/CONTENT: Persistent informational content versus cognitive/communicative processes; processes
+    inherit aboutness by a stated hypothesis.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: C09
+  label: InformationQualityEntity / IQE
+  statement: 'DEFINED: Quality concretizing an ICE; called information carrier in the then-current IAO terminology.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C10
+  label: Artifact
+  statement: 'DEFINED: Material entity created, modified or selected by an agent to realize a function or role.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C11
+  label: InformationArtifact
+  statement: 'DEFINED: Artifact whose function is bearing an IQE; includes hard drives, signs and printed forms.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C12
+  label: Disposition
+  statement: 'DEFINED: May be grounded in a mental quality but is not identical to that quality; lab-order example.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C13
+  label: Function / Role
+  statement: 'DEFINED: Purposes invoked in artifact definitions; their full BFO theories are not restated.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C14
+  label: Agent / cognitive subject
+  statement: 'DEFINED: Creates artifacts and associates cognitive representations with patterns; not operationalized
+    as an independent complete agent ontology here.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C15
+  label: Thinking / Speaking / Hearing / Writing / Reading
+  statement: 'DEFINED: Process families through which content is created, understood and communicated; not a complete
+    hierarchy in this paper.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C16
+  label: PortionOfReality / POR
+  statement: 'SEMANTIC: Proposed generalized target category, including universals, relations, ICEs and configurations.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C17
+  label: Configuration
+  statement: 'SEMANTIC: Entities related in a time interval considered together; used to explain composite sentence
+    targets.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C18
+  label: Relation
+  statement: 'SEMANTIC: Included among POR targets, e.g. part-whole transitivity.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C19
+  label: Pattern
+  statement: 'SEMANTIC: Ambiguous between shareable content and bearer-specific quality; the distinction motivates
+    ICE/IQE separation.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C20
+  label: DirectCognitiveRepresentation
+  statement: 'SEMANTIC: Relational mental quality grounded by a target-initiated causal observation process.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C21
+  label: Indexicality
+  statement: 'SEMANTIC: Historical creation context contributes to what an ICE is about and how it is truth-evaluated.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C22
+  label: Information / Mis-information
+  statement: 'ANALYTICAL_DISTINCTION: The authors distinguish successful composite aboutness from failure while allowing
+    component aboutness; not a complete executable truth taxonomy.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C23
+  label: Fictional representation
+  statement: 'ANALYTICAL_DISTINCTION: Composite can lack a real configuration while some components still refer.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C24
+  label: Ungrounded representation
+  statement: 'ANALYTICAL_DISTINCTION: Intended reference can depend on belief in a nonexistent target; Vulcan illustrates
+    it.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C25
+  label: Belief / Intention
+  statement: 'ANALYTICAL_DISTINCTION: Attitudes invoked in reference recognition and failure; no standalone BDI formalization
+    is provided.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C26
+  label: Representation
+  statement: 'DEFINED: Quality that is about or is intended to be about some POR; broader than ICE in the authors
+    account.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C27
+  label: MentalQuality
+  statement: 'DEFINED: Quality specifically dependent on an anatomical structure in an organism cognitive system.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C28
+  label: CognitiveRepresentation
+  statement: 'DEFINED: Representation that is a MentalQuality.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C29
+  label: AnatomicalStructure / Organism / CognitiveSystem
+  statement: 'DEFINED: Bearer context in the MentalQuality definition; fine physical realization is left open.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C30
+  label: MentalProcess
+  statement: 'DEFINED: Thinking/imagining/remembering may be intentional; inheritance from continuant representation
+    is hypothesized.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C31
+  label: RepresentationalUnit / RU
+  statement: 'DEFINED: Smallest constituent subrepresentation, e.g. name, icon, word or identifier.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C32
+  label: ReferringRepresentationalUnit / RRU
+  statement: 'UNIT_CATEGORY: Intended reference succeeds; Table1 abbreviates its first example as RU.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: C33
+  label: NonReferringRepresentationalUnit / NRU
+  statement: 'UNIT_CATEGORY: Fails to be about anything.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: C34
+  label: UnrecognizedNonReferringRepresentationalUnit / UNRU
+  statement: 'UNIT_CATEGORY: Nonreferring while intended and believed to refer.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: C35
+  label: RecognizedNonReferringRepresentationalUnit / RNRU
+  statement: 'UNIT_CATEGORY: Previously intended/believed reference is no longer believed after knowledge changes.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: C36
+  label: RepresentationalUnitComponent / RUC
+  statement: 'UNIT_CATEGORY: Component not intended by the artifact authors to refer in isolation; not clearly the
+    same granularity as an RU.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: C37
+  label: LanguageOntology
+  statement: 'PROPOSED_EXTENSION: Future framework for assertion, perception and language-mediated creation of conformant
+    mental representations.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C38
+  label: DocumentAct
+  statement: 'PROPOSED_EXTENSION: Prior ontology/template named as a base for future language work, not implemented
+    in this report.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+commitments:
+- id: K01
+  label: Existing ICE definition
+  statement: Entity generically dependent on some MaterialEntity and standing in aboutness to some Entity; this is
+    the definition criticized, not the final broadening.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: K02
+  label: generic dependence
+  statement: a and b exist, b instantiates some universal B, and necessarily if a exists then some B exists. Specific
+    bearer b is not required across all realizations.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: K03
+  label: specific dependence
+  statement: The dependent cannot exist without its particular bearer; contrasted with migration/copying.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E01
+- id: K04
+  label: IQE definition
+  statement: IQE is a Quality concretizing some ICE.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: K05
+  label: Artifact definition
+  statement: MaterialEntity created, modified or selected by some agent to realize Function or Role.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: K06
+  label: InformationArtifact definition
+  statement: Artifact with the function of bearing an IQE.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: K07
+  label: Proposed target broadening
+  statement: Replace aboutness to some Entity by aboutness to some POR, allowing universals, relations, other ICEs
+    and configurations. Not all are BFO entities as understood in this paper.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: K08
+  label: Representation definition
+  statement: Quality that is_about or is intended to be about a POR; successful aboutness and mere intention are disjuncts.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K09
+  label: MentalQuality definition
+  statement: Quality specifically dependent on an AnatomicalStructure in an Organism cognitive system.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K10
+  label: CognitiveRepresentation definition
+  statement: Representation and MentalQuality; no consciousness or image-like form is entailed by the definition.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K11
+  label: RU and five unit categories
+  statement: RU denotes minimal subrepresentation; RRU succeeds, NRU fails, UNRU/RNRU distinguish recognition, RUC
+    is not intended to refer independently. The list mixes granularity/status and requires an implementation decision.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+  - E06
+- id: K12
+  label: is_about primitive
+  statement: Domain representations; range POR; if x is_about y then y exists. Intended aboutness does not carry this
+    existential success condition.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K13
+  label: concretizes at t primitive
+  statement: 'x is Quality, y is GDC, and for some material bearer z at t: x specifically depends on z and y generically
+    depends on z. Migration to another bearer creates a copy of x, not numerical identity of quality across bearers.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K14
+  label: direct cognitive representation primitive
+  statement: x is CognitiveRepresentation in subject s, x is_about y and x arises in s through an appropriate causal
+    process initiated by y. Appropriateness is not operationally defined.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K15
+  label: is_a_representation_of definition
+  statement: x is Representation and x is_about y, where y is POR. Unlike the Representation class alone, this relation
+    entails successful reference.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+- id: K16
+  label: is_conformant_to definition
+  statement: x is IQE, y is CognitiveRepresentation and some GDC g is concretized by both. The relation connects qualities
+    through shared content; it does not itself assert truth or the same bearer.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+- id: K17
+  label: Continuation-to-process aboutness hypothesis
+  statement: Cognitive occurrent representations inherit intended aboutness from underlying continuant representation;
+    explicitly a hypothesis.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K18
+  label: Temporal target non-contemporaneity
+  statement: A POR need not exist when its representation exists; past disorders remain direct targets rather than
+    memories being substituted as targets.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K19
+  label: Component/composite reference
+  statement: Components may refer while an entire false or fictional sentence fails to target an obtaining configuration;
+    preserve levels.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K20
+  label: Context and truth history
+  statement: The original context-indexed ICE is not claimed to change truth simply because the world changes; a new
+    use may involve a different historical/indexical content. Identity conditions are not fully axiomatized.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K21
+  label: Time-dependent reference recognition
+  statement: Unit classification can change as a target belief is corrected; the same string is insufficient to identify
+    the semantic status across uses/times.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  - E06
+scenarios:
+- id: S01
+  label: Positive observed measurement
+  statement: A nurse observes a pulse, forms a direct cognitive representation and enters a value in a record. The
+    record quality and mental quality can concretize shareable content grounded in that pulse. Causal provenance is
+    doing more work than a bare string label.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E08
+- id: S02
+  label: False composite
+  statement: The paper presidential counterexample retains reference of some components while denying a corresponding
+    configuration for the whole. An implementation that assigns the whole sentence an obtaining target merely because
+    two names refer would overstate its truth.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+- id: S03
+  label: Failed reference and correction
+  statement: Vulcan as believed in 1860 and a later acknowledged error illustrate UNRU versus RNRU. A static same-label
+    lookup cannot encode belief-history and corrected reference status by itself.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+- id: S04
+  label: Adverse shared-content shortcut
+  statement: Two qualities sharing a GDC satisfy the printed conformity definition, but that definition alone does
+    not establish truthful content or reliable observation. Add a separate reference/grounding argument before making
+    those claims.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+- id: S05
+  label: Past and unknown targets
+  statement: A past disorder can be represented now, and a child/cat can perceive an object without knowing its universal.
+    Do not require contemporaneous existence or correct type knowledge for every successful representation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+evaluation:
+  Verification:
+    statement: Definitions/elucidations and examples support conceptual inspection; there is no machine-checked consistency,
+      entailment or completed CQ execution in this paper.
+    basis: NOT_REPORTED
+    evidence:
+    - E07
+    - E08
+    - E10
+  Validation:
+    statement: Clinical/historical cases motivate intended adequacy; no independent domain-expert study, participants
+      or acceptance population is reported.
+    basis: NOT_REPORTED
+    evidence:
+    - E03
+    - E04
+    - E09
+  Evaluation:
+    statement: No controlled comparison, effect-size estimate or task benchmark is reported. Philosophical counterexamples
+      provide argument, not empirical effectiveness measurements.
+    basis: NOT_REPORTED
+    evidence:
+    - E04
+    - E06
+    - E10
+  Assessment:
+    statement: The reviewer finds useful separation of content, qualities, material carriers and reference success;
+      computational identity/context/recognition remain unresolved within this text.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E04
+    - E06
+    - E08
+  Assurance:
+    statement: The paper provides reasoned conceptual support and explicit open questions, not a certification or
+      implemented assurance package. Physical grounding and future language work remain open.
+    basis: NOT_REPORTED
+    evidence:
+    - E09
+    - E10
+artifact:
+  issue: 240
+  status: PINNED_REPOSITORY_AVAILABLE_TECHNICAL_REVIEW_PENDING
+  version_relation: 'Retained repository information-artifact-ontology/IAO at 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+    includes iao.owl, iao-edit.owl and historical releases. README identifies release versus development and imports;
+    root iao.owl declares versionIRI http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl and CC-BY4.0 metadata.
+    These current bytes are not a 2015 proposal implementation by assumption. #240 must select a root and inspect
+    semantic correspondence, not sum all release classes.'
+  repository_evidence:
+  - commit: 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+    paths:
+    - README.md
+    - iao.owl
+    locators:
+    - 'README.md: Files and development imports'
+    - 'iao.owl: ontology header/versionIRI/versionInfo/license'
+    method: Direct inspection of already retained tracked-tree snapshot; no author experiment or reasoner executed.
+findings:
+- id: F01
+  label: Carrier/content/quality separation
+  statement: An ICE is not the material artifact and not a bearer-specific IQE. Equating these would erase sharing
+    and dependence distinctions central to the paper.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E02
+  - E07
+- id: F02
+  label: Aboutness is a success condition
+  statement: Successful aboutness and intended reference are distinct. A model limited to a single unrestricted is_about
+    edge risks asserting real targets for mistaken or fictional representations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+  - E07
+- id: F03
+  label: Historical identity matters
+  statement: The discussion treats ICE as a created historical entity with indexical origin. A string-only identity
+    key cannot be assumed sufficient; the paper does not supply a complete replacement identity algorithm.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+- id: F04
+  label: Granularity and abbreviation caveat
+  statement: The list defines RU and RRU separately but Table1 first row says RU; RUC is a component not intended
+    to refer alone. Preserve the source labels and resolve classification granularity before executable reuse.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: F05
+  label: Foundational range issue
+  statement: POR includes targets not classified as BFO entities in the authors treatment. Encoding the proposed range
+    as an undifferentiated BFO entity class would require a separate foundational mapping argument.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+- id: F06
+  label: Conceptual account not full computational method
+  statement: Appropriate causation, intention, recognition and shared content are invoked without an operational determination
+    procedure or validated extraction pipeline. A current OWL release cannot supply those claims retrospectively.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E08
+  - E09
+  - E10
+questions:
+- id: Q01
+  label: Proposal adoption
+  statement: 'Which exact 2015 proposals are present, changed or absent in the selected current release? Keep same-word
+    labels distinct from semantic implementation. #240 owns technical evidence.'
+  basis: UNKNOWN
+  evidence:
+  - E01
+  - E07
+  - E08
+- id: Q02
+  label: Identity/context
+  statement: How should one identify historical content across creation, copying, re-use and belief correction? The
+    text motivates the problem without a full algorithm.
+  basis: UNKNOWN
+  evidence:
+  - E03
+  - E04
+  - E06
+- id: Q03
+  label: Operational grounding
+  statement: What observable conditions establish appropriate causation or recognized reference failure, particularly
+    for automatic sensors? The paper gives arguments/examples, not a validated operational test.
+  basis: UNKNOWN
+  evidence:
+  - E04
+  - E07
+  - E09
+synthesis:
+- id: U01
+  label: Comparison cells
+  statement: 'Keep ICE, IQE, material artifact, cognitive representation, cognitive act and POR separate in #254.
+    Their relations should be compared under their actual foundational assumptions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E02
+  - E03
+  - E05
+- id: U02
+  label: Future adverse-case bank
+  statement: Retain false composites, Vulcan corrections, past targets and shared-content-without-truth as research
+    candidate cases. No Clariceptify constraints/CQs are changed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+  - E08
+  - E09
+- id: U03
+  label: No automatic adoption
+  statement: Possible use is to clarify reference-success and provenance distinctions after the owner reviews the
+    cross-paper synthesis. No semantic equivalence, model repair or superiority follows from this single review.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E07
+  - E08

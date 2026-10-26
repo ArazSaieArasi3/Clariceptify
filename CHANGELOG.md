@@ -1,5 +1,11 @@
 # Changelog
 
+## Deep primary-paper research - 2026-10-26
+
+- Establish a shared ten-dimension evidence contract, one primary deep-review issue per paper, twelve acquired PDFs and seven waiting-for-owner texts. Plan partial and final synthesis with explicit source/version boundaries and owner-controlled later use.
+- Complete full-paper critical dossiers for OntoKADS2005, IAO2015 and EFO, including conceptual/formal catalogs, exact locators, all paper units, adverse scenarios and unresolved artifact questions. Keep earlier scoped reviews and all scientific model/release artifacts unchanged.
+- Add protected scientific-baseline and dossier provenance checks, derived readable reports and eight adverse closure-boundary tests. Structural PASS is not scientific approval.
+
 ## Post R1 documentation and evidence planning - 2026-10-25
 
 - Prioritize conceptual Wiki/Pages over unchanged core v0.1.0, using one curated twelve-page guide, complete generated lookup/search and explicit current/frozen source identities. Formal WIDOCO/WebVOWL remain separate.
