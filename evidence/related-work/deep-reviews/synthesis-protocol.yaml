@@ -1,0 +1,61 @@
+schema_version: '1.0'
+issue: 126
+state: PLANNED_NOT_FINAL_SYNTHESIS
+input_authority: Versioned dossiers and their evidence IDs, plus separately inspected artifact results
+outputs:
+- path: evidence/related-work/deep-reviews/synthesis/matrix.yaml
+  purpose: Criterion-level cells with evidence IDs, version, basis, unknowns and counterevidence; no binary keyword
+    scoring
+- path: evidence/related-work/deep-reviews/synthesis/themes.md
+  purpose: Thematic narrative of agreements, disagreements, foundational incompatibilities and scope differences
+- path: evidence/related-work/deep-reviews/synthesis/opportunities.yaml
+  purpose: Research-only candidate uses, reasons, source evidence, costs, risks, prerequisites and owner decision
+    status
+- path: docs/research/gap-comparison.yaml
+  purpose: 'Existing #126 final corpus synthesis deliverable; blocked until its actual prerequisites and missing-source
+    disposition are satisfied'
+sequence:
+- Complete one paper dossier at a time; retain local findings and open questions.
+- 'Produce the six bounded existing comparison batches #251-#256 only when their exact evidence prerequisites
+  are satisfied. Link new deep followups to the relevant batch.'
+- 'Produce an explicitly PARTIAL acquired-source synthesis before missing papers arrive if useful. State numerator/denominator,
+  exclusions and version limits; do not close #126 as final.'
+- Integrate owner-supplied texts with digests and the identical protocol; retain before/after changes and counterevidence.
+- Complete cross-corpus synthesis after prerequisite review, checking each claim against its source and an adverse
+  scenario.
+- Present opportunities and unresolved choices to the owner. Stop before any next-version ontology change.
+comparison_dimensions:
+- Agency/activity/episode
+- Mental state/content/expression/referent
+- Type/instance/classification level
+- Identity/dependence/roles
+- Time/context/viewpoint
+- Decision/justification/evidence
+- Requirements/method/formal language
+- Validation/evaluation/reproducibility
+- Version/license/access
+- Supported overlap, differences and unassessed gaps
+cell_fields:
+- criterion
+- work_id
+- paper_version
+- artifact_version
+- finding
+- basis
+- evidence_ids
+- counterevidence
+- unknowns
+- scope_limit
+use_categories:
+- Clarify terminology and scope
+- Identify prior overlap and constrain novelty claims
+- Compare modeling and engineering methods
+- Build a future test/CQ candidate bank
+- Record candidate patterns or alignments for later owner review
+- Identify unresolved research questions and additional sources
+guardrails:
+- No automated ontology modification or accepted equivalence
+- No aggregate quality ranking without a justified measurement model
+- No missing text scored as absence
+- No source-count or task-count presented as scientific quality
+- No final all-corpus gap/novelty claim from only the acquired subset

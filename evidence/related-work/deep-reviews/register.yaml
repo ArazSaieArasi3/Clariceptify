@@ -1,0 +1,208 @@
+schema_version: '1.0'
+date: '2026-10-26'
+framework_issue: 258
+baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
+status_authority: This register and each deep dossier govern current deep-review status; earlier scoped reviews
+  remain historical.
+acquired_papers:
+- order: 1
+  id: OntoKADS2005
+  issue: 74
+  title: An Ontological approach to the construction of problem-solving models
+  filename: OntoKADS.pdf
+  sha256: 040ad09c7efc2b988fdb0720c9ed580bce1778fa6494cdb484d827359d95026b
+  pdf_pages: 10
+  artifact_issues:
+  - 236
+  state: REVIEW_COMPLETE
+- order: 2
+  id: IAO2015
+  issue: 78
+  title: 'Aboutness: Towards Foundations for the Information Artifact Ontology'
+  filename: IAO-2015.pdf
+  sha256: 11c3413eb339aadc8baed9c6991a986c9f489d0ff2ca2b16508bb2688ff77b37
+  pdf_pages: 5
+  artifact_issues:
+  - 240
+  state: REVIEW_COMPLETE
+- order: 3
+  id: EFO
+  issue: 80
+  title: Fundamental choices in EFO
+  filename: EFO-publisher.pdf
+  sha256: 8cf3372ac6bd19b88dfc15f07485695a6aab0f45d91d7864afef6f5f353729a6
+  pdf_pages: 21
+  artifact_issues:
+  - 242
+  state: REVIEW_COMPLETE
+- order: 4
+  id: cDnS2007
+  issue: 259
+  title: Norms and plans as unification criteria for social collectives
+  filename: cDnS-2007.pdf
+  sha256: ad6204de62649f271b89196dd0a00d301c52dfa19a0b11f8fcbc0ce218160066
+  pdf_pages: 40
+  artifact_issues:
+  - 87
+  state: QUEUED
+- order: 5
+  id: LMM2008
+  issue: 260
+  title: 'LMM: an OWL-DL MetaModel to Represent Heterogeneous Lexical Knowledge'
+  filename: LMM-2008.pdf
+  sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+  pdf_pages: 7
+  artifact_issues:
+  - 90
+  state: QUEUED
+- order: 6
+  id: DnS2003
+  issue: 261
+  title: Understanding the Semantic Web through Descriptions and Situations
+  filename: DnS.pdf
+  sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+  pdf_pages: 18
+  artifact_issues:
+  - 235
+  state: QUEUED
+- order: 7
+  id: CMO
+  issue: 83
+  title: Towards an Ontology for Conceptual Modeling
+  filename: CMO.pdf
+  sha256: 344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49
+  pdf_pages: 9
+  artifact_issues:
+  - 245
+  state: QUEUED
+- order: 8
+  id: COM2004
+  issue: 81
+  title: Towards a Computational Ontology of Mind
+  filename: COM-FOIS.pdf
+  sha256: 16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245
+  pdf_pages: 11
+  artifact_issues:
+  - 243
+  state: QUEUED
+- order: 9
+  id: BDI2020
+  issue: 85
+  title: Foundations for an Ontology of Belief, Desire and Intention
+  filename: BDI-2020-author-copy.pdf
+  sha256: 61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95
+  pdf_pages: 16
+  artifact_issues:
+  - 247
+  state: QUEUED
+- order: 10
+  id: BDI2026Preprint
+  issue: 249
+  title: The Belief-Desire-Intention ontology for modelling mental reality and agency
+  filename: BDI-2025-preprint.pdf
+  sha256: e4fbe911555a62050b8ccc1f07b6c13e0aa36af486ad6767c3d6ed446681c676
+  pdf_pages: 21
+  artifact_issues:
+  - 250
+  state: QUEUED
+- order: 11
+  id: CognitiveAtlas2011
+  issue: 79
+  title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
+  filename: CognitiveAtlas-2011.pdf
+  sha256: c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4
+  pdf_pages: 11
+  artifact_issues:
+  - 241
+  state: QUEUED
+- order: 12
+  id: EmotionsOnto2014
+  issue: 262
+  title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
+  filename: EmotionsOnto-2014.pdf
+  sha256: 351bddf40462ec68b7ff990837b2a7cf144b8f239dc86bf76d2d9d0ec618d610
+  pdf_pages: 16
+  artifact_issues:
+  - 239
+  state: QUEUED
+waiting_for_owner:
+- id: CLR-RW-DUL
+  issue: 70
+  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
+  doi: 10.3233/978-1-61499-676-7-81
+  url: https://doi.org/10.3233/978-1-61499-676-7-81
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: 2016 chapter inaccessible at checked endpoint; DUL 4.2 formal file acquired.
+- id: CLR-RW-O4OA
+  issue: 73
+  title: The Ontology for Conceptual Characterization of Ontologies
+  doi: 10.1007/978-3-031-47262-6_6
+  url: https://research.utwente.nl/en/publications/the-ontology-forconceptual-characterization-ofontologies/
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: Institutional final PDF returns 403. O4OA specification v2.6 download returns an anti-bot HTML page, not
+    a PDF.
+- id: CLR-RW-Representation
+  issue: 82
+  title: An Ontology of Representation
+  doi: 10.1177/15705838251337943
+  url: https://journals.sagepub.com/doi/10.1177/15705838251337943
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: 2025 journal article identified; publisher PDF returns 403. Distinct 2021 Towards paper not substituted.
+- id: CLR-RW-IDA
+  issue: 84
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  doi: null
+  url: https://scholar.google.com/scholar?q=Managing+Knowledge+at+the+Information+Level+Fortier+Kassel
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: Exact title and authors cited in the acquired OntoKADS primary report, reference 8; no authoritative standalone
+    full text or DOI resolved. Link is a title lookup, not a publisher page.
+- id: CLR-RW-DOLCEMental
+  issue: 86
+  title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
+  doi: 10.3233/FAIA200666
+  url: https://iris.unitn.it/handle/11572/336248
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: Paper full text not acquired from checked publisher/author endpoints; complete official repository snapshot
+    includes dolce_needs.p.
+- id: cDnS-journal-2008
+  issue: 263
+  title: Norms and plans as unification criteria for social collectives
+  doi: 10.1007/s10458-008-9038-9
+  url: https://link.springer.com/article/10.1007/s10458-008-9038-9
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: 2008 version named by cDnS OWL 1.1; do not replace with the acquired 2007 work.
+- id: Emotions-2015
+  issue: 77
+  title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
+  doi: 10.1016/j.chb.2014.11.100
+  url: https://doi.org/10.1016/j.chb.2014.11.100
+  state: BLOCKED_ON_FULL_TEXT
+  sha256: null
+  note: Author publication page identifies this related 2015 work; exact correspondence to the later cognition
+    extension remains unassessed.
+separate_document_tasks:
+- id: Conceptualization
+  issue: 71
+  state: SCOPED_DOCUMENT_REVIEW_CLOSED
+  note: Embedded OWL documentation, not a separate invented article
+- id: OntoLex
+  issue: 75
+  artifact_issue: 237
+  state: QUEUED
+  note: W3C community report, not a journal article
+- id: SKOS
+  issue: 76
+  artifact_issue: 238
+  state: QUEUED
+  note: W3C Recommendation, not a journal article
+- id: EmotionsCognition-guide
+  issue: 77
+  artifact_issue: 239
+  state: AUTHOR_DOCUMENTATION_AVAILABLE_PAPER_BLOCKED
+  note: 2014 predecessor, 2015 related paper and December2015 OWL are separate sources

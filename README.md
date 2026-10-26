@@ -43,6 +43,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Bootstrap verification](evaluation/bootstrap-report.json) and [local check](tools/README.md)
 - [Contribution and English-only policy](CONTRIBUTING.md)
 - [Related-work candidate register](evidence/related-work/)
+- [Shared deep-paper review framework and current queue](evidence/related-work/deep-reviews/README.md)
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
 ## Structure and status

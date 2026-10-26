@@ -1,0 +1,1191 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: OntoKADS2005
+issue: 74
+review_date: '2026-10-26'
+reviewer: AI-assisted primary-source critical inspection; no independent expert review
+baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
+status: REVIEW_COMPLETE
+identity:
+  title: An Ontological approach to the construction of problem-solving models
+  version: LaRIA research report LRR 2005-03, May 2005; arXiv cs/0505081
+  boundary: Sabine Bruaux, Gilles Kassel and Gilles Morel. The ten-page input includes a cover and nine body/reference
+    pages, cited here by PDF page. It extends the 2004 workshop work cited as reference 3; it is not silently identified
+    with that earlier work. No DOI or released executable ontology version is established by these bytes.
+  authors:
+  - Sabine Bruaux
+  - Gilles Kassel
+  - Gilles Morel
+  year: 2005
+  doi: null
+  url: https://arxiv.org/abs/cs/0505081
+source:
+  filename: OntoKADS.pdf
+  sha256: 040ad09c7efc2b988fdb0720c9ed580bce1778fa6494cdb484d827359d95026b
+  pdf_pages: 10
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+closure_boundary: 'This completes a source-bound critical paper dossier, not independent scientific acceptance, a
+  reasoner run, author-experiment reproduction, formal-artifact completion or a Clariceptify model change. Named findings
+  and technical tasks remain unresolved where stated. Disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS; supported overlap
+  is recorded, but no reuse/alignment/extension/rejection is applied to Clariceptify.'
+evidence:
+- id: E01
+  pages:
+  - 1
+  - 2
+  locator: PDF pp. 1-2, cover, abstract and Introduction
+  summary: Report identity; ontology-centered CommonKADS expertise modeling and the disputed semantic status of knowledge
+    roles.
+- id: E02
+  pages:
+  - 3
+  locator: PDF p. 3, Overview of OntoKADS; Fig. 1; footnotes 2-3
+  summary: Two sub-ontologies; application-ontology labeling and extraction into domain/inference/task models; task-method
+    specification and software under development.
+- id: E03
+  pages:
+  - 3
+  - 4
+  locator: PDF pp. 3-4, How OntoKADS extends DOLCE / DOLCE and the notion of knowledge; Fig. 2; footnotes 4-6
+  summary: DOLCE particulars, endurant/perdurant distinction, temporal participation, mental objects, agentives and
+    intentional action.
+- id: E04
+  pages:
+  - 4
+  locator: PDF p. 4, The two main sub-ontologies, A1-A3 and D1; footnotes 7-9
+  summary: Car diagnosis/calibration illustrations; reasoning and communication differentiated by goals; interaction
+    participation; collaboration/coordination excluded.
+- id: E05
+  pages:
+  - 5
+  locator: PDF p. 5, second sub-ontology, A4-A8; Fig. 3; footnotes 10-11
+  summary: Meta-properties classify concepts at model-building times; Task/Inference reclassification; Task and TransferFunction
+    sort restrictions.
+- id: E06
+  pages:
+  - 5
+  - 6
+  locator: PDF pp. 5-6, The OntoKADS kernel / Theoretical and practical knowledge and its objects; footnote 12
+  summary: Core analysis questions; theoretical/practical knowledge; reasoning participants as mental contents; physical
+    execution contingencies are distinguished from essential content participation.
+- id: E07
+  pages:
+  - 6
+  locator: PDF p. 6, Population of mental objects in I&DA, A9 and D2; Fig. 4; footnotes 13-14
+  summary: Document, Expression, Content, Concept and Proposition; subject relation; linguistic/iconic expression,
+    discourse/message, assertion/hypothesis and information/complaint distinctions.
+- id: E08
+  pages:
+  - 6
+  - 7
+  locator: PDF pp. 6-7, Nature of the participating entities
+  summary: Contents directly participate in reasoning; real-world entities are indirectly involved via concepts. Empty-fuel-tank,
+    hypothesis, complaint and car-model examples.
+- id: E09
+  pages:
+  - 7
+  locator: PDF p. 7, Participation modes, A10-A13, D3-D6, T1-T3; footnote 15
+  summary: Patient/Data specialization of participation; input temporal intent; model-to-calibrate conjunction. D4
+    visibly leaves y unbound; A13 is an existential-cutoff implication.
+- id: E10
+  pages:
+  - 7
+  - 8
+  locator: 'PDF pp. 7-8, The modeling primitive: KnowledgeRole; Fig. 5; footnote 16'
+  summary: Anti-rigidity/external dependence and formal/material roles; identity criteria; content-dependent knowledge-role
+    meta-properties; input/output classification.
+- id: E11
+  pages:
+  - 8
+  locator: PDF p. 8, Discussion
+  summary: Modeling questions separate representation type/subject, data versus result and reasoning type; ongoing
+    comparison with CommonKADS is described, not a completed measured result.
+- id: E12
+  pages:
+  - 8
+  - 9
+  locator: PDF pp. 8-9, Related ontological work
+  summary: SUMO/provenance, DnS/I&DA and COM compared; proposed correspondences and differences; DnS region-parameter
+    example versus OntoKADS sign roles; intentions/methods/goals remain expansion work.
+- id: E13
+  pages:
+  - 9
+  locator: PDF p. 9, Conclusion
+  summary: Ontology expansion and TERMINAE/OntoSpec environment are work in progress; no packaged implementation or
+    completed evaluation reported here.
+- id: E14
+  pages:
+  - 9
+  - 10
+  locator: PDF pp. 9-10, References 1-23
+  summary: Bibliography identifies original I&DA 2004 and COM FOIS2004 and the earlier OntoKADS2004 workshop work;
+    citations are discovery links, not substituted full-text evidence.
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  visual_pages:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  catalog_boundary: The complete ten-page report, all five figures, sixteen footnotes, labeled formulas A1-A13/D1-D6/T1-T3
+    and bibliography were inspected. The catalog inventories the ontology-bearing categories, primitives and example
+    families in this paper; aliases are grouped explicitly. It is not a class count of an unavailable formal distribution.
+    Figure hierarchy edges and formula/prose differences are preserved below.
+  units:
+  - unit: Cover, title/authors and abstract
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Introduction
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Overview of OntoKADS
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: 'How OntoKADS extends DOLCE: DOLCE and knowledge'
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Two main sub-ontologies
+    status: REVIEWED
+    evidence:
+    - E04
+    - E05
+  - unit: 'Kernel: theoretical/practical knowledge'
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: 'Kernel: I&DA mental objects'
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: 'Kernel: participating entities'
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 'Kernel: participation modes'
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: 'Kernel: KnowledgeRole'
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Discussion
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Related ontological work
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Conclusion
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: References 1-23
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: 'Figure 1: modeling workflow'
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: 'Figure 2: DOLCE hierarchy'
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: 'Figure 3: object/meta-level classification'
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: 'Figure 4: I&DA hierarchy'
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: 'Figure 5: role labeling'
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Footnotes 1-16; no tables or appendices in the input
+    status: REVIEWED
+    evidence:
+    - E01
+    - E02
+    - E03
+    - E04
+    - E05
+    - E06
+    - E07
+    - E09
+    - E10
+dimensions:
+  D1_identity_coverage:
+    statement: The acquired item is the May2005 LaRIA report, including its cover. PDF numbering avoids inventing
+      publisher pagination. The complete text, figures and formulas are covered; the earlier workshop reference is
+      kept distinct.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E14
+  D2_problem_contribution:
+    statement: The problem is semantic treatment of the interface between domain knowledge and reasoning in CommonKADS.
+      The contribution combines a DOLCE problem-solving ontology with meta-properties for modeling primitives, giving
+      knowledge roles an explicit content/participation interpretation. The claimed improvement is conceptual and
+      methodological; comparative effectiveness is not established.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E02
+    - E10
+    - E11
+  D3_method:
+    statement: The authors analyze CommonKADS examples, specialize DOLCE, borrow I&DA mental-object distinctions and
+      role meta-properties, then derive modeling questions and an ontology-to-expertise-model workflow. This is a
+      constructive conceptual analysis using car diagnosis and code calibration. Participant recruitment, a reproducible
+      annotation protocol and quantitative comparison are not reported in this selected text.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E04
+    - E07
+    - E10
+    - E11
+    - E13
+  D4_requirements:
+    statement: 'Intended user: knowledge engineer constructing expertise models. The paper explicitly asks what participates
+      in reasoning/communication, how participation works and how meta-properties characterize it. It requires application-independent
+      methods and richer semantic commitments before primitive assignment. These are author questions/requirements,
+      not an executed CQ suite. Collaboration/coordination is explicitly outside the current treatment.'
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E04
+    - E06
+    - E11
+  D5_concepts:
+    statement: The central separation is between perdurant reasoning/communication, endurant contents, content subjects
+      and real-world referents. Expression is code-dependent; Content is code-independent. Document is a physical
+      carrier; propositions and concepts are mental objects. A second classification level assigns modeling primitives
+      to concepts at building times. Formal/material knowledge roles distinguish whether identity comes from the role
+      or an underlying type.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E03
+    - E05
+    - E07
+    - E08
+    - E10
+  D6_relations_formalization:
+    statement: All 22 labeled items are catalogued individually, with participation/classification/subsumption relations.
+      A1-A3/D1 characterize action types, A4-A8 meta-level labels and restrictions, A9/D2 subject structure and A10-A13/D3-D6/T1-T3
+      input roles. D4 has an unbound variable; A13 alone permits a vacuous early cutoff. The source is not silently
+      repaired and no prover result is claimed.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E05
+    - E07
+    - E09
+  D7_grounding:
+    statement: DOLCE supplies particulars, endurants/perdurants and time-indexed participation. Role anti-rigidity
+      and external dependence are inherited conceptual criteria; formal/material roles concern identity. Classifying
+      a concept by a meta-property is different from a domain object instantiating that concept. Model-building times
+      and action-participation times have different intended uses. The paper permits human/system reasoners and intentionally
+      distinguishes reasoning from communication.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E03
+    - E04
+    - E05
+    - E09
+    - E10
+  D8_artifact_correspondence:
+    statement: 'The text describes OntoSpec semi-informal specifications and an environment extending TERMINAE as
+      being developed. No version-pinned executable OntoKADS module is present in the retained corpus. Its exact availability
+      and machine-checkable correspondence are open in #236; no source absence, license, class count, consistency
+      or generation success is inferred.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E13
+  D9_evaluation:
+    statement: Car diagnosis and calibration illustrate the proposed semantics, and calibration is described as an
+      ongoing evaluation application. Discussion says comparisons with CommonKADS are current work. There is no reported
+      test population, effect estimate or completed independent expert study here. The reviewer inspects source coherence
+      but does not reproduce an author experiment or execute ontology reasoning.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E11
+    - E13
+  D10_critical_synthesis:
+    statement: Strong prior coverage exists for mental reasoning activity, content/expression separation, temporally
+      classified modeling primitives and context-dependent knowledge roles. This narrows any later novelty claim.
+      Limits include conceptual/prototype status, deliberately narrow coordination scope, untested identity/role commitments
+      and formula defects. Comparisons must keep foundational and classification-level differences explicit. All later
+      uses remain proposals for the owner.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E07
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+catalog:
+- id: C01
+  label: Particular / PT
+  statement: 'REUSED_FOUNDATION: Top-level DOLCE population.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C02
+  label: Endurant / ED
+  statement: 'REUSED_FOUNDATION: Wholly present entity; includes participating contents.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C03
+  label: Perdurant / PD
+  statement: 'REUSED_FOUNDATION: Temporal occurrence; contrasted with an endurant.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C04
+  label: PhysicalObject / POB
+  statement: 'REUSED_FOUNDATION: Object with direct physical location.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C05
+  label: NonPhysicalObject / NPOB
+  statement: 'REUSED_FOUNDATION: Object without direct physical location.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C06
+  label: MentalObject / MOB
+  statement: 'REUSED_FOUNDATION: Private nonphysical object associated with an agentive.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C07
+  label: AgentivePhysicalObject / APO
+  statement: 'REUSED_FOUNDATION: Physical agentive category in Fig.2 and D1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C08
+  label: AgentiveSocialObject / ASO
+  statement: 'REUSED_FOUNDATION: Social agentive category; agentive is the union APO/ASO in footnote5.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C09
+  label: Event / EV
+  statement: 'REUSED_FOUNDATION: Non-cumulative perdurant branch.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C10
+  label: Stative / STV
+  statement: 'REUSED_FOUNDATION: Cumulative perdurant branch.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C11
+  label: State
+  statement: 'REUSED_FOUNDATION: Stative branch displayed in Fig.2.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C12
+  label: Process
+  statement: 'REUSED_FOUNDATION: Stative branch displayed in Fig.2; concepts of processes may be reasoning subjects.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C13
+  label: Achievement
+  statement: 'REUSED_FOUNDATION: Event branch displayed in Fig.2.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C14
+  label: Accomplishment / ACC
+  statement: 'REUSED_FOUNDATION: Non-atomic event branch.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C15
+  label: Action / AC
+  statement: 'REUSED_FOUNDATION: Intentional accomplishment.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C16
+  label: Quality
+  statement: 'REUSED_FOUNDATION: Top-level DOLCE branch shown but not developed.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C17
+  label: Abstract
+  statement: 'REUSED_FOUNDATION: Top-level DOLCE branch shown but not developed.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C18
+  label: Agentive
+  statement: 'REUSED_FOUNDATION: Bearer of knowledge/ability, potentially intentional and rational; not identical
+    to the Agent participation role.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C19
+  label: Reasoning
+  statement: 'DOMAIN: Action intended to transform the reasoner mental world; examples diagnosis, calibration and
+    hypothesizing.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C20
+  label: Reasoner
+  statement: 'DOMAIN: Agent participating in a reasoning; human or knowledge-based system, not supplied as an independently
+    axiomatized class here.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C21
+  label: Interaction
+  statement: 'DOMAIN: Action with a distinct additional agentive participant as in D1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C22
+  label: Communication
+  statement: 'DOMAIN: Interaction directed toward information exchange and disjoint from Reasoning in A3.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C23
+  label: Diagnosis
+  statement: 'DOMAIN: Reasoning example and object of Task classification in A4.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C24
+  label: Calibrating
+  statement: 'DOMAIN: Reasoning used to define CalibrationData.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C25
+  label: Goal / objective
+  statement: 'DOMAIN: Desired-state mental representation; a role-like participant, not proof the desired real state
+    exists.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C26
+  label: Task
+  statement: 'MODELING_META_PROPERTY: Classifies Reasoning-subsumed concepts at model-building times.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C27
+  label: Inference
+  statement: 'MODELING_META_PROPERTY: Alternative model-level classification of reasoning concepts; may change to
+    Task when a decomposition method is supplied.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C28
+  label: DomainConcept
+  statement: 'MODELING_META_PROPERTY: Modeling primitive exemplified by EmptyFuelTank.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C29
+  label: TransferFunction
+  statement: 'MODELING_META_PROPERTY: Classifies concepts subsumed by Communication.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C30
+  label: Input / Output
+  statement: 'MODELING_META_PROPERTY: Modeling primitives later specified as classifying Data/Result respectively;
+    not the contents themselves.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: C31
+  label: Document
+  statement: 'BORROWED_IDA: Material medium bearing a semiotic inscription; can include a sound-carrying medium.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C32
+  label: Expression
+  statement: 'BORROWED_IDA: Perceived signifier in a communication code; mental object branch in Fig.4.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C33
+  label: Content
+  statement: 'BORROWED_IDA: Code-independent signified, subdivided into Concept and Proposition.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C34
+  label: Concept
+  statement: 'BORROWED_IDA: Means of reference/classification, including concepts of states/processes, not the real-world
+    instance.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C35
+  label: Proposition
+  statement: 'BORROWED_IDA: Truth-bearing content with Concepts as subjects; can model a knowledge or mathematical
+    model.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C36
+  label: Subject
+  statement: 'BORROWED_IDA: Concept used by some Proposition; defined in D2.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C37
+  label: LinguisticObject
+  statement: 'BORROWED_IDA: Expression branch in Fig.4.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C38
+  label: IconicObject
+  statement: 'BORROWED_IDA: Expression branch in Fig.4.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C39
+  label: Term
+  statement: 'BORROWED_IDA: Linguistic expression category in Fig.4.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C40
+  label: Text
+  statement: 'BORROWED_IDA: Structured linguistic expression category in Fig.4.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C41
+  label: Discourse
+  statement: 'BORROWED_IDA: Statement/communicative signifier paired with Message.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C42
+  label: Message
+  statement: 'BORROWED_IDA: Proposition resulting from a discursive act.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C43
+  label: Assertion
+  statement: 'BORROWED_IDA: Proposition treated as true for an agent.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C44
+  label: Hypothesis
+  statement: 'BORROWED_IDA: Proposition arising from hypothetical reasoning.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C45
+  label: Information
+  statement: 'BORROWED_IDA: Message example resulting from informing.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C46
+  label: Complaint
+  statement: 'BORROWED_IDA: Message example resulting from complaining.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: C47
+  label: Patient
+  statement: 'PARTICIPATION_ROLE: Endurant affected in a perdurant through isAffectedBy.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C48
+  label: Data
+  statement: 'PARTICIPATION_ROLE: Content participating as action input; formally a Patient by A11/T2.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C49
+  label: Result
+  statement: 'PARTICIPATION_ROLE: Content participation at the action end is described; no symmetric fully labeled
+    result definition is supplied.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C50
+  label: CalibrationData
+  statement: 'PARTICIPATION_ROLE: Data of some Calibrating occurrence.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C51
+  label: ModelToCalibrate
+  statement: 'PARTICIPATION_ROLE: Conjunction of Model and CalibrationData.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C52
+  label: Model / CarModel
+  statement: 'PARTICIPATION_ROLE: Proposition with its own identity criterion; CarModel is an illustrative type.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C53
+  label: SolvingMethod
+  statement: 'PARTICIPATION_ROLE: Essential mental participant in reasoning; fuller modeling remains expansion work.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C54
+  label: Role
+  statement: 'ROLE_META_PROPERTY: Anti-rigid concept externally dependent on another entity.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C55
+  label: FormalRole
+  statement: 'ROLE_META_PROPERTY: Role carrying no identity criterion; Agent/Patient illustrate it.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C56
+  label: MaterialRole
+  statement: 'ROLE_META_PROPERTY: Role carrying identity inherited through a type; Student/Employee illustrate it.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C57
+  label: KnowledgeRole
+  statement: 'ROLE_META_PROPERTY: Role played by Content and dependent on an action, reasoning or communication.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C58
+  label: FormalKnowledgeRole
+  statement: 'ROLE_META_PROPERTY: KnowledgeRole without an identity criterion; Data/Result and specializations illustrate
+    it.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C59
+  label: MaterialKnowledgeRole
+  statement: 'ROLE_META_PROPERTY: KnowledgeRole carrying identity; ModelToCalibrate/DiagnosisHypothesis illustrate
+    it.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C60
+  label: Agent
+  statement: 'ROLE_META_PROPERTY: Formal participation role distinguished from the agentive bearer category.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C61
+  label: Determinant / Substrate
+  statement: 'ROLE_META_PROPERTY: Participation-role branches displayed in Fig.5; not independently defined in the
+    prose.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C62
+  label: DiagnosisResult
+  statement: 'ROLE_META_PROPERTY: Formal knowledge-role example displayed in Fig.5.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C63
+  label: DiagnosisHypothesis
+  statement: 'ROLE_META_PROPERTY: Material knowledge role combining Hypothesis and DiagnosisResult in Fig.5.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C64
+  label: Type
+  statement: 'ROLE_META_PROPERTY: Identity-supplying category in the role analysis; Model/Hypothesis are Fig.5 examples.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: C65
+  label: EmptyFuelTank
+  statement: 'EXAMPLE_FAMILY: May denote a state concept or an agent assertion with that concept as subject; not interchangeable
+    with the actual tank.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+- id: C66
+  label: EmptyFuelTankHypothesis
+  statement: 'EXAMPLE_FAMILY: Proposition resulting from hypothetical reasoning.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+- id: C67
+  label: LowBatteryLevelComplaint
+  statement: 'EXAMPLE_FAMILY: Message resulting from a complaining act.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+- id: C68
+  label: Perception/pathology qualifiers
+  statement: 'EXAMPLE_FAMILY: Visible/invisible/observed/observable/pathological qualify domain concepts; not declared
+    as a complete formal hierarchy here.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+- id: C69
+  label: Sign
+  statement: 'COMPARISON_CATEGORY: FormalKnowledgeRole played by a concept; contrasted with DnS region-parameter concepts.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: C70
+  label: Percept / ComputedObject
+  statement: 'COMPARISON_CATEGORY: COM comparison categories, not asserted OntoKADS classes.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: C71
+  label: s-description / c-description / InformationObject
+  statement: 'COMPARISON_CATEGORY: DnS comparison categories with proposed Proposition/Concept/Expression correspondences
+    and explicit qualifications.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: C72
+  label: Intention
+  statement: 'COMPARISON_CATEGORY: COM comparison object and possible part of reasoning; merger is proposed, not established.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+commitments:
+- id: K01
+  label: A1
+  statement: Reasoning(x) implies AC(x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K02
+  label: D1
+  statement: 'Interaction(x) iff AC(x) and there exist y,z,t: isAgentOf(y,x), z differs from y, (APO(z) or ASO(z))
+    and PC(z,x,t). This requires another agentive participant; explanatory influence is not separately axiomatized.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K03
+  label: A2
+  statement: Communication(x) implies Interaction(x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K04
+  label: A3
+  statement: Reasoning(x) implies not Communication(x); explicit disjointness direction.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K05
+  label: A4
+  statement: 'Example classification: classify(Task,Diagnosis,t1).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K06
+  label: A5
+  statement: 'Example classification: classify(FormalKnowledgeRole,CalibrationData,t2).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K07
+  label: A6
+  statement: 'Example classification: classify(DomainConcept,EmptyFuelTank,t3).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K08
+  label: A7
+  statement: classify(Task,x,t) implies subsumes(Reasoning,x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K09
+  label: A8
+  statement: classify(TransferFunction,x,t) implies subsumes(Communication,x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K10
+  label: A9
+  statement: hasForSubject(x,y) implies Proposition(x) and Concept(y).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K11
+  label: D2
+  statement: 'Subject(x) iff Concept(x) and there exists y: Proposition(y) and hasForSubject(y,x).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K12
+  label: A10
+  statement: 'isAffectedBy(x,y) implies there exists t: PC(x,y,t).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K13
+  label: D3
+  statement: 'Patient(x) iff there exists y: isAffectedBy(x,y).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K14
+  label: T1
+  statement: Patient(x) implies ED(x); labeled theorem, not independently proved here.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K15
+  label: A11
+  statement: isDataOf(x,y) implies isAffectedBy(x,y).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K16
+  label: A12
+  statement: isDataOf(x,y) implies Content(x) and Action(y). Source writes Action rather than the earlier AC abbreviation.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K17
+  label: A13
+  statement: 'isDataOf(x,y) implies there exists t, for all t-prime: (PRE(y,t-prime) and t-prime <= t) implies PC(x,y,t-prime).
+    Preserve the existential cutoff; no PRE(y,t) or nonempty-prefix premise is printed.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K18
+  label: D4
+  statement: 'As printed: Data(x) =def isDataOf(x,y). The y is unbound. An existential repair is a candidate reading,
+    not the literal source formula.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K19
+  label: T2
+  statement: Data(x) implies Patient(x); source-labeled theorem, affected by how D4 is read.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K20
+  label: T3
+  statement: Data(x) implies Content(x); source-labeled theorem, not a rerun proof.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K21
+  label: D5
+  statement: 'CalibrationData(x) iff there exists y: isDataOf(x,y) and Calibrating(y).'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K22
+  label: D6
+  statement: ModelToCalibrate(x) iff Model(x) and CalibrationData(x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K23
+  label: PC / temporal participation
+  statement: 'PC(x,y,t): an endurant participates in a perdurant at time t. Footnote15 cites DOLCE Ad33 and Ad35,
+    including time typing and existence of participation for endurants.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+  - E09
+- id: K24
+  label: CF / classify
+  statement: The time-indexed classification relation is extended to concepts classified by meta-properties. Meta-level
+    labels are not object-level subclass axioms.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K25
+  label: subsumes / subsume
+  statement: Footnote11 defines necessary instance inclusion; spelling differs between prose footnote and displayed
+    predicates.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: K26
+  label: isAgentOf
+  statement: Agent participation predicate used in D1; complete role axiom system is not printed.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: K27
+  label: PRE and temporal order
+  statement: Presence of a perdurant at a time and <= used in A13; no full temporal theory is supplied in this report.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: K28
+  label: hasForSubject
+  statement: Proposition-to-Concept relation with explicit signature in A9; Subject is the inverse-existential class
+    in D2.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K29
+  label: Content/Expression/Document links
+  statement: Many expressions can convey the same content and many material inscriptions can realize an expression.
+    Semantic links are explained but not given named formula axioms in this report.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: K30
+  label: Role and identity constraints
+  statement: KnowledgeRole specializes role/dependence to Content/action; FormalKnowledgeRole lacks identity and MaterialKnowledgeRole
+    carries identity via a type. Fig.5 organizes examples; no executable modal characterization is supplied.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: K31
+  label: Reasoning/Communication goals
+  statement: Prose distinguishes transforming a mental world from information exchange; A1-A3 alone do not encode
+    goal content or all mental-participant restrictions.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  - E06
+scenarios:
+- id: S01
+  label: Author questions
+  statement: What entities participate in reasoning/communication; how they participate; and which meta-properties
+    characterize these roles. These are the three explicit kernel questions.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: S02
+  label: Positive car diagnosis
+  statement: Treat the empty-fuel-tank hypothesis as a Proposition whose Subject is the state Concept; let it play
+    a diagnosis-result role. The actual fuel tank is not the direct mental-content participant.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E07
+  - E08
+  - E10
+- id: S03
+  label: Positive calibration
+  statement: A mathematical Model plays CalibrationData for a Calibrating occurrence, yielding ModelToCalibrate through
+    D6. Model-building primitive labeling is a different relation from participation in that occurrence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E09
+  - E10
+- id: S04
+  label: Adverse temporal input
+  statement: Choose a cutoff earlier than every time at which y is present. Then the antecedent inside A13 is false
+    throughout, so the displayed implication alone need not require x to participate at the action start. This is
+    a logical reading, not a solver execution; added premises could block it.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: S05
+  label: Scope adverse case
+  statement: A collaborative joint design meeting needs coordination of multiple reasoners and decisions. The current
+    paper explicitly omits collaborative problem solving and coordination; no global claim about later OntoKADS is
+    made.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E11
+evaluation:
+  Verification:
+    statement: Displayed definitions and diagrams permit source-level checking; D4 and A13 expose formalization questions.
+      No executed consistency/proof suite or generated-model correctness test is reported or rerun.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E09
+    - E13
+  Validation:
+    statement: Diagnosis and calibration motivate intended modeling distinctions. The report does not present independent
+      expert acceptance, study sampling or user success evidence.
+    basis: NOT_REPORTED
+    evidence:
+    - E04
+    - E11
+  Evaluation:
+    statement: Comparison with CommonKADS expertise models is described as ongoing; no completed comparative sample,
+      metrics or quantified effect appears here.
+    basis: NOT_REPORTED
+    evidence:
+    - E11
+    - E13
+  Assessment:
+    statement: Reviewer judges the role/content distinctions relevant prior overlap, with explicit assumptions and
+      limitations. This contextual judgment is not author approval or a release decision.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E07
+    - E10
+    - E12
+  Assurance:
+    statement: Versioned source and exact locators support a bounded review account. The report supplies no independent
+      assurance case, certification or end-to-end reproducibility package.
+    basis: NOT_REPORTED
+    evidence:
+    - E01
+    - E13
+artifact:
+  issue: 236
+  status: FORMAL_DISTRIBUTION_NOT_IDENTIFIED_IN_RETAINED_CORPUS
+  version_relation: 'The report names OntoSpec and a developing TERMINAE extension, but gives no immutable executable-module
+    ref that can be matched to these 2005 formulas. #236 retains discovery, license and technical inspection. No repository
+    absence or satisfiability is inferred.'
+findings:
+- id: F01
+  label: Prior overlap
+  statement: Reasoning as purposeful mental transformation with content participants is explicit prior art. It prevents
+    an unsupported universal claim that prior ontologies only model static concepts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+  - E08
+- id: F02
+  label: Classification-level discipline
+  statement: A concept changing its Task/Inference label is a model-building event; it is not evidence that a domain
+    entity changed its essential type. Treat both temporal axes explicitly in later comparisons.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: F03
+  label: D4 variable scope
+  statement: The printed definition has an unbound y. Executable reuse requires an explicit, reviewed quantification
+    decision; silently inserting exists-y would conceal a source discrepancy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: F04
+  label: A13 weaker than prose
+  statement: The displayed existential cutoff does not by itself force a nonempty prefix of participation. The positive
+    prose intent and the weaker printed formula must be retained separately.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: F05
+  label: Method claim remains untested
+  statement: The proposed ontology-first modeling workflow is clear, but paper evidence does not establish that it
+    improves correctness, reuse, effort or agreement over CommonKADS.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E13
+- id: F06
+  label: Proposed mappings are not equivalences
+  statement: The COM merger and DnS/I&DA correspondences are tentative and qualified by differences over regions,
+    signs, mental objects and content. They cannot be imported as exact semantic equivalences.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+questions:
+- id: Q01
+  label: Executable artifact
+  statement: 'Can an author-controlled formal version corresponding to this report be recovered, and how are D4, temporal
+    inputs/results and meta-properties represented? Track in #236.'
+  basis: UNKNOWN
+  evidence:
+  - E09
+  - E13
+- id: Q02
+  label: Identity and context
+  statement: Which identity conditions distinguish content across agents and communication codes, and how do later
+    versions treat shared content versus private mental objects? The report states the distinction without a complete
+    identity decision procedure.
+  basis: UNKNOWN
+  evidence:
+  - E03
+  - E07
+  - E10
+- id: Q03
+  label: Method evaluation
+  statement: Are the announced model comparisons, role-identification reliability or task-method expansions completed
+    in later primary publications? Citation expansion must be separately versioned.
+  basis: UNKNOWN
+  evidence:
+  - E11
+  - E12
+  - E13
+synthesis:
+- id: U01
+  label: Terminology and scope
+  statement: 'Candidate synthesis distinction: reasoning occurrence, conceptual content, expression/physical carrier
+    and real-world subject need separate comparison cells. No Clariceptify change is made.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E08
+- id: U02
+  label: Future test candidate
+  statement: Retain the D4/A13 discrepancies and the non-collaborative boundary as candidate checks for future method/constraint
+    design, subject to owner direction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+- id: U03
+  label: Batch integration
+  statement: 'Feed evidence into #252 with LMM/O4OA. Until O4OA is reviewed, any synthesis of this batch is partial
+    and cannot close its final comparison.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+  - E12

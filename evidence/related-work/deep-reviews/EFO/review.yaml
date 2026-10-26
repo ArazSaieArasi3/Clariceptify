@@ -1,0 +1,1102 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: EFO
+issue: 80
+review_date: '2026-10-26'
+reviewer: AI-assisted primary-source critical inspection; no independent expert review
+baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
+status: REVIEW_COMPLETE
+identity:
+  title: Fundamental choices in Epistemic Foundational Ontology
+  version: Acquired publisher PDF, printed pp.53-73 in volume5/number3 (2025); publisher webpage dated2026-09-22
+  boundary: Gilles Kassel. PDF title is expanded; publisher webpage uses Fundamental choices in EFO and cites2026,
+    while the issue and PDF footer say2025. Every PDF footer prints DOI10.5281/zenodo.17209778. Preserve it as the
+    printed deposit DOI, without inventing a separate journal DOI or silently normalizing date/title discrepancies.
+    PDF p.n corresponds to printed p.(n+52).
+  authors:
+  - Gilles Kassel
+  year: null
+  issue_year: 2025
+  publisher_date: '2026-09-22'
+  doi: 10.5281/zenodo.17209778
+  doi_scope: Printed throughout the PDF; Zenodo deposit identity, no separate journal DOI established
+  url: https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175
+source:
+  filename: EFO-publisher.pdf
+  sha256: 8cf3372ac6bd19b88dfc15f07485695a6aab0f45d91d7864afef6f5f353729a6
+  pdf_pages: 21
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+closure_boundary: 'This completes a source-bound critical paper dossier, not independent scientific acceptance, a
+  reasoner run, author-experiment reproduction, formal-artifact completion or a Clariceptify model change. Named findings
+  and technical tasks remain unresolved where stated. Disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS; supported overlap
+  is recorded, but no reuse/alignment/extension/rejection is applied to Clariceptify.'
+evidence:
+- id: E01
+  pages:
+  - 1
+  - 2
+  locator: printed pp.53-54 / PDF pp.1-2, abstract and sec.1; footers throughout
+  summary: Epistemic rather than referential ontology; foundational thought-object categories; article structure and
+    bibliographic identity.
+- id: E02
+  pages:
+  - 2
+  - 3
+  - 4
+  - 5
+  locator: printed pp.54-57 / PDF pp.2-5, sec.2 preface and2.1
+  summary: Nominalism about universals; author criticism of realism; Twardowskian act/concept/thought-object/transcendent-reference
+    account; singular/general thought objects.
+- id: E03
+  pages:
+  - 5
+  - 6
+  locator: printed pp.57-58 / PDF pp.5-6, sec.2.2 Concept vs conception
+  summary: Persistent concept versus changing conception; private mental files; intersubjectivity through psychosocial
+    similarity, naming, ostension and education.
+- id: E04
+  pages:
+  - 6
+  - 7
+  locator: printed pp.58-59 / PDF pp.6-7, sec.2.3
+  summary: Descriptive metaphysics constrained by psychological/scientific accounts; manifest/scientific color conceptions
+    and complementary perspectives.
+- id: E05
+  pages:
+  - 8
+  - 9
+  locator: printed pp.60-61 / PDF pp.8-9, sec.2.4
+  summary: Critique of qua-objects and embodiment; physical connections instead of material/intensional mixtures;
+    multiplicity located in conceptual knowledge, constitution deferred.
+- id: E06
+  pages:
+  - 9
+  - 10
+  locator: printed pp.61-62 / PDF pp.9-10, sec.3 preface and Fig.1
+  summary: Author as selected reference subject; common-sense/science-informed choices; presentism/endurantism/fictional
+    realism; approximately thirty categories claimed.
+- id: E07
+  pages:
+  - 10
+  - 11
+  - 12
+  locator: printed pp.62-64 / PDF pp.10-12, sec.3.1 and footnotes7-11
+  summary: Worldly entities/worlds, physical/mental partition, timeless spatial-region/time and temporary entities;
+    presentist three-dimensional endurance including unusual treatment of occurrents.
+- id: E08
+  pages:
+  - 12
+  - 13
+  locator: printed pp.64-65 / PDF pp.12-13, sec.3.2
+  summary: Subject-specific concepts, changing conceptions, single-concept object claim; reference to transcendent
+    entity versus conceptual representation links.
+- id: E09
+  pages:
+  - 13
+  locator: printed p.65 / PDF p.13, sec.3.3; footnotes13-14
+  summary: Fictional character as real cultural artifact versus inhabitant of fictional world; cited external psychological
+    study, world-relative reference and noninteraction.
+- id: E10
+  pages:
+  - 13
+  - 14
+  locator: printed pp.65-66 / PDF pp.13-14, sec.3.4
+  summary: Temperature example; material patient/physician/thermometer, quality/magnitude, conceptual function, event
+    as psychical continuant and connection truthmakers.
+- id: E11
+  pages:
+  - 14
+  - 15
+  locator: printed pp.66-67 / PDF pp.14-15, sec.3.5
+  summary: Multiple ephemeral concepts of Paul represent an encyclopedic concept; co-reference/aspect representation
+    without identifying all concepts.
+- id: E12
+  pages:
+  - 15
+  - 16
+  locator: printed pp.67-68 / PDF pp.15-16, sec.4 preface,4.1, A1-A7 and footnote15
+  summary: FOL quantification restricted to singular thought objects; world uniqueness and temporary existence/position;
+    prototype/stereotype choice open.
+- id: E13
+  pages:
+  - 16
+  - 17
+  locator: printed pp.68-69 / PDF pp.16-17, sec.4.2, A8-A11 and footnotes16-17
+  summary: Each concept has a unique human possessor; each entity has a unique concept through inverse object relation.
+    Collective subjects/general concepts not formalized.
+- id: E14
+  pages:
+  - 17
+  locator: printed p.69 / PDF p.17, A12-A15 and D1-D2
+  summary: Transcendent targets excluded from quantification; existence encoded as a concept predicate; represents
+    links concepts and propagates positive/negative reference status. Source predicate spelling mismatches are visible.
+- id: E15
+  pages:
+  - 17
+  - 18
+  locator: printed pp.69-70 / PDF pp.17-18, sec.5 Conclusion
+  summary: Guidelines and incomplete ontology; missing domains and concrete application completion remain future work.
+- id: E16
+  pages:
+  - 18
+  - 19
+  - 20
+  - 21
+  locator: printed pp.70-73 / PDF pp.18-21, References
+  summary: Primary philosophical and earlier author works are cited; cited experiments are external evidence, not
+    studies executed in this EFO article.
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  visual_pages:
+  - 10
+  - 15
+  - 16
+  - 17
+  catalog_boundary: All21 PDF pages and all numbered sections/subsections, Fig.1, footnotes and references were inspected.
+    All33 distinct category labels visible in Fig.1 are inventoried individually, separately from additional prose
+    notions. This reviewer figure-label population is not the author approximate count, a released FOL signature or
+    an OWL class count. All15 axioms and two definitions are individually recorded, including visible spelling discrepancies.
+  units:
+  - unit: Abstract and sec.1 Introduction
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Sec.2 Basic commitments preface
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Sec.2.1 Mental concepts rather than universals
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Sec.2.2 Concept versus conception
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Sec.2.3 Manifest/scientific images
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Sec.2.4 Multiplicative/reductionist approaches
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Sec.3 Overview preface
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Sec.3.1 Worldly entities
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Sec.3.2 Referential/nonreferential concepts
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Sec.3.3 Fictional worlds
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Sec.3.4 Substrates, qualities and magnitudes
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Sec.3.5 Various representations
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Sec.4 Axiomatic outline preface
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Sec.4.1 Physical/mental worldly entities
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Sec.4.2 Referential/nonreferential concepts
+    status: REVIEWED
+    evidence:
+    - E13
+    - E14
+  - unit: Sec.5 Conclusion
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Figure1 complete category map
+    status: REVIEWED
+    evidence:
+    - E06
+    - E07
+    - E10
+  - unit: Footnotes1-17 and References; no tables/appendices
+    status: REVIEWED
+    evidence:
+    - E01
+    - E02
+    - E04
+    - E05
+    - E07
+    - E09
+    - E12
+    - E13
+    - E16
+dimensions:
+  D1_identity_coverage:
+    statement: The full21-page publisher PDF was read with printed/PDF locators and visual equation/diagram checks.
+      Preserve the expanded PDF title, shortened webpage title,2025 issue versus2026 webpage date and footer deposit
+      DOI. These metadata differences do not justify inventing a final normalized bibliographic record.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E16
+  D2_problem_contribution:
+    statement: The author proposes a foundational epistemic ontology for knowledge as subject-held general thought
+      objects, rather than a direct realist inventory of universals. Contributions are explicit metaphysical choices,
+      a category map and a small FOL outline for singular thought objects. Its claimed role as reference ontology
+      is an aspiration grounded in defended principles, not a demonstrated universal consensus.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E01
+    - E02
+    - E06
+    - E12
+    - E15
+  D3_method:
+    statement: The method combines philosophical argument, interpretation of psychology/science, descriptive examples
+      and illustrative formal axioms. The author explicitly chooses himself as the reference subject. Cited psychological
+      experiments motivate commitments but are external studies, not a newly run EFO validation sample. Complete domain
+      expansion and applications remain future work.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E05
+    - E06
+    - E09
+    - E12
+    - E15
+  D4_requirements:
+    statement: Intended function is a reference ontology enabling knowledge sharing while preserving private concepts,
+      dynamic conceptions, differing subject perspectives and fictional reference. No explicit executable CQ suite
+      is supplied. Reconstructed cases include common-sense/scientific color, a cultural fictional character versus
+      an in-world person, temperature-change judgment and multiple Paul aspects.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E09
+    - E10
+    - E11
+  D5_concepts:
+    statement: The main levels are concept vehicle, changing conception/content, thought object and transcendent target.
+      General thought objects organize categories, but the FOL outline quantifies over singular thought objects only.
+      Worldly entities are physical/mental, temporary entities endure, and events are treated as psychical continuants.
+      This differs substantially from same-named DOLCE/BFO categories.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E02
+    - E03
+    - E07
+    - E08
+    - E10
+    - E12
+    - E13
+  D6_relations_formalization:
+    statement: The core uses in, presentAt, position, possessedBy, object and represents plus an existence-as-such
+      predicate. A2 enforces one world per worldly entity; A9 one human possessor per concept; A11 one inverse concept
+      per entity. It does not state one object per concept. Printed presentAt/presentAt-with-accent and existsAsSuch/existsInItself
+      spellings differ. A14-A15 can conflict for a source representing targets of opposite reference status. No solver
+      execution is claimed.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E12
+    - E13
+    - E14
+  D7_grounding:
+    statement: Foundations are conceptualist/nominalist, subject-relative, presentist and endurantist, with realism
+      of fictional worlds. Thought objects can have world-relative physical status while their conception is mental.
+      The transcendent target lies outside the formal quantification domain, so reference existence is unary rather
+      than a binary edge to an external object. Generic or collective subjects are not covered by the formal core.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E02
+    - E06
+    - E07
+    - E09
+    - E13
+    - E14
+  D8_artifact_correspondence:
+    statement: 'The PDF contains the category figure and17 labeled formulas; no separately versioned machine-readable
+      module is identified in the retained corpus. FOL suitability itself remains revisable pending prototype/stereotype
+      commitments. #242 retains formal-artifact discovery and bounded technical inspection; absence in this corpus
+      is not a claim that no external artifact exists.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E06
+    - E12
+    - E13
+    - E14
+    - E15
+  D9_evaluation:
+    statement: The article gives arguments and examples, not a reported ontology-reasoner/prover run, new participant
+      study, application benchmark or independent expert acceptance. An external approximately hundred-subject fiction
+      experiment is cited as motivation. It must not be counted as an EFO user-validation population.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E09
+    - E12
+    - E15
+    - E16
+  D10_critical_synthesis:
+    statement: Strong prior overlap concerns explicit mental conceptualization, subject possession, dynamic content
+      and concept-to-concept representation. For later comparison, preserve foundational incompatibilities and distinguish
+      category overview from the narrower FOL slice. Limitations are author-specific reference perspective, unformalized
+      general/collective concepts, incomplete temporal/content dynamics, notation defects and untested computational
+      adequacy.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E06
+    - E08
+    - E11
+    - E12
+    - E13
+    - E14
+    - E15
+catalog:
+- id: C01
+  label: Entity
+  statement: 'FIGURE_CATEGORY: Root of the category overview.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C02
+  label: Worldly Entity
+  statement: 'FIGURE_CATEGORY: An entity in a world; physical/mental partition is stated in sec.3.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C03
+  label: World
+  statement: 'FIGURE_CATEGORY: World containing worldly entities; real/fictional distinction.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C04
+  label: Physical Entity
+  statement: 'FIGURE_CATEGORY: World-relative independence from being thought by subjects in that world.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C05
+  label: Mental Entity
+  statement: 'FIGURE_CATEGORY: Mental branch in the selected world, not a label applied indiscriminately to all fictional
+    inhabitants.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C06
+  label: Spatial Region
+  statement: 'FIGURE_CATEGORY: Timeless spatial category; distinct from temporary occupants.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C07
+  label: Time
+  statement: 'FIGURE_CATEGORY: Timeless temporal category in the account; not assumed to be a spatial-like dimension.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C08
+  label: Temporary Entity
+  statement: 'FIGURE_CATEGORY: Exists at some times and not at others; endowed with world occupancy.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C09
+  label: Real World
+  statement: 'FIGURE_CATEGORY: World of causally real physical entities; multiverse motivation is noted.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C10
+  label: Temporary Physical Entity
+  statement: 'FIGURE_CATEGORY: Temporary physical branch in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C11
+  label: Temporary Mental Entity
+  statement: 'FIGURE_CATEGORY: Temporary mental branch in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C12
+  label: Physical Substrate
+  statement: 'FIGURE_CATEGORY: Physical branch specializing into object and process.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C13
+  label: Physical Quality
+  statement: 'FIGURE_CATEGORY: Physical branch specializing into object/process qualities.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C14
+  label: Physical Magnitude
+  statement: 'FIGURE_CATEGORY: Magnitude branch; temperature example varies continuously.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C15
+  label: Physical Connection
+  statement: 'FIGURE_CATEGORY: Connections support material integrity and truthmakers of qualitative change.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C16
+  label: Psychical Continuant
+  statement: 'FIGURE_CATEGORY: Mental persistent category; includes Concepts, Events, Properties, Propositions and
+    fictional-world structure in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C17
+  label: Psychical Occurrent
+  statement: 'FIGURE_CATEGORY: Mental occurrence branch, with Judging and Representing.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C18
+  label: Physical Object
+  statement: 'FIGURE_CATEGORY: Material object category, e.g. patient/physician/thermometer.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C19
+  label: Physical Process
+  statement: 'FIGURE_CATEGORY: Process branch under physical substrate; avoid equating its name to DOLCE perdurant.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C20
+  label: Object Quality
+  statement: 'FIGURE_CATEGORY: Quality inherent to an object; temperature example.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C21
+  label: Process Quality
+  statement: 'FIGURE_CATEGORY: Quality of process, displayed in Fig.1 without a detailed axiom set here.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C22
+  label: Concept
+  statement: 'FIGURE_CATEGORY: Subject-specific vehicle for thinking its object; not identical to variable conception.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C23
+  label: Event
+  statement: 'FIGURE_CATEGORY: Psychical Continuant historically accounting for a change; not a materially existing
+    change itself in the example.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C24
+  label: Property
+  statement: 'FIGURE_CATEGORY: Psychical continuant category; relation specializes it in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C25
+  label: Proposition
+  statement: 'FIGURE_CATEGORY: Psychical continuant category displayed without detailed core axioms here.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C26
+  label: Fictional World
+  statement: 'FIGURE_CATEGORY: Created world in which characters can be physical; also presented within the mental
+    taxonomy.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C27
+  label: Referential Concept
+  statement: 'FIGURE_CATEGORY: Concept with an in-itself existing represented target; D1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C28
+  label: Non-referential Concept
+  statement: 'FIGURE_CATEGORY: Concept lacking that reference status; D2.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C29
+  label: State
+  statement: 'FIGURE_CATEGORY: Specialization of Event in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C30
+  label: Change
+  statement: 'FIGURE_CATEGORY: Specialization of Event in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C31
+  label: Relation
+  statement: 'FIGURE_CATEGORY: Specialization of Property in Fig.1.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C32
+  label: Judging
+  statement: 'FIGURE_CATEGORY: Psychical Occurrent branch; existence attribution is an act of judgment.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C33
+  label: Representing
+  statement: 'FIGURE_CATEGORY: Psychical Occurrent branch; do not confuse with binary represents between concepts.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: C34
+  label: Thought object
+  statement: 'PROSE_DISTINCTION: Immanent singular/general object with properties, not the transcendent referent.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: C35
+  label: Conception
+  statement: 'PROSE_DISTINCTION: Content associated with a concept, able to vary while the concept endures.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+- id: C36
+  label: Subject / Human Being
+  statement: 'PROSE_DISTINCTION: Default author reference subject; the core formalizes individual humans, not collective
+    agents.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E13
+- id: C37
+  label: Singular versus general object
+  statement: 'PROSE_DISTINCTION: Singular examples represent particular individuals; general thought objects support
+    abstraction taxonomy, excluded from the current FOL slice.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E13
+- id: C38
+  label: Mental file
+  statement: 'PROSE_DISTINCTION: Vehicle/content framework used to explain stable and ephemeral representations; private
+    files versus ideal shared file.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+  - E11
+- id: C39
+  label: Manifest versus scientific image
+  statement: 'PROSE_DISTINCTION: Complementary conceptions of one physical reality, illustrated through colors.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+- id: C40
+  label: Function / Role
+  statement: 'PROSE_DISTINCTION: Conceptual/observer-dependent attributed property, not an additional intrinsic material
+    component.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+  - E10
+- id: C41
+  label: Nuclear versus extranuclear property
+  statement: 'PROSE_DISTINCTION: Object/objectOf are treated as thought-relative extra-nuclear properties unlike color/shape
+    of the represented object.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+- id: C42
+  label: Prototype / Stereotype
+  statement: 'PROSE_DISTINCTION: Alternative precise natures of thought objects left open in footnote15; logic may
+    be adapted.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: C43
+  label: Character1 versus character2
+  statement: 'PROSE_DISTINCTION: Real cultural artifact created by an author versus the embodied inhabitant of a fictional
+    world.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+- id: C44
+  label: Ephemeral versus encyclopedic concept
+  statement: 'PROSE_DISTINCTION: Aspect-bound Paul concepts represent the object of a stable idealized file; co-reference
+    is mediated rather than concept identity.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E11
+commitments:
+- id: K01
+  label: A1
+  statement: in(x,w) implies WorldlyEntity(x) and World(w).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K02
+  label: A2
+  statement: 'WorldlyEntity(x) implies exists-unique w: World(w) and in(x,w). This encodes exactly one world per entity,
+    not a separate axiom about all possible cross-world counterparts.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K03
+  label: A3
+  statement: presentAt(x,t) implies TemporaryEntity(x) and Time(t).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K04
+  label: A4
+  statement: TemporaryEntity(x) implies some Time t with presentAt(x,t), and some Time t with NOT presentAt-accented(x,t).
+    The printed second predicate contains an accented e; retain the mismatch rather than silently unifying symbols.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K05
+  label: A5
+  statement: position(x,r,t) implies Entity(x), SpatialRegion(r) and Time(t).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K06
+  label: A6
+  statement: position(x,r,t) implies presentAt(x,t).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K07
+  label: A7
+  statement: TemporaryEntity(x) implies some r,t with SpatialRegion(r), Time(t) and position(x,r,t). It does not state
+    a position for every present time or position uniqueness.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: K08
+  label: A8
+  statement: possessedBy(x,y) implies Concept(x) and HumanBeing(y).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+- id: K09
+  label: A9
+  statement: 'Concept(x) implies exists-unique y: HumanBeing(y) and possessedBy(x,y). Individual human possessor,
+    not collective subject.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+- id: K10
+  label: A10
+  statement: object(x,y) implies Concept(x) and Entity(y).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+- id: K11
+  label: A11
+  statement: 'Entity(x) implies exists-unique y: object(y,x). This gives each entity one concept; it does not give
+    each concept exactly one object.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+- id: K12
+  label: A12
+  statement: 'As printed: existsAsSuch(x) implies Concept(x). Surrounding prose and D1-D2 instead use existsInItself.
+    No equivalence axiom between these names is printed.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: K13
+  label: D1
+  statement: ReferentialConcept(x) iff Concept(x) and existsInItself(x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: K14
+  label: D2
+  statement: Non-ReferentialConcept(x) iff Concept(x) and NOT existsInItself(x). Predicate typography includes a hyphen;
+    implementation needs an explicit encoding decision.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: K15
+  label: A13
+  statement: represents(x,y) implies Concept(x) and Concept(y); its intended meaning concerns the objects of those
+    concepts.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: K16
+  label: A14
+  statement: represents(x,y) and ReferentialConcept(y) imply ReferentialConcept(x).
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: K17
+  label: A15
+  statement: represents(x,y) and Non-referentialConcept(y) imply Non-referentialConcept(x). Capitalization differs
+    across formulas; preserve source identity.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: K18
+  label: objectOf
+  statement: Converse of object is explained in prose; a standalone converse equation is not printed.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+- id: K19
+  label: Physical/mental partition
+  statement: Worldly entities partition into physical and mental, as stated in sec.3.1. Figure1 also uses multiple
+    classification axes; figure lines alone do not establish a complete disjointness axiomatization.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+- id: K20
+  label: Figure1 subtype groups
+  statement: Temporary physical/mental branches, substrate object/process, quality object/process-quality, psychical
+    continuant/occurrent, concept referential/nonreferential, event state/change, property relation and occurrent
+    judging/representing are displayed. Complete logical subclass/disjointness axioms are not supplied for them in
+    sec.4.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  - E10
+- id: K21
+  label: Time/content dynamics
+  statement: Conceptions can change while their concept persists, but the core has no time-indexed conception/content
+    predicate. Temporary existence constraints are not a full implementation of this dynamic-content theory.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+  - E08
+  - E12
+  - E13
+- id: K22
+  label: Quantification restriction
+  statement: Core domain is singular thought objects, not universals or external transcendent entities. Footnote17
+    says general concepts require reification/predicate-level extension.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+  - E13
+  - E14
+scenarios:
+- id: S01
+  label: Positive perspective pair
+  statement: Common-sense color quality and scientific surface-process account provide different thought objects/conceptions
+    of one physical reality; they must not be collapsed into numerically different material objects merely because
+    their descriptions differ.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+- id: S02
+  label: Positive world-relative fiction
+  statement: Distinguish the created Holmes cultural artifact from the person in the fictional world; physical/mental
+    status is relative to the relevant world and level of analysis.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+- id: S03
+  label: Positive aspect representation
+  statement: Different ephemeral Paul concepts can represent the encyclopedic file object without asserting that all
+    concepts themselves are identical or that Paul has temporal parts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+- id: S04
+  label: Adverse mixed reference propagation
+  statement: If one concept x represents both a referential concept and a nonreferential concept, A14-A15 derive both
+    statuses for x. Under D1-D2 with normalized predicate names this entails a contradiction. This is a conditional
+    manual consequence, not an executed prover result or proof that the whole ontology is inconsistent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+- id: S05
+  label: Adverse uniqueness shortcut
+  statement: A11 constrains the inverse object relation; a candidate model in which one concept has two different
+    entity objects is not excluded by that formula alone. Do not claim the formula enforces one object per concept.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+- id: S06
+  label: Uncovered collective subject
+  statement: A jointly authored reference ontology cannot simply be assigned a collective possessor under A8-A9, because
+    HumanBeing is the explicit range and collective subjects are deferred.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+evaluation:
+  Verification:
+    statement: FOL formulas are an illustrative outline; no implemented theorem-prover/model-finder or consistency
+      execution is reported. Reviewer flags symbol and cardinality issues by direct reading.
+    basis: NOT_REPORTED
+    evidence:
+    - E12
+    - E13
+    - E14
+  Validation:
+    statement: The author cites philosophical/psychological support, including an external fiction experiment; no
+      independent EFO expert acceptance or own user-validation sample is reported.
+    basis: NOT_REPORTED
+    evidence:
+    - E06
+    - E09
+    - E16
+  Evaluation:
+    statement: No application benchmark, coverage test, comparison metrics or executed CQ contract is reported. Concrete
+      applications and completeness are future objectives.
+    basis: NOT_REPORTED
+    evidence:
+    - E12
+    - E15
+  Assessment:
+    statement: The reviewer judges the epistemic distinctions relevant and the formalization scope narrower than the
+      overview. This is a bounded analytic judgment, not acceptance of the chosen metaphysics.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E06
+    - E12
+    - E13
+    - E14
+  Assurance:
+    statement: Declared commitments and source-linked formulas support traceable argument, not a certified or independently
+      assessed assurance case. Missing domains and computational evidence remain explicit.
+    basis: NOT_REPORTED
+    evidence:
+    - E12
+    - E15
+artifact:
+  issue: 242
+  status: SEPARATE_MACHINE_READABLE_CORE_NOT_IDENTIFIED_IN_RETAINED_CORPUS
+  version_relation: 'The acquired PDF is the available formal evidence. A1-A15/D1-D2 are not a released, machine-checked
+    FOL distribution. #242 must locate an authoritative artifact or record bounded negative retrieval evidence; no
+    external nonexistence, license or class count is inferred.'
+findings:
+- id: F01
+  label: Epistemic prior overlap
+  statement: Explicit mental conceptualization, concept possession and content dynamics precede this comparison; label-level
+    claims that no prior ontology models conceptualization are indefensible.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E03
+  - E08
+- id: F02
+  label: Signature mismatches
+  statement: A4 prints an accented presentAt occurrence; A12 uses existsAsSuch while prose/D1-D2 use existsInItself;
+    nonreferential-predicate capitalization also varies. A future executable encoding must preserve and explicitly
+    resolve these discrepancies.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E14
+- id: F03
+  label: Cardinality direction
+  statement: A11 states one concept per entity; it does not formalize the converse unique-object condition. The prose
+    assertion and exact axiom consequence need separate comparison cells.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E13
+- id: F04
+  label: Formal slice excludes its general category purpose
+  statement: The overview concerns general thought-object categories, while footnote17 restricts the formal core to
+    singular objects. A claim that the full category framework is formalized would exceed the stated scope.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E12
+  - E13
+- id: F05
+  label: Representational conflict case
+  statement: Opposite reference statuses in targets can propagate to the same source concept under A14-A15. Determine
+    intended constraints before reuse; the review does not assert global inconsistency.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+- id: F06
+  label: Selection and validation limits
+  statement: A chosen author reference subject with explicitly defended metaphysics does not establish intersubjective
+    agreement or empirical superiority; the cited fiction study is not an EFO validation experiment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E09
+  - E15
+- id: F07
+  label: Different meaning of event and property
+  statement: EFO Event as PsychicalContinuant and categories as thought objects cannot be mapped to DOLCE/BFO names
+    by string equality. Any later mapping needs role/scope/quantification evidence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E07
+  - E10
+questions:
+- id: Q01
+  label: Formal artifact and repairs
+  statement: 'Is an authoritative formal distribution available, and are A4/A12 spelling and opposite-status propagation
+    handled there? #242 retains this work.'
+  basis: UNKNOWN
+  evidence:
+  - E12
+  - E14
+  - E15
+- id: Q02
+  label: General and collective subjects
+  statement: How are general concepts, multiple people and collective reference ontologies encoded beyond the singular
+    human core? Both boundaries are explicitly acknowledged.
+  basis: UNKNOWN
+  evidence:
+  - E13
+- id: Q03
+  label: Content identity and time
+  statement: Which axioms identify a stable concept across changing conceptions and distinguish true shared reference
+    from merely similar contents? The account motivates these distinctions without completing their computation.
+  basis: UNKNOWN
+  evidence:
+  - E03
+  - E08
+  - E11
+  - E13
+synthesis:
+- id: U01
+  label: Foundational comparison
+  statement: 'For #254 separate concept vehicle, conception, immanent thought object and transcendent target; compare
+    EFO and IAO under their different existence and reference assumptions. No equivalence is accepted.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E03
+  - E08
+  - E14
+- id: U02
+  label: Candidate case bank
+  statement: Retain collective possession, mixed-status representation, inverse uniqueness and context-bound identity
+    as future test candidates for owner review. No current ontology/CQ changes follow.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E13
+  - E14
+- id: U03
+  label: Bibliographic reconciliation
+  statement: Preserve the actual PDF title/footer DOI and2025/2026 discrepancy in final source tables. This refines
+    bibliographic uncertainty without rewriting prior frozen acquisition records.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E16
