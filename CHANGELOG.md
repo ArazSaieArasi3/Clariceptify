@@ -1,5 +1,11 @@
 # Changelog
 
+## Complete cDnS primary-paper review - 2026-10-26
+
+- Complete #259 across all 40 pages, 141 numbered displays, the table and both figures; retain exact formula labels, examples, assumptions, critical discrepancies and the separate 2008 work boundary.
+- Inventory every declared named entity of the retained cDnS1.1 core: 12 classes and 47 object properties with outgoing constraints; manually review all local classes. Keep parsing, complete declaration coverage, selected semantic tests and unperformed reasoning/profile checks distinct.
+- Register #267 for the profile/cardinality concern and eight paper-to-core differences. Add explicit coverage guidance and five adverse provenance/coverage tests. The Clariceptify scientific baseline remains unchanged.
+
 ## Public documentation readback reliability - 2026-10-26
 
 - Address observed #265: retry transient HTTP readback failures with four bounded attempts and preserve exact byte/manifest checks. Use matched run/attempt-bound Pages artifact names so reruns cannot select duplicate artifacts. Permanent errors and exhausted retries still fail; historical failures remain recorded.

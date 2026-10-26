@@ -22,9 +22,12 @@ def render(d):
     out += ['', '## Common review dimensions', '']
     for key, r in d['dimensions'].items():
         out += [f"### {key}", '', f"{r['statement']} [{r['basis']}; {refs(r)}]", '']
-    for key, title in [('catalog', 'Conceptual catalog'), ('commitments', 'Relations and formal commitments'),
+    sections = [('catalog', 'Conceptual catalog'), ('commitments', 'Relations and formal commitments'),
                        ('scenarios', 'Requirements, examples and adverse cases'), ('findings', 'Critical findings'),
-                       ('questions', 'Unresolved questions'), ('synthesis', 'Inputs for later synthesis')]:
+                       ('questions', 'Unresolved questions'), ('synthesis', 'Inputs for later synthesis')]
+    if d.get('relation_index'):
+        sections.insert(2, ('relation_index', 'Complete paper relation index'))
+    for key, title in sections:
         out += [f'## {title}', '', '| ID / item | Analysis | Basis / evidence |', '|---|---|---|']
         for r in d[key]:
             statement = r['statement'].replace('|', '\\|').replace('\n', '<br>')
@@ -35,7 +38,14 @@ def render(d):
         out += [f"- **{key}:** {r['statement']} [{r['basis']}; {refs(r)}]"]
     out += ['', '## Artifact and repository boundary', '',
             f"Technical follow-up: #{d['artifact']['issue']}. State: `{d['artifact']['status']}`.", '',
-            d['artifact']['version_relation'], '', '## Evidence index', '',
+            d['artifact']['version_relation'], '']
+    if d['artifact'].get('class_reviews'):
+        out += ['### Every named class in the retained local core', '',
+                '| ID / class | Manual constraint/correspondence review | Evidence |', '|---|---|---|']
+        for r in d['artifact']['class_reviews']:
+            out.append(f"| {r['id']} / {r['label']} | {r['statement']} | {r['basis']}; {refs(r)} |")
+        out.append('')
+    out += ['## Evidence index', '',
             '| ID | Exact source locator | Source-grounded summary |', '|---|---|---|']
     for e in d['evidence']:
         out.append(f"| {e['id']} | {e['locator']} | {e['summary'].replace('|', chr(47))} |")
