@@ -37,3 +37,15 @@ The cDnS core is not the complete plan/norm/collective theory in the paper. The 
 10. Strengths, weaknesses, contrary evidence, validity limits, open questions and candidate later uses.
 
 Every substantive observation has a stable evidence ID and an exact locator. Author-reported, reviewer-interpreted, executed, not-reported and unknown evidence remain distinct. All later uses await the owner's decision after synthesis; this research does not alter Clariceptify.
+
+## Mandatory repository, definition and foundation supplement
+
+The [source audit](source-audit.md) now records all 19 exact paper/version records and four separate documentation sources under [catalog-contract.yaml](catalog-contract.yaml). Each source must have a dated repository discovery outcome, actual file/version state, complete local/imported class populations, definitions or explicit gaps, and the exact kind of foundational relation. Unknown is not zero or nonexistence.
+
+All 12 local cDnS1.1 classes, all 29 local LMM L1/L2 classes and the one local Conceptualization0.1 class have selected-module glossaries and complete declaration/constraint censuses. Thirty-eight of the 42 classes have source comment candidates with short attributed reviewer paraphrases; four LMM classes have no definition comment and remain explicit missing-definition findings. Comment candidates do not establish sufficient logical definitions. LMM's other 125 unique asserted-closure IRIs (124 DUL/IOLite classes and owl:Thing) are not a completed imported glossary; DUL #88 and IOLite #271 retain that work.
+
+Foundation family, exact edition, paper claim, project-documentation claim, actual import, conceptual reuse/alignment and independent foundation are separate. O4OA's author documentation names UFO-A/B/C and gUFO; those module names do not mean UFO1. IAO's 2015 dossier establishes the BFO family, not BFO1 from the family name alone. cDnS2007 claims ground-ontology independence, while its retained core has no declared imports. This supplement does not automatically add new prerelease gates or close final synthesis #126.
+
+Reproduce structural/definition-annotation checks with `python tools/check_source_audit.py --source-dir /path/to/private/corpus-vault`. Public CI validates retained census hashes, exact local class sets, source identities, derived readers, unknowns and completion boundaries without redistributing raw third-party annotations. Raw annotation reconciliation is recorded only when actually run with the private sources.
+
+The four selected raw source files were actually reconciled against the 42 class rows, annotation hashes and asserted hierarchies; see the [executed private-source reconciliation record](../../../evaluation/related-work/class-catalogs/raw-source-reconciliation.json). Public CI deliberately does not claim to repeat that raw-source run.

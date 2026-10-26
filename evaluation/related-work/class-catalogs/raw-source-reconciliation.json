@@ -1,0 +1,47 @@
+{
+  "catalogs": [
+    {
+      "inferred_classes": null,
+      "local_classes": 29,
+      "missing_source_definitions": 4,
+      "reviewer_reconstructions": 0,
+      "source_definition_candidates": 25,
+      "work_id": "LMM2008"
+    },
+    {
+      "inferred_classes": null,
+      "local_classes": 12,
+      "missing_source_definitions": 0,
+      "reviewer_reconstructions": 0,
+      "source_definition_candidates": 12,
+      "work_id": "cDnS2007"
+    },
+    {
+      "inferred_classes": null,
+      "local_classes": 1,
+      "missing_source_definitions": 0,
+      "reviewer_reconstructions": 0,
+      "source_definition_candidates": 1,
+      "work_id": "shared-foundations/Conceptualization"
+    }
+  ],
+  "execution": {
+    "checked_on": "2026-10-26",
+    "checker_sha256": "1f650a103633ae8dedc8ded8694fc071cb2683cfe9fedbda706a1944b8671905",
+    "command": "python tools/check_source_audit.py --source-dir <private retained corpus-vault>",
+    "input_sha256": {
+      "Conceptualization.owl": "75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3",
+      "LMM_L1.owl": "955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb",
+      "LMM_L2.owl": "512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240",
+      "cDnS.owl": "f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a"
+    },
+    "limitations": "Verifies selected bytes, class IRI sets, definition-annotation hashes and asserted hierarchy/equivalence populations. Does not execute imports, profile checks or reasoning; paraphrase adequacy is reviewer interpretation.",
+    "python": "3.12.14",
+    "rdflib": "7.6.0",
+    "renderer_sha256": "bee2804f9413fc0bdfecbc7b789212d67502681b5c4244c8d6a98013cd5670e9"
+  },
+  "raw_source_reconciliation": "PASS",
+  "scope": "Exact declared class populations, definition availability and evidence boundaries; not semantic acceptance.",
+  "source_records": 23,
+  "status": "PASS"
+}

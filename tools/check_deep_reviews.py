@@ -151,7 +151,9 @@ def check(root=ROOT):
     for entry in register['waiting_for_owner']:
         if entry['state'] != 'BLOCKED_ON_FULL_TEXT' or entry.get('sha256') is not None:
             raise ValueError('Missing full text promoted')
-    return {'status': 'PASS', 'acquired_papers': 12, 'completed_deep_reviews': done,
+    from check_source_audit import check as check_source_audit
+    source_audit = check_source_audit(root)
+    return {'status': 'PASS', 'source_audit': source_audit, 'acquired_papers': 12, 'completed_deep_reviews': done,
             'queued_papers': sum(r['state'] == 'QUEUED' for r in register['acquired_papers']),
             'waiting_for_owner': 7, 'protected_baseline': expected['fingerprint'],
             'scope': 'Provenance, coverage declarations and state boundaries; not independent semantic validation.'}

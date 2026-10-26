@@ -35,6 +35,9 @@ comparison_dimensions:
 - Validation/evaluation/reproducibility
 - Version/license/access
 - Supported overlap, differences and unassessed gaps
+- Public repository versus standalone file, bounded discovery failure and actual archival/maintenance evidence
+- All local/imported/referenced/deprecated class populations and definition/comment availability
+- Foundation family, exact edition, paper/documentation grounding, actual import and alignment/reuse
 cell_fields:
 - criterion
 - work_id
@@ -46,6 +49,12 @@ cell_fields:
 - counterevidence
 - unknowns
 - scope_limit
+- repository_state
+- artifact_root_and_hash
+- local_imported_class_populations
+- source_definition_candidate_and_missing_counts
+- foundation_family_edition_relation
+- next_open_issue
 use_categories:
 - Clarify terminology and scope
 - Identify prior overlap and constrain novelty claims

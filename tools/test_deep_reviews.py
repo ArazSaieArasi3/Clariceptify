@@ -79,5 +79,57 @@ class ReviewBoundaryTests(unittest.TestCase):
         self.reject_census(lambda r: r.update(inference_counts=123), 'promoted to inference')
 
 
+class SourceAuditBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        self.base = ROOT / BASE
+        self.audit = yaml.safe_load((self.base / 'source-audit.yaml').read_text())
+        self.expected = [r['id'] for r in self.audit['records']]
+        self.catalog = yaml.safe_load((self.base / 'LMM2008/classes.yaml').read_text())
+        self.censuses = {m['id']: json.loads((ROOT / m['census_path']).read_text()) for m in self.catalog['modules']}
+
+    def reject_catalog(self, mutation, pattern):
+        from check_source_audit import validate_catalog
+        mutation(self.catalog)
+        with self.assertRaisesRegex(ValueError, pattern):
+            validate_catalog(self.catalog, self.censuses)
+
+    def test_complete_glossary_rejects_omitted_class(self):
+        self.reject_catalog(lambda d: d['classes'].pop(), 'Incomplete local')
+
+    def test_missing_definition_cannot_be_invented(self):
+        def mutate(d):
+            r = next(r for r in d['classes'] if r['reviewer_definition']['text'] is None)
+            r['reviewer_definition']['text'] = 'A definition guessed from the name'
+        self.reject_catalog(mutate, 'silently invented')
+
+    def test_census_source_cannot_be_substituted(self):
+        self.reject_catalog(lambda d: d['modules'][0].update(source_sha256='0' * 64), 'source substitution')
+
+    def test_local_glossary_does_not_complete_imports(self):
+        self.reject_catalog(lambda d: d['imported_glossary'].update(state='COMPLETE'), 'imported definitions promoted')
+
+    def test_comment_is_not_logical_definition(self):
+        self.reject_catalog(lambda d: d['classes'][0]['source_definition'].update(logical_sufficiency='PROVED'), 'logical definition')
+
+    def test_search_failure_is_not_repository_nonexistence(self):
+        from check_source_audit import validate_audit
+        self.audit['records'][0]['repository']['global_absence_claim'] = True
+        with self.assertRaisesRegex(ValueError, 'global absence'):
+            validate_audit(self.audit, self.expected)
+
+    def test_unversioned_foundation_cannot_become_bfo1(self):
+        from check_source_audit import validate_audit
+        r = next(r for r in self.audit['records'] if r['id'] == 'IAO2015')
+        r['foundation']['edition'] = 'BFO1'
+        with self.assertRaisesRegex(ValueError, 'Unsupported foundation edition'):
+            validate_audit(self.audit, self.expected)
+
+    def test_source_audit_cannot_omit_paper(self):
+        from check_source_audit import validate_audit
+        self.audit['records'].pop()
+        with self.assertRaisesRegex(ValueError, 'source-audit population'):
+            validate_audit(self.audit, self.expected)
+
+
 if __name__ == '__main__':
     unittest.main()
