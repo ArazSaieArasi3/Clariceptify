@@ -13,7 +13,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | EFO (#80) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | EFO; INDEPENDENT_FOUNDATION; edition: UNKNOWN | PENDING_FULL_CATALOG | #242 |
 | cDnS2007 (#259) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_CORE_FULL_CENSUS | Foundation-neutral constructive framework; PAPER_STATED_GROUNDING; edition: UNKNOWN | [12 classes](cDnS2007/classes.md); 12 comment candidates; 0 missing | #267, #263 |
 | LMM2008 (#260) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; PINNED_LOCAL_CLASSES_MANUALLY_REVIEWED_HISTORICAL_ALIGNMENT_UNACQUIRED | DOLCE via DUL and IOLite; ACTUAL_IMPORT; edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2 | [29 classes](LMM2008/classes.md); 25 comment candidates; 4 missing | #274, #88, #271, #252 |
-| DnS2003 (#261) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; HISTORICAL_DISTRIBUTION_NOT_PINNED | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #235 |
+| DnS2003 (#261) | OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://www.loa.istc.cnr.it/dolce/overview.html); [source](https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip); DLP3971_11_MODULES_RETAINED_EXTENDEDDNS397_CANDIDATE | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | ORIGINAL_PAPER_COUNT_UNKNOWN_LATER_CANDIDATE_ALL_IRIS_INDEXED_GLOSSARY_PENDING | #235 |
 | CMO (#83) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_LINK_404_CANDIDATE_NOT_MATCHED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #245 |
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #243 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_VERSION_MATCH_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #247 |
@@ -262,6 +262,17 @@ Query: `LMM_Alignments.owl plus author names and repository terms`. Checked: 202
 Original alignment URL/wiki and ODP directory return403. Guessed ODP alignment URL returns200 but redirects to HTML, rejected as an ontology. No author-controlled corresponding historical development repository was confirmed. Exact results and method are retained at evaluation/related-work/lmm/deep-review-discovery.json.
 
 Limit: Four endpoints and bounded searches, not universal repository absence; current pinned L1/L2 remain available. Historical distribution recovery/correspondence stays #274.
+
+### W08: OFFICIAL_LINK_FOLLOWING_HTTP_ZIP_ACQUISITION_AND_BOUNDED_GITHUB_SEARCH
+
+Query: `"Descriptions and Situations" Gangemi; ExtendedDnS; DLP3971`. Checked: 2026-10-27.
+
+- https://www.loa.istc.cnr.it/dolce/overview.html
+- https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+
+Official DLP3971.zip HTTP200 ZIP retained and 11 supplied OWL modules parsed; ExtendedDnS397 candidate identified. Three GitHub repository queries return no corresponding development repository. Exact discovery/intake: evaluation/related-work/dns/deep-review-discovery.json.
+
+Limit: Related later 2005-copyright distribution is not proven identical to 2003; bounded repository search is not global absence; full candidate glossary and eight selected correspondence checks stay #235.
 
 ## Interpretation and next work
 

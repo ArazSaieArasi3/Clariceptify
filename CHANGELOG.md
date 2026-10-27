@@ -1,5 +1,11 @@
 # Changelog
 
+## Complete DnS primary-paper review - 2026-10-27
+
+- Complete #261 across all 18 pages,23 numbered displays, the separate interpretation map, five figures, eight content footnotes and 18 references under the shared ten-dimension contract. Retain source grouping, schema/witness ambiguities, role/filler distinctions and illustrative-evaluation limits.
+- Recover and retain the official related DLP3971 archive without public source redistribution. Parse all 11 supplied modules, index every declared named class IRI and comment availability, and distinguish ExtendedDnS397 (58 local plus 10 external class redeclarations) from the original 2003 paper. Preserve README versus executed count differences.
+- Keep #235 open for historical identity, full selected-module definitions/constraints and eight bounded semantic questions. Add diagram-kind and archive-intake provenance safeguards; no Clariceptify scientific or release change.
+
 ## Complete LMM primary-paper review - 2026-10-27
 
 - Complete #260 across all seven pages, six figures, the footnote and 16 references under the ten-dimension research contract. Record 52 paper-level conceptual/distinction entries, 13 formal-commitment groups, 13 positive/adverse scenarios and 14 critical findings.

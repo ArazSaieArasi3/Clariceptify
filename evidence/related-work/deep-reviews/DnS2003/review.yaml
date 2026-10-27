@@ -1,0 +1,1655 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: DnS2003
+issue: 261
+review_date: '2026-10-27'
+reviewer: AI-assisted complete primary-source inspection; no independent expert review
+baseline_commit: 62995852709fdc4f40f76c3348ee130af82eb5f6
+status: REVIEW_COMPLETE
+identity:
+  title: Understanding the Semantic Web through Descriptions and Situations
+  authors:
+  - Aldo Gangemi
+  - Peter Mika
+  year: 2003
+  doi: 10.1007/978-3-540-39964-3_44
+  url: https://doi.org/10.1007/978-3-540-39964-3_44
+  version: 2003 OTM/ODBASE, LNCS2888; institutional author PDF,18 pages
+  boundary: Publisher metadata identifies pp. 689-706; the retained author PDF uses Roman I-XVIII (one-based
+    PDF 1-18), not those publisher running pages. All 18 pages,23 numbered displays, five figures, eight
+    content footnotes 3-10 and 18 references were inspected. Affiliation markers 1-2 are separate. No
+    table or appendix occurs. The 2005-copyright DLP3971 archive is related source evidence, not a verified
+    executable version of this exact 2003 work.
+source:
+  filename: DnS.pdf
+  sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+  pdf_pages: 18
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+formula_population:
+  first: 1
+  last: 23
+  count: 23
+diagram_inventory:
+  path: evidence/related-work/deep-reviews/DnS2003/diagrams.yaml
+  sha256: 4bed68bc876d092b30480b7d788073d94f5c2c4926d11ce99c43e7488601b1e5
+  source_sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+  figures:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+evidence:
+- id: E01
+  pages:
+  - 1
+  - 2
+  - 3
+  locator: PDF 1-3 (Roman I-III), front matter and sec. 1 including footnotes 3-4
+  summary: Aldo Gangemi and Peter Mika; contextual interpretation/consensus challenge, reification proposal
+    and SWAP demonstration.
+- id: E02
+  pages:
+  - 3
+  - 4
+  - 5
+  locator: PDF 3-5 (III-V), sec. 2 and sec. 2.1
+  summary: Motivation for nonphysical entities and conceptualization; unpublished WordNet percentage is
+    author-reported, not reproduced.
+- id: E03
+  pages:
+  - 5
+  - 6
+  locator: PDF 5-6 (V-VI), sec. 2.2 definitions and footnotes 5-6
+  summary: Ground ontology, state of affairs, description and situation; internal/external incompleteness
+    and distinction from situation calculus.
+- id: E04
+  pages:
+  - 6
+  locator: PDF 6 (VI), sec. 2.2 numbered displays 1-4
+  summary: Reification layering and satisfaction domain/range, explicit inverse and existential description.
+- id: E05
+  pages:
+  - 7
+  locator: PDF 7 (VII), displays 5-13 and surrounding prose
+  summary: Indexed descriptive categories, selectional links, temporary components, part/constitution
+    caveats and setting conditions.
+- id: E06
+  pages:
+  - 8
+  locator: PDF 8 (VIII), displays 14-21 and Fig. 1
+  summary: Main category union, course/role/parameter selection and visible multiplicities; display 14
+    lacks grouping parentheses.
+- id: E07
+  pages:
+  - 9
+  locator: PDF 9 (IX), displays 22-23, examples and start of sec. 3
+  summary: Modalities/requisites, domain examples and communication/interpretation template motivation.
+- id: E08
+  pages:
+  - 10
+  - 11
+  locator: PDF 10-11 (X-XI), sec. 3 including Fig. 2
+  summary: Communication/interpretation specialization, URI naming ambiguity and two uses of communication
+    ontology.
+- id: E09
+  pages:
+  - 11
+  - 12
+  - 13
+  locator: PDF 11-13 (XI-XIII), sec. 3.1 including footnote 7 and unnumbered I:(e,c)->m
+  summary: Jakobson six constituents, Saussure interpretation and role/filler distinctions; context/referent
+    sense distinguished from interpretation circumstance.
+- id: E10
+  pages:
+  - 13
+  - 14
+  locator: PDF 13-14 (XIII-XIV), sec. 3.2, footnotes 8-10 and Fig. 3
+  summary: SWAP peer/user/information-object mapping; human-derived software intentionality assumption;
+    omitted participation/setting links.
+- id: E11
+  pages:
+  - 15
+  locator: PDF 15 (XV), sec. 3.2 and Fig. 4
+  summary: Human interpretation remains external; nine query-flow actions and role annotations.
+- id: E12
+  pages:
+  - 16
+  - 17
+  locator: PDF 16-17 (XVI-XVII), sec. 3.2 and Fig. 5
+  summary: Four query roles despite three-role wording, message-dependent communication roles; refined
+    process description omitted.
+- id: E13
+  pages:
+  - 17
+  - 18
+  locator: PDF 17-18 (XVII-XVIII), sec. 4 Related and Future Work
+  summary: Contribution summary, relation to context approaches and prospective communication/service
+    work, not a measured evaluation.
+- id: E14
+  pages:
+  - 18
+  locator: PDF 18 (XVIII), bibliography entries 1-18
+  summary: All 18 bibliography entries inspected as cited support; cited works are not thereby acquired
+    or independently reviewed.
+- id: A01
+  source_kind: ARTIFACT
+  url: https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+  sha256: b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2
+  locator: DLP3971.zip exact retained archive; all 11 top-level OWL modules and README.txt
+  summary: Official linked distribution acquired and structurally parsed; related2005 package, original
+    2003 fidelity unknown.
+- id: A02
+  source_kind: ARTIFACT
+  url: https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+  sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  locator: Archive member ExtendedDnS.owl, versionInfo397; member SHA256 (not ZIP digest)
+  summary: 'Candidate68 declared named classes across namespaces:58 local and 10 external redeclarations;
+    complete IRI/comment-availability intake, manual definitions pending #235.'
+- id: A03
+  source_kind: ARTIFACT
+  url: https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+  sha256: c4f8c3848a4485231f1ff50128abb1ea94debc73f5897ded38016d4c8ac69610
+  locator: Archive member README.txt; member SHA256, copyright 2005 and license/version/count paragraphs
+  summary: LGPL2.1-or-later and factorized3971 distribution; source-reported counts/profile differ from
+    executed declaration union, no profile execution.
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  catalog_boundary: All pages read in order. All five figures and main formula pages visually inspected
+    at enlarged scale; remaining pages checked visually after text reading. diagrams.yaml retains all
+    visible boxes, slots, mappings and process actions. Case/abbreviation variants are grouped explicitly
+    below rather than guessed as current IRIs. The complete paper catalog is not the 58-local-class inventory
+    of a later ExtendedDnS module. No table or appendix; footnotes 3-10 and bibliography 1-18 covered.
+  units:
+  - unit: Title/authors/abstract and sec. 1 Introduction; footnotes 3-4
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Sec. 2 and 2.1 Reifying non-physical entities
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Sec. 2.2 D&S definitions, layering and footnotes 5-6
+    status: REVIEWED
+    evidence:
+    - E03
+    - E04
+    - E05
+  - unit: Numbered displays 1-4
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Numbered displays 5-13
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Numbered displays 14-21 and Fig. 1
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Numbered displays 22-23 and domain examples
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Sec. 3 communication/interpretation template and Fig. 2
+    status: REVIEWED
+    evidence:
+    - E07
+    - E08
+  - unit: Sec. 3.1 Jakobson, Saussure, unnumbered interpretation map and footnote 7
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Sec. 3.2 SWAP architecture, Fig. 3 and footnotes 8-10
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Sec. 3.2 query flow Fig. 4
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Sec. 3.2 role mapping Fig. 5 and omitted refinement
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Sec. 4 Related and Future Work
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Bibliography entries 1-18; no tables or appendices
+    status: REVIEWED
+    evidence:
+    - E14
+dimensions:
+  D1_identity_coverage:
+    statement: Exact author PDF identity and all content units are pinned. Roman author pagination is
+      kept separate from publisher pp. 689-706; the later formal distribution is not the exact paper version.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E14
+    - A01
+  D2_problem_contribution:
+    statement: D&S addresses how descriptions contextualize situations and supports social communication/interpretation
+      for Semantic Web consensus. Contribution is conceptual reification plus a SWAP application; global
+      semantic interoperability is not demonstrated.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E03
+    - E08
+    - E13
+  D3_method:
+    statement: Method moves partial theories/models into first-order description/situation entities over
+      DOLCE, then specializes a communication template using Jakobson/Saussure and applies it to SWAP.
+      No reproducible systematic ontology-engineering protocol, elicitation sample or experiment specification
+      is reported.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E09
+    - E10
+    - E13
+  D4_requirements:
+    statement: Intended users include ontology/agent designers and SWAP users/peers. Context retention
+      and interpretation are stated needs; no formal competency-question suite is provided. Positive/adverse
+      scenarios below are explicitly reviewer reconstructions.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E08
+    - E10
+    - E11
+    - E12
+  D5_concepts:
+    statement: All ontology-bearing paper categories, display labels, core metatheoretic distinctions
+      and application-role/filler primitives are catalogued. Figure spelling variants are preserved; process
+      actions and examples are not silently converted into OWL classes.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E05
+    - E06
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+  D6_relations_formalization:
+    statement: All 23 numbered displays are transcribed with source grouping preserved, plus the separate
+      interpretation map and every visible figure slot. Signature typing, existential witnesses, inverse
+      omission, indexed-schema scope and Fig. 1 multiplicities are analyzed without silently repairing
+      formulas or claiming satisfiability.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E05
+    - E06
+    - E07
+    - E09
+  D7_grounding:
+    statement: Paper explicitly uses DOLCE and says the descriptive construction can adapt to other foundations.
+      Exact DOLCE edition is not established. Role/filler, content/carrier, mental/social interpretation
+      and temporary-component distinctions are retained; no BFO/UFO grounding is asserted.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E05
+    - E09
+    - E10
+    - A02
+  D8_artifact_correspondence:
+    statement: 'Three bounded GitHub repository searches did not identify a corresponding development
+      repository. Official LOA overview led to retained DLP3971.zip with 11 OWL modules; ExtendedDnS397
+      is a later candidate with 58 local named classes. All IRIs/comment availability are indexed, manual
+      definitions and 2003 correspondence remain #235.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - A03
+  D9_evaluation:
+    statement: No reasoner/profile log, independent validation sample, controlled benchmark or formal
+      verification is identified in this paper. Worked communication/SWAP examples and unreplicated WordNet
+      count are separated from executed archive parsing. All five evaluation functions below retain this
+      boundary.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E10
+    - E11
+    - E12
+    - E13
+    - A01
+  D10_critical_synthesis:
+    statement: Strong direct prior overlap includes context, conceptualization and expression/meaning/referent
+      distinctions. Countercases expose local-versus-joint consistency, description-witness and version
+      gaps. These are synthesis inputs, not adopted Clariceptify changes.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E05
+    - E06
+    - E09
+    - E12
+    - E13
+catalog:
+- id: C01
+  label: Ground ontology O
+  statement: Domain theory supplying basic entity distinctions and constraints; the selection is a premise
+    of D&S interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+- id: C02
+  label: State of affairs (SoA)
+  statement: Nonempty assertion set whose members are individually coherent with O; this wording alone
+    does not guarantee the whole set jointly consistent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+- id: C03
+  label: Description (D)
+  statement: Reified partial theory/conceptualization, treated as a descriptive nonphysical entity rather
+    than identified with its inscription.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+- id: C04
+  label: S-description (SD); Situation description / Situation Description
+  statement: Description able to conceptualize a situation; labels in Figs.2-3 vary. Source(1)-(4) type
+    satisfaction and require a description witness.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E08
+  - E10
+- id: C05
+  label: Situation (S)
+  statement: Reified entity associated with a state of affairs satisfying a description; distinguish the
+    situation from the assertion set and description.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E06
+- id: C06
+  label: O+; epistemological layering; figure-ground shift
+  statement: Extended conceptualization reifies entities/relations from another layer; modeling level
+    must be stated rather than treated as automatic higher-order quantification.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+- id: C07
+  label: Pi; PiD; SDi; Si
+  statement: Indexed category/reification schema. PiD falls under Description and is disjoint from SD;
+    scope over category indices needs reconstruction before executable translation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: C08
+  label: Functional role / Functional Role (FR)
+  statement: Descriptive category selecting endurants through playedBy; distinct from its performer or
+    bearer.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: C09
+  label: Course of events (COU); Course; Event description
+  statement: Descriptive category selecting perdurants through sequences; figure terms are historical
+    presentation variants rather than established current class equivalences.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  - E10
+- id: C10
+  label: Parameter (PAR)
+  statement: Descriptive category selecting regions via valuedBy; source(21) requires at least one region
+    value.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: C11
+  label: Endurant
+  statement: Ground category whose instances can play functional roles; Fig. 1 also displays participation/location/part
+    slots.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: C12
+  label: Perdurant
+  statement: Ground category whose instances can be sequenced under courses; event versus event description
+    remains explicit.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: C13
+  label: Region
+  statement: Ground value category selected by parameters; do not conflate value region with the parameter
+    or a quality bearer.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: C14
+  label: Quality / abstract; nonphysical endurant
+  statement: DOLCE categories discussed in the simplified selectional account; description is grounded
+    as nonphysical endurant, while quality/abstract treatment is not a complete DOLCE reconstruction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E05
+  - E06
+- id: C15
+  label: Part; constituent; temporary component; constitution
+  statement: 'Different structural/dependence notions: t_component is a systemic restriction of temporary
+    part and described as nontransitive; definitions of underlying part/constitution are delegated to
+    cited D17.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: C16
+  label: Modality; requisite
+  statement: Relations from functional role to course and parameter to role/course respectively; not implemented
+    deontic execution or proof obligations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: C17
+  label: Communication situation
+  statement: Situation interpreted by a communication/interpretation template; not identical to the selected
+    method.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C18
+  label: Communication event
+  statement: Perdurant selected through communication/semiotic courses/tasks; not the message information
+    object.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C19
+  label: Semiotic parameter / Semiotic Parameter
+  statement: Interpretation-level parameter in the template, with a communication q-region as value.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+- id: C20
+  label: Communication parameter / Comm. Parameter
+  statement: Communication-level parameter; Address is a SWAP specialization.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+- id: C21
+  label: Communication q-region
+  statement: Printed value category in Fig. 2; later Address space is an application region without asserted
+    global equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+- id: C22
+  label: Semiotic role / Semiotic Role
+  statement: 'Functional-role specialization for interpretive positions: S-context, Expression and Meaning.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E10
+- id: C23
+  label: Communication role / Comm. Role
+  statement: Functional-role specialization for message transfer positions including encoder/decoder and
+    contextual/channel roles.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E10
+- id: C24
+  label: Semiotic task / Semiotic Task
+  statement: Course/event-description specialization for interpretive tasks; not an executed interpretation
+    algorithm.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+- id: C25
+  label: Communication turns / Comm. Course
+  statement: Printed course-level categories selecting communication events/message transfers.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+- id: C26
+  label: Interpretation method
+  statement: Situation-description specialization used to conceptualize interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C27
+  label: Communication method
+  statement: Situation-description specialization used to conceptualize communication.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C28
+  label: Encoder; Decoder
+  statement: Jakobson communication roles, refined through Interpreter Role; query actors can change communication
+    position for different messages.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  - E12
+- id: C29
+  label: Interpreter Role
+  statement: Communication role specialized into Encoder/Decoder; Fig. 3 visibly points its played-by
+    mapping to User. Software interpretation depends on an inherited-human-intentionality assumption.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C30
+  label: Message
+  statement: Communication functional role played by an information object; distinguish from message transfer,
+    expression role and the carrier.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C31
+  label: Context / referent (Jakobson)
+  statement: Communication constituent interpreted as referent in footnote 7, not automatically the circumstance
+    used by Saussure interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C32
+  label: Code
+  statement: One of six Jakobson constituents in prose; no explicit Code role box in Fig. 3. Absence from
+    that diagram is not absence from the paper.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C33
+  label: Contact / channel; Channel Role
+  statement: Communication-contact position; SWAP network connection is a physical-object filler.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C34
+  label: S-context
+  statement: Semiotic role played by S-descriptions, providing interpretation circumstances; separate
+    from Jakobson Context/referent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C35
+  label: Expression
+  statement: Semiotic role played by information objects/statements; no one-to-one sense or referent follows
+    from shared expression alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C36
+  label: Meaning
+  statement: Semiotic role played by descriptions whatsoever, not only S-descriptions. Role, descriptive
+    filler and expressed information object remain distinct.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: C37
+  label: Interpretation I; expression e; context c; meaning m
+  statement: Unnumbered mapping I:(e,c)->m summarizes contextual interpretation; its functional notation
+    is not an implemented disambiguation procedure or proof of unique social agreement.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: C38
+  label: URI; resource; RDF statement; symbol
+  statement: Naming and representational devices in the ambiguity discussion; same URI string is not independently
+    proven consensus about referent or conceptualization.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+- id: C39
+  label: Agentive Physical Object; Natural Person; User
+  statement: DOLCE/SWAP grounding chain for human agents. User specializes Natural Person and has external
+    intentionality toward Peer.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C40
+  label: Peer
+  statement: SWAP software peer modeled under Agentive Physical Object; Fig. 3 shows peer id:int and ontology
+    management, while footnote 9 assumes intentionality inherited from a human.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E12
+- id: C41
+  label: Information Object; Statement
+  statement: Content-bearing endurant layer; Statement is shown under Information Object and fills Expression.
+    Keep content distinct from physical realization.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C42
+  label: Physical Object; Network connection
+  statement: Physical channel/carrier layer shown under Endurant. A successful connection alone does not
+    demonstrate shared interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C43
+  label: Activity; Message Transfer
+  statement: Event layer under Perdurant; communication course selects transfer, not information content.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C44
+  label: Address; Address space
+  statement: Communication parameter and Region filler; address-space location/peer links do not establish
+    a unique human meaning or stable identifier policy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C45
+  label: Ontology; Document; Symbol
+  statement: Peer-managed formal/conceptual resource and its documentation/representational units. Fig.
+    3 refers-to/part-of arrows require correspondence care; document is not automatically a description
+    individual.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C46
+  label: Initiator
+  statement: Query role that starts the request and plays Encoder for its initiating message.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C47
+  label: Resolver
+  statement: Query role receiving/resolving a request and encoding an answer; communication positions
+    are message-dependent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C48
+  label: Forwarder
+  statement: Query role that decodes one request and encodes a forwarded request; not a static single
+    encoder/decoder assignment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C49
+  label: Processor
+  statement: Query role decoding returned answers for processing.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C50
+  label: Query; answer; query rewriting / reformulation
+  statement: SWAP process objects/activities whose conceptual flow is illustrated; no reproduced relevance,
+    trust or semantic-correctness measurement follows.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C51
+  label: Context retention; social consensus
+  statement: 'Stated design/use aims: retain descriptions for communicated information and enable interpretive
+    agreement. These are goals, not demonstrated guarantees.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E08
+  - E11
+- id: C52
+  label: Internal/external incompleteness
+  statement: 'Footnote5 distinction: contextual/descriptive incompleteness versus missing ground facts;
+    neither means inconsistency or model closure.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+- id: C53
+  label: Plans, norms, organizations, artifacts and legal/domain cases
+  statement: Illustrative motivations/applications for reified conceptualizations and roles; these are
+    not a complete separately released class census.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E07
+- id: C54
+  label: Formulate / select peers / distribute / reformulate / resolve / process / present
+  statement: All nine action occurrences are retained in Fig. 4 ledger; repeated Select peers and Distribute
+    query are position-qualified, not new invented class names.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+commitments:
+- id: K01
+  label: Display(1)
+  statement: 'ASCII source transcription: SD(x) -> D(x). Analysis: Subtype only; no converse that every
+    description is an S-description.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  formula_number: 1
+  source_transcription: SD(x) -> D(x)
+- id: K02
+  label: Display(2)
+  statement: 'ASCII source transcription: satisfies(x,y) -> S(x) & SD(y). Analysis: Binary typing; does
+    not enforce a unique description per situation.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  formula_number: 2
+  source_transcription: satisfies(x,y) -> S(x) & SD(y)
+- id: K03
+  label: Display(3)
+  statement: 'ASCII source transcription: satisfiedBy(y,x) <-> satisfies(x,y). Analysis: Explicit inverse
+    axiom, unlike selectedBy below.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  formula_number: 3
+  source_transcription: satisfiedBy(y,x) <-> satisfies(x,y)
+- id: K04
+  label: Display(4)
+  statement: 'ASCII source transcription: forall x. S(x) -> exists y. SD(y) & satisfies(x,y). Analysis:
+    At least one existential description for each situation, not an identified or unique one.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  formula_number: 4
+  source_transcription: forall x. S(x) -> exists y. SD(y) & satisfies(x,y)
+- id: K05
+  label: Display(5)
+  statement: 'ASCII source transcription: PiD(y) -> D(y). Analysis: Indexed descriptive category is a
+    description subtype.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 5
+  source_transcription: PiD(y) -> D(y)
+- id: K06
+  label: Display(6)
+  statement: 'ASCII source transcription: not(PiD(y) & SD(y)). Analysis: Explicit PiD/SD disjointness;
+    do not extrapolate universal disjointness of D and S.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 6
+  source_transcription: not(PiD(y) & SD(y))
+- id: K07
+  label: Display(7)
+  statement: 'ASCII source transcription: selects(x,y) -> PiD(x) & Pi(y). Analysis: Selection signature
+    indexed by category; quantification over i remains a metatheoretic question.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 7
+  source_transcription: selects(x,y) -> PiD(x) & Pi(y)
+- id: K08
+  label: Display(8)
+  statement: 'ASCII source transcription: forall x. PiD(x) -> exists y. SD(y) & t_component(y,x). Analysis:
+    Each indexed descriptive item components some S-description; first argument is containing description
+    in this use.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 8
+  source_transcription: forall x. PiD(x) -> exists y. SD(y) & t_component(y,x)
+- id: K09
+  label: Display(9)
+  statement: 'ASCII source transcription: forall x. SD(x) -> exists y. PiD(y) & t_component(x,y). Analysis:
+    A component exists; universal per-index instantiation could demand each category, whereas prose permits
+    alternatives. Resolve schema scope rather than claim proven contradiction.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 9
+  source_transcription: forall x. SD(x) -> exists y. PiD(y) & t_component(x,y)
+- id: K10
+  label: Display(10)
+  statement: 'ASCII source transcription: forall x. S(x) -> forall y. part(x,y) -> S(y). Analysis: Nested
+    implication follows source notation. Part argument orientation is delegated to ground ontology; do
+    not silently reverse it.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 10
+  source_transcription: forall x. S(x) -> forall y. part(x,y) -> S(y)
+- id: K11
+  label: Display(11)
+  statement: 'ASCII source transcription: settingFor(x,y) -> constituent(x,y) & S(x) & Pi(y). Analysis:
+    Setting implies constituency and category typing; not every constituent necessarily has a setting
+    from this direction.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 11
+  source_transcription: settingFor(x,y) -> constituent(x,y) & S(x) & Pi(y)
+- id: K12
+  label: Display(12)
+  statement: 'ASCII source transcription: forall x. S(x) -> exists y. Pi(y) & settingFor(x,y). Analysis:
+    At least one setting constituent; no complete materialized constituent list follows.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 12
+  source_transcription: forall x. S(x) -> exists y. Pi(y) & settingFor(x,y)
+- id: K13
+  label: Display(13)
+  statement: 'ASCII source transcription: settingFor(x,y) -> exists z w. PiD(z) & SD(w) & t_component(w,z)
+    & satisfies(x,w) & selectedBy(y,z). Analysis: Separate witnesses per setting edge; selectedBy has
+    no explicit inverse axiom in displays 1-23. No single common description for every constituent is
+    required here.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_number: 13
+  source_transcription: settingFor(x,y) -> exists z w. PiD(z) & SD(w) & t_component(w,z) & satisfies(x,w)
+    & selectedBy(y,z)
+- id: K14
+  label: Display(14)
+  statement: 'ASCII source transcription: SD(x) -> exists y. COU(y) or FR(y) or PAR(y) & t_component(x,y).
+    Analysis: SOURCE UNPARENTHESIZED: operator/quantifier scope is not silently repaired. With ordinary
+    and-before-or parsing, the component condition is not imposed uniformly on all disjuncts.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 14
+  source_transcription: SD(x) -> exists y. COU(y) or FR(y) or PAR(y) & t_component(x,y)
+- id: K15
+  label: Display(15)
+  statement: 'ASCII source transcription: COU(x) -> exists y. SD(y) & t_component(y,x). Analysis: A course
+    components some S-description; not necessarily a unique owner.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 15
+  source_transcription: COU(x) -> exists y. SD(y) & t_component(y,x)
+- id: K16
+  label: Display(16)
+  statement: 'ASCII source transcription: FR(x) -> exists y. SD(y) & t_component(y,x). Analysis: A functional
+    role components some S-description.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 16
+  source_transcription: FR(x) -> exists y. SD(y) & t_component(y,x)
+- id: K17
+  label: Display(17)
+  statement: 'ASCII source transcription: PAR(x) -> exists y. SD(y) & t_component(y,x). Analysis: A parameter
+    components some S-description.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 17
+  source_transcription: PAR(x) -> exists y. SD(y) & t_component(y,x)
+- id: K18
+  label: Display(18)
+  statement: 'ASCII source transcription: sequences(x,y) -> selects(x,y) & COU(x) & Perdurant(y). Analysis:
+    Specialized selection signature; this implication alone does not require a filler for every course.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 18
+  source_transcription: sequences(x,y) -> selects(x,y) & COU(x) & Perdurant(y)
+- id: K19
+  label: Display(19)
+  statement: 'ASCII source transcription: playedBy(x,y) -> selects(x,y) & FR(x) & Endurant(y). Analysis:
+    Specialized role selection; no existential performer requirement follows solely from this implication.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 19
+  source_transcription: playedBy(x,y) -> selects(x,y) & FR(x) & Endurant(y)
+- id: K20
+  label: Display(20)
+  statement: 'ASCII source transcription: valuedBy(x,y) -> selects(x,y) & PAR(x) & Region(y). Analysis:
+    Specialized parameter selection typing.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 20
+  source_transcription: valuedBy(x,y) -> selects(x,y) & PAR(x) & Region(y)
+- id: K21
+  label: Display(21)
+  statement: 'ASCII source transcription: PAR(x) -> exists y. Region(y) & valuedBy(x,y). Analysis: Parameter
+    has at least one value region; no unique-value restriction.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_number: 21
+  source_transcription: PAR(x) -> exists y. Region(y) & valuedBy(x,y)
+- id: K22
+  label: Display(22)
+  statement: 'ASCII source transcription: modalityFor(x,y) -> FR(x) & COU(y). Analysis: Typing for role-to-course
+    modality; no executable deontic rule follows.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  formula_number: 22
+  source_transcription: modalityFor(x,y) -> FR(x) & COU(y)
+- id: K23
+  label: Display(23)
+  statement: 'ASCII source transcription: requisiteFor(x,y) -> PAR(x) & (COU(y) or FR(y)). Analysis: Parameter-to-course-or-role
+    signature; does not require every parameter to have a requisite target.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  formula_number: 23
+  source_transcription: requisiteFor(x,y) -> PAR(x) & (COU(y) or FR(y))
+relation_index:
+- id: R01
+  label: location of[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Region [location of[0..*] : <blank>]. Range blanks and
+    multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: location of[0..*]
+- id: R02
+  label: location[1..*]
+  statement: 'Printed slot occurrences: Fig. 1 Endurant [location[1..*] : Region]; Fig. 1 Perdurant [location[1..*]
+    : Region]. Range blanks and multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: location[1..*]
+- id: R03
+  label: mod. target of[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Course of events [mod. target of[0..*] : Functional role].
+    Range blanks and multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: mod. target of[0..*]
+- id: R04
+  label: mod. target[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Functional role [mod. target[0..*] : Course of events].
+    Range blanks and multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: mod. target[0..*]
+- id: R05
+  label: part[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Description [part[0..*] : Description]; Fig. 1 Region [part[0..*]
+    : Region]; Fig. 1 Endurant [part[0..*] : Endurant]; Fig. 1 Perdurant [part[0..*] : Perdurant]; Fig.
+    1 Situation [part[0..*] : Situation]. Range blanks and multiplicities are retained as printed; no
+    current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: part[0..*]
+- id: R06
+  label: participant in[1..*]
+  statement: 'Printed slot occurrences: Fig. 1 Endurant [participant in[1..*] : Perdurant]. Range blanks
+    and multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: participant in[1..*]
+- id: R07
+  label: participant[1..*]
+  statement: 'Printed slot occurrences: Fig. 1 Perdurant [participant[1..*] : Endurant]. Range blanks
+    and multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: participant[1..*]
+- id: R08
+  label: peer id
+  statement: 'Printed slot occurrences: Fig. 3 Peer [peer id : int]. Range blanks and multiplicities are
+    retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  printed_name: peer id
+- id: R09
+  label: requisite for[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Parameter [requisite for[0..*] : Functional role]; Fig.
+    1 Parameter [requisite for[0..*] : Course of events]. Range blanks and multiplicities are retained
+    as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: requisite for[0..*]
+- id: R10
+  label: requisite[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Functional role [requisite[0..*] : Parameter]; Fig. 1 Course
+    of events [requisite[0..*] : Parameter]. Range blanks and multiplicities are retained as printed;
+    no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: requisite[0..*]
+- id: R11
+  label: setting for[1..*]
+  statement: 'Printed slot occurrences: Fig. 1 Situation [setting for[1..*] : <blank>]. Range blanks and
+    multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: setting for[1..*]
+- id: R12
+  label: setting[0..*]
+  statement: 'Printed slot occurrences: Fig. 1 Region [setting[0..*] : Situation]; Fig. 1 Endurant [setting[0..*]
+    : Situation]; Fig. 1 Perdurant [setting[0..*] : Situation]. Range blanks and multiplicities are retained
+    as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: setting[0..*]
+- id: R13
+  label: t_component of[1..*]
+  statement: 'Printed slot occurrences: Fig. 1 Functional role [t_component of[1..*] : S-Description];
+    Fig. 1 Course of events [t_component of[1..*] : S-Description]; Fig. 1 Parameter [t_component of[1..*]
+    : S-Description]. Range blanks and multiplicities are retained as printed; no current property IRI
+    inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: t_component of[1..*]
+- id: R14
+  label: t_component[1..*]
+  statement: 'Printed slot occurrences: Fig. 1 S-Description [t_component[1..*] : <blank>]. Range blanks
+    and multiplicities are retained as printed; no current property IRI inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: t_component[1..*]
+- id: R15
+  label: satisfies / satisfiedBy
+  statement: Inverse explicitly stated in display 3; direction and witnesses tracked separately.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+- id: R16
+  label: selects / selectedBy
+  statement: Selection signature in 7 and specialized18-20; selectedBy appears in 13 without an explicit
+    inverse definition in this paper ledger.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: R17
+  label: settingFor / constituent / part / t_component
+  statement: Setting entails constituency; part and temporary systemic component remain different, with
+    external ground definitions and orientation unresolved.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: R18
+  label: modalityFor / requisiteFor
+  statement: Typing22-23; Fig. 1 abbreviations are display variants without asserted IRI equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: R19
+  label: valued by / played by / sequences / satisfied by
+  statement: All Fig. 1 association multiplicities retained in diagrams.yaml; no one-to-one interpretation
+    inferred.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+- id: R20
+  label: VALUED-BY / PLAYED-BY / SEQUENCES / REFERENCES
+  statement: Fig. 2 template association labels preserved, REFERENCES not automatically replaced by satisfaction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: R21
+  label: valued-by / played-by / sequences / external-intentionality / location-of / manages / refers-to
+    / part-of
+  statement: Fig. 3 complete association inventory in diagrams.yaml. Statement-to-Symbol printed part-of
+    orientation is retained as a question, not silently corrected.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: R22
+  label: plays / is a
+  statement: Fig. 5 role mappings versus taxonomy, with all four query-role mappings recorded.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: R23
+  label: I:(e,c)->m
+  statement: Unnumbered interpretation map, separate from the 23 numbered formulas; formal-looking notation
+    does not prove a computable unique meaning.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+scenarios:
+- id: S01
+  label: Contextual classification
+  statement: 'Positive reconstruction: a communication method describes a situation, a message-bearing
+    information object plays Expression and a description plays Meaning. Adverse: shared URI spelling
+    alone does not identify the same meaning or referent.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E08
+  - E09
+- id: S02
+  label: Role versus performer
+  statement: 'Positive: one endurant plays a selected communication role. Adverse: identifying role with
+    performer erases the possibility of different roles in different descriptions. No role rigidity or
+    global identity criterion is established by the signature alone.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E09
+- id: S03
+  label: Parameter values
+  statement: 'Positive: a parameter has a Region witness as required by 21. Adverse: multiple regions
+    remain possible; neither21 norFig.1 imposes a unique address or value.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E10
+- id: S04
+  label: Local versus joint coherence
+  statement: 'Manual adverse argument, not solver execution: each of P(a) and not P(a) can be individually
+    compatible with a ground theory that decides neither; their conjunction is inconsistent. The SoA wording
+    therefore needs a joint-consistency condition before such a guarantee can be claimed.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+- id: S05
+  label: One shared description
+  statement: 'Positive: all setting constituents may have witnesses through one description. Adverse:13
+    permits separate w,z witnesses per edge; it does not force that common-description choice or identify
+    the witness from 4.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+- id: S06
+  label: Indexed category scope
+  statement: 'Positive: one course-only description is allowed by prose. Adverse: a naive universal per-Pi
+    reading of 9 could demand components from every category. Treat this as a schema reconstruction question
+    before executable checks.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: S07
+  label: Filler existence asymmetry
+  statement: Positive:21 supplies a parameter-value existential. Adverse:18-19 are implication signatures,
+    so a role or course without a playedBy/sequences edge is not rejected by those signatures alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+- id: S08
+  label: Message-dependent agent roles
+  statement: 'Positive: Resolver decodes a query then encodes an answer. Adverse: assigning it permanently
+    to just Encoder or Decoder loses the different-message qualification in Fig. 5.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: S09
+  label: Human/software intentionality
+  statement: 'Positive: the SWAP model assumes human-derived software intentionality. Adverse: a running
+    peer or successful network transfer does not establish autonomous understanding or human semantic
+    agreement.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E11
+- id: S10
+  label: Context homonymy
+  statement: 'Positive: distinguish Jakobson Context/referent from the S-description filling interpretation
+    S-context. Adverse: merging them merely because both are called context collapses modeling levels.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: S11
+  label: Paper-to-file substitution
+  statement: 'Positive: retain ExtendedDnS397 as a later related artifact for investigation. Adverse:
+    treating its58 local classes or2005 README counts as the 2003 paper class population invents historical
+    fidelity.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - A03
+- id: S12
+  label: Structural versus semantic success
+  statement: 'Positive: parse11 supplied modules and resolve declared imports without network access.
+    Adverse: this does not demonstrate OWL-DL profile, consistency, correct individual counts or complete
+    manual definitions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - A03
+- id: S13
+  label: Temporal/systemic component
+  statement: 'Positive: use t_component for a source-described systemic relation. Adverse: inferring a
+    full time-indexed identity history from a binary printed predicate invents omitted temporal parameters.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: S14
+  label: Partial communication model
+  statement: 'Positive: the visible diagrams support a worked communication/query illustration. Adverse:
+    missing Code box, omitted participation/setting links and absent refined process description prevent
+    a claim of complete executable SWAP coverage.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  - E11
+  - E12
+findings:
+- id: F01
+  label: Direct prior overlap
+  statement: D&S explicitly treats conceptualization, context, communication and interpretation; later
+    novelty arguments cannot characterize all prior work as static concept taxonomies. Compare exact unmet
+    scenarios after synthesis.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E03
+  - E08
+  - E09
+- id: F02
+  label: Joint coherence not guaranteed by wording
+  statement: Individually coherent assertions do not suffice for joint consistency. The adverse case is
+    reviewer reasoning, not an executed countermodel or a claim that every source example is inconsistent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+- id: F03
+  label: Layering is not complete semantic preservation
+  statement: First-order reification of partial theories/models enables contextual entities, but the paper
+    does not prove faithful reconstruction of all model-theoretic satisfaction or all source-theory consequences.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E13
+- id: F04
+  label: Category-index scope
+  statement: Pi/PiD/SDi/Si are presentation-level schema indices. A universal instantiation policy must
+    be specified before(9) is treated as a demand for every category. Conditional ambiguity is not proven
+    inconsistency.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: F05
+  label: Missing selectedBy inverse display
+  statement: 'Only satisfies/satisfiedBy has an explicit numbered inverse axiom. selectedBy in 13 cannot
+    be substituted with selects solely from its name; external artifact inspection remains #235.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+- id: F06
+  label: Per-edge versus common-description witness
+  statement: Display13 has local existential witnesses; no explicit joint condition ties every constituent
+    to one selected description or the witness of 4. This limits the derived unification claim.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+- id: F07
+  label: Unparenthesized display 14
+  statement: Preserve its source grouping defect and distinguish proposed reconstruction. Do not publish
+    a repaired formula as the author transcription.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+- id: F08
+  label: Part direction and time boundary
+  statement: Part orientation/constitution is delegated to ground definitions; t_component is binary here
+    despite temporal terminology. No complete temporal trace or corrected part-of direction is inferred.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E10
+- id: F09
+  label: Existence and disjointness limits
+  statement: Parameter-value existence21 differs from role/course typing18-19. Explicit PiD/SD disjointness6
+    does not establish all-category or Description/Situation disjointness.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: F10
+  label: Semiotic role/filler discipline
+  statement: Expression/message are roles filled by information objects, meanings by descriptions and
+    S-context by S-descriptions. This distinction is prior conceptual machinery, not automatically identical
+    to later LMM classes.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: F11
+  label: Six constituents versus figure coverage
+  statement: Jakobson prose discusses six constituents, including Code. Fig. 3 omits an explicit Code
+    box and adds Address; diagram coverage alone is not complete executable six-role modeling.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: F12
+  label: Three-versus-four editorial count
+  statement: Sec. 3.2 says three query roles but lists four and draws Initiator/Resolver/Forwarder/Processor.
+    Record the discrepancy without inventing another role or changing source text.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: F13
+  label: Human interpretation boundary
+  statement: Footnote9 assumes peers inherit intentionality from humans; human interpretation remains
+    outside the system. Successful transfer is not evidence of understanding or consensus.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E11
+- id: F14
+  label: Illustration versus measured evaluation
+  statement: Communication and SWAP are worked applications; no identified controlled semantic-correctness,
+    performance, expert-validation or reasoning result is reported. The unpublished WordNet percentage
+    remains an unreplicated author claim.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E10
+  - E11
+  - E12
+  - E13
+- id: F15
+  label: Later official artifact recovered
+  statement: 'LOA-linked DLP3971 has 11 supplied OWL modules, LGPL2.1-or-later README and a397 ExtendedDnS
+    candidate. Original2003 correspondence and full58-class manual glossary are pending #235, not blocked
+    by an unavailable PDF.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - A03
+- id: F16
+  label: Population discrepancy retained
+  statement: README reports205 classes/311 object properties/2 annotation properties; executed union of
+    explicitly declared named entities has 208/313/0. Difference may reflect count policy or version;
+    no cause was proved. Zero annotation-property declarations does not mean no annotations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A03
+questions:
+- id: Q01
+  label: Historical identity and full selected glossary
+  statement: '#235: Establish what author-controlled evidence connects ExtendedDnS397/3971 to 2003; provide
+    all 58 local definitions or explicit gaps plus hierarchy/constraints, external redeclarations and
+    bounded direct-import correspondence.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - A03
+- id: Q02
+  label: Eight bounded semantic checks
+  statement: '#235: Select at most eight checks: joint coherence; indexed component scope; selects/selectedBy
+    inverse; one common description; display 14 grouping; part/component direction; parameter versus role/course
+    existential/cardinality; communication-role/filler/version correspondence. No Clariceptify changes.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E05
+  - E06
+  - E09
+  - E10
+  - A02
+- id: Q03
+  label: Foundational edition
+  statement: Which exact DOLCE version supplied the paper ground predicates and part/constitution conventions?
+    Paper family is established; an edition and later-artifact equivalence are not.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - A02
+  - A03
+- id: Q04
+  label: Process completeness
+  statement: Can an author source supply the omitted refined SWAP description, participation/setting links
+    and missing Code mapping without constructing them as if originally present?
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  - E12
+- id: Q05
+  label: Evidence for consensus
+  statement: What controlled observations would distinguish correct message transfer from shared interpretation
+    and social agreement? A future proposal must be scenario-specific and remain owner-deferred.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E11
+  - E13
+- id: Q06
+  label: Distribution population policy
+  statement: Can README205/311/2 versus parsed208/313/0 be reconciled under one explicit version/declaration
+    policy? Current structural evidence does not settle the cause.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A03
+synthesis:
+- id: Y01
+  label: Existing conceptual machinery
+  statement: Carry DnS role/filler, description/situation and contextual interpretation into the comparison
+    matrix as positive prior coverage; do not turn open technical questions into claims of absence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E09
+- id: Y02
+  label: Scenario bank
+  statement: Retain common-description witnesses, context homonyms, role/performer identity, joint coherence
+    and message-dependent agency as source-specific test candidates. Adoption remains DEFER_TO_OWNER_AFTER_SYNTHESIS.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E06
+  - E09
+  - E12
+- id: Y03
+  label: Separate source populations
+  statement: Matrix must distinguish completed2003 paper, retained later 397 archive,58-local-class pending
+    glossary, imported definitions and unexecuted semantic checks. Unknown original class count remains
+    null.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - A03
+- id: Y04
+  label: Comparison and final boundary
+  statement: 'Use bounded DnS/DUL comparison #251 and acquired-source synthesis before final #126. Earlier
+    scoped #68 remains historically valid;#235 stays open. No new model requirement, definition, fixture,
+    manuscript or release is accepted.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E13
+  - A01
+evaluation:
+  Verification:
+    statement: Numbered displays and diagrams provide formalization evidence, but no identified reasoner/profile
+      or theorem-checking log is supplied. The archive was actually parsed for declarations/imports only;
+      schema checks do not establish semantic truth.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E05
+    - E06
+    - E07
+    - A01
+  Validation:
+    statement: Domain examples and interpretive arguments motivate the categories. No independent expert
+      recruitment, validated CQ set or elicitation protocol is identified in the complete selected paper.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E07
+    - E09
+    - E13
+  Evaluation:
+    statement: SWAP process/application is illustrative, without a controlled benchmark, measured semantic
+      agreement, error analysis or reproducible performance comparison. Unpublished WordNet claim is not
+      reproduced.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E10
+    - E11
+    - E12
+    - E13
+  Assessment:
+    statement: This source-linked AI-assisted critique exposes quantification, witness, identity, direction
+      and version uncertainties; it is not independent expert acceptance or an exhaustive proof of all
+      consequences.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E05
+    - E06
+    - E09
+    - E10
+    - A02
+  Assurance:
+    statement: Pinned PDF/ZIP/member hashes, all-page/formula/figure ledgers, dated bounded discovery,
+      reproducible structural intake and separate pending issues support traceability. CI and file retention
+      do not guarantee scientific adequacy.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E14
+    - A01
+    - A02
+    - A03
+artifact:
+  issue: 235
+  status: RELATED_LATER_DISTRIBUTION_RETAINED_FULL_GLOSSARY_AND_CORRESPONDENCE_PENDING
+  version_relation: 'DLP3971.zip was linked by the official LOA DOLCE overview and retained unchanged
+    (261017 bytes, SHA256 b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2). README copyright
+    2005 and factorized3971 metadata prevent automatic identification with the 2003 paper. All 11 OWL
+    modules parsed; supplied root imports resolve internally. ExtendedDnS.owl versionInfo397 has 68 explicit
+    named owl:Class IRIs (58 local,10 external redeclarations) and 1650 explicit triples. Its all-IRI/comment-availability
+    intake is complete; manual definitions/hierarchy/constraints and selected semantic checks remain #235.
+    No reasoner/profile execution or inferred counts. README author counts and actual declaration-union
+    counts remain separate. Raw source is retained privately and not copied into this public repository.'
+  discovery_execution:
+    path: evaluation/related-work/dns/deep-review-discovery.json
+    sha256: b6765aa78540f96538e053998ae03374506b3a2357c5d24accc52b41a649186a
+    checked_on: '2026-10-27'
+    state: EXECUTED_OFFICIAL_ZIP_ACQUISITION_AND_RDF_PARSE_NO_SEMANTIC_TEST
+  dlp_intake:
+    path: evidence/related-work/corpus/dlp3971-intake.json
+    sha256: af5b17020ab60c06789bf03c31b2408388560ee0f3a318958771b3d29f4acd55
+    source_sha256: b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2
+  repository_state: Official standalone distribution retained. Three bounded GitHub repository searches
+    did not identify a corresponding development repository; global absence is not claimed.
+  foundation:
+    paper_family: DOLCE
+    paper_edition: null
+    paper_relation: EXPLICIT_PLUGIN_GROUNDING_ADAPTABLE_TO_OTHER_FOUNDATIONS
+    candidate_version_info:
+    - '397'
+    - classified
+    candidate_actual_imports:
+    - http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl
+    - http://www.loa-cnr.it/ontologies/SpatialRelations.owl
+    - http://www.loa-cnr.it/ontologies/TemporalRelations.owl
+    historical_fidelity: NOT_ESTABLISHED
+    BFO_or_UFO_grounding: NOT_CLAIMED
+closure_boundary: 'Complete critical paper review: all 18 pages,23 numbered displays, unnumbered interpretation
+  map, five figures, eight content footnotes and 18 references. Not complete original 2003 executable
+  artifact reconstruction,58-class manual glossary, reasoner/profile run, measured SWAP evaluation or
+  independent scientific acceptance.#235 retains the selected technical module work and eight bounded
+  correspondence questions;#251 comparison and #126 final synthesis remain open. Earlier #68 closure retains
+  its historical scope. No Clariceptify ontology, definition, requirement, fixture, manuscript or release
+  changed.'

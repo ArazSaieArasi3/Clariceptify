@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "work_id": "DnS2003",
+  "checked_on": "2026-10-27",
+  "official_link_chain": [
+    "https://www.loa.istc.cnr.it/dolce/overview.html",
+    "https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip"
+  ],
+  "acquisition": {
+    "http_status": 200,
+    "content_type": "application/zip",
+    "bytes": 261017,
+    "sha256": "b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2",
+    "retained_filename": "Clariceptify_DLP3971_Source_2026-10-27.zip",
+    "source_redistributed_in_repository": false
+  },
+  "repository_search": {
+    "service": "GitHub connected repository search",
+    "queries": [
+      "\"Descriptions and Situations\" Gangemi",
+      "ExtendedDnS",
+      "DLP3971"
+    ],
+    "results": [
+      {
+        "query": "\"Descriptions and Situations\" Gangemi",
+        "candidates": []
+      },
+      {
+        "query": "ExtendedDnS",
+        "candidates": []
+      },
+      {
+        "query": "DLP3971",
+        "candidates": []
+      }
+    ],
+    "outcome": "No corresponding development repository identified within these three checked repository searches. Official standalone distribution found separately.",
+    "global_absence_claim": false
+  },
+  "intake": {
+    "path": "evidence/related-work/corpus/dlp3971-intake.json",
+    "sha256": "af5b17020ab60c06789bf03c31b2408388560ee0f3a318958771b3d29f4acd55",
+    "module_population": 11,
+    "selected_candidate": "ExtendedDnS.owl",
+    "selected_candidate_sha256": "7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41",
+    "manual_definition_review": "PENDING_235",
+    "historical_2003_fidelity": "NOT_ESTABLISHED"
+  },
+  "limits": [
+    "Official 2005-copyright package is related later distribution, not proven identical to 2003 paper.",
+    "RDF parsing resolves supplied declared imports only; no network imports, profile or reasoner execution.",
+    "README population and executed declaration policy differ; neither silently overrides the other."
+  ],
+  "model_change": "NONE"
+}

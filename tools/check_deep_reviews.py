@@ -117,12 +117,65 @@ def validate_diagram_inventory(dossier, inventory):
     indexed = [r['printed_name'] for r in dossier['relation_index'] if 'printed_name' in r]
     if len(indexed) != len(set(indexed)) or set(indexed) != names:
         raise ValueError('Unindexed or duplicate diagram property')
+    class_numbers = inventory.get('class_diagram_numbers')
+    if class_numbers is not None and (len(class_numbers) != len(set(class_numbers)) or
+            not set(class_numbers) <= {f['number'] for f in figures} or
+            any((f.get('kind') == 'CLASS_DIAGRAM') != (f['number'] in class_numbers) for f in figures)):
+        raise ValueError('Diagram kind/class population mismatch')
+    class_key = 'class_box_labels' if class_numbers is not None else 'class_box_labels_figures2_6'
     expected = {'figure_boxes': sum(len(f['nodes']) for f in figures),
                 'distinct_labels_all_figures': len({n['label'] for f in figures for n in f['nodes']}),
-                'class_box_labels_figures2_6': len({n['label'] for f in figures if f['number'] != 1 for n in f['nodes']}),
+                class_key: len({n['label'] for f in figures
+                                if (f['number'] in class_numbers if class_numbers is not None else f['number'] != 1)
+                                for n in f['nodes']}),
                 'slot_occurrences': len(slots), 'distinct_printed_property_names': len(names)}
     if inventory['counts'] != expected:
         raise ValueError('Diagram display population mismatch')
+
+
+def validate_dlp_intake(report, binding):
+    """Check retained structural evidence without promoting it to a manual glossary."""
+    if report['archive']['sha256'] != binding['source_sha256']:
+        raise ValueError('DLP source substitution')
+    if (report['historical_2003_fidelity'] != 'NOT_ESTABLISHED' or report['paper_class_count'] is not None or
+            report['reasoner_execution'] != 'NOT_EXECUTED' or report['inferred_counts'] is not None or
+            report['semantic_acceptance'] != 'NOT_ASSESSED' or report['model_change'] != 'NONE'):
+        raise ValueError('DLP intake promoted to historical/semantic acceptance')
+    modules = report['modules']
+    if (report['module_population'] != len(modules) or
+            len({m['filename'] for m in modules}) != len(modules) or
+            len({m['ontology_iri'] for m in modules}) != len(modules)):
+        raise ValueError('Incomplete or duplicate DLP module population')
+    union = set()
+    for m in modules:
+        classes = m['declared_named_class_iris']
+        local = {iri for iri in classes if iri.startswith(m['namespace'])}
+        candidates = m['local_definition_candidates']
+        if (len(classes) != len(set(classes)) or len(classes) != m['declared_named_owl_classes_all_namespaces'] or
+                len(local) != m['local_named_owl_classes'] or
+                len(classes) - len(local) != m['external_named_class_redeclarations'] or
+                {c['iri'] for c in candidates} != local or len(candidates) != len(local)):
+            raise ValueError('Incomplete DLP declared class/comment inventory')
+        if any(c['definition_review'] != 'PENDING' or c['public_raw_comment_text'] or
+               ((c['comment_count'] > 0) != bool(c['comment_sha256'])) for c in candidates):
+            raise ValueError('DLP comment intake promoted to manual definition')
+        union.update(classes)
+    if len(union) != report['asserted_archive_union']['counts']['named_owl_classes']:
+        raise ValueError('DLP class union population mismatch')
+    mapping = {m['ontology_iri']: m for m in modules}
+    visited, pending, unresolved = set(), [report['asserted_archive_union']['root_iri']], set()
+    while pending:
+        iri = pending.pop()
+        if iri in visited:
+            continue
+        if iri not in mapping:
+            unresolved.add(iri)
+            continue
+        visited.add(iri)
+        pending.extend(mapping[iri]['declared_import_iris'])
+    if (sorted(visited) != report['asserted_archive_union']['resolved_modules'] or
+            sorted(unresolved) != report['asserted_archive_union']['unresolved_declared_imports']):
+        raise ValueError('DLP supplied import closure mismatch')
 
 
 def validate_class_review_coverage(dossier, catalog):
@@ -173,6 +226,15 @@ def check(root=ROOT):
             binding = d['artifact']['discovery_execution']
             if hashlib.sha256((root / binding['path']).read_bytes()).hexdigest() != binding['sha256']:
                 raise ValueError('Changed discovery execution evidence')
+        if 'dlp_intake' in d['artifact']:
+            binding = d['artifact']['dlp_intake']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed DLP intake evidence')
+            intake = json.loads(raw)
+            validate_dlp_intake(intake, binding)
+            if hashlib.sha256((root / intake['generator']['path']).read_bytes()).hexdigest() != intake['generator']['sha256']:
+                raise ValueError('Changed DLP intake generator')
         if entry['state'] != d['status']:
             raise ValueError('Register/review state mismatch')
         if 'census' in d['artifact']:
