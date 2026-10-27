@@ -314,10 +314,11 @@ discovery_attempts:
   checked_urls:
   - https://www.loa.istc.cnr.it/dolce/overview.html
   - https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
-  outcome: 'Official DLP3971.zip HTTP200 ZIP retained and 11 supplied OWL modules parsed; ExtendedDnS397 candidate identified.
-    Three GitHub repository queries return no corresponding development repository. Exact discovery/intake: evaluation/related-work/dns/deep-review-discovery.json.'
-  limitation: 'Related later 2005-copyright distribution is not proven identical to 2003; bounded repository search is not
-    global absence; full candidate glossary and eight selected correspondence checks stay #235.'
+  outcome: 'Official DLP3971.zip HTTP200 ZIP retained and 11 supplied OWL modules parsed; ExtendedDnS397 candidate
+    identified. Three GitHub repository queries return no corresponding development repository. Exact discovery/intake:
+    evaluation/related-work/dns/deep-review-discovery.json.'
+  limitation: 'Related later 2005-copyright distribution is not proven identical to 2003; bounded repository search
+    is not global absence; full candidate glossary and eight selected correspondence checks stay #235.'
 - id: W09
   method: PRIMARY_PAPER_OCR_VISUAL_REVIEW_HTTP_PROBES_BOUNDED_REPOSITORY_AND_CODE_SEARCH
   checked_on: '2026-10-27'
@@ -329,11 +330,37 @@ discovery_attempts:
   - https://tw.rpi.edu/web/project/swBIG
   - http://swbig.googlecode.com
   - https://github.com/dbpedia/ontology-tracker/blob/32f457a42b910e39ef087b26f1664bd8d507518b/ontologies/purl.org/cmo/v2006/2006-06-30.n3
-  outcome: 'Original PURL redirects to old Google Code SVN returning 404. Matching-namespace third-party DBpedia mirror retained
-    and parsed; all seven local class definitions/constraints reviewed. whyis namespace reference is not an ontology file.
-    Exact probes, pinned metadata and limits: evaluation/related-work/cmo/deep-review-discovery.json.'
+  outcome: 'Original PURL redirects to old Google Code SVN returning 404. Matching-namespace third-party DBpedia
+    mirror retained and parsed; all seven local class definitions/constraints reviewed. whyis namespace reference
+    is not an ontology file. Exact probes, pinned metadata and limits: evaluation/related-work/cmo/deep-review-discovery.json.'
   limitation: 'No original author development repository or exact 2011 byte identity confirmed; path-date not release-date;
     original/imported definitions and selected semantic work stay #245. Search failure is not universal absence.'
+- id: COM-G01
+  query: '"Computational Ontology of Mind"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-27'
+  result_limit: 8
+  returned: []
+  limitation: 'Bounded name/description search; no global nonexistence claim. COM #243 stays open.'
+- id: COM-G02
+  query: Ferrario Oltramari COM
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-27'
+  result_limit: 8
+  returned: []
+  limitation: 'Bounded name/description search; no global nonexistence claim. COM #243 stays open.'
+- id: COM-S01
+  query: COM2004 official links, exact-title code and other-host discovery
+  method: PRIMARY_LAB_PAGES_CONNECTED_CODE_AND_WEB_SEARCH
+  checked_on: '2026-10-27'
+  checked_urls:
+  - https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html
+  - https://www.loa.istc.cnr.it/index.php/faq/ontology-of-cognition/
+  - https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
+  outcome: FOIS2004 identity confirmed; no author formal distribution identified. Limited code search returned this
+    repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
+  limitation: No exact namespace, imports, machine declaration populations or historical fidelity established; different
+    works not substituted.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -532,7 +559,8 @@ records:
     - http://www.loa-cnr.it/ontologies/SpatialRelations.owl
     - http://www.loa-cnr.it/ontologies/TemporalRelations.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Paper DOLCE edition and 2003 implementation correspondence unknown; later candidate edition is not substituted.
+    limitations: Paper DOLCE edition and 2003 implementation correspondence unknown; later candidate edition is
+      not substituted.
   class_coverage:
     state: ORIGINAL_PAPER_COUNT_UNKNOWN_LATER_CANDIDATE_ALL_IRIS_INDEXED_GLOSSARY_PENDING
     local_classes: null
@@ -578,8 +606,8 @@ records:
     - http://purl.obolibrary.org/obo/iao.owl
     - http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Paper edition unknown. Candidate actual ifomis.org/bfo/1.1 namespace references are not a confirmed author-paper
-      edition or pinned BFO import; bfo2 prefix is not BFO2 proof.
+    limitations: Paper edition unknown. Candidate actual ifomis.org/bfo/1.1 namespace references are not a confirmed
+      author-paper edition or pinned BFO import; bfo2 prefix is not BFO2 proof.
   class_coverage:
     state: ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN
     local_classes: null
@@ -605,12 +633,15 @@ records:
 - id: COM2004
   title: Towards a Computational Ontology of Mind
   primary_issue: 81
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
     urls: []
     evidence:
     - G04
+    - COM-G01
+    - COM-G02
+    - COM-S01
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
   artifact_state: PAPER_FORMALISM_ONLY
@@ -619,12 +650,13 @@ records:
     edition: null
     relation: PAPER_STATED_GROUNDING
     basis: AUTHOR_REPORTED
-    locator: COM-FOIS.pdf abstract and sec.3 import list; Fig.1 integrated taxonomy
+    locator: PDF1 abstract; PDF5-6 sec.2.2 imported predicates; PDF10 Fig.1; PDF11 ref.3 D17(2002)
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: DOLCE family and conceptual predicate reuse explicit;2002 D17 citation is not an exact acquired
+      edition or machine import. No DUL/DOLCE-Lite/UFO/BFO correspondence established.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
@@ -633,6 +665,16 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 243
+  paper_review:
+    path: evidence/related-work/deep-reviews/COM2004/review.yaml
+    named_figure_categories: 50
+    bold_com_additions: 11
+    conceptual_catalog_entries: 80
+    labeled_formulas: 20
+    manual_critical_findings: 16
+    machine_glossary_state: UNKNOWN_NO_AUTHOR_DISTRIBUTION_ACQUIRED
+    limits: Paper catalog and manually analyzed formulas are not local/imported OWL class definitions or solver
+      execution.
 - id: BDI2020
   title: Foundations for an Ontology of Belief, Desire and Intention
   primary_issue: 85

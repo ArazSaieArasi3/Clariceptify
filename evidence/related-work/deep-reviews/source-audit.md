@@ -15,7 +15,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | LMM2008 (#260) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; PINNED_LOCAL_CLASSES_MANUALLY_REVIEWED_HISTORICAL_ALIGNMENT_UNACQUIRED | DOLCE via DUL and IOLite; ACTUAL_IMPORT; edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2 | [29 classes](LMM2008/classes.md); 25 comment candidates; 4 missing | #274, #88, #271, #252 |
 | DnS2003 (#261) | OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://www.loa.istc.cnr.it/dolce/overview.html); [source](https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip); DLP3971_11_MODULES_RETAINED_EXTENDEDDNS397_CANDIDATE | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | ORIGINAL_PAPER_COUNT_UNKNOWN_LATER_CANDIDATE_ALL_IRIS_INDEXED_GLOSSARY_PENDING | #235 |
 | CMO (#83) | THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://github.com/dbpedia/ontology-tracker); [source](https://github.com/tetherless-world/whyis); MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN | BFO with IAO reuse; PAPER_STATED_GROUNDING; edition: UNKNOWN | ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN | #245 |
-| COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #243 |
+| COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_VERSION_MATCH_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #247 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | DOLCE-0; DUL alignment; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
@@ -288,6 +288,34 @@ Query: `Conceptual Model Ontology; swbig; cmo McCusker; exact purl.org/twc/ontol
 Original PURL redirects to old Google Code SVN returning 404. Matching-namespace third-party DBpedia mirror retained and parsed; all seven local class definitions/constraints reviewed. whyis namespace reference is not an ontology file. Exact probes, pinned metadata and limits: evaluation/related-work/cmo/deep-review-discovery.json.
 
 Limit: No original author development repository or exact 2011 byte identity confirmed; path-date not release-date; original/imported definitions and selected semantic work stay #245. Search failure is not universal absence.
+
+### COM-G01: CONNECTED_GITHUB_REPOSITORY_SEARCH
+
+Query: `"Computational Ontology of Mind"`. Checked: 2026-10-27.
+
+Returned candidate names (limit 8): none returned by this query.
+
+Limit: Bounded name/description search; no global nonexistence claim. COM #243 stays open.
+
+### COM-G02: CONNECTED_GITHUB_REPOSITORY_SEARCH
+
+Query: `Ferrario Oltramari COM`. Checked: 2026-10-27.
+
+Returned candidate names (limit 8): none returned by this query.
+
+Limit: Bounded name/description search; no global nonexistence claim. COM #243 stays open.
+
+### COM-S01: PRIMARY_LAB_PAGES_CONNECTED_CODE_AND_WEB_SEARCH
+
+Query: `COM2004 official links, exact-title code and other-host discovery`. Checked: 2026-10-27.
+
+- https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html
+- https://www.loa.istc.cnr.it/index.php/faq/ontology-of-cognition/
+- https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
+
+FOIS2004 identity confirmed; no author formal distribution identified. Limited code search returned this repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
+
+Limit: No exact namespace, imports, machine declaration populations or historical fidelity established; different works not substituted.
 
 ## Interpretation and next work
 

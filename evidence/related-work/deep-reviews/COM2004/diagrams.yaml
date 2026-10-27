@@ -1,0 +1,424 @@
+schema_version: '1.0'
+work_id: COM2004
+source_sha256: 16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245
+figure_population: 1
+count_policy: PRINTED_ITEMS_NOT_ONLY_BOXES
+class_diagram_numbers:
+- 1
+counts:
+  figure_items: 50
+  distinct_labels_all_figures: 50
+  class_box_labels: 50
+  slot_occurrences: 0
+  distinct_printed_property_names: 0
+figures:
+- number: 1
+  pdf_page: 10
+  printed_page: null
+  kind: CLASS_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: PT
+    label: PT / Particular
+    slots: []
+    paper_parent: null
+    bold_com_addition: false
+  - id: ED
+    label: ED / Endurant
+    slots: []
+    paper_parent: PT
+    bold_com_addition: false
+  - id: PD
+    label: PD / Perdurant
+    slots: []
+    paper_parent: PT
+    bold_com_addition: false
+  - id: Q
+    label: Q / Quality
+    slots: []
+    paper_parent: PT
+    bold_com_addition: false
+  - id: AB
+    label: AB / Abstract
+    slots: []
+    paper_parent: PT
+    bold_com_addition: false
+  - id: PED
+    label: PED / Physical Endurant
+    slots: []
+    paper_parent: ED
+    bold_com_addition: false
+  - id: NPED
+    label: NPED / Non-physical Endurant
+    slots: []
+    paper_parent: ED
+    bold_com_addition: false
+  - id: AS
+    label: AS / Arbitrary Sum
+    slots: []
+    paper_parent: ED
+    bold_com_addition: false
+  - id: EV
+    label: EV / Event
+    slots: []
+    paper_parent: PD
+    bold_com_addition: false
+  - id: STV
+    label: STV / Stative
+    slots: []
+    paper_parent: PD
+    bold_com_addition: false
+  - id: TQ
+    label: TQ / Temporal Quality
+    slots: []
+    paper_parent: Q
+    bold_com_addition: false
+  - id: PQ
+    label: PQ / Physical Quality
+    slots: []
+    paper_parent: Q
+    bold_com_addition: false
+  - id: AQ
+    label: AQ / Abstract Quality
+    slots: []
+    paper_parent: Q
+    bold_com_addition: false
+  - id: Fact
+    label: Fact / Fact
+    slots: []
+    paper_parent: AB
+    bold_com_addition: false
+  - id: Set
+    label: Set / Set
+    slots: []
+    paper_parent: AB
+    bold_com_addition: false
+  - id: R
+    label: R / Region
+    slots: []
+    paper_parent: AB
+    bold_com_addition: false
+  - id: M
+    label: M / Amount of Matter
+    slots: []
+    paper_parent: PED
+    bold_com_addition: false
+  - id: F
+    label: F / Feature
+    slots: []
+    paper_parent: PED
+    bold_com_addition: false
+  - id: POB
+    label: POB / Physical Object
+    slots: []
+    paper_parent: PED
+    bold_com_addition: false
+  - id: NPOB
+    label: NPOB / Non-physical Object
+    slots: []
+    paper_parent: NPED
+    bold_com_addition: false
+  - id: ACH
+    label: ACH / Achievement
+    slots: []
+    paper_parent: EV
+    bold_com_addition: false
+  - id: ACC
+    label: ACC / Accomplishment
+    slots: []
+    paper_parent: EV
+    bold_com_addition: false
+  - id: ST
+    label: ST / State
+    slots: []
+    paper_parent: STV
+    bold_com_addition: false
+  - id: PRO
+    label: PRO / Process
+    slots: []
+    paper_parent: STV
+    bold_com_addition: false
+  - id: TL
+    label: TL / Temporal Location
+    slots: []
+    paper_parent: TQ
+    bold_com_addition: false
+  - id: SL
+    label: SL / Spatial Location
+    slots: []
+    paper_parent: PQ
+    bold_com_addition: false
+  - id: TR
+    label: TR / Temporal Region
+    slots: []
+    paper_parent: R
+    bold_com_addition: false
+  - id: PR
+    label: PR / Physical Region
+    slots: []
+    paper_parent: R
+    bold_com_addition: false
+  - id: AR
+    label: AR / Abstract Region
+    slots: []
+    paper_parent: R
+    bold_com_addition: false
+  - id: APO
+    label: APO / Agentive Physical Object
+    slots: []
+    paper_parent: POB
+    bold_com_addition: false
+  - id: NAPO
+    label: NAPO / Non-agentive Physical Object
+    slots: []
+    paper_parent: POB
+    bold_com_addition: false
+  - id: MOB
+    label: MOB / Mental Object
+    slots: []
+    paper_parent: NPOB
+    bold_com_addition: false
+  - id: SOB
+    label: SOB / Social Object
+    slots: []
+    paper_parent: NPOB
+    bold_com_addition: false
+  - id: MES
+    label: MES / Mental State
+    slots: []
+    paper_parent: ST
+    bold_com_addition: true
+  - id: T
+    label: T / Time Interval
+    slots: []
+    paper_parent: TR
+    bold_com_addition: false
+  - id: S
+    label: S / Space Region
+    slots: []
+    paper_parent: PR
+    bold_com_addition: false
+  - id: COJ
+    label: COJ / Computed Object
+    slots: []
+    paper_parent: MOB
+    bold_com_addition: true
+  - id: PRC
+    label: PRC / Percept
+    slots: []
+    paper_parent: MOB
+    bold_com_addition: true
+  - id: ASO
+    label: ASO / Agentive Social Object
+    slots: []
+    paper_parent: SOB
+    bold_com_addition: false
+  - id: NASO
+    label: NASO / Non-agentive Social Object
+    slots: []
+    paper_parent: SOB
+    bold_com_addition: false
+  - id: PES
+    label: PES / Perceptual State
+    slots: []
+    paper_parent: MES
+    bold_com_addition: true
+  - id: MAT
+    label: MAT / Mental Attitude
+    slots: []
+    paper_parent: MES
+    bold_com_addition: true
+  - id: SAG
+    label: SAG / Social Agent
+    slots: []
+    paper_parent: ASO
+    bold_com_addition: false
+  - id: SC
+    label: SC / Society
+    slots: []
+    paper_parent: ASO
+    bold_com_addition: false
+  - id: COB
+    label: COB / Computed Belief
+    slots: []
+    paper_parent: COJ
+    bold_com_addition: true
+  - id: COD
+    label: COD / Computed Desire
+    slots: []
+    paper_parent: COJ
+    bold_com_addition: true
+  - id: COI
+    label: COI / Computed Intention
+    slots: []
+    paper_parent: COJ
+    bold_com_addition: true
+  - id: BEL
+    label: BEL / Belief
+    slots: []
+    paper_parent: MAT
+    bold_com_addition: true
+  - id: DES
+    label: DES / Desire
+    slots: []
+    paper_parent: MAT
+    bold_com_addition: true
+  - id: INT
+    label: INT / Intention
+    slots: []
+    paper_parent: MAT
+    bold_com_addition: true
+  edges:
+  - child: ED
+    parent: PT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PD
+    parent: PT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: Q
+    parent: PT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: AB
+    parent: PT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PED
+    parent: ED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: NPED
+    parent: ED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: AS
+    parent: ED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: EV
+    parent: PD
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: STV
+    parent: PD
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: TQ
+    parent: Q
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PQ
+    parent: Q
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: AQ
+    parent: Q
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: Fact
+    parent: AB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: Set
+    parent: AB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: R
+    parent: AB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: M
+    parent: PED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: F
+    parent: PED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: POB
+    parent: PED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: NPOB
+    parent: NPED
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: ACH
+    parent: EV
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: ACC
+    parent: EV
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: ST
+    parent: STV
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PRO
+    parent: STV
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: TL
+    parent: TQ
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: SL
+    parent: PQ
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: TR
+    parent: R
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PR
+    parent: R
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: AR
+    parent: R
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: APO
+    parent: POB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: NAPO
+    parent: POB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: MOB
+    parent: NPOB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: SOB
+    parent: NPOB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: MES
+    parent: ST
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: T
+    parent: TR
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: S
+    parent: PR
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: COJ
+    parent: MOB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PRC
+    parent: MOB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: ASO
+    parent: SOB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: NASO
+    parent: SOB
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: PES
+    parent: MES
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: MAT
+    parent: MES
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: SAG
+    parent: ASO
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: SC
+    parent: ASO
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: COB
+    parent: COJ
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: COD
+    parent: COJ
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: COI
+    parent: COJ
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: BEL
+    parent: MAT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: DES
+    parent: MAT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  - child: INT
+    parent: MAT
+    meaning: drawn taxonomy edge; no OWL IRI/equivalence invented
+  notes: 50 distinct named taxonomy labels,49 taxonomy edges;11 bold COM additions/39 other labels. Unlabeled ellipses
+    and continuation strokes excluded. AB means Abstract here and four-place aboutness in formulas; PR is Physical
+    Region while PRC is Percept. These are not machine-declared OWL class counts.
+artifact_class_count: null
+logical_inference: NOT_EXECUTED
+model_change: NONE

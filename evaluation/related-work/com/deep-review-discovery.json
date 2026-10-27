@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "work_id": "COM2004",
+  "checked_on": "2026-10-27",
+  "source_sha256": "16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245",
+  "primary_pages": [
+    {
+      "url": "https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html",
+      "locator": "FOIS 2004 entry; lines 576-581 in retrieved page; copyright notice line 4; separate SWAP/COME entries 631-641",
+      "outcome": "Official laboratory metadata identifies Ferrario/Oltramari, FOIS 2004, IOS Press, pp.287-297. No COM machine-file link resolved in this entry."
+    },
+    {
+      "url": "https://www.loa.istc.cnr.it/index.php/faq/ontology-of-cognition/",
+      "locator": "Main Publications, COM entry and outgoing paper link",
+      "outcome": "Official laboratory cognition page confirms FOIS 2004 and links https://www.loa.istc.cnr.it/wp-content/uploads/2019/10/FerrarioOltramariFOIS 2004.pdf. That 11-page linked PDF was opened through the search service; its bytes were not downloaded or hash-compared with retained focomf 2.pdf."
+    },
+    {
+      "url": "https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf",
+      "outcome": "Retained 11-page PDF hash independently matches the approved source register. Complete paper inspected locally; no COM namespace, formal module URL or repository link in it."
+    }
+  ],
+  "repository_queries": [
+    {
+      "method": "CONNECTED_GITHUB_REPOSITORY_SEARCH",
+      "query": "\"Computational Ontology of Mind\"",
+      "result_limit": 8,
+      "repositories": []
+    },
+    {
+      "method": "CONNECTED_GITHUB_REPOSITORY_SEARCH",
+      "query": "Ferrario Oltramari COM",
+      "result_limit": 8,
+      "repositories": []
+    }
+  ],
+  "code_search": {
+    "method": "CONNECTED_GITHUB_CODE_SEARCH",
+    "query": "\"Computational Ontology of Mind\"",
+    "result_limit": 8,
+    "returned_hits": 8,
+    "own_project_hits": 6,
+    "external_hits": [
+      {
+        "repository": "vgcagle/DARC",
+        "commit": "8d11de08388196d7c76a85c79f25140e71ec4e8f",
+        "path": "POPODE/DB2OWL/Drammar12_no_individuals.owl",
+        "role": "CITATION_IN_DIFFERENT_ONTOLOGY_NOT_COM_DISTRIBUTION"
+      },
+      {
+        "repository": "vgcagle/DARC",
+        "commit": "8d11de08388196d7c76a85c79f25140e71ec4e8f",
+        "path": "POPODE/DB2OWL/170717_Drammar12bis_integrata_NOexempio_owl_funzionante.owl",
+        "role": "CITATION_IN_DIFFERENT_ONTOLOGY_NOT_COM_DISTRIBUTION"
+      }
+    ],
+    "outcome": "Returned external snippets cite the 2005 Aerospace work in MentalStateSchema annotations. They do not identify the 2004 COM source namespace or establish equivalent axioms. No external file acquired or class count claimed."
+  },
+  "web_searches": [
+    {
+      "query": "\"Towards a Computational Ontology of Mind\" Ferrario Oltramari 2004 FOIS",
+      "outcome": "Official laboratory bibliography and author page confirm 2004 work."
+    },
+    {
+      "query": "\"Computational Ontology of Mind\" ontology owl repository COM Ferrario",
+      "outcome": "Primary paper found; no authoritative executable COM distribution identified in returned results."
+    },
+    {
+      "query": "\"Computational Ontology of Mind\" ontology file download owl github",
+      "outcome": "Broad engine returned unrelated ontology/tool results; not treated as COM artifacts."
+    },
+    {
+      "query": "\"Computational Ontology of Mind\" site:gitlab.com",
+      "outcome": "No matching COM repository identified in returned results."
+    },
+    {
+      "query": "\"Computational Ontology of Mind\" site:sourceforge.net",
+      "outcome": "No matching COM repository identified in returned results."
+    },
+    {
+      "query": "\"Computational Ontology of Mind\" site:loa.istc.cnr.it owl",
+      "outcome": "Official publication/cognition pages and paper located; no author COM file resolved."
+    }
+  ],
+  "version_ambiguity": {
+    "selected_work": "FOIS2004,11-page institutional author PDF; no assigned DOI established in checked primary metadata",
+    "other_work": "Same-title2005 Aerospace record surfaced in discovery; not substituted, acquired or byte-compared",
+    "doi_probe": {
+      "url": "https://doi.org/10.1109/AERO.2005.1559636",
+      "outcome": "SEARCH_SERVICE_OPEN_UNAVAILABLE; not verified as DOI for selected 2004 work"
+    },
+    "related_2004_titles": [
+      "The COM Perspective on Intentional Agents",
+      "COME (Computational Ontology of Mental Entities)"
+    ]
+  },
+  "formal_file": {
+    "state": "NOT_IDENTIFIED_IN_BOUNDED_SEARCH",
+    "namespace": null,
+    "version": null,
+    "sha256": null,
+    "local_class_count": null,
+    "imported_class_count": null,
+    "declared_imports": null,
+    "license": null,
+    "reasoner_execution": "NOT_EXECUTED"
+  },
+  "global_absence_claim": false,
+  "model_change": "NONE",
+  "limits": [
+    "Name/description and title code search have finite result limits and do not cover every host, branch or private resource.",
+    "References in other ontologies are reuse/citation leads, not the original COM distribution.",
+    "No guessed COM.owl URL, invented IRI or machine class population is supplied.",
+    "Exact formal artifact, all-local/imported definitions and bounded semantic checks remain #243."
+  ]
+}
