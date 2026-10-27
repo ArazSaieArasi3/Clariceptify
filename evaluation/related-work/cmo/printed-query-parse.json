@@ -1,0 +1,14 @@
+{
+  "state": "PARSE_REJECTED",
+  "error": "ParseException: Expected SelectQuery, found 'count'  (at char 180), (line:4, col:8)",
+  "source_sha256": "344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49",
+  "source_locator": "PDF6 / p.196 / Fig.3",
+  "query": "PREFIX cmo: <http://purl.org/twc/ontologies/cmo.owl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#> PREFIX ncit:\n<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>\nselect count(distinct ?person) as ?count ?value\nwhere {\n ?person a [cmo:representedBy [skos:broader ncit:Person]].\n ?person ?prop [rdfs:label ?value].\n ?prop cmo:representedBy [skos:broader ncit:Education_Level].\n}",
+  "query_sha256": "017068d424114d7d4de10970ccc41700452ae6ea8febd51e186c3588fbe625f8",
+  "rdflib": "7.6.0",
+  "python": "3.12.14",
+  "checked_on": "2026-10-27",
+  "endpoint_execution": "NOT_EXECUTED",
+  "historical_engine": "NOT_IDENTIFIED",
+  "scope": "Syntax-only check of visually transcribed printed query in the named current parser. No HINTS dataset, corrected query or historical result was executed."
+}

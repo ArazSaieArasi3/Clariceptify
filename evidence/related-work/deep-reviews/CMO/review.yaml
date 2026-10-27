@@ -1,0 +1,1517 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: CMO
+issue: 83
+review_date: '2026-10-27'
+reviewer: AI-assisted complete primary-source inspection with OCR recovery; no independent expert review
+baseline_commit: 7212f3f3a490a2c50cc2bf7f31573964e54776fd
+status: REVIEW_COMPLETE
+identity:
+  title: Towards an Ontology for Conceptual Modeling
+  authors:
+  - James P. McCusker
+  - Joanne Luciano
+  - Deborah L. McGuinness
+  year: 2011
+  doi: null
+  url: https://ceur-ws.org/Vol-833/paper25.pdf
+  version: ICBO2011, CEUR-WS833, pp.191-199;9-page proceedings PDF
+  boundary: Exact9-page proceedings work, conference 2011 and proceedings copyright/publication2012 kept separate.
+    Printed page = PDF+190. Complete sections1-8 plus 2.1, six figures, five numbered content footnotes and 37 references.
+    No table, appendix or numbered mathematical formula. The alternate differently paginated author-uploaded version
+    was not substituted; in this selected work concepts are explicitly called Level 2 entities. PDF metadata names
+    Sandra Smith as technical author, which is not substituted for the three visible scholarly authors. No DOI established
+    in the checked primary proceedings metadata.
+source:
+  filename: CMO.pdf
+  sha256: 344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49
+  pdf_pages: 9
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: p.191/PDF 1, title/authors/abstract and sec.1 Introduction
+  summary: Three authors, conceptual interoperability goal, separate conceptual/logical/physical modeling and noninterference
+    aim.
+- id: E02
+  pages:
+  - 1
+  - 2
+  locator: pp.191-192/PDF 1-2, sec.2 Background including Levels1-3 and two goals
+  summary: Reality/cognitive/representation distinction and conceptual/logical model definitions; two interoperability
+    goals and data-resource examples.
+- id: E03
+  pages:
+  - 2
+  locator: p.192/PDF 2, sec.2.1 Relevant Ontologies and Frameworks
+  summary: BFO/IAO reuse, SKOS vocabulary layer, caBIG/OWL prior limitations and failed one-to-one attribute/property
+    mapping.
+- id: E04
+  pages:
+  - 2
+  - 3
+  locator: pp.192-193/PDF 2-3, sec.3 three use cases and footnotes 1-4
+  summary: Search/query, conversion and mapping; patient-history, clinical-service/vital-status and AIM/BRIDG Person
+    examples.
+- id: E05
+  pages:
+  - 3
+  locator: p.193/PDF 3, sec.3 five requirement headings
+  summary: Common vocabulary; conceptual/logical distinction; natural expression; type/property/relation support;
+    additional relationships.
+- id: E06
+  pages:
+  - 3
+  - 4
+  locator: pp.193-194/PDF 3-4, sec.4 core definitions and footnote 5
+  summary: Type/Quality/Relation, SKOS/IAO superclasses, Universal/FiatEntity, punning and concept-versus-instance
+    discussion.
+- id: E07
+  pages:
+  - 4
+  - 5
+  locator: pp.194-195/PDF 4-5, sec.4 representation/composition/structural relations and Figs.1-2
+  summary: Complete category hierarchy and relation diagram, inverses/subproperties/signatures; source spelling/direction
+    and prose/figure discrepancies retained.
+- id: E08
+  pages:
+  - 4
+  - 5
+  locator: pp.194-195/PDF 4-5, sec.5 Implementation
+  summary: swBIG REST proxy, caGrid calls, NCIt-to-SKOS conversion, UML preservation claims, CDE enumeration of
+    concepts and instance generation.
+- id: E09
+  pages:
+  - 6
+  - 7
+  locator: pp.196-197/PDF 6-7, sec.6 query narrative and Figs.3-4
+  summary: Education-distribution query and nine displayed bars; no exact numeric bar labels or reproducible dataset/engine
+    package.
+- id: E10
+  pages:
+  - 6
+  - 7
+  locator: pp.196-197/PDF 6-7, sec.6 conversion/mapping narrative and Figs.5-6
+  summary: Instance retyping and subclass-generation patterns, task-tailored weak/strict alignment and nonautomatic
+    bird/flying example.
+- id: E11
+  pages:
+  - 6
+  - 8
+  locator: pp.196,198/PDF 6,8, sec.7 Future Work split by figure page
+  summary: BRIDG/provenance/TMO plans and explicitly unsupported mapping between different granularity/reification
+    levels.
+- id: E12
+  pages:
+  - 8
+  locator: p.198/PDF 8, sec.8 Conclusion
+  summary: Generalized OWL-model applicability and current-use statements are author claims, not reproduced coverage/accuracy
+    results.
+- id: E13
+  pages:
+  - 8
+  - 9
+  locator: pp.198-199/PDF 8-9, bibliography1-37
+  summary: All 37 bibliography records inspected; reference 19 continues onPDF9. Cited sources are not all acquired
+    or independently validated.
+- id: A01
+  source_kind: REPOSITORY
+  commit: 32f457a42b910e39ef087b26f1664bd8d507518b
+  path: ontologies/purl.org/cmo/v2006/2006-06-30.n3
+  sha256: 290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6
+  locator: Pinned dbpedia/ontology-tracker candidate file, all 147 explicit triples; selected file not an author
+    release
+  summary: Seven local named classes/14 local object properties; five external class and six external object-property
+    declarations. All named declarations/constraints indexed; historical fidelity and imports unpinned.
+- id: S01
+  source_kind: SPECIFICATION
+  url: https://www.w3.org/TR/sparql11-query/
+  locator: SPARQL1.1 Query, sections11.2,11.4 and 16.1.2; accessed2026-10-27
+  summary: Current aggregate projection/grouping and expression rules used only as a comparison standard; historical
+    endpoint dialect unknown.
+- id: S02
+  source_kind: SPECIFICATION
+  url: https://www.w3.org/TR/owl2-new-features/
+  locator: OWL2 New Features and Rationale, section2.4.1 F12 Punning; accessed2026-10-27
+  summary: Class/individual facets of an IRI are treated separately under OWL2 Direct Semantics; SKOS assertions
+    do not automatically transfer class-extension semantics.
+diagram_inventory:
+  path: evidence/related-work/deep-reviews/CMO/diagrams.yaml
+  sha256: 9bbef187f9ec40a1a318b1468bbd702c9947eba833bde3925e58230d2dff2018
+  source_sha256: 344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49
+  figures:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  catalog_boundary: Defective embedded-font text extraction was not accepted as reading. All 9 pages OCR recovered,
+    read in column order and visually inspected. All six figures, query text, chart labels, rule arrows, five footnotes
+    and 37 references covered. diagrams.yaml separates class boxes, property labels, query/chart items and rule
+    variables. Complete paper catalog and seven-local-class third-party candidate are distinct populations; original
+    author release/imported glossary remains unknown.
+  units:
+  - unit: Title/authors/abstract and sec.1 Introduction
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Sec.2 Background, Levels1-3, two goals and footnote 1
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Sec.2.1 Relevant Ontologies and Frameworks
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Sec.3 three use cases; footnotes 2-4
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Sec.3 all five requirement headings
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Sec.4 all core/descriptive definitions, footnote 5 and metamodel argument
+    status: REVIEWED
+    evidence:
+    - E06
+    - E07
+  - unit: Figs.1-2 category hierarchy and all properties
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Sec.5 Implementation, including continuation above Fig. 1
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Sec.6 Evaluation; Figs.3-4 query and nine-bar chart
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Sec.6 Figs.5-6 rule patterns and requirement claims
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Sec.7 Future Work, continuing after figure page
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Sec.8 Conclusion
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: References1-37, including split reference 19; no tables or appendices
+    status: REVIEWED
+    evidence:
+    - E13
+dimensions:
+  D1_identity_coverage:
+    statement: Pin the exact nine-page proceedings source and all content units. OCR was only a reading aid; every
+      page and small diagram/query label was visually checked. Conference2011, proceedings 2012, PDF technical metadata
+      and other layouts are not interchangeable identities.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E13
+  D2_problem_contribution:
+    statement: CMO seeks conceptual interoperability through a reusable vocabulary layer over logical models without
+      unintended baseline inference. Its contribution includes a metamodel and swBIG prototype. This directly overlaps
+      conceptualization knowledge; universal correctness/noninterference is not proved.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E02
+    - E08
+    - E12
+  D3_method:
+    statement: Requirements derive from prior caBIG-to-OWL modeling difficulties. BFO/IAO/SKOS reuse, OWL2 punning,
+      conceptual annotations and an application proxy form the method. No systematic elicitation sample, full construction
+      protocol or independent evaluation design is reported.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E05
+    - E06
+    - E08
+  D4_requirements:
+    statement: All three author use cases and five requirements are retained below, with patient/search, clinical-date/vital-status
+      and BRIDG examples. Examples are not a comprehensive CQ benchmark; application-dependent alignment fidelity
+      requires an explicit policy.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E05
+    - E09
+    - E10
+  D5_concepts:
+    statement: Catalog all ontology-bearing distinctions, eight prose/diagram CMO category names, reused foundation
+      categories, logical/physical/lexical layers, permissible-value concepts and rule variables. Figure1 has seven
+      local class labels, while FiatEntity is additional prose content. Neither number is the complete original
+      distribution census.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E06
+    - E07
+    - E08
+    - E10
+  D6_relations_formalization:
+    statement: Record every visible property and all inverses/subproperties/signatures, the printed query, and both
+      mapping patterns. Separate class hierarchy, concept hierarchy, punning and inference-rule policy. No numbered
+      mathematical displays occur. Shared concept anchors alone do not prove class subsumption.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E06
+    - E07
+    - E09
+    - E10
+    - S01
+    - S02
+  D7_grounding:
+    statement: BFO family and IAO reuse are explicit, not inferred from a citation. Paper edition unknown; bfo2
+      prefix is not an edition identifier. Candidate uses actual BFO1.1 namespace IRIs but imports only unversioned
+      IAO/SKOS endpoints. GenericallyIndependentContinuant in Fig. 1 conflicts with dependent terminology in prose
+      and is preserved, not repaired.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E06
+    - E07
+    - A01
+  D8_artifact_correspondence:
+    statement: 'Official paper PURL redirects to a Google Code SVN file returning 404. A pinned third-party DBpedia
+      tracker candidate matches the CMO namespace and several paper terms; original 2011 byte/axiom identity is
+      not established. All 12 declared named classes and 20 object properties are inventoried, all seven local class
+      definitions/constraints manually reviewed below. Imports, original missing terms and selected semantic execution
+      remain #245.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - E06
+    - E07
+    - E10
+  D9_evaluation:
+    statement: Authors show query/result and two mapping diagrams as evaluation. They provide no identified expert
+      sample, controlled accuracy/precision/recall or reasoner/profile log. A current parser rejects the literal
+      printed query; this syntax-only result does not refute an undocumented historical dialect or reproduce its
+      dataset. Five VVEAA functions remain distinct.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E09
+    - E10
+    - E12
+    - S01
+  D10_critical_synthesis:
+    statement: Positive prior coverage includes conceptual/logical/real separation, vocabulary-mediated interoperability
+      and task-specific conversion/mapping. Limits include implicit policy, unsupported granularity, foundation/version
+      discrepancies and missing reproducibility. All proposed uses remain owner-deferred.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E05
+    - E06
+    - E10
+    - E11
+    - A01
+catalog:
+- id: C01
+  label: Level 1 reality
+  statement: Objects/processes/qualities/states in reality; paper then describes realist logical classes/properties
+    at this level. Distinguish universal, class and instance interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+- id: C02
+  label: Level 2 cognitive representation
+  statement: Paper treats conceptual models and CMO concepts as Level 2; later asserting SKOS concepts under IAO
+    information-content category raises a modeling-level grounding question, not an automatic identity of mental
+    act and information artifact.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+  - E07
+- id: C03
+  label: Level 3 representational artifact / term
+  statement: Textual/graphical concretization and lexicographic labels; label string is not identical to the concept
+    or represented thing.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+- id: C04
+  label: Conceptual model
+  statement: Set of Level 2 entities representing Level 1 or Level2 classes/properties; model members may also have
+    separate logical-model roles. No complete ConceptualModel class declaration is shown.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+- id: C05
+  label: Logical model
+  statement: Collection of classes/properties from Level 1 or 2; distinguish extensional class interpretation from
+    concept-individual use of a shared name.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+- id: C06
+  label: Physical model
+  statement: Implementation-layer representation mentioned in the introduction; not developed as a separate formal
+    class family in this paper.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+- id: C07
+  label: Common vocabulary
+  statement: Reusable term/concept system kept distinct from an individual conceptual/logical model to avoid privileging
+    one source. Common anchors provide candidates, not guaranteed equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E05
+- id: C08
+  label: Conceptual interoperability
+  statement: Interoperation intended to match human conceptual alignment, through search, conversion and mapping.
+    Alignment fidelity is a task-dependent premise.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E04
+  - E10
+- id: C09
+  label: cmo:Type
+  statement: Conceptual generalization associated with a collection of instances; it is an idea-of-type rather than
+    automatically the represented class or one of its members.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+- id: C10
+  label: cmo:Quality
+  statement: Conceptualized inherent property or assigned attribute; source deliberately groups these. This is not
+    automatically a BFO quality or OWL property.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+- id: C11
+  label: cmo:Relation
+  statement: Conceptual relation between independent entities; endpoints are expressed through Type role links.
+    Not an executable RDF predicate solely from its class label.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: C12
+  label: cmo:Universal
+  statement: Realist-side category, prose grounded under independent continuant; punning/class-versus-individual
+    commitments need exact semantics.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: C13
+  label: cmo:UniversalClass
+  statement: Fig. 1 Universal subtype; candidate comment describes natural groupings and its minQualifiedCardinality0
+    restriction imposes no positive representation witness.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - A01
+- id: C14
+  label: cmo:UniversalQuality
+  statement: Fig. 1 Universal subtype; candidate has no rdfs:comment but has a descriptive rdfs:seeAlso literal.
+    Do not label all source definition text absent or silently invent a comment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - A01
+- id: C15
+  label: cmo:UniversalRelation
+  statement: Fig. 1 Universal subtype for real-side relations; distinguish from conceptual cmo:Relation and punned
+    OWL object property.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - A01
+- id: C16
+  label: cmo:FiatEntity
+  statement: Explicit prose category under generically dependent continuent; absent fromFig.1 and the selected mirror.
+    Absence in that file is not absence in the paper or all historical sources.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - A01
+- id: C17
+  label: skos:Concept
+  statement: Common conceptual/vocabulary entity, source asserted under IAO information content entity. New foundation
+    typing can affect other SKOS-typed individuals when combined, so noninterference requires a scoped proof.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - A01
+- id: C18
+  label: iao:information content entity; iao:is about
+  statement: Information-content category and aboutness predicate reused for CMO concepts/represents. A representational
+    content item is not automatically a cognitive episode or truth guarantee.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  - E07
+- id: C19
+  label: bfo2:Entity; snap:Continuant; snap:IndependentContinuant
+  statement: Printed foundation nodes above Universal; bfo2 is a prefix name and does not prove BFO2. Candidate
+    IRIs explicitly use ifomis.org/bfo/1.1.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - A01
+- id: C20
+  label: snap:GenericallyIndependentContinuant / generically dependent continuent
+  statement: Preserve conflicting figure/prose strings. Figure1 sends the printed independent category under IndependentContinuant;
+    do not publish this as a verified BFO hierarchy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: C21
+  label: OWL class / individual / property; punning
+  statement: Same IRI can be used at different entity levels; source metamodel argument requires explicit bridge
+    policy. Assigning skos:Concept to the individual facet does not automatically transfer class-extension facts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - S02
+- id: C22
+  label: Self-representation / concept versus represented thing
+  statement: Source permits concept/class self-representation but rejects universal self-representation. These are
+    ontological claims; the mirror explicitly makes representsUniversal irreflexive only.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+  - A01
+- id: C23
+  label: Concept composition / primary concept / qualifier
+  statement: Tissue Specimen example uses Specimen primary anchor and Tissue qualifier. This decomposition lacks
+    a generally specified compositional identity, qualifier order or inverse reconstruction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: C24
+  label: Conceptual quality values / permissible concepts
+  statement: valuesCanBe relates Quality to permissible conceptual values; CDE conversion uses an OWL enumeration
+    range of concepts rather than raw strings. Graph linkage alone is not a closed value validator.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+- id: C25
+  label: Source/target roles / generic relation role
+  statement: Conceptual Relation-to-Type links and inverses. No displayed cardinality makes every relation binary,
+    uniquely sourced/targeted, total or directionally symmetric.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: C26
+  label: UML generalization / attribute / association
+  statement: Input-model structures claimed preserved by swBIG conversion. Prior one-to-one attribute/property mapping
+    failure motivates the separation; preservation is not formally verified here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+- id: C27
+  label: CDE / semantic metadata
+  statement: Common Data Elements supply conceptual annotations and permitted values. Their version, curation policy
+    and mappings affect data correctness; no complete snapshot supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C28
+  label: swBIG / caBIG / caGrid
+  statement: Prototype linked-data proxy, originating biomedical infrastructure and service calls. These are implementation
+    architecture, not additional invented CMO ontology classes.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+- id: C29
+  label: NCIt / SKOS conversion / OWLtoSKOS
+  statement: Vocabulary transformation supports concept-individual queries; loss of logical semantics or alignment
+    provenance must be assessed, not inferred correct from successful conversion.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C30
+  label: GEO / ArrayExpress / caArray; MAGE / MIAME
+  statement: Author motivating resources/models with overlapping conceptual content; no actually reproduced multi-resource
+    search/conversion experiment is reported.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+- id: C31
+  label: HL7-RIM / PML / domain-specific model
+  statement: Cross-cutting clinical/provenance model examples and interoperability targets; these are not established
+    equivalents or necessarily imported ontologies.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E04
+- id: C32
+  label: Search / query
+  statement: Author use case hides logical-model details behind common concepts; education and adverse-event examples
+    provide functional motivation, not exhaustive recall guarantees.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+- id: C33
+  label: Conversion / fidelity
+  statement: Task-selected data translation, including Clinical Service on a Date to an Alive-status record on that
+    Date. Requires event/date/subject evidence and explicit fidelity policy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E10
+- id: C34
+  label: Direct mapping / BRIDG / AIM Person
+  statement: Vocabulary-mediated generation of model relationships; a shared NCIt Person anchor is not proof that
+    two class extensions coincide or one contains the other.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E10
+- id: C35
+  label: Person / Education Level / HINTS2005
+  statement: Query/example domain roles and dataset. Fig. 4 contains nine education categories; these labels are
+    not newly declared CMO classes.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: C36
+  label: Clinical Service / Date / Vital Status / Alive
+  statement: Conversion scenario predicates/concepts; temporal and evidential adequacy of inferred Alive requires
+    task-specific guards, not merely concept similarity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+- id: C37
+  label: Tissue Specimen / Specimen / Tissue; Adverse Event / Drug class
+  statement: Search/composition illustrations and type-of-drug abstraction. They do not establish corresponding
+    actual CMO class declarations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E07
+- id: C38
+  label: Bird / flying / flightless / injured
+  statement: Concept-level defeasible-sounding association without automatic class entailment; this does not implement
+    a default logic, exceptions policy or validated biological rule.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C39
+  label: Common Vocabulary requirement
+  statement: Separate portable vocabulary must not favor one particular conceptual/logical representation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: C40
+  label: Distinction from Logical Models requirement
+  statement: Separate metamodel roles to prevent idea-of-thing versus thing-instance conflation. Expressing both
+    in OWL does not alone invalidate the distinction if entity roles are explicit.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+- id: C41
+  label: Natural, Idiomatic Expression requirement
+  statement: Annotation should preserve natural logical/data representation without requiring baseline modifications.
+    This is a scoped noninterference goal, not a proved conservative extension.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E10
+- id: C42
+  label: Types, Properties, and Relations requirement
+  statement: Represent conceptual structure and its relations across the relevant modeling roles, not only class
+    names.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+- id: C43
+  label: Additional Relationships requirement
+  statement: Allow extra concept relationships as appropriate for interoperability. No automatic logical-class inference
+    is intended solely from all such relationships.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E10
+- id: C44
+  label: Granularity / reified relationship
+  statement: 'Explicit future-work gap: one source has a direct relation while another introduces an intervening
+    entity. The selected CMO does not yet map these generally.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+- id: C45
+  label: Provenance / biomedical experiment / TMO
+  statement: Stated future conceptual integration targets; not a completed current domain-model/provenance experiment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+- id: C46
+  label: ?x / ?class / ?otherClass / ?typeConcept / ?otherTypeConcept / ?commonConcept
+  statement: Fig. 5 rule variables, distinct from released class names. Complete before/after graph is retained
+    in diagrams.yaml.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C47
+  label: ?domainClass / ?bridgClass / ?domainConcept / ?bridgConcept
+  statement: Fig. 6 rule variables; output are arc is interpreted as generated subclass assertion by the caption,
+    not an automatic theorem.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+commitments:
+- id: K01
+  label: Modeling levels and identity
+  statement: Paper separates reality, cognitive/conceptual layer and representational artifact, while allowing conceptual/logical
+    facets to share identifiers. Explicit level and bridge semantics are required; no global disjointness or identity
+    theorem is supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+- id: K02
+  label: Core hierarchy
+  statement: Type/Quality/Relation below SKOS Concept; Concept asserted under IAO information content entity. Universal
+    and its three specializations form a separate displayed branch. FiatEntity is prose-only in this retained source.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: K03
+  label: Representation / inverse / aboutness
+  statement: represents goes from concept to represented entity, inverse representedBy; represents subproperty of
+    IAO is about; representsUniversal specializes it. Role/filler typing does not establish correctness of what
+    is represented.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: K04
+  label: Self-representation limit
+  statement: Source allows self-representation for concepts but rules it out for universals conceptually. Candidate
+    representsUniversal irreflexivity does not establish global irreflexivity of represents, class/concept disjointness
+    or every intended prohibition.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - A01
+- id: K05
+  label: Primary/qualifier composition
+  statement: hasPrimaryConcept/hasQualifier specialize broadMatch in the conceptual layer. Shared anchor or qualifier
+    omission cannot be assumed to preserve set inclusion or distinguish two composites.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E10
+- id: K06
+  label: Quality relations
+  statement: hasQuality Type->Quality, inverse qualityOf; valuesCanBe Quality->SKOS Concept. Signatures are not
+    totality, unique-value or closed-enumeration conditions.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: K07
+  label: Relation roles
+  statement: hasRole Relation->Type; hasRoleIn inverse. Source/target role properties specialize these and have
+    corresponding inverse properties. No existential, exactly-two endpoint or functional constraint is printed in
+    Fig. 2.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: K08
+  label: Proxy preservation
+  statement: Authors claim UML generalizations, attributes, associations, typing and cardinality preserved through
+    linked-data proxy generation; CDE permissible concepts become enumeration range. No proof/run log of complete
+    preservation is supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: K09
+  label: Fig. 3 query dependencies
+  statement: Graph patterns use class/properties represented by concepts whose skos:broader points directly to NCIt
+    Person/Education_Level. Direct broader is not an arbitrary transitive path; returned rows depend on dataset/entailment
+    configuration, labels and vocabulary versions.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: K10
+  label: Fig. 3 syntax check
+  statement: Current RDFLib7.6.0 parseQuery rejects the visually transcribed printed query at count (line4,col8).
+    Printed aggregate alias lacks standard parentheses; GROUP BY and rdfs prefix are also absent. The historical
+    engine/dialect is unknown; no corrected query, endpoint or HINTS result was run.
+  basis: EXECUTED
+  evidence:
+  - E09
+  - S01
+  execution_ref: evaluation/related-work/cmo/printed-query-parse.json
+- id: K11
+  label: Fig. 4 evidence boundary
+  statement: Nine bars visualize an author-reported education query. Exact count labels, missing-value population,
+    sample provenance, weights and raw records are absent; no chart number is reconstructed as exact.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: K12
+  label: Fig. 5 instance rule
+  statement: Before/after rule adds ?x rdf:type ?otherClass when two concepts point to the same primary anchor.
+    Both arrows are hasPrimaryConcept despite broader/parent wording. This requires a policy/guard; shared anchors
+    alone do not logically entail instance retyping.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: K13
+  label: Fig. 6 subclass rule
+  statement: broaderTransitive/domain-concept and primary/BRIDG-concept paths meet at a common concept, then a subclass
+    assertion is added. Concept hierarchy plus annotation links alone does not entail logical subsumption.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: K14
+  label: Noninterference and optional rules
+  statement: Passive annotation and actively generated subclass/instance assertions have different effects. A general
+    no-undesired-inference claim must specify signature, import closure and rule policy rather than assume all mappings
+    conservative.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E05
+  - E10
+- id: K15
+  label: Candidate restriction boundaries
+  statement: All four candidate qualified minimum cardinalities are0, which imposes no positive filler witness.
+    No local FiatEntity or representedByType declaration exists; unversioned imported source contents were not resolved.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - E06
+  - E10
+relation_index:
+- id: R01
+  label: cmo:representedBy
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:representedBy
+- id: R02
+  label: cmo:represents
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:represents
+- id: R03
+  label: cmo:representsUniversal
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:representsUniversal
+- id: R04
+  label: iao:'is about'
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: iao:'is about'
+- id: R05
+  label: cmo:hasQualifier
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasQualifier
+- id: R06
+  label: cmo:hasPrimaryConcept
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasPrimaryConcept
+- id: R07
+  label: skos:broadMatch
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: skos:broadMatch
+- id: R08
+  label: cmo:hasQuality
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasQuality
+- id: R09
+  label: cmo:qualityOf
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:qualityOf
+- id: R10
+  label: cmo:valuesCanBe
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:valuesCanBe
+- id: R11
+  label: cmo:hasRole
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasRole
+- id: R12
+  label: cmo:hasRoleIn
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasRoleIn
+- id: R13
+  label: cmo:hasSourceRole
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasSourceRole
+- id: R14
+  label: cmo:hasSourceRoleIn
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasSourceRoleIn
+- id: R15
+  label: cmo:hasTargetRole
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasTargetRole
+- id: R16
+  label: cmo:hasTargetRoleIn
+  statement: Printed Fig. 2 property; complete direction, inverse and subproperty connections retained in diagrams.yaml.
+    Do not infer fillers/cardinalities or a released IRI from a display label alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: cmo:hasTargetRoleIn
+- id: R17
+  label: cmo:representedByType
+  statement: Fig. 5-6 bridge label, distinct from representedBy used by Fig. 3; absent from selected mirror declaration
+    set.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  - A01
+- id: R18
+  label: skos:broader / skos:broaderTransitive
+  statement: Direct vocabulary hierarchy query versus transitive conceptual path in mapping rule; neither alone
+    is rdfs:subClassOf.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: R19
+  label: rdf:type (a / is a); subclass (are)
+  statement: Query/instance membership and rule-generated subclass must remain distinct; CMap conventions are caption-grounded.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  - E10
+- id: R20
+  label: rdfs:label
+  statement: Printed query retrieves values through labels; identifier equivalence, language and aggregation policy
+    are not determined by a string label.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: R21
+  label: Conceptual represents / self-representation
+  statement: Prose describes an intentional representation relation and self-representation exceptions, not a fully
+    formalized semantic truth/identity contract.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+scenarios:
+- id: S01
+  label: Search via NCIt
+  statement: 'Positive: education/person fields annotated through the shared vocabulary can be queried without model-specific
+    property names. Adverse: a concept related only by a longer broader chain or exact term is not matched by a
+    direct skos:broader pattern under simple graph matching.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+- id: S02
+  label: Concept versus instance
+  statement: 'Positive: a Cat concept represents a class whose members are cats. Adverse: typing the concept itself
+    as a cat confuses class extension with idea-of-class; punning alone does not supply the required bridge.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+- id: S03
+  label: Shared primary anchor
+  statement: 'Manual countercase: AdultPerson and MinorPerson concepts both point to Person; one adult individual
+    need not be an instance of MinorPerson. This refutes an unconditional shared-anchor-to-retyping rule, not every
+    task-specific mapping. No solver countermodel executed.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E10
+- id: S04
+  label: Conceptual broader versus subclass
+  statement: 'Positive: a task may explicitly approve a mapped subclass assertion. Adverse: broader term can organize
+    topics rather than denote set inclusion; its existence plus primary-concept annotations does not prove the proposed
+    subclass.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: S05
+  label: Clinical encounter to Alive
+  statement: 'Positive: a valid patient encounter attested on a date can support a dated derived record under an
+    approved rule. Adverse: a planned/cancelled encounter, unrelated subject, time-zone mismatch or historical record
+    requires explicit guards and provenance.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+- id: S06
+  label: No baseline change
+  statement: 'Positive: selected passive metadata can be managed separately. Adverse: imported domain/range/class
+    axioms or an added subclass rule can create new typing/contradiction in the combined theory. Noninterference
+    is scope-dependent.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E05
+  - E10
+  - A01
+- id: S07
+  label: Composite concept fidelity
+  statement: 'Positive: Tissue qualifier plus Specimen primary concept expresses an intended decomposition. Adverse:
+    two qualified types sharing a primary anchor need not be interchangeable, and qualifier omission can erase a
+    clinically meaningful distinction.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: S08
+  label: Permissible values
+  statement: 'Positive: permitted concepts populate a CDE enumeration range. Adverse: annotation valuesCanBe alone
+    is not a closed-world data-validation check and source strings may map ambiguously.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+- id: S09
+  label: Query/plot reproduction
+  statement: 'Positive: printed query and chart illustrate the desired search task. Adverse: current syntax parser
+    rejects the printed form; unavailable source dataset/engine means chart counts and semantics are not rerun.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - S01
+- id: S10
+  label: Punning statement
+  statement: 'Positive: an individual facet can be explicitly typed as a SKOS Concept. Adverse: class-extension
+    constraints are not automatically inherited by that facet, nor does this mean the individual facet has no semantics
+    whatsoever.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - S02
+- id: S11
+  label: Defeasible-looking bird association
+  statement: 'Positive: a conceptual birds-can-fly relationship can remain outside automatic instance inference.
+    Adverse: it is not therefore a default-logic implementation with sound exception handling for injured/flightless
+    birds.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: S12
+  label: Granularity difference
+  statement: 'Positive: same-granularity classes may be related under an approved model policy. Adverse: a direct
+    edge versus an intervening event/entity requires a transformation not provided by this CMO paper.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+- id: S13
+  label: Mirror identity and date
+  statement: 'Positive: pin the exact matching-namespace candidate for bounded analysis. Adverse: its v2006 path
+    or matching class names does not establish release 2006 or fidelity to the2011 paper.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+- id: S14
+  label: Zero cardinality
+  statement: 'Positive: minQualifiedCardinality0 does not reject an entity without a representation edge. Adverse:
+    describing it as a mandatory conceptual representation witness invents a stronger axiom.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+findings:
+- id: F01
+  label: Direct prior conceptualization coverage
+  statement: CMO directly models conceptual knowledge and its relation to logical models/common vocabularies; later
+    novelty claims must compare concrete scenarios, not claim no prior conceptualization model.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E02
+  - E06
+- id: F02
+  label: Complete work/version boundary
+  statement: Selected CEUR text uses Level 2 concepts, nine pages and 37 references. Other layouts/version wording
+    are not substituted. Technical PDF creator metadata is not scholarly authorship.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E06
+  - E13
+- id: F03
+  label: Concept versus artifact grounding tension
+  statement: Level 2 cognitive framing and asserted SKOS-to-IAO information-content inheritance require an explicit
+    content/cognition distinction; the paper does not prove these are one category.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+  - E07
+- id: F04
+  label: Foundation hierarchy discrepancy
+  statement: Fig. 1 prints GenericallyIndependentContinuant under IndependentContinuant, unlike dependent terminology
+    in prose. Preserve the observed conflict; no corrected foundation hierarchy or consistency proof is inferred.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+- id: F05
+  label: Prefix not edition
+  statement: Paper family BFO is explicit; bfo2 display prefix alone does not specify version. Mirror actually names
+    BFO1.1 namespace IRIs, without pinning a BFO import or original paper edition.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - A01
+- id: F06
+  label: Shared concept anchor is insufficient
+  statement: Fig. 5-6 additions are explicit rule-policy actions. A common conceptual anchor does not, without stronger
+    premises, guarantee instance membership/subsumption.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: F07
+  label: Fig. 5 caption versus arcs
+  statement: Parent/broader wording conflicts with two primary-concept arrows in the graph. Do not silently replace
+    an arrow with broader or accept the rule as universally sound.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: F08
+  label: Representation bridge availability
+  statement: Fig. 3 uses representedBy; Fig. 5-6 use representedByType absent from Fig. 2 and mirror. This is a
+    source/version correspondence question, not proof that no historical implementation had it.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  - E10
+  - A01
+- id: F09
+  label: Printed-query reproducibility limit
+  statement: Executed parser rejection is specific to current RDFLib7.6.0 and the literal printed form. Missing
+    GROUP BY/rdfs prefix and aggregate syntax matter for modern reproduction; historical dialect and results remain
+    unknown.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - S01
+- id: F10
+  label: Evaluation shows illustration, not accuracy
+  statement: One query plot and two rule diagrams demonstrate intended use; no controlled alignment precision/recall,
+    expert validation, multi-resource fidelity/error study or reasoner log is identified.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  - E12
+- id: F11
+  label: Minimal semantics shifts obligation to policy
+  statement: Task-tailored weak/strict alignment is flexible, but mapping soundness, conflict handling, qualification
+    and preservation conditions must be supplied elsewhere.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E10
+- id: F12
+  label: Noninterference claim requires scope
+  statement: Adding passive concept metadata and adding active class/instance conclusions have different consequences.
+    No blanket conservative-extension theorem is supplied for all imports and optional rules.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E05
+  - E10
+  - A01
+- id: F13
+  label: Explicit unsupported granularity
+  statement: Direct-relation versus intervening-class mapping is an author-stated future limitation; preserve it
+    as a comparison constraint rather than inventing implemented support.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+- id: F14
+  label: All candidate classes inspected, original unknown
+  statement: 'Third-party candidate supplies seven local named classes and 14 local object properties, all inventoried
+    with constraints; seven local classes manually reviewed. FiatEntity is missing there, as is representedByType.
+    Original distribution and imported definitions remain unresolved #245.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E10
+  - A01
+- id: F15
+  label: Comment absence is not all-definition absence
+  statement: UniversalQuality lacks rdfs:comment but has a descriptive seeAlso literal; do not count a missing comment
+    as a complete missing-source-definition claim.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+- id: F16
+  label: Candidate zero lower bounds
+  statement: Four minimum-qualified cardinality 0 restrictions do not require representation witnesses; any stronger
+    interpretation must be separately justified.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+questions:
+- id: Q01
+  label: Original module and foundations
+  statement: '#245: Recover author-controlled cmo.owl/history and historical direct imports; compare exact missing
+    terms and resolve the foundation typo/level/edition discrepancies without treating mirror path date as release
+    date.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  - E07
+  - A01
+- id: Q02
+  label: Eight bounded semantic questions
+  statement: '#245: At most eight checks: source/term/import identity; class/individual punning and self-representation;
+    BFO/IAO hierarchy/category relation; zero-cardinality witness semantics; noninterference/import signatures;
+    Fig. 3 query/dataset reproduction; Fig. 5 retyping safety; Fig. 6 subclass policy and granularity limits.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E07
+  - E09
+  - E10
+  - E11
+  - A01
+- id: Q03
+  label: Alignment evidence
+  statement: What task-specific sample, expert/reference labels and positive/negative outcomes would distinguish
+    common vocabulary linkage from correct conversion or subsumption? This is a later research candidate, not a
+    completed study.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+  - E10
+- id: Q04
+  label: Compositional meaning
+  statement: What semantics distinguish primary concept plus qualifiers, preserve ordering/context and prevent the
+    AdultPerson/MinorPerson common-anchor countercase?
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E10
+- id: Q05
+  label: Reproducible results
+  statement: Can an exact HINTS2005 extract, swBIG revision, NCIt conversion, query dialect and chart data be recovered?
+    Current parser rejection is not a historical runtime finding.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+synthesis:
+- id: Y01
+  label: Bound future gap claims
+  statement: Retain CMO as positive direct prior art for conceptual modeling, representation levels and vocabulary-mediated
+    interoperability; compare with DnS/LMM on specific requirements and inference policy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E02
+  - E06
+  - E10
+- id: Y02
+  label: Scenario and evidence bank
+  statement: Carry concept/instance identity, common-anchor false mapping, noninterference, CDE value constraints
+    and granularity countercases into later bounded comparison. Adoption remains DEFER_TO_OWNER_AFTER_SYNTHESIS.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+  - E06
+  - E08
+  - E10
+  - E11
+- id: Y03
+  label: Three source populations
+  statement: Separate full 2011 paper, pinned third-party seven-local-class candidate and unresolved original/import
+    closure. Unknown original counts are null, not7 or 12. Candidate namespace1.1 is not an established paper edition.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - E03
+  - E06
+- id: Y04
+  label: Comparison and final synthesis
+  statement: 'Use existing bounded COM/Representation/CMO comparison #255 and final #126 procedure only when their
+    own inputs are ready; this review closes #83, not #245 or final scientific acceptance. No Clariceptify change.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+  - A01
+evaluation:
+  Verification:
+    statement: Paper gives hierarchy/properties/query and transformation sketches, but no reasoner/profile or complete
+      mapping-preservation proof. Candidate RDF parsing and current printed-query parser rejection were actually
+      executed; neither is ontology consistency or historical HINTS execution.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E07
+    - E08
+    - E09
+    - A01
+    - S01
+  Validation:
+    statement: Use cases and five requirements derive from author modeling experience. No independently recruited
+      expert sample, validated CQ study or human agreement analysis is identified in the complete selected paper.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E05
+  Evaluation:
+    statement: Author query plot and two mapping diagrams illustrate use. No reproducible benchmark, alignment accuracy,
+      conversion fidelity metric, controlled baseline or raw chart population is supplied. Future targets remain
+      future.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E09
+    - E10
+    - E11
+  Assessment:
+    statement: Source-linked AI-assisted critique separates modeling levels, rule-policy assumptions, source/figure/candidate
+      discrepancies and conditional countercases. It is not independent expert acceptance or exhaustive consequence
+      analysis.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E06
+    - E07
+    - E09
+    - E10
+    - A01
+  Assurance:
+    statement: Pinned paper/mirror hashes, all-page OCR/visual recovery record, complete figures/properties, all
+      seven local candidate-class reviews and bounded dated discovery support traceability. CI/source retention
+      do not establish semantic or scientific adequacy.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E13
+    - A01
+artifact:
+  issue: 245
+  status: THIRD_PARTY_CANDIDATE_RETAINED_ALL_LOCAL_CLASSES_REVIEWED_ORIGINAL_IMPORTS_SEMANTICS_PENDING
+  version_relation: 'Original paper-linked PURL redirects to old Google Code SVN and returns404. Retained mirror
+    at dbpedia/ontology-tracker commit 32f457a42b910e39ef087b26f1664bd8d507518b has exact CMO namespace but is not
+    an author release; its path v2006/2006-06-30 is not established as a release date. Candidate147 explicit triples:12
+    named class declarations (7 local,5 external),20 object properties (14 local,6 external),4 anonymous restrictions.
+    No explicit datatype/annotation-property/NamedIndividual declarations; this does not mean no annotations or
+    no individuals of any kind. All local classes manually reviewed below, six with comment candidates and one with
+    a descriptive seeAlso literal. Imports of IAO/SKOS unversioned and unresolved historically; no reasoner/profile
+    execution, inferred counts or complete original 2011 census. #245 retains eight selected questions and exact
+    correspondence. Raw source retained separately, not publicly copied.'
+  class_reviews:
+  - id: AC01
+    label: cmo:Quality
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Conceptual description of an inherent
+      property or assigned attribute; source intentionally groups those cases. Subclass SKOS Concept only in selected
+      local class axioms; no equivalence or value-filler existential.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#Quality
+    source_definition_state: COMMENT_CANDIDATE
+  - id: AC02
+    label: cmo:Relation
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Conceptual relation between independent
+      entities; SKOS Concept subtype. Endpoint properties are recorded in the property census, not encoded as a
+      mandatory exact-two local class restriction.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#Relation
+    source_definition_state: COMMENT_CANDIDATE
+  - id: AC03
+    label: cmo:Type
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Conceptual generalization representing
+      instances; SKOS Concept subtype, not the represented logical class itself. No local equivalence/closure requirement.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#Type
+    source_definition_state: COMMENT_CANDIDATE
+  - id: AC04
+    label: cmo:Universal
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Real-side entity category, under BFO1.1
+      IndependentContinuant plus representedBy min0 SKOS Concept. The zero minimum imposes no positive representation
+      witness; philosophical category correspondence remains open.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#Universal
+    source_definition_state: COMMENT_CANDIDATE
+  - id: AC05
+    label: cmo:UniversalClass
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Realist-side natural grouping, under
+      Universal plus representedBy min0 Type. The label and comment do not establish its extension or require an
+      actual Type witness.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#UniversalClass
+    source_definition_state: COMMENT_CANDIDATE
+  - id: AC06
+    label: cmo:UniversalQuality
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Real-side quality category according
+      to a descriptive seeAlso literal; rdfs:comment absent. Under Universal plus representedBy min0 Quality. Preserve
+      annotation kind; do not invent a comment or sufficient definition.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#UniversalQuality
+    source_definition_state: SEEALSO_LITERAL_CANDIDATE_NO_COMMENT
+  - id: AC07
+    label: cmo:UniversalRelation
+    statement: 'Source-attributed reviewer paraphrase and constraint review: Real-side relationship category, under
+      Universal plus representedBy min0 Relation. The zero minimum is not a mandatory conceptual-link constraint.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    iri: http://purl.org/twc/ontologies/cmo.owl#UniversalRelation
+    source_definition_state: COMMENT_CANDIDATE
+  candidate_census:
+    path: evidence/related-work/deep-reviews/CMO/mirror-census.json
+    sha256: bb4f4f3e0220a0e12d6568f720328de05e171429e4feb656b7ddfb6d35998a0b
+    source_sha256: 290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6
+    local_namespace: http://purl.org/twc/ontologies/cmo.owl#
+    counts:
+      annotation_properties: 0
+      classes: 12
+      datatype_properties: 0
+      named_individuals: 0
+      object_properties: 20
+    explicit_triples: 147
+  discovery_execution:
+    path: evaluation/related-work/cmo/deep-review-discovery.json
+    sha256: c104b9517735839a9a82a1e1274b0a03383391fe916c12b51d3ef9f8b1476276
+    checked_on: '2026-10-27'
+    state: EXECUTED_HTTP_PROBES_GITHUB_SEARCH_AND_MIRROR_RDF_PARSE
+  reading_recovery:
+    path: evaluation/related-work/cmo/reading-recovery.json
+    sha256: 620d628b0a67efb72a70b86eebc4d089bea6193f3a9e650d07c85d11cc61f372
+  syntax_check:
+    path: evaluation/related-work/cmo/printed-query-parse.json
+    sha256: dec1fb6bda91c9dfeb9ea8c82509da6cf5036b05e1a7acf5526b6ff588226e6f
+  repository_state: Matching-namespace third-party mirror pinned; no corresponding original author development repository
+    confirmed in bounded searches. whyis author-organization repository contains namespace reference only.
+  foundation:
+    paper_family: BFO with IAO reuse and SKOS conceptual layer
+    paper_edition: null
+    candidate_namespace_family_edition: BFO1.1 namespace references; not a pinned foundation import
+    candidate_actual_imports:
+    - http://purl.obolibrary.org/obo/iao.owl
+    - http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf
+    historical_fidelity: NOT_ESTABLISHED
+    UFO_grounding: NOT_CLAIMED
+  class_reviews_heading: '### Every local class in the selected third-party CMO candidate'
+closure_boundary: 'Complete critical review of the exact 9-page2011 proceedings paper, including OCR/visual recovery,
+  six figures, five footnotes and 37 references. All seven local classes of one pinned third-party mirror manually
+  reviewed with full declaration/constraint census; not a complete original-author distribution/imported glossary,
+  reasoner/profile run, reproduced HINTS plot, validated rule policy or independent scientific acceptance. #245
+  remains open for historical source/import identity and at most eight bounded semantic questions; final #126 remains
+  open. No Clariceptify ontology, definition, requirement, fixture, manuscript or release changed.'

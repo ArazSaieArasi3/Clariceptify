@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "work_id": "CMO",
+  "source_sha256": "344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49",
+  "pdf_pages": 9,
+  "printed_pages": [
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+  ],
+  "text_extraction_state": "DEFECTIVE_FONT_ENCODING",
+  "recovery": {
+    "engine": "tesseract 5.3.4",
+    "language": "eng",
+    "page_segmentation_mode": 1,
+    "render_scale": 2.5,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncorrected_ocr_sha256": "90f1e70025e15fbd45e1ff1648dcb17dec7bfe92ad7a5f69869176a05178c0c5",
+    "raw_OCR_publicly_copied": false
+  },
+  "human_or_AI_visual_inspection": {
+    "review_kind": "AI_ASSISTED_NOT_INDEPENDENT_EXPERT",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "enlarged_figure_pages": [
+      5,
+      6,
+      7
+    ],
+    "state": "ALL_PAGES_VISUALLY_REVIEWED"
+  },
+  "scope": "OCR is a fallible reading aid, not a replacement source. All page text was read and checked against original page renderings; small diagram/query labels were inspected separately.",
+  "model_change": "NONE"
+}

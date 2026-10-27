@@ -123,7 +123,8 @@ def validate_diagram_inventory(dossier, inventory):
             any((f.get('kind') == 'CLASS_DIAGRAM') != (f['number'] in class_numbers) for f in figures)):
         raise ValueError('Diagram kind/class population mismatch')
     class_key = 'class_box_labels' if class_numbers is not None else 'class_box_labels_figures2_6'
-    expected = {'figure_boxes': sum(len(f['nodes']) for f in figures),
+    item_key = 'figure_items' if inventory.get('count_policy') == 'PRINTED_ITEMS_NOT_ONLY_BOXES' else 'figure_boxes'
+    expected = {item_key: sum(len(f['nodes']) for f in figures),
                 'distinct_labels_all_figures': len({n['label'] for f in figures for n in f['nodes']}),
                 class_key: len({n['label'] for f in figures
                                 if (f['number'] in class_numbers if class_numbers is not None else f['number'] != 1)
@@ -185,6 +186,27 @@ def validate_class_review_coverage(dossier, catalog):
         raise ValueError('Manual class reviews omit or duplicate a catalogued class')
 
 
+def validate_candidate_census(dossier, report, binding):
+    validate_artifact_census(report, binding)
+    if (report['provenance']['authority'] != 'THIRD_PARTY_MIRROR_NOT_AUTHOR_RELEASE' or
+            report['provenance']['paper_2011_fidelity'] != 'NOT_ESTABLISHED' or
+            report['provenance']['path_date_is_release_date'] or report['model_change'] != 'NONE'):
+        raise ValueError('Candidate mirror promoted to original author release')
+    local = {r['iri'] for r in report['classes'] if r['iri'].startswith(binding['local_namespace'])}
+    reviews = dossier['artifact']['class_reviews']
+    if len(reviews) != len(local) or {r['iri'] for r in reviews} != local:
+        raise ValueError('Incomplete candidate local class reviews')
+
+
+def validate_printed_query(dossier, record):
+    if (record['source_sha256'] != dossier['source']['sha256'] or
+            hashlib.sha256(record['query'].encode()).hexdigest() != record['query_sha256']):
+        raise ValueError('Printed query source substitution')
+    if (record['state'] != 'PARSE_REJECTED' or not record['error'] or
+            record['endpoint_execution'] != 'NOT_EXECUTED' or record['historical_engine'] != 'NOT_IDENTIFIED'):
+        raise ValueError('Syntax observation promoted to historical query execution')
+
+
 def check(root=ROOT):
     base = root / BASE
     protocol = yaml.safe_load((base / 'protocol.yaml').read_text())
@@ -235,6 +257,32 @@ def check(root=ROOT):
             validate_dlp_intake(intake, binding)
             if hashlib.sha256((root / intake['generator']['path']).read_bytes()).hexdigest() != intake['generator']['sha256']:
                 raise ValueError('Changed DLP intake generator')
+        if 'candidate_census' in d['artifact']:
+            binding = d['artifact']['candidate_census']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed candidate census')
+            candidate = json.loads(raw)
+            validate_candidate_census(d, candidate, binding)
+            generator = candidate['generator']
+            if hashlib.sha256((root / generator['path']).read_bytes()).hexdigest() != generator['sha256']:
+                raise ValueError('Changed candidate census generator')
+        if 'syntax_check' in d['artifact']:
+            binding = d['artifact']['syntax_check']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed printed query check')
+            validate_printed_query(d, json.loads(raw))
+        if 'reading_recovery' in d['artifact']:
+            binding = d['artifact']['reading_recovery']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed reading recovery evidence')
+            recovery = json.loads(raw)
+            if (recovery['source_sha256'] != d['source']['sha256'] or
+                    recovery['recovery']['ocr_pages'] != d['coverage']['read_pages'] or
+                    recovery['human_or_AI_visual_inspection']['pages'] != d['coverage']['visual_pages']):
+                raise ValueError('Incomplete or substituted reading recovery')
         if entry['state'] != d['status']:
             raise ValueError('Register/review state mismatch')
         if 'census' in d['artifact']:
