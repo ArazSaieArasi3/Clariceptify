@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "work_id": "COM2004",
+  "source_sha256": "16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245",
+  "source_bytes": 809855,
+  "pdf_pages": 11,
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "visible_printed_page_numbers": false,
+  "locator_policy": "Use PDF page1-11. Published pp.287-297 is bibliographic metadata; no stamped printed numbering is invented.",
+  "text_extraction": {
+    "tool": "pdftotext -layout",
+    "state": "PROSE_READABLE_FORMULA_SYMBOLS_DEFECTIVE",
+    "limits": "Control characters corrupt implication, conjunction, quantifiers, necessity and equivalence. Normalized formulas are visually transcribed, not trusted from text extraction."
+  },
+  "visual_inspection": {
+    "performed_by": "AI-assisted reviewer",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "render_engine": "PyMuPDF",
+    "scale": 1.8,
+    "figure1_crop_scale": 3,
+    "formula_pages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "figure_pages": [
+      10
+    ],
+    "limits": "An inspection declaration, not independently proven reading or expert acceptance. Private rendered pages not redistributed."
+  },
+  "numbered_displays": {
+    "definitions": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15"
+    ],
+    "axioms": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "total": 20
+  },
+  "content_footnotes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "bibliography_records": 22,
+  "tables": 0,
+  "appendices": 0,
+  "literal_discrepancies": [
+    "D14 prints PER while D10 and Fig.1 use PES.",
+    "Footnote6 fixes discrete linear interval time; footnote10 says no specific theory of time while referring again to Allen/Hayes.",
+    "D1/D2 necessity marker is a hollow square glyph; BOX is explicit editorial ASCII transliteration of that marker."
+  ],
+  "semantics_or_solver_executed": "NOT_EXECUTED",
+  "model_change": "NONE"
+}

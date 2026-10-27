@@ -88,6 +88,25 @@ def validate_dossier(d, entry, dimensions):
         require(pop['count'] == len(expected) and
                 [r.get('formula_number') for r in d['commitments']] == expected,
                 'incomplete or duplicated numbered-display ledger')
+    if 'labeled_formula_population' in d:
+        pop = d['labeled_formula_population']
+        labels = [r.get('formula_label') for r in d['commitments']]
+        require(pop['count'] == len(pop['labels']) == len(set(labels)) and
+                labels == pop['labels'] and
+                all(r.get('normalized_formula') and r.get('formula_page') in
+                    d['coverage']['visual_pages'] for r in d['commitments']),
+                'incomplete or duplicated labeled-formula ledger')
+        if d['work_id'] == 'COM2004':
+            require(set(labels) == {f'D{i}' for i in range(1, 16)} |
+                    {f'A{i}' for i in range(1, 6)} and
+                    pop['definitions'] == 15 and pop['axioms'] == 5,
+                    'changed COM source-label population')
+            literal = next(r for r in d['commitments'] if r['formula_label'] == 'D14')
+            require(literal['normalized_formula'] ==
+                    'MES(x) := PER(x) or BEL(x) or DES(x) or INT(x)',
+                    'COM source PER silently repaired to another predicate')
+            require(all(v is None for v in d['artifact']['machine_class_populations'].values()),
+                    'Paper taxonomy promoted to machine class population')
     if d['status'] == 'REVIEW_COMPLETE':
         require(d['coverage']['read_pages'] == list(range(1, entry['pdf_pages'] + 1)), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and
@@ -132,6 +151,19 @@ def validate_diagram_inventory(dossier, inventory):
                 'slot_occurrences': len(slots), 'distinct_printed_property_names': len(names)}
     if inventory['counts'] != expected:
         raise ValueError('Diagram display population mismatch')
+    if dossier['work_id'] == 'COM2004':
+        nodes = figures[0]['nodes']
+        mapping = {n['id']: n for n in nodes}
+        catalog = [r for r in dossier['catalog'] if r.get('diagram_figure') == 1]
+        if (len(mapping) != len(nodes) or len(catalog) != len(nodes) or
+                {r['symbol'] for r in catalog} != set(mapping) or
+                any(r['diagram_parent'] != mapping[r['symbol']]['paper_parent'] for r in catalog)):
+            raise ValueError('Incomplete paper-taxonomy category/hierarchy catalog')
+        edges = {(e['child'], e['parent']) for e in figures[0]['edges']}
+        parents = {(n['id'], n['paper_parent']) for n in nodes if n['paper_parent']}
+        if (len(edges) != len(figures[0]['edges']) or edges != parents or
+                any(parent not in mapping for _, parent in edges)):
+            raise ValueError('Incomplete paper-taxonomy edge inventory')
 
 
 def validate_dlp_intake(report, binding):
@@ -283,6 +315,16 @@ def check(root=ROOT):
                     recovery['recovery']['ocr_pages'] != d['coverage']['read_pages'] or
                     recovery['human_or_AI_visual_inspection']['pages'] != d['coverage']['visual_pages']):
                 raise ValueError('Incomplete or substituted reading recovery')
+        if 'reading_inspection' in d['artifact']:
+            binding = d['artifact']['reading_inspection']
+            raw = (root / binding['path']).read_bytes()
+            record = json.loads(raw)
+            if (hashlib.sha256(raw).hexdigest() != binding['sha256'] or
+                    record['source_sha256'] != d['source']['sha256'] or
+                    record['read_pages'] != d['coverage']['read_pages'] or
+                    record['visual_inspection']['pages'] != d['coverage']['visual_pages'] or
+                    record['semantics_or_solver_executed'] != 'NOT_EXECUTED'):
+                raise ValueError('Incomplete or substituted paper inspection record')
         if entry['state'] != d['status']:
             raise ValueError('Register/review state mismatch')
         if 'census' in d['artifact']:

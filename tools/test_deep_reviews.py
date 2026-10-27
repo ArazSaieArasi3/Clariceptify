@@ -236,5 +236,43 @@ class CmoCoverageTests(unittest.TestCase):
             validate_printed_query(self.dossier, self.query)
 
 
+class ComSourceBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE
+        self.dossier = yaml.safe_load((base / 'COM2004/review.yaml').read_text())
+        self.diagrams = yaml.safe_load((base / 'COM2004/diagrams.yaml').read_text())
+        self.entry = next(r for r in yaml.safe_load((base / 'register.yaml').read_text())['acquired_papers']
+                          if r['id'] == 'COM2004')
+        self.dimensions = yaml.safe_load((base / 'protocol.yaml').read_text())['dimensions']
+
+    def test_labeled_formula_omission_is_rejected(self):
+        self.dossier['commitments'].pop(4)
+        with self.assertRaisesRegex(ValueError, 'labeled-formula ledger'):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def test_silent_source_typo_repair_is_rejected(self):
+        formula = next(r for r in self.dossier['commitments'] if r['formula_label'] == 'D14')
+        formula['normalized_formula'] = formula['normalized_formula'].replace('PER(', 'PES(')
+        with self.assertRaisesRegex(ValueError, 'silently repaired'):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def test_paper_taxonomy_is_not_a_machine_class_count(self):
+        self.dossier['artifact']['machine_class_populations']['local'] = 50
+        with self.assertRaisesRegex(ValueError, 'machine class population'):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def test_named_paper_category_omission_is_rejected(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.dossier['catalog'].pop(0)
+        with self.assertRaisesRegex(ValueError, 'taxonomy category'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+    def test_missing_taxonomy_edge_is_rejected(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.diagrams['figures'][0]['edges'].pop()
+        with self.assertRaisesRegex(ValueError, 'taxonomy edge'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+
 if __name__ == '__main__':
     unittest.main()
