@@ -1,0 +1,109 @@
+{
+  "checked_on": "2026-10-27",
+  "repository_queries": [
+    {
+      "query": "\"Conceptual Model Ontology\"",
+      "repositories": [
+        "cmomm4fair/cmomm4fair.github.io",
+        "cmomm4fair2023/cmomm4fair2023.github.io",
+        "AsenP-old/cmomm4fair2023",
+        "jonimoreira/cmomm4fair.github.io",
+        "pedropaulofb/cmomm4fair2023.github.io"
+      ]
+    },
+    {
+      "query": "swbig",
+      "repositories": [
+        "YWxpZW5tZWRpYQ/MTI5LVdoYXQgSWbigKYICgyMDI0KSBTZWFzb24gMyBIaW5k"
+      ]
+    },
+    {
+      "query": "cmo McCusker",
+      "repositories": []
+    }
+  ],
+  "code_search": {
+    "query": "purl.org/twc/ontologies/cmo.owl",
+    "topn": 8,
+    "selected_hits": [
+      {
+        "repository": "dbpedia/ontology-tracker",
+        "commit": "32f457a42b910e39ef087b26f1664bd8d507518b",
+        "path": "ontologies/purl.org/cmo/v2006/2006-06-30.n3",
+        "role": "THIRD_PARTY_MIRROR_CANDIDATE"
+      },
+      {
+        "repository": "tetherless-world/whyis",
+        "commit": "20db72b229b0843a852dd2127851ac07d5788ab5",
+        "path": "whyis/namespace.py",
+        "role": "NAMESPACE_REFERENCE_NOT_ONTOLOGY"
+      }
+    ],
+    "other_hits": "Unselected namespace registries and one additional third-party mirror; not established as original author distribution."
+  },
+  "repository_metadata": [
+    {
+      "repository": "dbpedia/ontology-tracker",
+      "archived": false,
+      "disabled": false,
+      "pushed_at": "2026-09-15T01:53:36Z",
+      "default_branch": "master"
+    },
+    {
+      "repository": "tetherless-world/whyis",
+      "archived": false,
+      "disabled": false,
+      "pushed_at": "2026-08-03T02:33:19Z",
+      "default_branch": "main"
+    }
+  ],
+  "limits": [
+    "Bounded name/description and exact-namespace code searches, not universal absence.",
+    "Same-name 2017 MussaOmer resource and Clinical Measurement Ontology are not substituted.",
+    "Third-party path date v2006/2006-06-30 is not an established release date.",
+    "Paper BFO/IAO grounding, candidate BFO1.1 namespace references and actual declared imports are different evidence."
+  ],
+  "endpoint_probes": [
+    {
+      "url": "http://purl.org/twc/ontologies/cmo.owl",
+      "status": 404,
+      "final_url": "http://swbig.googlecode.com/svn/trunk/swbig/cmo/cmo.owl",
+      "error": "HTTPError"
+    },
+    {
+      "url": "https://purl.org/twc/ontologies/cmo.owl",
+      "status": 404,
+      "final_url": "http://swbig.googlecode.com/svn/trunk/swbig/cmo/cmo.owl",
+      "error": "HTTPError"
+    },
+    {
+      "url": "https://tw.rpi.edu/web/project/swBIG",
+      "status": 404,
+      "final_url": "https://tw.rpi.edu/project/swBIG",
+      "error": "HTTPError"
+    },
+    {
+      "url": "http://swbig.googlecode.com",
+      "status": 404,
+      "final_url": "http://swbig.googlecode.com",
+      "error": "HTTPError"
+    }
+  ],
+  "mirror_acquisition": {
+    "url": "https://raw.githubusercontent.com/dbpedia/ontology-tracker/32f457a42b910e39ef087b26f1664bd8d507518b/ontologies/purl.org/cmo/v2006/2006-06-30.n3",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/dbpedia/ontology-tracker/32f457a42b910e39ef087b26f1664bd8d507518b/ontologies/purl.org/cmo/v2006/2006-06-30.n3",
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 7255,
+    "sha256": "290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6",
+    "git_blob_sha": "fd9d97fa97d9d252e0a5678e88b2c321679a68ca"
+  },
+  "retained_archive": {
+    "filename": "Clariceptify_CMO_Source_Candidate_2026-10-27.zip",
+    "sha256": "a6b46111f383daa6deb36e51a88fb26d695ede8c10d745b8944672d77d452887",
+    "bytes": 15069,
+    "source_publicly_redistributed": false
+  },
+  "paper_2011_fidelity": "NOT_ESTABLISHED",
+  "model_change": "NONE"
+}

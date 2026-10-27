@@ -1,0 +1,1141 @@
+{
+  "annotation_properties": [],
+  "anonymous_restrictions": 4,
+  "checked_on": "2026-10-27",
+  "classes": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://purl.obolibrary.org/obo/IAO_0000030",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#Quality",
+      "labels": [
+        "Quality"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "0c724ce7c4bc5ae6f5959c18b7c7a58be2b6ebcc7968150a7c28acde8f40ca28"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation",
+      "labels": [
+        "Relation"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "ce057326f14249cd668ce69990fd686d3f9d8bd8fd6070a3dc85df0b05889d56"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#Type",
+      "labels": [
+        "Type"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "d1fffcd19bd50e1bb416a78f8e217348abf9d5987c2f9fbbc3d2f7ae9f2bc25b"
+    },
+    {
+      "annotation_triples_not_copied": 3,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "0"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onClass"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#representedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#Universal",
+      "labels": [
+        "Universal"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "6952e4c56d45ee128f4bb558973d268994914eaa2c75e1dc4400f97e3d6b8f76"
+    },
+    {
+      "annotation_triples_not_copied": 3,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "0"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onClass"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#representedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Universal"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#UniversalClass",
+      "labels": [
+        "Universal Class"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "d6f6d7a99c9e09b054356f5b536bd333b1a063248b4fc2a7e3965bd49598f326"
+    },
+    {
+      "annotation_triples_not_copied": 3,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "0"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#Quality"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onClass"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#representedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Universal"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#UniversalQuality",
+      "labels": [
+        "Universal Quality"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 1,
+      "seeAlso_literal_sha256": "31ae387dac4c66480abf2af68362771e7461d96f1ed0091a67d9596462d1e319",
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 3,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                  "language": null,
+                  "literal": "0"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onClass"
+              },
+              {
+                "object": {
+                  "iri": "http://purl.org/twc/ontologies/cmo.owl#representedBy"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Universal"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#UniversalRelation",
+      "labels": [
+        "Universal Relation"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "45e217bf58727b52403e0aed934f894c0fd09f47300e7f60eb06b4be941abb6f"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ifomis.org/bfo/1.1#Entity",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.obolibrary.org/obo/IAO_0000030"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    }
+  ],
+  "counts": {
+    "annotation_properties": 0,
+    "classes": 12,
+    "datatype_properties": 0,
+    "named_individuals": 0,
+    "object_properties": 20
+  },
+  "datatype_properties": [],
+  "declared_import_iris": [
+    "http://purl.obolibrary.org/obo/iao.owl",
+    "http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"
+  ],
+  "explicit_triples": 147,
+  "generator": {
+    "path": "tools/inspect_cmo_mirror.py",
+    "python": "3.12.14",
+    "rdflib": "7.6.0",
+    "sha256": "3e282740905d62e78b90076113a63541779da7943f39fd29623d7868ff05400a"
+  },
+  "import_resolution": "NOT_EXECUTED_HISTORICAL_IMPORTS_UNPINNED",
+  "inference_counts": null,
+  "local_counts": {
+    "annotation_properties": 0,
+    "classes": 7,
+    "datatype_properties": 0,
+    "named_individuals": 0,
+    "object_properties": 14
+  },
+  "model_change": "NONE",
+  "named_individuals": [],
+  "object_properties": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://purl.obolibrary.org/obo/IAO_0000136",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#broadMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasPrimaryConcept",
+      "labels": [
+        "has primary concept"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#broadMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasQualifier",
+      "labels": [
+        "has qualifying concept"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Quality"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#relatedMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasQuality",
+      "labels": [
+        "has quality"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "782bd6eea1fedc962e77622c6dedf79601b479c704f59bdb2010f550aa7ef6e8"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#relatedMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRole",
+      "labels": [
+        "has role"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#relatedMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRole"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRoleIn",
+      "labels": [
+        "has role in relation"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRole"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasSourceRole",
+      "labels": [
+        "has source role"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRoleIn"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasSourceRole"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasSourceRoleIn",
+      "labels": [
+        "has source role in relation"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRole"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasTargetRole",
+      "labels": [
+        "has target role"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Relation"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasRoleIn"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasTargetRole"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#hasTargetRoleIn",
+      "labels": [
+        "has target role in relation"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Quality"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Type"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#relatedMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#hasQuality"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#qualityOf",
+      "labels": [
+        "is quality of"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.ifomis.org/bfo/1.1#Entity"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#representedBy",
+      "labels": [
+        "represented by"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "f2a4fb8483f800c831b4507a578439b7a4cd1c4f6ab471bf240535e70220c6b4"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.ifomis.org/bfo/1.1#Entity"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://purl.obolibrary.org/obo/IAO_0000136"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#representedBy"
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#represents",
+      "labels": [
+        "represents"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "756aa98b8f8f9a29ff5f5ab59aed45136993dbea19c7c98f50cdd3d19dea4e4b"
+    },
+    {
+      "annotation_triples_not_copied": 2,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Universal"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#represents"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#representsUniversal",
+      "labels": [
+        "represents universal"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 1,
+      "source_comment_sha256": "00a026738a195e2ba8d49d7aa403e60ea6c279539468749f6c5ef2f2a649f2e1"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://purl.org/twc/ontologies/cmo.owl#Quality"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#Concept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2004/02/skos/core#relatedMatch"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ],
+      "iri": "http://purl.org/twc/ontologies/cmo.owl#valuesCanBe",
+      "labels": [
+        "values can be"
+      ],
+      "local": true,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.w3.org/2004/02/skos/core#broader",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2004/02/skos/core#exactMatch"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+              },
+              {
+                "object": {
+                  "anonymous_expression": [
+                    {
+                      "object": {
+                        "iri": "http://www.w3.org/2004/02/skos/core#broader"
+                      },
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+                    },
+                    {
+                      "object": {
+                        "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+                      },
+                      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+                    }
+                  ]
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2002/07/owl#propertyChainAxiom"
+        }
+      ],
+      "iri": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "labels": [],
+      "local": false,
+      "seeAlso_literal_count": 0,
+      "seeAlso_literal_sha256": null,
+      "source_comment_count": 0,
+      "source_comment_sha256": null
+    }
+  ],
+  "ontology_iris": [
+    "http://purl.org/twc/ontologies/cmo.owl"
+  ],
+  "provenance": {
+    "authority": "THIRD_PARTY_MIRROR_NOT_AUTHOR_RELEASE",
+    "commit": "32f457a42b910e39ef087b26f1664bd8d507518b",
+    "git_blob_sha": "fd9d97fa97d9d252e0a5678e88b2c321679a68ca",
+    "paper_2011_fidelity": "NOT_ESTABLISHED",
+    "path": "ontologies/purl.org/cmo/v2006/2006-06-30.n3",
+    "path_date_is_release_date": false,
+    "repository": "dbpedia/ontology-tracker",
+    "source_license": "NOT_IDENTIFIED_IN_SELECTED_FILE"
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "schema_version": "1.0",
+  "scope": "All explicit named declarations/constraints in one third-party candidate, not the complete original2011 ontology or imported/inferred populations.",
+  "semantic_acceptance": "NOT_ASSESSED",
+  "source_redistributed": false,
+  "source_sha256": "290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6",
+  "source_syntax": "N3"
+}

@@ -40,7 +40,7 @@ def render(d):
             f"Technical follow-up: #{d['artifact']['issue']}. State: `{d['artifact']['status']}`.", '',
             d['artifact']['version_relation'], '']
     if d['artifact'].get('class_reviews'):
-        out += ['### Every named class in the retained local core', '',
+        out += [d['artifact'].get('class_reviews_heading', '### Every named class in the retained local core'), '',
                 '| ID / class | Manual constraint/correspondence review | Evidence |', '|---|---|---|']
         for r in d['artifact']['class_reviews']:
             out.append(f"| {r['id']} / {r['label']} | {r['statement']} | {r['basis']}; {refs(r)} |")

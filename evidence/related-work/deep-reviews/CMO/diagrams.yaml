@@ -1,0 +1,336 @@
+schema_version: '1.2'
+work_id: CMO
+source_sha256: 344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49
+figure_population: 6
+count_policy: PRINTED_ITEMS_NOT_ONLY_BOXES
+class_diagram_numbers:
+- 1
+counts:
+  figure_items: 72
+  distinct_labels_all_figures: 49
+  class_box_labels: 13
+  slot_occurrences: 16
+  distinct_printed_property_names: 16
+figures:
+- number: 1
+  pdf_page: 5
+  printed_page: 195
+  kind: CLASS_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F1N01
+    label: bfo2:Entity
+    slots: []
+  - id: F1N02
+    label: snap:Continuant
+    slots: []
+  - id: F1N03
+    label: snap:IndependentContinuant
+    slots: []
+  - id: F1N04
+    label: snap:GenericallyIndependentContinuant
+    slots: []
+  - id: F1N05
+    label: iao:'information content entity'
+    slots: []
+  - id: F1N06
+    label: skos:Concept
+    slots: []
+  - id: F1N07
+    label: cmo:Universal
+    slots: []
+  - id: F1N08
+    label: cmo:UniversalRelation
+    slots: []
+  - id: F1N09
+    label: cmo:UniversalClass
+    slots: []
+  - id: F1N10
+    label: cmo:UniversalQuality
+    slots: []
+  - id: F1N11
+    label: cmo:Relation
+    slots: []
+  - id: F1N12
+    label: cmo:Type
+    slots: []
+  - id: F1N13
+    label: cmo:Quality
+    slots: []
+  edges:
+  - 'snap:Continuant -> bfo2:Entity; snap:IndependentContinuant -> snap:Continuant: are'
+  - 'snap:GenericallyIndependentContinuant -> snap:IndependentContinuant: are (printed spelling and direction)'
+  - 'iao:''information content entity'' -> snap:GenericallyIndependentContinuant; skos:Concept -> iao:''information
+    content entity'': are'
+  - 'cmo:Type / cmo:Quality / cmo:Relation -> skos:Concept: are'
+  - 'cmo:Universal -> snap:IndependentContinuant: are'
+  - 'cmo:UniversalClass / cmo:UniversalQuality / cmo:UniversalRelation -> cmo:Universal: are'
+  notes: Exactly preserve GenericallyIndependentContinuant; prose p.194 instead names generically dependent continuent
+    for FiatEntity. FiatEntity is discussed in prose but absent from this figure. Prefix bfo2 alone does not establish
+    BFO2 edition.
+- number: 2
+  pdf_page: 5
+  printed_page: 195
+  kind: PROPERTY_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F2N01
+    label: skos:Concept
+    slots: []
+  - id: F2N02
+    label: cmo:Universal
+    slots: []
+  - id: F2N03
+    label: iao:'information content entity'
+    slots: []
+  - id: F2N04
+    label: bfo2:Entity
+    slots: []
+  - id: F2N05
+    label: skos:Concept
+    slots: []
+  - id: F2N06
+    label: skos:Concept
+    slots: []
+  - id: F2N07
+    label: cmo:Type
+    slots: []
+  - id: F2N08
+    label: cmo:Quality
+    slots: []
+  - id: F2N09
+    label: skos:Concept
+    slots: []
+  - id: F2N10
+    label: cmo:Relation
+    slots: []
+  - id: F2N11
+    label: cmo:Type
+    slots: []
+  - id: F2N12
+    label: cmo:representedBy
+    slots:
+    - 'cmo:representedBy : ObjectProperty'
+  - id: F2N13
+    label: cmo:represents
+    slots:
+    - 'cmo:represents : ObjectProperty'
+  - id: F2N14
+    label: cmo:representsUniversal
+    slots:
+    - 'cmo:representsUniversal : ObjectProperty'
+  - id: F2N15
+    label: iao:'is about'
+    slots:
+    - 'iao:''is about'' : ObjectProperty'
+  - id: F2N16
+    label: cmo:hasQualifier
+    slots:
+    - 'cmo:hasQualifier : ObjectProperty'
+  - id: F2N17
+    label: cmo:hasPrimaryConcept
+    slots:
+    - 'cmo:hasPrimaryConcept : ObjectProperty'
+  - id: F2N18
+    label: skos:broadMatch
+    slots:
+    - 'skos:broadMatch : ObjectProperty'
+  - id: F2N19
+    label: cmo:hasQuality
+    slots:
+    - 'cmo:hasQuality : ObjectProperty'
+  - id: F2N20
+    label: cmo:qualityOf
+    slots:
+    - 'cmo:qualityOf : ObjectProperty'
+  - id: F2N21
+    label: cmo:valuesCanBe
+    slots:
+    - 'cmo:valuesCanBe : ObjectProperty'
+  - id: F2N22
+    label: cmo:hasRole
+    slots:
+    - 'cmo:hasRole : ObjectProperty'
+  - id: F2N23
+    label: cmo:hasRoleIn
+    slots:
+    - 'cmo:hasRoleIn : ObjectProperty'
+  - id: F2N24
+    label: cmo:hasSourceRole
+    slots:
+    - 'cmo:hasSourceRole : ObjectProperty'
+  - id: F2N25
+    label: cmo:hasSourceRoleIn
+    slots:
+    - 'cmo:hasSourceRoleIn : ObjectProperty'
+  - id: F2N26
+    label: cmo:hasTargetRole
+    slots:
+    - 'cmo:hasTargetRole : ObjectProperty'
+  - id: F2N27
+    label: cmo:hasTargetRoleIn
+    slots:
+    - 'cmo:hasTargetRoleIn : ObjectProperty'
+  edges:
+  - 'cmo:represents: skos:Concept -> bfo2:Entity; cmo:representedBy: inverse direction'
+  - cmo:represents subproperty of iao:'is about'; cmo:representsUniversal subproperty of cmo:represents with Universal
+    range
+  - 'cmo:hasPrimaryConcept / cmo:hasQualifier: skos:Concept -> skos:Concept, subproperty of skos:broadMatch'
+  - 'cmo:hasQuality: cmo:Type -> cmo:Quality; cmo:qualityOf inverse'
+  - 'cmo:valuesCanBe: cmo:Quality -> skos:Concept'
+  - 'cmo:hasRole: cmo:Relation -> cmo:Type; cmo:hasRoleIn inverse'
+  - cmo:hasSourceRole / cmo:hasTargetRole subproperty of cmo:hasRole, same Relation-to-Type direction
+  - cmo:hasSourceRoleIn / cmo:hasTargetRoleIn subproperty of cmo:hasRoleIn, inverse of source/target counterparts
+  notes: All 16 printed property labels and all 11 class-box occurrences retained. Repeated skos:Concept and cmo:Type
+    boxes are display repetitions, not distinct class IRIs. Domain/range dashed links do not imply a required filler,
+    uniqueness or closed-world completeness.
+- number: 3
+  pdf_page: 6
+  printed_page: 196
+  kind: QUERY
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F3N01
+    label: Query 1 / education distribution
+    slots: []
+  edges:
+  - ?person rdf:type ?class; ?class cmo:representedBy ?personConcept; ?personConcept skos:broader ncit:Person
+  - ?person ?prop ?educationConcept; ?educationConcept rdfs:label ?value
+  - ?prop cmo:representedBy ?propertyConcept; ?propertyConcept skos:broader ncit:Education_Level
+  notes: Visually transcribed query retained at evaluation/related-work/cmo/printed-query-parse.json. Printed aggregate
+    has no parentheses around COUNT...AS; rdfs prefix and GROUP BY are not printed. No endpoint/dataset rerun.
+  query_ref: evaluation/related-work/cmo/printed-query-parse.json
+- number: 4
+  pdf_page: 7
+  printed_page: 197
+  kind: CHART
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F4N01
+    label: Professional Doctorate Degree Completion
+    slots: []
+  - id: F4N02
+    label: Master's Degree Completion
+    slots: []
+  - id: F4N03
+    label: Bachelor's Degree Completion
+    slots: []
+  - id: F4N04
+    label: Associate Academic Degree Completion
+    slots: []
+  - id: F4N05
+    label: Some College Completion
+    slots: []
+  - id: F4N06
+    label: Vocational Program Completion
+    slots: []
+  - id: F4N07
+    label: High School Completion
+    slots: []
+  - id: F4N08
+    label: 8th Grade Completion
+    slots: []
+  - id: F4N09
+    label: 5th Grade Completion
+    slots: []
+  edges:
+  - 'Horizontal count axis: # of People, ticks0,50,100,150,200,250,300'
+  - 'Vertical categorical axis: Education Level'
+  notes: Nine bars are author-displayed query results, not a validation sample or measured ontology accuracy. Exact
+    bar values and total sample are not printed as numeric labels; no rounded value is promoted to exact count.
+    No HINTS source extract reproduced.
+- number: 5
+  pdf_page: 7
+  printed_page: 197
+  kind: RULE_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F5N01
+    label: ?x
+    slots: []
+  - id: F5N02
+    label: ?otherClass
+    slots: []
+  - id: F5N03
+    label: ?class
+    slots: []
+  - id: F5N04
+    label: ?otherTypeConcept
+    slots: []
+  - id: F5N05
+    label: ?typeConcept
+    slots: []
+  - id: F5N06
+    label: ?commonConcept
+    slots: []
+  - id: F5N07
+    label: ?x
+    slots: []
+  - id: F5N08
+    label: ?otherClass
+    slots: []
+  - id: F5N09
+    label: ?class
+    slots: []
+  - id: F5N10
+    label: ?otherTypeConcept
+    slots: []
+  - id: F5N11
+    label: ?typeConcept
+    slots: []
+  - id: F5N12
+    label: ?commonConcept
+    slots: []
+  edges:
+  - 'Left: ?x is a ?class; ?class cmo:representedByType ?typeConcept; ?otherClass cmo:representedByType ?otherTypeConcept'
+  - 'Left: both type-concept nodes cmo:hasPrimaryConcept ?commonConcept'
+  - 'Right: retain left graph and add ?x is a ?otherClass'
+  notes: Caption describes parent/child and a broader term, but both drawn concept links are hasPrimaryConcept,
+    with no broader arc. Shared primary concept alone does not entail cross-class instance typing. This is a task-specific
+    rule proposal, not an OWL theorem.
+- number: 6
+  pdf_page: 7
+  printed_page: 197
+  kind: RULE_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F6N01
+    label: ?domainClass
+    slots: []
+  - id: F6N02
+    label: ?bridgClass
+    slots: []
+  - id: F6N03
+    label: ?domainConcept
+    slots: []
+  - id: F6N04
+    label: ?bridgConcept
+    slots: []
+  - id: F6N05
+    label: ?commonConcept
+    slots: []
+  - id: F6N06
+    label: ?domainClass
+    slots: []
+  - id: F6N07
+    label: ?bridgClass
+    slots: []
+  - id: F6N08
+    label: ?domainConcept
+    slots: []
+  - id: F6N09
+    label: ?bridgConcept
+    slots: []
+  - id: F6N10
+    label: ?commonConcept
+    slots: []
+  edges:
+  - 'Left: ?domainClass cmo:representedByType ?domainConcept; ?bridgClass cmo:representedByType ?bridgConcept'
+  - 'Left: ?domainConcept skos:broaderTransitive ?commonConcept; ?bridgConcept cmo:hasPrimaryConcept ?commonConcept'
+  - 'Right: retain left graph and add ?domainClass are ?bridgClass (caption explicitly interprets as subclass)'
+  notes: Subclass assertion is generated by a selected mapping policy, not entailed solely by SKOS broader/primary-concept
+    relations. The figure supplies no executable rule language, quantified guard, conflict policy or alignment-accuracy
+    measurement.
+boundary: Count policy includes class boxes, property labels, query record, chart category labels and rule-variable
+  occurrences. Only Fig.1 is the class-hierarchy population; no displayed-item count is a released-ontology class
+  census.

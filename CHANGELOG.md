@@ -1,5 +1,11 @@
 # Changelog
 
+## Complete CMO primary-paper review - 2026-10-27
+
+- Complete #83 across all nine proceedings pages after OCR recovery and original-page inspection; cover all six figures, five footnotes, 37 references, three use cases and five requirements. Record 47 conceptual entries, 15 commitment groups, 14 positive/adverse scenarios and 16 source-linked findings.
+- Retain one matching-namespace third-party CMO source without treating its path date as an author release. Inventory all 12 declared named classes and 20 object properties; manually review all seven local classes, with comment versus seeAlso definition evidence explicit. Separate paper BFO family from candidate BFO1.1 namespace references.
+- Record syntax-only rejection of the printed query in RDFLib7.6.0, without a HINTS endpoint or dataset reproduction claim. Keep #245 open for original/import identity and eight bounded semantic checks. Add four adverse coverage/boundary tests; no Clariceptify scientific or release change.
+
 ## Complete DnS primary-paper review - 2026-10-27
 
 - Complete #261 across all 18 pages,23 numbered displays, the separate interpretation map, five figures, eight content footnotes and 18 references under the shared ten-dimension contract. Retain source grouping, schema/witness ambiguities, role/filler distinctions and illustrative-evaluation limits.

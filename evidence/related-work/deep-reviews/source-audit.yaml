@@ -318,6 +318,22 @@ discovery_attempts:
     Three GitHub repository queries return no corresponding development repository. Exact discovery/intake: evaluation/related-work/dns/deep-review-discovery.json.'
   limitation: 'Related later 2005-copyright distribution is not proven identical to 2003; bounded repository search is not
     global absence; full candidate glossary and eight selected correspondence checks stay #235.'
+- id: W09
+  method: PRIMARY_PAPER_OCR_VISUAL_REVIEW_HTTP_PROBES_BOUNDED_REPOSITORY_AND_CODE_SEARCH
+  checked_on: '2026-10-27'
+  query: Conceptual Model Ontology; swbig; cmo McCusker; exact purl.org/twc/ontologies/cmo.owl code search
+  checked_urls:
+  - https://ceur-ws.org/Vol-833/paper25.pdf
+  - http://purl.org/twc/ontologies/cmo.owl
+  - https://purl.org/twc/ontologies/cmo.owl
+  - https://tw.rpi.edu/web/project/swBIG
+  - http://swbig.googlecode.com
+  - https://github.com/dbpedia/ontology-tracker/blob/32f457a42b910e39ef087b26f1664bd8d507518b/ontologies/purl.org/cmo/v2006/2006-06-30.n3
+  outcome: 'Original PURL redirects to old Google Code SVN returning 404. Matching-namespace third-party DBpedia mirror retained
+    and parsed; all seven local class definitions/constraints reviewed. whyis namespace reference is not an ontology file.
+    Exact probes, pinned metadata and limits: evaluation/related-work/cmo/deep-review-discovery.json.'
+  limitation: 'No original author development repository or exact 2011 byte identity confirmed; path-date not release-date;
+    original/imported definitions and selected semantic work stay #245. Search failure is not universal absence.'
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -539,27 +555,33 @@ records:
 - id: CMO
   title: Towards an Ontology for Conceptual Modeling
   primary_issue: 83
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
-    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
-    urls: []
+    state: THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED
+    urls:
+    - https://github.com/dbpedia/ontology-tracker
+    - https://github.com/tetherless-world/whyis
     evidence:
     - G03
     - W03
+    - W09
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PAPER_LINK_404_CANDIDATE_NOT_MATCHED
+    paper_correspondence: MATCHING_NAMESPACE_SELECTED_TERMS_NOT_PROVEN_2011_IDENTITY
+  artifact_state: MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN
   foundation:
-    family: null
+    family: BFO with IAO reuse
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Not yet established for this exact source
-    artifact_imports: null
+    relation: PAPER_STATED_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: CMO:E03,E06,E07; sec.2.1,4 andFig.1; edition unknown in selected paper
+    artifact_imports:
+    - http://purl.obolibrary.org/obo/iao.owl
+    - http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: Paper edition unknown. Candidate actual ifomis.org/bfo/1.1 namespace references are not a confirmed author-paper
+      edition or pinned BFO import; bfo2 prefix is not BFO2 proof.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
@@ -568,6 +590,18 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 245
+  related_distribution:
+    repository: dbpedia/ontology-tracker
+    commit: 32f457a42b910e39ef087b26f1664bd8d507518b
+    source_sha256: 290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6
+    census_path: evidence/related-work/deep-reviews/CMO/mirror-census.json
+    candidate_local_classes: 7
+    candidate_external_class_redeclarations: 5
+    local_manual_definition_constraint_reviews: 7
+    comment_candidates: 6
+    seeAlso_literal_candidate_without_comment: 1
+    historical_2011_fidelity: NOT_ESTABLISHED
+    paper_class_count: null
 - id: COM2004
   title: Towards a Computational Ontology of Mind
   primary_issue: 81

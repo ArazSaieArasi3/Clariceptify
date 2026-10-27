@@ -203,5 +203,38 @@ class DnsCoverageTests(unittest.TestCase):
         self.reject_intake(add_import, 'import closure')
 
 
+class CmoCoverageTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE / 'CMO'
+        self.dossier = yaml.safe_load((base / 'review.yaml').read_text())
+        self.census = json.loads((base / 'mirror-census.json').read_text())
+        self.diagrams = yaml.safe_load((base / 'diagrams.yaml').read_text())
+        self.query = json.loads((ROOT / self.dossier['artifact']['syntax_check']['path']).read_text())
+
+    def test_mirror_is_not_original_release(self):
+        from check_deep_reviews import validate_candidate_census
+        self.census['provenance']['path_date_is_release_date'] = True
+        with self.assertRaisesRegex(ValueError, 'original author release'):
+            validate_candidate_census(self.dossier, self.census, self.dossier['artifact']['candidate_census'])
+
+    def test_every_candidate_local_class_review_required(self):
+        from check_deep_reviews import validate_candidate_census
+        self.dossier['artifact']['class_reviews'].pop()
+        with self.assertRaisesRegex(ValueError, 'candidate local class'):
+            validate_candidate_census(self.dossier, self.census, self.dossier['artifact']['candidate_census'])
+
+    def test_chart_labels_are_not_class_boxes(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.diagrams['class_diagram_numbers'].append(4)
+        with self.assertRaisesRegex(ValueError, 'kind/class population'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+    def test_parser_rejection_cannot_become_endpoint_reproduction(self):
+        from check_deep_reviews import validate_printed_query
+        self.query['endpoint_execution'] = 'HINTS_RESULTS_REPRODUCED'
+        with self.assertRaisesRegex(ValueError, 'historical query execution'):
+            validate_printed_query(self.dossier, self.query)
+
+
 if __name__ == '__main__':
     unittest.main()
