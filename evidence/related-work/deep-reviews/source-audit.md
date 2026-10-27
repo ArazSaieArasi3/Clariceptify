@@ -1,6 +1,6 @@
 # Repository, foundation and class-coverage audit
 
-Checked on 2026-10-26. A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
+Checked on 2026-10-27. A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
 
 The 23 rows are 19 exact paper/version records plus four separate documentation sources. Repository discovery, formal-file availability, paper review, class definitions and semantic tests are independent states. NOT_IDENTIFIED is bounded by the recorded searches; NOT_CHECKED is unfinished discovery. Neither means no repository exists.
 
@@ -12,7 +12,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | IAO2015 (#78) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/information-artifact-ontology/IAO); PINNED_FILES_TECHNICAL_REVIEW_PENDING | BFO; MFO extension; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #240 |
 | EFO (#80) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | EFO; INDEPENDENT_FOUNDATION; edition: UNKNOWN | PENDING_FULL_CATALOG | #242 |
 | cDnS2007 (#259) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_CORE_FULL_CENSUS | Foundation-neutral constructive framework; PAPER_STATED_GROUNDING; edition: UNKNOWN | [12 classes](cDnS2007/classes.md); 12 comment candidates; 0 missing | #267, #263 |
-| LMM2008 (#260) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; TWO_LOCAL_MODULES_AND_IMPORTS_RETAINED | DOLCE via DUL and IOLite; ACTUAL_IMPORT; edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2 | [29 classes](LMM2008/classes.md); 25 comment candidates; 4 missing | #260, #88, #271 |
+| LMM2008 (#260) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; PINNED_LOCAL_CLASSES_MANUALLY_REVIEWED_HISTORICAL_ALIGNMENT_UNACQUIRED | DOLCE via DUL and IOLite; ACTUAL_IMPORT; edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2 | [29 classes](LMM2008/classes.md); 25 comment candidates; 4 missing | #274, #88, #271, #252 |
 | DnS2003 (#261) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; HISTORICAL_DISTRIBUTION_NOT_PINNED | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #235 |
 | CMO (#83) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_LINK_404_CANDIDATE_NOT_MATCHED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #245 |
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #243 |
@@ -249,6 +249,19 @@ Query: `Follow official OntoLex community Github repository link`. Checked: 2026
 Official group page links cimiano/ontolex; API reports moved repository ID20124549, identical to ontolex/ontolex. Public repository verified, not archived; observed last push2026-10-23T11:10:53Z. Complete snapshot not yet acquired.
 
 Limit: Current repository activity does not establish that every module matches the 2016 core specification. Snapshot/commit acquisition and per-module verification remain #237.
+
+### W07: ACTUAL_HTTP_PROBES_AND_BOUNDED_WEB_SEARCH
+
+Query: `LMM_Alignments.owl plus author names and repository terms`. Checked: 2026-10-27.
+
+- http://www.loa-cnr.it/codeps/owl/LMM_Alignments.owl
+- http://wiki.loa-cnr.it/index.php/LoaWiki:Ontologies
+- http://www.ontologydesignpatterns.org/ont/lmm/LMM_Alignments.owl
+- http://www.ontologydesignpatterns.org/ont/lmm/
+
+Original alignment URL/wiki and ODP directory return403. Guessed ODP alignment URL returns200 but redirects to HTML, rejected as an ontology. No author-controlled corresponding historical development repository was confirmed. Exact results and method are retained at evaluation/related-work/lmm/deep-review-discovery.json.
+
+Limit: Four endpoints and bounded searches, not universal repository absence; current pinned L1/L2 remain available. Historical distribution recovery/correspondence stays #274.
 
 ## Interpretation and next work
 

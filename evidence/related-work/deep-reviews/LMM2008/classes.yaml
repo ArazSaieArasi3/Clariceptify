@@ -460,8 +460,8 @@ classes:
   equivalent_expressions: 0
   constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression]
   notes:
-  - 'The comment names a category not used as the declared superclass here; preserve the original terminology for
-    correspondence analysis in #260.'
+  - 'The comment calls this an AnaphoricExpression while its asserted superclass is ContextualExpression. Preserve
+    the source alias discrepancy; see #260/#274.'
 - iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting
   label: Experimental setting
   label_basis: RDFS_LABEL
@@ -711,8 +711,8 @@ classes:
   equivalent_expressions: 0
   constraint_ref: evidence/related-work/deep-reviews/LMM2008/LMM_L2-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression]
   notes:
-  - 'The comment names a category not used as the declared superclass here; preserve the original terminology for
-    correspondence analysis in #260.'
+  - 'The comment uses ClassReference as a denotation target while its asserted denotes restriction uses ConceptReference.
+    The source alias correspondence remains unestablished; see deep paper review #260 and technical follow-up #274.'
 - iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext
   label: Syntactic context
   label_basis: RDFS_LABEL

@@ -100,6 +100,38 @@ def validate_dossier(d, entry, dimensions):
         require(d['status'] == 'IN_PROGRESS', 'invalid review state')
 
 
+def validate_diagram_inventory(dossier, inventory):
+    binding = dossier['diagram_inventory']
+    if inventory['source_sha256'] != dossier['source']['sha256'] or binding['source_sha256'] != inventory['source_sha256']:
+        raise ValueError('Diagram source substitution')
+    figures = inventory['figures']
+    if (inventory['work_id'] != dossier['work_id'] or inventory['figure_population'] != len(figures) or
+            [f['number'] for f in figures] != binding['figures']):
+        raise ValueError('Incomplete or duplicate diagram population')
+    for figure in figures:
+        if (figure['pdf_page'] not in dossier['coverage']['visual_pages'] or
+                figure['inspection'] != 'VISUALLY_REVIEWED' or not figure['nodes']):
+            raise ValueError('Unreviewed diagram population')
+    slots = [slot for f in figures for n in f['nodes'] for slot in n['slots']]
+    names = {s.split(' : ')[0] for s in slots}
+    indexed = [r['printed_name'] for r in dossier['relation_index'] if 'printed_name' in r]
+    if len(indexed) != len(set(indexed)) or set(indexed) != names:
+        raise ValueError('Unindexed or duplicate diagram property')
+    expected = {'figure_boxes': sum(len(f['nodes']) for f in figures),
+                'distinct_labels_all_figures': len({n['label'] for f in figures for n in f['nodes']}),
+                'class_box_labels_figures2_6': len({n['label'] for f in figures if f['number'] != 1 for n in f['nodes']}),
+                'slot_occurrences': len(slots), 'distinct_printed_property_names': len(names)}
+    if inventory['counts'] != expected:
+        raise ValueError('Diagram display population mismatch')
+
+
+def validate_class_review_coverage(dossier, catalog):
+    reviews = dossier['artifact']['class_reviews']
+    if (len(reviews) != len(catalog['classes']) or
+            {r['iri'] for r in reviews} != {r['iri'] for r in catalog['classes']}):
+        raise ValueError('Manual class reviews omit or duplicate a catalogued class')
+
+
 def check(root=ROOT):
     base = root / BASE
     protocol = yaml.safe_load((base / 'protocol.yaml').read_text())
@@ -125,6 +157,22 @@ def check(root=ROOT):
             continue
         d = yaml.safe_load(path.read_text())
         validate_dossier(d, entry, protocol['dimensions'])
+        if 'diagram_inventory' in d:
+            binding = d['diagram_inventory']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed diagram inventory bytes')
+            validate_diagram_inventory(d, yaml.safe_load(raw))
+        if 'class_catalog' in d['artifact']:
+            binding = d['artifact']['class_catalog']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed manually reviewed class catalogue')
+            validate_class_review_coverage(d, yaml.safe_load(raw))
+        if 'discovery_execution' in d['artifact']:
+            binding = d['artifact']['discovery_execution']
+            if hashlib.sha256((root / binding['path']).read_bytes()).hexdigest() != binding['sha256']:
+                raise ValueError('Changed discovery execution evidence')
         if entry['state'] != d['status']:
             raise ValueError('Register/review state mismatch')
         if 'census' in d['artifact']:

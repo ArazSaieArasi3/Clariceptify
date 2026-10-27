@@ -1,0 +1,47 @@
+{
+  "checked_on": "2026-10-27",
+  "method": "Python urllib bounded HTTP GET with18-second timeout; response content/status inspected; HTML rejected as ontology",
+  "model_change": "NONE",
+  "results": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "url": "http://www.loa-cnr.it/codeps/owl/LMM_Alignments.owl"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "url": "http://wiki.loa-cnr.it/index.php/LoaWiki:Ontologies"
+    },
+    {
+      "bytes_observed": 34956,
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "http://ontologydesignpatterns.org/index.php/Main_Page",
+      "prefix": "\t<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" class=\"client-nojs\">\n<head>\n<meta charset=\"UTF-8\" />\n<tit",
+      "sha256": "e3f2832f9c9083f4aa524a3a84c368e459319f2d07f70bcdfdb23b4adebef6c2",
+      "status": 200,
+      "url": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_Alignments.owl"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "url": "http://www.ontologydesignpatterns.org/ont/lmm/"
+    }
+  ],
+  "scope": "Four observed endpoints, not all repositories or every possible distribution",
+  "search_queries": [
+    {
+      "engine": "web system1",
+      "outcome": "No authoritative corresponding distribution identified in returned results; LLM/OWL homonyms excluded.",
+      "query": "\"LMM_Alignments.owl\" Gangemi ontology"
+    },
+    {
+      "engine": "web system1",
+      "outcome": "No author-controlled corresponding repository confirmed.",
+      "query": "\"LMM\" \"Picca\" \"Gliozzo\" \"github\""
+    },
+    {
+      "engine": "web system2",
+      "outcome": "No corresponding formal root acquired.",
+      "query": "\"LMM_Alignments.owl\""
+    }
+  ],
+  "semantic_execution": "NOT_EXECUTED"
+}

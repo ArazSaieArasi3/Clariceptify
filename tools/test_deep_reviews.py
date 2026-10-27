@@ -131,5 +131,37 @@ class SourceAuditBoundaryTests(unittest.TestCase):
             validate_audit(self.audit, self.expected)
 
 
+class LmmCoverageTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE / 'LMM2008'
+        self.dossier = yaml.safe_load((base / 'review.yaml').read_text())
+        self.diagrams = yaml.safe_load((base / 'diagrams.yaml').read_text())
+        self.catalog = yaml.safe_load((base / 'classes.yaml').read_text())
+
+    def test_missing_numbered_figure_rejected(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.diagrams['figures'].pop()
+        with self.assertRaisesRegex(ValueError, 'diagram population'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+    def test_diagram_source_substitution_rejected(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.diagrams['source_sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'source substitution'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+    def test_unindexed_figure_property_rejected(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.dossier['relation_index'].pop(0)
+        with self.assertRaisesRegex(ValueError, 'diagram property'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+    def test_all_local_class_reviews_required(self):
+        from check_deep_reviews import validate_class_review_coverage
+        self.dossier['artifact']['class_reviews'].pop()
+        with self.assertRaisesRegex(ValueError, 'omit or duplicate'):
+            validate_class_review_coverage(self.dossier, self.catalog)
+
+
 if __name__ == '__main__':
     unittest.main()

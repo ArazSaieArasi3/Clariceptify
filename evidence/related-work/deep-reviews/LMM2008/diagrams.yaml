@@ -1,0 +1,318 @@
+schema_version: '1.0'
+work_id: LMM2008
+source_sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+scope: Every numbered figure, every visible class box and printed property slot; manual source transcription, not
+  executable source ontology or independent semantic acceptance.
+figure_population: 6
+figures:
+- number: 1
+  pdf_page: 2
+  printed_page: 2414
+  label: The structure of Semiotic Triangle
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - label: THOUGHT OR REFERENCE
+    slots: []
+  - label: SYMBOL
+    slots: []
+  - label: REFERENT
+    slots: []
+  interpretation_limit: 'Three semiotic positions and three labeled sides: symbolizes (a causal relation), refers
+    to (other causal relations), stands for (an imputed relation, dotted). The diagram is historical/conceptual, not
+    a three-rule OWL program. The top label is not equated automatically with the LMM Reference class.'
+- number: 2
+  pdf_page: 2
+  printed_page: 2414
+  label: The semiotic triangle in LMM1
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - label: lmm1:Meaning
+    slots:
+    - 'interprets : Reference'
+    - 'isExpressedBy : Expression'
+  - label: lmm1:Expression
+    slots:
+    - 'denotes : Reference'
+    - 'expresses : Meaning'
+  - label: lmm1:Reference
+    slots:
+    - 'isDenotedBy : Expression'
+    - 'isInterpretedAs : Meaning'
+  interpretation_limit: Unprefixed slot names are retained as printed. Fig.2 uses interprets/isInterpretedAs while
+    later figures use hasInterpretation/isInterpretationOf. No automatic equivalence to a current property IRI is
+    asserted.
+- number: 3
+  pdf_page: 3
+  printed_page: 2415
+  label: The class Reference
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - label: dul:Situation
+    slots:
+    - 'dul:hasPostcondition : dul:Situation'
+    - 'dul:hasPrecondition : dul:Situation'
+    - 'dul:includesAction : dul:Action'
+    - 'dul:includesAgent : dul:Agent'
+    - 'dul:includesEvent : dul:Event'
+    - 'dul:includesObject : dul:Object'
+    - 'dul:includesTime : dul:TimeInterval'
+    - 'dul:isPostconditionOf : dul:Situation'
+    - 'dul:isPreconditionOf : dul:Situation'
+    - 'dul:isSettingFor : dul:Entity'
+    - 'dul:satisfies : dul:Description'
+  - label: dul:PhysicalArtifact
+    slots:
+    - 'dul:isDescribedBy : dul:Description'
+  - label: lmm1:Reference
+    slots:
+    - 'lmm1:hasInterpretation : lmm1:Meaning'
+    - 'lmm1:isDenotedBy : lmm1:Expression'
+    - 'lmm2:hasSuperSense : wn20:SuperSense'
+    - 'lmm2:isInstanceOf : dul:Concept'
+  - label: lmm2:IndividualReference
+    slots:
+    - 'lmm2:isInstanceOf : dul:Concept'
+  - label: lmm2:MultipleReference
+    slots:
+    - 'dul:hasMember : lmm2:IndividualReference'
+  interpretation_limit: Open-triangle arrows place Situation, PhysicalArtifact, IndividualReference and MultipleReference
+    below Reference. Membership is between a multiple reference and its individual members; it is not a subclass relation
+    between those individuals.
+- number: 4
+  pdf_page: 5
+  printed_page: 2417
+  label: The class Meaning
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - label: dul:Situation
+    slots:
+    - 'dul:hasPostcondition : dul:Situation'
+    - 'dul:hasPrecondition : dul:Situation'
+    - 'dul:includesAction : dul:Action'
+    - 'dul:includesAgent : dul:Agent'
+    - 'dul:includesEvent : dul:Event'
+    - 'dul:includesObject : dul:Object'
+    - 'dul:includesTime : dul:TimeInterval'
+    - 'dul:isPostconditionOf : dul:Situation'
+    - 'dul:isPreconditionOf : dul:Situation'
+    - 'dul:isSettingFor : dul:Entity'
+    - 'dul:satisfies : dul:Description'
+  - label: lmm1:Meaning
+    slots:
+    - 'dul:isExpressedBy : lmm1:Expression'
+    - 'dul:specializes : lmm1:Meaning'
+    - 'lmm1:isInterpretationOf : lmm1:Reference'
+  - label: dul:Description
+    slots:
+    - 'dul:defines : dul:Concept'
+    - 'dul:definesRole : dul:Role'
+    - 'dul:definesTask : dul:Task'
+    - 'dul:describes : dul:Entity'
+    - 'dul:expands : dul:Description'
+    - 'dul:introduces : dul:SocialAgent'
+    - 'dul:isConceptualizedBy : dul:Agent'
+    - 'dul:isExpandedIn : dul:Description'
+    - 'dul:isSatisfiedBy : dul:Situation'
+    - 'dul:unifies : dul:Collection'
+    - 'dul:usesConcept : dul:Concept'
+  - label: dul:Concept
+    slots:
+    - 'dul:classifies : dul:Entity'
+    - 'dul:covers : dul:Collection'
+    - 'dul:hasParameter : dul:Parameter'
+    - 'dul:hasPart : dul:Concept'
+    - 'dul:isConceptExpressedBy : dul:InformationObject'
+    - 'dul:isConceptUsedIn : dul:Description'
+    - 'dul:isDefinedIn : dul:Description'
+    - 'dul:isRelatedToConcept : dul:Concept'
+    - 'dul:isSubordinatedTo : dul:Concept'
+    - 'dul:isSuperordinatedTo : dul:Concept'
+    - 'lmm2:hasInstance : lmm1:Reference'
+    - 'skos:broader : skos:Concept'
+    - 'skos:broaderGeneric : skos:Concept'
+    - 'skos:broaderInstantive : skos:Concept'
+    - 'skos:broaderPartitive : skos:Concept'
+    - 'skos:narrower : skos:Concept'
+    - 'skos:narrowerGeneric : skos:Concept'
+    - 'skos:narrowerInstantive : skos:Concept'
+    - 'skos:narrowerPartitive : skos:Concept'
+    - 'skos:related : skos:Concept'
+    - 'skos:relatedHasPart : skos:Concept'
+    - 'skos:relatedPartOf : skos:Concept'
+    - 'skosM:broadMatch : dul:Concept'
+    - 'skosM:exactMatch : dul:Concept'
+    - 'skosM:majorMatch : dul:Concept'
+    - 'skosM:mappingRelation : dul:Concept'
+    - 'skosM:minorMatch : dul:Concept'
+    - 'skosM:narrowMatch : dul:Concept'
+  - label: dul:Collection
+    slots:
+    - 'dul:hasMember : dul:Entity'
+    - 'dul:hasPart : dul:Collection'
+    - 'dul:isCoveredBy : dul:Concept'
+    - 'dul:isUnifiedBy : dul:Description'
+    - 'skos:isPrimarySubjectOf : dul:SocialObject'
+    - 'skos:isSubjectOf : dul:SocialObject'
+  interpretation_limit: Concept and Description are drawn below Meaning. Situation is connected through satisfies,
+    not a superclass arrow in this figure. A property displayed inside a class box is not automatically an independently
+    asserted all-values restriction or a complete definition.
+- number: 5
+  pdf_page: 6
+  printed_page: 2418
+  label: The structure of Concept
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - label: wn20:SuperSense
+    slots:
+    - 'lmm2:isSuperSenseOf : lmm1:Reference'
+  - label: ofntb:CoreType
+    slots:
+    - 'ofntb:isCoreTypeOf : ofntb:FrameElement'
+  - label: ofntb:GenericFrameElement
+    slots:
+    - 'ofntb:hasSpecificComponent : ofntb:FrameElement[1..]'
+    - 'ofntb:isInductivelyUsedConceptIn : ofntb:Frame[1..]'
+  - label: dul:Concept
+    slots:
+    - 'dul:classifies : dul:Entity'
+    - 'dul:covers : dul:Collection'
+    - 'dul:hasParameter : dul:Parameter'
+    - 'dul:hasPart : dul:Concept'
+    - 'dul:isConceptExpressedBy : dul:InformationObject'
+    - 'dul:isConceptUsedIn : dul:Description'
+    - 'dul:isDefinedIn : dul:Description'
+    - 'dul:isRelatedToConcept : dul:Concept'
+    - 'dul:isSubordinatedTo : dul:Concept'
+    - 'dul:isSuperordinatedTo : dul:Concept'
+    - 'lmm2:hasInstance : lmm1:Reference'
+    - 'skos:broader : skos:Concept'
+    - 'skos:broaderGeneric : skos:Concept'
+    - 'skos:broaderInstantive : skos:Concept'
+    - 'skos:broaderPartitive : skos:Concept'
+    - 'skos:narrower : skos:Concept'
+    - 'skos:narrowerGeneric : skos:Concept'
+    - 'skos:narrowerInstantive : skos:Concept'
+    - 'skos:narrowerPartitive : skos:Concept'
+    - 'skos:related : skos:Concept'
+    - 'skos:relatedHasPart : skos:Concept'
+    - 'skos:relatedPartOf : skos:Concept'
+    - 'skosM:broadMatch : dul:Concept'
+    - 'skosM:exactMatch : dul:Concept'
+    - 'skosM:majorMatch : dul:Concept'
+    - 'skosM:mappingRelation : dul:Concept'
+    - 'skosM:minorMatch : dul:Concept'
+    - 'skosM:narrowMatch : dul:Concept'
+  - label: lmm2:IndividualReference
+    slots:
+    - 'lmm2:isInstanceOf : dul:Concept'
+  - label: ofntb:SemanticType
+    slots:
+    - 'ofntb:isSemTypeOf : ofntb:Frame or ofntb:LexicalUnit'
+    - 'ofntb:isSemTypeSpecializedBy : ofntb:FrameElement'
+    - 'ofntb:SEM_ID : string'
+    - 'ofntb:SEM_name : string'
+  - label: skos:TopConcept
+    slots: []
+  - label: ofntb:FrameElement
+    slots:
+    - 'ofntb:FE_coreType : ofntb:CoreType'
+    - 'ofntb:causativeOfFE : ofntb:FrameElement'
+    - 'ofntb:coreSetFE : ofntb:FrameElement'
+    - 'ofntb:excludesFE : ofntb:FrameElement'
+    - 'ofntb:hasCausativeFE : ofntb:FrameElement'
+    - 'ofntb:hasInchoativeFE : ofntb:FrameElement'
+    - 'ofntb:hasSubFE : ofntb:FrameElement'
+    - 'ofntb:inchoativeOfFE : ofntb:FrameElement'
+    - 'ofntb:isFEExcludedBy : ofntb:FrameElement'
+    - 'ofntb:isFEIn : ofntb:Frame[1..]'
+    - 'ofntb:isFERequiredBy : ofntb:FrameElement'
+    - 'ofntb:isFEUsedBy : ofntb:FrameElement'
+    - 'ofntb:isSpecificComponentOf : ofntb:GenericFrameElement'
+    - 'ofntb:isSubFEOf : ofntb:FrameElement'
+    - 'ofntb:reframingMappingFE : ofntb:FrameElement'
+    - 'ofntb:requiresFE : ofntb:FrameElement'
+    - 'ofntb:seeAlsoFE : ofntb:FrameElement'
+    - 'ofntb:specializesSemType : ofntb:SemanticType'
+    - 'ofntb:usingFE : ofntb:FrameElement'
+    - 'ofntb:FE_ID : string'
+    - 'ofntb:FE_abbrev : string'
+    - 'ofntb:FE_cBy : string'
+    - 'ofntb:FE_cDate : string'
+    - 'ofntb:FE_name : string'
+  - label: skos:Concept
+    slots:
+    - 'skos:broader : skos:Concept'
+    - 'skos:broaderGeneric : skos:Concept'
+    - 'skos:broaderInstantive : skos:Concept'
+    - 'skos:broaderPartitive : skos:Concept'
+    - 'skos:inScheme : skos:ConceptScheme'
+    - skos:isPrimarySubjectOf
+    - skos:isSubjectOf
+    - 'skos:narrower : skos:Concept'
+    - 'skos:narrowerGeneric : skos:Concept'
+    - 'skos:narrowerInstantive : skos:Concept'
+    - 'skos:narrowerPartitive : skos:Concept'
+    - 'skos:related : skos:Concept'
+    - 'skos:relatedHasPart : skos:Concept'
+    - 'skos:relatedPartOf : skos:Concept'
+    - 'skos:semanticRelation : skos:Concept'
+    - 'skos:subjectIndicator : foaf:Document'
+    - 'skos:externalID : rdfs:Resource'
+  - label: wn20:Synset
+    slots:
+    - 'wn20:classifiedBy : wn20:NounSynset'
+    - 'wn20:classifiedByRegion : wn20:NounSynset'
+    - 'wn20:classifiedByTopic : wn20:NounSynset'
+    - 'wn20:classifiedByUsage : wn20:NounSynset'
+    - 'wn20:containsWordSense : wn20:WordSense'
+    - 'wn20:hypernymOf : wn20:Synset'
+    - 'wn20:hyponymOf : wn20:Synset'
+    - 'wn20:lexName : wn20:SuperSense'
+    - 'wn20:gloss : rdfs:Literal'
+    - 'wn20:synsetId : nonNegativeInteger[1..1]'
+  - label: wn20:WordSense
+    slots:
+    - 'wn20:antonymOf : wn20:WordSense'
+    - 'wn20:derivationallyRelated : wn20:WordSense'
+    - 'wn20:inSynset : wn20:Synset[1..1]'
+    - 'wn20:word : wn20:Word'
+    - 'wn20:tagCount : nonNegativeInteger'
+  interpretation_limit: All eleven printed class boxes and their visible slots are transcribed, including datatype
+    and legacy SKOS fields. Synset, WordSense, SuperSense, TopConcept, FrameElement, GenericFrameElement, CoreType
+    and SemanticType have arrows toward Concept; this records the figure, not accepted OWL equivalence or proof of
+    semantic soundness. Prefixes are historical display names; no current namespace expansion is invented.
+- number: 6
+  pdf_page: 6
+  printed_page: 2418
+  label: The class Expression
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - label: lmm2:ConceptExpression
+    slots:
+    - 'dul:expresses : lmm1:Meaning[1..]'
+    - 'lmm1:denotes : lmm1:Reference'
+    - 'lmm2:hasSyntacticFunction : iol:LinguisticFunction[0..1]'
+  - label: lmm1:Expression
+    slots:
+    - 'dul:expresses : lmm1:Meaning[1..]'
+    - 'lmm1:denotes : lmm1:Reference'
+    - 'lmm2:isEncodedIn : iol:Language'
+  - label: lmm2:Name
+    slots:
+    - 'lmm1:denotes : lmm1:Reference'
+    - 'lmm2:hasSyntacticFunction : iol:LinguisticFunction[0..1]'
+  - label: lmm2:ContextualExpression
+    slots:
+    - 'lmm1:denotes : lmm1:Reference'
+    - 'lmm2:hasSyntacticFunction : iol:LinguisticFunction[0..1]'
+  interpretation_limit: ConceptExpression, Name and ContextualExpression are shown below Expression. Printed cardinalities
+    constrain the diagram reading only. In particular the drawn minimum expresses1 is not silently equated with the
+    retained L1 expresses-or-denotes union.
+property_policy: Names retain printed prefixes/spelling. Slot types/cardinalities are displayed source notation; absent
+  slot range is unspecified. Fig.1 is a semiotic illustration, not an OWL class diagram.
+counts:
+  figure_boxes: 31
+  distinct_labels_all_figures: 25
+  class_box_labels_figures2_6: 22
+  slot_occurrences: 186
+  distinct_printed_property_names: 124
