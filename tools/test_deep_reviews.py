@@ -163,5 +163,45 @@ class LmmCoverageTests(unittest.TestCase):
             validate_class_review_coverage(self.dossier, self.catalog)
 
 
+class DnsCoverageTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE / 'DnS2003'
+        self.dossier = yaml.safe_load((base / 'review.yaml').read_text())
+        self.diagrams = yaml.safe_load((base / 'diagrams.yaml').read_text())
+        binding = self.dossier['artifact']['dlp_intake']
+        self.intake = json.loads((ROOT / binding['path']).read_text())
+
+    def test_process_actions_cannot_be_promoted_to_classes(self):
+        from check_deep_reviews import validate_diagram_inventory
+        self.diagrams['class_diagram_numbers'].append(4)
+        with self.assertRaisesRegex(ValueError, 'kind/class population'):
+            validate_diagram_inventory(self.dossier, self.diagrams)
+
+    def reject_intake(self, mutate, message):
+        from check_deep_reviews import validate_dlp_intake
+        mutate(self.intake)
+        with self.assertRaisesRegex(ValueError, message):
+            validate_dlp_intake(self.intake, self.dossier['artifact']['dlp_intake'])
+
+    def test_later_archive_cannot_become_original_paper(self):
+        self.reject_intake(lambda d: d.update(historical_2003_fidelity='IDENTICAL'), 'historical/semantic')
+
+    def test_class_omission_cannot_complete_intake(self):
+        def omit(d):
+            m = next(m for m in d['modules'] if m['filename'] == 'ExtendedDnS.owl')
+            m['local_definition_candidates'].pop()
+        self.reject_intake(omit, 'class/comment inventory')
+
+    def test_comment_availability_is_not_manual_definition(self):
+        self.reject_intake(lambda d: d['modules'][0]['local_definition_candidates'][0].update(
+            definition_review='COMPLETE'), 'manual definition')
+
+    def test_missing_supplied_import_cannot_be_hidden(self):
+        def add_import(d):
+            m = next(m for m in d['modules'] if m['filename'] == 'ExtendedDnS.owl')
+            m['declared_import_iris'].append('https://example.org/unavailable.owl')
+        self.reject_intake(add_import, 'import closure')
+
+
 if __name__ == '__main__':
     unittest.main()

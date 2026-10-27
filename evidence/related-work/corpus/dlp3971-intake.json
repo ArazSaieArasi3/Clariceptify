@@ -1,0 +1,1923 @@
+{
+  "archive": {
+    "bytes": 261017,
+    "filename": "DLP3971.zip",
+    "linked_from": "https://www.loa.istc.cnr.it/dolce/overview.html",
+    "raw_source_publicly_copied": false,
+    "retained_filename": "Clariceptify_DLP3971_Source_2026-10-27.zip",
+    "sha256": "b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2",
+    "source_url": "https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip"
+  },
+  "asserted_archive_union": {
+    "counts": {
+      "annotation_properties": 0,
+      "datatype_properties": 4,
+      "named_owl_classes": 208,
+      "object_properties": 313
+    },
+    "explicit_triples": 4680,
+    "policy": "Unique named declarations in the union of supplied modules. No inference; no sum of external redeclarations; no inferred individual count.",
+    "resolved_modules": [
+      "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl",
+      "http://www.loa-cnr.it/ontologies/DLP_397.owl",
+      "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl",
+      "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl",
+      "http://www.loa-cnr.it/ontologies/FunctionalParticipation.owl",
+      "http://www.loa-cnr.it/ontologies/InformationObjects.owl",
+      "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl",
+      "http://www.loa-cnr.it/ontologies/Plans.owl",
+      "http://www.loa-cnr.it/ontologies/SocialUnits.owl",
+      "http://www.loa-cnr.it/ontologies/SpatialRelations.owl",
+      "http://www.loa-cnr.it/ontologies/TemporalRelations.owl"
+    ],
+    "root_iri": "http://www.loa-cnr.it/ontologies/DLP_397.owl",
+    "unresolved_declared_imports": []
+  },
+  "checked_on": "2026-10-27",
+  "generator": {
+    "path": "tools/inspect_dlp_archive.py",
+    "python": "3.12.14",
+    "rdflib": "7.6.0",
+    "sha256": "335757b0cf587feac21ec596899114a494d3005e742174c711756770089d093d"
+  },
+  "historical_2003_fidelity": "NOT_ESTABLISHED",
+  "inferred_counts": null,
+  "model_change": "NONE",
+  "module_population": 11,
+  "modules": [
+    {
+      "bytes": 26203,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/FunctionalParticipation.owl",
+        "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl"
+      ],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#biological-object",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#causal-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#chemical-object",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#collection-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#commerce-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#contract",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#country",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#creative-object",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#feature-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#functional-matter",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#geographical-object",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#geographical-place",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#legal-possession-entity",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#locative-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#measurement-unit",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#non-physical-place",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#norm",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#phase-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#physical-body",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#physical-place",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#political-geographic-object",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#principle",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#qualitative-role",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#rationale",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#spatial-feature",
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#substance-role",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#amount-of-matter",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#regulation",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-role"
+      ],
+      "declared_named_owl_classes_all_namespaces": 39,
+      "explicit_triples_document": 242,
+      "external_named_class_redeclarations": 13,
+      "filename": "CommonSenseMapping.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "c0b84759bc386921743fa24c963f90a3fc282dd2d90b368f6da48ac0f66c738c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#biological-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "a86c0894ec8885ce714ce6fa1cf5d22e6a3bb96d7fb57b2c43d981c9f6b74a22",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#causal-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "eb8b381ee811c0e57addb0ccd0d84a43d9431190eefed4656cf26174ef6b5529",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#chemical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "e201b95efa14298d98d85e2e8702b73977977c98b27d16fa85e4d691296bbd2c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#collection-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "06c9979514c2f2be7e6a41b919e6e8dad94e241c5a93ad1b9b5bf1024b009e78",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#commerce-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "7dfeabf97a2b41cbfdd7638fc98f915e15f7d5756154e30b4ac6b132dc22f3d9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#contract",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "74d379a8368b05e399e869bd1f16082e35a428d029a37cea527d1a31067ff30d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#country",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "d295117df0f0efabfec752c0096f38d04c0a0047cab1acddca02733740f88d75",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#creative-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "76f105cb8cb3289f4fb7a63b991d5bd432e979f9be49a50f0c61203ee8032d2c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#feature-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "625c2a515a2755d29d52ef9b449a22d5da721507d8fc299d07cdc483a30bd7b6",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#functional-matter",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "39d940415c9bc39f674fb77c8d46d4d600dbbde3f8b99f960f065b63bd1dea86",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#geographical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "3a636d5fe435a9f7dbe474d08e295e9d9d0440e8b97a938aec1a51c1cd320f2b",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#geographical-place",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "11a0eed632929ec41f7628f842275525eb57a3e6e5ee6c75d0a227423060a929",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#legal-possession-entity",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "218c9b6acf4edc942edf5244370eff4a0417864ee387b322cd6a4c4264c394d5",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#locative-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "576afc47865c6253f9dbb8f5f788781a1baa577b8c8b1c07eac5bdaa714dbcf6",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#measurement-unit",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "391f9d24fe4bcbd5dd581074718ee59f3039abece590eed9029684814094663d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#non-physical-place",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "45fd43189968c504a3ade986359851ff6b30731cf39ce68587e7029984c66f0e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#norm",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "4d271e00a6c84d3edced74e2539977eeb664bb3a3fc72b811c3e74e328231a2a",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#phase-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "b35a2f66f8e2fa9d64bc333b2d8ff4b6be437b3a3a0eee7c622a83f028850e44",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#physical-body",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "28100ef62120422ff57d1ec40f0820b7b3f29d1e6093d186f1502c58c0b6e25d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#physical-place",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "8c8aed07d82121680d9044cad9281fba0dc43ab1e1be6d805e88068937f55145",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#political-geographic-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 0,
+          "comment_sha256": null,
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#principle",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5c979bb2b491dd772205cb917c22abfb5c71557a7789631f51ad2f1d546485a8",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#qualitative-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 0,
+          "comment_sha256": null,
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#rationale",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "d3245fcce399fabd32b1caae8d9d68de58019bd492dfef1e339bd927bff67c06",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#spatial-feature",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "6ab37d882fe598ce6d6f4f35afa082d6d52c7dde2e448838cb76695367cf6488",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#substance-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 26,
+      "namespace": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl",
+      "sha256": "8ab61c86d77add619a923473734ca23c2966cc3d61fe62bf75e90165389f98b6",
+      "version_info": [
+        "397"
+      ]
+    },
+    {
+      "bytes": 9699,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/CommonSenseMapping.owl",
+        "http://www.loa-cnr.it/ontologies/Plans.owl",
+        "http://www.loa-cnr.it/ontologies/SocialUnits.owl"
+      ],
+      "declared_named_class_iris": [],
+      "declared_named_owl_classes_all_namespaces": 0,
+      "explicit_triples_document": 7,
+      "external_named_class_redeclarations": 0,
+      "filename": "DLP_397.owl",
+      "local_definition_candidates": [],
+      "local_named_owl_classes": 0,
+      "namespace": "http://www.loa-cnr.it/ontologies/DLP_397.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/DLP_397.owl",
+      "sha256": "0e1cdb3c97b6afb9e1c0584ddedca52403f22668d3a18a451d95c687bb6e453b",
+      "version_info": [
+        "3.9.7"
+      ]
+    },
+    {
+      "bytes": 101408,
+      "declared_import_iris": [],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract-quality",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#achievement",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#amount-of-matter",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#arbitrary-sum",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#dependent-place",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#event",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-physical-endurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-physical-object",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#proposition",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quale",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality-space",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#relevant-part",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#set",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatial-location_q",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-particular",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#stative",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-quality",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"
+      ],
+      "declared_named_owl_classes_all_namespaces": 37,
+      "explicit_triples_document": 727,
+      "external_named_class_redeclarations": 0,
+      "filename": "DOLCE-Lite.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "e31c8c7355da15ec8b29e3b58834fa660048854e77216be9a0e6379de59a2ac4",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "1b85dc9c6d19764f979ffc672f3f7a5fc567ab9f6cd765e5d1b6e7d7465e1a6e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract-quality",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "33a55c6c59f8352c486b6870a385009bab4c9f0ae55eaf9b5b4018ed80f40ecc",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract-region",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "b5519cfc9f4f7557036681153f17f1fc20ebdcd5fe6ccdc958ec65bf90392d69",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "1ad96fe121595d3e93d8d1d7e598000cc5c7569a0fb84ddd9178d5db40d54f02",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#achievement",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "927e1e391cea99abab1f1b51190e32b60e5c263c712e126f289c9760f03276ae",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#amount-of-matter",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "0ba76686a60b2ba659320ab6ea3b93d36b331c9daa7fa87d155fb76a26f257c2",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#arbitrary-sum",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "8f1af1169703dbb43989336ffb2689d165cb729d31fda7f37269edf663cfbeeb",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#dependent-place",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "6903aff1f57ac2f72421e3ce7ca8823a07f04fe2f85ea5b1c0f7f5eb5eb9dfaf",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "377bf1b2faf731c7122cc93f0cbd0a575e2064ec3e6e58e6a762314f38ba0c10",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#event",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "148014cac1c026dcc7c8b9d62bae7ae7d5163fe80fbc91a112f8a5c12fca1ae7",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "324c19c44f252b63e9c8afe3de7061267a0dfe1e1b547d2f88cf64c14abe2510",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-physical-endurant",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "43002dd71e1be99c5a2203267af8b3eb25d1ef9a73078755117ecb69981b8498",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-physical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "c802a66c4c493ce1f031162ffe8cebe1b2692cf2b6d0aaf520032ab3d6f336ae",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "abe38fea0e3fd202f02c28d22e7e5e643f22e0af1f97e2935f8560fe9215ab46",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "42d57ac62c036d8c496b79635c38873d1b21d24c46750cac35e858414f52702b",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "fe370e1cb46f5953c087acbe100a36fdcd85529dec193e6757df14d6c38f3eef",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f7605e4c31c8546fc659c26137de6f911a3985caae512da8e2dea60b475d3f46",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "019109a86ffa92a5d1c89f397a5449dd8741e9edd5dd49d06f37eae79b9ae4ca",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-region",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ed32a3312a543b267a9ed0a4626114cfb186f7b85500cef9d9c77251c85d2143",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "d3ef6228234868b4ea190c6470da92dc6175cbdb8890789692b82855a669aa52",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#proposition",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "218647e929e4d5df5cc6b71a5662b9331c425ea4db2c4dfd0d8afc5cd028f732",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quale",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "cccfcf68b82d5f884d01dc21fbcd7fb0c988923f487ea2d9fa0f67b68c1f8f44",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "defae3d6e2ee628fbb66f28c09a75f8a5e63f34ea0d863316528ad4639fbb996",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality-space",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "e55629d328d41ebd4262c3521d2abac855fc218e812d4bb7932dff67ad429beb",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "cc000ca10a1907e2e5c239495ba085780007b0ec01ec68b4109f15fe2494e31d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#relevant-part",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "a6e9edfd605e4e22843d06564a952990e92287f25109d150420f6d597684f100",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#set",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5befdc3cbd8f37e911186615597c1b12a096c36046af3e17f5d3c9aed13f681b",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2ebdca2ba0fb320e5bcb5bc85edd6434a67e31fd796e1fb20dc197a6e5e58cd7",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatial-location_q",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "3c077d75f5bdc618a9225bd561df4f6925d2d8b5cc9087bb32234dbd1e6e8837",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-particular",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "84f442d4cc943ed5510e8ea1ee71322d17cbd9cd7159ae96147a2921725829df",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-region",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "17ba43ce98592bd6973166682aade6b60a04b7ae23c8f70859ccb4f7542e2a99",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "be0949a3df3c7e23f74da72278b30c937fee6ae2f88184e4d3540ea0fd94d27e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#stative",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ca87266eeb6266dfcff12b1f47de1fb7bf02bd4480845566636be20840d45bcb",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "dda2134a316c76903e419658c1bf8d24c18ba2d5c71e31d4d2de91cf29cf75df",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-quality",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "3955c436f1f184a33bcc486f94a9b98e0eb7d5d006810936a957f188acf1be08",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-region",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "8f7f846a1bb8c1f77890f24f14783d46fc1478b89c9b5f978f54e0d0d6dade13",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 37,
+      "namespace": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl",
+      "sha256": "f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc",
+      "version_info": [
+        "397",
+        "classified"
+      ]
+    },
+    {
+      "bytes": 189960,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl",
+        "http://www.loa-cnr.it/ontologies/SpatialRelations.owl",
+        "http://www.loa-cnr.it/ontologies/TemporalRelations.owl"
+      ],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-particular",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#action",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#activity",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-social-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-event",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-modal-description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-state",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collective",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#communication-event",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#constitutive-description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#course",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#desire",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#flux",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#gestalt",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#indicator",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-encoding-system",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#life-cycle",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#logical-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#material-artifact",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#method",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#modal-description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-social-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#path",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#phenomenon",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-phenomenon",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-realization",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#practice",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-agent",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#reconstructed-flux",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#regulation",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#relation",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-relationship",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#status",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#symmetric-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#technique",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#theory"
+      ],
+      "declared_named_owl_classes_all_namespaces": 68,
+      "explicit_triples_document": 1650,
+      "external_named_class_redeclarations": 10,
+      "filename": "ExtendedDnS.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "9b472bae7204240d278c91b866d41bbbbc58027ec0881626f198864051fe1075",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#action",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ff8afff4d4ecfc7d5e7d5f64199964d10a82d6416b475fcff40ece50f98d329d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#activity",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "c2c1d186cceb40b84e87331a7a8a99ecdabc59949e838964ceaab34b413a3bbd",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ce1b001b1583478577430455acfee1597cfbcc5262b95aa56fa28ac8ffdbf127",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f7425cb20bf1e47a1c749a86e50cf2426600b65430da29b15ac091cfe4ee0876",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "50b67798f498d0ff8bfdc6a520bc53444e27cc3d2972768e30ba2cf373718b43",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-physical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "0e7d7a1260f2123edbf34fa694f93c2eb6a5dc1426984b2dabad40b56ee65905",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-social-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "d590a79cfc7d30fc82fc1b33a55091487185dfa29f8fb97941d612056d07ce43",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-event",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ff25222522a2ecf15f986b88cfd51421e4e83f270162aeec1aed5738ba5a5db9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-modal-description",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "73933b67cd06dcd39b7a71ab543cc8b6e31c2fb01feae049ab0457677299170d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-state",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "d771f355ad6237bea7fb3e1af6ff9bd48d8615d57d0a4b62a2e74ccc196e4060",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5be49d3096e82f7c69355b20aaa92e3f6c322e02143515e500c348eadb1eebe7",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collective",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f9c136b2ad9d9628821e5f0ae61462e785dcb276d2cf5fd8db2212871b5543b6",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#communication-event",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "240caeed47a6664fa96df20ca521cc125f9006239ed5d88b863a431b56de3bbd",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2ca88387f17e49e5830c89d9973360e11ec833d6523b8f68c126596e230e0355",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#constitutive-description",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2ed79395590e6a625c3e7801f5e9d47a0e4f0de2a729cb9e017cff528b5ba643",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#course",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "05be7d6e8452b750b8c4821e075a4de1e27e81598d8b08291f264e1d1374b839",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "81491d36ab33b72b6ee7002862584a13ef549a67b4ff43759fd7bc3aed4d9bc5",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2d98a316c5d05515b86e95ae14e0f2da70f6bc4875c4d9c835b0c2dbd0c59bf1",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#desire",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2af966cb592fcde81881fd70cba417235c14830f77b9249f84e836366a465500",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#figure",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "0b0d13a909b839fdd1bef7a4ed3e7f29ef146000cfe271f09e0d4b8017c88608",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#flux",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "84cb87ed40fd9b1ccadf146fde078aa61d4742e00a5ef442ae07cb47c35170d0",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#gestalt",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "481993f70946f19603aa700c03665a4fe6ade82cf21c99715bc7a3a970e52691",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "b87e1ddec30686a08b2e0c9372c24eb2a7775aad4f39e931f5b442226b10f50c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#indicator",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f0d7c90513b66e24f8532957841cf5ef9f405bb2ba5963e745f5b87e4cac3886",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-encoding-system",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f654076a8871e0e0c40495bc95fd293d61fbc6b9513cb99c0770c8b9b372a005",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "dae4ae2e9d78f31c8a979a73ff3befd03f4568cf0e601e00b14293fe8f2ca6eb",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#life-cycle",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "e19fc29f58e802f53e786d960b4947e5b9d91c5291acbca05232f1fc188f1338",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#logical-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "73f3ae79ccd082f59f29fbf7d89a13a466f189c350ba1edf187e2a84035bfea2",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#material-artifact",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "1549e32eb96029682d45f6746b7aa6c0f59413c740bcf2530035c62cbdcbe033",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#method",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f9e172e10473b10b85b370584cf53d4791b837394840a0536951f5b32d0e8637",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#modal-description",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "4aa1d17a664ff67f2f74c7b81d786b77de3ba5085f2fc48d4b7ba3ca1e410e00",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-figure",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "6d90e583a9a6f456e09f04f8153138b6da663b09588e4dd13327b0918ae75e8e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-physical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "a091658864f3d359312a7b827ce63a4843da3062987ddbc88c1c7df89ddc1a4c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-social-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "fc0174f07e03fac35aec9d1d93d2079ddef92bdb20d0b40fd472e9b7e8e6ea4c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "4d2a72bcdb52d67ae657547d934789da68d91b2a63dadf674eefb227d8af1492",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#path",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "650f93ea9445047b4c432b81b4212ad6319ac0853feafe2c4b571a7d200a9ef8",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#phenomenon",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "435f23b78c98067b5f129ebb2991962ae0acc67fdfb7b5fe6a95034ad6160b0d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-phenomenon",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "cc4e73560fe6a8eed4a3fe278876e00879c1cf9058e61d24fb336d875d5356e9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-realization",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "c4918febc669ffd396448662f12bb82281455dc2e4610b0f2aa253d7bd2dc3a4",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "9d80c028f8bc334cbb737d28360cd3011a200d230f2bf68a771116c793f936b1",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#practice",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "0d0ac1cf8f20730aee5fa5d66d471131c5292f97624838f292cc87e274e2543c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "d34f7c0d1ae0d186a9332b8d9753afc536f1552ea0b426c8d06d128937225d6c",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-agent",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "283aa04f0cd25e78ca96699ea0f649bd9eb85be07e008714c2484da402c8d242",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-physical-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "8d5d5d3171a4bc8cd9c1b6348b19402ed6cef4a545af010e7695a881c138796a",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#reconstructed-flux",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "a7cddd1fa7d29f34aec4cbf9dc03d51f26466aa039dcd7825cafad16c876a903",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#regulation",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "7754c88022c3e804b64d4c8b4c590f5a1af84a41074a831791d640d9b46550a8",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#relation",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ef280abeae4d832a81981b30206ee3940ca9c903391db108d44e41e33a491996",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "abf8689fafff65832c148cc4fd382229f39ac36a89225c07d774a7d9948a6e97",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "b9fbd470acdd37922a354648f68a1344f3acf4d27be4fbfbd4d9648a92bb0e00",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-description",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "857f046b1be4aff008340c94e945181d2f0044729ef73869a73f942c5d893bdb",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "1720972e944210cda6ea654c26f00f81671767029214288821efd239be78c02d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-relationship",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "dfb1dc974bf7be50b910fd8583b3effb8613ba8ab2737abb71b0a3bef4e80814",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "ad44e9f325677f5e0c849c6390a8924726adc02dedefc8d2034d1a2b3edb7272",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#status",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "cf14f4824460333a643e7cd152128ec54f576a4a3949c610d486947d7ef3929e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#symmetric-role",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2d735c2edbfdd46d73a6b2e6f53f1d5555094094f51023c7df8ed4c0333211ca",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "b3f00ac3bda74ee0319d2ae4332b5fa207f62b7ec27bb63fa5992c8f85dfc2cb",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#technique",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "596d7849f63b34384f7697a146e8656a173f67b2eae779ac279a5e84eead58d9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#theory",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 58,
+      "namespace": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl",
+      "sha256": "7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41",
+      "version_info": [
+        "397",
+        "classified"
+      ]
+    },
+    {
+      "bytes": 24623,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl"
+      ],
+      "declared_named_class_iris": [],
+      "declared_named_owl_classes_all_namespaces": 0,
+      "explicit_triples_document": 176,
+      "external_named_class_redeclarations": 0,
+      "filename": "FunctionalParticipation.owl",
+      "local_definition_candidates": [],
+      "local_named_owl_classes": 0,
+      "namespace": "http://www.loa-cnr.it/ontologies/FunctionalParticipation.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/FunctionalParticipation.owl",
+      "sha256": "bf3a545954a80958129e3a6894fcc224791443f2a793c2279dba019c32343185",
+      "version_info": [
+        "397"
+      ]
+    },
+    {
+      "bytes": 46339,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl"
+      ],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-encoding-system",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-realization",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#classification-system",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#combinatorial-system",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#diagrammatic-object",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#formal-expression",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#formal-system",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#gesturing",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#grammar",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#grapheme",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#iconic-object",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#information-realization",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#linguistic-object",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#morpheme",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#narrative",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#phoneme",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#subject",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#text",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#voicing",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#word",
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl#writing",
+        "http://www.loa-cnr.it/ontologies/SemioticCommunicationTheory.owl#communication-role",
+        "http://www.loa-cnr.it/ontologies/SemioticCommunicationTheory.owl#communication-situation",
+        "http://www.loa-cnr.it/ontologies/SemioticCommunicationTheory.owl#interpretation-situation",
+        "http://www.loa-cnr.it/ontologies/SemioticCommunicationTheory.owl#language",
+        "http://www.loa-cnr.it/ontologies/SemioticCommunicationTheory.owl#semiotic-code",
+        "http://www.loa-cnr.it/ontologies/SemioticCommunicationTheory.owl#semiotic-role"
+      ],
+      "declared_named_owl_classes_all_namespaces": 33,
+      "explicit_triples_document": 376,
+      "external_named_class_redeclarations": 14,
+      "filename": "InformationObjects.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "db98faabf1a9b3ea98ea0a698640d0005264325b6a8b97f365ace8562ca25b69",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#classification-system",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "da6f926c5405e5ecd45449983e477a68f0bab9debe5b46b3bb74df87695a9db4",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#combinatorial-system",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "3c57f9a6576ae3bbe1d03a3b373f36097484a7509ee7c859cf9e60873e694ee5",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#diagrammatic-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 0,
+          "comment_sha256": null,
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#formal-expression",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "3d4a4d9eb3ecbed48dc1a569358e5efa196165212b803b937e78da35189a1d6b",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#formal-system",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "37f4bec9bbe64ced49b47e382e7f9db2c00a3ed664d87d1c4d132d43136b75ca",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#gesturing",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "290dcc3f0dea996330cc2fe35605e93b67f73f5573fb5accad0cdca05c3cd920",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#grammar",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2237db642deb81b56e8d787e226b14166d48867be817ecf9a95a7511a50de8be",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#grapheme",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "e6a3a9b3c0eaed583e80032e21cc05ce01ede1e531f2436c85cf65234fe534ec",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#iconic-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "493000b94fd198e3fa72e5390f5a88128ce02653a2386143b405858df37fa72f",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#information-realization",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "1e9f60e7715e7000076fe31cd12b201c8e8f55e7b47946baeebc92fc110b4573",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#linguistic-object",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "3f97d4351472608092544bd5086057ee7cd306a90e05e1fa3f0b80ae30339b3a",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#morpheme",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "15e45ae943a0d28c25eee1ebeec279a1565146739705fd755f93f5ba2ea50786",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#narrative",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "52042f1ca13369107acf4a8fe4cb21ba2a904fa372b1fe37f82294551adade68",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#phoneme",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5ec6d24a5cfebcfe8c45eedbd6c4e5547c56fcbf044b2ed0bfd51d27555cf761",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#subject",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "e43ce3c96d4081acd79df645a21de5f632c598161b3daea130968169f4ca541a",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#text",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "7d4cd24c5f5c1beeb54f82b89742dca8ac6a443e0bbc2d4223bfdf11ef54e161",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#voicing",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "0ed2924298a9947394b62a30feb4444fd5e9d8ee7e073988c0583f6c1b06d17b",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#word",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "1f4e5a493c14172bf8aa112694ca7ac24fbb3c9fe580bbe39ee5a5119c545df2",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#writing",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 19,
+      "namespace": "http://www.loa-cnr.it/ontologies/InformationObjects.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/InformationObjects.owl",
+      "sha256": "b407c0aeebf169d49829dcf4ec8b2ae1c1a8ce9f5c60059517b180f3d08ed500",
+      "version_info": [
+        "397"
+      ]
+    },
+    {
+      "bytes": 12068,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl"
+      ],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#status",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task",
+        "http://www.loa-cnr.it/ontologies/MentalObjects.owl#mental-object",
+        "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#commitment",
+        "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#promise",
+        "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#responsibility"
+      ],
+      "declared_named_owl_classes_all_namespaces": 10,
+      "explicit_triples_document": 109,
+      "external_named_class_redeclarations": 7,
+      "filename": "ModalDescriptions.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "89b91e2340dd66faeaa3a52d7ef017f75caa7709200c42f7d8bc407626f15ce9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#commitment",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "939667ca0d0e50dc0e7eb35e4128dbb0e0de2ecb755f047d534495aa66c5126d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#promise",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "2289287a017d74058fab82ad9968ff7f82141cf4b9941bfb9cdd0a4767ea972b",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#responsibility",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 3,
+      "namespace": "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/ModalDescriptions.owl",
+      "sha256": "802f8d1b4f42843f4525537600052758e5fefdfc06ed9d616c6a0d7c99efd83a",
+      "version_info": [
+        "397"
+      ]
+    },
+    {
+      "bytes": 84081,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/FunctionalParticipation.owl"
+      ],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-region",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#activity",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-agent",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#technique",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#abstract-plan",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#action-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#bag-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#circumstantial-plan",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#complex-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#control-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#decision-activity",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#decision-state",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#elementary-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#goal-qua-main",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#goal-situation",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#information-gathering",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#maximal-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#plan-assessment",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#plan-assessment-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#plan-execution",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#planning-activity",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#planning-as-technique",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#saturated-plan",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#schedule",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#sequential-task",
+        "http://www.loa-cnr.it/ontologies/Plans.owl#subplan",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "declared_named_owl_classes_all_namespaces": 40,
+      "explicit_triples_document": 800,
+      "external_named_class_redeclarations": 18,
+      "filename": "Plans.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "f804b7506931fa524403ca7db5ff199a93d63e6366dd404b4b935b36fae3bd82",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#abstract-plan",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "861165293a19cf6570165a587a1121ed1bc47607523c016380f090ac3473176f",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#action-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "db6d74343f4de15e9b431a8cc87ad783f3821b9718ff5ef46fe7df624552493e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#bag-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5a30be73cedea2ecc157fb9a9acb34b895841c13611ccad496dbca3545d10f63",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#circumstantial-plan",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "108967faf4458d3aa88e13478a12bec64699f533859afe79e69ebca3191e7c8e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#complex-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "8be0b7f2de13eb39fdf57b8b516a293430f56c067a783bc552301d9ec006814a",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#control-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5d6b2793b803cca71f17ea2631b1fb3bb47ca86aee2b6c4a3885229122bf77f8",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#decision-activity",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "760724e0d7d4c551db747af3301683359a3509a60117468c9841c4394db8a0c3",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#decision-state",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "86a7948997f7a2c60643ea78c6730ca3cc42faba783ecfd892729d943933b52e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#elementary-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f16eb866be47d42027ffe29d9123171bbaad84c505173297a649204b8ed59cd9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#goal-qua-main",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "a4b655a2f23d2a58a082c1098c6b3db8886e10ecd478b854bf31a559b61e092f",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#goal-situation",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f073adc59637b6002c8a1d03c01433867179c06943399a283d6b1005bbd0624a",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#information-gathering",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "6bfdcb01ba7e5b945082fec9da7d50cbaa37c2857ddf114dcbc78379ead0d2a4",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#maximal-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "5a1292d96d32a35674aea11b36388cf855fa9e41cb0e786c14e713dddbb1c5cf",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#plan-assessment",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "401fec029a62e90a17bfb797f0c05e6990994087ef03762c2dd5eb77ccf5c0fd",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#plan-assessment-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "29b57d38268ea1e7b9604f681ee9b492194f9f19cb59778f2b67eb670d8a369d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#plan-execution",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "c007d47c1edacfb0349d2bea2b6fe3fb27a4edbbd3395360d3d585ab41dd7232",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#planning-activity",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "57b7820b3c9c1b45d33205d3f76583756e3cba69cd2e30d930de58a0c4e68632",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#planning-as-technique",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "50e64ceadb30479dc1d955238bc52093798b186df35e8f64d20813932ce77b3d",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#saturated-plan",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "899e7447f36069af7cdd5cffb0f0263b84b027873fb7175c7d23e11ba045fbdd",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#schedule",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "fca1cada52e928f1402f806585f9c55d7b254767bab2524b580e10965661bda9",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#sequential-task",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "903e6222c8f068f25316fd8a783a0dc2e2060263ee7074f25dbb211c6722ddb2",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/Plans.owl#subplan",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 22,
+      "namespace": "http://www.loa-cnr.it/ontologies/Plans.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/Plans.owl",
+      "sha256": "d915118b83b63604b185d2b8bda86224d95d9d15568270b8d2ae3c268a678859",
+      "version_info": [
+        "397"
+      ]
+    },
+    {
+      "bytes": 44001,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/InformationObjects.owl"
+      ],
+      "declared_named_class_iris": [
+        "http://www.loa-cnr.it/ontologies/Collections.owl#information-collection",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#non-physical-collection",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#organized-collection",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#parametrized-collection",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#physical-plurality",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#simple-collection",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#taxonomic-collection",
+        "http://www.loa-cnr.it/ontologies/Collections.owl#text-repository",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#biological-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#ecological-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#genetic-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#intentional-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#organized-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#simple-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#simple-planned-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#social-type-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#taxonomic-collective",
+        "http://www.loa-cnr.it/ontologies/Collectives.owl#type-based-collective",
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collective",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#figure",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#material-artifact",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#practice",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-physical-object",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation",
+        "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-relationship",
+        "http://www.loa-cnr.it/ontologies/SocialUnits.owl#institution",
+        "http://www.loa-cnr.it/ontologies/SocialUnits.owl#natural-person",
+        "http://www.loa-cnr.it/ontologies/SocialUnits.owl#organization",
+        "http://www.loa-cnr.it/ontologies/SocialUnits.owl#socially-constructed-person",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#design-object-materialization",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#design-specification-workflow",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#functionality-specification-workflow",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#production-workflow-execution",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-as-artifact",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-as-description",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-as-situation",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-design",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-functionality",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-implementation-workflow",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#system-production-workflow",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#workflow",
+        "http://www.loa-cnr.it/ontologies/Systems.owl#working-system-situation"
+      ],
+      "declared_named_owl_classes_all_namespaces": 48,
+      "explicit_triples_document": 484,
+      "external_named_class_redeclarations": 44,
+      "filename": "SocialUnits.owl",
+      "local_definition_candidates": [
+        {
+          "comment_count": 1,
+          "comment_sha256": "4f12af2f9cb398999e5597b9e9a1c8d6af1255bfcbef8fe8be2f3ee6d720b60e",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/SocialUnits.owl#institution",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "793e2260acfe2b70f9f2ad9b4698208cff2f616e4904d74d6adea98eee1c1cd4",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/SocialUnits.owl#natural-person",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "457a5be42ce3cc47c28c8d90068db214e88ec820e7679c149a3d71c5bfc647ed",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/SocialUnits.owl#organization",
+          "labels": [],
+          "public_raw_comment_text": false
+        },
+        {
+          "comment_count": 1,
+          "comment_sha256": "f7c1abc99b62066225f5a2fd5456a2b50e98b900b40d5949dd0aad4cd9c8d7a7",
+          "definition_review": "PENDING",
+          "iri": "http://www.loa-cnr.it/ontologies/SocialUnits.owl#socially-constructed-person",
+          "labels": [],
+          "public_raw_comment_text": false
+        }
+      ],
+      "local_named_owl_classes": 4,
+      "namespace": "http://www.loa-cnr.it/ontologies/SocialUnits.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/SocialUnits.owl",
+      "sha256": "284281b099cdb26d3446a68e767cb996079e4c7d0c62356fdc39a1f1c7cd33a1",
+      "version_info": [
+        "397"
+      ]
+    },
+    {
+      "bytes": 15472,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl"
+      ],
+      "declared_named_class_iris": [],
+      "declared_named_owl_classes_all_namespaces": 0,
+      "explicit_triples_document": 118,
+      "external_named_class_redeclarations": 0,
+      "filename": "SpatialRelations.owl",
+      "local_definition_candidates": [],
+      "local_named_owl_classes": 0,
+      "namespace": "http://www.loa-cnr.it/ontologies/SpatialRelations.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/SpatialRelations.owl",
+      "sha256": "7c45b69a1b312e4b7e01ad436c7daf700266235f8232374cb836c10b70f7924a",
+      "version_info": [
+        ">397"
+      ]
+    },
+    {
+      "bytes": 15793,
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl"
+      ],
+      "declared_named_class_iris": [],
+      "declared_named_owl_classes_all_namespaces": 0,
+      "explicit_triples_document": 128,
+      "external_named_class_redeclarations": 0,
+      "filename": "TemporalRelations.owl",
+      "local_definition_candidates": [],
+      "local_named_owl_classes": 0,
+      "namespace": "http://www.loa-cnr.it/ontologies/TemporalRelations.owl#",
+      "ontology_iri": "http://www.loa-cnr.it/ontologies/TemporalRelations.owl",
+      "sha256": "84c96bc934ef454ac28cee02aad1cc8c7d813ef8db2d42c91e76b48af834c05d",
+      "version_info": [
+        "397"
+      ]
+    }
+  ],
+  "paper_class_count": null,
+  "readme": {
+    "author_reported_population": {
+      "annotation_properties": 2,
+      "classes": 205,
+      "datatype_properties": 4,
+      "individuals": 39,
+      "object_properties": 311
+    },
+    "basis": "AUTHOR_REPORTED_NOT_REPRODUCED_AS_PROFILE_OR_REASONER_RESULT",
+    "copyright_year": 2005,
+    "license_statement": "GNU LGPL version2.1 or later",
+    "reported_expressivity": "SHION(D), within OWL-DL",
+    "sha256": "c4f8c3848a4485231f1ff50128abb1ea94debc73f5897ded38016d4c8ac69610"
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "schema_version": "1.0",
+  "scope": "Archive acquisition, RDF parsing, declared class/definition-comment availability and supplied import resolution only. All manual class definitions and semantic correspondence remain #235.",
+  "semantic_acceptance": "NOT_ASSESSED"
+}

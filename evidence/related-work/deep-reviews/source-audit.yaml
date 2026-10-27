@@ -307,6 +307,17 @@ discovery_attempts:
     Exact results and method are retained at evaluation/related-work/lmm/deep-review-discovery.json.
   limitation: 'Four endpoints and bounded searches, not universal repository absence; current pinned L1/L2 remain
     available. Historical distribution recovery/correspondence stays #274.'
+- id: W08
+  method: OFFICIAL_LINK_FOLLOWING_HTTP_ZIP_ACQUISITION_AND_BOUNDED_GITHUB_SEARCH
+  checked_on: '2026-10-27'
+  query: '"Descriptions and Situations" Gangemi; ExtendedDnS; DLP3971'
+  checked_urls:
+  - https://www.loa.istc.cnr.it/dolce/overview.html
+  - https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+  outcome: 'Official DLP3971.zip HTTP200 ZIP retained and 11 supplied OWL modules parsed; ExtendedDnS397 candidate identified.
+    Three GitHub repository queries return no corresponding development repository. Exact discovery/intake: evaluation/related-work/dns/deep-review-discovery.json.'
+  limitation: 'Related later 2005-copyright distribution is not proven identical to 2003; bounded repository search is not
+    global absence; full candidate glossary and eight selected correspondence checks stay #235.'
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -482,26 +493,32 @@ records:
 - id: DnS2003
   title: Understanding the Semantic Web through Descriptions and Situations
   primary_issue: 261
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
-    state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
-    urls: []
+    state: OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED
+    urls:
+    - https://www.loa.istc.cnr.it/dolce/overview.html
+    - https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
     evidence:
     - G10
+    - W08
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: HISTORICAL_DISTRIBUTION_NOT_PINNED
+    paper_correspondence: RELATED_2005_DISTRIBUTION_2003_FIDELITY_NOT_ESTABLISHED
+  artifact_state: DLP3971_11_MODULES_RETAINED_EXTENDEDDNS397_CANDIDATE
   foundation:
     family: DOLCE
     edition: null
     relation: PAPER_STATED_GROUNDING
     basis: AUTHOR_REPORTED
-    locator: DnS.pdf abstract and sec.2; paper describes a DOLCE plug-in adaptable to other foundations
-    artifact_imports: null
+    locator: DnS2003:E02-E07, abstract/sec. 2 and displays 1-23; candidate ExtendedDnS397 imports recorded at corpus/dlp3971-intake.json
+    artifact_imports:
+    - http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl
+    - http://www.loa-cnr.it/ontologies/SpatialRelations.owl
+    - http://www.loa-cnr.it/ontologies/TemporalRelations.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: Paper DOLCE edition and 2003 implementation correspondence unknown; later candidate edition is not substituted.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: ORIGINAL_PAPER_COUNT_UNKNOWN_LATER_CANDIDATE_ALL_IRIS_INDEXED_GLOSSARY_PENDING
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
@@ -510,6 +527,15 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 235
+  related_distribution:
+    intake_path: evidence/related-work/corpus/dlp3971-intake.json
+    archive_sha256: b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2
+    candidate_module: ExtendedDnS.owl
+    candidate_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    candidate_local_named_classes: 58
+    candidate_external_redeclarations: 10
+    manual_glossary: PENDING_235
+    paper_class_count: null
 - id: CMO
   title: Towards an Ontology for Conceptual Modeling
   primary_issue: 83

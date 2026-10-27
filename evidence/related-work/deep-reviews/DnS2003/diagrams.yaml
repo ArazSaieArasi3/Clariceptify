@@ -1,0 +1,361 @@
+schema_version: '1.1'
+work_id: DnS2003
+source_sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+figure_population: 5
+class_diagram_numbers:
+- 1
+- 2
+- 3
+counts:
+  figure_boxes: 79
+  distinct_labels_all_figures: 68
+  class_box_labels: 55
+  slot_occurrences: 25
+  distinct_printed_property_names: 14
+figures:
+- number: 1
+  pdf_page: 8
+  kind: CLASS_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F1N01
+    label: Description
+    slots:
+    - 'part[0..*] : Description'
+  - id: F1N02
+    label: Functional role
+    slots:
+    - 'requisite[0..*] : Parameter'
+    - 'mod. target[0..*] : Course of events'
+    - 't_component of[1..*] : S-Description'
+  - id: F1N03
+    label: Course of events
+    slots:
+    - 'requisite[0..*] : Parameter'
+    - 'mod. target of[0..*] : Functional role'
+    - 't_component of[1..*] : S-Description'
+  - id: F1N04
+    label: Parameter
+    slots:
+    - 'requisite for[0..*] : Functional role'
+    - 'requisite for[0..*] : Course of events'
+    - 't_component of[1..*] : S-Description'
+  - id: F1N05
+    label: Region
+    slots:
+    - 'location of[0..*] : <blank>'
+    - 'part[0..*] : Region'
+    - 'setting[0..*] : Situation'
+  - id: F1N06
+    label: Endurant
+    slots:
+    - 'participant in[1..*] : Perdurant'
+    - 'location[1..*] : Region'
+    - 'part[0..*] : Endurant'
+    - 'setting[0..*] : Situation'
+  - id: F1N07
+    label: Perdurant
+    slots:
+    - 'participant[1..*] : Endurant'
+    - 'location[1..*] : Region'
+    - 'part[0..*] : Perdurant'
+    - 'setting[0..*] : Situation'
+  - id: F1N08
+    label: S-Description
+    slots:
+    - 't_component[1..*] : <blank>'
+  - id: F1N09
+    label: Situation
+    slots:
+    - 'part[0..*] : Situation'
+    - 'setting for[1..*] : <blank>'
+  edges:
+  - 'Functional role -> Description; Course of events -> Description; Parameter -> Description; S-Description
+    -> Description: generalization'
+  - 'Description -> Endurant: generalization; prose specializes to nonphysical endurant'
+  - 'Parameter --valued by-- Region: 0..* at Parameter, 1..* at Region'
+  - 'Functional role --played by-- Endurant: 0..* at both ends'
+  - 'Course of events --sequences-- Perdurant: 0..* at both ends'
+  - 'S-Description --satisfied by-- Situation: 1..* at S-Description, 0..* at Situation'
+  notes: Preserve printed inverse labels and empty range fields. A diagram cardinality is not an executed
+    OWL restriction.
+- number: 2
+  pdf_page: 10
+  kind: CLASS_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F2N01
+    label: Parameter
+    slots: []
+  - id: F2N02
+    label: Functional role
+    slots: []
+  - id: F2N03
+    label: Event description
+    slots: []
+  - id: F2N04
+    label: Situation description
+    slots: []
+  - id: F2N05
+    label: Semiotic parameter
+    slots: []
+  - id: F2N06
+    label: Communication parameter
+    slots: []
+  - id: F2N07
+    label: Semiotic role
+    slots: []
+  - id: F2N08
+    label: Communication role
+    slots: []
+  - id: F2N09
+    label: Semiotic task
+    slots: []
+  - id: F2N10
+    label: Communication turns
+    slots: []
+  - id: F2N11
+    label: Interpretation method
+    slots: []
+  - id: F2N12
+    label: Communication method
+    slots: []
+  - id: F2N13
+    label: Communication q-region
+    slots: []
+  - id: F2N14
+    label: Endurant
+    slots: []
+  - id: F2N15
+    label: Communication event
+    slots: []
+  - id: F2N16
+    label: Communication situation
+    slots: []
+  edges:
+  - Semiotic parameter / Communication parameter -> Parameter
+  - Semiotic role / Communication role -> Functional role
+  - Semiotic task / Communication turns -> Event description
+  - Interpretation method / Communication method -> Situation description
+  - Semiotic parameter / Communication parameter --VALUED-BY--> Communication q-region
+  - Semiotic role / Communication role --PLAYED-BY--> Endurant
+  - Semiotic task / Communication turns --SEQUENCES--> Communication event
+  - Interpretation method / Communication method --REFERENCES--> Communication situation
+  notes: Template relation REFERENCES is a printed label; do not silently substitute satisfies or a later
+    ontology property.
+- number: 3
+  pdf_page: 14
+  kind: CLASS_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F3N01
+    label: Parameter
+    slots: []
+  - id: F3N02
+    label: Functional Role
+    slots: []
+  - id: F3N03
+    label: Course
+    slots: []
+  - id: F3N04
+    label: Situation Description
+    slots: []
+  - id: F3N05
+    label: Semiotic Parameter
+    slots: []
+  - id: F3N06
+    label: Comm. Parameter
+    slots: []
+  - id: F3N07
+    label: Comm. Role
+    slots: []
+  - id: F3N08
+    label: Semiotic Role
+    slots: []
+  - id: F3N09
+    label: Semiotic Task
+    slots: []
+  - id: F3N10
+    label: Comm. Course
+    slots: []
+  - id: F3N11
+    label: Address
+    slots: []
+  - id: F3N12
+    label: Interpreter Role
+    slots: []
+  - id: F3N13
+    label: Message
+    slots: []
+  - id: F3N14
+    label: Context
+    slots: []
+  - id: F3N15
+    label: Channel Role
+    slots: []
+  - id: F3N16
+    label: Encoder
+    slots: []
+  - id: F3N17
+    label: Decoder
+    slots: []
+  - id: F3N18
+    label: S-context
+    slots: []
+  - id: F3N19
+    label: Expression
+    slots: []
+  - id: F3N20
+    label: Meaning
+    slots: []
+  - id: F3N21
+    label: Region
+    slots: []
+  - id: F3N22
+    label: Endurant
+    slots: []
+  - id: F3N23
+    label: Perdurant
+    slots: []
+  - id: F3N24
+    label: Agentive Physical Object
+    slots: []
+  - id: F3N25
+    label: Natural Person
+    slots: []
+  - id: F3N26
+    label: Information Object
+    slots: []
+  - id: F3N27
+    label: Physical Object
+    slots: []
+  - id: F3N28
+    label: Activity
+    slots: []
+  - id: F3N29
+    label: User
+    slots: []
+  - id: F3N30
+    label: Peer
+    slots:
+    - 'peer id : int'
+  - id: F3N31
+    label: Statement
+    slots: []
+  - id: F3N32
+    label: Network connection
+    slots: []
+  - id: F3N33
+    label: Address space
+    slots: []
+  - id: F3N34
+    label: Document
+    slots: []
+  - id: F3N35
+    label: Ontology
+    slots: []
+  - id: F3N36
+    label: Symbol
+    slots: []
+  - id: F3N37
+    label: Message Transfer
+    slots: []
+  edges:
+  - Semiotic Parameter / Comm. Parameter -> Parameter; Comm. Role / Semiotic Role -> Functional Role;
+    Semiotic Task / Comm. Course -> Course
+  - Parameter / Functional Role / Course aggregate into Situation Description
+  - Address -> Comm. Parameter; Interpreter Role / Message / Context / Channel Role -> Comm. Role
+  - Encoder / Decoder -> Interpreter Role; S-context / Expression / Meaning -> Semiotic Role
+  - User -> Natural Person -> Agentive Physical Object -> Endurant; Peer -> Agentive Physical Object
+  - Statement -> Information Object -> Endurant; Network connection -> Physical Object -> Endurant
+  - Message Transfer -> Activity -> Perdurant; Address space -> Region
+  - Address --valued-by--> Address space; Interpreter Role --played-by--> User
+  - Expression --played-by--> Statement; Channel Role --played-by--> Network connection
+  - Comm. Course --sequences--> Message Transfer
+  - User --external-intentionality--> Peer; Address space --location-of--> Peer
+  - Peer --manages--> Ontology; Ontology --refers-to--> Document (printed 1..* annotation retained; no
+    global uniqueness inferred)
+  - 'Statement --part-of--> Symbol; Symbol --part-of--> Ontology: preserve visible arrows; part direction
+    is a correspondence question'
+  notes: Upper 20 boxes and lower 17 boxes are different modeling layers. Code is discussed among Jakobson
+    constituents but has no explicit Code role box here. Participation and setting links are explicitly
+    omitted by footnote 10.
+- number: 4
+  pdf_page: 15
+  kind: ACTIVITY_DIAGRAM
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F4N01
+    label: Formulate query
+    slots: []
+  - id: F4N02
+    label: Select peers (initiator)
+    slots: []
+  - id: F4N03
+    label: Distribute query (initiator)
+    slots: []
+  - id: F4N04
+    label: Reformulate query
+    slots: []
+  - id: F4N05
+    label: Select peers (forwarder)
+    slots: []
+  - id: F4N06
+    label: Distribute query (forwarder)
+    slots: []
+  - id: F4N07
+    label: Resolve query
+    slots: []
+  - id: F4N08
+    label: Process answer
+    slots: []
+  - id: F4N09
+    label: Present answer
+    slots: []
+  edges:
+  - Formulate query -> Select peers (initiator) -> Distribute query (initiator)
+  - Distributed query branches through reformulation, forwarding and resolution; answers converge through
+    Process answer and Present answer
+  - 'Visible controls: initial dot, decision diamond, fork bar, merge paths and final dot'
+  - 'Role annotations: Initiator, Forwarder, Resolver, Processor'
+  notes: Nine action occurrences, with repeated Select peers / Distribute query distinguished by position.
+    This is a conceptual flow, not a measured scheduling or trust algorithm. Control nodes are recorded
+    separately from action boxes.
+- number: 5
+  pdf_page: 16
+  kind: ROLE_MAPPING
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - id: F5N01
+    label: Encoder
+    slots: []
+  - id: F5N02
+    label: Decoder
+    slots: []
+  - id: F5N03
+    label: Initiator
+    slots: []
+  - id: F5N04
+    label: Resolver
+    slots: []
+  - id: F5N05
+    label: Forwarder
+    slots: []
+  - id: F5N06
+    label: Processor
+    slots: []
+  - id: F5N07
+    label: Agentive Physical Object
+    slots: []
+  - id: F5N08
+    label: Peer
+    slots: []
+  edges:
+  - Initiator --plays--> Encoder; Resolver --plays--> Encoder and Decoder
+  - Forwarder --plays--> Encoder and Decoder; Processor --plays--> Decoder
+  - Agentive Physical Object --plays--> each of Initiator / Resolver / Forwarder / Processor
+  - Peer --is a--> Agentive Physical Object
+  notes: Columns are Communication, Query, DOLCE and SWAP. plays is a role mapping, not subclass or equivalence.
+    Encoder/decoder roles concern different messages. Text says three roles but enumerates four.
+boundary: Exact printed labels are case-sensitive display populations, not distinct class IRIs. No inference,
+  executable cardinality translation or current-ontology correspondence is claimed.
