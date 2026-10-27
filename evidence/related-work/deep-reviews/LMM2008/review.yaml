@@ -1,0 +1,2801 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: LMM2008
+issue: 260
+review_date: '2026-10-27'
+reviewer: AI-assisted complete primary-source inspection; no independent expert review
+baseline_commit: 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+status: REVIEW_COMPLETE
+identity:
+  title: 'LMM: an OWL-DL MetaModel to Represent Heterogeneous Lexical Knowledge'
+  version: Picca, Gliozzo and Gangemi, LREC 2008; printed pp.2413-2419, PDF pages 1-7
+  boundary: Davide Picca, Alfio Massimiliano Gliozzo and Aldo Gangemi. The exact seven-page 2008 paper is distinct
+    from the currently retained L1 1.8/L2 1.2 distribution. Printed pages are PDF page + 2412. The title uses MetaModel;
+    prose uses Linguistic Meta-Model and the conclusion Formal Linguistic Meta-Model. These are labels of this work,
+    not separate invented papers. Primary ACL metadata/BibTeX has no established DOI. All six figures, one footnote
+    and sixteen bibliography records were inspected; no table, appendix or numbered equation occurs.
+  authors:
+  - Davide Picca
+  - Alfio Massimiliano Gliozzo
+  - Aldo Gangemi
+  year: 2008
+  doi: null
+  url: https://aclanthology.org/L08-1268/
+source:
+  filename: LMM-2008.pdf
+  sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+  pdf_pages: 7
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+closure_boundary: 'Complete critical paper inspection, not historical executable-distribution recovery, imported-definition
+  completion, a reasoner/profile run, reproduced alignment experiment or independent scientific acceptance. #274 retains
+  eight technical correspondence questions, #88/#271 imported DUL/IOLite definitions, #252 the bounded comparison
+  and #126 the final synthesis. Existing #72/#90/#270 closures retain their historical scope. No Clariceptify model,
+  requirement, fixture, manuscript or release is changed.'
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: p.2413/PDF1, title, authors, abstract and sec.1 problem framing
+  summary: Lexical/ontological integration problem and semiotic-cognitive proposal.
+- id: E02
+  pages:
+  - 1
+  locator: p.2413/PDF1, sec.1 six feature bullets, delivery URL and footnote 1
+  summary: Reported features, OWL-DL compatibility, original LMM_Alignments.owl pointer and LOA wiki.
+- id: E03
+  pages:
+  - 2
+  locator: p.2414/PDF2, sec.2 Referents/Thoughts and six meaning interpretations
+  summary: Reference universality, cognitive/social/logical/gloss/scheme/frame distinctions.
+- id: E04
+  pages:
+  - 2
+  locator: p.2414/PDF2, sec.2 Symbols
+  summary: Speech act, agent, frame/topic, communicative intention and polysemy.
+- id: E05
+  pages:
+  - 2
+  locator: p.2414/PDF2, Fig.1 and caption
+  summary: Historical semiotic positions and causal/imputed sides; no executable rules.
+- id: E06
+  pages:
+  - 2
+  locator: p.2414/PDF2, Fig.2 and sec.3 introduction
+  summary: Three core classes and printed interpretation/expression/denotation slots.
+- id: E07
+  pages:
+  - 3
+  locator: p.2415/PDF3, Fig.3 and sec.3.1 Reference
+  summary: Reference hierarchy, individual/collective membership, physical artifact and constructed situation.
+- id: E08
+  pages:
+  - 3
+  - 4
+  locator: pp.2415-2416/PDF3-4, sec.3.2 Meaning
+  summary: Concept/descriptive relation, frame/event, topic/collection and Description/Situation/Concept distinctions.
+- id: E09
+  pages:
+  - 5
+  locator: p.2417/PDF5, Fig.4
+  summary: Five class boxes with Meaning/Description/Concept hierarchy and complete displayed DUL/SKOS slot families.
+- id: E10
+  pages:
+  - 4
+  locator: p.2416/PDF4, sec.3.3 Expression
+  summary: Information objects versus realization; direct naming versus mediated interpretation; linguistic forms.
+- id: E11
+  pages:
+  - 4
+  - 5
+  locator: pp.2416-2417/PDF4-5, sec.4 Alignments
+  summary: Three-layer architecture, WordNet 2.0/FrameNet 1.2 and other reported mappings; specializes claim.
+- id: E12
+  pages:
+  - 6
+  locator: p.2418/PDF6, Fig.5
+  summary: Eleven alignment-related boxes and their full printed slots, including legacy vocabularies and datatypes.
+- id: E13
+  pages:
+  - 6
+  locator: p.2418/PDF6, Fig.6
+  summary: Four expression-related boxes; expresses minimum 1, syntactic-function maximum 1 and encoding slot.
+- id: E14
+  pages:
+  - 7
+  locator: p.2419/PDF7, sec.5 Conclusion and Future Work
+  summary: Dictionary/encyclopedia distinction, concept-instance specialization, planned automatic DBpedia/YAGO connection.
+- id: E15
+  pages:
+  - 7
+  locator: p.2419/PDF7, sec.6 References, all 16 entries
+  summary: Cited semiotics/foundations/resources; bibliography is not evidence that every claim was independently
+    verified.
+- id: E16
+  pages:
+  - 4
+  locator: p.2416/PDF4, sec.3.3 Name/ConceptExpression/ContextualExpression paragraphs
+  summary: Singular/plural names, conceptual versus extensional collections, simple/multiword and deictic/anaphoric
+    cases.
+- id: A01
+  source_kind: ARTIFACT
+  url: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl
+  sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb
+  locator: LMM_L1.owl retained header, declarations, restrictions and property signatures
+  summary: Exact retained source, not assumed identical to historical2008. Original bytes privately retained; logical
+    observations and execution states remain separate.
+- id: A02
+  source_kind: ARTIFACT
+  url: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
+  sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240
+  locator: LMM_L2.owl retained header, declarations, restrictions and property signatures
+  summary: Exact retained source, not assumed identical to historical2008. Original bytes privately retained; logical
+    observations and execution states remain separate.
+- id: A03
+  source_kind: ARTIFACT
+  url: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl
+  sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  locator: IOLite.owl retained header, declarations, restrictions and property signatures
+  summary: Exact retained source, not assumed identical to historical2008. Original bytes privately retained; logical
+    observations and execution states remain separate.
+- id: A04
+  source_kind: ARTIFACT
+  url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  locator: DUL-http.owl retained header, declarations, restrictions and property signatures
+  summary: Exact retained source, not assumed identical to historical2008. Original bytes privately retained; logical
+    observations and execution states remain separate.
+- id: R01
+  source_kind: REPOSITORY
+  commit: 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+  path: evidence/related-work/artifacts/LMM.yaml
+  sha256: a011424c38f69b2a14a87b0477905b22a6cec70b4d9ac856a92fe3a37f0c9e23
+  locator: evidence/related-work/artifacts/LMM.yaml at pinned 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+  summary: Prior executed selected inspection and pinned four-module asserted closure; no reasoning.
+- id: R02
+  source_kind: REPOSITORY
+  commit: 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+  path: evidence/related-work/deep-reviews/LMM2008/classes.yaml
+  sha256: 6b2b6560c9a3e1afb988f9369e41f2b45876348fa805e63af69186d2be84d36d
+  locator: evidence/related-work/deep-reviews/LMM2008/classes.yaml at pinned 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+  summary: Complete29-local-class catalogue:25 source-comment candidates, four explicit missing definitions.
+- id: R03
+  source_kind: REPOSITORY
+  commit: 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+  path: evaluation/related-work/class-catalogs/raw-source-reconciliation.json
+  sha256: cb7284d8e04521dcc7b52f1e4b963e17e522ca5c3d03997c9ff6bddbd0dc6e0f
+  locator: evaluation/related-work/class-catalogs/raw-source-reconciliation.json at pinned 0608bda59b2bfa8175d3e8f55c2c39aad1cfec82
+  summary: Prior actually executed private raw-source/annotation/hierarchy reconciliation; not a semantic test.
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  catalog_boundary: All seven pages and all sections 1-6 including 3.1-3.3 were read in column order. All six figures
+    were visually checked with enlarged renderings for their small labels. diagrams.yaml inventories every figure
+    box and visible slot. Paper concepts, legacy alignment nodes and current 29-local-class glossary are different
+    populations. No table, appendix or numbered equation is present. Footnote 1 and all 16 references are covered;
+    incidental example individuals are scenarios, not invented classes.
+  units:
+  - unit: Title, authors, abstract and sec.1 Introduction
+    status: REVIEWED
+    evidence:
+    - E01
+    - E02
+  - unit: Sec.2 A Semiotic Model; six meaning interpretations and symbol discussion
+    status: REVIEWED
+    evidence:
+    - E03
+    - E04
+  - unit: Sec.3 A Formal Lexical MetaModel
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Sec.3.1 Reference
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Sec.3.2 Meaning
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Sec.3.3 Expression
+    status: REVIEWED
+    evidence:
+    - E10
+    - E16
+  - unit: Sec.4 Alignments
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Sec.5 Conclusion and Future Work
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Sec.6 References, all 16 entries
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Footnote 1 and original distribution URL
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: 'Fig.1: all visible boxes, slots and caption'
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: 'Fig.2: all visible boxes, slots and caption'
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: 'Fig.3: all visible boxes, slots and caption'
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: 'Fig.4: all visible boxes, slots and caption'
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: 'Fig.5: all visible boxes, slots and caption'
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: 'Fig.6: all visible boxes, slots and caption'
+    status: REVIEWED
+    evidence:
+    - E13
+diagram_inventory:
+  path: evidence/related-work/deep-reviews/LMM2008/diagrams.yaml
+  sha256: 2db5169bbaa644acef9375433f67422990c6a1b9aafea039dc36bfdbb10fca78
+  source_sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903
+  figures:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+dimensions:
+  D1_identity_coverage:
+    statement: The exact 2008 work is fully inspected with printed/PDF numbering and complete figure/footnote/bibliography
+      coverage. Current L1/L2 files and the unavailable original alignment root are separate versioned evidence, not
+      interchangeable editions.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E02
+    - E15
+    - R01
+  D2_problem_contribution:
+    statement: The gap is interoperability between heterogeneous lexical resources and ontology-based interpretation.
+      The proposed mechanism separates expression, meaning and reference while reusing contextual descriptions, situations
+      and lexical alignments. This directly overlaps conceptualization concerns; novelty cannot be claimed merely
+      from those three distinctions.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E03
+    - E04
+    - E08
+    - E11
+    - E14
+  D3_method:
+    statement: The engineering method reconstructs semiotic distinctions, reuses DOLCE/DnS and information-object
+      patterns, modularizes core/linguistic/alignment layers and illustrates resource specialization. No explicit
+      SABiO/DSR/ORSD workflow, systematic-review selection method, recruited expert protocol or reproducible comparative
+      experiment is supplied. Their absence is scoped to this paper, not the authors entire work.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E06
+    - E11
+    - E14
+    - E15
+  D4_requirements:
+    statement: Six feature bullets serve as author-reported goals. Reviewer scenarios operationalize resource integration,
+      multilingual/polysemic expressions, shared meaning, constructed context and explicit individual-versus-collection
+      reference. They are reconstructed candidate CQs/adverse cases, not author-declared executable requirements or
+      passing tests.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E04
+    - E07
+    - E08
+    - E10
+    - E16
+  D5_concepts:
+    statement: The three semiotic positions are extended with Description/Concept/Situation/Collection, information
+      objects, linguistic forms and imported lexical categories. A concept individual related by specializes is not
+      automatically an OWL class connected by rdfs:subClassOf. Topics collect conceptual content while concepts classify
+      individuals; expression type, token and physical realization require separate identity decisions.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E06
+    - E07
+    - E08
+    - E09
+    - E10
+    - E12
+    - E14
+  D6_relations_formalization:
+    statement: The paper offers prose and six diagrams, not numbered equations or a complete axiom listing. The diagram
+      ledger preserves every visible property slot/range/cardinality and legacy spelling. Displayed slots and arrows
+      alone do not establish exact OWL restrictions, equivalence, global consistency or all claimed alignments. Current
+      module constraints are analyzed separately and have not been reasoned over.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E06
+    - E07
+    - E09
+    - E12
+    - E13
+    - A01
+    - A02
+  D7_grounding:
+    statement: The paper explicitly chooses DOLCE-Ultralite and DnS; speech acts, agents, shared social objects, conceptual
+      descriptions and constructed situations provide cognitive/social grounding. Information content is distinguished
+      from concrete realization; frame possibility from observed occurrence. The retained import chain is L2 1.2 ->
+      L1 1.8 -> IOLite 1.8 -> DUL 4.2. That actual chain establishes neither the exact 2008 edition nor BFO/UFO grounding.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E04
+    - E07
+    - E08
+    - E10
+    - E11
+    - A01
+    - A02
+    - A03
+    - A04
+    - R01
+  D8_artifact_correspondence:
+    statement: Standalone official formal files and complete local glossaries are retained. Bounded repository searches
+      do not confirm an author-controlled historical development repository. Four fresh endpoint probes record403
+      responses or HTML, so the cited alignment root is not acquired. Current named-class counts, changed property
+      names, added context classes, annotation gaps and missing external alignment modules remain explicit version
+      limits.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E06
+    - E11
+    - E12
+    - E13
+    - A01
+    - A02
+    - R01
+    - R02
+    - R03
+  D9_evaluation:
+    statement: Resource mappings and graphical examples support a descriptive demonstration. The text contains no
+      identified reasoner/version/log, complete CQ suite, expert sample, alignment precision/recall, multilingual
+      benchmark or measured disambiguation improvement. Reviewer reading, parsing and prior catalogue reconciliation
+      are actual limited evidence; generic OWL-DL compatibility and planned integrations are not experimental success.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E11
+    - E14
+    - R01
+    - R03
+  D10_critical_synthesis:
+    statement: Strong prior overlap includes mediated/direct reference, context-sensitive interpretation, conceptual
+      individuals, lexical interoperability and social grounding. Reuse limits concern identity/context binding, type/instance
+      discipline, diagram-to-current-version fidelity and unverified alignment coverage. Later opportunities are evidence-qualified
+      research candidates pending cross-corpus synthesis and the owner decision.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E07
+    - E08
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - A01
+    - A02
+catalog:
+- id: C01
+  label: Reference
+  statement: 'SEMIOTIC POSITION: What an expression denotes or a meaning interprets; reference role does not itself
+    settle existence, identity or context.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  - E07
+- id: C02
+  label: Meaning
+  statement: 'SEMIOTIC POSITION: Interpretive/conceptual content; the paper groups several philosophical senses rather
+    than proving their interchangeability.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  - E08
+- id: C03
+  label: Expression
+  statement: 'SEMIOTIC POSITION: Communicable information connected to meaning and/or a referent; do not identify
+    spelling with a unique interpreted token.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+  - E10
+- id: C04
+  label: Symbol / thought / referent
+  statement: 'HISTORICAL TRIANGLE: Three positions in Fig.1. Its thought-or-reference label is not automatically the
+    LMM Reference class.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: C05
+  label: Gloss / vocabulary definition
+  statement: 'MEANING READING: A lexical explanation is one candidate representation of meaning, not a proof of concept
+    identity.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+- id: C06
+  label: Concept scheme / lemma / synset / descriptor
+  statement: 'MEANING READING: Resource-specific lexical/concept identifiers require interpretation and alignment;
+    lexical entries and senses remain distinct.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E12
+- id: C07
+  label: Cognitive concept / social meaning
+  statement: 'MEANING READINGS: Mental encoding and socially shared content motivate different grounding questions;
+    the paper accommodates both without a complete identity calculus.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+- id: C08
+  label: Logical concept / extension
+  statement: 'MEANING READING: An individual or collection can provide extensional interpretation; identical extension
+    alone need not establish identical intensional content.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E14
+- id: C09
+  label: Frame
+  statement: 'CONTEXTUAL CATEGORY: A relational possibility or descriptive structure; an observed occurrence is a
+    separate situation/event.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+- id: C10
+  label: Description
+  statement: 'FOUNDATIONAL CATEGORY: Organizes concepts and relational possibilities; a plan is an example. It is
+    not an observation merely because it describes one.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+- id: C11
+  label: Concept
+  statement: 'FOUNDATIONAL CATEGORY: Classifies/organizes domain individuals and can be used across descriptions.
+    The concept-as-individual representation requires level discipline.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E12
+  - E14
+- id: C12
+  label: Situation
+  statement: 'FOUNDATIONAL CATEGORY: A constructed relational setting satisfying a description; the text also allows
+    it to function as meaning in interpretation.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+- id: C13
+  label: Collection
+  statement: 'FOUNDATIONAL CATEGORY: A unified membership population. Membership, coverage and unifying description
+    are different relations.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+- id: C14
+  label: Topic
+  statement: 'CONTEXTUAL CATEGORY: Groups conceptual/frame/event content in a subject area; its broader/similar organization
+    is not automatically strict class subsumption.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: C15
+  label: Entity
+  statement: 'FOUNDATIONAL FILLER: Broad domain category used in the diagrams; being in the domain alone is not a
+    fully specified reference act.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+- id: C16
+  label: PhysicalArtifact
+  statement: 'FOUNDATIONAL CATEGORY: Functionally interpreted physical object, including reused natural objects; its
+    physical bearer is not its communicated content.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: C17
+  label: SocialObject
+  statement: 'FOUNDATIONAL CATEGORY: Nonphysical social artifacts/content; a socially recognized agent or meaning
+    is not simply its physical realization.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E10
+- id: C18
+  label: IndividualReference
+  statement: 'REFERENCE CATEGORY: Referent treated as an individual under a concept; paper membership wording and
+    collective contrast require explicit interpretation.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E12
+- id: C19
+  label: MultiReference / MultipleReference
+  statement: 'REFERENCE CATEGORY: Collective referent with individual members. The text alternates labels; neither
+    membership nor plural naming is a subclass edge between individual objects.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E16
+- id: C20
+  label: NamedEntity
+  statement: 'REFERENCE CATEGORY: Individual identified by a proper name; named-entity extraction is a proposed population
+    route, not an executed extraction result.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E16
+- id: C21
+  label: ExtensionalReference
+  statement: 'REFERENCE CATEGORY: Collection identified through an explicit or contextually recovered enumeration;
+    plural naming and conceptual classification need not coincide.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+- id: C22
+  label: ContextualReference
+  statement: 'REFERENCE CATEGORY: Reference resolved through deictic or anaphoric context; no complete resolver algorithm
+    is supplied.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+- id: C23
+  label: Name
+  statement: 'EXPRESSION CATEGORY: Proper naming can identify singular or collective references; the names examples
+    do not fix a universal identity rule.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E16
+- id: C24
+  label: ConceptExpression
+  statement: 'EXPRESSION CATEGORY: Term associated with meaning and a collection-related referent. Its distinction
+    from Name/ContextualExpression is ontological, not a string classifier.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  - E13
+- id: C25
+  label: ContextualExpression
+  statement: 'EXPRESSION CATEGORY: Anaphoric/deictic linguistic expression whose intended referent depends on context.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  - E13
+- id: C26
+  label: Simple / polyrhematic concept expression
+  statement: 'EXPRESSION DISTINCTION: Single-word versus multiword construction is discussed; this is not a published
+    grammar or classifier in the paper.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+- id: C27
+  label: InformationObject
+  statement: 'CONTENT CATEGORY: Information independent of a particular concrete carrier; word, text, picture and
+    composition are examples rather than a newly counted class set.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C28
+  label: Information realization
+  statement: 'REALIZATION CATEGORY: Concrete realization of an information object; token/carrier/content identity
+    should not be collapsed.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+- id: C29
+  label: Language / semiotic code
+  statement: 'FOUNDATIONAL FILLER: System in which expression is encoded. A shared language tag alone does not resolve
+    polysemy or guarantee multilingual equivalence.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E13
+- id: C30
+  label: LinguisticFunction
+  statement: 'DIAGRAM FILLER: Syntactic function attached to expression subtypes with printed maximum 1; no complete
+    inventory is given here.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+- id: C31
+  label: Agent / speech act / communicative intention
+  statement: 'COGNITIVE PRIMITIVES: Agency and intentional communication qualify the interpretation story. They are
+    not shown as an operational, uniquely resolved interpretation record.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E10
+- id: C32
+  label: Context / interpretive frame
+  statement: 'MODELING PRIMITIVE: Circumstances, conceptual frame/topic and social interpretation condition meaning;
+    the paper provides distinctions rather than a full disambiguation procedure.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E07
+  - E08
+- id: C33
+  label: Plan / Action / Task / Role / Parameter
+  statement: 'FOUNDATIONAL FILLERS: Plan is a Description example; Action appears in situations, and Task/Role/Parameter
+    in conceptual/descriptive slots. Their full imported definitions are outside this paper.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+- id: C34
+  label: Event / Object / TimeInterval
+  statement: 'FOUNDATIONAL FILLERS: Setting components in the Situation boxes. Printed temporal slots do not provide
+    complete interpretation histories or valid-time semantics.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+- id: C35
+  label: SocialAgent
+  statement: 'FOUNDATIONAL FILLER: Socially introduced agent in the Description box; distinguish this from the general
+    Agent filler and physical actors.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: C36
+  label: wn20:Synset
+  statement: 'ALIGNMENT CLASS: Printed lexical-semantic grouping placed below Concept. WordNet hypernymy is discussed
+    between synset individuals, requiring class/instance discipline.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+  - E14
+- id: C37
+  label: wn20:WordSense
+  statement: 'ALIGNMENT CLASS: Lexical sense with word and synset links; the diagram also places it under Concept.
+    Do not infer identity with an expression string.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C38
+  label: wn20:SuperSense
+  statement: 'ALIGNMENT CLASS: Coarse WordNet semantic category with reference links; it is a resource category, not
+    a universal upper ontology.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C39
+  label: wn20:NounSynset / wn20:Word
+  statement: 'ALIGNMENT FILLERS: Typed targets for classification and lexical word association; these targets are
+    separate from the displayed Synset/WordSense boxes.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C40
+  label: ofntb:FrameElement
+  statement: 'ALIGNMENT CLASS: Reengineered FrameNet role-like component, with dependency/exclusion, frame and metadata
+    slots; it is not automatically identical to a domain object.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C41
+  label: ofntb:GenericFrameElement
+  statement: 'ALIGNMENT CLASS: Organizes specific frame components and inductive frame usage; minimum slots are printed
+    graph constraints, not reproduced executions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C42
+  label: ofntb:CoreType
+  statement: 'ALIGNMENT CLASS: Categorizes a frame element core status; diagram placement alone does not prove a sound
+    cross-resource subsumption.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C43
+  label: ofntb:SemanticType
+  statement: 'ALIGNMENT CLASS: Semantic categorization linked to frames/lexical units and specialized by frame elements;
+    metadata strings are not independent conceptual classes.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C44
+  label: ofntb:Frame / ofntb:LexicalUnit
+  statement: 'ALIGNMENT FILLERS: FrameNet-specific targets. The paper does not establish universal equality with every
+    use of frame, word or lexical sense.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C45
+  label: skos:Concept
+  statement: 'ALIGNMENT CLASS: Historical SKOS category connected to DUL concepts; the text notes SKOS also covers
+    topics. Do not collapse every source category into a modern SKOS-equivalence assertion.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E11
+  - E12
+- id: C46
+  label: skos:TopConcept / skos:ConceptScheme
+  statement: 'ALIGNMENT CLASS/FILLER: Top-level concept box and scheme target are part of the historical resource
+    representation; absence of a modern release axiom does not rewrite the figure.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C47
+  label: foaf:Document / rdfs:Resource
+  statement: 'ALIGNMENT FILLERS: Subject-indicator/external-identifier targets in Fig.5; these are display types,
+    not newly proposed LMM classes.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C48
+  label: string / rdfs:Literal / nonNegativeInteger
+  statement: 'DATATYPE FILLERS: Labels, identifiers, counts and gloss values; kept separate from named OWL class counts.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: C49
+  label: WordNet 2.0 / SuperSenses / domains / OntoWordNet
+  statement: 'RESOURCE FAMILY: Reported alignment inputs at distinct levels. Retaining L1/L2 alone does not acquire
+    or verify all these distributions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+- id: C50
+  label: FrameNet 1.2 / OntoFrameNet
+  statement: 'RESOURCE FAMILY: Source and reengineering are distinguished; their printed alignment is a demonstration,
+    not an independently reproduced resource conversion.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+- id: C51
+  label: OwlOdm / OWL-DL / IOL
+  statement: 'MODELING RESOURCES: OWL1.0 metamodel, implementation language and information-object plugin names are
+    not three extra paper-class populations. Current IOLite must be version-bound separately.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E10
+  - E11
+- id: C52
+  label: DBpedia / YAGO / Dmoz
+  statement: 'RESOURCE/ROADMAP: Open-domain targets are discussed; the conclusion marks the automatic DBpedia/YAGO
+    connection as planned. No completed benchmark is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E14
+commitments:
+- id: K01
+  label: Semiotic separation
+  statement: Three interpretive positions are distinguished; the triangle does not require them globally disjoint
+    or uniquely identified. Treat reification and metalinguistic use explicitly.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E06
+- id: K02
+  label: Expression / denotation / interpretation
+  statement: Direct denotation and meaning-mediated interpretation are both allowed. A pairwise edge is not automatically
+    a complete agent/context/time-specific interpretation event.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+  - E10
+- id: K03
+  label: Description defines Concept / Situation satisfies Description
+  statement: Definition, classification, satisfaction and unification connect different levels. Reusing a Concept
+    in another Description is not copying the same domain extension by default.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+- id: K04
+  label: Concept classification versus object membership
+  statement: The employee example distinguishes individual membership in a multiple reference and classification by
+    a concept. A collection member is not its collection superclass.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+- id: K05
+  label: Frame / occurrence
+  statement: A descriptive possibility differs from an observed event or satisfying Situation. Reification is needed
+    to preserve the distinction through a knowledge graph.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: K06
+  label: Topic broader / similar
+  statement: Subject-area inclusion/overlap is distinguished from concept extension/subsumption. Automatically treating
+    every broader relation as a strict subclass edge loses this distinction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+- id: K07
+  label: Lexical specialization
+  statement: The prose claims WordNet hyperonymy as a specializes subrelation holding between Synset individuals.
+    Direction and historical predicate spelling must be checked in an actual alignment source.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E12
+  - E14
+- id: K08
+  label: Class versus instance level
+  statement: Synset/Concept class subsumption and specializes between instances are separate constructions; diagrams
+    do not authorize unrestricted OWL metamodeling or equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E12
+  - E14
+- id: K09
+  label: Printed cardinalities
+  statement: Fig.6 displays expresses minimum 1 and hasSyntacticFunction maximum 1. Fig.5 prints frame/component and
+    identifier multiplicities. These are exact diagram observations, not a profile/consistency result.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E13
+- id: K10
+  label: Current L1 union definitions
+  statement: Retained Expression is equivalent to expresses some Meaning OR denotes some Reference; Reference similarly
+    uses hasInterpretation some Meaning OR isDenotedBy some Expression. Meaning requires some expressed-by Expression.
+    This is not the same statement as every diagram Expression having an explicit known meaning.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - E06
+  - E13
+- id: K11
+  label: Current L2 reference existentials
+  statement: IndividualReference requires some concept classification and some membership in MultipleReference. MultipleReference
+    has no local membership existential; ExtensionalReference requires a member with some setting and a ContextualExpression
+    denotation. Open-world existence is not an explicit named record or validation success.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A02
+  - E07
+  - E16
+- id: K12
+  label: Current context and type restrictions
+  statement: CoText adds a rule-unified neighborhood; KnowledgeCommunity comment requires shared paradigm but its
+    local logical axioms do not encode that full common-paradigm condition. Name/ConceptExpression/ContextualExpression
+    are pairwise disjoint in retained L2. These are current-version commitments, not silently transferred to2008.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - E04
+  - E16
+- id: K13
+  label: Formalization population boundary
+  statement: There are no numbered equations, displayed FOL axiom set or complete machine-readable source listing
+    in this paper. Its formal evidence is prose and diagrams; the diagram ledger is manual research transcription,
+    not a replacement ontology.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E09
+  - E12
+  - E13
+  - E14
+relation_index:
+- id: R001
+  label: denotes
+  statement: 'Printed property/slot. All occurrences: Fig.2 lmm1:Expression [denotes : Reference]. Historical display
+    notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: denotes
+- id: R002
+  label: dul:classifies
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:classifies : dul:Entity]; Fig.5 dul:Concept
+    [dul:classifies : dul:Entity]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:classifies
+- id: R003
+  label: dul:covers
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:covers : dul:Collection]; Fig.5 dul:Concept
+    [dul:covers : dul:Collection]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:covers
+- id: R004
+  label: dul:defines
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:defines : dul:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:defines
+- id: R005
+  label: dul:definesRole
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:definesRole : dul:Role]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:definesRole
+- id: R006
+  label: dul:definesTask
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:definesTask : dul:Task]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:definesTask
+- id: R007
+  label: dul:describes
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:describes : dul:Entity]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:describes
+- id: R008
+  label: dul:expands
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:expands : dul:Description]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:expands
+- id: R009
+  label: dul:expresses
+  statement: 'Printed property/slot. All occurrences: Fig.6 lmm2:ConceptExpression [dul:expresses : lmm1:Meaning[1..]];
+    Fig.6 lmm1:Expression [dul:expresses : lmm1:Meaning[1..]]. Historical display notation; no current IRI equivalence
+    or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  printed_name: dul:expresses
+- id: R010
+  label: dul:hasMember
+  statement: 'Printed property/slot. All occurrences: Fig.3 lmm2:MultipleReference [dul:hasMember : lmm2:IndividualReference];
+    Fig.4 dul:Collection [dul:hasMember : dul:Entity]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:hasMember
+- id: R011
+  label: dul:hasParameter
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:hasParameter : dul:Parameter]; Fig.5
+    dul:Concept [dul:hasParameter : dul:Parameter]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:hasParameter
+- id: R012
+  label: dul:hasPart
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:hasPart : dul:Concept]; Fig.4 dul:Collection
+    [dul:hasPart : dul:Collection]; Fig.5 dul:Concept [dul:hasPart : dul:Concept]. Historical display notation; no
+    current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:hasPart
+- id: R013
+  label: dul:hasPostcondition
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:hasPostcondition : dul:Situation];
+    Fig.4 dul:Situation [dul:hasPostcondition : dul:Situation]. Historical display notation; no current IRI equivalence
+    or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:hasPostcondition
+- id: R014
+  label: dul:hasPrecondition
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:hasPrecondition : dul:Situation]; Fig.4
+    dul:Situation [dul:hasPrecondition : dul:Situation]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:hasPrecondition
+- id: R015
+  label: dul:includesAction
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:includesAction : dul:Action]; Fig.4
+    dul:Situation [dul:includesAction : dul:Action]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:includesAction
+- id: R016
+  label: dul:includesAgent
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:includesAgent : dul:Agent]; Fig.4 dul:Situation
+    [dul:includesAgent : dul:Agent]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:includesAgent
+- id: R017
+  label: dul:includesEvent
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:includesEvent : dul:Event]; Fig.4 dul:Situation
+    [dul:includesEvent : dul:Event]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:includesEvent
+- id: R018
+  label: dul:includesObject
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:includesObject : dul:Object]; Fig.4
+    dul:Situation [dul:includesObject : dul:Object]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:includesObject
+- id: R019
+  label: dul:includesTime
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:includesTime : dul:TimeInterval]; Fig.4
+    dul:Situation [dul:includesTime : dul:TimeInterval]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:includesTime
+- id: R020
+  label: dul:introduces
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:introduces : dul:SocialAgent]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:introduces
+- id: R021
+  label: dul:isConceptExpressedBy
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:isConceptExpressedBy : dul:InformationObject];
+    Fig.5 dul:Concept [dul:isConceptExpressedBy : dul:InformationObject]. Historical display notation; no current
+    IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:isConceptExpressedBy
+- id: R022
+  label: dul:isConceptUsedIn
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:isConceptUsedIn : dul:Description]; Fig.5
+    dul:Concept [dul:isConceptUsedIn : dul:Description]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:isConceptUsedIn
+- id: R023
+  label: dul:isConceptualizedBy
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:isConceptualizedBy : dul:Agent].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:isConceptualizedBy
+- id: R024
+  label: dul:isCoveredBy
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Collection [dul:isCoveredBy : dul:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:isCoveredBy
+- id: R025
+  label: dul:isDefinedIn
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:isDefinedIn : dul:Description]; Fig.5
+    dul:Concept [dul:isDefinedIn : dul:Description]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:isDefinedIn
+- id: R026
+  label: dul:isDescribedBy
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:PhysicalArtifact [dul:isDescribedBy : dul:Description].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: dul:isDescribedBy
+- id: R027
+  label: dul:isExpandedIn
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:isExpandedIn : dul:Description].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:isExpandedIn
+- id: R028
+  label: dul:isExpressedBy
+  statement: 'Printed property/slot. All occurrences: Fig.4 lmm1:Meaning [dul:isExpressedBy : lmm1:Expression]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:isExpressedBy
+- id: R029
+  label: dul:isPostconditionOf
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:isPostconditionOf : dul:Situation];
+    Fig.4 dul:Situation [dul:isPostconditionOf : dul:Situation]. Historical display notation; no current IRI equivalence
+    or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:isPostconditionOf
+- id: R030
+  label: dul:isPreconditionOf
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:isPreconditionOf : dul:Situation];
+    Fig.4 dul:Situation [dul:isPreconditionOf : dul:Situation]. Historical display notation; no current IRI equivalence
+    or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:isPreconditionOf
+- id: R031
+  label: dul:isRelatedToConcept
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:isRelatedToConcept : dul:Concept]; Fig.5
+    dul:Concept [dul:isRelatedToConcept : dul:Concept]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:isRelatedToConcept
+- id: R032
+  label: dul:isSatisfiedBy
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:isSatisfiedBy : dul:Situation]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:isSatisfiedBy
+- id: R033
+  label: dul:isSettingFor
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:isSettingFor : dul:Entity]; Fig.4 dul:Situation
+    [dul:isSettingFor : dul:Entity]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:isSettingFor
+- id: R034
+  label: dul:isSubordinatedTo
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:isSubordinatedTo : dul:Concept]; Fig.5
+    dul:Concept [dul:isSubordinatedTo : dul:Concept]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:isSubordinatedTo
+- id: R035
+  label: dul:isSuperordinatedTo
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [dul:isSuperordinatedTo : dul:Concept]; Fig.5
+    dul:Concept [dul:isSuperordinatedTo : dul:Concept]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: dul:isSuperordinatedTo
+- id: R036
+  label: dul:isUnifiedBy
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Collection [dul:isUnifiedBy : dul:Description]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:isUnifiedBy
+- id: R037
+  label: dul:satisfies
+  statement: 'Printed property/slot. All occurrences: Fig.3 dul:Situation [dul:satisfies : dul:Description]; Fig.4
+    dul:Situation [dul:satisfies : dul:Description]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  printed_name: dul:satisfies
+- id: R038
+  label: dul:specializes
+  statement: 'Printed property/slot. All occurrences: Fig.4 lmm1:Meaning [dul:specializes : lmm1:Meaning]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:specializes
+- id: R039
+  label: dul:unifies
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:unifies : dul:Collection]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:unifies
+- id: R040
+  label: dul:usesConcept
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Description [dul:usesConcept : dul:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: dul:usesConcept
+- id: R041
+  label: expresses
+  statement: 'Printed property/slot. All occurrences: Fig.2 lmm1:Expression [expresses : Meaning]. Historical display
+    notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: expresses
+- id: R042
+  label: interprets
+  statement: 'Printed property/slot. All occurrences: Fig.2 lmm1:Meaning [interprets : Reference]. Historical display
+    notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: interprets
+- id: R043
+  label: isDenotedBy
+  statement: 'Printed property/slot. All occurrences: Fig.2 lmm1:Reference [isDenotedBy : Expression]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: isDenotedBy
+- id: R044
+  label: isExpressedBy
+  statement: 'Printed property/slot. All occurrences: Fig.2 lmm1:Meaning [isExpressedBy : Expression]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: isExpressedBy
+- id: R045
+  label: isInterpretedAs
+  statement: 'Printed property/slot. All occurrences: Fig.2 lmm1:Reference [isInterpretedAs : Meaning]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  printed_name: isInterpretedAs
+- id: R046
+  label: lmm1:denotes
+  statement: 'Printed property/slot. All occurrences: Fig.6 lmm2:ConceptExpression [lmm1:denotes : lmm1:Reference];
+    Fig.6 lmm1:Expression [lmm1:denotes : lmm1:Reference]; Fig.6 lmm2:Name [lmm1:denotes : lmm1:Reference]; Fig.6
+    lmm2:ContextualExpression [lmm1:denotes : lmm1:Reference]. Historical display notation; no current IRI equivalence
+    or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  printed_name: lmm1:denotes
+- id: R047
+  label: lmm1:hasInterpretation
+  statement: 'Printed property/slot. All occurrences: Fig.3 lmm1:Reference [lmm1:hasInterpretation : lmm1:Meaning].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: lmm1:hasInterpretation
+- id: R048
+  label: lmm1:isDenotedBy
+  statement: 'Printed property/slot. All occurrences: Fig.3 lmm1:Reference [lmm1:isDenotedBy : lmm1:Expression]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: lmm1:isDenotedBy
+- id: R049
+  label: lmm1:isInterpretationOf
+  statement: 'Printed property/slot. All occurrences: Fig.4 lmm1:Meaning [lmm1:isInterpretationOf : lmm1:Reference].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  printed_name: lmm1:isInterpretationOf
+- id: R050
+  label: lmm2:hasInstance
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [lmm2:hasInstance : lmm1:Reference]; Fig.5
+    dul:Concept [lmm2:hasInstance : lmm1:Reference]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: lmm2:hasInstance
+- id: R051
+  label: lmm2:hasSuperSense
+  statement: 'Printed property/slot. All occurrences: Fig.3 lmm1:Reference [lmm2:hasSuperSense : wn20:SuperSense].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  printed_name: lmm2:hasSuperSense
+- id: R052
+  label: lmm2:hasSyntacticFunction
+  statement: 'Printed property/slot. All occurrences: Fig.6 lmm2:ConceptExpression [lmm2:hasSyntacticFunction : iol:LinguisticFunction[0..1]];
+    Fig.6 lmm2:Name [lmm2:hasSyntacticFunction : iol:LinguisticFunction[0..1]]; Fig.6 lmm2:ContextualExpression [lmm2:hasSyntacticFunction
+    : iol:LinguisticFunction[0..1]]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  printed_name: lmm2:hasSyntacticFunction
+- id: R053
+  label: lmm2:isEncodedIn
+  statement: 'Printed property/slot. All occurrences: Fig.6 lmm1:Expression [lmm2:isEncodedIn : iol:Language]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  printed_name: lmm2:isEncodedIn
+- id: R054
+  label: lmm2:isInstanceOf
+  statement: 'Printed property/slot. All occurrences: Fig.3 lmm1:Reference [lmm2:isInstanceOf : dul:Concept]; Fig.3
+    lmm2:IndividualReference [lmm2:isInstanceOf : dul:Concept]; Fig.5 lmm2:IndividualReference [lmm2:isInstanceOf
+    : dul:Concept]. Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E12
+  printed_name: lmm2:isInstanceOf
+- id: R055
+  label: lmm2:isSuperSenseOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:SuperSense [lmm2:isSuperSenseOf : lmm1:Reference].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: lmm2:isSuperSenseOf
+- id: R056
+  label: ofntb:FE_ID
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:FE_ID : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:FE_ID
+- id: R057
+  label: ofntb:FE_abbrev
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:FE_abbrev : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:FE_abbrev
+- id: R058
+  label: ofntb:FE_cBy
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:FE_cBy : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:FE_cBy
+- id: R059
+  label: ofntb:FE_cDate
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:FE_cDate : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:FE_cDate
+- id: R060
+  label: ofntb:FE_coreType
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:FE_coreType : ofntb:CoreType].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:FE_coreType
+- id: R061
+  label: ofntb:FE_name
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:FE_name : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:FE_name
+- id: R062
+  label: ofntb:SEM_ID
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:SemanticType [ofntb:SEM_ID : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:SEM_ID
+- id: R063
+  label: ofntb:SEM_name
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:SemanticType [ofntb:SEM_name : string]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:SEM_name
+- id: R064
+  label: ofntb:causativeOfFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:causativeOfFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:causativeOfFE
+- id: R065
+  label: ofntb:coreSetFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:coreSetFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:coreSetFE
+- id: R066
+  label: ofntb:excludesFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:excludesFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:excludesFE
+- id: R067
+  label: ofntb:hasCausativeFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:hasCausativeFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:hasCausativeFE
+- id: R068
+  label: ofntb:hasInchoativeFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:hasInchoativeFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:hasInchoativeFE
+- id: R069
+  label: ofntb:hasSpecificComponent
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:GenericFrameElement [ofntb:hasSpecificComponent
+    : ofntb:FrameElement[1..]]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:hasSpecificComponent
+- id: R070
+  label: ofntb:hasSubFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:hasSubFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:hasSubFE
+- id: R071
+  label: ofntb:inchoativeOfFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:inchoativeOfFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:inchoativeOfFE
+- id: R072
+  label: ofntb:isCoreTypeOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:CoreType [ofntb:isCoreTypeOf : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isCoreTypeOf
+- id: R073
+  label: ofntb:isFEExcludedBy
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:isFEExcludedBy : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isFEExcludedBy
+- id: R074
+  label: ofntb:isFEIn
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:isFEIn : ofntb:Frame[1..]].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isFEIn
+- id: R075
+  label: ofntb:isFERequiredBy
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:isFERequiredBy : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isFERequiredBy
+- id: R076
+  label: ofntb:isFEUsedBy
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:isFEUsedBy : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isFEUsedBy
+- id: R077
+  label: ofntb:isInductivelyUsedConceptIn
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:GenericFrameElement [ofntb:isInductivelyUsedConceptIn
+    : ofntb:Frame[1..]]. Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isInductivelyUsedConceptIn
+- id: R078
+  label: ofntb:isSemTypeOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:SemanticType [ofntb:isSemTypeOf : ofntb:Frame or
+    ofntb:LexicalUnit]. Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isSemTypeOf
+- id: R079
+  label: ofntb:isSemTypeSpecializedBy
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:SemanticType [ofntb:isSemTypeSpecializedBy : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isSemTypeSpecializedBy
+- id: R080
+  label: ofntb:isSpecificComponentOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:isSpecificComponentOf : ofntb:GenericFrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isSpecificComponentOf
+- id: R081
+  label: ofntb:isSubFEOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:isSubFEOf : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:isSubFEOf
+- id: R082
+  label: ofntb:reframingMappingFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:reframingMappingFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:reframingMappingFE
+- id: R083
+  label: ofntb:requiresFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:requiresFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:requiresFE
+- id: R084
+  label: ofntb:seeAlsoFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:seeAlsoFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:seeAlsoFE
+- id: R085
+  label: ofntb:specializesSemType
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:specializesSemType : ofntb:SemanticType].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:specializesSemType
+- id: R086
+  label: ofntb:usingFE
+  statement: 'Printed property/slot. All occurrences: Fig.5 ofntb:FrameElement [ofntb:usingFE : ofntb:FrameElement].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: ofntb:usingFE
+- id: R087
+  label: skos:broader
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:broader : skos:Concept]; Fig.5 dul:Concept
+    [skos:broader : skos:Concept]; Fig.5 skos:Concept [skos:broader : skos:Concept]. Historical display notation;
+    no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:broader
+- id: R088
+  label: skos:broaderGeneric
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:broaderGeneric : skos:Concept]; Fig.5
+    dul:Concept [skos:broaderGeneric : skos:Concept]; Fig.5 skos:Concept [skos:broaderGeneric : skos:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:broaderGeneric
+- id: R089
+  label: skos:broaderInstantive
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:broaderInstantive : skos:Concept]; Fig.5
+    dul:Concept [skos:broaderInstantive : skos:Concept]; Fig.5 skos:Concept [skos:broaderInstantive : skos:Concept].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:broaderInstantive
+- id: R090
+  label: skos:broaderPartitive
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:broaderPartitive : skos:Concept]; Fig.5
+    dul:Concept [skos:broaderPartitive : skos:Concept]; Fig.5 skos:Concept [skos:broaderPartitive : skos:Concept].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:broaderPartitive
+- id: R091
+  label: skos:externalID
+  statement: 'Printed property/slot. All occurrences: Fig.5 skos:Concept [skos:externalID : rdfs:Resource]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: skos:externalID
+- id: R092
+  label: skos:inScheme
+  statement: 'Printed property/slot. All occurrences: Fig.5 skos:Concept [skos:inScheme : skos:ConceptScheme]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: skos:inScheme
+- id: R093
+  label: skos:isPrimarySubjectOf
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Collection [skos:isPrimarySubjectOf : dul:SocialObject];
+    Fig.5 skos:Concept [skos:isPrimarySubjectOf]. Historical display notation; no current IRI equivalence or executable
+    restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:isPrimarySubjectOf
+- id: R094
+  label: skos:isSubjectOf
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Collection [skos:isSubjectOf : dul:SocialObject];
+    Fig.5 skos:Concept [skos:isSubjectOf]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:isSubjectOf
+- id: R095
+  label: skos:narrower
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:narrower : skos:Concept]; Fig.5 dul:Concept
+    [skos:narrower : skos:Concept]; Fig.5 skos:Concept [skos:narrower : skos:Concept]. Historical display notation;
+    no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:narrower
+- id: R096
+  label: skos:narrowerGeneric
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:narrowerGeneric : skos:Concept]; Fig.5
+    dul:Concept [skos:narrowerGeneric : skos:Concept]; Fig.5 skos:Concept [skos:narrowerGeneric : skos:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:narrowerGeneric
+- id: R097
+  label: skos:narrowerInstantive
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:narrowerInstantive : skos:Concept];
+    Fig.5 dul:Concept [skos:narrowerInstantive : skos:Concept]; Fig.5 skos:Concept [skos:narrowerInstantive : skos:Concept].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:narrowerInstantive
+- id: R098
+  label: skos:narrowerPartitive
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:narrowerPartitive : skos:Concept]; Fig.5
+    dul:Concept [skos:narrowerPartitive : skos:Concept]; Fig.5 skos:Concept [skos:narrowerPartitive : skos:Concept].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:narrowerPartitive
+- id: R099
+  label: skos:related
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:related : skos:Concept]; Fig.5 dul:Concept
+    [skos:related : skos:Concept]; Fig.5 skos:Concept [skos:related : skos:Concept]. Historical display notation;
+    no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:related
+- id: R100
+  label: skos:relatedHasPart
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:relatedHasPart : skos:Concept]; Fig.5
+    dul:Concept [skos:relatedHasPart : skos:Concept]; Fig.5 skos:Concept [skos:relatedHasPart : skos:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:relatedHasPart
+- id: R101
+  label: skos:relatedPartOf
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skos:relatedPartOf : skos:Concept]; Fig.5
+    dul:Concept [skos:relatedPartOf : skos:Concept]; Fig.5 skos:Concept [skos:relatedPartOf : skos:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skos:relatedPartOf
+- id: R102
+  label: skos:semanticRelation
+  statement: 'Printed property/slot. All occurrences: Fig.5 skos:Concept [skos:semanticRelation : skos:Concept]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: skos:semanticRelation
+- id: R103
+  label: skos:subjectIndicator
+  statement: 'Printed property/slot. All occurrences: Fig.5 skos:Concept [skos:subjectIndicator : foaf:Document].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: skos:subjectIndicator
+- id: R104
+  label: skosM:broadMatch
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skosM:broadMatch : dul:Concept]; Fig.5 dul:Concept
+    [skosM:broadMatch : dul:Concept]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skosM:broadMatch
+- id: R105
+  label: skosM:exactMatch
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skosM:exactMatch : dul:Concept]; Fig.5 dul:Concept
+    [skosM:exactMatch : dul:Concept]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skosM:exactMatch
+- id: R106
+  label: skosM:majorMatch
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skosM:majorMatch : dul:Concept]; Fig.5 dul:Concept
+    [skosM:majorMatch : dul:Concept]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skosM:majorMatch
+- id: R107
+  label: skosM:mappingRelation
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skosM:mappingRelation : dul:Concept]; Fig.5
+    dul:Concept [skosM:mappingRelation : dul:Concept]. Historical display notation; no current IRI equivalence or
+    executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skosM:mappingRelation
+- id: R108
+  label: skosM:minorMatch
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skosM:minorMatch : dul:Concept]; Fig.5 dul:Concept
+    [skosM:minorMatch : dul:Concept]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skosM:minorMatch
+- id: R109
+  label: skosM:narrowMatch
+  statement: 'Printed property/slot. All occurrences: Fig.4 dul:Concept [skosM:narrowMatch : dul:Concept]; Fig.5 dul:Concept
+    [skosM:narrowMatch : dul:Concept]. Historical display notation; no current IRI equivalence or executable restriction
+    is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  printed_name: skosM:narrowMatch
+- id: R110
+  label: wn20:antonymOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:WordSense [wn20:antonymOf : wn20:WordSense]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:antonymOf
+- id: R111
+  label: wn20:classifiedBy
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:classifiedBy : wn20:NounSynset]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:classifiedBy
+- id: R112
+  label: wn20:classifiedByRegion
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:classifiedByRegion : wn20:NounSynset].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:classifiedByRegion
+- id: R113
+  label: wn20:classifiedByTopic
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:classifiedByTopic : wn20:NounSynset].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:classifiedByTopic
+- id: R114
+  label: wn20:classifiedByUsage
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:classifiedByUsage : wn20:NounSynset].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:classifiedByUsage
+- id: R115
+  label: wn20:containsWordSense
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:containsWordSense : wn20:WordSense].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:containsWordSense
+- id: R116
+  label: wn20:derivationallyRelated
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:WordSense [wn20:derivationallyRelated : wn20:WordSense].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:derivationallyRelated
+- id: R117
+  label: wn20:gloss
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:gloss : rdfs:Literal]. Historical display
+    notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:gloss
+- id: R118
+  label: wn20:hypernymOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:hypernymOf : wn20:Synset]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:hypernymOf
+- id: R119
+  label: wn20:hyponymOf
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:hyponymOf : wn20:Synset]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:hyponymOf
+- id: R120
+  label: wn20:inSynset
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:WordSense [wn20:inSynset : wn20:Synset[1..1]]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:inSynset
+- id: R121
+  label: wn20:lexName
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:lexName : wn20:SuperSense]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:lexName
+- id: R122
+  label: wn20:synsetId
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:Synset [wn20:synsetId : nonNegativeInteger[1..1]].
+    Historical display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:synsetId
+- id: R123
+  label: wn20:tagCount
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:WordSense [wn20:tagCount : nonNegativeInteger]. Historical
+    display notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:tagCount
+- id: R124
+  label: wn20:word
+  statement: 'Printed property/slot. All occurrences: Fig.5 wn20:WordSense [wn20:word : wn20:Word]. Historical display
+    notation; no current IRI equivalence or executable restriction is inferred.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  printed_name: wn20:word
+- id: R125
+  label: Fig.1 causal/imputed sides
+  statement: Symbolizes, refers-to and stands-for are conceptual diagram sides, not asserted OWL predicates.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+- id: R126
+  label: Prose relation vocabulary
+  statement: The body additionally discusses subsumption, conceptual relation, subframe-of, broader-than, similar-to
+    and isHyperonymOf. These aliases/descriptions remain distinct from the exact diagram names.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E11
+  - E14
+scenarios:
+- id: S01
+  label: RQ1 resource interoperability
+  statement: 'AUTHOR GOAL: Integrate heterogeneous lexical resources without erasing their distinct units. Candidate
+    check: retain source identity when a synset and frame element both specialize the common concept layer. An alignment
+    row is evidence of mapping intent, not measured correctness.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E12
+- id: S02
+  label: RQ2 multilinguality
+  statement: 'AUTHOR GOAL: Represent different-language expressions and their relations. Reviewer adverse case: shared
+    denotation or spelling does not ensure identical senses, context or cross-language equivalence. No multilingual
+    benchmark is reported.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E04
+  - E10
+  - E14
+- id: S03
+  label: RQ3 extraction compatibility
+  statement: 'AUTHOR GOAL: Accommodate named-entity, relation and frame extraction outputs. Candidate check keeps
+    extracted mention, selected sense, confidence and target distinct; the latter provenance/confidence additions
+    are reviewer test candidates, not claimed paper features.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E07
+- id: S04
+  label: RQ4 OWL/reasoner compatibility
+  statement: 'AUTHOR GOAL: Semantic-Web implementation compatibility. Adverse case: a readable diagram or parseable
+    RDF is not proof of OWL-DL profile membership, consistency or desired entailments.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E06
+  - E13
+- id: S05
+  label: RQ5 social semiotics
+  statement: 'AUTHOR GOAL: Accommodate established semiotic accounts. Reviewer check asks which agent, shared description
+    and communicative act support a chosen interpretation; generic pairwise edges alone leave those witnesses unspecified.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E03
+  - E04
+- id: S06
+  label: RQ6 open-domain reference
+  statement: 'AUTHOR GOAL: Include individuals/facts from collaborative knowledge resources. Distinguish reported
+    schema mapping from the conclusion planned automatic DBpedia/YAGO connection.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E14
+- id: S07
+  label: Positive individual / collective case
+  statement: 'AUTHOR EXAMPLE: Employee membership connects a named individual to an employee collection and its covering
+    concept. Reviewer check preserves individual-versus-collection-versus-concept levels. Not executed as a CQ.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+- id: S08
+  label: Positive frame / occurrence case
+  statement: 'AUTHOR EXAMPLE: A drinking frame describes possibilities; a particular drinking event instantiates a
+    situation. Reviewer check rejects treating every frame description as an actual occurrence.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+- id: S09
+  label: Metalinguistic reference
+  statement: 'AUTHOR EXAMPLE: A word can itself be the referent of a statement about its letters. Reviewer adverse
+    case: global disjointness of Expression and Reference would rule out this intended use, so do not invent that
+    disjointness.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+- id: S10
+  label: Polysemy and contextual resolution
+  statement: 'AUTHOR ARGUMENT: Context narrows interpretation. Reviewer adverse case: two agents can interpret one
+    expression differently in the same coarse topic; without interpretation-specific context links there is no established
+    uniqueness/resolution guarantee.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E10
+- id: S11
+  label: Singular / plural naming
+  statement: 'AUTHOR EXAMPLES: Proper nouns can denote people or a community. Reviewer adverse case: a collective
+    reference cannot be collapsed into an individual just because both have names; contextually determined membership
+    also needs time/observer scope.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E16
+- id: S12
+  label: OWL open-world missing record
+  statement: 'REVIEWER CASE: A declared IndividualReference without an explicit collection link may acquire an anonymous
+    witness under the retained existential, not fail like a database constraint. No reasoner or validation run is
+    claimed.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A02
+  - E07
+- id: S13
+  label: Source wording and missing definitions
+  statement: 'REVIEWER CASE: Missing comments for AssociativeRule/LSARule/LatentContext/SyntacticRule remain null.
+    The AssociativeContext wording and EnumeratedExpression/SimpleConceptExpression aliases are recorded as discrepancies,
+    not silently repaired.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - R02
+evaluation:
+  Verification:
+    statement: No identified author reasoner execution or complete axiom-validation log is reported. Current structural
+      parsing, import inventory and catalogue reconciliation are prior executed evidence, not a new consistency/profile
+      proof.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E13
+    - E14
+    - R01
+    - R03
+  Validation:
+    statement: The paper motivates categories through ordinary-language examples and semantic theory, without an explicit
+      independent expert sample, elicitation protocol or validated CQ contract. Examples are conceptual arguments
+      rather than a recruited validation study.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E07
+    - E08
+    - E10
+  Evaluation:
+    statement: Reported resource alignments illustrate breadth, but no alignment precision/recall, runtime, multilingual/disambiguation
+      benchmark, controlled baseline or error analysis is provided. General ease-of-alignment claims remain unmeasured.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E11
+    - E12
+    - E14
+  Assessment:
+    statement: This reviewer inspection identifies version/cardinality/identity/context/evidence limitations and source/diagram
+      discrepancies with exact locators. Its scope is source critique; it does not claim independent expert acceptance
+      or all possible semantic consequences.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E07
+    - E09
+    - E12
+    - E13
+    - E14
+    - A01
+    - A02
+    - R02
+  Assurance:
+    statement: Pinned source digests, complete reading/diagram ledgers, derived readers and bounded follow-ups provide
+      traceable process evidence. Private raw sources remain preserved. CI and artifact availability do not establish
+      scientific adequacy or successful future reuse.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E02
+    - R01
+    - R02
+    - R03
+findings:
+- id: F01
+  label: Direct prior overlap
+  statement: LMM already integrates expression/meaning/reference, context and social conceptualization. A future novelty
+    claim must be scenario- and evidence-specific rather than state that prior ontologies only describe static concepts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E07
+  - E08
+  - E10
+  - E11
+- id: F02
+  label: Three core classes versus current distribution
+  statement: Sec.3 three-class core is a conceptual presentation. Current L1 declares8 local classes and L2 declares21;
+    they are not a contradictory count of one frozen population. Added context/construction categories belong to the
+    retained version.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - A01
+  - A02
+  - R01
+  - R02
+- id: F03
+  label: Interpretation names and cardinality differ
+  statement: Fig.2 interprets/isInterpretedAs changes to hasInterpretation/isInterpretationOf in later diagrams. Fig.6
+    expresses minimum 1 differs from current Expression union. These are correspondence questions, not evidence that
+    either complete ontology is inconsistent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E09
+  - E13
+  - A01
+- id: F04
+  label: Meaning / reference overlap needs level discipline
+  statement: The paper permits metalinguistic referents and constructed situations to serve interpretive roles. Do
+    not invent pairwise disjointness or translate concept-instance specialization directly to subclassing of domain
+    individuals.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E08
+  - E12
+  - E14
+- id: F05
+  label: Context story exceeds operational binding
+  statement: Speech act, agent, frame/topic and intention appear in the explanation. Neither those prose links nor
+    generic current hasContext provide a demonstrated interpretation-specific disambiguation or agreement algorithm.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E10
+  - A01
+- id: F06
+  label: Diagram mappings are not equivalence proofs
+  statement: Fig.5 places several resource categories under Concept while the text also distinguishes SKOS topics
+    from concepts. Without the exact alignment axioms and domain/range consequences, semantic equivalence and all-resource
+    compatibility remain unestablished.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E11
+  - E12
+- id: F07
+  label: Evaluation claims exceed supplied measurements
+  statement: No actual extraction, multilingual, reasoner or alignment-quality benchmark supports the broad ease/robustness
+    claims in this paper. Schema-level coverage should not be reported as measured performance or task adequacy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E14
+- id: F08
+  label: Future integration stays future
+  statement: Conclusion marks automatic DBpedia/YAGO connection as planned despite earlier general integration language.
+    Record availability/schema intent separately from completed automatic population.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E14
+- id: F09
+  label: Reference membership wording and OWL differ
+  statement: Sec.3.1 says IndividualReference can have individual members while the example/figure assign collection
+    membership to MultipleReference. Current IndividualReference also requires some collection membership. Preserve
+    the source ambiguity and open-world interpretation rather than silently repair it.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - A02
+- id: F10
+  label: Information content versus realization
+  statement: The paper explicitly separates information objects from concrete realizations. It does not provide a
+    full identity criterion for expression tokens across time, carriers, languages and interpretations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E13
+- id: F11
+  label: Original alignment root not acquired
+  statement: Four actual 2026-10-27 endpoint probes yield 403 responses or HTML after redirect; current L1/L2 availability
+    does not recover the historical full alignment distribution. Bounded repository searches do not prove no repository
+    exists.
+  basis: EXECUTED
+  evidence:
+  - E02
+  - A01
+  - A02
+  execution_ref: evaluation/related-work/lmm/deep-review-discovery.json
+- id: F12
+  label: Definition and annotation gaps remain explicit
+  statement: All 29 current local classes are catalogued. Four have no definition comment. AssociativeContext starts
+    its comment by calling itself a rule. EnumeratedExpression uses AnaphoricExpression in its comment although its
+    asserted superclass is ContextualExpression; SimpleConceptExpression uses ClassReference as a comment denotation
+    target whereas its asserted target is ConceptReference. The earlier catalogue note is clarified here; source aliases
+    are not silently equated.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - A01
+  - A02
+  - R02
+- id: F13
+  label: Current hierarchy differs from illustrative coverage
+  statement: Retained L1 places Situation under Reference/Context; L2 places Concept and Description under Meaning.
+    The paper statement that Situation can also function as Meaning does not itself assert that every current Situation
+    is a Meaning. Current PhysicalArtifact is not globally made Reference by the L1 local declarations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+  - A01
+  - A02
+- id: F14
+  label: Existential restrictions are not complete definitions
+  statement: Current collection, naming and syntactic-function restrictions give some/min/max obligations. They do
+    not alone establish full enumeration, common observer, tokenization, truth or algorithmic feature extraction.
+    Empty MultipleReference and an ExtensionalReference requiring a witness are different cases.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E16
+  - A01
+  - A02
+questions:
+- id: Q01
+  label: Historical distribution and alignment direction
+  statement: '#274: Can an author-controlled historical alignment root be obtained and one WordNet direction tested
+    without guessing namespaces or importing a later schema as the2008 source?'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E12
+  - E14
+- id: Q02
+  label: Contextual interpretation witness
+  statement: '#274: Which existing source axiom or bounded extension/test pattern binds selected expression, meaning,
+    referent, agent, communicative act and context? This is a question, not an accepted Clariceptify proposal.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E10
+  - A01
+  - A02
+- id: Q03
+  label: Current semantic correspondence
+  statement: '#274: What representative consequences follow from the current union/existential/disjointness constraints,
+    and which differ from the diagrams? No repaired upstream source or new equivalence is authorized.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E12
+  - E13
+  - A01
+  - A02
+- id: Q04
+  label: Imported definitions
+  statement: '#88/#271: Complete the124 local DUL/IOLite class definitions and keep owl:Thing builtin handling separate
+    before reporting the 154-IRI LMM asserted closure as an imported glossary.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - R01
+  - R02
+  - R03
+- id: Q05
+  label: Evidence-qualified comparison
+  statement: '#252/#126: Compare LMM with O4OA/OntoKADS using grounded scenarios and the complete source/version matrix;
+    missing primary texts and unresolved alignments cannot be scored as absence.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E03
+  - E04
+  - E08
+  - E11
+  - E14
+synthesis:
+- id: Y01
+  label: Constrain gap claims
+  statement: Retain LMM as direct prior evidence for semiotic distinctions, context and shared conceptual content.
+    Candidate gaps require concrete unmet scenarios after cross-corpus review.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E07
+  - E08
+  - E10
+- id: Y02
+  label: Identity and level test bank
+  statement: Preserve concept-versus-class, collective-versus-member, content-versus-carrier and frame-versus-occurrence
+    cases as future test candidates; their adoption remains DEFER_TO_OWNER_AFTER_SYNTHESIS.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E10
+  - E12
+  - E14
+- id: Y03
+  label: Method and evidence comparison
+  statement: Compare modular pattern reuse and resource alignment against other engineering methods with separate
+    reported, executed, measured and unknown evidence populations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E14
+  - R01
+  - R03
+- id: Y04
+  label: Artifact correspondence costs
+  statement: Future reuse requires exact root recovery/version policy, import/glossary work and representative semantic
+    tests. Current availability is useful but not a zero-cost accepted alignment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - A01
+  - A02
+  - R01
+  - R02
+- id: Y05
+  label: Multilingual/context research candidates
+  statement: Investigate interpretation-specific context and multilingual identity without conflating shared extension,
+    spelling, topic or social agreement. This is a research opportunity, not an automatic model change.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E10
+  - E14
+artifact:
+  issue: 90
+  followup_issue: 274
+  catalogue_issue: 270
+  status: TWO_COMPLETE_LOCAL_CLASS_CENSUSES_MANUAL_ALL_CLASS_REVIEW_HISTORICAL_ALIGNMENT_UNACQUIRED
+  version_relation: 'Earlier scoped #90/#270 retain the exact four-module import inventory and29-local-class glossary.
+    All 29 local class constraints were manually inspected for this dossier, and all figure/prose categories are separately
+    indexed. Retained L1 1.8 and L2 1.2 declare 8 and 21 local classes, plus 11 and 20 external redeclarations; these
+    are distinct from the3-class presentation in sec.3. Their complete asserted closure contains 154 unique named
+    OWL class IRIs, including 124 DUL/IOLite local classes and owl:Thing beyond LMM local 29. Imported definitions
+    remain #88/#271. No reasoner/profile/SHACL run, exact 2008 byte identity or complete alignment release is established.
+    Source header license/right annotations did not establish redistribution permission; raw third-party bytes remain
+    private. See [local glossary](classes.md), complete L1/L2 census JSON files, [diagram ledger](diagrams.yaml) and
+    [discovery execution](../../../../evaluation/related-work/lmm/deep-review-discovery.json). #274 retains eight
+    bounded technical questions.'
+  class_catalog:
+    path: evidence/related-work/deep-reviews/LMM2008/classes.yaml
+    sha256: 1530264546824c0824814850e115e7ae2d6a350c4128dae175e8dd2d96fbac34
+  class_reviews:
+  - id: AC01
+    label: LMM_L1:CoText
+    statement: Equivalent to Context with some Expression member and some unifying ConstructionRule; also Collection
+      and LinguisticObject. These are existence conditions, not a completed contextual-disambiguation algorithm.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText
+  - id: AC02
+    label: LMM_L1:ConstructionRule
+    statement: Only Description is a named superclass; the comment examples do not supply an executable rule language
+      or a sufficient class definition.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule
+  - id: AC03
+    label: LMM_L1:Context
+    statement: Equivalent to isContextOf some Entity and subclass of Entity; property linkage alone does not encode
+      which interpretation or agent chose the context.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context
+  - id: AC04
+    label: LMM_L1:Expression
+    statement: InformationObject equivalent to the union of expresses some Meaning and denotes some Reference. The
+      alternative branches do not require both links; compare Fig.6 minimum-expresses claim.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression
+  - id: AC05
+    label: LMM_L1:KnowledgeCommunity
+    statement: Community and Context; the source comment shared-Paradigm condition is not encoded as a generic common-filler
+      constraint in these local class restrictions.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity
+  - id: AC06
+    label: LMM_L1:Meaning
+    statement: SocialObject equivalent to isExpressedBy some Expression. A range-induced Meaning type can imply an
+      unnamed expression witness; it does not create a known interpretation record.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning
+  - id: AC07
+    label: LMM_L1:Paradigm
+    statement: Description and Context, with minimum 2 hasComponent plus some Meaning component. It does not assert
+      all components are Meanings or identify a unique community.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm
+  - id: AC08
+    label: LMM_L1:Reference
+    statement: Entity equivalent to hasInterpretation some Meaning OR isDenotedBy some Expression; this is a current
+      relationally characterized role, not every domain entity automatically classified by an explicit reference act.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference
+  - id: AC09
+    label: LMM_L2:AnalyticFeature
+    statement: Role used in some ExperimentalSetting; the restriction does not implement feature extraction or a learned
+      classifier.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature
+  - id: AC10
+    label: LMM_L2:AssociativeContext
+    statement: CoText with some unifying AssociativeRule. The comment calls it a rule while its superclass is a context;
+      keep that terminology discrepancy visible.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext
+  - id: AC11
+    label: LMM_L2:AssociativeRule
+    statement: ConstructionRule superclass only. No definition comment was found; do not infer a specific association
+      algorithm from its name.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule
+  - id: AC12
+    label: LMM_L2:ConceptExpression
+    statement: Term and Expression, with some MultipleReference denotation and maximum 1 syntactic function; disjoint
+      with Name and ContextualExpression. Lexical ambiguity/type-token interpretation needs explicit scope.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression
+  - id: AC13
+    label: LMM_L2:ConceptReference
+    statement: TypeCollection and MultipleReference, with some denoting ConceptExpression; this does not alone provide
+      a materialized exhaustive membership list.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference
+  - id: AC14
+    label: LMM_L2:ContextualExpression
+    statement: Term and Expression; denotes some ContextualReference or ExtensionalReference, maximum 1 syntactic
+      function, disjoint with Name/ConceptExpression. This existential does not execute anaphora resolution.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression
+  - id: AC15
+    label: LMM_L2:ContextualReference
+    statement: IndividualReference denoted by some ContextualExpression; inherited existential classification/membership
+      obligations still apply.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference
+  - id: AC16
+    label: LMM_L2:EnumeratedExpression
+    statement: ContextualExpression denoting some ExtensionalReference and having some Name or ContextualExpression
+      part. The comment AnaphoricExpression alias and complete enumeration semantics remain unresolved.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression
+  - id: AC17
+    label: LMM_L2:ExperimentalSetting
+    statement: Plan superclass only; experimental data, execution and result validity are not established by that
+      declaration.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting
+  - id: AC18
+    label: LMM_L2:ExtensionalReference
+    statement: MultipleReference with some IndividualReference member that has at least one setting, and some denoting
+      ContextualExpression. No all-member/common-setting condition or completed enumeration follows.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference
+  - id: AC19
+    label: LMM_L2:Gloss
+    statement: Text with some isInterpretantFor InformationObject relation; the lexical-term identity described in
+      its comment is not fully captured by this existential alone.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss
+  - id: AC20
+    label: LMM_L2:IndividualReference
+    statement: Reference classified by some Concept and member of some MultipleReference. Under OWL open-world semantics
+      an absent explicit collection link is not automatically a validation failure.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference
+  - id: AC21
+    label: LMM_L2:LSARule
+    statement: AssociativeRule superclass only; no source definition comment or executed latent-semantic-analysis
+      algorithm is provided.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule
+  - id: AC22
+    label: LMM_L2:LatentContext
+    statement: AssociativeContext with some unifying LSARule. No source definition comment; the logical inheritance
+      is recorded separately from an invented natural-language definition.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext
+  - id: AC23
+    label: LMM_L2:MultipleReference
+    statement: Collection and Reference; no local hasMember existential is asserted. Distinguish this from ExtensionalReference
+      membership obligations.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference
+  - id: AC24
+    label: LMM_L2:Name
+    statement: Term and Expression denoting some ExtensionalReference or NamedEntity, maximum 1 syntactic function,
+      disjoint from ContextualExpression/ConceptExpression. The existential does not imply a unique referent.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name
+  - id: AC25
+    label: LMM_L2:NamedEntity
+    statement: IndividualReference denoted by some Name; no named-entity recognizer or asserted real-world identity
+      proof follows.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity
+  - id: AC26
+    label: LMM_L2:PolyrhematicConceptExpression
+    statement: ConceptExpression with some MultipleReference denotation; the local restrictions do not encode token
+      count, syntactic head or a multiword recognizer.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression
+  - id: AC27
+    label: LMM_L2:SimpleConceptExpression
+    statement: ConceptExpression with some ConceptReference denotation. Comment ClassReference differs from this current
+      target name; no formal token-count restriction is asserted.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression
+  - id: AC28
+    label: LMM_L2:SyntacticContext
+    statement: CoText with some unifying SyntacticRule; this identifies a rule-linked context, not a parsed sentence
+      or demonstrated grammar coverage.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext
+  - id: AC29
+    label: LMM_L2:SyntacticRule
+    statement: ConstructionRule superclass only. No source definition comment is present; no grammar implementation
+      is inferred.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - A01
+    - A02
+    - R02
+    iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule
+  discovery_execution:
+    path: evaluation/related-work/lmm/deep-review-discovery.json
+    sha256: 1eff341cd25703a9294aa4afe460e44dfcb8eeb1265f1d14459e90cef42f3327
+    checked_on: '2026-10-27'
+    state: EXECUTED_HTTP_PROBES_NO_SEMANTIC_TEST
+  repository_state: Standalone official files retained; no corresponding author-controlled historical development
+    repository confirmed by the bounded recorded searches.
+  foundation:
+    paper_family: DOLCE-Ultralite and DnS
+    paper_edition: null
+    current_import_chain:
+    - LMM_L2 1.2
+    - LMM_L1 1.8
+    - IOLite 1.8
+    - DUL 4.2
+    historical_fidelity: NOT_ESTABLISHED
+    BFO_or_UFO_grounding: NOT_CLAIMED

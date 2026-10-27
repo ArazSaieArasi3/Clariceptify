@@ -1,5 +1,11 @@
 # Changelog
 
+## Complete LMM primary-paper review - 2026-10-27
+
+- Complete #260 across all seven pages, six figures, the footnote and 16 references under the ten-dimension research contract. Record 52 paper-level conceptual/distinction entries, 13 formal-commitment groups, 13 positive/adverse scenarios and 14 critical findings.
+- Transcribe every visible figure box/slot and manually inspect all 29 local classes of the retained L1/L2 modules. Clarify two catalogue annotation notes without changing raw source, class definitions or ontology constraints. Keep historical paper, current local glossary, imported definitions and semantic execution separate.
+- Register medium follow-up #274 for eight source-bound correspondence questions; preserve the original alignment-root access failure and reject HTML as an ontology. Add four adverse diagram/class-coverage tests. Clariceptify scientific assets and final-synthesis acceptance remain unchanged.
+
 ## Research source and class checkpoint - 2026-10-26
 
 - Record all 23 exact paper/version/documentation sources in a repository, file-access, foundation and class-coverage audit (#269), with dated bounded discovery outcomes and explicit unknowns.

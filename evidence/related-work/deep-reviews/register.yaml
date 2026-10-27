@@ -1,5 +1,5 @@
 schema_version: '1.0'
-date: '2026-10-26'
+date: '2026-10-27'
 framework_issue: 258
 baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
 status_authority: This register and each deep dossier govern current deep-review status; earlier scoped reviews
@@ -54,7 +54,7 @@ acquired_papers:
   pdf_pages: 7
   artifact_issues:
   - 90
-  state: QUEUED
+  state: REVIEW_COMPLETE
 - order: 6
   id: DnS2003
   issue: 261
