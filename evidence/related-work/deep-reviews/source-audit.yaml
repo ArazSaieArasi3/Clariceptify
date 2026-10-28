@@ -467,6 +467,25 @@ discovery_attempts:
   checked_urls:
   - https://journals.sagepub.com/doi/10.1177/15705838251337943
   - https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+- id: DUL2016-DISC-20261028
+  checked_on: '2026-10-28'
+  method: Exact paper URLs, canonical DUL bytes, two sample patterns, official LOA link and related repository
+    tree
+  query: '"DOLCE+DnS Ultralite"; DUL ontologydesignpatterns'
+  returned:
+  - FSCHOEN/CO-PLM
+  result_limit: 10
+  checked_urls:
+  - http://www.ontologydesignpatterns.org/ont/DUL/dul.owl
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  - http://www.ontologydesignpatterns.org/cp/owl/description.owl
+  - http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl
+  - https://github.com/appliedontolab/DOLCE
+  outcome: Literal case-variant link returns HTML; canonical root matches retained4.2. Official DOLCE repository
+    tree pinned at cca21e82b38fe6956e9619516dad92116782a4a2 as related work, not exact2016 DUL. Samples preserve
+    explicit version/statement limits.
+  limitation: Two metadata searches and named endpoints only; no global repository absence, historical release
+    parity, class glossary or inferred result.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -975,15 +994,18 @@ records:
 - id: CLR-RW-DUL
   title: Dolce+D&S Ultralite and its main Ontology Design Patterns
   primary_issue: 70
-  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
+  source_state: DEEP_CHAPTER_REVIEW_COMPLETE_ARTIFACT_GLOSSARY_OPEN
   repository:
-    state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
-    urls: []
+    state: STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED
+    urls:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+    - https://github.com/appliedontolab/DOLCE
     evidence:
     - G13
     - W05
+    - DUL2016-DISC-20261028
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
+    paper_correspondence: DUL4_2_RETAINED_NOT_EXACT_2016; RELATED_DOLCE_REPO_NOT_SUBSTITUTED
   artifact_state: PINNED_DUL4_2
   foundation:
     family: DOLCE + DnS
@@ -994,8 +1016,9 @@ records:
       claim'
     artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: DUL is itself a light foundation, not a declared import of DOLCE. Missing 2016 chapter cannot
-      be replaced by current bytes.
+    limitations: '2016 chapter read: five contributing theories and lost temporal/modal detail are explicit.
+      Retained4.2 exact axioms, original2016 identity and full local definitions remain #88; compatibility
+      or reuse is not an imported foundation claim.'
     edition_evidence: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not
       an owl:imports claim'
   class_coverage:

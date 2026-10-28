@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-28",
+  "inspection": "RDF parsing and selected explicit statements only; not full class definitions, inferred population or semantic execution",
+  "root": {
+    "url": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "sha256": "e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66",
+    "ontology_iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "declared_imports": [],
+    "selected_pairs": [
+      {
+        "left": "Description",
+        "right": "Concept",
+        "direct_disjoint_triple_present": false,
+        "non_entailment_proof": "NOT_EXECUTED"
+      },
+      {
+        "left": "InformationObject",
+        "right": "Description",
+        "direct_disjoint_triple_present": false,
+        "non_entailment_proof": "NOT_EXECUTED"
+      },
+      {
+        "left": "InformationObject",
+        "right": "Concept",
+        "direct_disjoint_triple_present": false,
+        "non_entailment_proof": "NOT_EXECUTED"
+      }
+    ],
+    "solver_execution": "NOT_EXECUTED",
+    "whole_class_glossary": "PENDING_88",
+    "paper_2016_axiom_parity": "NOT_ESTABLISHED",
+    "ontology_version_info": [
+      "4.2"
+    ],
+    "all_version_annotation_digest": "7996a4465efc29af1e95d2ac82489c45daa4e7f95fca0403a5adb6791cda436b",
+    "history_paraphrase": "Header history reports removing Description/Concept disjointness in4.1 and InformationObject versus Description/Concept disjointness in4.2. No non-entailment or satisfiability proof follows from direct-triple absence."
+  },
+  "sample_patterns": [
+    {
+      "url": "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
+      "sha256": "be6080e6efb6f9f774a574455dc30bf0d0959ac2ed4a0e29cbd042934cad78ef",
+      "ontology_subjects": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl"
+      ],
+      "version_annotations": [
+        "1.1 added rdfs:isDefinedBy for all named entities",
+        "Created by Aldo Gangemi and Valentina Presutti"
+      ],
+      "asserted_domain_statements": [
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#defines",
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+        ],
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept",
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+        ],
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn",
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+        ],
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isDefinedIn",
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+        ]
+      ],
+      "asserted_disjoint_statements": [
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept",
+          "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+        ]
+      ],
+      "execution": "RDF_PARSE_AND_EXPLICIT_STATEMENT_INSPECTION_ONLY",
+      "inference": "NOT_EXECUTED",
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ]
+    },
+    {
+      "url": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl",
+      "sha256": "011ae1f01ba7712c7426a07e23550a976d6b636b0cf62596b957b9f8db245017",
+      "ontology_subjects": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl"
+      ],
+      "version_annotations": [
+        "1.0\n- Revised and annotated for ODP publishing\n0.2\n- Revised with specialization from timeindexedsituation.owl\n0.1\n- Created by Aldo Gangemi",
+        "1.1 added rdfs:isDefinedBy for all named entities"
+      ],
+      "asserted_domain_statements": [
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesEvent",
+          "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+        ],
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesObject",
+          "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+        ],
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#isEventIncludedIn",
+          "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+        ],
+        [
+          "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#isObjectIncludedIn",
+          "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+        ]
+      ],
+      "asserted_disjoint_statements": [],
+      "execution": "RDF_PARSE_AND_EXPLICIT_STATEMENT_INSPECTION_ONLY",
+      "inference": "NOT_EXECUTED",
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"
+      ]
+    }
+  ],
+  "rdflib_version": "7.6.0",
+  "scope": "Existing DUL4.2 root plus two live sample pattern files; metadata and selected explicit statements only. Not historical axiom equivalence, all-class manual definitions, import closure or reasoner execution."
+}

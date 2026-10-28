@@ -300,6 +300,56 @@ def validate_representation_content(dossier, ledger, inspection):
         raise ValueError('Representation retrieved text promoted to retained bytes, class census or proof')
 
 
+def validate_dul_figure_ledger(dossier, ledger):
+    """Keep chapter scope, literal diagrams and pattern provenance independent."""
+    if (ledger['work_id'] != 'CLR-RW-DUL' or ledger['source_sha256'] != dossier['source']['sha256'] or
+            ledger['selected_pdf_pages'] != list(range(98, 121)) or
+            [f['number'] for f in ledger['figures']] != [f'5.{i}' for i in range(1, 7)] or
+            [f['pdf_page'] for f in ledger['figures']] != [102, 104, 112, 113, 115, 116] or
+            any(f['inspection'] != 'VISUALLY_REVIEWED' for f in ledger['figures'])):
+        raise ValueError('DUL chapter figure/source population changed')
+    matrix, core, profile, sample, composition, encapsulated = ledger['figures']
+    if (matrix['categories'] != ['Endurant', 'Perdurant', 'Quality', 'Abstract (Region)'] or
+            matrix['rows'][0]['pairs'] != [['Perdurant', 'Perdurant']] or
+            matrix['rows'][1]['pairs'] != [['Endurant', 'Endurant'], ['Abstract (Region)', 'Abstract (Region)']] or
+            sum(len(r['pairs']) for r in matrix['rows']) != 10):
+        raise ValueError('DUL literal matrix/prose discrepancy silently repaired')
+    if (len(core['nodes']) != 8 or len(set(core['nodes'])) != 8 or len(core['edges']) != 12 or
+            {e['relation'] for e in core['edges']} !=
+            {'classifies', 'defines', 'isSettingFor', 'rdfs:subClassOf', 'satisfies'}):
+        raise ValueError('DUL schematic classification/subclass links changed')
+    names = [r['name'] for r in composition['components']]
+    if (len(names) != len(set(names)) or len(names) != 16 or
+            sample['specialization'] != ['Sample ODP B', 'Sample ODP A'] or
+            encapsulated['inner_components'] != ['Description', 'Situation', 'Entity Classification']):
+        raise ValueError('DUL component interface population changed')
+    patterns = ledger['patterns']
+    expected = {f'5.3.{i}' for i in range(1, 14)} | {
+        '5.3.3.1', '5.3.4.1', '5.3.4.2', '5.3.4.3', '5.3.7.1', '5.3.11.1'}
+    if (len(patterns) != 19 or {p['id'] for p in patterns} != expected or
+            ledger['pattern_population'] != dossier['paper_pattern_population'] or
+            ledger['pattern_population'] != {'subsections': 19, 'main_numbered': 13, 'specializations': 6,
+                                             'extracted': 18, 'illustrative_not_extracted': 1, 'sample_links': 20} or
+            sum(len(p['sample_urls']) for p in patterns) != 20):
+        raise ValueError('DUL pattern/subpattern source population changed')
+    tip = next(p for p in patterns if p['id'] == '5.3.13')
+    if (tip['origin'] != 'ILLUSTRATIVE_NOT_EXTRACTED_FROM_DUL' or
+            any(p['origin'] != 'EXTRACTED_FROM_DUL' for p in patterns if p['id'] != '5.3.13') or
+            next(p for p in patterns if p['id'] == '5.3.2')['sample_urls']):
+        raise ValueError('DUL external illustration or missing sample link concealed')
+    component = next(p for p in patterns if p['id'] == '5.3.7.1')
+    if component.get('logical_boundary') != {'transitivity': 'NOT_LICENSED', 'intransitivity': 'NOT_ASSERTED'}:
+        raise ValueError('DUL non-transitive component promoted to intransitivity')
+    if (ledger['machine_class_count'] is not None or ledger['numbered_formula_count'] != 0 or
+            ledger['owl_import_graph_claim'] != 'NOT_ESTABLISHED' or
+            dossier['paper_formalization']['numbered_formula_count'] != 0 or
+            dossier['paper_formalization']['machine_axiom_count'] is not None or
+            dossier['artifact']['historical_axiom_fidelity'] != 'NOT_ESTABLISHED' or
+            dossier['artifact']['full_class_glossary'] != 'PENDING_88' or
+            any(v is not None for v in dossier['artifact']['machine_class_populations'].values())):
+        raise ValueError('DUL prose/diagram/current source promoted to historical machine acceptance')
+
+
 def validate_diagram_inventory(dossier, inventory):
     binding = dossier['diagram_inventory']
     if inventory['source_sha256'] != dossier['source']['sha256'] or binding['source_sha256'] != inventory['source_sha256']:
@@ -462,6 +512,8 @@ def check(root=ROOT):
                 validate_cognitive_figure_ledger(d, yaml.safe_load(raw))
             elif d['work_id'] == 'EmotionsOnto2014':
                 validate_emotions_figure_ledger(d, yaml.safe_load(raw))
+            elif d['work_id'] == 'CLR-RW-DUL':
+                validate_dul_figure_ledger(d, yaml.safe_load(raw))
             else:
                 raise ValueError('Unknown paper figure-ledger contract')
         if 'diagram_inventory' in d:
@@ -480,6 +532,11 @@ def check(root=ROOT):
             binding = d['artifact']['discovery_execution']
             if hashlib.sha256((root / binding['path']).read_bytes()).hexdigest() != binding['sha256']:
                 raise ValueError('Changed discovery execution evidence')
+        if 'selected_source_correspondence' in d['artifact']:
+            binding = d['artifact']['selected_source_correspondence']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed selected-source correspondence evidence')
         if 'dlp_intake' in d['artifact']:
             binding = d['artifact']['dlp_intake']
             raw = (root / binding['path']).read_bytes()
