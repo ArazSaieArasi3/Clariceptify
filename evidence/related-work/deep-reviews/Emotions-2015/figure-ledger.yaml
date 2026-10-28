@@ -1,0 +1,237 @@
+schema_version: '1.0'
+work_id: Emotions-2015
+source_sha256: d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c
+inspection: VISUALLY_REVIEWED
+machine_class_count: null
+figures:
+- number: 1
+  pdf_page: 4
+  kind: CORE_CONCEPTUAL_MODEL
+  ovals:
+  - Situation
+  - Stimuli
+  - Sensor
+  - Sensation
+  - Perception
+  - Description
+  - EmergentEmotion
+  - Memory
+  - EmotionExpressionSystem
+  boundary_label: Interface
+  property_labels:
+  - hasInput
+  - hasOutput
+  - hasPart
+  - describes
+  - triggers
+  - stores
+  - uses
+  scope: Not a numbered-formula or causal/fusion algorithm.
+- number: 2
+  pdf_page: 5
+  kind: PAPER_TAXONOMY
+  nodes:
+  - label: dul:Event
+    parents: []
+  - label: dul:Process
+    parents:
+    - dul:Event
+  - label: dul:Action
+    parents:
+    - dul:Event
+  - label: dul:SocialObject
+    parents: []
+  - label: dul:Description
+    parents:
+    - dul:SocialObject
+  - label: dul:Situation
+    parents:
+    - dul:SocialObject
+    - SocialContext
+    - EnvironmentalContext
+  - label: dul:PhysicalObject
+    parents: []
+  - label: dul:PhysicalArtifact
+    parents:
+    - dul:PhysicalObject
+  - label: dul:PhysicalAgent
+    parents:
+    - dul:PhysicalObject
+  - label: dul:PhysicalBody
+    parents:
+    - dul:PhysicalObject
+  - label: dul:BiologicalObject
+    parents:
+    - dul:PhysicalBody
+  - label: ofntb:Frame
+    parents:
+    - dul:Description
+  - label: Perception
+    parents:
+    - dul:Process
+  - label: EmergentEmotion
+    parents:
+    - dul:Event
+  - label: Memory
+    parents:
+    - dul:Process
+  - label: Sensation
+    parents:
+    - dul:Process
+  - label: Stimulus
+    parents:
+    - dul:Event
+  - label: DiscreteStimulus
+    parents:
+    - Stimulus
+  - label: ContinuousStimulus
+    parents:
+    - Stimulus
+  - label: Behavioural
+    parents:
+    - dul:Action
+    - EmotionExpressionSystem
+  - label: Gestural
+    parents:
+    - Behavioural
+  - label: Speech
+    parents:
+    - Behavioural
+  - label: Facial
+    parents:
+    - Behavioural
+  - label: Psychophysiological
+    parents:
+    - dul:Action
+    - EmotionExpressionSystem
+  - label: EmotionExpressionSystem
+    parents:
+    - Interface
+  - label: Verbal
+    parents:
+    - dul:Description
+    - EmotionExpressionSystem
+  - label: SocialContext
+    parents: []
+  - label: EnvironmentalContext
+    parents: []
+  - label: PersonalContext
+    parents: []
+  - label: Interface
+    parents:
+    - PersonalContext
+  - label: Sensor
+    parents:
+    - Interface
+    - dul:PhysicalObject
+  - label: ArtificialSensor
+    parents:
+    - Sensor
+    - dul:PhysicalArtifact
+  - label: BiologicalSensor
+    parents:
+    - Sensor
+    - dul:PhysicalAgent
+    - dul:BiologicalObject
+  - label: Sense
+    parents:
+    - BiologicalSensor
+  - label: Hearing
+    parents:
+    - Sense
+  - label: Touch
+    parents:
+    - Sense
+  - label: Taste
+    parents:
+    - Sense
+  - label: Sight
+    parents:
+    - Sense
+  - label: Smell
+    parents:
+    - Sense
+  node_count: 39
+  nonprefixed_count: 27
+  dul_count: 11
+  ofntb_count: 1
+  direction_policy: LITERAL_DRAWING_NOT_SILENTLY_REPAIRED
+  printed_page: 614
+- number: 3
+  pdf_page: 5
+  kind: EMOCS_MANUAL_INPUT_FORM
+  visible_emotion_sliders:
+  - Satisfaction
+  - Surprise
+  - Fear
+  autocomplete: FrameNet candidates for typed sc, including score; frame elements generate a structured form.
+- number: 4
+  pdf_page: 5
+  kind: FRAME_DESCRIPTION_EXAMPLE
+  sentence: Torres scored a winning goal in the last minute
+  frame: score
+  roles:
+    Recipient: Torres
+    Result: winning
+    Theme: goal
+    Time: in the last minute
+- number: 5
+  pdf_page: 6
+  kind: DESCRIPTION_AND_REACTIVE_MEDIA_EXAMPLE
+  frame_labels:
+  - Feeling
+  - Cause_to_make_noise
+  figure_emotion_label: EmotionalState
+  literal_output_property: hasOuput
+  instance_labels:
+  - situation002
+  - press button
+  - sad button
+  - emotionalstate001
+  - User023
+  - feel.v
+  - sadness
+  - play001
+  - play.v
+  - happy song
+  roles:
+  - experiencer
+  - emotional_state
+  - sound_maker
+  - patient
+  - cause
+  scope: TUI is the caption acronym, not independently expanded here. Figure labels/spelling are not silently
+    equated to EmergentEmotion/hasOutput.
+- number: 6
+  pdf_page: 7
+  kind: HEADSET_PHOTOGRAPHS
+  study_participant_count: null
+- number: 7
+  pdf_page: 7
+  kind: SDK_SCREENSHOT
+  sdk_version_visible: 2.0.0.20
+  trace_labels:
+  - Engagement/Boredom
+  - Frustration
+  - Meditation
+  - Instantaneous Excitement
+  - Long Term Excitement
+  metric_family_count_in_prose: 4
+  study_participant_count: null
+numbered_footnotes:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+bibliography_entries: 38
+numbered_formula_count: 0
+numbered_table_count: 0
+appendix_count: 0
+scope: Complete7-figure inventory;39 taxonomy labels are paper categories, not the28 named classes of a selected
+  later candidate or33 of the cognition extension.

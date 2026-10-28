@@ -1,0 +1,2403 @@
+schema_version: '1.0'
+work_id: Emotions-2015
+issue: 77
+identity:
+  title: Emotions ontology for collaborative modelling and learning of emotional responses
+  authors:
+  - Rosa Gil
+  - Jordi Virgili-Gomá
+  - Roberto García
+  - Cindy Mason
+  doi: 10.1016/j.chb.2014.11.100
+  version: Computers in Human Behavior51PartB610-617,2015; online6March2015, issueOctober2015
+  boundary: Exact8-page published owner PDF, separate from2014 predecessor and later cognition implementation.
+    Public institutional PDF has different bytes and is not substituted. ArticleCCBY4.0 does not establish
+    an OWL source license.
+source:
+  filename: Emotions-2015-owner.pdf
+  sha256: d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c
+  pdf_pages: 8
+  printed_pages: 610-617
+  access: OWNER_SUPPLIED_FULL_PUBLISHED_TEXT
+  redistributed: false
+status: REVIEW_COMPLETE
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  units:
+  - unit: Front matter/title/abstract
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Section1Introduction
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Section2Relatedwork
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section2.1Emotionontologies
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section3Contribution
+    status: REVIEWED
+    evidence:
+    - E04
+    - E05
+  - unit: Section4Evaluation
+    status: REVIEWED
+    evidence:
+    - E08
+    - E09
+  - unit: Section4.1BCI
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Section5Conclusions/futurework
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Acknowledgements
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: References38entries
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: All10numberednotes
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: No numbered formulas/tables/appendices
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Figure1
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Figure2
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Figure3
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Figure4
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Figure5
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Figure6
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Figure7
+    status: REVIEWED
+    evidence:
+    - E11
+  catalog_boundary: Complete paper ontology-bearing concepts,39taxonomy labels,all7figures/10notes/38references
+    and formal/application/evaluation distinctions.28candidate local classes are a separate current-source
+    inventory, with1comment/27missing and unknown imported/historical populations.
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: PDF1 / printed610, title, authors, journal block, DOI, online date and license
+  summary: 'Four authors: Rosa Gil, Jordi Virgili-Goma, Roberto Garcia, Cindy Mason; CHB51:610-617,2015, online6March2015;
+    article CC BY4.0, not a license grant for every linked OWL file.'
+- id: E02
+  pages:
+  - 1
+  - 2
+  locator: PDF1-2 / printed610-611, section1 and note1
+  summary: Flexible/contextual emotion representation, emotional affordance and cultural/individual variation;14
+    broad affective labels, focus on full-blown emergent emotion and detection/expression interfaces rather
+    than human internal processing.
+- id: E03
+  pages:
+  - 2
+  - 3
+  locator: PDF2-3 / printed611-612, section2 opening and2.1
+  summary: Categorical/dimensional/appraisal theories, subjective/behavioral/physiological channels, socialized
+    expression masking, context and modality; related lexical and multimodal ontologies are background rather
+    than imported classes.
+- id: E04
+  pages:
+  - 3
+  locator: PDF3 / printed612, section3 opening and note2
+  summary: Named Garcia2006 classical methodology; conceptual-model ovals become OWL classes, edges properties
+    and range-like restrictions; prose triggers example has no explicit DL quantifier.
+- id: E05
+  pages:
+  - 3
+  - 4
+  locator: PDF3-4 / printed612-613, section3 foundation/model details and note3
+  summary: DOLCE Description/Situation, generic Event/Process/Action, physical/social categories and contextual
+    types; FrameNet Frame specializes Description. Arriving ThemeJohn/Goalroom illustrates frame roles, not
+    adopted planning goals.
+- id: E06
+  pages:
+  - 4
+  locator: PDF4 / printed613, Figure1
+  summary: Nine ovals plus Interface boundary; core sensing/perception/memory/description/emotion/expression
+    loop, seven property labels. Stimuli plural is a drawing label; temporal/fusion/learning constraints are
+    not printed.
+- id: E07
+  pages:
+  - 5
+  locator: PDF5 / printed614, Figure2
+  summary: All39 taxonomy labels and literal arrowheads inspected:27unprefixed,11DUL,1ofntb. DULSituation points
+    to SocialContext/EnvironmentalContext; Interface points to PersonalContext. No silent hierarchy repair.
+- id: E08
+  pages:
+  - 4
+  - 5
+  locator: PDF4-5 / printed613-614, section4 opening, Figures3-4 and notes4-5
+  summary: EmoCS guided FrameNet autocomplete, structured manual emotional sliders, multimedia situation descriptions
+    and RDF storage; Torres example binds Recipient/Result/Theme/Time. Browser/site statements are historical.
+- id: E09
+  pages:
+  - 5
+  - 6
+  locator: PDF5-6 / printed614-615, section4 continuation and Figure5
+  summary: Ontology models associations and explicitly does not recognize emotion. Happy media in response
+    to sadness is illustrative; bootstrapping is acknowledged. Figure5 uses EmotionalState and literal hasOuput
+    spelling, not an accepted formal alias.
+- id: E10
+  pages:
+  - 6
+  locator: PDF6 / printed615, section4.1 and notes6-10
+  summary: Historical EEG/BCI device and suites; annotations manually produced from SDK screen. Four metric
+    families do not match an established categorization; fear/surprise ambiguity. Six-Ekman recognition is
+    work in progress.
+- id: E11
+  pages:
+  - 7
+  locator: PDF7 / printed616, Figures6-7
+  summary: Headset photographs and SDK2.0.0.20 screenshot. Five traces include instantaneous/long-term excitement,
+    not five independent categorical emotions or a participant/sample-size report.
+- id: E12
+  pages:
+  - 6
+  - 7
+  - 8
+  locator: PDF6-8 / printed615-617, section5 and acknowledgements
+  summary: Scope/standards/application claims; extending affective states, automatic EEG annotations, training
+    data/model processing, skin-conductance complement and broader social/user models remain future or ongoing,
+    without reported accuracy or causal efficacy.
+- id: E13
+  pages:
+  - 8
+  locator: PDF8 / printed617, references38 entries
+  summary: All38 bibliography entries inspected; methodological thesis and background references do not constitute
+    a completed method, formal import edition or independently replicated emotion benchmark.
+- id: E14
+  pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  locator: Complete page/visual census, all seven figures and ten notes
+  summary: All8 pages and renders inspected, with individual Figures2/5/6/7 zooms. Seven figures, ten footnotes,38references;
+    no numbered table, appendix or numbered formula. No2014 PrEmo participant/results table is present.
+- id: E15
+  source_kind: ARTIFACT
+  pages: []
+  url: https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
+  sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  locator: Author-linked2015/05 candidate, complete candidate-census.json and selected-external-constraints.yaml
+  summary: Selected root has28 local classes,6 object properties,3 datatype properties,152 asserted triples,
+    three declared unresolved imports; one class comment and27missing. Every local constraint inspected. DULDescription/Situation
+    outgoing restrictions are separate from named declarations.
+- id: E16
+  source_kind: SPECIFICATION
+  pages: []
+  url: https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
+  locator: Author guide links2010/2013/May2015 predecessors and December2015/current cognition extension; checked2026-10-28
+  summary: Author guide distinguishes predecessor and later cognition extension. Later two URLs have identical
+    bytes0e19f81a...; selected May candidate is not automatically the exact2015 article release.
+- id: E17
+  source_kind: SPECIFICATION
+  pages: []
+  url: https://www.sciencedirect.com/science/article/pii/S0747563215001417
+  locator: Publisher and author-publication metadata, checked2026-10-28
+  summary: Four authors, journal51PartB610-617, issueOctober2015 and DOI confirmed. Owner eight-page journal
+    PDF stays reading authority; public institutional PDF has different bytes.
+dimensions:
+  D1_identity_coverage:
+    label: Identity
+    statement: Exact8-page four-author2015journal610-617, DOI10.1016/j.chb.2014.11.100; all units/figures/notes/references
+      inspected. Independent from2014 and later cognition source.
+    evidence:
+    - E01
+    - E14
+    - E17
+    basis: REVIEWER_INTERPRETATION
+  D2_problem_contribution:
+    label: Problem/contribution
+    statement: Context-sensitive flexible representation and structured collaborative emotion input; ontology
+      models rather than detects emotion. BCI recognition is ongoing/future.
+    evidence:
+    - E02
+    - E08
+    - E09
+    - E10
+    - E12
+    basis: REVIEWER_INTERPRETATION
+  D3_method:
+    label: Method
+    statement: Named García2006 classical methodology, conceptual model to OWLclasses/properties/restrictions,
+      DOLCE/FrameNet reuse and EmoCS demonstration; the thesis is cited, not wholly executed/reviewed here.
+    evidence:
+    - E04
+    - E05
+    - E08
+    basis: REVIEWER_INTERPRETATION
+  D4_requirements:
+    label: Requirements
+    statement: Flexibility across people/cultures/theories,context,multimodal input and reuse motivate the
+      model. No numbered CQ suite or original controlled validation protocol is supplied.
+    evidence:
+    - E02
+    - E03
+    - E08
+    - E12
+    basis: REVIEWER_INTERPRETATION
+  D5_concepts:
+    label: Concepts
+    statement: All39 taxonomy labels,14background affect labels and source-bearing process/context/role/measurement
+      distinctions cataloged. Paper terms and28candidate root classes remain separate.
+    evidence:
+    - E02
+    - E05
+    - E07
+    - E10
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  D6_relations_formalization:
+    label: Relations/formalization
+    statement: All figure relation labels/role bindings and prose restrictions indexed. No numbered axioms.
+      Selected root only/exactly restrictions and referenced imported-name constraints are separate source
+      evidence, not a silently completed paper theory.
+    evidence:
+    - E04
+    - E06
+    - E07
+    - E08
+    - E09
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  D7_grounding:
+    label: Grounding
+    statement: DOLCE family and FrameNet contextualization are explicit; exact edition unknown. Agent/role,expression/description/situation
+      and observed/input/state levels require care; broad internal cognition is outside current paper scope.
+    evidence:
+    - E02
+    - E05
+    - E08
+    - E09
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  D8_artifact_correspondence:
+    label: Artifact
+    statement: Selected author-linked Maycandidate28classes/6object/3data properties, one comment27missing,
+      complete local constraints and raw annotation reconciliation. Three legacy imports unacquired; original-release
+      equivalence and later-cognition parity not assumed.
+    evidence:
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  D9_evaluation:
+    label: Evaluation
+    statement: EmoCS screenshots and SDKmanual annotation support author-reported feasibility; no quantified
+      participant/recognition/causal result. Fourmetric families and future six targets are distinct; no2014PrEmo
+      results imported.
+    evidence:
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E14
+    basis: REVIEWER_INTERPRETATION
+  D10_critical_synthesis:
+    label: Critical synthesis
+    statement: Contextual role-based input is a useful comparison candidate; formal range/witness,definition/import,measurement/conflict
+      and version limits remain239/253/126. Next84limited summary, no model/manuscript/release adoption.
+    evidence:
+    - E05
+    - E09
+    - E10
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+catalog:
+- id: C001
+  label: dul:Event
+  statement: 'The author describes an Event as anything occurring in the model. Figure2 category with literal
+    parent arrows: no parent arrow shown. This is a paper taxonomy label, not proof of an original machine
+    declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C002
+  label: dul:Process
+  statement: 'The author characterizes Process as an event considered in its evolution. Figure2 category with
+    literal parent arrows: dul:Event. This is a paper taxonomy label, not proof of an original machine declaration,
+    sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C003
+  label: dul:Action
+  statement: 'The author characterizes Action as an event with at least one participating agent. Figure2 category
+    with literal parent arrows: dul:Event. This is a paper taxonomy label, not proof of an original machine
+    declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C004
+  label: dul:SocialObject
+  statement: 'Figure2 category with literal parent arrows: no parent arrow shown. This is a paper taxonomy
+    label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C005
+  label: dul:Description
+  statement: 'The author uses Description for a representation of a situation. Figure2 category with literal
+    parent arrows: dul:SocialObject. This is a paper taxonomy label, not proof of an original machine declaration,
+    sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C006
+  label: dul:Situation
+  statement: 'Situations provide the represented contextual configurations; the prose says social/environmental
+    contexts are modeled with Situation, while the drawing arrows have the literal directions recorded here.
+    Figure2 category with literal parent arrows: dul:SocialObject, SocialContext, EnvironmentalContext. This
+    is a paper taxonomy label, not proof of an original machine declaration, sufficient definition or accepted
+    mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C007
+  label: dul:PhysicalObject
+  statement: 'Figure2 category with literal parent arrows: no parent arrow shown. This is a paper taxonomy
+    label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C008
+  label: dul:PhysicalArtifact
+  statement: 'Figure2 category with literal parent arrows: dul:PhysicalObject. This is a paper taxonomy label,
+    not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C009
+  label: dul:PhysicalAgent
+  statement: 'Figure2 category with literal parent arrows: dul:PhysicalObject. This is a paper taxonomy label,
+    not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C010
+  label: dul:PhysicalBody
+  statement: 'Figure2 category with literal parent arrows: dul:PhysicalObject. This is a paper taxonomy label,
+    not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C011
+  label: dul:BiologicalObject
+  statement: 'Figure2 category with literal parent arrows: dul:PhysicalBody. This is a paper taxonomy label,
+    not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C012
+  label: ofntb:Frame
+  statement: 'A frame represents a typical situation with participant/property roles and specializes Description
+    in the drawing. Figure2 category with literal parent arrows: dul:Description. This is a paper taxonomy
+    label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C013
+  label: Perception
+  statement: 'The conceptual loop takes Sensation as input, uses Memory and produces Description; it is not
+    a completed internal human-cognition theory. Figure2 category with literal parent arrows: dul:Process.
+    This is a paper taxonomy label, not proof of an original machine declaration, sufficient definition or
+    accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C014
+  label: EmergentEmotion
+  statement: 'Selected scope is the short-lived full-blown whole-system response; the model connects it to
+    a contextual Description and expression interface. Figure2 category with literal parent arrows: dul:Event.
+    This is a paper taxonomy label, not proof of an original machine declaration, sufficient definition or
+    accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C015
+  label: Memory
+  statement: 'The conceptual loop stores descriptions/emotional associations and is used by Perception; a storage/update
+    algorithm is not supplied. Figure2 category with literal parent arrows: dul:Process. This is a paper taxonomy
+    label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C016
+  label: Sensation
+  statement: 'Sensor output that feeds Perception in the conceptual loop; not the stimulus or interpreted emotion
+    itself. Figure2 category with literal parent arrows: dul:Process. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C017
+  label: Stimulus
+  statement: 'An event-like part of a situation sensed at the interface and also produced by expression systems
+    in the conceptual loop. Figure2 category with literal parent arrows: dul:Event. This is a paper taxonomy
+    label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C018
+  label: DiscreteStimulus
+  statement: 'Figure2 category with literal parent arrows: Stimulus. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C019
+  label: ContinuousStimulus
+  statement: 'Figure2 category with literal parent arrows: Stimulus. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C020
+  label: Behavioural
+  statement: 'Figure2 category with literal parent arrows: dul:Action, EmotionExpressionSystem. This is a paper
+    taxonomy label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C021
+  label: Gestural
+  statement: 'Figure2 category with literal parent arrows: Behavioural. This is a paper taxonomy label, not
+    proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C022
+  label: Speech
+  statement: 'Figure2 category with literal parent arrows: Behavioural. This is a paper taxonomy label, not
+    proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C023
+  label: Facial
+  statement: 'Figure2 category with literal parent arrows: Behavioural. This is a paper taxonomy label, not
+    proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C024
+  label: Psychophysiological
+  statement: 'Figure2 category with literal parent arrows: dul:Action, EmotionExpressionSystem. This is a paper
+    taxonomy label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C025
+  label: EmotionExpressionSystem
+  statement: 'An interface accepting emergent-emotion input and producing stimulus output, specialized into
+    the displayed expression channels. Figure2 category with literal parent arrows: Interface. This is a paper
+    taxonomy label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C026
+  label: Verbal
+  statement: 'Prose treats verbal expression as social/descriptive representation; the drawing specializes
+    both Description and EmotionExpressionSystem. Figure2 category with literal parent arrows: dul:Description,
+    EmotionExpressionSystem. This is a paper taxonomy label, not proof of an original machine declaration,
+    sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C027
+  label: SocialContext
+  statement: 'Prose associates social context with Situation; the literal drawing/selected root makes DULSituation
+    a subtype of SocialContext. Figure2 category with literal parent arrows: no parent arrow shown. This is
+    a paper taxonomy label, not proof of an original machine declaration, sufficient definition or accepted
+    mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C028
+  label: EnvironmentalContext
+  statement: 'Prose associates environmental context with Situation; the literal drawing/selected root makes
+    DULSituation a subtype of EnvironmentalContext. Figure2 category with literal parent arrows: no parent
+    arrow shown. This is a paper taxonomy label, not proof of an original machine declaration, sufficient definition
+    or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C029
+  label: PersonalContext
+  statement: 'Prose associates personal context with interfaces that include sensing and expression; the drawing
+    direction is retained rather than repaired. Figure2 category with literal parent arrows: no parent arrow
+    shown. This is a paper taxonomy label, not proof of an original machine declaration, sufficient definition
+    or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C030
+  label: Interface
+  statement: 'Common interface category for Sensor and EmotionExpressionSystem; the literal drawing classifies
+    Interface under PersonalContext. Figure2 category with literal parent arrows: PersonalContext. This is
+    a paper taxonomy label, not proof of an original machine declaration, sufficient definition or accepted
+    mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C031
+  label: Sensor
+  statement: 'A physical interface accepting stimuli and providing sensations in the conceptual loop; source-only
+    restrictions do not require an actual reading. Figure2 category with literal parent arrows: Interface,
+    dul:PhysicalObject. This is a paper taxonomy label, not proof of an original machine declaration, sufficient
+    definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  - E02
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C032
+  label: ArtificialSensor
+  statement: 'Figure2 category with literal parent arrows: Sensor, dul:PhysicalArtifact. This is a paper taxonomy
+    label, not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C033
+  label: BiologicalSensor
+  statement: 'Figure2 category with literal parent arrows: Sensor, dul:PhysicalAgent, dul:BiologicalObject.
+    This is a paper taxonomy label, not proof of an original machine declaration, sufficient definition or
+    accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C034
+  label: Sense
+  statement: 'Figure2 category with literal parent arrows: BiologicalSensor. This is a paper taxonomy label,
+    not proof of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C035
+  label: Hearing
+  statement: 'Figure2 category with literal parent arrows: Sense. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C036
+  label: Touch
+  statement: 'Figure2 category with literal parent arrows: Sense. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C037
+  label: Taste
+  statement: 'Figure2 category with literal parent arrows: Sense. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C038
+  label: Sight
+  statement: 'Figure2 category with literal parent arrows: Sense. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C039
+  label: Smell
+  statement: 'Figure2 category with literal parent arrows: Sense. This is a paper taxonomy label, not proof
+    of an original machine declaration, sufficient definition or accepted mapping.'
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_CLASS
+- id: C040
+  label: Affective-state scope
+  statement: Fourteen broad labels are background scope; the implemented focus is full-blown emergent emotion,
+    not a comprehensive mind ontology.
+  evidence:
+  - E02
+  basis: REVIEWER_INTERPRETATION
+- id: C041
+  label: Emergent emotion(full-blown)
+  statement: Short-lived whole-system response to a person or situation, including feelings, impulses and bodily
+    change; this is the selected source scope, not every affective state.
+  evidence:
+  - E02
+  basis: REVIEWER_INTERPRETATION
+- id: C042
+  label: Emotion theory agnosticism
+  statement: Design intention to accommodate alternative theories without binding developers to one; compatibility
+    of every theory is not experimentally established.
+  evidence:
+  - E02
+  - E03
+  - E04
+  basis: REVIEWER_INTERPRETATION
+- id: C043
+  label: Categorical theory
+  statement: Background theoretical family exemplified by Ekman; six-category EEG detection is future work
+    rather than the present measured output.
+  evidence:
+  - E03
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C044
+  label: Dimensional theory
+  statement: Background Lang family mentioned; no complete implemented dimensional scheme, shared scale or
+    calibrated coordinate mapping is printed.
+  evidence:
+  - E03
+  basis: REVIEWER_INTERPRETATION
+- id: C045
+  label: Appraisal theory
+  statement: Background Scherer family mentioned; no complete appraisal calculus or automatic event-appraisal-to-emotion
+    procedure is supplied.
+  evidence:
+  - E03
+  basis: REVIEWER_INTERPRETATION
+- id: C046
+  label: Subjective/verbal information
+  statement: User descriptions of perceived feelings; self-report is an observation channel, not infallible
+    access to an internal state.
+  evidence:
+  - E03
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C047
+  label: Behavioral cues
+  statement: Facial/postural/paralinguistic expression channels; availability varies by context and does not
+    uniquely determine the underlying emotion.
+  evidence:
+  - E03
+  basis: REVIEWER_INTERPRETATION
+- id: C048
+  label: Physiological cues
+  statement: Heart rate, skin response and EEG are possible correlates; representation is distinct from validated
+    emotional recognition.
+  evidence:
+  - E03
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C049
+  label: Emotional affordance
+  statement: Perceived characteristics of a situation affecting emotion; a motivating application notion, not
+    an operational causal-effect metric in the paper.
+  evidence:
+  - E02
+  basis: REVIEWER_INTERPRETATION
+- id: C050
+  label: Socialized emotional response
+  statement: Cultural/social expression may mask a person's affective state, limiting naïve interpretation
+    of visible or self-reported cues.
+  evidence:
+  - E03
+  basis: REVIEWER_INTERPRETATION
+- id: C051
+  label: Personalization
+  statement: Individual/cultural variation motivates flexible context-aware modeling; no complete learned personalization
+    mechanism or calibration evaluation is supplied.
+  evidence:
+  - E02
+  - E03
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C052
+  label: Multimodal context
+  statement: Relevant channels, environment, social setting and person matter; ontology support does not by
+    itself implement sensor fusion or conflict resolution.
+  evidence:
+  - E03
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: C053
+  label: FrameNet frame
+  statement: Schematic situation with participant/property roles, modeled under Description in Figure2; distinct
+    from lexical unit, concrete event and role filler.
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+- id: C054
+  label: Lexical unit
+  statement: Word sense such as enter.v selecting Arriving; label-to-frame selection does not prove a uniquely
+    identified real-world event.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C055
+  label: Frame element
+  statement: Participant/property role such as Theme or Goal; not automatically an entity, adopted goal or
+    full n-ary relation implementation.
+  evidence:
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: C056
+  label: Arriving
+  statement: Example frame selected by enter.v, with John as Theme and room as destination Goal; an illustration,
+    not a tested competency suite.
+  evidence:
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: C057
+  label: Feeling
+  statement: Example frame with experiencer and emotional_state roles; the user, frame instance, emotion label
+    and actual internal state are separate levels.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C058
+  label: Cause_to_make_noise
+  statement: Example play.v frame connecting a sound maker, song patient and emotional-state cause; illustrative
+    role binding, not a verified causal rule.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C059
+  label: Description versus situation
+  statement: A representation is distinguished from what it describes; the phrase that an uploaded image constitutes
+    a situation needs care about image/content/referent levels.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C060
+  label: Emotion association
+  statement: Collected relation between structured situation descriptions and emotions; correlation/labeling
+    is not proof of detection or causal affect change.
+  evidence:
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C061
+  label: EmotionalState figure label
+  statement: Figure5 spelling differs from EmergentEmotion taxonomy; no complete printed equivalence establishes
+    that they are the same released class.
+  evidence:
+  - E07
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C062
+  label: Emotion Common Sense / EmoCS
+  statement: Collaborative structured-input application inspired by OMCS, with emotional sliders, frame-driven
+    forms and multimedia/RDF storage.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C063
+  label: Open Mind Common Sense / OMCS
+  statement: Background initiative with comparatively free-text common-sense input; not an imported ontology
+    or validation dataset for this review.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C064
+  label: Autocomplete and dynamic form
+  statement: FrameNet candidates and selected frame elements structure user entry; a UI affordance, not independent
+    semantic correctness or measured efficiency.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C065
+  label: Structured assertion
+  statement: Description plus role fillers and emotion annotations stored for later application use; no provenance/confidence/disagreement
+    schema is fully printed.
+  evidence:
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C066
+  label: Multimedia input
+  statement: Images/audio/URLs can be associated with descriptions and emotions; media object, interpreted
+    content and situation referent are not automatically identical.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C067
+  label: RDF store / reasoning / query answering
+  statement: Application capability is author-reported; no store version, exact query workload, expected-observed
+    proof log or reasoner run is reproduced here.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: C068
+  label: Emotional bootstrapping
+  statement: Initial emotional knowledge is needed for usefulness/continued participation; no quantitatively
+    evaluated cold-start solution is supplied.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C069
+  label: Reactive happy-media response
+  statement: Example selects songs/images associated with happiness after sadness input; not a randomized intervention
+    or demonstrated causal improvement.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: C070
+  label: Brain-computer interface / BCI
+  statement: Measurement/integration discipline used in the application exploration; not itself the ontology
+    or a validated emotional categorizer.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: C071
+  label: EEG
+  statement: Historical brain-signal input contrasted with fMRI temporal/spatial properties; source claims
+    are not current device recommendations or clinical validation.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: C072
+  label: Emotiv neuroheadset
+  statement: Historical14-sensor device with named suites and scalp locations; photographs and SDK profile
+    are not participant-count or accuracy evidence.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: C073
+  label: Expressiv / Affectiv / Cognitiv
+  statement: Historical device suites for different processed outputs; exact capabilities are source-reported,
+    not newly benchmarked here.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: C074
+  label: SDK-mediated manual annotation
+  statement: Investigators transcribed processed display outputs because direct emotional output was not accessible
+    outside the SDK; automatic six-emotion recognition is not the reported pipeline.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: C075
+  label: Excitement ambiguity
+  statement: Vendor-named output may increase for fear or surprise; no uniquely identified emotion follows
+    from its label.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: C076
+  label: Six Ekman targets
+  statement: Anger,disgust,fear,happiness,sadness,surprise are future classifier targets; no six-class accuracy,
+    confusion matrix or trained-model result is published.
+  evidence:
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C077
+  label: Training examples and direct feedback
+  statement: Situations/expected emotions/user feedback are described as being collected/used in ongoing ML
+    work; data size, splits and final performance remain unspecified.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C078
+  label: Skin conductance complement
+  statement: A proposed additional stress-related signal to improve future robustness; no completed multimodal
+    classifier experiment is reported.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C079
+  label: Future affective states/user models
+  statement: Broader affect, disabilities, social settings and adaptive user models are future extensions,
+    not completed coverage of every background affective category.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: C080
+  label: OWL modeling method
+  statement: Classes from ovals, properties from arrows, restrictions and upper-ontology reuse are explicit
+    construction steps; the García2006 methodology is cited, not reproduced in full.
+  evidence:
+  - E04
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: C081
+  label: Selected May2015 OWL candidate
+  statement: Author-linked predecessor used for a complete28-local-class inventory; date path is not an immutable
+    release or verified publication-byte identity.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: C082
+  label: Later cognition extension
+  statement: Different namespace and changed categories including Motivation; December/current paths share
+    bytes and cannot be counted as two versions or the original2015 paper artifact.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: C083
+  label: Source comment availability
+  statement: Selected28 classes include one comment candidate and27explicit missing comments; paper-level definitions
+    and reviewer constraint analyses are separate from author OWL definitions.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: C084
+  label: Context root class(candidate)
+  statement: Selected candidate additionally declares Context, absent from the27 unprefixed taxonomy labels;39paper
+    nodes and28root declarations have different boundaries.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: C085
+  label: Attitudes
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C086
+  label: Established emotion
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C087
+  label: Emergent Emotion(full-blown)
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C088
+  label: Emergent Emotion(suppressed)
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C089
+  label: Moods
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C090
+  label: Partial emotion(topic shifting)
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C091
+  label: Partial emotion(simmering)
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C092
+  label: Stance towards person
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C093
+  label: Stance towards object/situation
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C094
+  label: Interpersonal bonds
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C095
+  label: Altered state of arousal
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C096
+  label: Altered state of control
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C097
+  label: Altered state of seriousness
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+- id: C098
+  label: Emotionless
+  statement: One of14 background affective labels quoted in the introduction scope discussion; only full-blown
+    emergent emotion is the selected model focus. This is not a declared14-class machine taxonomy.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+  kind: BACKGROUND_AFFECTIVE_LABEL
+commitments:
+- id: K001
+  label: Restricted affective scope
+  statement: The paper chooses full-blown emergent emotion instead of claiming coverage of the complete affective-state
+    taxonomy.
+  evidence:
+  - E02
+  basis: REVIEWER_INTERPRETATION
+- id: K002
+  label: Theory-flexibility objective
+  statement: Categorical, dimensional and appraisal theories motivate agnosticism; the text supplies no universal
+    compatibility proof or complete instantiated mapping for all three.
+  evidence:
+  - E02
+  - E03
+  - E04
+  basis: REVIEWER_INTERPRETATION
+- id: K003
+  label: Class/property construction
+  statement: Figure1 ovals become OWL classes and relation arrows become object properties; additional restrictions
+    enrich the model.
+  evidence:
+  - E04
+  - E06
+  basis: REVIEWER_INTERPRETATION
+- id: K004
+  label: Trigger restriction in prose
+  statement: The Description-to-EmergentEmotion example states a target type without printing a quantifier;
+    do not silently make it an existential causal rule.
+  evidence:
+  - E04
+  basis: REVIEWER_INTERPRETATION
+- id: K005
+  label: Upper-ontology grounding
+  statement: DOLCE family and Description/Situation reuse are explicit; exact legacy edition and historical
+    import identity require separate evidence.
+  evidence:
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: K006
+  label: Frame specialization
+  statement: Figure2 shows ofntb:Frame as a Description subtype; formal correspondence with the selected ofntb
+    import is not proved by the diagram alone.
+  evidence:
+  - E05
+  - E07
+  basis: REVIEWER_INTERPRETATION
+- id: K007
+  label: Literal context direction
+  statement: Figure2 DULSituation has outgoing subclass arrows to SocialContext/EnvironmentalContext; Interface
+    points to PersonalContext. Preserve the source rather than reverse the arrows.
+  evidence:
+  - E07
+  basis: REVIEWER_INTERPRETATION
+- id: K008
+  label: Multiple inheritance
+  statement: Sensor, biological/artificial sensor and expression channels have multiple parents; imported disjointness/compatibility
+    must be assessed on an exact module version.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: K009
+  label: Input-output loop
+  statement: Sensing/perception/expression relations organize a conceptual loop; no explicit timing, automatic
+    state estimation or causal fusion procedure is printed.
+  evidence:
+  - E06
+  basis: REVIEWER_INTERPRETATION
+- id: K010
+  label: Frame role identity
+  statement: Arriving Goal is a destination frame role; goal in the Torres sentence is a scored-object filler,
+    not a BDI goal or adopted plan.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: K011
+  label: User-entered emotional association
+  statement: EmoCS stores structured frame/emotion input and multimedia references; this does not establish
+    truth, unique interpretation, consensus or individual calibration.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: K012
+  label: Representation boundary
+  statement: Figure4 sentence/description and Figure5 instance labels are illustrative; no complete URI-bound
+    instance graph or alias equivalence is printed.
+  evidence:
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: K013
+  label: Emotion recognition exclusion
+  statement: The text explicitly says the ontology models associations and does not recognize emotional responses;
+    do not promote storage/UI modeling into a detector.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: K014
+  label: SDK manual output
+  statement: Reported BCI annotations are manual after inspecting the SDK display, using four metric families
+    that do not match an established emotion classification.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: K015
+  label: Future six-class model
+  statement: Raw EEG collection/training and six-Ekman output are ongoing/future, without sample count, evaluation
+    splits or recognition performance.
+  evidence:
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: K016
+  label: Source-candidate universals
+  statement: Selected Mayroot uses allValuesFrom for sensory/perception/expression/memory outputs, including
+    global Description triggers; these do not alone require any linked filler.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: K017
+  label: Datatype cardinalities
+  statement: DiscreteStimulus threshold and continuous range bounds each have exactly-one float cardinality;
+    no numerical ordering, measurement validity or continuous/discrete disjointness is supplied.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: K018
+  label: Referenced external-name constraints
+  statement: Selected root globally constrains imported DULDescription/Situation IRIs despite not declaring
+    them as named owl:Class locally; their outgoing constraints are separately indexed.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: K019
+  label: Missing source definitions
+  statement: All28 local classes are accounted for, but27 have no rdfs:comment. Reviewer hierarchy summaries
+    do not become author natural-language definitions.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: K020
+  label: Version and import boundary
+  statement: Three declared legacy imports are unacquired as this exact closure; current DUL/IOLite cannot
+    silently replace them. Later cognition bytes and selected Mayroot are separate populations.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: K021
+  label: Application validation limit
+  statement: Screenshots/use examples support feasibility of represented interactions, not measured emotion
+    improvement, ontology consistency, adoption or independent user validation.
+  evidence:
+  - E08
+  - E09
+  - E10
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: K022
+  label: No numbered formal theory
+  statement: No numbered DL/FOL axioms or complete executable constraint listing is printed in the paper. Selected
+    external source assertions are separately attributed, not presented as paper formulas.
+  evidence:
+  - E04
+  - E14
+  - E15
+  basis: REVIEWER_INTERPRETATION
+relation_index:
+- id: R001
+  label: hasInput
+  statement: Sensor takes Stimulus, Perception takes Sensation, expression system takes emotion; selected source
+    class restrictions are universal, not domain/range declarations or causal existence.
+  evidence:
+  - E06
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R002
+  label: hasOutput / hasOuput
+  statement: Sensor produces sensations, Perception outputs Description, expression systems output stimuli.
+    Figure5 misspells hasOuput; do not assert a formal alias by typography alone.
+  evidence:
+  - E06
+  - E09
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R003
+  label: hasPart
+  statement: Situation-to-Stimulus in the drawing and selected DULSituation restriction; mereological part
+    is not automatic semantic content, causal responsibility or setting membership.
+  evidence:
+  - E06
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R004
+  label: describes
+  statement: Description-to-Situation and illustrative sentence descriptions; distinguish expression/content/referent
+    levels and absence of complete identity rules.
+  evidence:
+  - E05
+  - E06
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: R005
+  label: triggers
+  statement: Description-to-emotion link; paper prose omits quantification, selected candidate is only restriction.
+    Neither alone implements affect recognition or proves causal triggering.
+  evidence:
+  - E04
+  - E06
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R006
+  label: uses
+  statement: Perception-to-Memory; no existence or calibrated memory retrieval process is supplied by only
+    restriction.
+  evidence:
+  - E06
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R007
+  label: stores
+  statement: Memory associations/descriptions; selected source limits fillers to Description but does not supply
+    persistence, confidence or learning-update policy.
+  evidence:
+  - E06
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R008
+  label: Frame/lexical-unit selection
+  statement: enter.v selects Arriving; autocomplete selects candidate frames and frame elements. These are
+    not automatically disambiguated real-world assertions.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: R009
+  label: Theme / Goal
+  statement: Arriving ThemeJohn/Goalroom; Goal is destination role. Torres Themegoal is an object-like filler,
+    not a desired-plan goal.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: R010
+  label: Recipient / Result / Time
+  statement: Torres score example binds RecipientTorres,Resultwinning,Timeinlastminute. No global cardinality
+    or temporal theory is established by the illustration.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: R011
+  label: experiencer / emotional_state
+  statement: Feeling frame relates User023 and sadness label; participant, frame and emotion state are distinct
+    modeling levels.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: R012
+  label: sound_maker / patient / cause
+  statement: Play frame relates User023,happysong and sadness as cause role; no automatic causal intervention-success
+    proof.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: R013
+  label: Subclass links
+  statement: All39 taxonomy label/arrow records retained literally; selected Mayroot has28 local declarations
+    and additional referenced DUL constraints. No inferred class equivalence.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R014
+  label: produces(candidate-only)
+  statement: Declared object property has no selected domain/range or used restriction in the inspected root;
+    do not add it to the printed Figure1 relation labels.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R015
+  label: threshold / rangeLow / rangeHigh(candidate-only)
+  statement: Float-valued datatype properties, exact-one restrictions on corresponding stimulus classes; no
+    required bound ordering or measurement calibration.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+figure_ledger:
+  path: evidence/related-work/deep-reviews/Emotions-2015/figure-ledger.yaml
+  sha256: b4c95e7e53a154a9f413a7502168f9181fbfb67f1ee21521f1fdaf56c6b34f38
+paper_formalization:
+  numbered_formula_count: 0
+  complete_axiom_listing: NOT_PRINTED
+  paper_trigger_quantifier: NOT_SPECIFIED
+  reviewer_solver_execution: NOT_EXECUTED
+  global_consistency: NOT_ESTABLISHED
+study_population:
+  basis: AUTHOR_REPORTED
+  target: EMOCS_REPRESENTATION_AND_MANUAL_SDK_ANNOTATIONS
+  participants: null
+  training_examples: null
+  accuracy: null
+  causal_emotion_change: null
+  automatic_ekman_detection: ONGOING_FUTURE_NOT_REPORTED_RESULT
+  sdk_metric_families: 4
+  ekman_future_targets: 6
+  independently_reproduced: false
+scenarios:
+- id: S001
+  label: John enters room
+  statement: 'AUTHOR EXAMPLE: enter.v selects Arriving; ThemeJohn and Goalroom bind participants without making
+    the destination an adopted goal.'
+  evidence:
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: S002
+  label: Torres score
+  statement: 'AUTHOR EXAMPLE: RecipientTorres,Resultwinning,Themegoal,Timeinlastminute organize a description;
+    no participant identity or truth proof follows from a word label.'
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: S003
+  label: Manual slider response
+  statement: 'AUTHOR EXAMPLE: a user chooses a frame and emotional slider input. This is a recorded self-report
+    association, not objective decoded mental state.'
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: S004
+  label: Incomplete autocomplete
+  statement: 'ADVERSE RECONSTRUCTION: an offered frame or role can be wrong or ambiguous; structured input
+    alone does not resolve word sense or real-world truth.'
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: S005
+  label: Sadness and happy song
+  statement: 'AUTHOR EXAMPLE: a system can respond to sadness input with media associated with happiness; the
+    paper supplies no causal improvement measurement.'
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: S006
+  label: Image and situation
+  statement: 'ADVERSE RECONSTRUCTION: a photograph is an informational/physical item representing a situation;
+    the paper''s shorthand does not justify identifying every image with its referent.'
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: S007
+  label: Cultural masking
+  statement: 'AUTHOR QUALIFICATION: social expression may mask internal affect; visible action, self-report
+    and actual state may disagree.'
+  evidence:
+  - E03
+  basis: REVIEWER_INTERPRETATION
+- id: S008
+  label: Conflicting channels
+  statement: 'ADVERSE RECONSTRUCTION: verbal happiness and physiological arousal require fusion/uncertainty
+    policy not supplied by a generic multimodal graph.'
+  evidence:
+  - E03
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: S009
+  label: Fear versus surprise
+  statement: 'AUTHOR QUALIFICATION: Excitement can increase for either state; metric label alone cannot identify
+    one emotion.'
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: S010
+  label: SDK transcription
+  statement: 'AUTHOR REPORTED PROCEDURE: researchers inspect Affectiv output and manually annotate descriptions;
+    this is not an exported automatic six-category classifier.'
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: S011
+  label: Five screenshot traces
+  statement: 'ADVERSE RECONSTRUCTION: instantaneous and long-term excitement are two traces within one metric
+    family; do not invent a fifth independent categorical emotion.'
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: S012
+  label: Headset user photograph
+  statement: 'ADVERSE RECONSTRUCTION: an illustrated person or SDK profile does not establish sample size,
+    consent protocol, experiment population or model accuracy.'
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: S013
+  label: Unreported study sample
+  statement: 'ADVERSE RECONSTRUCTION: do not import the14-person PrEmo2014 study into this2015 paper; participant
+    count and recognition accuracy remain unspecified here.'
+  evidence:
+  - E10
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: S014
+  label: Cold start
+  statement: 'AUTHOR QUALIFICATION: the useful association base needs bootstrapping to retain users; no measured
+    cold-start or reinforcement-learning performance is supplied.'
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: S015
+  label: Different users/same situation
+  statement: 'ADVERSE RECONSTRUCTION: one shared description can accompany different emotional responses; ontology
+    storage alone does not produce a per-person calibrated predictor.'
+  evidence:
+  - E02
+  - E03
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: S016
+  label: No linked sensor input
+  statement: 'ADVERSE SOURCE ANALYSIS: selected Sensor input only Stimulus allows no input links; no sensing
+    event or stimulus existence follows from the universal restriction.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S017
+  label: No triggered emotion
+  statement: 'ADVERSE SOURCE ANALYSIS: global Description triggers only EmergentEmotion allows descriptions
+    with no triggers; it is not a mandatory emotional reaction or causal law.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S018
+  label: Invalid continuous bounds
+  statement: 'ADVERSE SOURCE ANALYSIS: exactly-one float low/high does not impose low<=high or unit calibration;
+    arbitrary reversed bounds are not excluded by those restrictions alone.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S019
+  label: Both stimulus kinds
+  statement: 'ADVERSE SOURCE ANALYSIS: no explicit disjointness in this root prevents an entity being continuous
+    and discrete; full imported consequences remain untested.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S020
+  label: All situations typed as contexts
+  statement: 'ADVERSE SOURCE ANALYSIS: referenced DULSituation subclass statements apply globally to social/environmental
+    contexts, rather than only a local emotional situation subtype.'
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S021
+  label: Uncommented class
+  statement: ADVERSE RECONSTRUCTION:27root classes lack comments; descriptive hierarchy summaries can be useful
+    without being labeled author definitions.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S022
+  label: Later motivation extension
+  statement: 'ADVERSE VERSION CASE: December/current cognition paths contain later categories under another
+    namespace; do not substitute them for the publication artifact or count identical bytes twice.'
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: S023
+  label: Future six-emotion recognition
+  statement: 'AUTHOR FUTURE CASE: collecting EEG/training examples and adding skin conductance are proposed/ongoing;
+    six-class success requires a future dataset/evaluation, not ontology import.'
+  evidence:
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S024
+  label: No imported closure
+  statement: 'ADVERSE SOURCE CASE: declared DUL/IOLite/ofntb imports are not a completed exact legacy closure
+    or imported glossary; current editions cannot silently supply historical results.'
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+evaluation:
+  Verification:
+    label: Formal integrity
+    statement: Paper describes OWL restrictions and RDF reasoning but gives no independently reproduced reasoner/profile
+      or consistency log. Reviewer executes candidate parsing/census, all28 local definition-or-missing/constraint
+      reviews and raw annotation/hierarchy reconciliation only.
+    evidence:
+    - E04
+    - E08
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  Validation:
+    label: Application fit
+    statement: EmoCS worked input examples/screenshots and BCI annotation procedure motivate application fit;
+      no specified participant population or controlled ontology-adequacy/recognition study is reported.
+    evidence:
+    - E08
+    - E09
+    - E10
+    - E11
+    - E14
+    basis: REVIEWER_INTERPRETATION
+  Evaluation:
+    label: Quantitative results
+    statement: Participant count,training-set size,recognition accuracy,calibration,comparative performance
+      and causal emotion/dropout improvement are not reported in the selected paper. Six-emotion recognition
+      and added skin sensors are ongoing/future.
+    evidence:
+    - E10
+    - E12
+    - E14
+    basis: NOT_REPORTED
+  Assessment:
+    label: Critical cases
+    statement: Empty only-restriction fillers,invalid bounds,role/goal distinction,masked/conflicting cues,metric
+      ambiguity and media/situation levels are reviewer adverse cases, not executed whole-theory models or
+      user experiments.
+    evidence:
+    - E03
+    - E05
+    - E08
+    - E09
+    - E10
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  Assurance:
+    label: Traceability
+    statement: Selected owner PDF,public metadata,author candidate digests,full7figure ledger and28class source-gap
+      inventory are pinned. Exact publication artifact,legacy closure/license,independent expert acceptance
+      and semantic validation remain unestablished.
+    evidence:
+    - E01
+    - E14
+    - E15
+    - E16
+    - E17
+    basis: REVIEWER_INTERPRETATION
+artifact:
+  issue: 239
+  status: SELECTED_MAY_CANDIDATE_LOCAL_GLOSSARY_COMPLETE_IMPORT_VERSION_SEMANTICS_OPEN
+  version_relation: Author-linkedMay2015 predecessor has28 local classes, one source comment27missing, all
+    local constraints reviewed. It is not certified exact publication bytes. Literal context directions and
+    global referenced DULDescription/Situation assertions are retained. Three legacy imports remain unacquired;
+    later cognition namespace/root is distinct. December/current URLs have identical bytes and count as one
+    later population. Source graph/byte comparison is not a reasoner or historical-equivalence result.
+  class_reviews_heading: '### All28 classes in the selected author-linked May2015 candidate'
+  class_reviews:
+  - id: A001
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#ArtificialSensor
+    label: ArtificialSensor
+    statement: Sensor and DULPhysicalArtifact; source provides no natural-language definition or existence
+      of a reading.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A002
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural
+    label: Behavioural
+    statement: EmotionExpressionSystem and DULAction; spelling is British in this candidate, unlike later Behavioral.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A003
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor
+    label: BiologicalSensor
+    statement: Sensor and DULBiologicalObject; does not assert the DULPhysicalAgent superclass drawn in Figure2.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A004
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Context
+    label: Context
+    statement: Declared without superclass, equivalent definition or comment; do not invent an author definition.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A005
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus
+    label: ContinuousStimulus
+    statement: Stimulus with exactly one rangeLow and rangeHigh float value each; no high-greater-than-low
+      constraint or disjointness from DiscreteStimulus.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A006
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus
+    label: DiscreteStimulus
+    statement: Stimulus with exactly one float threshold; no converse threshold-based definition or disjointness
+      from ContinuousStimulus.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A007
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#EmergentEmotion
+    label: EmergentEmotion
+    statement: DULEvent subtype; no specific categorical emotion taxonomy, recognition algorithm or empirical
+      criterion in the class declaration.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A008
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem
+    label: EmotionExpressionSystem
+    statement: Interface with hasInput only EmergentEmotion and hasOutput only Stimulus; universals require
+      neither input nor output existence.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A009
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#EnvironmentalContext
+    label: EnvironmentalContext
+    statement: Context subclass; only source comment candidate characterizes an objective reference frame,
+      without a sufficient logical definition.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A010
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Facial
+    label: Facial
+    statement: Behavioural subtype only; no face detector, dataset or expression-to-emotion mapping is provided.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A011
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Gestural
+    label: Gestural
+    statement: Behavioural subtype only; no gesture recognition constraints or measurement protocol.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A012
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Hearing
+    label: Hearing
+    statement: Sense with hasInput only ContinuousStimulus; no existential input requirement.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A013
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Interface
+    label: Interface
+    statement: PersonalContext superclass, matching the literal arrow direction; do not silently reverse it
+      to PersonalContext-is-Interface.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A014
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Memory
+    label: Memory
+    statement: DULProcess with stores only DULDescription; no stored-description existence, persistence or
+      learning-update algorithm.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A015
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Perception
+    label: Perception
+    statement: DULProcess with uses only Memory, input only Sensation and output only DULDescription; universal
+      restrictions do not generate events or outputs.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A016
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext
+    label: PersonalContext
+    statement: Context subtype only; paper interface inheritance is not a sufficient user-state model.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A017
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Psychophysiological
+    label: Psychophysiological
+    statement: EmotionExpressionSystem and DULAction; not itself a measured physiological response or classifier.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A018
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sensation
+    label: Sensation
+    statement: DULProcess subtype only; it is distinct from sensor, stimulus and interpreted emotional state.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A019
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+    label: Sense
+    statement: BiologicalSensor subtype only; specific sensory subclasses add restricted filler types.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A020
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sensor
+    label: Sensor
+    statement: Interface and DULPhysicalObject, input only Stimulus and output only Sensation; no sensor event/reading
+      existence follows.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A021
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sight
+    label: Sight
+    statement: Sense with hasInput only ContinuousStimulus; no inference from a missing input triple to absence
+      of sight.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A022
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Smell
+    label: Smell
+    statement: Sense with hasInput only DiscreteStimulus; not a threshold-trigger causal rule.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A023
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#SocialContext
+    label: SocialContext
+    statement: Context subclass only; separate referenced DULSituation statements make every situation also
+      SocialContext under these selected assertions.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A024
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Speech
+    label: Speech
+    statement: Behavioural subtype only; no acoustic recognition model or language/individual calibration specified.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A025
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus
+    label: Stimulus
+    statement: DULEvent subtype; Figure1 plural Stimuli is a diagram label, not a separately declared machine
+      class.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A026
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Taste
+    label: Taste
+    statement: Sense with hasInput only DiscreteStimulus; no reading or emotion witness generated.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A027
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Touch
+    label: Touch
+    statement: Sense with hasInput only ContinuousStimulus; no obligatory physical interaction or measurement
+      from this universal alone.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  - id: A028
+    iri: http://rhizomik.net/ontologies/emotionsonto.owl#Verbal
+    label: Verbal
+    statement: EmotionExpressionSystem and DULDescription; do not collapse a verbal expression, the agent and
+      a description referent into one level.
+    evidence:
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  class_catalog:
+    path: evidence/related-work/deep-reviews/Emotions-2015/classes.yaml
+    sha256: 6642cb6966b596d9d8012512c5d96bf4e0396cb55a4f0ee078852c281ef63268
+  census:
+    path: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json
+    sha256: ff46b19337138077df8b57ec9240320154abea5d7d61bb2e7496d010a5b874ec
+    source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+    counts:
+      classes: 28
+      object_properties: 6
+      datatype_properties: 3
+      annotation_properties: 0
+      named_individuals: 0
+    explicit_triples: 152
+  selected_external_constraints:
+    path: evidence/related-work/deep-reviews/Emotions-2015/selected-external-constraints.yaml
+    sha256: 0d9851a72b1759d5d6cb666c7e51ee9d11d6f4e6b3069c38a308901618527531
+  reading_inspection:
+    path: evaluation/related-work/emotions2015/reading-inspection.json
+    sha256: 4fca126d314f76088262cecf353d37b7a27f744f87f60e61bfeffef1dd11b156
+  discovery_execution:
+    path: evaluation/related-work/emotions2015/discovery.json
+    sha256: 68b1bebaf1cdc6c0e4f42448e1fe4149248bd3e66b483432756fe1c08c6098ba
+  class_reconciliation:
+    path: evaluation/related-work/emotions2015/class-reconciliation.json
+    sha256: dd946d630f95f140c4a6714a8c24833af09a69de0aef9c24dc1258d4f22c9c90
+  original_2015_machine_class_count: null
+  paper_to_machine_taxonomy_identity: NOT_ESTABLISHED
+  imported_glossary_complete: false
+  reasoner_execution: NOT_EXECUTED
+  historical_fidelity: NOT_ESTABLISHED
+findings:
+- id: F001
+  label: Exact independent source
+  statement: This four-author8-page2015 journal paper differs from the16-page2014 predecessor, its PrEmo evaluation
+    and the later December cognition extension.
+  evidence:
+  - E01
+  - E14
+  - E16
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F002
+  label: Contextual modeling strength
+  statement: The model explicitly joins situation descriptions, sensing channels, memory and emotion expression,
+    helping avoid a flat list of emotion labels.
+  evidence:
+  - E02
+  - E05
+  - E06
+  basis: REVIEWER_INTERPRETATION
+- id: F003
+  label: Structured collaborative input
+  statement: FrameNet-guided forms and roles provide a concrete interaction path for structured emotion associations
+    rather than unrestricted text alone.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: F004
+  label: Emotion versus detection
+  statement: The paper explicitly separates modeling associations from recognizing emotion; storing an emotion
+    label is not an emotion-classification result.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: F005
+  label: Theory agnostic is an objective
+  statement: Categorical/dimensional/appraisal flexibility is a design goal, without complete instantiated
+    mappings or comparative evaluation of every theoretical model.
+  evidence:
+  - E02
+  - E03
+  - E04
+  basis: REVIEWER_INTERPRETATION
+- id: F006
+  label: Restricted affective coverage
+  statement: Full-blown emergent emotion is selected; broader moods, stances, bonds and other affective categories
+    are background or future work.
+  evidence:
+  - E02
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F007
+  label: Foundation evidence
+  statement: DOLCE family,Description/Situation and FrameNet reuse are explicit. No exact foundational software
+    edition follows from the family name or unversioned import paths.
+  evidence:
+  - E05
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F008
+  label: Literal context direction
+  statement: Figure2 DULSituation-to-SocialContext/EnvironmentalContext and Interface-to-PersonalContext arrows
+    must not be silently inverted; selected Maysource repeats these directions.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F009
+  label: Paper versus local class population
+  statement: Figure2 has39 labels including12prefixed categories; selected candidate has28local declarations,
+    including Context. Neither count is the original full imported/inferred ontology population.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F010
+  label: Multiple inheritance scope
+  statement: BiologicalSensor has a PhysicalAgent parent in Figure2 but not in the selected root. Imported
+    inference might add consequences, but none has been run or presumed.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F011
+  label: Frame role distinctions
+  statement: Arriving Goal is a destination role, score Themegoal a filler and Feeling experiencer a participant;
+    these are not interchangeable with BDI goals, agents or classes.
+  evidence:
+  - E05
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: F012
+  label: Figure spelling/type gaps
+  statement: Figure1 Stimuli and Figure5 EmotionalState/hasOuput differ from other names. Plausible aliases
+    or typography repairs are not printed formal equivalences.
+  evidence:
+  - E06
+  - E09
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F013
+  label: Expression/content/referent
+  statement: Description, sentence/media, frame and represented situation must be distinguished; the image-as-situation
+    shorthand is not a sufficient identity theory.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: F014
+  label: OWL quantifier distinction
+  statement: Paper trigger prose is unquantified; candidate uses allValuesFrom, so only restrictions do not
+    generate inputs, outputs, memories or emotions.
+  evidence:
+  - E04
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F015
+  label: Global imported-name side effects
+  statement: The selected root constrains imported DULDescription and DULSituation names without local owl:Class
+    declarations. A local-only class census alone would omit these outgoing assertions.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F016
+  label: Missing source definitions
+  statement: 'All28candidate local classes/constraints are accounted for: one source comment candidate,27missing.
+    Reviewer paper/hierarchy explanations do not fill the author-comment field.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F017
+  label: Prototype evidence limit
+  statement: Screenshots and worked examples support representation/interaction feasibility; no reported controlled
+    user study, confusion matrix, benchmark or operational ontology-consistency log is supplied.
+  evidence:
+  - E08
+  - E09
+  - E10
+  - E11
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F018
+  label: Manual BCI procedure
+  statement: SDK outputs were manually transcribed into annotations. The automatic six-Ekman pipeline remains
+    ongoing/future rather than a demonstrated result.
+  evidence:
+  - E10
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F019
+  label: Four metric families
+  statement: Excitement,Frustration,Meditation,Engagement/Boredom are proprietary metric names with acknowledged
+    ambiguity. Five plotted traces include two excitement timescales, not five discrete emotions.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: F020
+  label: No borrowed participant count
+  statement: Neither one person in a photograph nor the predecessor's14PrEmo students establishes this2015
+    study sample; participants,training size,calibration and accuracy are unreported here.
+  evidence:
+  - E10
+  - E11
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F021
+  label: Learning/data limits
+  statement: Collaborative entry and ongoing raw EEG training are not a reproducible complete learning algorithm,
+    public dataset, split protocol or evaluation result.
+  evidence:
+  - E08
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F022
+  label: Intervention claims limited
+  statement: The sadness-to-happy-media example does not demonstrate beneficial emotion change or MOOC dropout
+    reduction; association and causal intervention are separate.
+  evidence:
+  - E02
+  - E09
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F023
+  label: Cold-start/conflict/provenance gaps
+  statement: Bootstrapping is acknowledged; the paper does not provide complete per-user/disagreement/confidence/provenance/time-update
+    handling or validated multimodal fusion.
+  evidence:
+  - E03
+  - E08
+  - E09
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F024
+  label: Datatype constraints are limited
+  statement: Exact-one float thresholds/bounds do not encode numerical ordering, units, calibration, stimulus
+    disjointness or a causal threshold detector.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F025
+  label: Selected version availability
+  statement: Direct byte retrieval recovered previously unacquired2013/May candidates despite unsupported search-service
+    content type. Date paths and asserted graph isomorphism are not immutable historical release identity.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F026
+  label: License and reproducibility
+  statement: ArticleCCBY4.0 does not establish a linked OWL license. Exact legacy imports, original publication
+    bytes and profile/reasoner results remain unestablished; source review does not imply adoption.
+  evidence:
+  - E01
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F027
+  label: Candidate relevance
+  statement: Descriptions/situations, role-based contextualization and separation of observed inputs from interpreted
+    state can inform later comparison and terminology; no accepted mapping, novelty judgment or model change
+    is made.
+  evidence:
+  - E05
+  - E06
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+questions:
+- id: Q001
+  label: Exact root and class source
+  statement: In239, keep selectedMay2015 and later cognition extension separate from exact2014/2015 publication
+    artifacts. All28local candidate declarations/definition gaps are accounted for, without original-byte fidelity.
+  evidence:
+  - E01
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: Q002
+  label: Legacy foundations/imports
+  statement: In239, pin the exact three legacy DUL/IOLite/ofntb imports, resolve class definitions within a
+    stated scope and record unavailable versions; never silently replace them with current editions.
+  evidence:
+  - E05
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: Q003
+  label: Taxonomy and inheritance
+  statement: In239, test selected context directions and BiologicalSensor multiple inheritance on the exact
+    closure, retaining all39drawing labels and source differences.
+  evidence:
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: Q004
+  label: Inputs/outputs/triggers
+  statement: In239, test representative only-versus-existence cases and global DULDescription/Situation restrictions;
+    datatype cardinality is not bound ordering, causal triggering or recognition.
+  evidence:
+  - E04
+  - E06
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: Q005
+  label: Frame and participant levels
+  statement: In239, trace lexical units,frames,roles and fillers for Arriving,Feeling and play; destination
+    Goal and score-object goal are not adopted planning goals.
+  evidence:
+  - E05
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: Q006
+  label: Memory and personalization
+  statement: In239, identify which memory,agency,conflict,bootstrapping and per-user commitments are formalized
+    versus application logic, with positive and adverse cases.
+  evidence:
+  - E03
+  - E06
+  - E08
+  - E09
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: Q007
+  label: Execution and evaluation
+  statement: In239, retain SDKmanual annotations/fourmetrics and future six-Ekman model separately; run only
+    reproducible declared tests with tools/inputs/expected-observed results. No2014study transfer.
+  evidence:
+  - E10
+  - E11
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: Q008
+  label: Version/license/comparison export
+  statement: In239, preserve byte-distinct predecessor receipts and duplicate later paths, clarify licenses
+    and export selected evidence to253/126 without full equivalence, semantic acceptance or model adoption.
+  evidence:
+  - E01
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+synthesis:
+- id: Y001
+  label: Context and representation
+  statement: Compare Description/Situation, information/media, role/filler and observed/interpreted state levels
+    using exact source versions and contrary evidence.
+  evidence:
+  - E05
+  - E06
+  - E08
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: Y002
+  label: Agency and goals
+  statement: Frame participants and destination roles are not a theory of agency or adopted intentions; use
+    ArrivingGoal and scoreThemegoal as adverse mapping cases.
+  evidence:
+  - E05
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: Y003
+  label: Affective evidence level
+  statement: Separate self-report,behavioral/physiological correlates, proprietary metrics, represented emotion
+    and validated recognition/performance.
+  evidence:
+  - E03
+  - E08
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: Y004
+  label: Formal source scope
+  statement: Bind only/exactly restrictions and imported-name side effects to the selected Maycandidate; original-paper
+    count and inferred taxonomy remain unknown.
+  evidence:
+  - E04
+  - E07
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: Y005
+  label: Future test candidates
+  statement: Retain empty sensor input,untriggered description,conflicting channels,invalid bounds and per-user
+    differences for later bounded technical work.
+  evidence:
+  - E03
+  - E09
+  - E10
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: Y006
+  label: Ordered next use
+  statement: Paper77 can close after merged checks.239technical and253comparison stay open; next is owner-authorized
+    limited-summary84, then evidence-qualified synthesis/comparison work under actual prerequisites.
+  evidence:
+  - E12
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+closure_boundary: Paper77 completes only after merged relevant checks. All8pages and source units reviewed;
+  SDKmanual/future recognition and unreported quantitative results remain explicit. SelectedMay28class comments-or-gaps/constraints
+  are accounted for, not a complete legacy import glossary or verified publication artifact.239technical,253comparison
+  and126synthesis stay OPEN. Next84is the separately authorized limited-summary review without a PDF gate.
+  No ontology,requirements,fixtures,manuscript,release or adoption change.

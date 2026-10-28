@@ -12,6 +12,14 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def retained_source_digests(root):
+    manifests = ['artifact-inputs.yaml', 'corpus/lmm-inputs.yaml',
+                 'corpus/cdns2008-inputs.yaml', 'corpus/emotions2015-inputs.yaml']
+    return {row['sha256'] for name in manifests
+            for row in yaml.safe_load(
+                (root / 'evidence/related-work' / name).read_text())['artifacts']}
+
+
 def validate_audit(audit, expected_ids):
     rows = audit['records']
     if len(rows) != len(expected_ids) or {r['id'] for r in rows} != set(expected_ids):
@@ -125,10 +133,7 @@ def check(root=ROOT, source_dir=None):
     validate_audit(audit, expected)
     if (base / 'source-audit.md').read_text() != render_audit(audit):
         raise ValueError('Stale source-audit reader')
-    manifests = [yaml.safe_load((root / 'evidence/related-work' / p).read_text())
-                 for p in ['artifact-inputs.yaml', 'corpus/lmm-inputs.yaml',
-                           'corpus/cdns2008-inputs.yaml']]
-    known_sources = {r['sha256'] for d in manifests for r in d['artifacts']}
+    known_sources = retained_source_digests(root)
     summary = []
     for path in sorted(base.rglob('classes.yaml')):
         catalog = yaml.safe_load(path.read_text())

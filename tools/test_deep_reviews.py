@@ -744,5 +744,38 @@ class JournalAndLimitedSourceBoundaryTests(unittest.TestCase):
         self.reject_limited(lambda r: r.update(evidence_basis='PRIMARY_FULL_TEXT'))
 
 
+class Emotions2015EvidenceTests(unittest.TestCase):
+    def setUp(self):
+        from check_deep_reviews import validate_emotions2015_ledger
+        self.validate = validate_emotions2015_ledger
+        path = ROOT / BASE / 'Emotions-2015'
+        self.dossier = yaml.safe_load((path / 'review.yaml').read_text())
+        self.ledger = yaml.safe_load((path / 'figure-ledger.yaml').read_text())
+
+    def reject(self, pattern):
+        with self.assertRaisesRegex(ValueError, pattern):
+            self.validate(self.dossier, self.ledger)
+
+    def test_predecessor_participants_cannot_be_borrowed(self):
+        self.dossier['study_population']['participants'] = 14
+        self.reject('manual or future evidence promoted')
+
+    def test_future_recognition_is_not_a_measured_result(self):
+        self.dossier['study_population']['automatic_ekman_detection'] = 'COMPLETE'
+        self.reject('manual or future evidence promoted')
+
+    def test_five_traces_are_not_five_metric_families(self):
+        self.dossier['study_population']['sdk_metric_families'] = 5
+        self.reject('manual or future evidence promoted')
+
+    def test_last_screenshot_is_required(self):
+        self.ledger['figures'].pop()
+        self.reject('paper population')
+
+    def test_candidate_count_is_not_original_paper_population(self):
+        self.dossier['artifact']['original_2015_machine_class_count'] = 28
+        self.reject('candidate promoted')
+
+
 if __name__ == '__main__':
     unittest.main()

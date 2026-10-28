@@ -8,18 +8,18 @@ The [complete access inventory](../../evidence/related-work/corpus/access-invent
 
 The [current deep-review register](../../evidence/related-work/deep-reviews/register.yaml) records 18 acquired works of the 19 exact paper/chapter identities, not 19 distinct ontologies. Six owner-supplied PDFs/book inputs have [separate hash/page receipts](../../evidence/related-work/corpus/owner-intake-2026-10-28.json); they were not added retrospectively to the frozen 62-member ZIP. Acquisition does not close a review.
 
-The [Representation2025 dossier](../../evidence/related-work/deep-reviews/CLR-RW-Representation/report.md), #82, completes review of all 16 supplied journal-layout pages and all ten publisher-parsed supplementary pages A-C. The supplement raw PDF download returned an access page: original binary parity and equation-glyph inspection remain unverified. Its 49 formal records, one main figure, two main tables and eight #244 questions have source locators. Machine artifact/class/import/solver work stays #244; comparison #255 and synthesis #126 stay open. Current paper progress is 17 full reviews complete, one queued and one separate limited-summary task.
+The [Representation2025 dossier](../../evidence/related-work/deep-reviews/CLR-RW-Representation/report.md), #82, completes review of all 16 supplied journal-layout pages and all ten publisher-parsed supplementary pages A-C. The supplement raw PDF download returned an access page: original binary parity and equation-glyph inspection remain unverified. Its 49 formal records, one main figure, two main tables and eight #244 questions have source locators. Machine artifact/class/import/solver work stays #244; comparison #255 and synthesis #126 stay open. Current paper progress is18 full reviews complete, none queued and one separate limited-summary task.
 
 The [DUL2016 chapter dossier](../../evidence/related-work/deep-reviews/CLR-RW-DUL/report.md), #70, completes all23 selected pages, six figures and19 pattern subsections. All-class/version/import/profile/semantic work remains #88. The current standalone Description pattern and integrated DUL4.2 have different disjointness commitments; neither is silently substituted for the2016 chapter.
 
 The [O4OA2023 dossier](../../evidence/related-work/deep-reviews/CLR-RW-O4OA/report.md), #73, completes all 20 paper pages, eight figures, ten notes and 66 references. Current author CQs and a separate 44-page specification are separate inputs; the specification has not been deeply reviewed. The gO4OA metadata-only tree is pinned independently of the blocked reference-project tree. Technical class/glossary/version/semantics work remains #91; comparison #252 and synthesis #126 stay open.
 
-The [Needs and Intentionality2020 dossier](../../evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/report.md), #86, completes all 15 pages, one figure, 18 labeled displays, 23 notes and 35 references. The owner PDF matches the actually fetched laboratory PDF. The linked May2020 draft FOL file differs in selected guards and quantifier scopes; consistency claims are author-reported. Full native-symbol definitions and proof/profile/version work remain #248; comparison #256 and synthesis #126 stay open. The distinct cDnS2008 journal work #263 is now complete; next full paper is #77.
+The [Needs and Intentionality2020 dossier](../../evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/report.md), #86, completes all 15 pages, one figure, 18 labeled displays, 23 notes and 35 references. The owner PDF matches the actually fetched laboratory PDF. The linked May2020 draft FOL file differs in selected guards and quantifier scopes; consistency claims are author-reported. Full native-symbol definitions and proof/profile/version work remain #248; comparison #256 and synthesis #126 stay open. The distinct cDnS2008 journal work #263 is now complete; the full-paper queue is now complete.
 
 | Next paper | Primary issue | Current status |
 |---|---|---|
 | Norms and plans as unification criteria for social collectives | #263 | Complete 43-page journal review; selected 51-class glossary complete, technical #267 open |
-| Emotions ontology for collaborative modelling and learning of emotional responses | #77 | Exact 2015 text supplied; queued, distinct from reviewed 2014 predecessor |
+| Emotions ontology for collaborative modelling and learning of emotional responses | #77 | Complete8-page2015 review; selected28-class candidate glossary accounts for1comment/27missing; #239 technical work open |
 
 ## Owner-authorized limited-source task
 
@@ -63,7 +63,7 @@ The owner explicitly requested full reference-artifact access and medium-sized c
 | R2-CMP-005 | [#255](https://github.com/ArazSaieArasi3/Clariceptify/issues/255) | evidence/related-work/comparisons/batch-5.yaml |
 | R2-CMP-006 | [#256](https://github.com/ArazSaieArasi3/Clariceptify/issues/256) | evidence/related-work/comparisons/batch-6.yaml |
 
-Next full-paper work is #77, followed by the owner-authorized bounded I&DA #84 summary review/citation guidance. Existing acquired technical artifacts can be inspected with the I&DA full-text limitation explicitly retained; the limitation is no longer a PDF wait gate. Artifact acquisition/inspection tasks, paper reviews and scenario comparisons remain distinct; access gaps do not promote scientific acceptance.
+All18 acquired full-paper reviews are complete. Next is the owner-authorized bounded I&DA #84 summary review/citation guidance. Existing acquired technical artifacts can be inspected with the I&DA full-text limitation explicitly retained; the limitation is no longer a PDF wait gate. Artifact acquisition/inspection tasks, paper reviews and scenario comparisons remain distinct; access gaps do not promote scientific acceptance.
 
 ## Reproduce the LMM inspection
 
@@ -75,3 +75,5 @@ python tools/test_corpus_access.py
 ```
 
 The [cDnS2008 journal dossier](../../evidence/related-work/deep-reviews/cDnS-journal-2008/report.md) completes 43 pages and 147 displays. Its paper-linked collInt root1.0 and explicitly mapped ground/core source files account for 51 unique class IRIs, all source comment candidates and outgoing constraints. The root 25/ground 14/core 12 populations, undeclared shares/isSharedBy and source-local projection differences are explicit; #267 remains open for version/profile/semantic work.
+
+The [Emotions2015 dossier](../../evidence/related-work/deep-reviews/Emotions-2015/report.md) covers all8 pages,seven figures,ten notes and38references. Manual SDK emotional annotations and future six-Ekman detection are separate. Newly acquired May2015 candidate bytes support a complete28-local-class definition-or-missing inventory;27 lack comments and all three legacy import glossaries remain unacquired. Historical2014 access failures remain receipts of their checked method/date, not a current global unavailability claim.

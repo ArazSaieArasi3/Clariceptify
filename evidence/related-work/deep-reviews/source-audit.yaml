@@ -526,6 +526,16 @@ discovery_attempts:
     No author repository identified in this bounded search.
   receipt: evaluation/related-work/cdns2008/discovery.json
   limitation: Selected current three-file map, no original2008 immutable release or compatible API proved.
+- id: EMOTIONS2015
+  method: EXACT_PAPER_AUTHOR_LINKS_DIRECT_BYTES_AND_BOUNDED_REPOSITORY_SEARCH
+  query: Paper note2,author guide,2013/May2015 predecessor candidates,December/current cognition; GitHub EmotionsOnto
+    and emotions cognition ontology
+  checked_on: '2026-10-28'
+  result: Direct retrieval succeeds; search-service octet-stream restriction is not source unavailability.
+    Selected Mayroot parsed/glossary reconciled; later duplicate paths and distinct namespace remain separate.
+  receipt: evaluation/related-work/emotions2015/discovery.json
+  limitation: No author repository identified in two eight-result name/description queries; no universal absence,
+    immutable publication-release identity or exact legacy import closure claimed.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -994,6 +1004,7 @@ records:
     - G07
     - W04
     - EMO-S01
+    - EMOTIONS2015
     global_absence_claim: false
     paper_correspondence: ORIGINAL_FILE_UNACQUIRED_LATER_EXTENSION_DISTINCT
   artifact_state: AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY
@@ -1021,6 +1032,9 @@ records:
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    current_candidate_note: Author-linked2013/May2015 predecessor bytes newly acquired during77. Selected Mayroot
+      glossary is underEmotions-2015; this does not certify original2014 version identity or complete its imported
+      definitions.
   next_issues:
   - 239
   paper_review:
@@ -1267,34 +1281,47 @@ records:
 - id: Emotions-2015
   title: Emotions ontology for collaborative modelling and learning of emotional responses
   primary_issue: 77
-  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
+  source_state: DEEP_PAPER_REVIEW_COMPLETE_SELECTED_CANDIDATE_GLOSSARY_ACCOUNTED_FOR
   repository:
     state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
-    urls: []
+    urls:
+    - https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
+    - https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
     evidence:
     - W04
+    - EMOTIONS2015
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: COGNITION_FILES_RETAINED_PAPER_BLOCKED
+    paper_correspondence: SELECTED_DIFFERENCES_NOT_CERTIFIED_PUBLICATION_BYTES
+  artifact_state: AUTHOR_LINKED_MAY2015_CANDIDATE_WITH27_MISSING_COMMENTS_TECHNICAL_OPEN
   foundation:
     family: DOLCE / DnS
     edition: null
-    relation: DOCUMENTATION_STATED_GROUNDING
+    relation: PAPER_STATED_GROUNDING_AND_SELECTED_CANDIDATE_IMPORTS
     basis: AUTHOR_REPORTED
-    locator: Emotions & Cognition author guide opening paragraph
-    artifact_imports: null
+    locator: 2015paper sections1/3,Figures1-2; selected Mayroot importsDUL/IOLite/ofntb.
+    artifact_imports:
+    - http://www.loa-cnr.it/codeps/owl/ofntb.owl
+    - http://www.loa-cnr.it/ontologies/DUL.owl
+    - http://www.loa-cnr.it/ontologies/IOLite.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'Documentation-level grounding; exact 2015 article/module correspondence remains #77/#239.'
+    limitations: DOLCE family evidenced, exact edition unestablished. Three declared legacy imports not resolved
+      as this exact closure; current editions and later cognition extension are not silently substituted.
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
+    state: ALL28_SELECTED_LOCAL_CLASSES_ONE_COMMENT27_MISSING
+    local_classes: 28
+    source_definition_candidates: 1
+    missing_source_definitions: 27
+    catalog_path: evidence/related-work/deep-reviews/Emotions-2015/classes.yaml
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    limitations: Selected Maycandidate only; every IRI,explicit constraint and comment/missing state accounted
+      for and raw reconciled. Paper39 taxonomy and root28 are separate populations. Imported total/definitions
+      and original publication-byte fidelity remain unknown; additional outgoing DULDescription/Situation constraints
+      preserved separately.
   next_issues:
   - 239
+  - 253
+  - 126
 - id: Conceptualization
   title: Conceptualization
   primary_issue: 71
@@ -1398,7 +1425,7 @@ records:
 - id: EmotionsCognition-guide
   title: EmotionsCognition-guide
   primary_issue: 77
-  source_state: AUTHOR_DOCUMENTATION_AVAILABLE_PAPER_BLOCKED
+  source_state: AUTHOR_DOCUMENTATION_AVAILABLE_SEPARATE_PRIMARY_PAPER_REVIEW_COMPLETE
   repository:
     state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
     urls: []

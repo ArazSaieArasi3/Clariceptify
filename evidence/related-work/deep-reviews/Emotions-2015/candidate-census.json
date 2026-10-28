@@ -1,0 +1,1108 @@
+{
+  "annotation_properties": [],
+  "anonymous_restrictions": 18,
+  "classes": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sensor"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#ArtificialSensor"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Action"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sensor"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Context"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#int",
+                  "language": null,
+                  "literal": "1"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#cardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#rangeHigh"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#int",
+                  "language": null,
+                  "literal": "1"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#cardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#rangeLow"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "datatype": "http://www.w3.org/2001/XMLSchema#int",
+                  "language": null,
+                  "literal": "1"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#cardinality"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#threshold"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Event"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EmergentEmotion"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasOutput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EmergentEmotion"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Interface"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem"
+    },
+    {
+      "annotation_triples_not_copied": 1,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Context"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EnvironmentalContext"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Facial"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Gestural"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sense"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Hearing"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Interface"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#stores"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Memory"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Memory"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#uses"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sensation"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasOutput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Perception"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Context"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Action"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Psychophysiological"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sensation"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sense"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sensation"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasOutput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Interface"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sensor"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sense"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sight"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sense"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Smell"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Context"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#SocialContext"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Speech"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Event"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sense"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Taste"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "anonymous_expression": [
+              {
+                "object": {
+                  "iri": "http://www.w3.org/2002/07/owl#Restriction"
+                },
+                "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+              },
+              {
+                "object": {
+                  "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+                },
+                "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+              }
+            ]
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Sense"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Touch"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#Class"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "object": {
+            "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#Verbal"
+    }
+  ],
+  "counts": {
+    "annotation_properties": 0,
+    "classes": 28,
+    "datatype_properties": 3,
+    "named_individuals": 0,
+    "object_properties": 6
+  },
+  "datatype_properties": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2001/XMLSchema#float"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#rangeHigh"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2001/XMLSchema#float"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#rangeLow"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2001/XMLSchema#float"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#threshold"
+    }
+  ],
+  "declared_import_iris": [
+    "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+    "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "http://www.loa-cnr.it/ontologies/IOLite.owl"
+  ],
+  "explicit_triples": 152,
+  "generator": {
+    "path": "tools/inventory_review_artifact.py",
+    "python": "3.12.14",
+    "rdflib": "7.6.0",
+    "sha256": "a47c1835ecd4e2ef680e9b2127bf4e90dea6559bb7526b78bbab7f3bb59e0758"
+  },
+  "import_resolution": "NO_NETWORK_IMPORTS",
+  "inference_counts": null,
+  "named_individuals": [],
+  "object_properties": [
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasInput"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#hasOutput"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#produces"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#stores"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#triggers"
+    },
+    {
+      "annotation_triples_not_copied": 0,
+      "declarations_and_constraints": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "iri": "http://rhizomik.net/ontologies/emotionsonto.owl#uses"
+    }
+  ],
+  "ontology_iris": [
+    "http://rhizomik.net/ontologies/emotionsonto.owl"
+  ],
+  "reasoner_execution": "NOT_EXECUTED",
+  "schema_version": "1.0",
+  "scope": "All explicitly declared named entities and their outgoing constraints in this one document; annotation text excluded. This is not all entities of an unacquired paper version or all inferred consequences.",
+  "semantic_acceptance": "NOT_ASSESSED",
+  "source_redistributed": false,
+  "source_sha256": "fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7",
+  "source_syntax": "RDF/XML"
+}

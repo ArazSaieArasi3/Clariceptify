@@ -231,9 +231,11 @@ acquired_papers:
   title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
   doi: 10.1016/j.chb.2014.11.100
   url: https://doi.org/10.1016/j.chb.2014.11.100
-  state: QUEUED
+  state: REVIEW_COMPLETE
   sha256: d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c
-  note: 'Owner full text received and identity checked; acquisition is not deep review. '
+  note: All8 journal pages,7figures/39taxonomy labels,10notes and38references reviewed. Selected Maycandidate28local
+    classes accounted for:1comment/27missing; legacy imports,historical fidelity and bounded semantic work
+    remain239. No quantified emotion-recognition result reported.
   order: 18
   filename: Emotions-2015-owner.pdf
   pdf_pages: 8
@@ -259,7 +261,7 @@ separate_document_tasks:
 - id: EmotionsCognition-guide
   issue: 77
   artifact_issue: 239
-  state: AUTHOR_DOCUMENTATION_AVAILABLE_PAPER_QUEUED
+  state: AUTHOR_DOCUMENTATION_AVAILABLE_PRIMARY_PAPER_COMPLETE_TECHNICAL_OPEN
   note: 2014 predecessor, 2015 related paper and December2015 OWL are separate sources
 population_revision:
   date: '2026-10-28'

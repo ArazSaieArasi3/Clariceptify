@@ -252,6 +252,39 @@ def validate_dossier(d, entry, dimensions):
         require(d['status'] == 'IN_PROGRESS', 'invalid review state')
 
 
+def validate_emotions2015_ledger(dossier, ledger):
+    figures = ledger['figures']
+    taxonomy = figures[1]['nodes']
+    labels = {row['label'] for row in taxonomy}
+    catalog_labels = [row['label'] for row in dossier['catalog']
+                      if row.get('kind') == 'FIGURE_CLASS']
+    if (ledger['work_id'] != 'Emotions-2015' or
+            ledger['source_sha256'] != dossier['source']['sha256'] or
+            [(f['number'], f['pdf_page']) for f in figures] !=
+            [(1, 4), (2, 5), (3, 5), (4, 5), (5, 6), (6, 7), (7, 7)] or
+            len(taxonomy) != len(labels) or len(labels) != 39 or
+            len(catalog_labels) != 39 or set(catalog_labels) != labels or
+            ledger['numbered_footnotes'] != list(range(1, 11)) or
+            ledger['bibliography_entries'] != 38 or
+            ledger['machine_class_count'] is not None):
+        raise ValueError('Incomplete or conflated Emotions2015 paper population')
+    study = dossier['study_population']
+    if (study['target'] != 'EMOCS_REPRESENTATION_AND_MANUAL_SDK_ANNOTATIONS' or
+            any(study[k] is not None for k in
+                ['participants', 'training_examples', 'accuracy', 'causal_emotion_change']) or
+            study['automatic_ekman_detection'] != 'ONGOING_FUTURE_NOT_REPORTED_RESULT' or
+            study['sdk_metric_families'] != 4 or study['ekman_future_targets'] != 6 or
+            study['independently_reproduced']):
+        raise ValueError('Emotions2015 manual or future evidence promoted to measured study')
+    artifact = dossier['artifact']
+    if (artifact['original_2015_machine_class_count'] is not None or
+            artifact['paper_to_machine_taxonomy_identity'] != 'NOT_ESTABLISHED' or
+            artifact['historical_fidelity'] != 'NOT_ESTABLISHED' or
+            artifact['imported_glossary_complete'] or
+            artifact['reasoner_execution'] != 'NOT_EXECUTED'):
+        raise ValueError('Emotions2015 candidate promoted to original or imported completion')
+
+
 def validate_mental_content_ledger(dossier, ledger):
     expected = [f'a{i}' for i in range(1, 7)] + [f'd{i}' for i in range(1, 13)]
     formulas = dossier['commitments']
@@ -708,6 +741,19 @@ def check(root=ROOT):
                 validate_o4oa_figure_ledger(d, yaml.safe_load(raw))
             elif d['work_id'] == 'CLR-RW-DOLCEMental':
                 validate_mental_content_ledger(d, yaml.safe_load(raw))
+            elif d['work_id'] == 'Emotions-2015':
+                validate_emotions2015_ledger(d, yaml.safe_load(raw))
+                external = d['artifact']['selected_external_constraints']
+                raw_external = (root / external['path']).read_bytes()
+                record = yaml.safe_load(raw_external)
+                if (hashlib.sha256(raw_external).hexdigest() != external['sha256'] or
+                        record['source_sha256'] != d['artifact']['census']['source_sha256'] or
+                        {r['iri'] for r in record['constraints']} != {
+                            'http://www.loa-cnr.it/ontologies/DUL.owl#Description',
+                            'http://www.loa-cnr.it/ontologies/DUL.owl#Situation'} or
+                        any(r['declared_named_owl_class_in_root']
+                            for r in record['constraints'])):
+                    raise ValueError('Changed Emotions2015 referenced-class constraints')
             else:
                 raise ValueError('Unknown paper figure-ledger contract')
         if 'diagram_inventory' in d:
@@ -791,8 +837,8 @@ def check(root=ROOT):
                 raise ValueError('Changed artifact census bytes')
             report = json.loads(raw)
             validate_artifact_census(report, binding)
-            known_inputs = yaml.safe_load((root / 'evidence/related-work/artifact-inputs.yaml').read_text())
-            if binding['source_sha256'] not in {r['sha256'] for r in known_inputs['artifacts']}:
+            from check_source_audit import retained_source_digests
+            if binding['source_sha256'] not in retained_source_digests(root):
                 raise ValueError('Census source missing from retained-artifact input manifest')
             generator = report['generator']
             if hashlib.sha256((root / generator['path']).read_bytes()).hexdigest() != generator['sha256']:
