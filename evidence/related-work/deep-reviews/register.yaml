@@ -280,15 +280,21 @@ limited_evidence_papers:
   title: 'Managing Knowledge at the Information Level: an Ontological Approach'
   doi: null
   url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
-  state: LIMITED_EVIDENCE_REVIEW_QUEUED
+  state: LIMITED_EVIDENCE_REVIEW_COMPLETE
   sha256: null
-  note: Owner explicitly accepts the previously supplied Google Quick Read summary as the evidence ceiling
-    for the current I&DA review/citation task. Do not await or request the PDF as a gate; do not claim complete
-    text, figure, formula or bibliography inspection. Execute after the acquired full papers; manuscript changes
-    remain outside this research scope.
+  note: All14owner-summary units/38claims critically reviewed;29concepts,10relation groups,14scenarios,16findings,eight
+    questions and qualified citation guidance recorded. Title/authors/bibliographic metadata cross-checked;
+    original full text,visuals,formulas and formal distribution unreviewed. This is not a19thfull-paper review
+    and has no PDF wait gate.
   full_text_available: false
   full_text_required_for_current_scope: false
   full_text_review: NOT_PERFORMED
   evidence_basis: OWNER_PROVIDED_GOOGLE_QUICK_READ
   owner_instruction_on: '2026-10-28'
   model_change: NONE
+  limited_review:
+    path: evidence/related-work/deep-reviews/CLR-RW-IDA/limited-review.yaml
+    sha256: 1b2bb32884da169c98b4c304feb7bf57c90ec2c255050fce618c0a7613718d73
+  summary_receipt:
+    path: evidence/related-work/deep-reviews/CLR-RW-IDA/summary-receipt.yaml
+    sha256: e1c1ff36808f1ccfee4dbe6ccf6d1b174b955462c4b05c890f111d43e20e7d43

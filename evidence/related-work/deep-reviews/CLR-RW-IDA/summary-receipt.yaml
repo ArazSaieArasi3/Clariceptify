@@ -1,0 +1,315 @@
+schema_version: '1.0'
+work_id: CLR-RW-IDA
+issue: 84
+kind: REVIEWER_PARAPHRASED_RECEIPT_OF_OWNER_PROVIDED_GOOGLE_QUICK_READ
+owner_authorized_on: '2026-10-28'
+source_locator: Owner message containing Quick read / Answers / Approach / Considerations and original PDF
+  hyperlink in this conversation. This is not a raw platform chat export.
+original_article_url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+units:
+- id: U00
+  label: Metadata
+  owner_summary_locator: 'Quick read: linked title and bibliographic block'
+  claim_ids:
+  - SR001
+- id: U01
+  label: Overview
+  owner_summary_locator: 'Quick read: opening overview'
+  claim_ids:
+  - SR002
+- id: U02
+  label: Ontology structure
+  owner_summary_locator: 'Answers: I&DA Ontology Structure'
+  claim_ids:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+- id: U03
+  label: Hybrid architecture
+  owner_summary_locator: 'Answers: Hybrid OSW Architecture'
+  claim_ids:
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+- id: U04
+  label: Core categories
+  owner_summary_locator: 'Answers: I&DA Core Categories'
+  claim_ids:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+- id: U05
+  label: Content distinction
+  owner_summary_locator: 'Answers: Content Modeling Distinction'
+  claim_ids:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+- id: U06
+  label: Design objectives
+  owner_summary_locator: 'Approach: Ontology Design'
+  claim_ids:
+  - SR028
+- id: U07
+  label: Implementation language
+  owner_summary_locator: 'Approach: Implementation Language'
+  claim_ids:
+  - SR029
+- id: U08
+  label: Application example
+  owner_summary_locator: 'Approach: Example Application'
+  claim_ids:
+  - SR030
+- id: U09
+  label: Indexing method
+  owner_summary_locator: 'Approach: Indexing Methodology'
+  claim_ids:
+  - SR031
+  - SR032
+  - SR033
+- id: U10
+  label: Open extensions
+  owner_summary_locator: 'Considerations: Open Extensions'
+  claim_ids:
+  - SR034
+  - SR035
+- id: U11
+  label: Example limitation
+  owner_summary_locator: 'Considerations: Limited Example Scope'
+  claim_ids:
+  - SR036
+- id: U12
+  label: Consensus limitation
+  owner_summary_locator: 'Considerations: Assumption of Consensual Knowledge'
+  claim_ids:
+  - SR037
+- id: U13
+  label: Thematic-role detail
+  owner_summary_locator: 'Considerations: Missing Thematic Roles Details'
+  claim_ids:
+  - SR038
+claims:
+- id: SR001
+  unit_id: U00
+  statement: The supplied summary identifies the title, abbreviated authors,2004ECAI workshop and39-45page
+    range; it provides an original PDF URL, not a DOI.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR002
+  unit_id: U01
+  statement: I&DA is proposed for knowledge/information management in hybrid organizational semantic webs,
+    independently of specification mode or location.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR003
+  unit_id: U02
+  statement: The model is knowledge about knowledge and information, contrasted with an organization model
+    containing knowledge about an organization.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR004
+  unit_id: U02
+  statement: A general semiotics layer concerns meaning and representation through ContentBearingObjects and
+    Contents.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR005
+  unit_id: U02
+  statement: A communication layer concerns Discourses used by Agents to communicate Information.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR006
+  unit_id: U02
+  statement: The domain includes signs and intentional acts that create or use signs.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR007
+  unit_id: U02
+  statement: The summary names DOLCE as backbone and associates the construction with OntoClean.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR008
+  unit_id: U03
+  statement: Strong coupling connects a knowledge base of modeled assertions with a collection of textual resources
+    holding information.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR009
+  unit_id: U03
+  statement: Knowledge is distributed across the KB and CTR; this complements weaker annotation-based access
+    to documents.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR010
+  unit_id: U03
+  statement: The meta-level model includes propositions,concepts,KBassertions and information in textual resources.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR011
+  unit_id: U03
+  statement: Content entities are connected to producing and addressed agents.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR012
+  unit_id: U03
+  statement: Reasoning about modeled knowledge is intended to help knowledge-management tasks such as customized
+    views.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR013
+  unit_id: U04
+  statement: Acts include Conceptualizing,Encoding,Decoding and Inscribing.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR014
+  unit_id: U04
+  statement: Agents carry out the acts.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR015
+  unit_id: U04
+  statement: Signs or ContentBearingObjects bear Content.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR016
+  unit_id: U04
+  statement: ContentBearingObjects and Contents are said to be nonphysical and to gain physical location through
+    Inscription.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR017
+  unit_id: U04
+  statement: An Inscription fixes a sign on a physical support.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR018
+  unit_id: U04
+  statement: Concepts are ways an agent grasps an object or a collection of objects.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR019
+  unit_id: U04
+  statement: Propositions are ways an agent grasps situations and may bear a TruthValue.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR020
+  unit_id: U04
+  statement: Discourses specialize ContentBearingObjects and communicate Information,described as a Proposition,to
+    an Addressee.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR021
+  unit_id: U04
+  statement: DiscourseProducing,DiscourseCommunicating and Enunciating manipulate communicative entities.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR022
+  unit_id: U05
+  statement: Assertions are KBpropositions to which the OSW attributes True,representing organizational consensual
+    knowledge.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR023
+  unit_id: U05
+  statement: Information is propositional content in a Discourse in the CTR.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR024
+  unit_id: U05
+  statement: Information description requires author or DiscourseProducer identification.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR025
+  unit_id: U05
+  statement: Thematic analysis identifies Subjects as Concepts and relations among them.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR026
+  unit_id: U05
+  statement: The summary reports an Assertion-Proposition-True formula fragment in DefOnto.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR027
+  unit_id: U05
+  statement: hasForSubject links Propositions to Concepts through indirect reference to the world.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR028
+  unit_id: U06
+  statement: The objectives are document classification,informational-content description and nuanced authorship,subject
+    and reliability notions.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR029
+  unit_id: U07
+  statement: Models are reported implemented in DefOnto,a language then under development with basic and meta-level
+    reification of objects,concepts and propositions.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR030
+  unit_id: U08
+  statement: A toy R&Dproject-memory example is inspired by a hybridOSWbeing developed.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR031
+  unit_id: U09
+  statement: Thematic analysis follows a Stockinger methodology,using border subjects to delimit text fragments.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR032
+  unit_id: U09
+  statement: Subjects are formalized as concepts.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR033
+  unit_id: U09
+  statement: Subjects are organized around a main subject and explanatory relations.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR034
+  unit_id: U10
+  statement: Discourse and Enunciation types for document classification remain open extensions.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR035
+  unit_id: U10
+  statement: A richer content model requires Proposition and Information types.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR036
+  unit_id: U11
+  statement: The toy R&Dexample can limit generalizability.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR037
+  unit_id: U12
+  statement: The KBis said to require a coherent assertion set and hence focuses on consensual organizational
+    knowledge,possibly excluding conflicting textual viewpoints.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+- id: SR038
+  unit_id: U13
+  statement: The ontology refining primitive participationPCwith thematic roles is reported omitted for space.
+  basis: OWNER_SUMMARY_REPORTED
+  primary_verified: false
+supplied_formula_fragment: Assertion (x) ↔ Proposition (x) AhasForTruthValue (x, True)
+formula_status: SECONDARY_TYPOGRAPHY_NOT_VERIFIED_OR_REPAIRED
+primary_full_text_retained: false
+primary_sha256: null
+primary_visual_coverage: NOT_PERFORMED
+citation_count_from_summary: NOT_USED_UNDATED_NOT_VERIFIED
+boundary: Faithful English paraphrases of every supplied summary unit/claim. Neither a primary-paper transcription
+  nor full-text/page/visual certification. Original article and raw third-party PDF are not redistributed.

@@ -1,0 +1,28 @@
+{
+  "additional_indexed_content": "Search also surfaced partial body discussion. It was not treated as complete paper reading. A broader agent-level knowledge wording is retained only as a caution against generalizing the summaryKBTrue assumption; no direct paper formula or mapping is certified.",
+  "checked_on": "2026-10-28",
+  "doi": "NOT_VERIFIED_NOT_ASSERTED_NONEXISTENT",
+  "metadata_sources": [
+    "https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf",
+    "https://www.scitepress.org/Papers/2007/13409/",
+    "https://www.scitepress.org/PublishedPapers/2013/45394/"
+  ],
+  "model_change": "NONE",
+  "no_pdf_wait_gate": true,
+  "original_full_text_review": "NOT_PERFORMED",
+  "original_sha256": null,
+  "primary_header_index": "https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf",
+  "queries": [
+    "\"Managing knowledge at the information level\" Fortier Kassel2004",
+    "\"Managing knowledge at the information level\" DOIauthors",
+    "site:crossref.org \"Managing Knowledge at the Information Level\"",
+    "site:inria.fr/acacia/WORKSHOPS/ECAI2004-OM \"Fortier\""
+  ],
+  "repository_discovery": "Existing dated source-auditG06 search remains bounded; no original formal distribution acquired by this task.",
+  "schema_version": "1.0",
+  "scope": "Bibliographic verification and bounded source-disposition only; no new full-PDF download gate.",
+  "workshop_index": {
+    "outcome": "Not accessible through search service in this checked open.",
+    "url": "https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/"
+  }
+}

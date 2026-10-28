@@ -81,3 +81,7 @@ limited_source_policy:
   not_allowed: Full-paper completion, source-verified exact quotation/formula/visual claim, invented DOI, or
     lowering the other acquired-paper criteria.
   pdf_gate: false
+  current_status: LIMITED_EVIDENCE_REVIEW_COMPLETE
+  input: evidence/related-work/deep-reviews/CLR-RW-IDA/limited-review.yaml
+  indexed_caution: Separately labeled partial indexed discussion is a caution/lead only,not full-text or formal-equivalence
+    certification.

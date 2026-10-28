@@ -1,0 +1,37 @@
+schema_version: '1.0'
+work_id: CLR-RW-IDA
+title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+authors:
+- Jean-Yves Fortier
+- Gilles Kassel
+year: 2004
+venue: Proceedings of the ECAI2004 Workshop on Knowledge Management and Organizational Memories
+pages: 39-45
+doi: null
+doi_status: NOT_VERIFIED_IN_BOUNDED_LOOKUP_NOT_GLOBAL_ABSENCE
+url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+city: null
+publisher: null
+editors: null
+identity_evidence:
+- id: M01
+  source_kind: PRIMARY_INDEXED_HEADER
+  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  locator: Indexed original title and author line, checked2026-10-28; no retained fullPDFor glyph certification.
+  confirms:
+  - title
+  - Jean-Yves Fortier
+  - Gilles Kassel
+- id: M02
+  source_kind: LATER_PRIMARY_RESEARCH_BIBLIOGRAPHIC_REFERENCE
+  url: https://www.scitepress.org/PublishedPapers/2013/45394/
+  locator: Reference4,checked2026-10-28
+  confirms:
+  - year2004
+  - workshop
+  - page range39-45
+conflicting_or_unverified_fields:
+- City omitted:later citations differ; no authoritative workshop index retrieved.
+- Original DOI,editors,publisher,exact PDFpage count and original bytes unverified.
+owner_summary_bibliography_match: true
+full_text_review: NOT_PERFORMED
