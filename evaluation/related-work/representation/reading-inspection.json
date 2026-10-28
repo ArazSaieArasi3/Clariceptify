@@ -1,0 +1,149 @@
+{
+  "work_id": "CLR-RW-Representation",
+  "date": "2026-10-28",
+  "source_sha256": "16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a",
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "main_pdf": {
+    "printed_pages": "137-152",
+    "user_supplied": true,
+    "watermark_present": true,
+    "publisher_pdf_byte_parity": "NOT_ESTABLISHED",
+    "sections": 8,
+    "figures": 1,
+    "tables": 2,
+    "notes": 10,
+    "references": 25
+  },
+  "visual_inspection": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "method": "Original PDF page renders; four contact sheets plus full Figure 1/Table 1/Table 2 page review",
+    "scope": "Main supplied PDF only. Supplement layout/glyph inspection is not claimed."
+  },
+  "supplement": {
+    "url": "https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf",
+    "pages": 10,
+    "appendices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "access": "PUBLISHER_PARSED_PDF_TEXT_RETRIEVED",
+    "raw_pdf_sha256": null,
+    "raw_pdf_retained": false,
+    "raw_download_attempts": [
+      {
+        "endpoint": "Publisher supplement",
+        "result": "HTTP_403_CLOUDFLARE_PAGE"
+      },
+      {
+        "endpoint": "Author-uploaded ResearchGate supplement",
+        "result": "HTTP_403"
+      }
+    ],
+    "source_text_line_population": 884,
+    "captured_line_population": 884,
+    "page_receipts": [
+      {
+        "pdf_page": 1,
+        "extracted_text_sha256": "7a2432d414709f725829f7b9bd06ada16c6e961e94762c4299877fb86cfbdd83",
+        "captured_lines": 83
+      },
+      {
+        "pdf_page": 2,
+        "extracted_text_sha256": "07dbd8dd9cec9e4113ddf0795bc9f331af52491d517617e61cbfdb545b720568",
+        "captured_lines": 94
+      },
+      {
+        "pdf_page": 3,
+        "extracted_text_sha256": "f8e6917d7656254e64727d4b898756f0447a73f89e0f3a29b575803da5367b90",
+        "captured_lines": 108
+      },
+      {
+        "pdf_page": 4,
+        "extracted_text_sha256": "646a163c82f896a693808b50cb30841fb1ce27bb7c9bbe8a359e71c2b26768f3",
+        "captured_lines": 84
+      },
+      {
+        "pdf_page": 5,
+        "extracted_text_sha256": "20a0ec8abc5cac693d1de5a052ab85fa6d1e6e7c548a1ed6b14ed6545930a68c",
+        "captured_lines": 90
+      },
+      {
+        "pdf_page": 6,
+        "extracted_text_sha256": "b09b4310fab0b74522e65be2e766f90788b344ab3111ce4aa1e5fbf4e8f97d0f",
+        "captured_lines": 81
+      },
+      {
+        "pdf_page": 7,
+        "extracted_text_sha256": "aac76396be9fe782ef25ec5fdb382a6ee38518b27fef3a81d48d2bf265c9e8f5",
+        "captured_lines": 82
+      },
+      {
+        "pdf_page": 8,
+        "extracted_text_sha256": "69df3e114cf057455d04a22ef783c0bb926ae9c68078c80ece90194d112558e3",
+        "captured_lines": 97
+      },
+      {
+        "pdf_page": 9,
+        "extracted_text_sha256": "7b68357b5d243d268ad8f2d03ed3fb520fc2e8f23ac3bfe796fad24097103753",
+        "captured_lines": 78
+      },
+      {
+        "pdf_page": 10,
+        "extracted_text_sha256": "832aca556c8f320c2aefa48394af880362faffb5c73347cf5fcedb6a0b7f4e68",
+        "captured_lines": 87
+      }
+    ],
+    "private_capture_sha256": "9f94917d6f60a3fe3e99094f490b389ea497131c69ac1fe0e79af9b32d9a72ec",
+    "screen_render_request": "Publisher screenshot API returned text placeholders; no original supplement image inspection claimed",
+    "limitation": "All supplement text read; raw-PDF parity, visual equation-glyph verification and machine formalization remain #244."
+  },
+  "semantics_or_solver_executed": "NOT_EXECUTED",
+  "source_redistributed": false
+}

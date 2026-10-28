@@ -1,0 +1,2826 @@
+schema_version: '1.1'
+protocol_id: CLR-DEEP-1
+work_id: CLR-RW-Representation
+issue: 82
+review_date: '2026-10-28'
+reviewer: AI-assisted critical review, not independent expert validation
+baseline_commit: e40f1421ab5810da0a615492b7dbbb7eae5cd53f
+status: REVIEW_COMPLETE
+identity:
+  title: An Ontology of Representation
+  authors:
+  - Riichiro Mizoguchi
+  - Stefano Borgo
+  year: 2025
+  doi: 10.1177/15705838251337943
+  url: https://journals.sagepub.com/doi/10.1177/15705838251337943
+  version: Applied Ontology 20(2), 137-152; owner-supplied journal-layout PDF plus publisher-retrieved supplement
+    text
+  boundary: Exact 2025 work, not the 2021 Towards paper. Main PDF page n maps to printed n+136. Main bytes
+    carry a downloader watermark; publisher byte parity is not established. Supplement A-C is ten separately
+    accessed pages, not part of the 16-page supplied PDF. Its entire text was inspected; raw-PDF retention
+    and original equation-glyph inspection are not claimed.
+source:
+  filename: Representation-2025-owner.pdf
+  sha256: 16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a
+  pdf_pages: 16
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  units:
+  - unit: Title/authors/abstract/keywords and journal identity
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: 1 Introduction, all paragraphs
+    status: REVIEWED
+    evidence:
+    - E02
+    - E03
+    - E04
+  - unit: 2 Data, Information, and Knowledge as Representations
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: 3 Classification introduction
+    status: REVIEWED
+    evidence:
+    - E06
+    - E23
+  - unit: 3.1 Classifying by content or form
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: 3.2 Content-realizability
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: 3.3 Realization and specification
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: 3.4.1 Drama and novel
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 3.4.2 Piece of music
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 3.4.3 Procedure
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 3.4.4 Car model
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 3.4.5 Map
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 4 Representing thing
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: 5/5.1 Sentences and letters
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Figure 1, complete two-level reading
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: 5.2 Dual content of letter representation
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: 6.1 Table 1, all six rows and markers
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Table 2, all four branches
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: 6.2 Expressivity style as content
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: 6.3 Copying and all four identity levels
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: 7 Literature positioning
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: 7.1 Literary works, all four numbered conclusions
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: 7.2 IAO comparison
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: 8 Concluding remarks
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Acknowledgements/ORCID/funding/conflicts/supplement notice
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: All ten numbered notes
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: All 25 references
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Supplement A, all seven pages/continuation, f1-f3/Ax1-Ax15/D1-D10/T1-T11
+    status: REVIEWED
+    evidence:
+    - E19
+    - E20
+  - unit: Supplement B, all three pages/continuation, Ax16-Ax18/D11-D17
+    status: REVIEWED
+    evidence:
+    - E21
+  - unit: Supplement C, Tables 3/4 and all 41 tabulated predicates
+    status: REVIEWED
+    evidence:
+    - E22
+  - unit: Supplement notes 11-15
+    status: REVIEWED
+    evidence:
+    - E20
+    - E21
+  catalog_boundary: 'Complete main-paper conceptual reading, Figure 1, both tables, notes and references; all
+    49 labeled formulas and both predicate tables in the separately retrieved supplement text. The conceptual/formal
+    vocabulary is not a released-class census. Main figures/tables visually checked. Supplement original PDF
+    glyph fidelity and raw bytes remain an explicit #244 limitation, so suspected formula issues are provisional,
+    not certified source defects.'
+evidence:
+- id: E01
+  source_kind: PAPER
+  pages:
+  - 1
+  - 15
+  - 16
+  locator: Main PDF 1/15-16, printed 137/151-152; publisher identity
+  summary: Two-author 2025 journal article, not the distinct 2021 Towards work; 25 bibliography entries and
+    10 numbered notes.
+- id: E02
+  source_kind: PAPER
+  pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  locator: Main section 1, printed 137-140
+  summary: Form/content theory is separated from aboutness and agent understanding; external mental/physical/conceptual
+    scope, encoding and nested representation assumptions.
+- id: E03
+  source_kind: PAPER
+  pages:
+  - 2
+  locator: Main section 1, M1-M5, printed 138
+  summary: Music example separates conceived work, score, sound specification, performing activity and produced
+    sound event.
+- id: E04
+  source_kind: PAPER
+  pages:
+  - 3
+  locator: Main section 1, printed 139
+  summary: OREO is a semiabstract form-content construction; false or impossible descriptions may still have
+    form/content; encryption relates forms rather than form and content.
+- id: E05
+  source_kind: PAPER
+  pages:
+  - 4
+  - 5
+  locator: Main section 2, printed 140-141
+  summary: Data, information and knowledge are contextual, cumulatively playable roles associated with processing,
+    informing and learning.
+- id: E06
+  source_kind: PAPER
+  pages:
+  - 5
+  - 6
+  locator: Main sections 3.1-3.2, printed 141-142
+  summary: Eight illustrative types classified by dominance and content-realizability; one physical object
+    can realize multiple representations.
+- id: E07
+  source_kind: PAPER
+  pages:
+  - 6
+  locator: Main section 3.3 and note 7, printed 142/151
+  summary: Form-realization versus content-realization; specification as chosen consistent constraints, possible
+    empty realization set and expressivity/finite-set qualification.
+- id: E08
+  source_kind: PAPER
+  pages:
+  - 7
+  locator: Main sections 3.4.1-3.4.5, printed 143
+  summary: Drama, music, algorithm, car model and descriptive map illustrate realization versus instantiation
+    and prescription versus description.
+- id: E09
+  source_kind: PAPER
+  pages:
+  - 7
+  - 8
+  locator: Main section 4, printed 143-144
+  summary: Representing thing is concrete medium with realizing features; work, copy and material support are
+    distinct.
+- id: E10
+  source_kind: PAPER
+  pages:
+  - 8
+  - 9
+  locator: Main sections 5/5.1 and Figure 1, printed 144-145
+  summary: Sentence symbol sequence identifies alphabet positions through letter content; letter patterns use
+    an analogical recognition route.
+- id: E11
+  source_kind: PAPER
+  pages:
+  - 9
+  - 10
+  locator: Main section 5.2, printed 145-146
+  summary: Letter content includes position and standard pattern; one written mark can be both form- and content-realization
+    under different descriptions.
+- id: E12
+  source_kind: PAPER
+  pages:
+  - 10
+  - 11
+  locator: Main section 6.1, Table 1 and Table 2, printed 146-147
+  summary: Six comparison rows and four decision branches expose level-sensitive referents; checked cells include
+    form, content and physical realization.
+- id: E13
+  source_kind: PAPER
+  pages:
+  - 11
+  - 12
+  locator: Main section 6.2, printed 147-148
+  summary: Style is secondary content represented in nested form; primary meaning alone is insufficient for
+    style-sensitive comparison.
+- id: E14
+  source_kind: PAPER
+  pages:
+  - 12
+  locator: Main section 6.3, printed 148
+  summary: 'Translation/transcription/photocopying preserve different levels: content, symbols, ink pattern
+    and medium.'
+- id: E15
+  source_kind: PAPER
+  pages:
+  - 12
+  - 13
+  locator: Main section 7/7.1, printed 148-149
+  summary: Authors position token-level representational analysis against mental/type-level, literary and reader-oriented
+    accounts; artistic value is orthogonal.
+- id: E16
+  source_kind: PAPER
+  pages:
+  - 13
+  - 14
+  locator: Main section 7.2, printed 149-150
+  summary: Authors criticize IAO ICE/IQE terminology and ink-pattern dependence; these are their comparative
+    claims, not a reproduced current-IAO audit.
+- id: E17
+  source_kind: PAPER
+  pages:
+  - 14
+  - 15
+  locator: Main section 8, declarations and supplemental notice, printed 150-151
+  summary: Theory remains expandable; complete letters and role account are future work. Supplement is external,
+    rather than contained in main PDF.
+- id: E18
+  source_kind: PAPER
+  pages:
+  - 15
+  locator: Main numbered notes 1-10, printed 151
+  summary: Notes qualify foundations, map-as-model, finite expressivity, letter levels and disambiguating competency-style
+    questions.
+- id: E19
+  source_kind: PAPER_SUPPLEMENT
+  pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  locator: Supplement A, PDF 1-4, f1-f3/Ax1-Ax12/D1-D3/T1-T7
+  summary: Printed modular FOL outline; semiabstract assumptions and encoding uniqueness. Claims of theoremhood
+    are author-reported.
+  url: https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+  source_pdf_pages: 10
+  retrieval_ref: evaluation/related-work/representation/reading-inspection.json
+- id: E20
+  source_kind: PAPER_SUPPLEMENT
+  pages:
+  - 4
+  - 5
+  - 6
+  - 7
+  locator: Supplement A, PDF 4-7, Ax13-Ax15/D4-D10/T8-T11
+  summary: Pattern/medium/mark structure and content satisfaction; background mereology, pattern theory and
+    satisfaction are assumed.
+  url: https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+  source_pdf_pages: 10
+  retrieval_ref: evaluation/related-work/representation/reading-inspection.json
+- id: E21
+  source_kind: PAPER_SUPPLEMENT
+  pages:
+  - 7
+  - 8
+  - 9
+  locator: Supplement B, PDF 7-9, Ax16-Ax18/D11-D17, notes 14-15
+  summary: Natural-language specialization, letter classification and standard patterns; potential D11 quantifier
+    issue remains a text-level question.
+  url: https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+  source_pdf_pages: 10
+  retrieval_ref: evaluation/related-work/representation/reading-inspection.json
+- id: E22
+  source_kind: PAPER_SUPPLEMENT
+  pages:
+  - 9
+  - 10
+  locator: Supplement C, Table 3/Table 4, PDF 9-10
+  summary: Ten tabulated background and 31 tabulated introduced predicates; printed vocabulary, not machine
+    classes or OWL imports.
+  url: https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+  source_pdf_pages: 10
+  retrieval_ref: evaluation/related-work/representation/reading-inspection.json
+- id: E23
+  source_kind: PAPER
+  pages:
+  - 1
+  - 2
+  - 5
+  - 15
+  locator: Main sections 1/3 and notes 3/5, printed 137-141/151
+  summary: DOLCE NASO/YAMATO semiabstract placement is an example; no exact foundational import or edition-specific
+    alignment follows.
+dimensions:
+  D1_identity_coverage:
+    id: D1
+    label: Identity
+    statement: 'Exact 2025 two-author journal text: all 16 supplied PDF pages, one figure, two tables, ten
+      notes and 25 references. All ten pages of publisher-parsed supplement A-C were read. Remote supplement
+      bytes/glyph fidelity is an explicit remaining technical limitation.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E17
+    - E19
+    - E20
+    - E21
+    - E22
+  D2_problem_contribution:
+    id: D2
+    label: Problem
+    statement: The proposal isolates form/content from aboutness and explains representations and their realizations
+      across heterogeneous cases. Its data/information/knowledge account is role-based rather than an empirical
+      superiority result.
+    basis: AUTHOR_REPORTED
+    evidence:
+    - E02
+    - E04
+    - E05
+    - E12
+  D3_method:
+    id: D3
+    label: Method
+    statement: Conceptual analysis, contrastive cases, identity analysis and partial modular FOL. No prescribed
+      engineering lifecycle or reproduced empirical study is established by these pages.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E07
+    - E14
+    - E19
+  D4_requirements:
+    id: D4
+    label: Requirements
+    statement: Disambiguating questions in note 10 and music/book/algorithm cases function as explanatory adequacy
+      targets. Review scenarios below are labeled reconstructions, not an author CQ benchmark.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E08
+    - E18
+  D5_concepts:
+    id: D5
+    label: Concepts
+    statement: Catalog separates paper notions from 10 background and 31 introduced tabulated predicates, and
+      from additional unlisted formal symbols. None is a machine class count.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E06
+    - E09
+    - E22
+  D6_relations_formalization:
+    id: D6
+    label: Formal commitments
+    statement: 'All 49 labeled supplement records indexed: three f assumptions, 18 axioms, 17 definitions and
+      11 author-labeled theorems. Encoding uniqueness, identity and realization restrictions warrant bounded
+      checks; no solver/proof execution is claimed.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E19
+    - E20
+    - E21
+    - E22
+  D7_grounding:
+    id: D7
+    label: Grounding
+    statement: Semiabstract temporal/nonspatial ontology is assumed. DOLCE NASO and YAMATO are compatibility
+      examples; the module is not foundation-free, and examples do not establish formal imports or an edition-specific
+      mapping.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E18
+    - E19
+    - E23
+  D8_artifact_correspondence:
+    id: D8
+    label: Artifact
+    statement: 'Publisher supplement and an author-posted appendix text are identified. Two dated GitHub repository
+      searches returned none. No executable original ontology, complete class census or import chain has been
+      established; #244 remains open.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E17
+    - E19
+    - E22
+  D9_evaluation:
+    id: D9
+    label: Evaluation
+    statement: Worked cases and formal claims are theoretical assessment evidence. No participant sample, accuracy
+      metric, controlled comparison, automated proof or reproduced reasoner result is reported in the inspected
+      work.
+    basis: NOT_REPORTED
+    evidence:
+    - E03
+    - E12
+    - E15
+    - E17
+    - E19
+  D10_critical_synthesis:
+    id: D10
+    label: Critical contribution
+    statement: Useful prior overlap in form/content/carrier, role-based information and identity; scope exclusions
+      and formal assumptions prevent an immediate equivalence, adoption or novelty judgment about Clariceptify.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E05
+    - E09
+    - E14
+    - E16
+    - E19
+catalog:
+- id: C001
+  label: OREO / ontological representation object
+  statement: Created nonspatial entity combining form and content under an encoding relationship.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E04
+  kind: PAPER_CONCEPT
+- id: C002
+  label: Form
+  statement: Language expression rather than a particular written, spoken or digital token.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E04
+  kind: PAPER_CONCEPT
+- id: C003
+  label: Content
+  statement: Meaning associated with form under the chosen semantics; truth and referent existence are separate
+    questions.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  kind: PAPER_CONCEPT
+- id: C004
+  label: Encoding relationship
+  statement: Links form to content using a method; main text calls it asymmetrical without a complete binary
+    characterization.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  kind: PAPER_CONCEPT
+- id: C005
+  label: Encoding method
+  statement: Convention, private decision, composition, similarity or their combination can govern encoding.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  kind: PAPER_CONCEPT
+- id: C006
+  label: Semiabstract
+  statement: Exists temporally without spatial location; cannot be collapsed into a physical carrier.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E04
+  - E23
+  kind: PAPER_CONCEPT
+- id: C007
+  label: Mental entity / conceived work
+  statement: M1 is acknowledged but mental generation and understanding are outside the core analysis.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E03
+  kind: PAPER_CONCEPT
+- id: C008
+  label: Physical entity
+  statement: Material support, physical realization or event, contrasted with the nonspatial representation.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E09
+  kind: PAPER_CONCEPT
+- id: C009
+  label: Conceptual entity
+  statement: Meaning/social-role domain is part of the external world distinguished from the mental domain.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  kind: PAPER_CONCEPT
+- id: C010
+  label: Language and semantics
+  statement: Expressions in time, including nontextual languages; ambiguity is assigned within content relative
+    to selected semantics.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+  - E04
+  kind: PAPER_CONCEPT
+- id: C011
+  label: Datum
+  statement: Contextual role of a representation as the operand of processing.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+- id: C012
+  label: Information
+  statement: Contextual role during informing/exchange; usefulness or a purpose is not required by the account.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+- id: C013
+  label: Knowledge
+  statement: Contextual role during learning; this is not a demonstrated full epistemic theory.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+- id: C014
+  label: Processing / informing / learning activities
+  statement: Distinct activities ground cumulative representation roles.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+- id: C015
+  label: Content-dominant representation
+  statement: Procedure, music, drama, map, novel and poem emphasize content in the eight-type illustration.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  kind: PAPER_CONCEPT
+- id: C016
+  label: Form-dominant representation
+  statement: Painting and calligraphic handwriting emphasize form; creator intent can lead to multiple co-realized
+    types.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  kind: PAPER_CONCEPT
+- id: C017
+  label: Specification
+  statement: Intentionally selected consistent properties constrain an activity or result; realizations may
+    be absent.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+  kind: PAPER_CONCEPT
+- id: C018
+  label: Description / denotation
+  statement: Other content kinds acknowledged; a map describes layout unless used prescriptively as a model.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+  - E17
+  - E18
+  kind: PAPER_CONCEPT
+- id: C019
+  label: Form-realization
+  statement: Physical manifestation of form as object or process.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+  - E09
+  kind: PAPER_CONCEPT
+- id: C020
+  label: Content-realization
+  statement: Physical result or event satisfying a specification; distinct from a class instance.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+  - E08
+  kind: PAPER_CONCEPT
+- id: C021
+  label: Representing thing
+  statement: Concrete physical object/event manifesting representation form.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+  kind: PAPER_CONCEPT
+- id: C022
+  label: Representation medium and features
+  statement: Support and its relevant marks/pattern-bearing features must be distinguished.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E09
+  kind: PAPER_CONCEPT
+- id: C023
+  label: Creator / performer / user
+  statement: Creating, executing a specification and appreciating/reading occupy different roles; formal agent
+    relations are not developed.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+  - E06
+  - E07
+  kind: PAPER_CONCEPT
+- id: C024
+  label: Design / production
+  statement: Design yields a specification; production realizes it.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+  kind: PAPER_CONCEPT
+- id: C025
+  label: Musical work / score / specification / performance / sound
+  statement: Five introductory entities M1-M5 are kept separate; scores are not generated sound.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+  kind: PAPER_CONCEPT
+- id: C026
+  label: Procedure / quicksort
+  statement: Algorithm specification is not identical to an execution or its result.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+  kind: PAPER_CONCEPT
+- id: C027
+  label: Drama / novel
+  statement: Drama specifies performable events; a novel describes events under the selected reading.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+  kind: PAPER_CONCEPT
+- id: C028
+  label: Car model / produced car
+  statement: Prius specification differs from Alice's physical car.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+  kind: PAPER_CONCEPT
+- id: C029
+  label: Map / model
+  statement: Descriptive spatial arrangement differs from a prescriptive plan for construction.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E08
+  - E18
+  kind: PAPER_CONCEPT
+- id: C030
+  label: Poem / recitation
+  statement: Recitation realizes form; it is not content-performance in the stipulated vocabulary.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E07
+  kind: PAPER_CONCEPT
+- id: C031
+  label: Painting / sculpture / calligraphy
+  statement: Representation and tangible original/copies require different levels; representational aspects
+    do not constitute a full art theory.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+  - E12
+  - E15
+  kind: PAPER_CONCEPT
+- id: C032
+  label: Sentence / symbol sequence
+  statement: A sentence form combines alphabet identifiers independently of font/ink.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+  kind: PAPER_CONCEPT
+- id: C033
+  label: Letter / alphabet position
+  statement: Letter content includes position and standard pattern; identifying the position differs from recognizing
+    its shape.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+  - E11
+  kind: PAPER_CONCEPT
+- id: C034
+  label: Particular pattern / standard pattern
+  statement: A token shape and its classificatory standard must not be silently identified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E11
+  kind: PAPER_CONCEPT
+- id: C035
+  label: Symbolic / analogical representation
+  statement: Symbolic composition and analogical pattern recognition can occur at distinct nested levels.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+  - E11
+  kind: PAPER_CONCEPT
+- id: C036
+  label: Primary / secondary style content
+  statement: Meaning and expressive style can be nested in one representation structure.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E13
+  kind: PAPER_CONCEPT
+- id: C037
+  label: Transcription / photocopy / translation
+  statement: Operations preserve different content/symbol/pattern identities and yield different media.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+- id: C038
+  label: Content / symbol / ink-pattern / medium identity
+  statement: Four relative identity levels; content-preserving translation is an idealization.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+- id: C039
+  label: Aboutness / truth / referent
+  statement: Bracketing these questions does not prove their absence or solve the false-information debate.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  - E16
+  kind: PAPER_CONCEPT
+- id: C040
+  label: ICE / IQE
+  statement: Terms discussed in the authors' IAO comparison; no accepted equivalence mapping follows.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E16
+  kind: PAPER_CONCEPT
+- id: C041
+  label: Intentional creation / tolerance / improvisation
+  statement: Examples require conventions, allowable deviations and simultaneous design/performance; operational
+    criteria remain limited.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E03
+  - E07
+  - E08
+  kind: PAPER_CONCEPT
+- id: C042
+  label: Nested OREO
+  statement: A form may itself be a representation with a secondary content; neither arbitrary cycles nor all
+    nesting semantics are fully specified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E04
+  - E13
+  kind: PAPER_CONCEPT
+- id: C043
+  label: CLASSIFIES
+  statement: Table 3 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 2
+- id: C044
+  label: EVENT
+  statement: Table 3 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 1
+- id: C045
+  label: FEATURE
+  statement: Table 3 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 1
+- id: C046
+  label: LOCATEDINAT
+  statement: Table 3 predicate; arity 3. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 3
+- id: C047
+  label: PATTERNOF
+  statement: Table 3 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 2
+- id: C048
+  label: PHOBJECT
+  statement: Table 3 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 1
+- id: C049
+  label: PRE
+  statement: Table 3 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 2
+- id: C050
+  label: SATISFIES
+  statement: Table 3 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 2
+- id: C051
+  label: SEMIABSTRACT
+  statement: Table 3 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 1
+- id: C052
+  label: SPECIFIES
+  statement: Table 3 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 3
+  arity: 2
+- id: C053
+  label: ANALOGICALFORM
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C054
+  label: CONTENT
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C055
+  label: CONTENTREALISATION
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C056
+  label: ENCODINGLETTER
+  statement: Table 4 predicate; arity 3. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 3
+- id: C057
+  label: ENCODINGMETHOD
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C058
+  label: ENCODINGVIA
+  statement: Table 4 predicate; arity 3. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 3
+- id: C059
+  label: FORM
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C060
+  label: FORMOF
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C061
+  label: FORMREALISATOF
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C062
+  label: IDALPHABET
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C063
+  label: INKMARK
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C064
+  label: INKPATTERNOF
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C065
+  label: LETTERCONTENT
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C066
+  label: LETTERPATTERN
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C067
+  label: LETTERREPRESENTAT
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C068
+  label: METHOD
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C069
+  label: NL_FORM
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C070
+  label: NL_METHOD
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C071
+  label: NL_OREO
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C072
+  label: PATTERNFORFORM
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C073
+  label: PATTERNOFSYMBSEQ
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C074
+  label: PHPATTERNOF
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C075
+  label: PHREPRESENTATOF
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C076
+  label: REALISATIONMARK
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C077
+  label: REALISATMEDIUM
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C078
+  label: REALISATMEDIUMFOR
+  statement: Table 4 predicate; arity 2. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 2
+- id: C079
+  label: OREO
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C080
+  label: REPRESENTATREL
+  statement: Table 4 predicate; arity 4. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 4
+- id: C081
+  label: REPRESENTINGTHING
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C082
+  label: SYMBOLICFORM
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C083
+  label: SYMBOLSEQUENCE
+  statement: Table 4 predicate; arity 1. Printed vocabulary only; machine declaration/definition remains unverified.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  kind: TABULATED_PREDICATE
+  table: 4
+  arity: 1
+- id: C084
+  label: PATTERN
+  statement: Additional formal/background symbol used outside the ten/31 predicate table rows; no complete
+    external theory is supplied.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+  kind: ADDITIONAL_FORMAL_SYMBOL
+- id: C085
+  label: FEATUREOF
+  statement: Additional formal/background symbol used outside the ten/31 predicate table rows; no complete
+    external theory is supplied.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+  kind: ADDITIONAL_FORMAL_SYMBOL
+- id: C086
+  label: P
+  statement: Additional formal/background symbol used outside the ten/31 predicate table rows; no complete
+    external theory is supplied.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+  kind: ADDITIONAL_FORMAL_SYMBOL
+- id: C087
+  label: O
+  statement: Additional formal/background symbol used outside the ten/31 predicate table rows; no complete
+    external theory is supplied.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+  kind: ADDITIONAL_FORMAL_SYMBOL
+- id: C088
+  label: +
+  statement: Additional formal/background symbol used outside the ten/31 predicate table rows; no complete
+    external theory is supplied.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+  kind: ADDITIONAL_FORMAL_SYMBOL
+commitments:
+- id: K-f1
+  label: f1
+  statement: SEMIABSTRACT(x) -> exists t PRE(x,t)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: f1
+  normalized_formula: SEMIABSTRACT(x) -> exists t PRE(x,t)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-f2
+  label: f2
+  statement: SEMIABSTRACT(x) -> forall y,t not LOCATEDINAT(x,y,t)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: f2
+  normalized_formula: SEMIABSTRACT(x) -> forall y,t not LOCATEDINAT(x,y,t)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax1
+  label: Ax1
+  statement: FORM(x) or CONTENT(x) or METHOD(x) -> SEMIABSTRACT(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax1
+  normalized_formula: FORM(x) or CONTENT(x) or METHOD(x) -> SEMIABSTRACT(x)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax2
+  label: Ax2
+  statement: ENCODINGMETHOD(x) -> METHOD(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax2
+  normalized_formula: ENCODINGMETHOD(x) -> METHOD(x)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax3
+  label: Ax3
+  statement: FORM(x) -> not CONTENT(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax3
+  normalized_formula: FORM(x) -> not CONTENT(x)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax4
+  label: Ax4
+  statement: FORM(x) -> not METHOD(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax4
+  normalized_formula: FORM(x) -> not METHOD(x)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax5
+  label: Ax5
+  statement: ENCODINGVIA(x,y,m) -> FORM(x) and CONTENT(y) and ENCODINGMETHOD(m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax5
+  normalized_formula: ENCODINGVIA(x,y,m) -> FORM(x) and CONTENT(y) and ENCODINGMETHOD(m)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax6
+  label: Ax6
+  statement: ENCODINGVIA(x,y,m) -> y != m
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax6
+  normalized_formula: ENCODINGVIA(x,y,m) -> y != m
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax7
+  label: Ax7
+  statement: ENCODINGVIA(x,y,m) and ENCODINGVIA(x2,y,m) -> x = x2
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax7
+  normalized_formula: ENCODINGVIA(x,y,m) and ENCODINGVIA(x2,y,m) -> x = x2
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax8
+  label: Ax8
+  statement: ENCODINGVIA(x,y,m) and ENCODINGVIA(x,y2,m) -> y = y2
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax8
+  normalized_formula: ENCODINGVIA(x,y,m) and ENCODINGVIA(x,y2,m) -> y = y2
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax9
+  label: Ax9
+  statement: ENCODINGVIA(x,y,m) and ENCODINGVIA(x,y,m2) -> m = m2
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax9
+  normalized_formula: ENCODINGVIA(x,y,m) and ENCODINGVIA(x,y,m2) -> m = m2
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D1
+  label: D1
+  statement: REPRESENTATREL(x,y,z,m) := (x = y + z) and ENCODINGVIA(y,z,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: D1
+  normalized_formula: REPRESENTATREL(x,y,z,m) := (x = y + z) and ENCODINGVIA(y,z,m)
+  source_document: SUPPLEMENT
+  source_page: 2
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D2
+  label: D2
+  statement: OREO(x) := exists y,z,m REPRESENTATREL(x,y,z,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: D2
+  normalized_formula: OREO(x) := exists y,z,m REPRESENTATREL(x,y,z,m)
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T1
+  label: T1
+  statement: REPRESENTATREL(x,y,z,m) -> x != y and x != z and x != m and y != z and y != m and z != m
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T1
+  normalized_formula: REPRESENTATREL(x,y,z,m) -> x != y and x != z and x != m and y != z and y != m and z !=
+    m
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T2
+  label: T2
+  statement: REPRESENTATREL(x,y,z,m) and REPRESENTATREL(x,y2,z2,m2) -> y = y2 and z = z2 and m = m2
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T2
+  normalized_formula: REPRESENTATREL(x,y,z,m) and REPRESENTATREL(x,y2,z2,m2) -> y = y2 and z = z2 and m = m2
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T3
+  label: T3
+  statement: OREO(x) -> SEMIABSTRACT(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T3
+  normalized_formula: OREO(x) -> SEMIABSTRACT(x)
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T4
+  label: T4
+  statement: OREO(x) -> exists_unique y,z,m REPRESENTATREL(x,y,z,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T4
+  normalized_formula: OREO(x) -> exists_unique y,z,m REPRESENTATREL(x,y,z,m)
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T5
+  label: T5
+  statement: ENCODINGVIA(y,z,m) and ENCODINGVIA(y2,z,m2) -> (y != y2 iff m != m2)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T5
+  normalized_formula: ENCODINGVIA(y,z,m) and ENCODINGVIA(y2,z,m2) -> (y != y2 iff m != m2)
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T6
+  label: T6
+  statement: ENCODINGVIA(y,z,m) -> OREO(y + z)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T6
+  normalized_formula: ENCODINGVIA(y,z,m) -> OREO(y + z)
+  source_document: SUPPLEMENT
+  source_page: 3
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax10
+  label: Ax10
+  statement: REPRESENTATREL(x,y,z,m) and PRE(x,t) -> PRE(y,t) and PRE(z,t) and PRE(m,t)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax10
+  normalized_formula: REPRESENTATREL(x,y,z,m) and PRE(x,t) -> PRE(y,t) and PRE(z,t) and PRE(m,t)
+  source_document: SUPPLEMENT
+  source_page: 4
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T7
+  label: T7
+  statement: OREO(x) -> exists t PRE(x,t) and forall y,t2 not LOCATEDINAT(x,y,t2)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: T7
+  normalized_formula: OREO(x) -> exists t PRE(x,t) and forall y,t2 not LOCATEDINAT(x,y,t2)
+  source_document: SUPPLEMENT
+  source_page: 4
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax11
+  label: Ax11
+  statement: FORM(y) -> exists x,z,m REPRESENTATREL(x,y,z,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax11
+  normalized_formula: FORM(y) -> exists x,z,m REPRESENTATREL(x,y,z,m)
+  source_document: SUPPLEMENT
+  source_page: 4
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax12
+  label: Ax12
+  statement: CONTENT(z) -> exists x,y,m REPRESENTATREL(x,y,z,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: Ax12
+  normalized_formula: CONTENT(z) -> exists x,y,m REPRESENTATREL(x,y,z,m)
+  source_document: SUPPLEMENT
+  source_page: 4
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D3
+  label: D3
+  statement: FORMOF(f,r) := exists c,m REPRESENTATREL(r,f,c,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: D3
+  normalized_formula: FORMOF(f,r) := exists c,m REPRESENTATREL(r,f,c,m)
+  source_document: SUPPLEMENT
+  source_page: 4
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-f3
+  label: f3
+  statement: PATTERN(x) -> SEMIABSTRACT(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E19
+  formula_label: f3
+  normalized_formula: PATTERN(x) -> SEMIABSTRACT(x)
+  source_document: SUPPLEMENT
+  source_page: 4
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax13
+  label: Ax13
+  statement: PATTERNFORFORM(x,y) -> PATTERNOF(x,y) and PATTERN(x) and FORM(y)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: Ax13
+  normalized_formula: PATTERNFORFORM(x,y) -> PATTERNOF(x,y) and PATTERN(x) and FORM(y)
+  source_document: SUPPLEMENT
+  source_page: 5
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax14
+  label: Ax14
+  statement: PHPATTERNOF(x,y) -> PATTERNOF(x,y) and PATTERN(x) and (PHOBJECT(y) or EVENT(y) or FEATURE(y))
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: Ax14
+  normalized_formula: PHPATTERNOF(x,y) -> PATTERNOF(x,y) and PATTERN(x) and (PHOBJECT(y) or EVENT(y) or FEATURE(y))
+  source_document: SUPPLEMENT
+  source_page: 5
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax15
+  label: Ax15
+  statement: PHPATTERNOF(x,y) and PHPATTERNOF(x2,y) -> x = x2
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: Ax15
+  normalized_formula: PHPATTERNOF(x,y) and PHPATTERNOF(x2,y) -> x = x2
+  source_document: SUPPLEMENT
+  source_page: 5
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D4
+  label: D4
+  statement: REALISATIONMARK(x) := exists y,f PHPATTERNOF(y,x) and PATTERNFORFORM(y,f)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D4
+  normalized_formula: REALISATIONMARK(x) := exists y,f PHPATTERNOF(y,x) and PATTERNFORFORM(y,f)
+  source_document: SUPPLEMENT
+  source_page: 5
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D5
+  label: D5
+  statement: FORMREALISATOF(x,z) := exists y (PHPATTERNOF(y,x) and PATTERNFORFORM(y,z))
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D5
+  normalized_formula: FORMREALISATOF(x,z) := exists y (PHPATTERNOF(y,x) and PATTERNFORFORM(y,z))
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T8
+  label: T8
+  statement: FORMREALISATOF(x,z) -> REALISATIONMARK(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: T8
+  normalized_formula: FORMREALISATOF(x,z) -> REALISATIONMARK(x)
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D6
+  label: D6
+  statement: REALISATMEDIUMFOR(x,f) := (PHOBJECT(x) or EVENT(x)) and exists y (FEATUREOF(y,x) and FORMREALISATOF(y,f))
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D6
+  normalized_formula: REALISATMEDIUMFOR(x,f) := (PHOBJECT(x) or EVENT(x)) and exists y (FEATUREOF(y,x) and
+    FORMREALISATOF(y,f))
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T9
+  label: T9
+  statement: REALISATMEDIUMFOR(x,y) -> FORM(y)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: T9
+  normalized_formula: REALISATMEDIUMFOR(x,y) -> FORM(y)
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D7
+  label: D7
+  statement: REALISATMEDIUM(x) := exists f REALISATMEDIUMFOR(x,f)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D7
+  normalized_formula: REALISATMEDIUM(x) := exists f REALISATMEDIUMFOR(x,f)
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D8
+  label: D8
+  statement: PHREPRESENTATOF(x,r) := REALISATMEDIUM(x) and exists y,f (FEATUREOF(y,x) and FORMREALISATOF(y,f)
+    and FORMOF(f,r))
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D8
+  normalized_formula: PHREPRESENTATOF(x,r) := REALISATMEDIUM(x) and exists y,f (FEATUREOF(y,x) and FORMREALISATOF(y,f)
+    and FORMOF(f,r))
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T10
+  label: T10
+  statement: PHREPRESENTATOF(x,r) -> OREO(r)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: T10
+  normalized_formula: PHREPRESENTATOF(x,r) -> OREO(r)
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D9
+  label: D9
+  statement: REPRESENTINGTHING(x) := exists r PHREPRESENTATOF(x,r)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D9
+  normalized_formula: REPRESENTINGTHING(x) := exists r PHREPRESENTATOF(x,r)
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-T11
+  label: T11
+  statement: REPRESENTINGTHING(x) -> REALISATMEDIUM(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: T11
+  normalized_formula: REPRESENTINGTHING(x) -> REALISATMEDIUM(x)
+  source_document: SUPPLEMENT
+  source_page: 6
+  kind: AUTHOR_STATED_THEOREM_NOT_REPRODUCED
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D10
+  label: D10
+  statement: CONTENTREALISATION(x,c) := (PHOBJECT(x) or EVENT(x)) and CONTENT(c) and SATISFIES(x,c)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E20
+  formula_label: D10
+  normalized_formula: CONTENTREALISATION(x,c) := (PHOBJECT(x) or EVENT(x)) and CONTENT(c) and SATISFIES(x,c)
+  source_document: SUPPLEMENT
+  source_page: 7
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax16
+  label: Ax16
+  statement: SYMBOLICFORM(x) -> SYMBOLSEQUENCE(x) and exists y FORMOF(x,y) and OREO(y)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: Ax16
+  normalized_formula: SYMBOLICFORM(x) -> SYMBOLSEQUENCE(x) and exists y FORMOF(x,y) and OREO(y)
+  source_document: SUPPLEMENT
+  source_page: 7
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax17
+  label: Ax17
+  statement: PATTERNOFSYMBSEQ(x,y) -> PATTERNOF(x,y) and SYMBOLICFORM(y)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: Ax17
+  normalized_formula: PATTERNOFSYMBSEQ(x,y) -> PATTERNOF(x,y) and SYMBOLICFORM(y)
+  source_document: SUPPLEMENT
+  source_page: 7
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-Ax18
+  label: Ax18
+  statement: ANALOGICALFORM(x) -> FORM(x) and exists y PATTERN(y) and SPECIFIES(x,y)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: Ax18
+  normalized_formula: ANALOGICALFORM(x) -> FORM(x) and exists y PATTERN(y) and SPECIFIES(x,y)
+  source_document: SUPPLEMENT
+  source_page: 7
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D11
+  label: D11
+  statement: INKMARK(x) := exists o,r,p,p2 OREO(r) and PHOBJECT(o) and PHREPRESENTATOF(o,r) and FEATUREOF(x,o)
+    and PHPATTERNOF(p2,x) and P(p2,p) and FORMOF(f,r) and PATTERNFORFORM(p,f)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D11
+  normalized_formula: INKMARK(x) := exists o,r,p,p2 OREO(r) and PHOBJECT(o) and PHREPRESENTATOF(o,r) and FEATUREOF(x,o)
+    and PHPATTERNOF(p2,x) and P(p2,p) and FORMOF(f,r) and PATTERNFORFORM(p,f)
+  source_document: SUPPLEMENT
+  source_page: 8
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D12
+  label: D12
+  statement: INKPATTERNOF(x,y) := PHPATTERNOF(x,y) and INKMARK(y)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D12
+  normalized_formula: INKPATTERNOF(x,y) := PHPATTERNOF(x,y) and INKMARK(y)
+  source_document: SUPPLEMENT
+  source_page: 8
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D13
+  label: D13
+  statement: NL_OREO(x) := exists f,c,m REPRESENTATREL(x,f,c,m) and NL_METHOD(m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D13
+  normalized_formula: NL_OREO(x) := exists f,c,m REPRESENTATREL(x,f,c,m) and NL_METHOD(m)
+  source_document: SUPPLEMENT
+  source_page: 8
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D14
+  label: D14
+  statement: NL_FORM(y) := exists x FORMOF(y,x) and NL_OREO(x)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D14
+  normalized_formula: NL_FORM(y) := exists x FORMOF(y,x) and NL_OREO(x)
+  source_document: SUPPLEMENT
+  source_page: 8
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D15
+  label: D15
+  statement: ENCODINGLETTER(x,y,m) := CLASSIFIES(y,x) and NL_METHOD(m) and exists r REPRESENTATREL(r,x,y,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D15
+  normalized_formula: ENCODINGLETTER(x,y,m) := CLASSIFIES(y,x) and NL_METHOD(m) and exists r REPRESENTATREL(r,x,y,m)
+  source_document: SUPPLEMENT
+  source_page: 9
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D16
+  label: D16
+  statement: LETTERCONTENT(x) := CONTENT(x) and exists n,p SPECIFIES(x,p) and IDALPHABET(n,p) and LETTERPATTERN(p)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D16
+  normalized_formula: LETTERCONTENT(x) := CONTENT(x) and exists n,p SPECIFIES(x,p) and IDALPHABET(n,p) and
+    LETTERPATTERN(p)
+  source_document: SUPPLEMENT
+  source_page: 9
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+- id: K-D17
+  label: D17
+  statement: LETTERREPRESENTAT(r) := exists_unique x,y,m ENCODINGLETTER(x,y,m) and LETTERCONTENT(y) and REPRESENTATREL(r,x,y,m)
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E21
+  formula_label: D17
+  normalized_formula: LETTERREPRESENTAT(r) := exists_unique x,y,m ENCODINGLETTER(x,y,m) and LETTERCONTENT(y)
+    and REPRESENTATREL(r,x,y,m)
+  source_document: SUPPLEMENT
+  source_page: 9
+  kind: PRINTED_FORMAL_RECORD
+  normalization: ASCII layout normalization; quantifier scope/glyph verification not certified
+  execution: NOT_EXECUTED
+relation_index:
+- id: R01
+  label: CLASSIFIES
+  statement: 'Printed predicate signature: CLASSIFIES/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R02
+  label: EVENT
+  statement: 'Printed predicate signature: EVENT/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R03
+  label: FEATURE
+  statement: 'Printed predicate signature: FEATURE/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R04
+  label: LOCATEDINAT
+  statement: 'Printed predicate signature: LOCATEDINAT/3; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 3
+- id: R05
+  label: PATTERNOF
+  statement: 'Printed predicate signature: PATTERNOF/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R06
+  label: PHOBJECT
+  statement: 'Printed predicate signature: PHOBJECT/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R07
+  label: PRE
+  statement: 'Printed predicate signature: PRE/2; see formal ledger and supplement C. Not an OWL property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R08
+  label: SATISFIES
+  statement: 'Printed predicate signature: SATISFIES/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R09
+  label: SEMIABSTRACT
+  statement: 'Printed predicate signature: SEMIABSTRACT/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R10
+  label: SPECIFIES
+  statement: 'Printed predicate signature: SPECIFIES/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R11
+  label: ANALOGICALFORM
+  statement: 'Printed predicate signature: ANALOGICALFORM/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R12
+  label: CONTENT
+  statement: 'Printed predicate signature: CONTENT/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R13
+  label: CONTENTREALISATION
+  statement: 'Printed predicate signature: CONTENTREALISATION/2; see formal ledger and supplement C. Not an
+    OWL property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R14
+  label: ENCODINGLETTER
+  statement: 'Printed predicate signature: ENCODINGLETTER/3; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 3
+- id: R15
+  label: ENCODINGMETHOD
+  statement: 'Printed predicate signature: ENCODINGMETHOD/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R16
+  label: ENCODINGVIA
+  statement: 'Printed predicate signature: ENCODINGVIA/3; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 3
+- id: R17
+  label: FORM
+  statement: 'Printed predicate signature: FORM/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R18
+  label: FORMOF
+  statement: 'Printed predicate signature: FORMOF/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R19
+  label: FORMREALISATOF
+  statement: 'Printed predicate signature: FORMREALISATOF/2; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R20
+  label: IDALPHABET
+  statement: 'Printed predicate signature: IDALPHABET/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R21
+  label: INKMARK
+  statement: 'Printed predicate signature: INKMARK/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R22
+  label: INKPATTERNOF
+  statement: 'Printed predicate signature: INKPATTERNOF/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R23
+  label: LETTERCONTENT
+  statement: 'Printed predicate signature: LETTERCONTENT/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R24
+  label: LETTERPATTERN
+  statement: 'Printed predicate signature: LETTERPATTERN/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R25
+  label: LETTERREPRESENTAT
+  statement: 'Printed predicate signature: LETTERREPRESENTAT/1; see formal ledger and supplement C. Not an
+    OWL property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R26
+  label: METHOD
+  statement: 'Printed predicate signature: METHOD/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R27
+  label: NL_FORM
+  statement: 'Printed predicate signature: NL_FORM/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R28
+  label: NL_METHOD
+  statement: 'Printed predicate signature: NL_METHOD/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R29
+  label: NL_OREO
+  statement: 'Printed predicate signature: NL_OREO/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R30
+  label: PATTERNFORFORM
+  statement: 'Printed predicate signature: PATTERNFORFORM/2; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R31
+  label: PATTERNOFSYMBSEQ
+  statement: 'Printed predicate signature: PATTERNOFSYMBSEQ/2; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R32
+  label: PHPATTERNOF
+  statement: 'Printed predicate signature: PHPATTERNOF/2; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R33
+  label: PHREPRESENTATOF
+  statement: 'Printed predicate signature: PHREPRESENTATOF/2; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R34
+  label: REALISATIONMARK
+  statement: 'Printed predicate signature: REALISATIONMARK/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R35
+  label: REALISATMEDIUM
+  statement: 'Printed predicate signature: REALISATMEDIUM/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R36
+  label: REALISATMEDIUMFOR
+  statement: 'Printed predicate signature: REALISATMEDIUMFOR/2; see formal ledger and supplement C. Not an
+    OWL property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 2
+- id: R37
+  label: OREO
+  statement: 'Printed predicate signature: OREO/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R38
+  label: REPRESENTATREL
+  statement: 'Printed predicate signature: REPRESENTATREL/4; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 4
+- id: R39
+  label: REPRESENTINGTHING
+  statement: 'Printed predicate signature: REPRESENTINGTHING/1; see formal ledger and supplement C. Not an
+    OWL property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R40
+  label: SYMBOLICFORM
+  statement: 'Printed predicate signature: SYMBOLICFORM/1; see formal ledger and supplement C. Not an OWL property
+    census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+- id: R41
+  label: SYMBOLSEQUENCE
+  statement: 'Printed predicate signature: SYMBOLSEQUENCE/1; see formal ledger and supplement C. Not an OWL
+    property census.'
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E22
+  arity: 1
+scenarios:
+- id: S01
+  label: Score versus sound
+  statement: 'Positive: distinguish composed specification, printed score, performing event and resulting sound;
+    do not collapse all into a music instance.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+- id: S02
+  label: Specification versus execution
+  statement: 'Positive: separate quicksort constraints, its written expression and one sorting run.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+- id: S03
+  label: Map used as a plan
+  statement: 'Adverse: the same diagram can describe existing layout or prescribe construction; classify its
+    content relative to the intended representational use.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E18
+- id: S04
+  label: False sentence
+  statement: 'Adverse: absence of a real referent or false content does not eliminate an OREO when form, content
+    and encoding exist.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+- id: S05
+  label: Impossible instructions
+  statement: 'Adverse: an impossible procedure may still be an OREO; calling its content a consistent specification
+    requires an additional check.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E07
+- id: S06
+  label: Book translation
+  statement: 'Positive with idealization: same primary content can have distinct language forms and distinct
+    physical copies.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E14
+- id: S07
+  label: Style-sensitive translation
+  statement: 'Adverse: preservation of primary meaning does not establish preservation of nested style content.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+- id: S08
+  label: Letter versus ink mark
+  statement: 'Positive: distinguish alphabet position, standard pattern, particular drawing and physical ink;
+    paper example permits two realization readings.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E11
+- id: S09
+  label: Painting versus digital rendering
+  statement: 'Adverse: table 1 selects a tangible painting while core OREO is semiabstract; keep selection
+    rule and underlying representation separate.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E12
+- id: S10
+  label: Emoji within text
+  statement: 'Adverse: main language assumptions admit mixtures while supplement B models separate symbolic/analogical
+    representations; implementation scope must be explicit.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E21
+- id: S11
+  label: Alternative encoding methods
+  statement: 'Adverse: two methods for the same form/content pair violate core Ax9 unless the theory is weakened
+    as the authors discuss.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+- id: S12
+  label: Information roles
+  statement: 'Positive: a representation can be data during processing and also information/knowledge in the
+    appropriate exchange/learning episodes; this is not a temporal class replacement.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+findings:
+- id: F01
+  label: Strong level separation
+  statement: The form/content/carrier distinction is substantial existing work; future comparison cannot claim
+    that distinction itself is new.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+- id: F02
+  label: Realization is not instantiation
+  statement: Algorithm and car cases give direct counterexamples to treating execution or product as an instance
+    of its specification.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+- id: F03
+  label: Aboutness deliberately bracketed
+  statement: Neutrality on aboutness is a design boundary, not evidence that truth/reference has been solved
+    or is irrelevant to every downstream use.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E16
+- id: F04
+  label: Mental scope deliberately limited
+  statement: M1 and agent recognition/understanding are acknowledged but excluded from core analysis; do not
+    reframe this as universal absence of agency.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E03
+- id: F05
+  label: Meaningful expression assumption
+  statement: Ambiguity is internalized into content relative to a chosen language/semantics; this does not
+    itself give a practical disambiguation procedure.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E04
+- id: F06
+  label: Role account needs more than labels
+  statement: Processing/informing/learning ground cumulative roles, but the paper explicitly leaves a complete
+    act/event account for later.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E17
+- id: F07
+  label: Impossible OREO versus consistent specification
+  statement: The broad impossible-procedure example and the stricter consistent-specification definition need
+    distinct typing conditions.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E07
+- id: F08
+  label: Creator intent and multiple readings
+  statement: Dominance classifications admit co-realization and creator-sensitive focus; no empirical reliability
+    of assigning that focus is demonstrated.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E12
+- id: F09
+  label: Literary performance is stipulated
+  statement: Recitation is classed as form realization under the authors' vocabulary; it is not a blanket finding
+    about all uses of performance.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E15
+- id: F10
+  label: Table level sensitivity
+  statement: Table 1 checked entities span form/content/physical realization, and Table 2 form dominance points
+    to a physical form-realization; this needs reconciliation with semiabstract OREO identity before implementation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E12
+- id: F11
+  label: Nested style matters
+  statement: Primary-content equivalence alone can hide style differences; nested representation conditions
+    are left partly open by the formal module.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  - E19
+- id: F12
+  label: Identity is relative
+  statement: Four preservation levels organize copies, but exact translation and pattern tolerance remain idealized
+    assumptions.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+- id: F13
+  label: IAO critique remains attributed
+  statement: Authors' ICE/IQE and ink-pattern conclusions require a separate check against exact IAO versions
+    before adopting them as comparative facts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+- id: F14
+  label: Foundational neutrality is qualified
+  statement: Portability requires a host with semiabstracts and suitable mereology/pattern/satisfaction relations;
+    no automatically valid mapping into every upper ontology follows.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  - E19
+  - E22
+  - E23
+- id: F15
+  label: Strict encoding functionality
+  statement: Ax7-Ax9 impose pairwise uniqueness; alternative methods and method specialization are explicitly
+    constrained, with weakening offered as a variant.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+- id: F16
+  label: Theorems depend on background
+  statement: T1-T4 invoke assumptions about mereological sums, decomposition and semiabstract closure that
+    need the exact host theory for proof. Author theorem labels are not executed proofs.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+  - E22
+- id: F17
+  label: Existence constraints are selective
+  statement: Ax10 constrains co-presence when the representation exists; Ax11-Ax12 require representation participation
+    for forms/contents. Creation and disappearance histories are not fixed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+- id: F18
+  label: Unique physical pattern is strong
+  statement: Ax15 uniqueness needs a declared granularity if one physical object supports several useful patterns;
+    this is a semantic question, not a demonstrated inconsistency.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E20
+- id: F19
+  label: Pattern and feature theories are assumed
+  statement: PATTERN, FEATUREOF, mereology and satisfaction need additional host constraints; the two predicate
+    tables are not a complete executable signature specification.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E20
+  - E22
+- id: F20
+  label: Potential D11 free variable
+  statement: Both retrieved appendix renderings show f in D11 without f in the printed existential list. Preserve
+    this as a potential source/quantifier issue; raw-PDF glyph confirmation and repair are not claimed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E21
+- id: F21
+  label: No mixed primitive forms in B
+  statement: Appendix B excludes a primitive mixed form and models co-realized representations; main language
+    scope permits mixtures. Preserve this specialization boundary.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E21
+- id: F22
+  label: Content-realization typing is delegated
+  statement: D10 uses CONTENT plus SATISFIES without an explicit SPECIFICATION conjunct. Its intended applicability
+    depends on the imported satisfaction interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E20
+- id: F23
+  label: Evidence is theoretical
+  statement: Illustrative breadth and author-stated FOL consequences are valuable but do not establish measured
+    effectiveness, solver consistency or independent expert validation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E15
+  - E17
+  - E19
+- id: F24
+  label: Supplement access is not byte retention
+  statement: 'All 884 extracted lines were captured across all ten pages, but supplement raw bytes and visual
+    glyph inspection remain unverified. This limits literal formal conclusions and #244 closure.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+- id: F25
+  label: No immediate adoption
+  statement: 'Candidate uses remain terminology, identity and test-case proposals until #255/#126 and an owner
+    decision. No Clariceptify element is changed by this review.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E07
+  - E14
+questions:
+- id: Q01
+  label: Pin supplementary originals
+  statement: Retain publisher supplement bytes and inspect original formula glyphs; reconcile the author-posted
+    version before formal translation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  - E19
+  - E21
+  next_issue: 244
+- id: Q02
+  label: Host mereology and theorem proofs
+  statement: Select actual background axioms and assess T1-T4/T7; do not assume uniqueness/closure from the
+    outline alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+  - E22
+  next_issue: 244
+- id: Q03
+  label: Encoding alternatives
+  statement: Test one same-form/content, different-method case against Ax9 and keep proposed weakening separate
+    from the printed core.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+  next_issue: 244
+- id: Q04
+  label: D11 and quantifier scope
+  statement: Verify f and the D11 existential list visually, and audit quantifier scopes in Ax16/Ax18/D13-D17
+    without silently repairing the source.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E21
+  next_issue: 244
+- id: Q05
+  label: Pattern granularity
+  statement: Specify one pattern granularity/FEATUREOF theory and test Ax15 and the mark/medium definitions.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E20
+  - E22
+  next_issue: 244
+- id: Q06
+  label: Vocabulary census versus machine classes
+  statement: Resolve original machine-readable distribution if any; inventory all declared local/imported classes
+    and definitions without using the 41 tabulated predicates as OWL counts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  - E22
+  next_issue: 244
+- id: Q07
+  label: Realization and identity levels
+  statement: Reconcile Table 2 selection rules, D10 satisfaction, map/model switching and letter dual realization
+    with core OREO typing.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E11
+  - E12
+  - E20
+  next_issue: 244
+- id: Q08
+  label: Bounded source correspondence
+  statement: Reconcile author/publisher supplement versions, licenses, host imports and one positive/adverse
+    fixture; no full theory execution from a paper outline.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  - E19
+  - E22
+  next_issue: 244
+synthesis:
+- id: Y01
+  label: Terminology and levels
+  statement: 'Candidate use: compare form/content/physical realization with Clariceptify definitions; no automatic
+    equivalence or imported commitment.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+  comparison_issue: 255
+- id: Y02
+  label: Process/product examples
+  statement: 'Candidate test bank: algorithm/run, design/car, score/sound and text/copy; bind actual Clariceptify
+    IDs later in #255.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E08
+  - E09
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+  comparison_issue: 255
+- id: Y03
+  label: Identity and versioning
+  statement: 'Candidate criteria: explicitly choose content-, symbol-, pattern- or carrier-level sameness before
+    evaluating translation or copying.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+  comparison_issue: 255
+- id: Y04
+  label: Scope and novelty
+  statement: 'Constrain future novelty to demonstrated differences beyond these prior distinctions; mental/process/decision-rationale
+    comparisons remain #255/#126.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E04
+  - E15
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+  comparison_issue: 255
+- id: Y05
+  label: Technical caveats
+  statement: 'Carry all eight #244 questions and supplement access limitations into the comparison rather than
+    treating missing execution as absence of formalization.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E22
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+  comparison_issue: 255
+evaluation:
+  Verification:
+    id: V1
+    label: Verification
+    statement: Author-stated definitions/axioms/theorems and reviewer source/coverage checks are distinct.
+      No solver or proof assistant run.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E19
+    - E20
+    - E21
+  Validation:
+    id: V2
+    label: Validation
+    statement: The work argues for conceptual adequacy using music, procedures, maps, letters and literary/art
+      examples; no independent participant/expert validation study is reported.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E08
+    - E12
+    - E15
+  Evaluation:
+    id: V3
+    label: Evaluation
+    statement: Tables organize theoretical cases; star/check marks are not measured accuracy, user preference
+      frequencies or a benchmark score.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E12
+  Assessment:
+    id: V4
+    label: Assessment
+    statement: Critique identifies useful distinctions, host assumptions, level-sensitive selection rules and
+      unresolved formal questions. It does not establish superiority over IAO or Clariceptify.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E12
+    - E16
+    - E19
+  Assurance:
+    id: V5
+    label: Assurance
+    statement: Exact main digest, page receipts, complete coverage declarations and explicit unknowns support
+      traceability; supplement raw/glyph fidelity and independent expert acceptance remain unassessed.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E17
+    - E19
+    - E22
+artifact:
+  issue: 244
+  status: PRINTED_FOL_REVIEWED_MACHINE_ARTIFACT_AND_GLYPH_VERIFICATION_OPEN
+  version_relation: '2025 paper and its publisher-linked A-C text are the review inputs. Author-posted appendix
+    is a correspondence lead, not verified identical bytes. No original executable repository or release, class
+    glossary, import closure, reasoner or theorem reproduction is claimed. #244 retains eight bounded questions;
+    #255 comparison and #126 synthesis are open.'
+  machine_class_populations:
+    local: null
+    imported: null
+    referenced: null
+    deprecated: null
+    inferred: null
+  reading_inspection:
+    path: evaluation/related-work/representation/reading-inspection.json
+    sha256: 79797eae04635bdd9b45b52313776eaccfbd05fa3c638143e08b8db505d56341
+  discovery_execution:
+    path: evaluation/related-work/representation/discovery.json
+    sha256: 5c44bdd12b250ef69960780ebcfc45d68ad3a36d92ce71c863f7f2100a81422d
+  formal_version: null
+  raw_supplement_sha256: null
+  foundation:
+    family:
+    - DOLCE
+    - YAMATO
+    relation: ILLUSTRATIVE_HOST_COMPATIBILITY_NOT_IMPORT
+    edition: null
+    actual_imports: null
+    basis: AUTHOR_REPORTED
+  reasoner_execution: NOT_EXECUTED
+  theorem_proof_execution: NOT_EXECUTED
+content_ledger:
+  path: evidence/related-work/deep-reviews/CLR-RW-Representation/content-ledger.yaml
+  sha256: b4190a374f58f4e3c8ea5064b56a5b9de7c458a58aee540a9de9b865f0547e3f
+supplement_formula_population:
+  count: 49
+  labels:
+  - f1
+  - f2
+  - Ax1
+  - Ax2
+  - Ax3
+  - Ax4
+  - Ax5
+  - Ax6
+  - Ax7
+  - Ax8
+  - Ax9
+  - D1
+  - D2
+  - T1
+  - T2
+  - T3
+  - T4
+  - T5
+  - T6
+  - Ax10
+  - T7
+  - Ax11
+  - Ax12
+  - D3
+  - f3
+  - Ax13
+  - Ax14
+  - Ax15
+  - D4
+  - D5
+  - T8
+  - D6
+  - T9
+  - D7
+  - D8
+  - T10
+  - D9
+  - T11
+  - D10
+  - Ax16
+  - Ax17
+  - Ax18
+  - D11
+  - D12
+  - D13
+  - D14
+  - D15
+  - D16
+  - D17
+  assumptions: 3
+  axioms: 18
+  definitions: 17
+  author_theorems: 11
+  reading_document: Publisher-linked supplementary PDF parsed text
+  pdf_pages: 10
+  raw_pdf_sha256: null
+  visual_glyph_verification: NOT_ESTABLISHED
+closure_boundary: 'Primary-paper critical review complete within the explicitly stated source-access boundary:
+  all main pages and complete publisher-parsed A-C text were read; main figure/tables were visually inspected.
+  Completion is not original-supplement byte/glyph certification, executable formalization, theorem reproduction,
+  full machine class/import review, accepted IAO mapping, #255 comparison, #126 synthesis or adoption. The
+  eight #244 questions carry these limitations forward; no model, requirement, fixture, manuscript or release
+  change.'

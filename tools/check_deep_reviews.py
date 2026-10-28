@@ -54,6 +54,11 @@ def validate_dossier(d, entry, dimensions):
         require(e['locator'] and e['summary'], 'empty evidence locator/summary')
         if e.get('source_kind', 'PAPER') == 'PAPER':
             require(e['pages'] and all(isinstance(p, int) and 1 <= p <= entry['pdf_pages'] for p in e['pages']), 'invalid evidence page')
+        elif e['source_kind'] == 'PAPER_SUPPLEMENT':
+            require(e.get('url', '').startswith('https://') and
+                    e.get('source_pdf_pages') == 10 and e.get('retrieval_ref') and
+                    e['pages'] and all(isinstance(p, int) and 1 <= p <= 10 for p in e['pages']),
+                    'unidentified or out-of-range supplement evidence')
         elif e['source_kind'] == 'REPOSITORY':
             require(e.get('path') and
                     re.fullmatch(r'[0-9a-f]{40}', e.get('commit', '')) and
@@ -191,7 +196,7 @@ def validate_dossier(d, entry, dimensions):
                 d['paper_formalization']['quantification_of_printed_trigger_restriction'] ==
                 'NOT_SPECIFIED_AS_DL_FORMULA', 'EmotionsOnto prose promoted to a printed DL formula')
     if d['status'] == 'REVIEW_COMPLETE':
-        require(d['coverage']['read_pages'] == list(range(1, entry['pdf_pages'] + 1)), 'incomplete full-text reading')
+        require(d['coverage']['read_pages'] == entry.get('review_pages', list(range(1, entry['pdf_pages'] + 1))), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and
                 u.get('evidence') and set(u['evidence']) <= set(evidence)
                 for u in d['coverage']['units']), 'unreviewed paper unit')
@@ -243,6 +248,56 @@ def validate_emotions_figure_ledger(dossier, ledger):
             sum(counts.values()) != ledger['table']['total'] or ledger['table']['total'] != 14 or
             ledger['machine_class_count'] is not None):
         raise ValueError('EmotionsOnto questionnaire/result population changed')
+
+
+def validate_representation_content(dossier, ledger, inspection):
+    """Preserve main/supplement coverage and keep retrieved text below byte/proof claims."""
+    if (ledger['work_id'] != dossier['work_id'] or
+            ledger['source_sha256'] != dossier['source']['sha256'] or
+            [f['number'] for f in ledger['figures']] != [1] or
+            ledger['figures'][0]['pdf_page'] != 9 or
+            [t['number'] for t in ledger['tables']] != [1, 2] or
+            any(t['pdf_page'] != 11 for t in ledger['tables'])):
+        raise ValueError('Representation main figure/table population mismatch')
+    rows = ledger['tables'][0]['rows']
+    if (len(rows) != 6 or [r['checked'] for r in rows] !=
+            ['content', 'content', 'form_realization', 'content', 'form', 'form'] or
+            [r['content_realization'] for r in rows if r['content_realization'] is None] != [None, None] or
+            len(ledger['tables'][1]['branches']) != 4):
+        raise ValueError('Representation printed selection/realization distinctions changed')
+    tables = ledger['supplement_tables']
+    names = [n for t in tables for n in t['predicate_names']]
+    if ([t['number'] for t in tables] != [3, 4] or
+            [len(t['predicate_names']) for t in tables] != [10, 31] or
+            len(set(names)) != 41 or
+            {r['label'] for r in dossier['catalog'] if r.get('kind') == 'TABULATED_PREDICATE'} != set(names)):
+        raise ValueError('Representation supplement predicate population mismatch')
+    expected = {f'f{i}' for i in range(1, 4)} | {f'Ax{i}' for i in range(1, 19)} | {
+        f'D{i}' for i in range(1, 18)} | {f'T{i}' for i in range(1, 12)}
+    records = dossier['commitments']
+    labels = [r['formula_label'] for r in records]
+    pop = dossier['supplement_formula_population']
+    if (len(labels) != 49 or set(labels) != expected or pop['labels'] != labels or
+            [pop[k] for k in ['count', 'assumptions', 'axioms', 'definitions', 'author_theorems']] != [49, 3, 18, 17, 11] or
+            any(r['source_document'] != 'SUPPLEMENT' or not 1 <= r['source_page'] <= 10 or
+                not r['normalized_formula'] or r['execution'] != 'NOT_EXECUTED' for r in records)):
+        raise ValueError('Representation labeled formal population or execution boundary changed')
+    literal = next(r for r in records if r['formula_label'] == 'D11')['normalized_formula']
+    if not literal.startswith('INKMARK(x) := exists o,r,p,p2 ') or 'FORMOF(f,r)' not in literal:
+        raise ValueError('Representation D11 potential source issue silently repaired')
+    sup = inspection['supplement']
+    if (sup['read_pages'] != list(range(1, 11)) or sup['appendices'] != ['A', 'B', 'C'] or
+            [r['pdf_page'] for r in sup['page_receipts']] != list(range(1, 11)) or
+            sup['source_text_line_population'] != 884 or sup['captured_line_population'] != 884 or
+            any(not re.fullmatch(r'[0-9a-f]{64}', r['extracted_text_sha256']) for r in sup['page_receipts'])):
+        raise ValueError('Representation supplement reading coverage incomplete')
+    if (sup['raw_pdf_sha256'] is not None or sup['raw_pdf_retained'] or
+            pop['raw_pdf_sha256'] is not None or pop['visual_glyph_verification'] != 'NOT_ESTABLISHED' or
+            ledger['original_supplement_visual_inspection'] != 'NOT_ESTABLISHED' or
+            dossier['artifact']['theorem_proof_execution'] != 'NOT_EXECUTED' or
+            any(v is not None for v in dossier['artifact']['machine_class_populations'].values()) or
+            ledger['machine_class_count'] is not None):
+        raise ValueError('Representation retrieved text promoted to retained bytes, class census or proof')
 
 
 def validate_diagram_inventory(dossier, inventory):
@@ -375,7 +430,8 @@ def check(root=ROOT):
     entries = register['acquired_papers'] + register['waiting_for_owner']
     if len({r['id'] for r in entries}) != len(entries) or len({r['issue'] for r in entries}) != len(entries):
         raise ValueError('Duplicate paper identity or primary issue')
-    if len(register['acquired_papers']) != 12 or len(register['waiting_for_owner']) != 7:
+    approved = {74, 78, 80, 259, 260, 261, 83, 81, 85, 249, 79, 262, 70, 73, 82, 84, 86, 263, 77}
+    if len(entries) != 19 or {r['issue'] for r in entries} != approved:
         raise ValueError('Changed approved paper population; record a protocol revision')
     inventory = yaml.safe_load((root / 'evidence/related-work/corpus/access-inventory.yaml').read_text())
     inputs = {r.get('filename'): r for r in inventory['records'] + inventory['additional_work_or_version_records'] if r.get('filename')}
@@ -390,6 +446,13 @@ def check(root=ROOT):
             continue
         d = yaml.safe_load(path.read_text())
         validate_dossier(d, entry, protocol['dimensions'])
+        if 'content_ledger' in d:
+            binding = d['content_ledger']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed Representation content ledger bytes')
+            inspection = json.loads((root / d['artifact']['reading_inspection']['path']).read_text())
+            validate_representation_content(d, yaml.safe_load(raw), inspection)
         if 'figure_ledger' in d:
             binding = d['figure_ledger']
             raw = (root / binding['path']).read_bytes()
@@ -490,9 +553,9 @@ def check(root=ROOT):
             raise ValueError('Missing full text promoted')
     from check_source_audit import check as check_source_audit
     source_audit = check_source_audit(root)
-    return {'status': 'PASS', 'source_audit': source_audit, 'acquired_papers': 12, 'completed_deep_reviews': done,
+    return {'status': 'PASS', 'source_audit': source_audit, 'acquired_papers': len(register['acquired_papers']), 'completed_deep_reviews': done,
             'queued_papers': sum(r['state'] == 'QUEUED' for r in register['acquired_papers']),
-            'waiting_for_owner': 7, 'protected_baseline': expected['fingerprint'],
+            'waiting_for_owner': len(register['waiting_for_owner']), 'protected_baseline': expected['fingerprint'],
             'scope': 'Provenance, coverage declarations and state boundaries; not independent semantic validation.'}
 
 

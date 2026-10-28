@@ -29,7 +29,11 @@ The complete paper catalog has no eight-concept limit. The existing eight-select
 | CognitiveAtlas2011, #79 | All 11 pages, four figures, 10 footnotes, 39 references and full concept/relation/measurement/collaboration catalog; no numbered formulas | Paper-linked author source and later official export pinned; v2 header 0.3 parsed, without complete class census or historical equivalence | #241 all-class glossary and eight bounded checks; #254 comparison; next #262 |
 | EmotionsOnto2014, #262 | All16 pages, five figures,39 taxonomy nodes, one results table, three footnotes and36 references; no numbered formulas | Original dated file unacquired; later extension header imports recorded without historical equivalence | #239 all-class/import/definition and eight questions; #253 comparison; acquired-paper queue empty, next technical #250 |
 
-The cDnS core is not the complete plan/norm/collective theory in the paper. The absence of those classes in that one file is neither absence in the paper nor proof that no related module exists. Its header binds it to the 2008 article, whose full text has not been acquired.
+| Representation2025, #82 | All 16 main pages, one figure, two tables, ten notes, 25 references and the complete publisher-parsed ten-page A-C supplement text; 49 labeled formal records | Supplementary FOL text inspected; original supplement PDF bytes/glyphs and machine distribution not pinned; all machine populations unknown | #244 eight bounded source/formal questions; #255 comparison; #126 synthesis |
+
+Current owner intake supersedes historical queue/access wording in the rows: 18 acquired works, 13 reviews complete, five queued, one primary text still missing. A paper critical review can record an explicit source-access limitation; it cannot claim original formula-glyph certification or executable theorem verification from retrieved text.
+
+The cDnS core is not the complete plan/norm/collective theory in the paper. The absence of those classes in that one file is neither absence in the paper nor proof that no related module exists. Its header binds it to the 2008 article, whose full text is now owner-supplied and queued for its separate #263 deep review.
 
 ## Shared analytical dimensions
 

@@ -90,3 +90,11 @@ owner_boundary:
     changes. Research proposals are not accepted model decisions.
   stop: Continue independent acquired-source work. Missing-text papers remain BLOCKED_ON_FULL_TEXT. When no independent
     acquired-source task remains, provide the exact outstanding download table and wait for owner files.
+
+input_population_revision:
+  date: '2026-10-28'
+  reason: Six previously requested texts supplied by the owner; same exact 19-work corpus and same ten-dimensional review criteria.
+  receipt: evidence/related-work/corpus/owner-intake-2026-10-28.json
+  acquired: 18
+  waiting_for_owner: 1
+  primary_vs_supplement: Main PDF and externally retrieved supplement are separately identified; retrieval, raw-byte retention, visual glyph checks and solver execution are independent claims.

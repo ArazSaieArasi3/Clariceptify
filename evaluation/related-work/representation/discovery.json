@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-28",
+  "work_id": "CLR-RW-Representation",
+  "baseline_commit": "e40f1421ab5810da0a615492b7dbbb7eae5cd53f",
+  "paper_link_inspection": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "publisher": "https://journals.sagepub.com/doi/10.1177/15705838251337943",
+    "supplement": "https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf",
+    "machine_repository_link_in_selected_paper": "NOT_REPORTED"
+  },
+  "github_repository_searches": [
+    {
+      "query": "\"An Ontology of Representation\"",
+      "page": 1,
+      "per_page": 10,
+      "returned_repositories": 0,
+      "result": "NO_REPOSITORY_RETURNED"
+    },
+    {
+      "query": "OREO Mizoguchi Borgo",
+      "page": 1,
+      "per_page": 10,
+      "returned_repositories": 0,
+      "result": "NO_REPOSITORY_RETURNED"
+    }
+  ],
+  "author_upload": {
+    "url": "https://www.researchgate.net/publication/394429722_Mizoguchi-Borgo-2025-representation-Apppendixpdf",
+    "state": "AUTHOR_POSTED_APPENDIX_TEXT_ACCESSIBLE_NOT_EXECUTABLE_REPOSITORY",
+    "byte_equivalence_to_publisher_supplement": "NOT_ESTABLISHED"
+  },
+  "negative_scope": "Two name/description GitHub searches and exact paper/publisher/author links only; not exhaustive code or global host search.",
+  "repository_state": "NOT_IDENTIFIED_IN_BOUNDED_SEARCH",
+  "global_absence_claim": false,
+  "machine_class_populations": {
+    "local": null,
+    "imported": null,
+    "referenced": null,
+    "deprecated": null,
+    "inferred": null
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "next_issue": 244
+}

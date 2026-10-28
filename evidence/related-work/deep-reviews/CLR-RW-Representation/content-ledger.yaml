@@ -1,0 +1,148 @@
+work_id: CLR-RW-Representation
+source_sha256: 16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a
+figures:
+- number: 1
+  pdf_page: 9
+  printed_page: 145
+  inspection: VISUALLY_REVIEWED
+  sentence: SNOW IS WHITE
+  sentence_content: meaning
+  sentence_form: ordered sequence of symbols; hyphens separate symbols
+  displayed_letter_examples:
+  - S
+  - N
+  - O
+  - '...'
+  edges:
+  - from: sentence OREO
+    relation: has_content
+    to: meaning
+  - from: sentence OREO
+    relation: has_form
+    to: ordered symbols
+  - from: symbol positions
+    relation: identity
+    to: letter content / alphabet position
+  - from: letter representation
+    relation: has_content
+    to: alphabet position
+  - from: letter representation
+    relation: has_form
+    to: realizable pattern
+  boundary: Illustrative nested representation, not an OWL class taxonomy; repeated S/N/O occurrences are not
+    machine declarations.
+tables:
+- number: 1
+  pdf_page: 11
+  rows:
+  - case: Industrial product / Prius
+    form: design
+    content: structure/function specification
+    form_realization: printed design/specification
+    content_realization: produced car
+    checked: content
+    starred:
+    - content_realization
+  - case: Procedure / quicksort
+    form: procedure description
+    content: actions/operations specification
+    form_realization: printed description
+    content_realization: execution process
+    checked: content
+    starred:
+    - content_realization
+  - case: Painting / Monalisa
+    form: digital image data
+    content: depicted subject matter
+    form_realization: painting on canvas
+    content_realization: null
+    checked: form_realization
+    starred:
+    - form_realization
+  - case: Music / Beethoven 5th
+    form: score
+    content: sound-sequence specification
+    form_realization: printed/dictated score
+    content_realization: sound sequence
+    checked: content
+    starred:
+    - content_realization
+  - case: Novel / Tale of Genji
+    form: text
+    content: text meaning
+    form_realization: book copy/dictation
+    content_realization: null
+    checked: form
+    starred:
+    - form_realization
+  - case: Letter / a
+    form: letter
+    content: standard-pattern specification
+    form_realization: written/pronounced letter
+    content_realization: drawing
+    checked: form
+    starred:
+    - form_realization
+    - content_realization
+  markers: Author theory selections versus reported common-sense choices; not a participant survey.
+- number: 2
+  pdf_page: 11
+  branches:
+  - condition: form dominant
+    result: form_realization
+  - condition: content dominant; form/content realizations coincide
+    result: representation
+  - condition: content dominant; content is specification
+    result: content
+  - condition: content dominant; content is not specification
+    result: representation
+supplement_tables:
+- number: 3
+  page: 9
+  predicate_names:
+  - CLASSIFIES
+  - EVENT
+  - FEATURE
+  - LOCATEDINAT
+  - PATTERNOF
+  - PHOBJECT
+  - PRE
+  - SATISFIES
+  - SEMIABSTRACT
+  - SPECIFIES
+- number: 4
+  page: 10
+  predicate_names:
+  - ANALOGICALFORM
+  - CONTENT
+  - CONTENTREALISATION
+  - ENCODINGLETTER
+  - ENCODINGMETHOD
+  - ENCODINGVIA
+  - FORM
+  - FORMOF
+  - FORMREALISATOF
+  - IDALPHABET
+  - INKMARK
+  - INKPATTERNOF
+  - LETTERCONTENT
+  - LETTERPATTERN
+  - LETTERREPRESENTAT
+  - METHOD
+  - NL_FORM
+  - NL_METHOD
+  - NL_OREO
+  - PATTERNFORFORM
+  - PATTERNOFSYMBSEQ
+  - PHPATTERNOF
+  - PHREPRESENTATOF
+  - REALISATIONMARK
+  - REALISATMEDIUM
+  - REALISATMEDIUMFOR
+  - OREO
+  - REPRESENTATREL
+  - REPRESENTINGTHING
+  - SYMBOLICFORM
+  - SYMBOLSEQUENCE
+machine_class_count: null
+original_supplement_visual_inspection: NOT_ESTABLISHED
