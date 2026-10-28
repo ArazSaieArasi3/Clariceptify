@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "work_id": "BDI2026Preprint",
+  "checked_on": "2026-10-28",
+  "source_sha256": "e4fbe911555a62050b8ccc1f07b6c13e0aa36af486ad6767c3d6ed446681c676",
+  "primary_endpoints": [
+    {
+      "url": "https://arxiv.org/abs/2511.17162v2",
+      "outcome": "Official metadata opened: v1 submitted 2025-11-21, v2 submitted 2026-08-09; nine authors and Journal of Web Semantics 90 (2026) 100885 DOI verified. Retained PDF margin independently reads v2, 9 Aug 2026."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.websem.2026.100885",
+      "outcome": "Direct search-service open failed. Journal DOI independently present in official arXiv metadata and FOSSR publication listing; final publisher bytes not acquired or compared in this review."
+    },
+    {
+      "url": "https://www.fossr.eu/en/publications/",
+      "outcome": "Official project publication listing returned the matching title, journal and article number."
+    },
+    {
+      "url": "https://iris.cnr.it/handle/20.500.14243/598814",
+      "outcome": "Search returned matching CNR bibliographic metadata and a listed open editorial PDF, 1-s2.0-S1570826826000119-main.pdf. Direct page open returned 403; final journal bytes not acquired or compared. This is an acquisition lead, not a claim that final text is unavailable globally."
+    },
+    {
+      "url": "https://github.com/fossr-project/ontology",
+      "outcome": "Exact paper footnotes 11, 12, 15 and 16 lead to this public official repository; current metadata and pinned commit/tree fetched through connected GitHub tools."
+    },
+    {
+      "url": "https://api.github.com/repos/fossr-project/ontology/commits/57a91037d803519db5ee8d65d53c14901e28a0d1",
+      "outcome": "Pinned commit verified: 2026-05-05T14:12:25Z, message add test surveyOntology."
+    },
+    {
+      "url": "https://api.github.com/repos/fossr-project/ontology/git/trees/57a91037d803519db5ee8d65d53c14901e28a0d1?recursive=1",
+      "outcome": "Complete tree returned, not truncated: 230 entries, 198 blobs. Every selected local source matches its API Git blob SHA; unrelated modules are excluded from the selected BDI scope."
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17466326",
+      "outcome": "Archive DOI is printed in paper footnote 13. Not fetched or version-compared in this review."
+    },
+    {
+      "url": "https://github.com/cfabiolongo/Semas",
+      "outcome": "Official software lead printed in paper footnote 17. SEMAS was not fetched, installed or executed here; historical experiment remains author-reported."
+    }
+  ],
+  "web_queries": [
+    {
+      "query": "\"The Belief-Desire-Intention Ontology\" Zuppiroli 100885 2511.17162",
+      "outcome": "Official arXiv, FOSSR project and CNR publication metadata identified; exact arXiv v2 page opened."
+    }
+  ],
+  "repository": {
+    "repository": "fossr-project/ontology",
+    "checked_on": "2026-10-28",
+    "commit": "57a91037d803519db5ee8d65d53c14901e28a0d1",
+    "commit_date": "2026-05-05T14:12:25Z",
+    "tree": "57a91037d803519db5ee8d65d53c14901e28a0d1",
+    "tree_truncated": false,
+    "tracked_blobs": 198,
+    "selected_files": [
+      {
+        "path": "LICENSE",
+        "git_blob_sha": "225c24706d7c07712eec365a28fd9c6a487be72d",
+        "size": 1062,
+        "sha256": "237e2451e66ec9634914c8ccedba836ba3bdbbf0afa7b3aca46e3c752d5549f1"
+      },
+      {
+        "path": "README.md",
+        "git_blob_sha": "5b008c96f6558bcc874df0c8b58544920cc004f0",
+        "size": 77,
+        "sha256": "f2249970dcb86c6caee982964c529ea7bf61786ce07901783052ebc832b4b01d"
+      },
+      {
+        "path": "bdi-dul/bdi-dul.rdf",
+        "git_blob_sha": "37bf5b8f366d3161f31c918be23aca0e3fe78116",
+        "size": 7208,
+        "sha256": "cd7d37d41d787b1766741285402861f13388219e52b60cb930d012de03cd9a98"
+      },
+      {
+        "path": "bdi-tests/bdi-tests.ttl",
+        "git_blob_sha": "969fb10ed2f6e12f12d120b88063055ea514bcf0",
+        "size": 8128,
+        "sha256": "c926087be377b947deccd8b3b25b4130aad441aef5706428e721f2190dcbfef0"
+      },
+      {
+        "path": "bdi.ttl",
+        "git_blob_sha": "759cbd02c4cd26580bb0ea0207fab6eeb3fccd1a",
+        "size": 6162,
+        "sha256": "659b0a379e4cb163657ad3e0bf245463a5dae8d68c7bdfbbbffb3a563e3d7e8e"
+      },
+      {
+        "path": "bdi/bdi.rdf",
+        "git_blob_sha": "25d50b8bd6db3e94f32100492f91bd833d5ae539",
+        "size": 184360,
+        "sha256": "414f0b874f04b6720098850d3380abb89dc08c2d307022bc12353637cd6ece6a"
+      },
+      {
+        "path": "bdi/bdi.ttl",
+        "git_blob_sha": "e590586878f4c534f927a7550a4ba8118bb549e5",
+        "size": 138096,
+        "sha256": "250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984"
+      },
+      {
+        "path": "bdi/data-unit-testing.ttl",
+        "git_blob_sha": "52b5ee6b902b48cc50fe97019e6fe26ab1a19447",
+        "size": 7581,
+        "sha256": "6a4bdc439cc0f2dfa4f23a3ae931d5c51df72dc03d572b1c76c01c6e06c197c3"
+      },
+      {
+        "path": "bdi/unittesting.md",
+        "git_blob_sha": "42d73558d0797adc2a153152675fd3482a48ae14",
+        "size": 16783,
+        "sha256": "3916987071fda762d5a6eafe044da7ff83ea4c3b446c9af98e57eb9d7b095db6"
+      },
+      {
+        "path": "bdi/unittests/data-unit-testing.ttl",
+        "git_blob_sha": "52b5ee6b902b48cc50fe97019e6fe26ab1a19447",
+        "size": 7581,
+        "sha256": "6a4bdc439cc0f2dfa4f23a3ae931d5c51df72dc03d572b1c76c01c6e06c197c3"
+      },
+      {
+        "path": "code/bdi-experiment.py",
+        "git_blob_sha": "adcd1959d1d734b04b60bee6d377b0224de75e69",
+        "size": 21382,
+        "sha256": "38e25a7dc3bf097cd1e17cbc3f5aa88f58dd12d51822c8fba9f3035a6ec9a766"
+      },
+      {
+        "path": "code/outputs/bdi_validation_results.json",
+        "git_blob_sha": "e284d3e116e035b2d3f18c412f12dd1e93a9543e",
+        "size": 100554,
+        "sha256": "d59145f51045d3efa92aad77e4104e5564f81d8e09b2b149709ede524ad1a8d3"
+      }
+    ]
+  },
+  "repository_metadata": {
+    "public": true,
+    "archived": false,
+    "default_branch": "main",
+    "pushed_at": "2026-05-05T14:12:37Z",
+    "root_license": "MIT"
+  },
+  "retained_snapshot": {
+    "filename": "fossr-project__ontology-57a91037d803.zip",
+    "sha256": "81ffb05b0748352a58992c2f989718faeb11dd0afaa6be8d1fcd97fb761fa073",
+    "source_redistributed": false
+  },
+  "selected_scope": [
+    "bdi/bdi.ttl",
+    "bdi-dul/bdi-dul.rdf"
+  ],
+  "excluded_scope": "Older root bdi.ttl, alternative serializations, unrelated survey/RISIS modules and test fixtures are not combined into a class population.",
+  "header_inspection": {
+    "operation": "RDFLib Graph.parse of exactly the two selected local sources; enumerate explicit owl:Ontology/imports/versionIRI/versionInfo triples only",
+    "tool": "rdflib",
+    "version": "7.6.0",
+    "result": "PASS",
+    "records": [
+      {
+        "path": "bdi/bdi.ttl",
+        "sha256": "250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984",
+        "format": "turtle",
+        "ontology_iris": [
+          "https://w3id.org/fossr/ontology/bdi/"
+        ],
+        "declared_import_iris": [],
+        "version_iris": [
+          "https://w3id.org/fossr/bdi/ontology/0.5/"
+        ],
+        "version_info": [
+          "0.5"
+        ]
+      },
+      {
+        "path": "bdi-dul/bdi-dul.rdf",
+        "sha256": "cd7d37d41d787b1766741285402861f13388219e52b60cb930d012de03cd9a98",
+        "format": "xml",
+        "ontology_iris": [
+          "https://w3id.org/fossr/ontology/bdi-dul"
+        ],
+        "declared_import_iris": [
+          "http://www.ontologydesignpatterns.org/ont/d0.owl",
+          "https://w3id.org/fossr/bdi/ontology/0.3/"
+        ],
+        "version_iris": [],
+        "version_info": []
+      }
+    ],
+    "imports_resolved": false,
+    "class_census_or_glossary": "PENDING_IN_250",
+    "reasoner_execution": "NOT_EXECUTED",
+    "semantic_acceptance": "NOT_ASSESSED"
+  },
+  "correspondence": {
+    "paper": "arXiv:2511.17162v2, 2026-08-09",
+    "selected_module": "0.5",
+    "alignment_imported_bdi": "0.3",
+    "exact_paper_repository_equivalence": "NOT_ESTABLISHED",
+    "final_journal_byte_equivalence": "NOT_ESTABLISHED"
+  },
+  "license_boundary": "Root LICENSE is MIT; selected ontology header declares CC-BY-4.0. Do not blanket-relicense the repository or republish raw sources.",
+  "limits": [
+    "Repository discovery and explicit header parsing do not establish joint consistency, OWL2 DL conformance, a full class-definition glossary or CQ test success.",
+    "No author OWLUnit, LLM/API, SEMAS, import-closure or reasoner execution performed.",
+    "Final journal metadata is verified separately from selected preprint bytes."
+  ],
+  "global_absence_claim": false,
+  "model_change": "NONE"
+}

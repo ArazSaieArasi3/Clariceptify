@@ -17,7 +17,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | CMO (#83) | THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://github.com/dbpedia/ontology-tracker); [source](https://github.com/tetherless-world/whyis); MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN | BFO with IAO reuse; PAPER_STATED_GROUNDING; edition: UNKNOWN | ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN | #245 |
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
-| BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | DOLCE-0; DUL alignment; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
+| BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; AUTHOR_PREDECESSOR_LINKS_MATCH_PENDING | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
@@ -356,6 +356,24 @@ Query: `BDI2020 primary author/publisher links, title code and other-host search
 Publisher and author identity verified; original executable module not identified. Code hits are commentary/citation; later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
 
 Limit: HAL current access denied; retained full text available. Machine classes/imports/definitions/license and exact foundation edition remain unknown in #247.
+
+### BDI26-S01: OFFICIAL_ARXIV_PROJECT_METADATA_AND_CONNECTED_GITHUB_COMMIT_TREE
+
+Query: `Exact preprint version, paper-linked FOSSR repository and pinned BDI/alignment/test sources`. Checked: 2026-10-28.
+
+- https://arxiv.org/abs/2511.17162v2
+- https://doi.org/10.1016/j.websem.2026.100885
+- https://www.fossr.eu/en/publications/
+- https://iris.cnr.it/handle/20.500.14243/598814
+- https://github.com/fossr-project/ontology
+- https://api.github.com/repos/fossr-project/ontology/commits/57a91037d803519db5ee8d65d53c14901e28a0d1
+- https://api.github.com/repos/fossr-project/ontology/git/trees/57a91037d803519db5ee8d65d53c14901e28a0d1?recursive=1
+- https://doi.org/10.5281/zenodo.17466326
+- https://github.com/cfabiolongo/Semas
+
+Official arXiv v2 identity and public source commit/tree verified. All selected source blobs match retained bytes. Module0.5 versus alignment-import0.3 and MIT-root versus CC-BY ontology terms retained. See evaluation/related-work/bdi2026/deep-review-discovery.json.
+
+Limit: Header parsing only; final journal byte comparison, full class/imported glossary, OWL2 profile, reasoner, CQ and application reruns remain #250.
 
 ## Interpretation and next work
 

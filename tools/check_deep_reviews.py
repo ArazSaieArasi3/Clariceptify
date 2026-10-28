@@ -124,6 +124,39 @@ def validate_dossier(d, entry, dimensions):
             require(all(v is None for v in d['artifact']['machine_class_populations'].values()) and
                     d['paper_expression_scope']['machine_axiom_count'] is None,
                     'BDI paper inventory promoted to machine population')
+        if d['work_id'] == 'BDI2026Preprint':
+            numbered = [r for r in d['commitments'] if 'formula_number' in r]
+            require([r['formula_number'] for r in numbered] == list(range(1, 79)) and
+                    [r['formula_label'] for r in numbered] == [str(n) for n in range(1, 79)],
+                    'incomplete BDI2026 numbered source population')
+            expressions = {r['formula_number']: r['normalized_formula'] for r in numbered}
+            require(all(expressions[a] == expressions[b] for a, b in [(14, 39), (15, 40), (21, 41)]),
+                    'BDI2026 printed duplicate silently changed')
+            literal = {2: 'WorldState SubClassOf (isPerceivedBy only Agent)',
+                       28: 'MentalProcess SubClassOf (isTriggeredBy only MentalEntity)',
+                       75: 'TimeInterval SubClassOf (hasStartTime exactly 1 TimeInstant)',
+                       76: 'TimeInterval SubClassOf (hasEndTime max 1 TimeInstant)',
+                       77: 'MentalEntity SubClassOf (atTime some TemporalEntity)',
+                       78: 'MentalEntity SubClassOf (hasValidity some TemporalEntity)'}
+            require(all(expressions[n] == value for n, value in literal.items()),
+                    'BDI2026 source quantification silently changed')
+            boxes = d['figure_inventory']['class_boxes']
+            catalog_boxes = [r['label'] for r in d['catalog'] if r.get('kind') == 'FIGURE_CLASS']
+            require(len(boxes) == len(set(boxes)) == 22 and 'GoalProcess' in boxes and
+                    len(catalog_boxes) == 22 and set(catalog_boxes) == set(boxes),
+                    'incomplete BDI2026 paper figure taxonomy')
+            require(d['identity']['arxiv_version'] == '2511.17162v2' and
+                    d['identity']['final_journal_byte_equivalence'] == 'NOT_ESTABLISHED',
+                    'BDI2026 preprint promoted to final journal equivalence')
+            sources = {r['path']: r for r in d['artifact']['selected_files']}
+            require(sources['bdi/bdi.ttl']['version_info'] == ['0.5'] and
+                    sources['bdi-dul/bdi-dul.rdf']['declared_import_iris'] == [
+                        'http://www.ontologydesignpatterns.org/ont/d0.owl',
+                        'https://w3id.org/fossr/bdi/ontology/0.3/'],
+                    'BDI2026 pinned core/alignment version mismatch hidden')
+            require(all(v is None for v in d['artifact']['machine_class_populations'].values()) and
+                    d['paper_expression_scope']['machine_axiom_count'] is None,
+                    'BDI2026 paper counts promoted to machine census')
     if d['status'] == 'REVIEW_COMPLETE':
         require(d['coverage']['read_pages'] == list(range(1, entry['pdf_pages'] + 1)), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and

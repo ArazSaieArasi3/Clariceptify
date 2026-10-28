@@ -404,6 +404,24 @@ discovery_attempts:
     later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
   limitation: 'HAL current access denied; retained full text available. Machine classes/imports/definitions/license
     and exact foundation edition remain unknown in #247.'
+- id: BDI26-S01
+  query: Exact preprint version, paper-linked FOSSR repository and pinned BDI/alignment/test sources
+  method: OFFICIAL_ARXIV_PROJECT_METADATA_AND_CONNECTED_GITHUB_COMMIT_TREE
+  checked_on: '2026-10-28'
+  checked_urls:
+  - https://arxiv.org/abs/2511.17162v2
+  - https://doi.org/10.1016/j.websem.2026.100885
+  - https://www.fossr.eu/en/publications/
+  - https://iris.cnr.it/handle/20.500.14243/598814
+  - https://github.com/fossr-project/ontology
+  - https://api.github.com/repos/fossr-project/ontology/commits/57a91037d803519db5ee8d65d53c14901e28a0d1
+  - https://api.github.com/repos/fossr-project/ontology/git/trees/57a91037d803519db5ee8d65d53c14901e28a0d1?recursive=1
+  - https://doi.org/10.5281/zenodo.17466326
+  - https://github.com/cfabiolongo/Semas
+  outcome: Official arXiv v2 identity and public source commit/tree verified. All selected source blobs match retained
+    bytes. Module0.5 versus alignment-import0.3 and MIT-root versus CC-BY ontology terms retained. See evaluation/related-work/bdi2026/deep-review-discovery.json.
+  limitation: 'Header parsing only; final journal byte comparison, full class/imported glossary, OWL2 profile, reasoner,
+    CQ and application reruns remain #250.'
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -767,26 +785,32 @@ records:
 - id: BDI2026Preprint
   title: The Belief-Desire-Intention ontology for modelling mental reality and agency
   primary_issue: 249
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
     state: PUBLIC_REPOSITORY_PINNED
     urls:
     - https://github.com/fossr-project/ontology
     evidence:
     - R01
+    - BDI26-S01
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_FILES_TECHNICAL_REVIEW_PENDING
+    paper_correspondence: EXACT_PAPER_LINKED_REPOSITORY_VERSION_EQUIVALENCE_NOT_ESTABLISHED
+  artifact_state: OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING
   foundation:
-    family: DOLCE-0; DUL alignment
+    family: DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment
     edition: null
-    relation: PAPER_STATED_GROUNDING
+    relation: PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS
     basis: AUTHOR_REPORTED
-    locator: 'BDI-2025-preprint.pdf secs.3-4; statement grounded in DOLCE-0 and separate DUL alignment; exact artifact
-      imports remain #250'
-    artifact_imports: null
+    locator: PDF6 sec.3.2/footnote9; PDF17-21 AppendixB1-78; pinned bdi0.5 header and bdi-dul header at57a9103.
+    artifact_imports:
+      selected_core: []
+      selected_alignment:
+      - http://www.ontologydesignpatterns.org/ont/d0.owl
+      - https://w3id.org/fossr/bdi/ontology/0.3/
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: 'DOLCE-0 is a supplementary generalization of DUL, not an edition named DOLCE version0. Current
+      core0.5/alignment-import0.3 mismatch is unresolved; exact foundation edition/import closure and semantic compatibility
+      remain #250.'
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -797,6 +821,15 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 250
+  paper_review:
+    path: evidence/related-work/deep-reviews/BDI2026Preprint/review.yaml
+    conceptual_relation_requirement_entries: 131
+    paper_figure_class_boxes: 22
+    numbered_axiom_records: 78
+    separately_typed_prose_operational_records: 3
+    manual_critical_findings: 21
+    limits: 'Paper catalog is complete; all-class machine/imported definition glossary and semantic checks remain
+      #250. Author-reported counts are not an independent class census.'
 - id: CognitiveAtlas2011
   title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
   primary_issue: 79
