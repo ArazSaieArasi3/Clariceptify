@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "work_id": "CLR-RW-DOLCEMental",
+  "checked_on": "2026-10-28",
+  "repository": {
+    "full_name": "diporello/DOLCE-mental_states-needs",
+    "url": "https://github.com/diporello/DOLCE-mental_states-needs",
+    "visibility": "public",
+    "archived": false,
+    "disabled": false,
+    "pushed_at": "2020-05-14T10:22:23Z",
+    "default_branch": "master",
+    "license_spdx": null,
+    "commit": "93734dbe35c931338b3b9aba66b75c250baf6655"
+  },
+  "tree": {
+    "truncated": false,
+    "entries": [
+      {
+        "path": "README.md",
+        "type": "blob",
+        "git_blob_sha": "9ba743064a9ed1861573f0743be021d7b279672a",
+        "bytes": 487
+      },
+      {
+        "path": "dolce_needs.p",
+        "type": "blob",
+        "git_blob_sha": "73047de266cd6c1ea684befd1d05b6294ecc5265",
+        "bytes": 15245
+      }
+    ]
+  },
+  "searches": [
+    {
+      "query": "\"DOLCE-mental_states-needs\" in:name,description",
+      "limit": 10,
+      "returned": [
+        "diporello/DOLCE-mental_states-needs"
+      ]
+    },
+    {
+      "query": "\"Needs and Intentionality\" in:description",
+      "limit": 10,
+      "returned": []
+    }
+  ],
+  "method": "Follow literal paper note15; fetch current GitHub metadata/ref and complete two-file tree; retain both exact files; inspect README, headers and selected formula/test passages. Queries search names/descriptions only.",
+  "execution_boundary": "No TPTP parser, Darwin, Hets, theorem prover, model finder, complete artifact-symbol glossary or semantic equivalence test executed.",
+  "global_absence_claim": false,
+  "complete_ontology_claim": false,
+  "primary_technical_issue": 248,
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/diporello/DOLCE-mental_states-needs/93734dbe35c931338b3b9aba66b75c250baf6655/README.md",
+      "status": 200,
+      "bytes": 487,
+      "sha256": "cd4c83d31c07be3c0df52882d246961cc00082b26cee83a31c5dbc3458d3ded0"
+    },
+    {
+      "path": "dolce_needs.p",
+      "url": "https://raw.githubusercontent.com/diporello/DOLCE-mental_states-needs/93734dbe35c931338b3b9aba66b75c250baf6655/dolce_needs.p",
+      "status": 200,
+      "bytes": 15245,
+      "sha256": "61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc"
+    }
+  ],
+  "public_primary_pdf": {
+    "url": "https://www.loa.istc.cnr.it/wp-content/uploads/2020/12/FAIA-330-FAIA200666.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 334904,
+    "sha256": "55f6dc932422c646b04a1defafe176574e4c248fe827c9106dded222cb14f98f",
+    "matches_owner_pdf": true
+  },
+  "paper_artifact_relation": "PAPER_LINKED_MAY2020_DRAFT_SELECTED_FORMULA_DIFFERENCES_OBSERVED",
+  "tracked_test_harness_or_logs": "NOT_PRESENT_IN_SELECTED_TWO_FILE_TREE"
+}

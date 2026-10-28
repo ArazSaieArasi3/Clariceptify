@@ -1,0 +1,2215 @@
+schema_version: '1.0'
+work_id: CLR-RW-DOLCEMental
+issue: 86
+identity:
+  title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
+  authors:
+  - Luca Biccheri
+  - Roberta Ferrario
+  - Daniele Porello
+  doi: 10.3233/FAIA200666
+  version: FOIS2020, FAIA330, printed 125-139, 2020 publication
+  boundary: Exact 15-page published owner PDF, matched to laboratory PDF bytes. May 2020 draft-linked FOL file
+    is a separate versioned input; selected formula differences observed. Institutional event date2021 is separate
+    metadata, not a replacement publication year.
+source:
+  filename: DOLCEMental-2020-owner.pdf
+  sha256: 55f6dc932422c646b04a1defafe176574e4c248fe827c9106dded222cb14f98f
+  pdf_pages: 15
+  printed_pages: 125-139
+  access: OWNER_SUPPLIED_PUBLIC_PRIMARY_BYTES_MATCHED
+  redistributed: false
+status: REVIEW_COMPLETE
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  units:
+  - unit: Front matter/title/abstract
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Section1 Introduction
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Section2 opening
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section2.1 Aboutness
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section2.2 Intentional objects/roles
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Section2.3 Social contents
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Section3 Needs as attitudes
+    status: REVIEWED
+    evidence:
+    - E07
+    - E08
+  - unit: Section4 Formal ontology
+    status: REVIEWED
+    evidence:
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+  - unit: Section5 Guiding example
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Section6 Conclusion
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Figure1
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: References1-35
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display a1
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display a2
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display a3
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display a4
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display a5
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display a6
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display d1
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display d2
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display d3
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display d4
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d5
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d6
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d7
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d8
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d9
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d10
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d11
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Display d12
+    status: REVIEWED
+    evidence:
+    - E12
+    - E13
+  - unit: Footnote1
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote2
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote3
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote4
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote5
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote6
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote7
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote8
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote9
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote10
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote11
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote12
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote13
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote14
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote15
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote16
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote17
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote18
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote19
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote20
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote21
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote22
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote23
+    status: REVIEWED
+    evidence:
+    - E16
+  catalog_boundary: All 15 paper pages, every section/subsection, one three-box association figure, all 18
+    labeled displays (a1-a6,d1-d12),23 numbered footnotes and 35 references inspected. No numbered tables or
+    appendices. Native concepts/relations and prose commitments are cataloged separately from unknown released-model/predicate-glossary
+    populations. D6 is retained with three unclosed parentheses; no editorial repair is adopted.
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: PDF 1 / printed 125, title, abstract and publication block
+  summary: Biccheri/Ferrario/Porello; FOIS2020, pages125-139, DOI 10.3233/FAIA200666; paper CC BY-NC4.0, not
+    a blanket source-code license.
+- id: E02
+  pages:
+  - 1
+  - 2
+  - 3
+  locator: PDF 1-3 / printed 125-127, section 1 and notes 1-2
+  summary: Need-driven PA services; self/hetero-ascription, reactive/proactive/predictive distinction; three
+    uses initially describe what is needed, rather than mental states themselves.
+- id: E03
+  pages:
+  - 3
+  - 4
+  locator: PDF 3-4 / printed 127-128, section 2 opening and 2.1, note 3
+  summary: Directedness/content versus reference/object; content can exist without an existing referent; philosophical
+    intentionality is not identical to intensional linguistic contexts.
+- id: E04
+  pages:
+  - 5
+  - 6
+  locator: PDF 5-6 / printed 129-130, section 2.2 and notes 4-7
+  summary: Intentional objects treated as non-multiplicative founded anti-rigid roles; generic foundation differs
+    from parthood; Varenne and Naples examples.
+- id: E05
+  pages:
+  - 6
+  - 7
+  - 8
+  locator: PDF 6-8 / printed 130-132, section 2.3 and notes 8-10
+  summary: DOLCE chosen; social concepts are intersubjective particulars defined through descriptions; time-indexed
+    classification; shared concepts, multiple descriptions of events and empty extensions.
+- id: E06
+  pages:
+  - 8
+  locator: PDF 8 / printed 132, Figure 1
+  summary: 'Three boxes: mental state, intentional content/social concept, intentional object/reference; aboutness1,
+    aboutness2 and classification arrows. No class hierarchy or cardinality labels.'
+- id: E07
+  pages:
+  - 8
+  - 9
+  locator: PDF 8-9 / printed 132-133, section 3 opening, notes 11-14
+  summary: BDI comparison and three explicit questions about need kind/content/object; informational/motivational/deliberative
+    modes. Needs assumed distinct from desire/belief/intention; no empirical cognitive criterion supplied.
+- id: E08
+  pages:
+  - 9
+  - 10
+  locator: PDF 9-10 / printed 133-134, section 3 need distinctions
+  summary: Need1 sufficient instrumental goal, need2 necessary-and-sufficient instrumental goal, need3 absolute/end
+    need; object nouns interpreted elliptically as events.
+- id: E09
+  pages:
+  - 10
+  - 11
+  locator: PDF 10-11 / printed 134-135, section 4 background and notes 15-17
+  summary: DOLCE D18 and DOLCE-CORE references; mental states as states/perdurants, participation/APO, presence
+    and time; author reports implementation/consistency/consequence tests in linked file.
+- id: E10
+  pages:
+  - 11
+  locator: PDF 11 / printed 135, displays a1-a6 and note 18
+  summary: State subtype, existence and cross-time APO-agent uniqueness; about1 typing, existential content
+    and cross-time uniqueness. Outer free variables are not explicitly universally quantified in the printed
+    displays.
+- id: E11
+  pages:
+  - 11
+  locator: PDF 11 / printed 135, d1-d3 and notes 19-21
+  summary: Reference definition from content classification; time-indexed content/object roles; prose respectively
+    reverses their bearers. Impossible concepts require relaxing a DOLCE constraint. BS/DS/IS/NS are prose-stated
+    disjoint subtypes.
+- id: E12
+  pages:
+  - 12
+  locator: PDF 12 / printed 136, d4-d9 and notes 21-23
+  summary: Desire/need0 projections, goal compatibility, satisfier, instrumental/end goals. d6 has three unclosed
+    parentheses as printed; prose refers to a8 where the displayed instrumental-goal label is d8. Future-indexed
+    concepts postponed.
+- id: E13
+  pages:
+  - 12
+  - 13
+  locator: PDF 12-13 / printed 136-137, d10-d12 and four-use summary
+  summary: need1 iff igoal; need2 iff a stronger instrumental condition; need3 only implies egoal and need0.
+    Need1/2 need not imply need0; no harm criterion in d12.
+- id: E14
+  pages:
+  - 13
+  locator: PDF 13 / printed 137, section 5
+  summary: Maria/child allowance and alternative in-kind services illustrate context-relative necessity; service
+    execution and ex-post goal checks are proposed, not measured deployments.
+- id: E15
+  pages:
+  - 13
+  - 14
+  locator: PDF 13-14 / printed 137-138, section 6
+  summary: 'Claims: role account of objects/contents, social concepts, need distinctions, DOLCE mental extension
+    and foundations for need-driven services; not an implemented public-service evaluation.'
+- id: E16
+  pages:
+  - 1
+  - 2
+  - 4
+  - 5
+  - 6
+  - 7
+  - 9
+  - 10
+  - 11
+  - 12
+  locator: All notes 1-23, including continuation of note 21 on PDF 12
+  summary: All notes inspected; note 19 qualifies impossible concepts and note 23 explicitly postpones future
+    satisfier indexing. No appendices or numbered tables in the paper.
+- id: E17
+  pages:
+  - 14
+  - 15
+  locator: PDF 14-15 / printed 138-139, references1-35
+  summary: All 35 bibliography records inspected; D18(2003), DOLCE-CORE reference, COM2004 and BFO/UFO alternatives
+    distinguished. Bibliography families are not imports.
+- id: E18
+  source_kind: REPOSITORY
+  pages: []
+  path: README.md
+  commit: 93734dbe35c931338b3b9aba66b75c250baf6655
+  sha256: cd4c83d31c07be3c0df52882d246961cc00082b26cee83a31c5dbc3458d3ded0
+  locator: diporello/DOLCE-mental_states-needs at 93734dbe35c931338b3b9aba66b75c250baf6655; README lines1-8
+  summary: Author README dates the artifact May 2020, calls it based on a draft and reports Darwin 1.4.4 with
+    Hets. The statement is author-reported; no execution logs acquired.
+- id: E19
+  source_kind: REPOSITORY
+  pages: []
+  path: dolce_needs.p
+  commit: 93734dbe35c931338b3b9aba66b75c250baf6655
+  sha256: 61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc
+  locator: diporello/DOLCE-mental_states-needs at 93734dbe35c931338b3b9aba66b75c250baf6655; Header; lines102-149,157-190,202-273,296-355
+  summary: FOL/TPTP-style fragment, selected content/type/goal/need and test passages inspected. Additional
+    presence/APO guards and existential scope differences distinguish this draft file from printed formulas.
+- id: E20
+  source_kind: SPECIFICATION
+  pages: []
+  url: https://iris.unitn.it/handle/11572/336248
+  locator: Institutional record, checked 2026-10-28; author laboratory publication page also inspected
+  summary: Primary metadata confirms three authors, 2020 publication,125-139 and DOI. Institutional event field
+    separately says September2021; it does not change the printed 2020 edition.
+dimensions:
+  D1_identity_coverage:
+    label: D1_identity_coverage
+    statement: Exact 15-page three-author FOIS2020 paper, DOI 10.3233/FAIA200666, printed 125-139. Owner bytes
+      match the actually fetched laboratory PDF; all pages/one figure/18 displays/23 notes/35 references inspected.
+    evidence:
+    - E01
+    - E06
+    - E10
+    - E12
+    - E16
+    - E17
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  D2_problem_contribution:
+    label: D2_problem_contribution
+    statement: Disentangle need/satisfier uses for need-driven services through intentionality, BDI comparison,
+      DOLCE mental states and goal relations; conceptual contribution, not a measured service deployment.
+    evidence:
+    - E02
+    - E03
+    - E08
+    - E15
+    basis: REVIEWER_INTERPRETATION
+  D3_method:
+    label: D3_method
+    statement: Philosophical role/content analysis, ontology grounding, displayed FOL excerpt, author-linked
+      draft formal source and guiding scenarios. No formal systematic-review protocol, empirical cognitive
+      test or independent proof reproduction provided.
+    evidence:
+    - E04
+    - E05
+    - E09
+    - E14
+    - E18
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  D4_requirements:
+    label: D4_requirements
+    statement: Three explicit questions ask need kind/content/object. Public-service design motivates ascription,
+      service alternatives and ex-post checks; reconstructed adverse cases are reviewer interpretations, not
+      an author CQ test suite.
+    evidence:
+    - E02
+    - E07
+    - E14
+    basis: REVIEWER_INTERPRETATION
+  D5_concepts:
+    label: D5_concepts
+    statement: Complete paper-level catalog includes state/content/object roles, every printed predicate, background/foundation
+      distinctions, need relations and service/method primitives; no artifact class census inferred.
+    evidence:
+    - E04
+    - E05
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E17
+    basis: REVIEWER_INTERPRETATION
+  D6_relations_formalization:
+    label: D6_relations_formalization
+    statement: All a1-a6/d1-d12 displays retained, with literal d6 missing delimiters and d12 one-way arrow;
+      one association diagram, prose disjointness, reference label/order discrepancies and selected file scope
+      differences remain explicit.
+    evidence:
+    - E06
+    - E10
+    - E11
+    - E12
+    - E13
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  D7_grounding:
+    label: D7_grounding
+    statement: DOLCE/DOLCE-CORE social concepts and APO-private occurrent states; family/document citations
+      do not identify an executable foundation release. Modal role claims, impossible concepts and future temporal
+      indexing are qualified.
+    evidence:
+    - E04
+    - E05
+    - E09
+    - E11
+    - E12
+    - E17
+    basis: REVIEWER_INTERPRETATION
+  D8_artifact_correspondence:
+    label: D8_artifact_correspondence
+    statement: Exact note 15 repository/ref/complete two-file tree and both raw files fetched; selected source
+      passages inspected and hashes retained. README calls it a draft, and formula scope/guards differ. No
+      parser/prover/glossary completion.
+    evidence:
+    - E18
+    - E19
+    - E20
+    basis: EXECUTED
+    execution_ref: evaluation/related-work/dolce-mental/discovery.json
+  D9_evaluation:
+    label: D9_evaluation
+    statement: Consistency and consequence tests are author-reported; seven active example axioms and twelve
+      conjectures are text, not passed runs. Guiding Maria story is not empirical evaluation. Reviewer executed
+      source identity/structural checks only.
+    evidence:
+    - E09
+    - E14
+    - E18
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  D10_critical_synthesis:
+    label: D10_critical_synthesis
+    statement: Reuse/align only as candidate prior-art/comparison input; retain strong existing intentionality/need
+      support and exact formula, attribution, time, source and evaluation gaps. Technical248/comparison256/synthesis126
+      remain open.
+    evidence:
+    - E11
+    - E12
+    - E13
+    - E14
+    - E15
+    - E19
+    basis: REVIEWER_INTERPRETATION
+catalog:
+- id: C01
+  label: Need / what is needed
+  statement: Mental attitude and its satisfier are explicitly distinguished; the initial three uses describe
+    events or conditions needed, not three definitions of a mental state.
+  evidence:
+  - E02
+  - E08
+  basis: AUTHOR_REPORTED
+- id: C02
+  label: MS / Mental state
+  statement: A state/perdurant depending on a physical agent; no neural-reduction criterion or full internal
+    content structure given.
+  evidence:
+  - E09
+  - E10
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C03
+  label: ST / State
+  statement: DOLCE cumulative/homeomeric perdurant; selected account abstracts from process articulation.
+  evidence:
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C04
+  label: Perdurant / event (broad)
+  statement: Paper uses event broadly for states, processes and events in the narrower sense; examples of services
+    are token occurrences.
+  evidence:
+  - E05
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C05
+  label: Endurant
+  statement: Contrasted with mental-state perdurants and mentioned in elliptical object-language interpretations.
+  evidence:
+  - E08
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C06
+  label: T / Time interval
+  statement: Time argument of participation, presence, classification and attitudes; no numerical date model
+    supplied.
+  evidence:
+  - E09
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C07
+  label: APO / Agentive physical object
+  statement: Participating agent type in a2/a3; physical-agent uniqueness is not a theory of PA collective
+    mental states.
+  evidence:
+  - E09
+  - E10
+  basis: AUTHOR_REPORTED
+- id: C08
+  label: C / Social concept
+  statement: Intersubjective particular accepted by a community and described linguistically; chosen as content
+    bearer, not a private mental item or OWL class.
+  evidence:
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C09
+  label: BS / Belief state
+  statement: Prose-stated disjoint MS subtype, associated with informational mode; complete bel definition
+    is not printed.
+  evidence:
+  - E07
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C10
+  label: DS / Desire state
+  statement: Prose-stated disjoint MS subtype; des is projected from participation and directedness.
+  evidence:
+  - E07
+  - E11
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C11
+  label: IS / Intention state
+  statement: Prose-stated disjoint MS subtype with deliberative commitment; no printed int definition or complete
+    action-persistence axioms.
+  evidence:
+  - E07
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C12
+  label: NS / Need state
+  statement: Prose-stated disjoint mental subtype; cannot be inferred merely from an instrumental goal or service
+    request.
+  evidence:
+  - E11
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C13
+  label: Intentionality
+  statement: Being about something, distinguished into directedness and reference; not identical to intention
+    as a BDI attitude.
+  evidence:
+  - E03
+  - E07
+  basis: AUTHOR_REPORTED
+- id: C14
+  label: Intentional content / intCon
+  statement: Time-indexed role played by a social concept in directedness; not a separate copy of the concept.
+  evidence:
+  - E04
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C15
+  label: Intentional object / intObj
+  statement: Time-indexed role of an entity in reference; no ontological multiplication of Varenne and intentional
+    Varenne.
+  evidence:
+  - E04
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C16
+  label: Directedness / aboutness1 / about1
+  statement: Content relationship; philosophical binary account becomes a time-indexed ternary predicate in
+    formulas.
+  evidence:
+  - E03
+  - E05
+  - E10
+  basis: AUTHOR_REPORTED
+- id: C17
+  label: Reference / aboutness2 / about2
+  statement: Relationship to classified entities; can have no fillers or several, while content remains determinate.
+  evidence:
+  - E03
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C18
+  label: Classification / cf
+  statement: Social concept classifies an entity at a time; different concepts may classify the same event
+    without becoming identical.
+  evidence:
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C19
+  label: Presence / pre
+  statement: Existing-at-time relation used for satisfiers; distinct from quantification over possibilia.
+  evidence:
+  - E09
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C20
+  label: Participation / pc
+  statement: Agent/entity, perdurant and time relation; some participation witnesses and aboutness witnesses
+    need not be at the same time in the printed axioms.
+  evidence:
+  - E09
+  - E10
+  basis: AUTHOR_REPORTED
+- id: C21
+  label: bel / believes
+  statement: Agent-content-time attitude described by analogy to des; not a printed labeled definition.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C22
+  label: des / desires
+  statement: Agent-content-time projection through a DS, participation and about1, d4.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C23
+  label: int / intends
+  statement: Agent-content-time attitude described, but not explicitly defined by a displayed formula.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C24
+  label: need0
+  statement: Agent-content-time projection through NS, d5; not the NS entity or an event satisfier.
+  evidence:
+  - E12
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C25
+  label: goal
+  statement: Desire or mental need compatible with the agent's other desires/needs; printed d6 lacks three
+    closing parentheses.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C26
+  label: sat / Satisfier
+  statement: Same-time presence plus concept classification; existing event is intended in prose but the display
+    has no explicit PER guard.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C27
+  label: Temporal precedence / strict order
+  statement: Order between attitude intervals; material satisfaction implication is not causation or a full
+    temporal/modal semantics.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C28
+  label: igoal / instrumental goal
+  statement: Goal with a later goal and a satisfaction-existence implication, d8; later target is not explicitly
+    restricted to egoal.
+  evidence:
+  - E08
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C29
+  label: egoal / end goal
+  statement: Goal that is not instrumental, d9; negative definition does not itself encode intrinsic value
+    or fundamental harm.
+  evidence:
+  - E08
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C30
+  label: need1
+  statement: Relation identical to igoal in d10; need1 does not necessarily arise from a need state.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C31
+  label: need2
+  statement: Necessary instrumental relation strengthening igoal in d11; entails need1, not necessarily need0.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C32
+  label: need3 / absolute or basic need
+  statement: Only constrained to egoal and need0 by d12; no sufficient-condition definition or harm discriminator
+    supplied.
+  evidence:
+  - E08
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C33
+  label: Founded property / generic foundation
+  statement: Role dependence on another property and association outside parthood; philosophical modality is
+    not fully encoded in d2/d3.
+  evidence:
+  - E04
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C34
+  label: Anti-rigidity / rigidity / identity
+  statement: Role can be ceased without loss of the underlying entity's identity; content/object roles do not
+    create new bearer entities.
+  evidence:
+  - E04
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C35
+  label: One-sided / mutual foundation
+  statement: Student/university and spouse examples distinguish asymmetrical and mutual generic foundation.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C36
+  label: Role / monadic property
+  statement: Property predicable of heterogeneous entity kinds in a relational context; timed intCon/intObj
+    predicates are distinct from a new rigid kind.
+  evidence:
+  - E04
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C37
+  label: Part-of / pregnant whole
+  statement: Parthood excluded from the generic-foundation account; Husserl's unity differs from a mereological
+    aggregate.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C38
+  label: Description / linguistic expression
+  statement: Social concept definitions encoded in public language and documents; private concepts are outside
+    the chosen position.
+  evidence:
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C39
+  label: Community / intentional agent
+  statement: Accepts and shares descriptions/concepts; collective acceptance is not independently measured
+    or formally axiomatized in the excerpt.
+  evidence:
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C40
+  label: Concept extension / empty extension
+  statement: A concept may classify nothing at a time while serving as content; nonempty actual extension is
+    not required by a5 alone.
+  evidence:
+  - E03
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C41
+  label: Possible versus impossible content
+  statement: Pegasus/king-of-Italy empty-reference examples differ from impossible round-square concepts, which
+    require dropping a DOLCE condition per note 19.
+  evidence:
+  - E03
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C42
+  label: State of affairs / complex reference
+  statement: Naples/property example discusses derivative reference to structured facts; no full compositional
+    or proposition-equivalence theory printed.
+  evidence:
+  - E04
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C43
+  label: Intentional modes / BDI
+  statement: Belief informational, desire motivational, intention deliberative; the paper supplements rather
+    than implements a complete BDI architecture.
+  evidence:
+  - E07
+  basis: AUTHOR_REPORTED
+- id: C44
+  label: Selected desire / compatibility
+  statement: Earlier chosen-desire account is compared with the conflict-free goal rule; no choice policy or
+    preference selection algorithm provided.
+  evidence:
+  - E07
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C45
+  label: Necessary / sufficient means
+  statement: Need1 versus need2 motivated by service alternatives and indispensable means; extensional implication
+    is not counterfactual dependence.
+  evidence:
+  - E02
+  - E08
+  - E12
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C46
+  label: Harm / well-being / basic conditions
+  statement: Motivate absolute needs and PA priorities, but no operational harm threshold occurs in d12.
+  evidence:
+  - E02
+  - E08
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C47
+  label: Rights / welfare-state mission
+  statement: Public-service motivation concerns rights and well-being alongside private goals; no legal entitlement
+    inference implemented.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: C48
+  label: Public Administration / PA
+  statement: Institution as service designer, need ascriber and provider; not equated with the unique physical
+    bearer in a3.
+  evidence:
+  - E02
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C49
+  label: Citizen / service recipient
+  statement: Source of self-ascribed needs or target of PA ascription, delivery and ex-post evaluation.
+  evidence:
+  - E02
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C50
+  label: Self-ascribed / hetero-ascribed need
+  statement: Citizen versus external attribution distinguished before classification; no formal attribution/evidence
+    predicate provided.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: C51
+  label: Reactive / proactive / predictive service
+  statement: Response to request versus initiated service; predictable occurrence/timing distinguished in note
+    2.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: C52
+  label: Need-driven service
+  statement: Offering means to satisfy a citizen's goals, necessary means or basic conditions; no one-to-one
+    service-to-need identity assumed.
+  evidence:
+  - E02
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C53
+  label: Service concept / token provision
+  statement: Conceptual description of a service and an individual delivery event are separate, linked by classification.
+  evidence:
+  - E05
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C54
+  label: Request / demand / entitlement
+  statement: Administrative interaction may express a need or lack of service awareness; demand does not prove
+    correct ascription.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: C55
+  label: Life event
+  statement: Birth, employment change or starting education may occasion new attributed needs; not a deterministic
+    formal prediction rule.
+  evidence:
+  - E02
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C56
+  label: Design / delivery / ex-post evaluation
+  statement: Conceptual design, actual execution and checking goal satisfaction are distinct phases, not a
+    completed empirical study.
+  evidence:
+  - E02
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C57
+  label: Sociological versus conceptual analysis
+  statement: Paper addresses conceptual organization at design time, not population data gathering or actual
+    individualized need detection.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: C58
+  label: Public-service alternatives
+  statement: Train/bus/shuttle and financial/in-kind supports illustrate sufficient alternatives; particular
+    bundles may require additional conditions.
+  evidence:
+  - E02
+  - E08
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C59
+  label: Institutional means / legitimated goals
+  statement: PA resources and accepted goals contextualize necessity; necessity is not universal across institutions
+    or times.
+  evidence:
+  - E08
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C60
+  label: Child benefit / single-parent allowance
+  statement: Examples distinguish a service concept, actual payment event and possible financial means to a
+    child's well-being.
+  evidence:
+  - E05
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C61
+  label: Maria / newborn case
+  statement: Illustrative low-income parent and child's absolute needs; no patient/citizen dataset or validated
+    needs model is supplied.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C62
+  label: DOLCE / DOLCE-CORE / D18
+  statement: Declared grounding combines D18(2003) with social-concept DOLCE-CORE references; exact executable
+    foundation edition/import parity remains separate.
+  evidence:
+  - E05
+  - E09
+  - E17
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C63
+  label: QS5 / possibilia
+  statement: Modal background invoked in note 22; selected FOL fragment is not automatically the complete modal
+    DOLCE theory.
+  evidence:
+  - E12
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C64
+  label: COM2004 compatibility
+  statement: Authors report compatibility with the earlier mind ontology; no joint-model, alignment or equivalence
+    proof is reproduced.
+  evidence:
+  - E09
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C65
+  label: BFO / UFO
+  statement: Mentioned as alternative BDI ontology families; not grounding or imported editions of this work.
+  evidence:
+  - E07
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C66
+  label: JAM / Jason / SPARK
+  statement: Examples of BDI platforms, not implementations or evaluation targets of this needs ontology.
+  evidence:
+  - E07
+  basis: AUTHOR_REPORTED
+- id: C67
+  label: TPTP-style FOL / Darwin / Hets
+  statement: Linked source representation and author-reported consistency environment; retained statements
+    are not new parser/prover runs.
+  evidence:
+  - E18
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C68
+  label: Proposition / social-concept modeling choice
+  statement: Note21 analogizes propositions classifying states of affairs with concepts classifying events;
+    no semantics-preserving BDI translation demonstrated.
+  evidence:
+  - E11
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C69
+  label: Role relation versus class taxonomy
+  statement: Figure 1 aboutness and classification arrows are associations, not subclass links among three
+    new kinds.
+  evidence:
+  - E06
+  basis: AUTHOR_REPORTED
+- id: C70
+  label: Need relation inclusion
+  statement: Need2 implies need1 and need3 implies need0; the four named uses are not four disjoint mental-state
+    subclasses.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C71
+  label: Formal symbols versus OWL classes
+  statement: Timed relations and unary FOL predicates require their native symbol glossary; no OWL class or
+    IRI census invented.
+  evidence:
+  - E09
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C72
+  label: Temporal state occurrence
+  statement: The source abstracts away internal articulation; states at different times are distinct under
+    the adopted view, rather than enduring dispositions.
+  evidence:
+  - E09
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C73
+  label: Research questions versus CQs
+  statement: Three questions guide need kind/content/object; no separately enumerated CQ verification table
+    is printed.
+  evidence:
+  - E07
+  basis: AUTHOR_REPORTED
+- id: C74
+  label: Role exemplars and bearers
+  statement: Customer/supplier, student/university and spouse roles illustrate founded dependence; person/company
+    bearers and person/student identity illustrate heterogeneous and anti-rigid roles, not a new formal class
+    hierarchy.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C75
+  label: Property / kind / species
+  statement: Note5 chooses property to avoid ambiguity with knowledge-representation vocabulary; do not turn
+    philosophical type talk into invented first-class OWL declarations.
+  evidence:
+  - E04
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C76
+  label: Other intentional attitudes
+  statement: Love, fear, admiration, expectation and perception illustrate intentional mental states; only
+    BS/DS/IS/NS are the named formal subtypes in the excerpt.
+  evidence:
+  - E03
+  - E07
+  basis: AUTHOR_REPORTED
+commitments:
+- id: K01
+  label: Mental state is a state
+  statement: MS(x) -> ST(x); States/perdurants are used rather than internally articulated processes.
+  evidence:
+  - E09
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_label: a1
+  formula_page: 11
+  normalized_formula: MS(x) -> ST(x)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K02
+  label: A participating agent exists
+  statement: MS(x) -> (exists y,t.(APO(y) & pc(y,x,t))); Existential at some interval, not an explicit every-interval
+    participation or presence constraint.
+  evidence:
+  - E09
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_label: a2
+  formula_page: 11
+  normalized_formula: MS(x) -> (exists y,t.(APO(y) & pc(y,x,t)))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K03
+  label: Agent uniqueness across time
+  statement: MS(x) & APO(x1) & APO(x2) & pc(x1,x,t) & pc(x2,x,t') -> x1 = x2; Only APO participants are compared;
+    other participation is not excluded by this display.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_label: a3
+  formula_page: 11
+  normalized_formula: MS(x) & APO(x1) & APO(x2) & pc(x1,x,t) & pc(x2,x,t') -> x1 = x2
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K04
+  label: Directedness typing
+  statement: about1(x,y,t) -> MS(x) & C(y) & T(t); State/content presence is not stated in this printed formula;
+    selected file adds it.
+  evidence:
+  - E10
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_label: a4
+  formula_page: 11
+  normalized_formula: about1(x,y,t) -> MS(x) & C(y) & T(t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K05
+  label: Content existence
+  statement: MS(x) -> exists y,t.(about1(x,y,t)); At least one content/interval pair, not universal contentfulness
+    at every interval.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_label: a5
+  formula_page: 11
+  normalized_formula: MS(x) -> exists y,t.(about1(x,y,t))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K06
+  label: Single content across time
+  statement: about1(x,y,t) & about1(x,y',t') -> y = y'; Contents are equal even at different times; this is
+    stronger than per-time functionality.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_label: a6
+  formula_page: 11
+  normalized_formula: about1(x,y,t) & about1(x,y',t') -> y = y'
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K07
+  label: Reference through classification
+  statement: about2(x,z,t) <-> (MS(x) & T(t) & exists y.(about1(x,y,t) & cf(y,z,t))); All classified fillers
+    satisfy the biconditional, not a formally selected unique member.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d1
+  formula_page: 11
+  normalized_formula: about2(x,z,t) <-> (MS(x) & T(t) & exists y.(about1(x,y,t) & cf(y,z,t)))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K08
+  label: Intentional-content role
+  statement: intCon(y,t) <-> exists x.about1(x,y,t); Concept role at a time; no new duplicate entity is introduced.
+    Source file spells intCont.
+  evidence:
+  - E11
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d2
+  formula_page: 11
+  normalized_formula: intCon(y,t) <-> exists x.about1(x,y,t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K09
+  label: Intentional-object role
+  statement: intObj(z,t) <-> exists x,y.(about1(x,y,t) & about2(x,z,t)); Entity role at a time; existential
+    content conjunct is explicit here, unlike the shorter source-file definition.
+  evidence:
+  - E11
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d3
+  formula_page: 11
+  normalized_formula: intObj(z,t) <-> exists x,y.(about1(x,y,t) & about2(x,z,t))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K10
+  label: Desire projection
+  statement: des(i,y,t) <-> exists x(DS(x) & pc(i,x,t) & about1(x,y,t)); Printed body has no APO(i) guard;
+    the selected file explicitly adds one.
+  evidence:
+  - E12
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d4
+  formula_page: 12
+  normalized_formula: des(i,y,t) <-> exists x(DS(x) & pc(i,x,t) & about1(x,y,t))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K11
+  label: Mental-need projection
+  statement: need0(i,y,t) <-> exists x(NS(x) & pc(i,x,t) & about1(x,y,t)); Mental state NS and agent-content-time
+    relation need0 are distinct levels.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d5
+  formula_page: 12
+  normalized_formula: need0(i,y,t) <-> exists x(NS(x) & pc(i,x,t) & about1(x,y,t))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K12
+  label: Conflict-free goal
+  statement: goal(i,y,t) <-> ((des(i,y,t) | need0(i,y,t)) & not exists w.((des(i,w,t) | need0(i,w,t)) & not
+    exists z(cf(y,z,t) & cf(w,z,t); Literal incomplete display retained. Three final closing parentheses are
+    absent; candidate closure is not adopted. Pairwise compatibility and self-inclusion need technical analysis.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d6
+  formula_page: 12
+  normalized_formula: goal(i,y,t) <-> ((des(i,y,t) | need0(i,y,t)) & not exists w.((des(i,w,t) | need0(i,w,t))
+    & not exists z(cf(y,z,t) & cf(w,z,t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 3
+- id: K13
+  label: Satisfier
+  statement: sat(e,y,t) <-> pre(e,t) & cf(y,e,t); Same-time presence and classification; the formula has no
+    explicit PER/event guard.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d7
+  formula_page: 12
+  normalized_formula: sat(e,y,t) <-> pre(e,t) & cf(y,e,t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K14
+  label: Instrumental goal
+  statement: igoal(x,y,t) <-> (goal(x,y,t) & exists y',t'.(goal(x,y',t') & t < t' & (exists e.sat(e,y,t) ->
+    exists e'.sat(e',y',t')))); Material implication between existence claims; target is goal, not necessarily
+    egoal. File moves exists E over the implication.
+  evidence:
+  - E12
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d8
+  formula_page: 12
+  normalized_formula: igoal(x,y,t) <-> (goal(x,y,t) & exists y',t'.(goal(x,y',t') & t < t' & (exists e.sat(e,y,t)
+    -> exists e'.sat(e',y',t'))))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K15
+  label: End goal
+  statement: egoal(x,y,t) <-> goal(x,y,t) & not igoal(x,y,t); Defined negatively as non-instrumental goal;
+    no explicit per-se value or harm criterion.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d9
+  formula_page: 12
+  normalized_formula: egoal(x,y,t) <-> goal(x,y,t) & not igoal(x,y,t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K16
+  label: First instrumental need
+  statement: need1(x,y,t) <-> igoal(x,y,t); May arise from desire rather than NS; not a disjoint mental-state
+    subclass.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d10
+  formula_page: 12
+  normalized_formula: need1(x,y,t) <-> igoal(x,y,t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K17
+  label: Necessary instrumental need
+  statement: need2(x,y,t) <-> (igoal(x,y,t) & exists y',t'.(goal(x,y',t') & t < t' & (exists e.sat(e,y,t) <->
+    exists e'.sat(e',y',t')))); Co-truth of existence at selected times is not counterfactual/causal necessity.
+    File places exists E over the biconditional.
+  evidence:
+  - E13
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d11
+  formula_page: 12
+  normalized_formula: need2(x,y,t) <-> (igoal(x,y,t) & exists y',t'.(goal(x,y',t') & t < t' & (exists e.sat(e,y,t)
+    <-> exists e'.sat(e',y',t'))))
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+- id: K18
+  label: Absolute need constraint
+  statement: need3(x,y,t) -> egoal(x,y,t) & need0(x,y,t); Only a necessary condition, despite d-label; not
+    a biconditional, harm definition or completeness guarantee.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_label: d12
+  formula_page: 12
+  normalized_formula: need3(x,y,t) -> egoal(x,y,t) & need0(x,y,t)
+  transcription: ASCII_OPERATORS_PRIMES_PRESERVED_NO_SEMANTIC_REPAIR
+  delimiter_balance: 0
+labeled_formula_population:
+  count: 18
+  labels:
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a6
+  - d1
+  - d2
+  - d3
+  - d4
+  - d5
+  - d6
+  - d7
+  - d8
+  - d9
+  - d10
+  - d11
+  - d12
+relation_index:
+- id: R01
+  label: pc
+  statement: pc(entity,perdurant,time); agent participation underlies state privacy and attitude projections.
+  evidence:
+  - E09
+  - E10
+  basis: AUTHOR_REPORTED
+- id: R02
+  label: pre
+  statement: pre(entity,time); presence is a conjunct of sat, not an automatic actual-service assertion.
+  evidence:
+  - E09
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R03
+  label: cf
+  statement: cf(concept,entity,time); social classification of possible/actual domain entities.
+  evidence:
+  - E05
+  - E11
+  basis: AUTHOR_REPORTED
+- id: R04
+  label: about1
+  statement: about1(mental state,concept,time); a4-a6 type/existence/global uniqueness.
+  evidence:
+  - E10
+  basis: AUTHOR_REPORTED
+- id: R05
+  label: about2
+  statement: about2(mental state,entity,time); d1 derives extensional reference from cf.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: R06
+  label: intCon
+  statement: intCon(concept,time), d2; timed content-role predicate, not a new rigid kind.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: R07
+  label: intObj
+  statement: intObj(entity,time), d3; timed object-role predicate.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: R08
+  label: bel
+  statement: bel(agent,concept,time), described by analogy; no labeled paper definition.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: R09
+  label: des
+  statement: des(agent,concept,time), d4; projected desire attitude.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R10
+  label: int
+  statement: int(agent,concept,time), described by analogy; no labeled paper definition.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: R11
+  label: need0
+  statement: need0(agent,concept,time), d5; projected mental need.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R12
+  label: goal
+  statement: goal(agent,concept,time), incomplete printed d6; conflict compatibility.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R13
+  label: sat
+  statement: sat(entity,concept,time), d7; pre and cf.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R14
+  label: Strict temporal order
+  statement: t precedes t-prime; used in d8/d11; no causal reading or totality inferred.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R15
+  label: igoal
+  statement: igoal(agent,concept,time), d8; material satisfaction condition and later goal.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R16
+  label: egoal
+  statement: egoal(agent,concept,time), d9; goal and not igoal.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R17
+  label: need1
+  statement: need1(agent,concept,time), d10 iff igoal.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: R18
+  label: need2
+  statement: need2(agent,concept,time), d11 includes igoal and biconditional existence condition.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: R19
+  label: need3
+  statement: need3(agent,concept,time), d12 only implies egoal and need0.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: R20
+  label: Generic foundation / parthood / role dependence
+  statement: Philosophical relations justify role status, but complete modal/non-parthood constraints are not
+    printed in d2/d3.
+  evidence:
+  - E04
+  - E05
+  basis: AUTHOR_REPORTED
+- id: R21
+  label: Prose state taxonomy/disjointness
+  statement: BS/DS/IS/NS are stated as disjoint MS subtypes; this is an unnumbered commitment, not one of the
+    18 labeled displays.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+scenarios:
+- id: S01
+  label: Driving license
+  statement: Administrative requirement construed as an instrumental means to permitted driving; other conditions
+    are abstracted away.
+  evidence:
+  - E02
+  - E08
+  basis: AUTHOR_REPORTED
+- id: S02
+  label: Airport alternatives
+  statement: Train/bus/shuttle illustrate alternative sufficient means, not universally necessary ones.
+  evidence:
+  - E02
+  - E08
+  basis: AUTHOR_REPORTED
+- id: S03
+  label: Reactive request
+  statement: A citizen requests a service under self-ascribed need; request alone does not prove NS.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: S04
+  label: Proactive/predictive distinction
+  statement: External ascription may anticipate emergence, and predictive services additionally anticipate
+    timing.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: S05
+  label: Unaware citizen
+  statement: Unawareness or lack of service knowledge motivates external ascription without supplying a formal
+    diagnosis rule.
+  evidence:
+  - E02
+  basis: AUTHOR_REPORTED
+- id: S06
+  label: Varenne role
+  statement: Same horse can be an intentional object of admiration without duplicating the entity.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: S07
+  label: Boogymen/empty reference
+  statement: Content can be present despite absent referent; a5 is not an object-existence axiom.
+  evidence:
+  - E03
+  - E11
+  basis: AUTHOR_REPORTED
+- id: S08
+  label: Naples composite reference
+  statement: Discussion separates city/property and derivative state-of-affairs reference; no compositional
+    formal theory supplied.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: S09
+  label: Child-benefit payment
+  statement: A specific payment event can satisfy a service description at a time; different descriptions may
+    classify it.
+  evidence:
+  - E05
+  basis: AUTHOR_REPORTED
+- id: S10
+  label: Multiple concepts one event
+  statement: Child benefit and debt payment may classify the same token under different conditions; not concept
+    identity.
+  evidence:
+  - E05
+  basis: AUTHOR_REPORTED
+- id: S11
+  label: Multiple fillers
+  statement: Two events classified by one content both satisfy d1; unique referent choice is not defined.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: S12
+  label: Shared concept private states
+  statement: Different agents share a concept but have separate APO-private MS instances.
+  evidence:
+  - E05
+  - E10
+  basis: AUTHOR_REPORTED
+- id: S13
+  label: Changing content adverse case
+  statement: Two different contents across t/t-prime for one MS violate a6, not merely same-time functionality.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: S14
+  label: Mismatched times adverse case
+  statement: A2 and a5 alone do not align the participation and aboutness witnesses to one interval.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: S15
+  label: Impossible content adverse case
+  statement: Round-square concepts require the explicitly mentioned relaxation of DOLCE possible-instantiation
+    constraint.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: S16
+  label: Unmet future goal adverse case
+  statement: Analyze repaired d6 self-comparison and note 23 future-indexing gap before treating an unrealized
+    future service as a formal goal.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S17
+  label: Pairwise versus joint compatibility
+  statement: Three concept extensions can overlap pairwise without one common event; d6 supplies no explicit
+    joint witness.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S18
+  label: Material implication adverse case
+  statement: Isolated d8 implication is true with false antecedent; background may block that situation, so
+    this is not a full-theory countermodel.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S19
+  label: Need2 co-truth adverse case
+  statement: Isolated biconditional tests co-truth, not a counterfactual change-of-means necessity; no causal
+    conclusion.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: S20
+  label: Desire-driven instrumental need
+  statement: Need1/need2 may be associated with desire and not need0, consistent with explicit source discussion.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: S21
+  label: Absolute-need insufficiency
+  statement: From egoal and need0 alone do not infer need3; d12 is one-way and permits an empty extension.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: S22
+  label: Maria allowance
+  statement: Single available financial means motivates need2 in one PA setting.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: S23
+  label: Alternative in-kind support
+  statement: A different PA adds food/clothes/diapers services, changing the means context and motivating need1.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: S24
+  label: Newborn absolute needs
+  statement: Food/autonomy/freedom illustrate need3; they are not a computed harm classifier.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: S25
+  label: Ex-post service assessment
+  statement: Check both description conformance of a delivery and achievement of citizen goal; these are separate
+    proposed evaluations.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: S26
+  label: Proof-label adverse case
+  statement: Consistent/ok comments, duplicated identifiers and multiple conjectures require a qualified execution
+    harness; no passed-test count inferred.
+  evidence:
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+evaluation:
+  Verification:
+    label: Formula/source coverage
+    statement: Reviewer checked input identity, all printed labels and diagram/footnote coverage plus selected
+      file correspondence; not a proof of formula validity or full requirements traceability.
+    evidence:
+    - E01
+    - E06
+    - E10
+    - E12
+    - E18
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  Validation:
+    label: Intended meaning
+    statement: Philosophical and service examples motivate intended distinctions; no independent cognitive/domain-expert
+      validation or full-formal joint model executed.
+    evidence:
+    - E04
+    - E08
+    - E14
+    basis: REVIEWER_INTERPRETATION
+  Evaluation:
+    label: Application/utility
+    statement: Maria and alternative PA services illustrate possible uses; no quantitative deployment, citizen
+      dataset, prediction accuracy or burden-reduction outcome reported.
+    evidence:
+    - E02
+    - E14
+    basis: AUTHOR_REPORTED
+  Assessment:
+    label: Critical appraisal
+    statement: Reviewer identifies prior overlap and source/formal/context limits; conditional logical concerns
+      are not advertised as proved full-theory countermodels.
+    evidence:
+    - E10
+    - E11
+    - E12
+    - E13
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  Assurance:
+    label: Provenance/confidence
+    statement: Exact source hashes, matched public PDF, immutable repository ref, literal displays and qualified
+      open questions improve traceability. Author Darwin/Hets claims are not independently repeated results
+      or semantic acceptance.
+    evidence:
+    - E01
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+artifact:
+  issue: 248
+  status: PAPER_LINKED_DRAFT_SOURCE_PINNED_SELECTED_DIFFERENCES_TECHNICAL_OPEN
+  version_relation: 'Published2020 paper and author May 2020 draft source are not presumed identical. Exact
+    two-file repository pinned at 93734dbe35c931338b3b9aba66b75c250baf6655; selected guards, subtype treatment
+    and existential scope differ. Source README claims Darwin 1.4.4/Hets consistency, without acquired execution
+    logs or reviewer reproduction. No formal source license identified. Full native predicate/definition catalog
+    and selected technical checks remain #248.'
+  source_commit: 93734dbe35c931338b3b9aba66b75c250baf6655
+  selected_file_sha256: 61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc
+  discovery_execution:
+    path: evaluation/related-work/dolce-mental/discovery.json
+    sha256: 7b9caf4cf68b04398e4d9e87690bfb12e045aa1e5906da4babd6b293f202a29f
+  reading_inspection:
+    path: evaluation/related-work/dolce-mental/reading-inspection.json
+    sha256: a6f4a5b62f40022ee326f47885bb27bcdb022935a27c9c1e69dd457ce2ec8bd4
+  selected_source_correspondence:
+    path: evaluation/related-work/dolce-mental/source-correspondence.json
+    sha256: 408dfcd920a0fa389bf81b817da7bd4aa2f5662132249e33be8a6026be7d0d34
+  machine_class_populations:
+    local_named_classes: null
+    external_redeclarations: null
+    asserted_import_closure: null
+    inferred_classes: null
+  native_symbol_glossary: PENDING_248
+  reasoner_execution: NOT_EXECUTED
+  paper_formula_identity: SELECTED_DIFFERENCES_OBSERVED
+  foundation:
+    family: DOLCE / DOLCE-CORE
+    edition: null
+    documented_sources:
+    - D18(2003), reference32
+    - Foundational choices in DOLCE / DOLCE-CORE, reference22
+    relation: PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT
+    actual_owl_imports: null
+    complete_modal_dolce_theory: NOT_ACQUIRED_AS_THIS_FRAGMENT
+figure_ledger:
+  path: evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/content-ledger.yaml
+  sha256: d3d43e4f9f078a11bd180e0222b8afd8f1d7738ee17bb1b687d54ff72e7cba09
+paper_formalization:
+  display_count: 18
+  d6_transcription: THREE_UNCLOSED_PARENTHESES_RETAINED
+  d12_direction: IMPLIES_ONLY
+  full_theory_collapse: NOT_PROVED
+  counterexample_scope: FORMULA_LOCAL_OR_EXPLICIT_BACKGROUND_CONDITIONAL_NOT_FULL_THEORY_MODEL
+  reviewer_parser_execution: NOT_EXECUTED
+  reviewer_solver_execution: NOT_EXECUTED
+  independent_consistency: NOT_ESTABLISHED
+  future_satisfier_indexing: EXPLICIT_FUTURE_WORK_NOTE23
+findings:
+- id: F01
+  label: Substantial prior intentionality support
+  statement: The paper already distinguishes state/content/object, social descriptions/token events, agent
+    dependence and typed needs. Mere reification is not a supported novelty gap.
+  evidence:
+  - E03
+  - E05
+  - E11
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F02
+  label: Needs and satisfiers remain different
+  statement: Initial instrumental/basic uses describe what is needed; NS and need0 capture a different mental
+    level. Service event, concept and mental state must not be counted together.
+  evidence:
+  - E02
+  - E08
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: F03
+  label: Social-concept stance is substantive
+  statement: The chosen intersubjective account excludes private-concept debate by scope, not by a demonstrated
+    universal cognitive result.
+  evidence:
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: F04
+  label: Role justification is not complete modal formalization
+  statement: Founded/anti-rigid and non-multiplicative arguments are valuable; timed iff predicates do not
+    encode every modal or non-parthood constraint.
+  evidence:
+  - E04
+  - E05
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: F05
+  label: Reference selection ambiguity
+  statement: D1 relates a state to every cf filler at a time, whereas prose says one among a set. Empty and
+    multiple extensions are allowed, not unique-reference selection.
+  evidence:
+  - E05
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: F06
+  label: Reversed role-bearer prose
+  statement: PDF 11 says objects/contents are respectively played by concepts/general entities; d2/d3 and source
+    comments instead map contents to concepts and objects to entities. Literal discrepancy retained.
+  evidence:
+  - E11
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F07
+  label: Content globally fixed while reference varies
+  statement: A6 imposes cross-time content equality; time-indexed cf may change referents. Conflating global
+    and per-time functionality changes the theory.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: F08
+  label: Witness/presence alignment is partial
+  statement: A2/a5 independently existentially quantify participation/content times; a4 lacks explicit pre
+    guards that the file adds. A3 identifies only APO participants.
+  evidence:
+  - E10
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F09
+  label: Physical-agent scope limits PA reading
+  statement: MS bearer is APO, but PA is socially discussed as ascriber/provider. No direct identification
+    of institution with one physical cognitive bearer is licensed.
+  evidence:
+  - E02
+  - E10
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F10
+  label: Impossible concepts are qualified
+  statement: Note19 says DOLCE possible-instantiation excludes impossible concepts and requires relaxing a
+    constraint; empty current reference is not the same issue.
+  evidence:
+  - E11
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F11
+  label: D6 source syntax is incomplete
+  statement: High-resolution inspection confirms three absent final parentheses in printed d6. The separately
+    delimited source expression is not an author-approved repair of the paper.
+  evidence:
+  - E12
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F12
+  label: Goal choice and compatibility differ
+  statement: D6 excludes an attitude incompatible with any other desire/need; it supplies no selection policy
+    for choosing among conflicting desires, and pairwise compatibility need not give joint satisfaction.
+  evidence:
+  - E07
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F13
+  label: Potential same-time satisfier/collapse issue is conditional
+  statement: Under candidate d6 closure and a cf-to-pre background, w can equal y, potentially forcing a goal
+    satisfier. D8/d11 may then lose the intended distinction; this is a reviewer argument to test, not a proved
+    full-theory collapse.
+  evidence:
+  - E12
+  - E13
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F14
+  label: Instrumental satisfaction is not causation
+  statement: D8 uses material implication and a later goal, not an explicit causal/counterfactual relation
+    or an egoal target. Formula-local vacuity alone is not a model of the full theory.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F15
+  label: Necessary means are only extensionally represented
+  statement: D11 co-truth of selected-time satisfier existence is not a counterfactual necessity semantics;
+    available means and institutional context matter.
+  evidence:
+  - E08
+  - E13
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F16
+  label: Satisfier typing/future gap
+  statement: D7 lacks explicit event typing; note 23 postpones future conceptual indexing. Prospective public-service
+    planning is not implemented by these minimal displays.
+  evidence:
+  - E12
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F17
+  label: Absolute needs remain underdefined
+  statement: D12 only gives a necessary condition, permits no need3 instances and supplies no harm/fundamental-condition
+    criterion despite the motivation.
+  evidence:
+  - E08
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: F18
+  label: Four need uses are not disjoint subclasses
+  statement: Need2 implies need1, need3 implies need0, while need1/2 need not imply need0. Only BS/DS/IS/NS
+    prose subtypes are stated disjoint.
+  evidence:
+  - E11
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: F19
+  label: Need-versus-desire criterion is left open
+  statement: Disjointness is adopted while note 20 explicitly postpones cognitive/neural and need-versus-desire
+    distinctions. This is not empirical validation of that partition.
+  evidence:
+  - E11
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F20
+  label: Ascription is not formally grounded knowledge
+  statement: Motivation distinguishes self/external ascription, but no predicate records who ascribes need,
+    evidence, authority, uncertainty or correction. Actual NS cannot be inferred from an administrative request
+    alone.
+  evidence:
+  - E02
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F21
+  label: Example necessity is context-relative
+  statement: Allowance is indispensable only under Maria scenario's assumed available means; another PA offers
+    alternatives. This illustrates context, not measured general necessity.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F22
+  label: Ex-post evaluation is proposed, not executed
+  statement: Service-concept conformance and citizen-goal achievement are separate intended checks; no deployed
+    dataset, user study or effectiveness measurement appears.
+  evidence:
+  - E02
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F23
+  label: Author proof claim remains author-reported
+  statement: Note15 and README claim consistency/consequences using Darwin 1.4.4/Hets; no retained logs, tool
+    reproduction or full-DOLCE joint proof is established here.
+  evidence:
+  - E09
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F24
+  label: Draft artifact is not formula-identical
+  statement: Exact paper link points to May 2020 draft file; selected presence/APO guards, type treatment and
+    quantifier scopes differ from publication. Full semantic parity is not assumed.
+  evidence:
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F25
+  label: Existential scope differs in two key definitions
+  statement: Source lines234/267 quantify E over the implication/biconditional; printed d8/d11 place existence
+    claims as operands. No automatic equivalence or silent repair.
+  evidence:
+  - E12
+  - E13
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F26
+  label: Selected source typing/proof harness needs audit
+  statement: Belief/desire/need point to state rather than directly ms, intention clauses are commented, formula
+    IDs repeat, and selected conjectures raise binding/type/vacuity concerns. No parser rejection or inconsistency
+    is claimed without execution.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F27
+  label: Foundation/import distinctions retained
+  statement: Paper uses D18 plus DOLCE-CORE and modal possibilia assumptions; source is a FOL fragment without
+    included dependency files. Family grounding is not exact executable edition or complete closure.
+  evidence:
+  - E05
+  - E09
+  - E12
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F28
+  label: BDI comparison is scoped
+  statement: BFO/UFO alternatives, JAM/Jason/SPARK and informational/motivational/deliberative modes are context;
+    no semantics-preserving full BDI translation or implementation evaluated.
+  evidence:
+  - E07
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: F29
+  label: Minor label/metadata discrepancies retained
+  statement: Instrumental-goal prose cites a8 but display is d8; institutional event field says2021 while published
+    edition is2020. Neither is silently normalized into a new source.
+  evidence:
+  - E01
+  - E12
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: F30
+  label: Native symbols and licensing stay separate
+  statement: 'Paper CC BY-NC does not license the linked two-file repository. Full native FOL predicate/definition
+    inventory, syntax and selected proof reproduction remain #248; no OWL class population invented.'
+  evidence:
+  - E01
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F31
+  label: Candidate later use only
+  statement: 'Use social concept/referrer/token-event and mental/means need distinctions as source-backed comparison
+    candidates, retaining attribution/goal/context gaps. #256/#126 remain open and no model/manuscript/release
+    adopted.'
+  evidence:
+  - E05
+  - E11
+  - E13
+  - E15
+  basis: REVIEWER_INTERPRETATION
+questions:
+- id: Q01
+  label: Exact native source and glossary
+  statement: Pin exact selected FOL root/license/dependencies and every unary/timed predicate definition, references
+    and exclusions. Do not invent OWL classes/IRIs or full-DOLCE coverage.
+  evidence:
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q02
+  label: Foundation/modal and type profile
+  statement: Reconcile D18/DOLCE-CORE background, possible/impossible content, event-only satisfier intent
+    and native state/ms/intention typing; distinguish software release from bibliography edition.
+  evidence:
+  - E09
+  - E11
+  - E12
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q03
+  label: Role, privacy and temporal witnesses
+  statement: Check content/object roles, global content and APO uniqueness, presence and participation/aboutness
+    time alignment, empty/multiple reference and added file guards.
+  evidence:
+  - E10
+  - E11
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q04
+  label: Printed d6 and goal compatibility
+  statement: Retain literal missing parentheses; evaluate a separately labeled proposed reading, self-inclusion,
+    same-time satisfiers, pairwise/joint compatibility and desire selection.
+  evidence:
+  - E12
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q05
+  label: Instrumental and necessary goal semantics
+  statement: Compare d8/d11 versus source quantifier scope, temporal goal versus egoal targets, causal/counterfactual
+    intent and conditional collapse concern under explicit background.
+  evidence:
+  - E12
+  - E13
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q06
+  label: Need taxonomy and absolute-need gap
+  statement: Preserve need1/2 not necessarily need0 and one-way d12; specify intended harm/fundamental-condition
+    and nonempty absolute-needs requirements only if supported.
+  evidence:
+  - E08
+  - E11
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q07
+  label: Formal public-service positive/adverse scenarios
+  statement: Use allowance/in-kind alternatives and actual-versus-ascribed NS to check intended predicates,
+    context assumptions and separate service conformance/goal achievement, without an unrequested deployed
+    inference engine.
+  evidence:
+  - E02
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+- id: Q08
+  label: Reproduce qualified parser/proof inputs
+  statement: Audit duplicate names, active/commented fixtures, multiple conjectures, quantifier binding and
+    argument positions; pin Darwin/Hets/parser commands, scopes and logs before claiming results.
+  evidence:
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 248
+synthesis:
+- id: Y01
+  label: Prior conceptual overlap
+  statement: Compare explicit private mental states, social contents, intentional object roles, shared descriptions
+    and event tokens before novelty claims.
+  evidence:
+  - E03
+  - E05
+  - E11
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 256
+- id: Y02
+  label: Need distinctions as candidate input
+  statement: Keep NS/need0, sufficient instrumental, necessary instrumental and absolute/end needs separate
+    without forcing four disjoint classes.
+  evidence:
+  - E08
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 256
+- id: Y03
+  label: Temporal/context limits
+  statement: Compare global content, timed references, future-indexing gap and PA-relative means without importing
+    stronger causal or decision semantics.
+  evidence:
+  - E10
+  - E11
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 256
+- id: Y04
+  label: Evidence/ascription gap
+  statement: Identify specific candidate comparison gaps in attribution evidence, uncertainty, actor authority
+    and goal-selection rationale; not a claim that intentionality itself is absent.
+  evidence:
+  - E02
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 256
+- id: Y05
+  label: Formal-source qualification
+  statement: Keep printed-source syntax, draft-file scopes, proof claims and full glossary unknowns visible
+    in matrix cells.
+  evidence:
+  - E12
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 256
+- id: Y06
+  label: Owner-directed synthesis later
+  statement: 'After cDnS2008 #263 and Emotions2015 #77, proceed to technical/comparison and final #126 activities;
+    current review authorizes no ontology or manuscript adoption.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 256
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+closure_boundary: 'Exact primary-paper critical review complete; this does not close the native FOL glossary,
+  syntax/profile, version correspondence, modal background or proof reproduction in #248. Comparison #256 and
+  final #126 remain OPEN. Conditional formal concerns are not proved complete-theory inconsistency or collapse.
+  No Clariceptify ontology, requirement, fixture, manuscript, release or accepted mapping change. Next acquired
+  papers #263 and #77; I&DA #84 still lacks retained full text.'

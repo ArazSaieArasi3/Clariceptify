@@ -504,6 +504,19 @@ discovery_attempts:
   limitation: Reference project tree blocked; separate light-variant tree acquired and metadata only. Current
     documentation/specification is not proven historical2023 paper implementation. No all-class glossary, import
     parse, reasoner or model acceptance.
+- id: MENTAL2026
+  checked_on: '2026-10-28'
+  method: Literal paper link and author/public repository source correspondence
+  query: DOLCE-mental_states-needs in:name,description; Needs and Intentionality in:description
+  checked_urls:
+  - https://github.com/diporello/DOLCE-mental_states-needs
+  - https://www.loa.istc.cnr.it/wp-content/uploads/2020/12/FAIA-330-FAIA200666.pdf
+  - https://iris.unitn.it/handle/11572/336248
+  outcome: Exact author-linked commit and complete two-file tree retained; primary laboratory PDF matches owner
+    hash. Selected README/source passages inspected; published/draft scope differences and author proof claims
+    qualified.
+  limitation: Names/descriptions only in bounded searches; no global absence claim. No full native glossary,
+    parser/prover run, software foundation parity or complete DOLCE satisfiability established.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -1158,25 +1171,28 @@ records:
 - id: CLR-RW-DOLCEMental
   title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
   primary_issue: 86
-  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
+  source_state: DEEP_PAPER_REVIEW_COMPLETE_NATIVE_FOL_TECHNICAL_OPEN
   repository:
     state: PUBLIC_REPOSITORY_PINNED
     urls:
     - https://github.com/diporello/DOLCE-mental_states-needs
     evidence:
     - R01
+    - MENTAL2026
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_FORMAL_FILE_PAPER_BLOCKED
+    paper_correspondence: PAPER_LINKED_DRAFT_SELECTED_FORMULA_DIFFERENCES
+  artifact_state: PINNED_TPTP_STYLE_FRAGMENT_SELECTED_CORRESPONDENCE_REVIEWED
   foundation:
-    family: DOLCE
+    family: DOLCE / DOLCE-CORE
     edition: null
-    relation: ALIGNMENT_OR_REUSE
+    relation: PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT
     basis: AUTHOR_REPORTED
-    locator: Pinned diporello/DOLCE-mental_states-needs README and dolce_needs.p
+    locator: Paper sections2.3/4, notes 16/19/22; D18(2003) and DOLCE-CORE references; pinned source header
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: FOL/TPTP-style repository, not OWL. Paper unavailable; proof claims remain author-reported.
+    limitations: Exact software edition and full modal theory not established. Source is a FOL/TPTP-style fragment;
+      paper/draft quantifier and guard differences retained. Darwin 1.4.4/Hets claim is author-reported, not
+      rerun. BFO/UFO are related work, not actual grounding imports.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -1185,6 +1201,9 @@ records:
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    paper_catalog: evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/review.yaml
+    limitations: 'Complete paper predicate/category catalog is not an OWL class census or complete native source-symbol
+      glossary. Full selected native definitions and technical checks remain #248.'
   next_issues:
   - 248
 - id: cDnS-journal-2008

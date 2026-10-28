@@ -24,7 +24,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | CLR-RW-O4OA (#73) | REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY; [source](https://gitlab.com/bfmartins/o4oa); [source](https://gitlab.com/bfmartins/go4oa); PAPER_COMPLETE_CQS_AND_SPEC_ACQUIRED_TECHNICAL_REVIEW_PENDING | UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants); PAPER_STATED_GROUNDING_THROUGH_ONTOUML; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
 | CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
 | CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #246 |
-| CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_FORMAL_FILE_PAPER_BLOCKED | DOLCE; ALIGNMENT_OR_REUSE; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
+| CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_TPTP_STYLE_FRAGMENT_SELECTED_CORRESPONDENCE_REVIEWED | DOLCE / DOLCE-CORE; PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
 | cDnS-journal-2008 (#263) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; HEADER_LINKED_CORE_PAPER_BLOCKED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #267, #263 |
 | Emotions-2015 (#77) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; COGNITION_FILES_RETAINED_PAPER_BLOCKED | DOLCE / DnS; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | Conceptualization (#71) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PINNED_CONCEPTUALIZATION0_1 | DUL; ACTUAL_IMPORT; edition: Retained Conceptualization0.1; DUL source snapshot | [1 classes](shared-foundations/Conceptualization/classes.md); 1 comment candidates; 0 missing | #272, #88 |
@@ -443,6 +443,18 @@ Query: `O4OA in:name,description; exact phrase Ontology for Ontological Analysis
 O4OA reference/documentation project metadata is public, but its checked tree API returned HTTP403. Separately linked bfmartins/go4oa is pinned at 3be36c642b2cfca33de3d0788471bc185880bde8; its complete eight-entry tree has five files (README, ignore file, two logos and metadata), with no formal ontology root identified in this tree. Current CQs and a separate 44-page specification were acquired; full technical/glossary work remains #91. See evaluation/related-work/o4oa/discovery.json. No global absence or historical equivalence follows.
 
 Limit: Reference project tree blocked; separate light-variant tree acquired and metadata only. Current documentation/specification is not proven historical2023 paper implementation. No all-class glossary, import parse, reasoner or model acceptance.
+
+### MENTAL2026: Literal paper link and author/public repository source correspondence
+
+Query: `DOLCE-mental_states-needs in:name,description; Needs and Intentionality in:description`. Checked: 2026-10-28.
+
+- https://github.com/diporello/DOLCE-mental_states-needs
+- https://www.loa.istc.cnr.it/wp-content/uploads/2020/12/FAIA-330-FAIA200666.pdf
+- https://iris.unitn.it/handle/11572/336248
+
+Exact author-linked commit and complete two-file tree retained; primary laboratory PDF matches owner hash. Selected README/source passages inspected; published/draft scope differences and author proof claims qualified.
+
+Limit: Names/descriptions only in bounded searches; no global absence claim. No full native glossary, parser/prover run, software foundation parity or complete DOLCE satisfiability established.
 
 ## Interpretation and next work
 

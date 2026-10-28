@@ -252,9 +252,9 @@ records:
   access_status: ACQUIRED
   filename: DOLCEMental-2020-owner.pdf
   sha256: 55f6dc932422c646b04a1defafe176574e4c248fe827c9106dded222cb14f98f
-  review_status: QUEUED_FOR_SHARED_DEEP_REVIEW
-  note: Owner-supplied exact full text received on 2026-10-28; earlier endpoint failures remain historical.
-    Paper/artifact correspondence remains a separate task.
+  review_status: DEEP_REVIEW_COMPLETE
+  note: 'All 15 paper pages, one figure,18 labeled displays,23 notes and 35 references reviewed. Author-laboratory
+    PDF bytes match owner file. Draft source correspondence and complete FOL glossary/proof tasks remain #248.'
   pdf_pages: 15
   owner_intake: evidence/related-work/corpus/owner-intake-2026-10-28.json
 additional_work_or_version_records:
