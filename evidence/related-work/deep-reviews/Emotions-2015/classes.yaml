@@ -1,0 +1,735 @@
+schema_version: '1.0'
+work_id: Emotions-2015
+issue: 239
+checked_on: '2026-10-28'
+status: ALL28_SELECTED_CANDIDATE_CLASSES_ACCOUNTED_FOR_ONE_COMMENT27MISSING
+population_policy: All28 declared local named owl:Class IRIs in the single author-linkedMay2015 candidate;
+  imported/referenced DUL/IOLite/ofntb classes and later cognition namespace are separate. No inference or
+  original-release equivalence.
+modules:
+- id: EmotionsOnto2015May
+  source_filename: emotionsonto-2015May.raw
+  source_url: https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  namespace: http://rhizomik.net/ontologies/emotionsonto.owl#
+  version: []
+  census_path: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json
+  census_sha256: ff46b19337138077df8b57ec9240320154abea5d7d61bb2e7496d010a5b874ec
+  declared_named_classes: 28
+  local_named_classes: 28
+  external_named_class_redeclarations: 0
+  actual_imports:
+  - http://www.loa-cnr.it/codeps/owl/ofntb.owl
+  - http://www.loa-cnr.it/ontologies/DUL.owl
+  - http://www.loa-cnr.it/ontologies/IOLite.owl
+  license: No explicit source-code license established from selected OWL; article CC BY4.0 is not transferred
+    automatically.
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    anonymous_owl_class_declarations: 0
+    anonymous_restrictions: 18
+    deprecated_entities: []
+    referenced_but_undeclared_class_iris:
+    - http://www.loa-cnr.it/ontologies/DUL.owl#Action
+    - http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject
+    - http://www.loa-cnr.it/ontologies/DUL.owl#Description
+    - http://www.loa-cnr.it/ontologies/DUL.owl#Event
+    - http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact
+    - http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject
+    - http://www.loa-cnr.it/ontologies/DUL.owl#Process
+    - http://www.loa-cnr.it/ontologies/DUL.owl#Situation
+classes:
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#ArtificialSensor
+  label: ArtificialSensor
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#ArtificialSensor rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sensor
+  - http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#ArtificialSensor]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural
+  label: Behavioural
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Action
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor
+  label: BiologicalSensor
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sensor
+  - http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Context
+  label: Context
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Context rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses: []
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Context]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus
+  label: ContinuousStimulus
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#ContinuousStimulus]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus
+  label: DiscreteStimulus
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#DiscreteStimulus]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#EmergentEmotion
+  label: EmergentEmotion
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#EmergentEmotion rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Event
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#EmergentEmotion]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem
+  label: EmotionExpressionSystem
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Interface
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#EnvironmentalContext
+  label: EnvironmentalContext
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#EnvironmentalContext rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: ee94a7e7d7048e0dc1780676570c15a2767cd6963460afcea1df2c93941db476
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A contextual reference frame treated as independent of an individual viewpoint.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Context
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#EnvironmentalContext]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Facial
+  label: Facial
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Facial rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Facial]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Gestural
+  label: Gestural
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Gestural rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Gestural]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Hearing
+  label: Hearing
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Hearing rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Hearing]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Interface
+  label: Interface
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Interface rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Interface]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Memory
+  label: Memory
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Memory rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Process
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Memory]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Perception
+  label: Perception
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Perception rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Process
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Perception]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext
+  label: PersonalContext
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Context
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#PersonalContext]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Psychophysiological
+  label: Psychophysiological
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Psychophysiological rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Action
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Psychophysiological]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sensation
+  label: Sensation
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Sensation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Process
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Sensation]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+  label: Sense
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Sense rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#BiologicalSensor
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Sense]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sensor
+  label: Sensor
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Sensor rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Interface
+  - http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Sensor]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Sight
+  label: Sight
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Sight rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Sight]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Smell
+  label: Smell
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Smell rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Smell]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#SocialContext
+  label: SocialContext
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#SocialContext rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Context
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#SocialContext]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Speech
+  label: Speech
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Speech rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Behavioural
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Speech]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus
+  label: Stimulus
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Event
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Stimulus]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Taste
+  label: Taste
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Taste rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Taste]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Touch
+  label: Touch
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Touch rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#Sense
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Touch]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+- iri: http://rhizomik.net/ontologies/emotionsonto.owl#Verbal
+  label: Verbal
+  label_basis: IRI_LOCAL_NAME
+  module: EmotionsOnto2015May
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://rhizomik.net/ontologies/emotionsonto.owl#Verbal rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  named_superclasses:
+  - http://rhizomik.net/ontologies/emotionsonto.owl#EmotionExpressionSystem
+  - http://www.loa-cnr.it/ontologies/DUL.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/Emotions-2015/candidate-census.json classes[iri=http://rhizomik.net/ontologies/emotionsonto.owl#Verbal]
+  notes:
+  - Selected May2015 candidate, not certified exact publication version. Missing source comments remain explicit;
+    paper definitions and reviewer constraint analysis are separate.
+imported_glossary:
+  state: PENDING_DEFINITION_GLOSSARY
+  unique_external_classes_pending: null
+  next_issues:
+  - 239
+  limitation: Three legacy imports declared but not resolved or accepted as historically equivalent to current
+    DUL/IOLite. Imported total/definitions are unknown, not zero. Additional outgoing constraints on referenced
+    DULDescription/Situation are preserved separately.
+logical_inference: NOT_EXECUTED
+historical_paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
+counts:
+  local_classes: 28
+  source_definition_candidates: 1
+  missing_source_definitions: 27
+  reviewer_reconstructions: 0
+  inferred_classes: null

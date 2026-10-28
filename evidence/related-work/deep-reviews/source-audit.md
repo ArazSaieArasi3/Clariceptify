@@ -26,7 +26,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #246 |
 | CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_TPTP_STYLE_FRAGMENT_SELECTED_CORRESPONDENCE_REVIEWED | DOLCE / DOLCE-CORE; PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
 | cDnS-journal-2008 (#263) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](http://www.loa-cnr.it/ontologies/collInt.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/ground.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl); PAPER_LINKED_ROOT_AND_EXPLICIT_MAPPED_IMPORTS | Constructive DnS; ground-ontology independent; INDEPENDENT_FOUNDATION_WITH_ACTUAL_SELECTED_MODULE_IMPORTS; edition: UNKNOWN | [51 classes](cDnS-journal-2008/classes.md); 51 comment candidates; 0 missing | #267, #251, #126 |
-| Emotions-2015 (#77) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; COGNITION_FILES_RETAINED_PAPER_BLOCKED | DOLCE / DnS; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
+| Emotions-2015 (#77) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](https://rhizomik.net/ontologies/2015/05/emotionsonto.owl); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_LINKED_MAY2015_CANDIDATE_WITH27_MISSING_COMMENTS_TECHNICAL_OPEN | DOLCE / DnS; PAPER_STATED_GROUNDING_AND_SELECTED_CANDIDATE_IMPORTS; edition: UNKNOWN | [28 classes](Emotions-2015/classes.md); 1 comment candidates; 27 missing | #239, #253, #126 |
 | Conceptualization (#71) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PINNED_CONCEPTUALIZATION0_1 | DUL; ACTUAL_IMPORT; edition: Retained Conceptualization0.1; DUL source snapshot | [1 classes](shared-foundations/Conceptualization/classes.md); 1 comment candidates; 0 missing | #272, #88 |
 | OntoLex (#75) | PUBLIC_REPOSITORY_IDENTIFIED_SNAPSHOT_PENDING; [source](https://github.com/ontolex/ontolex); PINNED_CORE_AND_SPECIFICATION | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #237 |
 | SKOS (#76) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PINNED_SCHEMA_AND_SPECIFICATION | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #238 |
@@ -461,6 +461,12 @@ Limit: Names/descriptions only in bounded searches; no global absence claim. No 
 Query: `Paper note2 mixed-case collInt.owl; concluding lowercase endpoint; literal/mapped imports; GitHub collInt ontology/cDnS/cDnS ontology; institutional/author metadata`. Checked: 2026-10-28.
 
 Limit: Selected current three-file map, no original2008 immutable release or compatible API proved.
+
+### EMOTIONS2015: EXACT_PAPER_AUTHOR_LINKS_DIRECT_BYTES_AND_BOUNDED_REPOSITORY_SEARCH
+
+Query: `Paper note2,author guide,2013/May2015 predecessor candidates,December/current cognition; GitHub EmotionsOnto and emotions cognition ontology`. Checked: 2026-10-28.
+
+Limit: No author repository identified in two eight-result name/description queries; no universal absence, immutable publication-release identity or exact legacy import closure claimed.
 
 ## Interpretation and next work
 

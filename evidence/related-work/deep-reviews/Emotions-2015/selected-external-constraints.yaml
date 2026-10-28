@@ -1,0 +1,24 @@
+schema_version: '1.0'
+source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+scope: All nonlocally-declared named class subjects with outgoing subclass constraints in this root; imported
+  class definitions remain unacquired.
+constraints:
+- iri: http://www.loa-cnr.it/ontologies/DUL.owl#Description
+  declared_named_owl_class_in_root: false
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  statement: Description SubClassOf triggers only EmergentEmotion; global imported-name constraint, not just
+    a local emotional-description subclass.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  locator: http://www.loa-cnr.it/ontologies/DUL.owl#Description rdfs:subClassOf in selected root
+- iri: http://www.loa-cnr.it/ontologies/DUL.owl#Situation
+  declared_named_owl_class_in_root: false
+  source_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  statement: Situation SubClassOf SocialContext and EnvironmentalContext and hasPart only Stimulus; global
+    imported-name assertions reproduce the literal drawing direction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  locator: http://www.loa-cnr.it/ontologies/DUL.owl#Situation rdfs:subClassOf in selected root
+reasoner_execution: NOT_EXECUTED

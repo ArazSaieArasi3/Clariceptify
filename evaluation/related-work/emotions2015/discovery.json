@@ -1,0 +1,136 @@
+{
+  "2013_may2015_asserted_graph_isomorphism": true,
+  "checked_on": "2026-10-28",
+  "duplicate_later_paths_are_two_populations": false,
+  "graph_comparison_scope": "RDF asserted graph isomorphism only; different byte hashes, no inferred or historical-release equivalence.",
+  "historical_fidelity": "NOT_ESTABLISHED",
+  "later_december_current_sha256": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+  "model_change": "NONE",
+  "paper_sha256": "d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c",
+  "receipts": [
+    {
+      "bytes": 4712,
+      "content_type": "text/html",
+      "final_url": "https://rhizomik.net/ontologies/emotionsonto",
+      "id": "paper-endpoint",
+      "sha256": "55dad0f78fc5a64322a4c4bc1688ea6eb16ee1e0012d9e4dc860e5af45f55af2",
+      "status": 200,
+      "url": "http://rhizomik.net/ontologies/emotionsonto/"
+    },
+    {
+      "bytes": 1878,
+      "content_type": "text/html",
+      "final_url": "https://rhizomik.net/html/ontologies/emotions%26cognitionontology/",
+      "id": "author-guide",
+      "sha256": "8154ceeac9a3d8953d89663be8e52ac7d981c139516ea8ff24e8d46fdcd0d0a9",
+      "status": 200,
+      "url": "https://rhizomik.net/html/ontologies/emotions%26cognitionontology/"
+    },
+    {
+      "bytes": 10535,
+      "content_type": "application/octet-stream",
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+        "http://www.loa-cnr.it/ontologies/DUL.owl",
+        "http://www.loa-cnr.it/ontologies/IOLite.owl"
+      ],
+      "final_url": "https://rhizomik.net/ontologies/2013/02/emotionsonto.owl",
+      "id": "emotionsonto-2013",
+      "ontology_iris": [
+        "http://rhizomik.net/ontologies/emotionsonto.owl"
+      ],
+      "parsing": "RDFXML_HEADER_ONLY_NOT_FULL_GLOSSARY_OR_REASONING",
+      "sha256": "72ec8a06e69b10aff191c308b5419ab013af1ae5dbd23051646937397ac57f1f",
+      "status": 200,
+      "url": "https://rhizomik.net/ontologies/2013/02/emotionsonto.owl",
+      "version_info": []
+    },
+    {
+      "bytes": 10492,
+      "content_type": "application/octet-stream",
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+        "http://www.loa-cnr.it/ontologies/DUL.owl",
+        "http://www.loa-cnr.it/ontologies/IOLite.owl"
+      ],
+      "final_url": "https://rhizomik.net/ontologies/2015/05/emotionsonto.owl",
+      "id": "emotionsonto-2015May",
+      "ontology_iris": [
+        "http://rhizomik.net/ontologies/emotionsonto.owl"
+      ],
+      "parsing": "RDFXML_HEADER_ONLY_NOT_FULL_GLOSSARY_OR_REASONING",
+      "sha256": "fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7",
+      "status": 200,
+      "url": "https://rhizomik.net/ontologies/2015/05/emotionsonto.owl",
+      "version_info": []
+    },
+    {
+      "bytes": 12270,
+      "content_type": "application/octet-stream",
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+        "http://www.loa-cnr.it/ontologies/DUL.owl",
+        "http://www.loa-cnr.it/ontologies/IOLite.owl"
+      ],
+      "final_url": "https://rhizomik.net/ontologies/2015/12/emotions%26cognitionontology.owl",
+      "id": "cognition-2015December",
+      "ontology_iris": [
+        "http://rhizomik.net/ontologies/emotions&cognitionontology.owl"
+      ],
+      "parsing": "RDFXML_HEADER_ONLY_NOT_FULL_GLOSSARY_OR_REASONING",
+      "sha256": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+      "status": 200,
+      "url": "https://rhizomik.net/ontologies/2015/12/emotions%26cognitionontology.owl",
+      "version_info": []
+    },
+    {
+      "bytes": 12270,
+      "content_type": "application/octet-stream",
+      "declared_import_iris": [
+        "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+        "http://www.loa-cnr.it/ontologies/DUL.owl",
+        "http://www.loa-cnr.it/ontologies/IOLite.owl"
+      ],
+      "final_url": "https://rhizomik.net/ontologies/emotions%26cognitionontology.owl",
+      "id": "cognition-current",
+      "ontology_iris": [
+        "http://rhizomik.net/ontologies/emotions&cognitionontology.owl"
+      ],
+      "parsing": "RDFXML_HEADER_ONLY_NOT_FULL_GLOSSARY_OR_REASONING",
+      "sha256": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+      "status": 200,
+      "url": "https://rhizomik.net/ontologies/emotions%26cognitionontology.owl",
+      "version_info": []
+    },
+    {
+      "bytes": 1545989,
+      "content_type": "application/pdf;charset=UTF-8",
+      "final_url": "https://repositori.udl.cat/server/api/core/bitstreams/f74e933d-458a-459d-9c51-a0809a47baa1/content",
+      "id": "institutional-pdf",
+      "initial_attempt_limitation": "PDF download succeeded, then embedded XMP rdf:RDF was misclassified as an OWL file by the temporary header inspector; corrected by PDF-specific receipt. The original selected owner PDF stays the reading authority.",
+      "owner_pdf_byte_match": false,
+      "pdf_signature": true,
+      "sha256": "cc3c0456d1b03aa4b4ebe4fcf0150cfaf877a6abc8d57d37b90b5f2e3becdb88",
+      "status": 200,
+      "url": "https://repositori.udl.cat/bitstreams/f74e933d-458a-459d-9c51-a0809a47baa1/download"
+    }
+  ],
+  "repository_queries": [
+    {
+      "limit": 8,
+      "query": "EmotionsOnto",
+      "returned": []
+    },
+    {
+      "limit": 8,
+      "query": "\"emotions cognition\" ontology",
+      "returned": []
+    }
+  ],
+  "repository_state": "STANDALONE_AUTHOR_FILES_NO_REPOSITORY_IDENTIFIED_IN_BOUNDED_SEARCH",
+  "root_selection": "AUTHOR_LINKED_2015_05_CANDIDATE_NOT_CERTIFIED_PUBLICATION_BYTES",
+  "schema_version": "1.0",
+  "search_service_limitation": "OWL URLs returned application/octet-stream, unsupported by search-service clicks; direct byte retrieval succeeded. Earlier bounded search-service failures are historical, not global unavailability.",
+  "source_redistributed": false,
+  "work_id": "Emotions-2015"
+}

@@ -1,0 +1,14 @@
+schema_version: '1.0'
+retrieved_on: '2026-10-28'
+scope: One author-linked May2015 EmotionsOnto candidate selected for local glossary, not certified exact publication
+  bytes. Later cognition and prior2013 candidates stay separate. Does not expand earlier selected-inspection
+  contracts.
+artifacts:
+- id: EmotionsOnto2015May
+  filename: emotionsonto-2015May.raw
+  format: xml
+  url: https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
+  ontology_iri: http://rhizomik.net/ontologies/emotionsonto.owl
+  namespace: http://rhizomik.net/ontologies/emotionsonto.owl#
+  sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  receipt: evaluation/related-work/emotions2015/discovery.json
