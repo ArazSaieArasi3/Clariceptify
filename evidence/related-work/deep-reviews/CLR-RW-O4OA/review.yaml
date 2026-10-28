@@ -1,0 +1,2525 @@
+schema_version: '1.0'
+work_id: CLR-RW-O4OA
+issue: 73
+identity:
+  title: The Ontology for Conceptual Characterization of Ontologies
+  authors:
+  - Beatriz Franco Martins
+  - Renata Guizzardi
+  - Jose Fabian Reyes Roman
+  - Moshe Hadad
+  - Oscar Pastor
+  doi: 10.1007/978-3-031-47262-6_6
+  version: ER2023, LNCS14320, printed 105-124; first online 2023-10-29
+  boundary: Exact 20-page owner-supplied conference paper only. Current author CQ/documentation resources, O4OA
+    project and light gO4OA variant are separate dated inputs; no historical2023 byte/axiom parity is presumed.
+source:
+  filename: O4OA-2023-owner.pdf
+  sha256: de09a79471af857d251231429988f2025d3f02b6983073c13e249e19aebcf0df
+  pdf_pages: 20
+  printed_pages: 105-124
+  access: OWNER_SUPPLIED_FULL_TEXT
+  redistributed: false
+status: REVIEW_COMPLETE
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  units:
+  - unit: Title/abstract/publication block
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Section1 Introduction
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Section2 Ontologies and FAIR
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section3 opening
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section3.1 Methodology/stakeholders/questions
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Section3.2 Ontology characterization
+    status: REVIEWED
+    evidence:
+    - E05
+    - E06
+  - unit: Section3.3 Domain cloud
+    status: REVIEWED
+    evidence:
+    - E07
+    - E08
+  - unit: Section3.4 Network characterization
+    status: REVIEWED
+    evidence:
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+  - unit: Section3.5 Semi-automatic support
+    status: REVIEWED
+    evidence:
+    - E15
+    - E16
+  - unit: Section4 Evaluation
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Section5 Related work
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Section6 Conclusions
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Acknowledgments
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: References1-66
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Figure1
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Figure2
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Figure3
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Figure4
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Figure5
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Figure6
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Figure7
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Figure8
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Footnote1
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Footnote2
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Footnote3
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Footnote4
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Footnote5
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Footnote6
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Footnote7
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Footnote8
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Footnote9
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Footnote10
+    status: REVIEWED
+    evidence:
+    - E18
+  catalog_boundary: 'Complete selected paper: all 20 pages, all eight figures (seven OntoUML fragments and one tool
+    example), ten numbered footnotes and 66 bibliography entries. Complete paper-level type/role/relator and relational
+    distinctions are cataloged; all machine class counts remain unknown. Mental Concept and Concept-as-Term-role
+    remain separate. No numbered tables, formulas or appendices; no full OCL/Alloy listing. Source abbreviations
+    in Figure 8 are not reconstructed. Current linked CQs are separate, not silently counted as printed paper questions.'
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: PDF 1 / printed 105, title, abstract, publication block
+  summary: Five-author ER2023 chapter identity, DOI, reference-metaontology contribution and UFO grounding; owner
+    bytes contain an acquisition watermark, not an author affiliation.
+- id: E02
+  pages:
+  - 2
+  - 3
+  locator: PDF 2-3 / printed 106-107, section 1
+  summary: Divergent specialist/engineer perspectives motivate consensual conceptualization and ontology-network
+    analysis; reference OntoUML/OCL and operational REST/NoSQL versions are reported.
+- id: E03
+  pages:
+  - 3
+  - 4
+  locator: PDF 3-4 / printed 107-108, section 2
+  summary: Authors connect identity/rigidity and foundations to FAIR and discuss implementation-versus-foundation
+    biases; these are arguments rather than a FAIR audit.
+- id: E04
+  pages:
+  - 5
+  locator: PDF 5 / printed 109, section 3.1 and notes 2-4
+  summary: SABiO; multidisciplinary online elicitation and role switching; full CQs delegated to website; no participant/sample/protocol
+    counts or CQ list printed.
+- id: E05
+  pages:
+  - 5
+  - 6
+  - 7
+  locator: PDF 5-7 / printed 109-111, section 3.2, note 5
+  summary: Applicability, generality, formalization and axiomatization classifications; lightweight/heavyweight;
+    alternatives excluded by asserted acceptance and complexity considerations.
+- id: E06
+  pages:
+  - 6
+  locator: PDF 6 / printed 110, Figure 1 and note 5
+  summary: 'Nine-box classification diagram: Core Ontology generalizes to Domain Ontology, while note 5 describes
+    Core as more general than Domain/Task/Application. Preserve the discrepancy.'
+- id: E07
+  pages:
+  - 7
+  - 8
+  locator: PDF 7-8 / printed 111-112, section 3.3 and note 6
+  summary: Mental Concept/trope discussion versus Term syntax/object kind and Concept as a term role; Source, Documents
+    and definition relator with domain-description composition.
+- id: E08
+  pages:
+  - 8
+  locator: PDF 8 / printed 112, Figure 2
+  summary: Twelve boxes including Concept (abstract object), Term (syntax), six document specializations, Source,
+    Documents and two relators; 1..* definitions per description and one description per displayed component.
+- id: E09
+  pages:
+  - 8
+  - 9
+  locator: PDF 8-9 / printed 112-113, section 3.4 opening
+  summary: Reference/operational distinction and normative prior-reference claim; Conceptualization/Implementation
+    roles; language and schema mediations.
+- id: E10
+  pages:
+  - 9
+  locator: PDF 9 / printed 113, Figure 3 and following prose
+  summary: Sixteen boxes; two language branches and role/relator/material relations; usedToRepresent, usedToImplement
+    and implementationFor, plus definition composition.
+- id: E11
+  pages:
+  - 9
+  locator: PDF 9 / printed 113, section 3.4 and Figure 4
+  summary: Eleven boxes connect models/metamodels, constraints, abstract/concrete ontology-driven languages and
+    their specification; printed specifies' contrasts with prose specifys.
+- id: E12
+  pages:
+  - 10
+  locator: PDF 10 / printed 114, Figure 5 and preceding text
+  summary: Sixteen boxes and two grounding routes; direct/indirect foundation versus language/metamodel constraints.
+    OASIS/O3 and OntoUML/UFO are illustrative examples.
+- id: E13
+  pages:
+  - 10
+  - 11
+  locator: PDF 10-11 / printed 114-115, Figure 6 and grounding prose
+  summary: Nine-box grounding fragment; groundedOver material relation and Ontological Grounding relator; conceptual
+    grounding is not a formal import declaration.
+- id: E14
+  pages:
+  - 11
+  locator: PDF 11 / printed 115, Figure 7 and reuse/composition prose
+  summary: 'Seven boxes: composite/atomic partition, overlapping reused/reuser roles, Reusability and collective
+    Ontology Network; component and member cardinalities/profiles; UFO-A/B/C example.'
+- id: E15
+  pages:
+  - 12
+  locator: PDF 12 / printed 116, section 3.5 and notes 7-8
+  summary: Author-reported MongoDB/NodeJS/Express/Angular Material/Docker prototype; manually loaded data, 161 cybersecurity
+    concepts, 73 sources, 18 Risk definitions; syntactic recursive/regex retrieval and future semantic reasoning.
+- id: E16
+  pages:
+  - 13
+  locator: PDF 13 / printed 117, Figure 8 and accompanying text
+  summary: 'Fifteen-node example graph: one Vulnerability term, six definition snippets, six source identifiers
+    and two ontology uses. API navigation is reported; screenshot is not a benchmark or full database export.'
+- id: E17
+  pages:
+  - 13
+  - 14
+  locator: PDF 13-14 / printed 117-118, section 4
+  summary: Author-reported package-by-package Alloy instantiation/cardinality analysis; additional reuse cycle constraint;
+    persistence/API enforcement split; evaluation details and case studies external.
+- id: E18
+  pages:
+  - 14
+  - 15
+  locator: PDF 14-15 / printed 118-119, section 5 and notes 9-10
+  summary: IoT/WoT, OMV (also printed OVM), metadata repositories, and domain-independent comparison claims; author
+    groups SSN/oneM2M/SAREF as W3C standards, requiring attribution/correction.
+- id: E19
+  pages:
+  - 15
+  - 16
+  locator: PDF 15-16 / printed 119-120, section 6 and acknowledgments
+  summary: Contributions and intended analytics/reasoning; explicitly no axioms included due to space, full axiomatization
+    and further industrial evaluation future; ontology-driven/FAIR conclusion not independently tested.
+- id: E20
+  pages:
+  - 3
+  - 5
+  - 6
+  - 7
+  - 12
+  - 14
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  locator: Notes1-10; acknowledgments PDF 16; references PDF 17-20 / printed 121-124
+  summary: All ten numbered notes and all 66 numbered references inspected; no appendices, numbered tables, OCL/Alloy
+    code blocks or numbered formulas in the selected paper.
+- id: E21
+  source_kind: ARTIFACT
+  pages: []
+  url: https://bfmartins.gitlab.io/o4oa/content/o4oa.html
+  sha256: e843153e73f4573eec96ced4eb619640364ac109566fa0e945ca37bbf25e3ab0
+  locator: https://bfmartins.gitlab.io/o4oa/content/o4oa.html; 2026-10-28; receipt evaluation/related-work/o4oa/discovery.json
+  summary: Current author documentation consulted for linked CQ verification and UFO-A/B/C/gUFO variants. This is
+    not a version-pinned 2023 formal artifact.
+- id: E22
+  source_kind: ARTIFACT
+  pages: []
+  url: https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa
+  sha256: dcd49a5dd242207f6acc30e161465914589befccd09eaf24958edbd26011f5fc
+  locator: https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa; 2026-10-28; receipt evaluation/related-work/o4oa/discovery.json
+  summary: Public project metadata was retrieved; selected repository-tree API returned403. Commit/default branch/archival/license/test
+    fields were not exposed in the retrieved metadata.
+- id: E23
+  source_kind: ARTIFACT
+  pages: []
+  url: https://bfmartins.gitlab.io/o4oa/assets/data/cqs.json
+  sha256: 2f77c5444d23140465247fd192d06992d3eec2d0755a900f8c579ec2f01abc60
+  locator: https://bfmartins.gitlab.io/o4oa/assets/data/cqs.json; 2026-10-28; receipt evaluation/related-work/o4oa/discovery.json
+  summary: Current externally linked CQ JSON retrieved separately from the paper. Its rows are current documentation
+    claims, not printed paper requirements or executed answers.
+- id: E24
+  source_kind: SPECIFICATION
+  pages: []
+  url: https://saref.etsi.org/core/v3.1.1/
+  locator: https://saref.etsi.org/core/v3.1.1/; selected publisher/cover metadata inspected 2026-10-28
+  summary: Historical SAREF3.1.1 author specification identifies ETSI SmartM2M and ETSI TS103264, rather than a
+    blanket W3C standards origin; this external check does not assess SAREF grounding.
+- id: E25
+  source_kind: SPECIFICATION
+  pages: []
+  url: https://www.onem2m.org/images/pdf/TS-0012-Base_Ontology-V3_7_3.pdf
+  locator: https://www.onem2m.org/images/pdf/TS-0012-Base_Ontology-V3_7_3.pdf; selected publisher/cover metadata
+    inspected 2026-10-28
+  summary: The paper-cited TS0012 V3.7.3 cover identifies oneM2M Partners and a draft approval warning, not W3C.
+    Cover metadata only; no full oneM2M review claimed.
+- id: E26
+  source_kind: REPOSITORY
+  pages: []
+  path: scr/metadata/metadata.yaml
+  commit: 3be36c642b2cfca33de3d0788471bc185880bde8
+  sha256: bff380f904e44f785c5cbcd4a1dfa8dfe5f95c7fef1c00eb176be9cdb5397c1d
+  locator: bfmartins/go4oa at3be36c642b2cfca33de3d0788471bc185880bde8; README and scr/metadata/metadata.yaml; evaluation/related-work/o4oa/discovery.json
+  summary: 'Selected current light-variant metadata declares version 1.0 and an OWL/Turtle intent. Eight-entry recursive
+    tree has five files, no formal model identified; declared metadata and tool versions are not actual OWL bytes
+    or executed tools. The separate 44-page technical specification was acquired for #91, not reviewed as this paper.'
+dimensions:
+  D1_identity_coverage:
+    label: Exact work
+    statement: Five-author ER2023 paper, DOI 10.1007/978-3-031-47262-6_6, printed 105-124, all 20 owner-supplied
+      PDF pages. Eight figures, ten notes and 66 references inspected; full paper, not a later specification.
+    evidence:
+    - E01
+    - E20
+    basis: AUTHOR_REPORTED
+  D2_problem_contribution:
+    label: Problem and contribution
+    statement: Resolve specialist/engineer conceptual misalignment via a UFO-grounded artifact metaontology, domain
+      concept/definition cloud and ontology-network relations; fairness/effectiveness claims remain author-reported.
+    evidence:
+    - E01
+    - E02
+    - E03
+    - E19
+    basis: AUTHOR_REPORTED
+  D3_method:
+    label: Engineering method
+    statement: SABiO; collaborative elicitation, classification literature, OntoUML/OCL and package-level Alloy
+      instantiation, plus microservice prototype. Selection and elicitation reproducibility details are limited.
+    evidence:
+    - E04
+    - E05
+    - E15
+    - E17
+    basis: AUTHOR_REPORTED
+  D4_requirements:
+    label: Requirements and scenarios
+    statement: 'Stakeholder perspectives and external CQs drive scope; no full CQ list or five-step framework sequence
+      printed. Current linked CQ data is separately retained; reconstructed positive/adverse cases are explicitly
+      reviewer interpretations. External current-cqs.yaml has 24 author-documentation rows: three groups and 21
+      subordinate questions; not executed results or proven historical2023 contents.'
+    evidence:
+    - E04
+    - E17
+    - E23
+    basis: AUTHOR_REPORTED
+  D5_concepts:
+    label: Conceptual catalog
+    statement: All visible types in seven model figures, mental/syntactic distinctions, domain and methodological
+      primitives and named relation groups cataloged. Figure 8 data nodes are examples, not released model classes.
+    evidence:
+    - E05
+    - E06
+    - E07
+    - E08
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E15
+    - E16
+    basis: AUTHOR_REPORTED
+  D6_relations_formalization:
+    label: Formal commitments
+    statement: Generalization sets, relators/material associations, subset annotations, component/member multiplicities
+      and profiles are retained. No numbered formulas, printed OCL/Alloy code or complete axiom set; source inconsistencies
+      remain explicit.
+    evidence:
+    - E06
+    - E08
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E17
+    - E19
+    basis: AUTHOR_REPORTED
+  D7_grounding:
+    label: Foundation and agents
+    statement: Paper states UFO through OntoUML without exact release; direct/indirect grounding is conceptual.
+      Stakeholder responsibilities and mental/trope discussion do not form a full action/agent/decision theory.
+      Current UFO-A/B/C/gUFO docs remain separate.
+    evidence:
+    - E01
+    - E04
+    - E07
+    - E12
+    - E13
+    - E21
+    basis: AUTHOR_REPORTED
+  D8_artifact_correspondence:
+    label: Executed discovery
+    statement: Literal paper/author links, redirects, current CQ resource and GitLab metadata/tree endpoints actually
+      checked and hashed; repository tree HTTP403 leaves source commit, exact model release and full class/import
+      census unknown. Separate light-variant tree pinned at3be36c642b2cfca33de3d0788471bc185880bde8; selected metadata/README
+      inspected, no formal root in five files. Supporting44-page specification acquired for91 only.
+    evidence:
+    - E21
+    - E22
+    - E23
+    - E26
+    basis: EXECUTED
+    execution_ref: evaluation/related-work/o4oa/discovery.json
+  D9_evaluation:
+    label: Evaluation limits
+    statement: Author-reported CQs, modular Alloy checks, prototype navigation and cybersecurity cases are separated
+      from reviewer source inspection. No independent solver, user study, FAIR score, benchmark or global consistency
+      test was executed.
+    evidence:
+    - E15
+    - E16
+    - E17
+    - E19
+    basis: AUTHOR_REPORTED
+  D10_critical_synthesis:
+    label: Bounded disposition
+    statement: Reuse/align only as candidate source-backed comparison input. Retain prior conceptualization/definition/network
+      support and critical typing, formalization and evidence limits. Technical91, comparison252 and synthesis126
+      remain open; no model/manuscript/release adoption.
+    evidence:
+    - E07
+    - E14
+    - E17
+    - E19
+    - E22
+    basis: AUTHOR_REPORTED
+catalog:
+- id: C01
+  label: Ontology (Artifact)
+  statement: Identity-bearing artifact kind at the root of the displayed classifications; distinguish artifact from
+    its domain and mental content.
+  evidence:
+  - E06
+  - E10
+  - E11
+  - E12
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  - 3
+  - 4
+  - 5
+  - 7
+  source_stereotypes:
+  - kind
+- id: C02
+  label: Operational Ontology
+  statement: Artifact classified by implementation applicability, rather than automatically a well-defined or grounded
+    one.
+  evidence:
+  - E06
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  - 3
+  source_stereotypes:
+  - subkind
+- id: C03
+  label: Reference Ontology
+  statement: Artifact used to represent a conceptual account of a domain and support operational counterparts.
+  evidence:
+  - E06
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  - 3
+  source_stereotypes:
+  - subkind
+- id: C04
+  label: Foundational Ontology
+  statement: Generality subkind for highly general ontological categories, not a named release.
+  evidence:
+  - E06
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  - 5
+  - 6
+  source_stereotypes:
+  - subkind
+- id: C05
+  label: Non-Foundational Ontologies
+  statement: Complementary displayed generality subkind, partitioned into domain/task/application.
+  evidence:
+  - E06
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  - 6
+  source_stereotypes:
+  - subkind
+- id: C06
+  label: Core Ontology
+  statement: Displayed subkind of Domain Ontology; note 5 instead says Core is more general. Exact discrepancy remains
+    open.
+  evidence:
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  source_stereotypes:
+  - subkind
+- id: C07
+  label: Domain Ontology
+  statement: Specific-domain generality subkind; in the literal figure it is the parent of Core.
+  evidence:
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  source_stereotypes:
+  - subkind
+- id: C08
+  label: Application Ontology
+  statement: Generality subkind covering application-specific domain/task context; not inferred equivalent to an
+    OWL module.
+  evidence:
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  source_stereotypes:
+  - subkind
+- id: C09
+  label: Task Ontology
+  statement: Generality subkind for task/process/activity conceptualizations.
+  evidence:
+  - E06
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 1
+  source_stereotypes:
+  - subkind
+- id: C10
+  label: Term (syntax)
+  statement: Syntactic object kind; its Concept role is distinguished from the prose mental/trope sense of Concept.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - kind
+- id: C11
+  label: Policy
+  statement: Document kind in the disjoint Figure 2 specializations; no exhaustive document coverage or source-reliability
+    guarantee inferred.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - kind
+- id: C12
+  label: Standard
+  statement: Document kind in the disjoint Figure 2 specializations; no exhaustive document coverage or source-reliability
+    guarantee inferred.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - kind
+- id: C13
+  label: Gray Literature
+  statement: Document kind in the disjoint Figure 2 specializations; no exhaustive document coverage or source-reliability
+    guarantee inferred.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - kind
+- id: C14
+  label: White Literature
+  statement: Document kind in the disjoint Figure 2 specializations; no exhaustive document coverage or source-reliability
+    guarantee inferred.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - kind
+- id: C15
+  label: Encyclopedia
+  statement: Document kind in the disjoint Figure 2 specializations; no exhaustive document coverage or source-reliability
+    guarantee inferred.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - kind
+- id: C16
+  label: Specification
+  statement: Category both in document classification and at the top of language specification refinement; no release
+    identity inferred.
+  evidence:
+  - E08
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  - 4
+  source_stereotypes:
+  - category
+- id: C17
+  label: Concept (abstract object)
+  statement: Literal role box specializing Term, not an independently represented mental Concept kind.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - role
+- id: C18
+  label: Source
+  statement: Relationally dependent rolemixin specializing Documents in Figure 2; broader information-source prose
+    needs correspondence checks.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - rolemixin
+- id: C19
+  label: Documents
+  statement: Category gathering document individuals with heterogeneous identity criteria.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  source_stereotypes:
+  - category
+- id: C20
+  label: Concept Definition
+  statement: Relator mediating the displayed Concept role and Source, and composed into Domain Description; not
+    automatically a truth assertion.
+  evidence:
+  - E08
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  - 3
+  source_stereotypes:
+  - relator
+- id: C21
+  label: Domain Description
+  statement: Relator linking conceptualization and its representation language; one or more definition components
+    are shown.
+  evidence:
+  - E08
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 2
+  - 3
+  source_stereotypes:
+  - relator
+- id: C22
+  label: Implementation
+  statement: Role of Operational Ontology mediated with an implementation language by Ontology Schema.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - role
+- id: C23
+  label: Conceptualization
+  statement: Role of Reference Ontology in this artifact metamodel; not equated with an episode of human conceptualizing.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - role
+- id: C24
+  label: Well-defined Ontology
+  statement: Figure 3 role specializing Ontology Schema (a relator), not directly the Operational Ontology artifact;
+    terminology does not establish adequacy.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - role
+- id: C25
+  label: Ontological Reference
+  statement: Figure 3 role specializing Domain Description (a relator), not directly Reference Ontology; preserve
+    these identity levels.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - role
+- id: C26
+  label: Language
+  statement: Identity-bearing kind partitioned into computational/non-computational subtypes in the displayed fragment.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - kind
+- id: C27
+  label: Non-Computational Language
+  statement: Figure 3 uses subtype stereotype; representation-language role is below it. Do not silently call it
+    subkind or prove exhaustiveness of all real languages.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - subtype
+- id: C28
+  label: Computational Language
+  statement: Displayed subkind supporting Implementation Language role.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - subkind
+- id: C29
+  label: Representation Language
+  statement: Role in Domain Description; prose also says Modeling Language, with correspondence retained rather
+    than a new unproved class equivalence.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - role
+- id: C30
+  label: Implementation Language
+  statement: Role mediated with an Implementation by Ontology Schema.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - role
+- id: C31
+  label: Ontology Schema
+  statement: Relator for an implementation and implementation language; not itself a database schema imported or
+    executed here.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - relator
+- id: C32
+  label: Ontological Support
+  statement: Relator behind implementationFor, mediating well-defined ontology and ontological reference roles.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 3
+  source_stereotypes:
+  - relator
+- id: C33
+  label: Metamodel
+  statement: Displayed subkind of Model, eligible for ontology-constrained role.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - subkind
+- id: C34
+  label: Model
+  statement: Kind used as the identity-bearing parent for metamodels.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - kind
+- id: C35
+  label: Ontology-Driven Modeling Language
+  statement: Displayed subkind with a concrete-language role; OASIS and OntoUML illustrate domain/foundation driven
+    variants.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - subkind
+- id: C36
+  label: Ontology-Constrained Metamodel
+  statement: Role of Metamodel mediated with an ontology supplying constraints.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - role
+- id: C37
+  label: Ontological Constraints
+  statement: Role of ontology artifact in the drives association; no complete OCL constraints printed.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - role
+- id: C38
+  label: Concrete Ontology-Driven Language
+  statement: Role participating in specification, with CODL {subsets CL} annotation.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - role
+- id: C39
+  label: Ontology-Driven Metamodel
+  statement: Relator connecting ontological constraints and constrained metamodel.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - relator
+- id: C40
+  label: Abstract Ontology-Driven Language
+  statement: Literally a relator specializing Ontology-Driven Metamodel; not silently retyped as a Language kind.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - relator
+- id: C41
+  label: Ontology-Driven Language Specification
+  statement: Relator mediated with abstract/concrete language sides; specializes Specification in the Figure 4 fragment.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 4
+  - 5
+  source_stereotypes:
+  - relator
+- id: C42
+  label: Ontological Foundation Constraints
+  statement: Role of Foundational Ontology supplying foundational constraints; OFC {subsets OC} is printed.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 5
+  - 6
+  source_stereotypes:
+  - role
+- id: C43
+  label: Direct Ontological Foundation
+  statement: Foundational-ontology role refining Ontological Foundation.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 5
+  - 6
+  source_stereotypes:
+  - role
+- id: C44
+  label: Foundational Ontology-Driven Metamodel
+  statement: Relator specializing Ontology-Driven Metamodel and supporting the indirect-foundation refinement.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 5
+  - 6
+  source_stereotypes:
+  - relator
+- id: C45
+  label: Ontological Foundation
+  statement: Rolemixin whose direct and indirect refinements permit different bearers; not an actual import declaration.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 5
+  - 6
+  source_stereotypes:
+  - rolemixin
+- id: C46
+  label: Indirect Ontological Foundation
+  statement: Role refining foundation and foundational ontology-driven metamodel in the diagram; actual model required
+    for full semantics.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 5
+  - 6
+  source_stereotypes:
+  - role
+- id: C47
+  label: Well-grounded Ontology
+  statement: Role of Non-Foundational Ontologies in Ontological Grounding; conceptual grounding does not certify
+    FAIR compliance.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 6
+  source_stereotypes:
+  - role
+- id: C48
+  label: Ontological Grounding
+  statement: Relator behind groundedOver, mediating well-grounded ontology and ontological foundation.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 6
+  source_stereotypes:
+  - relator
+- id: C49
+  label: Composite Ontology
+  statement: Subkind with subOntology component relation and two-or-more parts shown.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 7
+  source_stereotypes:
+  - subkind
+- id: C50
+  label: Atomic Ontology
+  statement: Complementary subkind to Composite Ontology in a complete disjoint set.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 7
+  source_stereotypes:
+  - subkind
+- id: C51
+  label: Ontology Network
+  statement: Collective formed through membership of at least two ontology artifacts, not the same as ontology composition
+    or reuse.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 7
+  source_stereotypes:
+  - collective
+- id: C52
+  label: Reused Ontology
+  statement: One role in Reusability; not disjoint from Reuser Ontology.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 7
+  source_stereotypes:
+  - role
+- id: C53
+  label: Reuser Ontology
+  statement: The other reuse role; overlap allows chains and needs a separate path-cycle constraint.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 7
+  source_stereotypes:
+  - role
+- id: C54
+  label: Reusability
+  statement: Relator deriving the displayed reuse material relation; not an empirical reuse-success metric.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  kind: FIGURE_TYPE
+  figures:
+  - 7
+  source_stereotypes:
+  - relator
+- id: C55
+  label: Mental Concept / trope sense
+  statement: Prose cognitive building block or mental representation discussed using UFO tropes; not the figure
+    Term-role population.
+  evidence:
+  - E07
+  basis: AUTHOR_REPORTED
+- id: C56
+  label: Object Kind / Trope Kind
+  statement: Source contrasts syntactic Term object kind with the mental/trope notion; no OWL class census follows.
+  evidence:
+  - E07
+  basis: AUTHOR_REPORTED
+- id: C57
+  label: Identity Principle
+  statement: Principle invoked to identify individuals; its adequacy does not supply persistent identifiers or search
+    services.
+  evidence:
+  - E03
+  basis: AUTHOR_REPORTED
+- id: C58
+  label: Rigidity / cross-world identity
+  statement: Modal ontological metaproperty invoked by the authors, distinct from persistent technical identity
+    or discoverability.
+  evidence:
+  - E03
+  basis: AUTHOR_REPORTED
+- id: C59
+  label: Kind / Subkind / Subtype
+  statement: OntoUML identity/classification stereotypes used across the fragments; literal subtype label is retained.
+  evidence:
+  - E06
+  - E10
+  basis: AUTHOR_REPORTED
+- id: C60
+  label: Role / Rolemixin / Category
+  statement: Dependent roles and cross-identity classifications used by the reference model; not modelled cognitive
+    actions by default.
+  evidence:
+  - E07
+  - E08
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C61
+  label: Relator / material / mediation
+  statement: Reification pattern used to ground associations in mediating relators; derivation/cardinalities require
+    the actual model.
+  evidence:
+  - E08
+  - E10
+  - E11
+  - E13
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C62
+  label: Functional part-whole / componentOf
+  statement: Composition distinction used for descriptions and composite ontologies; not identical to network membership.
+  evidence:
+  - E08
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C63
+  label: Collective membership / memberOf
+  statement: Ontology-network membership is a collective relation; separate from component composition.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C64
+  label: Weak Supplementation Pattern
+  statement: Source invokes supplementation to motivate parts; reviewer distinguishes a proper-part supplement condition
+    from a blanket two-parts claim about every whole.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C65
+  label: Ontological perspective
+  statement: Engineer concern with foundation, real-world semantics and explicit characterization.
+  evidence:
+  - E02
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C66
+  label: Domain perspective
+  statement: Specialist concern with relevant knowledge, terminology, sources and practical domain requirements.
+  evidence:
+  - E02
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C67
+  label: Ontology Engineer
+  statement: Stakeholder can elicit requirements or act as project client depending on context; no disjoint person
+    partition asserted.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C68
+  label: Domain Specialist / Cybersecurity specialist
+  statement: Stakeholder contributes domain concepts, standards and requirements.
+  evidence:
+  - E04
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C69
+  label: Literature Review Specialist
+  statement: Member of the elicitation group, without a separately printed agent ontology or participant count.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C70
+  label: Ontological commitment
+  statement: Perspective-dependent commitments should remain compatible across representations; no complete logic
+    of commitment printed.
+  evidence:
+  - E02
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C71
+  label: Cloud of concepts
+  statement: Term/definition/source field enabling alternative domain usages across ontologies; not itself a proved
+    consensus or truth set.
+  evidence:
+  - E07
+  - E15
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C72
+  label: Competence Questions / CQs
+  statement: Requirements guide scope and evaluation; complete questions are external rather than printed in the
+    paper.
+  evidence:
+  - E04
+  - E23
+  basis: AUTHOR_REPORTED
+- id: C73
+  label: SABiO
+  statement: Adopted engineering methodology; methodological adoption is not evidence that every process obligation
+    passed.
+  evidence:
+  - E04
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C74
+  label: FAIR / findability / accessibility / interoperability / reusability
+  statement: Normative guiding principles used to motivate classifications and network analysis; no scored compliance
+    matrix in the paper.
+  evidence:
+  - E01
+  - E03
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C75
+  label: Applicability level
+  statement: Reference/operational classification dimension; later prose also says Application Level.
+  evidence:
+  - E05
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C76
+  label: Generality / knowledge kind
+  statement: Classification into foundation/non-foundation and domain/task/application/core; literal Core mismatch
+    remains.
+  evidence:
+  - E05
+  - E06
+  basis: AUTHOR_REPORTED
+- id: C77
+  label: Formalization level
+  statement: Language-related classification dimension, not identical to computational expressiveness or decidability.
+  evidence:
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C78
+  label: Axiomatization level / lightweight / heavyweight
+  statement: Distinction based on language/axiomatic commitments; article does not enumerate all corresponding model
+    types.
+  evidence:
+  - E05
+  basis: AUTHOR_REPORTED
+- id: C79
+  label: Expressiveness / decidability
+  statement: Language capabilities and computational restrictions discussed as implementation concerns; no semantics-preserving
+    translation proved.
+  evidence:
+  - E05
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C80
+  label: UFO / UFO-A / UFO-B / UFO-C
+  statement: Paper claims UFO grounding through OntoUML and uses A/B/C as a composition/reuse example; modules are
+    not release editions.
+  evidence:
+  - E01
+  - E04
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C81
+  label: DOLCE
+  statement: Illustrative foundational alternative in FAIR discussion, not O4OA grounding or a formal import.
+  evidence:
+  - E03
+  basis: AUTHOR_REPORTED
+- id: C82
+  label: OntoUML / OCL
+  statement: Reference modeling language and reported constraint language; no OCL code printed and no tool run performed
+    by this review.
+  evidence:
+  - E02
+  - E17
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C83
+  label: OASIS / O3
+  statement: Illustrative ontology-driven domain-specific language and its grounding ontology; not an adopted O4OA
+    import.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C84
+  label: F4OC / classification framework
+  statement: Associated framework with five steps mentioned but not itemized in this article; current website uses
+    other naming, not silently normalized.
+  evidence:
+  - E03
+  - E17
+  - E21
+  basis: AUTHOR_REPORTED
+- id: C85
+  label: Operational prototype / microservices
+  statement: Author-reported MongoDB, NodeJS/Express API, Angular Material frontend and Docker implementation.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C86
+  label: Regex traversal / API graph navigation
+  statement: Syntactic recursive retrieval is reported; semantic reasoning is a future direction.
+  evidence:
+  - E15
+  - E16
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C87
+  label: Alloy instantiation / possible worlds
+  statement: Package-level validation technique reported by authors; scopes, commands and outcomes are not reproduced
+    here.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C88
+  label: Reuse transitive closure / acyclicity
+  statement: Additional constraint reported after observing overlapping reuse roles; predicate is not printed.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C89
+  label: Persistence and API constraints
+  statement: Authors split enforcement between storage and services; shared semantic behavior is not demonstrated
+    by the article.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C90
+  label: Risk and associated concepts
+  statement: Case discussion cites 18 Risk definitions and related Level of Risk, Residual Risk, Risk Criteria and
+    eleven others; no full list or semantic alignment printed.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C91
+  label: Vulnerability
+  statement: Figure 8 term with six abbreviated definition snippets, six source identifiers and two ontology uses;
+    none establishes accepted equivalence.
+  evidence:
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C92
+  label: ISO/IEC 27032:2012 / ISO/IEC 27000:2018
+  statement: Referential cybersecurity terminology sources selected by the authors, not guarantee of universal consensus.
+  evidence:
+  - E15
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C93
+  label: STIX / MAEC / NIST / ITU / CVE / CWE
+  statement: Compared source families and displayed uses; source identity, version, quality and definition context
+    require provenance.
+  evidence:
+  - E15
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C94
+  label: OMV / printed OVM / ontology base / ontology document
+  statement: Related metadata approach distinguishes conceptualization and realization; article criticism of its
+    FAIRness is not independently established.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C95
+  label: SSN / oneM2M / SAREF / ODI / IoT / WoT
+  statement: Related interoperability examples, not O4OA imports or reproduced comparative evaluation; standards
+    provenance checked separately.
+  evidence:
+  - E18
+  - E24
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C96
+  label: Dublin Core / VoID / metadata repositories / Watson / AgroPortal
+  statement: Related metadata vocabularies and repository applications; no complete feature or quality comparison
+    in the article.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C97
+  label: Ontological Technical Depth
+  statement: Future industrial-evaluation notion named in conclusion; no printed operational metric or measured
+    results.
+  evidence:
+  - E19
+  basis: AUTHOR_REPORTED
+commitments:
+- id: K01
+  label: Independent artifact partitions
+  statement: Reference/Operational and Foundation/Non-foundation are independent complete disjoint partitions in
+    Figure 1, not one four-way partition.
+  evidence:
+  - E06
+  basis: AUTHOR_REPORTED
+- id: K02
+  label: Core hierarchy inconsistency
+  statement: Literal Core -> Domain contrasts with note 5 generality; preserve both until exact artifact and intended
+    meaning are checked.
+  evidence:
+  - E05
+  - E06
+  basis: REVIEWER_INTERPRETATION
+- id: K03
+  label: Mental versus syntactic Concept
+  statement: Mental/trope prose and Concept-as-Term-role figure are separate senses; no identity or equivalence
+    inferred.
+  evidence:
+  - E07
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: K04
+  label: Source and document typing
+  statement: Figure 2 Source specializes Documents; document specializations are disjoint but no complete set label
+    is printed.
+  evidence:
+  - E08
+  basis: AUTHOR_REPORTED
+- id: K05
+  label: Definition mediation
+  statement: Concept Definition mediates the Concept role and Source; describes is material and has a visible derivation
+    link. No full derivation formula printed.
+  evidence:
+  - E08
+  basis: AUTHOR_REPORTED
+- id: K06
+  label: Definition composition
+  statement: Figure 2 and 3 label Concept Definition 1..* / Domain Description 1 on componentOf; distinguish that
+    fragment from global source-sharing claims.
+  evidence:
+  - E08
+  - E10
+  basis: AUTHOR_REPORTED
+- id: K07
+  label: Reference and implementation roles
+  statement: Conceptualization specializes Reference Ontology; Implementation specializes Operational Ontology.
+    A mental act is not thereby a conceptualization artifact.
+  evidence:
+  - E09
+  - E10
+  basis: AUTHOR_REPORTED
+- id: K08
+  label: Language partition
+  statement: Figure 3 has complete/disjoint computational and non-computational branches, literal subtype/subkind
+    stereotypes and their dependent roles.
+  evidence:
+  - E10
+  basis: AUTHOR_REPORTED
+- id: K09
+  label: Schema and description relators
+  statement: Domain Description mediates conceptualization/representation language; Ontology Schema mediates implementation/implementation
+    language.
+  evidence:
+  - E10
+  basis: AUTHOR_REPORTED
+- id: K10
+  label: Implementation support
+  statement: implementationFor is shown between Well-defined Ontology and Ontological Reference and grounded by
+    Ontological Support; no all-operational-ontologies adequacy theorem follows.
+  evidence:
+  - E09
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: K11
+  label: Prior-reference norm
+  statement: The assertion that there should be no operational ontology without a prior reference is a design norm,
+    not a demonstrated fact about all ontology histories.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: K12
+  label: Ontology-driven metamodel
+  statement: drives is material, with OC annotation, via Ontology-Driven Metamodel mediation; explicit constraints
+    are not enumerated.
+  evidence:
+  - E11
+  basis: AUTHOR_REPORTED
+- id: K13
+  label: Language specification
+  statement: Literal specifies' relates abstract and concrete ontology-driven language sides; Abstract Ontology-Driven
+    Language is a relator subtype.
+  evidence:
+  - E11
+  - E12
+  basis: AUTHOR_REPORTED
+- id: K14
+  label: Subset annotations
+  statement: CODL {subsets CL} and OFC {subsets OC} are preserved as displayed role/constraint annotations, not
+    expanded into invented quantifiers.
+  evidence:
+  - E11
+  - E12
+  basis: AUTHOR_REPORTED
+- id: K15
+  label: Foundation routes
+  statement: Direct/indirect foundation distinctions and foundation-driven metamodel refinements are displayed;
+    conceptual grounding differs from an OWL import.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: K16
+  label: Grounding mediation
+  statement: groundedOver is a material relation derived through Ontological Grounding, with Well-grounded Ontology
+    and Ontological Foundation participants.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: K17
+  label: Composition and atomicity
+  statement: Composite and Atomic partition Ontology Artifact; componentOf subOntology is annotated with at least
+    two parts and shareable/irreflexive/asymmetric/acyclic/transitive profile.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: K18
+  label: Membership differs from composition
+  statement: formedBy uses memberOf with Ontology Artifact 2..* / Ontology Network 1; neither is the reuse material
+    relation.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: K19
+  label: Reuse role overlap
+  statement: Reused/Reuser roles have a complete but not disjoint set. Disjointness would suppress legal intermediate
+    roles in reuse chains.
+  evidence:
+  - E14
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: K20
+  label: Cycle avoidance requires a path condition
+  statement: Authors report a transitive-closure predicate to avoid reuse cycles, but provide no printed predicate,
+    scope or executed witness in this paper. A closure operator alone is not the no-cycle condition.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: K21
+  label: Supplementation scope
+  statement: Source simplification of weak supplementation is not a general proof that every whole has two components;
+    distinguish proper parthood, disjoint supplement and the selected diagram minimum.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: K22
+  label: Definitions are not automatically equivalent
+  statement: The cloud retains many source descriptions of Risk/Vulnerability; retrieving shared labels or strings
+    does not establish semantic identity, truth or consensus.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: K23
+  label: Syntactic versus semantic operation
+  statement: Recursive regex/graph retrieval and navigation are reported; reasoning about semantics/context/commitments
+    and further logical implementations are future work.
+  evidence:
+  - E15
+  - E16
+  - E19
+  basis: AUTHOR_REPORTED
+- id: K24
+  label: No full printed axiom set
+  statement: Article explicitly omits axioms due to space and plans full formalization. OntoUML generalizations/cardinalities
+    remain real diagram commitments; no numbered DL/FOL/OCL formulas or Alloy code printed.
+  evidence:
+  - E19
+  - E20
+  basis: AUTHOR_REPORTED
+- id: K25
+  label: Modular validation boundary
+  statement: Alloy instantiation of individual packages does not by itself validate their full composition or the
+    storage/API translation. No reviewer solver execution occurred.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: K26
+  label: Grounding versus FAIR
+  statement: Author assertion of being FAIR is recorded as a claim; neither UFO labels nor a persistent internal
+    identity establish an independently tested F/A/I/R profile.
+  evidence:
+  - E03
+  - E19
+  basis: REVIEWER_INTERPRETATION
+relation_index:
+- id: R01
+  label: Generalization and generalization sets
+  statement: All visible fragments, stereotypes and complete/disjoint annotations are retained in figures.yaml;
+    typed diagrams are not a released-class census.
+  evidence:
+  - E06
+  - E08
+  - E10
+  - E11
+  - E12
+  - E13
+  - E14
+  basis: AUTHOR_REPORTED
+- id: R02
+  label: describes
+  statement: Material association between displayed Concept and Source mediated by Concept Definition; left/right
+    read marker retained without assuming a directed RDF property.
+  evidence:
+  - E08
+  basis: AUTHOR_REPORTED
+- id: R03
+  label: componentOf / definitions
+  statement: Definition-to-Domain Description composition, with literal 1..* and 1 endpoints.
+  evidence:
+  - E08
+  - E10
+  basis: AUTHOR_REPORTED
+- id: R04
+  label: usedToRepresent
+  statement: Representation-language/conceptualization material association mediated by Domain Description.
+  evidence:
+  - E10
+  basis: AUTHOR_REPORTED
+- id: R05
+  label: usedToImplement
+  statement: Implementation-language/implementation material association mediated by Ontology Schema.
+  evidence:
+  - E10
+  basis: AUTHOR_REPORTED
+- id: R06
+  label: implementationFor
+  statement: Material association mediated by Ontological Support, not direct string identity between implementations/reference
+    artifacts.
+  evidence:
+  - E10
+  basis: AUTHOR_REPORTED
+- id: R07
+  label: drives / drives'
+  statement: Constraint-bearing ontology and constrained metamodel linked through base/foundational metamodel relators;
+    OC/OFC subset note preserved.
+  evidence:
+  - E11
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R08
+  label: specifies' / prose specifys
+  statement: Abstract/concrete language material association linked to specification relator; spelling and prime
+    variation retained.
+  evidence:
+  - E11
+  - E12
+  basis: AUTHOR_REPORTED
+- id: R09
+  label: groundedOver / prose groundingOver
+  statement: Foundation association mediated by Ontological Grounding, not a declared import statement.
+  evidence:
+  - E13
+  - E14
+  basis: AUTHOR_REPORTED
+- id: R10
+  label: subOntology / componentOf
+  statement: Functional composition with printed shareability and strict relation profile; separate from membership
+    and reuse.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: R11
+  label: formedBy / memberOf
+  statement: Collective network membership with printed 2..* /1 multiplicities.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: R12
+  label: reuse / prose reuses
+  statement: Material reuse relation and Reusability mediator, with separate reported cycle constraint.
+  evidence:
+  - E14
+  - E17
+  basis: AUTHOR_REPORTED
+- id: R13
+  label: mediation and derivation
+  statement: Every displayed relator-participant association and dashed material-derivation link are inventoried
+    at figure level; absent quantifiers remain unknown.
+  evidence:
+  - E08
+  - E10
+  - E11
+  - E12
+  - E13
+  - E14
+  basis: AUTHOR_REPORTED
+- id: R14
+  label: Tool source/definition/term/use links
+  statement: Figure 8 colored source-to-definition, definition-to-term and definition-to-ontology links illustrate
+    navigation; no new ontology relation declaration inferred.
+  evidence:
+  - E16
+  basis: AUTHOR_REPORTED
+scenarios:
+- id: S01
+  label: Engineer and specialist
+  statement: Both perspectives supply knowledge and requirements to consensual characterization; neither replaces
+    the other.
+  evidence:
+  - E02
+  - E04
+  basis: AUTHOR_REPORTED
+- id: S02
+  label: Stakeholder role switching
+  statement: An engineer can be requirements elicitor or project client in different contexts; do not create disjoint
+    person classes from these roles.
+  evidence:
+  - E04
+  basis: AUTHOR_REPORTED
+- id: S03
+  label: Reference to operational counterpart
+  statement: Trace a reference model through language/schema to an operational artifact, preserving which commitments
+    the implementation retains.
+  evidence:
+  - E09
+  - E10
+  basis: AUTHOR_REPORTED
+- id: S04
+  label: No prior reference adverse case
+  statement: Given an operational artifact lacking a documented prior reference, mark missing support; do not infer
+    that it cannot exist or satisfies the author norm.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: S05
+  label: Term and multiple sources
+  statement: Retain one syntax with multiple source-specific definitions and ontology uses; label-based merging
+    is insufficient.
+  evidence:
+  - E07
+  - E08
+  - E15
+  basis: AUTHOR_REPORTED
+- id: S06
+  label: Mental Concept adverse case
+  statement: A personal mental representation and a Term role in a document need independent identity/bearer accounts;
+    refuse automatic equivalence.
+  evidence:
+  - E07
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: S07
+  label: Core/Domain adverse case
+  statement: A source design describing Core as more general must not be silently migrated using the opposite arrow
+    in Figure 1.
+  evidence:
+  - E05
+  - E06
+  basis: REVIEWER_INTERPRETATION
+- id: S08
+  label: Direct grounding
+  statement: Record a non-foundational conceptualization grounded through a foundational ontology; keep exact edition
+    unknown if absent.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: S09
+  label: Indirect grounding
+  statement: Trace an ontology through its ontology-driven language and constrained metamodel; ask which commitments
+    survive implementation.
+  evidence:
+  - E11
+  - E12
+  basis: AUTHOR_REPORTED
+- id: S10
+  label: OASIS/O3 and OntoUML/UFO
+  statement: Use the printed examples to distinguish domain-driven from foundation-driven languages without asserting
+    their formal import identity.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: S11
+  label: UFO composition and reuse
+  statement: A/B/C illustrate that components may also reuse another component; preserve both different relations.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: S12
+  label: Reuse chain
+  statement: A reuses B and B reuses C can put B in both roles without a cycle; role disjointness is an inappropriate
+    blanket repair.
+  evidence:
+  - E14
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S13
+  label: Reuse cycle adverse case
+  statement: A reuses B and B reuses A requires an explicit path-cycle prohibition; adding transitivity alone does
+    not remove it.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S14
+  label: Network singleton adverse case
+  statement: One ontology by itself does not satisfy the displayed network two-member minimum; whether this covers
+    every intended real network is a modeling decision.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: S15
+  label: Shared component
+  statement: Printed shareable composition allows a component in several composites; do not infer exclusive ownership
+    from part-whole alone.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: S16
+  label: Risk terminology
+  statement: The authors report eighteen Risk definitions and further risk-associated terms; no automatic consensus
+    follows.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: S17
+  label: Vulnerability trace
+  statement: Follow the displayed term through six snippets and six source identifiers to CVE/CWE ontology uses;
+    do not complete truncated text.
+  evidence:
+  - E16
+  basis: AUTHOR_REPORTED
+- id: S18
+  label: Unreliable source adverse case
+  statement: A listed source or technical record is provenance, not proof of an authoritative or context-adequate
+    definition.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: S19
+  label: Modular satisfiability adverse case
+  statement: Individually plausible packages can conflict after composition; require an integrated bounded check
+    before claiming whole-model consistency.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S20
+  label: Persistence/API mismatch adverse case
+  statement: A storage-accepted reuse edge can violate an API cycle check; require common versioned enforcement
+    fixtures.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S21
+  label: Grounded but inaccessible adverse case
+  statement: A UFO-grounded artifact behind an unresolvable or inaccessible endpoint does not become FAIR merely
+    from its modeling language.
+  evidence:
+  - E03
+  - E19
+  - E22
+  basis: REVIEWER_INTERPRETATION
+- id: S22
+  label: Domain generalization
+  statement: Cybersecurity demonstrations motivate other domains, but no cross-domain controlled effectiveness study
+    is printed.
+  evidence:
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: S23
+  label: Externally listed CQs
+  statement: Use current author CQ JSON and prose mappings as separate versioned input; do not report those answers
+    as executed paper tests.
+  evidence:
+  - E04
+  - E23
+  basis: REVIEWER_INTERPRETATION
+evaluation:
+  Verification:
+    label: Requirements-to-model
+    statement: Authors require CQ confrontation and report mappings externally; reviewer verified paper identity/coverage
+      and current linked resources only, not CQ entailment or exact operational conformity.
+    evidence:
+    - E04
+    - E17
+    - E23
+    basis: REVIEWER_INTERPRETATION
+  Validation:
+    label: Intended semantics
+    statement: Authors report possible-world/Alloy package instantiation and additional cardinality/cycle constraints.
+      No original execution logs, scope-complete integrated run or reviewer solver execution acquired.
+    evidence:
+    - E17
+    - E22
+    basis: AUTHOR_REPORTED
+  Evaluation:
+    label: Case utility
+    statement: Cybersecurity use cases and navigation examples are reported with 161 concepts/73 sources/18 Risk
+      definitions; no controlled utility, accuracy, performance or cross-domain measurement in this paper.
+    evidence:
+    - E15
+    - E16
+    - E17
+    basis: AUTHOR_REPORTED
+  Assessment:
+    label: Critical judgment
+    statement: Reviewer identifies substantial prior support and exact source discrepancies, but source-based critique
+      is not independent domain-expert acceptance or an assessment of all current models.
+    evidence:
+    - E06
+    - E07
+    - E14
+    - E17
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  Assurance:
+    label: Bounded confidence
+    statement: Owner source digest, exact page/figure ledgers, hashed discovery and honest unknowns support traceability.
+      They do not certify consensus, FAIRness, whole-model consistency, licensing or implementation quality.
+    evidence:
+    - E01
+    - E20
+    - E21
+    - E22
+    basis: REVIEWER_INTERPRETATION
+artifact:
+  issue: 91
+  status: PUBLIC_METADATA_TREE_BLOCKED_TECHNICAL_REVIEW_OPEN
+  version_relation: 'Paper is the2023 reference-model presentation and MongoDB/API prototype report. Current author
+    documentation additionally describes UFO-A/B/C, gUFO/gO4OA and MongoO4OA. Checked O4OA repository-tree API returns403;
+    no source commit, actual formal root/import/axiom population, license or historical2023 equivalence established.
+    Full class/definition inventory and technical semantics remain #91. Current CQ/prose mappings are documentation
+    claims, not rerun tests. Separate light-variant commit 3be36c642b2cfca33de3d0788471bc185880bde8 has a complete
+    eight-entry tree with five files, metadata version 1.0 but no formal root found in that selected tree. Separate
+    44-page PROS-TR-2023-I specification v1 acquired for #91; it has not been deeply reviewed. Current linked CQ
+    table has24 rows (three group and 21 subordinate questions), retained as short paraphrases in current-cqs.yaml.'
+  discovery_execution:
+    path: evaluation/related-work/o4oa/discovery.json
+    sha256: 97f80d75214cdd242a5d2e40eb71a7f85c58da2a6cb995f8b1b8bfea3e080254
+  reading_inspection:
+    path: evaluation/related-work/o4oa/reading-inspection.json
+    sha256: db12722e7925e462bab4829776f87811a402f6261df54f3f60d12d3b9195f440
+  machine_class_populations:
+    local_named_classes: null
+    external_redeclarations: null
+    imported_closure: null
+    inferred_classes: null
+  reasoner_execution: NOT_EXECUTED
+  all_class_definitions_complete: false
+  historical_correspondence: NOT_ESTABLISHED
+  foundation:
+    family: UFO
+    edition: null
+    relation: PAPER_STATED_GROUNDING_THROUGH_ONTOUML
+    actual_imports: null
+    current_documentation_variants:
+    - UFO-A
+    - UFO-B
+    - UFO-C
+    - gUFO
+    - gO4OA
+    - MongoO4OA
+  current_documentation_cqs:
+    path: evidence/related-work/deep-reviews/CLR-RW-O4OA/current-cqs.yaml
+    sha256: 6aa366091b884313bdd3705fe33289b7595c363f38b539f11a5a2d7fb40e06d7
+  separate_light_variant:
+    repository: bfmartins/go4oa
+    commit: 3be36c642b2cfca33de3d0788471bc185880bde8
+    complete_tree_acquired: true
+    tree_entries: 8
+    directories: 3
+    files: 5
+    formal_model_file_in_selected_tree: NOT_IDENTIFIED
+    file_set_boundary: README, .gitignore, two logos and metadata.yaml only; this exact tree is not an acquired
+      OWL implementation or the paper MongoDB source.
+  supporting_specification:
+    title: O4OA Specification
+    technical_report: PROS-TR-2023-I
+    document_version: '1'
+    url: https://riunet.upv.es/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/download
+    sha256: 8bbcc649518217e34ca0f12b486fda58042d055da45792c7b6f706e5356bfdfb
+    pdf_pages: 44
+    status: ACQUIRED_NOT_DEEP_REVIEWED
+    next_issue: 91
+    primary_paper_substitution: false
+findings:
+- id: F01
+  label: Substantial prior conceptualization support
+  statement: The work already treats conceptualization/reference artifacts, definitions, perspectives, commitments
+    and networks. A later novelty claim must identify a finer distinction than merely reifying conceptualization.
+  evidence:
+  - E01
+  - E02
+  - E07
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: F02
+  label: Two perspectives are a strength
+  statement: Explicit specialist/engineer contributions make terminology and ontology commitments traceable in a
+    common setting; no communication-effect metric is printed.
+  evidence:
+  - E02
+  - E04
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F03
+  label: FAIR is argued, not audited
+  statement: The conclusion infers FAIRness from being well-grounded/well-defined. No indicator-level F/A/I/R assessment,
+    access experiment or independent score appears.
+  evidence:
+  - E03
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F04
+  label: Identity and findability differ
+  statement: Modal identity and rigidity are not sufficient implementation conditions for persistent identifiers,
+    indexing, access or reuse licensing.
+  evidence:
+  - E03
+  basis: REVIEWER_INTERPRETATION
+- id: F05
+  label: Classification choice lacks measured coverage
+  statement: Most accepted/comprehensive claims motivate selected dimensions but no search protocol, frequency census
+    or completeness measure is printed.
+  evidence:
+  - E05
+  basis: REVIEWER_INTERPRETATION
+- id: F06
+  label: Core ordering conflicts
+  statement: Figure 1 makes Core specialize Domain, while note 5 places Core more generally. Current author documentation
+    repeats Domain including Core; historical intent remains unproved.
+  evidence:
+  - E05
+  - E06
+  - E21
+  basis: REVIEWER_INTERPRETATION
+- id: F07
+  label: Concept identity shifts
+  statement: Mental/trope prose, syntactic Term kind and Concept role labeled abstract object do not automatically
+    share identity, dependence or cognitive bearer.
+  evidence:
+  - E07
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: F08
+  label: Sources and document scope
+  statement: Source is a rolemixin under Documents in Figure 2, while prose describes any relevant source. Dataset/service/record
+    boundaries and source reliability are not fully defined.
+  evidence:
+  - E07
+  - E08
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F09
+  label: Definition packaging is explicit but limited
+  statement: Definition relators and 1..*/1 composition are concrete prior support. Sharing identical definitions
+    across descriptions, versions and commitments requires exact identity/cardinality checks.
+  evidence:
+  - E08
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: F10
+  label: Normative prior-reference requirement
+  statement: Should-not-have-operational-without-reference is a design recommendation; the article does not show
+    that all existing operational ontologies satisfy it.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: F11
+  label: Mixed language classification needs care
+  statement: Computational versus non-computational partition and language roles are shown, but expressive and computational
+    properties need selected language semantics.
+  evidence:
+  - E10
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F12
+  label: Metamodel reification is already present
+  statement: Constraints, specification and ontology-driven metamodel relators provide substantial prior artifact-level
+    structure; abstract language is literally a relator in the diagrams.
+  evidence:
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F13
+  label: Grounding is not import or adequacy
+  statement: Direct/indirect grounding is a conceptual relation, not an acquired formal import, exact UFO version
+    or accepted alignment to Clariceptify.
+  evidence:
+  - E12
+  - E13
+  - E21
+  basis: REVIEWER_INTERPRETATION
+- id: F14
+  label: Reuse/composition/membership distinction is useful
+  statement: The source explicitly separates overlapping reuse, functional composition and network collective membership,
+    each with different profiles.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F15
+  label: Weak supplementation overstatement
+  statement: The broad every-whole/two-parts gloss needs proper-part and disjoint-supplement qualification; the
+    selected min-two component design is not a generic mereology theorem.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F16
+  label: Network membership cardinality is restrictive
+  statement: The printed 2..*/1 membership entails a selected one-network-per-artifact reading; versioning and multi-network
+    reuse need the exact model, not an assumed correction.
+  evidence:
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: F17
+  label: Reuse roles must remain overlapping
+  statement: The complete but non-disjoint role set permits legal chains. Authors report a separate cycle constraint;
+    disjoint roles would overcorrect.
+  evidence:
+  - E14
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F18
+  label: Alloy evidence remains author-reported
+  statement: No Alloy input, solver version, scope, commands, trace or independent run is in the selected paper/retrieved
+    tree. Modular analysis does not establish integrated consistency.
+  evidence:
+  - E17
+  - E22
+  basis: REVIEWER_INTERPRETATION
+- id: F19
+  label: Full formalization is explicitly incomplete
+  statement: Conclusion postpones full axioms. No printed OCL rules or complete axiom set can be reconstructed as
+    author formulas; diagram commitments remain separately inventoried.
+  evidence:
+  - E02
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F20
+  label: Prototype counts are not class counts
+  statement: 161 concepts, 73 sources and 18 Risk definitions are reported case-dataset populations; they are neither
+    released model classes nor independently verified complete datasets.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: F21
+  label: Retrieval does not yet reason about meaning
+  statement: Authors explicitly describe syntactic regex traversal and leave semantic reasoning/context/commitment
+    analytics to future work.
+  evidence:
+  - E15
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F22
+  label: Vulnerability screenshot is illustrative
+  statement: Six abbreviated definitions plus source and use links show a trace route, not definition equivalence,
+    source reliability, inference accuracy or the full data population.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F23
+  label: Storage/API semantics are split
+  statement: Enforcement across persistence and service needs consistency, transactional/concurrent behavior and
+    translation checks; architecture names do not provide these results.
+  evidence:
+  - E15
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F24
+  label: General-purpose effectiveness not demonstrated
+  statement: Case examples and claimed domain independence do not establish performance across other domains, user
+    populations or industrial workflows.
+  evidence:
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F25
+  label: Related-work standards provenance requires correction
+  statement: 'The blanket W3C label for SSN/oneM2M/SAREF is overbroad: checked historical SAREF metadata is ETSI
+    and oneM2M cited cover is a oneM2M Partners draft. No standards-quality ranking follows.'
+  evidence:
+  - E18
+  - E24
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F26
+  label: OMV criticism is not independent evidence
+  statement: Article assertions that OMV is not FAIR or lacks grounding are not an executed FAIR audit or complete
+    comparison; preserve OMV/OVM spelling variation.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: F27
+  label: Repository availability is scoped
+  statement: O4OA metadata/docs respond200 but its tree API403. The separate gO4OA light repository has a pinned
+    eight-entry tree containing only five files (README, ignore file, logos, metadata), no formal root identified
+    there. Neither observation proves global absence or historical parity.
+  evidence:
+  - E21
+  - E22
+  basis: REVIEWER_INTERPRETATION
+- id: F28
+  label: Current CQ text is a separate source
+  statement: External current JSON and prose verification are accessible but unpinned to a 2023 commit; not evidence
+    that every CQ was tested or answered by the supplied paper. Their prose mappings give structural candidate coverage,
+    but source/definition traversal alone does not decide equal/equivalent/similar meanings.
+  evidence:
+  - E04
+  - E23
+  basis: REVIEWER_INTERPRETATION
+- id: F29
+  label: Names and identity levels differ
+  statement: 'F4OC versus later naming and relation aliases remain explicit. More deeply, Figure 3 Ontological Reference
+    specializes Domain Description and Well-defined Ontology specializes Ontology Schema: these relator roles must
+    not be mistaken for the artifact classes.'
+  evidence:
+  - E03
+  - E10
+  - E11
+  - E14
+  - E21
+  basis: REVIEWER_INTERPRETATION
+- id: F30
+  label: Clariceptify remains unchanged
+  statement: This completed paper review provides candidate comparison inputs. All-class/glossary/implementation
+    checks remain91; comparison252 and final synthesis126 remain open.
+  evidence:
+  - E01
+  - E17
+  - E19
+  - E22
+  basis: REVIEWER_INTERPRETATION
+questions:
+- id: Q01
+  label: Exact roots and complete glossary
+  statement: Pin an obtainable exact reference/operational model release, its tree/license/imports/modules and every
+    selected class/type definition; keep absent populations null. Start with newly acquired44-page PROS-TR-2023-I
+    specification v1, whose deep review is still pending; keep it distinct from the ER paper and metadata-only gO4OA
+    tree.
+  evidence:
+  - E21
+  - E22
+  - E26
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q02
+  label: Typing, identity and diagram correspondence
+  statement: Reconcile Core/Domain ordering, mental Concept versus Term role, Source/Document scope and role/relator
+    refinements against the intended model.
+  evidence:
+  - E06
+  - E07
+  - E08
+  - E10
+  - E11
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q03
+  label: Support and implementation constraints
+  statement: Inspect material derivations, mediator participation, definition sharing and language/schema constraints;
+    distinguish design norms from enforced restrictions.
+  evidence:
+  - E08
+  - E09
+  - E10
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q04
+  label: Foundation correspondence
+  statement: Record exact UFO/gUFO editions and direct/indirect grounding/import/translation evidence; current gO4OA
+    documentation is a separate variant.
+  evidence:
+  - E12
+  - E13
+  - E21
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q05
+  label: Reuse, composition and network profiles
+  statement: Check supplementation, strict component profiles, min-two and one-network cardinalities, legal role-overlap
+    chains and actual cycle avoidance.
+  evidence:
+  - E14
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q06
+  label: Definition provenance and context
+  statement: Specify term/definition/source identities, version and context, divergent meanings, synonymy and source
+    reliability without label-based equivalence.
+  evidence:
+  - E07
+  - E08
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q07
+  label: Reproduce bounded model checks
+  statement: Obtain exact OCL/Alloy files, scopes and commands, record modular and integrated checks separately,
+    and trace current external CQs to selected constraints.
+  evidence:
+  - E17
+  - E19
+  - E23
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+- id: Q08
+  label: Operational enforcement and evidence
+  statement: Verify persistence/API translation with positive/adverse cases and separate case-dataset counts, syntactic
+    navigation, future semantic reasoning and actual FAIR indicators.
+  evidence:
+  - E03
+  - E15
+  - E16
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 91
+synthesis:
+- id: Y01
+  label: Prior overlap
+  statement: Compare existing conceptualization artifacts, perspectives, commitments, source definitions and language-support
+    relators before asserting novelty.
+  evidence:
+  - E02
+  - E07
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 252
+- id: Y02
+  label: Terminology/provenance candidates
+  statement: The source-definition-domain-description path is a candidate for a source-backed comparison scenario,
+    not automatic adoption.
+  evidence:
+  - E08
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 252
+- id: Y03
+  label: Distinct network relations
+  statement: Keep reuse, composition, membership and foundational grounding in separate comparison cells with exact
+    evidence.
+  evidence:
+  - E12
+  - E13
+  - E14
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 252
+- id: Y04
+  label: Potential finer gaps
+  statement: Individual conceptualizing episodes, decision/rationale/evidence, temporal context and semantic adjudication
+    are not developed as a complete theory in this selected paper; evaluate against exact Clariceptify IDs later.
+  evidence:
+  - E04
+  - E07
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 252
+- id: Y05
+  label: Assessment discipline
+  statement: Do not inherit FAIR, consensus, semantic-reasoning or global-validity claims from author prose, architecture
+    or modular Alloy checks.
+  evidence:
+  - E03
+  - E15
+  - E17
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 252
+- id: Y06
+  label: Comparison and article revision deferred
+  statement: 'After #86/#263/#77, integrate the source/version/definition/foundation matrix and determine bounded
+    manuscript changes through #252/#126 and owner decision.'
+  evidence:
+  - E01
+  - E19
+  - E21
+  - E22
+  basis: REVIEWER_INTERPRETATION
+  next_issue: 252
+figure_ledger:
+  path: evidence/related-work/deep-reviews/CLR-RW-O4OA/figures.yaml
+  sha256: b8ae04758d0edf8f693e53b7a3743d438d6555479c76f776269f4062887bef5a
+paper_formalization:
+  numbered_formula_count: 0
+  numbered_table_count: 0
+  printed_ocl_or_alloy_code: false
+  complete_axiom_set: EXPLICITLY_FUTURE_WORK
+  reviewer_solver_execution: NOT_EXECUTED
+  global_consistency: NOT_ESTABLISHED
+author_reported_population:
+  basis: AUTHOR_REPORTED
+  cybersecurity_concepts: 161
+  reliable_sources: 73
+  risk_definitions: 18
+  independently_reproduced: false
+  model_class_count: null
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+closure_boundary: 'Exact 20-page primary-paper critical review complete. Findings and candidate reuse are not accepted
+  semantic changes. Full reference/operational type/class/definition/import/license/version/correspondence and bounded
+  semantics stay #91; comparison #252 and final synthesis #126 remain OPEN. No ontology, requirements, fixtures,
+  manuscript or release changes. Continue acquired primary texts #86, #263, #77 before synthesis; I&DA #84 still
+  lacks retained full text.'

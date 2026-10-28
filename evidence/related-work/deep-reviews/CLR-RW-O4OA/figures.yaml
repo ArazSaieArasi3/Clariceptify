@@ -1,0 +1,790 @@
+schema_version: '1.0'
+work_id: CLR-RW-O4OA
+source_sha256: de09a79471af857d251231429988f2025d3f02b6983073c13e249e19aebcf0df
+source_pages: 20
+figures:
+- number: 1
+  pdf_page: 6
+  printed_page: 110
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Ontology (Artifact)
+    stereotype: kind
+    catalog_id: C01
+  - label: Operational Ontology
+    stereotype: subkind
+    catalog_id: C02
+  - label: Reference Ontology
+    stereotype: subkind
+    catalog_id: C03
+  - label: Foundational Ontology
+    stereotype: subkind
+    catalog_id: C04
+  - label: Non-Foundational Ontologies
+    stereotype: subkind
+    catalog_id: C05
+  - label: Core Ontology
+    stereotype: subkind
+    catalog_id: C06
+  - label: Domain Ontology
+    stereotype: subkind
+    catalog_id: C07
+  - label: Application Ontology
+    stereotype: subkind
+    catalog_id: C08
+  - label: Task Ontology
+    stereotype: subkind
+    catalog_id: C09
+  generalizations:
+  - child: Operational Ontology
+    parent: Ontology (Artifact)
+  - child: Reference Ontology
+    parent: Ontology (Artifact)
+  - child: Foundational Ontology
+    parent: Ontology (Artifact)
+  - child: Non-Foundational Ontologies
+    parent: Ontology (Artifact)
+  - child: Domain Ontology
+    parent: Non-Foundational Ontologies
+  - child: Application Ontology
+    parent: Non-Foundational Ontologies
+  - child: Task Ontology
+    parent: Non-Foundational Ontologies
+  - child: Core Ontology
+    parent: Domain Ontology
+  generalization_sets:
+  - members:
+    - Operational Ontology
+    - Reference Ontology
+    parent: Ontology (Artifact)
+    disjoint: true
+    complete: true
+  - members:
+    - Foundational Ontology
+    - Non-Foundational Ontologies
+    parent: Ontology (Artifact)
+    disjoint: true
+    complete: true
+  - members:
+    - Domain Ontology
+    - Application Ontology
+    - Task Ontology
+    parent: Non-Foundational Ontologies
+    disjoint: true
+    complete: true
+  relations: []
+  notes:
+  - Core -> Domain is the literal specialization; prose note 5 describes the opposite generality. Neither is silently
+    repaired.
+- number: 2
+  pdf_page: 8
+  printed_page: 112
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Term (syntax)
+    stereotype: kind
+    catalog_id: C10
+  - label: Policy
+    stereotype: kind
+    catalog_id: C11
+  - label: Standard
+    stereotype: kind
+    catalog_id: C12
+  - label: Gray Literature
+    stereotype: kind
+    catalog_id: C13
+  - label: White Literature
+    stereotype: kind
+    catalog_id: C14
+  - label: Encyclopedia
+    stereotype: kind
+    catalog_id: C15
+  - label: Specification
+    stereotype: category
+    catalog_id: C16
+  - label: Concept (abstract object)
+    stereotype: role
+    catalog_id: C17
+  - label: Source
+    stereotype: rolemixin
+    catalog_id: C18
+  - label: Documents
+    stereotype: category
+    catalog_id: C19
+  - label: Concept Definition
+    stereotype: relator
+    catalog_id: C20
+  - label: Domain Description
+    stereotype: relator
+    catalog_id: C21
+  generalizations:
+  - child: Concept (abstract object)
+    parent: Term (syntax)
+  - child: Source
+    parent: Documents
+  - child: Policy
+    parent: Documents
+  - child: Standard
+    parent: Documents
+  - child: Gray Literature
+    parent: Documents
+  - child: White Literature
+    parent: Documents
+  - child: Encyclopedia
+    parent: Documents
+  - child: Specification
+    parent: Documents
+  generalization_sets:
+  - members:
+    - Policy
+    - Standard
+    - Gray Literature
+    - White Literature
+    - Encyclopedia
+    - Specification
+    parent: Documents
+    disjoint: true
+    complete: null
+  relations:
+  - name: describes
+    endpoints:
+    - Concept (abstract object)
+    - Source
+    stereotype: material
+    read_marker: RIGHT
+  - name: mediates
+    endpoints:
+    - Concept Definition
+    - Concept (abstract object)
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Concept Definition
+    - Source
+    stereotype: mediation
+  - name: componentOf
+    endpoints:
+    - Concept Definition
+    - Domain Description
+    stereotype: componentOf
+    multiplicities:
+    - 1..*
+    - '1'
+  notes:
+  - Source is drawn as a specialization of Documents; the broader prose about information sources is not substituted
+    for this diagram.
+  - Mental Concept/trope is a separate prose sense, not this role box.
+  - Dashed material-to-relator derivation retained; no OWL direction or complete multiplicity inferred from absent
+    labels.
+- number: 3
+  pdf_page: 9
+  printed_page: 113
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Ontology (Artifact)
+    stereotype: kind
+    catalog_id: C01
+  - label: Operational Ontology
+    stereotype: subkind
+    catalog_id: C02
+  - label: Reference Ontology
+    stereotype: subkind
+    catalog_id: C03
+  - label: Implementation
+    stereotype: role
+    catalog_id: C22
+  - label: Conceptualization
+    stereotype: role
+    catalog_id: C23
+  - label: Well-defined Ontology
+    stereotype: role
+    catalog_id: C24
+  - label: Ontological Reference
+    stereotype: role
+    catalog_id: C25
+  - label: Language
+    stereotype: kind
+    catalog_id: C26
+  - label: Non-Computational Language
+    stereotype: subtype
+    catalog_id: C27
+  - label: Computational Language
+    stereotype: subkind
+    catalog_id: C28
+  - label: Representation Language
+    stereotype: role
+    catalog_id: C29
+  - label: Implementation Language
+    stereotype: role
+    catalog_id: C30
+  - label: Domain Description
+    stereotype: relator
+    catalog_id: C21
+  - label: Ontology Schema
+    stereotype: relator
+    catalog_id: C31
+  - label: Ontological Support
+    stereotype: relator
+    catalog_id: C32
+  - label: Concept Definition
+    stereotype: relator
+    catalog_id: C20
+  generalizations:
+  - child: Operational Ontology
+    parent: Ontology (Artifact)
+  - child: Reference Ontology
+    parent: Ontology (Artifact)
+  - child: Implementation
+    parent: Operational Ontology
+  - child: Conceptualization
+    parent: Reference Ontology
+  - child: Non-Computational Language
+    parent: Language
+  - child: Computational Language
+    parent: Language
+  - child: Representation Language
+    parent: Non-Computational Language
+  - child: Implementation Language
+    parent: Computational Language
+  - child: Ontological Reference
+    parent: Domain Description
+  - child: Well-defined Ontology
+    parent: Ontology Schema
+  generalization_sets:
+  - members:
+    - Operational Ontology
+    - Reference Ontology
+    parent: Ontology (Artifact)
+    disjoint: true
+    complete: true
+  - members:
+    - Non-Computational Language
+    - Computational Language
+    parent: Language
+    disjoint: true
+    complete: true
+  relations:
+  - name: usedToRepresent
+    endpoints:
+    - Conceptualization
+    - Representation Language
+    stereotype: material
+    read_marker: LEFT
+  - name: usedToImplement
+    endpoints:
+    - Implementation
+    - Implementation Language
+    stereotype: material
+    read_marker: LEFT
+  - name: implementationFor
+    endpoints:
+    - Well-defined Ontology
+    - Ontological Reference
+    stereotype: material
+    read_marker: RIGHT
+  - name: mediates
+    endpoints:
+    - Domain Description
+    - Conceptualization
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Domain Description
+    - Representation Language
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology Schema
+    - Implementation
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology Schema
+    - Implementation Language
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontological Support
+    - Well-defined Ontology
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontological Support
+    - Ontological Reference
+    stereotype: mediation
+  - name: componentOf
+    endpoints:
+    - Concept Definition
+    - Domain Description
+    stereotype: componentOf
+    multiplicities:
+    - 1..*
+    - '1'
+  notes:
+  - Sixteen boxes, including the repeated Concept Definition component; ontology and language partitions are independent.
+  - Prose Modeling Language versus figure Representation Language is retained as a naming difference.
+  - 'Native 1905x781 figure inspected: Ontological Reference specializes Domain Description; Well-defined Ontology
+    specializes Ontology Schema. Both parents are relators, not the reference/operational artifact classes.'
+- number: 4
+  pdf_page: 9
+  printed_page: 113
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Metamodel
+    stereotype: subkind
+    catalog_id: C33
+  - label: Model
+    stereotype: kind
+    catalog_id: C34
+  - label: Ontology (Artifact)
+    stereotype: kind
+    catalog_id: C01
+  - label: Ontology-Driven Modeling Language
+    stereotype: subkind
+    catalog_id: C35
+  - label: Ontology-Constrained Metamodel
+    stereotype: role
+    catalog_id: C36
+  - label: Ontological Constraints
+    stereotype: role
+    catalog_id: C37
+  - label: Concrete Ontology-Driven Language
+    stereotype: role
+    catalog_id: C38
+  - label: Specification
+    stereotype: category
+    catalog_id: C16
+  - label: Ontology-Driven Metamodel
+    stereotype: relator
+    catalog_id: C39
+  - label: Abstract Ontology-Driven Language
+    stereotype: relator
+    catalog_id: C40
+  - label: Ontology-Driven Language Specification
+    stereotype: relator
+    catalog_id: C41
+  generalizations:
+  - child: Metamodel
+    parent: Model
+  - child: Ontology-Constrained Metamodel
+    parent: Metamodel
+  - child: Ontological Constraints
+    parent: Ontology (Artifact)
+  - child: Concrete Ontology-Driven Language
+    parent: Ontology-Driven Modeling Language
+  - child: Abstract Ontology-Driven Language
+    parent: Ontology-Driven Metamodel
+  - child: Ontology-Driven Language Specification
+    parent: Specification
+  generalization_sets: []
+  relations:
+  - name: drives
+    endpoints:
+    - Ontology-Constrained Metamodel
+    - Ontological Constraints
+    stereotype: material
+    read_marker: LEFT
+    role_label: OC
+  - name: specifies'
+    endpoints:
+    - Abstract Ontology-Driven Language
+    - Concrete Ontology-Driven Language
+    stereotype: material
+    read_marker: RIGHT
+    role_label: CODL {subsets CL}
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Metamodel
+    - Ontology-Constrained Metamodel
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Metamodel
+    - Ontological Constraints
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Language Specification
+    - Abstract Ontology-Driven Language
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Language Specification
+    - Concrete Ontology-Driven Language
+    stereotype: mediation
+  notes:
+  - Abstract Ontology-Driven Language is literally stereotyped relator, not silently changed to Language kind.
+  - Prose specifys versus printed specifies' is not a new independent relation.
+- number: 5
+  pdf_page: 10
+  printed_page: 114
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Metamodel
+    stereotype: subkind
+    catalog_id: C33
+  - label: Model
+    stereotype: kind
+    catalog_id: C34
+  - label: Ontology (Artifact)
+    stereotype: kind
+    catalog_id: C01
+  - label: Foundational Ontology
+    stereotype: subkind
+    catalog_id: C04
+  - label: Ontological Foundation Constraints
+    stereotype: role
+    catalog_id: C42
+  - label: Ontology-Constrained Metamodel
+    stereotype: role
+    catalog_id: C36
+  - label: Ontological Constraints
+    stereotype: role
+    catalog_id: C37
+  - label: Direct Ontological Foundation
+    stereotype: role
+    catalog_id: C43
+  - label: Foundational Ontology-Driven Metamodel
+    stereotype: relator
+    catalog_id: C44
+  - label: Ontology-Driven Metamodel
+    stereotype: relator
+    catalog_id: C39
+  - label: Ontological Foundation
+    stereotype: rolemixin
+    catalog_id: C45
+  - label: Indirect Ontological Foundation
+    stereotype: role
+    catalog_id: C46
+  - label: Abstract Ontology-Driven Language
+    stereotype: relator
+    catalog_id: C40
+  - label: Concrete Ontology-Driven Language
+    stereotype: role
+    catalog_id: C38
+  - label: Ontology-Driven Modeling Language
+    stereotype: subkind
+    catalog_id: C35
+  - label: Ontology-Driven Language Specification
+    stereotype: relator
+    catalog_id: C41
+  generalizations:
+  - child: Metamodel
+    parent: Model
+  - child: Ontology-Constrained Metamodel
+    parent: Metamodel
+  - child: Ontological Constraints
+    parent: Ontology (Artifact)
+  - child: Foundational Ontology
+    parent: Ontology (Artifact)
+  - child: Ontological Foundation Constraints
+    parent: Foundational Ontology
+  - child: Direct Ontological Foundation
+    parent: Foundational Ontology
+  - child: Direct Ontological Foundation
+    parent: Ontological Foundation
+  - child: Indirect Ontological Foundation
+    parent: Ontological Foundation
+  - child: Foundational Ontology-Driven Metamodel
+    parent: Ontology-Driven Metamodel
+  - child: Abstract Ontology-Driven Language
+    parent: Ontology-Driven Metamodel
+  - child: Concrete Ontology-Driven Language
+    parent: Ontology-Driven Modeling Language
+  - child: Indirect Ontological Foundation
+    parent: Foundational Ontology-Driven Metamodel
+  generalization_sets: []
+  relations:
+  - name: drives
+    endpoints:
+    - Ontology-Constrained Metamodel
+    - Ontological Constraints
+    stereotype: material
+    role_label: OC
+  - name: drives'
+    endpoints:
+    - Ontology-Constrained Metamodel
+    - Ontological Foundation Constraints
+    stereotype: material
+    role_label: OFC {subsets OC}
+  - name: specifies'
+    endpoints:
+    - Abstract Ontology-Driven Language
+    - Concrete Ontology-Driven Language
+    stereotype: material
+    role_label: CODL {subsets CL}
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Metamodel
+    - Ontology-Constrained Metamodel
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Metamodel
+    - Ontological Constraints
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Foundational Ontology-Driven Metamodel
+    - Ontological Foundation Constraints
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Foundational Ontology-Driven Metamodel
+    - Ontology-Constrained Metamodel
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Language Specification
+    - Abstract Ontology-Driven Language
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontology-Driven Language Specification
+    - Concrete Ontology-Driven Language
+    stereotype: mediation
+  notes:
+  - Sixteen visible boxes, rather than a machine class population.
+  - Indirect foundation is a role with multiple visible refinements; correspondence must be checked in the actual
+    model.
+  - No formal import, exact UFO release, or semantic-preservation proof follows from these routes.
+- number: 6
+  pdf_page: 11
+  printed_page: 115
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Foundational Ontology
+    stereotype: subkind
+    catalog_id: C04
+  - label: Non-Foundational Ontologies
+    stereotype: subkind
+    catalog_id: C05
+  - label: Ontological Foundation Constraints
+    stereotype: role
+    catalog_id: C42
+  - label: Direct Ontological Foundation
+    stereotype: role
+    catalog_id: C43
+  - label: Foundational Ontology-Driven Metamodel
+    stereotype: relator
+    catalog_id: C44
+  - label: Well-grounded Ontology
+    stereotype: role
+    catalog_id: C47
+  - label: Ontological Foundation
+    stereotype: rolemixin
+    catalog_id: C45
+  - label: Indirect Ontological Foundation
+    stereotype: role
+    catalog_id: C46
+  - label: Ontological Grounding
+    stereotype: relator
+    catalog_id: C48
+  generalizations:
+  - child: Ontological Foundation Constraints
+    parent: Foundational Ontology
+  - child: Direct Ontological Foundation
+    parent: Foundational Ontology
+  - child: Direct Ontological Foundation
+    parent: Ontological Foundation
+  - child: Indirect Ontological Foundation
+    parent: Ontological Foundation
+  - child: Indirect Ontological Foundation
+    parent: Foundational Ontology-Driven Metamodel
+  - child: Well-grounded Ontology
+    parent: Non-Foundational Ontologies
+  generalization_sets: []
+  relations:
+  - name: groundedOver
+    endpoints:
+    - Well-grounded Ontology
+    - Ontological Foundation
+    stereotype: material
+    read_marker: RIGHT
+  - name: mediates
+    endpoints:
+    - Ontological Grounding
+    - Well-grounded Ontology
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Ontological Grounding
+    - Ontological Foundation
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Foundational Ontology-Driven Metamodel
+    - Ontological Foundation Constraints
+    stereotype: mediation
+  notes:
+  - Nine boxes; broad UFO family grounding is author-stated, not a pinned edition or actual import.
+- number: 7
+  pdf_page: 11
+  printed_page: 115
+  kind: ONTOUML_FRAGMENT
+  nodes:
+  - label: Ontology (Artifact)
+    stereotype: kind
+    catalog_id: C01
+  - label: Composite Ontology
+    stereotype: subkind
+    catalog_id: C49
+  - label: Atomic Ontology
+    stereotype: subkind
+    catalog_id: C50
+  - label: Ontology Network
+    stereotype: collective
+    catalog_id: C51
+  - label: Reused Ontology
+    stereotype: role
+    catalog_id: C52
+  - label: Reuser Ontology
+    stereotype: role
+    catalog_id: C53
+  - label: Reusability
+    stereotype: relator
+    catalog_id: C54
+  generalizations:
+  - child: Composite Ontology
+    parent: Ontology (Artifact)
+  - child: Atomic Ontology
+    parent: Ontology (Artifact)
+  - child: Reused Ontology
+    parent: Ontology (Artifact)
+  - child: Reuser Ontology
+    parent: Ontology (Artifact)
+  generalization_sets:
+  - members:
+    - Composite Ontology
+    - Atomic Ontology
+    parent: Ontology (Artifact)
+    disjoint: true
+    complete: true
+  - members:
+    - Reused Ontology
+    - Reuser Ontology
+    parent: Ontology (Artifact)
+    disjoint: false
+    complete: true
+  relations:
+  - name: subOntology
+    endpoints:
+    - Composite Ontology
+    - Ontology (Artifact)
+    stereotype: componentOf
+    multiplicities:
+    - null
+    - 2..*
+    profile:
+    - shareable
+    - irreflexive
+    - asymmetric
+    - acyclic
+    - transitive
+  - name: formedBy
+    endpoints:
+    - Ontology (Artifact)
+    - Ontology Network
+    stereotype: memberOf
+    multiplicities:
+    - 2..*
+    - '1'
+  - name: reuse
+    endpoints:
+    - Reused Ontology
+    - Reuser Ontology
+    stereotype: material
+    read_marker: LEFT
+  - name: mediates
+    endpoints:
+    - Reusability
+    - Reused Ontology
+    stereotype: mediation
+  - name: mediates
+    endpoints:
+    - Reusability
+    - Reuser Ontology
+    stereotype: mediation
+  notes:
+  - Seven visible boxes. Reused/Reuser generalization set is complete without disjointness; an ontology may occupy
+    both roles.
+  - subOntology is composition, formedBy membership, reuse a material relation. Their cardinalities and semantic
+    profiles are not exchanged.
+  - Reuse acyclicity is only described later in evaluation; the printed transitive/acyclic profile belongs to componentOf.
+- number: 8
+  pdf_page: 13
+  printed_page: 117
+  kind: TOOL_EXAMPLE_GRAPH
+  nodes:
+  - label: Vulnerability
+    stereotype: TERM
+  - label: A vulnerability is a weakness of an asset...
+    stereotype: DEFINITION_SNIPPET
+  - label: Weakness of an asset...
+    stereotype: DEFINITION_SNIPPET
+  - label: Vulnerability (aligned with...)
+    stereotype: DEFINITION_SNIPPET
+  - label: A vulnerability is a weakness in a system...
+    stereotype: DEFINITION_SNIPPET
+  - label: Vulnerability an occurrence of a...
+    stereotype: DEFINITION_SNIPPET
+  - label: A flaw in a software...
+    stereotype: DEFINITION_SNIPPET
+  - label: ISO/IEC 27032 2012
+    stereotype: SOURCE_ID
+  - label: ISO/IEC 27000 2018
+    stereotype: SOURCE_ID
+  - label: RecITU-T-X1500
+    stereotype: SOURCE_ID
+  - label: NIST-SP-800-12
+    stereotype: SOURCE_ID
+  - label: CWE TM
+    stereotype: SOURCE_ID
+  - label: CVE-1999-0001
+    stereotype: SOURCE_ID
+  - label: CVE ontology
+    stereotype: ONTOLOGY_USE
+  - label: CWE ontology
+    stereotype: ONTOLOGY_USE
+  generalizations: []
+  generalization_sets: []
+  relations:
+  - name: source_to_definition
+    endpoints:
+    - SOURCE_ID
+    - DEFINITION_SNIPPET
+    stereotype: SCREENSHOT_RED_EDGE
+  - name: definition_to_term
+    endpoints:
+    - DEFINITION_SNIPPET
+    - Vulnerability
+    stereotype: SCREENSHOT_ORANGE_EDGE
+  - name: definition_to_ontology
+    endpoints:
+    - DEFINITION_SNIPPET
+    - ONTOLOGY_USE
+    stereotype: SCREENSHOT_BLUE_EDGE
+  notes:
+  - 'Fifteen visible nodes: one term, six definition snippets, six source identifiers and two ontology uses.'
+  - The screenshot gives partial definition text and no global legend or cardinalities; snippets are not silently
+    completed from external standards.
+  - CVE-1999-0001 is retained as the screenshot source identifier, not promoted to a definition-authority endorsement.
+numbered_formula_count: 0
+numbered_table_count: 0
+appendix_count: 0
+numbered_notes:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+bibliography_entries: 66
+machine_class_count: null
+boundary: Manual reconstruction of the selected paper only. Read markers preserve visible label orientation; material
+  associations are not automatically directed RDF properties. Source labels/stereotypes and the Core/Domain inconsistency
+  remain explicit. No copied figure images or full definitions are published.

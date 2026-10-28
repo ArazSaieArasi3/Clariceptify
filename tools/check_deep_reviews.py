@@ -195,6 +195,28 @@ def validate_dossier(d, entry, dimensions):
         require(d['paper_formalization']['numbered_formula_count'] == 0 and
                 d['paper_formalization']['quantification_of_printed_trigger_restriction'] ==
                 'NOT_SPECIFIED_AS_DL_FORMULA', 'EmotionsOnto prose promoted to a printed DL formula')
+    if d['work_id'] == 'CLR-RW-O4OA':
+        pop = d['author_reported_population']
+        require(pop['basis'] == 'AUTHOR_REPORTED' and
+                [pop[k] for k in ['cybersecurity_concepts', 'reliable_sources', 'risk_definitions']] ==
+                [161, 73, 18] and not pop['independently_reproduced'] and
+                pop['model_class_count'] is None and
+                all(v is None for v in d['artifact']['machine_class_populations'].values()),
+                'O4OA case population promoted to verified machine census')
+        formal = d['paper_formalization']
+        require(formal['numbered_formula_count'] == 0 and formal['numbered_table_count'] == 0 and
+                not formal['printed_ocl_or_alloy_code'] and
+                formal['complete_axiom_set'] == 'EXPLICITLY_FUTURE_WORK' and
+                formal['reviewer_solver_execution'] == 'NOT_EXECUTED' and
+                formal['global_consistency'] == 'NOT_ESTABLISHED',
+                'O4OA omitted formalism or reported modular analysis promoted')
+        support = d['artifact']['supporting_specification']
+        require(support['status'] == 'ACQUIRED_NOT_DEEP_REVIEWED' and
+                support['pdf_pages'] == 44 and not support['primary_paper_substitution'] and
+                support['sha256'] != d['source']['sha256'] and
+                not d['artifact']['all_class_definitions_complete'] and
+                d['artifact']['historical_correspondence'] == 'NOT_ESTABLISHED',
+                'O4OA supporting specification or artifact promoted to completed paper input')
     if d['status'] == 'REVIEW_COMPLETE':
         require(d['coverage']['read_pages'] == entry.get('review_pages', list(range(1, entry['pdf_pages'] + 1))), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and
@@ -205,6 +227,57 @@ def validate_dossier(d, entry, dimensions):
                 d['artifact']['version_relation'] and d['artifact']['status'], 'artifact boundary missing')
     else:
         require(d['status'] == 'IN_PROGRESS', 'invalid review state')
+
+
+def validate_o4oa_figure_ledger(dossier, ledger):
+    figures = ledger['figures']
+    if (ledger['work_id'] != 'CLR-RW-O4OA' or
+            ledger['source_sha256'] != dossier['source']['sha256'] or
+            [f['number'] for f in figures] != list(range(1, 9)) or
+            [f['pdf_page'] for f in figures] != [6, 8, 9, 9, 10, 11, 11, 13] or
+            [len(f['nodes']) for f in figures] != [9, 12, 16, 11, 16, 9, 7, 15]):
+        raise ValueError('Incomplete or substituted O4OA figure population')
+    if {'child': 'Core Ontology', 'parent': 'Domain Ontology'} not in figures[0]['generalizations']:
+        raise ValueError('O4OA Core/Domain source discrepancy silently repaired')
+    concept = next(n for n in figures[1]['nodes'] if n['label'] == 'Concept (abstract object)')
+    term = next(n for n in figures[1]['nodes'] if n['label'] == 'Term (syntax)')
+    if (concept['stereotype'] != 'role' or term['stereotype'] != 'kind' or
+            not any(r['label'] == 'Mental Concept / trope sense' for r in dossier['catalog'])):
+        raise ValueError('O4OA mental Concept collapsed into syntactic Term role')
+    gens = figures[2]['generalizations']
+    if (not all(r in gens for r in [
+            {'child': 'Ontological Reference', 'parent': 'Domain Description'},
+            {'child': 'Well-defined Ontology', 'parent': 'Ontology Schema'}]) or
+            {'child': 'Ontological Reference', 'parent': 'Reference Ontology'} in gens or
+            {'child': 'Well-defined Ontology', 'parent': 'Operational Ontology'} in gens):
+        raise ValueError('O4OA relator-role identity level silently changed')
+    reuse = next(s for s in figures[6]['generalization_sets']
+                 if 'Reused Ontology' in s['members'])
+    if reuse['disjoint'] or not reuse['complete']:
+        raise ValueError('O4OA legal reuse-role overlap removed')
+    relations = {r['name']: r for r in figures[6]['relations']}
+    if (relations['formedBy']['stereotype'] != 'memberOf' or
+            relations['formedBy']['multiplicities'] != ['2..*', '1'] or
+            relations['reuse'].get('profile') or
+            relations['subOntology']['stereotype'] != 'componentOf'):
+        raise ValueError('O4OA membership/composition/reuse profiles exchanged')
+    catalog = {r['id']: r for r in dossier['catalog']}
+    for f in figures[:7]:
+        for n in f['nodes']:
+            if n.get('catalog_id') not in catalog or catalog[n['catalog_id']]['label'] != n['label']:
+                raise ValueError('Uncataloged O4OA visible type')
+    if ledger['machine_class_count'] is not None or ledger['numbered_formula_count'] != 0:
+        raise ValueError('O4OA diagram or prose promoted to machine/formula population')
+
+
+def validate_o4oa_cqs(record):
+    ids = [r['source_id'] for r in record['rows']]
+    expected = ['CQ1'] + [f'CQ1.{i}' for i in range(1, 9)] + ['CQ2'] + [
+        f'CQ2.{i}' for i in range(1, 9)] + ['CQ3'] + [f'CQ3.{i}' for i in range(1, 6)]
+    if (ids != expected or record['historical_correspondence'] != 'NOT_ESTABLISHED' or
+            record['query_or_solver_execution'] != 'NOT_EXECUTED' or
+            record['source_sha256'] != '2f77c5444d23140465247fd192d06992d3eec2d0755a900f8c579ec2f01abc60'):
+        raise ValueError('O4OA current CQ documentation promoted or incomplete')
 
 
 def validate_cognitive_figure_ledger(dossier, ledger):
@@ -514,6 +587,8 @@ def check(root=ROOT):
                 validate_emotions_figure_ledger(d, yaml.safe_load(raw))
             elif d['work_id'] == 'CLR-RW-DUL':
                 validate_dul_figure_ledger(d, yaml.safe_load(raw))
+            elif d['work_id'] == 'CLR-RW-O4OA':
+                validate_o4oa_figure_ledger(d, yaml.safe_load(raw))
             else:
                 raise ValueError('Unknown paper figure-ledger contract')
         if 'diagram_inventory' in d:
@@ -532,6 +607,12 @@ def check(root=ROOT):
             binding = d['artifact']['discovery_execution']
             if hashlib.sha256((root / binding['path']).read_bytes()).hexdigest() != binding['sha256']:
                 raise ValueError('Changed discovery execution evidence')
+        if 'current_documentation_cqs' in d['artifact']:
+            binding = d['artifact']['current_documentation_cqs']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed O4OA current documentation CQ evidence')
+            validate_o4oa_cqs(yaml.safe_load(raw))
         if 'selected_source_correspondence' in d['artifact']:
             binding = d['artifact']['selected_source_correspondence']
             raw = (root / binding['path']).read_bytes()

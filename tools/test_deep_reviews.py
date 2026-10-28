@@ -560,5 +560,72 @@ class DulChapterBoundaryTests(unittest.TestCase):
         self.reject('historical machine acceptance')
 
 
+class O4oaBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE
+        self.dossier = yaml.safe_load((base / 'CLR-RW-O4OA/review.yaml').read_text())
+        self.ledger = yaml.safe_load((base / 'CLR-RW-O4OA/figures.yaml').read_text())
+        self.entry = next(e for e in yaml.safe_load((base / 'register.yaml').read_text())['acquired_papers']
+                          if e['id'] == 'CLR-RW-O4OA')
+        self.dimensions = yaml.safe_load((base / 'protocol.yaml').read_text())['dimensions']
+
+    def reject_dossier(self, text):
+        with self.assertRaisesRegex(ValueError, text):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def reject_figure(self, text):
+        from check_deep_reviews import validate_o4oa_figure_ledger
+        with self.assertRaisesRegex(ValueError, text):
+            validate_o4oa_figure_ledger(self.dossier, self.ledger)
+
+    def test_dataset_concepts_are_not_machine_classes(self):
+        self.dossier['artifact']['machine_class_populations']['local_named_classes'] = 161
+        self.reject_dossier('case population promoted')
+
+    def test_reported_modular_analysis_is_not_global_consistency(self):
+        self.dossier['paper_formalization']['global_consistency'] = 'PASS'
+        self.reject_dossier('reported modular analysis promoted')
+
+    def test_future_axioms_are_not_a_printed_complete_formalization(self):
+        self.dossier['paper_formalization']['printed_ocl_or_alloy_code'] = True
+        self.reject_dossier('omitted formalism')
+
+    def test_supporting_specification_is_not_deep_reviewed(self):
+        self.dossier['artifact']['supporting_specification']['status'] = 'REVIEW_COMPLETE'
+        self.reject_dossier('supporting specification')
+
+    def test_core_hierarchy_cannot_be_silently_repaired(self):
+        row = next(r for r in self.ledger['figures'][0]['generalizations'] if r['child'] == 'Core Ontology')
+        row['child'], row['parent'] = row['parent'], row['child']
+        self.reject_figure('Core/Domain source discrepancy')
+
+    def test_mental_concept_is_not_the_term_role(self):
+        row = next(r for r in self.ledger['figures'][1]['nodes'] if r['label'] == 'Concept (abstract object)')
+        row['stereotype'] = 'kind'
+        self.reject_figure('mental Concept collapsed')
+
+    def test_relator_role_is_not_an_artifact_subclass(self):
+        row = next(r for r in self.ledger['figures'][2]['generalizations'] if r['child'] == 'Ontological Reference')
+        row['parent'] = 'Reference Ontology'
+        self.reject_figure('relator-role identity level')
+
+    def test_legal_reuse_chains_keep_role_overlap(self):
+        row = next(r for r in self.ledger['figures'][6]['generalization_sets'] if 'Reused Ontology' in r['members'])
+        row['disjoint'] = True
+        self.reject_figure('legal reuse-role overlap')
+
+    def test_membership_does_not_inherit_composition_profile(self):
+        row = next(r for r in self.ledger['figures'][6]['relations'] if r['name'] == 'formedBy')
+        row['stereotype'] = 'componentOf'
+        self.reject_figure('profiles exchanged')
+
+    def test_current_cq_mapping_is_not_solver_execution(self):
+        from check_deep_reviews import validate_o4oa_cqs
+        record = yaml.safe_load((ROOT / BASE / 'CLR-RW-O4OA/current-cqs.yaml').read_text())
+        record['query_or_solver_execution'] = 'PASS'
+        with self.assertRaisesRegex(ValueError, 'current CQ documentation promoted'):
+            validate_o4oa_cqs(record)
+
+
 if __name__ == '__main__':
     unittest.main()
