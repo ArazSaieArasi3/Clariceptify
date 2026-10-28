@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "work_id": "BDI2026Preprint",
+  "checked_on": "2026-10-28",
+  "source_sha256": "e4fbe911555a62050b8ccc1f07b6c13e0aa36af486ad6767c3d6ed446681c676",
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "printed_page_mapping": "Printed Page 1 of 21 through Page 21 of 21 coincide with PDF pages.",
+  "extraction": {
+    "tool": "pdftotext -layout plus PyMuPDF page text",
+    "ocr": "NOT_REQUIRED",
+    "caveat": "Two-column extraction interleaves headings/formulas; all pages were visually checked against the source."
+  },
+  "visual_inspection": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "renderer": "PyMuPDF 1.26.6",
+    "scale": 1.7,
+    "page_renders": [
+      {
+        "page": 1,
+        "sha256": "0df11c8787739ad3c53c46632a9d135d5ebc01dbbdf0bcfdc3eb1112b6f6ff92"
+      },
+      {
+        "page": 2,
+        "sha256": "9de248395030aeb0e4d9908a0236d7011a3028dada3d09e1bbe66171a06074e8"
+      },
+      {
+        "page": 3,
+        "sha256": "eada814363bf4ddbb3a6139782a11721ec2fdfb55114df2a264332b1d1700ab8"
+      },
+      {
+        "page": 4,
+        "sha256": "b4e61554e7a3705c4317fb4fd3cdfefcbae8de64884803b160b89fc403676fe3"
+      },
+      {
+        "page": 5,
+        "sha256": "024014a666695000ff8a49c8dbe2a1e1871558e8b59ec5f789e5024b09ffb17c"
+      },
+      {
+        "page": 6,
+        "sha256": "05e94ec51e14663a29ebce7967d7689b6956bc2dd541c757add762c2b9ae7a99"
+      },
+      {
+        "page": 7,
+        "sha256": "4637cf20a1e77729869d07fb6f1d3cd85128c5ee58009fb9e7fecc02f9eef8d3"
+      },
+      {
+        "page": 8,
+        "sha256": "c27721e9102d9099eda1f6e6a9dfe039d7f3689b15f04a758f818b292598ff59"
+      },
+      {
+        "page": 9,
+        "sha256": "377262a6c1d7192e97c4684080c6cbe11095afca24c86430b75d4938e8875738"
+      },
+      {
+        "page": 10,
+        "sha256": "d9ccb4e2913019a5c54dda62aec921cc1a4cfa40bcde65cb4c722a0b1c0ebc95"
+      },
+      {
+        "page": 11,
+        "sha256": "cb277c0a2b271a4cd59f3facd14ffa35920034cdb2d431c625452d67233c87bf"
+      },
+      {
+        "page": 12,
+        "sha256": "41ecba8214621cefd8e3a4b79d9a6e109b672f74579cce441fe286f58afa6e64"
+      },
+      {
+        "page": 13,
+        "sha256": "6e729836b5c3e2bbcf34afebbe41e628a9d72e7f6ae23641a8e31fb072afb406"
+      },
+      {
+        "page": 14,
+        "sha256": "a3b6e93379cc252fea66cb86408873f4a83de73e10da92019d1ff6a70b841846"
+      },
+      {
+        "page": 15,
+        "sha256": "0d843355bc53927e71ee779b6e470489a2722542fc95814bb8d7866a7e99e5cc"
+      },
+      {
+        "page": 16,
+        "sha256": "d1c7e6164cc9b5492ced885d503f3601886e4013ef2353e1cc6855df7591fe88"
+      },
+      {
+        "page": 17,
+        "sha256": "5da6f5c22146e2b95e5c958d2f3732fb3cbda62e11d9c03a3a1d78c31dfbed4e"
+      },
+      {
+        "page": 18,
+        "sha256": "eb413786065bc6d80b9909480bf50599b716f805389461c5061c20e58e54085c"
+      },
+      {
+        "page": 19,
+        "sha256": "f596d5ac06cc2ba8f64b7dd6a7b4d4c3dc89d0e6dc292b2ba6c5c67138e539ec"
+      },
+      {
+        "page": 20,
+        "sha256": "4e6b3824a74789411ad4d05f4009b4170f7b0af7f63f1369f02cbfb1430d8829"
+      },
+      {
+        "page": 21,
+        "sha256": "4950a1a7b36f1cdab4b286c50717487b31245bd53b65629f80863f6a0a5b2a82"
+      }
+    ],
+    "special_checks": [
+      "Figure 1: all 22 class boxes and printed relation labels",
+      "Table 1: all 18 CQs and four groups",
+      "Table 2: all 20 reported metrics",
+      "Table 3: all three task rows",
+      "Both RDF listings on pp.9-10 and their explanatory prose on pp.10-11",
+      "Appendix A: all three story cards, including repeated A.3 heading and CQ17/CQ18 mismatch in A.1",
+      "Appendix B: all 78 numbered axioms, duplicate formulas and literal identifiers",
+      "All footnotes 1-19, author notes and references 1-37"
+    ]
+  },
+  "semantics_or_solver_executed": "NOT_EXECUTED",
+  "source_redistributed": false,
+  "limits": "A complete critical reading is an AI-assisted coverage declaration. Render hashes and integrity checks are not a mechanical proof of understanding or independent expert agreement."
+}

@@ -4,6 +4,8 @@ Date: 2026-10-25. Input: main 29cc41372e046da9791534019b23a899c105c3f5.
 
 The [complete access inventory](../../evidence/related-work/corpus/access-inventory.yaml) covers all 19 original candidate labels, with additional versions and the distinct 2026 BDI work separate. Acquisition is not critical review. The owner-accessible archive contains 12 validated PDFs (185 pages), direct formal resources and five complete tracked-tree repository snapshots. All 62 ZIP members were read back; exact hashes and missing-access evidence are recorded. The [archive receipt](../../evidence/related-work/corpus/archive-record.json) publishes its identity without redistributing third-party bytes.
 
+The current [deep-review register](../../evidence/related-work/deep-reviews/register.yaml) and [coverage guide](../../evidence/related-work/deep-reviews/coverage-guide.md) supersede the original paper-review paths for upgraded issues. The 2026-10-28 [BDI2026Preprint dossier](../../evidence/related-work/deep-reviews/BDI2026Preprint/report.md), #249, completes the retained arXiv v2 paper review: all 21 pages and 78 numbered formulas. The historical 2025 filename is preserved; final journal byte equivalence remains unverified. Selected official core 0.5 and alignment-import 0.3 are distinct; all-class definitions, imports and semantic checks remain open in #250. Ten of 12 acquired papers now have completed deep reviews. The remaining independent acquired-paper order is #79, then #262; seven missing texts remain separate access gaps.
+
 ## Missing texts requested from the owner
 
 These are all seven currently identified missing texts in this frozen inventory. A failed endpoint is not evidence that the work is unavailable everywhere. An unknown DOI is retained as unknown.
@@ -45,7 +47,7 @@ The owner explicitly requested full reference-artifact access and medium-sized c
 | R2-ART-IDA | [#246](https://github.com/ArazSaieArasi3/Clariceptify/issues/246) | evidence/related-work/artifacts/IDA.yaml |
 | R2-ART-BDI2020 | [#247](https://github.com/ArazSaieArasi3/Clariceptify/issues/247) | evidence/related-work/artifacts/BDI2020.yaml |
 | R2-ART-DOLCEMental | [#248](https://github.com/ArazSaieArasi3/Clariceptify/issues/248) | evidence/related-work/artifacts/DOLCEMental.yaml |
-| R2-LIT-BDI2026 | [#249](https://github.com/ArazSaieArasi3/Clariceptify/issues/249) | evidence/related-work/reviews/BDI2026.yaml |
+| R2-LIT-BDI2026 | [#249](https://github.com/ArazSaieArasi3/Clariceptify/issues/249) | [Superseding deep dossier](../../evidence/related-work/deep-reviews/BDI2026Preprint/review.yaml) |
 | R2-ART-BDI2026 | [#250](https://github.com/ArazSaieArasi3/Clariceptify/issues/250) | evidence/related-work/artifacts/BDI2026.yaml |
 | R2-CMP-001 | [#251](https://github.com/ArazSaieArasi3/Clariceptify/issues/251) | evidence/related-work/comparisons/batch-1.yaml |
 | R2-CMP-002 | [#252](https://github.com/ArazSaieArasi3/Clariceptify/issues/252) | evidence/related-work/comparisons/batch-2.yaml |

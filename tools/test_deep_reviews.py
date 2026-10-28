@@ -314,5 +314,58 @@ class BdiVariantBoundaryTests(unittest.TestCase):
             self.validate()
 
 
+class FossrSourceBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE
+        self.dossier = yaml.safe_load((base / 'BDI2026Preprint/review.yaml').read_text())
+        self.entry = next(r for r in yaml.safe_load((base / 'register.yaml').read_text())['acquired_papers']
+                          if r['id'] == 'BDI2026Preprint')
+        self.dimensions = yaml.safe_load((base / 'protocol.yaml').read_text())['dimensions']
+
+    def validate(self):
+        validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def test_recount_cannot_hide_omitted_numbered_source_formula(self):
+        self.dossier['commitments'].pop(12)
+        pop = self.dossier['labeled_formula_population']
+        pop['labels'] = [r['formula_label'] for r in self.dossier['commitments']]
+        pop['count'] = len(pop['labels'])
+        with self.assertRaisesRegex(ValueError, 'numbered source population'):
+            self.validate()
+
+    def test_typing_only_does_not_silently_gain_a_trigger_witness(self):
+        self.dossier['commitments'][27]['normalized_formula'] = (
+            'MentalProcess SubClassOf (isTriggeredBy some MentalEntity)')
+        with self.assertRaisesRegex(ValueError, 'quantification silently changed'):
+            self.validate()
+
+    def test_source_duplicate_does_not_become_a_new_axiom(self):
+        self.dossier['commitments'][38]['normalized_formula'] = 'Belief SubClassOf (motivates only Desire)'
+        with self.assertRaisesRegex(ValueError, 'printed duplicate silently changed'):
+            self.validate()
+
+    def test_figure_only_goal_process_cannot_disappear(self):
+        self.dossier['figure_inventory']['class_boxes'].remove('GoalProcess')
+        self.dossier['catalog'] = [r for r in self.dossier['catalog'] if r['label'] != 'GoalProcess']
+        with self.assertRaisesRegex(ValueError, 'paper figure taxonomy'):
+            self.validate()
+
+    def test_alignment_import_is_not_silently_updated_to_current_core(self):
+        alignment = next(r for r in self.dossier['artifact']['selected_files'] if r['path'].endswith('.rdf'))
+        alignment['declared_import_iris'][1] = 'https://w3id.org/fossr/bdi/ontology/0.5/'
+        with self.assertRaisesRegex(ValueError, 'version mismatch hidden'):
+            self.validate()
+
+    def test_preprint_doi_metadata_is_not_final_byte_equivalence(self):
+        self.dossier['identity']['final_journal_byte_equivalence'] = 'VERIFIED'
+        with self.assertRaisesRegex(ValueError, 'final journal equivalence'):
+            self.validate()
+
+    def test_reported_class_count_is_not_an_independent_census(self):
+        self.dossier['artifact']['machine_class_populations']['local'] = 22
+        with self.assertRaisesRegex(ValueError, 'paper counts promoted'):
+            self.validate()
+
+
 if __name__ == '__main__':
     unittest.main()
