@@ -627,5 +627,58 @@ class O4oaBoundaryTests(unittest.TestCase):
             validate_o4oa_cqs(record)
 
 
+class MentalNeedsBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE / 'CLR-RW-DOLCEMental'
+        self.dossier = yaml.safe_load((base / 'review.yaml').read_text())
+        self.ledger = yaml.safe_load((base / 'content-ledger.yaml').read_text())
+
+    def reject(self, text):
+        from check_deep_reviews import validate_mental_content_ledger
+        with self.assertRaisesRegex(ValueError, text):
+            validate_mental_content_ledger(self.dossier, self.ledger)
+
+    def change_formula(self, label, value):
+        next(r for r in self.dossier['commitments'] if r['formula_label'] == label)['normalized_formula'] = value
+        next(r for r in self.ledger['formulas'] if r['label'] == label)['literal_ascii'] = value
+
+    def test_incomplete_d6_cannot_be_silently_closed(self):
+        formula = next(r for r in self.dossier['commitments'] if r['formula_label'] == 'd6')['normalized_formula']
+        self.change_formula('d6', formula + ')))')
+        self.reject('incomplete printed d6 silently repaired')
+
+    def test_absolute_need_constraint_is_not_biconditional(self):
+        self.change_formula('d12', 'need3(x,y,t) <-> egoal(x,y,t) & need0(x,y,t)')
+        self.reject('one-way d12 promoted')
+
+    def test_global_content_identity_is_not_only_per_time(self):
+        self.change_formula('a6', "about1(x,y,t) & about1(x,y',t) -> y = y'")
+        self.reject('global content identity weakened')
+
+    def test_instrumental_need_does_not_require_mental_need(self):
+        self.ledger['need_relation_inclusions']['need1_or_need2_implies_need0'] = True
+        self.reject('overlapping uses promoted')
+
+    def test_association_figure_is_not_a_class_hierarchy(self):
+        self.ledger['figures'][0]['kind'] = 'CLASS_HIERARCHY'
+        self.reject('association diagram promoted')
+
+    def test_conditional_argument_is_not_a_full_theory_countermodel(self):
+        self.dossier['paper_formalization']['full_theory_collapse'] = 'PROVED'
+        self.reject('conditional critique or author/future claim promoted')
+
+    def test_author_consistency_claim_is_not_independent_result(self):
+        self.dossier['paper_formalization']['independent_consistency'] = 'PASS'
+        self.reject('conditional critique or author/future claim promoted')
+
+    def test_future_indexing_is_not_implemented(self):
+        self.dossier['paper_formalization']['future_satisfier_indexing'] = 'IMPLEMENTED'
+        self.reject('conditional critique or author/future claim promoted')
+
+    def test_draft_file_is_not_exact_published_formula_identity(self):
+        self.dossier['artifact']['paper_formula_identity'] = 'EXACTLY_EQUIVALENT'
+        self.reject('selected draft inspection promoted')
+
+
 if __name__ == '__main__':
     unittest.main()

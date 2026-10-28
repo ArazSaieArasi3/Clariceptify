@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "work_id": "CLR-RW-DOLCEMental",
+  "paper_sha256": "55f6dc932422c646b04a1defafe176574e4c248fe827c9106dded222cb14f98f",
+  "source_commit": "93734dbe35c931338b3b9aba66b75c250baf6655",
+  "source_file": "dolce_needs.p",
+  "source_sha256": "61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc",
+  "scope": "Manual selected-statement correspondence, not complete formal parsing, glossary, proof or historical release parity.",
+  "observations": [
+    {
+      "id": "A01",
+      "paper": "a4-a6",
+      "source_lines": [
+        123,
+        125,
+        127,
+        129
+      ],
+      "observation": "File adds state/concept presence at aboutness time; global content uniqueness remains explicit."
+    },
+    {
+      "id": "A02",
+      "paper": "d2-d3 and role prose",
+      "source_lines": [
+        142,
+        143,
+        147,
+        149
+      ],
+      "observation": "File comments map concepts to intentional contents and entities to objects; intCont differs from printed intCon. Its intObj definition omits printed d3 explicit about1 conjunct."
+    },
+    {
+      "id": "A03",
+      "paper": "MS subtypes and d4-d5",
+      "source_lines": [
+        157,
+        159,
+        161,
+        163,
+        187,
+        188,
+        189,
+        190
+      ],
+      "observation": "Belief/desire/need types point to state rather than directly ms; intention subtype/projection lines are commented. Des/need0 file projections include APO guard absent in printed d4/d5."
+    },
+    {
+      "id": "A04",
+      "paper": "d6",
+      "source_lines": [
+        202,
+        203
+      ],
+      "observation": "File contains a syntactically delimited goal expression; it is a separate source, not permission to silently repair the printed display."
+    },
+    {
+      "id": "A05",
+      "paper": "d8 and d11",
+      "source_lines": [
+        234,
+        267
+      ],
+      "observation": "Printed existence of a satisfier is an operand of implication/biconditional; file quantifies E over that connective. Different scope retained; no equivalence asserted."
+    },
+    {
+      "id": "A06",
+      "paper": "d12",
+      "source_lines": [
+        273
+      ],
+      "observation": "Only forward implication is present in both printed/source forms; no biconditional or harm test supplied."
+    },
+    {
+      "id": "A07",
+      "paper": "author consistency/consequence claim note15",
+      "source_lines": [
+        28,
+        40,
+        41,
+        60,
+        61,
+        169,
+        171,
+        173,
+        175,
+        177,
+        296,
+        298,
+        300,
+        301,
+        302,
+        304,
+        305,
+        315,
+        320,
+        324,
+        328,
+        332,
+        336,
+        340,
+        341,
+        345,
+        349,
+        353,
+        355
+      ],
+      "observation": "Selected file has repeated formula names, active example axioms and multiple conjectures. Lines336 and349 raise antecedent/binding/argument-type questions. Inline Consistent/ok comments are claims, not retained runs; no parser rejection or global inconsistency claimed."
+    }
+  ],
+  "full_symbol_definition_catalog": "PENDING_248",
+  "syntax_parser_execution": "NOT_EXECUTED",
+  "darwin_or_hets_execution": "NOT_EXECUTED",
+  "scientific_acceptance": "NOT_ASSESSED"
+}

@@ -229,6 +229,52 @@ def validate_dossier(d, entry, dimensions):
         require(d['status'] == 'IN_PROGRESS', 'invalid review state')
 
 
+def validate_mental_content_ledger(dossier, ledger):
+    expected = [f'a{i}' for i in range(1, 7)] + [f'd{i}' for i in range(1, 13)]
+    formulas = dossier['commitments']
+    if (ledger['work_id'] != 'CLR-RW-DOLCEMental' or
+            ledger['source_sha256'] != dossier['source']['sha256'] or
+            [r['formula_label'] for r in formulas] != expected or
+            [r['label'] for r in ledger['formulas']] != expected or
+            [r['formula_page'] for r in formulas] != [11] * 9 + [12] * 9):
+        raise ValueError('Incomplete or substituted mental-needs display population')
+    by_label = {r['formula_label']: r for r in formulas}
+    for row, source in zip(formulas, ledger['formulas']):
+        if row['normalized_formula'] != source['literal_ascii']:
+            raise ValueError('Mental-needs dossier/printed ledger mismatch')
+    d6 = by_label['d6']['normalized_formula']
+    if d6.count('(') - d6.count(')') != 3:
+        raise ValueError('Mental-needs incomplete printed d6 silently repaired')
+    if by_label['d12']['normalized_formula'] != 'need3(x,y,t) -> egoal(x,y,t) & need0(x,y,t)':
+        raise ValueError('Mental-needs one-way d12 promoted to definition')
+    if by_label['a6']['normalized_formula'] != "about1(x,y,t) & about1(x,y',t') -> y = y'":
+        raise ValueError('Mental-needs global content identity weakened to per-time')
+    inclusion = ledger['need_relation_inclusions']
+    if (inclusion['need2_implies'] != 'need1' or inclusion['need3_implies'] != 'need0' or
+            inclusion['need1_or_need2_implies_need0'] or inclusion['four_need_relations_disjoint']):
+        raise ValueError('Mental-needs overlapping uses promoted to disjoint state taxonomy')
+    figure = ledger['figures']
+    if (len(figure) != 1 or figure[0]['pdf_page'] != 8 or
+            figure[0]['kind'] != 'ABOUTNESS_ASSOCIATION_NOT_CLASS_HIERARCHY' or
+            len(figure[0]['boxes']) != 3 or len(figure[0]['edges']) != 3 or
+            ledger['machine_class_count'] is not None):
+        raise ValueError('Mental-needs association diagram promoted to class census')
+    formal = dossier['paper_formalization']
+    if (formal['full_theory_collapse'] != 'NOT_PROVED' or
+            formal['counterexample_scope'] != 'FORMULA_LOCAL_OR_EXPLICIT_BACKGROUND_CONDITIONAL_NOT_FULL_THEORY_MODEL' or
+            formal['reviewer_parser_execution'] != 'NOT_EXECUTED' or
+            formal['reviewer_solver_execution'] != 'NOT_EXECUTED' or
+            formal['independent_consistency'] != 'NOT_ESTABLISHED' or
+            formal['future_satisfier_indexing'] != 'EXPLICIT_FUTURE_WORK_NOTE23'):
+        raise ValueError('Mental-needs conditional critique or author/future claim promoted')
+    artifact = dossier['artifact']
+    if (artifact['native_symbol_glossary'] != 'PENDING_248' or
+            artifact['paper_formula_identity'] != 'SELECTED_DIFFERENCES_OBSERVED' or
+            artifact['reasoner_execution'] != 'NOT_EXECUTED' or
+            any(x is not None for x in artifact['machine_class_populations'].values())):
+        raise ValueError('Mental-needs selected draft inspection promoted to complete artifact')
+
+
 def validate_o4oa_figure_ledger(dossier, ledger):
     figures = ledger['figures']
     if (ledger['work_id'] != 'CLR-RW-O4OA' or
@@ -589,6 +635,8 @@ def check(root=ROOT):
                 validate_dul_figure_ledger(d, yaml.safe_load(raw))
             elif d['work_id'] == 'CLR-RW-O4OA':
                 validate_o4oa_figure_ledger(d, yaml.safe_load(raw))
+            elif d['work_id'] == 'CLR-RW-DOLCEMental':
+                validate_mental_content_ledger(d, yaml.safe_load(raw))
             else:
                 raise ValueError('Unknown paper figure-ledger contract')
         if 'diagram_inventory' in d:
