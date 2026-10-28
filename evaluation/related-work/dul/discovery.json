@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-28",
+  "searches": [
+    {
+      "query": "\"DOLCE+DnS Ultralite\"",
+      "limit": 10,
+      "returned": [
+        "FSCHOEN/CO-PLM"
+      ]
+    },
+    {
+      "query": "DUL ontologydesignpatterns",
+      "limit": 10,
+      "returned": []
+    }
+  ],
+  "foundation_repository": {
+    "name": "appliedontolab/DOLCE",
+    "url": "https://github.com/appliedontolab/DOLCE",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-09-18T08:19:03Z",
+    "observed_head": "cca21e82b38fe6956e9619516dad92116782a4a2",
+    "tree_sha": "cca21e82b38fe6956e9619516dad92116782a4a2",
+    "truncated": false,
+    "tracked_blob_paths": [
+      "FOL/DOLCEepistemicFOL/readme.md",
+      "FOL/DOLCEsimpleFOL/DOLCEsimpleFOL.in",
+      "FOL/DOLCEsimpleFOL/DOLCEsimpleFOL_mace4.o",
+      "FOL/DOLCEsimpleFOL/DOLCEsimpleFOL_mace4_cooked.o",
+      "FOL/DOLCEsimpleFOL/DOLCEsimpleFOL_model.in",
+      "FOL/DOLCEsimpleFOL/readme.md",
+      "FOL/DOLCEsimpleNaryFOL/DOLCEsimpleNaryFOL.in",
+      "FOL/DOLCEsimpleNaryFOL/DOLCEsimpleNaryFOL_model.in",
+      "FOL/DOLCEsimpleNaryFOL/readme.md",
+      "FOL/readme.md",
+      "LICENSE",
+      "OWL/Alignments/sosa-dolce.md",
+      "OWL/Archive/DOLCEbasic-2.0.ttl",
+      "OWL/Archive/DOLCEbasic-2.1.owl",
+      "OWL/Archive/DOLCEbasic-2.2.owl",
+      "OWL/Archive/DOLCEbasic-2.3.owl",
+      "OWL/Archive/DOLCEbasic-2.4.owl",
+      "OWL/Archive/DOLCEbasic-2.5.owl",
+      "OWL/Archive/DOLCEbasic-2.6.owl",
+      "OWL/Archive/DOLCEbasic-2.7.owl",
+      "OWL/Archive/DOLCEbasic-3.1.owl",
+      "OWL/Archive/DOLCEbasic-3.2.owl",
+      "OWL/Archive/DOLCEbasic-3.3.owl",
+      "OWL/Archive/DOLCEbasic-3.4.owl",
+      "OWL/Archive/DOLCEepistemic-0.1.owl",
+      "OWL/Archive/DOLCEepistemic-0.6.owl",
+      "OWL/Archive/DOLCEnaryRel-4.3.owl",
+      "OWL/Archive/DOLCEnaryRel-4.4.owl",
+      "OWL/DOLCEbasic-3.5.owl",
+      "OWL/DOLCEbasic.owl",
+      "OWL/DOLCEepistemic-0.7.owl",
+      "OWL/DOLCEepistemic.owl",
+      "OWL/DOLCEnaryRel-4.5.owl",
+      "OWL/DOLCEnaryRel.owl",
+      "OWL/DOLCEtweaks-0.1.owl",
+      "OWL/DOLCEtweaks.owl",
+      "OWL/Proof/DOLCEsimpleFOL_to_DOLCEbasicOWL/DOLCEsimpleFOL_axioms.in",
+      "OWL/Proof/DOLCEsimpleFOL_to_DOLCEbasicOWL/DOLCEsimpleFOL_to_DOLCEbasicOWL.in",
+      "OWL/Proof/DOLCEsimpleFOL_to_DOLCEbasicOWL/report_DOLCEbasicOWL_axioms.txt",
+      "OWL/Proof/DOLCEsimpleNaryFOL_to_DOLCEnaryRelOWL/DOLCEsimpleNaryFOL_axioms.in",
+      "OWL/Proof/DOLCEsimpleNaryFOL_to_DOLCEnaryRelOWL/DOLCEsimpleNaryFOL_to_DOLCEnaryRelOWL.in",
+      "OWL/Proof/DOLCEsimpleNaryFOL_to_DOLCEnaryRelOWL/DOLCEsimpleNaryFOL_to_DOLCEnaryRelOWL.tptp",
+      "OWL/Proof/readme.md",
+      "OWL/SPARQL/getConstitution.sparql",
+      "OWL/SPARQL/getProperPart.sparql",
+      "OWL/UC/Case01basic.owl",
+      "OWL/UC/CompConst01.owl",
+      "OWL/UC/Quality01.owl",
+      "OWL/UC/readme.md",
+      "OWL/readme.md",
+      "README.md",
+      "Tutorial/FOIS2024/uc1_const.owl",
+      "Tutorial/FOIS2024/uc1_const.sparql",
+      "Tutorial/FOIS2024/uc1_temp.owl",
+      "Tutorial/FOIS2024/uc1_temp.sparql",
+      "Tutorial/FOIS2024/uc2.owl",
+      "Tutorial/FOIS2024/uc2.sparql",
+      "Tutorial/FOIS2024/uc3.owl",
+      "Tutorial/FOIS2024/uc3.sparql"
+    ],
+    "official_source_url": "https://www.loa.istc.cnr.it/index.php/dolce/",
+    "exact_dul_2016_distribution": "NOT_ESTABLISHED"
+  },
+  "link_checks": [
+    {
+      "url": "http://www.ontologydesignpatterns.org/ont/DUL/dul.owl",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 34960,
+      "sha256": "cb3f0ee91deb47b08f7719c41936cdf4c615a3bd517f702e42b5ac0cf234eb35"
+    },
+    {
+      "url": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+      "status": 200,
+      "content_type": null,
+      "bytes": 186902,
+      "sha256": "e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66"
+    },
+    {
+      "url": "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
+      "status": 200,
+      "content_type": null,
+      "bytes": 8187,
+      "sha256": "be6080e6efb6f9f774a574455dc30bf0d0959ac2ed4a0e29cbd042934cad78ef"
+    },
+    {
+      "url": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl",
+      "status": 200,
+      "content_type": null,
+      "bytes": 12432,
+      "sha256": "011ae1f01ba7712c7426a07e23550a976d6b636b0cf62596b957b9f8db245017"
+    }
+  ],
+  "boundaries": {
+    "source_repository": "No exact original 2016 DUL repository release established. Canonical standalone DUL4.2 bytes retained; the official DOLCE repository is related foundational work, not a substitute.",
+    "case_sensitive_link": "The literal /ont/DUL/dul.owl URL returns HTML, not an acquired OWL ontology. Canonical /ont/dul/DUL.owl matches retained DUL4.2 SHA256.",
+    "typo_domain": "Chapter note4 prints ontologydeisgnpatterns.org; that misspelled host was not followed or silently treated as authoritative.",
+    "search_scope": "Two GitHub name/description queries (limit10) and official institution/paper links; not global repository nonexistence.",
+    "raw_sources_public": false,
+    "global_absence_claim": false
+  }
+}

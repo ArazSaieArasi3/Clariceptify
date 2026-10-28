@@ -20,7 +20,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING | SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established; PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
-| CLR-RW-DUL (#70) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
+| CLR-RW-DUL (#70) | STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED; [source](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl); [source](https://github.com/appliedontolab/DOLCE); PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
 | CLR-RW-O4OA (#73) | PUBLIC_PROJECT_METADATA_TREE_403; [source](https://gitlab.com/bfmartins/o4oa); AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING | UFO-A/B/C; gUFO for light OWL model; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
 | CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
 | CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #246 |
@@ -414,6 +414,22 @@ Query: `"An Ontology of Representation"; OREO Mizoguchi Borgo`. Checked: 2026-10
 No repository returned; publisher and author-posted supplemental text found; no global absence claim. Receipt: evaluation/related-work/representation/discovery.json
 
 Limit: Two name/description searches, not a global code/host search. Supplement raw bytes and machine-source correspondence unverified.
+
+### DUL2016-DISC-20261028: Exact paper URLs, canonical DUL bytes, two sample patterns, official LOA link and related repository tree
+
+Query: `"DOLCE+DnS Ultralite"; DUL ontologydesignpatterns`. Checked: 2026-10-28.
+
+Returned candidate names (limit 10): FSCHOEN/CO-PLM.
+
+- http://www.ontologydesignpatterns.org/ont/DUL/dul.owl
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+- http://www.ontologydesignpatterns.org/cp/owl/description.owl
+- http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl
+- https://github.com/appliedontolab/DOLCE
+
+Literal case-variant link returns HTML; canonical root matches retained4.2. Official DOLCE repository tree pinned at cca21e82b38fe6956e9619516dad92116782a4a2 as related work, not exact2016 DUL. Samples preserve explicit version/statement limits.
+
+Limit: Two metadata searches and named endpoints only; no global repository absence, historical release parity, class glossary or inferred result.
 
 ## Interpretation and next work
 

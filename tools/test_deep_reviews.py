@@ -511,5 +511,54 @@ class RepresentationBoundaryTests(unittest.TestCase):
         self.reject('predicate population')
 
 
+class DulChapterBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        folder = ROOT / BASE / 'CLR-RW-DUL'
+        self.dossier = yaml.safe_load((folder / 'review.yaml').read_text())
+        self.ledger = yaml.safe_load((folder / 'content-ledger.yaml').read_text())
+
+    def reject(self, pattern):
+        from check_deep_reviews import validate_dul_figure_ledger
+        with self.assertRaisesRegex(ValueError, pattern):
+            validate_dul_figure_ledger(self.dossier, self.ledger)
+
+    def test_book_scope_is_not_whole_book_reading(self):
+        register = yaml.safe_load((ROOT / BASE / 'register.yaml').read_text())
+        entry = next(r for r in register['acquired_papers'] if r['issue'] == 70)
+        dimensions = yaml.safe_load((ROOT / BASE / 'protocol.yaml').read_text())['dimensions']
+        self.dossier['coverage']['read_pages'] = list(range(1, 390))
+        with self.assertRaisesRegex(ValueError, 'incomplete full-text reading'):
+            validate_dossier(self.dossier, entry, dimensions)
+
+    def test_time_indexed_illustration_is_not_native_dul_pattern(self):
+        next(p for p in self.ledger['patterns'] if p['id'] == '5.3.13')['origin'] = 'EXTRACTED_FROM_DUL'
+        self.reject('external illustration')
+
+    def test_matrix_abstract_parthood_cannot_be_silently_repaired(self):
+        self.ledger['figures'][0]['rows'][0]['pairs'].append(['Abstract (Region)', 'Abstract (Region)'])
+        self.ledger['figures'][0]['rows'][1]['pairs'].pop()
+        self.reject('silently repaired')
+
+    def test_component_nontransitivity_is_not_intransitivity(self):
+        next(p for p in self.ledger['patterns'] if p['id'] == '5.3.7.1')['logical_boundary']['intransitivity'] = 'ASSERTED'
+        self.reject('intransitivity')
+
+    def test_pattern_cannot_be_omitted(self):
+        self.ledger['patterns'].pop()
+        self.reject('subpattern source population')
+
+    def test_diagram_is_not_machine_class_population(self):
+        self.ledger['machine_class_count'] = 8
+        self.reject('historical machine acceptance')
+
+    def test_current_root_does_not_establish_historical_parity(self):
+        self.dossier['artifact']['historical_axiom_fidelity'] = 'VERIFIED'
+        self.reject('historical machine acceptance')
+
+    def test_prose_commitments_are_not_printed_numbered_formulas(self):
+        self.dossier['paper_formalization']['numbered_formula_count'] = 28
+        self.reject('historical machine acceptance')
+
+
 if __name__ == '__main__':
     unittest.main()

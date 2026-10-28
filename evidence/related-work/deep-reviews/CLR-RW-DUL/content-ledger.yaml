@@ -1,0 +1,632 @@
+work_id: CLR-RW-DUL
+source_sha256: 6605f2d66dbd6a0a7af21bfa7f0802050abd2c5122c0c5410bfb073479a29ca8
+selected_pdf_pages:
+- 98
+- 99
+- 100
+- 101
+- 102
+- 103
+- 104
+- 105
+- 106
+- 107
+- 108
+- 109
+- 110
+- 111
+- 112
+- 113
+- 114
+- 115
+- 116
+- 117
+- 118
+- 119
+- 120
+figures:
+- number: '5.1'
+  pdf_page: 102
+  printed_page: 85
+  kind: CATEGORY_RELATION_MATRIX
+  inspection: VISUALLY_REVIEWED
+  categories:
+  - Endurant
+  - Perdurant
+  - Quality
+  - Abstract (Region)
+  rows:
+  - relation: A-temporal parthood
+    pairs:
+    - - Perdurant
+      - Perdurant
+  - relation: Temporal parthood
+    pairs:
+    - - Endurant
+      - Endurant
+    - - Abstract (Region)
+      - Abstract (Region)
+  - relation: Constitution
+    pairs:
+    - - Endurant
+      - Endurant
+    - - Perdurant
+      - Perdurant
+  - relation: Participation
+    pairs:
+    - - Endurant
+      - Perdurant
+  - relation: Inherence
+    pairs:
+    - - Endurant
+      - Quality
+    - - Perdurant
+      - Quality
+    - - Quality
+      - Quality
+  - relation: Quale
+    pairs:
+    - - Quality
+      - Abstract (Region)
+  prose_difference: 5.2.1.4 assigns abstracts atemporal parthood; the matrix draws their self-arrow in Temporal
+    parthood. Literal source preserved.
+- number: '5.2'
+  pdf_page: 104
+  printed_page: 87
+  kind: CONCEPTUAL_ARCHITECTURE
+  inspection: VISUALLY_REVIEWED
+  nodes:
+  - Parameter
+  - Task
+  - Role
+  - Description
+  - Region
+  - Event
+  - Object
+  - Situation
+  edges:
+  - from: Parameter
+    to: Region
+    relation: classifies
+  - from: Task
+    to: Event
+    relation: classifies
+  - from: Role
+    to: Object
+    relation: classifies
+  - from: Description
+    to: Parameter
+    relation: defines
+  - from: Description
+    to: Task
+    relation: defines
+  - from: Description
+    to: Role
+    relation: defines
+  - from: Situation
+    to: Region
+    relation: isSettingFor
+  - from: Situation
+    to: Event
+    relation: isSettingFor
+  - from: Situation
+    to: Object
+    relation: isSettingFor
+  - from: Description
+    to: Object
+    relation: rdfs:subClassOf
+  - from: Situation
+    to: Object
+    relation: rdfs:subClassOf
+  - from: Situation
+    to: Description
+    relation: satisfies
+  theory_frames:
+    Plan:
+    - Parameter
+    - Task
+    - Role
+    DOLCE:
+    - Region
+    - Event
+    - Object
+    DnS:
+    - Description
+    - Situation
+  boundary: Eight displayed class nodes and twelve typed links, not the complete released ontology or imports.
+- number: '5.3'
+  pdf_page: 112
+  printed_page: 95
+  kind: UML_STEREOTYPE_PROFILE
+  inspection: VISUALLY_REVIEWED
+  stereotypes:
+  - Ontology Module (Component)
+  - Ontology Design Pattern (Component)
+  specialization:
+  - Ontology Design Pattern (Component)
+  - Ontology Module (Component)
+  tag: 'Intent : Multi-line Text'
+- number: '5.4'
+  pdf_page: 113
+  printed_page: 96
+  kind: SAMPLE_COMPONENT_COMPOSITION
+  inspection: VISUALLY_REVIEWED
+  components:
+  - Sample Module
+  - Sample ODP A
+  - Sample ODP B
+  - Sample ODP C
+  interfaces:
+  - M
+  - C
+  - A
+  - B
+  specialization:
+  - Sample ODP B
+  - Sample ODP A
+  wiring:
+  - provider: Sample Module
+    consumer: Sample ODP A
+    interface: M
+  - provider: Sample ODP C
+    consumer: Sample Module
+    interface: C
+  - provider: Sample ODP B
+    consumer: Sample ODP C
+    interface: B
+  intent_note: Attached to Sample ODP C; states focused modeling problem and potential inherited commitments.
+- number: '5.5'
+  pdf_page: 115
+  printed_page: 98
+  kind: DUL_COMPONENT_COMPOSITION
+  inspection: VISUALLY_REVIEWED
+  components:
+  - name: Sequence
+    interfaces:
+    - overlaps (S)
+    - precedes/follows (TS), directly precedes/follows
+  - name: Part-whole
+    interfaces:
+    - is part Of, has part (TS)
+    - is component of, has component
+  - name: Quality of entities
+    interfaces:
+    - is quality of, has quality
+    - Quality
+  - name: Region
+    interfaces:
+    - has region data value
+    - Region
+    - is region for, has region
+  - name: Parameter classification
+    interfaces:
+    - parametrizes, is parametrized By
+    - Parameter
+  - name: Location
+    interfaces:
+    - Place
+    - is location of, has location
+  - name: Events and participation
+    interfaces:
+    - Event
+    - Object
+    - is participant in, has participant
+  - name: Time Interval
+    interfaces:
+    - Time Interval
+    - is time interval Of, has time interval
+  - name: Collection and Membership
+    interfaces:
+    - Collection
+    - is member of, has member
+  - name: Role classification
+    interfaces:
+    - Role
+    - is role of, has role
+  - name: Description
+    interfaces:
+    - defines, is defined By
+    - Concept
+  - name: Situation
+    interfaces:
+    - Description
+    - Situation
+    - satisfies, is satisfied By
+  - name: Task classification
+    interfaces:
+    - Task
+  - name: Constitution
+    interfaces:
+    - has constituent, is constituent of
+  - name: Information Realisation
+    interfaces:
+    - Information Realisation
+    - Information Object
+    - is about, is reference of
+    - realises, is realised By
+  - name: Entity Classification
+    interfaces:
+    - Concept
+    - classifies, is classified By
+  specializations:
+  - - Time Interval
+    - Region
+  - - Role classification
+    - Entity Classification
+  - - Task classification
+    - Entity Classification
+  - - Parameter classification
+    - Entity Classification
+  boundary: Sixteen shown components, not all nineteen subsection patterns, a class hierarchy, OWL import graph
+    or executed refactoring. Labels are printed interfaces, not silently canonicalized IRIs.
+- number: '5.6'
+  pdf_page: 116
+  printed_page: 99
+  kind: ENCAPSULATED_DNS_MODULE
+  inspection: VISUALLY_REVIEWED
+  outer_module: Description and Situation
+  inner_components:
+  - Description
+  - Situation
+  - Entity Classification
+  interfaces:
+  - Description
+  - Situation
+  - Concept
+  - defines, is defined By
+  - satisfies, is satisfied By
+  - classifies, is classified By
+  outer_exports:
+  - defines, is defined By
+  - satisfies, is satisfied By
+  boundary: Alternative packaging of satisfaction interface; neither automatic vocabulary equality nor actual
+    imports follows.
+tables: 0
+appendices: 0
+numbered_formula_count: 0
+patterns:
+- id: 5.3.1
+  title: Events and participation
+  pages:
+  - 104
+  entities:
+  - Object
+  - Event
+  properties:
+  - participates in
+  - has participant
+  solution: Disjoint classes, inverse property typing and an existential obligation in each direction.
+  example: Person participates in a meeting.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/participation.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.2
+  title: Quality of entities
+  pages:
+  - 105
+  entities:
+  - Quality
+  - Quality Space
+  properties:
+  - has quality
+  - is quality of
+  - has region
+  - is region for
+  solution: Qualities are bearer-specific; quality and space disjoint; mutual quality/space existential association.
+  example: Two distinct colors can have equal values.
+  sample_urls: []
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.3
+  title: Region
+  pages:
+  - 105
+  entities:
+  - Region
+  properties:
+  - has region data value
+  - has region
+  - is region for
+  solution: Reify dimensional values/spaces and associate typed data values; optional composition with quality,
+    sequence and parthood.
+  example: Color or distance space.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/region.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.3.1
+  title: Time Interval
+  pages:
+  - 105
+  - 106
+  entities:
+  - Time Interval
+  properties:
+  - has interval date
+  - has time interval
+  solution: Specialize region; multiple date values may encode boundaries, holding dates or formats without
+    an ordered interval calculus.
+  example: Shared vacation week.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl
+  parent: 5.3.3
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.4
+  title: Entity Classification
+  pages:
+  - 106
+  entities:
+  - Concept
+  properties:
+  - classifies
+  - classified by
+  solution: Represent classifying concepts as first-order objects with their own facts.
+  example: Document topics with statistics.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/classification.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.4.1
+  title: Role Classification
+  pages:
+  - 106
+  entities:
+  - Role
+  properties:
+  - is role of
+  - has role
+  solution: Specialize conceptual classification for contextually played roles.
+  example: Project manager role with minimum fee.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl
+  - http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl
+  parent: 5.3.4
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.4.2
+  title: Parameter Classification
+  pages:
+  - 106
+  - 107
+  entities:
+  - Parameter
+  - Region
+  properties:
+  - is parameter of
+  - has parameter
+  - is parameter for region data value
+  solution: Classify a region using a parameter; alternative shortcuts region individuals with a datatype property.
+  example: Very high building height.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/parameter.owl
+  parent: 5.3.4
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.4.3
+  title: Task Classification
+  pages:
+  - 107
+  entities:
+  - Task
+  - Action
+  properties:
+  - is task of
+  - has task
+  - task addressed by
+  - addresses task
+  solution: Classify an action by a task; context of a whole plan is not required in this isolated pattern.
+  example: Buying ticket addresses work-trip organization.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl
+  parent: 5.3.4
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.5
+  title: Collection and Membership
+  pages:
+  - 107
+  entities:
+  - Collection
+  properties:
+  - has member
+  - is member of
+  solution: Represent a collection as an object, not a class of which each member is an instance; described
+    pattern does not force a known/member witness.
+  example: Historical works collection with unknown contents.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.6
+  title: Location
+  pages:
+  - 108
+  entities:
+  - Place
+  properties:
+  - is location of
+  - has location
+  solution: Approximate place associated to at least one entity; precise spatial values use Region separately.
+  example: Area under a table.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/place.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.7
+  title: Part-whole
+  pages:
+  - 108
+  entities: []
+  properties:
+  - has part
+  - is part of
+  solution: Transitive parthood supports part-of-part inference.
+  example: Engine, piston and car.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/partof.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.7.1
+  title: Component
+  pages:
+  - 108
+  entities: []
+  properties:
+  - has component
+  - is component of
+  solution: Direct component relation does not license transitive shortcuts; this alone is not an intransitivity
+    axiom.
+  example: Piston is not inferred a direct car component.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/componency.owl
+  parent: 5.3.7
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+  logical_boundary:
+    transitivity: NOT_LICENSED
+    intransitivity: NOT_ASSERTED
+- id: 5.3.8
+  title: Constitution
+  pages:
+  - 108
+  - 109
+  entities: []
+  properties:
+  - has constituent
+  - is constitutent of
+  solution: Different layers can constitute each other without being mereological parts; local restrictions
+    depend on the layer theory.
+  example: Persons constitute a social system.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/constituency.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.9
+  title: Sequence
+  pages:
+  - 109
+  entities: []
+  properties:
+  - preceeds
+  - follows
+  - overlaps
+  solution: Transitive sequencing and symmetric overlap; strictness, acyclicity and interval algebra are not
+    supplied here.
+  example: Coffee-choice action precedes preparation.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/sequence.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.10
+  title: Information Realisation
+  pages:
+  - 109
+  entities:
+  - Information Object
+  - Information Realisation
+  properties:
+  - is realised by
+  - realises
+  solution: Disjoint information object and concrete realization classes; inverse realization with mutual existentials.
+  example: Composition and a recording.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.11
+  title: Description
+  pages:
+  - 109
+  - 110
+  entities:
+  - Description
+  - Concept
+  properties:
+  - defines
+  - is defined by
+  solution: Reified conceptualization defines concepts; this pattern explicitly separates the two classes.
+  example: Marriage law defines partner concepts.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/description.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.11.1
+  title: Plan
+  pages:
+  - 110
+  entities:
+  - Plan
+  - Concept
+  - Goal
+  properties:
+  - defines
+  - is defined by
+  - has component
+  solution: Specialize Description, combine classification families and require a Goal as a direct component.
+  example: Coffee plan with tasks and drink goal.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl
+  parent: 5.3.11
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.12
+  title: Situation
+  pages:
+  - 110
+  entities:
+  - Situation
+  properties:
+  - is setting for
+  solution: Reify observed states of affairs and relational context; combine with Description and classification
+    for the D&S core.
+  example: Actions in one plan execution.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/situation.owl
+  - http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl
+  parent: null
+  origin: EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+- id: 5.3.13
+  title: Time-indexed participation
+  pages:
+  - 111
+  entities:
+  - Time Indexed Participation
+  - Time Indexed Situation
+  - Time Interval
+  properties:
+  - has participant
+  - is participant in
+  - at time (object property)
+  - at time (datatype alternative)
+  solution: An illustrative Situation specialization; source prose uses both participation/situation type names.
+    Interval objects and date literals are alternative models.
+  example: Suspect at party from9pm to11pm.
+  sample_urls:
+  - http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl
+  parent: 5.3.12
+  origin: ILLUSTRATIVE_NOT_EXTRACTED_FROM_DUL
+  formalization_basis: PROSE_RECONSTRUCTION_NOT_PRINTED_DL_FORMULA
+pattern_population:
+  subsections: 19
+  main_numbered: 13
+  specializations: 6
+  extracted: 18
+  illustrative_not_extracted: 1
+  sample_links: 20
+machine_class_count: null
+owl_import_graph_claim: NOT_ESTABLISHED
+semantics_executed: NOT_EXECUTED
