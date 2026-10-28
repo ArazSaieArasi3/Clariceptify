@@ -1,0 +1,2549 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: BDI2020
+issue: 85
+review_date: '2026-10-28'
+reviewer: AI-assisted complete primary-paper and original-page inspection; not independent expert review
+baseline_commit: c704c0e262f28ef5dbcf7fd6305b4aee599845b8
+status: REVIEW_COMPLETE
+identity:
+  title: Foundations for an Ontology of Belief, Desire and Intention
+  authors:
+  - Fumiaki Toyoshima
+  - Adrien Barton
+  - Olivier Grenier
+  year: 2020
+  doi: 10.3233/FAIA200667
+  url: https://journals.sagepub.com/doi/abs/10.3233/FAIA200667
+  version: Retained HAL hal-03041527 cover plus 15-page FOIS2020 article, printed pp.140-154
+  boundary: The exact 16-page HAL PDF is authoritative for this reading. PDF1 is the cover; PDF2-16 map to printed
+    140-154 (printed=PDF+138). Cover submission 2020-12-05 and cited September 2021 are distinct from publisher
+    first-online 2020-11-13 and article copyright 2020. Keep HAL CC-BY-NC-SA4.0 versus article/publisher CC-BY-NC4.0
+    notices explicit. The publisher 15-page PDF was opened, not byte-compared. Later FOSSR BDI2026/preprint 2025
+    and other BDI ontologies are separate works.
+source:
+  filename: BDI-2020-author-copy.pdf
+  sha256: 61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95
+  pdf_pages: 16
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  catalog_boundary: Complete ontology-bearing paper catalog including core mental categories, disposition theory,
+    relation signatures, alternative desire theories and deferred content/affordance/information concepts. No figure,
+    table or appendix is present. All 8 named core formulas plus background/inline/hypothesis/alternative/bias expressions
+    are retained as 31 records:30 printed or inline statement fragments and one explicitly tentative prose subclass
+    suggestion. Counts are reviewer inventory populations, not declared OWL classes/axioms. Both substantive footnotes
+    3-4, author notes 1-2 and 56 references inspected.
+  units:
+  - unit: HAL cover, PDF1
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Article title/authors/abstract/keywords, p.140/PDF2
+    status: REVIEWED
+    evidence:
+    - E01
+    - E02
+  - unit: 1 Introduction and HEATER, pp.140-141/PDF2-3
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: '2 Methodology: A dispositional approach, pp.141-142/PDF3-4'
+    status: REVIEWED
+    evidence:
+    - E03
+    - E04
+  - unit: 3 An ontological account heading and 3.1 Belief, pp.142-144/PDF4-6
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: 3.2 Desire, p.144/PDF6
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: 3.3 Intentions and 3.3.1 Intentions and dispositions, pp.144-145/PDF6-7
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: 3.3.2 Non-reductivity, p.145/PDF7
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: 4 Formal foundations and 4.1 Core formalization, pp.146-147/PDF8-9
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: 4.2 Dynamic structure, p.147/PDF9
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: 4.3 Compatibility heading and 4.3.1 Desire triggers, p.147/PDF9
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: 4.3.2 Intention triggers and Bosse statements, pp.147-148/PDF9-10
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: 5 Discussion and 5.1 Three philosophical accounts, p.148/PDF10
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: 5.1.1 Action-based theory and both second-order readings, p.149/PDF11
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: 5.1.2 Pleasure-based theory, p.150/PDF12
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: 5.1.3 Good-based theory, p.150/PDF12
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: 5.2 Belief-forming biases, pp.150-151/PDF12-13
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: 5.3 Moral motivation, p.151/PDF13
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: 5.4 Affordances, pp.151-152/PDF13-14
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: 5.5 Content/aboutness, p.152/PDF14
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: 6 Conclusion and future work, pp.152-153/PDF14-15
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: References 1-56, pp.153-154/PDF15-16
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: 'Footnotes 1-2: affiliation/correspondence/funding, p.140/PDF2'
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: 'Footnote 3 spans pp.142-143/PDF4-5: belief token/content distinction'
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: 'Footnote 4 p.143/PDF5: historical and alternative process account'
+    status: REVIEWED
+    evidence:
+    - E05
+  figures: 0
+  tables: 0
+  appendices: 0
+  bibliography_population: 56
+evidence:
+- id: E01
+  pages:
+  - 1
+  - 2
+  locator: 'HAL cover PDF1 and printed 140/PDF2: title/authors, dates, DOI and license notices'
+  summary: HAL hal-03041527 submitted 2020-12-05; cover cites September 2021 while article copyright/DOI identify
+    2020. Cover CC-BY-NC-SA and article CC-BY-NC notices differ; no silent license normalization.
+- id: E02
+  pages:
+  - 2
+  - 3
+  locator: Printed 140-141/PDF2-3, complete sec.1 Introduction and HEATER scenario
+  summary: Motivation, background MF/UFO-C/deontic ontology, mental BDI scope, assumed agent/action and HEATER;
+    FOL/OWL Manchester notation announced.
+- id: E03
+  pages:
+  - 3
+  - 4
+  locator: Printed 141-142/PDF3-4, complete sec.2 before 3.1
+  summary: Continuants/occurrents, dispositions/bearers/triggers/realizations, sure-fire/single-track scope and
+    ONLY/PARTHOOD frameworks.
+- id: E04
+  pages:
+  - 4
+  locator: Printed 142/PDF4, minimal/maximal class expressions, identity criterion and mod-part example
+  summary: TRmin(d)/Rmax(d) parameterized classes, inverse relations, categorical-basis/triggers/realizations identity
+    criterion and two magnetic modes.
+- id: E05
+  pages:
+  - 4
+  - 5
+  - 6
+  locator: Printed 142-144/PDF4-6, complete sec.3.1 and footnotes 3-4
+  summary: Paralysis/omniscient-spirit counterexamples, dormant belief, dispositional/occurrent pair, elucidation
+    caveat, disease analogy and content/token distinction.
+- id: E06
+  pages:
+  - 6
+  locator: Printed 144/PDF6, complete sec.3.2
+  summary: Standing/occurrent desire, defeated warm-versus-energy desire, alternative sweater action and printed
+    dDEL/oDEL example.
+- id: E07
+  pages:
+  - 6
+  - 7
+  locator: Printed 144-145/PDF6-7, complete sec.3.3.1
+  summary: Heuristic/deliberative intention, blocked realization, lunch/email/paralysis and mechanical finger-press
+    counterexample; trigger classes distinguish dispositions.
+- id: E08
+  pages:
+  - 7
+  locator: Printed 145/PDF7, complete sec.3.3.2
+  summary: Non-reductive intentions, critiques of belief/desire compounds, practical reasoning and linguistic arguments;
+    not machine disjointness declarations.
+- id: E09
+  pages:
+  - 8
+  - 9
+  locator: Printed 146-147/PDF8-9, complete sec.4.1 with all eight labels
+  summary: BelO/DesO/BelP/DesP/Dec/Int-Dec/IntO/IntP; ONLY and PARTHOOD alternate translations, per-individual schema
+    caveat and no converse output guarantee.
+- id: E10
+  pages:
+  - 9
+  locator: Printed 147/PDF9, complete sec.4.2 and 4.3.1
+  summary: Underspecified BDI interaction/weighting; allergy and apple/peach cases; optional occurrent-belief trigger
+    of a pre-existing desire.
+- id: E11
+  pages:
+  - 9
+  - 10
+  locator: Printed 147-148/PDF9-10, complete sec.4.3.2 and two Bosse statements
+  summary: Belief-in-reason/opportunity background, optional intention-trigger restriction, literal Tmin(i) and
+    Mary singing illustration.
+- id: E12
+  pages:
+  - 10
+  - 11
+  locator: Printed 148-149/PDF10-11, sec.5.1 overview and all 5.1.1
+  summary: Action/pleasure/good accounts; reductive and compound intention alternatives; two meanings of second-order
+    disposition and mod-part example.
+- id: E13
+  pages:
+  - 12
+  locator: Printed 150/PDF12, complete sec.5.1.2 and 5.1.3
+  summary: Pleasure/displeasure mod-parts, good-based desire-belief subsumption and output-producing alternative;
+    DesO/DesP rejection is explicit for some alternatives.
+- id: E14
+  pages:
+  - 12
+  - 13
+  locator: Printed 150-151/PDF12-13, complete sec.5.2
+  summary: Wishful thinking requires an already-existing bias disposition that creates a new belief; source prose/individual/class-expression
+    variants retained.
+- id: E15
+  pages:
+  - 13
+  locator: Printed 151/PDF13, complete sec.5.3
+  summary: Tentative motivation=intention, Humean core and proposed weaker Dec; no automatic adoption of anti-Humean
+    account.
+- id: E16
+  pages:
+  - 13
+  - 14
+  locator: Printed 151-152/PDF13-14, complete sec.5.4
+  summary: Affordance discussion links stair-support disposition and Mary climbing; no additional formal relation
+    or tested agency algorithm supplied.
+- id: E17
+  pages:
+  - 14
+  locator: Printed 152/PDF14, complete sec.5.5
+  summary: Propositions/content controversial, desire for warmth versus state of affairs, prior IAO/dual-aboutness
+    and semiotic sign-object-interpreter proposals.
+- id: E18
+  pages:
+  - 14
+  - 15
+  locator: Printed 152-153/PDF14-15, complete sec.6 Conclusion and future work
+  summary: Undesirability/risk, intention-in-action, image schemas, neural categorical bases and action-directing
+    recipes/prescriptions remain research extensions.
+- id: E19
+  pages:
+  - 15
+  - 16
+  locator: Printed 153-154/PDF15-16, bibliography 1-56
+  summary: All 56 references inspected; previous COM/IAO, OBI, BFO book and philosophical sources are cited, not
+    newly acquired imports or independent validation.
+- id: M01
+  source_kind: SPECIFICATION
+  url: https://journals.sagepub.com/doi/abs/10.3233/FAIA200667
+  locator: Publisher title/authors, first online 2020-11-13, DOI and rights; accessed 2026-10-28
+  summary: Publisher metadata independently supports work identity,2020 publication and CC-BY-NC4.0 notice; not
+    the recovered machine ontology.
+- id: M02
+  source_kind: SPECIFICATION
+  url: https://adrienbarton.blogspot.com/p/publications.html
+  locator: Author publication list,2020 entry and IOS Press volumearticle/55801 link; accessed 2026-10-28
+  summary: Author links exact paper; outgoing publisher fetch blocked, not an author ontology download.
+- id: S01
+  source_kind: SPECIFICATION
+  url: https://www.w3.org/TR/owl2-manchester-syntax/
+  locator: OWL2 Manchester Syntax,2012 second edition, class restrictions and individual facts grammar; accessed
+    2026-10-28
+  summary: Grammar reference distinguishes restrictions, individual facts and class-expression conventions; no actual
+    Manchester parser execution claimed.
+dimensions:
+  D1_identity_coverage:
+    statement: The retained 16-page HAL PDF consists of a cover and 15 printed article pages 140-154. All pages/sections/subsections,
+      formal expressions, footnotes 1-4 and 56 references were inspected visually. Cover/article dates and license
+      notices remain distinct. Publisher metadata verifies 2020/DOI/authors, while publisher PDF byte identity is
+      not assumed. No diagram or table population is invented.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E19
+    - M01
+    - M02
+  D2_problem_contribution:
+    statement: The paper seeks detailed conceptual and formal characterization of BDI beyond loose mental-disposition/moment/state
+      parent typing in previous work. Belief/desire have dispositional and occurrent faces; intention is a distinct
+      action disposition arising from practical decision. This is substantive prior episode/decision/agency knowledge,
+      but not a comprehensive conceptualization lifecycle or empirically demonstrated interoperability solution.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E05
+    - E06
+    - E07
+    - E08
+    - E18
+  D3_method:
+    statement: A named methodology section selects a dispositional approach with continuant/occurrent separation,
+      sure-fire/single-track assumptions, earlier disposition identity/mereology and ONLY/PARTHOOD representations.
+      The authors develop HEATER, philosophical counterexamples, alternative accounts and Manchester-style restrictions.
+      They explicitly call some definitions elucidations. No named SABiO/DSR execution, ORSD, systematic source
+      search, implemented ontology build procedure or external expert-validation sample is reported.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E04
+    - E05
+    - E08
+    - E19
+  D4_requirements:
+    statement: HEATER drives the account. Sleeping/paralyzed believers, defeated desires, intuitive decisions and
+      mechanical button pressing expose intended distinctions. Agency/action are assumed and belief content is delimited
+      rather than fully represented. No numbered CQ suite, operational user study, test oracle or complete requirements
+      traceability matrix appears. Author vignettes and reviewer adverse fragment analyses are typed separately
+      below.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E05
+    - E06
+    - E07
+    - E10
+    - E11
+    - E14
+  D5_concepts:
+    statement: The catalog distinguishes mental token from propositional content, potential disposition from actual
+      mental process, and originating decision from action realization. It also preserves triggers, realizations,
+      basis, minimal/maximal processes, mode parthood and the alternative pleasure/good/reductive/Humean variants.
+      Future risk, image-schema and recipe/prescription concepts are not described as implemented modules. No paper
+      terminology count becomes an OWL declaration count.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E05
+    - E06
+    - E07
+    - E08
+    - E12
+    - E13
+    - E15
+    - E17
+    - E18
+  D6_relations_formalization:
+    statement: All eight named core displays are captured, with 31 total reviewer expression records including one
+      prose suggestion. ONLY universals constrain allowed realizations but do not entail occurrence. PARTHOOD uses
+      per-individual Rmax schemas and explicitly notes a representation shortcoming. Int-Dec has an output-to-origin
+      direction without the converse. Alternatives and optional hypotheses are tagged; missing agent/time/disjointness
+      constraints and shorthand syntax are not silently repaired or solved.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E04
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E15
+    - S01
+  D7_grounding:
+    statement: The paper uses continuant/occurrent and dispositional categories, cites the BFO book for elucidation/adequatism
+      and borrows OBI output-relation names. It does not pin an executable root or an upper-ontology edition. MF/UFO-C
+      are related-work examples, not proof of UFO grounding. Disposition identity is described through categorical
+      basis and process classes; actual neural basis, temporal/bearer identity and parameterized machine translation
+      remain unresolved.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E04
+    - E05
+    - E08
+    - E09
+    - E18
+    - E19
+  D8_artifact_correspondence:
+    statement: 'Primary author/publisher links, three bounded repository queries, title-code search and other-host
+      searches are recorded. No author executable 2020 BDI distribution was resolved. Secondary commentary, a citation
+      in Sobots and unverified broad References repositories are not original modules. Current FOSSR files remain
+      separate #249/#250. Complete local/imported class definitions, exact imports, IRIs, license and machine-profile/reasoner
+      results stay unknown in #247.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E19
+    - M01
+    - M02
+  D9_evaluation:
+    statement: Evidence consists of philosophical arguments, the HEATER illustration, counterexamples and comparative
+      theory sketches. The paper reports no named parser/reasoner/SHACL run, CQ regression, empirical dataset, expert
+      sample, performance benchmark or explicit model-finder compatibility proof. Five VVEAA functions below separate
+      this conceptual evidence from our executed provenance checks; the word compatible in the paper does not establish
+      a solver result.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E06
+    - E07
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E15
+    - E18
+  D10_critical_synthesis:
+    statement: 'Useful overlap includes episode-to-intention output, unrealized dispositions, creation-versus-triggering
+      and competing process models. Risks include vacuous only constraints, source syntax/label mismatches, absent
+      same-agent/time constraints, incomplete mereological sum/non-reductivity semantics and alternative theories
+      requiring axiom rejection. Later comparison #256 and final #126 must preserve contrary evidence; no automatic
+      adoption or corpus-wide novelty conclusion follows.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E15
+    - E17
+    - E18
+catalog:
+- id: C01
+  label: Continuant
+  statement: An entity that persists through time; objects and dispositions are treated on this side of the process
+    distinction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C02
+  label: Occurrent / process
+  statement: An entity extending through time with temporal parts, typically with a continuant participant. Event/state
+    terms are deliberately avoided for simplicity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C03
+  label: Mental process
+  statement: A process in mental life, including actively taking something to be the case, wanting and bias-driven
+    belief formation. Not a specified neural implementation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E14
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C04
+  label: Disposition
+  statement: A bearer property with a possible realization behavior and process trigger; it may exist untriggered
+    or unrealized. Sure-fire/single-track is the default scope unless relaxed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C05
+  label: Bearer / object
+  statement: An object carries a disposition; the paper assumes agency rather than defining every bearer as an intentional
+    agent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E03
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C06
+  label: Trigger / triggering process
+  statement: A process that stimulates a disposition; distinguish occurrence of a trigger from an allowed trigger
+    class and from creation of a new disposition.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E10
+  - E14
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C07
+  label: Realization / realization process
+  statement: Possible behavior of a disposition bearer that manifests it. Realization can extend beyond an active
+    mental subprocess in PARTHOOD.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C08
+  label: Categorical basis
+  statement: An instance of the underlying basis used in the cited disposition identity criterion; neural structures
+    are prospective bases for mental dispositions, not measured here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C09
+  label: Sure-fire disposition
+  statement: The selected kind is such that realization necessarily occurs once triggered; masking/blocking and
+    actual trigger sufficiency require qualification when translated into OWL.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C10
+  label: Single-track disposition
+  statement: Has one kind of realization and triggering process; the basic scope differs from the optional multi-track
+    generalizations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C11
+  label: Multi-track disposition
+  statement: Different trigger kinds give different realization pathways; discussed as an extension and as an interpretation
+    of alternative desire models.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E12
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C12
+  label: Minimal trigger / TRmin(d)
+  statement: Class parameterized by disposition d whose trigger members have no proper trigger part; printed expression
+    and logical encoding remain source-bound.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C13
+  label: Maximal realization / Rmax(d)
+  statement: Disposition-indexed realization class excluding members that are proper parts of another realization;
+    not a maximal-by-duration-only class.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C14
+  label: Mode / mod-part disposition
+  statement: A disposition component corresponds to a possible causal realization pathway, as in magnetic attraction/repulsion.
+    This is not interchangeable with temporal process parthood.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E12
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C15
+  label: Agent
+  statement: Taken for granted in HEATER and mental mechanisms, not defined by a sufficient agent-recognition axiom.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C16
+  label: Action / intentional action
+  statement: Intention realization is an action; mechanical finger displacement is contrasted with intentionally
+    pressing the heater switch. No complete action criterion is axiomatized here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E07
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C17
+  label: BDI entities / mental attitudes
+  statement: Umbrella for belief, desire and intention in the analysis; it is not evidence of one uniform superclass
+    in an acquired OWL file.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E17
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C18
+  label: Dispositional belief
+  statement: A disposition realizable as occurrent belief, which can persist while an agent is asleep or unable
+    to perform a physical action.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C19
+  label: Occurrent belief
+  statement: Active cognitive process of taking something to be the case. The authors treat the characterization
+    as an elucidation rather than a circularity-free reduction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C20
+  label: Dispositional desire / standing desire
+  statement: A potentially active wanting disposition realizable in occurrent desire; it can exist without generating
+    an action.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C21
+  label: Occurrent desire
+  statement: Active mental wanting process. Competing desires can defeat an active desire without eliminating it.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C22
+  label: Intention
+  statement: A mental disposition to act, formed through a decision process on this core account; distinct in the
+    proposed interpretation from belief, desire and their compounds. Not a parallel occurrent-intention category.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C23
+  label: Decision process / practical reasoning
+  statement: Process with some occurrent belief and desire parts; it can end without producing an intention. Exact
+    weighing and temporal interaction are left open.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E10
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C24
+  label: Deliberative / heuristic decision
+  statement: Intentions can result from reflective or intuitive/instinctive decision processes; the preferred term
+    intention is not restricted to deliberative intent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C25
+  label: Goal / trying
+  statement: Motivating agency notions noted in previous work. The paper does not supply an independent goal ontology
+    or trying semantics.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C26
+  label: Behavioral / mechanical disposition
+  statement: A causal tendency to act or move is broader than intention; identical apparent actions can come from
+    distinct dispositions with different trigger classes.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C27
+  label: Means-end belief
+  statement: A belief about an effective action toward a wanted outcome; used in HEATER and reductive intention
+    alternatives.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E12
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C28
+  label: Belief in reason
+  statement: In the cited Bosse scenario, belief concerning an action choice that reasonably fulfills a desire;
+    not an added named core class.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C29
+  label: Belief in opportunity
+  statement: Belief that the circumstances permitting an action obtain; proposed as an intention trigger in a compatible
+    optional hypothesis.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C30
+  label: Motivation / moral motivation
+  statement: Motivation tied to normative judgments; sec.5.3 tentatively identifies motivation with intention for
+    its argument, explicitly requiring more investigation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E15
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C31
+  label: First-order disposition to act
+  statement: Direct action disposition, used for intention and for some alternative modal parts of desire. It is
+    not the first-order versus second-order attitude distinction from COM.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C32
+  label: Second-order disposition
+  statement: 'Two readings are distinguished: a multi-track disposition with first-order mod-parts, or a disposition
+    whose realization leads to the formation of a first-order action disposition. Only the latter is aligned with
+    the proposed core.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C33
+  label: Pleasure / displeasure
+  statement: Mental affective processes appearing in an alternative desire theory; their psychological nature is
+    explicitly left aside.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C34
+  label: Disposition to take pleasure / disposition to take displeasure
+  statement: Two named classes used as mod-parts in the pleasure-based alternative; the restriction does not state
+    exact cardinality or part disjointness.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C35
+  label: Goodness / evaluative belief
+  statement: A good-based theory treats desire as belief that its object is good, or as a disposition to form such
+    a belief. These are alternative views, not default core semantics.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C36
+  label: Cognitive bias
+  statement: An additional disposition affecting belief formation, illustrated by wishful thinking rather than constituting
+    all mental mechanisms.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C37
+  label: Dispositional wishful thinking
+  statement: Proposed bias disposition triggered by an occurrent desire and realized in a process that produces
+    a dispositional belief.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C38
+  label: Occurrent wishful-thinking process
+  statement: The realization of the existing bias that creates the desired lottery belief; not itself the newly
+    created belief or its original trigger.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C39
+  label: Belief creation versus belief triggering
+  statement: An existing disposition can be triggered; a new belief output is formed by a process. The authors use
+    this difference to avoid triggering a not-yet-existing belief.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C40
+  label: Humean / anti-Humean motivation
+  statement: The core Dec plus Int-Dec requires desire and belief in the origin decision; the weakened Dec removes
+    the mandatory desire part without proving desires absent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C41
+  label: Affordance
+  statement: An environmental possibility offered to an agent; the discussed dispositional account links stair support
+    and climbing realization. No new affordance property IRI is provided here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C42
+  label: Reciprocal realization / support capability
+  statement: The stairs support Mary while her climbing intention is realized; a discussed coupling to environmental
+    disposition, not an executed affordance engine.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C43
+  label: Mental content / proposition
+  statement: Belief content is often regarded as truth-evaluable proposition, whereas desire/intention content may
+    be non-propositional. Shared content is distinguished from an agent-specific mental token.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E17
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C44
+  label: Truth / satisfaction / fulfillment
+  statement: Belief and desire/intention differ in their discussed direction of fit. No complete satisfaction or
+    truth-evaluation relation is encoded in the displayed core axioms.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E17
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C45
+  label: State of affairs / desired warmth
+  statement: 'Contrasted options for what a desire targets: a propositionally structured warm state versus warmth
+    without propositional structure. The paper remains neutral.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C46
+  label: Information content entity
+  statement: Invoked from previous belief/aboutness work; it is about something. This is not an actual declared
+    IAO import of an acquired BDI module.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  - E19
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C47
+  label: Intentional content / intentional object
+  statement: Prior dual-aboutness analysis distinguishes two targets of a mental state. This paper cites the idea
+    rather than implementing the dual relation itself.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C48
+  label: Sign / object / interpreter
+  statement: Semiotic triad suggested as a possible elucidation of aboutness, not a formalized new sign ontology
+    within this core.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C49
+  label: Undesirability / risk
+  statement: Future work links undesirable realizations to a dispositional account of risk; no completed risk module
+    or risk assessment appears here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C50
+  label: Intention-in-action
+  statement: A prospective account of an intention formed during action with on-the-fly satisfaction conditions;
+    current output constraints do not settle it.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C51
+  label: Image schema
+  statement: A mental pattern abstracted from sensory/motile experience; future links to affordances and BDI are
+    proposed, not realized.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C52
+  label: Instrumental desire
+  statement: A desire to raise feet can serve a desire to climb stairs. The suggested relation is not supplied as
+    a tested desire-decomposition theory.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C53
+  label: Action-directing information / recipe / drug prescription
+  statement: Possible later integration of mental BDI mechanisms with information that directs action; the paper
+    does not equate an intention with a prescription.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C54
+  label: Elucidation / adequatist principle
+  statement: Method commitments support clarifying and taking mental entities seriously on their own terms; they
+    are not independent validation results or an adopted upper-ontology edition.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E08
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C55
+  label: ONLY / PARTHOOD representation frameworks
+  statement: Different encodings specify allowed trigger/realization types or minimal/maximal process classes. Do
+    not combine them as two automatically equivalent executable ontologies.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E09
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C56
+  label: Desire weighing / preference conflict
+  statement: Apple/peach and warmth/energy cases expose unresolved comparative strength and action selection; no
+    priority or utility algorithm is supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E10
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C57
+  label: Non-reductive versus reductive intention
+  statement: Core intentions are irreducible in the intended theory; section 5.1 explores reductions and their revision
+    costs. A subclass fragment alone does not enforce intended ontological distinctness.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E12
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C58
+  label: Disposition identity / disposition multiplicativism
+  statement: The cited criterion compares categorical basis plus classes of minimal triggers and maximal realizations,
+    intended to avoid arbitrary proliferation. This is not an executed identity procedure.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C59
+  label: Temporal persistence / blocking
+  statement: Dormant beliefs persist, intentions can wax/wane or be blocked, and future actions can be intended
+    now. The displayed OWL core supplies no explicit time-indexed or masking theory.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+  - E18
+  kind: PAPER_CONCEPT
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C60
+  label: realized_in / relation
+  statement: Links a disposition to an actual realization when present; an only restriction constrains fillers without
+    asserting their existence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E09
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C61
+  label: has_trigger / relation
+  statement: Specifies a trigger relationship or its allowed filler class. Some optional hypotheses restrict this
+    to occurrent beliefs; the default core does not require that hypothesis.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E10
+  - E11
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C62
+  label: trigger_of / relation
+  statement: Stated inverse of has_trigger in the parameterized minimal-trigger expression. No root ontology IRI/import
+    is resolved.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C63
+  label: realization_of / relation
+  statement: Stated inverse of realized_in, used in the Rmax expression.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C64
+  label: has_part / relation
+  statement: Used for process parts in Dec and maximal realizations, and for disposition parts in an alternative
+    whose exact parthood type is questioned.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C65
+  label: has_proper_part / relation
+  statement: Used in the minimal-trigger expression; source chain-like o notation is preserved, not silently compiled.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C66
+  label: proper_part_of / relation
+  statement: Used in the maximal-realization expression; full mereological axioms are not restated.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C67
+  label: mod-part_of / relation
+  statement: A possible realization pathway is part of a multi-track disposition; heater/sweater mode claims illustrate
+    an alternative.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E12
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C68
+  label: has_mod-part / relation
+  statement: Defined as inverse of mod-part_of for the pleasure/displeasure example.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C69
+  label: specified_output_of / relation
+  statement: Int-Dec borrows the named relation from OBI. It does not require every decision to have an intention
+    output.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C70
+  label: has_specified_output / relation
+  statement: OBI-named relation for producing beliefs in good-based and bias alternatives; the printed individual
+    expression is not asserted to be a parsed Manchester file.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+- id: C71
+  label: aboutness / relation
+  statement: Discussed as connecting mental entities with content, including prior dual-aboutness and semiotics.
+    No explicit chosen arity/IRI/axiom is added in this paper.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: RELATION_OR_UNRESOLVED_SIGNATURE
+  iri: null
+  source_definition: Attributed reviewer paraphrase of the cited paper passage; not a released annotation.
+  source_proposal_basis: AUTHOR_REPORTED
+relation_index:
+- id: R01
+  label: realized_in
+  statement: 'disposition -> realization process: Links a disposition to an actual realization when present; an
+    only restriction constrains fillers without asserting their existence.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E09
+  signature: disposition -> realization process
+  iri: null
+- id: R02
+  label: has_trigger
+  statement: 'disposition -> triggering process: Specifies a trigger relationship or its allowed filler class. Some
+    optional hypotheses restrict this to occurrent beliefs; the default core does not require that hypothesis.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E10
+  - E11
+  signature: disposition -> triggering process
+  iri: null
+- id: R03
+  label: trigger_of
+  statement: 'triggering process -> disposition: Stated inverse of has_trigger in the parameterized minimal-trigger
+    expression. No root ontology IRI/import is resolved.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  signature: triggering process -> disposition
+  iri: null
+- id: R04
+  label: realization_of
+  statement: 'realization process -> disposition: Stated inverse of realized_in, used in the Rmax expression.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  signature: realization process -> disposition
+  iri: null
+- id: R05
+  label: has_part
+  statement: 'whole -> part: Used for process parts in Dec and maximal realizations, and for disposition parts in
+    an alternative whose exact parthood type is questioned.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E12
+  signature: whole -> part
+  iri: null
+- id: R06
+  label: has_proper_part
+  statement: 'whole process -> proper part: Used in the minimal-trigger expression; source chain-like o notation
+    is preserved, not silently compiled.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  signature: whole process -> proper part
+  iri: null
+- id: R07
+  label: proper_part_of
+  statement: 'proper part -> whole process: Used in the maximal-realization expression; full mereological axioms
+    are not restated.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  signature: proper part -> whole process
+  iri: null
+- id: R08
+  label: mod-part_of
+  statement: 'disposition mode -> disposition: A possible realization pathway is part of a multi-track disposition;
+    heater/sweater mode claims illustrate an alternative.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E12
+  signature: disposition mode -> disposition
+  iri: null
+- id: R09
+  label: has_mod-part
+  statement: 'disposition -> mode disposition: Defined as inverse of mod-part_of for the pleasure/displeasure example.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  signature: disposition -> mode disposition
+  iri: null
+- id: R10
+  label: specified_output_of
+  statement: 'intention -> originating decision process: Int-Dec borrows the named relation from OBI. It does not
+    require every decision to have an intention output.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  signature: intention -> originating decision process
+  iri: null
+- id: R11
+  label: has_specified_output
+  statement: 'process -> produced entity: OBI-named relation for producing beliefs in good-based and bias alternatives;
+    the printed individual expression is not asserted to be a parsed Manchester file.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  signature: process -> produced entity
+  iri: null
+- id: R12
+  label: aboutness
+  statement: 'mental entity/content -> target; signature left open: Discussed as connecting mental entities with
+    content, including prior dual-aboutness and semiotics. No explicit chosen arity/IRI/axiom is added in this paper.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  signature: mental entity/content -> target; signature left open
+  iri: null
+commitments:
+- id: K01
+  label: ONLY-R
+  statement: d realized_in only R. The paper describes an allowed-realization class; no actual realization witness
+    is asserted by only.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  formula_label: ONLY-R
+  formula_page: 4
+  normalized_formula: d realized_in only R
+  source_label: null
+  expression_kind: INLINE_BACKGROUND
+  variant: BACKGROUND_ONLY
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K02
+  label: ONLY-T
+  statement: d has_trigger only T. Allowed trigger class in the background ONLY framework; not proof of a trigger
+    occurrence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  formula_label: ONLY-T
+  formula_page: 4
+  normalized_formula: d has_trigger only T
+  source_label: null
+  expression_kind: INLINE_BACKGROUND
+  variant: BACKGROUND_ONLY
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K03
+  label: TRmin
+  statement: TRmin(d) EquivalentTo [(trigger_of d and not (has_proper_part o trigger_of d)]. Retain printed parentheses/brackets
+    and o notation. A parameterized class expression, not a verified Manchester document.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  formula_label: TRmin
+  formula_page: 4
+  normalized_formula: TRmin(d) EquivalentTo [(trigger_of d and not (has_proper_part o trigger_of d)]
+  source_label: null
+  expression_kind: DISPLAYED_DEFINITION
+  variant: BACKGROUND_PARTHOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K04
+  label: Rmax
+  statement: 'Rmax(d) EquivalentTo [(realization_of d and not (proper_part_of o realization_of d)]. Maximal realizations
+    relative to d. Full translation/inverse/property typing remains technical #247.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  formula_label: Rmax
+  formula_page: 4
+  normalized_formula: Rmax(d) EquivalentTo [(realization_of d and not (proper_part_of o realization_of d)]
+  source_label: null
+  expression_kind: DISPLAYED_DEFINITION
+  variant: BACKGROUND_PARTHOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K05
+  label: HEATER-BEL
+  statement: dBEL realized_in oBEL. An illustrative active belief realization, not an author dataset or reproduced
+    mental experiment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  formula_label: HEATER-BEL
+  formula_page: 5
+  normalized_formula: dBEL realized_in oBEL
+  source_label: null
+  expression_kind: INLINE_EXAMPLE
+  variant: ILLUSTRATION_CORE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K06
+  label: HEATER-DEL
+  statement: dDEL realized_in oDEL. The printed desire example uses DEL; later examples use DES. Preserve both source
+    labels without an accepted renaming/equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  formula_label: HEATER-DEL
+  formula_page: 6
+  normalized_formula: dDEL realized_in oDEL
+  source_label: null
+  expression_kind: INLINE_EXAMPLE
+  variant: ILLUSTRATION_CORE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K07
+  label: HEATER-INT
+  statement: dINT realized_in oACT. Intention realized in the button-press action; mechanical movement is separately
+    discussed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  formula_label: HEATER-INT
+  formula_page: 6
+  normalized_formula: dINT realized_in oACT
+  source_label: null
+  expression_kind: INLINE_EXAMPLE
+  variant: ILLUSTRATION_CORE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K08
+  label: BelO
+  statement: Dispositional belief SubClassOf (realized_in only Occurrent belief). No existence or possibility axiom
+    is supplied by this restriction alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: BelO
+  formula_page: 8
+  normalized_formula: Dispositional belief SubClassOf (realized_in only Occurrent belief)
+  source_label: BelO
+  expression_kind: LABELED_AXIOM
+  variant: CORE_ONLY
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K09
+  label: DesO
+  statement: Dispositional desire SubClassOf (realized_in only Occurrent desire). The intended core realizes desire
+    in a mental process; action/pleasure alternatives later require reconsidering this restriction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: DesO
+  formula_page: 8
+  normalized_formula: Dispositional desire SubClassOf (realized_in only Occurrent desire)
+  source_label: DesO
+  expression_kind: LABELED_AXIOM
+  variant: CORE_ONLY
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K10
+  label: BelP
+  statement: Rmax(bel) SubClassOf (has_part some Occurrent belief). One schema instance per dispositional-belief
+    individual is explicitly acknowledged as a representation shortcoming. No existence of Rmax members asserted.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: BelP
+  formula_page: 8
+  normalized_formula: Rmax(bel) SubClassOf (has_part some Occurrent belief)
+  source_label: BelP
+  expression_kind: LABELED_SCHEMA
+  variant: CORE_PARTHOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K11
+  label: DesP
+  statement: Rmax(des) SubClassOf (has_part some Occurrent desire). Maximal-realization constraint, not an all-purpose
+    rule for forming a belief/desire process for every individual.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: DesP
+  formula_page: 8
+  normalized_formula: Rmax(des) SubClassOf (has_part some Occurrent desire)
+  source_label: DesP
+  expression_kind: LABELED_SCHEMA
+  variant: CORE_PARTHOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K12
+  label: Dec
+  statement: Decision process SubClassOf [(has_part some Occurrent_belief) and (has_part some Occurrent_desire)].
+    Two existential part restrictions do not alone force distinct fillers, same-agent participation, temporal interaction
+    or a particular weighting mechanism.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: Dec
+  formula_page: 8
+  normalized_formula: Decision process SubClassOf [(has_part some Occurrent_belief) and (has_part some Occurrent_desire)]
+  source_label: Dec
+  expression_kind: LABELED_AXIOM
+  variant: CORE_COMMON
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K13
+  label: Int-Dec
+  statement: Intention SubClassOf (specified_output_of some Decision_process). Every intention has an originating
+    decision; authors explicitly reject the converse because a decision can end hesitantly.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: Int-Dec
+  formula_page: 8
+  normalized_formula: Intention SubClassOf (specified_output_of some Decision_process)
+  source_label: Int-Dec
+  expression_kind: LABELED_AXIOM
+  variant: CORE_COMMON
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K14
+  label: IntO
+  statement: Intention SubClassOf (realized_in only Action). Allowed realization type, not a guarantee of action
+    occurrence or an operational plan.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: IntO
+  formula_page: 8
+  normalized_formula: Intention SubClassOf (realized_in only Action)
+  source_label: IntO
+  expression_kind: LABELED_AXIOM
+  variant: CORE_ONLY
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K15
+  label: IntP
+  statement: Rmax(i) SubClassOf (has_part some Action). Per-intention maximal-realization schema. It belongs to
+    PARTHOOD, not the identical realization-class assumption of ONLY.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  formula_label: IntP
+  formula_page: 9
+  normalized_formula: Rmax(i) SubClassOf (has_part some Action)
+  source_label: IntP
+  expression_kind: LABELED_SCHEMA
+  variant: CORE_PARTHOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K16
+  label: TRIGGER-DES
+  statement: dDES has_trigger oBEL. An illustrative compatible desire-trigger hypothesis; sec.4.2 allows wanting
+    without an active relevant belief.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  formula_label: TRIGGER-DES
+  formula_page: 9
+  normalized_formula: dDES has_trigger oBEL
+  source_label: null
+  expression_kind: INLINE_EXAMPLE
+  variant: OPTIONAL_TRIGGER_HYPOTHESIS
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K17
+  label: TRIGGER-INT-ONLY
+  statement: Intention SubClassOf (has_trigger only Occurrent belief). Optional intention-trigger class restriction
+    inspired by Bosse; not a theorem of the core.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  formula_label: TRIGGER-INT-ONLY
+  formula_page: 10
+  normalized_formula: Intention SubClassOf (has_trigger only Occurrent belief)
+  source_label: null
+  expression_kind: DISPLAYED_HYPOTHESIS
+  variant: OPTIONAL_TRIGGER_HYPOTHESIS
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K18
+  label: TRIGGER-INT-PARTHOOD
+  statement: Tmin(i) SubClassOf Occurrent belief. Literal Tmin(i) differs from TRmin(d) in sec.2. Record notation
+    discrepancy without silently normalizing it.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E11
+  formula_label: TRIGGER-INT-PARTHOOD
+  formula_page: 10
+  normalized_formula: Tmin(i) SubClassOf Occurrent belief
+  source_label: null
+  expression_kind: DISPLAYED_SCHEMA
+  variant: OPTIONAL_TRIGGER_HYPOTHESIS
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K19
+  label: REDUCE-INT-DES
+  statement: Intention SubClassOf Dispositional desire. Authors say a reductive action-based reading should reject
+    DesO/DesP; do not union it into the non-reductive core.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  formula_label: REDUCE-INT-DES
+  formula_page: 11
+  normalized_formula: Intention SubClassOf Dispositional desire
+  source_label: null
+  expression_kind: DISPLAYED_ALTERNATIVE
+  variant: ALTERNATIVE_ACTION
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K20
+  label: COMPOUND-INT
+  statement: Intention SubClassOf (has_part some Dispositional desire) and (has_part some Dispositional belief).
+    A necessary parts constraint does not alone specify an exact mereological sum, exclusivity, identity or the
+    relevant disposition-parthood species.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  formula_label: COMPOUND-INT
+  formula_page: 11
+  normalized_formula: Intention SubClassOf (has_part some Dispositional desire) and (has_part some Dispositional
+    belief)
+  source_label: null
+  expression_kind: DISPLAYED_ALTERNATIVE
+  variant: ALTERNATIVE_ACTION
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K21
+  label: MODE-ACTIVATE
+  statement: dactivate mod-part_of d 2ndDES. First interpretation of second-order desire as a multi-track disposition;
+    action realization leads to rejection of DesO/DesP.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  formula_label: MODE-ACTIVATE
+  formula_page: 11
+  normalized_formula: dactivate mod-part_of d2ndDES
+  source_label: null
+  expression_kind: INLINE_EXAMPLE
+  variant: ILLUSTRATION_ALTERNATIVE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K22
+  label: MODE-WEAR
+  statement: dwear mod-part_of d 2ndDES. Second possible behavioral mode for warming, not automatically another
+    mandatory part of every core desire.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  formula_label: MODE-WEAR
+  formula_page: 11
+  normalized_formula: dwear mod-part_of d2ndDES
+  source_label: null
+  expression_kind: INLINE_EXAMPLE
+  variant: ILLUSTRATION_ALTERNATIVE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K23
+  label: PLEASURE-MODES
+  statement: Dispositional desire SubClassOf (has_mod-part some Disposition to take pleasure) and (has_mod-part
+    some Disposition to take displeasure). At least one filler in each class; exact two, distinctness and exhaustive
+    pathways are not stated. Authors reject DesO/DesP for this alternative.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  formula_label: PLEASURE-MODES
+  formula_page: 12
+  normalized_formula: Dispositional desire SubClassOf (has_mod-part some Disposition to take pleasure) and (has_mod-part
+    some Disposition to take displeasure)
+  source_label: null
+  expression_kind: DISPLAYED_ALTERNATIVE
+  variant: ALTERNATIVE_PLEASURE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K24
+  label: GOOD-SUBCLASS
+  statement: Dispositional desire SubClassOf Dispositional belief. One good-based construal; not the adopted general
+    equivalence of desires and beliefs.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  formula_label: GOOD-SUBCLASS
+  formula_page: 12
+  normalized_formula: Dispositional desire SubClassOf Dispositional belief
+  source_label: null
+  expression_kind: DISPLAYED_ALTERNATIVE
+  variant: ALTERNATIVE_GOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K25
+  label: GOOD-OCCURRENT-PROSE
+  statement: Occurrent desire SubClassOf Occurrent belief. Editorial notation for an explicitly tentative prose
+    suggestion; not an extra displayed/named source axiom.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  formula_label: GOOD-OCCURRENT-PROSE
+  formula_page: 12
+  normalized_formula: Occurrent desire SubClassOf Occurrent belief
+  source_label: null
+  expression_kind: PROSE_SUBCLASS_PROPOSAL
+  variant: ALTERNATIVE_GOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K26
+  label: GOOD-OUTPUT
+  statement: Dispositional desire SubClassOf (realized_in only (Occurrent desire and has_specified_output some Dispositional
+    Belief)). A different good-based construal creates a belief as output. Universal restrictions permit no actual
+    realization and produced belief content is not formally restricted to goodness.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  formula_label: GOOD-OUTPUT
+  formula_page: 12
+  normalized_formula: Dispositional desire SubClassOf (realized_in only (Occurrent desire and has_specified_output
+    some Dispositional Belief))
+  source_label: null
+  expression_kind: DISPLAYED_ALTERNATIVE
+  variant: ALTERNATIVE_GOOD
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K27
+  label: WISH-TRIGGER
+  statement: dWISH has_trigger oluckyDES. The existing bias, rather than the new lucky belief, is triggered by the
+    occurrent desire.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  formula_label: WISH-TRIGGER
+  formula_page: 13
+  normalized_formula: dWISH has_trigger oluckyDES
+  source_label: null
+  expression_kind: DISPLAYED_EXAMPLE
+  variant: BIAS_EXTENSION
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K28
+  label: WISH-REALIZATION
+  statement: dWISH realized_in some (Mental process and has_specified_output dluckyBEL). Retain source individual/class
+    restriction shorthand, including missing value/some before dluckyBEL; not a verified Manchester assertion.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  - S01
+  formula_label: WISH-REALIZATION
+  formula_page: 13
+  normalized_formula: dWISH realized_in some (Mental process and has_specified_output dluckyBEL)
+  source_label: null
+  expression_kind: DISPLAYED_EXAMPLE
+  variant: BIAS_EXTENSION
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K29
+  label: WISH-CLASS-TRIGGER
+  statement: Dispositional_wishful_thinking SubClassOf (has_trigger only Occurrent_desire). Only gives the allowed
+    trigger type, not existence, and no formal temporal-before rule is included.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  formula_label: WISH-CLASS-TRIGGER
+  formula_page: 13
+  normalized_formula: Dispositional_wishful_thinking SubClassOf (has_trigger only Occurrent_desire)
+  source_label: null
+  expression_kind: DISPLAYED_EXTENSION
+  variant: BIAS_EXTENSION
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K30
+  label: WISH-CLASS-OUTPUT
+  statement: Dispositional_wishful_thinking SubClassOf [realized_in only (Mental process and has_specified_output
+    some Dispositional Belief)]. A realization if present has an output belief; neither actual creation nor desired-content
+    matching is guaranteed by these restrictions alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  formula_label: WISH-CLASS-OUTPUT
+  formula_page: 13
+  normalized_formula: Dispositional_wishful_thinking SubClassOf [realized_in only (Mental process and has_specified_output
+    some Dispositional Belief)]
+  source_label: null
+  expression_kind: DISPLAYED_EXTENSION
+  variant: BIAS_EXTENSION
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+- id: K31
+  label: WEAK-DEC
+  statement: Decision process SubClassOf (has_part some Occurrent_belief). Replaces Dec for a less Humean-committed
+    framework. Dropping the desire requirement does not entail absence of all desires.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  formula_label: WEAK-DEC
+  formula_page: 13
+  normalized_formula: Decision process SubClassOf (has_part some Occurrent_belief)
+  source_label: null
+  expression_kind: DISPLAYED_ALTERNATIVE
+  variant: WEAKENING_ALTERNATIVE
+  source_proposal_basis: AUTHOR_REPORTED
+  transcription: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+labeled_formula_population:
+  labels:
+  - ONLY-R
+  - ONLY-T
+  - TRmin
+  - Rmax
+  - HEATER-BEL
+  - HEATER-DEL
+  - HEATER-INT
+  - BelO
+  - DesO
+  - BelP
+  - DesP
+  - Dec
+  - Int-Dec
+  - IntO
+  - IntP
+  - TRIGGER-DES
+  - TRIGGER-INT-ONLY
+  - TRIGGER-INT-PARTHOOD
+  - REDUCE-INT-DES
+  - COMPOUND-INT
+  - MODE-ACTIVATE
+  - MODE-WEAR
+  - PLEASURE-MODES
+  - GOOD-SUBCLASS
+  - GOOD-OCCURRENT-PROSE
+  - GOOD-OUTPUT
+  - WISH-TRIGGER
+  - WISH-REALIZATION
+  - WISH-CLASS-TRIGGER
+  - WISH-CLASS-OUTPUT
+  - WEAK-DEC
+  count: 31
+  policy: Reviewer expression labels are stable IDs; source_label is populated only for eight named core displays.
+paper_expression_scope:
+  named_core_labels:
+  - BelO
+  - DesO
+  - BelP
+  - DesP
+  - Dec
+  - Int-Dec
+  - IntO
+  - IntP
+  mutually_alternative_frameworks:
+  - CORE_ONLY
+  - CORE_PARTHOOD
+  do_not_union_alternatives_into_core: true
+  machine_axiom_count: null
+scenarios:
+- id: S01
+  label: HEATER author scenario
+  statement: John wants warmth, believes that pressing a heater button activates heating and acts after intending
+    to press. This is the conceptual running example, not an observed participant study.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E02
+- id: S02
+  label: Sleeping or paralyzed believer
+  statement: Belief persists without current mental activation or physical ability; an action-only reduction of
+    all belief misses the intended case. The omniscient spirit is a philosophical counterexample, not a dataset
+    record.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E05
+- id: S03
+  label: Competing warmth and energy desires
+  statement: An active warmth desire need not cause an action when outweighed by energy saving; a distinct belief
+    can instead support wearing a sweater.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E06
+- id: S04
+  label: Blocked and heuristic intention
+  statement: A remembered email or sudden paralysis can stop realization; an intention can arise intuitively rather
+    than through reflective deliberation.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: S05
+  label: Mechanical versus intentional press
+  statement: A heavy object can push the same finger/button mechanically. Different trigger classes distinguish
+    that disposition from intention; an action-shaped outcome alone is insufficient.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E07
+- id: S06
+  label: Allergy and fruit choice
+  statement: Wanting to avoid an allergic crisis need not require active allergy belief; apple/peach competition
+    leaves desire weighting unresolved.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E10
+- id: S07
+  label: Mary singing opportunity
+  statement: An active belief that training has reached a sufficient level triggers the already-held competition
+    intention in an optional hypothesis.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E11
+- id: S08
+  label: Heater/sweater second-order modes
+  statement: One alternative models two action dispositions as mod-parts; another has a mental process produce a
+    first-order intention. Their axiom commitments differ.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E12
+- id: S09
+  label: Lottery wishful thinking
+  statement: A pre-existing bias is triggered by a lottery desire and its realization creates a new lucky-number
+    belief; newly created belief is not its own pre-existing trigger target.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E14
+- id: S10
+  label: Moral and affordance illustrations
+  statement: Moral-belief-only motivation challenges the chosen Humean core; stairs support and climbing are coupled
+    realizations in the suggested affordance link.
+  basis: AUTHOR_REPORTED
+  evidence:
+  - E15
+  - E16
+- id: S11
+  label: Positive local core fragment
+  statement: A disposition b:Dispositional belief with realized_in(b,o) and o:Occurrent belief fits BelO locally.
+    A separate decision p with relevant belief/desire parts and specified_output_of(i,p) for an intention i illustrates
+    Dec/Int-Dec. This is reviewer reasoning on declared fragments, not a satisfying witness for a full recovered
+    ontology.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: S12
+  label: Adverse only-to-exists inference
+  statement: An individual with no realized_in fillers satisfies a universal-only restriction. BelO/DesO/IntO do
+    not guarantee occurrence or encode a counterfactual can-be-realized modality by themselves. This fragment observation
+    is not an executed ontology test.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E09
+- id: S13
+  label: Adverse automatic decision output
+  statement: A decision with belief/desire parts but no asserted intention is explicitly allowed. Int-Dec cannot
+    be reversed into a requirement that every decision produces an intention; open-world lack of an assertion is
+    also not proof of no output.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+- id: S14
+  label: Adverse shared or foreign process parts
+  statement: Absent disjointness and same-agent restrictions, Dec does not independently force two distinct fillers
+    belonging to the deciding agent. Additional background axioms could constrain this; none was acquired or executed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+- id: S15
+  label: Adverse alternatives union
+  statement: Merging the action/pleasure/good alternatives into the non-reductive core conceals the authors explicit
+    axiom-rejection choices. Do not claim automatic inconsistency without class-disjointness/background assumptions;
+    treat variants separately.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E13
+- id: S16
+  label: Adverse exact-sum interpretation
+  statement: The compound alternative requires some belief/desire parts, but those restrictions do not enforce an
+    exact sum, prohibit additional parts or supply the intended parthood species.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+- id: S17
+  label: Adverse wrong-content bias output
+  statement: The wishful-thinking output restrictions require a dispositional belief if realized, but do not formally
+    guarantee that its content matches the triggering desire. Trigger-versus-created-output and same-agent/temporal
+    identity need deeper checks.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  - E17
+- id: S18
+  label: Adverse source-version substitution
+  statement: A later FOSSR BDI OWL module cannot become the 2020 author artifact from sharing BDI vocabulary. Paper
+    concepts, references and publisher PDF availability do not establish machine-source identity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E02
+  - E19
+- id: S19
+  label: Adverse triggering versus formation
+  statement: If the lucky belief does not yet exist, treating a desire as triggering that same belief collapses
+    creation and activation. The additional existing dWISH solves the narrative distinction, while exact temporal
+    constraints are not in the displayed schema.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+- id: S20
+  label: Adverse sure-fire and blocked realization
+  statement: The default sure-fire premise and blocked-intention examples require clear occurrence/masking/trigger
+    conventions; their coexistence is a qualification question, not a demonstrated logical inconsistency.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E11
+evaluation:
+  Verification:
+    statement: The paper presents core/variant restrictions and discusses representability, but gives no named parser/profile/reasoner,
+      joint satisfiability or CQ-regression execution. Source-notation and universal/existential issues here are
+      reviewer analysis; our hash/coverage/CI checks do not verify the author theory.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E09
+    - E11
+    - E13
+    - E14
+  Validation:
+    statement: HEATER and philosophical counterexamples motivate intended distinctions. No independent expert-sampling,
+      consensus instrument, agreement measure or empirical subject validation is reported in the complete selected
+      paper.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E05
+    - E06
+    - E07
+    - E08
+    - E18
+  Evaluation:
+    statement: The authors compare explanatory fit of desire theories and demonstrate how some formulations would
+      change. No quantitative completeness/accuracy/runtime/utility benchmark is supplied, and conceptual compatibility
+      is not an executed model-finder outcome.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E09
+    - E11
+    - E12
+    - E13
+    - E15
+    - E18
+  Assessment:
+    statement: Explicit boundaries include assumed agency/action, elucidative definitions, unresolved desire weighing,
+      optional triggers, alternative axiom rejection and deferred content/affordance extensions. Our source-linked
+      findings preserve both strengths and adverse cases without a cross-corpus quality score.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E05
+    - E10
+    - E11
+    - E12
+    - E13
+    - E14
+    - E17
+    - E18
+  Assurance:
+    statement: DOI, HAL identity, publisher metadata and source licenses support scholarly provenance. No maintained
+      original machine release, versioned import closure, certified deployment or reproduced long-term reliability
+      evidence is resolved. Clariceptify protected bytes and public integrity checks are separately recorded.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E19
+    - M01
+    - M02
+artifact:
+  issue: 247
+  status: ORIGINAL_MACHINE_DISTRIBUTION_NOT_IDENTIFIED_TECHNICAL_SCOPE_OPEN
+  version_relation: 'The selected paper supplies conceptual/Manchester-style formal proposals, not an acquired executable
+    module. Title/author repository queries found no exact author distribution; a broader query returned only unverified
+    References repositories and title-code hits returned commentary/citations. Original namespace, exact machine
+    class definitions/populations, imports, tool versions, release and license remain unknown. OBI output relations
+    are explicitly borrowed conceptually; that is not proof of an actual OBI import. #247 owns one recovered module
+    and at most eight selected deeper checks; #249/#250 own the distinct later FOSSR work.'
+  discovery_execution:
+    path: evaluation/related-work/bdi2020/deep-review-discovery.json
+    sha256: ad6f2ceb2a887012647ee20f151b387834fedf79300c216a5a967ec02bd8b615
+  reading_inspection:
+    path: evaluation/related-work/bdi2020/reading-inspection.json
+    sha256: 601080563cddc11ce98b5d742e7478d1a0a0f440855003e7f21e770a19f23867
+  machine_class_populations:
+    local: null
+    imported: null
+    external_redeclarations: null
+    referenced_only: null
+    deprecated: null
+    inferred: null
+  foundation:
+    family: null
+    edition: null
+    relation: UNKNOWN_FORMAL_GROUNDING
+    conceptual_reuse: Continuant/occurrent and disposition frameworks; explicit OBI output-relation borrowing; BFO
+      book/adequatist discussion and MF/UFO-C references are not exact grounding evidence.
+    actual_imports: null
+  execution:
+    reasoner: NOT_EXECUTED
+    profile: NOT_EXECUTED
+    parser: NOT_EXECUTED
+    author_experiments: NOT_REPRODUCED
+    independent_validation: NOT_PERFORMED
+findings:
+- id: F01
+  label: Identity, dates and rights
+  statement: The 16-page source is a HAL cover plus 15 article pages, not a 16-page published article. Preserve
+    the cover September 2021/2020 submission and 2020 publication distinction and different CC-BY-NC-SA/CC-BY-NC
+    notices. No license for an unknown ontology file follows from article rights.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - M01
+  followup_issue: 247
+- id: F02
+  label: 'Strength: inactive versus active mentality'
+  statement: The dispositional/occurrent distinction preserves dormant and defeated beliefs/desires while treating
+    intention as an action disposition. This is substantive prior overlap for episode/mental-knowledge modeling,
+    without assuming exact equivalence to Clariceptify.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E07
+  - E09
+  followup_issue: 256
+- id: F03
+  label: Universal restrictions and existence
+  statement: Only restrictions permit empty filler sets and do not express the full modal sure-fire/can-be-realized
+    narrative. Actual core existence requirements differ from universal type constraints; no parser/solver result
+    is claimed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E09
+  followup_issue: 247
+- id: F04
+  label: PARTHOOD is an individual-indexed schema
+  statement: Rmax(bel/des/i) is parameterized; authors explicitly note one axiom per belief individual. A class-name
+    template is not automatic higher-order quantification in OWL. Minimal-trigger/maximal-realization existence
+    and finiteness are not established by the paper.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E09
+  followup_issue: 247
+- id: F05
+  label: Dec lacks explicit same-agent/time binding
+  statement: Some belief and desire parts alone do not formalize distinctness, ownership, ordering, causation or
+    conflict resolution. Dec and Int-Dec encode an origin dependency more weakly than a complete deliberation mechanism.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  followup_issue: 247
+- id: F06
+  label: No converse decision-output guarantee
+  statement: Authors explicitly allow decisions without intentions. The existential Int-Dec is from intention to
+    origin, and does not mean every decision must have an intention output.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  followup_issue: 247
+- id: F07
+  label: Non-reductivity and exact sum are not enforced by fragments
+  statement: The argument treats intention as irreducible, but the displayed core lacks explicit class disjointness/identity
+    criteria. The compound alternative only requires some parts rather than defining their exact mereological sum.
+    Do not strengthen either reading silently.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E12
+  followup_issue: 247
+- id: F08
+  label: Alternatives require versioned dispositions
+  statement: Action- and pleasure-based readings explicitly reject DesO/DesP in some cases; good-based and weakened-Humean
+    proposals are further variants. They are not all simultaneously adopted core axioms, nor is their incompatibility
+    mechanically proved here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E13
+  - E15
+  followup_issue: 247
+- id: F09
+  label: Trigger hypotheses are optional
+  statement: Desire may be active without the relevant occurrent belief; the universal intention-trigger restriction
+    appears as an additional hypothesis. Do not force every core desire/intention to have this trigger semantics.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E11
+  followup_issue: 247
+- id: F10
+  label: Literal notation and expression gaps
+  statement: TRmin versus Tmin, DEL versus DES, individual/class restriction shorthand and chain-like o notation
+    remain explicit. WISH output syntax and the printed brackets require a future translation contract; no machine-parse
+    failure or correction is fabricated.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+  - E10
+  - E11
+  - E14
+  - S01
+  followup_issue: 247
+- id: F11
+  label: Sure-fire scope needs blocking qualification
+  statement: The paper defaults to sure-fire single-track dispositions while motivating intentions with blocked
+    realizations. Whether a trigger occurred, a disposition was masked/changed or conditions were absent must be
+    specified before treating a scenario as a formal contradiction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E11
+  followup_issue: 247
+- id: F12
+  label: Wishful-thinking creation/content gap
+  statement: Creation of new belief is distinguished from triggering it, but the output restrictions do not capture
+    desired-content matching, same-agent origin or temporal precedence. The source wording mentions belief basis
+    despite its occurrent-desire trigger; preserve that mismatch.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  - E17
+  followup_issue: 247
+- id: F13
+  label: Foundation and imported-definition uncertainty
+  statement: 'OBI relations are named conceptual reuse; BFO book/continuant/disposition terminology and MF/UFO-C
+    related work do not prove an exact upper-ontology grounding, import chain or BFO1/UFO1 edition. Machine class
+    populations and definitions remain unknown in #247.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E03
+  - E05
+  - E08
+  - E09
+  - E19
+  followup_issue: 247
+- id: F14
+  label: No formal artifact resolved in bounded discovery
+  statement: Author/publisher metadata and original paper do not reveal an original machine module; repository and
+    code matches are unverified broad candidates, secondary commentary or citations. Neither absence nor later FOSSR
+    identity is inferred universally.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E19
+  - M01
+  - M02
+  followup_issue: 247
+- id: F15
+  label: Content and information extension is deferred
+  statement: Propositions, intentional objects, aboutness, semiotic triad, affordances, risk, image schemas and
+    recipes/prescriptions are discussions or future work. The paper supplies no implemented comprehensive content/reference/lifecycle
+    ontology for all of them.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  - E17
+  - E18
+  followup_issue: 256
+- id: F16
+  label: Conceptual compatibility is not executed validation
+  statement: Philosophical counterexamples and formal sketches provide argument evidence. No reported named reasoner/profile/CQ
+    result, measured expert acceptance, empirical performance or executable integration benchmark occurs in the
+    inspected source. Public integrity CI validates our dossier, not the truth of BDI.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E07
+  - E09
+  - E10
+  - E11
+  - E12
+  - E13
+  - E14
+  - E15
+  - E18
+  followup_issue: 256
+questions:
+- id: Q01
+  label: Exact source and grounding
+  statement: Recover or delimit the 2020 author namespace/module/version/license, actual upper-family/edition and
+    imports. If acquired, inventory every selected local/imported/referenced/deprecated class with definitions or
+    explicit missing states.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E02
+  - E19
+  - M01
+  - M02
+  followup_issue: 247
+- id: Q02
+  label: Literal syntax and source aliases
+  statement: Inspect the printed TRmin/Tmin, DEL/DES, bracket/chain shorthand and individual output forms against
+    exact bytes and translator conventions; keep source versus reconstructed machine syntax separate.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E06
+  - E10
+  - E11
+  - E14
+  - S01
+  followup_issue: 247
+- id: Q03
+  label: ONLY/PARTHOOD obligations
+  statement: Compare both frameworks on one bounded positive/adverse case; distinguish universal filler restrictions,
+    actual existence, modal sure-fire meaning and per-individual schema generation. Do not assume equivalence or
+    a satisfiable global theory.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E09
+  followup_issue: 247
+- id: Q04
+  label: Decision origin and ownership
+  statement: Check Int-Dec direction, absent converse, same-agent/time/distinct-part assumptions and relevant non-reductivity/identity
+    requirements. Preserve hesitant decisions and intuitive origins.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+  - E10
+  followup_issue: 247
+- id: Q05
+  label: Alternative theory separation
+  statement: Record exactly which source axioms each action/compound/pleasure/good/weak-Humean variant keeps or
+    rejects; only test a representative bounded variant, not the union of all alternative theories.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E13
+  - E15
+  followup_issue: 247
+- id: Q06
+  label: Actual triggers and blocking
+  statement: Separate optional belief triggers from the core, minimal-trigger notation and physical/mental blocking
+    assumptions. A universal trigger type is not a real occurrence guarantee.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E07
+  - E10
+  - E11
+  followup_issue: 247
+- id: Q07
+  label: Creation and content integrity
+  statement: Test or delimit existing bias versus newly produced belief, agent/time order and intended-content matching;
+    retain the source wording mismatch instead of repairing it into an author result.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  - E17
+  followup_issue: 247
+- id: Q08
+  label: Identity, modalities and execution limits
+  statement: Delimit categorical-basis and mode identity, exact versus some-part claims, and what the recovered
+    module actually tests. Any parser/profile/reasoner run needs tool/input/version/expected-observed evidence;
+    otherwise record the concrete blocker.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E09
+  - E12
+  - E18
+  followup_issue: 247
+synthesis:
+- id: Y01
+  label: Prior episode/decision overlap
+  statement: Originating decision processes with active beliefs/desires and intention outputs are substantial previous
+    modeling. Future Clariceptify novelty wording must compare evidence-bound differences rather than claim this
+    pattern unprecedented.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E10
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y02
+  label: Mental state/content caution
+  statement: Sleeping belief tokens, active processes and truth-evaluable/shared content are different ontological
+    populations. Candidate mappings require source-level comparison, not matching English labels.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E17
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y03
+  label: Candidate future test bank
+  statement: Keep dormant/defeated belief-desire, hesitant decisions, wrong-owner parts, mechanical actions and
+    wishful formation as candidate CQ/counterexample material. They are not adopted Clariceptify fixtures.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  - E07
+  - E09
+  - E14
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y04
+  label: Variant-management lesson
+  statement: Treat competing philosophical accounts and OPTIONAL hypotheses as separate variant contracts with stated
+    axiom withdrawals. Reuse would require explicit owner approval after synthesis.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E09
+  - E11
+  - E12
+  - E13
+  - E15
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y05
+  label: Formalization cost
+  statement: Authoritative machine recovery, parameterized schema translation, modal assumptions, source syntax
+    and missing identity/time/content restrictions must be resolved or delimited before technical alignment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E04
+  - E09
+  - E14
+  - E17
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y06
+  label: Comparative delivery
+  statement: 'Route findings to #247 and comparison #256 with I&DA and DOLCEMental. Missing primary texts remain
+    access gaps, and #126 final synthesis remains open. Next acquired paper is the distinct #249 BDI2026/preprint.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E18
+  - E19
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+closure_boundary: 'Complete exact-paper #85 at the shared deep-review replacement path after relevant integrity
+  checks and merged PR. Preserve original formal/notation issues, alternative frameworks and independent technical
+  #247. This is a full reading, not a machine class glossary, verified original OWL distribution, Manchester parser
+  run, semantic compatibility proof, expert acceptance or final synthesis. #256/#126 remain open. No Clariceptify
+  ontology, definitions, requirements, fixtures, manuscript or release change; later uses await owner decision.'
+catalog_population:
+  entries: 71
+  conceptual_distinctions: 59
+  relation_entries: 12
+  machine_class_count: null

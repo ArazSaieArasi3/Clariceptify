@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "work_id": "BDI2020",
+  "source_sha256": "61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95",
+  "source_bytes": 492732,
+  "pdf_pages": 16,
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "printed_page_map": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "role": "HAL_COVER"
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": 140,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 141,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 142,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 143,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": 144,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": 145,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": 146,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": 147,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": 148,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 149,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": 150,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": 151,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": 152,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": 153,
+      "role": "ARTICLE"
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": 154,
+      "role": "ARTICLE"
+    }
+  ],
+  "text_extraction": {
+    "tool": "pdftotext -layout plus PyMuPDF text",
+    "state": "PROSE_READABLE_SYMBOLS_AND_LAYOUT_VISUALLY_CHECKED",
+    "limits": "Bullet extraction and styled individual subscripts require original-page inspection; printed notation defects are retained."
+  },
+  "visual_inspection": {
+    "performed_by": "AI-assisted reviewer",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "render_engine": "PyMuPDF1.26.6",
+    "scale": 1.6,
+    "limits": "Inspection declaration, not independently proven expert reading."
+  },
+  "figures": 0,
+  "tables": 0,
+  "appendices": 0,
+  "bibliography_records": 56,
+  "numbered_footnotes": {
+    "author_affiliation_funding": [
+      1,
+      2
+    ],
+    "substantive": [
+      3,
+      4
+    ]
+  },
+  "formula_inventory": {
+    "rows": 31,
+    "printed_or_inline_fragments": 30,
+    "prose_subclass_proposals": 1,
+    "source_named_core_labels": [
+      "BelO",
+      "DesO",
+      "BelP",
+      "DesP",
+      "Dec",
+      "Int-Dec",
+      "IntO",
+      "IntP"
+    ],
+    "labels": [
+      "ONLY-R",
+      "ONLY-T",
+      "TRmin",
+      "Rmax",
+      "HEATER-BEL",
+      "HEATER-DEL",
+      "HEATER-INT",
+      "BelO",
+      "DesO",
+      "BelP",
+      "DesP",
+      "Dec",
+      "Int-Dec",
+      "IntO",
+      "IntP",
+      "TRIGGER-DES",
+      "TRIGGER-INT-ONLY",
+      "TRIGGER-INT-PARTHOOD",
+      "REDUCE-INT-DES",
+      "COMPOUND-INT",
+      "MODE-ACTIVATE",
+      "MODE-WEAR",
+      "PLEASURE-MODES",
+      "GOOD-SUBCLASS",
+      "GOOD-OCCURRENT-PROSE",
+      "GOOD-OUTPUT",
+      "WISH-TRIGGER",
+      "WISH-REALIZATION",
+      "WISH-CLASS-TRIGGER",
+      "WISH-CLASS-OUTPUT",
+      "WEAK-DEC"
+    ],
+    "count_policy": "One relation/class statement per row; split two method restrictions and two mod-part assertions. Includes one explicitly labeled prose subclass suggestion. This is not an author-reported total OWL axiom count."
+  },
+  "literal_discrepancies": [
+    "TRmin(d) in sec.2 versus Tmin(i) in sec.4.3.2.",
+    "dDEL/oDEL in sec.3.2 versus dDES/oDES in sec.4.3.1.",
+    "Sec.5.2 calls the source of wishful thinking beliefs although its illustrated trigger is an occurrent desire; its final parenthesis speaks of belief-to-desire while its example is desire-to-belief.",
+    "TRmin/Rmax brackets and chain-like o notation, plus WISH individual output shorthand, require an explicit future translation rather than silent correction.",
+    "HAL cover September2021 and CC-BY-NC-SA versus internal2020 and CC-BY-NC."
+  ],
+  "semantics_or_solver_executed": "NOT_EXECUTED",
+  "model_change": "NONE"
+}

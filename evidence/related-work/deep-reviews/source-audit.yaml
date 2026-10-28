@@ -1,6 +1,6 @@
 schema_version: '1.0'
 issue: 269
-checked_on: '2026-10-27'
+checked_on: '2026-10-28'
 population:
   paper_or_version_records: 19
   separate_document_sources: 4
@@ -361,6 +361,49 @@ discovery_attempts:
     repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
   limitation: No exact namespace, imports, machine declaration populations or historical fidelity established; different
     works not substituted.
+- id: BDI20-G01
+  query: '"Foundations for an Ontology of Belief"'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-28'
+  result_limit: 8
+  returned: []
+  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence
+    claim.
+- id: BDI20-G02
+  query: Toyoshima Barton Grenier
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-28'
+  result_limit: 8
+  returned: []
+  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence
+    claim.
+- id: BDI20-G03
+  query: '"belief" "desire" ontology'
+  method: CONNECTED_GITHUB_REPOSITORY_SEARCH
+  checked_on: '2026-10-28'
+  result_limit: 8
+  returned:
+  - Aryia-Behroziuan/References
+  - Visva92/References
+  - sabahydri/References
+  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence
+    claim.
+- id: BDI20-S01
+  query: BDI2020 primary author/publisher links, title code and other-host searches
+  method: PRIMARY_PUBLISHER_AUTHOR_CONNECTED_CODE_AND_WEB_SEARCH
+  checked_on: '2026-10-28'
+  checked_urls:
+  - https://hal.science/hal-03041527
+  - https://doi.org/10.3233/FAIA200667
+  - https://journals.sagepub.com/doi/full/10.3233/FAIA200667
+  - https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667
+  - https://adrienbarton.blogspot.com/p/publications.html
+  - https://ebooks.iospress.nl/volumearticle/55801
+  - https://griis.ca/en/adrien-barton/
+  outcome: Publisher and author identity verified; original executable module not identified. Code hits are commentary/citation;
+    later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
+  limitation: 'HAL current access denied; retained full text available. Machine classes/imports/definitions/license
+    and exact foundation edition remain unknown in #247.'
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -678,27 +721,32 @@ records:
 - id: BDI2020
   title: Foundations for an Ontology of Belief, Desire and Intention
   primary_issue: 85
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
     urls: []
     evidence:
     - G12
+    - BDI20-G01
+    - BDI20-G02
+    - BDI20-G03
+    - BDI20-S01
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PAPER_FORMALISM_VERSION_MATCH_PENDING
+  artifact_state: PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED
   foundation:
     family: null
     edition: null
     relation: UNKNOWN
     basis: UNKNOWN
-    locator: BDI2020 paper cites UFO-C and MF as related work; that mention alone does not establish the proposed
-      theory grounding.
+    locator: Printed140-143/PDF2-5 sec.1-3.1, p.145/PDF7 adequatism, p.146/PDF8 OBI relation reuse; references9,26,39.
+      MF/UFO-C/BFO citations do not pin proposed grounding.
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: No exact upper-ontology family/edition or actual import established for the author proposal. Dispositional
+      concepts and OBI output-relation borrowing are explicit conceptual reuse, not BFO1/UFO1 evidence.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
@@ -707,6 +755,15 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 247
+  paper_review:
+    path: evidence/related-work/deep-reviews/BDI2020/review.yaml
+    conceptual_relation_entries: 71
+    named_core_displays: 8
+    formal_expression_records: 31
+    prose_subclass_proposals: 1
+    manual_critical_findings: 16
+    limits: All-class declarations/imported definitions remain unknown. Paper terms and discussed frameworks are
+      not a released machine ontology.
 - id: BDI2026Preprint
   title: The Belief-Desire-Intention ontology for modelling mental reality and agency
   primary_issue: 249

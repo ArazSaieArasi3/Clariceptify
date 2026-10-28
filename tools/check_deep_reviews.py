@@ -107,6 +107,23 @@ def validate_dossier(d, entry, dimensions):
                     'COM source PER silently repaired to another predicate')
             require(all(v is None for v in d['artifact']['machine_class_populations'].values()),
                     'Paper taxonomy promoted to machine class population')
+        if d['work_id'] == 'BDI2020':
+            named = {'BelO', 'DesO', 'BelP', 'DesP', 'Dec', 'Int-Dec', 'IntO', 'IntP'}
+            core = [r for r in d['commitments'] if r['variant'].startswith('CORE_')]
+            require(len(core) == len(named) and
+                    {r['source_label'] for r in core} == named and
+                    d['paper_expression_scope']['do_not_union_alternatives_into_core'],
+                    'BDI alternative or hypothesis promoted to named core')
+            bel = next(r for r in core if r['source_label'] == 'BelO')
+            require(bel['normalized_formula'] ==
+                    'Dispositional belief SubClassOf (realized_in only Occurrent belief)',
+                    'BDI literal only restriction changed into existence')
+            trigger = next(r for r in d['commitments'] if r['formula_label'] == 'TRIGGER-INT-PARTHOOD')
+            require(trigger['normalized_formula'] == 'Tmin(i) SubClassOf Occurrent belief',
+                    'BDI source Tmin silently repaired')
+            require(all(v is None for v in d['artifact']['machine_class_populations'].values()) and
+                    d['paper_expression_scope']['machine_axiom_count'] is None,
+                    'BDI paper inventory promoted to machine population')
     if d['status'] == 'REVIEW_COMPLETE':
         require(d['coverage']['read_pages'] == list(range(1, entry['pdf_pages'] + 1)), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and
