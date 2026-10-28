@@ -517,6 +517,15 @@ discovery_attempts:
     qualified.
   limitation: Names/descriptions only in bounded searches; no global absence claim. No full native glossary,
     parser/prover run, software foundation parity or complete DOLCE satisfiability established.
+- id: CDNS2008
+  method: EXACT_PAPER_LINKS_HTTP_RDF_CENSUS_AND_BOUNDED_PUBLIC_SEARCH
+  checked_on: '2026-10-28'
+  query: Paper note2 mixed-case collInt.owl; concluding lowercase endpoint; literal/mapped imports; GitHub
+    collInt ontology/cDnS/cDnS ontology; institutional/author metadata
+  result: Standalone root retained, ground/core map pinned; original-host import and lowercase endpoint failed.
+    No author repository identified in this bounded search.
+  receipt: evaluation/related-work/cdns2008/discovery.json
+  limitation: Selected current three-file map, no original2008 immutable release or compatible API proved.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -1140,7 +1149,7 @@ records:
 - id: CLR-RW-IDA
   title: 'Managing Knowledge at the Information Level: an Ontological Approach'
   primary_issue: 84
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: OWNER_AUTHORIZED_SECONDARY_SUMMARY_REVIEW_QUEUED
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
     urls: []
@@ -1166,6 +1175,8 @@ records:
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    limitations: No primary full-text or machine glossary completion claimed. Owner2026-10-28 removes the PDF
+      wait gate for the bounded summary/citation task84; technical246 remains separately scoped.
   next_issues:
   - 246
 - id: CLR-RW-DOLCEMental
@@ -1209,36 +1220,50 @@ records:
 - id: cDnS-journal-2008
   title: Norms and plans as unification criteria for social collectives
   primary_issue: 263
-  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
+  source_state: DEEP_JOURNAL_REVIEW_COMPLETE_SELECTED51_CLASS_GLOSSARY_COMPLETE_TECHNICAL_OPEN
   repository:
-    state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
-    urls: []
+    state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+    urls:
+    - http://www.loa-cnr.it/ontologies/collInt.owl
+    - http://www.ontologydesignpatterns.org/ont/cdns/ground.owl
+    - http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
     evidence:
     - G09
+    - CDNS2008
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: HEADER_LINKED_CORE_PAPER_BLOCKED
+    paper_correspondence: PAPER_LINKED_ROOT_SELECTED_DIFFERENCES_NOT_HISTORICAL_BYTE_PARITY
+  artifact_state: PAPER_LINKED_ROOT_AND_EXPLICIT_MAPPED_IMPORTS
   foundation:
-    family: null
+    family: Constructive DnS; ground-ontology independent
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Retained cDnS1.1 header names this paper; full journal text missing. Do not transfer the 2007
-      paper foundation claims without review.
-    artifact_imports: null
+    relation: INDEPENDENT_FOUNDATION_WITH_ACTUAL_SELECTED_MODULE_IMPORTS
+    basis: AUTHOR_REPORTED
+    locator: Journal section2.1/PDF3-5,3.1-3.4/PDF11-28; collInt imports ground; mapped ground imports cDnS;
+      retained core1.1 has no imports.
+    artifact_imports:
+    - http://www.loa-cnr.it/ontologies/ground.owl
+    - http://www.loa-cnr.it/ontologies/cDnS.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: DOLCE is earlier-framework context, not an actual mandatory NIC grounding edition/import.
+      Current root1.0/ground/core1.1 map has undeclared shares/isSharedBy; original-host parity, compatibility
+      and profile/semantics remain267.
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
-    imported_definitions_complete: false
+    state: ALL51_SELECTED_MAPPED_CLASS_COMMENTS_AND_CONSTRAINTS_ACCOUNTED_FOR
+    local_classes: 51
+    source_definition_candidates: 51
+    missing_source_definitions: 0
+    catalog_path: evidence/related-work/deep-reviews/cDnS-journal-2008/classes.yaml
+    imported_definitions_complete: true
     reasoner_execution: NOT_EXECUTED
+    root_local_classes: 25
+    mapped_import_local_classes: 26
+    limitations: Counts are local-by-namespace totals across an explicit selected three-file map, not51 root
+      classes, accepted logical definitions or a certified original2008 import closure. All51 annotation hashes/hierarchies
+      reconciled with private bytes. owl:Thing separate; reasoner/profile not executed.
   next_issues:
   - 267
-  - 263
+  - 251
+  - 126
 - id: Emotions-2015
   title: Emotions ontology for collaborative modelling and learning of emotional responses
   primary_issue: 77

@@ -1,0 +1,1300 @@
+schema_version: '1.0'
+work_id: cDnS-journal-2008
+issue: 267
+checked_on: '2026-10-28'
+status: ALL_CLASSES_IN_SELECTED_THREE_FILE_MAP_ACCOUNTED_FOR
+population_policy: All51 declared named owl:Class IRIs, deduplicated by IRI, across selected collInt25, mapped
+  ground14 and retained cDnS12. The original import endpoints failed; the explicit namespace/file map is not
+  historical byte-fidelity proof.
+modules:
+- id: collInt
+  source_filename: NIC-collInt.owl
+  source_url: http://www.loa-cnr.it/ontologies/collInt.owl
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  namespace: http://www.loa-cnr.it/ontologies/collInt.owl#
+  version:
+  - '1.0'
+  - 1.0, created by Aldo Gangemi
+  census_path: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json
+  census_sha256: aafec2d4d368aa9e84eb1dde7f3ee25d62d972462a1b1d62e1ef8c719463301c
+  declared_named_classes: 25
+  local_named_classes: 25
+  external_named_class_redeclarations: 0
+  actual_imports:
+  - http://www.loa-cnr.it/ontologies/ground.owl
+  license: No explicit source license established for selected bytes; raw source/annotation text is not redistributed.
+  property_populations:
+    annotation_properties: 0
+    classes: 25
+    datatype_properties: 0
+    named_individuals: 0
+    object_properties: 21
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    anonymous_owl_class_declarations: 26
+    anonymous_restrictions: 48
+    deprecated_entities: []
+- id: ground
+  source_filename: NIC-ground.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/cdns/ground.owl
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  namespace: http://www.loa-cnr.it/ontologies/ground.owl#
+  version:
+  - '1.0'
+  - 1.0, created by Aldo Gangemi
+  census_path: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json
+  census_sha256: 5c6fad24e547dfd85810192b36c0f8db1bbaa62323c141ac307d5a5a33c1117c
+  declared_named_classes: 14
+  local_named_classes: 14
+  external_named_class_redeclarations: 0
+  actual_imports:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl
+  license: No explicit source license established for selected bytes; raw source/annotation text is not redistributed.
+  property_populations:
+    annotation_properties: 0
+    classes: 14
+    datatype_properties: 0
+    named_individuals: 0
+    object_properties: 8
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    anonymous_owl_class_declarations: 3
+    anonymous_restrictions: 6
+    deprecated_entities: []
+- id: cDnS
+  source_filename: cDnS.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  namespace: http://www.loa-cnr.it/ontologies/cDnS.owl#
+  version:
+  - '1.1'
+  - 'Created by Aldo Gangemi
+
+    Version 1.1 aligns cDnS with the axiomatization in the article JAAMAS 2008.'
+  census_path: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json
+  census_sha256: 194d074dba0c8a5b93709fcee53a9c3c28c873c843b93c3bdbddf5aa86f1c07c
+  declared_named_classes: 12
+  local_named_classes: 12
+  external_named_class_redeclarations: 0
+  actual_imports: []
+  license: No explicit source license established for selected bytes; raw source/annotation text is not redistributed.
+  property_populations:
+    annotation_properties: 0
+    classes: 12
+    datatype_properties: 0
+    named_individuals: 0
+    object_properties: 47
+  other_class_populations:
+    named_rdfs_class_declarations: []
+    anonymous_owl_class_declarations: 1
+    anonymous_restrictions: 14
+    deprecated_entities: []
+classes:
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#AgentCollection
+  label: Agent collection
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#AgentCollection rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: f537cb32c81f1aaf87e06a9cbc46a9293c2a4db4fbcb7c8968dd8c35401da94a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Collection restricted to social-agent members; a common externally visible property need not be conceptualized
+      by its members.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#AgentCollection]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#AgentRole
+  label: Agent role
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#AgentRole rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: f9c401bae8ac91155d249d71a54be0cf4c08087cf366bdc070dc38db633ce90b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Classifier whose fillers are social or physical agents.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#AgentRole]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Classification
+  label: Classification
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Classification rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: cdfa612efda5e7e593c8a5d5d57a26b5fe84d265bc5b6196384b1cc2389c4315
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Situation for recording a concept, classified entity and interval together.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Classification]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#ConstitutiveDescription
+  label: Constitutive description
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#ConstitutiveDescription rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 8a46427afabe48a72595cb1bcee5e03b2712b32692f789253e2b9f50a769608f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description that introduces some social agent.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#ConstitutiveDescription]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Desire
+  label: Desire
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Desire rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 77d88e8bf7d04a4fa93d682b08075a7597b8da09ad466eac2e6acfc56ab83121
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Primitive descriptive representation of what an agent wants.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Desire]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#EpistemicRelation
+  label: Epistemic relation
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#EpistemicRelation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c54afd299057f4a569171b2347c4279a070caa3bb5eba9febd8472ff6adb52a9
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Norm-plan bundle organizing a community's shared core knowledge.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#NormPlanBundle
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#EpistemicRelation]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Goal
+  label: Goal
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Goal rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 13e2b466af7b6a3ca1350c66794d0879de262a06e62a73e232b050eb8f50f1f7
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Desire contained as a proper part of some plan.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#Desire
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Goal]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#GoalSituation
+  label: Goal situation
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#GoalSituation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 6efd7500c89cbe2c9803eac118d4119b97ddfdb4d727dde167ba234f8b050a8f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Situation satisfying a goal.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#GoalSituation]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#IntentionalCollective
+  label: Intentional collective
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#IntentionalCollective rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 94b5cd552f4ea486b719b8a03d1c3b589ca1fff69d36ef8b0e4ebb83142a2cf7
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Knowledge community unified by a plan.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCommunity
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#IntentionalCollective]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCollective
+  label: Knowledge collective
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCollective rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 2b1bff4502d71d31ae5ef94b9593e6c0574fabf6c2fb36188121be0d5dee4a9b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Normative collective unified by an epistemic relation carrying a paradigm.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#NormativeIntentionalCollective
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCollective]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCommunity
+  label: Knowledge community
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCommunity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: f2f0c9ef3cd9e72f58757e76558a5604387f0e4f3f07464657630099b7366d55
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Collection of agents each sharing some knowledge corpus.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#AgentCollection
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCommunity]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCorpus
+  label: Knowledge corpus
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCorpus rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: fce6fe8943dd642f78f5056fec235abfbc8832870acc07467a31bd9891a55e52
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Collection consisting of at least two descriptions.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCorpus]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeRole
+  label: Knowledge role
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeRole rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 6ab6b5ed97bfe62978a0af44682c528b9dbdda6d6c2625dacdbfbe5f6be28f0a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Concept classifying informational expressions of paradigm descriptions.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeRole]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Norm
+  label: Norm
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Norm rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 0d2d843cf36dbef48df6d7492301913d43fe479dea83ffefefb9c9dae9f35697
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Regulatory description combining conventions, case interpretation and constraints on action schemas.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Norm]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#NormApplication
+  label: Norm application
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#NormApplication rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 0e6df4d97d94df4cd6e7f22edd770fbf86770c8929f12fd3c6713ae3af26c29b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Situation applying a norm to interpret another situation.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#NormApplication]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#NormPlanBundle
+  label: Norm plan bundle
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#NormPlanBundle rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 1ece6b5901d085d02b30ef0fb18fb2690515a5e6f194a97c26e1e23cf6730088
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Bundle containing mutually entrenched plan and norm descriptions.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#NormPlanBundle]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#NormativeIntentionalCollective
+  label: Normative intentional collective
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#NormativeIntentionalCollective rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 8a542899fb3c0b3619dde4022c8c0b351b75709e0bae486a5f051280b66f909c
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Knowledge community unified by a norm-plan bundle.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCommunity
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#NormativeIntentionalCollective]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Organization
+  label: Organization
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Organization rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: b0dc77fe7c3630630045364005f162802fb6cb3b4d6fcb5a1e1df77125c74b0f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social agent acted for by members of intentional collectives.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Organization]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Paradigm
+  label: Paradigm
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Paradigm rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: d778b00a23de3b6c4dc0b1ac917ee322a02ec71e8efe1c4bc078bf034723f805
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Bundle of descriptions assumed within knowledge communities.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Paradigm]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Parameter
+  label: Parameter
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Parameter rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: a682c54601877c4edb4cbdf182c099b7a624ad863376d017aa89f022e3f52538
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Concept classifying value-like regions, places, qualities or intervals.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Parameter]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Plan
+  label: Plan
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Plan rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c40a9cdcd6b55d758489779737156ade4c73fa1c07f0acf0e37e7efb172cd184
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Action-schema description shared by an agent, using role/task concepts and containing a goal.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Plan]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#PlanExecution
+  label: Plan execution
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#PlanExecution rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 9f66709b252d249805bdf0ee61ad4f5e0cfe8e83ece102fd72acd34e42437fdf
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Situation proactively satisfying a plan.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#PlanExecution]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Role
+  label: Role
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Role rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 3f7b08a26acf705cf5eb27d1f5eef028bb1a6a29f90ae9bdf130503e0c9b6751
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Concept classifying object-like entities and targeting tasks.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Role]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#SocialRelation
+  label: Social relation
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#SocialRelation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 5b3e23deb56b5f87138dbb41633401cc7062bfc26149d9ced3046b281f71f5e5
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Epistemic relation assumed by agents within knowledge collectives.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/collInt.owl#EpistemicRelation
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#SocialRelation]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/collInt.owl#Task
+  label: Task
+  label_basis: RDFS_LABEL
+  module: collInt
+  source_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/collInt.owl#Task rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 4a7bac93f368e00754f5a2dbb992a4c5cf52cc9d923d39b8ebe0aab7e542db17
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Concept classifying action-like entities.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json classes[iri=http://www.loa-cnr.it/ontologies/collInt.owl#Task]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Action
+  label: Action
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Action rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: d1a285bfb730133d4b38950f9e051d76b054218d6ddf38afaa28a063ed4e2253
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground-domain action interpreted under a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Action]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Aggregate
+  label: Aggregate
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Aggregate rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: fc2e83315674aa548455118711578d7293ea03a5f41985e4071d584c74ff5892
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground entity treated as a sum of members or situation setting entities.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Aggregate]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept
+  label: Domain concept
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: a96bb7ede1c3e222df7d76ef156600dd8b75ffc8d08719d83791bfa3311d65e2
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Concept classifying only ground-domain entities.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  label: Domain entity
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: d9c451ecd957a961aeb777154cba3bc5a7cf1e7778675fdd921d020e8c4183ed
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Generic ground entity classified through domain descriptions.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Event
+  label: Event
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Event rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: df5bb64ecd7f1f6fd54835be3e804ddf0294427f15708f3330eb8f54408e4dd1
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground event given a descriptive interpretation.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Event]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#IndividualConstruct
+  label: Individual construct
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#IndividualConstruct rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: ecba65c66ba37cfb4ddca6f07039713c2b1e075666ba1a978ed653383dee6ad1
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Individual grounding counterpart of a schematic entity.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#IndividualConstruct]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#InformationRealization
+  label: Information realization
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#InformationRealization rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 580cbab44fedacde95c4290896bf1eec881fecab0623340ffa8af268e0b356a8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical support realizing an information object.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#InformationRealization]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Location
+  label: Location
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Location rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 44a847833e63b9837f412e850ac24580941a71e2bc7fb1ab7957cf7b1793a5d8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground entity used to locate something in a descriptive frame.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Location]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Object
+  label: Object
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Object rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 934fb2759472bbdd00546f098d9ee2c48783f1e41b70a062ad88688e7b3838cd
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground object interpreted within a descriptive frame.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Object]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#PhysicalAgent
+  label: Physical agent
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#PhysicalAgent rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: ae8cf65096e35eee2d3ab1b0812fd476a2855217a88de357ad243a7043787ed2
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground entity acting for a social agent and constructing an individual counterpart.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#PhysicalAgent]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Quality
+  label: Quality
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Quality rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 8ab31682d5803fbdfbb7a00e287bd23c54ab6bac2e47781c86e273112190fdf6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground entity playing a quality role in a descriptive frame.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Quality]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Region
+  label: Region
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Region rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 894a2773c9d74d2b58a481a0220b371716a3524604f56967b451e3d406c3b605
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground region interpreted by a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Region]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#Substance
+  label: Substance
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#Substance rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: e832f6f44ac96223d5147ac02fae4482e7ceb0c5cae814e798059f34b539417c
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground nonschematic substance under a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#Substance]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/ground.owl#TimeInterval
+  label: Time interval
+  label_basis: RDFS_LABEL
+  module: ground
+  source_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/ground.owl#TimeInterval rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: cdd1c08a9507b5d197e003dd3449e24be809147a7d74986fef9cc7be261c7bca
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Ground interval used in a descriptive context.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json classes[iri=http://www.loa-cnr.it/ontologies/ground.owl#TimeInterval]
+  notes:
+  - Current selected source, not a certified2008 original release.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle
+  label: Bundle
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 20a1ae76efbc0125ab61f3152a43bce9c1459db5cbba7b238964f31fe0c6a3de
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Multiple descriptions combined through common satisfaction or collection characterization.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+  label: Collection
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Collection rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 85d7274f9ea65bd5beb46fafa1e870c1fef271318b2d457f735390c34b0186e9
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A group whose membership has shared criteria.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Collection]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+  label: Concept
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Concept rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: be0d2c59382d59e76b020ecc02da669becac7024a0130b358525bd4ae5b96783
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A category defined within one description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Concept]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration
+  label: Configuration
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 05a2d71918628234c27f5997f4c1b288e72733ed87d7fd4a617d8e12abe2b993
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A collection of parts unified by a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+  label: Description
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Description rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 06e709fbce5c7b33ea6bfedb522cdb1fc93f278fa91e28bc5c4316bfe011196c
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A communicable conceptualization dependent on social agents.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Description]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  label: Entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Entity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 4fe22975a04377947170513c828427ec18f648312eeb2343ebb0430919de4235
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Anything admitted within the selected domain.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.w3.org/2002/07/owl#Thing
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Entity]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+  label: Ground entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c4b009799eb2e6b0c4456d191cc0f084aaa35f17fd7496e6a41d7d1c1d8584e6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An entity contextualized through description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  equivalent_expressions: 1
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject
+  label: Information object
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: cae0445ff613cad693ccf8f698f77ac47f52c84fb03c4aa8ba3f87a2bee9d1f7
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Historically situated information independent of a particular physical carrier.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+  label: Non-schematic entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 777e8c80a8b1bda8cea3af1a5b7f66c58f0dfd91e4c2e929b095d5cee4bd5697
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An entity outside the schematic category; source wording is ambiguous.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity]
+  notes:
+  - The comment negates schematic membership but its following explanation can be read inconsistently. Use
+    the declared disjointness as a separate formal observation; do not silently repair the source.
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  label: Schematic entity
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 11d01048709ba16e3bcae9f2c0246976c9727f22a44ef9bde5f3c312ec45ffb8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A primitive used to construct social reality.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+  label: Situation
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#Situation rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 89d331f5bafd2b18c03b89e5446a9a803abd7b05a761498d2e00d75cbc15ffcc
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A relational context viewed through a description.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#Situation]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+- iri: http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent
+  label: Social agent
+  label_basis: RDFS_LABEL
+  module: cDnS
+  source_sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  deprecated: false
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 5ef60237f1ce3265e6304a76cf2ed56f8fe5ce7b7cf5f36fe60b1a626ba6c88d
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A socially constituted bearer of shared conceptualizations.
+    basis: REVIEWER_PARAPHRASE
+  named_superclasses:
+  - http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+  equivalent_expressions: 0
+  constraint_ref: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json classes[iri=http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent]
+  notes:
+  - Reused same source digest and existing12-class glossary; journal-specific review does not assert historical
+    byte equivalence.
+imported_glossary:
+  state: ALL_SELECTED_MAPPED_IMPORT_CLASS_COMMENTS_ACCOUNTED_FOR
+  unique_external_classes_pending: 0
+  next_issues:
+  - 267
+  limitation: Mapped closure only. Original-host parity, undeclared shares/isSharedBy, current1.0-to1.1 compatibility,
+    profile and semantics remain open. owl:Thing is builtin, not a52nd local glossary item.
+logical_inference: NOT_EXECUTED
+historical_paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
+counts:
+  local_classes: 51
+  source_definition_candidates: 51
+  missing_source_definitions: 0
+  reviewer_reconstructions: 0
+  inferred_classes: null

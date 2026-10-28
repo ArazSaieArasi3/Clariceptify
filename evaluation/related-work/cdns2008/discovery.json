@@ -1,0 +1,131 @@
+{
+  "checked_on": "2026-10-28",
+  "github_name_description_queries": [
+    {
+      "limit": 10,
+      "query": "collInt ontology",
+      "returned": []
+    },
+    {
+      "limit": 10,
+      "query": "cDnS",
+      "result": "Ten unrelated name/description hits; not an author repository identification."
+    },
+    {
+      "authority": "NOT_CONFIRMED_AS_AUTHOR_SOURCE",
+      "limit": 10,
+      "query": "cDnS ontology",
+      "returned": [
+        "kelnishi/tropelang-standard"
+      ]
+    }
+  ],
+  "http_receipts": [
+    {
+      "bytes": 55204,
+      "content_type": "text/plain; charset=iso-8859-1",
+      "final_url": "https://www.loa-cnr.it/ontologies/collInt.owl",
+      "id": "literal-collInt",
+      "sha256": "379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200",
+      "status": 200,
+      "url": "http://www.loa-cnr.it/ontologies/collInt.owl"
+    },
+    {
+      "bytes": 55204,
+      "content_type": "text/plain; charset=iso-8859-1",
+      "final_url": "https://www.loa-cnr.it/ontologies/collInt.owl",
+      "id": "https-collInt",
+      "sha256": "379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200",
+      "status": 200,
+      "url": "https://www.loa-cnr.it/ontologies/collInt.owl"
+    },
+    {
+      "bytes": 562,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.loa-cnr.it/ontologies/cDnS.owl",
+      "id": "literal-cDns",
+      "sha256": "7c334fe3a69d8be209a1e3b52cb1427c38c020b56cb3ab91f06ebb7217650fb3",
+      "status": 404,
+      "url": "http://www.loa-cnr.it/ontologies/cDnS.owl"
+    },
+    {
+      "bytes": 45077,
+      "content_type": null,
+      "final_url": "http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl",
+      "id": "candidate-cDns-matched-retained-hash",
+      "sha256": "f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a",
+      "status": 200,
+      "url": "http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl"
+    },
+    {
+      "bytes": 316166,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://link.springer.com/article/10.1007/s10458-008-9038-9?error=cookies_not_supported&code=bec55a53-f505-4cba-a010-503d593840ac",
+      "id": "publisher",
+      "sha256": "69af74de28f668907faa7c2651559a55574281e0ce2978a3e88ad858c1766521",
+      "status": 200,
+      "url": "https://link.springer.com/article/10.1007/s10458-008-9038-9"
+    },
+    {
+      "bytes": 17,
+      "content_type": "text/plain; charset=UTF-8",
+      "final_url": "https://www.loa-cnr.it/ontologies/ground.owl",
+      "id": "https-ground",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "status": 403,
+      "url": "https://www.loa-cnr.it/ontologies/ground.owl"
+    },
+    {
+      "bytes": 17,
+      "content_type": "text/plain; charset=UTF-8",
+      "final_url": "https://www.loa-cnr.it/ontologies/collint.owl",
+      "id": "https-lowercase",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "status": 403,
+      "url": "https://www.loa-cnr.it/ontologies/collint.owl"
+    },
+    {
+      "bytes": 17,
+      "content_type": "text/plain; charset=UTF-8",
+      "final_url": "http://www.loa-cnr.it/ontologies/ground.owl",
+      "id": "literal-ground",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "status": 403,
+      "url": "http://www.loa-cnr.it/ontologies/ground.owl"
+    },
+    {
+      "bytes": 17,
+      "content_type": "text/plain; charset=UTF-8",
+      "final_url": "http://www.loa-cnr.it/ontologies/collint.owl",
+      "id": "literal-lowercase",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "status": 403,
+      "url": "http://www.loa-cnr.it/ontologies/collint.owl"
+    },
+    {
+      "bytes": 14974,
+      "content_type": null,
+      "final_url": "http://www.ontologydesignpatterns.org/ont/cdns/ground.owl",
+      "id": "mirror-ground",
+      "sha256": "ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b",
+      "status": 200,
+      "url": "http://www.ontologydesignpatterns.org/ont/cdns/ground.owl"
+    }
+  ],
+  "import_map": {
+    "path": "evidence/related-work/deep-reviews/cDnS-journal-2008/import-map.json",
+    "sha256": "4c0e755d5e89316923afb4ae3847d4755ef266d92115f97ddefd12b860c36298"
+  },
+  "limitations": "Name/description and public web/paper links only; no universal absence or archival/maintenance verdict. Literal concluding lowercase URL and original-host imports failed; explicit mirror mappings retained. Raw source remains private.",
+  "outcome": "PAPER_LINKED_STANDALONE_ROOT_RETAINED_NO_AUTHOR_REPOSITORY_IDENTIFIED_IN_THIS_BOUNDED_SEARCH",
+  "paper_sha256": "272d9cf81057480eb9380f6142bef68d6687f4c559688ef053d159bbd329be65",
+  "primary_metadata": [
+    "https://cris.unibo.it/handle/11585/620507",
+    "https://stlab.istc.cnr.it/stlab/staff/aldo-gangemi/"
+  ],
+  "schema_version": "1.0",
+  "search_terms": [
+    "\"collInt.owl\" Gangemi ontology github",
+    "\"Norms and plans as unification criteria\" Gangemi2008ontology"
+  ]
+}

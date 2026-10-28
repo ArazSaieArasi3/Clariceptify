@@ -1,0 +1,58 @@
+{
+  "asserted_union": {
+    "declared_object_properties": 76,
+    "explicit_triples": 1148,
+    "named_owl_classes": 51,
+    "referenced_undeclared_class_iris": [
+      "http://www.w3.org/2002/07/owl#Thing"
+    ],
+    "undeclared_onProperty_iris": [
+      "http://www.loa-cnr.it/ontologies/cDnS.owl#isSharedBy",
+      "http://www.loa-cnr.it/ontologies/cDnS.owl#shares"
+    ]
+  },
+  "historical_paper_fidelity": "NOT_ESTABLISHED",
+  "inferred_class_count": null,
+  "modules": [
+    {
+      "actual_imports": [
+        "http://www.loa-cnr.it/ontologies/ground.owl"
+      ],
+      "census_path": "evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json",
+      "census_sha256": "aafec2d4d368aa9e84eb1dde7f3ee25d62d972462a1b1d62e1ef8c719463301c",
+      "id": "collInt",
+      "source_sha256": "379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200",
+      "source_url": "http://www.loa-cnr.it/ontologies/collInt.owl"
+    },
+    {
+      "actual_imports": [
+        "http://www.loa-cnr.it/ontologies/cDnS.owl"
+      ],
+      "census_path": "evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json",
+      "census_sha256": "5c6fad24e547dfd85810192b36c0f8db1bbaa62323c141ac307d5a5a33c1117c",
+      "id": "ground",
+      "source_sha256": "ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b",
+      "source_url": "http://www.ontologydesignpatterns.org/ont/cdns/ground.owl"
+    },
+    {
+      "actual_imports": [],
+      "census_path": "evidence/related-work/deep-reviews/cDnS2007/artifact-census.json",
+      "census_sha256": "194d074dba0c8a5b93709fcee53a9c3c28c873c843b93c3bdbddf5aa86f1c07c",
+      "id": "cDnS",
+      "source_sha256": "f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a",
+      "source_url": "http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl"
+    }
+  ],
+  "original_host_import_bytes_verified": false,
+  "reasoner_execution": "NOT_EXECUTED",
+  "resolution": "EXPLICIT_SELECTED_FILE_MAP_NOT_LITERAL_HOST_PARITY",
+  "resolved_declared_import_iris": [
+    "http://www.loa-cnr.it/ontologies/ground.owl",
+    "http://www.loa-cnr.it/ontologies/cDnS.owl"
+  ],
+  "root_ontology_iri": "http://www.loa-cnr.it/ontologies/collInt.owl",
+  "root_sha256": "379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200",
+  "schema_version": "1.0",
+  "source_redistributed": false,
+  "unresolved_declared_import_iris_in_file_map": []
+}

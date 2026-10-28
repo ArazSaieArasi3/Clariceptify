@@ -88,13 +88,32 @@ owner_boundary:
   adoption: OWNER_DECISION_REQUIRED
   forbidden: No Clariceptify ontology, definition, requirement, fixture, manuscript, release or next-version implementation
     changes. Research proposals are not accepted model decisions.
-  stop: Continue independent acquired-source work. Missing-text papers remain BLOCKED_ON_FULL_TEXT. When no independent
-    acquired-source task remains, provide the exact outstanding download table and wait for owner files.
+  stop: Continue one primary source at a time. Missing-full-text sources ordinarily remain blocked; the explicit2026-10-28
+    I&DA-only exception below authorizes a bounded summary review/citation task without a PDF gate. This does
+    not relax full-paper criteria for the18 acquired sources.
 
 input_population_revision:
   date: '2026-10-28'
   reason: Six previously requested texts supplied by the owner; same exact 19-work corpus and same ten-dimensional review criteria.
   receipt: evidence/related-work/corpus/owner-intake-2026-10-28.json
   acquired: 18
-  waiting_for_owner: 1
+  waiting_for_owner: 0
   primary_vs_supplement: Main PDF and externally retrieved supplement are separately identified; retrieval, raw-byte retention, visual glyph checks and solver execution are independent claims.
+  limited_evidence: 1
+limited_evidence_exception:
+  authorized_on: '2026-10-28'
+  work_id: CLR-RW-IDA
+  issue: 84
+  basis: OWNER_PROVIDED_GOOGLE_QUICK_READ
+  current_scope: Complete a bounded critical review and citation-use guidance from the owner-supplied summary;
+    retain explicit missing-full-text qualification. Do not wait for the PDF.
+  full_text_review: NOT_PERFORMED
+  full_text_required_for_current_scope: false
+  prohibitions:
+  - No REVIEW_COMPLETE full-paper state or acquired-source hash for the unavailable text.
+  - No invented page, exact formula, full visual coverage, verified quotation or DOI.
+  - No unqualified claim that the reviewer verified the original article.
+  - No manuscript edit, ontology adoption or final corpus novelty conclusion in this source task.
+  completion: Separate limited-evidence deliverable, all provided-summary claims attributed and limitations
+    recorded, citation metadata checked where possible, merged relevant checks; not counted among completed
+    full-paper reviews.
