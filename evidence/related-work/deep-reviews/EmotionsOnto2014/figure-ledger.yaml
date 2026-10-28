@@ -1,0 +1,222 @@
+schema_version: '1.0'
+work_id: EmotionsOnto2014
+source_sha256: 351bddf40462ec68b7ff990837b2a7cf144b8f239dc86bf76d2d9d0ec618d610
+inspection: VISUALLY_REVIEWED
+machine_class_count: null
+figures:
+- number: 1
+  pdf_page: 6
+  kind: CORE_CONCEPTUAL_MODEL
+  ovals:
+  - Situation
+  - Stimulus
+  - Sensor
+  - Sensation
+  - Perception
+  - Description
+  - EmergentEmotion
+  - Memory
+  - EmotionExpressionSystem
+  property_labels:
+  - hasInput
+  - hasOutput
+  - hasPart
+  - describes
+  - triggers
+  - stores
+  - uses
+- number: 2
+  pdf_page: 8
+  kind: PAPER_TAXONOMY
+  nodes:
+  - label: dul:Event
+    parents: []
+  - label: dul:Process
+    parents:
+    - dul:Event
+  - label: dul:Action
+    parents:
+    - dul:Event
+  - label: dul:SocialObject
+    parents: []
+  - label: dul:Description
+    parents:
+    - dul:SocialObject
+  - label: dul:Situation
+    parents:
+    - dul:SocialObject
+    - SocialContext
+    - EnvironmentalContext
+  - label: dul:PhysicalObject
+    parents: []
+  - label: dul:PhysicalArtifact
+    parents:
+    - dul:PhysicalObject
+  - label: dul:PhysicalAgent
+    parents:
+    - dul:PhysicalObject
+  - label: dul:PhysicalBody
+    parents:
+    - dul:PhysicalObject
+  - label: dul:BiologicalObject
+    parents:
+    - dul:PhysicalBody
+  - label: ofntb:Frame
+    parents:
+    - dul:Description
+  - label: Perception
+    parents:
+    - dul:Process
+  - label: EmergentEmotion
+    parents:
+    - dul:Event
+  - label: Memory
+    parents:
+    - dul:Process
+  - label: Sensation
+    parents:
+    - dul:Process
+  - label: Stimulus
+    parents:
+    - dul:Event
+  - label: DiscreteStimulus
+    parents:
+    - Stimulus
+  - label: ContinuousStimulus
+    parents:
+    - Stimulus
+  - label: Behavioural
+    parents:
+    - dul:Action
+    - EmotionExpressionSystem
+  - label: Gestural
+    parents:
+    - Behavioural
+  - label: Speech
+    parents:
+    - Behavioural
+  - label: Facial
+    parents:
+    - Behavioural
+  - label: Psychophysiological
+    parents:
+    - dul:Action
+    - EmotionExpressionSystem
+  - label: EmotionExpressionSystem
+    parents:
+    - Interface
+  - label: Verbal
+    parents:
+    - dul:Description
+    - EmotionExpressionSystem
+  - label: SocialContext
+    parents: []
+  - label: EnvironmentalContext
+    parents: []
+  - label: PersonalContext
+    parents: []
+  - label: Interface
+    parents:
+    - PersonalContext
+  - label: Sensor
+    parents:
+    - Interface
+    - dul:PhysicalObject
+  - label: ArtificialSensor
+    parents:
+    - Sensor
+    - dul:PhysicalArtifact
+  - label: BiologicalSensor
+    parents:
+    - Sensor
+    - dul:PhysicalAgent
+    - dul:BiologicalObject
+  - label: Sense
+    parents:
+    - BiologicalSensor
+  - label: Hearing
+    parents:
+    - Sense
+  - label: Touch
+    parents:
+    - Sense
+  - label: Taste
+    parents:
+    - Sense
+  - label: Sight
+    parents:
+    - Sense
+  - label: Smell
+    parents:
+    - Sense
+  node_count: 39
+  nonprefixed_count: 27
+  dul_count: 11
+  ofntb_count: 1
+  direction_policy: LITERAL_DRAWING_NOT_SILENTLY_REPAIRED
+- number: 3
+  pdf_page: 10
+  kind: DEVICE_FRONT_REAR
+  parts:
+  - Picture Area
+  - Feeling Area
+  - Emotional Picture
+  - Emotional Buttons
+  - Heart-Emotional indicator
+  - History-Emotional Buttons
+  - Replay
+  - Delete
+- number: 4
+  pdf_page: 11
+  kind: FRAME_INSTANCE_EXAMPLE
+  frames:
+  - Feeling
+  - Cause_to_make_noise
+  emotional_state_label: sadness
+  sensor_label: sad button
+  song_label: happy song
+  roles:
+  - experiencer
+  - emotional_state
+  - sound_maker
+  - patient
+  - cause
+- number: 5
+  pdf_page: 12
+  kind: QUESTIONNAIRE_CATEGORIES
+  pleasant:
+  - desire
+  - inspiration
+  - admiration
+  - satisfaction
+  - fascination
+  - pleasant surprise
+  - amusement
+  unpleasant:
+  - contempt
+  - indignation
+  - disgust
+  - dissatisfaction
+  - disappointment
+  - unpleasant surprise
+  - boredom
+table:
+  number: 1
+  pdf_page: 13
+  counts:
+    contempt: 0
+    indignation: 0
+    disgust: 0
+    dissatisfaction: 0
+    disappointment: 0
+    unpleasant surprise: 0
+    boredom: 0
+    desire: 0
+    inspiration: 0
+    admiration: 6
+    satisfaction: 4
+    fascination: 4
+    pleasant surprise: 0
+    amusement: 0
+  total: 14
+  population: AUTHOR_REPORTED_EPF_EXPERIENCE_SINGLE_CHOICES

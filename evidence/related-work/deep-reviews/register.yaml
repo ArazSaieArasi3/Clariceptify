@@ -124,7 +124,7 @@ acquired_papers:
   pdf_pages: 16
   artifact_issues:
   - 239
-  state: QUEUED
+  state: REVIEW_COMPLETE
 waiting_for_owner:
 - id: CLR-RW-DUL
   issue: 70

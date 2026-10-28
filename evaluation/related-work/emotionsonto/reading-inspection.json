@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "work_id": "EmotionsOnto2014",
+  "source_sha256": "351bddf40462ec68b7ff990837b2a7cf144b8f239dc86bf76d2d9d0ec618d610",
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "printed_page_mapping": "Printed page = PDF page +1812; printed1813-1828.",
+  "visual_inspection": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "renderer": "PyMuPDF1.26.6",
+    "scale": 1.7,
+    "page_renders": [
+      {
+        "page": 1,
+        "sha256": "6debe168800cef83c7816a0635493fb8714adce1548b8424caa9135f421efe0a"
+      },
+      {
+        "page": 2,
+        "sha256": "835eb66e81dca56bb0f232334d1d6fe60b01aeb22db392e8ac373a9e8f299fb0"
+      },
+      {
+        "page": 3,
+        "sha256": "8641e7303b3e1e9e6c82b360feb29e1abd2a8dafccb93880e8759d50f7c6d9d4"
+      },
+      {
+        "page": 4,
+        "sha256": "61fbeba64063cd759b43d332c48843c6cbcd6bfb78703eb5212d946b86960e3c"
+      },
+      {
+        "page": 5,
+        "sha256": "c63e9f596192221c3fb4372c465bdc12d857555636eb94f5694e39e37ec23ca3"
+      },
+      {
+        "page": 6,
+        "sha256": "25bfcc7d377cee8cd3214ae4ed6da60eb8c47f4c4181bb78954a24e899ba0f92"
+      },
+      {
+        "page": 7,
+        "sha256": "d4bbd2be5976c13fd5678516d12ff3fc2707765c29b0553e8760fcad2e37e54b"
+      },
+      {
+        "page": 8,
+        "sha256": "5c3f1366335dbc9208329a7a8f190ea2145b1638dd1fc4fb919ac9ceab2e700f"
+      },
+      {
+        "page": 9,
+        "sha256": "47dc9247a492e25f37436b45fe38d8024b376cdb8ff791d82d681d758b2d80ff"
+      },
+      {
+        "page": 10,
+        "sha256": "4a3884b8c271af40bfd6b8a1790864a00ff9ed23d6b37ef4bd50d0ffc740dc7b"
+      },
+      {
+        "page": 11,
+        "sha256": "d5b7ccc622ca1885652dd10cc5f78cc08ea9c4fd841336c42707768e2ebb0997"
+      },
+      {
+        "page": 12,
+        "sha256": "2a48d7e0b5f35b70dedffadb690e4075157b70c67982bbc749e46e2f2e8c0740"
+      },
+      {
+        "page": 13,
+        "sha256": "76b4e5ede3d34efea03c52ca82c586509fc95ef274e8e019c6cefe0d573657fd"
+      },
+      {
+        "page": 14,
+        "sha256": "d95b6f8eaa9c5daa1355cf1cba11359980cdcf0757ce9cb2a4130eff837bf6b4"
+      },
+      {
+        "page": 15,
+        "sha256": "aaa11542dc72a592f92d1234fa1a38adb9dfbefc2d1450b021e4f9e5807dd710"
+      },
+      {
+        "page": 16,
+        "sha256": "4ba22f6437d3d4d5377159befdc4d4164d264d3009fd1085e2649afe23169fc5"
+      }
+    ],
+    "special_checks": [
+      "Five figures, including all39 Figure2 taxonomy nodes and literal arrow directions",
+      "Figure4 frame-role/property names and sadness nodes",
+      "Fourteen PrEmo labels and every Table1 count",
+      "All section/subsection text, three footnotes and36 reference entries"
+    ]
+  },
+  "semantics_or_solver_executed": "NOT_EXECUTED",
+  "source_redistributed": false,
+  "limits": "AI-assisted complete reading/visual coverage declaration; not independent expert acceptance or a proof of semantic adequacy."
+}

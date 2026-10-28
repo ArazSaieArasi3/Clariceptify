@@ -438,6 +438,21 @@ discovery_attempts:
     declared imports. See evaluation/related-work/cognitiveatlas/deep-review-discovery.json.
   limitation: 'No complete class/definition census, import closure/profile/reasoning, source generation or historical2011
     equivalence established; those remain #241.'
+- id: EMO-S01
+  query: Exact2014 ontology endpoint, author predecessor/extension links and bounded repository searches
+  method: PRIMARY_PUBLISHER_AUTHOR_LINKS_AND_CONNECTED_GITHUB_SEARCH
+  checked_on: '2026-10-28'
+  checked_urls:
+  - https://www.jucs.org/jucs_20_13/emotions_onto_an_ontology.html
+  - http://rhizomik.net/ontologies/emotionsonto/
+  - https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
+  - https://rhizomik.net/ontologies/2013/02/emotionsonto.owl
+  - https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
+  outcome: Publisher identity/DOI and author predecessor distinction verified. Two8-result-limit repository queries
+    returned none; original/dated predecessor file opens unavailable. Later identical retained extension headers
+    parsed; see evaluation/related-work/emotionsonto/deep-review-discovery.json.
+  limitation: 'No global absence, exact original import/glossary, license, semantic test or historical equivalence
+    claim. Technical #239 remains open.'
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -894,25 +909,34 @@ records:
 - id: EmotionsOnto2014
   title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
   primary_issue: 262
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
     state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
-    urls: []
+    urls:
+    - http://rhizomik.net/ontologies/emotionsonto/
+    - https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
     evidence:
     - G07
     - W04
+    - EMO-S01
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: AUTHOR_PREDECESSOR_LINKS_MATCH_PENDING
+    paper_correspondence: ORIGINAL_FILE_UNACQUIRED_LATER_EXTENSION_DISTINCT
+  artifact_state: AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY
   foundation:
     family: DOLCE / DnS
     edition: null
     relation: PAPER_STATED_GROUNDING
     basis: AUTHOR_REPORTED
-    locator: EmotionsOnto-2014.pdf sec.3; Fig.2
-    artifact_imports: null
+    locator: Printed1819-1821/PDF7-9, sec.3 and39-node Fig.2; later extension retained header imports separately.
+    artifact_imports:
+      original: null
+      later_extension:
+      - http://www.loa-cnr.it/codeps/owl/ofntb.owl
+      - http://www.loa-cnr.it/ontologies/DUL.owl
+      - http://www.loa-cnr.it/ontologies/IOLite.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'Paper family statement only; dated predecessor-file identity and imports remain #239.'
+    limitations: DOLCE stated grounding, dul-prefixed diagram and FrameNet/ofntb reuse; exact edition/original file
+      imports unknown. Legacy DUL/IOLite/ofntb declarations belong to later extension, not proof of2014 byte equivalence.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -923,6 +947,14 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 239
+  paper_review:
+    path: evidence/related-work/deep-reviews/EmotionsOnto2014/review.yaml
+    catalog_entries: 105
+    figure2_nodes: 39
+    commitment_groups: 14
+    findings: 18
+    limits: Full paper catalog; no original/released class counts or complete class definitions established.14-person
+      product-experience study is not recognition accuracy or ontology correctness.
 - id: CLR-RW-DUL
   title: Dolce+D&S Ultralite and its main Ontology Design Patterns
   primary_issue: 70
