@@ -18,6 +18,23 @@ def check(root=ROOT):
     expected |= {row['id'] for row in inventory['additional_work_or_version_records'] if row['status'] == 'FULL_TEXT_NOT_ACQUIRED'}
     if {row['id'] for row in missing} != expected or len(missing) != len(expected):
         raise ValueError('Missing-text request population mismatch')
+    if 'owner_intake_revision' in inventory:
+        receipt = json.loads((root / inventory['owner_intake_revision']['receipt']).read_text())
+        if receipt['frozen_archive_modified'] or receipt['exact_paper_population'] != 19:
+            raise ValueError('Owner intake changed frozen archive or paper population')
+        supplied = receipt['records']
+        if len(supplied) != 6 or len({r['work_id'] for r in supplied}) != 6:
+            raise ValueError('Owner intake source population mismatch')
+        inputs = {r.get('candidate_id', r.get('id')): r for r in
+                  rows + inventory['additional_work_or_version_records']}
+        for r in supplied:
+            current = inputs[r['work_id']]
+            if (current['filename'] != r['filename'] or current['sha256'] != r['sha256'] or
+                    current.get('access_status', current.get('status')) != 'ACQUIRED' or
+                    r['raw_source_public'] or not r['review_pages'] or
+                    r['review_pages'] != sorted(set(r['review_pages'])) or
+                    any(p < 1 or p > r['container_pdf_pages'] for p in r['review_pages'])):
+                raise ValueError('Owner intake source identity or page scope drift')
     for row in rows:
         if row['access_status'] == 'ACQUIRED' and not (row['filename'] and len(row['sha256'] or '') == 64):
             raise ValueError('Acquired source lacks exact identity')

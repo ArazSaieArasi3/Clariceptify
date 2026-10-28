@@ -1,5 +1,5 @@
 schema_version: '1.0'
-date: '2026-10-27'
+date: '2026-10-28'
 framework_issue: 258
 baseline_commit: 2db62a19d8f9d482a8c826c0be82a4935c450ef6
 status_authority: This register and each deep dossier govern current deep-review status; earlier scoped reviews
@@ -125,67 +125,127 @@ acquired_papers:
   artifact_issues:
   - 239
   state: REVIEW_COMPLETE
-waiting_for_owner:
-- id: CLR-RW-DUL
-  issue: 70
-  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
-  doi: 10.3233/978-1-61499-676-7-81
-  url: https://doi.org/10.3233/978-1-61499-676-7-81
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: 2016 chapter inaccessible at checked endpoint; DUL 4.2 formal file acquired.
-- id: CLR-RW-O4OA
-  issue: 73
-  title: The Ontology for Conceptual Characterization of Ontologies
-  doi: 10.1007/978-3-031-47262-6_6
-  url: https://research.utwente.nl/en/publications/the-ontology-forconceptual-characterization-ofontologies/
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: Institutional final PDF returns 403. O4OA specification v2.6 download returns an anti-bot HTML page, not
-    a PDF.
 - id: CLR-RW-Representation
   issue: 82
   title: An Ontology of Representation
   doi: 10.1177/15705838251337943
   url: https://journals.sagepub.com/doi/10.1177/15705838251337943
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: 2025 journal article identified; publisher PDF returns 403. Distinct 2021 Towards paper not substituted.
-- id: CLR-RW-IDA
-  issue: 84
-  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
-  doi: null
-  url: https://scholar.google.com/scholar?q=Managing+Knowledge+at+the+Information+Level+Fortier+Kassel
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: Exact title and authors cited in the acquired OntoKADS primary report, reference 8; no authoritative standalone
-    full text or DOI resolved. Link is a title lookup, not a publisher page.
+  state: REVIEW_COMPLETE
+  sha256: 16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a
+  note: 'Full main-paper and publisher-parsed supplement A-C text review complete; supplement raw/glyph and
+    all machine-artifact questions stay #244.'
+  order: 13
+  filename: Representation-2025-owner.pdf
+  pdf_pages: 16
+  artifact_issues:
+  - 244
+  priority_after_owner_intake: 1
+- id: CLR-RW-DUL
+  issue: 70
+  title: Dolce+D&S Ultralite and its main Ontology Design Patterns
+  doi: 10.3233/978-1-61499-676-7-81
+  url: https://doi.org/10.3233/978-1-61499-676-7-81
+  state: QUEUED
+  sha256: 6605f2d66dbd6a0a7af21bfa7f0802050abd2c5122c0c5410bfb073479a29ca8
+  note: Owner full text received and identity checked; acquisition is not deep review. Full book retained;
+    only chapter 5 is the selected work. Page 121 is blank and chapter 6 starts at PDF page 122.
+  order: 14
+  filename: DUL-2016-book-owner.pdf
+  pdf_pages: 389
+  artifact_issues:
+  - 88
+  priority_after_owner_intake: 2
+  review_pages:
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  printed_pages: 81-103
+- id: CLR-RW-O4OA
+  issue: 73
+  title: The Ontology for Conceptual Characterization of Ontologies
+  doi: 10.1007/978-3-031-47262-6_6
+  url: https://research.utwente.nl/en/publications/the-ontology-forconceptual-characterization-ofontologies/
+  state: QUEUED
+  sha256: de09a79471af857d251231429988f2025d3f02b6983073c13e249e19aebcf0df
+  note: 'Owner full text received and identity checked; acquisition is not deep review. '
+  order: 15
+  filename: O4OA-2023-owner.pdf
+  pdf_pages: 20
+  artifact_issues:
+  - 91
+  priority_after_owner_intake: 3
 - id: CLR-RW-DOLCEMental
   issue: 86
   title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
   doi: 10.3233/FAIA200666
   url: https://iris.unitn.it/handle/11572/336248
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: Paper full text not acquired from checked publisher/author endpoints; complete official repository snapshot
-    includes dolce_needs.p.
+  state: QUEUED
+  sha256: 55f6dc932422c646b04a1defafe176574e4c248fe827c9106dded222cb14f98f
+  note: 'Owner full text received and identity checked; acquisition is not deep review. '
+  order: 16
+  filename: DOLCEMental-2020-owner.pdf
+  pdf_pages: 15
+  artifact_issues:
+  - 248
+  priority_after_owner_intake: 4
 - id: cDnS-journal-2008
   issue: 263
   title: Norms and plans as unification criteria for social collectives
   doi: 10.1007/s10458-008-9038-9
   url: https://link.springer.com/article/10.1007/s10458-008-9038-9
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: 2008 version named by cDnS OWL 1.1; do not replace with the acquired 2007 work.
+  state: QUEUED
+  sha256: 272d9cf81057480eb9380f6142bef68d6687f4c559688ef053d159bbd329be65
+  note: 'Owner full text received and identity checked; acquisition is not deep review. '
+  order: 17
+  filename: cDnS-2008-owner.pdf
+  pdf_pages: 43
+  artifact_issues:
+  - 267
+  priority_after_owner_intake: 5
 - id: Emotions-2015
   issue: 77
   title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
   doi: 10.1016/j.chb.2014.11.100
   url: https://doi.org/10.1016/j.chb.2014.11.100
+  state: QUEUED
+  sha256: d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c
+  note: 'Owner full text received and identity checked; acquisition is not deep review. '
+  order: 18
+  filename: Emotions-2015-owner.pdf
+  pdf_pages: 8
+  artifact_issues:
+  - 239
+  priority_after_owner_intake: 6
+waiting_for_owner:
+- id: CLR-RW-IDA
+  issue: 84
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  doi: null
+  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
   state: BLOCKED_ON_FULL_TEXT
   sha256: null
-  note: Author publication page identifies this related 2015 work; exact correspondence to the later cognition
-    extension remains unassessed.
+  note: Exact article remains without a retained complete PDF. Owner supplied a Google Quick Read summary and
+    some primary indexed passages were accessible; these do not close full-text or visual coverage.
 separate_document_tasks:
 - id: Conceptualization
   issue: 71
@@ -204,5 +264,13 @@ separate_document_tasks:
 - id: EmotionsCognition-guide
   issue: 77
   artifact_issue: 239
-  state: AUTHOR_DOCUMENTATION_AVAILABLE_PAPER_BLOCKED
+  state: AUTHOR_DOCUMENTATION_AVAILABLE_PAPER_QUEUED
   note: 2014 predecessor, 2015 related paper and December2015 OWL are separate sources
+population_revision:
+  date: '2026-10-28'
+  reason: Six previously requested exact texts supplied by owner; original 19-work identity set preserved.
+  historical_acquired: 12
+  historical_waiting: 7
+  current_acquired: 18
+  current_waiting: 1
+  receipt: evidence/related-work/corpus/owner-intake-2026-10-28.json

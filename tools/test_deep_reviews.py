@@ -464,5 +464,52 @@ class EmotionsOntoBoundaryTests(unittest.TestCase):
         self.reject_figure('questionnaire/result population')
 
 
+class RepresentationBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        folder = ROOT / BASE / 'CLR-RW-Representation'
+        self.dossier = yaml.safe_load((folder / 'review.yaml').read_text())
+        self.ledger = yaml.safe_load((folder / 'content-ledger.yaml').read_text())
+        self.inspection = json.loads((ROOT / self.dossier['artifact']['reading_inspection']['path']).read_text())
+
+    def reject(self, pattern):
+        from check_deep_reviews import validate_representation_content
+        with self.assertRaisesRegex(ValueError, pattern):
+            validate_representation_content(self.dossier, self.ledger, self.inspection)
+
+    def test_supplement_page_cannot_be_omitted(self):
+        self.inspection['supplement']['read_pages'].pop()
+        self.reject('reading coverage')
+
+    def test_author_theorem_is_not_an_executed_proof(self):
+        self.dossier['artifact']['theorem_proof_execution'] = 'PASS'
+        self.reject('promoted to retained bytes')
+
+    def test_retrieved_text_is_not_retained_pdf(self):
+        self.inspection['supplement']['raw_pdf_sha256'] = 'a' * 64
+        self.inspection['supplement']['raw_pdf_retained'] = True
+        self.reject('promoted to retained bytes')
+
+    def test_d11_free_variable_cannot_be_silently_repaired(self):
+        record = next(r for r in self.dossier['commitments'] if r['formula_label'] == 'D11')
+        record['normalized_formula'] = record['normalized_formula'].replace('exists o,r,p,p2 ', 'exists o,r,p,p2,f ')
+        self.reject('silently repaired')
+
+    def test_labeled_formula_cannot_be_omitted(self):
+        self.dossier['commitments'].pop()
+        self.reject('labeled formal population')
+
+    def test_table_selection_cannot_be_normalized_to_one_level(self):
+        self.ledger['tables'][0]['rows'][2]['checked'] = 'content'
+        self.reject('selection/realization')
+
+    def test_predicate_table_is_not_machine_class_census(self):
+        self.dossier['artifact']['machine_class_populations']['local'] = 41
+        self.reject('promoted to retained bytes')
+
+    def test_supplement_c_table_row_cannot_be_lost(self):
+        self.ledger['supplement_tables'][1]['predicate_names'].pop()
+        self.reject('predicate population')
+
+
 if __name__ == '__main__':
     unittest.main()

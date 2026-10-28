@@ -4,27 +4,27 @@ Date: 2026-10-25. Input: main 29cc41372e046da9791534019b23a899c105c3f5.
 
 The [complete access inventory](../../evidence/related-work/corpus/access-inventory.yaml) covers all 19 original candidate labels, with additional versions and the distinct 2026 BDI work separate. Acquisition is not critical review. The owner-accessible archive contains 12 validated PDFs (185 pages), direct formal resources and five complete tracked-tree repository snapshots. All 62 ZIP members were read back; exact hashes and missing-access evidence are recorded. The [archive receipt](../../evidence/related-work/corpus/archive-record.json) publishes its identity without redistributing third-party bytes.
 
-The current [deep-review register](../../evidence/related-work/deep-reviews/register.yaml) and [coverage guide](../../evidence/related-work/deep-reviews/coverage-guide.md) supersede the original paper-review paths for upgraded issues. The 2026-10-28 [BDI2026Preprint dossier](../../evidence/related-work/deep-reviews/BDI2026Preprint/report.md), #249, completes the retained arXiv v2 paper review: all 21 pages and 78 numbered formulas. The historical 2025 filename is preserved; final journal byte equivalence remains unverified. Selected official core 0.5 and alignment-import 0.3 are distinct; all-class definitions, imports and semantic checks remain open in #250. That checkpoint completed 10 of 12 acquired papers; the subsequent Cognitive Atlas checkpoint below records current progress. Seven missing texts remain separate access gaps.
+## Current access and review state - 2026-10-28
 
-The 2026-10-28 [CognitiveAtlas2011 dossier](../../evidence/related-work/deep-reviews/CognitiveAtlas2011/report.md), #79, completes the exact 2011 paper review. All-class definitions and export/generator correspondence remain open in #241. That checkpoint completed 11 of 12 acquired-paper deep reviews. Seven missing texts remain independent access gaps.
+The [current deep-review register](../../evidence/related-work/deep-reviews/register.yaml) records 18 acquired works of the 19 exact paper/chapter identities, not 19 distinct ontologies. Six owner-supplied PDFs/book inputs have [separate hash/page receipts](../../evidence/related-work/corpus/owner-intake-2026-10-28.json); they were not added retrospectively to the frozen 62-member ZIP. Acquisition does not close a review.
 
-The [EmotionsOnto2014 dossier](../../evidence/related-work/deep-reviews/EmotionsOnto2014/report.md), #262, completes the last acquired-paper review. All12 available paper dossiers are complete. This does not close #239 or other class/import/semantic artifacts, comparison batches or final synthesis. Seven full texts remain missing; independent technical work continues with #250, #241 and foundation glossaries.
+The [Representation2025 dossier](../../evidence/related-work/deep-reviews/CLR-RW-Representation/report.md), #82, completes review of all 16 supplied journal-layout pages and all ten publisher-parsed supplementary pages A-C. The supplement raw PDF download returned an access page: original binary parity and equation-glyph inspection remain unverified. Its 49 formal records, one main figure, two main tables and eight #244 questions have source locators. Machine artifact/class/import/solver work stays #244; comparison #255 and synthesis #126 stay open. Current paper progress is 13 complete, five queued, one missing.
 
-## Missing texts requested from the owner
+| Next paper | Primary issue | Current status |
+|---|---|---|
+| Dolce+D&S Ultralite and its main Ontology Design Patterns | #70 | Owner book supplied; chapter 5, printed 81-103 / PDF 98-120 only; queued |
+| The Ontology for Conceptual Characterization of Ontologies | #73 | Exact 2023 text supplied; queued |
+| Needs and Intentionality: An Ontological Analysis and an Application to Public Services | #86 | Exact text supplied; queued |
+| Norms and plans as unification criteria for social collectives | #263 | Distinct one-author 2008 journal text supplied; queued |
+| Emotions ontology for collaborative modelling and learning of emotional responses | #77 | Exact 2015 text supplied; queued, distinct from reviewed 2014 predecessor |
 
-These are all seven currently identified missing texts in this frozen inventory. A failed endpoint is not evidence that the work is unavailable everywhere. An unknown DOI is retained as unknown.
+## Remaining primary-text request
 
-| Title | DOI | Authoritative record or explicit lookup |
-| --- | --- | --- |
-| Dolce+D&S Ultralite and its main Ontology Design Patterns | 10.3233/978-1-61499-676-7-81 | https://doi.org/10.3233/978-1-61499-676-7-81 |
-| The Ontology for Conceptual Characterization of Ontologies | 10.1007/978-3-031-47262-6_6 | https://research.utwente.nl/en/publications/the-ontology-forconceptual-characterization-ofontologies/ |
-| An Ontology of Representation | 10.1177/15705838251337943 | https://journals.sagepub.com/doi/10.1177/15705838251337943 |
-| Managing Knowledge at the Information Level: an Ontological Approach | Not verified | https://scholar.google.com/scholar?q=Managing+Knowledge+at+the+Information+Level+Fortier+Kassel |
-| Needs and Intentionality: An Ontological Analysis and an Application to Public Services | 10.3233/FAIA200666 | https://iris.unitn.it/handle/11572/336248 |
-| Norms and plans as unification criteria for social collectives | 10.1007/s10458-008-9038-9 | https://link.springer.com/article/10.1007/s10458-008-9038-9 |
-| Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses | 10.1016/j.chb.2014.11.100 | https://doi.org/10.1016/j.chb.2014.11.100 |
+| Title | DOI | Primary file endpoint |
+|---|---|---|
+| Managing Knowledge at the Information Level: an Ontological Approach | Not verified | https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf |
 
-O4OA institutional PDF returned HTTP 403, while its specification download returned an anti-bot HTML page. Neither is counted as acquired. EFO and Cognitive Atlas were recovered from alternative publisher endpoints; no upload from the owner is currently needed for those PDFs. CMO is acquired but its defective text layer requires later visual/OCR work. EmotionsOnto 2014 is acquired; the related 2015 article is separate.
+I&DA #84 has the owner's Google Quick Read summary and some primary indexed text, not a retained full original or visually inspected figures. Preliminary work may proceed with explicit evidence attribution; full-paper review stays blocked. Earlier endpoint failures for the six supplied works are historical, not current missing-text requests. The distinct 2021 Towards Representation paper is not substituted for the supplied 2025 work.
 
 ## Completed LMM review package
 
@@ -60,7 +60,7 @@ The owner explicitly requested full reference-artifact access and medium-sized c
 | R2-CMP-005 | [#255](https://github.com/ArazSaieArasi3/Clariceptify/issues/255) | evidence/related-work/comparisons/batch-5.yaml |
 | R2-CMP-006 | [#256](https://github.com/ArazSaieArasi3/Clariceptify/issues/256) | evidence/related-work/comparisons/batch-6.yaml |
 
-Next independent work can proceed on the acquired OntoKADS, IAO, EFO, BDI and Cognitive Atlas texts and the recorded artifacts while the owner supplies the seven missing texts. Artifact acquisition/inspection tasks, paper reviews and scenario comparisons remain distinct; access gaps do not promote scientific acceptance.
+Next paper work follows the owner-selected five-work queue above. Existing acquired technical artifacts can be inspected independently of the remaining I&DA full-text gap. Artifact acquisition/inspection tasks, paper reviews and scenario comparisons remain distinct; access gaps do not promote scientific acceptance.
 
 ## Reproduce the LMM inspection
 

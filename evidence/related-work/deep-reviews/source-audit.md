@@ -22,7 +22,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
 | CLR-RW-O4OA (#73) | PUBLIC_PROJECT_METADATA_TREE_403; [source](https://gitlab.com/bfmartins/o4oa); AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING | UFO-A/B/C; gUFO for light OWL model; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
-| CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_ACQUIRED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
+| CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
 | CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #246 |
 | CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_FORMAL_FILE_PAPER_BLOCKED | DOLCE; ALIGNMENT_OR_REUSE; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
 | cDnS-journal-2008 (#263) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; HEADER_LINKED_CORE_PAPER_BLOCKED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #267, #263 |
@@ -403,6 +403,17 @@ Query: `Exact2014 ontology endpoint, author predecessor/extension links and boun
 Publisher identity/DOI and author predecessor distinction verified. Two8-result-limit repository queries returned none; original/dated predecessor file opens unavailable. Later identical retained extension headers parsed; see evaluation/related-work/emotionsonto/deep-review-discovery.json.
 
 Limit: No global absence, exact original import/glossary, license, semantic test or historical equivalence claim. Technical #239 remains open.
+
+### REP2025-DISC-20261028: Exact paper/publisher/author links plus two GitHub name/description searches
+
+Query: `"An Ontology of Representation"; OREO Mizoguchi Borgo`. Checked: 2026-10-28.
+
+- https://journals.sagepub.com/doi/10.1177/15705838251337943
+- https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+
+No repository returned; publisher and author-posted supplemental text found; no global absence claim. Receipt: evaluation/related-work/representation/discovery.json
+
+Limit: Two name/description searches, not a global code/host search. Supplement raw bytes and machine-source correspondence unverified.
 
 ## Interpretation and next work
 

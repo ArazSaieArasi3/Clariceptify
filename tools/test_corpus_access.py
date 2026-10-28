@@ -45,6 +45,23 @@ class CorpusAccessBoundaries(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'manifest identity'):
             check(self.root)
 
+    def test_owner_pdf_cannot_be_substituted(self):
+        p = self.root / 'evidence/related-work/corpus/owner-intake-2026-10-28.json'
+        d = json.loads(p.read_text())
+        d['records'][0]['sha256'] = '0' * 64
+        p.write_text(json.dumps(d))
+        with self.assertRaisesRegex(ValueError, 'source identity'):
+            check(self.root)
+
+    def test_chapter_cannot_escape_book_page_scope(self):
+        p = self.root / 'evidence/related-work/corpus/owner-intake-2026-10-28.json'
+        d = json.loads(p.read_text())
+        row = next(r for r in d['records'] if r['issue'] == 70)
+        row['review_pages'].append(row['container_pdf_pages'] + 1)
+        p.write_text(json.dumps(d))
+        with self.assertRaisesRegex(ValueError, 'page scope'):
+            check(self.root)
+
 
 if __name__ == '__main__':
     unittest.main()

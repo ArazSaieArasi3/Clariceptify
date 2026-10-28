@@ -5,8 +5,8 @@ population:
   paper_or_version_records: 19
   separate_document_sources: 4
   total_records: 23
-scope: A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery.
-  Original 19 candidate labels are not the same population as 19 exact paper/version records.
+scope: A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal
+  discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
 repository_observations:
 - repository: information-artifact-ontology/IAO
   url: https://github.com/information-artifact-ontology/IAO
@@ -179,10 +179,10 @@ discovery_attempts:
   - https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa
   - https://gitlab.com/api/v4/projects/46249263/repository/tree?per_page=100
   - https://bfmartins.gitlab.io/o4oa/content/o4oa.html
-  outcome: Public GitLab project 46249263 and author documentation verified. Public API metadata responds 200; repository
-    tree responds 403. Documentation describes OntoUML/UFO-A/B/C, gUFO/gO4OA and MongoDB implementation.
-  limitation: Public project metadata is not an acquired repository tree; no source commit, complete model census,
-    exact foundation edition or 2023-paper equivalence established.
+  outcome: Public GitLab project 46249263 and author documentation verified. Public API metadata responds 200;
+    repository tree responds 403. Documentation describes OntoUML/UFO-A/B/C, gUFO/gO4OA and MongoDB implementation.
+  limitation: Public project metadata is not an acquired repository tree; no source commit, complete model
+    census, exact foundation edition or 2023-paper equivalence established.
 - id: W02
   method: WEB_SEARCH_AND_PRIMARY_PAGE
   checked_on: '2026-10-26'
@@ -190,9 +190,10 @@ discovery_attempts:
   checked_urls:
   - https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175
   - https://philarchive.org/rec/KASFCI
-  outcome: Selected EFO publication identified; no authoritative executable distribution identified by these checks.
-  limitation: Do not substitute the unrelated Experimental Factor Ontology, Emotion Frame Ontology or EFO1 follow-on
-    papers for this source. Not a universal repository-absence claim.
+  outcome: Selected EFO publication identified; no authoritative executable distribution identified by these
+    checks.
+  limitation: Do not substitute the unrelated Experimental Factor Ontology, Emotion Frame Ontology or EFO1
+    follow-on papers for this source. Not a universal repository-absence claim.
 - id: W03
   method: WEB_SEARCH_AND_PRIMARY_FILE
   checked_on: '2026-10-26'
@@ -203,18 +204,18 @@ discovery_attempts:
   - https://github.com/MussaOmer/ConceptualModelOntology/blob/master/ConceptualModelOntology.owl
   outcome: Paper-linked cmo.owl endpoint returns HTTP404. Name-match candidate uses semanticweb.org/mussa/ontologies/2017/7/ConceptualModelOntology,
     not the paper namespace; not accepted as corresponding distribution.
-  limitation: A same-name candidate and a broken link do not establish nonexistence elsewhere; the unrelated Clinical
-    Measurement Ontology is excluded.
+  limitation: A same-name candidate and a broken link do not establish nonexistence elsewhere; the unrelated
+    Clinical Measurement Ontology is excluded.
 - id: W04
   method: WEB_SEARCH_AND_PRIMARY_PAGE
   checked_on: '2026-10-26'
   query: EmotionsOnto github ontology
   checked_urls:
   - https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
-  outcome: Author documentation supplies 2015/12/current cognition OWL and 2010/11,2013/02,2015/05 predecessor links;
-    formal bytes already retained for the cognition module.
-  limitation: Separate 2014 paper, 2015 paper and dated OWL; exact paper-to-file correspondence remains an inspection
-    task, not assumed.
+  outcome: Author documentation supplies 2015/12/current cognition OWL and 2010/11,2013/02,2015/05 predecessor
+    links; formal bytes already retained for the cognition module.
+  limitation: Separate 2014 paper, 2015 paper and dated OWL; exact paper-to-file correspondence remains an
+    inspection task, not assumed.
 - id: W05
   method: WEB_SEARCH_AND_PRIMARY_METADATA
   checked_on: '2026-10-26'
@@ -225,8 +226,8 @@ discovery_attempts:
   - http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
   outcome: Exact 2008 work and retained official L1/L2 formal files identified; no corresponding author-controlled
     development repository confirmed.
-  limitation: Repository-name matches and third-party ontology mirrors do not establish author control or the historical
-    2008 alignment distribution.
+  limitation: Repository-name matches and third-party ontology mirrors do not establish author control or the
+    historical 2008 alignment distribution.
 - id: R01
   method: RETAINED_SOURCE_AND_API_METADATA
   checked_on: '2026-10-26'
@@ -247,8 +248,8 @@ discovery_attempts:
   checked_on: '2026-10-26'
   result_limit: 6
   returned: []
-  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
-    is not universal repository absence.
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search
+    failure is not universal repository absence.
 - id: G13
   query: '"DOLCE+DnS"'
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
@@ -256,8 +257,8 @@ discovery_attempts:
   result_limit: 6
   returned:
   - FSCHOEN/CO-PLM
-  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
-    is not universal repository absence.
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search
+    failure is not universal repository absence.
 - id: G14
   query: ontolex
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
@@ -270,16 +271,16 @@ discovery_attempts:
   - ontolex/morph
   - elexis-eu/tei2ontolex
   - acoli-repo/ontolex-frac
-  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
-    is not universal repository absence.
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search
+    failure is not universal repository absence.
 - id: G15
   query: '"SKOS" user:w3c'
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
   checked_on: '2026-10-26'
   result_limit: 6
   returned: []
-  limitation: Bounded name/description search only; candidate names are not source correspondence and search failure
-    is not universal repository absence.
+  limitation: Bounded name/description search only; candidate names are not source correspondence and search
+    failure is not universal repository absence.
 - id: W06
   method: OFFICIAL_COMMUNITY_PAGE_AND_GITHUB_API
   checked_on: '2026-10-26'
@@ -288,9 +289,9 @@ discovery_attempts:
   - https://www.w3.org/community/ontolex/
   - https://api.github.com/repos/cimiano/ontolex
   - https://api.github.com/repos/ontolex/ontolex
-  outcome: Official group page links cimiano/ontolex; API reports moved repository ID20124549, identical to ontolex/ontolex.
-    Public repository verified, not archived; observed last push2026-10-23T11:10:53Z. Complete snapshot not yet
-    acquired.
+  outcome: Official group page links cimiano/ontolex; API reports moved repository ID20124549, identical to
+    ontolex/ontolex. Public repository verified, not archived; observed last push2026-10-23T11:10:53Z. Complete
+    snapshot not yet acquired.
   limitation: 'Current repository activity does not establish that every module matches the 2016 core specification.
     Snapshot/commit acquisition and per-module verification remain #237.'
 - id: W07
@@ -302,11 +303,11 @@ discovery_attempts:
   - http://wiki.loa-cnr.it/index.php/LoaWiki:Ontologies
   - http://www.ontologydesignpatterns.org/ont/lmm/LMM_Alignments.owl
   - http://www.ontologydesignpatterns.org/ont/lmm/
-  outcome: Original alignment URL/wiki and ODP directory return403. Guessed ODP alignment URL returns200 but redirects
-    to HTML, rejected as an ontology. No author-controlled corresponding historical development repository was confirmed.
-    Exact results and method are retained at evaluation/related-work/lmm/deep-review-discovery.json.
-  limitation: 'Four endpoints and bounded searches, not universal repository absence; current pinned L1/L2 remain
-    available. Historical distribution recovery/correspondence stays #274.'
+  outcome: Original alignment URL/wiki and ODP directory return403. Guessed ODP alignment URL returns200 but
+    redirects to HTML, rejected as an ontology. No author-controlled corresponding historical development repository
+    was confirmed. Exact results and method are retained at evaluation/related-work/lmm/deep-review-discovery.json.
+  limitation: 'Four endpoints and bounded searches, not universal repository absence; current pinned L1/L2
+    remain available. Historical distribution recovery/correspondence stays #274.'
 - id: W08
   method: OFFICIAL_LINK_FOLLOWING_HTTP_ZIP_ACQUISITION_AND_BOUNDED_GITHUB_SEARCH
   checked_on: '2026-10-27'
@@ -317,8 +318,8 @@ discovery_attempts:
   outcome: 'Official DLP3971.zip HTTP200 ZIP retained and 11 supplied OWL modules parsed; ExtendedDnS397 candidate
     identified. Three GitHub repository queries return no corresponding development repository. Exact discovery/intake:
     evaluation/related-work/dns/deep-review-discovery.json.'
-  limitation: 'Related later 2005-copyright distribution is not proven identical to 2003; bounded repository search
-    is not global absence; full candidate glossary and eight selected correspondence checks stay #235.'
+  limitation: 'Related later 2005-copyright distribution is not proven identical to 2003; bounded repository
+    search is not global absence; full candidate glossary and eight selected correspondence checks stay #235.'
 - id: W09
   method: PRIMARY_PAPER_OCR_VISUAL_REVIEW_HTTP_PROBES_BOUNDED_REPOSITORY_AND_CODE_SEARCH
   checked_on: '2026-10-27'
@@ -333,8 +334,9 @@ discovery_attempts:
   outcome: 'Original PURL redirects to old Google Code SVN returning 404. Matching-namespace third-party DBpedia
     mirror retained and parsed; all seven local class definitions/constraints reviewed. whyis namespace reference
     is not an ontology file. Exact probes, pinned metadata and limits: evaluation/related-work/cmo/deep-review-discovery.json.'
-  limitation: 'No original author development repository or exact 2011 byte identity confirmed; path-date not release-date;
-    original/imported definitions and selected semantic work stay #245. Search failure is not universal absence.'
+  limitation: 'No original author development repository or exact 2011 byte identity confirmed; path-date not
+    release-date; original/imported definitions and selected semantic work stay #245. Search failure is not
+    universal absence.'
 - id: COM-G01
   query: '"Computational Ontology of Mind"'
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
@@ -357,26 +359,26 @@ discovery_attempts:
   - https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html
   - https://www.loa.istc.cnr.it/index.php/faq/ontology-of-cognition/
   - https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
-  outcome: FOIS2004 identity confirmed; no author formal distribution identified. Limited code search returned this
-    repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
-  limitation: No exact namespace, imports, machine declaration populations or historical fidelity established; different
-    works not substituted.
+  outcome: FOIS2004 identity confirmed; no author formal distribution identified. Limited code search returned
+    this repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
+  limitation: No exact namespace, imports, machine declaration populations or historical fidelity established;
+    different works not substituted.
 - id: BDI20-G01
   query: '"Foundations for an Ontology of Belief"'
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
   checked_on: '2026-10-28'
   result_limit: 8
   returned: []
-  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence
-    claim.
+  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global
+    absence claim.
 - id: BDI20-G02
   query: Toyoshima Barton Grenier
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
   checked_on: '2026-10-28'
   result_limit: 8
   returned: []
-  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence
-    claim.
+  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global
+    absence claim.
 - id: BDI20-G03
   query: '"belief" "desire" ontology'
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
@@ -386,8 +388,8 @@ discovery_attempts:
   - Aryia-Behroziuan/References
   - Visva92/References
   - sabahydri/References
-  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence
-    claim.
+  limitation: Bounded name/description search. Broad candidates are not author-correspondence proof; no global
+    absence claim.
 - id: BDI20-S01
   query: BDI2020 primary author/publisher links, title code and other-host searches
   method: PRIMARY_PUBLISHER_AUTHOR_CONNECTED_CODE_AND_WEB_SEARCH
@@ -400,8 +402,8 @@ discovery_attempts:
   - https://adrienbarton.blogspot.com/p/publications.html
   - https://ebooks.iospress.nl/volumearticle/55801
   - https://griis.ca/en/adrien-barton/
-  outcome: Publisher and author identity verified; original executable module not identified. Code hits are commentary/citation;
-    later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
+  outcome: Publisher and author identity verified; original executable module not identified. Code hits are
+    commentary/citation; later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
   limitation: 'HAL current access denied; retained full text available. Machine classes/imports/definitions/license
     and exact foundation edition remain unknown in #247.'
 - id: BDI26-S01
@@ -418,10 +420,11 @@ discovery_attempts:
   - https://api.github.com/repos/fossr-project/ontology/git/trees/57a91037d803519db5ee8d65d53c14901e28a0d1?recursive=1
   - https://doi.org/10.5281/zenodo.17466326
   - https://github.com/cfabiolongo/Semas
-  outcome: Official arXiv v2 identity and public source commit/tree verified. All selected source blobs match retained
-    bytes. Module0.5 versus alignment-import0.3 and MIT-root versus CC-BY ontology terms retained. See evaluation/related-work/bdi2026/deep-review-discovery.json.
-  limitation: 'Header parsing only; final journal byte comparison, full class/imported glossary, OWL2 profile, reasoner,
-    CQ and application reruns remain #250.'
+  outcome: Official arXiv v2 identity and public source commit/tree verified. All selected source blobs match
+    retained bytes. Module0.5 versus alignment-import0.3 and MIT-root versus CC-BY ontology terms retained.
+    See evaluation/related-work/bdi2026/deep-review-discovery.json.
+  limitation: 'Header parsing only; final journal byte comparison, full class/imported glossary, OWL2 profile,
+    reasoner, CQ and application reruns remain #250.'
 - id: COG-S01
   query: Exact2011 paper-linked poldrack/cogat, official export/discussion repositories and publisher metadata
   method: PRIMARY_PUBLISHER_PROJECT_AND_CONNECTED_GITHUB_REF_TREE_FILE_CHECKS
@@ -434,10 +437,10 @@ discovery_attempts:
   - https://github.com/CognitiveAtlas/cogat-ontology
   - https://github.com/CognitiveAtlas/ontology
   outcome: Exact paper link resolves to public poldrack/cogat; selected author generator bytes pinned. Official
-    retained13-file export and distinct two-file discussion repository checked. cogat.v2.owl header0.3 parsed; no
-    declared imports. See evaluation/related-work/cognitiveatlas/deep-review-discovery.json.
-  limitation: 'No complete class/definition census, import closure/profile/reasoning, source generation or historical2011
-    equivalence established; those remain #241.'
+    retained13-file export and distinct two-file discussion repository checked. cogat.v2.owl header0.3 parsed;
+    no declared imports. See evaluation/related-work/cognitiveatlas/deep-review-discovery.json.
+  limitation: 'No complete class/definition census, import closure/profile/reasoning, source generation or
+    historical2011 equivalence established; those remain #241.'
 - id: EMO-S01
   query: Exact2014 ontology endpoint, author predecessor/extension links and bounded repository searches
   method: PRIMARY_PUBLISHER_AUTHOR_LINKS_AND_CONNECTED_GITHUB_SEARCH
@@ -448,11 +451,22 @@ discovery_attempts:
   - https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
   - https://rhizomik.net/ontologies/2013/02/emotionsonto.owl
   - https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
-  outcome: Publisher identity/DOI and author predecessor distinction verified. Two8-result-limit repository queries
-    returned none; original/dated predecessor file opens unavailable. Later identical retained extension headers
-    parsed; see evaluation/related-work/emotionsonto/deep-review-discovery.json.
+  outcome: Publisher identity/DOI and author predecessor distinction verified. Two8-result-limit repository
+    queries returned none; original/dated predecessor file opens unavailable. Later identical retained extension
+    headers parsed; see evaluation/related-work/emotionsonto/deep-review-discovery.json.
   limitation: 'No global absence, exact original import/glossary, license, semantic test or historical equivalence
     claim. Technical #239 remains open.'
+- id: REP2025-DISC-20261028
+  checked_on: '2026-10-28'
+  method: Exact paper/publisher/author links plus two GitHub name/description searches
+  query: '"An Ontology of Representation"; OREO Mizoguchi Borgo'
+  outcome: 'No repository returned; publisher and author-posted supplemental text found; no global absence
+    claim. Receipt: evaluation/related-work/representation/discovery.json'
+  limitation: Two name/description searches, not a global code/host search. Supplement raw bytes and machine-source
+    correspondence unverified.
+  checked_urls:
+  - https://journals.sagepub.com/doi/10.1177/15705838251337943
+  - https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -538,8 +552,8 @@ records:
     locator: EFO/review.yaml D7_grounding; E02/E06/E07/E09/E13/E14
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Independent subject-relative foundation; no BFO/UFO parent is inferred from comparison with other
-      ontologies.
+    limitations: Independent subject-relative foundation; no BFO/UFO parent is inferred from comparison with
+      other ontologies.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -570,8 +584,8 @@ records:
     locator: cDnS2007/review.yaml D7_grounding; E03/E04/E13/E15/E21
     artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Paper claims independence from a specific ground ontology. Retained cDnS1.1 has no declared imports
-      and is header-aligned to the distinct 2008 paper; DOLCE association is not an actual import.
+    limitations: Paper claims independence from a specific ground ontology. Retained cDnS1.1 has no declared
+      imports and is header-aligned to the distinct 2008 paper; DOLCE association is not an actual import.
   class_coverage:
     state: ALL_SELECTED_LOCAL_CLASSES_GLOSSARY_COMPLETE
     local_classes: 12
@@ -645,14 +659,15 @@ records:
     edition: null
     relation: PAPER_STATED_GROUNDING
     basis: AUTHOR_REPORTED
-    locator: DnS2003:E02-E07, abstract/sec. 2 and displays 1-23; candidate ExtendedDnS397 imports recorded at corpus/dlp3971-intake.json
+    locator: DnS2003:E02-E07, abstract/sec. 2 and displays 1-23; candidate ExtendedDnS397 imports recorded
+      at corpus/dlp3971-intake.json
     artifact_imports:
     - http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl
     - http://www.loa-cnr.it/ontologies/SpatialRelations.owl
     - http://www.loa-cnr.it/ontologies/TemporalRelations.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Paper DOLCE edition and 2003 implementation correspondence unknown; later candidate edition is
-      not substituted.
+    limitations: Paper DOLCE edition and 2003 implementation correspondence unknown; later candidate edition
+      is not substituted.
   class_coverage:
     state: ORIGINAL_PAPER_COUNT_UNKNOWN_LATER_CANDIDATE_ALL_IRIS_INDEXED_GLOSSARY_PENDING
     local_classes: null
@@ -698,8 +713,8 @@ records:
     - http://purl.obolibrary.org/obo/iao.owl
     - http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Paper edition unknown. Candidate actual ifomis.org/bfo/1.1 namespace references are not a confirmed
-      author-paper edition or pinned BFO import; bfo2 prefix is not BFO2 proof.
+    limitations: Paper edition unknown. Candidate actual ifomis.org/bfo/1.1 namespace references are not a
+      confirmed author-paper edition or pinned BFO import; bfo2 prefix is not BFO2 proof.
   class_coverage:
     state: ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN
     local_classes: null
@@ -792,8 +807,9 @@ records:
       MF/UFO-C/BFO citations do not pin proposed grounding.
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: No exact upper-ontology family/edition or actual import established for the author proposal. Dispositional
-      concepts and OBI output-relation borrowing are explicit conceptual reuse, not BFO1/UFO1 evidence.
+    limitations: No exact upper-ontology family/edition or actual import established for the author proposal.
+      Dispositional concepts and OBI output-relation borrowing are explicit conceptual reuse, not BFO1/UFO1
+      evidence.
   class_coverage:
     state: PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN
     local_classes: null
@@ -811,8 +827,8 @@ records:
     formal_expression_records: 31
     prose_subclass_proposals: 1
     manual_critical_findings: 16
-    limits: All-class declarations/imported definitions remain unknown. Paper terms and discussed frameworks are
-      not a released machine ontology.
+    limits: All-class declarations/imported definitions remain unknown. Paper terms and discussed frameworks
+      are not a released machine ontology.
 - id: BDI2026Preprint
   title: The Belief-Desire-Intention ontology for modelling mental reality and agency
   primary_issue: 249
@@ -840,8 +856,8 @@ records:
       - https://w3id.org/fossr/bdi/ontology/0.3/
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
     limitations: 'DOLCE-0 is a supplementary generalization of DUL, not an edition named DOLCE version0. Current
-      core0.5/alignment-import0.3 mismatch is unresolved; exact foundation edition/import closure and semantic compatibility
-      remain #250.'
+      core0.5/alignment-import0.3 mismatch is unresolved; exact foundation edition/import closure and semantic
+      compatibility remain #250.'
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -859,8 +875,8 @@ records:
     numbered_axiom_records: 78
     separately_typed_prose_operational_records: 3
     manual_critical_findings: 21
-    limits: 'Paper catalog is complete; all-class machine/imported definition glossary and semantic checks remain
-      #250. Author-reported counts are not an independent class census.'
+    limits: 'Paper catalog is complete; all-class machine/imported definition glossary and semantic checks
+      remain #250. Author-reported counts are not an independent class census.'
 - id: CognitiveAtlas2011
   title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
   primary_issue: 79
@@ -885,9 +901,9 @@ records:
     locator: Article pp.3-6; Figures1/2; selected generator and ontology/cogat.v2.owl header at a600c366e9e3.
     artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'Selected source has no declared imports. BFO1.1/CogPO2011 namespace hints in later export do not
-      establish2011 paper grounding or an imported edition. Full referenced definitions and correspondence remain
-      #241.'
+    limitations: 'Selected source has no declared imports. BFO1.1/CogPO2011 namespace hints in later export
+      do not establish2011 paper grounding or an imported edition. Full referenced definitions and correspondence
+      remain #241.'
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -904,8 +920,8 @@ records:
     prose_commitment_groups: 18
     figure_population: 4
     manual_critical_findings: 20
-    limits: 'Complete paper catalog and declared header observations;2011 term totals are author-reported, not an
-      OWL class/definition census. Full class/imported definitions and semantic checks remain #241.'
+    limits: 'Complete paper catalog and declared header observations;2011 term totals are author-reported,
+      not an OWL class/definition census. Full class/imported definitions and semantic checks remain #241.'
 - id: EmotionsOnto2014
   title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
   primary_issue: 262
@@ -935,8 +951,9 @@ records:
       - http://www.loa-cnr.it/ontologies/DUL.owl
       - http://www.loa-cnr.it/ontologies/IOLite.owl
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: DOLCE stated grounding, dul-prefixed diagram and FrameNet/ofntb reuse; exact edition/original file
-      imports unknown. Legacy DUL/IOLite/ofntb declarations belong to later extension, not proof of2014 byte equivalence.
+    limitations: DOLCE stated grounding, dul-prefixed diagram and FrameNet/ofntb reuse; exact edition/original
+      file imports unknown. Legacy DUL/IOLite/ofntb declarations belong to later extension, not proof of2014
+      byte equivalence.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -958,7 +975,7 @@ records:
 - id: CLR-RW-DUL
   title: Dolce+D&S Ultralite and its main Ontology Design Patterns
   primary_issue: 70
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
   repository:
     state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
     urls: []
@@ -977,10 +994,10 @@ records:
       claim'
     artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: DUL is itself a light foundation, not a declared import of DOLCE. Missing 2016 chapter cannot be
-      replaced by current bytes.
-    edition_evidence: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not an owl:imports
-      claim'
+    limitations: DUL is itself a light foundation, not a declared import of DOLCE. Missing 2016 chapter cannot
+      be replaced by current bytes.
+    edition_evidence: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not
+      an owl:imports claim'
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -994,7 +1011,7 @@ records:
 - id: CLR-RW-O4OA
   title: The Ontology for Conceptual Characterization of Ontologies
   primary_issue: 73
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
   repository:
     state: PUBLIC_PROJECT_METADATA_TREE_403
     urls:
@@ -1027,24 +1044,28 @@ records:
 - id: CLR-RW-Representation
   title: An Ontology of Representation
   primary_issue: 82
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: DEEP_PAPER_REVIEW_COMPLETE_SUPPLEMENT_RAW_AND_ARTIFACT_OPEN
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
-    urls: []
+    urls:
+    - https://journals.sagepub.com/doi/10.1177/15705838251337943
+    - https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
     evidence:
     - G05
+    - REP2025-DISC-20261028
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: NOT_ACQUIRED
+    paper_correspondence: PRINTED_SUPPLEMENT_FOUND_NOT_EXECUTABLE_REPOSITORY
+  artifact_state: PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED
   foundation:
-    family: null
+    family: DOLCE and YAMATO (illustrative hosts)
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Not yet established for this exact source
+    relation: ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT
+    basis: AUTHOR_REPORTED
+    locator: 2025 paper sections 1/3, notes 3/5; supplement A PDF1-4
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: Host must supply semiabstracts, mereology, patterns and satisfaction; no exact imported family
+      edition or executable alignment established.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -1089,7 +1110,7 @@ records:
 - id: CLR-RW-DOLCEMental
   title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
   primary_issue: 86
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
   repository:
     state: PUBLIC_REPOSITORY_PINNED
     urls:
@@ -1121,7 +1142,7 @@ records:
 - id: cDnS-journal-2008
   title: Norms and plans as unification criteria for social collectives
   primary_issue: 263
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
   repository:
     state: STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED
     urls: []
@@ -1135,8 +1156,8 @@ records:
     edition: null
     relation: UNKNOWN
     basis: UNKNOWN
-    locator: Retained cDnS1.1 header names this paper; full journal text missing. Do not transfer the 2007 paper
-      foundation claims without review.
+    locator: Retained cDnS1.1 header names this paper; full journal text missing. Do not transfer the 2007
+      paper foundation claims without review.
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
     limitations: Edition and exact implementation correspondence remain unassessed.
@@ -1152,9 +1173,9 @@ records:
   - 267
   - 263
 - id: Emotions-2015
-  title: Emotions Ontology for Collaborative Modelling and Learning of Emotional Responses
+  title: Emotions ontology for collaborative modelling and learning of emotional responses
   primary_issue: 77
-  source_state: BLOCKED_ON_FULL_TEXT
+  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
   repository:
     state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED
     urls: []
@@ -1302,8 +1323,8 @@ records:
     locator: https://rhizomik.net/html/ontologies/emotions%26cognitionontology/ opening paragraph
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'Author documentation is explicit; retained OWL import chain and exact paper correspondence require
-      #239.'
+    limitations: 'Author documentation is explicit; retained OWL import chain and exact paper correspondence
+      require #239.'
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -1376,6 +1397,6 @@ additional_public_repository_observations:
   archived: false
   pushed_at: '2026-10-23T11:10:53Z'
   default_branch: master
-  source: https://www.w3.org/community/ontolex/ links cimiano/ontolex; API redirects repository ID20124549 to the
-    same ID observed for ontolex/ontolex.
+  source: https://www.w3.org/community/ontolex/ links cimiano/ontolex; API redirects repository ID20124549
+    to the same ID observed for ontolex/ontolex.
   snapshot_state: NOT_YET_ACQUIRED

@@ -4,7 +4,7 @@ This owner-authorized research wave reviews prior work. It makes no changes to t
 
 - [Protocol](protocol.yaml): ten common dimensions, exact locators, evidence vocabulary, complete paper coverage and closure conditions.
 - [Coverage guide](coverage-guide.md): full paper, all-declaration artifact census and semantic execution are separate; current per-paper boundaries are explicit.
-- [Ordered register](register.yaml): twelve acquired PDFs (185 pages), seven waiting-for-owner texts and separately identified standards/module documentation. Exactly one current primary deep-review issue per paper.
+- [Ordered register](register.yaml): 18 acquired paper/chapter texts, one waiting-for-owner text and separately identified standards/module documentation. Exactly one current primary deep-review issue per paper. The frozen 12-PDF archive is separate from six later owner-supplied inputs.
 - [Synthesis procedure](synthesis-protocol.yaml): partial acquired-source synthesis, six bounded comparison batches, then evidence-qualified final #126 synthesis and an owner decision.
 - [Baseline protection](baseline-protection.json): protected scientific source fingerprint, including added/deleted members.
 
@@ -45,3 +45,11 @@ The complete [BDI2026Preprint v2 dossier](BDI2026Preprint/report.md) covers all 
 The complete [CognitiveAtlas2011 dossier](CognitiveAtlas2011/report.md) covers all 11 pages, four figures, 10 footnotes and 39 references; no tables, appendices or numbered formulas occur. Mental constructs/tasks/conditions/indicators/contrasts, disagreement/sense management and informative-versus-supporting citations remain distinct. The exact paper-linked author repository is public; later official cogat.v2.owl has header 0.3. Full class definitions and technical execution stay OPEN in #241; comparison #254 and synthesis #126 remain open. Eleven of 12 acquired papers are complete. Next acquired paper: #262.
 
 The complete [EmotionsOnto2014 dossier](EmotionsOnto2014/report.md) covers all16 pages, five figures (all39 Figure2 categories), one14-category results table, three footnotes and36 references. The14-person PrEmo product-experience study is not emotion-recognition accuracy or ontology correctness. Original-file correspondence and full class/import/glossary/semantic work remain OPEN #239; missing2015 paper #77 is separate. All12 acquired-paper dossiers are complete; seven missing texts, technical modules, comparisons and final #126 remain unfinished. Next independent task: #250, followed by #241 and foundation glossaries.
+
+## Current owner-intake wave - 2026-10-28
+
+The [six owner-input receipts](../corpus/owner-intake-2026-10-28.json) supersede earlier access statements above: 18 of 19 exact primary works now have retained full text; I&DA #84 has only a user-provided Quick Read summary and bounded indexed passages. The frozen 2026-10-25 archive is unchanged. DUL is chapter 5, printed 81-103 / PDF 98-120 of the 389-page supplied book, not a request to review the entire book. The duplicate 2007 cDnS PDF adds no work.
+
+[Representation 2025 #82](CLR-RW-Representation/report.md) is complete within its explicit source-access boundary: all 16 main pages, one figure, two tables, ten notes, 25 references and the complete separately retrieved ten-page A-C supplement text. Its 49 labeled formal records, 41 tabulated predicate signatures and eight #244 questions are indexed. Supplement raw-PDF retention and original equation-glyph fidelity remain unverified; potential transcription/formula issues are provisional. No executable source, theorem proof or accepted mapping is claimed.
+
+Current progress: 13 paper reviews complete, five acquired texts queued, one primary full text missing. Earlier paragraphs describe historical checkpoints. Continue one paper at a time in this owner-selected order: DUL #70, O4OA #73, DOLCEMental #86, cDnS2008 #263, Emotions2015 #77. Then begin the evidence-qualified comparison/synthesis work; do not execute #255/#126 inside an individual paper review. Technical all-class/import/semantic tasks remain independent.
