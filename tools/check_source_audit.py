@@ -119,11 +119,15 @@ def check(root=ROOT, source_dir=None):
     base = root / 'evidence/related-work/deep-reviews'
     register = yaml.safe_load((base / 'register.yaml').read_text())
     audit = yaml.safe_load((base / 'source-audit.yaml').read_text())
-    expected = [r['id'] for k in ['acquired_papers', 'waiting_for_owner', 'separate_document_tasks'] for r in register[k]]
+    expected = [r['id'] for k in ['acquired_papers', 'waiting_for_owner',
+                                'limited_evidence_papers', 'separate_document_tasks']
+                for r in register.get(k, [])]
     validate_audit(audit, expected)
     if (base / 'source-audit.md').read_text() != render_audit(audit):
         raise ValueError('Stale source-audit reader')
-    manifests = [yaml.safe_load((root / 'evidence/related-work' / p).read_text()) for p in ['artifact-inputs.yaml', 'corpus/lmm-inputs.yaml']]
+    manifests = [yaml.safe_load((root / 'evidence/related-work' / p).read_text())
+                 for p in ['artifact-inputs.yaml', 'corpus/lmm-inputs.yaml',
+                           'corpus/cdns2008-inputs.yaml']]
     known_sources = {r['sha256'] for d in manifests for r in d['artifacts']}
     summary = []
     for path in sorted(base.rglob('classes.yaml')):

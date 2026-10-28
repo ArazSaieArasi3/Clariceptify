@@ -1,5 +1,6 @@
 """Render the shared research source audit and complete selected class glossaries."""
 from pathlib import Path
+import posixpath
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -76,7 +77,9 @@ def render_catalog(catalog):
     for m in catalog['modules']:
         lines.append('| ' + ' | '.join(cell(m[k]) for k in ['id', 'local_named_classes', 'external_named_class_redeclarations', 'version']) + ' |')
         lines += ['', 'Source: ' + m['source_url'] + '. SHA256 `' + m['source_sha256'] + '`. '
-                  'All named declarations and outgoing constraints: [' + m['id'] + ' census](' + Path(m['census_path']).name + ').', '']
+                  'All named declarations and outgoing constraints: [' + m['id'] + ' census](' +
+                  posixpath.relpath(m['census_path'],
+                                   'evidence/related-work/deep-reviews/' + catalog['work_id']) + ').', '']
     lines += ['| Class IRI | Definition / missing state | Named superclasses | Notes |', '|---|---|---|---|']
     for r in catalog['classes']:
         definition = r['reviewer_definition']['text'] or '**MISSING SOURCE DEFINITION**'

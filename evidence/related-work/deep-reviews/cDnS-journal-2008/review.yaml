@@ -1,0 +1,5521 @@
+schema_version: '1.0'
+work_id: cDnS-journal-2008
+issue: 263
+identity:
+  title: Norms and plans as unification criteria for social collectives
+  authors:
+  - Aldo Gangemi
+  doi: 10.1007/s10458-008-9038-9
+  version: JAAMAS17(1):70-112,2008; published online13April2008
+  boundary: Exact43-page one-author journal owner PDF, independently read. Earlier40-page three-author2007
+    proceedings paper has a different DOI and141 displays. Current collInt1.0/ground/core1.1 bytes are separate
+    artifact evidence, not certified historical release parity.
+source:
+  filename: cDnS-2008-owner.pdf
+  sha256: 272d9cf81057480eb9380f6142bef68d6687f4c559688ef053d159bbd329be65
+  pdf_pages: 43
+  printed_pages: 70-112
+  access: OWNER_SUPPLIED_FULL_TEXT
+  redistributed: false
+status: REVIEW_COMPLETE
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  units:
+  - unit: Front matter/title/abstract
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Section1 Introduction
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Section2 opening
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section2.1 DnS/DOLCE+ relation
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Section2.2 Constructive stance
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Section2.3 Informal c.DnS summary
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Section2.4 Plans
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Section2.5 Norms
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Section2.6 Collectives
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Section3 formal apparatus opening
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Section3.1 c.DnS relation
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Section3.2 Characterization classes
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Section3.3 Social construction
+    status: REVIEWED
+    evidence:
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+  - unit: Section3.4 Grounded construction
+    status: REVIEWED
+    evidence:
+    - E15
+    - E16
+  - unit: Section3.5 Plans
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Section3.6 Norms
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Section3.7 Collectives
+    status: REVIEWED
+    evidence:
+    - E19
+    - E20
+  - unit: Section4 Conclusions
+    status: REVIEWED
+    evidence:
+    - E22
+  - unit: Acknowledgements
+    status: REVIEWED
+    evidence:
+    - E22
+  - unit: References1-62
+    status: REVIEWED
+    evidence:
+    - E23
+  - unit: Figure1
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Figure2
+    status: REVIEWED
+    evidence:
+    - E21
+  - unit: All24 footnotes
+    status: REVIEWED
+    evidence:
+    - E24
+  - unit: No numbered table or appendix
+    status: REVIEWED
+    evidence:
+    - E24
+  - unit: Display(1)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(2)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(3)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(4)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(5)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(6)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(7)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(8)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(9)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(10)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(11)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(12)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(13)
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Display(14)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(15)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(16)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(17)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(18)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(19)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(20)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(21)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(22)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(23)
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Display(24)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(25)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(26)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(27)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(28)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(29)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(30)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(31)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(32)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(33)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(34)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(35)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(36)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(37)
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Display(38)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(39)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(40)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(41)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(42)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(43)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(44)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(45)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(46)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(47)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(48)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(49)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(50)
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Display(51)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(52)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(53)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(54)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(55)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(56)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(57)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(58)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(59)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(60)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(61)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(62)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(63)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(64)
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Display(65)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(66)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(67)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(68)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(69)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(70)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(71)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(72)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(73)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(74)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(75)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(76)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(77)
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Display(78)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(79)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(80)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(81)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(82)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(83)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(84)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(85)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(86)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(87)
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Display(88)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(89)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(90)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(91)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(92)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(93)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(94)
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Display(95)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(96)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(97)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(98)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(99)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(100)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(101)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(102)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(103)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(104)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(105)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(106)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(107)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(108)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(109)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(110)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(111)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(112)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(113)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(114)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(115)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(116)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(117)
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Display(118)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(119)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(120)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(121)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(122)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(123)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(124)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(125)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(126)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(127)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(128)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(129)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(130)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(131)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(132)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(133)
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Display(134)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(135)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(136)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(137)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(138)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(139)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(140)
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: Display(141)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Display(142)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Display(143)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Display(144)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Display(145)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Display(146)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Display(147)
+    status: REVIEWED
+    evidence:
+    - E20
+  - unit: Informal Definition1
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Informal Definition2
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Informal Definition3
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Informal Definition4
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Informal Definition5
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Informal Definition6
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: Informal Definition7
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Informal Definition8
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Informal Definition9
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Informal Definition10
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Informal Definition11
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Informal Definition12
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Informal Definition13
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Informal Definition14
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Informal Definition15
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Informal Definition16
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Informal Definition17
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Informal Definition18
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Informal Definition19
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Informal Definition20
+    status: REVIEWED
+    evidence:
+    - E07
+  catalog_boundary: Complete ontology-bearing paper catalog,147 display paraphrases,20 informal definitions,2figures,24notes
+    and62references. Separate51-class glossary spans only the explicitly mapped current three-file closure;
+    no historical byte equivalence, inferred taxonomy, model acceptance or complete executable repaired FOL
+    theory is claimed.
+evidence:
+- id: E01
+  pages:
+  - 1
+  locator: PDF1 / printed70, publication block, title and abstract
+  summary: Aldo Gangemi, single-author JAAMAS17:70-112, online13April2008, DOI10.1007/s10458-008-9038-9; NIC
+    is the journal contribution.
+- id: E02
+  pages:
+  - 1
+  - 2
+  - 3
+  locator: PDF1-3 / printed70-72, section1 and notes1-7
+  summary: Collection identity, shared/unshared/implicit intentionality, integration of agents, plans and norms;
+    NIC FOL and OWL counterparts. Dynamics explicitly excluded. Note2 links mixed-case collInt.owl.
+- id: E03
+  pages:
+  - 3
+  - 4
+  - 5
+  locator: PDF3-5 / printed72-74, section2 opening and2.1, notes8-11
+  summary: Informal Definitions1-2; relations to DnS/DOLCE+; constructive version does not require a specified
+    ground ontology. Figure1 is referenced here, physically onPDF25.
+- id: E04
+  pages:
+  - 5
+  - 6
+  - 7
+  locator: PDF5-7 / printed74-76, section2.2-2.3, Definitions3-6
+  summary: Constructivist epistemological stance, redescription, schematic versus non-schematic entities; social/informational/circumstantial/conceptual
+    contextual bindings.
+- id: E05
+  pages:
+  - 7
+  - 8
+  locator: PDF7-8 / printed76-77, section2.4, Definitions7-11
+  summary: Plan, task, role, parameter and goal; a plan is an action-schema description and a goal is a desired
+    plan part, distinct from an execution.
+- id: E06
+  pages:
+  - 8
+  - 9
+  - 10
+  locator: PDF8-10 / printed77-79, section2.5, Definitions12-16
+  summary: Normative MAS, conventional practice, compliance interpretation and constraints within plans; application,
+    efficacy, falling under and compliance remain different notions.
+- id: E07
+  pages:
+  - 10
+  locator: PDF10 / printed79, section2.6, Definitions17-20
+  summary: Knowledge communities, intentional, normative intentional and knowledge collectives; article text
+    says epistemic workflow before later epistemic-influence formalization.
+- id: E08
+  pages:
+  - 11
+  - 12
+  - 13
+  locator: PDF11-13 / printed80-82, section3 opening and3.1-3.2, displays1-13, notes12-15
+  summary: Maximal contextual relation, starred tuples, primitive categories, modal generic-domain sentence,
+    ground entities and redescription; projection schema13 explicitly omitted from axiomatization.
+- id: E09
+  pages:
+  - 13
+  - 14
+  - 15
+  locator: PDF13-15 / printed82-84, section3.3 introduction and displays14-23, notes16-17
+  summary: Twenty core relation names, descriptions defining/using concepts and introducing agents; examples
+    distinguish office, role, institution and officeholder.
+- id: E10
+  pages:
+  - 16
+  - 17
+  locator: PDF16-17 / printed85-86, displays24-37
+  summary: Setting, satisfaction, time-indexed classification, description and generalized schematic-entity
+    conceptualization. Printed25 has different settingFor arity;35 has unbound t.
+- id: E11
+  pages:
+  - 18
+  - 19
+  locator: PDF18-19 / printed87-88, displays38-50, note18
+  summary: Deputing, interpretive scope, redescription, information expression and aboutness; printed40 uses
+    A(s),48 delimiter defect; fictional example is not a separate formal fictional-context theory.
+- id: E12
+  pages:
+  - 20
+  - 21
+  locator: PDF20-21 / printed89-90, displays51-64
+  summary: Membership, agent collection, temporalized instantiation, containment, covering, characterization,
+    unification and configurations. Quantifier/witness scopes and example arities matter.
+- id: E13
+  pages:
+  - 22
+  - 23
+  - 24
+  locator: PDF22-24 / printed91-93, displays65-77, notes19-20
+  summary: Bundles, specialization, knowledge sharing/assumption/paradigms and social construction principle.
+    Sharing is not belief; note20 regress restriction is not explicit in11/77.
+- id: E14
+  pages:
+  - 25
+  locator: PDF25 / printed94, Figure1
+  summary: Eight node labels and four contextual groupings. Defaults are0..* unless explicitly labeled; arrows
+    mix subclass and relations and omit temporal indexing.
+- id: E15
+  pages:
+  - 24
+  - 25
+  - 26
+  locator: PDF24-26 / printed93-95, section3.4 opening, displays78-87, note21
+  summary: Agent efficacy, physical agents, internal representations and cognitive counterparts; rational-agent
+    efficacy is proposed but not axiomatized.85 has free a;87 lacks a link back to d.
+- id: E16
+  pages:
+  - 27
+  - 28
+  locator: PDF27-28 / printed96-97, displays88-94
+  summary: Physical information realization, grounded interpretation time versus represented-event time, enriched
+    construction.92 drops time arguments of actsFor and constructs.
+- id: E17
+  pages:
+  - 28
+  - 29
+  - 30
+  - 31
+  locator: PDF28-31 / printed97-100, section3.5, displays95-117, note22
+  summary: Action/object/value assumptions, role-task-parameter plan structure, constitutive parts, desires/goals,
+    dependencies, adoption, executions, goal situations; abort/incidental satisfaction examples.
+- id: E18
+  pages:
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  locator: PDF31-35 / printed100-104, section3.6, displays118-133
+  summary: Three norm aspects, social practices, constitutive/meta-norms, reactive plans, application, scope,
+    falling under and executing norms.121-124 and133 retain printed scope/signature anomalies.
+- id: E19
+  pages:
+  - 35
+  - 36
+  - 37
+  locator: PDF35-37 / printed104-106, section3.7, displays134-140
+  summary: Organizations versus acting collectives, plan/bundle unification, three plan-norm entrenchment cases
+    and emerging collectives; temporal order in139 uses non-strict comparison.
+- id: E20
+  pages:
+  - 38
+  - 39
+  locator: PDF38-39 / printed107-108, displays141-147, notes23-24
+  summary: Knowledge/agent roles, epistemic influence, knowledge collectives, social relations and bringsAbout.144
+    has free d;147 shadows a,t and uses plan adoption for a bundle.
+- id: E21
+  pages:
+  - 40
+  locator: PDF40 / printed109, Figure2
+  summary: Fifteen displayed class labels, subclass arrows and red disjointness arrows; KnowledgeCollective
+    is drawn below IntentionalCollective, while144 and current OWL name normative intentional collectives.
+- id: E22
+  pages:
+  - 39
+  - 40
+  - 41
+  locator: PDF39-41 / printed108-110, section4 and acknowledgements
+  summary: Contribution recap, collective/agency/knowledge context; finer collectives, normative MAS implementation
+    assumptions and dynamic/conflict work remain future. No original comparative benchmark or user study reported.
+- id: E23
+  pages:
+  - 41
+  - 42
+  - 43
+  locator: PDF41-43 / printed110-112, references1-62
+  summary: All62 entries inspected; D18, earlier constructive DnS, plans, legal frameworks, roles, deontic
+    MAS and psychological/philosophical background are references, not automatic imports.
+- id: E24
+  pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  locator: All24 numbered notes, both figures, all20 informal definitions, all147 numbered displays and absence
+    check
+  summary: All page text and renders inspected; no numbered table or appendix occurs. Footnote2 collInt.owl
+    and concluding collint.owl differ in case; no source formula silently repaired.
+- id: E25
+  source_kind: ARTIFACT
+  pages: []
+  url: http://www.loa-cnr.it/ontologies/collInt.owl
+  sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  locator: collInt selected source; SHA256 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200;
+    complete declared constraints in evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json
+  summary: Paper note2 root collInt.owl1.0:25 local classes,21 object properties,588 explicit triples; imports
+    ground.owl. All25 class comments and constraints manually reviewed.
+- id: E26
+  source_kind: ARTIFACT
+  pages: []
+  url: http://www.ontologydesignpatterns.org/ont/cdns/ground.owl
+  sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  locator: ground selected source; SHA256 ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b;
+    complete declared constraints in evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json
+  summary: Mapped ground.owl:14 local classes,8 object properties,149 explicit triples; imports cDnS.owl. All14
+    class comments and constraints reviewed; literal URL retrieval failed, so original-host byte parity is
+    not established.
+- id: E27
+  source_kind: ARTIFACT
+  pages: []
+  url: http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
+  sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  locator: cDnS selected source; SHA256 f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a; complete
+    declared constraints in evidence/related-work/deep-reviews/cDnS2007/artifact-census.json
+  summary: Retained core1.1 hash matched new candidate retrieval:12 local classes,47 object properties,411
+    triples, no declared imports. Existing12-class glossary reused with journal-specific correspondence; shares/isSharedBy
+    remain undeclared under this map.
+- id: E28
+  source_kind: SPECIFICATION
+  pages: []
+  url: https://cris.unibo.it/handle/11585/620507
+  locator: Institutional2008 metadata, author publication listing, and executed endpoint receipts in evaluation/related-work/cdns2008/discovery.json
+  summary: Institutional record confirms one-author2008 journal identity; directly linked root acquired, mapped
+    import sources separately pinned. Repo discovery is bounded, license/historical parity/profile unestablished.
+dimensions:
+  D1_identity_coverage:
+    label: Exact work and full coverage
+    statement: One-author2008journal,43PDFpages/printed70-112; all147 displays,20 informal definitions,2figures,24notes
+      and62references inspected. Distinct2007 source is not a substitute.
+    evidence:
+    - E01
+    - E23
+    - E24
+    basis: REVIEWER_INTERPRETATION
+  D2_problem_contribution:
+    label: Problem and contribution
+    statement: NIC integrates social agents/collectives, descriptions/information and norm-plan interplay;
+      broad explicit/implicit collective action and contextual unification are supported conceptual contributions,
+      not an empirical detector.
+    evidence:
+    - E02
+    - E19
+    - E20
+    - E22
+    basis: REVIEWER_INTERPRETATION
+  D3_method:
+    label: Method
+    statement: Constructive conceptual analysis, reification, FOL pattern construction, OWL projection and
+      legal/social/plan examples with extensive literature dialogue. No named complete lifecycle or original
+      benchmark is reported in this text.
+    evidence:
+    - E03
+    - E08
+    - E17
+    - E18
+    - E22
+    - E23
+    basis: REVIEWER_INTERPRETATION
+  D4_requirements:
+    label: Requirements and scenarios
+    statement: Users are knowledge/normative-MAS modelers; expressive requirements concern shared context,
+      identity, plan/norm use and physical grounding. No numbered operational CQ suite is supplied; positive/adverse
+      reviewer scenarios are separately labeled.
+    evidence:
+    - E02
+    - E05
+    - E06
+    - E15
+    - E17
+    - E18
+    basis: REVIEWER_INTERPRETATION
+  D5_concepts:
+    label: Paper conceptual scope
+    statement: Catalog covers source categories, relations, stance/method primitives, examples and critical
+      distinctions without an eight-item cap. Artifact-only additions are explicit;51 machine classes belong
+      to a separately pinned file map.
+    evidence:
+    - E03
+    - E04
+    - E08
+    - E17
+    - E18
+    - E19
+    - E20
+    - E25
+    - E26
+    - E27
+    basis: REVIEWER_INTERPRETATION
+  D6_relations_formalization:
+    label: Formal content
+    statement: Every147 numbered display has its own page/role/critical record; informal Definition1-20 are
+      separate. Modal/list/equality assumptions, free variables, arity and witness/vacuity issues remain literal
+      and are not silently repaired or proved globally inconsistent.
+    evidence:
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    - E15
+    - E16
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  D7_grounding:
+    label: Grounding and identity
+    statement: Foundation-independent c.DnS; social agent versus physical agent, information versus realization,
+      classifier versus instance and situation versus description are maintained. Internal construction, shared
+      assumption, time and parthood need explicit context and witnesses.
+    evidence:
+    - E03
+    - E08
+    - E12
+    - E13
+    - E15
+    - E16
+    - E19
+    basis: REVIEWER_INTERPRETATION
+  D8_artifact_correspondence:
+    label: Artifact and reproducibility
+    statement: Paper-linked collInt1.0 has25 classes; selected ground14 and retained core1.1 with12 give51
+      unique classes and76 declared object properties. All source-comment paraphrases/constraints reconciled;
+      original-host parity and root/core compatibility remain unestablished, with undeclared shares/isSharedBy.
+    evidence:
+    - E25
+    - E26
+    - E27
+    - E28
+    basis: REVIEWER_INTERPRETATION
+  D9_evaluation:
+    label: Evaluation evidence
+    statement: Five functions distinguish author conceptual arguments and examples from executed acquisition/parsing/glossary
+      reconciliation. No independent reasoner/profile, replicated study, correctness benchmark or expert acceptance
+      is claimed.
+    evidence:
+    - E22
+    - E23
+    - E25
+    - E26
+    - E27
+    basis: REVIEWER_INTERPRETATION
+  D10_critical_synthesis:
+    label: Critical use
+    statement: Context and norm-plan distinctions are strengths; literal/source projection and witness limitations
+      constrain future mappings. Questions remain267/251/126; next full paper77 and then owner-authorized bounded84
+      summary review. No ontology/manuscript/release adoption.
+    evidence:
+    - E03
+    - E13
+    - E17
+    - E18
+    - E19
+    - E20
+    - E22
+    - E28
+    basis: REVIEWER_INTERPRETATION
+catalog:
+- id: C001
+  label: NIC framework
+  statement: Journal framework integrating agents, collectives, plans, norms and epistemic influence; NIC is
+    also the acronym of one collective subtype, so context disambiguates the two uses.
+  evidence:
+  - E01
+  - E02
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C002
+  label: Constructive DnS / c.DnS
+  statement: Foundationally independent contextual construction pattern, distinct from DOLCE-grounded earlier
+    DnS; no supplied ground ontology is mandatory.
+  evidence:
+  - E03
+  - E04
+  basis: AUTHOR_REPORTED
+- id: C003
+  label: DnS / DOLCE+
+  statement: Earlier framework is discussed as provenance and contrast; DOLCE is not automatically the actual
+    NIC import foundation.
+  evidence:
+  - E03
+  basis: AUTHOR_REPORTED
+- id: C004
+  label: Description / D
+  statement: Reified conceptual relation or action/norm schema; first-order individual, not an OWL class identified
+    with its extension.
+  evidence:
+  - E03
+  - E08
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C005
+  label: Situation / S
+  statement: Reified context whose entities participate in a setting and satisfy descriptions; can itself occur
+    in another interpretive context.
+  evidence:
+  - E03
+  - E10
+  - E11
+  basis: AUTHOR_REPORTED
+- id: C006
+  label: Concept / C
+  statement: A description-defined classifier; role/task/parameter and other domain concepts are special uses
+    rather than individual classified objects.
+  evidence:
+  - E04
+  - E09
+  - E10
+  basis: AUTHOR_REPORTED
+- id: C007
+  label: Entity / E
+  statement: Generic domain with schematic and non-schematic aspects; boxed modality and complement presentation
+    need an explicit logical interpretation.
+  evidence:
+  - E08
+  basis: AUTHOR_REPORTED
+- id: C008
+  label: Schematic entity / SE
+  statement: Union of Description, Situation, Concept, SocialAgent, Collection and InformationObject; prose
+    states disjointness independently of the union formula.
+  evidence:
+  - E08
+  - E21
+  basis: AUTHOR_REPORTED
+- id: C009
+  label: Non-schematic entity
+  statement: Complementary ground-domain status; not equivalent by definition to every G, since11 lacks the
+    explicit exclusion.
+  evidence:
+  - E08
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C010
+  label: Ground entity / G
+  statement: Entity undergoing contextual redescription; social and grounded construction principles progressively
+    add witnesses.
+  evidence:
+  - E08
+  - E13
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C011
+  label: Time / T
+  statement: Non-schematic temporal entity; appears as explicit argument in many paper relations, unlike binary
+    OWL mappings.
+  evidence:
+  - E08
+  - E10
+  - E15
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C012
+  label: Social agent / A
+  statement: Schematic actor primitive distinct from its physical embodiment, role, institution instance and
+    collection of actors.
+  evidence:
+  - E04
+  - E08
+  - E15
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C013
+  label: Collection / K
+  statement: Socially unified entity with time-varying members; identity is not ordinary fixed-set identity
+    or member sum.
+  evidence:
+  - E02
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C014
+  label: Information object / I
+  statement: Schematic informational entity expressing descriptions or other schematic entities; physical realization
+    is separate.
+  evidence:
+  - E04
+  - E11
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C015
+  label: Redescription situation
+  statement: Context that reinterprets another situation and can occur at a different time; fictional example
+    adds no general fictional-context calculus.
+  evidence:
+  - E11
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C016
+  label: Domain context
+  statement: Ground ontology can supply arbitrary entity categories; construction reconstructs objects within
+    a chosen descriptive network.
+  evidence:
+  - E03
+  - E08
+  basis: AUTHOR_REPORTED
+- id: C017
+  label: Conceptual context
+  statement: Descriptions and concepts bind an interpretation; Figure1 groups these explicitly.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C018
+  label: Circumstantial context
+  statement: Situations and setting entities provide circumstantial bindings.
+  evidence:
+  - E14
+  basis: AUTHOR_REPORTED
+- id: C019
+  label: Social context
+  statement: Agents and collectives share/conceptualize descriptions and bring about social structures.
+  evidence:
+  - E14
+  - E19
+  - E20
+  basis: AUTHOR_REPORTED
+- id: C020
+  label: Informational context
+  statement: Information objects express schematic meanings and have aboutness and physical realizations.
+  evidence:
+  - E14
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C021
+  label: Concept definition / use
+  statement: Definition links a D to C; use requires a distinct defining D. Journal18 supplies existence, not
+    exactly-one definition.
+  evidence:
+  - E09
+  basis: AUTHOR_REPORTED
+- id: C022
+  label: Constitutive introduction
+  statement: Descriptions introduce social agents; this must remain distinct from defining classifying concepts.
+  evidence:
+  - E09
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C023
+  label: Role / Role(c)
+  statement: Plan-defined object classifier; anti-rigidity motivates the prose, while98 itself is a non-modal
+    characterization.
+  evidence:
+  - E05
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C024
+  label: Task / Task(c)
+  statement: Plan-defined action classifier targeted by at least one role; not a plan execution individual.
+  evidence:
+  - E05
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C025
+  label: Parameter / Parameter(c)
+  statement: Plan-defined value classifier required by some concept; value-object/data distinction remains
+    implementation work.
+  evidence:
+  - E05
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C026
+  label: Classification
+  statement: Time-indexed concept/entity relation; OWL reified Classification is an implementation device with
+    a different signature.
+  evidence:
+  - E10
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C027
+  label: Covering concept
+  statement: A concept classifies every member of a collection; does not impose non-empty membership.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C028
+  label: Characterizing concept
+  statement: A concept covers a collection containing the characterized collection as a part; extension and
+    identity must be kept distinct.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C029
+  label: Unifying description
+  statement: Defines a covering concept for a collection; neither unique unification nor member identity follows.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C030
+  label: Agent collection / AK
+  statement: Collection with only social-agent members; extrinsic commonality need not be shared knowledge
+    or a common plan.
+  evidence:
+  - E06
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C031
+  label: Knowledge community / KC
+  statement: Agent collection sharing descriptions; original common-witness requirements differ from current
+    per-member knowledge-corpus restrictions.
+  evidence:
+  - E07
+  - E13
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C032
+  label: Configuration / Cfg
+  statement: Collection whose members are parts of entities described by a common unifier; not a mere undifferentiated
+    aggregate.
+  evidence:
+  - E12
+  basis: AUTHOR_REPORTED
+- id: C033
+  label: Bundle
+  statement: A description with description parts coupled via a common concept/collection or situation. Printed65
+    lacks explicit distinctness of its two witnesses.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C034
+  label: Specialization
+  statement: Relation between schematic entities; distinct from instance classification and time-indexed social-agent
+    instantiation.
+  evidence:
+  - E12
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C035
+  label: Conceptualization / sharing
+  statement: Ability to use a schematic entity in a context; does not entail belief, endorsement or truth of
+    a scientific theory.
+  evidence:
+  - E10
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C036
+  label: Assumption
+  statement: Stronger attitude that implies conceptualization; no converse and no belief/evidence theory supplied.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C037
+  label: Paradigm
+  statement: Bundle whose descriptions are assumed in knowledge communities; source permits community witnesses
+    varying by part/time.
+  evidence:
+  - E13
+  - E20
+  basis: AUTHOR_REPORTED
+- id: C038
+  label: Social construction principle
+  statement: Full network of social, informational, conceptual and interpretive witnesses for ground entities;
+    non-regress scope caveat needs formal enforcement.
+  evidence:
+  - E13
+  basis: AUTHOR_REPORTED
+- id: C039
+  label: Agent efficacy
+  statement: Every social agent is acted for by some entity; actor is not automatically rational, physical
+    or a member of one fixed organization.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C040
+  label: Rational-agent efficacy
+  statement: Stronger cognitive-actor proposal explicitly not axiomatized; do not treat it as a proved consequence.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C041
+  label: Physical agent / PA
+  statement: Non-schematic grounding actor that constructs internal representations; distinguish from schematic
+    social agent.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C042
+  label: Internal representation / R
+  statement: Individual agent-level non-schematic counterpart of a shared description; source counterpart links
+    are weaker than some prose claims.
+  evidence:
+  - E15
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C043
+  label: Cognitive counterpart principle
+  statement: Grounds conceptualization in a physical actor constructing a representation;85/87 require binding
+    and co-reference analysis.
+  evidence:
+  - E15
+  basis: AUTHOR_REPORTED
+- id: C044
+  label: Physical realization / PR
+  statement: Non-schematic physical support realizing an information object, e.g. paper versus constitution
+    text.
+  evidence:
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C045
+  label: Information grounding
+  statement: Conceptualization is accompanied by information-expression and physical-realization witnesses;
+    not an automatic identity of text and description.
+  evidence:
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C046
+  label: Grounded scope
+  statement: Interpretive situation is linked to physical cognitive/informational witnesses; represented-event
+    and redescription times are distinct.
+  evidence:
+  - E16
+  basis: AUTHOR_REPORTED
+- id: C047
+  label: Grounded construction principle
+  statement: Adds organism-level construction and material realization to social construction; no executed
+    whole-theory consistency proof is reported here.
+  evidence:
+  - E16
+  - E22
+  basis: AUTHOR_REPORTED
+- id: C048
+  label: Action
+  statement: Generic entity subtype assumed for tasks; no exhaustive DOLCE perdurant analysis in95.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C049
+  label: Object
+  statement: Generic entity subtype assumed for roles; current artifact permits some fillers not stated in98.
+  evidence:
+  - E17
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C050
+  label: Value
+  statement: Generic entity subtype assumed for parameters; not automatically a literal, datatype or quality
+    region.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C051
+  label: Plan
+  statement: Action-schema Description with conceptualization, task, role and desired goal part; distinct from
+    its execution and disjoint from Norm.
+  evidence:
+  - E05
+  - E17
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C052
+  label: Subplan
+  statement: A plan properly contained in another plan; subplan execution part constraints differ from goal-situation
+    inclusion.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C053
+  label: Constitutive description
+  statement: Description introducing an agent; a constitutive plan part is not the same as the role classifier
+    defined by a description.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C054
+  label: Desire
+  statement: Description subtype treated as a primitive way to represent an environment; not a measured mental-state
+    criterion.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C055
+  label: Goal
+  statement: Desire that is a proper part of some plan; agent who benefits/desires it need not execute that
+    plan.
+  evidence:
+  - E05
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C056
+  label: Main goal
+  statement: Goal of a given plan that belongs to none of its subplans at the selected time.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C057
+  label: Subgoal
+  statement: Goal of a plan and one of its subplans; need not be a mereological part of the main goal.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C058
+  label: Goal influence
+  statement: Structural relation linking subgoal and main goal of a shared plan; paper prose causal language
+    exceeds this definition alone.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C059
+  label: Goal / plan adoption
+  statement: Assumption-based relations; printed112 targets a task as adopted plan and113 has stray A(x), so
+    literal details need preservation.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C060
+  label: Plan execution
+  statement: Situation satisfying a plan with conceptualization no later than execution setting time; ordinary
+    satisfaction alone loses anticipation.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C061
+  label: Goal situation
+  statement: Situation satisfying a goal, distinct from desired goal description and not in general forced
+    to be part of the plan execution.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C062
+  label: Abort / suspension condition
+  statement: Illustrates execution satisfaction without achievement of a desired goal; not a formal stopping
+    algorithm.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C063
+  label: Incidental satisfaction
+  statement: Goal can be achieved without intentional execution of its plan; separates descriptive satisfaction
+    from intentional performance.
+  evidence:
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C064
+  label: Norm
+  statement: Regulatory Description; conventional-practice, case-interpretation and behavioral-constraint aspects
+    are interdependent.
+  evidence:
+  - E06
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C065
+  label: Normative multiagent system
+  statement: Normative intentional collective plus description of its dynamics; dynamics and norm negotiation
+    are not fully supplied here.
+  evidence:
+  - E06
+  - E18
+  - E22
+  basis: AUTHOR_REPORTED
+- id: C066
+  label: Social practice
+  statement: Plan shared within a knowledge community; not every norm must be causally learned from observed
+    practice merely from121.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C067
+  label: Conventionalized norm
+  statement: Uses concepts defined in a social practice; imposing a norm rather than following existing practice
+    is a stated qualification.
+  evidence:
+  - E06
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C068
+  label: Compliance interpretation
+  statement: Agent uses a norm to redescribe behavior; goal belongs to the interpretation plan rather than
+    necessarily the norm itself.
+  evidence:
+  - E06
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C069
+  label: Norm as behavioral constraint
+  statement: Norm as part of an agent plan; executing this aspect requires distinguishing Norm from Plan under
+    disjointness119.
+  evidence:
+  - E06
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C070
+  label: Constitutive norm
+  statement: Norm and constitutive description; introduces social agents rather than only classifying pre-existing
+    behavior.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C071
+  label: Meta-norm / secondary rule
+  statement: Norm describing a distinct norm; priority, entrenchment and conflict resolution require further
+    theory.
+  evidence:
+  - E18
+  - E22
+  basis: AUTHOR_REPORTED
+- id: C072
+  label: Reactive plan
+  statement: Plan describing a behavior/execution and norm for judgment or sanction;127 itself does not implement
+    sanctions.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C073
+  label: Norm application
+  statement: Interpretive situation satisfying a plan containing a norm in128; this differs from current OWL
+    direct norm satisfaction.
+  evidence:
+  - E18
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C074
+  label: AppliedIn
+  statement: Norm/application relation with a plan-part witness; distinct from plan execution falling under
+    a norm.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C075
+  label: FallsUnder
+  statement: A plan execution has a scoped situation satisfying a norm; applies to positive or negative interpretation
+    and does not mean compliance.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C076
+  label: Outside scope
+  statement: Negated interpretive scope; absence of an OWL assertion does not establish this negation.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C077
+  label: ExecutesNorm
+  statement: Execution-level relation involving a norm-containing plan; the new executes symbol in133 is not
+    independently defined.
+  evidence:
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C078
+  label: Norm efficacy / compliance
+  statement: Paper distinguishes actual realization of expectations from applicability/interpretation; no operational
+    truth metric is supplied.
+  evidence:
+  - E06
+  - E18
+  basis: AUTHOR_REPORTED
+- id: C079
+  label: Intentional collective / IC
+  statement: Knowledge community unified by some plan; awareness of a common goal and explicit individual collective
+    commitment are not necessary in the broad stance.
+  evidence:
+  - E02
+  - E07
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C080
+  label: Organization
+  statement: Social agent acted for by collective members; organization, office, officeholder and agent collection
+    remain different entities.
+  evidence:
+  - E09
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C081
+  label: Norm-plan bundle
+  statement: Plan and norm descriptions entrenched by describing one another or by norm-as-plan-part; current
+    OWL loses the explicit disjunction witness.
+  evidence:
+  - E19
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C082
+  label: Normative intentional collective / NIC subtype
+  statement: Knowledge community unified by a norm-plan bundle; no automatic NIC-to-IC inclusion from138 alone.
+  evidence:
+  - E07
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C083
+  label: Anticipated collective bundle
+  statement: Explicit plan/norm action schema adopted before execution; distinguish from emergent retrospective
+    contextualization.
+  evidence:
+  - E02
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C084
+  label: Emerging collective
+  statement: Normative collective with execution no later than conceptualization;139 can hold vacuously without
+    such events and uses non-strict time comparison.
+  evidence:
+  - E19
+  basis: AUTHOR_REPORTED
+- id: C085
+  label: Knowledge role
+  statement: Concept classifying informational expressions of descriptions within paradigms; empty classifier
+    extension remains possible.
+  evidence:
+  - E20
+  basis: AUTHOR_REPORTED
+- id: C086
+  label: Agent role
+  statement: Role classifying social agents under142; current OWL instead constrains Concept over social-or-physical
+    agents.
+  evidence:
+  - E20
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C087
+  label: Epistemic influence
+  statement: Norm-plan bundle using knowledge and agent roles; not an empirical causal estimate or merely a
+    relation between two people.
+  evidence:
+  - E20
+  basis: AUTHOR_REPORTED
+- id: C088
+  label: Knowledge collective
+  statement: Normative collective with epistemic-influence unifier and paradigm part; printed144 and Figure2
+    parent discrepancy are explicit.
+  evidence:
+  - E20
+  - E21
+  basis: AUTHOR_REPORTED
+- id: C089
+  label: Social relation
+  statement: Epistemic influence shared through collective assumptions; paper does not require a stable scientifically
+    justified paradigm.
+  evidence:
+  - E20
+  basis: AUTHOR_REPORTED
+- id: C090
+  label: BringsAbout
+  statement: Social agent/knowledge collective/time relation with acting-for and member plan-adoption requirements;147
+    retains variable shadowing.
+  evidence:
+  - E20
+  basis: AUTHOR_REPORTED
+- id: C091
+  label: Reification
+  statement: Description/intension and situation/token are first-order individuals; second-order semantics
+    and formal encoding are not automatically complete.
+  evidence:
+  - E03
+  - E08
+  basis: AUTHOR_REPORTED
+- id: C092
+  label: Constructivist methodological stance
+  statement: Human/social context is part of the modeling account; psychological references motivate rather
+    than experimentally validate NIC.
+  evidence:
+  - E03
+  - E04
+  - E23
+  basis: AUTHOR_REPORTED
+- id: C093
+  label: First-order / description-logic presentations
+  statement: FOL paper and OWL artifact are distinct projections; source says OWL(DL), but a reviewer profile
+    or solver run has not been executed.
+  evidence:
+  - E01
+  - E02
+  - E25
+  - E27
+  basis: AUTHOR_REPORTED
+- id: C094
+  label: Mereology
+  statement: properPartOf is used with assumed usual semantics and varying binary/ternary printed signatures;
+    it is distinct from collection membership.
+  evidence:
+  - E12
+  - E13
+  - E17
+  basis: AUTHOR_REPORTED
+- id: C095
+  label: Formal model / knowledge representation method
+  statement: The paper is a conceptual/formal construction with examples and literature dialogue, not a measured
+    comparative deployment study.
+  evidence:
+  - E02
+  - E22
+  - E23
+  basis: AUTHOR_REPORTED
+- id: C096
+  label: Evaluation and normative dynamics
+  statement: Requirements, design and interoperability for computational normative systems and finer collective
+    classifications are proposed future research.
+  evidence:
+  - E22
+  basis: AUTHOR_REPORTED
+- id: C097
+  label: Knowledge corpus (artifact-specific)
+  statement: Current root introduces a collection with at least two description members; the journal KC condition
+    is not simply the same as one corpus per member.
+  evidence:
+  - E13
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C098
+  label: Classification situation (artifact-specific)
+  statement: OWL reification with three settings and typed witnesses; cardinality alone does not bind the same
+    concept/entity/time classification tuple.
+  evidence:
+  - E10
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C099
+  label: EpistemicRelation (artifact name)
+  statement: Current OWL label corresponds approximately to paper EpistemicInfluence but has an extra paradigm-part
+    requirement; naming similarity is not proven equivalence.
+  evidence:
+  - E20
+  - E25
+  basis: AUTHOR_REPORTED
+- id: C100
+  label: Ground implementation categories
+  statement: Current ground.owl adds generic DomainEntity, DomainConcept, Aggregate, Event, Location, Quality,
+    Region, Substance, IndividualConstruct and InformationRealization distinctions beyond the paper's compact
+    PA/R/PR notation.
+  evidence:
+  - E15
+  - E16
+  - E26
+  basis: AUTHOR_REPORTED
+commitments:
+- id: K001
+  label: 'Display(1): Maximal c.DnS signature'
+  statement: The eight-place contextual relation types description, situation and ordered lists of concepts,
+    entities, agents, collections, information and times; starred lists are not automatically a standard fixed-arity
+    scalar FOL encoding.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 1
+  pdf_page: 11
+  printed_page: 80
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K002
+  label: 'Display(2): Murder contextual tuple'
+  statement: Ground example binds description, situation, four concepts/entities and two times; the singular/plural
+    PreviousCase name varies in the printed explanation.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 2
+  pdf_page: 11
+  printed_page: 80
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K003
+  label: 'Display(3): Generic domain modality'
+  statement: The boxed universal E sentence includes a modal necessity operator; it is not pure ordinary first-order
+    syntax without an explicit modal interpretation.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 3
+  pdf_page: 12
+  printed_page: 81
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K004
+  label: 'Display(4): Primitive category domain'
+  statement: Each of D,S,C,A,K,I,T implies E; this is a union inclusion rather than disjointness or exhaustiveness.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 4
+  pdf_page: 12
+  printed_page: 81
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K005
+  label: 'Display(5): Schematic entity union'
+  statement: SE is defined by D or S or C or A or K or I. Pairwise disjointness is stated in prose, not supplied
+    by the union alone.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 5
+  pdf_page: 12
+  printed_page: 81
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K006
+  label: 'Display(6): Schematic complement presentation'
+  statement: E(e) is equivalent to SE(e) or not SE(e); literal excluded-middle presentation is preserved rather
+    than silently replaced by a named non-schematic partition.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 6
+  pdf_page: 12
+  printed_page: 81
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K007
+  label: 'Display(7): Time non-schematic'
+  statement: T excludes SE; no converse or complete temporal theory is supplied.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 7
+  pdf_page: 12
+  printed_page: 81
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K008
+  label: 'Display(8): Redescription signature'
+  statement: redescription(a,e,s,t) is typed A,E,S,T; distinguish this four-argument primitive presentation
+    from later redescribes.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 8
+  pdf_page: 12
+  printed_page: 81
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K009
+  label: 'Display(9): Fangio driving redescription'
+  statement: Example constructs a situation for driving as enacted and redescribed.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 9
+  pdf_page: 12
+  printed_page: 81
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K010
+  label: 'Display(10): Fangio person redescription'
+  statement: Example redescribes a person under an administrative or conceptual perspective.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 10
+  pdf_page: 12
+  printed_page: 81
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K011
+  label: 'Display(11): Ground entity'
+  statement: G means E with an agent/situation/time redescription; no explicit not-SE guard appears here, despite
+    the later regress caveat.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 11
+  pdf_page: 13
+  printed_page: 82
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K012
+  label: 'Display(12): Interpretation signature'
+  statement: interprets(a,e,t) is typed A,E,T; the primitive is not identical to redescribes(a,s,t).
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 12
+  pdf_page: 13
+  printed_page: 82
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K013
+  label: 'Display(13): Projection schema'
+  statement: A projection implies a full c.DnS tuple. The author explicitly says these schemata are not included
+    in the axiomatization; witness binding requires an encoding decision.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 13
+  pdf_page: 13
+  printed_page: 82
+  formula_role: OMITTED_PROJECTION_SCHEMA
+  normalization: SOURCE_NOT_REPAIRED
+- id: K014
+  label: 'Display(14): Defining signature'
+  statement: defines(d,c) is typed D and C.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 14
+  pdf_page: 15
+  printed_page: 84
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K015
+  label: 'Display(15): Constitution minister example'
+  statement: The constitution defines the minister role; this is not an officeholder identity axiom.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 15
+  pdf_page: 15
+  printed_page: 84
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K016
+  label: 'Display(16): Taxonomy species example'
+  statement: A taxonomy defines the Species concept.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 16
+  pdf_page: 15
+  printed_page: 84
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K017
+  label: 'Display(17): Regulation researcher example'
+  statement: A research regulation defines a researcher role.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 17
+  pdf_page: 15
+  printed_page: 84
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K018
+  label: 'Display(18): Concept definition existence'
+  statement: Every C has some defining D; uniqueness is not stated and the printed final delimiter is missing.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 18
+  pdf_page: 15
+  printed_page: 84
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K019
+  label: 'Display(19): Concept reuse'
+  statement: Using a concept requires a distinct description that defines it; existence and distinctness do
+    not imply a unique original definition.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 19
+  pdf_page: 15
+  printed_page: 84
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K020
+  label: 'Display(20): Etiquette reuse example'
+  statement: Illustrates a description reusing a concept defined in another description.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 20
+  pdf_page: 15
+  printed_page: 84
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K021
+  label: 'Display(21): Introduction signature'
+  statement: introduces is typed D to A; a social agent is different from a classifying concept.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 21
+  pdf_page: 15
+  printed_page: 84
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K022
+  label: 'Display(22): Constitution government example'
+  statement: The constitution introduces an institutional government agent.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 22
+  pdf_page: 15
+  printed_page: 84
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K023
+  label: 'Display(23): Company constitution example'
+  statement: A company constitution introduces a corporate/legal agent.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 23
+  pdf_page: 15
+  printed_page: 84
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K024
+  label: 'Display(24): Setting signature'
+  statement: settingFor(s,e) is binary and typed S,E.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 24
+  pdf_page: 16
+  printed_page: 85
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K025
+  label: 'Display(25): Mandate setting example'
+  statement: The example adds a2007 third argument to settingFor, unlike24; preserve the arity discrepancy.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 25
+  pdf_page: 16
+  printed_page: 85
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K026
+  label: 'Display(26): Ground situation existence'
+  statement: Every G occurs in at least one S setting; not a unique or exhaustive situation.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 26
+  pdf_page: 16
+  printed_page: 85
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K027
+  label: 'Display(27): Satisfaction signature'
+  statement: satisfies(s,d) is typed S,D.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 27
+  pdf_page: 16
+  printed_page: 85
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K028
+  label: 'Display(28): Mandate satisfaction example'
+  statement: A mandate situation satisfies a constitutional/law description.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 28
+  pdf_page: 16
+  printed_page: 85
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K029
+  label: 'Display(29): Situation description existence'
+  statement: Every situation satisfies some description; a description need not have a satisfying situation.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 29
+  pdf_page: 16
+  printed_page: 85
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K030
+  label: 'Display(30): Legally formed government'
+  statement: A situation is characterized through satisfaction of a legal government-formation description;
+    no whole legal compliance procedure follows automatically.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 30
+  pdf_page: 16
+  printed_page: 85
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K031
+  label: 'Display(31): Classification signature'
+  statement: classifies(c,e,t) is typed C,E,T; time is explicit in the paper.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 31
+  pdf_page: 17
+  printed_page: 86
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K032
+  label: 'Display(32): President classification example'
+  statement: A role classifies an officeholder at a time.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 32
+  pdf_page: 17
+  printed_page: 86
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K033
+  label: 'Display(33): Senator classification example'
+  statement: A role classification is contextual, distinct from an institutional agent.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 33
+  pdf_page: 17
+  printed_page: 86
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K034
+  label: 'Display(34): Additional classification example'
+  statement: An instance classification example does not make all descriptions extensionally equivalent.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 34
+  pdf_page: 17
+  printed_page: 86
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K035
+  label: 'Display(35): Ground classification requirement'
+  statement: G implies some classifying concept/entity relation at free t; the time variable is not explicitly
+    bound or repaired in this review.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 35
+  pdf_page: 17
+  printed_page: 86
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K036
+  label: 'Display(36): Description relation'
+  statement: describes connects D to G at T via a concept the description defines or uses; it is not mere information
+    aboutness.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 36
+  pdf_page: 17
+  printed_page: 86
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K037
+  label: 'Display(37): Conceptualization signature'
+  statement: conceptualizes has A,SE,T arguments; the journal already permits any schematic entity rather than
+    only descriptions.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 37
+  pdf_page: 17
+  printed_page: 86
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K038
+  label: 'Display(38): Constitution conceptualization example'
+  statement: An agent conceptualizes a legal description at a time; this does not alone assert belief or endorsement.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 38
+  pdf_page: 18
+  printed_page: 87
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K039
+  label: 'Display(39): Social availability'
+  statement: Every schematic entity has some conceptualizing agent and time; no uniqueness or actual full community
+    agreement follows.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 39
+  pdf_page: 18
+  printed_page: 87
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K040
+  label: 'Display(40): Deputing signature'
+  statement: deputes(a,c,t) has printed A(s),C(c),T(t). The stray s is retained as a source issue.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 40
+  pdf_page: 18
+  printed_page: 87
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K041
+  label: 'Display(41): Speaker deputing example'
+  statement: A government deputes a speaker concept to classify entities acting on its behalf.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 41
+  pdf_page: 18
+  printed_page: 87
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K042
+  label: 'Display(42): Interpretive scope'
+  statement: hasInScope requires distinct situations/descriptions, one description describing another and a
+    common conceptualizing agent; epistemic context is reified.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 42
+  pdf_page: 18
+  printed_page: 87
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K043
+  label: 'Display(43): Murder case scope example'
+  statement: A legal case can have the represented Brutus event in scope without assuming that event as a setting
+    member of the case.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 43
+  pdf_page: 18
+  printed_page: 87
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K044
+  label: 'Display(44): Redescribes definition'
+  statement: Agent, represented situation and time are connected via a distinct scoped redescription situation;
+    distinguish represented time from interpretation time.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 44
+  pdf_page: 19
+  printed_page: 88
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K045
+  label: 'Display(45): Sherlock redescription example'
+  statement: A fictional investigation illustrates scope; fictional status is not fully axiomatized here.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 45
+  pdf_page: 19
+  printed_page: 88
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K046
+  label: 'Display(46): Expression signature'
+  statement: expresses(i,se,t) is typed I,SE,T; general schematic meanings are allowed.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 46
+  pdf_page: 19
+  printed_page: 88
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K047
+  label: 'Display(47): Constitution information example'
+  statement: A constitution information object expresses a description, separately from its physical paper
+    realization.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 47
+  pdf_page: 19
+  printed_page: 88
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K048
+  label: 'Display(48): Expression availability'
+  statement: Every schematic entity has some expression and time; printed delimiter nesting is incomplete and
+    not silently closed.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 48
+  pdf_page: 19
+  printed_page: 88
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K049
+  label: 'Display(49): Information aboutness'
+  statement: about derives via an expressed schematic entity satisfying a situation/description relation and
+    a setting referent. With27, that witness is forced to be a D even though46 is broader.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 49
+  pdf_page: 19
+  printed_page: 88
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K050
+  label: 'Display(50): Information about Italy'
+  statement: A text about a country is a different relation from directly classifying the country.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 50
+  pdf_page: 19
+  printed_page: 88
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K051
+  label: 'Display(51): Membership signature'
+  statement: memberOf is typed E,K,T; membership is temporal and differs from mereological parthood.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 51
+  pdf_page: 20
+  printed_page: 89
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K052
+  label: 'Display(52): Government membership example'
+  statement: A person belongs to a government collection at a time.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 52
+  pdf_page: 20
+  printed_page: 89
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K053
+  label: 'Display(53): Agent collection'
+  statement: AK is a collection whose members are social agents, using a universal condition; non-emptiness
+    is not required by53.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 53
+  pdf_page: 20
+  printed_page: 89
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K054
+  label: 'Display(54): Government agent collection example'
+  statement: Coextension between an agent collection and a government at a time is not identity of the institution
+    and collection.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 54
+  pdf_page: 20
+  printed_page: 89
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K055
+  label: 'Display(55): Temporal instantiation'
+  statement: instantiates(a1,a2,t) uses a temporalized three-place equality presentation; it needs explicit
+    semantics beyond ordinary binary equality.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 55
+  pdf_page: 20
+  printed_page: 89
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K056
+  label: 'Display(56): Instantiation example'
+  statement: The example omits the time argument of the three-place55 relation.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 56
+  pdf_page: 20
+  printed_page: 89
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K057
+  label: 'Display(57): Containment principle'
+  statement: For each classified member/time there exists a collection containing it; the witness can vary
+    by member and does not alone yield one common containing collection.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 57
+  pdf_page: 20
+  printed_page: 89
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K058
+  label: 'Display(58): Covering concept'
+  statement: covers requires that every member of a collection be classified by the concept; empty collections
+    satisfy the universal condition vacuously.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 58
+  pdf_page: 21
+  printed_page: 90
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K059
+  label: 'Display(59): Council covering example'
+  statement: A minister concept covers a council collection; this is not a proof of a uniquely fixed member
+    extension.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 59
+  pdf_page: 21
+  printed_page: 90
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K060
+  label: 'Display(60): Characterizing concept'
+  statement: characterizes combines C,K,T with a covering supercollection/part condition; the printed line
+    break lacks an explicit connective before the existential clause.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 60
+  pdf_page: 21
+  printed_page: 90
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K061
+  label: 'Display(61): Council characteristic example'
+  statement: An attributed characteristic need not classify every member directly.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 61
+  pdf_page: 21
+  printed_page: 90
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K062
+  label: 'Display(62): Collection unification'
+  statement: unifies(d,k) requires D,K and some concept defined by d that covers k; no unique unifier or non-empty
+    collection is imposed.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 62
+  pdf_page: 21
+  printed_page: 90
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K063
+  label: 'Display(63): Constitution unification derivation'
+  statement: The author derives the council unifier from selected earlier examples; this was not reproduced
+    by a prover.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 63
+  pdf_page: 21
+  printed_page: 90
+  formula_role: AUTHOR_DERIVATION
+  normalization: SOURCE_NOT_REPAIRED
+- id: K064
+  label: 'Display(64): Configuration'
+  statement: A collection is characterized through members that are parts of larger entities described by its
+    unifier; an inner t binder shadows the outer temporal variable.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 64
+  pdf_page: 21
+  printed_page: 90
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K065
+  label: 'Display(65): Bundle'
+  statement: Two description-part witnesses share a characterizing/unifying concept or satisfying situation.
+    They are not explicitly required distinct despite the prose minimum of two.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 65
+  pdf_page: 22
+  printed_page: 91
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K066
+  label: 'Display(66): Specialization signature'
+  statement: specializes is typed SE to SE; this does not by itself encode complete class subsumption semantics.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 66
+  pdf_page: 22
+  printed_page: 91
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K067
+  label: 'Display(67): Government specialization example'
+  statement: A schematic specialization example is distinct from temporal instantiation55.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 67
+  pdf_page: 22
+  printed_page: 91
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K068
+  label: 'Display(68): Knowledge community'
+  statement: An agent collection has a common conceptualized description with additional co-sharing condition;
+    universal member conditions do not supply a member.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 68
+  pdf_page: 22
+  printed_page: 91
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K069
+  label: 'Display(69): Interaction requirement'
+  statement: Conceptualization implies membership in a community unified by the description and a further shared
+    description; source existential scope/delimiters require care.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 69
+  pdf_page: 23
+  printed_page: 92
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K070
+  label: 'Display(70): Stahl conceptualization example'
+  statement: Conceptualizing phlogiston is not automatically endorsement of its truth.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 70
+  pdf_page: 23
+  printed_page: 92
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K071
+  label: 'Display(71): Lavoisier phlogiston example'
+  statement: A rejected theory can still be conceptualized.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 71
+  pdf_page: 23
+  printed_page: 92
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K072
+  label: 'Display(72): Lavoisier oxygen example'
+  statement: Conceptualizing an accepted alternative remains a separate assertion from assumption.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 72
+  pdf_page: 23
+  printed_page: 92
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K073
+  label: 'Display(73): Assumption implication'
+  statement: assumes implies conceptualizes, not conversely. Belief and supporting evidence are explicitly
+    not further axiomatized.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 73
+  pdf_page: 23
+  printed_page: 92
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K074
+  label: 'Display(74): Stahl assumption example'
+  statement: A historical theory can be assumed without a present truth endorsement by the reviewer.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 74
+  pdf_page: 23
+  printed_page: 92
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K075
+  label: 'Display(75): Lavoisier assumption example'
+  statement: An agent assumes an alternative scientific description.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 75
+  pdf_page: 23
+  printed_page: 92
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K076
+  label: 'Display(76): Paradigm'
+  statement: A bundle has descriptions assumed by members of knowledge communities; witness community can vary
+    by part/time and the formula does not establish one non-empty common group.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 76
+  pdf_page: 24
+  printed_page: 93
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K077
+  label: 'Display(77): Social construction principle'
+  statement: G is equivalent to a network of classification, setting, definition, satisfaction, sharing, unification,
+    deputing, expression and two-level redescription. Note20 non-schematic restriction is not an explicit guard
+    here.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 77
+  pdf_page: 24
+  printed_page: 93
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K078
+  label: 'Display(78): Acting for'
+  statement: actsFor(e,a,t) derives from a concept classifying e and deputed by a social agent; acting entity
+    need not itself be a social agent.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 78
+  pdf_page: 25
+  printed_page: 94
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K079
+  label: 'Display(79): State actor example'
+  statement: A person acts for a state at a time.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 79
+  pdf_page: 25
+  printed_page: 94
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K080
+  label: 'Display(80): Agent efficacy'
+  statement: Each social agent has some acting entity and time; the stronger rational-agent version is prose
+    only.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 80
+  pdf_page: 25
+  printed_page: 94
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K081
+  label: 'Display(81): Physical agent'
+  statement: PA implies E and not SE; this does not force all actors under78 to be PA.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 81
+  pdf_page: 26
+  printed_page: 95
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K082
+  label: 'Display(82): Internal representation'
+  statement: R implies E and not SE; distinguish physical-agent internal construction from a shared schematic
+    description.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 82
+  pdf_page: 26
+  printed_page: 95
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K083
+  label: 'Display(83): Constructing signature'
+  statement: constructs(pa,r,t) is typed PA,R,T.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 83
+  pdf_page: 26
+  printed_page: 95
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K084
+  label: 'Display(84): Physical construction example'
+  statement: An organism constructs a representation of a constitution.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 84
+  pdf_page: 26
+  printed_page: 95
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K085
+  label: 'Display(85): Individual construction'
+  statement: The implication links a description/representation/time to some PA with constructs and actsFor;
+    a is not explicitly existentially bound in the printed display.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 85
+  pdf_page: 26
+  printed_page: 95
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K086
+  label: 'Display(86): Individual counterpart example'
+  statement: A shared constitution has a particular organism-level internal construction.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 86
+  pdf_page: 26
+  printed_page: 95
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K087
+  label: 'Display(87): Cognitive counterpart requirement'
+  statement: Conceptualization entails a physical actor constructing a representation; the body does not link
+    r to d with individuallyConstructedAs.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 87
+  pdf_page: 26
+  printed_page: 95
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K088
+  label: 'Display(88): Physical realization'
+  statement: PR implies E and not SE; it is not the information object's identity.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 88
+  pdf_page: 27
+  printed_page: 96
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K089
+  label: 'Display(89): Realization signature'
+  statement: realizes(pr,i,t) is typed PR,I,T.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 89
+  pdf_page: 27
+  printed_page: 96
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K090
+  label: 'Display(90): Constitution paper example'
+  statement: A physical paper document realizes a constitution information object.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 90
+  pdf_page: 27
+  printed_page: 96
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K091
+  label: 'Display(91): Information grounding'
+  statement: Conceptualization requires a physical actor/representation and an information expression/realization.
+    The displayed body still does not assert individuallyConstructedAs(d,r,t).
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 91
+  pdf_page: 27
+  printed_page: 96
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K092
+  label: 'Display(92): Grounded scope'
+  statement: hasGroundedScope extends hasInScope with a physical actor and construction, but actsFor and constructs
+    appear without their temporal arguments.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 92
+  pdf_page: 27
+  printed_page: 96
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K093
+  label: 'Display(93): Grounded Sherlock example'
+  statement: Two-level represented and interpretive situations are retained; example status does not prove
+    grounding of every fictional referent.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 93
+  pdf_page: 27
+  printed_page: 96
+  formula_role: EXAMPLE
+  normalization: SOURCE_NOT_REPAIRED
+- id: K094
+  label: 'Display(94): Grounded construction principle'
+  statement: The full existential context adds PA,R,PR and physical/informational witnesses. Source free-variable,
+    grounding-domain and regress concerns remain technical questions, not an executed inconsistency result.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 94
+  pdf_page: 28
+  printed_page: 97
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K095
+  label: 'Display(95): Action assumption'
+  statement: Action only implies E in this display; no full event/process foundation is defined.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 95
+  pdf_page: 28
+  printed_page: 97
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K096
+  label: 'Display(96): Object assumption'
+  statement: Object only implies E; intuitive objecthood is not a DOLCE-specific imported axiom.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 96
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K097
+  label: 'Display(97): Value assumption'
+  statement: Value only implies E; object/data implementation distinction is explicitly postponed in note22.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 97
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K098
+  label: 'Display(98): Role'
+  statement: A C defined by a Plan classifies only Objects. Non-rigidity is motivated in prose rather than
+    expressed as a complete modal axiom here.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 98
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K099
+  label: 'Display(99): Task'
+  statement: A C defined by a Plan classifies only Actions and is targeted by some Role.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 99
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K100
+  label: 'Display(100): Targets signature'
+  statement: targets connects Role to Task.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 100
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K101
+  label: 'Display(101): Parameter'
+  statement: A C defined by a Plan classifies only Values and is required by some concept.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 101
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K102
+  label: 'Display(102): Requirement signature'
+  statement: requires connects a C to a Parameter; it is not a generic software requirement relation.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 102
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K103
+  label: 'Display(103): Plan constraints'
+  statement: A plan implies Description with a conceptualizing agent/time, uses a task and role and has a goal
+    part. It uses the relation uses, although98-101 require plan definitions;19 introduces a distinct defining
+    description.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 103
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K104
+  label: 'Display(104): Constitutive description'
+  statement: A D is constitutive when it introduces a social agent.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 104
+  pdf_page: 29
+  printed_page: 98
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K105
+  label: 'Display(105): Plan constitutive part'
+  statement: A plan introduces an agent iff it has a constitutive part that defines that agent. The printed
+    defines(y,a) conflicts with14/21 concept versus agent typing if all primitive disjointness is imposed.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 105
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K106
+  label: 'Display(106): Subplan'
+  statement: subPlan(x,y,t) implies y is a proper part of x and both are plans; orientation is whole-to-part.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 106
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K107
+  label: 'Display(107): Desire'
+  statement: Desire implies Description; no agent attitude primitive or empirical desire criterion is formalized
+    here.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 107
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K108
+  label: 'Display(108): Goal'
+  statement: A goal is a desire that is a proper part of some plan at a time; no explicit desiring-agent relation
+    occurs in108.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 108
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K109
+  label: 'Display(109): Main goal'
+  statement: A goal is part of a plan and not part of any nested plan; main status is relative to a given plan/time.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 109
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K110
+  label: 'Display(110): Subgoal'
+  statement: A goal is part of a plan and of some nested plan; being a subgoal does not entail being a part
+    of the main goal.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 110
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K111
+  label: 'Display(111): Goal influence'
+  statement: A subgoal and main goal of a shared plan are related; the displayed definition does not establish
+    causal necessity/sufficiency or arbitrary cross-plan influence.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 111
+  pdf_page: 30
+  printed_page: 99
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K112
+  label: 'Display(112): Goal adoption'
+  statement: The printed condition quantifies a plan p and task z but concludes adoptsPlan(a,z,t); properPartOf
+    lacks time and parentheses/scope are irregular. No repaired plan-adoption rule is substituted.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 112
+  pdf_page: 31
+  printed_page: 100
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K113
+  label: 'Display(113): Plan adoption'
+  statement: adoptsPlan(a,p,t) implies assumes(a,p,t),A(x),Plan(p); A(x) has a stray variable instead of an
+    explicit A(a).
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 113
+  pdf_page: 31
+  printed_page: 100
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K114
+  label: 'Display(114): Plan execution'
+  statement: S satisfies a Plan with conceptualization time no later than execution time. a is unbound and
+    the non-strict order permits equality; source says anticipation in prose.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 114
+  pdf_page: 31
+  printed_page: 100
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K115
+  label: 'Display(115): Subplan execution part'
+  statement: Executions satisfying nested plans are related by properPartOf; binary part calls omit the temporal
+    argument used elsewhere and no synchronization guard is supplied.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 115
+  pdf_page: 31
+  printed_page: 100
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K116
+  label: 'Display(116): Goal situation'
+  statement: A situation satisfies a goal; do not confuse this with the goal description itself.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 116
+  pdf_page: 31
+  printed_page: 100
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K117
+  label: 'Display(117): Goal situation non-part claim'
+  statement: The display negates a universal implication, stronger than merely saying a part implication is
+    not generally valid. Antecedent witnesses and temporal/arity choices need formal analysis; no global model
+    result asserted.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 117
+  pdf_page: 31
+  printed_page: 100
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K118
+  label: 'Display(118): Norm typing'
+  statement: A Norm is a D; regulative descriptions remain distinct from their case applications.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 118
+  pdf_page: 33
+  printed_page: 102
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K119
+  label: 'Display(119): Norm-plan disjointness'
+  statement: Norm implies not Plan; an executed norm aspect must be mediated or reified rather than silently
+    making one individual both types.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 119
+  pdf_page: 33
+  printed_page: 102
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K120
+  label: 'Display(120): Social practice'
+  statement: A shared plan unifies a knowledge community and is conceptualized by all its agents. unifies is
+    ternary here unlike62; universals do not impose non-empty membership.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 120
+  pdf_page: 33
+  printed_page: 102
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K121
+  label: 'Display(121): Norm conventionalization'
+  statement: Every norm has some social practice defining all concepts it uses; if none are used this universal
+    clause is vacuous and a closing delimiter is absent.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 121
+  pdf_page: 33
+  printed_page: 102
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K122
+  label: 'Display(122): Global plan and norm parts'
+  statement: The formula makes both norm x and global plan p parts of sp; surrounding prose suggests the other
+    containment direction for p. t is free and unifies has three arguments.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 122
+  pdf_page: 33
+  printed_page: 102
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K123
+  label: 'Display(123): Individual constraint norm'
+  statement: Each norm is a part of a plan conceptualized by an agent/time; this is not a biconditional definition
+    of all normative constraints.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 123
+  pdf_page: 34
+  printed_page: 103
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K124
+  label: 'Display(124): Norm case interpretation'
+  statement: A norm constrains a plan execution redescription, but setting(a1,pe,t1) has not been defined by
+    the earlier settingFor signature. Preserve rather than normalize it away.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 124
+  pdf_page: 34
+  printed_page: 103
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K125
+  label: 'Display(125): Constitutive norm'
+  statement: A norm that is a constitutive description introduces a social agent; it remains disjoint from
+    a plan under119.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 125
+  pdf_page: 34
+  printed_page: 103
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K126
+  label: 'Display(126): Meta-norm'
+  statement: A Norm describes a distinct Norm at a time; this is not a fully axiomatized priority/conflict-resolution
+    calculus.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 126
+  pdf_page: 34
+  printed_page: 103
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K127
+  label: 'Display(127): Reactive plan'
+  statement: A plan describes a norm and an execution and defines a concept; no actual penalty application
+    or executable sanction procedure is demonstrated by127 alone.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 127
+  pdf_page: 34
+  printed_page: 103
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K128
+  label: 'Display(128): Norm application'
+  statement: A Situation satisfies a Plan containing a Norm part; this differs from the current OWL norm-satisfaction
+    equivalence.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 128
+  pdf_page: 34
+  printed_page: 103
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K129
+  label: 'Display(129): Norm applied in'
+  statement: Norm,NormApplication and a common satisfying plan/part witness define appliedIn; distinguish norm
+    satisfaction, interpretive applicability and compliance.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 129
+  pdf_page: 35
+  printed_page: 104
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K130
+  label: 'Display(130): Outside scope'
+  statement: Outside scope is defined by negated reversed hasInScope, not simply lack of a triple in an open-world
+    graph.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 130
+  pdf_page: 35
+  printed_page: 104
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K131
+  label: 'Display(131): Outside norm scope'
+  statement: A PlanExecution outside a NormApplication scope is not thereby proved compliant or noncompliant.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 131
+  pdf_page: 35
+  printed_page: 104
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K132
+  label: 'Display(132): Falls under'
+  statement: A PlanExecution falls under a Norm when a scoped situation satisfies it; no positive compliance
+    truth-value follows from132.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 132
+  pdf_page: 35
+  printed_page: 104
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K133
+  label: 'Display(133): Executes norm'
+  statement: A norm-containing plan and a larger execution are existentially required, but executes(pe,p) is
+    not previously defined. Do not silently identify it with satisfies.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 133
+  pdf_page: 35
+  printed_page: 104
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K134
+  label: 'Display(134): Intentional collective'
+  statement: KC unified by some Plan; neither unique unifier nor actual shared-goal awareness follows from134
+    alone.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 134
+  pdf_page: 36
+  printed_page: 105
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K135
+  label: 'Display(135): Organization'
+  statement: A social agent's actors are members of some intentional collective; actor and organization are
+    not identified with that collection.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 135
+  pdf_page: 36
+  printed_page: 105
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K136
+  label: 'Display(136): Collective actor of organization'
+  statement: An organization acted for by an agent is also acted for by an IC containing that agent; collection
+    actor efficacy is an additional axiom.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 136
+  pdf_page: 36
+  printed_page: 105
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K137
+  label: 'Display(137): Norm-plan bundle'
+  statement: 'A Bundle has Plan and Norm parts with one of three entrenchment relations: norm describes plan,
+    plan describes norm or norm part of plan.'
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 137
+  pdf_page: 37
+  printed_page: 106
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K138
+  label: 'Display(138): Normative intentional collective'
+  statement: KC unified by a NormPlanBundle. The formula does not explicitly also require a Plan unifier, so
+    a generic NIC-to-IC inclusion is not established merely by138.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 138
+  pdf_page: 37
+  printed_page: 106
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K139
+  label: 'Display(139): Emerging collective'
+  statement: An NIC has a bundle such that execution setting times precede or equal conceptualization/member
+    times. Universal antecedents can be empty; isSettingFor differs from the earlier name and the display has
+    incomplete closure.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 139
+  pdf_page: 37
+  printed_page: 106
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K140
+  label: 'Display(140): Normative organization actor'
+  statement: Revises136 to a NIC acting for the organization; this is stronger than the earlier IC-only requirement
+    and cannot be assumed encoded identically in the current file.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 140
+  pdf_page: 37
+  printed_page: 106
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K141
+  label: 'Display(141): Knowledge role'
+  statement: A C classifies information objects expressing descriptions belonging to paradigms; empty classification
+    extensions remain possible.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 141
+  pdf_page: 38
+  printed_page: 107
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K142
+  label: 'Display(142): Agent role'
+  statement: A Role classifies only social agents; the current file instead uses Concept and social-or-physical
+    fillers.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 142
+  pdf_page: 38
+  printed_page: 107
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K143
+  label: 'Display(143): Epistemic influence'
+  statement: A NormPlanBundle uses some knowledge role and some agent role; it is not a measured causal influence
+    relation.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 143
+  pdf_page: 38
+  printed_page: 107
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K144
+  label: 'Display(144): Knowledge collective'
+  statement: An NIC has an epistemic influence with a paradigm part; printed unifies(d,x) uses free d instead
+    of the existential y. The diagram draws an IC parent; neither discrepancy is silently repaired.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 144
+  pdf_page: 38
+  printed_page: 107
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K145
+  label: 'Display(145): Social relation'
+  statement: An epistemic influence unifies a knowledge collective whose members assume it; this need not mean
+    a stable scientific paradigm or full accountability theory.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 145
+  pdf_page: 38
+  printed_page: 107
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K146
+  label: 'Display(146): Brings about typing'
+  statement: A social agent brings about a KnowledgeCollective acting for it at a time; institutional agent
+    and acting collection remain distinct.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 146
+  pdf_page: 39
+  printed_page: 108
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+- id: K147
+  label: 'Display(147): Brings about adoption'
+  statement: The brought-about collective has an assumed epistemic influence that all members adopt as a plan;
+    inner a,t shadow outer ones, and using adoptsPlan imposes Plan typing on the bundle under113.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+  formula_number: 147
+  pdf_page: 39
+  printed_page: 108
+  formula_role: FORMAL_COMMITMENT
+  normalization: SOURCE_NOT_REPAIRED
+formula_population:
+  first: 1
+  last: 147
+  count: 147
+  scope: NUMBERED_JOURNAL_DISPLAYS_INCLUDING_EXAMPLES_NOT147AXIOMS
+relation_index:
+- id: R001
+  label: c.DnS
+  statement: Eight-place maximal context with ordered-list slots; no standard scalar FOL encoding inferred.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: R002
+  label: redescription / redescribes
+  statement: Four-place foundational presentation8 versus later agent/situation/time projection44; do not erase
+    the distinction.
+  evidence:
+  - E08
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: R003
+  label: interprets
+  statement: Agent/entity/time signature12; separate from redescribes and hasInScope.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: R004
+  label: projected contextual relations
+  statement: Schema13 relates projections to a full c.DnS context, explicitly omitted from the printed axiomatization.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: R005
+  label: defines
+  statement: Description/concept relation14, distinct from introduces;18 imposes existence, not functional
+    uniqueness.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: R006
+  label: uses
+  statement: Description/concept reuse19 requires a distinct defining description; use is not direct definition.
+  evidence:
+  - E09
+  basis: REVIEWER_INTERPRETATION
+- id: R007
+  label: introduces
+  statement: Description/social-agent relation21;105 uses defines for a social agent and must not be silently
+    repaired.
+  evidence:
+  - E09
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: R008
+  label: settingFor / isSettingFor / setting
+  statement: Binary core24;25,124,139 use different arities or names. These are source discrepancies rather
+    than accepted aliases.
+  evidence:
+  - E10
+  - E18
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: R009
+  label: satisfies
+  statement: Situation/Description relation27, distinct from executes and from all notions of compliance.
+  evidence:
+  - E10
+  - E17
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: R010
+  label: classifies
+  statement: Concept/entity/time relation31, distinct from subclassing and instance equality.
+  evidence:
+  - E10
+  basis: REVIEWER_INTERPRETATION
+- id: R011
+  label: describes
+  statement: Description/ground-entity/time36 via concepts; a description can describe another description
+    in interpretive scope.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: R012
+  label: conceptualizes
+  statement: Agent/schematic-entity/time37; implies neither belief nor assumption.
+  evidence:
+  - E10
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: R013
+  label: deputes
+  statement: Agent/concept/time40, with printed A(s) anomaly; roles enable acting-for.
+  evidence:
+  - E11
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R014
+  label: hasInScope
+  statement: Distinct interpretive and represented situations/descriptions42; absence is not negation.
+  evidence:
+  - E11
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: R015
+  label: expresses
+  statement: Information/schematic entity/time46; broader than descriptions alone.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: R016
+  label: about
+  statement: Informational aboutness49 via expression, satisfaction and settings; not a mental-state content
+    relation.
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: R017
+  label: memberOf
+  statement: Entity/collection/time51; not mereological inclusion.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: R018
+  label: instantiates / temporalized equality
+  statement: Agent/agent/time55, temporalized identity notation and missing example time56 need explicit interpretation.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: R019
+  label: covers
+  statement: Concept covers all members58; universal only, no required member.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: R020
+  label: characterizes
+  statement: Concept/collection/time60 via covering supercollection; printed connective missing.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: R021
+  label: unifies
+  statement: Description/collection62 via a defined covering concept;120/122 add time and147 requires adoption
+    of a bundle.
+  evidence:
+  - E12
+  - E18
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: R022
+  label: specializes
+  statement: Schematic/schematic66, not complete subclass semantics.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: R023
+  label: assumes
+  statement: One-way stronger attitude73 implying conceptualization; no evidence-backed belief theory provided.
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: R024
+  label: properPartOf / properPart
+  statement: Assumed mereology, time-indexed in many formulas and binary elsewhere; goal parts and subplan
+    execution parts differ.
+  evidence:
+  - E12
+  - E13
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: R025
+  label: actsFor
+  statement: Entity/social agent/time78;86/92/135-140 use different contexts/typing implications.
+  evidence:
+  - E15
+  - E16
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: R026
+  label: constructs
+  statement: Physical agent/representation/time83;92 drops time, and87/91 omit description-to-representation
+    coreference.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: R027
+  label: individuallyConstructedAs
+  statement: Description/representation/time85; source existentially binds pa but not a.
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: R028
+  label: realizes
+  statement: Physical realization/information/time89; physical support does not identify expression with meaning.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: R029
+  label: hasGroundedScope
+  statement: Grounded extension92 of interpretive scope; distinguish event and redescription time.
+  evidence:
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: R030
+  label: targets
+  statement: Role/task100; OWL also contains an inverse, without assuming all paper existential targets are
+    enforced.
+  evidence:
+  - E17
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: R031
+  label: requires
+  statement: Concept/parameter102, absent as a declared root object property in the inspected NIC file.
+  evidence:
+  - E17
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: R032
+  label: subPlan
+  statement: Whole/subplan/time106; no unique task decomposition given.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: R033
+  label: mainGoal / subGoal
+  statement: Plan/goal/time109-110; goal of a subplan need not be part of a main goal.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: R034
+  label: influenceOn
+  statement: Subgoal/main-goal111 of a common plan, weaker than a causal or cross-plan dependency theory.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: R035
+  label: adoptsGoal / adoptsPlan
+  statement: 112-113 use assumption but contain task-versus-plan and stray-variable issues; OWL subproperties
+    instead refer to undeclared shares.
+  evidence:
+  - E17
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: R036
+  label: appliedIn
+  statement: Norm/application129 with a norm-containing plan satisfied by the application; OWL inverse pair
+    differs.
+  evidence:
+  - E18
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: R037
+  label: outsideTheScopeOf / outsideTheScopeOfNorm
+  statement: Negated interpretive scope130-131, not closed-world absence.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: R038
+  label: fallsUnder
+  statement: Execution/norm132 with a scoped satisfying situation; no compliance decision implied.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: R039
+  label: executes / executesNorm
+  statement: 133 introduces executes without a prior signature; do not automatically equate it to satisfaction114.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: R040
+  label: bringsAbout
+  statement: Social-agent/knowledge-collective/time146-147; current OWL instead uses binary agent/IntentionalCollective
+    range.
+  evidence:
+  - E20
+  - E25
+  basis: REVIEWER_INTERPRETATION
+journal_ledger:
+  path: evidence/related-work/deep-reviews/cDnS-journal-2008/paper-ledger.yaml
+  sha256: c84b231bfcf1d901748fba555fc093c99380c0a541b458cbf90eb66ceda94c0c
+paper_formalization:
+  numbered_displays: 147
+  informal_definitions: 20
+  modal_or_list_encoding: REQUIRES_EXPLICIT_TRANSLATION
+  literal_source_repair: NOT_ADOPTED
+  reviewer_parser_execution: NOT_EXECUTED
+  reviewer_solver_execution: NOT_EXECUTED
+  profile_execution: NOT_EXECUTED
+  global_consistency: NOT_ESTABLISHED
+  counterexample_scope: SOURCE_LOCAL_OR_BACKGROUND_CONDITIONAL_NOT_FULL_THEORY_MODEL
+scenarios:
+- id: S001
+  label: Stable library collection
+  statement: 'AUTHOR EXAMPLE: adding/removing books need not change a collection''s identity if its unifying
+    role continues; this differs from fixed extensional set identity.'
+  evidence:
+  - E02
+  basis: REVIEWER_INTERPRETATION
+- id: S002
+  label: Lost unifying role
+  statement: 'ADVERSE RECONSTRUCTION: same members with a different conceptual unifier need not preserve collection
+    identity; cardinality or member equality alone is insufficient.'
+  evidence:
+  - E02
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S003
+  label: Storm crowd and dancers
+  statement: 'AUTHOR EXAMPLE: spontaneous people seeking shelter and coordinated dancers can both be treated
+    as broad intentional collectives; anticipated bundles distinguish the cases.'
+  evidence:
+  - E02
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: S004
+  label: Manipulation and distributed plans
+  statement: 'AUTHOR EXAMPLE: collective action can be attributed without each participant knowing a common
+    goal, including manipulation or local flock behavior; not evidence of measured human intention detection.'
+  evidence:
+  - E02
+  basis: REVIEWER_INTERPRETATION
+- id: S005
+  label: Government office and officeholder
+  statement: 'AUTHOR EXAMPLE: constitution introduces an institutional agent and defines a role classifying
+    a person; person, role, office and government collection are different levels.'
+  evidence:
+  - E09
+  - E10
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S006
+  label: Two defining descriptions
+  statement: ADVERSE RECONSTRUCTION:18 allows two defining descriptions for one Concept, unlike current core
+    exactly-one constraint; do not infer a single definition from prose wording.
+  evidence:
+  - E09
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: S007
+  label: Case versus reported event
+  statement: 'AUTHOR EXAMPLE: a murder case scopes a represented Brutus event without simply treating the event
+    itself as an unproblematic setting of that interpretive case.'
+  evidence:
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: S008
+  label: Fictional witness
+  statement: 'AUTHOR EXAMPLE: Sherlock investigation demonstrates reified interpretation; full truth conditions
+    or fictional-context semantics are not established by the example.'
+  evidence:
+  - E11
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: S009
+  label: Empty collection
+  statement: 'ADVERSE RECONSTRUCTION: universal member constraints in53/58/68 permit empty collections; no
+    actual multi-agent joint activity follows unless existence is separately imposed.'
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: S010
+  label: Varying collection witnesses
+  statement: 'ADVERSE RECONSTRUCTION: each member in57 can use a different containing collection; one shared
+    collection is an additional requirement, not a displayed consequence.'
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: S011
+  label: Repeated bundle part
+  statement: ADVERSE RECONSTRUCTION:65 permits d1=d2 without explicit distinctness, while current core min2
+    is stronger; no whole-theory satisfiability claim follows.
+  evidence:
+  - E13
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: S012
+  label: Rejected phlogiston theory
+  statement: 'AUTHOR EXAMPLE: Lavoisier can conceptualize a theory without assuming it. Assumption and truth/belief
+    evidence remain distinct.'
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: S013
+  label: Same name across paradigms
+  statement: 'ADVERSE RECONSTRUCTION: sharing a word or information expression does not alone establish shared
+    descriptions or assumed paradigms; epistemic context must be explicit.'
+  evidence:
+  - E11
+  - E13
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: S014
+  label: Physical and legal person
+  statement: 'AUTHOR EXAMPLE: physical birth/death, legal existence and posthumous legal effects differ; physical
+    actor and schematic agent are not identified.'
+  evidence:
+  - E15
+  basis: REVIEWER_INTERPRETATION
+- id: S015
+  label: Constitution text and paper
+  statement: 'AUTHOR EXAMPLE: shared description, information text, physical paper and organism-level internal
+    representation require distinct witnesses.'
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: S016
+  label: Grounding without coreference
+  statement: ADVERSE RECONSTRUCTION:87/91 provide a constructed representation but omit individuallyConstructedAs(d,r,t);
+    a description-specific counterpart cannot be read off without an additional link.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: S017
+  label: Espresso plan
+  statement: 'AUTHOR EXAMPLE: action schema uses a task/role and desired goal; prepared coffee, execution situation
+    and recipe-like description are different levels.'
+  evidence:
+  - E05
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S018
+  label: Employee duty versus goal
+  statement: 'AUTHOR EXAMPLE: agent performing a task may feel duty rather than desire, while a creator or
+    beneficiary desires the plan''s goal.'
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S019
+  label: Satiated versus eating
+  statement: 'AUTHOR EXAMPLE: eating can be a subgoal supporting satiation without being a mereological part
+    of satiation; structural influence is not a causal proof.'
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S020
+  label: Equal conceptualization and execution time
+  statement: ADVERSE RECONSTRUCTION:114 uses non-strict order and current OWL drops it entirely; neither entails
+    a strictly prior plan without further constraints.
+  evidence:
+  - E17
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: S021
+  label: Abort or suspend plan
+  statement: 'AUTHOR EXAMPLE: plan execution can satisfy abort conditions without reaching its main desired
+    goal; satisfaction is not identical to success.'
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S022
+  label: Incidental goal achievement
+  statement: 'AUTHOR EXAMPLE: desired state can occur without intentional execution;116 should not make it
+    automatically part of a plan execution.'
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S023
+  label: Task adopted as plan
+  statement: 'ADVERSE RECONSTRUCTION: literal112 feeds task z into adoptsPlan, whereas113 requires Plan; semantic
+    repair or joint inconsistency needs a separately chosen interpretation and proof.'
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: S024
+  label: Speed limit convention
+  statement: 'AUTHOR EXAMPLE: a norm can conventionalize a social practice aimed at reducing dangerous speed;
+    causal social benefit is motivational prose, not measured validation.'
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: S025
+  label: Speed enforcement interpretation
+  statement: 'AUTHOR EXAMPLE: another agent interprets a driver''s behavior under a norm; falling under covers
+    compliant and noncompliant cases.'
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: S026
+  label: Speed constraint in a plan
+  statement: 'AUTHOR EXAMPLE: a driver''s plan incorporates normative constraints; Norm and Plan must remain
+    distinct under119 even where a behavioral aspect is executed.'
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: S027
+  label: No scope assertion
+  statement: 'ADVERSE RECONSTRUCTION: missing hasInScope in an open-world file does not establish outsideTheScopeOf
+    or a compliance decision.'
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: S028
+  label: Application without direct norm satisfaction
+  statement: ADVERSE RECONSTRUCTION:128 permits a situation satisfying a norm-containing plan; current NormApplication
+    equivalence requires direct norm satisfaction. Do not assert paper/artifact equivalence.
+  evidence:
+  - E18
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: S029
+  label: Police-aware driving
+  statement: 'AUTHOR EXAMPLE: describing a norm, anticipating enforcement and simply taking it as a plan part
+    are three different entrenchment routes.'
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: S030
+  label: Emergence without event witness
+  statement: ADVERSE RECONSTRUCTION:139's universal antecedent can be empty; timing/emergence requires actual
+    witnesses to exclude vacuity, not merely the class name.
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: S031
+  label: Per-agent knowledge corpus
+  statement: 'ADVERSE RECONSTRUCTION: current KC permits each member''s shares existential to select a different
+    corpus; it does not guarantee one corpus shared by all.'
+  evidence:
+  - E13
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: S032
+  label: Organization and collective
+  statement: 'AUTHOR EXAMPLE: organization is an agent and its acting collective a separate collection; stronger140
+    requires a NIC rather than silently replacing135/136.'
+  evidence:
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: S033
+  label: Scientific force term
+  statement: 'AUTHOR EXAMPLE: an information object can play a knowledge role in a physics paradigm; expression,
+    description and scientific justification are different levels.'
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: S034
+  label: Changing social relations
+  statement: 'AUTHOR QUALIFICATION: a social relation''s paradigm may be minimal and continuously revised;
+    no universal stability or scientific foundedness claim is made.'
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: S035
+  label: Bringing about a collective
+  statement: ADVERSE RECONSTRUCTION:147 uses adoptsPlan for an EpistemicInfluence bundle and shadows agent/time
+    variables; any additional Plan typing must be evaluated rather than assumed intended.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: S036
+  label: Mixed core versions
+  statement: 'ADVERSE EXECUTED-INPUT RECONSTRUCTION: root1.0/ground reference shares and isSharedBy, but retained
+    core1.1 declares neither; all51 class comments being available does not establish a compatible executable
+    release.'
+  evidence:
+  - E25
+  - E26
+  - E27
+  basis: REVIEWER_INTERPRETATION
+evaluation:
+  Verification:
+    label: Structural and formal checks
+    statement: Author presents typed FOL/OWL and some local derivational examples, but no reproducible reasoner/profile
+      logs in this paper. Reviewer executed acquisition, RDF census and51-row raw comment/hierarchy reconciliation
+      only; formal defects remain267.
+    evidence:
+    - E08
+    - E12
+    - E25
+    - E26
+    - E27
+    basis: REVIEWER_INTERPRETATION
+  Validation:
+    label: Concept adequacy
+    statement: Legal, social, scientific and planning examples motivate representation needs; no original end-user/subject-matter
+      validation study of NIC is reported. The broad collective stance is an explicit theoretical choice.
+    evidence:
+    - E02
+    - E17
+    - E18
+    - E19
+    - E20
+    - E22
+    basis: REVIEWER_INTERPRETATION
+  Evaluation:
+    label: Performance and comparison
+    statement: No measured benchmark, accuracy/efficiency comparison or participant dataset is supplied in
+      the selected article. Cited applications and psychology references are not newly reproduced NIC evaluation.
+    evidence:
+    - E02
+    - E22
+    - E23
+    basis: NOT_REPORTED
+  Assessment:
+    label: Critical assessment
+    statement: Review tests interpretation with empty/repeated witnesses, varying corpus, equal times, differing
+      norm applications and actor/collective identity; these are source-local arguments, not executed whole-theory
+      models or empirical results.
+    evidence:
+    - E12
+    - E13
+    - E17
+    - E18
+    - E19
+    - E20
+    - E25
+    basis: REVIEWER_INTERPRETATION
+  Assurance:
+    label: Reproducibility and acceptance
+    statement: Pinned PDF/files, complete display ledger, all selected class comments/constraints and explicit
+      mirror mappings support traceability. Original2008 source parity, source license, full proof/profile
+      and independent expert acceptance remain unestablished.
+    evidence:
+    - E01
+    - E25
+    - E26
+    - E27
+    - E28
+    basis: REVIEWER_INTERPRETATION
+artifact:
+  issue: 267
+  status: SELECTED_FULL_CLASS_GLOSSARY_COMPLETE_VERSION_PROFILE_SEMANTICS_OPEN
+  version_relation: Paper note2 links collInt.owl1.0; selected ground.owl is mapped from the ontologydesignpatterns
+    host and imports core cDnS.owl, whose retained1.1 header names JAAMAS2008. All51 class comments and constraints
+    reviewed, with25/14/12 module populations and1148 asserted union triples. Literal import endpoints failed;
+    core lacks shares/isSharedBy referenced by root. This is a pinned selected file map, not a compatible original2008
+    release, complete semantic encoding or actual OWL-DL profile result. Main issue path follows stable register
+    ID cDnS-journal-2008 rather than263 initial cDnS2008 suggestion.
+  class_reviews_heading: '### All51 classes in the selected root and explicitly mapped imports'
+  class_reviews:
+  - id: A001
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#AgentCollection
+    label: collInt:AgentCollection
+    statement: Equivalent to Collection and only SocialAgent members, matching universal flavor of53; no existential
+      membership.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A002
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#AgentRole
+    label: collInt:AgentRole
+    statement: Subclass of Concept with only SocialAgent-or-PhysicalAgent fillers; unlike142 it does not assert
+      Role and broadens allowed fillers.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A003
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Classification
+    label: collInt:Classification
+    statement: Exact cardinality3 on isSettingFor plus three typed existential settings; existential restrictions
+      do not enforce a particular classifies edge between those same witnesses.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A004
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#ConstitutiveDescription
+    label: collInt:ConstitutiveDescription
+    statement: Equivalent Description with introduces some SocialAgent; close to104 without paper temporal
+      structure.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A005
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Desire
+    label: collInt:Desire
+    statement: Only Description superclass; agent attitude, valence and achievement criteria are not axiomatized.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A006
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#EpistemicRelation
+    label: collInt:EpistemicRelation
+    statement: Subclass NormPlanBundle using KnowledgeRole and AgentRole and having a Paradigm part; differs
+      from paper name EpistemicInfluence and adds its paradigm requirement earlier than143.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A007
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Goal
+    label: collInt:Goal
+    statement: Equivalent Desire and isProperPartOf some Plan; temporal index of108 omitted.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A008
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#GoalSituation
+    label: collInt:GoalSituation
+    statement: Equivalent Situation and satisfies some Goal; no asserted general non-parthood rule117.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A009
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#IntentionalCollective
+    label: collInt:IntentionalCollective
+    statement: Equivalent KnowledgeCommunity and isUnifiedBy some Plan; no uniqueness or non-empty member witness.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A010
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCollective
+    label: collInt:KnowledgeCollective
+    statement: Equivalent NIC and isUnifiedBy some EpistemicRelation;144 free variable is not reproduced literally,
+      and Figure2 IC parent differs.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A011
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCommunity
+    label: collInt:KnowledgeCommunity
+    statement: AgentCollection with hasMember only agents sharing some KnowledgeCorpus; existential corpus
+      can vary per member, unlike a guaranteed common corpus or the full68 network.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A012
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeCorpus
+    label: collInt:KnowledgeCorpus
+    statement: Collection, hasMember only Description, minimum2 members; not a named standalone category in
+      the journal's basic signature.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A013
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#KnowledgeRole
+    label: collInt:KnowledgeRole
+    statement: Concept with classifies only InformationObject whose expressions include a Description part
+      of a Paradigm; universal allows an empty classification extension.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A014
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Norm
+    label: collInt:Norm
+    statement: Description disjoint Plan; existential used concept, shared redescribing agent and norm-containing
+      plan constraints approximate rather than duplicate121-124.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A015
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#NormApplication
+    label: collInt:NormApplication
+    statement: Subclass Situation and equivalent to satisfies some Norm, whereas128 uses satisfaction of a
+      Plan containing a Norm.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A016
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#NormPlanBundle
+    label: collInt:NormPlanBundle
+    statement: Bundle with some Plan and Norm proper parts;137's additional describes-or-parthood entrenchment
+      witness is not asserted by these restrictions.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A017
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#NormativeIntentionalCollective
+    label: collInt:NormativeIntentionalCollective
+    statement: Equivalent KC and isUnifiedBy some NormPlanBundle; current comment postpones emergent bundle
+      formalization, while journal139 attempts it.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A018
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Organization
+    label: collInt:Organization
+    statement: SocialAgent with isActedBy only entities belonging to some IC; no matching full140 NIC collective
+      actor axiom in these class restrictions.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A019
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Paradigm
+    label: collInt:Paradigm
+    statement: Bundle whose every proper part is a Description assumed by some community member; per-part existentials
+      do not enforce the same community or every member's assumption76.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A020
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Parameter
+    label: collInt:Parameter
+    statement: Equivalent DomainConcept with only union(Region,Location,Quality,TimeInterval) fillers; disjoint
+      Role/Task;101 also needs a defining plan and requiring concept not captured here.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A021
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Plan
+    label: collInt:Plan
+    statement: Description with some isSharedBy SocialAgent, some usesConcept Role/Task and hasProperPart Goal;
+      disjoint Norm. isSharedBy is not declared in mapped core1.1.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A022
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#PlanExecution
+    label: collInt:PlanExecution
+    statement: Equivalent Situation and satisfies some Plan;114 temporal anticipation is absent, despite its
+      prose comment.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A023
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Role
+    label: collInt:Role
+    statement: Equivalent DomainConcept with only union(Object,Substance,Location,Event) fillers; disjoint
+      Task/Parameter; no paper98 defining-plan existential is present.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A024
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#SocialRelation
+    label: collInt:SocialRelation
+    statement: Equivalent EpistemicRelation and isAssumedBy some SocialAgent member of some KnowledgeCollective;
+      weaker than all-members assumption145 and shared-witness constraints.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A025
+    iri: http://www.loa-cnr.it/ontologies/collInt.owl#Task
+    label: collInt:Task
+    statement: Equivalent DomainConcept and classifies only Action; disjoint Role/Parameter. Defining-plan
+      and targeted-by-role existentials99 are not supplied.
+    evidence:
+    - E25
+    - E17
+    - E18
+    - E19
+    - E20
+    basis: REVIEWER_INTERPRETATION
+  - id: A026
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Action
+    label: ground:Action
+    statement: DomainEntity subtype only; no NIC-specific temporal action theory or event-subclass assertion
+      in selected source.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A027
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Aggregate
+    label: ground:Aggregate
+    statement: GroundEntity with aggregatesFrom some Collection-or-Situation; not itself the collection identity
+      or an inferred complete mereology.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A028
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#DomainConcept
+    label: ground:DomainConcept
+    statement: Equivalent Concept and classifies only DomainEntity; universal permits an empty extension.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A029
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#DomainEntity
+    label: ground:DomainEntity
+    statement: GroundEntity subtype; examples in the comment are illustrations rather than sufficient category
+      definitions.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A030
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Event
+    label: ground:Event
+    statement: DomainEntity subtype only; not automatically identified with Action or a DOLCE perdurant module.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A031
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#IndividualConstruct
+    label: ground:IndividualConstruct
+    statement: GroundEntity and NonSchematicEntity with isAnIndividualConstructionOf some SchematicEntity;
+      paper uses R/InternalRepresentation rather than this exact name.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A032
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#InformationRealization
+    label: ground:InformationRealization
+    statement: GroundEntity and NonSchematicEntity with realizes some InformationObject; paper PR corresponds
+      by interpretation, not a proved equivalence mapping.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A033
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Location
+    label: ground:Location
+    statement: DomainEntity subtype only; no coordinate model is implied by the comment.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A034
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Object
+    label: ground:Object
+    statement: DomainEntity subtype only; not a full source-bound DOLCE object category.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A035
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#PhysicalAgent
+    label: ground:PhysicalAgent
+    statement: GroundEntity and NonSchematicEntity with actsFor some SocialAgent and constructs some IndividualConstruct;
+      binary restrictions omit paper time and description coreference.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A036
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Quality
+    label: ground:Quality
+    statement: DomainEntity subtype only; not a full quality-space theory or literal datatype.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A037
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Region
+    label: ground:Region
+    statement: DomainEntity subtype only; no complete region calculus supplied by the class declaration.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A038
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#Substance
+    label: ground:Substance
+    statement: DomainEntity and NonSchematicEntity; no extensional amount-identity principle is encoded here.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A039
+    iri: http://www.loa-cnr.it/ontologies/ground.owl#TimeInterval
+    label: ground:TimeInterval
+    statement: DomainEntity subtype only; no paper-wide explicit temporal ordering axioms in this class.
+    evidence:
+    - E26
+    - E15
+    - E16
+    basis: REVIEWER_INTERPRETATION
+  - id: A040
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle
+    label: cDnS:Bundle
+    statement: Description with at least two hasProperPart fillers and some Description proper part. These
+      restrictions do not imply that all proper parts are descriptions or that all paper 65 common-satisfaction/characterization
+      conditions hold.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A041
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Collection
+    label: cDnS:Collection
+    statement: Schematic/disjoint primitive; requires an unifying Description and covering Concept. No existential
+      membership filler is asserted, so the informal nonempty-collection reading is not enforced by these restrictions
+      alone.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A042
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Concept
+    label: cDnS:Concept
+    statement: Schematic/disjoint primitive; exactly one isDefinedIn filler plus an existential Description
+      filler. The exact-one commitment is stronger than paper 18 existence alone.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A043
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration
+    label: cDnS:Configuration
+    statement: Only Collection superclass is logically asserted here. The explanatory comment explicitly says
+      configuration axioms exceed OWL 1.0; the full 64 condition is not encoded.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A044
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Description
+    label: cDnS:Description
+    statement: Schematic, disjoint from the other five primitive schematic classes; requires some isConceptualizedBy
+      SocialAgent and some isExpressedBy InformationObject. Temporal and higher-scope construction is not reconstructed
+      from these existentials.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A045
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Entity
+    label: cDnS:Entity
+    statement: Equivalent to the SchematicEntity/NonSchematicEntity union and subclass of owl:Thing; does not
+      encode the modal display 3.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A046
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity
+    label: cDnS:GroundEntity
+    statement: Subclass of Entity with some Situation setting and Concept classifier; equivalent to some isDescribedIn
+      Description. This is narrower structural content than simply naming every element of the 2007 construction
+      principles.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A047
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject
+    label: cDnS:InformationObject
+    statement: Schematic/disjoint primitive, with property domains/ranges available; no existential physical
+      realization restriction is present in this local core.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A048
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity
+    label: cDnS:NonSchematicEntity
+    statement: Subclass of Entity disjoint with SchematicEntity; it is not populated with explicit Time/PA/R/PR
+      classes in this file.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A049
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity
+    label: cDnS:SchematicEntity
+    statement: Subclass of Entity, disjoint with NonSchematicEntity. No equivalent union of the six primitive
+      schematic classes is asserted here, unlike paper 5.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A050
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#Situation
+    label: cDnS:Situation
+    statement: Schematic and disjoint from the other primitive schematic classes; requires some satisfies Description.
+      This does not impose the complete social construction chain.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  - id: A051
+    iri: http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent
+    label: cDnS:SocialAgent
+    statement: Schematic/disjoint primitive; requires an introducing Description and an Entity actor. This
+      does not assert the full physical-agent/internal-content grounding chain.
+    evidence:
+    - E27
+    - E08
+    - E09
+    - E10
+    - E11
+    - E12
+    - E13
+    basis: REVIEWER_INTERPRETATION
+  class_catalog:
+    path: evidence/related-work/deep-reviews/cDnS-journal-2008/classes.yaml
+    sha256: 567696ec909221dd486d990987b66db77aea1816ca2ec48476a59dced3858239
+  selected_module_censuses:
+  - path: evidence/related-work/deep-reviews/cDnS-journal-2008/collInt-census.json
+    sha256: aafec2d4d368aa9e84eb1dde7f3ee25d62d972462a1b1d62e1ef8c719463301c
+  - path: evidence/related-work/deep-reviews/cDnS-journal-2008/ground-census.json
+    sha256: 5c6fad24e547dfd85810192b36c0f8db1bbaa62323c141ac307d5a5a33c1117c
+  - path: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json
+    sha256: 194d074dba0c8a5b93709fcee53a9c3c28c873c843b93c3bdbddf5aa86f1c07c
+  import_map:
+    path: evidence/related-work/deep-reviews/cDnS-journal-2008/import-map.json
+    sha256: 4c0e755d5e89316923afb4ae3847d4755ef266d92115f97ddefd12b860c36298
+  reading_inspection:
+    path: evaluation/related-work/cdns2008/reading-inspection.json
+    sha256: 13dff0227fdcbc7dec5d4508458b0fecc6382d7129008369c91ed01896d6f70e
+  discovery_execution:
+    path: evaluation/related-work/cdns2008/discovery.json
+    sha256: 9ae774601e564fbf00cdc8535ca81897b06ccb3aa3579df715226f1817c646a3
+  class_reconciliation:
+    path: evaluation/related-work/cdns2008/class-reconciliation.json
+    sha256: 627854745a52d6913a0750c891126ece695e65311fa7eb77126164b7fb3669eb
+  all_class_definitions_scope: 51_SELECTED_CURRENT_COMMENT_CANDIDATES_NOT_LOGICAL_SUFFICIENCY_OR_HISTORICAL_FIDELITY
+  machine_class_populations:
+    root_local: 25
+    mapped_import_local: 26
+    selected_asserted_union: 51
+    inferred: null
+  reasoner_execution: NOT_EXECUTED
+  historical_fidelity: NOT_ESTABLISHED
+  api_compatibility: UNRESOLVED_SHARES_AND_ISSHAREDBY
+  selected_input_manifest:
+    path: evidence/related-work/corpus/cdns2008-inputs.yaml
+    sha256: 59f55afbe19488e5f9c157ff2535c6d97845c5bee73f5046ca111c8f4ec72667
+  technical_execution_boundary: The eight questions retain267 original correspondence categories and one core
+    profile check. Other literal/formal issues in the147-row ledger and findings are a source question bank;
+    they do not automatically enlarge267 into a whole-theory repair, all-formula translation or proof project.
+    Any independent execution must receive its own bounded scope.
+findings:
+- id: F001
+  label: Exact journal identity
+  statement: Single-author2008 article is not the three-author2007 proceedings work;43pages,147 displays and62references
+    require independent anchors.
+  evidence:
+  - E01
+  - E23
+  basis: REVIEWER_INTERPRETATION
+- id: F002
+  label: Integrated social framework
+  statement: 'Strength: construction connects meaning, agents, information and situations to plan/norm/collective
+    structure, providing a richer account than isolated labels.'
+  evidence:
+  - E02
+  - E04
+  - E19
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: F003
+  label: Foundation independence
+  statement: c.DnS removes mandatory DOLCE ground assumptions; DOLCE-related ancestry is not an actual dependency
+    on a particular DOLCE edition.
+  evidence:
+  - E03
+  - E08
+  - E26
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: F004
+  label: Norm-plan distinctions
+  statement: 'Strength: three norm aspects and separate scope/application/efficacy/compliance notions constrain
+    careless claims that applying a norm proves compliance.'
+  evidence:
+  - E06
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: F005
+  label: Agent embodiment levels
+  statement: 'Strength: social actors, physical counterparts, information objects and realizations are separated;
+    identity should not collapse across these categories.'
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F006
+  label: Sharing versus endorsement
+  statement: 'Strength: conceptualization, assumption and truth/belief are distinct; rejected theories can
+    be conceptualized without endorsement.'
+  evidence:
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: F007
+  label: Plans versus success
+  statement: 'Strength: goals, plan execution, abort and incidental achievement expose the difference between
+    descriptive satisfaction and intentional success.'
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F008
+  label: Broad collective attribution
+  statement: The broad constructive stance admits distributed or retrospectively attributed plans; it does
+    not provide an operational mental-state detector or universal common-goal awareness criterion.
+  evidence:
+  - E02
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: F009
+  label: Formal language boundary
+  statement: The paper calls the theory first-order with identity, but3 is modal,1 uses starred tuple slots,55
+    uses temporalized equality and13 is omitted. Executable semantics requires explicit translation choices.
+  evidence:
+  - E08
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F010
+  label: Primitive disjointness boundary
+  statement: Schematic-category disjointness is asserted in prose; formula5 union inclusion is insufficient
+    alone. Later type consequences must state whether prose disjointness is assumed.
+  evidence:
+  - E08
+  - E21
+  basis: REVIEWER_INTERPRETATION
+- id: F011
+  label: Source variable and arity defects
+  statement: 25/35/40/48/55-56/60/64/85/92 and later112-124/133/139/144/147 contain binding, delimiter, connective,
+    naming or arity issues. Every display has a separate ledger row; no corrected theory is silently substituted.
+  evidence:
+  - E10
+  - E11
+  - E12
+  - E15
+  - E16
+  - E17
+  - E18
+  - E19
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: F012
+  label: Projection schema omission
+  statement: 13's contextual recovery assumptions are explicitly omitted from the axiomatization; they cannot
+    be claimed executed or supplied as complete quantifier-bound axioms.
+  evidence:
+  - E08
+  basis: REVIEWER_INTERPRETATION
+- id: F013
+  label: Domain and regress scope
+  statement: 11/77/94 do not explicitly exclude SE from G despite note20's regress caveat. This is a formal-scope
+    question, not an executed proof of inconsistency or infinite regress.
+  evidence:
+  - E08
+  - E13
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F014
+  label: Aboutness range narrowing
+  statement: 49 combines generalized expression with satisfaction, whose range27 is D; inferentially the particular
+    aboutness witness is a Description even though46 supports broader SE expressions.
+  evidence:
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: F015
+  label: Temporalized instantiation
+  statement: 55's indexed equality and56's missing time differ from conventional binary identity; arbitrary
+    identity transport would be an unsupported repair.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F016
+  label: Containment witnesses
+  statement: 57 guarantees a collection per classified member, not one common collection for the entire concept
+    extension; quantifier order matters.
+  evidence:
+  - E12
+  basis: REVIEWER_INTERPRETATION
+- id: F017
+  label: Empty and repeated witnesses
+  statement: Universal collection constraints can be vacuous,65 lacks distinct description witnesses and76
+    can use varying communities. No blanket non-empty collective or unique paradigm follows.
+  evidence:
+  - E12
+  - E13
+  basis: REVIEWER_INTERPRETATION
+- id: F018
+  label: Grounding co-reference
+  statement: 85 leaves a unbound and87/91 do not explicitly link constructed r with d;92 drops time arguments.
+    The prose grounding chain is stronger than literal co-reference in these fragments.
+  evidence:
+  - E15
+  - E16
+  basis: REVIEWER_INTERPRETATION
+- id: F019
+  label: Plan role/use interaction
+  statement: 98-101 require defining plans while103 uses concepts and19 asks a distinct defining description.
+    This is an extra dependency issue, not a proved contradiction or a repaired defines-or-uses rule.
+  evidence:
+  - E09
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F020
+  label: Constitutive agent typing
+  statement: 105 uses defines(y,a) where a is introduced as a social agent;14 forces Concept. Conditional on
+    primitive disjointness this can rule out the relevant introduction, but no global inconsistency is established.
+  evidence:
+  - E09
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F021
+  label: Adoption anomalies
+  statement: 112 sends task z to adoptsPlan and113 types stray x; preserve literal argument roles before any
+    solver translation.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F022
+  label: Anticipation not strict
+  statement: 114 uses less-than-or-equal, not strict precedence, with an unbound conceptualizing agent. A PlanExecution
+    label alone is not evidence of prior deliberation.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F023
+  label: Negation of universal in117
+  statement: The formula asserts a negated universal implication, which can demand counterwitnesses; it is
+    stronger than the prose statement that goal-situation parthood is not generally entailed. Full-theory consequences
+    remain unproved.
+  evidence:
+  - E17
+  basis: REVIEWER_INTERPRETATION
+- id: F024
+  label: Norm practice scope
+  statement: 120/122 change unifies arity;121 is universal over used concepts and122 puts p inside sp contrary
+    to the apparent prose containment direction. No temporal/normative normalization is adopted.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: F025
+  label: Disjoint norm execution
+  statement: 119 disjoins Norm and Plan while behavioral norms are called executable subplans; representational
+    levels/aspects need an explicit account before class identity is assumed.
+  evidence:
+  - E06
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: F026
+  label: Undeclared norm execution predicate
+  statement: 124 uses setting and133 uses executes without their earlier signatures; formal translation cannot
+    simply rename them without provenance.
+  evidence:
+  - E18
+  basis: REVIEWER_INTERPRETATION
+- id: F027
+  label: Collective inclusion limits
+  statement: 138 requires a bundle unifier and134 a plan unifier; a generic NIC-is-IC statement needs more
+    than these local definitions. Figure2's KnowledgeCollective IC parent differs from144/current root.
+  evidence:
+  - E19
+  - E20
+  - E21
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F028
+  label: Emergence limitations
+  statement: 139 permits equal times and vacuous universal conditions, while current root comment postpones
+    emergent bundles; neither is a fully implemented emergence test.
+  evidence:
+  - E19
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F029
+  label: Knowledge-collective binder
+  statement: 144 quantifies y but unifies d; using y is a plausible editorial repair, not the literal formula.147
+    also shadows a,t and adopts a bundle as a plan.
+  evidence:
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: F030
+  label: Paper versus implementation root
+  statement: Root note2 is collInt.owl1.0, not the12-class cDnS core. Full root has25 classes and21 object
+    properties; journal references a lowercase variant at the end.
+  evidence:
+  - E02
+  - E20
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F031
+  label: Selected closure and class definitions
+  statement: All25root,14mapped grounding and12retained core class comments/constraints are accounted for,
+    with51 paraphrases and raw annotation reconciliation. Comment presence is not sufficient logical definition
+    or historical fidelity.
+  evidence:
+  - E25
+  - E26
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: F032
+  label: Version compatibility warning
+  statement: The selected map has1148 asserted triples and76 declared object properties, but shares/isSharedBy
+    are undeclared by core1.1. File-map closure is structural, not a certified compatible2008 release.
+  evidence:
+  - E25
+  - E26
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: F033
+  label: Plan and norm projection losses
+  statement: OWL PlanExecution omits114's time; NormApplication directly satisfies a Norm rather than128's
+    norm-containing Plan; NormPlanBundle omits137's entrenchment disjunction.
+  evidence:
+  - E17
+  - E18
+  - E19
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F034
+  label: Community sharing weakening
+  statement: Root KC uses per-member existential corpora and can be empty; no same corpus across all members
+    is enforced by the displayed restriction.51 class rows do not resolve that semantics.
+  evidence:
+  - E13
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F035
+  label: Other correspondence differences
+  statement: Root AgentRole is Concept over social/physical agents rather than142Role over social agents; Organization
+    retains IC not full140; SocialRelation uses an existential assumer rather than all-members145.
+  evidence:
+  - E19
+  - E20
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: F036
+  label: Core strengthening and profile risk
+  statement: Current core Concept exactly-one definition exceeds18's existence; Bundle min2 differs from65
+    and uses a transitive proper-part property. OWL-DL/profile claims require an actual profile check in267.
+  evidence:
+  - E09
+  - E13
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: F037
+  label: Research evaluation evidence
+  statement: Examples and cited applications motivate expressiveness; no original benchmark, participant study,
+    accuracy metric or complete source/prover log is reported in the selected article. These absences are text-bound,
+    not universal project absences.
+  evidence:
+  - E02
+  - E22
+  - E23
+  basis: REVIEWER_INTERPRETATION
+- id: F038
+  label: Future and accountability scope
+  statement: Finer collective taxonomy, causation, computational normative-MAS assumptions, dynamic negotiation
+    and full accountability remain future/omitted; do not treat references as implemented capabilities.
+  evidence:
+  - E20
+  - E22
+  basis: REVIEWER_INTERPRETATION
+- id: F039
+  label: Reproducibility limits
+  statement: Exact paper and current files are pinned; literal import URLs failed and mirrors are explicit.
+    License permission, immutable historical release, complete proof and independent expert acceptance remain
+    unestablished.
+  evidence:
+  - E25
+  - E26
+  - E27
+  - E28
+  basis: REVIEWER_INTERPRETATION
+- id: F040
+  label: Candidate relevance
+  statement: Contextual classification, expression/content/realization separation and agent/collective identity
+    can constrain later Clariceptify terminology and prior-overlap analysis. No accepted equivalence or novelty
+    decision is made here.
+  evidence:
+  - E03
+  - E11
+  - E15
+  - E19
+  - E20
+  basis: REVIEWER_INTERPRETATION
+questions:
+- id: Q001
+  label: Concept definition uniqueness
+  statement: 'In #267, compare18 existential defining-description requirement with the core Concept exactly-one
+    isDefinedIn restriction, using a two-description adverse case; no historical identity inferred.'
+  evidence:
+  - E09
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Q002
+  label: Conceptualization range
+  statement: 'In #267, distinguish the generalized SE range in journal37 from the earlier2007 description-focused
+    presentation and current core range. Check the selected relation rather than treat the current range as
+    a journal discrepancy.'
+  evidence:
+  - E10
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Q003
+  label: Expression and aboutness range
+  statement: 'In #267, compare journal46 general SE expression with the core range and49 satisfaction-induced
+    D witness; do not conflate every expression with informational aboutness.'
+  evidence:
+  - E10
+  - E11
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Q004
+  label: Temporal projection and compatibility
+  statement: 'In #267, assess the selected paper time-indexed relation versus binary core projection; retain
+    root/ground shares-isSharedBy compatibility as an explicit version precondition, not a proved original
+    import closure.'
+  evidence:
+  - E10
+  - E12
+  - E15
+  - E16
+  - E17
+  - E25
+  - E26
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Q005
+  label: Core versus normative extension
+  statement: 'In #267, replace the historical missing-extension assumption with the pinned collInt root. Bound
+    selected correspondence to PlanExecution114, NormApplication128 and common-KC witness68; no automatic full147-display
+    translation/proof mandate.'
+  evidence:
+  - E13
+  - E17
+  - E18
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: Q006
+  label: Schematic union coverage
+  statement: 'In #267, compare5 six-category union and prose disjointness with the core restrictions, keeping
+    G/SE and77 regress scope as source qualifications rather than an executed global inconsistency claim.'
+  evidence:
+  - E08
+  - E13
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Q007
+  label: Configuration encoding
+  statement: 'In #267, compare64 configuration and current subclass-only encoding, while preserving member/part
+    distinctions and57 varying collection witnesses. No silently repaired quantifier scope.'
+  evidence:
+  - E12
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Q008
+  label: Bundle profile and distinct parts
+  statement: 'In #267, compare65 repeated-part possibility with core minimum2 on transitive hasProperPart;
+    run the actual profile check before any OWL-DL or consistency PASS.'
+  evidence:
+  - E13
+  - E27
+  basis: REVIEWER_INTERPRETATION
+synthesis:
+- id: Y001
+  label: Four contextual levels
+  statement: Retain conceptual, circumstantial, social and informational bindings as candidate comparison dimensions,
+    with description/situation/agent/information identity separately tracked.
+  evidence:
+  - E03
+  - E04
+  - E14
+  basis: REVIEWER_INTERPRETATION
+- id: Y002
+  label: Prior overlap
+  statement: The article already connects expression, descriptions, classifier concepts and reference-like
+    aboutness. Later novelty claims must engage with the exact2008 text as well as2003/2007 inputs.
+  evidence:
+  - E09
+  - E10
+  - E11
+  basis: REVIEWER_INTERPRETATION
+- id: Y003
+  label: Agency and collectives
+  statement: Compare institution, actor, role, physical counterpart and unified collection using positive and
+    adverse identity scenarios; broad collective attribution must not become a measured mental-state claim.
+  evidence:
+  - E02
+  - E15
+  - E19
+  basis: REVIEWER_INTERPRETATION
+- id: Y004
+  label: Knowledge stance
+  statement: Use the conceptualizes/assumes distinction to separate grasping a theory from accepting it; evidence/truth
+    and detailed accountability are not already supplied.
+  evidence:
+  - E13
+  - E20
+  basis: REVIEWER_INTERPRETATION
+- id: Y005
+  label: Plans, norms and success
+  statement: Keep applicability, interpretation, plan satisfaction, goal achievement and compliance separate;
+    add norm-containing-plan versus direct-norm-satisfaction as a correspondence test candidate.
+  evidence:
+  - E17
+  - E18
+  - E25
+  basis: REVIEWER_INTERPRETATION
+- id: Y006
+  label: Formal reproducibility
+  statement: Bind each candidate rule to its literal display and current artifact source; evaluate free variables,
+    vacuity, witness identity, time and profile before adoption.
+  evidence:
+  - E08
+  - E13
+  - E17
+  - E18
+  - E20
+  - E25
+  - E27
+  basis: REVIEWER_INTERPRETATION
+- id: Y007
+  label: Next sequence
+  statement: Paper263 can close after merged checks.267 remains technical;77 is the next full-text paper, followed
+    by84 limited-summary review under the owner's explicit exception;251-256/126 remain separate synthesis
+    work.
+  evidence:
+  - E01
+  - E22
+  - E28
+  basis: REVIEWER_INTERPRETATION
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+closure_boundary: Primary journal-paper review is complete only after its merged evidence checks. Acquisition,51
+  class rows and schema PASS are not scientific acceptance.267 remains OPEN for exact historical/compatible
+  source choice, profile and eight grouped semantic questions;251comparison and126final synthesis remain OPEN.77
+  is next full paper;84 is a separately authorized limited-summary review, not a full-text review. No Clariceptify
+  model, requirements, fixtures, manuscript or release change. The broader literal issues are a question bank,
+  not an expansion of267 beyond its original eight selected categories and one core profile check.

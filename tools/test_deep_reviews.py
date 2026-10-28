@@ -680,5 +680,69 @@ class MentalNeedsBoundaryTests(unittest.TestCase):
         self.reject('selected draft inspection promoted')
 
 
+class JournalAndLimitedSourceBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        self.base = ROOT / BASE
+        self.register = yaml.safe_load((self.base / 'register.yaml').read_text())
+        self.entry = next(r for r in self.register['acquired_papers'] if r['issue'] == 263)
+        self.dossier = yaml.safe_load((self.base / self.entry['id'] / 'review.yaml').read_text())
+        self.dimensions = yaml.safe_load((self.base / 'protocol.yaml').read_text())['dimensions']
+
+    def reject_dossier(self, pattern):
+        with self.assertRaisesRegex(ValueError, pattern):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def test_proceedings_authors_cannot_replace_journal_identity(self):
+        self.dossier['identity']['authors'].extend(['Jos Lehmann', 'Carola Catenacci'])
+        self.reject_dossier('journal/proceedings identity')
+
+    def test_last_six_journal_displays_cannot_be_omitted(self):
+        self.dossier['commitments'] = self.dossier['commitments'][:141]
+        self.reject_dossier('numbered-display ledger')
+
+    def test_critical_reading_does_not_certify_an_owl_profile(self):
+        self.dossier['paper_formalization']['profile_execution'] = 'PASS'
+        self.reject_dossier('reading promoted')
+
+    def test_class_glossary_does_not_certify_original_release(self):
+        self.dossier['artifact']['historical_fidelity'] = 'ESTABLISHED'
+        self.reject_dossier('mapped journal artifacts promoted')
+
+    def test_complete_figure_population_is_required(self):
+        from check_deep_reviews import validate_journal_ledger
+        ledger = yaml.safe_load((ROOT / self.dossier['journal_ledger']['path']).read_text())
+        import_map = json.loads((ROOT / self.dossier['artifact']['import_map']['path']).read_text())
+        ledger['figures'][1]['node_labels'].pop()
+        with self.assertRaisesRegex(ValueError, 'journal content ledger'):
+            validate_journal_ledger(self.dossier, ledger, import_map)
+
+    def test_mapped_imports_do_not_verify_original_host_bytes(self):
+        from check_deep_reviews import validate_journal_ledger
+        ledger = yaml.safe_load((ROOT / self.dossier['journal_ledger']['path']).read_text())
+        import_map = json.loads((ROOT / self.dossier['artifact']['import_map']['path']).read_text())
+        import_map['original_host_import_bytes_verified'] = True
+        with self.assertRaisesRegex(ValueError, 'import file map promoted'):
+            validate_journal_ledger(self.dossier, ledger, import_map)
+
+    def reject_limited(self, mutation):
+        from check_deep_reviews import validate_limited_evidence_entry
+        entry = copy.deepcopy(self.register['limited_evidence_papers'][0])
+        mutation(entry)
+        with self.assertRaisesRegex(ValueError, 'summary exception promoted'):
+            validate_limited_evidence_entry(entry)
+
+    def test_summary_is_not_full_paper_completion(self):
+        self.reject_limited(lambda r: r.update(state='REVIEW_COMPLETE'))
+
+    def test_owner_removed_pdf_gate_is_preserved(self):
+        self.reject_limited(lambda r: r.update(full_text_required_for_current_scope=True))
+
+    def test_missing_primary_hash_cannot_be_invented(self):
+        self.reject_limited(lambda r: r.update(sha256='0' * 64))
+
+    def test_owner_summary_cannot_be_called_primary_full_text(self):
+        self.reject_limited(lambda r: r.update(evidence_basis='PRIMARY_FULL_TEXT'))
+
+
 if __name__ == '__main__':
     unittest.main()

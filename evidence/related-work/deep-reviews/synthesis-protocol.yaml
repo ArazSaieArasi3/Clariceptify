@@ -4,8 +4,8 @@ state: PLANNED_NOT_FINAL_SYNTHESIS
 input_authority: Versioned dossiers and their evidence IDs, plus separately inspected artifact results
 outputs:
 - path: evidence/related-work/deep-reviews/synthesis/matrix.yaml
-  purpose: Criterion-level cells with evidence IDs, version, basis, unknowns and counterevidence; no binary keyword
-    scoring
+  purpose: Criterion-level cells with evidence IDs, version, basis, unknowns and counterevidence; no binary
+    keyword scoring
 - path: evidence/related-work/deep-reviews/synthesis/themes.md
   purpose: Thematic narrative of agreements, disagreements, foundational incompatibilities and scope differences
 - path: evidence/related-work/deep-reviews/synthesis/opportunities.yaml
@@ -18,11 +18,15 @@ sequence:
 - Complete one paper dossier at a time; retain local findings and open questions.
 - 'Produce the six bounded existing comparison batches #251-#256 only when their exact evidence prerequisites
   are satisfied. Link new deep followups to the relevant batch.'
-- 'Produce an explicitly PARTIAL acquired-source synthesis before missing papers arrive if useful. State numerator/denominator,
-  exclusions and version limits; do not close #126 as final.'
-- Integrate owner-supplied texts with digests and the identical protocol; retain before/after changes and counterevidence.
-- Complete cross-corpus synthesis after prerequisite review, checking each claim against its source and an adverse
-  scenario.
+- 'Produce evidence-qualified synthesis with exact full-paper and limited-evidence denominators. I&DA uses
+  the owner-authorized summary exception: its original full text is not a prerequisite gate for the current
+  bounded comparison/citation task, and no unavailable detail is scored as absence. Other actual prerequisites
+  of126 still apply.'
+- Integrate source evidence with digests and declared evidence levels. The2026-10-28 I&DA exception does not
+  permit full-text verification claims or automatic manuscript changes; retained unavailable-source limits
+  remain visible in each comparison cell.
+- Complete cross-corpus synthesis after prerequisite review, checking each claim against its source and an
+  adverse scenario.
 - Present opportunities and unresolved choices to the owner. Stop before any next-version ontology change.
 comparison_dimensions:
 - Agency/activity/episode
@@ -68,3 +72,12 @@ guardrails:
 - No missing text scored as absence
 - No source-count or task-count presented as scientific quality
 - No final all-corpus gap/novelty claim from only the acquired subset
+limited_source_policy:
+  work_id: CLR-RW-IDA
+  issue: 84
+  owner_authorized_on: '2026-10-28'
+  allowed: Explicitly attributed secondary-summary content with source-availability limitation and checked
+    bibliographic metadata where possible.
+  not_allowed: Full-paper completion, source-verified exact quotation/formula/visual claim, invented DOI, or
+    lowering the other acquired-paper criteria.
+  pdf_gate: false

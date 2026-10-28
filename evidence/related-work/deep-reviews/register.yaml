@@ -215,9 +215,11 @@ acquired_papers:
   title: Norms and plans as unification criteria for social collectives
   doi: 10.1007/s10458-008-9038-9
   url: https://link.springer.com/article/10.1007/s10458-008-9038-9
-  state: QUEUED
+  state: REVIEW_COMPLETE
   sha256: 272d9cf81057480eb9380f6142bef68d6687f4c559688ef053d159bbd329be65
-  note: 'Owner full text received and identity checked; acquisition is not deep review. '
+  note: All43 journal pages,147 displays,20 informal definitions,2figures,24notes and62references reviewed.
+    All51 class comments/constraints in selected root/import file map accounted for; original-host parity,
+    compatible versions, profile and semantic work remain267.
   order: 17
   filename: cDnS-2008-owner.pdf
   pdf_pages: 43
@@ -238,16 +240,7 @@ acquired_papers:
   artifact_issues:
   - 239
   priority_after_owner_intake: 6
-waiting_for_owner:
-- id: CLR-RW-IDA
-  issue: 84
-  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
-  doi: null
-  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
-  state: BLOCKED_ON_FULL_TEXT
-  sha256: null
-  note: Exact article remains without a retained complete PDF. Owner supplied a Google Quick Read summary and
-    some primary indexed passages were accessible; these do not close full-text or visual coverage.
+waiting_for_owner: []
 separate_document_tasks:
 - id: Conceptualization
   issue: 71
@@ -274,5 +267,26 @@ population_revision:
   historical_acquired: 12
   historical_waiting: 7
   current_acquired: 18
-  current_waiting: 1
+  current_waiting: 0
   receipt: evidence/related-work/corpus/owner-intake-2026-10-28.json
+  current_limited_evidence: 1
+  owner_exception: 'I&DA only: limited-summary task authorized2026-10-28;18 acquired identities and19-work
+    corpus unchanged.'
+limited_evidence_papers:
+- id: CLR-RW-IDA
+  issue: 84
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  doi: null
+  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  state: LIMITED_EVIDENCE_REVIEW_QUEUED
+  sha256: null
+  note: Owner explicitly accepts the previously supplied Google Quick Read summary as the evidence ceiling
+    for the current I&DA review/citation task. Do not await or request the PDF as a gate; do not claim complete
+    text, figure, formula or bibliography inspection. Execute after the acquired full papers; manuscript changes
+    remain outside this research scope.
+  full_text_available: false
+  full_text_required_for_current_scope: false
+  full_text_review: NOT_PERFORMED
+  evidence_basis: OWNER_PROVIDED_GOOGLE_QUICK_READ
+  owner_instruction_on: '2026-10-28'
+  model_change: NONE

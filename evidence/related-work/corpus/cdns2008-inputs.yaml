@@ -1,0 +1,28 @@
+schema_version: '1.0'
+retrieved_on: '2026-10-28'
+scope: Separate paper-linked NIC root and mapped grounding inputs. Does not expand the earlier three-file selected
+  inspection contract or the frozen archive.
+receipt: evaluation/related-work/cdns2008/discovery.json
+artifacts:
+- id: NIC-collInt
+  filename: NIC-collInt.owl
+  format: xml
+  url: http://www.loa-cnr.it/ontologies/collInt.owl
+  ontology_iri: http://www.loa-cnr.it/ontologies/collInt.owl
+  namespace: http://www.loa-cnr.it/ontologies/collInt.owl#
+  sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+  retrieved_on: '2026-10-28'
+  receipt: evaluation/related-work/cdns2008/discovery.json
+  scope: Selected current source for journal review; raw source remains private; historical release fidelity
+    and API compatibility unestablished.
+- id: NIC-ground
+  filename: NIC-ground.owl
+  format: xml
+  url: http://www.ontologydesignpatterns.org/ont/cdns/ground.owl
+  ontology_iri: http://www.loa-cnr.it/ontologies/ground.owl
+  namespace: http://www.loa-cnr.it/ontologies/ground.owl#
+  sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+  retrieved_on: '2026-10-28'
+  receipt: evaluation/related-work/cdns2008/discovery.json
+  scope: Selected current source for journal review; raw source remains private; historical release fidelity
+    and API compatibility unestablished.

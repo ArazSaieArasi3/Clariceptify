@@ -93,6 +93,29 @@ def validate_dossier(d, entry, dimensions):
         require(pop['count'] == len(expected) and
                 [r.get('formula_number') for r in d['commitments']] == expected,
                 'incomplete or duplicated numbered-display ledger')
+    if d['work_id'] == 'cDnS-journal-2008':
+        require(d['identity']['authors'] == ['Aldo Gangemi'] and
+                d['identity']['doi'] == '10.1007/s10458-008-9038-9' and
+                d['source']['pdf_pages'] == 43 and
+                d['formula_population'] == {
+                    'first': 1, 'last': 147, 'count': 147,
+                    'scope': 'NUMBERED_JOURNAL_DISPLAYS_INCLUDING_EXAMPLES_NOT147AXIOMS'},
+                'journal/proceedings identity or display population conflated')
+        formal = d['paper_formalization']
+        require(formal['literal_source_repair'] == 'NOT_ADOPTED' and
+                formal['reviewer_parser_execution'] == 'NOT_EXECUTED' and
+                formal['reviewer_solver_execution'] == 'NOT_EXECUTED' and
+                formal['profile_execution'] == 'NOT_EXECUTED' and
+                formal['global_consistency'] == 'NOT_ESTABLISHED',
+                'journal critical reading promoted to repaired or verified theory')
+        artifact = d['artifact']
+        require(artifact['historical_fidelity'] == 'NOT_ESTABLISHED' and
+                artifact['api_compatibility'] == 'UNRESOLVED_SHARES_AND_ISSHAREDBY' and
+                artifact['reasoner_execution'] == 'NOT_EXECUTED' and
+                artifact['machine_class_populations'] == {
+                    'root_local': 25, 'mapped_import_local': 26,
+                    'selected_asserted_union': 51, 'inferred': None},
+                'selected mapped journal artifacts promoted to original or inferred release')
     if 'labeled_formula_population' in d:
         pop = d['labeled_formula_population']
         labels = [r.get('formula_label') for r in d['commitments']]
@@ -589,6 +612,41 @@ def validate_printed_query(dossier, record):
         raise ValueError('Syntax observation promoted to historical query execution')
 
 
+def validate_limited_evidence_entry(entry):
+    """Keep the owner's I&DA exception separate from full-paper completion."""
+    if (entry['id'] != 'CLR-RW-IDA' or entry['issue'] != 84 or
+            entry['state'] != 'LIMITED_EVIDENCE_REVIEW_QUEUED' or
+            entry.get('sha256') is not None or entry.get('filename') is not None or
+            entry['full_text_available'] or entry['full_text_required_for_current_scope'] or
+            entry['full_text_review'] != 'NOT_PERFORMED' or
+            entry['evidence_basis'] != 'OWNER_PROVIDED_GOOGLE_QUICK_READ' or
+            entry['model_change'] != 'NONE'):
+        raise ValueError('Owner summary exception promoted to full text or blocked on PDF')
+
+
+def validate_journal_ledger(dossier, ledger, import_map):
+    rows = dossier['commitments']
+    if (ledger['work_id'] != dossier['work_id'] or
+            ledger['source_sha256'] != dossier['source']['sha256'] or
+            [r['number'] for r in ledger['numbered_displays']] != list(range(1, 148)) or
+            [(r['number'], r['pdf_page'], r['dossier_ref']) for r in ledger['numbered_displays']] !=
+            [(r['formula_number'], r['pdf_page'], r['id']) for r in rows] or
+            ledger['informal_definition_numbers'] != list(range(1, 21)) or
+            ledger['numbered_footnotes'] != list(range(1, 25)) or
+            ledger['bibliography_entries'] != 62 or
+            [(f['number'], f['pdf_page'], len(f['node_labels'])) for f in ledger['figures']] !=
+            [(1, 25, 8), (2, 40, 15)]):
+        raise ValueError('Incomplete or substituted journal content ledger')
+    if (import_map['resolution'] != 'EXPLICIT_SELECTED_FILE_MAP_NOT_LITERAL_HOST_PARITY' or
+            import_map['original_host_import_bytes_verified'] or
+            import_map['historical_paper_fidelity'] != 'NOT_ESTABLISHED' or
+            import_map['asserted_union']['named_owl_classes'] != 51 or
+            import_map['asserted_union']['declared_object_properties'] != 76 or
+            import_map['inferred_class_count'] is not None or
+            import_map['reasoner_execution'] != 'NOT_EXECUTED'):
+        raise ValueError('Journal import file map promoted to original or inferred release')
+
+
 def check(root=ROOT):
     base = root / BASE
     protocol = yaml.safe_load((base / 'protocol.yaml').read_text())
@@ -596,7 +654,8 @@ def check(root=ROOT):
     expected = json.loads((base / 'baseline-protection.json').read_text())
     if protected_fingerprint(root) != expected['fingerprint']:
         raise ValueError('Research-only boundary violated: protected scientific baseline changed')
-    entries = register['acquired_papers'] + register['waiting_for_owner']
+    limited = register.get('limited_evidence_papers', [])
+    entries = register['acquired_papers'] + register['waiting_for_owner'] + limited
     if len({r['id'] for r in entries}) != len(entries) or len({r['issue'] for r in entries}) != len(entries):
         raise ValueError('Duplicate paper identity or primary issue')
     approved = {74, 78, 80, 259, 260, 261, 83, 81, 85, 249, 79, 262, 70, 73, 82, 84, 86, 263, 77}
@@ -615,6 +674,18 @@ def check(root=ROOT):
             continue
         d = yaml.safe_load(path.read_text())
         validate_dossier(d, entry, protocol['dimensions'])
+        if 'journal_ledger' in d:
+            records = []
+            for binding in [d['journal_ledger'], d['artifact']['import_map']]:
+                raw = (root / binding['path']).read_bytes()
+                if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                    raise ValueError('Changed journal ledger or import map')
+                records.append(yaml.safe_load(raw))
+            validate_journal_ledger(d, *records)
+            for binding in d['artifact']['selected_module_censuses']:
+                raw = (root / binding['path']).read_bytes()
+                if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                    raise ValueError('Changed journal selected-module census')
         if 'content_ledger' in d:
             binding = d['content_ledger']
             raw = (root / binding['path']).read_bytes()
@@ -737,11 +808,14 @@ def check(root=ROOT):
     for entry in register['waiting_for_owner']:
         if entry['state'] != 'BLOCKED_ON_FULL_TEXT' or entry.get('sha256') is not None:
             raise ValueError('Missing full text promoted')
+    for entry in limited:
+        validate_limited_evidence_entry(entry)
     from check_source_audit import check as check_source_audit
     source_audit = check_source_audit(root)
     return {'status': 'PASS', 'source_audit': source_audit, 'acquired_papers': len(register['acquired_papers']), 'completed_deep_reviews': done,
             'queued_papers': sum(r['state'] == 'QUEUED' for r in register['acquired_papers']),
-            'waiting_for_owner': len(register['waiting_for_owner']), 'protected_baseline': expected['fingerprint'],
+            'waiting_for_owner': len(register['waiting_for_owner']),
+            'limited_evidence_papers': len(limited), 'protected_baseline': expected['fingerprint'],
             'scope': 'Provenance, coverage declarations and state boundaries; not independent semantic validation.'}
 
 
