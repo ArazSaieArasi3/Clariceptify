@@ -274,5 +274,45 @@ class ComSourceBoundaryTests(unittest.TestCase):
             validate_diagram_inventory(self.dossier, self.diagrams)
 
 
+class BdiVariantBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE
+        self.dossier = yaml.safe_load((base / 'BDI2020/review.yaml').read_text())
+        self.entry = next(r for r in yaml.safe_load((base / 'register.yaml').read_text())['acquired_papers']
+                          if r['id'] == 'BDI2020')
+        self.dimensions = yaml.safe_load((base / 'protocol.yaml').read_text())['dimensions']
+
+    def validate(self):
+        validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def test_unlabeled_expression_omission_is_rejected(self):
+        self.dossier['commitments'].pop(16)
+        with self.assertRaisesRegex(ValueError, 'labeled-formula ledger'):
+            self.validate()
+
+    def test_reductive_alternative_is_not_adopted_core(self):
+        alternative = next(r for r in self.dossier['commitments'] if r['formula_label'] == 'REDUCE-INT-DES')
+        alternative['variant'] = 'CORE_COMMON'
+        with self.assertRaisesRegex(ValueError, 'promoted to named core'):
+            self.validate()
+
+    def test_only_must_not_silently_become_some(self):
+        belief = next(r for r in self.dossier['commitments'] if r['source_label'] == 'BelO')
+        belief['normalized_formula'] = belief['normalized_formula'].replace('only', 'some')
+        with self.assertRaisesRegex(ValueError, 'changed into existence'):
+            self.validate()
+
+    def test_printed_tmin_must_not_be_silently_repaired(self):
+        trigger = next(r for r in self.dossier['commitments'] if r['formula_label'] == 'TRIGGER-INT-PARTHOOD')
+        trigger['normalized_formula'] = trigger['normalized_formula'].replace('Tmin', 'TRmin')
+        with self.assertRaisesRegex(ValueError, 'Tmin silently repaired'):
+            self.validate()
+
+    def test_later_machine_class_count_cannot_be_substituted(self):
+        self.dossier['artifact']['machine_class_populations']['local'] = 99
+        with self.assertRaisesRegex(ValueError, 'machine population'):
+            self.validate()
+
+
 if __name__ == '__main__':
     unittest.main()

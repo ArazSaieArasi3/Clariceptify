@@ -1,6 +1,6 @@
 # Repository, foundation and class-coverage audit
 
-Checked on 2026-10-27. A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
+Checked on 2026-10-28. A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
 
 The 23 rows are 19 exact paper/version records plus four separate documentation sources. Repository discovery, formal-file availability, paper review, class definitions and semantic tests are independent states. NOT_IDENTIFIED is bounded by the recorded searches; NOT_CHECKED is unfinished discovery. Neither means no repository exists.
 
@@ -16,7 +16,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | DnS2003 (#261) | OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://www.loa.istc.cnr.it/dolce/overview.html); [source](https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip); DLP3971_11_MODULES_RETAINED_EXTENDEDDNS397_CANDIDATE | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | ORIGINAL_PAPER_COUNT_UNKNOWN_LATER_CANDIDATE_ALL_IRIS_INDEXED_GLOSSARY_PENDING | #235 |
 | CMO (#83) | THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://github.com/dbpedia/ontology-tracker); [source](https://github.com/tetherless-world/whyis); MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN | BFO with IAO reuse; PAPER_STATED_GROUNDING; edition: UNKNOWN | ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN | #245 |
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
-| BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_VERSION_MATCH_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #247 |
+| BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | DOLCE-0; DUL alignment; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; AUTHOR_PREDECESSOR_LINKS_MATCH_PENDING | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
@@ -316,6 +316,46 @@ Query: `COM2004 official links, exact-title code and other-host discovery`. Chec
 FOIS2004 identity confirmed; no author formal distribution identified. Limited code search returned this repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
 
 Limit: No exact namespace, imports, machine declaration populations or historical fidelity established; different works not substituted.
+
+### BDI20-G01: CONNECTED_GITHUB_REPOSITORY_SEARCH
+
+Query: `"Foundations for an Ontology of Belief"`. Checked: 2026-10-28.
+
+Returned candidate names (limit 8): none returned by this query.
+
+Limit: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence claim.
+
+### BDI20-G02: CONNECTED_GITHUB_REPOSITORY_SEARCH
+
+Query: `Toyoshima Barton Grenier`. Checked: 2026-10-28.
+
+Returned candidate names (limit 8): none returned by this query.
+
+Limit: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence claim.
+
+### BDI20-G03: CONNECTED_GITHUB_REPOSITORY_SEARCH
+
+Query: `"belief" "desire" ontology`. Checked: 2026-10-28.
+
+Returned candidate names (limit 8): Aryia-Behroziuan/References, Visva92/References, sabahydri/References.
+
+Limit: Bounded name/description search. Broad candidates are not author-correspondence proof; no global absence claim.
+
+### BDI20-S01: PRIMARY_PUBLISHER_AUTHOR_CONNECTED_CODE_AND_WEB_SEARCH
+
+Query: `BDI2020 primary author/publisher links, title code and other-host searches`. Checked: 2026-10-28.
+
+- https://hal.science/hal-03041527
+- https://doi.org/10.3233/FAIA200667
+- https://journals.sagepub.com/doi/full/10.3233/FAIA200667
+- https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667
+- https://adrienbarton.blogspot.com/p/publications.html
+- https://ebooks.iospress.nl/volumearticle/55801
+- https://griis.ca/en/adrien-barton/
+
+Publisher and author identity verified; original executable module not identified. Code hits are commentary/citation; later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
+
+Limit: HAL current access denied; retained full text available. Machine classes/imports/definitions/license and exact foundation edition remain unknown in #247.
 
 ## Interpretation and next work
 

@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "work_id": "BDI2020",
+  "checked_on": "2026-10-28",
+  "source_sha256": "61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95",
+  "primary_endpoints": [
+    {
+      "url": "https://hal.science/hal-03041527",
+      "outcome": "Search-service open returned an Anubis access-denied page; no new HAL bytes acquired. Already-retained complete PDF remains available."
+    },
+    {
+      "url": "https://doi.org/10.3233/FAIA200667",
+      "outcome": "Direct search-service open unavailable; DOI separately confirmed in retained PDF and publisher metadata."
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/full/10.3233/FAIA200667",
+      "final_url": "https://journals.sagepub.com/doi/abs/10.3233/FAIA200667",
+      "outcome": "Publisher metadata identifies authors, conference proceedings, first-online 2020-11-13 and CC-BY-NC4.0. Returned page is abstract/metadata, not a claimed new full-text download."
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667",
+      "outcome": "Publisher PDF opened through search service, 15 pages. Not downloaded or byte-compared with the 16-page HAL cover-plus-paper input."
+    },
+    {
+      "url": "https://adrienbarton.blogspot.com/p/publications.html",
+      "outcome": "Author publication list contains exact 2020 paper and outgoing IOS Press volumearticle/55801 link; no corresponding author ontology repository identified in that entry."
+    },
+    {
+      "url": "https://ebooks.iospress.nl/volumearticle/55801",
+      "outcome": "Following author link through search service returned a restricted-URL fetch error. It is not a newly acquired formal file."
+    },
+    {
+      "url": "https://griis.ca/en/adrien-barton/",
+      "outcome": "Direct open timed out; search returned matching institutional citation. No full-source or repository acquisition inferred."
+    }
+  ],
+  "repository_queries": [
+    {
+      "query": "\"Foundations for an Ontology of Belief\"",
+      "limit": 8,
+      "returned": []
+    },
+    {
+      "query": "Toyoshima Barton Grenier",
+      "limit": 8,
+      "returned": []
+    },
+    {
+      "query": "\"belief\" \"desire\" ontology",
+      "limit": 8,
+      "returned": [
+        "Aryia-Behroziuan/References",
+        "Visva92/References",
+        "sabahydri/References"
+      ],
+      "outcome": "Broad name/description candidates; none established as authorship or distribution of the selected paper."
+    }
+  ],
+  "code_search": {
+    "query": "\"Foundations for an Ontology of Belief, Desire and Intention\"",
+    "limit": 8,
+    "returned_hits": 6,
+    "own_project_hits": 3,
+    "external_hits": [
+      {
+        "repository": "digoal/blog",
+        "commit": "7abecbf045fb58a1ba17b3a53e5afe9db47336b9",
+        "paths": [
+          "202508/20250802_08.md",
+          "202508/readme.md"
+        ],
+        "role": "SECONDARY_PAPER_COMMENTARY_AND_INDEX_NOT_AUTHOR_DISTRIBUTION"
+      },
+      {
+        "repository": "Neroware/Sobots",
+        "commit": "4ca7fa39720b2f22c4b134f635f80af92926c78f",
+        "paths": [
+          "README.md"
+        ],
+        "role": "CITATION_IN_DIFFERENT_PROJECT_NOT_ORIGINAL_THEORY"
+      }
+    ],
+    "outcome": "Title matches are commentary/citation or this project; no exact original machine module identified. External files were not acquired/parsed or counted as BDI2020 classes."
+  },
+  "web_queries": [
+    {
+      "query": "\"Foundations for an Ontology of Belief, Desire and Intention\" Toyoshima Barton Grenier",
+      "outcome": "Primary publisher metadata, author and institutional listings identified."
+    },
+    {
+      "query": "\"Foundations for an Ontology of Belief\" ontology repository github",
+      "outcome": "No authoritative machine distribution resolved in returned results."
+    },
+    {
+      "query": "\"Foundations for an Ontology of Belief\" ontology owl github Toyoshima",
+      "outcome": "Paper-related results; no authoritative original root/file identified."
+    },
+    {
+      "query": "\"Foundations for an Ontology of Belief\" site:gitlab.com",
+      "outcome": "No matching author repository identified in returned results."
+    },
+    {
+      "query": "\"Foundations for an Ontology of Belief\" site:sourceforge.net",
+      "outcome": "No matching author repository identified in returned results."
+    },
+    {
+      "query": "\"Toyoshima\" \"Grenier\" \"BDI\" github ontology",
+      "outcome": "Later FOSSR-related work surfaced; not treated as this 2020 artifact."
+    }
+  ],
+  "formal_file": {
+    "state": "NOT_IDENTIFIED_IN_BOUNDED_SEARCH",
+    "namespace": null,
+    "source_sha256": null,
+    "version": null,
+    "declared_imports": null,
+    "license": null,
+    "class_definitions": null,
+    "local_class_count": null,
+    "imported_class_count": null,
+    "reasoner_execution": "NOT_EXECUTED"
+  },
+  "foundation": {
+    "family": null,
+    "edition": null,
+    "actual_imports": null,
+    "evidenced_relation": "Continuant/occurrent and disposition frameworks are used; OBI output relations are explicitly borrowed. BFO book, MF and UFO-C citations do not establish a formal grounding/import edition."
+  },
+  "limits": [
+    "Finite title/name/description searches do not establish global repository nonexistence.",
+    "The later FOSSR BDI module and paper are separate #249/#250, not a recovered author release for this work.",
+    "The two licenses on the HAL cover and internal paper page remain separate source statements, not a new reuse grant.",
+    "Complete machine class/glossary/import work remains #247 if an authoritative module is recovered."
+  ],
+  "global_absence_claim": false,
+  "model_change": "NONE"
+}
