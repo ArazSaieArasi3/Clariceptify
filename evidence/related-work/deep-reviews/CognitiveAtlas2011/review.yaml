@@ -2205,7 +2205,7 @@ findings:
   followup_issue: 241
 - id: F16
   label: Formal version and repository roles differ
-  statement: Selected cogat.v 2.owl has formal header 0.3, not version 2. Export repository is distinct from the
+  statement: Selected cogat.v2.owl has formal header 0.3, not version 2. Export repository is distinct from the
     two-file MIT discussion repository and the author link printed in 2011. Current-source availability does not
     establish historical byte identity.
   basis: REVIEWER_INTERPRETATION
@@ -2266,7 +2266,7 @@ findings:
 questions:
 - id: Q01
   label: Exact root, every class and historical provenance
-  statement: Choose the already-scoped cogat.v 2.owl candidate, inventory every local/external/referenced/deprecated
+  statement: Choose the already-scoped cogat.v2.owl candidate, inventory every local/external/referenced/deprecated
     class and missing definition, and compare selected export header 0.3 with the separate paper-linked generator/source.
     Record any true 2011 correspondence limits; do not sum releases or reuse paper 904 as a class count.
   basis: REVIEWER_INTERPRETATION
