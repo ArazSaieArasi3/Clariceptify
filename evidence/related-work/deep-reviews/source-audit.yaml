@@ -486,6 +486,24 @@ discovery_attempts:
     explicit version/statement limits.
   limitation: Two metadata searches and named endpoints only; no global repository absence, historical release
     parity, class glossary or inferred result.
+- id: O4OA2026
+  checked_on: '2026-10-28'
+  method: Paper/author links, current CQs/specification and source-specific GitLab discovery
+  query: O4OA in:name,description; exact phrase Ontology for Ontological Analysis; literal author links
+  checked_urls:
+  - https://bfmartins.gitlab.io/o4oa/
+  - https://gitlab.com/bfmartins/o4oa
+  - https://gitlab.com/bfmartins/go4oa
+  - https://riunet.upv.es/handle/10251/196721
+  outcome: 'O4OA reference/documentation project metadata is public, but its checked tree API returned HTTP403.
+    Separately linked bfmartins/go4oa is pinned at 3be36c642b2cfca33de3d0788471bc185880bde8; its complete eight-entry
+    tree has five files (README, ignore file, two logos and metadata), with no formal ontology root identified
+    in this tree. Current CQs and a separate 44-page specification were acquired; full technical/glossary work
+    remains #91. See evaluation/related-work/o4oa/discovery.json. No global absence or historical equivalence
+    follows.'
+  limitation: Reference project tree blocked; separate light-variant tree acquired and metadata only. Current
+    documentation/specification is not proven historical2023 paper implementation. No all-class glossary, import
+    parse, reasoner or model acceptance.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -1034,26 +1052,30 @@ records:
 - id: CLR-RW-O4OA
   title: The Ontology for Conceptual Characterization of Ontologies
   primary_issue: 73
-  source_state: FULL_TEXT_ACQUIRED_DEEP_REVIEW_QUEUED
+  source_state: DEEP_PAPER_REVIEW_COMPLETE_ARTIFACT_OPEN
   repository:
-    state: PUBLIC_PROJECT_METADATA_TREE_403
+    state: REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY
     urls:
     - https://gitlab.com/bfmartins/o4oa
+    - https://gitlab.com/bfmartins/go4oa
     evidence:
     - W01
+    - O4OA2026
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING
+    evidence_path: evaluation/related-work/o4oa/discovery.json
+  artifact_state: PAPER_COMPLETE_CQS_AND_SPEC_ACQUIRED_TECHNICAL_REVIEW_PENDING
   foundation:
-    family: UFO-A/B/C; gUFO for light OWL model
+    family: UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants)
     edition: null
-    relation: DOCUMENTATION_STATED_GROUNDING
+    relation: PAPER_STATED_GROUNDING_THROUGH_ONTOUML
     basis: AUTHOR_REPORTED
-    locator: Author project documentation content/o4oa.html sections2 and3.1
+    locator: 2023 paper PDF1,5,9-11; current author documentation sections2/3.1
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: This is project documentation, not the missing 2023 article. Describes grounding through OntoUML
-      and a gO4OA variant; no model download/import check or edition established.
+    limitations: Paper grounding is UFO via OntoUML, not a pinned release. A/B/C are module labels, not editions.
+      Current light OWL variant is not the paper MongoDB implementation; no formal root/import or historical
+      parity established.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -1062,6 +1084,9 @@ records:
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    paper_catalog: evidence/related-work/deep-reviews/CLR-RW-O4OA/review.yaml
+    limitations: 'All displayed paper types and concepts are cataloged; full released class/definition coverage
+      remains #91. 161/73/18 are author-reported case populations, not machine class counts.'
   next_issues:
   - 91
 - id: CLR-RW-Representation
@@ -1423,3 +1448,9 @@ additional_public_repository_observations:
   source: https://www.w3.org/community/ontolex/ links cimiano/ontolex; API redirects repository ID20124549
     to the same ID observed for ontolex/ontolex.
   snapshot_state: NOT_YET_ACQUIRED
+o4oa_repository_boundary: 'O4OA reference/documentation project metadata is public, but its checked tree API
+  returned HTTP403. Separately linked bfmartins/go4oa is pinned at 3be36c642b2cfca33de3d0788471bc185880bde8;
+  its complete eight-entry tree has five files (README, ignore file, two logos and metadata), with no formal
+  ontology root identified in this tree. Current CQs and a separate 44-page specification were acquired; full
+  technical/glossary work remains #91. See evaluation/related-work/o4oa/discovery.json. No global absence or
+  historical equivalence follows.'

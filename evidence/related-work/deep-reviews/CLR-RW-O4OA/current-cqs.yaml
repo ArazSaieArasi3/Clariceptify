@@ -1,0 +1,60 @@
+schema_version: '1.0'
+work_id: CLR-RW-O4OA
+url: https://bfmartins.gitlab.io/o4oa/assets/data/cqs.json
+source_sha256: 2f77c5444d23140465247fd192d06992d3eec2d0755a900f8c579ec2f01abc60
+checked_on: '2026-10-28'
+basis: AUTHOR_REPORTED
+scope: Current linked author documentation only, not printed paper questions or proven historical2023 contents.
+  Three group questions and 21 subordinate questions; paraphrases only. Prose website coverage mappings are not
+  executed query/entailment tests.
+historical_correspondence: NOT_ESTABLISHED
+query_or_solver_execution: NOT_EXECUTED
+rows:
+- source_id: CQ1
+  short_paraphrase: Characterize ontology artifacts
+- source_id: CQ1.1
+  short_paraphrase: Applicability
+- source_id: CQ1.2
+  short_paraphrase: Generality
+- source_id: CQ1.3
+  short_paraphrase: Formalization
+- source_id: CQ1.4
+  short_paraphrase: Axiomatization
+- source_id: CQ1.5
+  short_paraphrase: Grounding
+- source_id: CQ1.6
+  short_paraphrase: Definition/support
+- source_id: CQ1.7
+  short_paraphrase: Characterization features
+- source_id: CQ1.8
+  short_paraphrase: Language impact
+- source_id: CQ2
+  short_paraphrase: Characterize domain concept clouds
+- source_id: CQ2.1
+  short_paraphrase: Concept representation
+- source_id: CQ2.2
+  short_paraphrase: Information sources
+- source_id: CQ2.3
+  short_paraphrase: Terms and definitions
+- source_id: CQ2.4
+  short_paraphrase: Sources sharing a definition
+- source_id: CQ2.5
+  short_paraphrase: Terms sharing a definition
+- source_id: CQ2.6
+  short_paraphrase: Alternative term definitions
+- source_id: CQ2.7
+  short_paraphrase: Alternative definition terms
+- source_id: CQ2.8
+  short_paraphrase: Term distribution
+- source_id: CQ3
+  short_paraphrase: Characterize ontology networks
+- source_id: CQ3.1
+  short_paraphrase: Foundational grounding
+- source_id: CQ3.2
+  short_paraphrase: Subontology composition
+- source_id: CQ3.3
+  short_paraphrase: Ontology reuse
+- source_id: CQ3.4
+  short_paraphrase: Ontology-driven language
+- source_id: CQ3.5
+  short_paraphrase: Operational implementation

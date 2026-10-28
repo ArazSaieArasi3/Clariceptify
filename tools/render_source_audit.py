@@ -38,8 +38,7 @@ def render_audit(audit):
     for r in audit['repository_observations']:
         lines.append('| ' + ' | '.join([f"[{r['repository']}]({r['url']})", r['retained_commit'],
                      str(r['archived']) + ' / ' + str(r['disabled']), r['pushed_at'], str(r['tracked_files'])]) + ' |')
-    lines += ['', 'O4OA additionally has a verified public GitLab project and public author documentation; '
-              'the checked repository-tree API returned HTTP403. No source tree or commit was acquired in this checkpoint.', '',
+    lines += ['', audit['o4oa_repository_boundary'], '',
               '## Discovery log', '']
     for d in audit['discovery_attempts']:
         lines += ['### ' + d['id'] + ': ' + d['method'], '',

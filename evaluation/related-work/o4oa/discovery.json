@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "work_id": "CLR-RW-O4OA",
+  "date": "2026-10-28",
+  "source_commit": "ad8af91a8434ff5a79679cc78ba7878923ecda0b",
+  "method": "Follow literal paper note2, author redirects/documentation links and GitLab public APIs; query GitHub repository names/descriptions only. HTTP success is not a model tree or historical correspondence.",
+  "retrievals": [
+    {
+      "id": "gitlab-project",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1127,
+      "sha256": "dcd49a5dd242207f6acc30e161465914589befccd09eaf24958edbd26011f5fc",
+      "metadata": {
+        "id": 46249263,
+        "name": "O4OA.gitlab.io",
+        "path_with_namespace": "bfmartins/o4oa",
+        "visibility": "public",
+        "default_branch": null,
+        "archived": null,
+        "created_at": "2023-05-23T10:19:05.083Z",
+        "last_activity_at": "2023-11-24T14:35:35.272Z",
+        "web_url": "https://gitlab.com/bfmartins/o4oa",
+        "license": null
+      }
+    },
+    {
+      "id": "gitlab-tree",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa/repository/tree?recursive=true&per_page=100",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa/repository/tree?recursive=true&per_page=100",
+      "status": 403,
+      "content_type": "application/json",
+      "bytes": 27,
+      "sha256": "049f7d7b2d353566dca3e37d91ae2d886e11e6d9a6db69f0526650bdad244f78"
+    },
+    {
+      "id": "author-index",
+      "url": "https://bfmartins.gitlab.io/o4oa/",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 167,
+      "sha256": "7f839b90181fee7e019298dd730b03a65343a5ecb0561a5310045a7df662474a"
+    },
+    {
+      "id": "author-o4oa",
+      "url": "https://bfmartins.gitlab.io/o4oa/content/o4oa.html",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/content/o4oa.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 29020,
+      "sha256": "e843153e73f4573eec96ced4eb619640364ac109566fa0e945ca37bbf25e3ab0"
+    },
+    {
+      "id": "author-cqs-js",
+      "url": "https://bfmartins.gitlab.io/o4oa/assets/js/data/cqs.js",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/assets/js/data/cqs.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 1299,
+      "sha256": "69108aac3b63c8a4a66595a0bbaea5ea36611ed31fce7387c6cfeffee7683cfd"
+    },
+    {
+      "id": "author-spec-redirect",
+      "url": "https://bfmartins.gitlab.io/o4oa/content/redirect.html",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/content/redirect.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 191,
+      "sha256": "87c889fbdea7d7cfed3aa5cbdc7d4bd4c3ab014621dbfedd95ccfa8d5e0ce98b"
+    },
+    {
+      "id": "author-diagrams",
+      "url": "https://bfmartins.gitlab.io/o4oa/diagrams/index.html",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/diagrams/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1534,
+      "sha256": "de98b85d2662236e8028fb736d55499d7807210f843add9de946edc2b5012f9a"
+    },
+    {
+      "id": "author-go4oa",
+      "url": "https://bfmartins.gitlab.io/o4oa/content/go4oa.html",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/content/go4oa.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 2151,
+      "sha256": "d510c47da68bdb0f291ed0d7f8ffc652bd3478ffaab4f25c3303d9a59a67271e"
+    },
+    {
+      "id": "author-cqs-json",
+      "url": "https://bfmartins.gitlab.io/o4oa/assets/data/cqs.json",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/assets/data/cqs.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3203,
+      "sha256": "2f77c5444d23140465247fd192d06992d3eec2d0755a900f8c579ec2f01abc60"
+    },
+    {
+      "id": "go4oa-project",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1060,
+      "sha256": "10cc04510c78ed36db8a33ac8bbb0213fa6cc39545cfebc3f0589b9906dcecf4",
+      "metadata": {
+        "id": 48842916,
+        "name": "gO4OA",
+        "path_with_namespace": "bfmartins/go4oa",
+        "visibility": "public",
+        "default_branch": "main",
+        "archived": null,
+        "last_activity_at": "2023-08-27T18:52:56.951Z",
+        "license": null
+      }
+    },
+    {
+      "id": "go4oa-tree",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/tree?recursive=true&per_page=100",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/tree?recursive=true&per_page=100",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 992,
+      "sha256": "0f7ab9c9b3e2567b142c5d176f7a3cb31d30a37011f453d6d2ce220992d28828"
+    },
+    {
+      "id": "spec-landing",
+      "url": "https://riunet.upv.es/handle/10251/196721",
+      "final_url": "https://riunet.upv.es/entities/publication/2ded4460-4686-437d-80d6-0f2af96ca08c",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 338882,
+      "sha256": "d1a248ba437967f600e071c8623ad48bebfc356e647e03c74df5e98a285b83b6"
+    },
+    {
+      "id": "go4oa-main",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/branches/main",
+      "status": 200,
+      "bytes": 880,
+      "sha256": "06b17f2e6c4e16ab715a25c373bcc1fa9e5917969fe22d0e9dcd6c9ecae4fdbe",
+      "commit": "3be36c642b2cfca33de3d0788471bc185880bde8",
+      "committed_date": "2023-08-27T21:30:53.000+02:00"
+    },
+    {
+      "id": "go4oa-pinned-tree",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/tree?recursive=true&per_page=100&ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "status": 200,
+      "bytes": 992,
+      "sha256": "0f7ab9c9b3e2567b142c5d176f7a3cb31d30a37011f453d6d2ce220992d28828",
+      "commit": "3be36c642b2cfca33de3d0788471bc185880bde8",
+      "pagination": {
+        "X-Next-Page": "",
+        "X-Total": "8",
+        "X-Total-Pages": "1"
+      },
+      "entries": [
+        {
+          "id": "dcc4b80d5e092148c7be3682090b18807e3a4961",
+          "name": "scr",
+          "type": "tree",
+          "path": "scr",
+          "mode": "040000"
+        },
+        {
+          "id": "8a632222c2692f6a81d60ba6c83eddab9cd55615",
+          "name": "logo",
+          "type": "tree",
+          "path": "scr/logo",
+          "mode": "040000"
+        },
+        {
+          "id": "561142f6a1f3901df786b98bd0cdfdae78509da6",
+          "name": "metadata",
+          "type": "tree",
+          "path": "scr/metadata",
+          "mode": "040000"
+        },
+        {
+          "id": "449f506024cbfd6dde7266f76e3aa335c10fb1cc",
+          "name": ".gitignore",
+          "type": "blob",
+          "path": ".gitignore",
+          "mode": "100644"
+        },
+        {
+          "id": "68dd8260a11ad2e499c25cc973c0c3c6774367c7",
+          "name": "README.md",
+          "type": "blob",
+          "path": "README.md",
+          "mode": "100644"
+        },
+        {
+          "id": "170d8019c6a90a3366ee6123d2d663a94d9a3658",
+          "name": "go4oa - quadrado.png",
+          "type": "blob",
+          "path": "scr/logo/go4oa - quadrado.png",
+          "mode": "100644"
+        },
+        {
+          "id": "7df9b607c005e3c666552d4ae137973a590caaf7",
+          "name": "go4oa.png",
+          "type": "blob",
+          "path": "scr/logo/go4oa.png",
+          "mode": "100644"
+        },
+        {
+          "id": "4651c7375cb9fc3a08b6fdf4f86e807a9ed42519",
+          "name": "metadata.yaml",
+          "type": "blob",
+          "path": "scr/metadata/metadata.yaml",
+          "mode": "100644"
+        }
+      ]
+    },
+    {
+      "id": "go4oa-readme",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/files/README.md/raw?ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/files/README.md/raw?ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "status": 200,
+      "bytes": 331,
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "ff04b73d2afcc07bb3df9e8a5e0195c8d3b9d5105ebe297939ae0094c8aad322"
+    },
+    {
+      "id": "go4oa-metadata",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/files/scr%2Fmetadata%2Fmetadata.yaml/raw?ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/files/scr%2Fmetadata%2Fmetadata.yaml/raw?ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "status": 200,
+      "bytes": 803,
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "bff380f904e44f785c5cbcd4a1dfa8dfe5f95c7fef1c00eb176be9cdb5397c1d"
+    },
+    {
+      "id": "o4oa-specification-pdf",
+      "url": "https://riunet.upv.es/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/download",
+      "final_url": "https://riunet.upv.es/server/api/core/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/content",
+      "status": 200,
+      "bytes": 4107800,
+      "content_type": "application/pdf;charset=UTF-8",
+      "sha256": "8bbcc649518217e34ca0f12b486fda58042d055da45792c7b6f706e5356bfdfb",
+      "pdf_pages": 44,
+      "scope": "Acquisition and first-page identity only; not deep-reviewed or substituted for the ER2023 paper."
+    }
+  ],
+  "github_name_description_queries": [
+    {
+      "query": "O4OA in:name,description",
+      "per_page": 10,
+      "result": "qfzxuF1EIyZDLir/vr3hx2-o4oa; unrelated name match, not attributed to paper authors"
+    },
+    {
+      "query": "\"Ontology for Ontological Analysis\" in:name,description",
+      "per_page": 10,
+      "result": []
+    }
+  ],
+  "repository_commit": null,
+  "global_absence_claim": false,
+  "complete_tree_acquired": false,
+  "historical_2023_correspondence": "NOT_ESTABLISHED",
+  "license": "UNKNOWN_FOR_UNACQUIRED_MODEL_TREE",
+  "independent_semantic_execution": "NOT_EXECUTED",
+  "next_issue": 91,
+  "repository_scope": "The top-level null commit/blocked tree refers to the O4OA reference/documentation project. The separately linked light variant has its own acquired tree below.",
+  "separate_light_variant": {
+    "repository": "bfmartins/go4oa",
+    "commit": "3be36c642b2cfca33de3d0788471bc185880bde8",
+    "complete_tree_acquired": true,
+    "tree_entries": 8,
+    "directories": 3,
+    "files": 5,
+    "formal_model_file_in_selected_tree": "NOT_IDENTIFIED",
+    "file_set_boundary": "README, .gitignore, two logos and metadata.yaml only; this exact tree is not an acquired OWL implementation or the paper MongoDB source."
+  }
+}

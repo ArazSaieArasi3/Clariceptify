@@ -21,7 +21,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING | SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established; PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED; [source](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl); [source](https://github.com/appliedontolab/DOLCE); PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
-| CLR-RW-O4OA (#73) | PUBLIC_PROJECT_METADATA_TREE_403; [source](https://gitlab.com/bfmartins/o4oa); AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING | UFO-A/B/C; gUFO for light OWL model; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
+| CLR-RW-O4OA (#73) | REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY; [source](https://gitlab.com/bfmartins/o4oa); [source](https://gitlab.com/bfmartins/go4oa); PAPER_COMPLETE_CQS_AND_SPEC_ACQUIRED_TECHNICAL_REVIEW_PENDING | UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants); PAPER_STATED_GROUNDING_THROUGH_ONTOUML; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
 | CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
 | CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #246 |
 | CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_FORMAL_FILE_PAPER_BLOCKED | DOLCE; ALIGNMENT_OR_REUSE; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
@@ -42,7 +42,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | [CognitiveAtlas/ontology](https://github.com/CognitiveAtlas/ontology) | 85f06454b7beac4945be0af545a0097901c9532a | False / False | 2017-09-12T16:46:53Z | 2 |
 | [fossr-project/ontology](https://github.com/fossr-project/ontology) | 57a91037d803519db5ee8d65d53c14901e28a0d1 | False / False | 2026-05-05T14:12:37Z | 198 |
 
-O4OA additionally has a verified public GitLab project and public author documentation; the checked repository-tree API returned HTTP403. No source tree or commit was acquired in this checkpoint.
+O4OA reference/documentation project metadata is public, but its checked tree API returned HTTP403. Separately linked bfmartins/go4oa is pinned at 3be36c642b2cfca33de3d0788471bc185880bde8; its complete eight-entry tree has five files (README, ignore file, two logos and metadata), with no formal ontology root identified in this tree. Current CQs and a separate 44-page specification were acquired; full technical/glossary work remains #91. See evaluation/related-work/o4oa/discovery.json. No global absence or historical equivalence follows.
 
 ## Discovery log
 
@@ -430,6 +430,19 @@ Returned candidate names (limit 10): FSCHOEN/CO-PLM.
 Literal case-variant link returns HTML; canonical root matches retained4.2. Official DOLCE repository tree pinned at cca21e82b38fe6956e9619516dad92116782a4a2 as related work, not exact2016 DUL. Samples preserve explicit version/statement limits.
 
 Limit: Two metadata searches and named endpoints only; no global repository absence, historical release parity, class glossary or inferred result.
+
+### O4OA2026: Paper/author links, current CQs/specification and source-specific GitLab discovery
+
+Query: `O4OA in:name,description; exact phrase Ontology for Ontological Analysis; literal author links`. Checked: 2026-10-28.
+
+- https://bfmartins.gitlab.io/o4oa/
+- https://gitlab.com/bfmartins/o4oa
+- https://gitlab.com/bfmartins/go4oa
+- https://riunet.upv.es/handle/10251/196721
+
+O4OA reference/documentation project metadata is public, but its checked tree API returned HTTP403. Separately linked bfmartins/go4oa is pinned at 3be36c642b2cfca33de3d0788471bc185880bde8; its complete eight-entry tree has five files (README, ignore file, two logos and metadata), with no formal ontology root identified in this tree. Current CQs and a separate 44-page specification were acquired; full technical/glossary work remains #91. See evaluation/related-work/o4oa/discovery.json. No global absence or historical equivalence follows.
+
+Limit: Reference project tree blocked; separate light-variant tree acquired and metadata only. Current documentation/specification is not proven historical2023 paper implementation. No all-class glossary, import parse, reasoner or model acceptance.
 
 ## Interpretation and next work
 

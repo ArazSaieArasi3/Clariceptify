@@ -96,9 +96,9 @@ records:
   access_status: ACQUIRED
   filename: O4OA-2023-owner.pdf
   sha256: de09a79471af857d251231429988f2025d3f02b6983073c13e249e19aebcf0df
-  review_status: QUEUED_FOR_SHARED_DEEP_REVIEW
-  note: Owner-supplied exact full text received on 2026-10-28; earlier endpoint failures remain historical.
-    Paper/artifact correspondence remains a separate task.
+  review_status: DEEP_REVIEW_COMPLETE
+  note: 'All 20 owner-supplied paper pages, eight figures, ten notes and 66 references critically reviewed.
+    Dossier CLR-RW-O4OA; technical/version/class/glossary work stays #91, comparison #252 and synthesis #126.'
   pdf_pages: 20
   owner_intake: evidence/related-work/corpus/owner-intake-2026-10-28.json
 - candidate_id: CLR-RW-OntoKADS
@@ -305,6 +305,21 @@ rejected_content:
   reason: PMC anti-bot response, not full text; publisher PDF obtained instead.
 - resource: O4OA-specification.pdf
   reason: Institutional download returned anti-bot HTML, not a PDF; not included as a specification.
+  historical_scope: Earlier endpoint response only; superseded for current technical access by the 2026-10-28
+    acquisition below.
+supporting_technical_inputs:
+- title: O4OA Specification
+  report: PROS-TR-2023-I
+  document_version: '1'
+  url: https://riunet.upv.es/handle/10251/196721
+  file_url: https://riunet.upv.es/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/download
+  access_status: ACQUIRED_NOT_DEEP_REVIEWED
+  sha256: 8bbcc649518217e34ca0f12b486fda58042d055da45792c7b6f706e5356bfdfb
+  pdf_pages: 44
+  next_issue: 91
+  receipt: evaluation/related-work/o4oa/discovery.json
+  boundary: Additional technical input, not a twentieth primary work, a substitute for the ER2023 paper, a
+    completed glossary or an executed model check.
 owner_intake_revision:
   date: '2026-10-28'
   receipt: evidence/related-work/corpus/owner-intake-2026-10-28.json
