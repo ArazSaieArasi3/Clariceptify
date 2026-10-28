@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0",
+  "work_id": "CognitiveAtlas2011",
+  "checked_on": "2026-10-28",
+  "source_sha256": "c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4",
+  "primary_endpoints": [
+    {
+      "url": "https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2011.00017/full",
+      "outcome": "Publisher metadata opened: exact title, nine authors, Frontiers in Neuroinformatics5:17, publication2011-09-06 and DOI verified. Already-retained publisher PDF is the reading authority."
+    },
+    {
+      "url": "https://www.cognitiveatlas.org/",
+      "outcome": "Paper-linked public homepage opened through search service. Current live vocabulary counts are not substituted for the article's 2011 snapshot; no authentication or write action performed."
+    },
+    {
+      "url": "https://bioportal.bioontology.org/ontologies/COGAT",
+      "outcome": "Current candidate BioPortal acronym endpoint returned403. Paper footnote4 gives BioPortal root, not this exact acronym/version. No ontology bytes or historical availability inferred from this response."
+    },
+    {
+      "url": "https://github.com/poldrack/cogat",
+      "outcome": "Exact paper p.6 author-repository link is public. Metadata/ref/tree checked; README and create_owl.py fetched at pinned current commit and Git blob hashes verified. No whole-tree snapshot acquired and no equivalence to2011 asserted."
+    },
+    {
+      "url": "https://github.com/CognitiveAtlas/cogat-ontology",
+      "outcome": "Official later export repository: complete retained13-blob tree and selected local source hashes matched API Git blobs at a600c366e9e3d3647a85cbc2c6e53e78abcf1951. Read README and inspected generator/header only."
+    },
+    {
+      "url": "https://github.com/CognitiveAtlas/ontology",
+      "outcome": "Distinct official content-discussion repository at85f06454b7beac4945be0af545a0097901c9532a has only README.md and LICENSE. Not substituted for an OWL release."
+    }
+  ],
+  "web_queries": [
+    {
+      "query": "site:github.com/poldrack/cogat Cognitive Atlas generate owl",
+      "outcome": "Official later cogat-ontology and associated project repositories returned; exact paper link separately checked directly."
+    },
+    {
+      "query": "site:cognitiveatlas.org ontology OWL github",
+      "outcome": "Official project and programmatic-access documentation identified; current REST resources not treated as a2011 experiment."
+    }
+  ],
+  "repositories": {
+    "checked_on": "2026-10-28",
+    "official_repo": {
+      "repository": "CognitiveAtlas/cogat-ontology",
+      "url": "https://github.com/CognitiveAtlas/cogat-ontology",
+      "commit": "a600c366e9e3d3647a85cbc2c6e53e78abcf1951",
+      "commit_date": "2015-06-10T23:02:28Z",
+      "default_branch": "master",
+      "archived": false,
+      "pushed_at": "2015-06-10T23:02:37Z",
+      "selected_files": [
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fdfeedd50083fe2b80ddd8c7f94191d8a0275b9a",
+          "size": 309,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/fdfeedd50083fe2b80ddd8c7f94191d8a0275b9a",
+          "sha256": "1a02844686f8e70ca6ea555974d0ac6c1464fbacee1012bcb58a572447ee38df"
+        },
+        {
+          "path": "create_owl.v1.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "627e93bc832f091d52d951d230e1d14fa12f5c24",
+          "size": 18927,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/627e93bc832f091d52d951d230e1d14fa12f5c24",
+          "sha256": "9cb1ef03fdecb2cf830229068fa508220c0a1bc47067ef9e83c57268a69ae5d1"
+        },
+        {
+          "path": "create_owl.v2.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "988ce40cc497d490518df3ffe4cec5d8e77a1743",
+          "size": 20184,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/988ce40cc497d490518df3ffe4cec5d8e77a1743",
+          "sha256": "6e16d65328a011a0e32f8fe7dfb08a4f67595d6c103ea8871341f848759c61b0"
+        },
+        {
+          "path": "ontology/all_concepts.rdf",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6289e8e6fde98765acb32e2decf533d6de01299e",
+          "size": 1076507,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/6289e8e6fde98765acb32e2decf533d6de01299e",
+          "sha256": "b656a33d0099e84de128e23a7accf56a44276a269fead52721c6e9fcd4fe5626"
+        },
+        {
+          "path": "ontology/all_tasks.rdf",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "07416114235f72c67fe414bb826228cf32fc97b7",
+          "size": 749689,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/07416114235f72c67fe414bb826228cf32fc97b7",
+          "sha256": "1e47d61dff70d43924e8ee9e659a7896ac003c8587bfd03afebf9079bdd1c4a4"
+        },
+        {
+          "path": "ontology/catalog-v001.xml",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5cbe3cf26a9fb157a705dc783f85fa69fdab420b",
+          "size": 265,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/5cbe3cf26a9fb157a705dc783f85fa69fdab420b",
+          "sha256": "832f3eb6a26abe67b6ffdfb49a29594d14f66af52908fcbc6ea412c79d9ed443"
+        },
+        {
+          "path": "ontology/cogat.v1.owl",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5b6e979b2338c8a6b4c59cec29c7ad57db75b1ad",
+          "size": 1338564,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/5b6e979b2338c8a6b4c59cec29c7ad57db75b1ad",
+          "sha256": "57222b484b72ac881fc34b77a5df8dd716be09cf1da4066e9ddad8c90c294f1b"
+        },
+        {
+          "path": "ontology/cogat.v2.owl",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "474ae791763b1c2fab66d2a37a2a59792854ab03",
+          "size": 1437590,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/474ae791763b1c2fab66d2a37a2a59792854ab03",
+          "sha256": "701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8"
+        },
+        {
+          "path": "ontology/id_dictionary.pkl",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f941ad26c4d195d28d9da25ade78907372251bca",
+          "size": 84721,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/f941ad26c4d195d28d9da25ade78907372251bca",
+          "sha256": "4275394a2af2c60e69b61ece0329c6f59503420e17e60421fd8d6e148a451d11"
+        },
+        {
+          "path": "ontology/table_assertion.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cdeb88ff5b285d57af436c424833cb58cd2a85df",
+          "size": 246240,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/cdeb88ff5b285d57af436c424833cb58cd2a85df",
+          "sha256": "e454cf6a01e7353a7cbf2aabbc730aaea02db7137bc9620e54d2f51d7ca84a1c"
+        },
+        {
+          "path": "ontology/table_relation.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "06b444a95e013317626b7846c330b1213616c4f2",
+          "size": 1342,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/06b444a95e013317626b7846c330b1213616c4f2",
+          "sha256": "5484f2275d1c58df42a51e20bb592b8a01b7f183fdf726aa96a4ab15f3a258a6"
+        },
+        {
+          "path": "ontology/type_condition.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9d17a2d61ab1b6cad2fbc8385800cfd05df62870",
+          "size": 62030,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/9d17a2d61ab1b6cad2fbc8385800cfd05df62870",
+          "sha256": "33badc8be2244c9ed564b6e0153559b329ee56534cdccba1f98212577523d732"
+        },
+        {
+          "path": "ontology/type_contrast.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "bc19623ede6a3e43cca2440d4f3835b3af4cc597",
+          "size": 60474,
+          "url": "https://api.github.com/repos/CognitiveAtlas/cogat-ontology/git/blobs/bc19623ede6a3e43cca2440d4f3835b3af4cc597",
+          "sha256": "8cd88a9fa6217483ba805ebcfc7a0f634d3aeabe4466ec18fb3a12fea58a65ae"
+        }
+      ],
+      "tree_truncated": false
+    },
+    "discussion_repo": {
+      "repository": "CognitiveAtlas/ontology",
+      "commit": "85f06454b7beac4945be0af545a0097901c9532a",
+      "pushed_at": "2017-09-12T16:46:53Z",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "LICENSE",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "720f06f36b4bd5e5007999be955f5e75a71ff330",
+          "size": 1071,
+          "url": "https://api.github.com/repos/CognitiveAtlas/ontology/git/blobs/720f06f36b4bd5e5007999be955f5e75a71ff330"
+        },
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "966e06b9e4ea60a893e73d8145dc93b353359d49",
+          "size": 230,
+          "url": "https://api.github.com/repos/CognitiveAtlas/ontology/git/blobs/966e06b9e4ea60a893e73d8145dc93b353359d49"
+        }
+      ]
+    },
+    "paper_linked_repo": {
+      "repository": "poldrack/cogat",
+      "commit": "8ae51f96b6116fb2b00ef70f9feac5bac8444071",
+      "archived": false,
+      "pushed_at": "2016-08-15T22:55:18Z",
+      "files": [
+        {
+          "path": "README",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "49c2226c721066005ca8857ad7b900ee5924bfcb",
+          "size": 68,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/49c2226c721066005ca8857ad7b900ee5924bfcb",
+          "sha256": "feaf175098a2c55f23a088fb0fe8198e8388c1de0dd8be136ed58b2900f2f883"
+        },
+        {
+          "path": "create_owl.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6fd694936d064d747894f98a407ce0df0fe01f36",
+          "size": 19061,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/6fd694936d064d747894f98a407ce0df0fe01f36",
+          "sha256": "3797efce629faabff2d5d1178b9374bab6385f4e81b6fa36f06be84f80b044f2"
+        },
+        {
+          "path": "ontology/all_concepts.rdf",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6289e8e6fde98765acb32e2decf533d6de01299e",
+          "size": 1076507,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/6289e8e6fde98765acb32e2decf533d6de01299e"
+        },
+        {
+          "path": "ontology/all_tasks.rdf",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "07416114235f72c67fe414bb826228cf32fc97b7",
+          "size": 749689,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/07416114235f72c67fe414bb826228cf32fc97b7"
+        },
+        {
+          "path": "ontology/catalog-v001.xml",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5cbe3cf26a9fb157a705dc783f85fa69fdab420b",
+          "size": 265,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/5cbe3cf26a9fb157a705dc783f85fa69fdab420b"
+        },
+        {
+          "path": "ontology/cogat.owl",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b51aa0b798565347019c1f18c60b3eae8117eedc",
+          "size": 2519888,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/b51aa0b798565347019c1f18c60b3eae8117eedc"
+        },
+        {
+          "path": "ontology/id_dictionary.pkl",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f941ad26c4d195d28d9da25ade78907372251bca",
+          "size": 84721,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/f941ad26c4d195d28d9da25ade78907372251bca"
+        },
+        {
+          "path": "ontology/table_assertion.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cdeb88ff5b285d57af436c424833cb58cd2a85df",
+          "size": 246240,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/cdeb88ff5b285d57af436c424833cb58cd2a85df"
+        },
+        {
+          "path": "ontology/table_relation.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "06b444a95e013317626b7846c330b1213616c4f2",
+          "size": 1342,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/06b444a95e013317626b7846c330b1213616c4f2"
+        },
+        {
+          "path": "ontology/type_condition.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9d17a2d61ab1b6cad2fbc8385800cfd05df62870",
+          "size": 62030,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/9d17a2d61ab1b6cad2fbc8385800cfd05df62870"
+        },
+        {
+          "path": "ontology/type_contrast.csv",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "bc19623ede6a3e43cca2440d4f3835b3af4cc597",
+          "size": 60474,
+          "url": "https://api.github.com/repos/poldrack/cogat/git/blobs/bc19623ede6a3e43cca2440d4f3835b3af4cc597"
+        }
+      ],
+      "tree_truncated": false
+    },
+    "header_inspection": {
+      "rdflib": "7.6.0",
+      "ontology_iris": [
+        "http://www.cognitiveatlas.org/ontology/cogat.owl"
+      ],
+      "version_info": [
+        "0.3"
+      ],
+      "imports": [],
+      "scope": "Header metadata only; not a class census, import resolution or reasoner execution."
+    }
+  },
+  "retained_archives": [
+    {
+      "filename": "CognitiveAtlas__cogat-ontology-a600c366e9e3.zip",
+      "sha256": "493d1093ebba32f764ddc488fd946aedba85ef98c0cda5bd2857cca6029ef5c5",
+      "tracked_files": 13
+    },
+    {
+      "filename": "CognitiveAtlas__ontology-85f06454b7be.zip",
+      "sha256": "b1ae03f63b6bc0403ba931c83d91b4e02464db7d418dcf9018c27825d5582419",
+      "tracked_files": 2
+    }
+  ],
+  "source_scope": "One selected cogat.v2.owl candidate. Older v1, original author cogat.owl, RDF database dumps, historical figures, current website and discussion repository remain distinct populations.",
+  "executed": {
+    "operation": "Verify selected retained blobs against API tree; RDFLib Graph.parse selected cogat.v2.owl and enumerate explicit ontology/version/import header metadata only",
+    "header": {
+      "rdflib": "7.6.0",
+      "ontology_iris": [
+        "http://www.cognitiveatlas.org/ontology/cogat.owl"
+      ],
+      "version_info": [
+        "0.3"
+      ],
+      "imports": [],
+      "scope": "Header metadata only; not a class census, import resolution or reasoner execution."
+    },
+    "result": "PASS",
+    "imports_resolved": false,
+    "class_glossary": "PENDING_241",
+    "reasoner": "NOT_EXECUTED",
+    "generator": "NOT_EXECUTED",
+    "sparql": "NOT_EXECUTED"
+  },
+  "license_boundary": "The2011 PDF has an open-access attribution/Frontiers-conditions notice; Figure3 shows a site CC-BY-SA badge. The generator contains an author two-condition BSD-style notice. The separate discussion repository has MIT LICENSE; no blanket source/data/OWL license is inferred.",
+  "limits": [
+    "Selected v2 filename is not formal version2: header says0.3.",
+    "BFO1.1/CogPO2011 namespace strings in later export are not actual imports or proof of paper grounding.",
+    "No generator or pickle loading, historical website reconstruction, endpoint querying, source-class census, import reasoning or author utility experiment executed.",
+    "No raw third-party article, ontology, code, figures or source definitions redistributed."
+  ],
+  "global_absence_claim": false,
+  "model_change": "NONE"
+}

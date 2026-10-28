@@ -157,6 +157,24 @@ def validate_dossier(d, entry, dimensions):
             require(all(v is None for v in d['artifact']['machine_class_populations'].values()) and
                     d['paper_expression_scope']['machine_axiom_count'] is None,
                     'BDI2026 paper counts promoted to machine census')
+    if d['work_id'] == 'CognitiveAtlas2011':
+        pop = d['paper_population']
+        require(pop['basis'] == 'AUTHOR_REPORTED' and pop['source_year'] == 2011 and
+                [pop[k] for k in ['current_terms', 'mental_constructs', 'tasks', 'terms_with_definitions']] ==
+                [904, 708, 196, 795] and
+                pop['definition_adequacy'] == 'MOST_ACKNOWLEDGED_INSUFFICIENT' and
+                not pop['independently_reproduced'],
+                'Cognitive Atlas historical status promoted to verified adequacy')
+        require(all(v is None for v in d['artifact']['machine_class_populations'].values()) and
+                d['paper_formalization']['dl_axiom_population'] is None and
+                d['paper_formalization']['numbered_formula_count'] == 0,
+                'Cognitive Atlas paper terms promoted to machine population')
+        require(d['artifact']['formal_version'] == '0.3' and
+                d['artifact']['historical_paper_fidelity'] == 'NOT_ESTABLISHED',
+                'Cognitive Atlas filename promoted to historical version identity')
+        require(d['implementation_scope']['literature_relation'] == 'citesForInformation' and
+                d['implementation_scope']['theory_testing'] == 'FUTURE_NOT_AVAILABLE_IN_PAPER',
+                'Cognitive Atlas future or informative relation promoted to implemented support')
     if d['status'] == 'REVIEW_COMPLETE':
         require(d['coverage']['read_pages'] == list(range(1, entry['pdf_pages'] + 1)), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and
@@ -167,6 +185,23 @@ def validate_dossier(d, entry, dimensions):
                 d['artifact']['version_relation'] and d['artifact']['status'], 'artifact boundary missing')
     else:
         require(d['status'] == 'IN_PROGRESS', 'invalid review state')
+
+
+def validate_cognitive_figure_ledger(dossier, ledger):
+    if (ledger['source_sha256'] != dossier['source']['sha256'] or
+            ledger['work_id'] != 'CognitiveAtlas2011' or
+            [f['number'] for f in ledger['figures']] != [1, 2, 3, 4] or
+            [f['pdf_page'] for f in ledger['figures']] != [4, 5, 8, 9]):
+        raise ValueError('Incomplete or substituted Cognitive Atlas figure population')
+    task, senses, empirical = ledger['figures'][1:]
+    if task['contrast_literal'] != '0-back minus 2-back' or task['conditions'] != ['0-back', '1-back', '2-back']:
+        raise ValueError('Cognitive Atlas printed contrast silently reversed')
+    if senses['senses'] != ['behavioral inhibition (cognitive)', 'behavioral inhibition (temperament)']:
+        raise ValueError('Cognitive Atlas distinct senses silently collapsed')
+    if (empirical['edge_kind'] != 'PROPOSED_EMPIRICAL_ASSOCIATION_NOT_CLASS_HIERARCHY' or
+            len(empirical['layers']) != 5 or sum(map(len, empirical['layers'].values())) != 13 or
+            ledger['machine_class_count'] is not None):
+        raise ValueError('Cognitive Atlas empirical illustration promoted to class hierarchy')
 
 
 def validate_diagram_inventory(dossier, inventory):
@@ -314,6 +349,12 @@ def check(root=ROOT):
             continue
         d = yaml.safe_load(path.read_text())
         validate_dossier(d, entry, protocol['dimensions'])
+        if 'figure_ledger' in d:
+            binding = d['figure_ledger']
+            raw = (root / binding['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                raise ValueError('Changed Cognitive Atlas figure ledger bytes')
+            validate_cognitive_figure_ledger(d, yaml.safe_load(raw))
         if 'diagram_inventory' in d:
             binding = d['diagram_inventory']
             raw = (root / binding['path']).read_bytes()

@@ -1,0 +1,134 @@
+schema_version: '1.0'
+work_id: CognitiveAtlas2011
+source_sha256: c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4
+count_policy: Semantic schema containers, field labels and named examples, not all nested GUI boxes or released
+  OWL classes.
+figures:
+- number: 1
+  pdf_page: 4
+  kind: CONCEPT_SCHEMA
+  semantic_container_count: 9
+  containers:
+  - SKOS class
+  - Dublin Core
+  - SKOS annotation fields
+  - SIOC
+  - SWAN Citation Ontology
+  - working memory concept
+  - memory concept
+  - working memory retrieval concept
+  - active maintenance concept
+  central_fields:
+  - Identifier
+  - Title
+  - Contributor
+  - Date
+  - PrefLabel
+  - Synonym
+  - Definition
+  - inScheme
+  - Discussion
+  - Bibliography
+  external_terms:
+  - skos:Concept
+  - dc:identifier
+  - dc:Title
+  - dc:Contributor
+  - dc:Date
+  - skos:prefLabel
+  - skos:altLabel
+  - skos:definition
+  - skos:inScheme
+  - sioc:Forum
+  - citations:Citation
+  relation_labels:
+  - is-a
+  - part-of
+  - preceded-by
+  - measured-by
+  source_evidence: E07
+- number: 2
+  pdf_page: 5
+  kind: TASK_SCHEMA
+  semantic_container_count: 16
+  containers:
+  - CogPO task class
+  - Dublin Core
+  - SKOS
+  - SIOC
+  - SWAN Citation Ontology
+  - Imaging databases
+  - NEMO
+  - SWAN Collections Ontology
+  - CogPO contrast class
+  - CogPO condition class
+  - n-back Mental Task
+  - Task collection CNP Memory Battery
+  - Continuous performance Mental Task
+  - Conditions
+  - Contrast
+  - Mental Concept
+  additional_fields:
+  - Indicators
+  conditions:
+  - 0-back
+  - 1-back
+  - 2-back
+  contrast_literal: 0-back minus 2-back
+  indicators:
+  - response time
+  - accuracy
+  - fMRI activation map
+  - amplitude of ERP component
+  external_terms:
+  - cogpo:BehavioralExperiment
+  - cogpo:BehavioralExperimentParadigmContrast
+  - cogpo:BehavioralExperimentParadigmCondition
+  - collections:Collection
+  - nemo:ERP_activity
+  relation_labels:
+  - part_of
+  - descended_from
+  - has_condition
+  - has_contrast
+  - includes_condition
+  - measured-by
+  source_evidence: E08
+- number: 3
+  pdf_page: 8
+  kind: DISAMBIGUATION_SCREENSHOT
+  senses:
+  - behavioral inhibition (cognitive)
+  - behavioral inhibition (temperament)
+  source_evidence: E14
+- number: 4
+  pdf_page: 9
+  kind: EMPIRICAL_MULTILEVEL_ILLUSTRATION
+  layers:
+    SYNDROMES:
+    - Schizophrenia
+    - Bipolar Disorder
+    - ADHD
+    COGNITION:
+    - WM Updating
+    - Response Inhibition
+    NEURAL SYSTEMS:
+    - DL PFC
+    - VL PFC
+    SIGNALLING PATHWAYS:
+    - Dopamine D1
+    - Dopamine D2
+    - Adrenergic A2a
+    GENES:
+    - COMT
+    - DRD2
+    - ADRA2a
+  node_count: 13
+  edge_kind: PROPOSED_EMPIRICAL_ASSOCIATION_NOT_CLASS_HIERARCHY
+  width: PUBMED_JACCARD_ASSOCIATION_AUTHOR_REPORTED_NOT_RECALCULATED
+  callout: Response inhibition related to VLPFC activity through stop versus go Stop Signal Task contrast, supported
+    by6 references in illustration.
+  source_evidence: E17
+inspection: VISUALLY_REVIEWED_ALL_FOUR
+machine_class_count: null
+semantics: NOT_EXECUTED

@@ -1,0 +1,2518 @@
+schema_version: '1.0'
+protocol_id: CLR-DEEP-1
+work_id: CognitiveAtlas2011
+issue: 79
+review_date: '2026-10-28'
+reviewer: AI-assisted critical review; no independent expert validation
+baseline_commit: ffc3ceb11ec896c7fd804e45de113df152143afc
+status: REVIEW_COMPLETE
+identity:
+  title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
+  authors:
+  - Russell A. Poldrack
+  - Aniket Kittur
+  - Donald Kalar
+  - Eric Miller
+  - Christian Seppa
+  - Yolanda Gil
+  - D. Stott Parker
+  - Fred W. Sabb
+  - Robert M. Bilder
+  year: 2011
+  doi: 10.3389/fninf.2011.00017
+  url: https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2011.00017/full
+  version: Frontiers in Neuroinformatics5:17, 6 September 2011, complete 11-page publisher PDF
+  boundary: All 11 article/PDF pages coincide. Received 31 March, accepted 17 August and published 6 September 2011
+    are separate dates. The paper describes the contemporary MySQL-backed knowledge base and generated OWL. Retained
+    2015 export snapshot, formal header 0.3, original paper-linked repository current commit, 2017 discussion-only
+    repository and current website are not asserted equivalent to the 2011 paper. All quantities below identify
+    their source/time/population.
+source:
+  filename: CognitiveAtlas-2011.pdf
+  sha256: c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4
+  pdf_pages: 11
+boundary:
+  model_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+  disposition: DEFER_TO_OWNER_AFTER_SYNTHESIS
+coverage:
+  read_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  visual_pages:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  units:
+  - unit: Title/authors/abstract/editor-reviewer notes, dates and DOI
+    status: REVIEWED
+    evidence:
+    - E01
+  - unit: Introduction and What is the problem?
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Ambiguous terminology
+    status: REVIEWED
+    evidence:
+    - E02
+  - unit: Tasks versus constructs
+    status: REVIEWED
+    evidence:
+    - E03
+  - unit: Toward an ontology for cognition, both pages
+    status: REVIEWED
+    evidence:
+    - E04
+  - unit: The Cognitive Atlas and process/task guiding principle
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Structure of knowledge base and Mental concepts
+    status: REVIEWED
+    evidence:
+    - E05
+  - unit: Mental tasks
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Experimental conditions
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Indicators
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Contrasts, including p.5 continuation
+    status: REVIEWED
+    evidence:
+    - E06
+  - unit: Figure 1 complete concept schema
+    status: REVIEWED
+    evidence:
+    - E07
+  - unit: Figure 2 complete task schema
+    status: REVIEWED
+    evidence:
+    - E08
+  - unit: Relations introduction and Basic ontological relations
+    status: REVIEWED
+    evidence:
+    - E09
+  - unit: Relations between processes and tasks
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Relations among tasks
+    status: REVIEWED
+    evidence:
+    - E10
+  - unit: Literature relations
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Relations to observed data
+    status: REVIEWED
+    evidence:
+    - E11
+  - unit: Technical infrastructure, all paragraphs and paper GitHub link
+    status: REVIEWED
+    evidence:
+    - E12
+  - unit: Benefits/challenges of collaborative knowledge building, opening across pp.6-7
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Capturing and resolving disagreement
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Curation
+    status: REVIEWED
+    evidence:
+    - E13
+  - unit: Utility introduction and Clearer vocabulary
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Figure 3 disambiguation screenshot
+    status: REVIEWED
+    evidence:
+    - E14
+  - unit: Improved query expansion across pp.7-8
+    status: REVIEWED
+    evidence:
+    - E15
+  - unit: Metadata annotation/meta-analysis
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Theory testing
+    status: REVIEWED
+    evidence:
+    - E16
+  - unit: Translational mental health research
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Figure 4 complete five-layer illustration/caption/callout
+    status: REVIEWED
+    evidence:
+    - E17
+  - unit: Present status/future plans across pp.9-10
+    status: REVIEWED
+    evidence:
+    - E18
+  - unit: Conclusion and Acknowledgments
+    status: REVIEWED
+    evidence:
+    - E19
+  - unit: All 39 references and conflict/rights notices
+    status: REVIEWED
+    evidence:
+    - E01
+    - E19
+  - unit: 'All 10 numbered footnotes and cross-reference mismatch: CogPO points to footnote 2 rather than 3'
+    status: REVIEWED
+    evidence:
+    - E02
+    - E04
+    - E05
+    - E12
+    - E13
+    - E18
+  figures: 4
+  tables: 0
+  appendices: 0
+  bibliography_population: 39
+  numbered_footnotes: 10
+  catalog_boundary: 'Complete ontology-bearing paper catalog: mental constructs/tasks/conditions/indicators/contrasts,
+    lexical/collaborative/provenance distinctions, reused vocabularies, every figure category/field/relation/example,
+    scope exclusions, applications and implementation boundaries. The paper has no numbered formal equations, no
+    tables and no appendices; 18 commitment groups are attributed prose/diagram analyses, not machine axioms. Paper
+    does not enumerate all >800/904 vocabulary entries, so no complete released-class glossary is inferred. No eight-item
+    cap applies to this paper catalog.'
+evidence:
+- id: E01
+  pages:
+  - 1
+  - 11
+  locator: Title/authors/abstract, editor/reviewer information, dates, DOI and rights on pp.1/11
+  summary: Nine authors; received 31 March, accepted 17 August, published 6 September 2011; DOI10.3389/fninf.2011.00017.
+    Scholarly peer-review metadata is not independent expert acceptance of this dossier.
+- id: E02
+  pages:
+  - 1
+  - 2
+  locator: Introduction; What is the problem?; Ambiguous terminology; footnote 1
+  summary: 2011 background query 2613 papers; working-memory maintenance/manipulation/temporal senses, synonym/polysemy
+    problems and broad cognitive scope including emotion/motivation. Not a current PubMed result.
+- id: E03
+  pages:
+  - 2
+  locator: Complete Tasks versus constructs subsection
+  summary: Sternberg task contrasts, disputed Stroop inhibition and N-back validity; cognitive-control/task many-to-many
+    associations and changing literature links. Task labels do not establish construct measurement.
+- id: E04
+  pages:
+  - 2
+  - 3
+  locator: Complete Toward an ontology for cognition; footnote 2
+  summary: Gruber-style shared specification, GO analogy, MeSH category critique, ACT-R/SOAR contrast and little
+    consensus about mental units. Authors choose to capture disagreement instead of imposing small-group consensus.
+- id: E05
+  pages:
+  - 3
+  locator: The Cognitive Atlas; Structure of the knowledge base; Mental concepts; footnote 3
+  summary: Ease of participation, machine access, separate linked process/task ontologies, initial >800 terms curated
+    by three authors; latent construct versus brain realization; optional representation/process subdivision and
+    SKOS Concept modeling.
+- id: E06
+  pages:
+  - 3
+  - 4
+  - 5
+  locator: Mental tasks; Experimental conditions; Indicators; Contrasts, including continuation on p.5
+  summary: Prescribed task activity need not produce overt response; CogPO task/condition/contrast categories; quantitative/qualitative
+    indicators; contrast is a function over conditions, including simple, linear and nonlinear comparisons.
+- id: E07
+  pages:
+  - 4
+  locator: Figure 1, complete concept schema and caption
+  summary: Mental-concept cards plus SKOS, Dublin Core, SIOC and SWAN Citation vocabularies; ten central field labels,
+    working-memory relation examples and measured-by continuation. Dashed reuse/inheritance drawing is not a complete
+    OWL mapping.
+- id: E08
+  pages:
+  - 5
+  locator: Figure 2, complete task schema and caption
+  summary: Task metadata/indicators, task collection, descended-from task, conditions, contrast and measured-by
+    concept. CogPO/SWAN/NEMO references; imaging database line explicitly empirical. Example contrast is 0-back
+    minus 2-back, not silently reversed.
+- id: E09
+  pages:
+  - 5
+  - 6
+  locator: Relations and Basic ontological relations
+  summary: OBO RO is-a, part-of, transformation-of and preceded-by adopted conceptually; spatial and has_participant/has_agent
+    relations deliberately excluded. Not all proposed relations implemented in current release.
+- id: E10
+  pages:
+  - 6
+  locator: Relations between processes/tasks; Relations among tasks
+  summary: measured by targets a task contrast; descended-from expresses task phylogeny/adaptation, with meta-analytic
+    commensurability guiding task-versus-variant distinction. These are not formal cardinality, inverse or identity
+    axioms.
+- id: E11
+  pages:
+  - 6
+  locator: Literature relations; Relations to observed data
+  summary: All entities including relations can carry citations; CiTO support/refutation is described but only citesForInformation
+    is currently implemented. CA links to external data/entities rather than storing empirical data.
+- id: E12
+  pages:
+  - 6
+  locator: Complete Technical infrastructure; footnote 4 and author GitHub link
+  summary: Native MySQL store, generated OWL, RDF/SPARQL interfaces and LAMP/AJAX/JSON infrastructure. Author-reported
+    export/accessibility is distinguished from present or historical independent execution.
+- id: E13
+  pages:
+  - 6
+  - 7
+  locator: Benefits and challenges of collaborative knowledge building; Capturing and resolving disagreement; Curation;
+    footnote 5
+  summary: Wikipedia lessons motivate integrated concept/relation discussion, evidence-based as-needed curation
+    and fork/merge dispute handling; no measured CA agreement/quality outcome is supplied.
+- id: E14
+  pages:
+  - 7
+  - 8
+  locator: Utility introduction; Clearer vocabulary; Figure 3 and caption
+  summary: Concept forking creates sense-specific pages plus a disambiguation page; synonyms retain separate terms.
+    Figure 3 behavioral inhibition cognitive versus temperament meanings; screenshot license badge is site-specific.
+- id: E15
+  pages:
+  - 7
+  - 8
+  locator: Improved query expansion, complete example
+  summary: Historical sublexical-route expansion wrongly brings in drug-administration routes; specific phrase/related-concept
+    expansion proposed, with no precision/recall benchmark or current query execution.
+- id: E16
+  pages:
+  - 8
+  locator: Metadata annotation/meta-analysis; Theory testing
+  summary: Potential fine-grained brain-process mapping, cited eight-task prior study and future covariance-structure
+    comparison. Paper explicitly says system cannot yet support proposed theory testing.
+- id: E17
+  pages:
+  - 9
+  locator: Translational mental health research; Figure 4 and caption
+  summary: 'Five levels: syndromes, cognition, neural systems, signaling pathways and genes, with 13 named nodes.
+    Links are proposed empirical relations, width tied to PubMed Jaccard association; six-reference annotation callout
+    is illustrative, not clinical or causal validation.'
+- id: E18
+  pages:
+  - 9
+  - 10
+  locator: Present status and future plans, complete; footnotes 6-10
+  summary: Development began 2008; reports 904 terms=708 constructs+196 tasks, 795 definitions mostly acknowledged
+    insufficient, fewer than 900 relations. Personalization/mining/finer tasks and new database/animal-literature
+    links are future scope; some integrations already reported.
+- id: E19
+  pages:
+  - 10
+  - 11
+  locator: Conclusion, Acknowledgments, complete 39-item bibliography and conflict-of-interest statement
+  summary: All 39 references read; funding and author declarations retained. Related ontology citations are not
+    automatically imports or evidence that this project reproduced their experiments.
+- id: M01
+  source_kind: SPECIFICATION
+  url: https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2011.00017/full
+  locator: Publisher identity/date/DOI metadata; accessed 2026-10-28
+  summary: Official title, nine authors, 2011 date and DOI agree with retained complete PDF; selected PDF remains
+    the reading authority.
+- id: R01
+  source_kind: REPOSITORY
+  commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+  path: README.md
+  sha256: 1a02844686f8e70ca6ea555974d0ac6c1464fbacee1012bcb58a572447ee38df
+  locator: 'CognitiveAtlas/cogat-ontology ata600c366e9e3d3647a85cbc2c6e53e78abcf1951: README.md'
+  summary: Official export repository calls this an initial translation effort; v2 reorganizes contrasts under tasks
+    and adds measures. Not proof of 2011 fidelity.
+- id: R02
+  source_kind: REPOSITORY
+  commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+  path: create_owl.v2.py
+  sha256: 6e16d65328a011a0e32f8fe7dfb08a4f67595d6c103ea8871341f848759c61b0
+  locator: 'CognitiveAtlas/cogat-ontology ata600c366e9e3d3647a85cbc2c6e53e78abcf1951: create_owl.v2.py'
+  summary: Later generator has Python 2 idioms and raw SKOS-to-owl:Class replacement; embeds namespace/relation/domain-range
+    choices and versionString 0.3. Inspected, not executed.
+- id: R03
+  source_kind: REPOSITORY
+  commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+  path: ontology/cogat.v2.owl
+  sha256: 701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8
+  locator: 'CognitiveAtlas/cogat-ontology ata600c366e9e3d3647a85cbc2c6e53e78abcf1951: ontology/cogat.v2.owl'
+  summary: Selected retained RDF/XML ontology has header 0.3, no explicit imports and vocabulary references including
+    BFO1.1/CogPO2011. Header parse is not a full class glossary/profile test.
+- id: R04
+  source_kind: REPOSITORY
+  commit: 8ae51f96b6116fb2b00ef70f9feac5bac8444071
+  path: create_owl.py
+  sha256: 3797efce629faabff2d5d1178b9374bab6385f4e81b6fa36f06be84f80b044f2
+  locator: 'Exact paper-linked poldrack/cogat at 8ae51f96b6116fb2b00ef70f9feac5bac8444071: create_owl.py'
+  summary: Author-linked generator exists and is pinned; source/data inputs and actual 2011 OWL-byte correspondence
+    remain unverified. Author two-condition BSD-style code notice does not blanket-license ontology/data.
+dimensions:
+  D1_identity_coverage:
+    statement: All 11 PDF/article pages, four figures including every schema field and the 13-node five-layer empirical
+      illustration, 10 numbered footnotes and 39 references were read and visually checked. No tables, appendices
+      or numbered equations occur. Nine authors/date/DOI match publisher metadata. 2011 paper, 2015 export header
+      0.3, paper-linked repository and current website remain version-distinct.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E07
+    - E08
+    - E14
+    - E17
+    - E19
+    - M01
+    - R01
+    - R03
+    - R04
+  D2_problem_contribution:
+    statement: The paper addresses ambiguous cognitive terminology and the task/construct conflation that undermines
+      cross-study integration. It contributes a collaborative knowledge base separating mental constructs from experiments
+      and contrast-specific measurement claims, with discussion/sense management and standard access. It does not
+      claim a complete cognitive theory or validate all mental-to-brain mappings.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E04
+    - E05
+    - E06
+    - E10
+    - E13
+    - E14
+    - E18
+  D3_method:
+    statement: Manual source analysis and three-author curation seed >800 terms; schema/interaction design, native
+      relational implementation and feedback from a small investigator group support iterative development. The
+      paper cites interaction-design work and describes collaborative curation but no named ontology-engineering
+      protocol, systematic search/inclusion method, quantified usability/expert agreement study or reproducible
+      requirements-to-test matrix.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E12
+    - E13
+    - E18
+    - E19
+  D4_requirements:
+    statement: Needs include precise sense selection, distinguishing a task from a contrast/construct, recording
+      relations/disagreement/citations and linking external data. Source examples and reviewer adverse cases below
+      retain the intended use. There is no numbered CQ suite or complete operational acceptance test set; reviewer
+      reconstructed query needs are not attributed as author-tested CQs.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E02
+    - E03
+    - E06
+    - E10
+    - E11
+    - E14
+    - E15
+    - E16
+    - E18
+  D5_concepts:
+    statement: Catalog covers latent construct versus physical realization, optional process/representation distinction,
+      task/condition/indicator/contrast, task collections, sense/term/definition and contributor/curator/discussion/citation
+      roles. Every named diagram vocabulary and example is included. These are paper concepts, not a complete list
+      of all 904 2011 terms or selected OWL class IRIs.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E06
+    - E07
+    - E08
+    - E11
+    - E13
+    - E14
+    - E17
+    - E18
+  D6_relations_formalization:
+    statement: Selected is-a/part-of/transformation-of/preceded-by, contrast-bound measured-by, task descent and
+      citation/lexical/collaboration links are preserved with scope. Spatial and participation/agent relations are
+      expressly excluded. No numbered DL/FOL axioms, property characteristics, cardinalities, signed arithmetic
+      implementation or exact class/individual semantics are supplied. Figure captions distinguish empirical associations
+      from formal ontological relations.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E06
+    - E07
+    - E08
+    - E09
+    - E10
+    - E11
+    - E17
+  D7_grounding:
+    statement: Paper reuses SKOS, CogPO and selected OBO RO relations plus Dublin Core/SIOC/SWAN/CiTO/NEMO metadata
+      or application vocabularies. It does not establish BFO/DOLCE/UFO upper grounding or an exact imported edition.
+      Later export includes BFO1.1/CogPO2011 namespace hints but no declared imports. Latent constructs, neural
+      realizations, agency participation and temporal identity remain delimited rather than silently completed.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E05
+    - E07
+    - E08
+    - E09
+    - E11
+    - E12
+    - R02
+    - R03
+  D8_artifact_correspondence:
+    statement: Exact paper author GitHub link was followed, current public commit/tree checked and generator bytes
+      pinned. Official retained 13-file export and separate two-file discussion repository are independently identified;
+      selected source blobs match API hashes. Header metadata parse succeeded, while generation, pickle loading,
+      complete class glossary, imports, reasoning and SPARQL were not executed. Source license notices and historical
+      correspondence remain separate.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E12
+    - E18
+    - R01
+    - R02
+    - R03
+    - R04
+  D9_evaluation:
+    statement: Evidence is an implemented prototype with schema figures and sense screenshot, author-reported 904
+      entries/795 definitions/<900 relations, external prior studies and proposed utility. Most initial definitions
+      are expressly insufficient; no controlled precision/recall, mapping accuracy, user agreement or reasoning
+      benchmark is reported. Eight-task prior work, six-reference illustration and literature Jaccard association
+      are not fresh CA evaluation populations.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E07
+    - E08
+    - E14
+    - E15
+    - E16
+    - E17
+    - E18
+    - E19
+  D10_critical_synthesis:
+    statement: 'Strong overlap with Clariceptify concerns theory-bound conceptual claims, terms/senses, contributors,
+      rationale/disagreement and evidence links. Limits include optional undeclared formal semantics, missing measured-claim
+      context, citation polarity implementation gap, incomplete definitions, coarse tasks and later export/type
+      differences. Retain these as comparison/test proposals in #241/#254/#126; no automatic alignment, new novelty
+      claim or model/release change follows.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E05
+    - E10
+    - E11
+    - E13
+    - E14
+    - E16
+    - E18
+    - R02
+    - R03
+catalog:
+- id: C001
+  label: Mental concept / latent construct
+  statement: A theoretically postulated unobservable construct; the knowledge-base entity denotes the construct
+    rather than its physical brain instantiation. Not every concept is required to be categorized as a process or
+    representation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C002
+  label: Mental process
+  statement: A proposed kind of mental concept operating on representations; paper permits non-representational
+    cognition and does not mandate this taxonomy for every concept.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C003
+  label: Mental representation
+  statement: A possible mental entity standing in relation to a physical arrangement or abstract concept, including
+    another mental entity. Its existence is not mandatory for all accepted theories.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C004
+  label: Physical instantiation / brain tissue
+  statement: Realization of a mental construct is distinguished from what the knowledge-base record refers to. Paper
+    supplies no complete realization/dependence axiom.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C005
+  label: Mental task / psychological task
+  statement: A prescribed activity to engage/manipulate mental function for investigation, not identical to the
+    latent process being studied; overt response is optional.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E06
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C006
+  label: Experimental condition
+  statement: Subset of an experiment defining a manipulation, including categorical or parametric conditions. Reuses
+    CogPO condition schema.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C007
+  label: Indicator
+  statement: A recorded quantitative or qualitative analysis variable, including response time/accuracy and physiological
+    measurements. The original implementation emphasizes behavioral indicators.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C008
+  label: Contrast
+  statement: A function over experimental conditions and their indicators; may be one condition, a baseline comparison
+    or a linear/nonlinear combination. The process-measurement claim attaches here rather than directly to the task
+    label.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E10
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C009
+  label: Task collection / battery
+  statement: Collection of related tasks, illustrated by CNP Memory Battery and SWAN collection reuse; distinct
+    from a task subtype or contrast.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C010
+  label: Concept definition
+  statement: Editable initial definition attached to a term; source explicitly acknowledges most 2011 definitions
+    would be insufficient to experts. Text presence is not logical sufficiency.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E18
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C011
+  label: Concept sense
+  statement: A separate meaning of a term created when conceptual disagreement is irreconcilable; has its own page
+    and task relationships.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C012
+  label: Disambiguation page
+  statement: Routes an ambiguous original term to distinct sense pages rather than treating them as equivalent.
+    Figure 3 gives cognitive and temperament behavioral-inhibition senses.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C013
+  label: Synonym / alternate label
+  statement: Different expressions considered to refer to the same process while retaining original terms. Lexical
+    synonymy is not by itself owl:equivalentClass or sameAs.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E14
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C014
+  label: Term / label / title
+  statement: Surface expression used to identify a mental concept/task; multiple meanings or multiple names motivate
+    explicit concept/term separation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E07
+  - E14
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C015
+  label: Assertion / theoretical claim
+  statement: Relations express theoretical commitments linking concepts or contrasts, which can be discussed and
+    cited. A relation statement is not automatically an uncontested scientific fact.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E10
+  - E11
+  - E13
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C016
+  label: Discussion / forum
+  statement: Integrated discussion for concepts and relations keeps disagreements/history available beside editable
+    content. It is not the mental process being described.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E13
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C017
+  label: Literature citation / bibliography
+  statement: Reference metadata associated with an entity or relation. The implemented informative-citation link
+    is weaker than evidential support or refutation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E11
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C018
+  label: Contributor / curator
+  statement: People contribute and resolve disputes; three named authors curate the initial vocabulary and core/volunteer
+    curators act as needed. No formal agent/role ontology or measured consensus outcome is given.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E13
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C019
+  label: Native relational database / generated OWL
+  statement: Knowledge is stored in MySQL and transformed to OWL; export may omit collaboration/provenance information
+    and is not the semantic authority for all native content.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - R02
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C020
+  label: Bipartite process-task organization
+  statement: Separate linked ontologies motivate measurement links; within-layer concept and task relations also
+    exist, so the entire graph is not claimed globally bipartite.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E09
+  - E10
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C021
+  label: Task phylogeny / adaptation / variant
+  statement: Historical/conceptual descent is distinguished from small variations; proposed distinction depends
+    on whether results can be combined in meta-analysis. No algorithmic threshold is supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C022
+  label: Empirical association / observed data
+  statement: External data links and literature co-occurrence connect levels of knowledge. They do not establish
+    causality, identity or a unique biological realization.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E17
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C023
+  label: Evidence-based curation / consensus
+  statement: Community views are elicited but curation should consider evidence rather than popular vote alone.
+    No formal decision procedure, voting threshold or agreement metric is supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C024
+  label: Fork / merge
+  statement: Collaborative operations used when discussion cannot reconcile differences; detailed identifier migration,
+    link redistribution and merge rules remain unspecified.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C025
+  label: Polysemy / synonymy
+  statement: One label with multiple meanings versus multiple labels for similar content; query expansion must preserve
+    the intended sense.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E14
+  - E15
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C026
+  label: Construct validity
+  statement: Whether a contrast/manipulation measures the intended latent construct; disputed Stroop/N-back examples
+    show that naming a task after a process is insufficient.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C027
+  label: Meta-analysis / commensurability
+  statement: Combining empirical results requires compatible tasks/metadata. The paper uses this as a task-identity
+    criterion without defining a reproducible test.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  - E16
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C028
+  label: Theory / covariance-structure comparison
+  statement: Different cognitive theories could predict different task covariance structures; this is explicitly
+    future functionality, not a completed CA experiment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C029
+  label: Forward / reverse inference maps
+  statement: External NeuroSynth mappings are reported for concept terms; they are linked external products, not
+    inferential validation of every CA relation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C030
+  label: Jaccard association
+  statement: Figure 4 edge width represents PubMed co-occurrence strength described as a Jaccard coefficient. No
+    counted search sets, date, query table or reproducible edge-weight calculation is supplied.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C031
+  label: Cognitive scope
+  statement: Cognition is used broadly to include emotion and motivation, without claiming exhaustive coverage of
+    all possible mental entities.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C032
+  label: Dimensions / symptoms / syndromes
+  statement: Translational research motivation connects dimensional cognition to psychiatric labels. This is an
+    illustrative research framework, not a clinical classifier or validated intervention.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C033
+  label: Personalization / mining / integration
+  statement: Proposed tracking/recommendations, literature-mined candidate relations and broader external database
+    links; separate future plans from already-reported integrations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: PAPER_CONCEPT
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C034
+  label: skos:Concept
+  statement: Paper mental-concept modeling target; later exporter rewrites SKOS resources to OWL classes, requiring
+    a separate level-of-representation check.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+  - R02
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C035
+  label: SKOS labels/definition/scheme
+  statement: prefLabel, altLabel, definition and inScheme provide lexical and organization metadata; not sufficient
+    mental-process identity axioms.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C036
+  label: Dublin Core metadata
+  statement: Figure fields reuse dc:identifier, dc:Title, dc:Contributor and dc:Date exactly as printed, including
+    capitalization. RDF namespace/term variants need technical reconciliation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C037
+  label: SIOC Forum
+  statement: Referenced schema for discussion content; no complete forum/argument ontology is presented.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C038
+  label: SWAN Citation Ontology / citations:Citation
+  statement: Diagram bibliography reference, distinct from prose CiTO citation typing. Paper does not establish
+    their exact equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E11
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C039
+  label: SWAN Collections Ontology / collections:Collection
+  statement: External collection category for task battery.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C040
+  label: CogPO task category
+  statement: Prose names Behavioral Experimental Paradigm; diagram prints cogpo:BehavioralExperiment. Exact ontology
+    IRI/edition correspondence must be checked separately.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C041
+  label: CogPO condition category
+  statement: Behavioral Experimental Paradigm Condition in prose, diagram cogpo:BehavioralExperimentParadigmCondition;
+    source strings are preserved without inventing an equivalence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C042
+  label: CogPO contrast category
+  statement: Behavioral Experimental Paradigm Contrast in prose, diagram cogpo:BehavioralExperimentParadigmContrast.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C043
+  label: NEMO / nemo:ERP_activity
+  statement: Diagram reuse relating an electrophysiological indicator to an external vocabulary. No complete NEMO
+    import or definition is supplied by the article.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C044
+  label: OBO Relational Ontology
+  statement: Conceptual source of selected basic relations, with spatial and participation relations explicitly
+    excluded. This is not proof of adopting BFO or any exact upper-ontology edition.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C045
+  label: CiTO / citesForInformation
+  statement: Citation-typing vocabulary; only informative citation relation is reported implemented, despite richer
+    support/refutation possibilities.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C046
+  label: Gene Ontology
+  statement: Motivating analogy and possible external functional annotations/integration; GO's successful use is
+    not a CA evaluation result.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E11
+  - E18
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C047
+  label: MeSH
+  statement: Historical biomedical search vocabulary criticized for coarse/outdated/mixed cognitive categories and
+    poor route expansion. Not a controlled contemporary retrieval benchmark.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E15
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C048
+  label: Foundational Model of Anatomy / Brainmap
+  statement: External brain-structure/data resources; their name or reference is not CA upper-foundation grounding.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C049
+  label: ACT-R / SOAR / non-representational theories
+  statement: Background theory alternatives motivating broad coverage and optional representation commitments; not
+    imported CA modules.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E04
+  - E05
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C050
+  label: RDF / SPARQL / OWL export
+  statement: Interoperability mechanisms described in 2011; current availability and actual generation/query tests
+    are not established by paper description alone.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C051
+  label: PubMed / Entrez
+  statement: Citation and historical literature-association service; no 2011 searches were rerun here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E11
+  - E12
+  - E15
+  - E17
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C052
+  label: PubAtlas / PubBrain / PhenoWiki
+  statement: Author-reported integration for associations, brain atlas mapping and quantitative annotations; no
+    fresh integration test here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C053
+  label: NeuroSynth / SumsDB / NeuroLex
+  statement: External inference/data/lexicon resources; distinguish reported existing maps from proposed direct
+    links and future lexicon inclusion.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  kind: REUSED_VOCABULARY_OR_EXTERNAL_RESOURCE
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C054
+  label: 'Working memory: maintenance / manipulation / temporal'
+  statement: Three source senses illustrated by delayed response, letter-number sequencing and radial-arm-maze paradigms;
+    not declared equivalent.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C055
+  label: Working memory / short-term memory / active maintenance
+  statement: Terminology overlap is qualified by sense; not an unconditional identity across every theory or export
+    version.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E07
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C056
+  label: Sternberg item-recognition task
+  statement: High/low load contrasts may concern working memory while match/mismatch contrasts need not; one task
+    can support different theoretical interpretations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C057
+  label: Color-word Stroop task / Stroop effect
+  statement: Congruent, incongruent and neutral conditions with signed contrasts. Labeling it an inhibition task
+    is disputed; measured-by link is a theory-bound claim.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  - E10
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C058
+  label: N-back / continuous performance task
+  statement: Figure 2 task descent and condition/contrast structure; N-back validity is disputed in the introduction.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C059
+  label: CNP Memory Battery
+  statement: Named task collection in Figure 2, not a mental concept.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C060
+  label: Cognitive control / response selection / task-set switching
+  statement: Literature-based many-to-many task associations illustrate unstable construct terminology; not new
+    class declarations counted from the article.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C061
+  label: Declarative memory / explicit memory
+  statement: Synonym illustration; memory retrieval, memory encoding and memory consolidation illustrate part/precedence/transformation
+    relations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E09
+  - E14
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C062
+  label: 'Behavioral inhibition: cognitive / temperament'
+  statement: Figure 3 two senses; cognitive response inhibition concerns actions, temperament concerns shyness/social
+    anxiety. Screenshot is a positive disambiguation example, not proof every ambiguous term is resolved.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C063
+  label: Sublexical route / phonological assembly
+  statement: Phrase-specific retrieval and possible related-term expansion; drug-administration route is an adverse
+    expansion outcome.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C064
+  label: Categorization / recognition memory
+  statement: Single-process versus separate-process theories illustrate future covariance-model comparison.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C065
+  label: Schizophrenia / Bipolar Disorder / ADHD
+  statement: Three syndrome labels in Figure 4; illustrative association nodes, not diagnostic criteria.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C066
+  label: WM Updating / Response Inhibition
+  statement: Two cognitive nodes in Figure 4, distinct from syndrome or brain-system nodes.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C067
+  label: DL PFC / VL PFC
+  statement: Two neural-system nodes; callout links response inhibition and VLPFC activity through Stop Signal Task
+    contrasts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C068
+  label: Dopamine D1 / Dopamine D2 / Adrenergic A2a
+  statement: Three signaling-pathway labels printed in Figure 4; retain source categorization without inferring
+    molecular identity/causality.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C069
+  label: COMT / DRD2 / ADRA2a
+  statement: Three gene labels exactly as printed in Figure 4; not converted into inferred genetic associations.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C070
+  label: 'Stop Signal Task: stop versus go'
+  statement: Callout ties task contrast, response inhibition, VLPFC activity and six referenced reports; relation/provenance
+    example only.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C071
+  label: Response time / accuracy / fMRI activation map / ERP component amplitude
+  statement: Four indicators in Figure 2. These are heterogeneous measurement products, not identical to the task
+    or the latent construct.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C072
+  label: BrainMap / SumsDB / Neurosynth / OpenFMRI
+  statement: Four named imaging database boxes in Figure 2, connected empirically rather than via a claimed formal
+    class hierarchy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: PAPER_EXAMPLE_OR_DISTINCTION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+- id: C073
+  label: is-a / relation
+  statement: 'mental concept -> broader mental concept: Selected OBO relation, exemplified by declarative memory/memory.
+    Does not establish an OWL class-versus-SKOS individual policy by itself.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: C074
+  label: part-of / relation
+  statement: 'entity -> containing entity: Cognitive-part examples and task-collection membership occur. Different
+    uses need typing and cannot all silently become one mereology.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: C075
+  label: transformation-of / relation
+  statement: 'mental entity -> prior-form mental entity: Example consolidated versus encoded memory; no complete
+    temporal transformation/identity theory is given.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: C076
+  label: preceded-by / relation
+  statement: 'mental process -> earlier mental process: Memory consolidation preceded by encoding; source gives
+    no explicit transitivity, irreflexivity or endpoint restrictions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: C077
+  label: measured by / measured-by / relation
+  statement: 'mental process or concept -> task contrast: A theoretical measurement claim about a particular contrast;
+    never infer a task/construct identity or causal realization relation from this alone.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E08
+  - E10
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: AUTHOR_DEFINED_RELATION
+- id: C078
+  label: descended-from / descended_from / relation
+  statement: 'task -> antecedent task: Task adaptation/phylogeny, distinct from is-a; commensurability motivates
+    task-versus-variant distinction.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: AUTHOR_DEFINED_RELATION
+- id: C079
+  label: has_condition / relation
+  statement: 'task -> experimental condition: Printed Figure 2 connector, without a complete property/cardinality
+    axiom.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: DIAGRAM_RELATION
+- id: C080
+  label: has_contrast / relation
+  statement: 'task -> contrast: Printed Figure 2 connector; a task can support multiple contrasts.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: DIAGRAM_RELATION
+- id: C081
+  label: includes_condition / relation
+  statement: 'contrast -> participating condition: Figure 2 connector; it does not specify signed weights, arithmetic
+    or indicator binding.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: DIAGRAM_RELATION
+- id: C082
+  label: synonym / altLabel / relation
+  statement: 'term or concept -> alternate expression: Retains original terms rather than automatic merging; equivalence
+    strength requires an explicit semantics.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  - E07
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: LEXICAL_RELATION
+- id: C083
+  label: citesForInformation / relation
+  statement: 'entity or assertion -> citation: Only implemented literature relation reported; not automatically
+    supports/refutes.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: IMPLEMENTED_AUTHOR_REPORTED
+- id: C084
+  label: supports / refutes / relation
+  statement: 'citation -> claim, intended evidential role: Described CiTO potential, not claimed implemented in
+    the 2011 release.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: PROPOSED_NOT_IMPLEMENTED
+- id: C085
+  label: has_participant / has_agent / relation
+  statement: 'process -> continuant participant/agent: Deliberately excluded because latent-entity participation
+    is unresolved. Do not count as implemented agency support.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: EXPLICITLY_EXCLUDED
+- id: C086
+  label: spatial relations / relation
+  statement: 'spatially located entities: Excluded from the selected OBO relation set; no spatial-location model
+    is supplied.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: EXPLICITLY_EXCLUDED
+- id: C087
+  label: identifier / Title / Contributor / Date / relation
+  statement: 'record -> metadata value: Dublin Core-inspired fields printed in both schemas; actual namespace and
+    term capitalization require checking.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: METADATA_FIELD
+- id: C088
+  label: prefLabel / altLabel / definition / inScheme / relation
+  statement: 'concept record -> label/definition/scheme: SKOS references printed in Figures1/2; textual definition
+    and scheme membership are distinct from logical class definitions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: METADATA_FIELD
+- id: C089
+  label: discussion / bibliography / relation
+  statement: 'entity or relation -> forum/citation: Collaborative/provenance links, distinct from psychological
+    or biological relation types.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E11
+  - E13
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: COLLABORATIVE_METADATA
+- id: C090
+  label: empirical association / literature link strength / relation
+  statement: 'cross-level entities -> associated entities: Figure 4 Jaccard-weighted literature associations, not
+    formal inheritance or causal edges.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: EMPIRICAL_PROPOSAL
+- id: C091
+  label: fork / merge / sense routing / relation
+  statement: 'original concept page -> revised or separate sense pages: Knowledge-base revision operations; paper
+    supplies no complete formal version/identity/migration rules.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  kind: PAPER_RELATION
+  source_definition: Attributed reviewer paraphrase of selected paper; not a released-class definition glossary.
+  source_scope: COLLABORATIVE_OPERATION
+relation_index:
+- id: R01
+  label: is-a
+  statement: 'mental concept -> broader mental concept: Selected OBO relation, exemplified by declarative memory/memory.
+    Does not establish an OWL class-versus-SKOS individual policy by itself.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  signature: mental concept -> broader mental concept
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: R02
+  label: part-of
+  statement: 'entity -> containing entity: Cognitive-part examples and task-collection membership occur. Different
+    uses need typing and cannot all silently become one mereology.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E09
+  signature: entity -> containing entity
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: R03
+  label: transformation-of
+  statement: 'mental entity -> prior-form mental entity: Example consolidated versus encoded memory; no complete
+    temporal transformation/identity theory is given.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  signature: mental entity -> prior-form mental entity
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: R04
+  label: preceded-by
+  statement: 'mental process -> earlier mental process: Memory consolidation preceded by encoding; source gives
+    no explicit transitivity, irreflexivity or endpoint restrictions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  signature: mental process -> earlier mental process
+  source_scope: AUTHOR_ADOPTED_RELATION
+- id: R05
+  label: measured by / measured-by
+  statement: 'mental process or concept -> task contrast: A theoretical measurement claim about a particular contrast;
+    never infer a task/construct identity or causal realization relation from this alone.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E07
+  - E08
+  - E10
+  signature: mental process or concept -> task contrast
+  source_scope: AUTHOR_DEFINED_RELATION
+- id: R06
+  label: descended-from / descended_from
+  statement: 'task -> antecedent task: Task adaptation/phylogeny, distinct from is-a; commensurability motivates
+    task-versus-variant distinction.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E10
+  signature: task -> antecedent task
+  source_scope: AUTHOR_DEFINED_RELATION
+- id: R07
+  label: has_condition
+  statement: 'task -> experimental condition: Printed Figure 2 connector, without a complete property/cardinality
+    axiom.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  signature: task -> experimental condition
+  source_scope: DIAGRAM_RELATION
+- id: R08
+  label: has_contrast
+  statement: 'task -> contrast: Printed Figure 2 connector; a task can support multiple contrasts.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  signature: task -> contrast
+  source_scope: DIAGRAM_RELATION
+- id: R09
+  label: includes_condition
+  statement: 'contrast -> participating condition: Figure 2 connector; it does not specify signed weights, arithmetic
+    or indicator binding.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  signature: contrast -> participating condition
+  source_scope: DIAGRAM_RELATION
+- id: R10
+  label: synonym / altLabel
+  statement: 'term or concept -> alternate expression: Retains original terms rather than automatic merging; equivalence
+    strength requires an explicit semantics.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  - E07
+  signature: term or concept -> alternate expression
+  source_scope: LEXICAL_RELATION
+- id: R11
+  label: citesForInformation
+  statement: 'entity or assertion -> citation: Only implemented literature relation reported; not automatically
+    supports/refutes.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  signature: entity or assertion -> citation
+  source_scope: IMPLEMENTED_AUTHOR_REPORTED
+- id: R12
+  label: supports / refutes
+  statement: 'citation -> claim, intended evidential role: Described CiTO potential, not claimed implemented in
+    the 2011 release.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  signature: citation -> claim, intended evidential role
+  source_scope: PROPOSED_NOT_IMPLEMENTED
+- id: R13
+  label: has_participant / has_agent
+  statement: 'process -> continuant participant/agent: Deliberately excluded because latent-entity participation
+    is unresolved. Do not count as implemented agency support.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  signature: process -> continuant participant/agent
+  source_scope: EXPLICITLY_EXCLUDED
+- id: R14
+  label: spatial relations
+  statement: 'spatially located entities: Excluded from the selected OBO relation set; no spatial-location model
+    is supplied.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  signature: spatially located entities
+  source_scope: EXPLICITLY_EXCLUDED
+- id: R15
+  label: identifier / Title / Contributor / Date
+  statement: 'record -> metadata value: Dublin Core-inspired fields printed in both schemas; actual namespace and
+    term capitalization require checking.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  signature: record -> metadata value
+  source_scope: METADATA_FIELD
+- id: R16
+  label: prefLabel / altLabel / definition / inScheme
+  statement: 'concept record -> label/definition/scheme: SKOS references printed in Figures1/2; textual definition
+    and scheme membership are distinct from logical class definitions.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  signature: concept record -> label/definition/scheme
+  source_scope: METADATA_FIELD
+- id: R17
+  label: discussion / bibliography
+  statement: 'entity or relation -> forum/citation: Collaborative/provenance links, distinct from psychological
+    or biological relation types.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - E11
+  - E13
+  signature: entity or relation -> forum/citation
+  source_scope: COLLABORATIVE_METADATA
+- id: R18
+  label: empirical association / literature link strength
+  statement: 'cross-level entities -> associated entities: Figure 4 Jaccard-weighted literature associations, not
+    formal inheritance or causal edges.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  signature: cross-level entities -> associated entities
+  source_scope: EMPIRICAL_PROPOSAL
+- id: R19
+  label: fork / merge / sense routing
+  statement: 'original concept page -> revised or separate sense pages: Knowledge-base revision operations; paper
+    supplies no complete formal version/identity/migration rules.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  signature: original concept page -> revised or separate sense pages
+  source_scope: COLLABORATIVE_OPERATION
+commitments:
+- id: K01
+  label: Task/construct separation
+  statement: The schema separates latent mental concepts from prescribed tasks and uses contrast-level measurement
+    links; it does not equate tasks with the processes they are named after.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E06
+  - E10
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K02
+  label: Theory-neutral optional subdivision
+  statement: Representations/processes are possible mental-concept subclasses but not required; this accommodates
+    non-representational theories. No mandatory covering axiom is printed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K03
+  label: SKOS and export representation levels
+  statement: Paper models mental concepts with skos:Concept; later script rewrites source SKOS elements into owl:Class.
+    Actual interpretation and identity require separate technical comparison.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - R02
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K04
+  label: Prescribed task without overt behavior
+  statement: A task can be an experimental stimulation without motor response; observable behavior is not a necessary
+    condition for this task category.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K05
+  label: Condition versus indicator versus contrast
+  statement: Condition is manipulation context, indicator is recorded variable, contrast is a function of condition
+    measurements. A contrast edge alone does not encode the numeric function.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K06
+  label: Stroop signed contrast examples
+  statement: Source prose gives incongruent minus congruent and incongruent minus neutral as Stroop-effect contrasts.
+    This is illustrative arithmetic, not numbered ontology axioms or independently computed scores.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K07
+  label: N-back contrast sign retained
+  statement: Figure 2 labels its example 0-back minus 2-back. Retain that orientation, rather than silently substituting
+    2-back minus 0-back; its relation to expected measurement polarity needs an explicit interpretation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K08
+  label: Basic relation selection and exclusion
+  statement: is-a/part-of/transformation-of/preceded-by are adopted; spatial and process-participant/agent relations
+    are excluded. Property characteristics are not stated as DL axioms.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K09
+  label: Contrast-bound measured-by
+  statement: Mental process is related to the contrast that is hypothesized to manipulate/measure it. The claim
+    is theoretical and does not prove construct validity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K10
+  label: Task descent and commensurability
+  statement: descended-from is historical/conceptual adaptation, not automatically subclassing. The source uses
+    meta-analysis compatibility to distinguish derivation from minor variants without an operational criterion.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K11
+  label: Informative citation implementation limit
+  statement: Current cited implementation has one literature relation equivalent to citesForInformation; richer
+    CiTO support/refutation is described, not implemented as reported.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K12
+  label: Native store/export distinction
+  statement: MySQL is the native store; OWL is generated for interoperability. No lossless semantic round-trip or
+    complete export of discussion/conflict metadata is demonstrated.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - R02
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K13
+  label: No empirical data storage
+  statement: The paper repeatedly distinguishes storing knowledge/annotations from linking to external empirical
+    datasets; do not claim internal patient, genetic or imaging data.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E18
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K14
+  label: Discussion and evidence-based curation
+  statement: Concept/relation disagreements are exposed and curated with community evidence; consensus quality,
+    traceable decisions and preservation of minority theories are not formally guaranteed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K15
+  label: Forked senses versus synonyms
+  statement: Forking produces distinct sense pages with separate task relations; synonym designation retains terms.
+    Neither operation automatically establishes OWL equivalence or identity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K16
+  label: Empirical cross-level association
+  statement: Figure 4 edges reflect proposed empirical links and literature Jaccard association, not inheritance,
+    causation or a biological mechanism proof.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K17
+  label: 2011 status is author-reported population
+  statement: Initial >800 curated terms differs from later 904 entries (708 constructs+196 tasks).795 definitions
+    are explicitly often insufficient; fewer than 900 relation statements is not a relation-type count.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E18
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+- id: K18
+  label: Future utility boundary
+  statement: Precision/recall improvement, richer meta-analysis, theory testing and translation are proposed uses;
+    theory testing is explicitly unsupported at that time. No new controlled utility experiment is reported.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  - E16
+  - E17
+  - E18
+  commitment_kind: PAPER_PROSE_OR_FIGURE_NOT_EXECUTABLE_AXIOM
+  source_proposal_basis: AUTHOR_REPORTED
+scenarios:
+- id: S01
+  label: Working-memory polysemy
+  statement: Maintenance, manipulation and temporal/spatial memory senses share a label but differ in intended construct/task
+    context. A query over the label alone can mix evidence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S02
+  label: Synonym-aware maintenance retrieval
+  statement: Short-term memory and active-maintenance terminology can inform retrieval for a specified sense, with
+    relevance/noise tradeoffs preserved.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E02
+  - E15
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S03
+  label: Sternberg within-task contrast
+  statement: High-versus-low load and probe-match-versus-mismatch contrasts in one task need not measure the same
+    process. Do not attach all measurement claims directly to the task name.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  scenario_kind: AUTHOR_ADVERSE_EXAMPLE
+- id: S04
+  label: Stroop inhibition dispute
+  statement: Alternative accounts dispute active inhibition as the cause of the Stroop effect; citation and claimant
+    context matter even if the task and contrast are agreed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E10
+  scenario_kind: AUTHOR_ADVERSE_EXAMPLE
+- id: S05
+  label: N-back construct validity
+  statement: A task commonly labeled working memory may have disputed construct validity; the generated ontology
+    label is not empirical confirmation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+  scenario_kind: AUTHOR_ADVERSE_EXAMPLE
+- id: S06
+  label: Passive stimulation task
+  statement: A movie-viewing imaging experiment can be a task without an overt motor response. Requiring an action
+    output would exclude this intended case.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S07
+  label: Signed Stroop difference
+  statement: Incongruent-minus-congruent and incongruent-minus-neutral are distinct contrast functions, requiring
+    conditions and indicators rather than one task-level link.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S08
+  label: N-back sign reversal
+  statement: Figure 2 source contrast is 0-back minus 2-back; reversing it changes the sign even if both link the
+    same conditions. includes_condition edges alone do not encode weights or polarity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  scenario_kind: REVIEWER_ADVERSE_CASE
+- id: S09
+  label: Task adaptation versus variant
+  statement: A descended-from task may require separate meta-analysis treatment if its outputs are not commensurate;
+    same name or superficial structural similarity is insufficient.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S10
+  label: Informative citation without support
+  statement: A citation mentioning a claim can supply context or opposition rather than support. citesForInformation
+    must not be promoted to an evidential-support relation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  scenario_kind: REVIEWER_ADVERSE_CASE
+- id: S11
+  label: Behavioral-inhibition sense split
+  statement: Cognitive inhibition of actions and temperament/shyness senses occupy separate pages and measurement
+    relations after disambiguation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S12
+  label: Synonyms without forced merge
+  statement: Declarative/explicit-memory expressions are retained while marked synonymous; this does not by itself
+    authorize collapsing every concept/version resource.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E14
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S13
+  label: Fork with stale measurement links
+  statement: If a disputed concept is split, earlier citations/contrasts may apply to only one new sense. Paper
+    does not define automatic reassignment or versioned provenance rules.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  scenario_kind: REVIEWER_ADVERSE_CASE
+- id: S14
+  label: Sublexical route query
+  statement: Historical PubMed expansion adds drug-administration routes to a cognitive phrase. Proposed sense-specific
+    expansion has no independently measured precision/recall gain here.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E15
+  scenario_kind: AUTHOR_ADVERSE_EXAMPLE
+- id: S15
+  label: Latent variables and eight tasks
+  statement: The cited 2009 task/process analysis motivates future meta-analysis. Its eight-task dataset is not
+    a new evaluation or rerun of this 2011 CA prototype.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  scenario_kind: AUTHOR_CITED_PRIOR_EXAMPLE
+- id: S16
+  label: Competing categorization theories
+  statement: Single-versus-separate cognitive processes could yield different covariance predictions. Authors explicitly
+    say CA cannot yet perform this theory testing.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E16
+  scenario_kind: AUTHOR_FUTURE_EXAMPLE
+- id: S17
+  label: Stop-go response inhibition and VLPFC
+  statement: Figure 4 callout relates a task contrast, cognitive label and brain activation, with six cited reports.
+    Neither citation count nor edge width proves a causal neural mechanism.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  scenario_kind: AUTHOR_ILLUSTRATION
+- id: S18
+  label: Same literature association, different mechanism
+  statement: Co-occurrence can reflect shared terminology or publication patterns; the same Jaccard value need not
+    mean the same biological relation or construct validity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  scenario_kind: REVIEWER_ADVERSE_CASE
+- id: S19
+  label: Present-but-insufficient definition
+  statement: 795 defined terms out of 904 does not imply expert-accepted definitions; authors say most are insufficient.
+    Missing 109 is arithmetic from reported totals, not a recreated database audit.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  scenario_kind: AUTHOR_EXPLICIT_LIMIT
+- id: S20
+  label: Class versus concept record
+  statement: Converting a SKOS concept record to owl:Class can change what it denotes and how relations are interpreted.
+    A byte-level string replacement is not a proved semantics-preserving transformation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - R02
+  scenario_kind: REVIEWER_ADVERSE_CASE
+- id: S21
+  label: External linked data
+  statement: Imaging/genetic/brain-structure resources are linked rather than stored; reproducible results depend
+    on external versions, query dates and availability.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E11
+  - E18
+  scenario_kind: AUTHOR_EXAMPLE
+- id: S22
+  label: Excluded agency participation
+  statement: A request for the agent participating in a latent process is outside the implemented relation set described
+    in the paper. A curator/contributor metadata field is not a substitute has_agent relation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E13
+  scenario_kind: REVIEWER_BOUNDARY_CASE
+evaluation:
+  Verification:
+    statement: 'Authors describe schema relations, database-to-OWL and RDF/SPARQL services, but provide no executed
+      OWL profile/reasoner/regression results in this selected paper. We verified retained hashes/API blob correspondence
+      and parsed selected header metadata only. Figures and prose are not a machine satisfiability proof; #241 owns
+      exact declarations/constraints and tests.'
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E07
+    - E08
+    - E09
+    - E12
+    - R01
+    - R02
+    - R03
+    - R04
+  Validation:
+    statement: Manual vocabulary curation by three authors and feedback from a small investigator group support
+      design relevance. Sample size/protocol/agreement statistics and expert adequacy criteria are not reported;
+      most available definitions are explicitly judged insufficient. A published paper's reviewer names do not validate
+      this dossier.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E05
+    - E13
+    - E18
+  Evaluation:
+    statement: Prototype figures/screenshots and 2011 content totals characterize development. No controlled retrieval,
+      mapping accuracy, curation outcome, usability or performance benchmark is reported. Eight-task earlier research,
+      six-reference edge illustration and Wikipedia/GO evidence are cited prior examples rather than fresh CA evaluation.
+      Proposed theory testing is explicitly unsupported.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E04
+    - E13
+    - E14
+    - E15
+    - E16
+    - E17
+    - E18
+  Assessment:
+    statement: The paper candidly preserves disagreement, optional representations, excluded agency/spatial relations,
+      coarse task detail and incomplete definitions. Reviewer adverse cases delimit measurement/context, synonym/fork
+      semantics, empirical association and later class-export differences without a corpus-wide quality score.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E03
+    - E05
+    - E09
+    - E10
+    - E11
+    - E13
+    - E14
+    - E17
+    - E18
+    - R02
+  Assurance:
+    statement: DOI/date/source hashes, public author/project repositories and metadata conventions support scholarly
+      and technical provenance. They do not certify expert consensus, sustained interoperability, lossless export
+      or historical-version equivalence. Code, data, paper and discussion-repository license statements remain separate.
+      Clariceptify scientific bytes and release status are protected independently.
+    basis: REVIEWER_INTERPRETATION
+    evidence:
+    - E01
+    - E12
+    - E18
+    - E19
+    - R01
+    - R02
+    - R03
+    - R04
+findings:
+- id: F01
+  label: Specific measurement granularity
+  statement: Separating latent construct, prescribed task, condition, indicator and contrast is a substantial prior
+    contribution. It avoids treating the name of an experiment as a validated process measurement.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E06
+  - E10
+  finding_kind: STRENGTH
+  followup_issue: 241
+- id: F02
+  label: Explicit disagreement and sense lifecycle
+  statement: Discussion, evidence-sensitive curation, forking and synonym retention address conceptual plurality
+    directly. This overlaps with conceptualization/rationale/agent concerns and must be included in later novelty
+    comparison.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  finding_kind: STRENGTH
+  followup_issue: 241
+- id: F03
+  label: Representation neutrality has a formal cost
+  statement: Optional process/representation categories accommodate broad theories but provide no complete covering/disjointness/identity/dependence
+    axioms. Do not infer a fully axiomatized cognitive foundation.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E09
+  finding_kind: LIMIT
+  followup_issue: 241
+- id: F04
+  label: Schema arrows do not settle class/individual semantics
+  statement: SKOS concepts, examples, class inheritance, metadata-property references and empirical database links
+    appear in visual schemas. A uniform mapping of all arrows to OWL subclass or all records to classes is not justified.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E08
+  - R02
+  finding_kind: FORMAL_LIMIT
+  followup_issue: 241
+- id: F05
+  label: Measured-by needs claim and context provenance
+  statement: A measurement link is a disputed theoretical claim about a specific contrast, not a universal causal
+    guarantee. A binary relation alone may lose theory, condition/indicator choice, population, evidence and disagreement
+    context.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E06
+  - E10
+  - E11
+  finding_kind: LIMIT
+  followup_issue: 241
+- id: F06
+  label: Condition membership omits arithmetic
+  statement: A contrast may be nonlinear or signed; includes_condition alone does not preserve coefficient, ordering,
+    baseline or indicator. Figure 2's 0-minus 2 orientation is kept literally for later technical testing.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  finding_kind: FORMAL_LIMIT
+  followup_issue: 241
+- id: F07
+  label: Task descent is not subclass identity
+  statement: Historical adaptation, subtype relations and meta-analytic commensurability are different concepts.
+    The paper gives no executable threshold for deciding task speciation or inheritable features.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E10
+  finding_kind: LIMIT
+  followup_issue: 241
+- id: F08
+  label: Agency and spatial semantics expressly excluded
+  statement: has_participant/has_agent and spatial relations are omitted. Bibliographic contributors and community
+    curators are represented socially, without resolving participation in a latent mental process.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E09
+  - E13
+  finding_kind: EXPLICIT_AUTHOR_LIMIT
+  followup_issue: 241
+- id: F09
+  label: Citation polarity implementation gap
+  statement: Paper discusses CiTO support/refutation capability but reports only informative citation implemented.
+    Figure 1 SWAN citation references are not automatically identical to CiTO typed evidence.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E11
+  finding_kind: EXPLICIT_AUTHOR_LIMIT
+  followup_issue: 241
+- id: F10
+  label: Definition presence is not adequacy
+  statement: 904 entries=708 mental constructs+196 tasks;795 have definitions but authors judge most insufficient
+    to experts. These are 2011 author-reported records, not complete valid class definitions or present website
+    counts.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  finding_kind: EXPLICIT_AUTHOR_LIMIT
+  followup_issue: 241
+- id: F11
+  label: Relation quantities are not property populations
+  statement: Fewer than 900 relations means database relation statements, not 900 property types; >800 initial terms
+    and 904 later entries describe different stages. Neither is an independently parsed OWL class count.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E18
+  finding_kind: ACCOUNTING_LIMIT
+  followup_issue: 241
+- id: F12
+  label: Utility gains remain largely prospective
+  statement: Schema/screenshot and developmental status demonstrate a prototype, not controlled gains in precision/recall,
+    neuroscientific prediction, mapping accuracy or expert agreement. Theory testing is explicitly future functionality.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E14
+  - E15
+  - E16
+  - E18
+  finding_kind: EVALUATION_LIMIT
+  followup_issue: 241
+- id: F13
+  label: Cross-level edges are empirical proposals
+  statement: Figure 4 Jaccard association and six-reference callout are not entailment, causal direction, molecular
+    mechanism or clinical validation. No reproducible query/date/count table is supplied for the illustrated weights.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E17
+  finding_kind: VALIDITY_LIMIT
+  followup_issue: 241
+- id: F14
+  label: Native database versus OWL export
+  statement: Paper uses MySQL with generated OWL, leaving richer data outside formal export. A lossless or semantically
+    equivalent round-trip of statements/discussions/claims is not shown.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - R02
+  finding_kind: REPRODUCIBILITY_LIMIT
+  followup_issue: 241
+- id: F15
+  label: Later generator changes representation
+  statement: 'Pinned generator rewrites skos:Concept to owl:Class and introduces its own measured_by/measures/domain/range
+    choices. These need exact all-class/constraint reconciliation in #241, not silent attribution to the 2011 diagrams.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+  - E08
+  - R02
+  - R03
+  finding_kind: ARTIFACT_QUESTION
+  followup_issue: 241
+- id: F16
+  label: Formal version and repository roles differ
+  statement: Selected cogat.v2.owl has formal header 0.3, not version 2. Export repository is distinct from the
+    two-file MIT discussion repository and the author link printed in 2011. Current-source availability does not
+    establish historical byte identity.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - R01
+  - R03
+  - R04
+  finding_kind: VERSION_LIMIT
+  followup_issue: 241
+- id: F17
+  label: Namespace does not establish foundation edition
+  statement: Paper reuses SKOS/CogPO/OBO RO; later BFO 1.1 namespace strings without declared imports do not establish
+    paper BFO grounding, exact imported definitions or an accepted alignment.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E08
+  - E09
+  - R02
+  - R03
+  finding_kind: FOUNDATION_LIMIT
+  followup_issue: 241
+- id: F18
+  label: Forking and curation execution not measured
+  statement: Evidence-based consensus is a design goal. The paper supplies no fork/merge lineage rule, decision
+    threshold, conflict-resolution success metric or measured curator agreement.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  - E18
+  finding_kind: LIMIT
+  followup_issue: 241
+- id: F19
+  label: License and source identity stay separate
+  statement: Open-access paper notice, screenshot site badge, generator author terms and discussion-repository MIT
+    notice concern different materials. No blanket reuse permission or upstream change is inferred.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E14
+  - R02
+  - R04
+  finding_kind: ASSURANCE_LIMIT
+  followup_issue: 241
+- id: F20
+  label: Editorial and integration boundaries
+  statement: p.10 CogPO cross-reference points to footnote 2 though CogPO is footnote 3. Existing PubAtlas/PubBrain/PhenoWiki
+    and NeuroSynth-map reports remain distinct from planned NeuroLex/finer-task/animal-literature integration. No
+    current endpoint or integration test was performed.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E18
+  - E19
+  finding_kind: SOURCE_LIMIT
+  followup_issue: 241
+questions:
+- id: Q01
+  label: Exact root, every class and historical provenance
+  statement: Choose the already-scoped cogat.v2.owl candidate, inventory every local/external/referenced/deprecated
+    class and missing definition, and compare selected export header 0.3 with the separate paper-linked generator/source.
+    Record any true 2011 correspondence limits; do not sum releases or reuse paper 904 as a class count.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E18
+  - R01
+  - R02
+  - R03
+  - R04
+  followup_issue: 241
+- id: Q02
+  label: SKOS concept to OWL class semantics
+  statement: Reconcile lexical concept records, class declarations, stable identifiers and class/instance/reference
+    levels in raw RDF and generated OWL. Assess whether transformation preserves the intended meaning rather than
+    merely syntactic output.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E05
+  - E07
+  - E08
+  - R02
+  followup_issue: 241
+- id: Q03
+  label: Measurement direction, domain, range and inverse
+  statement: Inspect measured_by and measures IRIs, task-versus-contrast targets, declared domain/range and any
+    inverse relation. Preserve exact generated source differences and test a correct contrast link plus an adverse
+    task-only or wrong-kind filler.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  - E10
+  - R02
+  - R03
+  followup_issue: 241
+- id: Q04
+  label: Conditions, indicators and signed contrast structure
+  statement: Check every selected contrast/condition class and restriction against diagrams, including source 0-back
+    minus 2-back orientation, task nesting and indicator provenance. Distinguish membership from signed functional
+    semantics and missing expression fields.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E06
+  - E08
+  - R02
+  followup_issue: 241
+- id: Q05
+  label: Basic relation mappings and foundations
+  statement: Trace is-a/part-of/transformation-of/preceded-by/descended-from mappings, all referenced undeclared
+    classes, namespaces and direct imports. Distinguish OBO RO conceptual reuse and BFO1.1/CogPO2011 namespace hints
+    from a verified foundation edition/import closure.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E08
+  - E09
+  - E10
+  - R02
+  - R03
+  followup_issue: 241
+- id: Q06
+  label: Definitions, citation polarity and source provenance
+  statement: For all selected classes locate author definition annotations or explicit missing states. Inspect CiTO/SWAN,
+    informative citations versus support/refutation and whether contributor/date/relation evidence survives export.
+    No comment text or citation count becomes logical adequacy.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E07
+  - E11
+  - E18
+  - R02
+  followup_issue: 241
+- id: Q07
+  label: Disagreement, synonym and fork lineage
+  statement: Determine which sense/discussion/synonym/merge assertions actually exist in the selected artifact.
+    Check a two-sense example and a stale-link counterexample without inventing identity or expert consensus semantics.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  - R02
+  - R03
+  followup_issue: 241
+- id: Q08
+  label: Reproducible generation and bounded semantic execution
+  statement: Bind raw data tables/dumps, source licenses and exact generator/tool versions. Use only declared safe,
+    reproducible parsing/profile/query/reasoner checks; generator and serialized input execution are not assumed
+    by paper closure. Report concrete blockers and no historical/current-equivalence claim.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E18
+  - R01
+  - R02
+  - R03
+  - R04
+  followup_issue: 241
+synthesis:
+- id: Y01
+  label: Prior conceptualization workflow
+  statement: Preserve explicit discussion, curators/contributors, sense forks and evidence-sensitive decisions as
+    prior conceptual knowledge lifecycle structure; do not claim such concerns absent from prior cognitive ontologies.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E13
+  - E14
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y02
+  label: Measurement versus mental-content mapping
+  statement: Use construct/task/contrast distinctions and theory-sensitive measured-by as candidate comparisons.
+    Shared labels or RDF access do not justify equivalence with Clariceptify entities.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E05
+  - E06
+  - E10
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y03
+  label: Candidate scenario bank
+  statement: Keep disputed Stroop/N-back interpretation, signed contrast, informative-but-opposing citation and
+    stale links after sense fork as later candidate tests, not adopted fixtures or requirements.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E03
+  - E08
+  - E11
+  - E14
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y04
+  label: Provenance and representation lessons
+  statement: Separate native knowledge base, generated OWL, current API and historical paper; report all-class definitions/imports
+    and missing source semantics before alignment proposals.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E12
+  - E18
+  - R01
+  - R02
+  - R03
+  - R04
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y05
+  label: Comparison and queue routing
+  statement: 'Paper #79 is complete within its reading boundary; technical #241, comparison #254 and synthesis #126
+    remain open. All three batch 4 paper inputs have complete deep dossiers but artifact work is unfinished. Next
+    acquired full paper is #262.'
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E18
+  - E19
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+- id: Y06
+  label: Owner decision
+  statement: All candidate reuse/extension decisions remain DEFER_TO_OWNER_AFTER_SYNTHESIS; no model, manuscript,
+    requirement or release changes follow from this paper review.
+  basis: REVIEWER_INTERPRETATION
+  evidence:
+  - E01
+  - E19
+  decision: DEFER_TO_OWNER_AFTER_SYNTHESIS
+figure_ledger:
+  path: evidence/related-work/deep-reviews/CognitiveAtlas2011/figure-ledger.yaml
+  sha256: 4bd4475a693824237f5530ed12546c40396eb889403882b182c48ba0f8044266
+  source_sha256: c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4
+  figures:
+  - 1
+  - 2
+  - 3
+  - 4
+paper_formalization:
+  numbered_formula_count: 0
+  prose_commitment_groups: 18
+  dl_axiom_population: null
+  formal_reasoner_execution: NOT_EXECUTED
+paper_population:
+  basis: AUTHOR_REPORTED
+  source_year: 2011
+  initial_vocabulary:
+    operator: GREATER_THAN
+    value: 800
+    curators: 3
+  current_terms: 904
+  mental_constructs: 708
+  tasks: 196
+  terms_with_definitions: 795
+  definition_adequacy: MOST_ACKNOWLEDGED_INSUFFICIENT
+  relations:
+    operator: LESS_THAN
+    value: 900
+  relation_population: STATEMENTS_NOT_PROPERTY_TYPES
+  independently_reproduced: false
+artifact:
+  issue: 241
+  status: PAPER_LINKED_AND_OFFICIAL_EXPORT_SOURCES_PINNED_TECHNICAL_REVIEW_OPEN
+  version_relation: 'Paper-linked poldrack/cogat generator was followed and pinned separately. The retained official
+    cogat-ontology tree at a600c366e9e3d3647a85cbc2c6e53e78abcf1951 has 13 source files; selected ontology/cogat.v2.owl
+    declares formal version 0.3, with no owl:imports. Its generator restructures source concepts as OWL classes
+    and changes task/contrast relations. Distinct CognitiveAtlas/ontology repository has only README and MIT LICENSE.
+    No historical 2011 byte identity, current website equivalence, lossless export, full class-definition glossary,
+    import closure/profile/reasoner or query-generation success follows. #241 owns all selected class declarations/definitions
+    and eight bounded deeper questions.'
+  discovery_execution:
+    path: evaluation/related-work/cognitiveatlas/deep-review-discovery.json
+    sha256: cd0f5c408bb82b05a1a14bbd890a33d43fa51aff5bbc7db4338776239e22532d
+  reading_inspection:
+    path: evaluation/related-work/cognitiveatlas/reading-inspection.json
+    sha256: af18382812c58cb2a456508c70c4bad42a9ff44c7ed50a17df076eb0de2a162e
+  selected_root: ontology/cogat.v2.owl
+  selected_root_sha256: 701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8
+  formal_version: '0.3'
+  declared_imports: []
+  historical_paper_fidelity: NOT_ESTABLISHED
+  machine_class_populations:
+    local: null
+    imported: null
+    external_redeclarations: null
+    referenced_only: null
+    deprecated: null
+    inferred: null
+  foundation:
+    family: SKOS/CogPO/OBO RO conceptual reuse with metadata vocabularies; no established upper-ontology grounding
+    edition: null
+    relation: PAPER_STATED_REUSE_NOT_EXACT_UPPER_FOUNDATION
+    actual_imports: []
+    namespace_hints: Later generator/export references BFO1.1 snap/span and CogPOver2011. Namespace declaration
+      is not an import or paper grounding proof.
+    alignment_status: NOT_SEMANTICALLY_ACCEPTED
+  execution:
+    header_parser: EXECUTED_METADATA_ONLY
+    generator: NOT_EXECUTED
+    class_glossary: PENDING_241
+    profile: NOT_EXECUTED
+    reasoner: NOT_EXECUTED
+    sparql: NOT_EXECUTED
+    author_evaluation: NOT_REPRODUCED
+closure_boundary: 'Complete exact-paper #79 only after relevant integrity checks and merged PR. All-class/glossary/source-version/import/profile/semantic
+  work remains OPEN in #241 under the explicit paper/module closure exception. #254 comparison and #126 synthesis
+  remain open. No Clariceptify ontology, definitions, requirements, scientific fixtures, manuscript, release or
+  adoption decision is changed.'
+implementation_scope:
+  literature_relation: citesForInformation
+  theory_testing: FUTURE_NOT_AVAILABLE_IN_PAPER
+  excluded_relations:
+  - has_participant
+  - has_agent
+  - spatial
+  empirical_data_storage: EXTERNAL_LINKS_NOT_NATIVE_DATA

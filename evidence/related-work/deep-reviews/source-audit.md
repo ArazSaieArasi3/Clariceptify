@@ -18,7 +18,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
-| CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); PINNED_FILES_TECHNICAL_REVIEW_PENDING | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
+| CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING | SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established; PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; AUTHOR_PREDECESSOR_LINKS_MATCH_PENDING | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
 | CLR-RW-O4OA (#73) | PUBLIC_PROJECT_METADATA_TREE_403; [source](https://gitlab.com/bfmartins/o4oa); AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING | UFO-A/B/C; gUFO for light OWL model; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
@@ -374,6 +374,21 @@ Query: `Exact preprint version, paper-linked FOSSR repository and pinned BDI/ali
 Official arXiv v2 identity and public source commit/tree verified. All selected source blobs match retained bytes. Module0.5 versus alignment-import0.3 and MIT-root versus CC-BY ontology terms retained. See evaluation/related-work/bdi2026/deep-review-discovery.json.
 
 Limit: Header parsing only; final journal byte comparison, full class/imported glossary, OWL2 profile, reasoner, CQ and application reruns remain #250.
+
+### COG-S01: PRIMARY_PUBLISHER_PROJECT_AND_CONNECTED_GITHUB_REF_TREE_FILE_CHECKS
+
+Query: `Exact2011 paper-linked poldrack/cogat, official export/discussion repositories and publisher metadata`. Checked: 2026-10-28.
+
+- https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2011.00017/full
+- https://www.cognitiveatlas.org/
+- https://bioportal.bioontology.org/ontologies/COGAT
+- https://github.com/poldrack/cogat
+- https://github.com/CognitiveAtlas/cogat-ontology
+- https://github.com/CognitiveAtlas/ontology
+
+Exact paper link resolves to public poldrack/cogat; selected author generator bytes pinned. Official retained13-file export and distinct two-file discussion repository checked. cogat.v2.owl header0.3 parsed; no declared imports. See evaluation/related-work/cognitiveatlas/deep-review-discovery.json.
+
+Limit: No complete class/definition census, import closure/profile/reasoning, source generation or historical2011 equivalence established; those remain #241.
 
 ## Interpretation and next work
 

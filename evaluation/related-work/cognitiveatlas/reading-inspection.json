@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "work_id": "CognitiveAtlas2011",
+  "source_sha256": "c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4",
+  "checked_on": "2026-10-28",
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "printed_page_mapping": "PDF pages1-11 equal article pages1-11, Frontiers volume5 article17.",
+  "extraction": {
+    "tool": "Retained pdftotext layout plus PyMuPDF page text",
+    "ocr": "NOT_REQUIRED"
+  },
+  "visual_inspection": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "renderer": "PyMuPDF1.26.6",
+    "scale": 1.7,
+    "page_renders": [
+      {
+        "page": 1,
+        "sha256": "cdaafd53a742c0f8c1a2219e8958f62faa2732a114d567c83a909707b0cc68b0"
+      },
+      {
+        "page": 2,
+        "sha256": "f5742186436b798d1282cac5265b98341c71292be6b6280856fcce6430c912b1"
+      },
+      {
+        "page": 3,
+        "sha256": "6ce2226355ff18cb1cab9d84616598385c1857f511dd6f01d51d267491d3f6dd"
+      },
+      {
+        "page": 4,
+        "sha256": "6cc64af324ba3f1f9c70d4719e0a9785e830f51214dfbd723af9e11f027d2009"
+      },
+      {
+        "page": 5,
+        "sha256": "71eaabd5d7ffc140f96c0e0d92c3dfd1c8aee2943b8cabd1cf5cd0448e697d20"
+      },
+      {
+        "page": 6,
+        "sha256": "eb6b3162ca6e5f1f8c6de15b2cda0d61a82b3766d09a51d3e042f0dfeaf99f46"
+      },
+      {
+        "page": 7,
+        "sha256": "b73052dd4bab3bad8aeeb914d163dc3cd398fc15644416662ca1f88be6f40349"
+      },
+      {
+        "page": 8,
+        "sha256": "124e03b50ae0365ccd5952ed0ced3cb29529d923a81d33de14dcaea9af84a243"
+      },
+      {
+        "page": 9,
+        "sha256": "7255ae6c2bfc5d302976269268d5da697cb1c3bf08d5067c7f02c8bb0e86ae2f"
+      },
+      {
+        "page": 10,
+        "sha256": "445ea74bd930442738bdd0fd58d494c438e66d63499b7021b5eae999bc18e556"
+      },
+      {
+        "page": 11,
+        "sha256": "8bb3dd0da5b055d90b9977712a7e5cd4cba0076160c5aa0a61259bd7f2a93920"
+      }
+    ],
+    "special_checks": [
+      "Both schema figures and every metadata field/relationship label",
+      "Figure3 two behavioral-inhibition senses",
+      "Figure4 all13 named nodes/five layers and empirical-edge callout",
+      "All10 footnotes,39 references and article dates/rights",
+      "2011 status counts and reported definition insufficiency"
+    ]
+  },
+  "semantics_or_solver_executed": "NOT_EXECUTED",
+  "source_redistributed": false,
+  "limits": "Full AI-assisted reading and visual-inspection declaration, not a mechanical proof of understanding or independent scientific acceptance."
+}
