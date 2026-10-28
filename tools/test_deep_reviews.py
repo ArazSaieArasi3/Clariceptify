@@ -367,5 +367,52 @@ class FossrSourceBoundaryTests(unittest.TestCase):
             self.validate()
 
 
+class CognitiveAtlasBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE
+        self.dossier = yaml.safe_load((base / 'CognitiveAtlas2011/review.yaml').read_text())
+        self.ledger = yaml.safe_load((base / 'CognitiveAtlas2011/figure-ledger.yaml').read_text())
+        self.entry = next(r for r in yaml.safe_load((base / 'register.yaml').read_text())['acquired_papers']
+                          if r['id'] == 'CognitiveAtlas2011')
+        self.dimensions = yaml.safe_load((base / 'protocol.yaml').read_text())['dimensions']
+
+    def reject_dossier(self, message):
+        with self.assertRaisesRegex(ValueError, message):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def reject_figure(self, message):
+        from check_deep_reviews import validate_cognitive_figure_ledger
+        with self.assertRaisesRegex(ValueError, message):
+            validate_cognitive_figure_ledger(self.dossier, self.ledger)
+
+    def test_definition_presence_cannot_become_verified_adequacy(self):
+        self.dossier['paper_population']['definition_adequacy'] = 'EXPERT_ACCEPTED'
+        self.reject_dossier('historical status promoted')
+
+    def test_historical_terms_are_not_parsed_classes(self):
+        self.dossier['artifact']['machine_class_populations']['local'] = 904
+        self.reject_dossier('terms promoted to machine')
+
+    def test_v2_filename_does_not_mean_formal_version_two(self):
+        self.dossier['artifact']['formal_version'] = '2'
+        self.reject_dossier('filename promoted')
+
+    def test_informative_citation_is_not_implemented_support(self):
+        self.dossier['implementation_scope']['literature_relation'] = 'supports'
+        self.reject_dossier('informative relation promoted')
+
+    def test_signed_contrast_is_not_silently_reversed(self):
+        self.ledger['figures'][1]['contrast_literal'] = '2-back minus 0-back'
+        self.reject_figure('contrast silently reversed')
+
+    def test_distinct_senses_are_not_silently_collapsed(self):
+        self.ledger['figures'][2]['senses'] = ['behavioral inhibition']
+        self.reject_figure('senses silently collapsed')
+
+    def test_empirical_layers_are_not_class_hierarchy(self):
+        self.ledger['figures'][3]['edge_kind'] = 'CLASS_HIERARCHY'
+        self.reject_figure('illustration promoted')
+
+
 if __name__ == '__main__':
     unittest.main()

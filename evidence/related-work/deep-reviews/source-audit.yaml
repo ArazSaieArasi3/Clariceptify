@@ -422,6 +422,22 @@ discovery_attempts:
     bytes. Module0.5 versus alignment-import0.3 and MIT-root versus CC-BY ontology terms retained. See evaluation/related-work/bdi2026/deep-review-discovery.json.
   limitation: 'Header parsing only; final journal byte comparison, full class/imported glossary, OWL2 profile, reasoner,
     CQ and application reruns remain #250.'
+- id: COG-S01
+  query: Exact2011 paper-linked poldrack/cogat, official export/discussion repositories and publisher metadata
+  method: PRIMARY_PUBLISHER_PROJECT_AND_CONNECTED_GITHUB_REF_TREE_FILE_CHECKS
+  checked_on: '2026-10-28'
+  checked_urls:
+  - https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2011.00017/full
+  - https://www.cognitiveatlas.org/
+  - https://bioportal.bioontology.org/ontologies/COGAT
+  - https://github.com/poldrack/cogat
+  - https://github.com/CognitiveAtlas/cogat-ontology
+  - https://github.com/CognitiveAtlas/ontology
+  outcome: Exact paper link resolves to public poldrack/cogat; selected author generator bytes pinned. Official
+    retained13-file export and distinct two-file discussion repository checked. cogat.v2.owl header0.3 parsed; no
+    declared imports. See evaluation/related-work/cognitiveatlas/deep-review-discovery.json.
+  limitation: 'No complete class/definition census, import closure/profile/reasoning, source generation or historical2011
+    equivalence established; those remain #241.'
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -833,26 +849,30 @@ records:
 - id: CognitiveAtlas2011
   title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
   primary_issue: 79
-  source_state: QUEUED
+  source_state: REVIEW_COMPLETE
   repository:
     state: PUBLIC_REPOSITORY_PINNED
     urls:
+    - https://github.com/poldrack/cogat
     - https://github.com/CognitiveAtlas/cogat-ontology
     - https://github.com/CognitiveAtlas/ontology
     evidence:
     - R01
+    - COG-S01
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_FILES_TECHNICAL_REVIEW_PENDING
+    paper_correspondence: PAPER_LINKED_SOURCE_FOUND_HISTORICAL_BYTE_FIDELITY_NOT_ESTABLISHED
+  artifact_state: OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING
   foundation:
-    family: null
+    family: SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Not yet established for this exact source
-    artifact_imports: null
+    relation: PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING
+    basis: AUTHOR_REPORTED
+    locator: Article pp.3-6; Figures1/2; selected generator and ontology/cogat.v2.owl header at a600c366e9e3.
+    artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: 'Selected source has no declared imports. BFO1.1/CogPO2011 namespace hints in later export do not
+      establish2011 paper grounding or an imported edition. Full referenced definitions and correspondence remain
+      #241.'
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -863,6 +883,14 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 241
+  paper_review:
+    path: evidence/related-work/deep-reviews/CognitiveAtlas2011/review.yaml
+    conceptual_relation_entries: 91
+    prose_commitment_groups: 18
+    figure_population: 4
+    manual_critical_findings: 20
+    limits: 'Complete paper catalog and declared header observations;2011 term totals are author-reported, not an
+      OWL class/definition census. Full class/imported definitions and semantic checks remain #241.'
 - id: EmotionsOnto2014
   title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
   primary_issue: 262
