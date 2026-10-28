@@ -117,3 +117,6 @@ limited_evidence_exception:
   completion: Separate limited-evidence deliverable, all provided-summary claims attributed and limitations
     recorded, citation metadata checked where possible, merged relevant checks; not counted among completed
     full-paper reviews.
+  current_status: LIMITED_EVIDENCE_REVIEW_COMPLETE
+  current_deliverable: evidence/related-work/deep-reviews/CLR-RW-IDA/limited-review.yaml
+  coverage: All14providedsummary units/38claims; complete original-paper coverage remains NOT_PERFORMED.

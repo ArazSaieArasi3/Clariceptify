@@ -23,7 +23,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | CLR-RW-DUL (#70) | STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED; [source](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl); [source](https://github.com/appliedontolab/DOLCE); PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
 | CLR-RW-O4OA (#73) | REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY; [source](https://gitlab.com/bfmartins/o4oa); [source](https://gitlab.com/bfmartins/go4oa); PAPER_COMPLETE_CQS_AND_SPEC_ACQUIRED_TECHNICAL_REVIEW_PENDING | UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants); PAPER_STATED_GROUNDING_THROUGH_ONTOUML; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
 | CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
-| CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #246 |
+| CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; ORIGINAL_FORMAL_SOURCE_NOT_ACQUIRED | DOLCE(summary-reported); SECONDARY_SUMMARY_STATED_GROUNDING; edition: UNKNOWN | UNKNOWN_FORMAL_SOURCE_NOT_ACQUIRED | #246, #256, #126 |
 | CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_TPTP_STYLE_FRAGMENT_SELECTED_CORRESPONDENCE_REVIEWED | DOLCE / DOLCE-CORE; PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
 | cDnS-journal-2008 (#263) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](http://www.loa-cnr.it/ontologies/collInt.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/ground.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl); PAPER_LINKED_ROOT_AND_EXPLICIT_MAPPED_IMPORTS | Constructive DnS; ground-ontology independent; INDEPENDENT_FOUNDATION_WITH_ACTUAL_SELECTED_MODULE_IMPORTS; edition: UNKNOWN | [51 classes](cDnS-journal-2008/classes.md); 51 comment candidates; 0 missing | #267, #251, #126 |
 | Emotions-2015 (#77) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](https://rhizomik.net/ontologies/2015/05/emotionsonto.owl); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_LINKED_MAY2015_CANDIDATE_WITH27_MISSING_COMMENTS_TECHNICAL_OPEN | DOLCE / DnS; PAPER_STATED_GROUNDING_AND_SELECTED_CANDIDATE_IMPORTS; edition: UNKNOWN | [28 classes](Emotions-2015/classes.md); 1 comment candidates; 27 missing | #239, #253, #126 |
@@ -467,6 +467,12 @@ Limit: Selected current three-file map, no original2008 immutable release or com
 Query: `Paper note2,author guide,2013/May2015 predecessor candidates,December/current cognition; GitHub EmotionsOnto and emotions cognition ontology`. Checked: 2026-10-28.
 
 Limit: No author repository identified in two eight-result name/description queries; no universal absence, immutable publication-release identity or exact legacy import closure claimed.
+
+### IDA2026LIMITED: OWNER_SUMMARY_DISPOSITION_AND_BIBLIOGRAPHIC_CROSSCHECK
+
+Query: `Exact linked title/author header,workshop metadata,quoted-title DOI and Crossref-domain lookup; workshop index open`. Checked: 2026-10-28.
+
+Limit: Owner-authorized secondary-summary review only,with separately labeled metadata/partial indexed caution. No global absence,full reading,figure/formula certification or formal artifact completeness claimed.
 
 ## Interpretation and next work
 

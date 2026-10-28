@@ -777,5 +777,50 @@ class Emotions2015EvidenceTests(unittest.TestCase):
         self.reject('candidate promoted')
 
 
+class LimitedSummaryCompletionTests(unittest.TestCase):
+    def setUp(self):
+        self.base = ROOT / BASE
+        register = yaml.safe_load((self.base / 'register.yaml').read_text())
+        self.entry = register['limited_evidence_papers'][0]
+        self.dossier = yaml.safe_load((ROOT / self.entry['limited_review']['path']).read_text())
+        self.receipt = yaml.safe_load((ROOT / self.entry['summary_receipt']['path']).read_text())
+        self.dimensions = yaml.safe_load((self.base / 'protocol.yaml').read_text())['dimensions']
+
+    def reject(self, pattern):
+        from check_deep_reviews import validate_limited_review
+        with self.assertRaisesRegex(ValueError, pattern):
+            validate_limited_review(self.dossier, self.entry, self.receipt, self.dimensions)
+
+    def test_every_supplied_claim_requires_critical_assessment(self):
+        self.dossier['claim_reviews'].pop()
+        self.reject('summary coverage')
+
+    def test_limited_completion_does_not_certify_full_reading(self):
+        self.dossier['primary_source']['full_text_review'] = 'REVIEW_COMPLETE'
+        self.reject('promoted to original reading')
+
+    def test_primary_page_count_cannot_be_invented_from_page_range(self):
+        self.dossier['primary_source']['pdf_pages'] = 7
+        self.reject('promoted to original reading')
+
+    def test_unknown_formal_population_is_not_zero(self):
+        self.dossier['artifact']['local_classes'] = 0
+        self.reject('artifact population promoted')
+
+    def test_citation_guidance_cannot_be_a_manuscript_edit(self):
+        self.dossier['citation_guidance']['manuscript_change'] = 'APPLIED'
+        self.reject('model/manuscript adoption')
+
+    def test_completed_summary_requires_bound_deliverables(self):
+        from check_deep_reviews import validate_limited_evidence_entry
+        self.entry.pop('limited_review')
+        with self.assertRaisesRegex(ValueError, 'without a bound dossier'):
+            validate_limited_evidence_entry(self.entry)
+
+    def test_limited_scope_keeps_all_analytical_dimensions(self):
+        self.dossier['dimensions'].pop('D9_evaluation')
+        self.reject('omitted an analytical dimension')
+
+
 if __name__ == '__main__':
     unittest.main()

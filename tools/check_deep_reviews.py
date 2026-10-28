@@ -648,13 +648,85 @@ def validate_printed_query(dossier, record):
 def validate_limited_evidence_entry(entry):
     """Keep the owner's I&DA exception separate from full-paper completion."""
     if (entry['id'] != 'CLR-RW-IDA' or entry['issue'] != 84 or
-            entry['state'] != 'LIMITED_EVIDENCE_REVIEW_QUEUED' or
+            entry['state'] not in {'LIMITED_EVIDENCE_REVIEW_QUEUED',
+                                   'LIMITED_EVIDENCE_REVIEW_COMPLETE'} or
             entry.get('sha256') is not None or entry.get('filename') is not None or
             entry['full_text_available'] or entry['full_text_required_for_current_scope'] or
             entry['full_text_review'] != 'NOT_PERFORMED' or
             entry['evidence_basis'] != 'OWNER_PROVIDED_GOOGLE_QUICK_READ' or
             entry['model_change'] != 'NONE'):
         raise ValueError('Owner summary exception promoted to full text or blocked on PDF')
+    if entry['state'] == 'LIMITED_EVIDENCE_REVIEW_COMPLETE':
+        for key, filename in [('limited_review', 'limited-review.yaml'),
+                              ('summary_receipt', 'summary-receipt.yaml')]:
+            binding = entry.get(key, {})
+            if (binding.get('path') != BASE + '/CLR-RW-IDA/' + filename or
+                    not re.fullmatch(r'[0-9a-f]{64}', binding.get('sha256', ''))):
+                raise ValueError('Limited completion without a bound dossier and summary receipt')
+
+
+def validate_limited_review(d, entry, receipt, dimensions):
+    if (d['work_id'] != entry['id'] or d['issue'] != entry['issue'] or
+            d['status'] != 'LIMITED_EVIDENCE_REVIEW_COMPLETE' or
+            d['review_kind'] != 'OWNER_SUMMARY_LIMITED_CRITICAL_REVIEW' or
+            d['evidence_basis'] != 'OWNER_PROVIDED_GOOGLE_QUICK_READ' or
+            d['summary_receipt'] != entry['summary_receipt']):
+        raise ValueError('Limited review identity or scope changed')
+    primary = d['primary_source']
+    if (any(primary[k] is not None for k in ['sha256', 'filename', 'pdf_pages']) or
+            primary['full_text_retained'] or primary['full_text_review'] != 'NOT_PERFORMED' or
+            primary['visual_review'] != 'NOT_PERFORMED' or primary['formula_glyphs_verified'] or
+            primary['global_unavailability_claim'] or
+            any(d['coverage'][k] is not None for k in
+                ['primary_page_coverage', 'primary_numbered_formula_count',
+                 'primary_figure_count', 'primary_bibliography_count'])):
+        raise ValueError('Limited summary promoted to original reading or known absent population')
+    ids = [r['id'] for r in receipt['claims']]
+    units = receipt['units']
+    if (receipt['work_id'] != entry['id'] or receipt['issue'] != 84 or
+            receipt['kind'] != 'REVIEWER_PARAPHRASED_RECEIPT_OF_OWNER_PROVIDED_GOOGLE_QUICK_READ' or
+            d['coverage']['primary_visual_coverage'] != 'NOT_PERFORMED' or
+            receipt['primary_visual_coverage'] != 'NOT_PERFORMED' or
+            receipt['formula_status'] != 'SECONDARY_TYPOGRAPHY_NOT_VERIFIED_OR_REPAIRED' or
+            len(ids) != 38 or len(set(ids)) != 38 or len(units) != 14 or
+            [u['id'] for u in units] != [f'U{i:02}' for i in range(14)] or
+            [r['summary_claim_id'] for r in d['claim_reviews']] != ids or
+            d['coverage']['summary_claim_ids'] != ids or
+            [c for u in units for c in u['claim_ids']] != ids or
+            any(r['primary_verified'] for r in receipt['claims']) or
+            receipt['primary_full_text_retained'] or receipt['primary_sha256'] is not None or
+            [(u['unit_id'], u['claim_ids']) for u in d['coverage']['summary_units']] !=
+            [(u['id'], u['claim_ids']) for u in units] or
+            any(u['status'] != 'REVIEWED_AS_SECONDARY_SUMMARY'
+                for u in d['coverage']['summary_units'])):
+        raise ValueError('Incomplete or promoted owner-summary coverage')
+    if set(d['dimensions']) != set(dimensions) or set(d['evaluation']) != {
+            'Verification', 'Validation', 'Evaluation', 'Assessment', 'Assurance'}:
+        raise ValueError('Limited review omitted an analytical dimension or evaluation function')
+    evidence = set(ids) | {e['id'] for e in d['additional_evidence']}
+    statements = list(d['dimensions'].values()) + list(d['evaluation'].values())
+    for key in ['claim_reviews', 'catalog', 'relations', 'scenarios', 'findings', 'questions']:
+        records = d[key]
+        if not records or len({r['id'] for r in records}) != len(records):
+            raise ValueError('Incomplete limited review section')
+        statements.extend(records)
+    for r in statements:
+        if (not r.get('statement') or not r.get('evidence') or
+                not set(r['evidence']) <= evidence or
+                r['basis'] not in {'REVIEWER_INTERPRETATION', 'UNKNOWN', 'NOT_REPORTED'}):
+            raise ValueError('Unbound or primary-promoted limited statement')
+    artifact = d['artifact']
+    if (any(artifact[k] is not None for k in ['local_classes', 'imported_classes',
+             'inferred_classes', 'source_definition_candidates', 'missing_source_definitions',
+             'foundation_edition', 'actual_imports']) or
+            artifact['reasoner_execution'] != 'NOT_EXECUTED'):
+        raise ValueError('Unavailable limited artifact population promoted')
+    if (d['identity']['doi'] is not None or
+            d['citation_guidance']['manuscript_change'] != 'NONE_GUIDANCE_ONLY' or
+            d['boundary'] != {'model_change': 'NONE', 'manuscript_change': 'NONE',
+                              'release_change': 'NONE', 'adoption': 'OWNER_DECISION_REQUIRED',
+                              'independent_expert_review': 'NOT_PERFORMED'}):
+        raise ValueError('Limited evidence promoted to guessed DOI or model/manuscript adoption')
 
 
 def validate_journal_ledger(dossier, ledger, import_map):
@@ -856,12 +928,34 @@ def check(root=ROOT):
             raise ValueError('Missing full text promoted')
     for entry in limited:
         validate_limited_evidence_entry(entry)
+        if entry['state'] == 'LIMITED_EVIDENCE_REVIEW_COMPLETE':
+            records = []
+            for key in ['limited_review', 'summary_receipt']:
+                binding = entry[key]
+                raw = (root / binding['path']).read_bytes()
+                if hashlib.sha256(raw).hexdigest() != binding['sha256']:
+                    raise ValueError('Changed limited-review or summary-receipt bytes')
+                records.append(yaml.safe_load(raw))
+            dossier, receipt = records
+            validate_limited_review(dossier, entry, receipt, protocol['dimensions'])
+            for key in ['bibliography_record', 'discovery_record', 'citation_guide']:
+                binding = dossier[key]
+                if hashlib.sha256((root / binding['path']).read_bytes()).hexdigest() != binding['sha256']:
+                    raise ValueError('Changed limited-review metadata, discovery or citation guide')
+            from render_deep_review import render_limited
+            if (root / entry['limited_review']['path']).with_name('report.md').read_text() != render_limited(dossier, receipt):
+                raise ValueError('Stale limited-summary readable report')
     from check_source_audit import check as check_source_audit
     source_audit = check_source_audit(root)
     return {'status': 'PASS', 'source_audit': source_audit, 'acquired_papers': len(register['acquired_papers']), 'completed_deep_reviews': done,
             'queued_papers': sum(r['state'] == 'QUEUED' for r in register['acquired_papers']),
             'waiting_for_owner': len(register['waiting_for_owner']),
-            'limited_evidence_papers': len(limited), 'protected_baseline': expected['fingerprint'],
+            'limited_evidence_papers': len(limited),
+            'completed_limited_reviews': [e['id'] for e in limited
+                if e['state'] == 'LIMITED_EVIDENCE_REVIEW_COMPLETE'],
+            'queued_limited_reviews': sum(e['state'] == 'LIMITED_EVIDENCE_REVIEW_QUEUED'
+                                         for e in limited),
+            'protected_baseline': expected['fingerprint'],
             'scope': 'Provenance, coverage declarations and state boundaries; not independent semantic validation.'}
 
 

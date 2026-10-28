@@ -536,6 +536,17 @@ discovery_attempts:
   receipt: evaluation/related-work/emotions2015/discovery.json
   limitation: No author repository identified in two eight-result name/description queries; no universal absence,
     immutable publication-release identity or exact legacy import closure claimed.
+- id: IDA2026LIMITED
+  method: OWNER_SUMMARY_DISPOSITION_AND_BIBLIOGRAPHIC_CROSSCHECK
+  query: Exact linked title/author header,workshop metadata,quoted-title DOI and Crossref-domain lookup; workshop
+    index open
+  checked_on: '2026-10-28'
+  result: Title/two authors confirmed from indexed original header; year/venue/pages cross-checked with later
+    primary research citations. DOI unverified; workshop index inaccessible via checked open. No original complete
+    source or formal distribution acquired.
+  receipt: evaluation/related-work/ida/discovery.json
+  limitation: Owner-authorized secondary-summary review only,with separately labeled metadata/partial indexed
+    caution. No global absence,full reading,figure/formula certification or formal artifact completeness claimed.
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -1163,36 +1174,42 @@ records:
 - id: CLR-RW-IDA
   title: 'Managing Knowledge at the Information Level: an Ontological Approach'
   primary_issue: 84
-  source_state: OWNER_AUTHORIZED_SECONDARY_SUMMARY_REVIEW_QUEUED
+  source_state: LIMITED_SUMMARY_REVIEW_COMPLETE_ORIGINAL_TEXT_NOT_FULLY_VERIFIED
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
     urls: []
     evidence:
     - G06
+    - IDA2026LIMITED
     global_absence_claim: false
-    paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: NOT_IDENTIFIED
+    paper_correspondence: OWNER_SUMMARY_CONTENT_WITH_SEPARATE_METADATA_CHECKS_NOT_ORIGINAL_FORMAL_FIDELITY
+  artifact_state: ORIGINAL_FORMAL_SOURCE_NOT_ACQUIRED
   foundation:
-    family: null
+    family: DOLCE(summary-reported)
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Not yet established for this exact source
+    relation: SECONDARY_SUMMARY_STATED_GROUNDING
+    basis: REVIEWER_INTERPRETATION
+    locator: OwnerQuickRead I&DAOntologyStructure; summary-receiptSR007,limited-review and citation metadata.
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: Family is reported by the supplied summary; exact DOLCEedition,original grounding axioms,formal
+      imports and source implementation are not verified. OntoClean connection is reported,not an executed
+      assessment.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: UNKNOWN_FORMAL_SOURCE_NOT_ACQUIRED
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
-    limitations: No primary full-text or machine glossary completion claimed. Owner2026-10-28 removes the PDF
-      wait gate for the bounded summary/citation task84; technical246 remains separately scoped.
+    limitations: 29summary-level catalog entries are not released classes. Every machine count and original
+      definition/import population remains unknown. Current bounded84review is complete; optional future primary
+      verification and technical246are separate from its removed PDF gate.
   next_issues:
   - 246
+  - 256
+  - 126
 - id: CLR-RW-DOLCEMental
   title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
   primary_issue: 86

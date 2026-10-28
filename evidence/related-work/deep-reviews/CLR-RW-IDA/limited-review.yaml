@@ -1,0 +1,1603 @@
+schema_version: '1.0'
+work_id: CLR-RW-IDA
+issue: 84
+review_kind: OWNER_SUMMARY_LIMITED_CRITICAL_REVIEW
+status: LIMITED_EVIDENCE_REVIEW_COMPLETE
+evidence_basis: OWNER_PROVIDED_GOOGLE_QUICK_READ
+owner_authorized_on: '2026-10-28'
+identity:
+  schema_version: '1.0'
+  work_id: CLR-RW-IDA
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  authors:
+  - Jean-Yves Fortier
+  - Gilles Kassel
+  year: 2004
+  venue: Proceedings of the ECAI2004 Workshop on Knowledge Management and Organizational Memories
+  pages: 39-45
+  doi: null
+  doi_status: NOT_VERIFIED_IN_BOUNDED_LOOKUP_NOT_GLOBAL_ABSENCE
+  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  city: null
+  publisher: null
+  editors: null
+  identity_evidence:
+  - &id001
+    id: M01
+    source_kind: PRIMARY_INDEXED_HEADER
+    url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+    locator: Indexed original title and author line, checked2026-10-28; no retained fullPDFor glyph certification.
+    confirms:
+    - title
+    - Jean-Yves Fortier
+    - Gilles Kassel
+  - &id002
+    id: M02
+    source_kind: LATER_PRIMARY_RESEARCH_BIBLIOGRAPHIC_REFERENCE
+    url: https://www.scitepress.org/PublishedPapers/2013/45394/
+    locator: Reference4,checked2026-10-28
+    confirms:
+    - year2004
+    - workshop
+    - page range39-45
+  conflicting_or_unverified_fields:
+  - City omitted:later citations differ; no authoritative workshop index retrieved.
+  - Original DOI,editors,publisher,exact PDFpage count and original bytes unverified.
+  owner_summary_bibliography_match: true
+  full_text_review: NOT_PERFORMED
+primary_source:
+  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  sha256: null
+  filename: null
+  pdf_pages: null
+  full_text_retained: false
+  full_text_review: NOT_PERFORMED
+  visual_review: NOT_PERFORMED
+  formula_glyphs_verified: false
+  global_unavailability_claim: false
+summary_receipt:
+  path: evidence/related-work/deep-reviews/CLR-RW-IDA/summary-receipt.yaml
+  sha256: e1c1ff36808f1ccfee4dbe6ccf6d1b174b955462c4b05c890f111d43e20e7d43
+bibliography_record:
+  path: evidence/related-work/deep-reviews/CLR-RW-IDA/citation-metadata.yaml
+  sha256: 025fe90f367112d544d071ae949a5c3f65933de03540af392ad937bca7c979e6
+discovery_record:
+  path: evaluation/related-work/ida/discovery.json
+  sha256: ae06ef48c0d4e376ef58a6ed4875b88093fe59bf75c8fd25ac28ff074de5bb59
+coverage:
+  summary_units:
+  - unit_id: U00
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR001
+  - unit_id: U01
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR002
+  - unit_id: U02
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR003
+    - SR004
+    - SR005
+    - SR006
+    - SR007
+  - unit_id: U03
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR008
+    - SR009
+    - SR010
+    - SR011
+    - SR012
+  - unit_id: U04
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR013
+    - SR014
+    - SR015
+    - SR016
+    - SR017
+    - SR018
+    - SR019
+    - SR020
+    - SR021
+  - unit_id: U05
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR022
+    - SR023
+    - SR024
+    - SR025
+    - SR026
+    - SR027
+  - unit_id: U06
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR028
+  - unit_id: U07
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR029
+  - unit_id: U08
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR030
+  - unit_id: U09
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR031
+    - SR032
+    - SR033
+  - unit_id: U10
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR034
+    - SR035
+  - unit_id: U11
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR036
+  - unit_id: U12
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR037
+  - unit_id: U13
+    status: REVIEWED_AS_SECONDARY_SUMMARY
+    claim_ids:
+    - SR038
+  summary_claim_ids:
+  - SR001
+  - SR002
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  - SR028
+  - SR029
+  - SR030
+  - SR031
+  - SR032
+  - SR033
+  - SR034
+  - SR035
+  - SR036
+  - SR037
+  - SR038
+  primary_page_coverage: null
+  primary_visual_coverage: NOT_PERFORMED
+  primary_numbered_formula_count: null
+  primary_figure_count: null
+  primary_bibliography_count: null
+  scope: All supplied summary sections/claims,plus separately attributed bibliographic checks and one qualifying
+    indexed lead. No declaration of complete original-paper coverage.
+additional_evidence:
+- *id001
+- *id002
+- id: M03
+  source_kind: PRIMARY_INDEXED_PARTIAL_DISCUSSION
+  url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  locator: Partial indexed discussion surfaced by the metadata query,checked2026-10-28; original file/page/glyph
+    not retained.
+  summary: Broader agent-level knowledge wording and a DnS comparison warrant caution about generalizing a
+    local KBTrue constraint. No source-wide definition,formula or accepted mapping is certified from this fragment.
+dimensions:
+  D1_identity_coverage:
+    label: Identity and coverage
+    statement: Title/two-author identity is checked from an indexed original header; year/venue/page metadata
+      triangulated. Every supplied summary unit is reviewed; original full text,figures,formulas and bibliography
+      remain uninspected.
+    evidence:
+    - SR001
+    basis: REVIEWER_INTERPRETATION
+  D2_problem_contribution:
+    label: Problem/contribution
+    statement: The supplied summary reports hybrid knowledge/text management with content,representation and
+      communication distinctions. Contribution significance remains a source-limited assessment.
+    evidence:
+    - SR002
+    basis: REVIEWER_INTERPRETATION
+  D3_method:
+    label: Method
+    statement: The summary reports DOLCE/OntoClean,DefOntoreification and Stockinger thematic analysis; complete
+      original methodological and implementation evidence remains unavailable.
+    evidence:
+    - SR029
+    basis: REVIEWER_INTERPRETATION
+  D4_requirements:
+    label: Requirements/scenarios
+    statement: Document classification,informational description,authorship,subject and reliability are reported
+      objectives; reconstructed positive/adverse cases are separately labeled.
+    evidence:
+    - SR028
+    basis: REVIEWER_INTERPRETATION
+  D5_concepts:
+    label: Conceptual catalog
+    statement: The catalog inventories all supplied ontology-bearing categories,act labels,representation levels
+      and indexing distinctions; no released ontology class population is inferred.
+    evidence:
+    - SR013
+    - SR014
+    - SR015
+    - SR016
+    - SR017
+    - SR018
+    - SR019
+    - SR020
+    - SR021
+    basis: REVIEWER_INTERPRETATION
+  D6_relations_formalization:
+    label: Relations/formalization
+    statement: Reported bearing,inscription,communication,attribution and subject relations are analyzed. The
+      supplied formula fragment is secondary and has no verified original glyphs or executable quantification.
+    evidence:
+    - SR022
+    - SR023
+    - SR024
+    - SR025
+    - SR026
+    - SR027
+    basis: REVIEWER_INTERPRETATION
+  D7_grounding:
+    label: Grounding/identity
+    statement: DOLCE family is summary-reported; exact edition/imports and identity/dependence/participation
+      constraints are unverified. Concept,proposition,sign,support,agent and act remain distinct comparison
+      levels.
+    evidence:
+    - SR003
+    - SR004
+    - SR005
+    - SR006
+    - SR007
+    basis: REVIEWER_INTERPRETATION
+  D8_artifact_correspondence:
+    label: Artifact correspondence
+    statement: DefOntois a reported historical implementation language; no exact original formal artifact/repository/complete
+      glossary or imported/inferred population is acquired by this task.246remains technical.
+    evidence:
+    - SR029
+    basis: REVIEWER_INTERPRETATION
+  D9_evaluation:
+    label: Evaluation evidence
+    statement: ToyR&Dmemory and planned knowledge-management support are the supplied evidence. No original-paper
+      absence or quantitative validation conclusion is drawn from missing summary detail.
+    evidence:
+    - SR030
+    basis: REVIEWER_INTERPRETATION
+  D10_critical_synthesis:
+    label: Critical synthesis
+    statement: Content/expression/support,communicative provenance and organizational endorsement are candidate
+      comparison inputs. Source limits,coherence ambiguity and unverified formality remain explicit; no ontology
+      or novelty decision.
+    evidence:
+    - SR037
+    basis: REVIEWER_INTERPRETATION
+claim_reviews:
+- id: R001
+  summary_claim_id: SR001
+  label: Metadata
+  statement: Title and full two-author names are independently cross-checked with the indexed original header.
+    Year/venue/pages are consistent with later research citations; the summary citation count is not used as
+    a current bibliometric fact.
+  evidence:
+  - SR001
+  basis: REVIEWER_INTERPRETATION
+- id: R002
+  summary_claim_id: SR002
+  label: Overview
+  statement: This is the reported design purpose; independence of location or representation is not proof of
+    implemented universal interoperability.
+  evidence:
+  - SR002
+  basis: REVIEWER_INTERPRETATION
+- id: R003
+  summary_claim_id: SR003
+  label: Ontology structure
+  statement: Separate meta-level description from organization-domain facts; this does not by itself specify
+    an OWL metamodel or collapse classes and instances.
+  evidence:
+  - SR003
+  basis: REVIEWER_INTERPRETATION
+- id: R004
+  summary_claim_id: SR004
+  label: Ontology structure
+  statement: Expression and content are separate conceptual levels; identity, equivalence and existence conditions
+    need formal evidence not supplied here.
+  evidence:
+  - SR004
+  basis: REVIEWER_INTERPRETATION
+- id: R005
+  summary_claim_id: SR005
+  label: Ontology structure
+  statement: Communication requires participant roles and context; conveying information does not establish
+    truth or organizational endorsement.
+  evidence:
+  - SR005
+  basis: REVIEWER_INTERPRETATION
+- id: R006
+  summary_claim_id: SR006
+  label: Ontology structure
+  statement: This supplies an act/content/agent perspective, not a complete episode-timing, intention or action-execution
+    theory.
+  evidence:
+  - SR006
+  basis: REVIEWER_INTERPRETATION
+- id: R007
+  summary_claim_id: SR007
+  label: Ontology structure
+  statement: Record the DOLCE family as summary-reported only. The summary chapter3/4 reference does not establish
+    a DOLCE edition, imported ontology or executed OntoClean assessment.
+  evidence:
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+- id: R008
+  summary_claim_id: SR008
+  label: Hybrid architecture
+  statement: Maintain KBassertion and textual-information provenance; representing the same topic in both stores
+    is not duplicate identity or automatic semantic equivalence.
+  evidence:
+  - SR008
+  basis: REVIEWER_INTERPRETATION
+- id: R009
+  summary_claim_id: SR009
+  label: Hybrid architecture
+  statement: The contrast is a reported architectural motivation, not a measured superiority claim or evidence
+    that every other approach is weak.
+  evidence:
+  - SR009
+  basis: REVIEWER_INTERPRETATION
+- id: R010
+  summary_claim_id: SR010
+  label: Hybrid architecture
+  statement: These are reported conceptual categories, not a complete released ontology class census or datatype
+    schema.
+  evidence:
+  - SR010
+  basis: REVIEWER_INTERPRETATION
+- id: R011
+  summary_claim_id: SR011
+  label: Hybrid architecture
+  statement: Authorship/addressee are provenance and communication roles, not automatic reliability, belief
+    or agreement predicates.
+  evidence:
+  - SR011
+  basis: REVIEWER_INTERPRETATION
+- id: R012
+  summary_claim_id: SR012
+  label: Hybrid architecture
+  statement: Potential utility is not reproduced query performance, logical consistency, user benefit or universal
+    entailment support.
+  evidence:
+  - SR012
+  basis: REVIEWER_INTERPRETATION
+- id: R013
+  summary_claim_id: SR013
+  label: Core categories
+  statement: Treat these as summary-listed act labels. No complete formal taxonomy,disjointness or temporal
+    process constraints is reconstructed.
+  evidence:
+  - SR013
+  basis: REVIEWER_INTERPRETATION
+- id: R014
+  summary_claim_id: SR014
+  label: Core categories
+  statement: Agent involvement is reported; physical embodiment,agency criteria,unique performer and participation
+    arity remain unverified.
+  evidence:
+  - SR014
+  basis: REVIEWER_INTERPRETATION
+- id: R015
+  summary_claim_id: SR015
+  label: Core categories
+  statement: A bearer and its meaning are distinct; neither is automatically identical to its referent or a
+    mental state.
+  evidence:
+  - SR015
+  basis: REVIEWER_INTERPRETATION
+- id: R016
+  summary_claim_id: SR016
+  label: Core categories
+  statement: The wording allows an inscription-mediated reading, not direct identity with a physical support
+    or a verified DOLCE location/parthood axiom.
+  evidence:
+  - SR016
+  basis: REVIEWER_INTERPRETATION
+- id: R017
+  summary_claim_id: SR017
+  label: Core categories
+  statement: Distinguish support,inscription,expression and content. Multiplicity/identity of copies requires
+    unavailable formal detail.
+  evidence:
+  - SR017
+  basis: REVIEWER_INTERPRETATION
+- id: R018
+  summary_claim_id: SR018
+  label: Core categories
+  statement: Concept,its extension and the grasping act are distinct candidate comparison levels; no exact
+    reference function is established.
+  evidence:
+  - SR018
+  basis: REVIEWER_INTERPRETATION
+- id: R019
+  summary_claim_id: SR019
+  label: Core categories
+  statement: Do not make every proposition true or conflate it with an assertion,information role,physical
+    sentence or situation itself.
+  evidence:
+  - SR019
+  basis: REVIEWER_INTERPRETATION
+- id: R020
+  summary_claim_id: SR020
+  label: Core categories
+  statement: The summary gives a conceptual specialization,not a verified class/role implementation or an exhaustive
+    communication model.
+  evidence:
+  - SR020
+  basis: REVIEWER_INTERPRETATION
+- id: R021
+  summary_claim_id: SR021
+  label: Core categories
+  statement: Production,delivery and enunciation are distinguishable acts; their dependency,time and participant
+    constraints remain unknown.
+  evidence:
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: R022
+  summary_claim_id: SR022
+  label: Content distinction
+  statement: Scope True attribution to the reported OSWKBnot all propositions or all agent knowledge. Organizational
+    agreement is not proof of real-world truth.
+  evidence:
+  - SR022
+  basis: REVIEWER_INTERPRETATION
+- id: R023
+  summary_claim_id: SR023
+  label: Content distinction
+  statement: Document content can be represented without assuming it as a True KBassertion; provenance does
+    not warrant endorsement.
+  evidence:
+  - SR023
+  basis: REVIEWER_INTERPRETATION
+- id: R024
+  summary_claim_id: SR024
+  label: Content distinction
+  statement: Authorship is useful provenance but does not guarantee reliability,sincerity or belief in the
+    content.
+  evidence:
+  - SR024
+  basis: REVIEWER_INTERPRETATION
+- id: R025
+  summary_claim_id: SR025
+  label: Content distinction
+  statement: Subject concept and real-world referent remain different levels; topic indexing does not settle
+    aboutness identity or truth.
+  evidence:
+  - SR025
+  basis: REVIEWER_INTERPRETATION
+- id: R026
+  summary_claim_id: SR026
+  label: Content distinction
+  statement: The supplied typography is incomplete/ambiguous and unverified against original glyphs. It is
+    not parsed,repaired or adopted as an exact executable axiom.
+  evidence:
+  - SR026
+  basis: REVIEWER_INTERPRETATION
+- id: R027
+  summary_claim_id: SR027
+  label: Content distinction
+  statement: Do not silently change the range to physical objects or treat this as a complete direct-reference
+    semantics.
+  evidence:
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: R028
+  summary_claim_id: SR028
+  label: Design objectives
+  statement: These are reported requirements. No complete operational reliability metric,CQsuite or adequacy
+    result is supplied.
+  evidence:
+  - SR028
+  basis: REVIEWER_INTERPRETATION
+- id: R029
+  summary_claim_id: SR029
+  label: Implementation language
+  statement: This is a historical summary-level implementation claim,not an acquired formal distribution,OWLencoding,available
+    current service or executed reasoning result.
+  evidence:
+  - SR029
+  basis: REVIEWER_INTERPRETATION
+- id: R030
+  summary_claim_id: SR030
+  label: Application example
+  statement: A toy example motivates representational fit; it does not establish an original controlled deployment,user
+    study or broad generalization.
+  evidence:
+  - SR030
+  basis: REVIEWER_INTERPRETATION
+- id: R031
+  summary_claim_id: SR031
+  label: Indexing method
+  statement: The named method is reported,not independently reviewed or reproduced; fragment boundaries can
+    depend on analyst judgment.
+  evidence:
+  - SR031
+  basis: REVIEWER_INTERPRETATION
+- id: R032
+  summary_claim_id: SR032
+  label: Indexing method
+  statement: A text topic label and its formal concept should be related explicitly; no unique mapping or automatic
+    induction is guaranteed.
+  evidence:
+  - SR032
+  basis: REVIEWER_INTERPRETATION
+- id: R033
+  summary_claim_id: SR033
+  label: Indexing method
+  statement: The indexing organization is not a demonstrated complete rhetorical/causal model or a universal
+    ranking algorithm.
+  evidence:
+  - SR033
+  basis: REVIEWER_INTERPRETATION
+- id: R034
+  summary_claim_id: SR034
+  label: Open extensions
+  statement: Do not report these types as a fully implemented exhaustive taxonomy.
+  evidence:
+  - SR034
+  basis: REVIEWER_INTERPRETATION
+- id: R035
+  summary_claim_id: SR035
+  label: Open extensions
+  statement: The summary explicitly leaves content-type elaboration open; absent detail is not evidence the
+    entire original theory lacks any such distinctions.
+  evidence:
+  - SR035
+  basis: REVIEWER_INTERPRETATION
+- id: R036
+  summary_claim_id: SR036
+  label: Example limitation
+  statement: This is an applicability concern in the supplied summary,not a measured failure in other organizations.
+  evidence:
+  - SR036
+  basis: REVIEWER_INTERPRETATION
+- id: R037
+  summary_claim_id: SR037
+  label: Consensus limitation
+  statement: Treat organizational consensus as a summary-reported design assumption. Logical coherence alone
+    does not prove social agreement; no universal consistency,all-agent consensus or impossibility of contextual
+    disagreement is established.
+  evidence:
+  - SR037
+  basis: REVIEWER_INTERPRETATION
+- id: R038
+  summary_claim_id: SR038
+  label: Thematic-role detail
+  statement: No role set,participation arity or hidden axioms are invented. The omission is summary-reported,not
+    independently certified by a full-paper inspection.
+  evidence:
+  - SR038
+  basis: REVIEWER_INTERPRETATION
+catalog:
+- id: C001
+  label: Hybrid OSW
+  statement: Knowledge distributed between formal KBassertions and textual resources, according to the supplied
+    architectural overview.
+  evidence:
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  basis: REVIEWER_INTERPRETATION
+- id: C002
+  label: Knowledge base / KB
+  statement: Store of modeled assertions; reported True attribution is organizational and scoped rather than
+    a guarantee of world truth.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: C003
+  label: Collection of textual resources / CTR
+  statement: Textual resources containing communicated propositions; content need not be endorsed as KBknowledge.
+  evidence:
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  basis: REVIEWER_INTERPRETATION
+- id: C004
+  label: I&DA meta-level model
+  statement: Knowledge about knowledge/information, separate from a model describing the organization itself.
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+- id: C005
+  label: ContentBearingObject / sign / expression
+  statement: Reported signifier bearing content; physical support and content identity must remain distinct.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C006
+  label: Content
+  statement: Reported meaning borne by a sign, with concepts/propositions as distinguished content types.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C007
+  label: Inscription and physical support
+  statement: Reported fixation and material support are distinguished from content/expression; exact identity
+    between inscription and support is not independently verified.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C008
+  label: Concept
+  statement: Reported way for an agent to grasp an object/collection; distinct from that object or the agent
+    act.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C009
+  label: Proposition
+  statement: Reported way to grasp a situation,capable of bearing a truth value; not automatically a True KBassertion.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C010
+  label: TruthValue / True
+  statement: Reported value vocabulary; the available material does not establish an exhaustive boolean algebra,unique
+    truth function or global truth consensus.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: C011
+  label: Assertion
+  statement: Reported KBproposition attributed True by an OSW; the source formula fragment is secondary,not
+    an executable verified definition.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: C012
+  label: Information
+  statement: Reported propositional content in a discourse; exact class-versus-role formalization remains unavailable.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: C013
+  label: Discourse
+  statement: Reported ContentBearingObject used to communicate information to an addressee.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C014
+  label: Agent / Addressee
+  statement: Participants/roles in producing and receiving communicative content; no unique participant or
+    embodiment conditions recovered.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C015
+  label: Intentional act
+  statement: Reported act creating or using signs; no complete action/episode/decision semantics supplied.
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+- id: C016
+  label: Conceptualizing / Encoding / Decoding / Inscribing
+  statement: Summary-listed act labels kept distinct conceptually,without inventing formal disjointness or
+    machine IRIs.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C017
+  label: DiscourseProducing / DiscourseCommunicating / Enunciating
+  statement: Reported communicative act distinctions; exact event dependencies and participants unverified.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: C018
+  label: DiscourseProducer / author
+  statement: Reported provenance role for information description; not by itself reliability or truth endorsement.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: C019
+  label: Subject / hasForSubject
+  statement: Reported subject concepts of a proposition,indirectly referring to the world; not direct classification
+    of a physical referent.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: C020
+  label: Thematic analysis / border subject
+  statement: Reported analysis delimiting resource fragments and formalizing/organizing their subject concepts.
+  evidence:
+  - SR031
+  - SR032
+  - SR033
+  basis: REVIEWER_INTERPRETATION
+- id: C021
+  label: Main subject / subject relation
+  statement: Reported organization of indexed subjects around a primary theme and explanatory relations.
+  evidence:
+  - SR031
+  - SR032
+  - SR033
+  basis: REVIEWER_INTERPRETATION
+- id: C022
+  label: DOLCE backbone
+  statement: Foundation family named in the summary; edition,actual import and exact formal grounding remain
+    unverified.
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+- id: C023
+  label: OntoClean
+  statement: Methodological connection reported in the summary; no complete rigidity/identity/dependence assessment
+    executed here.
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+- id: C024
+  label: DefOnto / reification
+  statement: Reported historical language for object,concept and proposition representation at basic/meta levels;
+    no machine distribution acquired.
+  evidence:
+  - SR029
+  basis: REVIEWER_INTERPRETATION
+- id: C025
+  label: Document classification
+  statement: Reported design objective,with discourse/enunciation taxonomies left for extension in the summarized
+    work.
+  evidence:
+  - SR028
+  basis: REVIEWER_INTERPRETATION
+- id: C026
+  label: Reliability
+  statement: Reported design objective alongside authorship and subject; no operational reliability metric
+    or soundness proof is supplied.
+  evidence:
+  - SR028
+  basis: REVIEWER_INTERPRETATION
+- id: C027
+  label: Customized view
+  statement: Reported potential use of reasoning over modeled knowledge for organizational information access,not
+    a reproduced performance result.
+  evidence:
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  basis: REVIEWER_INTERPRETATION
+- id: C028
+  label: Toy R&D project memory
+  statement: Reported illustrative application inspired by ongoing hybrid OSWdevelopment; not a controlled
+    generalization study.
+  evidence:
+  - SR030
+  basis: REVIEWER_INTERPRETATION
+- id: C029
+  label: Participation / PC / thematic roles
+  statement: Primitive participation and role refinement are mentioned as omitted detail; arity and complete
+    role inventory are not reconstructed.
+  evidence:
+  - SR038
+  basis: REVIEWER_INTERPRETATION
+relations:
+- id: L001
+  label: Content bearing
+  statement: Sign/expression bears Content; do not equate it with physical support or a direct referent.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: L002
+  label: Inscription
+  statement: Reported fixation on support; no unique realization,copy identity or necessary physical location
+    axiom independently verified.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: L003
+  label: Act participation
+  statement: Agents perform intentional/communicative acts; participation roles/time/arity remain unverified.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  - SR038
+  basis: REVIEWER_INTERPRETATION
+- id: L004
+  label: Communication
+  statement: Discourse communicates propositional Information to an Addressee; no automatic truth or consensus
+    entailment.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: L005
+  label: Authorship
+  statement: Producer/author identification is reported as necessary for describing information; reliability
+    is a separate question.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: L006
+  label: Assertion/True attribution
+  statement: The summarized OSWassigns True to selected KBpropositions; this is not all-proposition truth or
+    world-veracity proof.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: L007
+  label: hasForSubject
+  statement: Proposition-to-Concept indirect subject reference; physical-object range and full aboutness equivalence
+    not established.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: L008
+  label: Subject organization
+  statement: Border subjects delimit fragments; main subjects/relations organize an index. No unique automatic
+    semantic extraction follows.
+  evidence:
+  - SR031
+  - SR032
+  - SR033
+  basis: REVIEWER_INTERPRETATION
+- id: L009
+  label: Reification
+  statement: Objects,concepts and propositions are represented at meta levels in reported DefOnto use; no OWLclass/individual
+    punning scheme inferred.
+  evidence:
+  - SR029
+  basis: REVIEWER_INTERPRETATION
+- id: L010
+  label: Strong coupling
+  statement: KBassertions and CTRinformation are complementary managed forms,not a proved one-to-one equivalence
+    or synchronized update protocol.
+  evidence:
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  basis: REVIEWER_INTERPRETATION
+scenarios:
+- id: S001
+  label: Document without endorsement
+  statement: 'Positive reconstruction: model a proposition in a discourse without making it a True KBassertion.
+    Exact formal execution remains unverified.'
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: S002
+  label: Author versus addressee
+  statement: 'Positive reconstruction: identify who produces a discourse and to whom it is addressed without
+    assuming the addressee agrees.'
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: S003
+  label: Two supports
+  statement: 'Adverse reconstruction: two physical copies can be distinguished from a shared content/expression;
+    the summary does not fix identity or cardinality axioms.'
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: S004
+  label: False or disputed report
+  statement: 'Adverse reconstruction: a text expressing P need not make Pworld-true. Assertions about a report
+    and endorsement of its content require separate scopes.'
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  - SR037
+  basis: REVIEWER_INTERPRETATION
+- id: S005
+  label: Consensus changes
+  statement: 'Adverse reconstruction: organizational adoption of a proposition can change over time; no belief
+    revision,versioned consensus or temporal update calculus is supplied.'
+  evidence:
+  - SR037
+  basis: REVIEWER_INTERPRETATION
+- id: S006
+  label: Conflicting textual sources
+  statement: 'Adverse reconstruction: conflicting discourses should not be silently imported as one coherent
+    assertion set. Contextual disagreement support is unknown,not proved absent from the original.'
+  evidence:
+  - SR037
+  basis: REVIEWER_INTERPRETATION
+- id: S007
+  label: Subject versus referent
+  statement: 'Adverse reconstruction: a subject Concept is not automatically a physical object,its extension
+    or the interpreted situation.'
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: S008
+  label: Encoding versus assertion
+  statement: 'Adverse reconstruction: encoding/inscribing a statement is not equivalent to enunciating it as
+    a commitment or attributing True in a KB.'
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: S009
+  label: Reliable author
+  statement: 'Adverse reconstruction: knowing an author does not independently establish reliability,truth
+    or valid reasoning.'
+  evidence:
+  - SR028
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: S010
+  label: Fragment boundary disagreement
+  statement: 'Adverse reconstruction: different analysts may select different border/main subjects; the supplied
+    material has no reproducible inter-annotator agreement result.'
+  evidence:
+  - SR031
+  - SR032
+  - SR033
+  basis: REVIEWER_INTERPRETATION
+- id: S011
+  label: Toy versus deployment
+  statement: 'Adverse reconstruction: an R&Dmemory example does not prove user effectiveness or generalizability
+    to arbitrary organizations.'
+  evidence:
+  - SR030
+  - SR036
+  basis: REVIEWER_INTERPRETATION
+- id: S012
+  label: Source formula transcription
+  statement: 'Adverse source case: the ambiguous AhasForTruthValue fragment must not become a corrected exact
+    source axiom or machine-verified definition.'
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: S013
+  label: Unknown primary visuals
+  statement: 'Evidence case: absence of retained figures/full pages does not mean the original article has
+    no figures,formulas,evaluation or bibliography.'
+  evidence:
+  - SR001
+  basis: REVIEWER_INTERPRETATION
+- id: S014
+  label: DOLCE edition inference
+  statement: 'Evidence case: naming DOLCE and OntoClean does not identify an edition,import set or profile
+    result.'
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+evaluation:
+  Verification:
+    label: Source/logic boundary
+    statement: Metadata checks and local receipt/report integrity are performed. No original formula parsing,DefOntoexecution,ontology
+      profile,consistency or reasoner run is performed.
+    evidence:
+    - SR029
+    - M01
+    - M02
+    basis: REVIEWER_INTERPRETATION
+  Validation:
+    label: Application fit
+    statement: The supplied toyR&Dexample supports only reported illustrative fit; completeness of any original
+      validation study is unverified.
+    evidence:
+    - SR030
+    basis: REVIEWER_INTERPRETATION
+  Evaluation:
+    label: Measured results
+    statement: The provided summary supplies no controlled performance,participant population or comparative
+      benchmark results. Original-paper evaluation coverage is UNKNOWN,not proved absent.
+    evidence:
+    - SR036
+    basis: UNKNOWN
+  Assessment:
+    label: Critical cases
+    statement: Fourteen positive/adverse evidence scenarios examine endorsement,conflict,representation identity,authorship
+      and method/formula uncertainty; these are reviewer reconstructions,not original experiments.
+    evidence:
+    - SR022
+    - SR023
+    - SR024
+    - SR025
+    - SR026
+    - SR027
+    - SR037
+    basis: REVIEWER_INTERPRETATION
+  Assurance:
+    label: Reproducibility
+    statement: All14summary units/38claims have stable source IDs and critical rows; bibliographic checks and
+      unavailable-original limits are retained. Independent expert acceptance and exact original artifact remain
+      unestablished.
+    evidence:
+    - SR001
+    - M01
+    - M02
+    basis: REVIEWER_INTERPRETATION
+findings:
+- id: F001
+  label: Three representation levels
+  statement: The summary supports separating content,expression and inscription as a prior-overlap lead; none
+    is automatically an agent mental state or direct physical referent.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: F002
+  label: Communicative provenance
+  statement: Production/communication/enunciation and author/addressee distinctions offer a candidate provenance
+    lens,without an implemented trust or assertion-commitment calculus.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: F003
+  label: KBversus textual content
+  statement: The reported hybrid model keeps organizational assertions and discourse information separate;
+    architecture motivation is not a measured superiority or complete synchronization result.
+  evidence:
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: F004
+  label: True attribution scope
+  statement: The OSWKBTrue fragment must remain locally scoped. A partial indexed discussion also warns against
+    generalizing it to every agent knowledge use; no global knowledge-equals-truth claim is adopted.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  - M03
+  basis: REVIEWER_INTERPRETATION
+- id: F005
+  label: Location/identity ambiguity
+  statement: Inscription-mediated physical support wording is not a verified identity,location or mereological
+    axiom for nonphysical contents.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: F006
+  label: Conceptual versus machine catalog
+  statement: The available terms are summary-reported concepts/roles/acts; original class IRIs,complete definitions,imports
+    and class populations are unknown.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  - SR029
+  basis: REVIEWER_INTERPRETATION
+- id: F007
+  label: Method evidence is limited
+  statement: DefOnto and thematic analysis are reported methods,not acquired/executed software,complete method
+    documentation or a reproduced evaluation.
+  evidence:
+  - SR029
+  - SR031
+  - SR032
+  - SR033
+  basis: REVIEWER_INTERPRETATION
+- id: F008
+  label: Example evidence is limited
+  statement: The toy R&Dmemory motivates fit; no quantitative results in the supplied summary can establish
+    user performance,generalization or independent adequacy.
+  evidence:
+  - SR030
+  - SR036
+  basis: REVIEWER_INTERPRETATION
+- id: F009
+  label: Reliability objective unresolved
+  statement: Authorship/subject/reliability are reported goals,but no complete reliability definition or operational
+    validation can be extracted from the supplied summary.
+  evidence:
+  - SR028
+  basis: REVIEWER_INTERPRETATION
+- id: F010
+  label: Coherence qualification
+  statement: Organizational consensus/coherence is a reported KBassumption. It does not prove all textual viewpoints
+    agree or that the full original ontology cannot contextualize disagreement.
+  evidence:
+  - SR037
+  basis: REVIEWER_INTERPRETATION
+- id: F011
+  label: Open model extensions
+  statement: Discourse/enunciation and proposition/information types are open in the summarized historical
+    work; no present-day project completeness claim follows.
+  evidence:
+  - SR034
+  - SR035
+  basis: REVIEWER_INTERPRETATION
+- id: F012
+  label: Thematic-role boundary
+  statement: The supplied omission note prevents inventing a full PCrole vocabulary or participation signature.
+  evidence:
+  - SR038
+  basis: REVIEWER_INTERPRETATION
+- id: F013
+  label: Formal fragment unverified
+  statement: The summary formula typography is preserved as secondary; quantifiers,logical operators,truth-value
+    constraints and original glyphs remain unverified.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: F014
+  label: Qualified citation possible
+  statement: Title/two authors are checked against the indexed original header and bibliographic metadata is
+    triangulated. DOI remains unverified; no full-text verification or exact original quotation is claimed.
+  evidence:
+  - M01
+  - M02
+  basis: REVIEWER_INTERPRETATION
+- id: F015
+  label: No comparative acceptance
+  statement: Expression/content/agent-act overlap constrains later questions but establishes no accepted DnS/LMM/Clariceptify
+    equivalence,priority verdict or ontology modification.
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: F016
+  label: Completion is bounded
+  statement: All14 supplied units/38claims are critically assessed under the owner exception; completion of84does
+    not become a nineteenth full-paper review or completion of technical246.
+  evidence:
+  - SR001
+  basis: REVIEWER_INTERPRETATION
+questions:
+- id: Q001
+  label: Original class/role semantics
+  statement: If later scoped work acquires a formal source,determine whether Information/Assertion are classes,roles
+    or other representations. Current246retains this unknown.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  basis: REVIEWER_INTERPRETATION
+- id: Q002
+  label: Exact formula and truth scope
+  statement: Retain the lossy formula and local KBTrue interpretation; exact axioms,broader agent-knowledge
+    scope and consistency proof are unverified.
+  evidence:
+  - SR022
+  - SR023
+  - SR024
+  - SR025
+  - SR026
+  - SR027
+  - M03
+  basis: REVIEWER_INTERPRETATION
+- id: Q003
+  label: Content/expression/support identity
+  statement: What identity,copy,multiplicity and dependence rules govern these levels? No formal solution is
+    invented from summary prose.
+  evidence:
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: Q004
+  label: Foundation/implementation source
+  statement: What DOLCEedition,DefOntoversion or formal imports were used? Family names and historical development
+    claims are insufficient.
+  evidence:
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  - SR029
+  basis: REVIEWER_INTERPRETATION
+- id: Q005
+  label: Participation and agency
+  statement: What is the actual PCsignature and thematic-role refinement,and what temporal/intentional-act
+    constraints apply? Detail remains unavailable.
+  evidence:
+  - SR038
+  - SR013
+  - SR014
+  - SR015
+  - SR016
+  - SR017
+  - SR018
+  - SR019
+  - SR020
+  - SR021
+  basis: REVIEWER_INTERPRETATION
+- id: Q006
+  label: Disagreement and reliability
+  statement: How are changing consensus,contradictory discourses,author trust and addressee attitudes handled?
+    Summary limitations are not full-theory absence proofs.
+  evidence:
+  - SR037
+  - SR028
+  basis: REVIEWER_INTERPRETATION
+- id: Q007
+  label: Indexing reproducibility
+  statement: What annotation procedure,competency cases and evaluation support thematic indexing/customized
+    views? No original performance claim is inferred.
+  evidence:
+  - SR031
+  - SR032
+  - SR033
+  - SR008
+  - SR009
+  - SR010
+  - SR011
+  - SR012
+  basis: REVIEWER_INTERPRETATION
+- id: Q008
+  label: Later comparison use
+  statement: Use only evidence-qualified cells in256/126. Original source verification is optional future scope,not
+    a PDF gate for the completed current bounded task.
+  evidence:
+  - SR001
+  - SR003
+  - SR004
+  - SR005
+  - SR006
+  - SR007
+  basis: REVIEWER_INTERPRETATION
+citation_guidance:
+  bibliographic_reference: 'Fortier, J.-Y., & Kassel, G. (2004). Managing Knowledge at the Information Level:
+    an Ontological Approach. In Proceedings of the ECAI2004 Workshop on Knowledge Management and Organizational
+    Memories (pp.39-45). https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf'
+  doi: NOT_VERIFIED_DO_NOT_ADD_A_GUESSED_DOI
+  evidence_qualification: This discussion of I&DA is based on an owner-supplied Google Quick Read summary,with
+    title/author and bibliographic cross-checks; the complete primary text has not been critically reviewed.
+  candidate_sentence: The available secondary summary describes I&DA as separating informational content,its
+    representations and communicative acts,while distinguishing organizational KBassertions from information
+    in textual discourses.
+  allowed_scope: Qualified conceptual-background/prior-overlap lead,with summary attribution and retained source
+    limitation.
+  unverified_scope:
+  - Exact primary quotations or formula glyphs/quantification.
+  - Exact DOLCEedition,formal import graph,released class definitions/populations or executed consistency.
+  - Complete original sections/figures/bibliography/evaluation or categorical global novelty/equivalence verdict.
+  manuscript_change: NONE_GUIDANCE_ONLY
+artifact:
+  issue: 246
+  status: ORIGINAL_FORMAL_SOURCE_NOT_ACQUIRED
+  local_classes: null
+  imported_classes: null
+  inferred_classes: null
+  source_definition_candidates: null
+  missing_source_definitions: null
+  foundation_family: DOLCE_SUMMARY_REPORTED_ONLY
+  foundation_edition: null
+  actual_imports: null
+  reasoner_execution: NOT_EXECUTED
+boundary:
+  model_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  adoption: OWNER_DECISION_REQUIRED
+  independent_expert_review: NOT_PERFORMED
+closure_boundary: Issue84can close for the revised owner-authorized limited-summary deliverable after merged
+  checks/publication. All18acquired full-paper reviews remain a separate population; this is one completed
+  limited-evidence review,never a19thfull-paper review. Originalfull-text verification is NOT_PERFORMED and
+  no PDF wait gate is reintroduced.246technical,256comparison and126synthesis retain their actual scopes and
+  unknowns. No original exact quotation,formal equivalence,implemented artifact or model/manuscript adoption
+  is claimed.
+citation_guide:
+  path: evidence/related-work/deep-reviews/CLR-RW-IDA/citation-guide.md
+  sha256: 4a21855774294dcfcada02faa03bb311a53b125dc330adc9f3a05282ac2d5f56
