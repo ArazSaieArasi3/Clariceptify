@@ -6,7 +6,9 @@ The [complete access inventory](../../evidence/related-work/corpus/access-invent
 
 The current [deep-review register](../../evidence/related-work/deep-reviews/register.yaml) and [coverage guide](../../evidence/related-work/deep-reviews/coverage-guide.md) supersede the original paper-review paths for upgraded issues. The 2026-10-28 [BDI2026Preprint dossier](../../evidence/related-work/deep-reviews/BDI2026Preprint/report.md), #249, completes the retained arXiv v2 paper review: all 21 pages and 78 numbered formulas. The historical 2025 filename is preserved; final journal byte equivalence remains unverified. Selected official core 0.5 and alignment-import 0.3 are distinct; all-class definitions, imports and semantic checks remain open in #250. That checkpoint completed 10 of 12 acquired papers; the subsequent Cognitive Atlas checkpoint below records current progress. Seven missing texts remain separate access gaps.
 
-The 2026-10-28 [CognitiveAtlas2011 dossier](../../evidence/related-work/deep-reviews/CognitiveAtlas2011/report.md), #79, completes the exact 2011 paper review. All-class definitions and export/generator correspondence remain open in #241. Eleven of 12 acquired papers now have completed deep reviews; the remaining acquired paper is #262. Seven missing texts remain independent access gaps.
+The 2026-10-28 [CognitiveAtlas2011 dossier](../../evidence/related-work/deep-reviews/CognitiveAtlas2011/report.md), #79, completes the exact 2011 paper review. All-class definitions and export/generator correspondence remain open in #241. That checkpoint completed 11 of 12 acquired-paper deep reviews. Seven missing texts remain independent access gaps.
+
+The [EmotionsOnto2014 dossier](../../evidence/related-work/deep-reviews/EmotionsOnto2014/report.md), #262, completes the last acquired-paper review. All12 available paper dossiers are complete. This does not close #239 or other class/import/semantic artifacts, comparison batches or final synthesis. Seven full texts remain missing; independent technical work continues with #250, #241 and foundation glossaries.
 
 ## Missing texts requested from the owner
 

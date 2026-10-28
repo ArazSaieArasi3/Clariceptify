@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "work_id": "EmotionsOnto2014",
+  "checked_on": "2026-10-28",
+  "source_sha256": "351bddf40462ec68b7ff990837b2a7cf144b8f239dc86bf76d2d9d0ec618d610",
+  "endpoints": [
+    {
+      "url": "https://www.jucs.org/jucs_20_13/emotions_onto_an_ontology.html",
+      "outcome": "Publisher page opened: four authors, exact title, DOI10.3217/jucs-020-13-1813 and volume20 issue13 verified. Already-retained16-page publisher PDF is the reading authority."
+    },
+    {
+      "url": "http://rhizomik.net/ontologies/emotionsonto/",
+      "outcome": "Exact paper footnote1 endpoint was not accessible through search service. No original file acquired; this response does not establish global unavailability."
+    },
+    {
+      "url": "https://rhizomik.net/html/ontologies/emotions%26cognitionontology/",
+      "outcome": "Author guide opened and matched retained documentation. Explicitly distinguishes later Emotions & Cognition implementation from older EmotionsOnto versions2010/11,2013/02 and2015/05."
+    },
+    {
+      "url": "https://rhizomik.net/ontologies/2013/02/emotionsonto.owl",
+      "outcome": "Author-linked pre-publication candidate not accessible through search service; no bytes acquired or declared paper-equivalent."
+    },
+    {
+      "url": "https://rhizomik.net/ontologies/2015/05/emotionsonto.owl",
+      "outcome": "Author-linked later predecessor candidate not accessible through search service; no bytes acquired or declared paper-equivalent."
+    }
+  ],
+  "repository_queries": [
+    {
+      "query": "EmotionsOnto",
+      "limit": 8,
+      "result": {
+        "archive_filter_applied": null,
+        "repositories": []
+      }
+    },
+    {
+      "query": "\"emotions cognition\" ontology",
+      "limit": 8,
+      "result": {
+        "archive_filter_applied": null,
+        "repositories": []
+      }
+    }
+  ],
+  "selected_original": {
+    "filename": null,
+    "sha256": null,
+    "namespace": null,
+    "declared_imports": null,
+    "class_count": null,
+    "reasoner": "NOT_EXECUTED"
+  },
+  "later_extension_headers": {
+    "tool": "rdflib",
+    "version": "7.6.0",
+    "headers": [
+      {
+        "filename": "EmotionsCognition-2015.owl",
+        "sha256": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+        "ontology_iris": [
+          "http://rhizomik.net/ontologies/emotions&cognitionontology.owl"
+        ],
+        "declared_imports": [
+          "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+          "http://www.loa-cnr.it/ontologies/DUL.owl",
+          "http://www.loa-cnr.it/ontologies/IOLite.owl"
+        ],
+        "version_info": []
+      },
+      {
+        "filename": "EmotionsCognition-current.owl",
+        "sha256": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+        "ontology_iris": [
+          "http://rhizomik.net/ontologies/emotions&cognitionontology.owl"
+        ],
+        "declared_imports": [
+          "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+          "http://www.loa-cnr.it/ontologies/DUL.owl",
+          "http://www.loa-cnr.it/ontologies/IOLite.owl"
+        ],
+        "version_info": []
+      }
+    ]
+  },
+  "license": "PDF front matter says copyright J.UCS. No blanket open-source license or reuse permission inferred for article, ontology or referenced images.",
+  "limits": [
+    "Two bounded GitHub name/description searches returned no repositories, not proof of global nonexistence.",
+    "The two retained later extension paths have identical bytes; they are not independent releases, original2014 bytes or the missing2015 paper.",
+    "RDFLib header parsing was executed on retained later files; no all-class census/glossary, imported definitions, profile/reasoner, EPF reproduction or user experiment was executed."
+  ],
+  "global_absence_claim": false,
+  "model_change": "NONE"
+}

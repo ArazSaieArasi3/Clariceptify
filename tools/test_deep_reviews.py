@@ -414,5 +414,55 @@ class CognitiveAtlasBoundaryTests(unittest.TestCase):
         self.reject_figure('illustration promoted')
 
 
+class EmotionsOntoBoundaryTests(unittest.TestCase):
+    def setUp(self):
+        base = ROOT / BASE
+        self.dossier = yaml.safe_load((base / 'EmotionsOnto2014/review.yaml').read_text())
+        self.ledger = yaml.safe_load((base / 'EmotionsOnto2014/figure-ledger.yaml').read_text())
+        self.entry = next(r for r in yaml.safe_load((base / 'register.yaml').read_text())['acquired_papers']
+                          if r['id'] == 'EmotionsOnto2014')
+        self.dimensions = yaml.safe_load((base / 'protocol.yaml').read_text())['dimensions']
+
+    def reject_dossier(self, message):
+        with self.assertRaisesRegex(ValueError, message):
+            validate_dossier(self.dossier, self.entry, self.dimensions)
+
+    def reject_figure(self, message):
+        from check_deep_reviews import validate_emotions_figure_ledger
+        with self.assertRaisesRegex(ValueError, message):
+            validate_emotions_figure_ledger(self.dossier, self.ledger)
+
+    def test_positive_product_experience_is_not_recognition_accuracy(self):
+        self.dossier['study_population']['recognition_accuracy'] = 1.0
+        self.reject_dossier('responses promoted')
+
+    def test_forced_choice_is_not_a_multilabel_rating(self):
+        self.dossier['study_population']['choices_per_participant'] = 14
+        self.reject_dossier('responses promoted')
+
+    def test_paper_taxonomy_is_not_released_class_count(self):
+        self.dossier['artifact']['machine_class_populations']['local'] = 39
+        self.reject_dossier('original class population')
+
+    def test_later_extension_does_not_prove_original_fidelity(self):
+        self.dossier['artifact']['historical_fidelity'] = 'VERIFIED'
+        self.reject_dossier('extension promoted')
+
+    def test_context_arrows_are_not_silently_reversed(self):
+        node = next(n for n in self.ledger['figures'][1]['nodes'] if n['label'] == 'dul:Situation')
+        node['parents'] = ['dul:SocialObject']
+        self.reject_figure('arrows silently repaired')
+
+    def test_eight_application_labels_do_not_replace_fourteen_instrument_labels(self):
+        self.ledger['figures'][4]['pleasant'].pop()
+        self.reject_figure('questionnaire/result population')
+
+    def test_altered_counts_cannot_pass_by_recounting_total(self):
+        self.ledger['table']['counts']['admiration'] = 14
+        self.dossier['study_population']['category_counts']['admiration'] = 14
+        self.ledger['table']['total'] = 22
+        self.reject_figure('questionnaire/result population')
+
+
 if __name__ == '__main__':
     unittest.main()

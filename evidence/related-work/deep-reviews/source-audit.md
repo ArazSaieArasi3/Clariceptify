@@ -19,7 +19,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING | SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established; PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
-| EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; AUTHOR_PREDECESSOR_LINKS_MATCH_PENDING | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
+| EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; PINNED_DUL4_2 | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | PENDING_FULL_CATALOG | #88 |
 | CLR-RW-O4OA (#73) | PUBLIC_PROJECT_METADATA_TREE_403; [source](https://gitlab.com/bfmartins/o4oa); AUTHOR_DOCUMENTATION_MODEL_DOWNLOAD_PENDING | UFO-A/B/C; gUFO for light OWL model; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
 | CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_ACQUIRED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
@@ -389,6 +389,20 @@ Query: `Exact2011 paper-linked poldrack/cogat, official export/discussion reposi
 Exact paper link resolves to public poldrack/cogat; selected author generator bytes pinned. Official retained13-file export and distinct two-file discussion repository checked. cogat.v2.owl header0.3 parsed; no declared imports. See evaluation/related-work/cognitiveatlas/deep-review-discovery.json.
 
 Limit: No complete class/definition census, import closure/profile/reasoning, source generation or historical2011 equivalence established; those remain #241.
+
+### EMO-S01: PRIMARY_PUBLISHER_AUTHOR_LINKS_AND_CONNECTED_GITHUB_SEARCH
+
+Query: `Exact2014 ontology endpoint, author predecessor/extension links and bounded repository searches`. Checked: 2026-10-28.
+
+- https://www.jucs.org/jucs_20_13/emotions_onto_an_ontology.html
+- http://rhizomik.net/ontologies/emotionsonto/
+- https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
+- https://rhizomik.net/ontologies/2013/02/emotionsonto.owl
+- https://rhizomik.net/ontologies/2015/05/emotionsonto.owl
+
+Publisher identity/DOI and author predecessor distinction verified. Two8-result-limit repository queries returned none; original/dated predecessor file opens unavailable. Later identical retained extension headers parsed; see evaluation/related-work/emotionsonto/deep-review-discovery.json.
+
+Limit: No global absence, exact original import/glossary, license, semantic test or historical equivalence claim. Technical #239 remains open.
 
 ## Interpretation and next work
 

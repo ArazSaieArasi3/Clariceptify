@@ -175,6 +175,21 @@ def validate_dossier(d, entry, dimensions):
         require(d['implementation_scope']['literature_relation'] == 'citesForInformation' and
                 d['implementation_scope']['theory_testing'] == 'FUTURE_NOT_AVAILABLE_IN_PAPER',
                 'Cognitive Atlas future or informative relation promoted to implemented support')
+    if d['work_id'] == 'EmotionsOnto2014':
+        study = d['study_population']
+        require(study['basis'] == 'AUTHOR_REPORTED' and
+                study['target'] == 'EPF_PRODUCT_EXPERIENCE_NOT_EMOTION_DETECTION' and
+                [study[k] for k in ['participants', 'women', 'men', 'minutes', 'choices_per_participant']] ==
+                [14, 7, 7, 30, 1] and study['recognition_accuracy'] is None and
+                study['causal_emotion_change'] is None and not study['independently_reproduced'],
+                'EmotionsOnto product responses promoted to recognition or causal validation')
+        require(all(v is None for v in d['artifact']['machine_class_populations'].values()) and
+                d['artifact']['original_2014_sha256'] is None and
+                d['artifact']['historical_fidelity'] == 'NOT_ESTABLISHED',
+                'EmotionsOnto later extension promoted to original class population')
+        require(d['paper_formalization']['numbered_formula_count'] == 0 and
+                d['paper_formalization']['quantification_of_printed_trigger_restriction'] ==
+                'NOT_SPECIFIED_AS_DL_FORMULA', 'EmotionsOnto prose promoted to a printed DL formula')
     if d['status'] == 'REVIEW_COMPLETE':
         require(d['coverage']['read_pages'] == list(range(1, entry['pdf_pages'] + 1)), 'incomplete full-text reading')
         require(d['coverage']['units'] and all(u['status'] == 'REVIEWED' and
@@ -202,6 +217,32 @@ def validate_cognitive_figure_ledger(dossier, ledger):
             len(empirical['layers']) != 5 or sum(map(len, empirical['layers'].values())) != 13 or
             ledger['machine_class_count'] is not None):
         raise ValueError('Cognitive Atlas empirical illustration promoted to class hierarchy')
+
+
+def validate_emotions_figure_ledger(dossier, ledger):
+    if (ledger['source_sha256'] != dossier['source']['sha256'] or
+            ledger['work_id'] != 'EmotionsOnto2014' or
+            [f['number'] for f in ledger['figures']] != [1, 2, 3, 4, 5] or
+            [f['pdf_page'] for f in ledger['figures']] != [6, 8, 10, 11, 12]):
+        raise ValueError('Incomplete or substituted EmotionsOnto figure population')
+    taxonomy = ledger['figures'][1]
+    nodes = {n['label']: n for n in taxonomy['nodes']}
+    if (len(nodes) != len(taxonomy['nodes']) or len(nodes) != 39 or
+            any(p not in nodes for n in nodes.values() for p in n['parents']) or
+            {r['label'] for r in dossier['catalog'] if r.get('kind') == 'FIGURE2_CATEGORY'} != set(nodes)):
+        raise ValueError('Incomplete EmotionsOnto paper taxonomy')
+    if (nodes['dul:Situation']['parents'] != ['dul:SocialObject', 'SocialContext', 'EnvironmentalContext'] or
+            nodes['Interface']['parents'] != ['PersonalContext']):
+        raise ValueError('EmotionsOnto source context arrows silently repaired')
+    instrument = ledger['figures'][4]
+    names = instrument['pleasant'] + instrument['unpleasant']
+    counts = ledger['table']['counts']
+    if (len(names) != len(set(names)) or len(names) != 14 or set(names) != set(counts) or
+            counts != dossier['study_population']['category_counts'] or
+            {k: v for k, v in counts.items() if v} != {'admiration': 6, 'satisfaction': 4, 'fascination': 4} or
+            sum(counts.values()) != ledger['table']['total'] or ledger['table']['total'] != 14 or
+            ledger['machine_class_count'] is not None):
+        raise ValueError('EmotionsOnto questionnaire/result population changed')
 
 
 def validate_diagram_inventory(dossier, inventory):
@@ -354,7 +395,12 @@ def check(root=ROOT):
             raw = (root / binding['path']).read_bytes()
             if hashlib.sha256(raw).hexdigest() != binding['sha256']:
                 raise ValueError('Changed Cognitive Atlas figure ledger bytes')
-            validate_cognitive_figure_ledger(d, yaml.safe_load(raw))
+            if d['work_id'] == 'CognitiveAtlas2011':
+                validate_cognitive_figure_ledger(d, yaml.safe_load(raw))
+            elif d['work_id'] == 'EmotionsOnto2014':
+                validate_emotions_figure_ledger(d, yaml.safe_load(raw))
+            else:
+                raise ValueError('Unknown paper figure-ledger contract')
         if 'diagram_inventory' in d:
             binding = d['diagram_inventory']
             raw = (root / binding['path']).read_bytes()
