@@ -371,7 +371,7 @@ Limit: HAL current access denied; retained full text available. Machine classes/
 
 ### BDI20-TECH247: PRIMARY_PUBLISHER_AND_CONNECTED_GITHUB_REPOSITORY_CODE_SEARCH
 
-Query: `Exact BDI2020 publisher PDF and bounded author repository and code searches`. Checked: 2026-10-30.
+Query: `Exact BDI2020 publisher PDF and bounded author repository and code searches`. Checked: 2026-10-29.
 
 - https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667?download=true
 
