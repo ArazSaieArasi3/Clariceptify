@@ -67,6 +67,7 @@ def render_audit(audit):
               '[LMM followup #274](../artifacts/LMM-correspondence.md) separately runs the exact selected closure profile and 13 isolated expectations; historical alignment remains unavailable. '
               '[OntoKADS followup #236](../artifacts/OntoKADS.md) records bounded unsuccessful formal-root discovery and eight paper formulas; machine class counts and imports remain unknown, with no reasoner execution. '
               '[OntoLex core #237](../artifacts/OntoLex.md) accounts for all eight local and eight external named declarations in the selected W3C RDF/XML root, with no declared imports and eight missing external comments; the separately pinned repository root differs in ConceptSet direction and the selected W3C source fails OWL2 DL profile. '
+              '[CMO technical #245](../artifacts/CMO.md) accounts for all seven local classes and five external redeclarations in a pinned third-party mirror, with six local source comments and one descriptive seeAlso literal without a comment; original author release and imported glossaries remain unknown. '
               'The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.', '',
               'Clariceptify model change: NONE. Final synthesis #126 stays open; later adoption requires the owner decision.', '']
     return '\n'.join(lines)
