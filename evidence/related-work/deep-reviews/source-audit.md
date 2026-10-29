@@ -1,6 +1,6 @@
 # Repository, foundation and class-coverage audit
 
-Checked on 2026-10-29. A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
+Checked on 2026-10-30. A bounded repository/artifact/foundation/class-coverage audit, not final corpus synthesis or universal discovery. Original 19 candidate labels are not the same population as 19 exact paper/version records.
 
 The 23 rows are 19 exact paper/version records plus four separate documentation sources. Repository discovery, formal-file availability, paper review, class definitions and semantic tests are independent states. NOT_IDENTIFIED is bounded by the recorded searches; NOT_CHECKED is unfinished discovery. Neither means no repository exists.
 
@@ -10,7 +10,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 |---|---|---|---|---|
 | OntoKADS2005 (#74) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED_IN_BOUNDED_DISCOVERY_2026_10_29 | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | NOT_EXECUTABLE_NO_FORMAL_ROOT_IDENTIFIED | #252, #126 |
 | IAO2015 (#78) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/information-artifact-ontology/IAO); SELECTED_2026_03_30_ROOT_TECHNICAL_REVIEW_COMPLETE | BFO; MFO extension; PAPER_STATED_GROUNDING; RELEASE_EMBEDDED_BFO_REUSE_WITHOUT_DIRECT_IMPORT; edition: UNKNOWN | [210 classes](../../../evaluation/related-work/iao240/census.json); 197 source definitions; 13 missing | #254, #126 |
-| EFO (#80) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | EFO; INDEPENDENT_FOUNDATION; edition: UNKNOWN | PENDING_FULL_CATALOG | #242 |
+| EFO (#80) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_TECHNICAL_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT | EFO; INDEPENDENT_FOUNDATION; edition: UNKNOWN | PAPER_FIGURE_33_CATEGORIES_CATALOGUED_FORMAL_ROOT_UNAVAILABLE | #254, #126 |
 | cDnS2007 (#259) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; CORE267_PROFILE_FAIL_REASONER_REFUSED_SELECTED_CLASS_INVENTORY_COMPLETE | Foundation-neutral constructive framework; PAPER_STATED_GROUNDING; edition: UNKNOWN | [12 classes](cDnS2007/classes.md); 12 comment candidates; 0 missing | #263, #251, #126 |
 | LMM2008 (#260) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; SELECTED_FOUR_MODULE_PROFILE_AND13_HERMIT_CASES_PASS_HISTORICAL_ALIGNMENT_UNAVAILABLE | DOLCE via DUL and IOLite; ACTUAL_IMPORT; edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2 | [29 classes](LMM2008/classes.md); 25 comment candidates; 4 missing | #252, #126 |
 | DnS2003 (#261) | OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://www.loa.istc.cnr.it/dolce/overview.html); [source](https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip); SELECTED_LATER_EXTENDEDDNS397_REVIEW_COMPLETE_WITH_HISTORICAL_LIMITS | DOLCE-Lite; ACTUAL_PINNED_IMPORTS_IN_SELECTED_LATER_MODULE; edition: Supplied 397-family modules | [58 classes](../dns235-class-catalog.md); 58 comment candidates; 0 missing | #251, #126 |
