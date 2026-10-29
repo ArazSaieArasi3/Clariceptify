@@ -1414,7 +1414,7 @@ records:
 - id: OntoLex
   title: OntoLex
   primary_issue: 75
-  source_state: QUEUED
+  source_state: OFFICIAL_DOCUMENT_REVIEW_COMPLETE
   repository:
     state: PUBLIC_REPOSITORY_IDENTIFIED_SNAPSHOT_PENDING
     urls:
@@ -1424,16 +1424,16 @@ records:
     - W06
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_CORE_AND_SPECIFICATION
+  artifact_state: PINNED_CORE_PENDING_TECHNICAL_REVIEW_SPECIFICATION_REVIEW_COMPLETE
   foundation:
-    family: null
+    family: Lexical-interface vocabulary with SKOS and semiotics reuse
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Not yet established for this exact source
+    relation: DOCUMENTED_REUSE_NOT_VERIFIED_IMPORT
+    basis: PINNED_REPORT
+    locator: https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: "No UFO/BFO edition or formal import closure inferred from cited inspirations; #237 remains open."
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -1444,6 +1444,8 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 237
+  - 253
+  - 126
 - id: SKOS
   title: SKOS
   primary_issue: 76
