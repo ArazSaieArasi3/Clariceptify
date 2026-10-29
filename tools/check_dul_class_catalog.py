@@ -22,12 +22,12 @@ def digest(value):
 
 
 def inspect_source(path):
-    import rdflib
-    from rdflib import Graph, URIRef, Literal, BNode, RDF, RDFS, OWL, XSD
-    from rdflib.compare import to_canonical_graph
     raw = Path(path).read_bytes()
     if hashlib.sha256(raw).hexdigest() != SHA:
         raise ValueError('Selected source hash differs')
+    import rdflib
+    from rdflib import Graph, URIRef, Literal, BNode, RDF, RDFS, OWL, XSD
+    from rdflib.compare import to_canonical_graph
     g = to_canonical_graph(Graph().parse(data=raw, format='turtle'))
     declared = {s for kind in (OWL.Class, RDFS.Class) for s in g.subjects(RDF.type, kind) if isinstance(s, URIRef)}
     local = sorted((s for s in declared if str(s).startswith(NS)), key=str)

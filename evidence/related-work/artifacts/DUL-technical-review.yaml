@@ -21,7 +21,7 @@ evidence:
     sha256: 25f93f87fab8055a2fe4e31b0625464b5fbcfd48ec4cfd669be304fb1f55c675
   class_checks:
     path: evaluation/related-work/dul/class-catalog-check.json
-    sha256: b6c834f666ade742c8c25f7de925cea2c0346dc1c398ddb763468c046840e519
+    sha256: 16eddd3fd19d1e46b64e3953c23233b532a239545037528a7f6b82c6e7fa7d40
   semantic_tests:
     path: evaluation/related-work/dul/semantic-cases.json
     sha256: e4fbedf90f53374188e1f523f8f8dfd160b14da8a1ffdd6461dd3dee29708c4c
