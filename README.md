@@ -118,3 +118,5 @@ The [source-access and archive report](docs/research/corpus-access.md) records a
 Research checkpoint: [DUL4.2 technical review and 78-class glossary](evidence/related-work/artifacts/DUL-technical-review.md), with version-qualified semantic cases and retained source gaps. This evidence does not change the Clariceptify ontology or complete final synthesis.
 
 Shared research foundation: [IOLite1.8 complete selected-class glossary and LMM import coverage](evidence/related-work/deep-reviews/shared-foundations/IOLite/README.md). This accounts for source-definition gaps without changing the Clariceptify model.
+
+- [SKOS Reference critical document review](evidence/related-work/reviews/SKOS.md): source and errata evidence; formal artifact work remains separate.

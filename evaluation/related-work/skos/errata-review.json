@@ -1,0 +1,79 @@
+{
+  "artifact_changes": "NOT_PERFORMED",
+  "bytes": 12625,
+  "checked_on": "2026-10-29",
+  "displayed_last_revision": "2015/03/08 21:58:12",
+  "entries": [
+    {
+      "id": "SKOS-DL-versionIRI",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#SKOS-DL-versionIRI",
+      "reviewer_disposition": "Version identity correction concerns the informative DL subset, not an adopted module.",
+      "scope": "REFERENCE_INFORMATIVE_SCHEMA"
+    },
+    {
+      "id": "DCT-abbrev",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#DCT-abbrev",
+      "reviewer_disposition": "Record the missing namespace abbreviation before reconstructing examples.",
+      "scope": "REFERENCE"
+    },
+    {
+      "id": "HTML-namespace",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#HTML-namespace",
+      "reviewer_disposition": "Preserve corrected HTML access routes without rewriting the frozen source.",
+      "scope": "REFERENCE"
+    },
+    {
+      "id": "S14",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#S14",
+      "reviewer_disposition": "Include untagged preferred literals in the later integrity test boundary.",
+      "scope": "REFERENCE"
+    },
+    {
+      "id": "love77",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#love77",
+      "reviewer_disposition": "Retain the corrected language example separately from literal identity constraints.",
+      "scope": "REFERENCE"
+    },
+    {
+      "id": "skos-vs-skos-xl",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#skos-vs-skos-xl",
+      "reviewer_disposition": "The namespace description concerns XL rather than the core vocabulary.",
+      "scope": "REFERENCE"
+    },
+    {
+      "id": "xl-integrity-constraints",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#xl-integrity-constraints",
+      "reviewer_disposition": "Treat S48 and S58 as integrity conditions despite their section placement.",
+      "scope": "REFERENCE"
+    },
+    {
+      "id": "ISO-Correspondences",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#ISO-Correspondences",
+      "reviewer_disposition": "This does not establish review of the Primer or current ISO mappings.",
+      "scope": "PRIMER_NOT_REVIEWED"
+    },
+    {
+      "id": "SPARQL-variable-typo",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#SPARQL-variable-typo",
+      "reviewer_disposition": "Query correction is noted as out of this Reference review scope.",
+      "scope": "PRIMER_NOT_REVIEWED"
+    },
+    {
+      "id": "narrower-scopeNote",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#narrower-scopeNote",
+      "reviewer_disposition": "Retain source annotation correction for the separate artifact inspection.",
+      "scope": "RDF_ARTIFACT_DEFERRED_238"
+    },
+    {
+      "id": "missing-tags",
+      "locator": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata#missing-tags",
+      "reviewer_disposition": "Retain annotation language-tag correction for the separate artifact inspection.",
+      "scope": "RDF_ARTIFACT_DEFERRED_238"
+    }
+  ],
+  "primary_source_unchanged": true,
+  "primer_full_review": "NOT_PERFORMED",
+  "sha256": "463583300db10b416a14f1b082a0e4f2852396637eddf9202126c1b2787ec802",
+  "state": "READ_AS_VERSION_QUALIFICATION_NOT_REPLACEMENT_SOURCE",
+  "url": "https://www.w3.org/2006/07/SWD/SKOS/reference/20090811-errata"
+}

@@ -1,0 +1,1309 @@
+schema_version: '1.0'
+task_id: R2-LIT-SKOS
+issue: 76
+candidate_id: CLR-RW-SKOS
+review_kind: W3C_RECOMMENDATION_DOCUMENT_CRITICAL_REVIEW
+status: COMPLETE_WITH_EXPLICIT_LIMITS
+reviewed_on: '2026-10-29'
+input_repository_commit: a7678eb99104767091dc2c4e4276d6cff0231fc2
+identity:
+  title: SKOS Simple Knowledge Organization System Reference
+  editors:
+  - Alistair Miles
+  - Sean Bechhofer
+  date: '2009-08-18'
+  document_type: W3C Recommendation
+  w3c_standard: true
+  doi: null
+  doi_state: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  source_url: https://www.w3.org/TR/2009/REC-skos-reference-20090818/
+  source_sha256: 3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c
+  source_bytes: 227150
+  original_acquisition_manifest: evidence/related-work/corpus/access-inventory.yaml
+  same_bytes_as_acquired: true
+  primer_review: NOT_PERFORMED
+  version_boundary: Exact archived Reference including appendices A-D, qualified by separately pinned official errata;
+    no substitution by Primer, a journal article or current schema bytes.
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  artifact_issue: 238
+  comparison_issue: 253
+  synthesis_issue: 126
+  artifact_review_completed: false
+  reasoner_execution: NOT_EXECUTED
+  scientific_acceptance: NOT_ASSESSED
+  independent_expert_review: NOT_PERFORMED
+  adoption: OWNER_DECISION_REQUIRED
+  source_redistribution: false
+  full_paper_denominator_change: 0
+coverage:
+  document_read: FULL_PINNED_HTML_AND_OFFICIAL_ERRATA
+  sections:
+  - anchor: L155
+    key: H007
+    level: 2
+    locator_anchor: L155
+    title: 1. Introduction
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L879
+    key: H008
+    level: 3
+    locator_anchor: L879
+    title: 1.1. Background and Motivation
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L895
+    key: H009
+    level: 3
+    locator_anchor: L895
+    title: 1.2. SKOS Overview
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1045
+    key: H010
+    level: 3
+    locator_anchor: L1045
+    title: 1.3. SKOS, RDF and OWL
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L831
+    key: H011
+    level: 3
+    locator_anchor: L831
+    title: 1.4. Consistency and Integrity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L881
+    key: H012
+    level: 3
+    locator_anchor: L881
+    title: 1.5. Inference, Dependency and the Open World Assumption
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: rationale
+    key: H013
+    level: 3
+    locator_anchor: rationale
+    title: 1.6. Design Rationale
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L649
+    key: H014
+    level: 3
+    locator_anchor: L649
+    title: 1.7. How to Read this Document
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1291
+    key: H015
+    level: 4
+    locator_anchor: L1291
+    title: 1.7.1. Formal Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1368
+    key: H016
+    level: 4
+    locator_anchor: L1368
+    title: 1.7.2. URI Abbreviations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1501
+    key: H017
+    level: 4
+    locator_anchor: L1501
+    title: 1.7.3. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L434
+    key: H018
+    level: 3
+    locator_anchor: L434
+    title: 1.8. Conformance
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1302
+    key: H019
+    level: 2
+    locator_anchor: L1302
+    title: 2. SKOS Namespace and Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1289
+    key: H020
+    level: 2
+    locator_anchor: L1289
+    title: 3. The skos:Concept Class
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1437
+    key: H021
+    level: 3
+    locator_anchor: L1437
+    title: 3.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2039
+    key: H022
+    level: 3
+    locator_anchor: L2039
+    title: 3.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L842
+    key: H023
+    level: 3
+    locator_anchor: L842
+    title: 3.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2118
+    key: H024
+    level: 3
+    locator_anchor: L2118
+    title: 3.4. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2145
+    key: H025
+    level: 3
+    locator_anchor: L2145
+    title: 3.5. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L896
+    key: H026
+    level: 4
+    locator_anchor: L896
+    title: 3.5.1. SKOS Concepts, OWL Classes and OWL Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2430
+    key: H027
+    level: 2
+    locator_anchor: L2430
+    title: 4. Concept Schemes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1638
+    key: H028
+    level: 3
+    locator_anchor: L1638
+    title: 4.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2457
+    key: H029
+    level: 3
+    locator_anchor: L2457
+    title: 4.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L8421
+    key: H030
+    level: 3
+    locator_anchor: L8421
+    title: 4.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1228
+    key: H031
+    level: 3
+    locator_anchor: L1228
+    title: 4.4. Integrity Conditions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L21181
+    key: H032
+    level: 3
+    locator_anchor: L21181
+    title: 4.5. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2497
+    key: H033
+    level: 3
+    locator_anchor: L2497
+    title: 4.6. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1101
+    key: H034
+    level: 4
+    locator_anchor: L1101
+    title: 4.6.1. Closed vs. Open Systems
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1170
+    key: H035
+    level: 4
+    locator_anchor: L1170
+    title: 4.6.2. SKOS Concept Schemes and OWL Ontologies
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2446
+    key: H036
+    level: 4
+    locator_anchor: L2446
+    title: 4.6.3. Top Concepts and Semantic Relations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2577
+    key: H037
+    level: 4
+    locator_anchor: L2577
+    title: 4.6.4. Scheme Containment and Semantic Relations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2805
+    key: H038
+    level: 4
+    locator_anchor: L2805
+    title: 4.6.5. Domain of skos:inScheme
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2831
+    key: H039
+    level: 2
+    locator_anchor: L2831
+    title: 5. Lexical Labels
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2007
+    key: H040
+    level: 3
+    locator_anchor: L2007
+    title: 5.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1304
+    key: H041
+    level: 3
+    locator_anchor: L1304
+    title: 5.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1329
+    key: H042
+    level: 3
+    locator_anchor: L1329
+    title: 5.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1567
+    key: H043
+    level: 3
+    locator_anchor: L1567
+    title: 5.4. Integrity Conditions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1409
+    key: H044
+    level: 3
+    locator_anchor: L1409
+    title: 5.5. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1539
+    key: H045
+    level: 3
+    locator_anchor: L1539
+    title: 5.6. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1541
+    key: H046
+    level: 4
+    locator_anchor: L1541
+    title: 5.6.1. Domain of SKOS Lexical Labeling Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1581
+    key: H047
+    level: 4
+    locator_anchor: L1581
+    title: 5.6.2. Range of SKOS Lexical Labeling Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3260
+    key: H048
+    level: 4
+    locator_anchor: L3260
+    title: 5.6.3. Defining Label Relations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1606
+    key: H049
+    level: 4
+    locator_anchor: L1606
+    title: 5.6.4. Alternates Without Preferred
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1629
+    key: H050
+    level: 4
+    locator_anchor: L1629
+    title: 5.6.5. Labeling and Language Tags
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2064
+    key: H051
+    level: 2
+    locator_anchor: L2064
+    title: 6. Notations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2531
+    key: H052
+    level: 3
+    locator_anchor: L2531
+    title: 6.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2542
+    key: H053
+    level: 3
+    locator_anchor: L2542
+    title: 6.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2557
+    key: H054
+    level: 3
+    locator_anchor: L2557
+    title: 6.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2584
+    key: H055
+    level: 3
+    locator_anchor: L2584
+    title: 6.4. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2611
+    key: H056
+    level: 3
+    locator_anchor: L2611
+    title: 6.5. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2613
+    key: H057
+    level: 4
+    locator_anchor: L2613
+    title: 6.5.1. Notations, Typed Literals and Datatypes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2637
+    key: H058
+    level: 4
+    locator_anchor: L2637
+    title: 6.5.2. Multiple Notations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2646
+    key: H059
+    level: 4
+    locator_anchor: L2646
+    title: 6.5.3. Unique Notations in Concept Schemes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2655
+    key: H060
+    level: 4
+    locator_anchor: L2655
+    title: 6.5.4. Notations and Preferred Labels
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: notations-note-domain
+    key: H061
+    level: 4
+    locator_anchor: notations-note-domain
+    title: 6.5.5. Domain of skos:notation
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2860
+    key: H062
+    level: 2
+    locator_anchor: L2860
+    title: 7. Documentation Properties (Note Properties)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2543
+    key: H063
+    level: 3
+    locator_anchor: L2543
+    title: 7.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1693
+    key: H064
+    level: 3
+    locator_anchor: L1693
+    title: 7.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1738
+    key: H065
+    level: 3
+    locator_anchor: L1738
+    title: 7.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1812
+    key: H066
+    level: 3
+    locator_anchor: L1812
+    title: 7.4. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1877
+    key: H067
+    level: 3
+    locator_anchor: L1877
+    title: 7.5. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1879
+    key: H068
+    level: 4
+    locator_anchor: L1879
+    title: 7.5.1. Domain of the SKOS Documentation Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1917
+    key: H069
+    level: 4
+    locator_anchor: L1917
+    title: 7.5.2. Range of the SKOS Documentation Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1930
+    key: H070
+    level: 2
+    locator_anchor: L1930
+    title: 8. Semantic Relations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2810
+    key: H071
+    level: 3
+    locator_anchor: L2810
+    title: 8.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2010
+    key: H072
+    level: 3
+    locator_anchor: L2010
+    title: 8.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2055
+    key: H073
+    level: 3
+    locator_anchor: L2055
+    title: 8.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2422
+    key: H074
+    level: 3
+    locator_anchor: L2422
+    title: 8.4. Integrity Conditions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2157
+    key: H075
+    level: 3
+    locator_anchor: L2157
+    title: 8.5. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2249
+    key: H076
+    level: 3
+    locator_anchor: L2249
+    title: 8.6. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3732
+    key: H077
+    level: 4
+    locator_anchor: L3732
+    title: 8.6.1. Sub-Property Relationships
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2251
+    key: H078
+    level: 4
+    locator_anchor: L2251
+    title: 8.6.2. Domain and Range of SKOS Semantic Relation Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2255
+    key: H079
+    level: 4
+    locator_anchor: L2255
+    title: 8.6.3. Symmetry of skos:related
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2344
+    key: H080
+    level: 4
+    locator_anchor: L2344
+    title: 8.6.4. skos:related and Transitivity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2376
+    key: H081
+    level: 4
+    locator_anchor: L2376
+    title: 8.6.5. skos:related and Reflexivity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2413
+    key: H082
+    level: 4
+    locator_anchor: L2413
+    title: 8.6.6. skos:broader and Transitivity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2449
+    key: H083
+    level: 4
+    locator_anchor: L2449
+    title: 8.6.7. skos:broader and Reflexivity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2484
+    key: H084
+    level: 4
+    locator_anchor: L2484
+    title: 8.6.8. Cycles in the Hierarchical Relation (skos:broaderTransitive and Reflexivity)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2518
+    key: H085
+    level: 4
+    locator_anchor: L2518
+    title: 8.6.9. Alternate Paths in the Hierarchical Relation
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4261
+    key: H086
+    level: 4
+    locator_anchor: L4261
+    title: 8.6.10. Disjointness of skos:related and skos:broaderTransitive
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2942
+    key: H087
+    level: 2
+    locator_anchor: L2942
+    title: 9. Concept Collections
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3806
+    key: H088
+    level: 3
+    locator_anchor: L3806
+    title: 9.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3282
+    key: H089
+    level: 3
+    locator_anchor: L3282
+    title: 9.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3312
+    key: H090
+    level: 3
+    locator_anchor: L3312
+    title: 9.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3424
+    key: H091
+    level: 3
+    locator_anchor: L3424
+    title: 9.4. Integrity Conditions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3460
+    key: H092
+    level: 3
+    locator_anchor: L3460
+    title: 9.5. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3512
+    key: H093
+    level: 3
+    locator_anchor: L3512
+    title: 9.6. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3514
+    key: H094
+    level: 4
+    locator_anchor: L3514
+    title: 9.6.1. Inferring Collections from Ordered Collections
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3551
+    key: H095
+    level: 4
+    locator_anchor: L3551
+    title: 9.6.2. skos:memberList Integrity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3588
+    key: H096
+    level: 4
+    locator_anchor: L3588
+    title: 9.6.3. Nested Collections
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L3625
+    key: H097
+    level: 4
+    locator_anchor: L3625
+    title: 9.6.4. SKOS Concepts, Concept Collections and Semantic Relations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1309
+    key: H098
+    level: 2
+    locator_anchor: L1309
+    title: 10. Mapping Properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4307
+    key: H099
+    level: 3
+    locator_anchor: L4307
+    title: 10.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4138
+    key: H100
+    level: 3
+    locator_anchor: L4138
+    title: 10.2. Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4186
+    key: H101
+    level: 3
+    locator_anchor: L4186
+    title: 10.3. Class & Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5429
+    key: H102
+    level: 3
+    locator_anchor: L5429
+    title: 10.4. Integrity Conditions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4316
+    key: H103
+    level: 3
+    locator_anchor: L4316
+    title: 10.5. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4412
+    key: H104
+    level: 3
+    locator_anchor: L4412
+    title: 10.6. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4160
+    key: H105
+    level: 4
+    locator_anchor: L4160
+    title: 10.6.1. Mapping Properties, Semantic Relation Properties and Concept Schemes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4394
+    key: H106
+    level: 4
+    locator_anchor: L4394
+    title: 10.6.2. Clashes Between Hierarchical and Associative Links
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4414
+    key: H107
+    level: 4
+    locator_anchor: L4414
+    title: 10.6.3. Mapping Properties and Transitivity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4499
+    key: H108
+    level: 4
+    locator_anchor: L4499
+    title: 10.6.4. Mapping Properties and Reflexivity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4564
+    key: H109
+    level: 4
+    locator_anchor: L4564
+    title: 10.6.5. Cycles and Alternate Paths Involving skos:broadMatch
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: mapping-cycles-exactMatch
+    key: H110
+    level: 4
+    locator_anchor: mapping-cycles-exactMatch
+    title: 10.6.6. Cycles Involving skos:exactMatch and skos:closeMatch
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5675
+    key: H111
+    level: 4
+    locator_anchor: L5675
+    title: 10.6.7. Sub-Property Chains Involving skos:exactMatch
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4858
+    key: H112
+    level: 4
+    locator_anchor: L4858
+    title: 10.6.8. skos:closeMatch, skos:exactMatch, owl:sameAs, owl:equivalentClass, owl:equivalentProperty
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L744
+    key: H113
+    level: 2
+    locator_anchor: L744
+    title: 11. References
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: ack
+    key: H114
+    level: 2
+    locator_anchor: ack
+    title: 12. Acknowledgments
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L7127
+    key: H115
+    level: 2
+    locator_anchor: L7127
+    title: Appendix A. SKOS Properties and Classes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L7130
+    key: H116
+    level: 3
+    locator_anchor: L7130
+    title: A.1. Classes in the SKOS Data Model
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L7307
+    key: H117
+    level: 3
+    locator_anchor: L7307
+    title: A.2. Properties in the SKOS Data Model
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L4945
+    key: H118
+    level: 2
+    locator_anchor: L4945
+    title: Appendix B. SKOS eXtension for Labels (SKOS-XL)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5212
+    key: H119
+    level: 3
+    locator_anchor: L5212
+    title: B.1. SKOS-XL Namespace and Vocabulary
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5444
+    key: H120
+    level: 3
+    locator_anchor: L5444
+    title: B.2. The skosxl:Label Class
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L375
+    key: H121
+    level: 4
+    locator_anchor: L375
+    title: B.2.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5518
+    key: H122
+    level: 4
+    locator_anchor: L5518
+    title: B.2.2. Class and Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5525
+    key: H123
+    level: 4
+    locator_anchor: L5525
+    title: B.2.3. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5716
+    key: H124
+    level: 4
+    locator_anchor: L5716
+    title: B.2.4. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5739
+    key: H125
+    level: 5
+    locator_anchor: L5739
+    title: B.2.4.1. Identity and Entailment
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L648
+    key: H126
+    level: 5
+    locator_anchor: L648
+    title: B.2.4.2. Membership of Concept Schemes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L5981
+    key: H127
+    level: 3
+    locator_anchor: L5981
+    title: B.3. Preferred, Alternate and Hidden skosxl:Labels
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L661
+    key: H128
+    level: 4
+    locator_anchor: L661
+    title: B.3.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L677
+    key: H129
+    level: 4
+    locator_anchor: L677
+    title: B.3.2. Class and Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L724
+    key: H130
+    level: 4
+    locator_anchor: L724
+    title: B.3.3. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L778
+    key: H131
+    level: 4
+    locator_anchor: L778
+    title: B.3.4. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L780
+    key: H132
+    level: 5
+    locator_anchor: L780
+    title: B.3.4.1. Dumbing-Down to SKOS Lexical Labels
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L899
+    key: H133
+    level: 5
+    locator_anchor: L899
+    title: B.3.4.2. SKOS+XL Labeling Integrity
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L7196
+    key: H134
+    level: 3
+    locator_anchor: L7196
+    title: B.4. Links Between skosxl:Labels
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1120
+    key: H135
+    level: 4
+    locator_anchor: L1120
+    title: B.4.1. Preamble
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1129
+    key: H136
+    level: 4
+    locator_anchor: L1129
+    title: B.4.2. Class and Property Definitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1160
+    key: H137
+    level: 4
+    locator_anchor: L1160
+    title: B.4.3. Examples
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1193
+    key: H138
+    level: 4
+    locator_anchor: L1193
+    title: B.4.4. Notes
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L1195
+    key: H139
+    level: 5
+    locator_anchor: L1195
+    title: B.4.4.1. Refinements of this Pattern
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: xl-overview
+    key: H140
+    level: 3
+    locator_anchor: xl-overview
+    title: B.5. SKOS-XL Schema Overview
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: null
+    key: H141
+    level: 3
+    locator_anchor: xl-overview
+    title: B.5.1 Classes in the SKOS-XL Data Model
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: null
+    key: H142
+    level: 3
+    locator_anchor: xl-overview
+    title: B.5.2.Properties in the SKOS-XL Data Model
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: L2994
+    key: H143
+    level: 2
+    locator_anchor: L2994
+    title: Appendix C. SKOS and SKOS-XL Namespace Documents
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: namespace-document-html
+    key: H144
+    level: 3
+    locator_anchor: namespace-document-html
+    title: C.1. SKOS Namespace Document - HTML Variant (normative)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: namespace-document-rdf
+    key: H145
+    level: 3
+    locator_anchor: namespace-document-rdf
+    title: C.2. SKOS Namespace Document - RDF/XML Variant (normative)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: rdf-schema-owl-dl
+    key: H146
+    level: 3
+    locator_anchor: rdf-schema-owl-dl
+    title: C.3. SKOS RDF Schema - OWL 1 DL Sub-set (informative)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: xl-namespace-document-html
+    key: H147
+    level: 3
+    locator_anchor: xl-namespace-document-html
+    title: C.4. SKOS-XL Namespace Document - HTML Variant (normative)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: xl-namespace-document-rdf
+    key: H148
+    level: 3
+    locator_anchor: xl-namespace-document-rdf
+    title: C.5. SKOS-XL Namespace Document - RDF/XML Variant (normative)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: namespace
+    key: H149
+    level: 2
+    locator_anchor: namespace
+    title: 'Appendix D. SKOS Namespace: a historical note'
+    state: READ_AND_CRITICALLY_REVIEWED
+  front_matter:
+  - title_editors_abstract_synopsis
+  - status_rights_notice
+  - table_of_contents
+  counts:
+    badges: 2
+    numbered_examples: 90
+    sections: 143
+    semantic_statements: 62
+    substantive_image_figures: 0
+    text_diagrams: 2
+  semantic_statement_scope: S1-S46 core; S47-S62 XL. Eight integrity conditions including S48/S58 per errata, not
+    eight executed tests.
+  numbered_examples: 1-90, source claims reviewed, not parsed or executed as an external-ontology test suite.
+  document_vocabulary_counts:
+    core_classes: 4
+    core_properties: 28
+    xl_classes: 1
+    xl_properties: 5
+  count_policy: Document tables only. 38 vocabulary entries are not 38 ontology classes; local/imported/inferred
+    schema populations remain null.
+  local_owl_classes: null
+  imported_owl_classes: null
+  inferred_owl_classes: null
+  source_reparse: PERFORMED_EXACT_SHA256
+  visual_scope: No substantive raster figures. Two text subproperty diagrams and all semantic/example tables read
+    as text; two logo/validation badges excluded from semantic figures.
+source_synopsis:
+  basis: REVIEWER_PARAPHRASE
+  text: SKOS represents knowledge-organization resources and relationships in RDF. The Reference separates concepts,
+    schemes, collections, lexical labels, notations, notes and mappings. Its optional XL vocabulary identifies label
+    resources. Open-world conditions and conservative constraints distinguish what can be inferred from what an
+    application may require.
+dimensions:
+  purpose:
+    id: D01
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L879
+    judgment: Treat this as evidence for publishing a KOS, not as an engineering method for discovering all conceptualization
+      knowledge.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  process_product_agent_content:
+    id: D02
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L895
+    judgment: Concept schemes, labels and their links provide overlap on products and content. Do not infer an explicit
+      conceptualizing episode or responsible agent from these resource types.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  mental_orientation:
+    id: D03
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1437
+    judgment: The suggestive unit-of-thought account is counterevidence to claiming SKOS ignores conceptual content.
+      It does not establish a person-indexed mental-state theory.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  representation_referent:
+    id: D04
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1045
+    judgment: Separate a concept resource, lexical label, represented subject and OWL class in later comparison.
+      Hierarchical KOS links are not automatically subclass axioms about the subject domain.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  requirements:
+    id: D05
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#rationale
+    judgment: Conservative constraints serve heterogeneous KOS reuse. A stronger Clariceptify requirement may justify
+      a separate application profile, not a claim that the base standard is defective.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  method:
+    id: D06
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#status
+    judgment: Working-group standardization and linked implementation experience are source context. This task performs
+      no new empirical replication or independent expert acceptance.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  formal_assumptions:
+    id: D07
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L881
+    judgment: Interpret domain and range as inference conditions under open-world semantics. A missing explicit
+      type is not by itself invalid data.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  foundation:
+    id: D08
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1045
+    judgment: RDF/RDFS/OWL Full are the stated representation basis; this is not evidence of UFO, BFO or DOLCE grounding.
+      Actual schema imports and class populations remain uninspected here.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  evaluation:
+    id: D09
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L434
+    judgment: 'Do not turn source consistency examples into a formal conformance certification: the Reference declines
+      to define one. Examples below are read, not executed.'
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+  limitations:
+    id: D10
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#namespace-document-rdf
+    judgment: The document is stronger than the downloadable RDF subset in some constraints. A future parser or
+      DL-reasoner pass cannot automatically certify the complete Recommendation.
+    basis: REVIEWER_ANALYSIS
+    next_issues:
+    - 238
+    - 253
+    - 126
+findings:
+- id: F01
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1101
+  judgment: Do not treat scheme membership as a closed enumeration. A shared concept may appear in several schemes,
+    and extra membership can remain compatible with the source.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F02
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L2446
+  judgment: A top-concept usage convention is not a prohibition on broader links. Keep intended application policy
+    separate from source inconsistency.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F03
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1567
+  judgment: Preferred-label integrity requires both language-tag partitions and the untagged case clarified by the
+    official S14 erratum. It is not a generic cardinality-one restriction.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F04
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1606
+  judgment: An alternative label without a preferred label is permitted by the source. A required display label
+    would be an additional application rule.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F05
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L2646
+  judgment: Notation uniqueness is a convention rather than an asserted key. Do not report duplicate-code rejection
+    as a property of the selected schema without an added rule.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F06
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L2860
+  judgment: Editorial and history notes prevent a blanket claim of absent rationale or provenance capability. A
+    free note is nevertheless not an explicit typed decision episode with accountable participants.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F07
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L2413
+  judgment: Non-transitive here means the transitive conclusion is not licensed, not that a direct shortcut is forbidden.
+    The historical broader relation and the current broaderTransitive relation need separate version-aware tests.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F08
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L2484
+  judgment: Cycles and alternate paths are permitted in this base model. A no-cycle metric must identify its application-specific
+    policy rather than conflate it with SKOS integrity.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F09
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L4261
+  judgment: Associative/hierarchical disjointness reaches indirect ancestors. Checking only explicitly adjacent
+    pairs would miss the source example involving an inferred path.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F10
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L3551
+  judgment: Functional memberList can identify two list resources rather than reject two identifiers. Distinctness
+    and malformed-list policies require explicit treatment; no unique-name assumption is licensed.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F11
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L4858
+  judgment: exactMatch is not sameAs or class equivalence. Carrying labels and all other properties across a proposed
+    alignment would overstate this relation and can generate a label conflict.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F12
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#mapping-cycles-exactMatch
+  judgment: Symmetry and transitivity can produce self-links for participants in exactMatch. That does not assert
+    universal reflexivity for every resource.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F13
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L5675
+  judgment: Do not propagate broader or related links through exactMatch by an unstated composition rule. Keep any
+    desired inference as an explicit extension.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F14
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L5739
+  judgment: Equal XL literal forms do not identify their label resources. A string-based deduplicator would erase
+    distinctions that the model permits.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F15
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L899
+  judgment: XL-only consistency and combined SKOS+XL consistency differ. The literal projections can activate core
+    label constraints; testing only the extension would miss this boundary.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F16
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#rdf-schema-owl-dl
+  judgment: The OWL 1 DL variant is an informative pruning, not an interchangeable complete normative model. Record
+    removed commitments before drawing semantic conclusions.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F17
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#namespace
+  judgment: 'An unchanged namespace is not proof of unchanged semantics: the historical broader/narrower interpretation
+    changed. Pin bytes and edition rather than infer identity from URI alone.'
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F18
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L3260
+  judgment: The text names Appendix A for the label extension while the linked target and actual extension are Appendix
+    B. Treat the caption as an editorial cross-reference discrepancy, not an ontology defect.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F19
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L2251
+  judgment: The domain/range note refers to example 26 and names a third resource absent there. The inference principle
+    remains supported elsewhere; preserve the mistaken example pointer without inventing data.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F20
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1195
+  judgment: The acronym discussion spells the property with the core prefix while the example uses the XL prefix.
+    Preserve the distinction when planning artifact correspondence checks.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+- id: F21
+  locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#hasTopConcept
+  judgment: The appendix summary gives hasTopConcept a generic label rather than a descriptive one. Do not promote
+    that caption into a definition or repair the source silently.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 238
+  - 253
+  - 126
+adverse_cases:
+- id: A01
+  anchor: L1101
+  scenario: A concept is placed in two schemes.
+  expected: DO_NOT_INFER_DISJOINT_OR_CLOSED_MEMBERSHIP
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A02
+  anchor: L1567
+  scenario: Two distinct preferred literals have no language tag.
+  expected: APPLY_ERRATA_QUALIFICATION_IN_238
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A03
+  anchor: L2413
+  scenario: A hierarchy includes both a two-edge path and its direct shortcut.
+  expected: NONTRANSITIVE_DOES_NOT_MEAN_INTRANSITIVE
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A04
+  anchor: L2484
+  scenario: Two concepts are broader than each other.
+  expected: CYCLE_POLICY_IS_APPLICATION_SPECIFIC
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A05
+  anchor: L3551
+  scenario: An ordered collection points at two list identifiers without distinctness.
+  expected: DO_NOT_ASSUME_INCONSISTENCY_FROM_IDENTIFIER_COUNT
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A06
+  anchor: L4858
+  scenario: Two mapped concepts have different preferred labels and scheme memberships.
+  expected: DO_NOT_SUBSTITUTE_SAMEAS_FOR_EXACTMATCH
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A07
+  anchor: L5739
+  scenario: Two distinct XL label resources share one literal form.
+  expected: DO_NOT_MERGE_FROM_LITERAL_EQUALITY
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A08
+  anchor: L899
+  scenario: Two XL label resources project different preferred strings in one language.
+  expected: DISTINGUISH_XL_ONLY_FROM_COMBINED_MODEL
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+- id: A09
+  anchor: L2860
+  scenario: A researcher changes an editorial rationale while concept links stay constant.
+  expected: NOTES_ARE_COUNTEREVIDENCE_BUT_NOT_EXPLICIT_EPISODE_MODEL
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_REASONER_TEST
+evaluation:
+  verification: Exact-source census, complete reading ledger, bound evidence and negative validator tests; not RDF
+    validation.
+  validation: AI-assisted critical reading with separate review; no independent domain-expert acceptance.
+  evaluation: No new benchmark, measured semantic accuracy or replicated implementation study.
+  assessment: Candidate reuse for KOS/lexical interfaces; no semantic adoption or novelty conclusion.
+  assurance: Exact versions, official corrections, conceptual adverse cases and open issue references constrain
+    claims.
+decision:
+  disposition: ALIGNMENT_CANDIDATE_DEFER_ADOPTION
+  reuse: Consider terminology publication and annotated concept organization, not an implemented import.
+  align: Compare conceptual content and lexical distinctions without asserting equivalence.
+  extend: OWNER_DECISION_REQUIRED_AFTER_SYNTHESIS
+  reject: Do not reject relevance merely because source purpose differs.
+  defer:
+  - 238
+  - 253
+  - 126
+  novelty_priority: NOT_ASSESSED
+rights:
+  notice: W3C 2009 copyright and document-use notice linked by source; original commentary and identifiers only.
+  legal_permission_assessment: NOT_PERFORMED
+  raw_html_or_images_redistributed: false
+closure_boundary: 'Completes only #76 document review. #238 schema inspection/all-class definitions, #253 comparison
+  and #126 synthesis remain separate. No 19th full-paper review, model change, release or scientific acceptance
+  follows.'
+evidence:
+  document:
+    path: evaluation/related-work/skos/document-census.json
+    sha256: a44f06ed404626e35cd4cdd8699e14a2ba5b7b53e29d62e57d8542c4d15948ee
+  reading:
+    path: evaluation/related-work/skos/reading-ledger.json
+    sha256: 94c847c7cce095c375803a6ffa055d86e1295d9a8c88864425e7ea491f273a19
+  errata:
+    path: evaluation/related-work/skos/errata-review.json
+    sha256: b846818ae615cd236b99279ef10a0d06934c9ff562f47b8f9c65fd70f5269a48
