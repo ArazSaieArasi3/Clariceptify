@@ -1,0 +1,34 @@
+# Comparison batch 3: OntoLex, SKOS and EmotionsCognition
+
+Issue #253, `R2-CMP-003`. The [12-cell matrix](batch-3.yaml) binds the 2016 OntoLex report/core, 2009 SKOS Recommendation/schema, and 2015 Emotions paper/later cognition file to the unchanged Clariceptify v0.1.0 `input-r1-rev1` concept IDs. Each cell records native support, specialization needed, an unsupported inference, contrary evidence and remaining unknowns. This is a source-qualified comparison, not a cross-ontology equivalence or a conclusion about every related work.
+
+## Versioned source and class boundaries
+
+| Source | Exact paper and formal file | Selected class/definition population | Repository, foundation and execution limit |
+| --- | --- | --- | --- |
+| OntoLex | [2016 Community Group report](../reviews/OntoLex.yaml), SHA-256 `ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2`; [W3C core](../artifacts/OntoLex.yaml) `b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee` | Eight local classes with comments; eight external redeclarations without selected-root definitions. Complete [16-row glossary](../ontolex237-class-catalog.yaml); no declared imports. | [Public author repository](https://github.com/ontolex/ontolex) pinned separately at `ab0165605301413e64a66d53d23c3095fa879a26`, with different ConceptSet direction despite a 1.1 label. Semiotics/SKOS superclasses are referenced without imports or established editions. W3C core fails OWL 2 DL (37 violations); HermiT baseline observation does not certify DL entailment. |
+| SKOS | [2009 W3C Recommendation](../reviews/SKOS.yaml) `3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c`; [RDF schema](../artifacts/SKOS.yaml) `e79633b8d0564816cee8a99f5c9acf9a0e6fc7257c7209acd684ecad53a89dd6` | Four local classes, four definition candidates, no external redeclarations/imports. [Complete selected-root census](../../../evaluation/related-work/skos238/census.json). | W3C standalone schema, no development commit identified in the checked scope. RDF/RDFS/OWL vocabulary without an upper import. Eight asserted triples checked; Recommendation integrity conditions need separate validation and no OWL profile/reasoner was run. |
+| EmotionsCognition | [2015 journal paper](../deep-reviews/Emotions-2015/review.yaml) `d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c`; [dated/current December module](../artifacts/EmotionsCognition.yaml) `0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2` | 33 local classes, one comment candidate, 32 with no selected-root definition/comment; seven external named superclasses. [Complete selected-root census](../../../evaluation/related-work/emotions239/census.json). Three direct import modules contain 133 class occurrences, not a deduplicated inferred total. | Standalone author file; public Git tree not identified in bounded search and original publication byte parity unknown. DOLCE/DUL family with pinned DUL 3.22, IOLite 1.5 and unversioned ofntb. Four-file OWL 2 DL profile fails on 11 undeclared classes; consistency untested. The separate [2014 predecessor](../deep-reviews/EmotionsOnto2014/review.yaml) is not substituted for the 2015 evidence. |
+
+These are exact selected-root populations, not a sum of unique concepts across sources. A source comment is a definition candidate, not proof of an adequate formal definition. The selected file access or document license is not transferred to every related resource; no third-party raw file is republished.
+
+## Four-dimensional finding
+
+| Dimension | Supported contribution | Specific comparison limit |
+| --- | --- | --- |
+| Agency and activity | OntoLex lexical concept links; SKOS unit-of-thought vocabulary; EmotionsCognition Perception, Memory and Motivation. | A lexical link, concept scheme or perception restriction does not identify Ada's purposeful conceptualization episode. The wider OntoLex report includes PROV use, so an absolute no-process claim is false. [Cells 01-03](batch-3.yaml). |
+| Content, expression and referent | OntoLex separates entry, form, sense, evoked concept and reference. SKOS supplies labels, concepts, schemes and notes. EmotionsCognition separates stimulus, sensation and description. | Do not merge the evoked concept with the referenced entity, a SKOS concept with its label, or a stimulus with its interpreted description. The OntoLex ConceptSet direction differs across two pinned files. [Cells 04-06](batch-3.yaml). |
+| Episode, decision and rationale | SKOS editorial/history notes, OntoLex PROV example and EmotionsCognition context/memory are relevant partial resources. | None of the selected evidence establishes one native, tested record binding Ada, a dated conceptual choice, cited evidence and rationale. Free-text documentation or memory alone does not supply that structure. [Cells 07-09](batch-3.yaml). |
+| Formal and evaluation limits | Exact selected byte identities, local class catalogs and bounded source checks are inspectable. | OntoLex and EmotionsCognition profile failures, unexecuted SKOS integrity validation, and historical version gaps bar a cross-source entailment or model superiority claim. [Cells 10-12](batch-3.yaml). |
+
+## Shared positive and adverse case
+
+Ada interprets event E, chooses a Transit concept at time T, and records decision D with evidence V and rationale R. A lexical entry denotes E through a sense while evoking a lexical concept; a SKOS concept has labels and scheme membership; perception may yield a Description. Each source contributes part of the case, but the identity links among these resources are **candidate mappings** requiring explicit design and tests.
+
+In the adverse variant Ben changes a rationale while lexical and SKOS links remain unchanged. A Perception individual has no named output assertion, which is not excluded by a universal-only restriction. This shows why an unchanged vocabulary graph or missing named filler cannot prove or disprove the decision history. It is a reviewer thought experiment, not a newly executed reasoner fixture.
+
+## Export to final research synthesis
+
+The bounded candidate gap is a **single person-indexed, dated, evidence-and-rationale-linked conceptual decision record** across these exact selected sources. It is not a claim that no prior ontology anywhere provides one. OntoLex's PROV example, SKOS's notes and mental-content description, and EmotionsCognition's perception/memory pattern are retained as counterevidence to an exaggerated novelty statement. [Four candidate mapping questions](batch-3.yaml) bind actual Clariceptify IDs; all remain `OWNER_DECISION_REQUIRED` with equivalence `NOT_ESTABLISHED`.
+
+For #126, combine this result with the other comparison batches and their unresolved source/version limits. In particular #252 remains dependent on O4OA #91. No ontology, requirement, fixture, manuscript or release was changed.
