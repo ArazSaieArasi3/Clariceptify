@@ -91,3 +91,7 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 ## SKOS technical source checkpoint - 2026-10-29
 
 [SKOS #238](../../evidence/related-work/artifacts/SKOS.md) inventories all four named classes and eight selected asserted schema commitments of the pinned W3C RDF root. Its Recommendation-only integrity conditions remain separate from executed triple checks. This source input advances #253; no source-to-model equivalence or ontology change is accepted.
+
+## Emotions and Cognition technical checkpoint - 2026-10-29
+
+[EmotionsCognition #239](../../evidence/related-work/artifacts/EmotionsCognition.md) pins the byte-identical dated/current module, inventories all 33 selected local classes and resolves three exact legacy direct imports. The four-file closure fails OWL 2 DL profile with 11 undeclared-class references; consistency remains undetermined. This completes the technical input to #253 without establishing a paper-to-file identity, accepted equivalence or model change.
