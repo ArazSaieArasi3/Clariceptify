@@ -1,0 +1,204 @@
+schema_version: '1.0'
+batch_id: R2-CMP-003
+issue: 253
+status: BOUNDED_THREE_SOURCE_COMPARISON_COMPLETE_WITH_UNRESOLVED_SEMANTICS
+as_of: '2026-10-29'
+execution_baseline_commit: eb358bac83f0c31bde36f7c10d59dfae395ef51c
+execution_commit: RECORDED_IN_MERGED_PR_AND_ISSUE_CLOSURE
+model:
+  release: v0.1.0
+  revision: input-r1-rev1
+  path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  comparison_only: true
+  accepted_equivalences: []
+scope:
+  works: [OntoLex, SKOS, EmotionsCognition]
+  dimensions: [agency_activity, content_expression_referent, episode_decision_rationale, formal_evaluation_limits]
+  matrix_cells: 12
+  synthesis_target: 126
+  utilization_plan: docs/research/review-utilization-plan.md
+  owner_decision: OWNER_DECISION_REQUIRED
+  historical_boundary: 'Three selected formal roots; the earlier 2014 EmotionsOnto paper, May 2015 predecessor and December cognition extension are not interchangeable.'
+source_columns:
+  OntoLex:
+    document: {kind: W3C_COMMUNITY_GROUP_REPORT_NOT_STANDARD, version: '10 May 2016', sha256: ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2, review: evidence/related-work/reviews/OntoLex.yaml}
+    artifact: {kind: W3C_STANDALONE_CORE_RDF_XML, version: 'Header 1.1; selected 2016 W3C bytes', sha256: b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee, review: evidence/related-work/artifacts/OntoLex.yaml, class_catalog: evidence/related-work/ontolex237-class-catalog.yaml}
+    repository: {state: PUBLIC_AUTHOR_REPOSITORY_DISTINCT_PINNED_BYTES, url: 'https://github.com/ontolex/ontolex', commit: ab0165605301413e64a66d53d23c3095fa879a26, file_sha256: 76e4c74fae4013944f60701df83828836c22a7f19c8cc8f72f994e321d12efd9, exact_release_parity: NOT_ESTABLISHED, discovery: evaluation/related-work/ontolex237/discovery.json}
+    access_license: {access: PUBLIC_W3C_CORE, selected_header: CC0, raw_redistributed: false}
+    classes: {local: 8, external_redeclarations: 8, imported: 0, referenced_only: 'see census; not all five modules', deprecated: 0, local_comments: 8, external_missing_comments: 8, inferred: null, glossary_complete_for_selected_root: true, source: evidence/related-work/artifacts/OntoLex.yaml}
+    foundation: {family: 'Lexical/semiotic model with external SKOS and semiotics superclass redeclarations', formal_imports: [], exact_external_editions: null, UFO_or_BFO_edition: null, alignment: NOT_ACCEPTED}
+  SKOS:
+    document: {kind: W3C_RECOMMENDATION, version: '18 August 2009 with separately recorded errata', sha256: 3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c, review: evidence/related-work/reviews/SKOS.yaml}
+    artifact: {kind: W3C_STANDALONE_SCHEMA_RDF_XML, version: '18 August 2009 namespace edition', sha256: e79633b8d0564816cee8a99f5c9acf9a0e6fc7257c7209acd684ecad53a89dd6, review: evidence/related-work/artifacts/SKOS.yaml, class_catalog: evaluation/related-work/skos238/census.json}
+    repository: {state: STANDALONE_SCHEMA_NO_PUBLIC_GIT_TREE_IDENTIFIED_WITHIN_CHECKED_SCOPE, url: 'https://www.w3.org/2009/08/skos-reference/skos.rdf', commit: null, exact_historical_serialization_parity: NOT_ESTABLISHED_BEYOND_PINNED_SCHEMA, discovery: evidence/related-work/artifacts/SKOS.yaml}
+    access_license: {access: PUBLIC_W3C_NAMESPACE, selected_header: W3C_DOCUMENT_USE_TERMS_NOT_RELICENSED, raw_redistributed: false}
+    classes: {local: 4, external_redeclarations: 0, imported: 0, referenced_nonclass_iris: 'see census', deprecated: 0, local_definitions: 4, local_missing_definitions: 0, inferred: null, glossary_complete_for_selected_root: true, source: evaluation/related-work/skos238/census.json}
+    foundation: {family: RDF_RDFS_OWL_WEB_VOCABULARY, formal_imports: [], upper_ontology_import: null, UFO_or_BFO_edition: null, alignment: NOT_ACCEPTED}
+  EmotionsCognition:
+    paper: {kind: EIGHT_PAGE_2015_JOURNAL_PAPER, version: 'Computers in Human Behavior 51 Part B 610-617', sha256: d819de5d40446fd924ea3eba41f3e5edbfc21850120a4ce2716765523745c69c, review: evidence/related-work/deep-reviews/Emotions-2015/review.yaml, original_file_parity: NOT_ESTABLISHED}
+    predecessor_paper: {kind: DISTINCT_2014_PAPER, review: evidence/related-work/deep-reviews/EmotionsOnto2014/review.yaml, relation: CONTEXT_ONLY_NOT_SUBSTITUTE}
+    artifact: {kind: AUTHOR_HOSTED_STANDALONE_RDF_XML, version: 'December 2015 dated and byte-identical current retrieval', sha256: 0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2, review: evidence/related-work/artifacts/EmotionsCognition.yaml, class_catalog: evaluation/related-work/emotions239/census.json}
+    repository: {state: STANDALONE_AUTHOR_FILE_NO_PUBLIC_GIT_TREE_IDENTIFIED_IN_BOUNDED_SEARCH, url: 'https://rhizomik.net/ontologies/2015/12/emotions%26cognitionontology.owl', commit: null, original_paper_byte_parity: NOT_ESTABLISHED, discovery: evaluation/related-work/emotionsonto/deep-review-discovery.json}
+    access_license: {access: PUBLIC_AUTHOR_FILE, selected_root_license: NOT_DECLARED, paper_license_does_not_TRANSFER: true, raw_redistributed: false}
+    classes: {local: 33, external_redeclarations: 0, direct_import_module_occurrences: 133, distinct_import_union: null, referenced_external_named_superclasses: 7, deprecated: 0, local_comment_candidates: 1, local_missing_comments_or_definitions: 32, inferred: null, glossary_complete_for_selected_root: true, source: evaluation/related-work/emotions239/census.json}
+    foundation: {family: DOLCE_DUL, paper_or_project_claim: DOLCE_BASED, formal_imports: ['DUL 3.22', 'IOLite 1.5', 'ofntb unversioned'], exact_file_hashes: evidence/related-work/artifacts/EmotionsCognition.yaml, UFO_or_BFO_edition: null, alignment: NOT_ACCEPTED}
+scenario:
+  common: 'Ada interprets an observed event E and chooses a Transit concept at time T. A lexical entry with a form evokes a lexical concept and its sense refers to E; a SKOS concept belongs to a scheme with labels and a definition; a perception yields a description after a stimulus. Ada records decision D, supporting evidence V and a rationale R. Every proposed identity among these resources requires an explicit mapping.'
+  adverse: 'Ben revises the rationale for a different conceptual choice while all lexical entry/concept links and SKOS labels stay fixed. A Perception individual can have no named hasOutput Description under a universal-only restriction; its sensor event need not be Ada''s referent E. Neither unchanged vocabulary links nor an absent named filler identifies Ada, T, V or D. This is a reviewer-constructed case, not an executed reasoner test.'
+  status: CONCEPTUAL_REVIEW_ONLY
+matrix:
+- id: CMP3-01
+  dimension: agency_activity
+  work: OntoLex
+  paper_locators: ['OntoLex review F08; 2016 report #conceptualization-set', 'OntoLex review F09; 2016 report #confidence']
+  artifact_locators: ['OntoLex.yaml C04,C07; lexical concept and evokes chain']
+  native_support: 'Lexical entries, senses and concepts, with a link-set named conceptualization; a PROV-based translation example can represent provenance at ecosystem level.'
+  required_specialization: 'Name the conceptualizing agent and the purposeful, dated conceptualization process separately from a lexical link set.'
+  unsupported_inference: 'A lexical concept association is itself a person-indexed act of forming that concept.'
+  counterevidence: 'F08 directly distinguishes link-set versus act; F09 prevents a blanket claim that provenance/process resources are absent from the wider ecosystem.'
+  unknowns: [Cross-vocabulary person/episode identity]
+  model_ids: [CLR-C0004, CLR-C0026, CLR-C0017]
+- id: CMP3-02
+  dimension: agency_activity
+  work: SKOS
+  paper_locators: ['SKOS review F06; Reference #L1777', 'SKOS Reference #L1437 concept unit-of-thought orientation']
+  artifact_locators: ['SKOS.yaml selected root; skos:Concept and skos:ConceptScheme']
+  native_support: 'Identified vocabulary concepts and schemes with a weak unit-of-thought description.'
+  required_specialization: 'Add an identified agent, action and time when the vocabulary is used in a conceptualization activity.'
+  unsupported_inference: 'A skos:Concept denotes one mental state of a specific agent or a dated formation event.'
+  counterevidence: 'The unit-of-thought account is relevant to mental content, while F06 editorial/history notes allow limited provenance rather than a blanket absence.'
+  unknowns: [Agent-indexed interpretation in any application extension]
+  model_ids: [CLR-C0004, CLR-C0026, CLR-C0017]
+- id: CMP3-03
+  dimension: agency_activity
+  work: EmotionsCognition
+  paper_locators: ['Emotions-2015 E05 PDF3-4; F002,F007', 'Emotions-2015 E06 Figure1; F021']
+  artifact_locators: ['EmotionsCognition.yaml Q04,Q06; census Perception/Memory/Motivation']
+  native_support: 'Perception, Memory and Motivation classes with typed input/output and process superclass references in legacy DUL.'
+  required_specialization: 'Tie a specific agent and perception instance to the purposeful conceptualization act and chosen output, with evidence of an actual filler.'
+  unsupported_inference: 'A perception is an agent''s verified conceptual decision, or Memory axioms implement learning/personalization.'
+  counterevidence: 'F021/F023 delimit learning and provenance; universal-only hasOutput permits no named description assertion.'
+  unknowns: [Original-paper-to-later-file identity, full integrated semantics after profile failure]
+  model_ids: [CLR-C0004, CLR-C0026, CLR-C0062]
+- id: CMP3-04
+  dimension: content_expression_referent
+  work: OntoLex
+  paper_locators: ['OntoLex review F04; 2016 report #lexical-sense-reference', 'OntoLex review F10; 2016 report #translation']
+  artifact_locators: ['OntoLex.yaml C01,C04,C05,C07,C08; LexicalEntry/Form/Sense/Concept/reference']
+  native_support: 'Entry, form, lexical sense, evoked concept and referenced entity are distinct; chains give denotes/evokes paths when their premises hold.'
+  required_specialization: 'Map the case-specific expression, interpreted content and referent E without merging evoked concept with denoted entity.'
+  unsupported_inference: 'The evoked LexicalConcept and referent are identical, or any single lexical link certifies interpretation.'
+  counterevidence: 'C06 version-direction discrepancy for ConceptSet and F04 chain-equivalence caution constrain formal reuse.'
+  unknowns: [Historical module parity and cross-model identity]
+  model_ids: [CLR-C0047, CLR-C0017, CLR-C0062, CLR-C0101]
+- id: CMP3-05
+  dimension: content_expression_referent
+  work: SKOS
+  paper_locators: ['SKOS Reference sections 3-7; review F01,F04', 'SKOS Reference sections 8-10; review F11']
+  artifact_locators: ['SKOS.yaml selected schema; census #Concept/#ConceptScheme and prefLabel/definition/semanticRelation']
+  native_support: 'Concepts can carry labels, definitions, notes and relations, and occur in schemes or collections.'
+  required_specialization: 'Distinguish the represented concept, its lexical label, the subject referent and the interpretation context in Ada''s case.'
+  unsupported_inference: 'skos:exactMatch is owl:sameAs or a class equivalence, or a scheme enumerates all concepts under closed-world semantics.'
+  counterevidence: 'F11 rejects sameAs; F01 permits shared concepts across schemes; S14 preferred-label integrity is in the Recommendation, not an executed cardinality check on the selected RDF root.'
+  unknowns: [Contextual referent and identity of a researcher-held concept]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0062, CLR-C0101]
+- id: CMP3-06
+  dimension: content_expression_referent
+  work: EmotionsCognition
+  paper_locators: ['Emotions-2015 E06 Figure1; E07 Figure2', 'Emotions-2015 F011,F013,F014']
+  artifact_locators: ['EmotionsCognition.yaml C01-C04,C06-C08; census Perception/Memory/EmotionExpressionSystem']
+  native_support: 'Sensation, Description and Stimulus are distinct selected categories; Perception has typed input/output and Memory stores Description.'
+  required_specialization: 'Identify the represented content, expression, observed E and actual description instance, separating perception from its output.'
+  unsupported_inference: 'Every Perception has a named Description, or a sensed stimulus is identical to an interpreted referent and an Emotion.'
+  counterevidence: 'F014 notes universal restrictions can be vacuous; F013 distinguishes expression/content/referent; original paper taxonomy and later OWL are distinct.'
+  unknowns: [Original implementation parity, reasoned constraints]
+  model_ids: [CLR-C0057, CLR-C0047, CLR-C0062, CLR-C0101]
+- id: CMP3-07
+  dimension: episode_decision_rationale
+  work: OntoLex
+  paper_locators: ['OntoLex review F08,F09; 2016 report #conceptualization-set and #confidence']
+  artifact_locators: ['OntoLex.yaml C05,C07,C08; no accepted decision mapping']
+  native_support: 'Lexicalized sense and reference links can document a selected lexical interface; the broader report has a PROV translation example.'
+  required_specialization: 'Record D as a choice by Ada during T with V and R, and decide how external provenance connects to the lexical link.'
+  unsupported_inference: 'PROV example or current lexical links alone encode this conceptual decision and its cited rationale.'
+  counterevidence: 'F09 shows some provenance capability; F08 adverse case changes rationale with links unchanged.'
+  unknowns: [Application-specific provenance and decision pattern]
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0044, CLR-C0123]
+- id: CMP3-08
+  dimension: episode_decision_rationale
+  work: SKOS
+  paper_locators: ['SKOS review F06; Reference sections 7.1-7.4', 'SKOS review F03; Reference S14']
+  artifact_locators: ['SKOS.yaml selected root; skos:editorialNote, skos:historyNote, skos:definition']
+  native_support: 'Editorial/history notes and definitions provide documentation surfaces for a vocabulary change.'
+  required_specialization: 'Specify a structured decision episode, author, time, evidence citation and typed rationale rather than relying on note text alone.'
+  unsupported_inference: 'Any historyNote is a complete evidence-backed decision record or proves the exact author/time of a conceptual choice.'
+  counterevidence: 'F06 explicitly prevents a blanket no-provenance claim; source does not require our decision structure in its selected schema.'
+  unknowns: [External provenance extension and application policy]
+  model_ids: [CLR-C0021, CLR-C0042, CLR-C0044, CLR-C0123]
+- id: CMP3-09
+  dimension: episode_decision_rationale
+  work: EmotionsCognition
+  paper_locators: ['Emotions-2015 E08-E11 application sections; F017,F018,F023']
+  artifact_locators: ['EmotionsCognition.yaml Q05-Q07; census Memory, Motivation, Perception']
+  native_support: 'Context, descriptions and memory association can contextualize a perceived emotional episode; the paper discusses manual annotation.'
+  required_specialization: 'Add persistent decision identity, conceptual choice, agent, temporal position, cited source and explanation.'
+  unsupported_inference: 'Stored Description or an annotation is automatically an auditable conceptual decision with evidence and rationale.'
+  counterevidence: 'F018 records manual SDK annotation rather than automatic cognition; F023 limits conflicting-observation, cold-start and provenance claims.'
+  unknowns: [Full case implementation and experimental decision trace]
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0044, CLR-C0123]
+- id: CMP3-10
+  dimension: formal_evaluation_limits
+  work: OntoLex
+  paper_locators: ['OntoLex review F01,F04,F11; 2016 report #concept-set-class']
+  artifact_locators: ['OntoLex.yaml C06 and execution; W3C core versus pinned author-repository version']
+  native_support: 'Exact core axioms and complete selected-root glossary are available for qualified source reuse.'
+  required_specialization: 'Resolve ConceptSet direction/version differences and profile violations before asserting cross-model entailments.'
+  unsupported_inference: 'The two files labeled 1.1 are axiom-identical or HermiT baseline establishes OWL 2 DL entailment after a failed profile.'
+  counterevidence: 'W3C and repository ConceptSet property directions differ; selected W3C core fails OWL 2 DL with 37 violations.'
+  unknowns: [DL-certified consequence, human validation, all-module scope]
+  model_ids: [CLR-C0017, CLR-C0026, CLR-C0101]
+- id: CMP3-11
+  dimension: formal_evaluation_limits
+  work: SKOS
+  paper_locators: ['SKOS review F03,F07,F08,F15,F16; Reference S14 and Appendix D']
+  artifact_locators: ['SKOS.yaml selected commitments; skos238 census eight asserted triples']
+  native_support: 'Four named schema classes and eight selected asserted commitments have exact byte-bound locators; the Recommendation states further integrity conditions.'
+  required_specialization: 'Select rule or SHACL validation for application integrity conditions separately from OWL inference and test adverse labels.'
+  unsupported_inference: 'The RDF schema alone validates S14, forbids cycles, or proves all Recommendation conditions through OWL reasoning.'
+  counterevidence: 'F03 untagged preferred-label rule; F08 cycles allowed; selected schema inspection ran no OWL profile, reasoner or integrity validator.'
+  unknowns: [Executable S14 validation and external application quality]
+  model_ids: [CLR-C0017, CLR-C0101, CLR-C0026]
+- id: CMP3-12
+  dimension: formal_evaluation_limits
+  work: EmotionsCognition
+  paper_locators: ['Emotions-2015 review F017-F026; E10-E12', 'Distinct EmotionsOnto2014 review evaluation']
+  artifact_locators: ['EmotionsCognition.yaml Q07,Q08; emotions239 census execution']
+  native_support: 'The dated/current module and exact three legacy imports have byte-bound structural inspection; the paper provides a limited application setting.'
+  required_specialization: 'Resolve 11 undeclared-class profile violations without altering source identity, then run scoped reasoning and independent decision-trace cases if adoption is proposed.'
+  unsupported_inference: 'A failed-profile closure is consistent by HermiT, or 2014 PrEmo experiences measure 2015 recognition accuracy or conceptual decision quality.'
+  counterevidence: 'The four-file OWL 2 DL check fails; HermiT not executed. The 2015 study uses manual annotation and four metric families, with future six-Ekman recognition distinct.'
+  unknowns: [Consistency, inferred class population, original-publication byte correspondence]
+  model_ids: [CLR-C0026, CLR-C0062, CLR-C0021]
+candidate_mappings:
+- {id: CMP3-C01, model_ids: [CLR-C0004, CLR-C0026, CLR-C0062], question: 'What agent and occurrence identities distinguish lexical links, scheme membership and a particular conceptualization/perception act?', supporting_cells: [CMP3-01, CMP3-02, CMP3-03], contrary_cells: [CMP3-01, CMP3-03], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+- {id: CMP3-C02, model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0062, CLR-C0101], question: 'How are label/form, represented concept, sensed description and referent separated in one interpretation?', supporting_cells: [CMP3-04, CMP3-05, CMP3-06], contrary_cells: [CMP3-04, CMP3-06], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+- {id: CMP3-C03, model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0044, CLR-C0123], question: 'Which structured author, time, evidence and rationale links make a conceptual choice auditable beyond free-text notes or provenance examples?', supporting_cells: [CMP3-07, CMP3-08, CMP3-09], contrary_cells: [CMP3-07, CMP3-08, CMP3-09], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+- {id: CMP3-C04, model_ids: [CLR-C0017, CLR-C0026, CLR-C0101], question: 'Which exact source version and validation technique can support a future formal alignment?', supporting_cells: [CMP3-10, CMP3-11, CMP3-12], contrary_cells: [CMP3-10, CMP3-12], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+synthesis_export:
+  target_issue: 126
+  supported_partial_finding: 'Lexical interface, vocabulary organization and context/perception patterns provide relevant resources for representing aspects of conceptual content and its use.'
+  qualified_candidate_gap: 'Within these exact selected sources and versions, a single native, tested, person-indexed record linking a dated conceptual choice to its evidence and rationale is not established. This is a bounded comparison result, not a corpus-wide absence or novelty claim.'
+  contrary_evidence: 'OntoLex includes a PROV example and mental LexicalConcept; SKOS provides notes and unit-of-thought language; EmotionsCognition has Memory/Perception/Description and paper discussion of annotations.'
+  unresolved: ['OntoLex core profile/version mismatch', 'SKOS Recommendation integrity rules not executed in selected RDF', 'EmotionsCognition profile failure and original-file parity', 'Remaining comparison batches, especially #252 and O4OA #91']
+  next_action: 'Integrate with other batches only after their exact source prerequisites; defer #129 model decisions.'
+limits:
+  no_corpus_wide_novelty_claim: true
+  no_formal_equivalence: true
+  no_human_validation: true
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  raw_external_sources_redistributed: false

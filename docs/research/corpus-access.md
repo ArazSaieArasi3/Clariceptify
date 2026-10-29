@@ -95,3 +95,7 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 ## Emotions and Cognition technical checkpoint - 2026-10-29
 
 [EmotionsCognition #239](../../evidence/related-work/artifacts/EmotionsCognition.md) pins the byte-identical dated/current module, inventories all 33 selected local classes and resolves three exact legacy direct imports. The four-file closure fails OWL 2 DL profile with 11 undeclared-class references; consistency remains undetermined. This completes the technical input to #253 without establishing a paper-to-file identity, accepted equivalence or model change.
+
+## Third comparison batch - 2026-10-29
+
+[Comparison #253](../../evidence/related-work/comparisons/batch-3.md) integrates the completed OntoLex, SKOS and EmotionsCognition reviews into 12 version-bound cells, a shared positive/adverse conceptualization case, candidate model-ID mappings and a qualified export to #126. It retains provenance and mental-content counterevidence; no corpus-wide gap or formal equivalence is established. Remaining batches and O4OA #91 retain their own prerequisites.
