@@ -1,0 +1,476 @@
+schema_version: '1.0'
+task_id: R2-LIT-OntoLex
+issue: 75
+candidate_id: CLR-RW-OntoLex
+review_kind: OFFICIAL_COMMUNITY_DOCUMENT_CRITICAL_REVIEW
+status: COMPLETE_WITH_EXPLICIT_LIMITS
+reviewed_on: '2026-10-29'
+input_repository_commit: 01cde1a5e566c927af68295b30cdf86803813ccf
+identity:
+  title: 'Lexicon Model for Ontologies: Community Report, 10 May 2016'
+  editors:
+  - Philipp Cimiano
+  - John P. McCrae
+  - Paul Buitelaar
+  date: '2016-05-10'
+  publisher: Ontology-Lexicon Community Group
+  document_type: Final Community Group Report
+  w3c_standard: false
+  doi: null
+  doi_state: NOT_ESTABLISHED_OR_NOT_APPLICABLE
+  source_url: https://www.w3.org/2016/05/ontolex/
+  source_sha256: ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2
+  source_bytes: 286046
+  original_acquisition_manifest: evidence/related-work/corpus/access-inventory.yaml
+  same_bytes_as_acquired: true
+  version_boundary: Exact archived report; no replacement by later extensions or by a journal paper.
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  artifact_issue: 237
+  comparison_issue: 253
+  synthesis_issue: 126
+  artifact_review_completed: false
+  reasoner_execution: NOT_EXECUTED
+  scientific_acceptance: NOT_ASSESSED
+  independent_expert_review: NOT_PERFORMED
+  adoption: OWNER_DECISION_REQUIRED
+  source_redistribution: false
+  full_paper_denominator_change: 0
+coverage:
+  document_read: FULL_PINNED_HTML
+  numbered_sections:
+  - anchor: x1-overview
+    title: 1. Overview
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: introduction
+    title: 2. Introduction
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: purpose-of-the-model
+    title: 2.1 Purpose of the model
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: namespaces
+    title: 2.2 Namespaces
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: conventions-in-this-document
+    title: 2.3 Conventions in this document
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: core
+    title: 3. Core
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexical-entries
+    title: 3.1 Lexical Entries
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: forms
+    title: 3.2 Forms
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: semantics
+    title: 3.3 Semantics
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexical-sense-reference
+    title: 3.4 Lexical Sense & Reference
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: usage
+    title: 3.5 Usage
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexical-concept
+    title: 3.6 Lexical Concept
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: syntax-and-semantics-synsem
+    title: 4. Syntax and Semantics (synsem)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: syntactic-frames
+    title: 4.1 Syntactic Frames
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: ontology-mappings
+    title: 4.2 Ontology Mappings
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: complex-ontology-mappings-submappings
+    title: 4.3 Complex ontology mappings / submappings
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: conditions
+    title: 4.4 Conditions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: decomposition-decomp
+    title: 5. Decomposition (decomp)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: subterms
+    title: 5.1 Subterms
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: components
+    title: 5.2 Components
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: phrase-structure
+    title: 5.3 Phrase structure
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: variation-translation-vartrans
+    title: 6. Variation & Translation (vartrans)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexico-semantic-relations
+    title: 6.1 Lexico-Semantic Relations
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: translation
+    title: 6.2 Translation
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: translation-as-shared-reference
+    title: 6.2.1 Translation as shared reference
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: translation-as-a-relation-between-lexical-senses
+    title: 6.2.2 Translation as a relation between lexical senses
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: translatable-as
+    title: 6.2.3 Translatable As
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: translation-set
+    title: 6.2.4 Translation Set
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: metadata-lime
+    title: 7. Metadata (lime)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexicon-and-lexicon-metadata
+    title: 7.1 Lexicon and Lexicon Metadata
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexicalization-set
+    title: 7.2 Lexicalization Set
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: partitions
+    title: 7.3 Partitions
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexical-linkset
+    title: 7.4 Lexical Linkset
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: conceptualization-set
+    title: 7.5 Conceptualization Set
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: formal-definition-of-properties
+    title: 7.6 Formal definition of properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: publication-scenarios
+    title: 7.7 Publication Scenarios
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: linguistic-description
+    title: 8. Linguistic Description
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: morphosyntactic-description
+    title: 8.1 Morphosyntactic Description
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: pragmatic-paradigmatic-description
+    title: 8.2 Paradigmatic Description
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: arguments
+    title: 8.3 Arguments
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: frames
+    title: 8.4 Frames
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: confidence
+    title: 8.5 Other properties
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexical-nets
+    title: 9. Lexical Nets
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lexical-nets-in-lemon
+    title: 9.1 Lexical nets in OntoLex-lemon
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: relation-to-other-models
+    title: 10. Relation to Other Models
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: skos-xl
+    title: 10.1 SKOS(-XL)
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: lmf
+    title: 10.2 LMF
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: openannotation
+    title: 10.3 OpenAnnotation
+    state: READ_AND_CRITICALLY_REVIEWED
+  - anchor: x11-acknowledgements
+    title: 11. Acknowledgements
+    state: READ_AND_CRITICALLY_REVIEWED
+  front_matter:
+  - title_and_editors
+  - abstract
+  - status_and_rights_notice
+  term_inventory_path: evaluation/related-work/ontolex/document-census.json
+  document_term_heading_counts:
+    class: 23
+    object_property: 44
+    datatype_property: 16
+  count_policy: '83 definition headings in this report, not 83 ontology classes; all 49 numbered sections inspected.
+    OWL local/imported/inferred populations remain unassessed under #237.'
+  local_owl_classes: null
+  imported_owl_classes: null
+  inferred_owl_classes: null
+  image_ledger_path: evaluation/related-work/ontolex/image-inspection.json
+  source_reparse: PERFORMED_EXACT_SHA256
+source_synopsis:
+  basis: REVIEWER_PARAPHRASE
+  locators:
+  - https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
+  - https://www.w3.org/2016/05/ontolex/#core
+  - https://www.w3.org/2016/05/ontolex/#metadata-lime
+  text: 'The report specifies lexical grounding through five modules: core, syntax-semantics, decomposition, variation-translation
+    and metadata. It separates forms, entries, senses, concepts and referenced entities. Usage and conditions
+    qualify lexical interpretation; external vocabularies supply linguistic categories. LIME counts links among
+    lexicons, concepts and reference datasets. Examples cover multilingual terms, wordnets and publication arrangements.
+    This is a community specification rather than an empirical evaluation study.'
+dimensions:
+  purpose:
+    id: D01
+    locator: https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
+    judgment: Evaluate this source as a lexical interface candidate, not as a replacement for the research model.
+    basis: REVIEWER_ANALYSIS
+    next_issues: &id001
+    - 237
+    - 253
+    - 126
+  process_product_agent_content:
+    id: D02
+    locator: https://www.w3.org/2016/05/ontolex/#conceptualization-set
+    judgment: A link-set called conceptualization is not automatically an occurrence of concept formation. Keep
+      entry/concept links separate from activity, participating person, intention and decision records.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  mental_orientation:
+    id: D03
+    locator: https://www.w3.org/2016/05/ontolex/#lexical-concept
+    judgment: The mental-concept interpretation is relevant counterevidence against claiming no prior conceptual-content
+      distinction. It does not by itself supply person-indexed mental states or an empirical cognitive theory.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  representation_referent:
+    id: D04
+    locator: https://www.w3.org/2016/05/ontolex/#lexical-sense-reference
+    judgment: Preserve entry, form, sense, evoked concept and reference as separate comparison columns. An equivalence
+      mapping to our Representation or Concept would require a later argument and adverse cases.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  requirements:
+    id: D05
+    locator: https://www.w3.org/2016/05/ontolex/#introduction
+    judgment: The use cases support lexical interface requirements; test whether our intended question concerns
+      a lexical relation or a decision episode before proposing reuse. No imported ORSD or CQ satisfaction is
+      established.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  method:
+    id: D06
+    locator: https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
+    judgment: Community consensus and stated model inspirations are evidence of specification development, not
+      independent expert validation of Clariceptify.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  formal_assumptions:
+    id: D07
+    locator: https://www.w3.org/2016/05/ontolex/#conventions-in-this-document
+    judgment: 'Natural-language axioms and embedded Turtle are evidence to inspect, not a substitute for parsing
+      the pinned published modules and resolving imports in #237.'
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  foundation:
+    id: D08
+    locator: https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
+    judgment: The cited inspirations and visible SKOS/semiotics relationships justify documenting reuse. They
+      do not establish a UFO/BFO grounding, exact foundation edition, or current executable import closure.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  evaluation:
+    id: D09
+    locator: https://www.w3.org/2016/05/ontolex/#publication-scenarios
+    judgment: Worked examples and population ratios are not measured accuracy, usability or adequacy results.
+      This review executes no benchmark or reasoner on the external ontology.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+  limitations:
+    id: D10
+    locator: https://www.w3.org/2016/05/ontolex/#relation-to-other-models
+    judgment: The review is bounded to this 2016 document. Later module evolution, full imported class definitions,
+      and corpus-wide novelty remain separate work.
+    basis: REVIEWER_ANALYSIS
+    next_issues: *id001
+findings:
+- id: F01
+  locator: https://www.w3.org/2016/05/ontolex/#concept-set-class
+  judgment: 'Direction ambiguity: the displayed ConceptSet restriction follows skos:inScheme, whereas the adjacent
+    example links the concept to its set. Preserve both readings; #237 must compare the actual axiom without silently
+    repairing the source.'
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F02
+  locator: https://www.w3.org/2016/05/ontolex/#propertyrange-object-property
+  judgment: 'Argument-position ambiguity: the propertyRange definition duplicates the first-position wording of
+    propertyDomain, despite the section distinguishing two argument positions. Do not turn this editorial ambiguity
+    into an accepted mapping rule.'
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F03
+  locator: https://www.w3.org/2016/05/ontolex/#skos-xl
+  judgment: The first SKOS example targets a resource typed as LexicalEntry via lexicalizedSense, while the earlier
+    property definition targets LexicalSense. Treat this as a documentation correspondence question, not proof
+    of inconsistency.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F04
+  locator: https://www.w3.org/2016/05/ontolex/#lexical-sense-reference
+  judgment: The prose describes denotes/chain equivalence. The displayed chain alone does not demonstrate that
+    every denotes assertion creates a named sense witness. Separate the two directions in later formal testing.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F05
+  locator: https://www.w3.org/2016/05/ontolex/#translatableas-object-property
+  judgment: The printed chain traversal must be checked against the declared entry/sense directions, and against
+    its inclusion direction. Do not copy the displayed expression into a reasoning claim without the actual module.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F06
+  locator: https://www.w3.org/2016/05/ontolex/#formal-definition-of-properties
+  judgment: 'Denominator risk: an average over all domain entities differs from an average over linked entities.
+    Test both with unused entities and an empty denominator; record rounding rather than interpreting illustrative
+    decimals as exact measurements.'
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F07
+  locator: https://www.w3.org/2016/05/ontolex/#usage
+  judgment: The river example prose and example literals assign the two endings in opposite order. This is a within-document
+    inconsistency; no external linguistic truth judgment is required to preserve it.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F08
+  locator: https://www.w3.org/2016/05/ontolex/#conceptualization-set
+  judgment: 'Scope collision: lexical pairing and purposeful conceptualizing must not be equated merely because
+    both use conceptualization terminology. A person changing an interpretation without changing lexical links
+    is an adverse case for that equation.'
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F09
+  locator: https://www.w3.org/2016/05/ontolex/#confidence
+  judgment: The PROV-based translation example prevents claiming the ecosystem has no process or provenance capability.
+    Conversely, borrowed provenance vocabulary does not establish a dedicated conceptual-decision/rationale model.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F10
+  locator: https://www.w3.org/2016/05/ontolex/#translation
+  judgment: Shared reference, sense-level translation and entry-level translatability must not be treated as one
+    interchangeable relation. Context-sensitive replacement needs an explicit criterion; shared denotation alone
+    is too weak for universal substitutability.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F11
+  locator: https://www.w3.org/2016/05/ontolex/#canonical-form-object-property
+  judgment: Functional canonical-form constraints do not establish a closed-world data-quality check. Two identifiers
+    need not denote distinct forms; missing explicit assertions need not mean OWL contradiction. Keep validation
+    and reasoning goals separate.
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F12
+  locator: https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
+  judgment: 'Recommendation: retain as an alignment/reuse candidate for lexical interfaces and a source of counterexamples.
+    Defer semantic adoption, extension, and corpus-wide gap conclusions to #237/#253/#126 rather than rejecting
+    the source for its deliberately different purpose.'
+  basis: REVIEWER_ANALYSIS
+  next_issues: *id001
+- id: F13
+  locator: https://www.w3.org/2016/05/ontolex/#linguistic-catalog-object-property
+  judgment: The displayed linguisticCatalog superproperty names voaf:Vocabulary, used nearby as a class. Record
+    this typing ambiguity without treating the source document as an executable ontology.
+  basis: REVIEWER_ANALYSIS
+  next_issues:
+  - 237
+  - 253
+  - 126
+- id: F14
+  locator: https://www.w3.org/2016/05/ontolex/#core
+  judgment: Several figure labels differ from the accompanying vocabulary or examples. The image ledger preserves
+    nine flagged illustrations, including clipped text. Do not reuse an illustration as a verified formal pattern
+    or silently repair its labels.
+  basis: ACTUAL_PIXEL_INSPECTION
+  image_ids:
+  - F16
+  - F20
+  - F30
+  - F39
+  - F42
+  - F44
+  - F62
+  - F67
+  - F68
+  next_issues:
+  - 237
+  - 253
+  - 126
+adverse_cases:
+- id: A01
+  anchor: forms
+  scenario: One entry has inflectional variants and spelling variants. Compare whether the proposed mapping wrongly
+    merges form identity with written string identity.
+  expected: DISTINCTIONS_REQUIRED
+  execution: CONCEPTUAL_REVIEW_ONLY
+- id: A02
+  anchor: lexical-concept
+  scenario: A lexical item denotes an ontology property while evoking an event concept. A mapping that merges
+    both targets loses the distinction.
+  expected: DO_NOT_EQUATE_REFERENT_AND_EVOKED_CONCEPT
+  execution: CONCEPTUAL_REVIEW_ONLY
+- id: A03
+  anchor: conceptualization-set
+  scenario: A researcher revises a rationale while leaving every entry-to-concept pair unchanged. Lexical-set
+    statistics cannot detect that research decision.
+  expected: NO_ACTIVITY_EQUIVALENCE_FROM_LINK_SET
+  execution: REVIEWER_CONSTRUCTED_NOT_SOURCE_EXPERIMENT
+- id: A04
+  anchor: translation
+  scenario: Two entries share a referent but differ in register or temporal usage. Test substitution rather than
+    assuming unlimited translation equivalence.
+  expected: CONTEXT_REQUIRED
+  execution: CONCEPTUAL_REVIEW_ONLY
+- id: A05
+  anchor: formal-definition-of-properties
+  scenario: 'Add an unlinked ontology entity: coverage and average-per-entity change although the link set does
+    not. An empty domain requires an explicit undefined-value policy.'
+  expected: DENOMINATOR_AND_ZERO_POLICY_REQUIRED
+  execution: REVIEWER_CONSTRUCTED_NOT_SOURCE_EXPERIMENT
+- id: A06
+  anchor: canonical-form-object-property
+  scenario: Two asserted form IRIs lack a distinctness assertion. Do not label the source inconsistent from a
+    functional-property statement alone.
+  expected: DEFER_ACTUAL_REASONING_TO_237
+  execution: CONCEPTUAL_REVIEW_ONLY
+evaluation:
+  verification: Source identity, heading/figure coverage, evidence binding, scope and negative validator cases
+    only.
+  validation: AI-assisted source interpretation; no independent domain-expert acceptance.
+  evaluation: No new benchmark, user study or ontology-quality score. Source examples inspected, not run as experimental
+    evidence.
+  assessment: Bounded alignment candidate with explicit document ambiguities.
+  assurance: Pinned bytes, locators, adverse cases and open technical/comparison issue links preserve the claim
+    ceiling.
+decision:
+  disposition: ALIGNMENT_CANDIDATE_DEFER_ADOPTION
+  reuse: Potential lexical-interface patterns; not imported or implemented.
+  align: Proposed conceptual distinction comparison; no owl:equivalentClass assertion.
+  extend: NOT_DECIDED
+  reject: Not rejected as irrelevant; do not mistake differing purpose for absence of overlap.
+  defer:
+  - 237
+  - 253
+  - 126
+  novelty_priority: NOT_ASSESSED
+rights:
+  notice: 2016 contributors; report links the W3C Community Final Specification Agreement and a contributor-license
+    notice.
+  rights_url: https://www.w3.org/community/about/agreements/final/
+  legal_permission_assessment: NOT_PERFORMED
+  raw_html_or_images_redistributed: false
+closure_boundary: 'Completes only #75 critical review of the pinned official document. All 18 full-paper reviews
+  and the limited-summary review retain their existing denominators. #237 technical artifact and all-class catalogue,
+  #253 comparison, #126 synthesis remain open. No model or release acceptance is inferred.'
+evidence:
+  document:
+    path: evaluation/related-work/ontolex/document-census.json
+    sha256: 8cfddd77f329b181b158c9b26a777737953f1dd679316cda29cc3bcf04348fab
+  images:
+    path: evaluation/related-work/ontolex/image-inspection.json
+    sha256: 9d09455cb8122054e4ba75fbd9dc63ef9af4df25cba4dcbe80515c3f35c4c91b

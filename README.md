@@ -44,6 +44,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Contribution and English-only policy](CONTRIBUTING.md)
 - [Related-work candidate register](evidence/related-work/)
 - [Complete 24-row retained reference collection](evidence/related-work/reference-crosswalk.md), including four unreviewed supplementary source leads
+- [OntoLex 2016 official-document critical review](evidence/related-work/reviews/OntoLex.md), separate from the paper corpus and pending formal-artifact task
 - [Shared deep-paper review framework and current queue](evidence/related-work/deep-reviews/README.md)
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 

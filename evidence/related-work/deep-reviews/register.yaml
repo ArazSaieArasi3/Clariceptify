@@ -251,8 +251,9 @@ separate_document_tasks:
 - id: OntoLex
   issue: 75
   artifact_issue: 237
-  state: QUEUED
-  note: W3C community report, not a journal article
+  state: OFFICIAL_DOCUMENT_REVIEW_COMPLETE
+  review_path: evidence/related-work/reviews/OntoLex.yaml
+  note: Pinned 2016 Community Group Report reviewed; 49 sections and 69 illustrations. Not a W3C Standard or journal paper; artifact and comparison tasks remain open.
 - id: SKOS
   issue: 76
   artifact_issue: 238

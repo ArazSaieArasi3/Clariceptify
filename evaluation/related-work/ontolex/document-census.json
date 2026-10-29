@@ -1,0 +1,1935 @@
+{
+  "anchors": [
+    "Affix",
+    "ConceptSet",
+    "ConceptualRelation",
+    "ConceptualizationSet",
+    "Form",
+    "LexicalConcept",
+    "LexicalEntry",
+    "LexicalLinkset",
+    "LexicalRelation",
+    "LexicalSense",
+    "LexicalizationSet",
+    "LexicoSemanticRelation",
+    "Lexicon",
+    "MultiwordExpression",
+    "OntoMap",
+    "SenseRelation",
+    "SyntacticArgument",
+    "SyntacticFrame",
+    "TerminologicalRelation",
+    "TranslationSet",
+    "Translation_Class",
+    "Word",
+    "abstract",
+    "acknowledgements",
+    "affix-class",
+    "arguments",
+    "average-ambiguity-datatype-property",
+    "average-number-of-lexicalizations-datatype-property",
+    "average-number-of-links-datatype-property",
+    "average-synonymy-datatype-property",
+    "avgAmbiguity",
+    "avgNumOfLexicalizations",
+    "avgNumOfLinks",
+    "avgSynonymy",
+    "back-to-top",
+    "canonical-form-object-property",
+    "canonicalForm",
+    "category",
+    "category-object-property",
+    "complex-ontology-mappings-submappings",
+    "component",
+    "component-class",
+    "components",
+    "concept",
+    "concept-object-property",
+    "concept-set-class",
+    "conceptRel",
+    "conceptrel-object-property",
+    "concepts",
+    "concepts-datatype-property",
+    "conceptual-dataset-object-property",
+    "conceptual-relation-class",
+    "conceptualDataset",
+    "conceptualization-set",
+    "conceptualization-set-class",
+    "conceptualizations-datatype-property",
+    "conceputalizations",
+    "condition",
+    "condition-object-property",
+    "conditions",
+    "confidence",
+    "constituent",
+    "constituent-object-property",
+    "conventions-in-this-document",
+    "core",
+    "corresponds-to-object-property",
+    "correspondsTo",
+    "decomposition-decomp",
+    "denotes",
+    "denotes-object-property",
+    "entry",
+    "entry-object-property",
+    "evokes",
+    "evokes-object-property",
+    "fancybox",
+    "fig-formula_avgnumoflexicalizations-v1-png",
+    "fig-lemon_decomposition-png",
+    "fig-lemon_lime_metadata-png",
+    "fig-lemon_ontolex_core-png",
+    "fig-lemon_syntax_and_semantics-png",
+    "fig-lemon_variation_and_translation-png",
+    "fig-percentage-png",
+    "form-class",
+    "formal-definition-of-properties",
+    "forms",
+    "frames",
+    "initialUserConfig",
+    "introduction",
+    "is-a-object-property",
+    "isA",
+    "language",
+    "language-datatype-property",
+    "lexical-concept",
+    "lexical-concept-class",
+    "lexical-entries",
+    "lexical-entries-datatype-property",
+    "lexical-entry-class",
+    "lexical-form-object-property",
+    "lexical-linkset",
+    "lexical-linkset-class",
+    "lexical-nets",
+    "lexical-nets-in-lemon",
+    "lexical-relation-class",
+    "lexical-sense-reference",
+    "lexicalEntries",
+    "lexicalForm",
+    "lexicalRel",
+    "lexicalization-model-object-property",
+    "lexicalization-set",
+    "lexicalization-set-class",
+    "lexicalizationModel",
+    "lexicalizations",
+    "lexicalizations-datatype-property",
+    "lexicalized-sense-object-property",
+    "lexicalizedSense",
+    "lexicalrel-object-property",
+    "lexicalsense-class",
+    "lexico-semantic-relation-class",
+    "lexico-semantic-relations",
+    "lexicon-and-lexicon-metadata",
+    "lexicon-class",
+    "lexicon-dataset-object-property",
+    "lexiconDataset",
+    "linguistic-catalog-object-property",
+    "linguistic-description",
+    "linguisticCatalog",
+    "links",
+    "links-datatype-property",
+    "lmf",
+    "marker",
+    "marker-object-property",
+    "metadata-lime",
+    "morphological-pattern-object-property",
+    "morphologicalPattern",
+    "morphosyntactic-description",
+    "multiword-expression-class",
+    "namespaces",
+    "objOfProp",
+    "object-of-property-object-property",
+    "ontoCorrespondence",
+    "ontoMapping",
+    "ontocorrespondence-object-property",
+    "ontology-mappings",
+    "ontomap-class",
+    "ontomapping-object-property",
+    "openannotation",
+    "optional",
+    "optional-datatype-property",
+    "other-form-object-property",
+    "otherForm",
+    "overview",
+    "partition",
+    "partition-object-property",
+    "partitions",
+    "percentage",
+    "percentage-datatype-property",
+    "phonetic-representation-datatype-property",
+    "phoneticRep",
+    "phrase-structure",
+    "pragmatic-paradigmatic-description",
+    "propertyDomain",
+    "propertyRange",
+    "propertydomain-object-property",
+    "propertyrange-object-property",
+    "publication-scenarios",
+    "purpose-of-the-model",
+    "reference",
+    "reference-dataset-object-property",
+    "reference-object-property",
+    "referenceDataset",
+    "references",
+    "references-datatype-property",
+    "relates",
+    "relates-object-property",
+    "relation-to-other-models",
+    "representation",
+    "representation-datatype-property",
+    "resource-type-object-property",
+    "resourceType",
+    "respec-mainstyle",
+    "semantics",
+    "sense",
+    "sense-object-property",
+    "sense-relation-class",
+    "senseRel",
+    "senserel-object-property",
+    "skos-xl",
+    "sotd",
+    "source",
+    "source-object-property",
+    "subjOfProp",
+    "subject-of-property-object-property",
+    "submap",
+    "submap-object-property",
+    "subterm",
+    "subterm-object-property",
+    "subterms",
+    "synArg",
+    "synBehavior",
+    "synarg-object-property",
+    "syntactic-argument-class",
+    "syntactic-behavior-object-property",
+    "syntactic-frame-class",
+    "syntactic-frames",
+    "syntax-and-semantics-synsem",
+    "table-of-contents",
+    "target",
+    "target-object-property",
+    "terminological-relation-class",
+    "title",
+    "toc",
+    "trans",
+    "trans-object-property",
+    "translatable-as",
+    "translatableAs",
+    "translatableas-object-property",
+    "translation",
+    "translation-as-a-relation-between-lexical-senses",
+    "translation-as-shared-reference",
+    "translation-class",
+    "translation-object-property",
+    "translation-set",
+    "translation-set-class",
+    "translation_prop",
+    "usage",
+    "usage-object-property",
+    "usage_prop",
+    "variation-translation-vartrans",
+    "word-class",
+    "written-representation-datatype-property",
+    "writtenRep",
+    "x1-overview",
+    "x11-acknowledgements"
+  ],
+  "headings": [
+    {
+      "anchor": null,
+      "level": 2,
+      "title": "Final Community Group Report 10 May 2016"
+    },
+    {
+      "anchor": null,
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "anchor": null,
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "anchor": "table-of-contents",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "anchor": "x1-overview",
+      "level": 2,
+      "title": "1. Overview"
+    },
+    {
+      "anchor": "introduction",
+      "level": 2,
+      "title": "2. Introduction"
+    },
+    {
+      "anchor": "purpose-of-the-model",
+      "level": 3,
+      "title": "2.1 Purpose of the model"
+    },
+    {
+      "anchor": "namespaces",
+      "level": 3,
+      "title": "2.2 Namespaces"
+    },
+    {
+      "anchor": "conventions-in-this-document",
+      "level": 3,
+      "title": "2.3 Conventions in this document"
+    },
+    {
+      "anchor": "core",
+      "level": 2,
+      "title": "3. Core"
+    },
+    {
+      "anchor": "lexical-entries",
+      "level": 3,
+      "title": "3.1 Lexical Entries"
+    },
+    {
+      "anchor": "lexical-entry-class",
+      "level": 3,
+      "title": "Lexical Entry (Class)"
+    },
+    {
+      "anchor": "word-class",
+      "level": 3,
+      "title": "Word (Class)"
+    },
+    {
+      "anchor": "multiword-expression-class",
+      "level": 3,
+      "title": "Multiword Expression (Class)"
+    },
+    {
+      "anchor": "affix-class",
+      "level": 3,
+      "title": "Affix (Class)"
+    },
+    {
+      "anchor": "forms",
+      "level": 3,
+      "title": "3.2 Forms"
+    },
+    {
+      "anchor": "form-class",
+      "level": 3,
+      "title": "Form (Class)"
+    },
+    {
+      "anchor": "lexical-form-object-property",
+      "level": 3,
+      "title": "Lexical Form (Object Property)"
+    },
+    {
+      "anchor": "written-representation-datatype-property",
+      "level": 3,
+      "title": "Written Representation (Datatype Property)"
+    },
+    {
+      "anchor": "phonetic-representation-datatype-property",
+      "level": 3,
+      "title": "Phonetic Representation (Datatype Property)"
+    },
+    {
+      "anchor": "representation-datatype-property",
+      "level": 3,
+      "title": "Representation (Datatype Property)"
+    },
+    {
+      "anchor": "canonical-form-object-property",
+      "level": 3,
+      "title": "Canonical Form (Object Property)"
+    },
+    {
+      "anchor": "other-form-object-property",
+      "level": 3,
+      "title": "Other Form (Object Property)"
+    },
+    {
+      "anchor": "morphological-pattern-object-property",
+      "level": 3,
+      "title": "Morphological Pattern (Object Property)"
+    },
+    {
+      "anchor": "semantics",
+      "level": 3,
+      "title": "3.3 Semantics"
+    },
+    {
+      "anchor": "denotes-object-property",
+      "level": 3,
+      "title": "Denotes (Object Property)"
+    },
+    {
+      "anchor": "lexical-sense-reference",
+      "level": 3,
+      "title": "3.4 Lexical Sense & Reference"
+    },
+    {
+      "anchor": "lexicalsense-class",
+      "level": 3,
+      "title": "LexicalSense (Class)"
+    },
+    {
+      "anchor": "sense-object-property",
+      "level": 3,
+      "title": "Sense (Object Property)"
+    },
+    {
+      "anchor": "reference-object-property",
+      "level": 3,
+      "title": "Reference (Object Property)"
+    },
+    {
+      "anchor": "usage",
+      "level": 3,
+      "title": "3.5 Usage"
+    },
+    {
+      "anchor": "usage-object-property",
+      "level": 3,
+      "title": "Usage (Object Property)"
+    },
+    {
+      "anchor": "lexical-concept",
+      "level": 3,
+      "title": "3.6 Lexical Concept"
+    },
+    {
+      "anchor": "lexical-concept-class",
+      "level": 3,
+      "title": "Lexical Concept (Class)"
+    },
+    {
+      "anchor": "evokes-object-property",
+      "level": 3,
+      "title": "Evokes (Object Property)"
+    },
+    {
+      "anchor": "lexicalized-sense-object-property",
+      "level": 3,
+      "title": "Lexicalized Sense (Object Property)"
+    },
+    {
+      "anchor": "concept-object-property",
+      "level": 3,
+      "title": "Concept (Object Property)"
+    },
+    {
+      "anchor": "concept-set-class",
+      "level": 3,
+      "title": "Concept Set (Class)"
+    },
+    {
+      "anchor": "syntax-and-semantics-synsem",
+      "level": 2,
+      "title": "4. Syntax and Semantics (synsem)"
+    },
+    {
+      "anchor": "syntactic-frames",
+      "level": 3,
+      "title": "4.1 Syntactic Frames"
+    },
+    {
+      "anchor": "syntactic-frame-class",
+      "level": 3,
+      "title": "Syntactic Frame (Class)"
+    },
+    {
+      "anchor": "syntactic-behavior-object-property",
+      "level": 3,
+      "title": "Syntactic Behavior (Object Property)"
+    },
+    {
+      "anchor": "syntactic-argument-class",
+      "level": 3,
+      "title": "Syntactic Argument (Class)"
+    },
+    {
+      "anchor": "synarg-object-property",
+      "level": 3,
+      "title": "SynArg (Object Property)"
+    },
+    {
+      "anchor": "ontology-mappings",
+      "level": 3,
+      "title": "4.2 Ontology Mappings"
+    },
+    {
+      "anchor": "ontomap-class",
+      "level": 3,
+      "title": "OntoMap (Class)"
+    },
+    {
+      "anchor": "ontomapping-object-property",
+      "level": 3,
+      "title": "ontoMapping (Object Property)"
+    },
+    {
+      "anchor": "ontocorrespondence-object-property",
+      "level": 3,
+      "title": "ontoCorrespondence (Object Property)"
+    },
+    {
+      "anchor": "is-a-object-property",
+      "level": 3,
+      "title": "Is A (Object Property)"
+    },
+    {
+      "anchor": "subject-of-property-object-property",
+      "level": 3,
+      "title": "Subject of Property (Object Property)"
+    },
+    {
+      "anchor": "object-of-property-object-property",
+      "level": 3,
+      "title": "Object of Property (Object Property)"
+    },
+    {
+      "anchor": "marker-object-property",
+      "level": 3,
+      "title": "Marker (Object Property)"
+    },
+    {
+      "anchor": "complex-ontology-mappings-submappings",
+      "level": 3,
+      "title": "4.3 Complex ontology mappings / submappings"
+    },
+    {
+      "anchor": "submap-object-property",
+      "level": 3,
+      "title": "Submap (Object Property)"
+    },
+    {
+      "anchor": "optional-datatype-property",
+      "level": 3,
+      "title": "Optional (Datatype Property)"
+    },
+    {
+      "anchor": "conditions",
+      "level": 3,
+      "title": "4.4 Conditions"
+    },
+    {
+      "anchor": "condition-object-property",
+      "level": 3,
+      "title": "condition (Object Property)"
+    },
+    {
+      "anchor": "propertydomain-object-property",
+      "level": 3,
+      "title": "propertyDomain (Object Property)"
+    },
+    {
+      "anchor": "propertyrange-object-property",
+      "level": 3,
+      "title": "propertyRange (Object Property)"
+    },
+    {
+      "anchor": "decomposition-decomp",
+      "level": 2,
+      "title": "5. Decomposition (decomp)"
+    },
+    {
+      "anchor": "subterms",
+      "level": 3,
+      "title": "5.1 Subterms"
+    },
+    {
+      "anchor": "subterm-object-property",
+      "level": 3,
+      "title": "Subterm (Object Property)"
+    },
+    {
+      "anchor": "components",
+      "level": 3,
+      "title": "5.2 Components"
+    },
+    {
+      "anchor": "component-class",
+      "level": 3,
+      "title": "Component (Class)"
+    },
+    {
+      "anchor": "constituent-object-property",
+      "level": 3,
+      "title": "Constituent (Object Property)"
+    },
+    {
+      "anchor": "corresponds-to-object-property",
+      "level": 3,
+      "title": "Corresponds To (Object Property)"
+    },
+    {
+      "anchor": "phrase-structure",
+      "level": 3,
+      "title": "5.3 Phrase structure"
+    },
+    {
+      "anchor": "variation-translation-vartrans",
+      "level": 2,
+      "title": "6. Variation & Translation (vartrans)"
+    },
+    {
+      "anchor": "lexico-semantic-relations",
+      "level": 3,
+      "title": "6.1 Lexico-Semantic Relations"
+    },
+    {
+      "anchor": "lexicalrel-object-property",
+      "level": 3,
+      "title": "lexicalRel (Object Property)"
+    },
+    {
+      "anchor": "senserel-object-property",
+      "level": 3,
+      "title": "senseRel (Object Property)"
+    },
+    {
+      "anchor": "lexico-semantic-relation-class",
+      "level": 3,
+      "title": "Lexico-Semantic Relation (Class)"
+    },
+    {
+      "anchor": "relates-object-property",
+      "level": 3,
+      "title": "relates (Object Property)"
+    },
+    {
+      "anchor": "source-object-property",
+      "level": 3,
+      "title": "source (Object Property)"
+    },
+    {
+      "anchor": "target-object-property",
+      "level": 3,
+      "title": "target (Object Property)"
+    },
+    {
+      "anchor": "lexical-relation-class",
+      "level": 3,
+      "title": "Lexical Relation (Class)"
+    },
+    {
+      "anchor": "category-object-property",
+      "level": 3,
+      "title": "Category (Object Property)"
+    },
+    {
+      "anchor": "sense-relation-class",
+      "level": 3,
+      "title": "Sense Relation (Class)"
+    },
+    {
+      "anchor": "terminological-relation-class",
+      "level": 3,
+      "title": "Terminological Relation (Class)"
+    },
+    {
+      "anchor": "conceptrel-object-property",
+      "level": 3,
+      "title": "conceptRel (Object Property)"
+    },
+    {
+      "anchor": "conceptual-relation-class",
+      "level": 3,
+      "title": "Conceptual Relation (Class)"
+    },
+    {
+      "anchor": "translation",
+      "level": 3,
+      "title": "6.2 Translation"
+    },
+    {
+      "anchor": "translation-as-shared-reference",
+      "level": 4,
+      "title": "6.2.1 Translation as shared reference"
+    },
+    {
+      "anchor": "translation-as-a-relation-between-lexical-senses",
+      "level": 4,
+      "title": "6.2.2 Translation as a relation between lexical senses"
+    },
+    {
+      "anchor": "translation-class",
+      "level": 4,
+      "title": "Translation (Class)"
+    },
+    {
+      "anchor": "translation-object-property",
+      "level": 3,
+      "title": "translation (Object Property)"
+    },
+    {
+      "anchor": "translatable-as",
+      "level": 4,
+      "title": "6.2.3 Translatable As"
+    },
+    {
+      "anchor": "translatableas-object-property",
+      "level": 4,
+      "title": "translatableAs (Object Property)"
+    },
+    {
+      "anchor": "translation-set",
+      "level": 4,
+      "title": "6.2.4 Translation Set"
+    },
+    {
+      "anchor": "translation-set-class",
+      "level": 4,
+      "title": "Translation Set (Class)"
+    },
+    {
+      "anchor": "trans-object-property",
+      "level": 3,
+      "title": "trans (Object Property)"
+    },
+    {
+      "anchor": "metadata-lime",
+      "level": 2,
+      "title": "7. Metadata (lime)"
+    },
+    {
+      "anchor": "lexicon-and-lexicon-metadata",
+      "level": 3,
+      "title": "7.1 Lexicon and Lexicon Metadata"
+    },
+    {
+      "anchor": "lexicon-class",
+      "level": 3,
+      "title": "Lexicon (Class)"
+    },
+    {
+      "anchor": "entry-object-property",
+      "level": 3,
+      "title": "Entry (Object Property)"
+    },
+    {
+      "anchor": "language-datatype-property",
+      "level": 3,
+      "title": "Language (Datatype Property)"
+    },
+    {
+      "anchor": "lexical-entries-datatype-property",
+      "level": 3,
+      "title": "Lexical Entries (Datatype Property)"
+    },
+    {
+      "anchor": "linguistic-catalog-object-property",
+      "level": 3,
+      "title": "Linguistic Catalog (Object Property)"
+    },
+    {
+      "anchor": "lexicalization-set",
+      "level": 3,
+      "title": "7.2 Lexicalization Set"
+    },
+    {
+      "anchor": "lexicalization-set-class",
+      "level": 3,
+      "title": "Lexicalization Set (Class)"
+    },
+    {
+      "anchor": "reference-dataset-object-property",
+      "level": 3,
+      "title": "Reference Dataset (Object Property)"
+    },
+    {
+      "anchor": "lexicon-dataset-object-property",
+      "level": 3,
+      "title": "Lexicon Dataset (Object Property)"
+    },
+    {
+      "anchor": "lexicalization-model-object-property",
+      "level": 3,
+      "title": "Lexicalization Model (Object Property)"
+    },
+    {
+      "anchor": "references-datatype-property",
+      "level": 3,
+      "title": "References (Datatype Property)"
+    },
+    {
+      "anchor": "lexicalizations-datatype-property",
+      "level": 3,
+      "title": "Lexicalizations (Datatype Property)"
+    },
+    {
+      "anchor": "average-number-of-lexicalizations-datatype-property",
+      "level": 3,
+      "title": "Average Number of Lexicalizations (Datatype Property)"
+    },
+    {
+      "anchor": "percentage-datatype-property",
+      "level": 3,
+      "title": "Percentage (Datatype Property)"
+    },
+    {
+      "anchor": "partitions",
+      "level": 3,
+      "title": "7.3 Partitions"
+    },
+    {
+      "anchor": "partition-object-property",
+      "level": 3,
+      "title": "Partition (Object Property)"
+    },
+    {
+      "anchor": "resource-type-object-property",
+      "level": 3,
+      "title": "Resource Type (Object Property)"
+    },
+    {
+      "anchor": "lexical-linkset",
+      "level": 3,
+      "title": "7.4 Lexical Linkset"
+    },
+    {
+      "anchor": "lexical-linkset-class",
+      "level": 3,
+      "title": "Lexical Linkset (Class)"
+    },
+    {
+      "anchor": "conceptual-dataset-object-property",
+      "level": 3,
+      "title": "Conceptual Dataset (Object Property)"
+    },
+    {
+      "anchor": "concepts-datatype-property",
+      "level": 3,
+      "title": "Concepts (Datatype Property)"
+    },
+    {
+      "anchor": "links-datatype-property",
+      "level": 3,
+      "title": "Links (Datatype Property)"
+    },
+    {
+      "anchor": "average-number-of-links-datatype-property",
+      "level": 3,
+      "title": "Average Number of Links (Datatype Property)"
+    },
+    {
+      "anchor": "conceptualization-set",
+      "level": 3,
+      "title": "7.5 Conceptualization Set"
+    },
+    {
+      "anchor": "conceptualization-set-class",
+      "level": 3,
+      "title": "Conceptualization Set (Class)"
+    },
+    {
+      "anchor": "conceptualizations-datatype-property",
+      "level": 3,
+      "title": "Conceptualizations (Datatype Property)"
+    },
+    {
+      "anchor": "average-ambiguity-datatype-property",
+      "level": 3,
+      "title": "Average Ambiguity (Datatype Property)"
+    },
+    {
+      "anchor": "average-synonymy-datatype-property",
+      "level": 3,
+      "title": "Average Synonymy (Datatype Property)"
+    },
+    {
+      "anchor": "formal-definition-of-properties",
+      "level": 3,
+      "title": "7.6 Formal definition of properties"
+    },
+    {
+      "anchor": "publication-scenarios",
+      "level": 3,
+      "title": "7.7 Publication Scenarios"
+    },
+    {
+      "anchor": "linguistic-description",
+      "level": 2,
+      "title": "8. Linguistic Description"
+    },
+    {
+      "anchor": "morphosyntactic-description",
+      "level": 3,
+      "title": "8.1 Morphosyntactic Description"
+    },
+    {
+      "anchor": "pragmatic-paradigmatic-description",
+      "level": 3,
+      "title": "8.2 Paradigmatic Description"
+    },
+    {
+      "anchor": "arguments",
+      "level": 3,
+      "title": "8.3 Arguments"
+    },
+    {
+      "anchor": "frames",
+      "level": 3,
+      "title": "8.4 Frames"
+    },
+    {
+      "anchor": "confidence",
+      "level": 3,
+      "title": "8.5 Other properties"
+    },
+    {
+      "anchor": "lexical-nets",
+      "level": 2,
+      "title": "9. Lexical Nets"
+    },
+    {
+      "anchor": "lexical-nets-in-lemon",
+      "level": 3,
+      "title": "9.1 Lexical nets in OntoLex-lemon"
+    },
+    {
+      "anchor": "relation-to-other-models",
+      "level": 2,
+      "title": "10. Relation to Other Models"
+    },
+    {
+      "anchor": "skos-xl",
+      "level": 3,
+      "title": "10.1 SKOS(-XL)"
+    },
+    {
+      "anchor": "lmf",
+      "level": 3,
+      "title": "10.2 LMF"
+    },
+    {
+      "anchor": "openannotation",
+      "level": 3,
+      "title": "10.3 OpenAnnotation"
+    },
+    {
+      "anchor": "x11-acknowledgements",
+      "level": 2,
+      "title": "11. Acknowledgements"
+    }
+  ],
+  "images": [
+    {
+      "nearest_heading": "core",
+      "relative_url": "Lemon_OntoLex_Core.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Lemon_OntoLex_Core.png"
+    },
+    {
+      "nearest_heading": "affix-class",
+      "relative_url": "Examples/ontolex/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example1.png"
+    },
+    {
+      "nearest_heading": "written-representation-datatype-property",
+      "relative_url": "Examples/ontolex/example2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example2.png"
+    },
+    {
+      "nearest_heading": "written-representation-datatype-property",
+      "relative_url": "Examples/ontolex/example3.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example3.png"
+    },
+    {
+      "nearest_heading": "phonetic-representation-datatype-property",
+      "relative_url": "Examples/ontolex/example4.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example4.png"
+    },
+    {
+      "nearest_heading": "canonical-form-object-property",
+      "relative_url": "Examples/ontolex/example5.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example5.png"
+    },
+    {
+      "nearest_heading": "canonical-form-object-property",
+      "relative_url": "Examples/ontolex/example6.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example6.png"
+    },
+    {
+      "nearest_heading": "canonical-form-object-property",
+      "relative_url": "Examples/ontolex/example6a.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example6a.png"
+    },
+    {
+      "nearest_heading": "other-form-object-property",
+      "relative_url": "Examples/ontolex/example7.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example7.png"
+    },
+    {
+      "nearest_heading": "morphological-pattern-object-property",
+      "relative_url": "Examples/ontolex/example8.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example8.png"
+    },
+    {
+      "nearest_heading": "denotes-object-property",
+      "relative_url": "Examples/ontolex/example9.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example9.png"
+    },
+    {
+      "nearest_heading": "denotes-object-property",
+      "relative_url": "Examples/ontolex/example10.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example10.png"
+    },
+    {
+      "nearest_heading": "denotes-object-property",
+      "relative_url": "Examples/ontolex/example10a.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example10a.png"
+    },
+    {
+      "nearest_heading": "denotes-object-property",
+      "relative_url": "Examples/ontolex/example10b.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example10b.png"
+    },
+    {
+      "nearest_heading": "lexicalsense-class",
+      "relative_url": "Examples/ontolex/example11.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example11.png"
+    },
+    {
+      "nearest_heading": "usage",
+      "relative_url": "Examples/ontolex/example12.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example12.png"
+    },
+    {
+      "nearest_heading": "evokes-object-property",
+      "relative_url": "Examples/ontolex/example13.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example13.png"
+    },
+    {
+      "nearest_heading": "lexicalized-sense-object-property",
+      "relative_url": "Examples/ontolex/example14.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example14.png"
+    },
+    {
+      "nearest_heading": "concept-object-property",
+      "relative_url": "Examples/ontolex/example15.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example15.png"
+    },
+    {
+      "nearest_heading": "concept-set-class",
+      "relative_url": "Examples/ontolex/example17.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/ontolex/example17.png"
+    },
+    {
+      "nearest_heading": "syntax-and-semantics-synsem",
+      "relative_url": "Lemon_Syntax_and_Semantics.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Lemon_Syntax_and_Semantics.png"
+    },
+    {
+      "nearest_heading": "syntactic-behavior-object-property",
+      "relative_url": "Examples/synsem/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example1.png"
+    },
+    {
+      "nearest_heading": "synarg-object-property",
+      "relative_url": "Examples/synsem/example2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example2.png"
+    },
+    {
+      "nearest_heading": "object-of-property-object-property",
+      "relative_url": "Examples/synsem/example3.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example3.png"
+    },
+    {
+      "nearest_heading": "object-of-property-object-property",
+      "relative_url": "Examples/synsem/example4.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example4.png"
+    },
+    {
+      "nearest_heading": "marker-object-property",
+      "relative_url": "Examples/synsem/example5.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example5.png"
+    },
+    {
+      "nearest_heading": "submap-object-property",
+      "relative_url": "Examples/synsem/example6.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example6.png"
+    },
+    {
+      "nearest_heading": "optional-datatype-property",
+      "relative_url": "Examples/synsem/example7.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example7.png"
+    },
+    {
+      "nearest_heading": "optional-datatype-property",
+      "relative_url": "Examples/synsem/example8.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example8.png"
+    },
+    {
+      "nearest_heading": "condition-object-property",
+      "relative_url": "Examples/synsem/example9.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/synsem/example9.png"
+    },
+    {
+      "nearest_heading": "decomposition-decomp",
+      "relative_url": "Lemon_Decomposition.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Lemon_Decomposition.png"
+    },
+    {
+      "nearest_heading": "subterm-object-property",
+      "relative_url": "Examples/decomp/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example1.png"
+    },
+    {
+      "nearest_heading": "subterm-object-property",
+      "relative_url": "Examples/decomp/example2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example2.png"
+    },
+    {
+      "nearest_heading": "constituent-object-property",
+      "relative_url": "Examples/decomp/example3.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example3.png"
+    },
+    {
+      "nearest_heading": "corresponds-to-object-property",
+      "relative_url": "Examples/decomp/example4.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example4.png"
+    },
+    {
+      "nearest_heading": "corresponds-to-object-property",
+      "relative_url": "Examples/decomp/example5.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example5.png"
+    },
+    {
+      "nearest_heading": "phrase-structure",
+      "relative_url": "Examples/decomp/example6.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example6.png"
+    },
+    {
+      "nearest_heading": "phrase-structure",
+      "relative_url": "Examples/decomp/example7.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/decomp/example7.png"
+    },
+    {
+      "nearest_heading": "variation-translation-vartrans",
+      "relative_url": "Lemon_Variation_and_Translation.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Lemon_Variation_and_Translation.png"
+    },
+    {
+      "nearest_heading": "senserel-object-property",
+      "relative_url": "Examples/vartrans/example3.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example3.png"
+    },
+    {
+      "nearest_heading": "category-object-property",
+      "relative_url": "Examples/vartrans/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example1.png"
+    },
+    {
+      "nearest_heading": "sense-relation-class",
+      "relative_url": "Examples/vartrans/example2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example2.png"
+    },
+    {
+      "nearest_heading": "terminological-relation-class",
+      "relative_url": "Examples/vartrans/example4.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example4.png"
+    },
+    {
+      "nearest_heading": "translation-as-shared-reference",
+      "relative_url": "Examples/vartrans/example5.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example5.png"
+    },
+    {
+      "nearest_heading": "translation-class",
+      "relative_url": "Examples/vartrans/example6.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example6.png"
+    },
+    {
+      "nearest_heading": "translation-object-property",
+      "relative_url": "Examples/vartrans/example7.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example7.png"
+    },
+    {
+      "nearest_heading": "translatableas-object-property",
+      "relative_url": "Examples/vartrans/example8.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example8.png"
+    },
+    {
+      "nearest_heading": "trans-object-property",
+      "relative_url": "Examples/vartrans/example10.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example10.png"
+    },
+    {
+      "nearest_heading": "metadata-lime",
+      "relative_url": "Lemon_Lime_Metadata.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Lemon_Lime_Metadata.png"
+    },
+    {
+      "nearest_heading": "lexicon-and-lexicon-metadata",
+      "relative_url": "Examples/lime/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example1.png"
+    },
+    {
+      "nearest_heading": "linguistic-catalog-object-property",
+      "relative_url": "Examples/lime/example2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example2.png"
+    },
+    {
+      "nearest_heading": "references-datatype-property",
+      "relative_url": "Examples/lime/example3.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example3.png"
+    },
+    {
+      "nearest_heading": "average-number-of-lexicalizations-datatype-property",
+      "relative_url": "Formula_avgNumOfLexicalizations-v1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Formula_avgNumOfLexicalizations-v1.png"
+    },
+    {
+      "nearest_heading": "average-number-of-lexicalizations-datatype-property",
+      "relative_url": "Examples/lime/example4.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example4.png"
+    },
+    {
+      "nearest_heading": "average-number-of-lexicalizations-datatype-property",
+      "relative_url": "percentage.png",
+      "url": "https://www.w3.org/2016/05/ontolex/percentage.png"
+    },
+    {
+      "nearest_heading": "resource-type-object-property",
+      "relative_url": "Examples/lime/example5.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example5.png"
+    },
+    {
+      "nearest_heading": "resource-type-object-property",
+      "relative_url": "Examples/lime/example6.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example6.png"
+    },
+    {
+      "nearest_heading": "average-synonymy-datatype-property",
+      "relative_url": "Examples/lime/example7.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/lime/example7.png"
+    },
+    {
+      "nearest_heading": "morphosyntactic-description",
+      "relative_url": "Examples/description/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/description/example1.png"
+    },
+    {
+      "nearest_heading": "morphosyntactic-description",
+      "relative_url": "Examples/description/example2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/description/example2.png"
+    },
+    {
+      "nearest_heading": "morphosyntactic-description",
+      "relative_url": "Examples/description/example2b.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/description/example2b.png"
+    },
+    {
+      "nearest_heading": "morphosyntactic-description",
+      "relative_url": "Examples/description/example3.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/description/example3.png"
+    },
+    {
+      "nearest_heading": "morphosyntactic-description",
+      "relative_url": "Examples/description/example4.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/description/example4.png"
+    },
+    {
+      "nearest_heading": "arguments",
+      "relative_url": "Examples/description/example6.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/description/example6.png"
+    },
+    {
+      "nearest_heading": "confidence",
+      "relative_url": "Examples/vartrans/example9.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/vartrans/example9.png"
+    },
+    {
+      "nearest_heading": "lexical-nets-in-lemon",
+      "relative_url": "Examples/wordnet/example1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/wordnet/example1.png"
+    },
+    {
+      "nearest_heading": "skos-xl",
+      "relative_url": "Examples/other/example-skos1.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/other/example-skos1.png"
+    },
+    {
+      "nearest_heading": "skos-xl",
+      "relative_url": "Examples/other/example-skos2.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/other/example-skos2.png"
+    },
+    {
+      "nearest_heading": "openannotation",
+      "relative_url": "Examples/other/example-oa.png",
+      "url": "https://www.w3.org/2016/05/ontolex/Examples/other/example-oa.png"
+    }
+  ],
+  "numbered_sections": [
+    {
+      "anchor": "x1-overview",
+      "level": 2,
+      "title": "1. Overview"
+    },
+    {
+      "anchor": "introduction",
+      "level": 2,
+      "title": "2. Introduction"
+    },
+    {
+      "anchor": "purpose-of-the-model",
+      "level": 3,
+      "title": "2.1 Purpose of the model"
+    },
+    {
+      "anchor": "namespaces",
+      "level": 3,
+      "title": "2.2 Namespaces"
+    },
+    {
+      "anchor": "conventions-in-this-document",
+      "level": 3,
+      "title": "2.3 Conventions in this document"
+    },
+    {
+      "anchor": "core",
+      "level": 2,
+      "title": "3. Core"
+    },
+    {
+      "anchor": "lexical-entries",
+      "level": 3,
+      "title": "3.1 Lexical Entries"
+    },
+    {
+      "anchor": "forms",
+      "level": 3,
+      "title": "3.2 Forms"
+    },
+    {
+      "anchor": "semantics",
+      "level": 3,
+      "title": "3.3 Semantics"
+    },
+    {
+      "anchor": "lexical-sense-reference",
+      "level": 3,
+      "title": "3.4 Lexical Sense & Reference"
+    },
+    {
+      "anchor": "usage",
+      "level": 3,
+      "title": "3.5 Usage"
+    },
+    {
+      "anchor": "lexical-concept",
+      "level": 3,
+      "title": "3.6 Lexical Concept"
+    },
+    {
+      "anchor": "syntax-and-semantics-synsem",
+      "level": 2,
+      "title": "4. Syntax and Semantics (synsem)"
+    },
+    {
+      "anchor": "syntactic-frames",
+      "level": 3,
+      "title": "4.1 Syntactic Frames"
+    },
+    {
+      "anchor": "ontology-mappings",
+      "level": 3,
+      "title": "4.2 Ontology Mappings"
+    },
+    {
+      "anchor": "complex-ontology-mappings-submappings",
+      "level": 3,
+      "title": "4.3 Complex ontology mappings / submappings"
+    },
+    {
+      "anchor": "conditions",
+      "level": 3,
+      "title": "4.4 Conditions"
+    },
+    {
+      "anchor": "decomposition-decomp",
+      "level": 2,
+      "title": "5. Decomposition (decomp)"
+    },
+    {
+      "anchor": "subterms",
+      "level": 3,
+      "title": "5.1 Subterms"
+    },
+    {
+      "anchor": "components",
+      "level": 3,
+      "title": "5.2 Components"
+    },
+    {
+      "anchor": "phrase-structure",
+      "level": 3,
+      "title": "5.3 Phrase structure"
+    },
+    {
+      "anchor": "variation-translation-vartrans",
+      "level": 2,
+      "title": "6. Variation & Translation (vartrans)"
+    },
+    {
+      "anchor": "lexico-semantic-relations",
+      "level": 3,
+      "title": "6.1 Lexico-Semantic Relations"
+    },
+    {
+      "anchor": "translation",
+      "level": 3,
+      "title": "6.2 Translation"
+    },
+    {
+      "anchor": "translation-as-shared-reference",
+      "level": 4,
+      "title": "6.2.1 Translation as shared reference"
+    },
+    {
+      "anchor": "translation-as-a-relation-between-lexical-senses",
+      "level": 4,
+      "title": "6.2.2 Translation as a relation between lexical senses"
+    },
+    {
+      "anchor": "translatable-as",
+      "level": 4,
+      "title": "6.2.3 Translatable As"
+    },
+    {
+      "anchor": "translation-set",
+      "level": 4,
+      "title": "6.2.4 Translation Set"
+    },
+    {
+      "anchor": "metadata-lime",
+      "level": 2,
+      "title": "7. Metadata (lime)"
+    },
+    {
+      "anchor": "lexicon-and-lexicon-metadata",
+      "level": 3,
+      "title": "7.1 Lexicon and Lexicon Metadata"
+    },
+    {
+      "anchor": "lexicalization-set",
+      "level": 3,
+      "title": "7.2 Lexicalization Set"
+    },
+    {
+      "anchor": "partitions",
+      "level": 3,
+      "title": "7.3 Partitions"
+    },
+    {
+      "anchor": "lexical-linkset",
+      "level": 3,
+      "title": "7.4 Lexical Linkset"
+    },
+    {
+      "anchor": "conceptualization-set",
+      "level": 3,
+      "title": "7.5 Conceptualization Set"
+    },
+    {
+      "anchor": "formal-definition-of-properties",
+      "level": 3,
+      "title": "7.6 Formal definition of properties"
+    },
+    {
+      "anchor": "publication-scenarios",
+      "level": 3,
+      "title": "7.7 Publication Scenarios"
+    },
+    {
+      "anchor": "linguistic-description",
+      "level": 2,
+      "title": "8. Linguistic Description"
+    },
+    {
+      "anchor": "morphosyntactic-description",
+      "level": 3,
+      "title": "8.1 Morphosyntactic Description"
+    },
+    {
+      "anchor": "pragmatic-paradigmatic-description",
+      "level": 3,
+      "title": "8.2 Paradigmatic Description"
+    },
+    {
+      "anchor": "arguments",
+      "level": 3,
+      "title": "8.3 Arguments"
+    },
+    {
+      "anchor": "frames",
+      "level": 3,
+      "title": "8.4 Frames"
+    },
+    {
+      "anchor": "confidence",
+      "level": 3,
+      "title": "8.5 Other properties"
+    },
+    {
+      "anchor": "lexical-nets",
+      "level": 2,
+      "title": "9. Lexical Nets"
+    },
+    {
+      "anchor": "lexical-nets-in-lemon",
+      "level": 3,
+      "title": "9.1 Lexical nets in OntoLex-lemon"
+    },
+    {
+      "anchor": "relation-to-other-models",
+      "level": 2,
+      "title": "10. Relation to Other Models"
+    },
+    {
+      "anchor": "skos-xl",
+      "level": 3,
+      "title": "10.1 SKOS(-XL)"
+    },
+    {
+      "anchor": "lmf",
+      "level": 3,
+      "title": "10.2 LMF"
+    },
+    {
+      "anchor": "openannotation",
+      "level": 3,
+      "title": "10.3 OpenAnnotation"
+    },
+    {
+      "anchor": "x11-acknowledgements",
+      "level": 2,
+      "title": "11. Acknowledgements"
+    }
+  ],
+  "population_policy": "HTML headings and non-logo image occurrences; document terms are not a count of asserted or inferred ontology classes.",
+  "reasoner_execution": "NOT_EXECUTED",
+  "source_bytes": 286046,
+  "source_sha256": "ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2",
+  "source_url": "https://www.w3.org/2016/05/ontolex/",
+  "term_heading_inventory": [
+    {
+      "anchor": "lexical-entry-class",
+      "level": 3,
+      "title": "Lexical Entry (Class)"
+    },
+    {
+      "anchor": "word-class",
+      "level": 3,
+      "title": "Word (Class)"
+    },
+    {
+      "anchor": "multiword-expression-class",
+      "level": 3,
+      "title": "Multiword Expression (Class)"
+    },
+    {
+      "anchor": "affix-class",
+      "level": 3,
+      "title": "Affix (Class)"
+    },
+    {
+      "anchor": "form-class",
+      "level": 3,
+      "title": "Form (Class)"
+    },
+    {
+      "anchor": "lexical-form-object-property",
+      "level": 3,
+      "title": "Lexical Form (Object Property)"
+    },
+    {
+      "anchor": "written-representation-datatype-property",
+      "level": 3,
+      "title": "Written Representation (Datatype Property)"
+    },
+    {
+      "anchor": "phonetic-representation-datatype-property",
+      "level": 3,
+      "title": "Phonetic Representation (Datatype Property)"
+    },
+    {
+      "anchor": "representation-datatype-property",
+      "level": 3,
+      "title": "Representation (Datatype Property)"
+    },
+    {
+      "anchor": "canonical-form-object-property",
+      "level": 3,
+      "title": "Canonical Form (Object Property)"
+    },
+    {
+      "anchor": "other-form-object-property",
+      "level": 3,
+      "title": "Other Form (Object Property)"
+    },
+    {
+      "anchor": "morphological-pattern-object-property",
+      "level": 3,
+      "title": "Morphological Pattern (Object Property)"
+    },
+    {
+      "anchor": "denotes-object-property",
+      "level": 3,
+      "title": "Denotes (Object Property)"
+    },
+    {
+      "anchor": "lexicalsense-class",
+      "level": 3,
+      "title": "LexicalSense (Class)"
+    },
+    {
+      "anchor": "sense-object-property",
+      "level": 3,
+      "title": "Sense (Object Property)"
+    },
+    {
+      "anchor": "reference-object-property",
+      "level": 3,
+      "title": "Reference (Object Property)"
+    },
+    {
+      "anchor": "usage-object-property",
+      "level": 3,
+      "title": "Usage (Object Property)"
+    },
+    {
+      "anchor": "lexical-concept-class",
+      "level": 3,
+      "title": "Lexical Concept (Class)"
+    },
+    {
+      "anchor": "evokes-object-property",
+      "level": 3,
+      "title": "Evokes (Object Property)"
+    },
+    {
+      "anchor": "lexicalized-sense-object-property",
+      "level": 3,
+      "title": "Lexicalized Sense (Object Property)"
+    },
+    {
+      "anchor": "concept-object-property",
+      "level": 3,
+      "title": "Concept (Object Property)"
+    },
+    {
+      "anchor": "concept-set-class",
+      "level": 3,
+      "title": "Concept Set (Class)"
+    },
+    {
+      "anchor": "syntactic-frame-class",
+      "level": 3,
+      "title": "Syntactic Frame (Class)"
+    },
+    {
+      "anchor": "syntactic-behavior-object-property",
+      "level": 3,
+      "title": "Syntactic Behavior (Object Property)"
+    },
+    {
+      "anchor": "syntactic-argument-class",
+      "level": 3,
+      "title": "Syntactic Argument (Class)"
+    },
+    {
+      "anchor": "synarg-object-property",
+      "level": 3,
+      "title": "SynArg (Object Property)"
+    },
+    {
+      "anchor": "ontomap-class",
+      "level": 3,
+      "title": "OntoMap (Class)"
+    },
+    {
+      "anchor": "ontomapping-object-property",
+      "level": 3,
+      "title": "ontoMapping (Object Property)"
+    },
+    {
+      "anchor": "ontocorrespondence-object-property",
+      "level": 3,
+      "title": "ontoCorrespondence (Object Property)"
+    },
+    {
+      "anchor": "is-a-object-property",
+      "level": 3,
+      "title": "Is A (Object Property)"
+    },
+    {
+      "anchor": "subject-of-property-object-property",
+      "level": 3,
+      "title": "Subject of Property (Object Property)"
+    },
+    {
+      "anchor": "object-of-property-object-property",
+      "level": 3,
+      "title": "Object of Property (Object Property)"
+    },
+    {
+      "anchor": "marker-object-property",
+      "level": 3,
+      "title": "Marker (Object Property)"
+    },
+    {
+      "anchor": "submap-object-property",
+      "level": 3,
+      "title": "Submap (Object Property)"
+    },
+    {
+      "anchor": "optional-datatype-property",
+      "level": 3,
+      "title": "Optional (Datatype Property)"
+    },
+    {
+      "anchor": "condition-object-property",
+      "level": 3,
+      "title": "condition (Object Property)"
+    },
+    {
+      "anchor": "propertydomain-object-property",
+      "level": 3,
+      "title": "propertyDomain (Object Property)"
+    },
+    {
+      "anchor": "propertyrange-object-property",
+      "level": 3,
+      "title": "propertyRange (Object Property)"
+    },
+    {
+      "anchor": "subterm-object-property",
+      "level": 3,
+      "title": "Subterm (Object Property)"
+    },
+    {
+      "anchor": "component-class",
+      "level": 3,
+      "title": "Component (Class)"
+    },
+    {
+      "anchor": "constituent-object-property",
+      "level": 3,
+      "title": "Constituent (Object Property)"
+    },
+    {
+      "anchor": "corresponds-to-object-property",
+      "level": 3,
+      "title": "Corresponds To (Object Property)"
+    },
+    {
+      "anchor": "lexicalrel-object-property",
+      "level": 3,
+      "title": "lexicalRel (Object Property)"
+    },
+    {
+      "anchor": "senserel-object-property",
+      "level": 3,
+      "title": "senseRel (Object Property)"
+    },
+    {
+      "anchor": "lexico-semantic-relation-class",
+      "level": 3,
+      "title": "Lexico-Semantic Relation (Class)"
+    },
+    {
+      "anchor": "relates-object-property",
+      "level": 3,
+      "title": "relates (Object Property)"
+    },
+    {
+      "anchor": "source-object-property",
+      "level": 3,
+      "title": "source (Object Property)"
+    },
+    {
+      "anchor": "target-object-property",
+      "level": 3,
+      "title": "target (Object Property)"
+    },
+    {
+      "anchor": "lexical-relation-class",
+      "level": 3,
+      "title": "Lexical Relation (Class)"
+    },
+    {
+      "anchor": "category-object-property",
+      "level": 3,
+      "title": "Category (Object Property)"
+    },
+    {
+      "anchor": "sense-relation-class",
+      "level": 3,
+      "title": "Sense Relation (Class)"
+    },
+    {
+      "anchor": "terminological-relation-class",
+      "level": 3,
+      "title": "Terminological Relation (Class)"
+    },
+    {
+      "anchor": "conceptrel-object-property",
+      "level": 3,
+      "title": "conceptRel (Object Property)"
+    },
+    {
+      "anchor": "conceptual-relation-class",
+      "level": 3,
+      "title": "Conceptual Relation (Class)"
+    },
+    {
+      "anchor": "translation-class",
+      "level": 4,
+      "title": "Translation (Class)"
+    },
+    {
+      "anchor": "translation-object-property",
+      "level": 3,
+      "title": "translation (Object Property)"
+    },
+    {
+      "anchor": "translatableas-object-property",
+      "level": 4,
+      "title": "translatableAs (Object Property)"
+    },
+    {
+      "anchor": "translation-set-class",
+      "level": 4,
+      "title": "Translation Set (Class)"
+    },
+    {
+      "anchor": "trans-object-property",
+      "level": 3,
+      "title": "trans (Object Property)"
+    },
+    {
+      "anchor": "lexicon-class",
+      "level": 3,
+      "title": "Lexicon (Class)"
+    },
+    {
+      "anchor": "entry-object-property",
+      "level": 3,
+      "title": "Entry (Object Property)"
+    },
+    {
+      "anchor": "language-datatype-property",
+      "level": 3,
+      "title": "Language (Datatype Property)"
+    },
+    {
+      "anchor": "lexical-entries-datatype-property",
+      "level": 3,
+      "title": "Lexical Entries (Datatype Property)"
+    },
+    {
+      "anchor": "linguistic-catalog-object-property",
+      "level": 3,
+      "title": "Linguistic Catalog (Object Property)"
+    },
+    {
+      "anchor": "lexicalization-set-class",
+      "level": 3,
+      "title": "Lexicalization Set (Class)"
+    },
+    {
+      "anchor": "reference-dataset-object-property",
+      "level": 3,
+      "title": "Reference Dataset (Object Property)"
+    },
+    {
+      "anchor": "lexicon-dataset-object-property",
+      "level": 3,
+      "title": "Lexicon Dataset (Object Property)"
+    },
+    {
+      "anchor": "lexicalization-model-object-property",
+      "level": 3,
+      "title": "Lexicalization Model (Object Property)"
+    },
+    {
+      "anchor": "references-datatype-property",
+      "level": 3,
+      "title": "References (Datatype Property)"
+    },
+    {
+      "anchor": "lexicalizations-datatype-property",
+      "level": 3,
+      "title": "Lexicalizations (Datatype Property)"
+    },
+    {
+      "anchor": "average-number-of-lexicalizations-datatype-property",
+      "level": 3,
+      "title": "Average Number of Lexicalizations (Datatype Property)"
+    },
+    {
+      "anchor": "percentage-datatype-property",
+      "level": 3,
+      "title": "Percentage (Datatype Property)"
+    },
+    {
+      "anchor": "partition-object-property",
+      "level": 3,
+      "title": "Partition (Object Property)"
+    },
+    {
+      "anchor": "resource-type-object-property",
+      "level": 3,
+      "title": "Resource Type (Object Property)"
+    },
+    {
+      "anchor": "lexical-linkset-class",
+      "level": 3,
+      "title": "Lexical Linkset (Class)"
+    },
+    {
+      "anchor": "conceptual-dataset-object-property",
+      "level": 3,
+      "title": "Conceptual Dataset (Object Property)"
+    },
+    {
+      "anchor": "concepts-datatype-property",
+      "level": 3,
+      "title": "Concepts (Datatype Property)"
+    },
+    {
+      "anchor": "links-datatype-property",
+      "level": 3,
+      "title": "Links (Datatype Property)"
+    },
+    {
+      "anchor": "average-number-of-links-datatype-property",
+      "level": 3,
+      "title": "Average Number of Links (Datatype Property)"
+    },
+    {
+      "anchor": "conceptualization-set-class",
+      "level": 3,
+      "title": "Conceptualization Set (Class)"
+    },
+    {
+      "anchor": "conceptualizations-datatype-property",
+      "level": 3,
+      "title": "Conceptualizations (Datatype Property)"
+    },
+    {
+      "anchor": "average-ambiguity-datatype-property",
+      "level": 3,
+      "title": "Average Ambiguity (Datatype Property)"
+    },
+    {
+      "anchor": "average-synonymy-datatype-property",
+      "level": 3,
+      "title": "Average Synonymy (Datatype Property)"
+    }
+  ]
+}
