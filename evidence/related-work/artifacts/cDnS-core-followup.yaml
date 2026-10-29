@@ -1,0 +1,385 @@
+schema_version: '1.0'
+issue: 267
+status: BOUNDED_CORE_FOLLOWUP_COMPLETE_WITH_PROFILE_FAILURE
+reviewed_on: '2026-10-29'
+baseline_commit: 0103c88cb6a3ced5928f0a5b66d0dc913ab69cbe
+source:
+  filename: cDnS.owl
+  sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+  bytes: 45077
+  iri: http://www.loa-cnr.it/ontologies/cDnS.owl
+  namespace: http://www.loa-cnr.it/ontologies/cDnS.owl#
+  version: '1.1'
+  url: http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
+  header_claim: Names alignment with JAAMAS2008; not immutable historical release evidence
+  historical_2007_fidelity: NOT_ESTABLISHED
+  historical_2008_fidelity: NOT_ESTABLISHED
+  declared_imports: []
+  upper_ontology_import: NONE_IN_THIS_CORE
+  license_permission: NOT_ESTABLISHED_FOR_SELECTED_BYTES
+  redistributed: false
+selected_scope:
+  core_classes: 12
+  core_object_properties: 47
+  core_explicit_triples: 411
+  core_anonymous_restrictions: 14
+  mapped_extension_class_counts:
+  - 25
+  - 14
+  - 12
+  mapped_extension_reasoning: NOT_EXECUTED_OUTSIDE_SELECTED_CORE
+  all_class_glossary: EXISTING_COMPLETE_SELECTED_CATALOGUES_REUSED_NOT_REPLACED
+evidence:
+  execution:
+    path: evaluation/related-work/cdns267/execution.json
+    sha256: 1f6888538185a1eda1e4d3412da170a964ee46dd8f803ab5b7262471284da436
+  core_census:
+    path: evidence/related-work/deep-reviews/cDnS2007/artifact-census.json
+    sha256: 194d074dba0c8a5b93709fcee53a9c3c28c873c843b93c3bdbddf5aa86f1c07c
+  core_catalog:
+    path: evidence/related-work/deep-reviews/cDnS2007/classes.yaml
+    sha256: c953cc13c7927c17e159373931e35dd0a99befaf0d2d5e21fd983eef48b50249
+  paper2007:
+    path: evidence/related-work/deep-reviews/cDnS2007/review.yaml
+    sha256: eb684235ad7b13c44103ce162275c72641b6571420aa0faaf08fa5fe8d5eac4e
+  paper2008:
+    path: evidence/related-work/deep-reviews/cDnS-journal-2008/review.yaml
+    sha256: 6b381c1da495caa8ca16fa673be695586c1dd73573bbd634fe1b811b344eb0d0
+  mapped_extension_catalog:
+    path: evidence/related-work/deep-reviews/cDnS-journal-2008/classes.yaml
+    sha256: 567696ec909221dd486d990987b66db77aea1816ca2ec48476a59dced3858239
+questions:
+- id: Q01
+  title: Concept definition uniqueness
+  disposition: CORE_STRENGTHENS_DISPLAYED_EXISTENCE
+  interpretation: Concept has some Description and exactly one isDefinedIn filler. Both papers display 18 supplies
+    existence without stating uniqueness in that display. This is a local commitment comparison, not a proof that
+    the entire paper permits multiple definitions. Different names do not entail different individuals.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - Concept / isDefinedIn cardinality1; cDnS2007 K018 p12; journal K018 PDF15 / printed84
+  source_query_id: Q01
+  evidence_keys: &id001
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: A Concept has one defining Description.
+  adverse_scenario: Two explicitly distinct defining Descriptions violate the selected cardinality; two names alone
+    can denote the same Description.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id002
+  - U03
+  - U04
+  - U10
+- id: Q02
+  title: Conceptualization range
+  disposition: ALIGNED_WITH_2008_RANGE_NOT_A_NEW_2008_DIFFERENCE
+  interpretation: conceptualizes ranges over SchematicEntity and has SocialAgent domain. The journal already generalizes
+    the range in display37, unlike the earlier Description-oriented shares(a,d,t) display38 vocabulary. Do not report
+    the broader range as a novel core-versus-2008 discrepancy or equate the differently named relations automatically.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - conceptualizes domain/range; 2007 K038 PDF15; journal K037 PDF17 / printed86
+  source_query_id: Q02
+  evidence_keys: &id003
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: A social agent conceptually targets a Concept as a schematic entity.
+  adverse_scenario: Treating the core range as Description-only adds an unsupported restriction; cross-version identity
+    also needs separate evidence.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id004
+  - U03
+  - U04
+  - U08
+- id: Q03
+  title: Expression and aboutness
+  disposition: ALIGNED_2008_RANGE_DERIVATION_NOT_REPRODUCED
+  interpretation: expresses ranges over SchematicEntity, matching journal46 rather than the earlier expresses(i,d,t)
+    signature47. The binary property declaration and range do not reproduce journal49 aboutness derivation through
+    a satisfying situation, description and referent. No property-chain axiom is present in this root.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - expresses and its declared inverse/range; 2007 K047 PDF16; journal K046/K049 PDF19 / printed88
+  source_query_id: Q03
+  evidence_keys: &id005
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: An information object expresses a schematic entity.
+  adverse_scenario: A broad expression range alone does not establish a specific referent or an asserted aboutness
+    chain with the required shared witnesses.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id006
+  - U03
+  - U04
+  - U09
+- id: Q04
+  title: Temporal projection
+  disposition: BINARY_CORE_DOES_NOT_PRESERVE_EXPLICIT_TIME_ARGUMENT
+  interpretation: All 47 declared properties are object properties; this root declares no Time class or datatype
+    property and imports nothing. Time-indexed paper signatures are represented by binary core vocabulary without
+    an explicit temporal argument. This does not establish that no temporal extension exists elsewhere or prove
+    a lossless projection.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - Core object-property inventory; 2007 K038/K047; journal K037/K046 and K114 temporal order
+  source_query_id: Q04
+  evidence_keys: &id007
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: Retain an atemporal social-agent/content link when that is the declared intended scope.
+  adverse_scenario: Two time-qualified claims cannot be distinguished by assigning only the same binary pair; no
+    preservation of ordering or changing context is established.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id008
+  - U04
+  - U06
+  - U10
+- id: Q05
+  title: Core and normative extension boundary
+  disposition: MODULAR_SCOPE_NOT_PAPER_ABSENCE
+  interpretation: Plan, Norm and KnowledgeCommunity are not declared in this 12-class standalone core. They are
+    present in the separately pinned collInt1.0 catalogue mapped through ground1.0 to core1.1. The 25/14/12 class
+    map is separately inventoried and is not imported or reasoned over in this task. Original-host/edition compatibility
+    remains unverified.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - Core imports=[] and declarations; journal K068/K114/K128; selected journal classes.yaml collInt:Plan/Norm/KnowledgeCommunity
+  source_query_id: Q05
+  evidence_keys: &id009
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: Use the core for its declared contextual-classification scope and consult the separate extension
+    when relevant.
+  adverse_scenario: Absence from the core is not absence from either paper or project; the selected mapped extension
+    is not a certified historical complete theory.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id010
+  - U01
+  - U02
+  - U08
+- id: Q06
+  title: Schematic union coverage
+  disposition: EXPLICIT_COVER_AXIOM_NOT_MATCHED
+  interpretation: The six principal schematic categories are subclasses of SchematicEntity with disjointness, but
+    SchematicEntity has no equivalentClass union in the complete source census. Entity instead has a SchematicEntity/NonSchematicEntity
+    union. Those are distinct statements. Subclass/disjointness assertions alone do not supply the paper display5
+    cover; global entailment remains unexecuted.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - SchematicEntity and Entity axioms; 2007 K005 PDF10; journal K005 PDF12 / printed81; journal K077 PDF24 / printed93
+  source_query_id: Q06
+  evidence_keys: &id011
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: Classify an individual under a named schematic category when evidence supports it.
+  adverse_scenario: Do not read Entity union or pairwise disjointness as the six-way SchematicEntity covering axiom.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id012
+  - U03
+  - U04
+  - U10
+- id: Q07
+  title: Configuration conditions
+  disposition: ONLY_SUBCLASS_AXIOM_LOCALLY_INHERITS_COLLECTION
+  interpretation: Configuration has only Collection as its explicit superclass and no equivalentClass definition.
+    It inherits Collection coverage/unification restrictions, but the root does not assert the Configuration-specific
+    member/part conditions described by paper64. The paper temporal-binder issue remains literal source evidence,
+    not a repaired formula.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - Configuration subclass Collection; Collection restrictions; 2007 K064 PDF18; journal K064 PDF21 / printed90
+  source_query_id: Q07
+  evidence_keys: &id013
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: A Configuration remains subject to the inherited Collection restrictions.
+  adverse_scenario: Do not infer the detailed part/member pattern from its name or silently normalize the shadowed
+    temporal binder.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id014
+  - U03
+  - U04
+  - U07
+- id: Q08
+  title: Bundle and transitive-property cardinality
+  disposition: EXECUTED_PROFILE_FAILURE_REASONER_REFUSAL
+  interpretation: Bundle has an unqualified minimum cardinality2 on transitive hasProperPart, plus some Description
+    proper part. OWLAPI reports one non-simple-property cardinality violation; HermiT refuses construction for that
+    restriction. No whole-core consistency value or unsatisfiable-class list is obtained. Paper65 does not explicitly
+    distinguish its two variables in the formula despite the prose minimum; neither that formula nor all its context
+    is certified by this execution.
+  basis: REVIEWER_INTERPRETATION
+  artifact_locators:
+  - Bundle / hasProperPart / minCardinality2; 2007 K065 PDF18; journal K065 PDF22 / printed91; execution.json profile/refusal
+  source_query_id: Q08
+  evidence_keys: &id015
+  - execution
+  - core_census
+  - paper2007
+  - paper2008
+  - mapped_extension_catalog
+  positive_scenario: Record the source as it is and retain the profile failure as an inspection result.
+  adverse_scenario: Do not remove transitivity, weaken cardinality or delete the Bundle axiom to manufacture a passing
+    consistency result.
+  scenario_execution: NOT_EXECUTED_FULL_CORE_REASONER_REFUSED
+  utilization_categories: &id016
+  - U04
+  - U07
+  - U10
+findings:
+- id: CDNS267-F01
+  question_id: Q01
+  title: Concept definition uniqueness
+  disposition: CORE_STRENGTHENS_DISPLAYED_EXISTENCE
+  evidence_keys: *id001
+  utilization_categories: *id002
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F02
+  question_id: Q02
+  title: Conceptualization range
+  disposition: ALIGNED_WITH_2008_RANGE_NOT_A_NEW_2008_DIFFERENCE
+  evidence_keys: *id003
+  utilization_categories: *id004
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F03
+  question_id: Q03
+  title: Expression and aboutness
+  disposition: ALIGNED_2008_RANGE_DERIVATION_NOT_REPRODUCED
+  evidence_keys: *id005
+  utilization_categories: *id006
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F04
+  question_id: Q04
+  title: Temporal projection
+  disposition: BINARY_CORE_DOES_NOT_PRESERVE_EXPLICIT_TIME_ARGUMENT
+  evidence_keys: *id007
+  utilization_categories: *id008
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F05
+  question_id: Q05
+  title: Core and normative extension boundary
+  disposition: MODULAR_SCOPE_NOT_PAPER_ABSENCE
+  evidence_keys: *id009
+  utilization_categories: *id010
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F06
+  question_id: Q06
+  title: Schematic union coverage
+  disposition: EXPLICIT_COVER_AXIOM_NOT_MATCHED
+  evidence_keys: *id011
+  utilization_categories: *id012
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F07
+  question_id: Q07
+  title: Configuration conditions
+  disposition: ONLY_SUBCLASS_AXIOM_LOCALLY_INHERITS_COLLECTION
+  evidence_keys: *id013
+  utilization_categories: *id014
+  next_issues:
+  - 251
+  - 126
+- id: CDNS267-F08
+  question_id: Q08
+  title: Bundle and transitive-property cardinality
+  disposition: EXECUTED_PROFILE_FAILURE_REASONER_REFUSAL
+  evidence_keys: *id015
+  utilization_categories: *id016
+  next_issues:
+  - 251
+  - 126
+execution_summary:
+  profile: FAIL_ONE_NON_SIMPLE_PROPERTY_CARDINALITY
+  reasoner: REFUSED_NON_SIMPLE_PROPERTY
+  consistent: null
+  unsatisfiable_named_classes: null
+  asserted_queries:
+    total: 8
+    passed: 8
+    failed: 0
+  executed_consistency_scenarios: 0
+  source_repair: NOT_PERFORMED
+candidate_uses:
+- source_question: Q01
+  model_ids:
+  - CLR-C0017
+  proposal: Assess definition identity and multiplicity requirements before borrowing exactly-one constraints.
+  status: OWNER_DECISION_REQUIRED
+- source_question: Q02
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  - CLR-C0101
+  proposal: Compare agent, conceptualization process and schematic content without assuming equivalence.
+  status: OWNER_DECISION_REQUIRED
+- source_question: Q03
+  model_ids:
+  - CLR-C0057
+  - CLR-C0101
+  - CLR-C0017
+  proposal: Preserve the difference between expression, represented content and evidence for a referent.
+  status: OWNER_DECISION_REQUIRED
+- source_question: Q04
+  model_ids:
+  - CLR-C0123
+  - CLR-C0026
+  proposal: Test whether temporal/context identity survives the intended formal projection.
+  status: OWNER_DECISION_REQUIRED
+reuse_decision: DEFER_DIRECT_DL_REUSE_AND_EQUIVALENCE;COMPARE_SCENARIO_AND_IDENTITY_REQUIREMENTS
+harness_decision: Exact original core can be loaded and profiled, but HermiT refuses its non-simple-property cardinality.
+  Whole-core consistency scenarios remain unexecuted. Eight asserted RDF queries ran; they are not semantic validity
+  tests. No repaired surrogate or selective source-axiom deletion is authorized by this task.
+model_baseline:
+  path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  source_change: NONE
+  source_redistribution: false
+  independent_expert_review: NOT_PERFORMED
+  scientific_acceptance: NOT_ASSESSED
+  adoption: OWNER_DECISION_REQUIRED
+closure:
+  meaning: Complete only the core profile and eight bounded correspondence categories; retain negative result and
+    blocked semantic execution.
+  source_defect_resolved: false
+  next_issues:
+  - 251
+  - 126
+  earlier_issue87: REMAINS_CLOSED_WITH_ORIGINAL_SCOPE

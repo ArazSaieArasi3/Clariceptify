@@ -684,7 +684,7 @@ records:
     - G09
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_CORE_FULL_CENSUS
+  artifact_state: CORE267_PROFILE_FAIL_REASONER_REFUSED_SELECTED_CLASS_INVENTORY_COMPLETE
   foundation:
     family: Foundation-neutral constructive framework
     edition: null
@@ -704,8 +704,17 @@ records:
     imported_definitions_complete: true
     reasoner_execution: NOT_EXECUTED
   next_issues:
-  - 267
   - 263
+  - 251
+  - 126
+  technical_followup_core:
+    issue: 267
+    path: evidence/related-work/artifacts/cDnS-core-followup.yaml
+    scope: SELECTED_CDNS1_1_CORE_ONLY_NO_IMPORTS
+    profile: FAIL_NON_SIMPLE_CARDINALITY
+    reasoner: REFUSED_NON_SIMPLE_PROPERTY
+    logical_consistency: null
+    extension_reasoning: NOT_EXECUTED
 - id: LMM2008
   title: 'LMM: an OWL-DL MetaModel to Represent Heterogeneous Lexical Knowledge'
   primary_issue: 260
@@ -1331,14 +1340,14 @@ records:
     - CDNS2008
     global_absence_claim: false
     paper_correspondence: PAPER_LINKED_ROOT_SELECTED_DIFFERENCES_NOT_HISTORICAL_BYTE_PARITY
-  artifact_state: PAPER_LINKED_ROOT_AND_EXPLICIT_MAPPED_IMPORTS
+  artifact_state: SELECTED51_CLASS_INVENTORY_COMPLETE_CORE267_PROFILE_FAIL_EXTENSION_NOT_EXECUTED
   foundation:
     family: Constructive DnS; ground-ontology independent
     edition: null
     relation: INDEPENDENT_FOUNDATION_WITH_ACTUAL_SELECTED_MODULE_IMPORTS
     basis: AUTHOR_REPORTED
-    locator: Journal section2.1/PDF3-5,3.1-3.4/PDF11-28; collInt imports ground; mapped ground imports cDnS;
-      retained core1.1 has no imports.
+    locator: Journal section2.1/PDF3-5,3.1-3.4/PDF11-28; collInt imports ground; mapped ground imports
+      cDnS; retained core1.1 has no imports.
     artifact_imports:
     - http://www.loa-cnr.it/ontologies/ground.owl
     - http://www.loa-cnr.it/ontologies/cDnS.owl
@@ -1356,13 +1365,20 @@ records:
     reasoner_execution: NOT_EXECUTED
     root_local_classes: 25
     mapped_import_local_classes: 26
-    limitations: Counts are local-by-namespace totals across an explicit selected three-file map, not51 root
-      classes, accepted logical definitions or a certified original2008 import closure. All51 annotation hashes/hierarchies
-      reconciled with private bytes. owl:Thing separate; reasoner/profile not executed.
+    limitations: Counts are local-by-namespace totals across an explicit selected three-file map, not51
+      root classes, accepted logical definitions or a certified original2008 import closure. All51 annotation
+      hashes/hierarchies reconciled with private bytes. owl:Thing separate; reasoner/profile not executed.
   next_issues:
-  - 267
   - 251
   - 126
+  technical_followup_core:
+    issue: 267
+    path: evidence/related-work/artifacts/cDnS-core-followup.yaml
+    scope: SELECTED_CDNS1_1_CORE_ONLY_NO_IMPORTS
+    profile: FAIL_NON_SIMPLE_CARDINALITY
+    reasoner: REFUSED_NON_SIMPLE_PROPERTY
+    logical_consistency: null
+    extension_reasoning: NOT_EXECUTED
 - id: Emotions-2015
   title: Emotions ontology for collaborative modelling and learning of emotional responses
   primary_issue: 77
