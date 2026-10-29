@@ -1,0 +1,1018 @@
+{
+  "issue": 239,
+  "source_hashes": {
+    "EmotionsCognition-2015.owl": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+    "EmotionsCognition-current.owl": "0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2",
+    "DUL.owl": "b27e0111f1201d8815d6a68fdf1c3d8eaa9f34327bece17c75a3410fbe626485",
+    "IOLite.owl": "98b9ddcbfdef997f89668c3738f9343ff8ce15079acca023bd6f870e0173e075",
+    "ofntb.owl": "d223c298e8c1997e02f9a538289f766bbdb744c1094454a44f46e7d55a50d289"
+  },
+  "predecessor": {
+    "url": "https://rhizomik.net/ontologies/2015/05/emotionsonto.owl",
+    "sha256": "fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7",
+    "declared_local_classes": 28,
+    "shared_local_names": 26,
+    "later_only_names": [
+      "Approach",
+      "Avoidance",
+      "Behavioral",
+      "Emotion",
+      "Motivation",
+      "NeutralBehavior",
+      "NonNeutralBehavior"
+    ],
+    "earlier_only_names": [
+      "Behavioural",
+      "EmergentEmotion"
+    ],
+    "original_2014_bytes_equivalence": "NOT_ESTABLISHED"
+  },
+  "source_root": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl",
+  "triples": 182,
+  "classes": [
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Approach",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#NonNeutralBehavior"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#ArtificialSensor",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensor"
+        },
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Avoidance",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#NonNeutralBehavior"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Behavioral",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Action"
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#BiologicalSensor",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensor"
+        },
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Context",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#ContinuousStimulus",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#rangeHigh"
+            ],
+            "http://www.w3.org/2002/07/owl#cardinality": [
+              "1"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#rangeLow"
+            ],
+            "http://www.w3.org/2002/07/owl#cardinality": [
+              "1"
+            ]
+          }
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#DiscreteStimulus",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#threshold"
+            ],
+            "http://www.w3.org/2002/07/owl#cardinality": [
+              "1"
+            ]
+          }
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Emotion",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Event"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Interface"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Emotion"
+            ]
+          }
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EnvironmentalContext",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [
+        "Absolute reference framework, not subjective."
+      ],
+      "definition_status": "COMMENT_CANDIDATE",
+      "source_locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EnvironmentalContext> rdfs:comment",
+      "short_paraphrase": "An objective reference frame, according to the source comment.",
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Context"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Facial",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Behavioral"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Gestural",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Behavioral"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Hearing",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#ContinuousStimulus"
+            ]
+          }
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sense"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Interface",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#PersonalContext"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Memory",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#stores"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+            ]
+          }
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Motivation",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#threshold"
+            ],
+            "http://www.w3.org/2002/07/owl#minCardinality": [
+              "1"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#target"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#source"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+            ]
+          }
+        },
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#NeutralBehavior",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Motivation"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#NonNeutralBehavior",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Motivation"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#ratio"
+            ],
+            "http://www.w3.org/2002/07/owl#minCardinality": [
+              "1"
+            ]
+          }
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensation"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#uses"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Memory"
+            ]
+          }
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#PersonalContext",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Context"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Psychophysiological",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Action"
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensation",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sense",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#BiologicalSensor"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensor",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus"
+            ]
+          }
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensation"
+            ]
+          }
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Interface"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sight",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sense"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#ContinuousStimulus"
+            ]
+          }
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Smell",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sense"
+        },
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#DiscreteStimulus"
+            ]
+          }
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#SocialContext",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Context"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Speech",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Behavioral"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Event"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Taste",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#DiscreteStimulus"
+            ]
+          }
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sense"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Touch",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "restriction": {
+            "http://www.w3.org/2002/07/owl#onProperty": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput"
+            ],
+            "http://www.w3.org/2002/07/owl#allValuesFrom": [
+              "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#ContinuousStimulus"
+            ]
+          }
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sense"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    },
+    {
+      "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Verbal",
+      "population": "LOCAL_DECLARED",
+      "label": [],
+      "source_comments": [],
+      "definition_status": "NO_SOURCE_COMMENT_OR_DEFINITION_IN_SELECTED_ROOT",
+      "source_locator": null,
+      "short_paraphrase": null,
+      "subclass_of": [
+        {
+          "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+        },
+        {
+          "iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem"
+        }
+      ],
+      "equivalent_class": [],
+      "deprecated": false
+    }
+  ],
+  "selected_commitments": [
+    {
+      "id": "C01",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensation",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensation]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    },
+    {
+      "id": "C02",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://www.loa-cnr.it/ontologies/DUL.owl#Description",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://www.loa-cnr.it/ontologies/DUL.owl#Description]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    },
+    {
+      "id": "C03",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#uses",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Memory",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Perception> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#uses>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Memory]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    },
+    {
+      "id": "C04",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Memory",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#stores",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://www.loa-cnr.it/ontologies/DUL.owl#Description",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Memory> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#stores>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://www.loa-cnr.it/ontologies/DUL.owl#Description]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    },
+    {
+      "id": "C05",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Motivation",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#threshold",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#minCardinality",
+      "target": "1",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Motivation> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#threshold>; <http://www.w3.org/2002/07/owl#minCardinality> 1]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "minCardinality is open-world and does not require a named literal in assertions"
+    },
+    {
+      "id": "C06",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Emotion",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Emotion]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    },
+    {
+      "id": "C07",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#EmotionExpressionSystem> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasOutput>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    },
+    {
+      "id": "C08",
+      "class_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensor",
+      "property_iri": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput",
+      "predicate_iri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "target": "http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus",
+      "locator": "EmotionsCognition-2015.owl::<http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Sensor> rdfs:subClassOf [owl:onProperty <http://rhizomik.net/ontologies/emotions&cognitionontology.owl#hasInput>; <http://www.w3.org/2002/07/owl#allValuesFrom> http://rhizomik.net/ontologies/emotions&cognitionontology.owl#Stimulus]",
+      "observed": "ASSERTED_ONCE",
+      "semantic_limit": "allValuesFrom is vacuous without a property filler"
+    }
+  ],
+  "external_named_superclasses": [
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Action",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [
+        {
+          "module": "DUL.owl",
+          "comment": "An Event with at least one Agent that isParticipantIn it, and that executes a Task that typically isDefinedIn a Plan, Workflow, Project, etc.",
+          "locator": "DUL.owl::<http://www.loa-cnr.it/ontologies/DUL.owl#Action> rdfs:comment"
+        }
+      ],
+      "missing_in_selected_imports": false
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [],
+      "missing_in_selected_imports": false
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Description",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [
+        {
+          "module": "DUL.owl",
+          "comment": "A Description is a SocialObject that represents a conceptualization. \nIt can be thought also as a 'descriptive context' that uses or defines concepts in order to create a view on a 'relational context' (cf. Situation) out of a set of data or observations. \nFor example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters; a Diagnosis is a Description that provides an interpretation for a set of observed entities, etc.",
+          "locator": "DUL.owl::<http://www.loa-cnr.it/ontologies/DUL.owl#Description> rdfs:comment"
+        }
+      ],
+      "missing_in_selected_imports": false
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Event",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [
+        {
+          "module": "DUL.owl",
+          "comment": "Any physical, social, or mental process, event, or state.\n\nMore theoretically, events can be classified in different ways, possibly based on 'aspect' (e.g. stative, continuous, accomplishement, achievement, etc.), on 'agentivity' (e.g. intentional, natural, etc.), or on 'typical participants' (e.g. human, physical, abstract, food, etc.).\nHere no special direction is taken, and the following explains why: events are related to observable situations, and they can have different views at a same time.\nIf a position has to be suggested here anyway, the participant-based classification of events seems the most stable and appropriate for many modelling problems.\n\n(1) Alternative aspectual views\n\nConsider a same event 'rock erosion in the Sinni valley': it can be conceptualized as an accomplishment (what has brought a certain state to occur), as an achievement (the state resulting from a previous accomplishment), as a punctual event (if we collapse the time interval of the erosion into a time point), or as a transition (something that has changed a state to a different one). \nIn the erosion case, we could therefore have good motivations to shift from one aspect to another: a) causation focus, b) effectual focus, c) historical condensation d) transition (causality).\n\nThe different views refer to the same event, but are still different: how to live with this seeming paradox? \nA typical solution e.g. in linguistics (cf. Levin's aspectual classes) and in DOLCE Full (cf. WonderWeb D18 axiomatization) is to classify events based on aspectual differences. But this solution would create different identities for a same event, where the difference is only based on the modeller's attitude.\nAn alternative solution is applied here, and exploits the notion of (observable) Situation; a Situation is a view, consistent with a Description, which can be observed of a set of entities. It can also be seen as a 'relational context' created by an observer on the basis of a 'frame'. Therefore, a Situation allows to create a context where each particular view can have a proper identity, while the Event preserves its own identity. \nFor example, ErosionAsAccomplishment is a Situation where rock erosion is observed as a process leading to a certain achievement: the conditions (roles, parameters) that suggest such view are stated in a Description, which acts as a 'theory of accomplishments'. Similarly, ErosionAsTransition is a Situation where rock erosion is observed as an event that has changed a state to another: the conditions for such interpretation are stated in a different Description, which acts as a 'theory of state transitions'.\nConsider that in no case the Event is changed or enriched in parts by the aspectual view.\n\n(2) Alternative intentionality views\n\nSimilarly to aspectual views, several intentionality views can be provided for a same Event. For example, one can investigate if an avalanche has been caused by immediate natural forces, or if there is any hint of an intentional effort to activate those natural forces.\nAlso in this case, the Event as such has not different identities, while the causal analysis generates situations with different identities, according to what Description is taken for interpreting the Event. \nOn the other hand, if the possible actions of an Agent causing the starting of an avalanche are taken as parts of the Event, then this makes its identity change, because we are adding a part to it. \nTherefore, if intentionality is a criterion to classify events or not depends on if an ontology designer wants to consider causality as a relevant dimension for events' identity.\n\n(3) Alternative participant views\n\nA slightly different case is when we consider the basic participants to an Event. In this case, the identity of the Event is affected by the participating objects, because it depends on them. \nFor example, if snow, mountain slopes, wind, waves, etc. are considered as an avalanche basic participants, or if we also want to add water, human agents, etc., makes the identity of an avalanche change.\nAnyway, this approach to event classification is based on the designer's choices, and more accurately mirrors lexical or commonsense classifications (see. e.g. WordNet 'supersenses' for verb synsets).\n\nUltimately, this discussion has no end, because realists will keep defending the idea that events in reality are not changed by the way we describe them, while constructivists will keep defending the idea that, whatever 'true reality' is about, it can't be modelled without the theoretical burden of how we observe and describe it. \nBoth positions are in principle valid, but, if taken too radically, they focus on issues that are only partly relevant to the aim of computational ontologies, which only attempt to assist domain experts in representing what they want to conceptualize about a certain portion of reality according to their own ideas. \nFor this reason, in this ontology both events and situations are allowed, together with descriptions, in order to encode the modelling needs independently from the position (if any) chosen by the designer.",
+          "locator": "DUL.owl::<http://www.loa-cnr.it/ontologies/DUL.owl#Event> rdfs:comment"
+        }
+      ],
+      "missing_in_selected_imports": false
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [
+        {
+          "module": "DUL.owl",
+          "comment": "Any PhysicalObject that isDescribedBy a Plan .\nThis axiomatization is weak, but allows to talk of artifacts in a very general sense, i.e. including recycled objects, objects with an intentional functional change, natural objects that are given a certain function, even though they are not modified or structurally designed, etc. PhysicalArtifact(s) are not considered disjoint from PhysicalBody(s), in order to allow a dual classification when needed. E.g.,\nFunctionalSubstance(s) are included here as well.\nImmaterial (non-physical) artifacts (e.g. texts, ideas, cultural movements, corporations, communities, etc. can be modelled as social objects (see SocialObject), which are all 'artifactual' in the weak sense assumed here.",
+          "locator": "DUL.owl::<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact> rdfs:comment"
+        }
+      ],
+      "missing_in_selected_imports": false
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [
+        {
+          "module": "DUL.owl",
+          "comment": "Any Object that has a proper space region. The prototypical physical object has also an associated mass, but the nature of its mass can greatly vary based on the epistemological status of the object (scientifically measured, subjectively possible, imaginary).",
+          "locator": "DUL.owl::<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject> rdfs:comment"
+        }
+      ],
+      "missing_in_selected_imports": false
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl#Process",
+      "declared_in": [
+        "DUL.owl"
+      ],
+      "definition_comments": [
+        {
+          "module": "DUL.owl",
+          "comment": "This is a placeholder for events that are considered in their evolution, or anyway not strictly dependent on agents, tasks, and plans. \nSee Event class for some thoughts on classifying events. See also 'Transition'.",
+          "locator": "DUL.owl::<http://www.loa-cnr.it/ontologies/DUL.owl#Process> rdfs:comment"
+        }
+      ],
+      "missing_in_selected_imports": false
+    }
+  ],
+  "imports": [
+    {
+      "iri": "http://www.loa-cnr.it/codeps/owl/ofntb.owl",
+      "acquired_filename": "ofntb.owl",
+      "sha256": "d223c298e8c1997e02f9a538289f766bbdb744c1094454a44f46e7d55a50d289",
+      "bytes": 29794,
+      "triples": 428,
+      "local_declared_classes": 12,
+      "source_comment_candidates": 2,
+      "ontology_version_info": [
+        ""
+      ],
+      "declared_imports": []
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/DUL.owl",
+      "acquired_filename": "DUL.owl",
+      "sha256": "b27e0111f1201d8815d6a68fdf1c3d8eaa9f34327bece17c75a3410fbe626485",
+      "bytes": 162362,
+      "triples": 1630,
+      "local_declared_classes": 75,
+      "source_comment_candidates": 66,
+      "ontology_version_info": [
+        "3.22",
+        "Created by Aldo Gangemi as both a simplification and extension of DOLCE and Descriptions and Situations ontologies."
+      ],
+      "declared_imports": []
+    },
+    {
+      "iri": "http://www.loa-cnr.it/ontologies/IOLite.owl",
+      "acquired_filename": "IOLite.owl",
+      "sha256": "98b9ddcbfdef997f89668c3738f9343ff8ce15079acca023bd6f870e0173e075",
+      "bytes": 59849,
+      "triples": 679,
+      "local_declared_classes": 46,
+      "source_comment_candidates": 43,
+      "ontology_version_info": [],
+      "declared_imports": [
+        "http://www.loa-cnr.it/ontologies/DUL.owl"
+      ]
+    }
+  ],
+  "population": {
+    "local_named_classes": 33,
+    "external_redeclarations": 0,
+    "direct_import_module_declared_class_occurrences": 133,
+    "inferred_classes": null,
+    "local_comment_candidates": 1,
+    "referenced_external_named_superclasses": 7,
+    "local_object_properties": 8,
+    "local_datatype_properties": 4
+  },
+  "execution": {
+    "import_closure_ontologies": 4,
+    "owl2_dl_profile": "FAIL",
+    "profile_violations": 11,
+    "violation_types": {
+      "UseOfUndeclaredClass": 11
+    },
+    "reasoner": "NOT_EXECUTED_PROFILE_FAIL",
+    "validation": "NOT_EXECUTED",
+    "source_byte_equality": "DATED_AND_CURRENT_IDENTICAL",
+    "owlapi_jar_sha256": "97e53f519720a0a2e328556e03b806aa239347c85e57637a935e6433ed2ad3a8"
+  }
+}
