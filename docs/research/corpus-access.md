@@ -69,6 +69,8 @@ All18 acquired full-paper reviews are complete. The owner-authorized bounded I&D
 
 [BDI2020 technical #247](../../evidence/related-work/artifacts/BDI2020.md) checks eight paper commitments and records a dated bounded search for an author executable root. None was identified in the checked scope. Machine class counts, imports, exact foundation edition, source license and executable tests remain unknown. The paper-level decision/intention evidence can enter #256 with these limits, without treating the distinct 2026 BDI work as the 2020 source.
 
+[Batch six comparison](../../evidence/related-work/comparisons/batch-6.md) records 12 source-by-dimension cells for I&DA, BDI2020 and DOLCE Mental, with four adverse-test questions for #126. I&DA #246 remains open for its exact original-source criteria. The owner-directed bounded comparison carries this unknown forward instead of waiting or assigning a zero class population.
+
 ## Reproduce the LMM inspection
 
 ```bash
