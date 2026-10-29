@@ -761,15 +761,20 @@ classes:
   - The superclass is recorded separately; it does not supply an author definition. No definition was invented from
     the class name.
 imported_glossary:
-  state: PENDING_DEFINITION_GLOSSARY
+  state: COMPLETE_IRI_ACCOUNTING_WITH_EXPLICIT_DEFINITION_GAPS
   asserted_closure_unique_named_classes: 154
-  unique_external_classes_pending: 125
+  unique_external_classes_pending: 0
+  shared_catalogs:
+  - evidence/related-work/dul-class-catalog.yaml
+  - evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml
+  closure_coverage: evidence/related-work/deep-reviews/shared-foundations/IOLite/closure-coverage.json
   next_issues:
-  - 88
-  - 271
-  - 260
-  limitation: The 125 remaining unique IRIs are 124 local DUL/IOLite classes plus owl:Thing. Existing pinned import
-    inspection supplies IRI counts; their definition review is not complete. No inferred count.
+  - 274
+  - 252
+  - 126
+  limitation: 'All 154 distinct IRIs are accounted for: 29 LMM, 46 IOLite, 78 DUL and builtin owl:Thing. Sixteen
+    source classes lack comments and two DUL comments only repeat labels. Coverage is not complete definition adequacy,
+    historical equivalence or semantic acceptance.'
 logical_inference: NOT_EXECUTED
 historical_paper_fidelity: NOT_ESTABLISHED
 model_change: NONE

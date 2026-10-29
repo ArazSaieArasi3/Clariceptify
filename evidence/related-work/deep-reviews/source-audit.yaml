@@ -690,7 +690,7 @@ records:
     - W07
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_LOCAL_CLASSES_MANUALLY_REVIEWED_HISTORICAL_ALIGNMENT_UNACQUIRED
+  artifact_state: PINNED_LOCAL_AND_SHARED_IMPORTED_GLOSSARIES_ACCOUNTED_FOR_WITH_EXPLICIT_GAPS
   foundation:
     family: DOLCE via DUL and IOLite
     edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2
@@ -702,8 +702,8 @@ records:
     - LMM_L1 -> IOLite
     - IOLite -> DUL
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'Pinned import parsing executed in #90; no reasoner. Current versions are not proven identical
-      to the 2008 paper.'
+    limitations: 'Pinned import parsing and full selected class accounting executed; no whole LMM/IOLite reasoner run.
+      Separate DUL #88 tests do not transfer to LMM. Current versions are not proven identical to the 2008 paper.'
     edition_evidence: 'Pinned L1/L2/IOLite/DUL headers and prior #90 import inventory; not an exact2008 edition
       claim.'
   class_coverage:
@@ -712,13 +712,16 @@ records:
     source_definition_candidates: 25
     missing_source_definitions: 4
     catalog_path: evidence/related-work/deep-reviews/LMM2008/classes.yaml
-    imported_definitions_complete: false
+    imported_definitions_complete: true
+    imported_definition_scope: All selected class IRIs accounted for, including missing/insufficient definitions; not complete definition availability.
+    shared_catalog_paths:
+    - evidence/related-work/dul-class-catalog.yaml
+    - evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 274
-  - 88
-  - 271
   - 252
+  - 126
 - id: DnS2003
   title: Understanding the Semantic Web through Descriptions and Situations
   primary_issue: 261

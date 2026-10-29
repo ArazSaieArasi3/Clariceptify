@@ -2482,15 +2482,15 @@ artifact:
     All 29 local class constraints were manually inspected for this dossier, and all figure/prose categories are separately
     indexed. Retained L1 1.8 and L2 1.2 declare 8 and 21 local classes, plus 11 and 20 external redeclarations; these
     are distinct from the3-class presentation in sec.3. Their complete asserted closure contains 154 unique named
-    OWL class IRIs, including 124 DUL/IOLite local classes and owl:Thing beyond LMM local 29. Imported definitions
-    remain #88/#271. No reasoner/profile/SHACL run, exact 2008 byte identity or complete alignment release is established.
+    OWL class IRIs, including 124 DUL/IOLite local classes and owl:Thing beyond LMM local 29. As of 2026-10-29, #88/#271 shared glossaries account for imported definitions with explicit gaps;
+    see [IOLite shared reader](../shared-foundations/IOLite/README.md). No reasoner/profile/SHACL run, exact 2008 byte identity or complete alignment release is established.
     Source header license/right annotations did not establish redistribution permission; raw third-party bytes remain
     private. See [local glossary](classes.md), complete L1/L2 census JSON files, [diagram ledger](diagrams.yaml) and
     [discovery execution](../../../../evaluation/related-work/lmm/deep-review-discovery.json). #274 retains eight
     bounded technical questions.'
   class_catalog:
     path: evidence/related-work/deep-reviews/LMM2008/classes.yaml
-    sha256: 1530264546824c0824814850e115e7ae2d6a350c4128dae175e8dd2d96fbac34
+    sha256: 5bd0146de5dc61f91e9b725054b2ab4532f642121185a3e69a43bf6286ba2484
   class_reviews:
   - id: AC01
     label: LMM_L1:CoText

@@ -1,0 +1,68 @@
+# shared-foundations/IOLite: selected class glossary
+
+Issue #271. All local named owl:Class/rdfs:Class declarations in pinned IOLite1.8; external redeclarations, references and anonymous populations remain separate. No inference.
+
+Every definition below is a short reviewer paraphrase of the source comment. A comment may be incomplete, informal or ambiguous; logical constraints are recorded separately. MISSING means no source definition comment was found in the selected bytes, not that no definition exists anywhere.
+
+| Module | Local classes | External redeclarations | Source version |
+|---|---|---|---|
+| IOLite | 46 | 20 | ['1.8'] |
+
+Source: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl. SHA256 `15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f`. All named declarations and outgoing constraints: [IOLite census](IOLite-census.json).
+
+| Class IRI | Definition / missing state | Named superclasses | Notes |
+|---|---|---|---|
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion | Information made concrete through movement of the body. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action; http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code | Information specifying computational entities, operations or markup. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction | A communicative plan whose achievement calls for characteristic participant roles and tasks. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText | The written linguistic content of a contract. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text | The source offers a short relational description; no legal interpretation is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema | A database design at conceptual, logical or physical level. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure | An organized information resource, including databases and knowledge-organization structures. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject | The source is an inclusive example-based characterization, not a necessary-and-sufficient definition. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum | A factual item obtained through observation or inquiry. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject | The source attributes its wording to WordNet; this is an IOLite-source paraphrase, not an independently verified WordNet edition. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction | Information embodied in a durable marked medium, outlasting the act producing it. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization; http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto | **MISSING SOURCE DEFINITION** | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource | No definition invented from the class label or superclass. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource | A computationally processable resource, requiring an appropriate encoding. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing | A surface representation formed using lines. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction | The source marks its comment as WordNet-derived; no external dictionary version or license is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression | Information expressed in a formal language and typically interpreted using formal entities. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage | A designed symbolic language with fixed grammar and usually specified formal interpretation. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture | **MISSING SOURCE DEFINITION** | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion | No definition invented from the class label or superclass. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme | A word component directly realized in writing; speech may concern it without realizing it. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt | Depiction through drawing, painting or printmaking. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction | The source marks its comment as WordNet-derived; no external dictionary version or license is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage | A graphical sign system, potentially natural, artificial or formal. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject | Information encoded using a graphical sign language. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS | An information organization scheme such as a controlled terminology or classification. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure | The source enumerates examples of systems rather than a formal defining criterion. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language | A vocabulary and combination system; natural-language rules may be reconstructed from use. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description | Historical/future-work remarks in the comment are not treated as implemented ontology content. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme | A dictionary or lexicon entry serving as a reference form for words. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon | A collection of items recognized as linguistically relevant. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct | A communicative situation linking participants and linguistic content with physical, conceptual and referential contexts. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution | The source also associates the situation with a satisfied communicative function; the complete explicit restrictions are in the census. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction | A theory-defined classificatory role for linguistic items, such as grammatical or thematic roles. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject | Information expressed within a natural language. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory | An account of natural-language structure, production or interpretation. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme | A meaningful word component contributing to the meaning of that word. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject | One realization combining different kinds of information content. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword | A multi-word linguistic item distinguished from a higher-level syntactic phrase. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage | A community-used language developing over time, with descriptions reconstructed from actual usage. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting | A pictorial composition produced by applying paint. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt | The source marks its comment as WordNet-derived; no external dictionary version or license is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme | A word component directly realized through voicing; written transcription represents rather than realizes it. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase | A syntactic word combination that forms part of a sentence. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt | Depiction achieved by shaping, modelling or carving material. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction | The source marks its comment as WordNet-derived; no external dictionary version or license is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture | A three-dimensional product of plastic art. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt | The source marks its comment as WordNet-derived; no external dictionary version or license is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence | A phrase composition assumed to express a situation. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound | Information embodied through acoustic waves. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process | The comment describes an information realization, while the explicit named superclass here is DUL Process. No equivalence or entailment is inferred from the prose. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech | Conventional vocal sounds used for explicit communication as bodily expression. | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization; http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue | A sculpture depicting an animal or person. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture | The source marks its comment as WordNet-derived; no external dictionary version or license is inferred. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term | A word or multi-word item established within a domain terminology. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text | Sentence-based linguistic content intended for written realization. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject | The source explicitly assumes written realization; this is a source-specific boundary, not a universal definition of text. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus | Categories arranged by a specified syntax to support controlled terminology. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing | Information embodied in uttered sound, accompanied by bodily movement in natural agents. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage | **MISSING SOURCE DEFINITION** | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource; http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject | No definition invented from the class label or superclass. |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word | A linguistic string whose realization-dependent boundaries and grammatical roles may vary. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject |  |
+| http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing | Information embodied in conventional symbols as a secondary representation of bodily expression. | http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction |  |
+
+Full labels, definition/annotation hashes, exact source IRIs/predicates, deprecated status, equivalence counts and constraint pointers are retained in [classes.yaml](classes.yaml).
+
+Local classes: 46; source comment candidates: 43; missing source definitions: 3.
+
+Imported glossary: PINNED_DUL_GLOSSARY_ACCOUNTED_FOR_WITH_EXPLICIT_GAPS. The 78 local DUL classes use the shared #88 glossary: nine absent comments and two label-only comments remain. owl:Thing is builtin and excluded from source-definition counts. No duplicate DUL definitions are published here.
+
+Reasoning: NOT_EXECUTED. Historical paper fidelity: NOT_ESTABLISHED. Model change: NONE.

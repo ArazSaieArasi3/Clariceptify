@@ -61,7 +61,7 @@ def render_audit(audit):
               '[coverage guide](coverage-guide.md) before interpreting completion.', '',
               'For LMM, 29 local classes have been catalogued; four lack source definition comments. '
               'The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; '
-              'the DUL 78-class glossary is now complete with nine absent and two label-only comments; IOLite remains #271. '
+              'the DUL 78-class glossary has nine absent and two label-only comments; the [IOLite shared glossary](shared-foundations/IOLite/README.md) accounts for all46 local classes with three absent comments. '
               'The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. '
               'The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.', '',
               'Clariceptify model change: NONE. Final synthesis #126 stays open; later adoption requires the owner decision.', '']

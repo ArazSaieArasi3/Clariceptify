@@ -1,0 +1,1477 @@
+schema_version: '1.0'
+work_id: shared-foundations/IOLite
+issue: 271
+checked_on: '2026-10-29'
+status: ALL_LOCAL_CLASSES_ACCOUNTED_FOR_DEFINITION_GAPS_EXPLICIT
+population_policy: All local named owl:Class/rdfs:Class declarations in pinned IOLite1.8; external redeclarations,
+  references and anonymous populations remain separate. No inference.
+modules:
+- id: IOLite
+  source_filename: IOLite.owl
+  source_url: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  namespace: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#
+  version:
+  - '1.8'
+  census_path: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json
+  census_sha256: da1e14871dcb2de016abbda3c0c5f85bc81d9ec7161f3a5aa19dc70bc250e9b7
+  declared_named_classes: 66
+  local_named_classes: 46
+  external_named_class_redeclarations: 20
+  actual_imports:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  license: No explicit license/right annotation found in selected ontology header. Availability is not redistribution
+    permission; raw sources and annotations are not published.
+  other_class_populations:
+    anonymous_class_declarations: 3
+    anonymous_restrictions: 40
+    builtin_class_position_iris:
+    - http://www.w3.org/2002/07/owl#Thing
+    deprecated_named_classes: []
+    external_redeclarations:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+    - http://www.w3.org/2002/07/owl#Thing
+    local_named_classes:
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word
+    - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing
+    named_rdfs_class_declarations: []
+    referenced_undeclared_nonbuiltin_classes: []
+classes:
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion
+  label: Bodily motion
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: ce4cb3d2202bdf83adb67d0e43d49f3b24001f30af7c383c29503d06e19d34e1
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information made concrete through movement of the body.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 58
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 80da38bc3604c4d615c7cc0948edf6ad594c855291b1c45d059df707789464ac
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code
+  label: Code
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 6dab25d6ce9f9aa9870aa0665033e95c68642dc2fb15021c45c07fc2e5bc6b29
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information specifying computational entities, operations or markup.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 83
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 0154446d7f9a3bc85d6ded93c2e4bbbce7a2089902828552268a13f66ce70416
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction
+  label: Communicative function
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 9f25c2d1bcd03e5ad07e3071ac77d6ffdce5f79661ef9fb5ccb7c1d281cc68b2
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A communicative plan whose achievement calls for characteristic participant roles and tasks.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 298
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: b896327e757a3c5b08cf86e09fc4e351262aafefcb0e00bae819b40d0c4f3dd5
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText
+  label: Contract text
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 7f81b2bf8d024cc802b5aad28874db1aa8f91446ae7fa43b010a268c2e4045b5
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: The written linguistic content of a contract.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 22
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 4f90fe5fb1197f258c346b2f2d25d5205210ecfdc49ce83c83e8a4b882aa2cd7
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText]
+  notes:
+  - The source offers a short relational description; no legal interpretation is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema
+  label: Database schema
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 7edc8d0121c21468cef8a1d79e0519e87bb8a16c0ebbaef4da9f33bb1b810466
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A database design at conceptual, logical or physical level.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 58
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 923f8438973b1389a3b985a4fba82cc94e1210a992ca2b469d181be69bf81e23
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure
+  label: Data structure
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 6470ca122fc393da6f2d474a99aa5da4204d0304227a9be24f50fa84ef0e0445
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: An organized information resource, including databases and knowledge-organization structures.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 95
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 95c338be5c9fd9d5982709a380e336e7d9039c8c3fc07816053a1385008228f0
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure]
+  notes:
+  - The source is an inclusive example-based characterization, not a necessary-and-sufficient definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum
+  label: Datum
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: d0ba310c1bb441973a789d84ea386be93333dad9df11487b85c2b30dd4c35d58
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A factual item obtained through observation or inquiry.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 83
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 4b8ac9a9e7298e85b52d8c195fe01626d8c5526713c8e02e2d4212e71b0fe555
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum]
+  notes:
+  - The source attributes its wording to WordNet; this is an IOLite-source paraphrase, not an independently verified
+    WordNet edition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction
+  label: Depiction
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c5e180ab8e77835f25a815cd8bebd5eafe41d54d0945ebf0ff6d8c0fb6522a52
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information embodied in a durable marked medium, outlasting the act producing it.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 339
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 44b613f388b2536c8c3719862b672b5fabffdaaa404ece50efe3263348e676d9
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto
+  label: Digital photo
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto (no rdfs:comment definition candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: MISSING
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  annotation_records: []
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto]
+  notes:
+  - No definition invented from the class label or superclass.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource
+  label: Digital resource
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 5bae1210af629ad8e7fa42e2c0237066d7177ac3b96d78925f95332eba92c3fc
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A computationally processable resource, requiring an appropriate encoding.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 159
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: cdd9e8da8b8b47e021ab717f55fcb420d9a92d58522a69da79b14acd36812bc6
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing
+  label: Drawing
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c414a4cf4ba2cb3144da8e5a74ec13589510fa78fcb78ccc0e46b852b5d7d030
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A surface representation formed using lines.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 174
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 123e91fbf7beca8e037ad70cd55d22438a42fc1a5bd9f28f48cc89835d4fd4fa
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing]
+  notes:
+  - The source marks its comment as WordNet-derived; no external dictionary version or license is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression
+  label: Formal expression
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c52c8930cec4eea5142251856f92cdfbb25a846492c3ef7ed0d7dc5085230179
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information expressed in a formal language and typically interpreted using formal entities.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 159
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 3cb45e161b1922575ed1908d7218fc0ef1d88b96ffe89bb95c15cd8efaa18ed2
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage
+  label: Formal language
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 07038c65da422690f5c3181d9ed911dae384a1e8af230e248909078308c04cde
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A designed symbolic language with fixed grammar and usually specified formal interpretation.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 267
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 93b339caf5b5bf5e9eb83388bb45fbb7ca4463ec181cd62d63a410e605ec2cd1
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture
+  label: Gesture
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture (no rdfs:comment definition candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: MISSING
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  annotation_records: []
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture]
+  notes:
+  - No definition invented from the class label or superclass.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme
+  label: Grapheme
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 1991ace05640b7f03fc058e419907b91be3f0e79e896b345818075b384280f4e
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A word component directly realized in writing; speech may concern it without realizing it.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 521
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 22dedcc6bb060c578b7988af2d784802360f29a51eaa1102e9550937558ff4d4
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt
+  label: Graphic art
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: c53e6b8c47c3d97b999f20693758245085b15a466750c33ae8968bb79bfd4bfe
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Depiction through drawing, painting or printmaking.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 55
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 57fb4874c677559325f92b5361cd6ffeec9a3311c3fcd2b97a0e8a65fdc84b79
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt]
+  notes:
+  - The source marks its comment as WordNet-derived; no external dictionary version or license is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage
+  label: Iconic language
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 477473e74c3468331fc9f8e59a5736e7a9e6b2cd0a915bda093de5a541b0bb42
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A graphical sign system, potentially natural, artificial or formal.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 89
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 474082d527eb9029638a453b4cef4bace5add3267aa3937d0be3107265a7f89e
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject
+  label: Iconic object
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 244a22280fb4ba309bbe17d92a9dfe7825293a98929e03bb45ba886c00ced385
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information encoded using a graphical sign language.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 54
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 6266ff72dbcd0dacdb03a9d28528aee738a2a7f943dd95c3892b6534dcc35e9e
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS
+  label: Knowledge organization system
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 81fa66df638e655b12ba8e3cd44981150c9c774f9e9fecd791ffb045b5f8de1f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: An information organization scheme such as a controlled terminology or classification.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 106
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 20ca301a5b68a069c6956ed986b00ccf9330e7b45cd1142d1ffcf743111ea075
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS]
+  notes:
+  - The source enumerates examples of systems rather than a formal defining criterion.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language
+  label: Language
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 37014bb63c232c10a3ad857b79c49fa9011ac4444f510b266e2fcf9fcbf13eb3
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A vocabulary and combination system; natural-language rules may be reconstructed from use.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 819
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: e745d2e3e30579e201be7a2a1192eb659f8af85ed36895140372a8c6c588dbb4
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language]
+  notes:
+  - Historical/future-work remarks in the comment are not treated as implemented ontology content.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme
+  label: Lexeme
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: aae3839e74563f7fa648cab9944b448ffa78ea33465d0b14dd8d61d038195cf8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A dictionary or lexicon entry serving as a reference form for words.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 96
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 9c88b6ee5c52eb2a009eeef7d26c2d759ebe57ec6dd4a8be12bf7d38a2cb79fe
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon
+  label: Lexicon
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 83905d09de1e8c71143485576cfe23e8fa52aff862784d325efc446bb907ab35
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A collection of items recognized as linguistically relevant.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 102
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 9e6e018780dadccf4563586715b6c3738fcec12f55a9419c3327f947fa0a686e
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct
+  label: Linguistic act
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 7910fae7244bfb528c15d71bf29427885a741846de13f241f3f476e0958bb4b1
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A communicative situation linking participants and linguistic content with physical, conceptual and referential
+      contexts.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 258
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: aaf21006ec0c50d2959f4f4ea3a3c23472219f7fc16470cb1975117e418cf594
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct]
+  notes:
+  - The source also associates the situation with a satisfied communicative function; the complete explicit restrictions
+    are in the census.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction
+  label: Linguistic function
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: bb00d55c06e83cafc74685d378811a36b1b0ba672d3cc93040850513e31d73ec
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A theory-defined classificatory role for linguistic items, such as grammatical or thematic roles.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 395
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 18bf4e36063fdde5a6e407b26b5bb0274f2542a66d02ddb11ea56ccf5432b0fe
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  label: Linguistic object
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 3ecdb81c3b697af38a1af9be54787200515e858634512a68f43a479daa37db1b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information expressed within a natural language.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 54
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 217cb91f818b1f76ce0d86e774e8a3a84e06a2f78c5361d024efe836839dd65b
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory
+  label: Linguistic theory
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 0f6eaa3030cdcdf8b29b70e9a40a6f1d7affa21f5773b81f02c36b166298628b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: An account of natural-language structure, production or interpretation.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 173
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 55eaf3c78f71fd669536ff6dc7c9a592e3e1caedee8872058b4a830d57e3aef7
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme
+  label: Morpheme
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: e6a8239669302a12f66d00d92c6f3a705e41ca0f605322bc17e5cc75a2ef84fa
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A meaningful word component contributing to the meaning of that word.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 93
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 55903fc2b29ba9210a10254269d31ae1aca03e0a5dbcd6ce33a851910b17fcdc
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject
+  label: Multimedia object
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 1f64189c83184558329a7a5c263ea14b71760ff96728d399ab4c770b854a5f59
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: One realization combining different kinds of information content.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 134
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 20fcdb19f50e8a500ee896d5640d083810cd442cf89b6831b5cf98e917d1ef32
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword
+  label: Polyrhematic unit
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 782be31e968ff34fd92bf0e71d3af2ac5e0188b24f37da14714d7bfb72f54c88
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A multi-word linguistic item distinguished from a higher-level syntactic phrase.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 111
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: cdd0614f1a7b739a2985116ab39a77e8d7d947fb7859423bf34e07a40d9b5775
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage
+  label: Natural language
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: e5d4410f554cae2cf12738f02d7f140dda81561c69330895465eb1dc887da9b4
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A community-used language developing over time, with descriptions reconstructed from actual usage.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 330
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: ea3c021647f357e2d4d5aacc36b62543c76b2240a6aa27dc6d45ded0b1c969fa
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting
+  label: Painting
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: d14c676d1ffd96376b13277826dd773db5d5910c0b87631755d82fab250a59d5
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A pictorial composition produced by applying paint.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 204
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 8b1d7e88e050946af508883ff7e848a00e85220c070e2e824fb99f3914ba0550
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting]
+  notes:
+  - The source marks its comment as WordNet-derived; no external dictionary version or license is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme
+  label: Phoneme
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 53971c9719966e2fb884210f932c8d9f22020113739a96fee2aa75a65872f78e
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A word component directly realized through voicing; written transcription represents rather than realizes
+      it.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 376
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 99a8b6311d2caf2555a093777efcdf1b01e95150ce6711574dcdf4501ba07e57
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase
+  label: Phrase
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 5b7dcaac227a8d4c110948601bad22e04b932632ea4ee6201d152f11a452ad14
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A syntactic word combination that forms part of a sentence.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 117
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: e1067d66a3ae5072d47c30e9ee27fb5328b4d8ddd5c1be4ab94b6982472a63c3
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt
+  label: Plastic art
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: ddb4c3de4f1517fcf9a9b81a5cb366e4e6ab75986b823bf00378ab914d1e1af6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Depiction achieved by shaping, modelling or carving material.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 63
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: a84c097f61ff7e4b79dbe57c73a8fb1736f008b90670b7fbd3a38d55a0da6feb
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt]
+  notes:
+  - The source marks its comment as WordNet-derived; no external dictionary version or license is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture
+  label: Sculpture
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: a2c0ac99af3134d1560191ca5560d8f1fb414662a1fae8433ff457aa6dbec231
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A three-dimensional product of plastic art.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 48
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 8ef576016e9ff07fcf3e12ce5438a8a3973284c9f62ff4eeb8b9f4eda5653c39
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture]
+  notes:
+  - The source marks its comment as WordNet-derived; no external dictionary version or license is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence
+  label: Sentence
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 35748f5412ae930c67b3c0b07e54428d18f37372a9c8896ef1a43ffbe92c8cd5
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A phrase composition assumed to express a situation.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 159
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: e8fd52adc637d40973facc6ad72324e0704a6594d328266de06aa786bbac07d8
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound
+  label: Sound
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: fe47ca6bb75cf5e6d6155acb142dfe04c7c1f87a78de3c4045c0035e4b1300b6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information embodied through acoustic waves.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 53
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 8c2f6479aa977dde2f338b7e168625cd9a45bbc272e3913c6651188c27cad6de
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound]
+  notes:
+  - The comment describes an information realization, while the explicit named superclass here is DUL Process. No
+    equivalence or entailment is inferred from the prose.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech
+  label: Speech
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 81d417bfad9611dd1de03b79ed2c8e973002e256d8e24bb38fafb99f83c7e98d
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Conventional vocal sounds used for explicit communication as bodily expression.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 176
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: bb5705b4b042586e110d87f8aeefaa392f4fd6be24571034b3daa44e4c08e38a
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue
+  label: Statue
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: e1e20829163436f4e445c04923434bad527f0b842608dc6f22e3e082fe5c7c06
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A sculpture depicting an animal or person.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 51
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: b7c5b2dc21177e5e0601344499efc70ea252622b1ba1123095cb7aee80797e8b
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue]
+  notes:
+  - The source marks its comment as WordNet-derived; no external dictionary version or license is inferred.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term
+  label: Term
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 2396e138b1a4ab8ecbdb75d51bdbbbc3e697ee2578b739e931af501c5b4b075e
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A word or multi-word item established within a domain terminology.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 87
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: b352424d78e4bc44a79a82cae2fbadeec1a2c7fa626073691aa9ad1ce2d4970a
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text
+  label: Text
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 9671c93c87aec22ce59d23a10d3e7cf0e3892dc961b410fa4b4b3824ac5d39e6
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Sentence-based linguistic content intended for written realization.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 97
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 66a45a44bb0e6cd46121c3319771e0f2b7b13fed1b57fa3ce912f96969099bfa
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text]
+  notes:
+  - The source explicitly assumes written realization; this is a source-specific boundary, not a universal definition
+    of text.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus
+  label: Thesaurus
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: d0cb2efcbd7cce9ee8e23d04e6dfa703782b6474f27b47fe8b90b122eb2aa626
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Categories arranged by a specified syntax to support controlled terminology.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 205
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: fec092901a68539921c1fbf087732194e3c2b724c1bcd88ac30122b6c705bd65
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing
+  label: Voicing
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 593873bb7c4aa468221d9ee05eeb2334abef0134863658ebd60f0ab3c8efa26b
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information embodied in uttered sound, accompanied by bodily movement in natural agents.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 118
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: e40fdbb62afd0358715504832026be51a0e148241de38274d1f00cafa88cef6e
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage
+  label: Web page
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage (no rdfs:comment definition candidate)
+    predicate: null
+    annotation_sha256: null
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: MISSING
+  reviewer_definition:
+    text: null
+    basis: MISSING_SOURCE_DEFINITION
+  annotation_records: []
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage]
+  notes:
+  - No definition invented from the class label or superclass.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word
+  label: Word
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: b93cc0712086105b52abe83dd7b5e591b82d34909c018aae705a04a38a618f42
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: A linguistic string whose realization-dependent boundaries and grammatical roles may vary.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 855
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 01795e0f3712476b766cc33153672215105fdd440d2a8bb2e6e5436479be6458
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word]
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing
+  label: Writing
+  label_basis: SOURCE_ENGLISH_LABEL
+  deprecated: false
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction
+  equivalent_expressions: 0
+  module: IOLite
+  source_sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f
+  population: LOCAL_DECLARED_NAMED_OWL_CLASS
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing rdfs:comment
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_sha256: 1f4e5a493c14172bf8aa112694ca7ac24fbb3c9fe580bbe39ee5a5119c545df2
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+    review_disposition: ACCEPTED_DESCRIPTIVE_PARAPHRASE_NOT_LOGICAL_DEFINITION
+  reviewer_definition:
+    text: Information embodied in conventional symbols as a secondary representation of bodily expression.
+    basis: REVIEWER_PARAPHRASE
+  annotation_records:
+  - characters: 292
+    datatype: http://www.w3.org/2001/XMLSchema#string
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: eb0a877b8408f80ae2705479053e21640f9ef696039c94423e41a1edf69120e1
+  constraint_ref: evidence/related-work/deep-reviews/shared-foundations/IOLite/IOLite-census.json classes[iri=http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing]
+  notes: []
+imported_glossary:
+  state: PINNED_DUL_GLOSSARY_ACCOUNTED_FOR_WITH_EXPLICIT_GAPS
+  unique_external_classes_pending: 0
+  asserted_closure_unique_named_classes: 125
+  catalog_path: evidence/related-work/dul-class-catalog.yaml
+  limitation: 'The 78 local DUL classes use the shared #88 glossary: nine absent comments and two label-only comments
+    remain. owl:Thing is builtin and excluded from source-definition counts. No duplicate DUL definitions are published
+    here.'
+logical_inference: NOT_EXECUTED
+historical_paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
+counts:
+  local_classes: 46
+  source_definition_candidates: 43
+  missing_source_definitions: 3
+  reviewer_reconstructions: 0
+  inferred_classes: null
+foundation:
+  family: DOLCE via DUL
+  edition: IOLite1.8 imports retained DUL4.2
+  relation: ACTUAL_IMPORT
+  basis: Pinned owl:imports statement and exact source hashes, not a citation or assumed historical edition.
+  locator: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl owl:imports http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  artifact_imports:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  alignment_status: NOT_SEMANTICALLY_ACCEPTED
+  limitations: The selected current bytes are not established as the 2008 LMM distribution. No UFO/BFO foundation
+    is asserted.
+review_qualification: AI-assisted source-comment review, not independent domain-expert validation. Descriptive and
+  example-based comments do not establish formal definition sufficiency.

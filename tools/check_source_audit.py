@@ -93,6 +93,12 @@ def validate_catalog(catalog, censuses):
     if catalog['logical_inference'] != 'NOT_EXECUTED' or catalog['model_change'] != 'NONE':
         raise ValueError('Glossary promoted to semantic/model acceptance')
     imported = catalog['imported_glossary']
+    allowed_import_states = {'PENDING_DEFINITION_GLOSSARY', 'NO_DECLARED_IMPORTS',
+                             'ALL_SELECTED_MAPPED_IMPORT_CLASS_COMMENTS_ACCOUNTED_FOR',
+                             'COMPLETE_IRI_ACCOUNTING_WITH_EXPLICIT_DEFINITION_GAPS',
+                             'PINNED_DUL_GLOSSARY_ACCOUNTED_FOR_WITH_EXPLICIT_GAPS'}
+    if imported['state'] not in allowed_import_states:
+        raise ValueError('Unqualified imported definitions promoted')
     if imported.get('unique_external_classes_pending') and imported['state'] != 'PENDING_DEFINITION_GLOSSARY':
         raise ValueError('Pending imported definitions promoted')
 

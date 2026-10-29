@@ -50,6 +50,6 @@ Full labels, definition/annotation hashes, exact source IRIs/predicates, depreca
 
 Local classes: 29; source comment candidates: 25; missing source definitions: 4.
 
-Imported glossary: PENDING_DEFINITION_GLOSSARY. The 125 remaining unique IRIs are 124 local DUL/IOLite classes plus owl:Thing. Existing pinned import inspection supplies IRI counts; their definition review is not complete. No inferred count.
+Imported glossary: COMPLETE_IRI_ACCOUNTING_WITH_EXPLICIT_DEFINITION_GAPS. All 154 distinct IRIs are accounted for: 29 LMM, 46 IOLite, 78 DUL and builtin owl:Thing. Sixteen source classes lack comments and two DUL comments only repeat labels. Coverage is not complete definition adequacy, historical equivalence or semantic acceptance.
 
 Reasoning: NOT_EXECUTED. Historical paper fidelity: NOT_ESTABLISHED. Model change: NONE.
