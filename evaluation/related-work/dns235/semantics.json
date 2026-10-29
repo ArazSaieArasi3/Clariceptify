@@ -1,0 +1,204 @@
+{
+  "archive_sha256": "b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2",
+  "baseline_consistent": true,
+  "baseline_error": null,
+  "checked_on": "2026-10-29",
+  "claim_limit": "Loaded logical axioms and isolated fixtures only; profile failure, unsatisfiable classes and tool errors remain explicit. Not 2003 FOL validation, source adequacy or accepted alignment.",
+  "generator_path": "tools/inspect_dns235.py",
+  "generator_sha256": "47c0e38a7b5db5c383b00b547202378d8aed723b4b98b1b48f5c0cc27efe2f21",
+  "helper_sha256": "87df9a58dcf55ebd2f87d207af8f56c77b85d41eced1e04b9d9ddb283dc890db",
+  "hermit": "1.3.8.1099 bundled manifest",
+  "hermit_jar_sha256": "97e53f519720a0a2e328556e03b806aa239347c85e57637a935e6433ed2ad3a8",
+  "historical_2003_fidelity": "NOT_ESTABLISHED",
+  "import_policy": "Unchanged source RDF/XML, exact offline ontology-IRI maps; no import deletion, URL rewrite or source axiom repair. Only selected root imports are loaded.",
+  "issue": 235,
+  "java_version": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)",
+  "jpype": "1.6.0",
+  "kind": "OFFLINE_EXACT_IMPORT_CLOSURE_PROFILE_AND_HERMIT",
+  "loaded_imports": [
+    "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl",
+    "http://www.loa-cnr.it/ontologies/ExtendedDnS.owl",
+    "http://www.loa-cnr.it/ontologies/SpatialRelations.owl",
+    "http://www.loa-cnr.it/ontologies/TemporalRelations.owl"
+  ],
+  "model_change": "NONE",
+  "owl2_dl_profile_pass": true,
+  "owlready2": "0.51",
+  "profile_violation_count": 0,
+  "profile_violations": [],
+  "python": "3.12.14",
+  "rdflib": "7.6.0",
+  "source_module_hashes": {
+    "CommonSenseMapping.owl": "8ab61c86d77add619a923473734ca23c2966cc3d61fe62bf75e90165389f98b6",
+    "DLP_397.owl": "0e1cdb3c97b6afb9e1c0584ddedca52403f22668d3a18a451d95c687bb6e453b",
+    "DOLCE-Lite.owl": "f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc",
+    "ExtendedDnS.owl": "7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41",
+    "FunctionalParticipation.owl": "bf3a545954a80958129e3a6894fcc224791443f2a793c2279dba019c32343185",
+    "InformationObjects.owl": "b407c0aeebf169d49829dcf4ec8b2ae1c1a8ce9f5c60059517b180f3d08ed500",
+    "ModalDescriptions.owl": "802f8d1b4f42843f4525537600052758e5fefdfc06ed9d616c6a0d7c99efd83a",
+    "Plans.owl": "d915118b83b63604b185d2b8bda86224d95d9d15568270b8d2ae3c268a678859",
+    "SocialUnits.owl": "284281b099cdb26d3446a68e767cb996079e4c7d0c62356fdc39a1f1c7cd33a1",
+    "SpatialRelations.owl": "7c45b69a1b312e4b7e01ad436c7daf700266235f8232374cb836c10b70f7924a",
+    "TemporalRelations.owl": "84c96bc934ef454ac28cee02aad1cc8c7d813ef8db2d42c91e76b48af834c05d"
+  },
+  "source_sha256": "7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41",
+  "summary": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 15,
+    "total": 15
+  },
+  "tests": [
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "",
+      "fixture_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "id": "baseline",
+      "observed_consistent": true,
+      "question": "Q01",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<urn:clariceptify:dns235:x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object> .\n",
+      "fixture_sha256": "ef0ad8feaaeae1dfd20dd697e6654ca45bb1c05602bd444601d6c3d52ebe3a33",
+      "id": "information-object-alone",
+      "observed_consistent": true,
+      "question": "Q01",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<urn:clariceptify:dns235:x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description> .\n",
+      "fixture_sha256": "4dfbe3e365d2dec552dfae788fe02bc557293911c66f5e83137b227f0c226794",
+      "id": "description-alone",
+      "observed_consistent": true,
+      "question": "Q01",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<urn:clariceptify:dns235:s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation> .\n",
+      "fixture_sha256": "fc6e1092222a08c80680a96d9347343df7a5f19c49211e33c543f196673fc822",
+      "id": "situation-witnesses",
+      "observed_consistent": true,
+      "question": "Q04",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#satisfies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation> .\n<urn:clariceptify:dns235:s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#satisfies> .\n",
+      "fixture_sha256": "8eb57baae279d2433e63efddc68073d7a8eeeb220fa5054a270c1fcc78001fcc",
+      "id": "situation-no-description",
+      "observed_consistent": false,
+      "question": "Q04",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#defined-by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept> .\n<urn:clariceptify:dns235:c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#defined-by> .\n",
+      "fixture_sha256": "586e74b92a4140dc30ec0b9f165e32d50ae62b0d436cc2446daf0a3efd1eb61d",
+      "id": "concept-no-description",
+      "observed_consistent": false,
+      "question": "Q02",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#classified-by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:c> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#classifies> <urn:clariceptify:dns235:x> .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .\n_:cb0 <http://www.w3.org/2002/07/owl#assertionProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#classified-by> .\n_:cb0 <http://www.w3.org/2002/07/owl#sourceIndividual> <urn:clariceptify:dns235:x> .\n_:cb0 <http://www.w3.org/2002/07/owl#targetIndividual> <urn:clariceptify:dns235:c> .\n",
+      "fixture_sha256": "a14a9805b9e5234c672757052ba4a9692027b3b2cab3e89a7c776e5ce002286f",
+      "id": "classification-inverse",
+      "observed_consistent": false,
+      "question": "Q03",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#valued-by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter> .\n<urn:clariceptify:dns235:p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#valued-by> .\n",
+      "fixture_sha256": "0013ef50e86b48cb9f8ecbc8770a2b4f2f484c426b5f03a0eb4c5cfd808f84b0",
+      "id": "parameter-no-value",
+      "observed_consistent": false,
+      "question": "Q07",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#played-by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role> .\n<urn:clariceptify:dns235:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#played-by> .\n",
+      "fixture_sha256": "bb915fee57c9d7f9531fba006df3a8c38e03bc2d682b0d6326cd2f9ab11b4b16",
+      "id": "role-no-player",
+      "observed_consistent": true,
+      "question": "Q07",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#sequences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#course> .\n<urn:clariceptify:dns235:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#sequences> .\n",
+      "fixture_sha256": "d747200b774831c95c3a1b5b1d70f6c6191ce1ce14a6a18d934a68bf7e934994",
+      "id": "course-no-sequenced-event",
+      "observed_consistent": true,
+      "question": "Q07",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#internally-represented-in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description> .\n<urn:clariceptify:dns235:d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#internally-represented-in> .\n",
+      "fixture_sha256": "9d6b0f6b4c3848396a8b290274d621d9fafeb7664c93986cea0bb66e2163508a",
+      "id": "description-no-agent",
+      "observed_consistent": false,
+      "question": "Q02",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#satisfied-by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#satisfies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:s> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#satisfies> <urn:clariceptify:dns235:d> .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .\n_:cb0 <http://www.w3.org/2002/07/owl#assertionProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#satisfied-by> .\n_:cb0 <http://www.w3.org/2002/07/owl#sourceIndividual> <urn:clariceptify:dns235:d> .\n_:cb0 <http://www.w3.org/2002/07/owl#targetIndividual> <urn:clariceptify:dns235:s> .\n",
+      "fixture_sha256": "a646230adf58ac6fb663e75d3dad7be83b3319900542fe1a019a6dd77724cd2e",
+      "id": "satisfaction-inverse",
+      "observed_consistent": false,
+      "question": "Q04",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component-of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:a> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component> <urn:clariceptify:dns235:b> .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .\n_:cb0 <http://www.w3.org/2002/07/owl#assertionProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component-of> .\n_:cb0 <http://www.w3.org/2002/07/owl#sourceIndividual> <urn:clariceptify:dns235:b> .\n_:cb0 <http://www.w3.org/2002/07/owl#targetIndividual> <urn:clariceptify:dns235:a> .\n",
+      "fixture_sha256": "b73c55892f00667db695e01e2dc9944c16b33192c07c40d77da734749439a365",
+      "id": "component-inverse",
+      "observed_consistent": false,
+      "question": "Q06",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:dns235:a> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component> <urn:clariceptify:dns235:b> .\n<urn:clariceptify:dns235:b> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component> <urn:clariceptify:dns235:c> .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .\n_:cb0 <http://www.w3.org/2002/07/owl#assertionProperty> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#temporary-component> .\n_:cb0 <http://www.w3.org/2002/07/owl#sourceIndividual> <urn:clariceptify:dns235:a> .\n_:cb0 <http://www.w3.org/2002/07/owl#targetIndividual> <urn:clariceptify:dns235:c> .\n",
+      "fixture_sha256": "2005b8cb6aecf3d1edccb1e70bbbb67de16ac6ab04c5d0c4cfa0b9b5a3dc4488",
+      "id": "component-chain-no-shortcut",
+      "observed_consistent": true,
+      "question": "Q06",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<urn:clariceptify:dns235:x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description> .\n<urn:clariceptify:dns235:x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object> .\n",
+      "fixture_sha256": "bd3fd22873036fdedb3de89a21d7d48460e656df6de09044006aa30db097dc2c",
+      "id": "message-description-separation",
+      "observed_consistent": false,
+      "question": "Q08",
+      "result": "PASS"
+    }
+  ],
+  "unsatisfiable_named_classes": []
+}

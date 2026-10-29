@@ -1,0 +1,359 @@
+schema_version: '1.0'
+issue: 235
+status: BOUNDED_SELECTED_LATER_MODULE_REVIEW_COMPLETE_WITH_LIMITS
+baseline_commit: 0652b39ffce40d17f23afb4a8d19ff8ceb36d7e2
+identity:
+  owner: ISTC-CNR Laboratory for Applied Ontology
+  distribution: DLP3971
+  copyright_year: 2005
+  root: ExtendedDnS.owl
+  version:
+  - '397'
+  - classified
+  sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  archive_sha256: b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2
+  source_url: https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+  development_repository: NOT_IDENTIFIED_IN_RECORDED_BOUNDED_SEARCHES
+  discovery_evidence: source-audit.yaml G10/W08; dlp3971-intake.json
+  historical_2003_fidelity: NOT_ESTABLISHED
+  license: README states LGPL-2.1-or-later for the distribution; no original source files redistributed
+foundation:
+  family: DOLCE-Lite
+  edition: Supplied 397-family modules; exact 2003 edition unestablished
+  relation: ACTUAL_OFFLINE_IMPORTS_OF_EXACT_SUPPLIED_FILES
+  imports:
+  - http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl
+  - http://www.loa-cnr.it/ontologies/SpatialRelations.owl
+  - http://www.loa-cnr.it/ontologies/TemporalRelations.owl
+  unresolved: []
+evidence:
+  census:
+    path: evaluation/related-work/dns235/census.json
+    sha256: 927b2771ac0d04f4361b2b4c53c04f35e80b5fac2f7080166a0e6d6e55713450
+  semantic:
+    path: evaluation/related-work/dns235/semantics.json
+    sha256: 628a480f7a983446d1b6505723f64452a107d77311dabd0e79987c8fb4321f84
+  catalog:
+    path: evidence/related-work/dns235-class-catalog.yaml
+    sha256: ece37e370d431caf1df5a31ee20c6e2f1da111c2ab1c2387c0c1ea7a2fd29445
+  intake:
+    path: evidence/related-work/corpus/dlp3971-intake.json
+    sha256: af5b17020ab60c06789bf03c31b2408388560ee0f3a318958771b3d29f4acd55
+  paper:
+    path: evidence/related-work/deep-reviews/DnS2003/review.yaml
+    sha256: 95fbe27783f34256f4c5ecb294cdbdda35d97faf6847cd66222e4b8b7afc7503
+questions:
+- id: Q01
+  title: Identity, population and joint consistency
+  result: Official LOA DLP3971 is a later 2005 distribution, not established as exact 2003 implementation. The selected
+    root has 58 local / ten external declarations; the four-document import closure has 95 unique declared classes.
+    All 58 local comment candidates and ten direct-import comment sources are accounted for; non-agentive-figure
+    lacks a distinguishing definition. Baseline and each of information-object/description alone are consistent,
+    but their joint instance is inconsistent. Individual coherence does not establish joint coherence.
+  locators: Root header; DnS2003 K01-K04/E02-E04; semantic baseline and separation cases
+- id: Q02
+  title: Scope indices and descriptive entities
+  result: concept requires defined-by some description. description uses concepts or figures, requires physical-agent
+    representation and information-object expression. These restrictions are not the indexed Pi/PiD/SDi/Si FOL vocabulary
+    or a proof of its global scope. Denying all description witnesses for a concept, or all representing agents
+    for a description, is inconsistent.
+  locators: concept/description restrictions; DnS2003 displays 9/14
+- id: Q03
+  title: Selection and explicit inverse correspondence
+  result: The later root explicitly makes classifies inverse to classified-by, with role/course/parameter specializations
+    played-by, sequences and valued-by. This is not a literal selects/selectedBy IRI correspondence or proof of
+    paper display 13. An isolated classification plus denial of its reverse is inconsistent.
+  locators: classifies/classified-by/played-by/sequences/valued-by; DnS2003 displays 7/13
+- id: Q04
+  title: Per-setting existential versus shared description
+  result: situation is defined by a social-object condition, some setting-for particular and some satisfies description.
+    This supplies a witness per situation; it does not assert one named or globally shared description, a unique
+    description or all finite ground facts. Denying all satisfaction witnesses is inconsistent; ordinary situation
+    instantiation is consistent through unnamed witnesses.
+  locators: situation equivalentClass; satisfies/satisfied-by; DnS2003 displays 4/13
+- id: Q05
+  title: Unparenthesized paper formula and later encoding
+  result: No silent repair or FOL reconstruction of display 14 is adopted. The complete selected OWL constraints
+    are retained separately; named definition/classification relations do not establish equivalence to either proposed
+    scope reading of that formula. Formula 14 remains a qualified historical correspondence limit, rather than an
+    executed theorem or repaired source.
+  locators: DnS2003 K14 and source locators; selected root catalogue constraints
+- id: Q06
+  title: Structural direction and time boundary
+  result: temporary-component and temporary-component-of are explicit inverses. Denying the reverse is inconsistent.
+    A component chain with its shortcut denied remains consistent, so transitivity is not forced by this selected
+    profile. TemporalRelations is an actual pinned direct import, but a binary role chain is not the paper temporal
+    t_component signature or a verified ternary translation.
+  locators: temporary-component / temporary-component-of; direct TemporalRelations import; DnS2003 Figure 3 / display
+    17
+- id: Q07
+  title: Parameter values versus actual fillers
+  result: parameter has a valued-by existential to region; denying every value is inconsistent. A role with no played-by
+    fillers and a course with no sequences fillers are each consistent. Descriptive classification capability therefore
+    does not require every possible role/course to be actually realized. Source cardinality and existential restrictions
+    stay separate from comment intent.
+  locators: parameter/role/course restrictions; DnS2003 displays 18-21 / Figure 1
+- id: Q08
+  title: Communication, meanings and query-role boundary
+  result: Information-object is distinct from description in the selected source; each can exist separately but
+    their joint typing is inconsistent. communication-event and expression/aboutness/interpretation relations are
+    present; the selected root is not a complete SWAP message/query-role ontology. Code, message-dependent initiator/resolver/forwarder
+    behavior and successful shared interpretation are not established by this module.
+  locators: information-object/description/communication-event; DnS2003 Figures 2-5 / E08-E12
+findings:
+- id: DNS235-F01
+  title: Later-distribution identity
+  detail: 2005/397 source provenance does not establish 2003 byte or axiom fidelity.
+  utilization_categories:
+  - U01
+  - U08
+  - U09
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q01
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F02
+  title: Definition coverage differs from adequacy
+  detail: All 58 local comments are present, but non-agentive-figure defers typology and several comments are explicitly
+    tentative.
+  utilization_categories:
+  - U03
+  - U09
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q01
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F03
+  title: Scope and unit boundaries
+  detail: 58 local, ten external redeclarations, 95 import-closure declarations and archive-wide 208 are different
+    populations.
+  utilization_categories:
+  - U09
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q01
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F04
+  title: Witness scope
+  detail: Unnamed per-situation description witnesses are required; uniqueness or one globally shared description
+    is not established.
+  utilization_categories:
+  - U04
+  - U10
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q04
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F05
+  title: Inverse correspondence is version-qualified
+  detail: Explicit classifies/classified-by inverses do not prove equivalence to the earlier paper selects vocabulary.
+  utilization_categories:
+  - U04
+  - U08
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q03
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F06
+  title: Realization asymmetry
+  detail: Parameter requires a value, while role and course can remain unfilled; avoid conflating descriptive possibility
+    with current instantiation.
+  utilization_categories:
+  - U03
+  - U04
+  - U10
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q07
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F07
+  title: Structural temporal limits
+  detail: An inverse component relation does not force transitivity or implement the earlier temporal signature.
+  utilization_categories:
+  - U04
+  - U06
+  - U10
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q06
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F08
+  title: Communication scope remains partial
+  detail: Social description, information object and contextual setting support comparison, not SWAP execution or
+    shared semantic agreement.
+  utilization_categories:
+  - U02
+  - U03
+  - U07
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q08
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+- id: DNS235-F09
+  title: Conformance is bounded
+  detail: OWL2 DL profile and 15 isolated reasoner outcomes passed; neither establishes foundational adequacy, historical
+    FOL fidelity or adopted model mappings.
+  utilization_categories:
+  - U05
+  - U10
+  next_issues:
+  - 251
+  - 126
+  question_ids:
+  - Q01
+  - Q05
+  evidence_keys:
+  - intake
+  - paper
+  - census
+  - catalog
+  - semantic
+  basis: REVIEWER_INTERPRETATION_OF_PINNED_SOURCE_AND_RECORDED_EXECUTION
+reuse:
+  decision: DEFER_EQUIVALENCE;USE_QUALIFIED_DESCRIPTIVE_PATTERN_CANDIDATES
+  positive_scenario: Represent one situation under a particular description while retaining separate classification
+    and information expression.
+  counterexample: One entity typed as both source information-object and description is inconsistent; copying shared-label
+    mappings can collapse required distinctions.
+model_comparison_candidates:
+- source: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept
+  model_ids:
+  - CLR-C0017
+  status: RELATED_CANDIDATE_NOT_EQUIVALENCE
+  action: Compare social classifier identity with the current Concept definition.
+  categories:
+  - U03
+  - U05
+  source_finding_ids:
+  - DNS235-F06
+- source: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description
+  model_ids:
+  - CLR-C0026
+  - CLR-C0101
+  status: DISTINCT_LEVELS_TO_ASSESS
+  action: Keep conceptualization process separate from its social description and information representation.
+  categories:
+  - U03
+  - U07
+  source_finding_ids:
+  - DNS235-F08
+- source: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent
+  model_ids:
+  - CLR-C0004
+  status: RELATED_CANDIDATE_NOT_EQUIVALENCE
+  action: Review generic agency and its physical/social grounding before any mapping.
+  categories:
+  - U03
+  - U05
+  source_finding_ids:
+  - DNS235-F02
+- source: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal
+  model_ids:
+  - CLR-C0054
+  - CLR-C0061
+  status: RELATED_CANDIDATE_NOT_EQUIVALENCE
+  action: Compare plan-part desirability with current Goal/Intention identity and dependence.
+  categories:
+  - U03
+  - U04
+  source_finding_ids:
+  - DNS235-F06
+execution:
+  profile: PASS_UNDER_RECORDED_OWLAPI
+  logical_consistency: true
+  unsatisfiable_named_classes: []
+  semantic_cases:
+    errors: 0
+    failed: 0
+    passed: 15
+    total: 15
+  FOL_formula14_solver: NOT_EXECUTED
+  SWAP_execution: NOT_EXECUTED
+  harness_note: Initial separately parsed fixtures omitted property declarations and three inverse controls were
+    misparsed. Final fixtures declare only properties already declared by the exact source; source files and axioms
+    remain unchanged. All 15 final outcomes are retained.
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_acceptance: NOT_ASSESSED
+  independent_expert_review: NOT_PERFORMED
+  adoption: OWNER_DECISION_REQUIRED
+  source_redistribution: false
+closure:
+  meaning: Selected later-module inventory and eight bounded questions complete; historical correspondence limits
+    retained, not resolved.
+  next_issues:
+  - 251
+  - 126
+model_comparison_baseline:
+  revision: input-r1-rev1
+  path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  assessment: CANDIDATES_ONLY_NO_ACCEPTED_MAPPING

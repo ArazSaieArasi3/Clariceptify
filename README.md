@@ -123,3 +123,5 @@ Shared research foundation: [IOLite1.8 complete selected-class glossary and LMM 
 - [SKOS Reference critical document review](evidence/related-work/reviews/SKOS.md): source and errata evidence; formal artifact work remains separate.
 
 - [O4OA supporting specification checkpoint](evidence/related-work/artifacts/O4OA.md): 138 document rows; #91 remains blocked on the formal artifact.
+
+Research checkpoint: [bounded later ExtendedDnS397 technical review](evidence/related-work/artifacts/DnS.md) and its complete selected class register preserve historical-version limits and source-specific positive/adverse outcomes.
