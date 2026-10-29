@@ -12,7 +12,7 @@ GUIDES=['Home','Overview','Conceptual-Model','Requirements-and-CQs','Sources','Q
 NAV=[('index.html','Overview'),('concepts.html','Concepts'),('domains.html','Domains'),('relations.html','Relations'),('requirements.html','Requirements / CQs'),('quality.html','Evidence'),('diagram.html','Diagram'),('roadmap.html','Research'),('search.html','Search'),('downloads.html','Downloads')]
 ALLOWED_DIRS={'.github','.research','docs','model','requirements','evidence','traceability','evaluation','tools','releases'}
 ROOT_FILES={'README.md','CHANGELOG.md','CONTRIBUTING.md','CITATION.cff','LICENSE','LICENSE-MIT','LICENSE-CC-BY-4.0','THIRD-PARTY-NOTICES.md','requirements-dev.txt','requirements-docs.txt','requirements-diagrams.txt','AGENTS.md','.gitignore'}
-SUFFIXES={'.md','.yaml','.yml','.json','.csv','.svg','.pdf','.png','.jpg','.jpeg','.webp','.py','.txt','.cff','.bib','.css','.js'}
+SUFFIXES={'.md','.yaml','.yml','.json','.jsonl','.csv','.svg','.pdf','.png','.jpg','.jpeg','.webp','.py','.txt','.cff','.bib','.css','.js'}
 
 def digest(data):return hashlib.sha256(data).hexdigest()
 def encoded(data):return (json.dumps(data,indent=2,sort_keys=True)+'\n').encode()

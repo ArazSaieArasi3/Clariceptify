@@ -1,0 +1,127 @@
+{
+  "blockers": [
+    "Exact raw RDF parses are reported as observed; no input correction is made.",
+    "The Python2/string-splitting generator reads pickle and drops the first assertion as a purported header. No conversion or unpickling is performed; exact historical byte generation is unestablished."
+  ],
+  "csv_profiles": {
+    "ontology/table_assertion.csv": {
+      "field_counts": {
+        "14": 941
+      },
+      "rows": 941,
+      "sha256": "e454cf6a01e7353a7cbf2aabbc730aaea02db7137bc9620e54d2f51d7ca84a1c",
+      "unique_first_column_values": 941
+    },
+    "ontology/table_relation.csv": {
+      "field_counts": {
+        "8": 7
+      },
+      "rows": 7,
+      "sha256": "5484f2275d1c58df42a51e20bb592b8a01b7f183fdf726aa96a4ab15f3a258a6",
+      "unique_first_column_values": 7
+    },
+    "ontology/type_condition.csv": {
+      "field_counts": {
+        "6": 323
+      },
+      "rows": 323,
+      "sha256": "33badc8be2244c9ed564b6e0153559b329ee56534cdccba1f98212577523d732",
+      "unique_first_column_values": 323
+    },
+    "ontology/type_contrast.csv": {
+      "field_counts": {
+        "5": 510
+      },
+      "rows": 510,
+      "sha256": "8cd88a9fa6217483ba805ebcfc7a0f634d3aeabe4466ec18fb3a12fea58a65ae",
+      "unique_first_column_values": 510
+    }
+  },
+  "first_assertion": {
+    "id": "ass_4b4a2f02e3898",
+    "is_header": false,
+    "relation": "T16"
+  },
+  "generator_execution": "NOT_EXECUTED",
+  "generator_path": "tools/inspect_cognitive_atlas.py",
+  "generator_sha256": "df7376c2b03c91d8e5ab4c5333426714acec4ef288ebe4f426960316f47995fb",
+  "generators": [
+    {
+      "path": "create_owl.v2.py",
+      "pickle_load": true,
+      "python2_print_syntax": true,
+      "removes_first_assertion": true,
+      "selected_mapping_branches": [
+        "T1",
+        "T15",
+        "T16",
+        "T2"
+      ],
+      "sha256": "6e16d65328a011a0e32f8fe7dfb08a4f67595d6c103ea8871341f848759c61b0",
+      "version_string": [
+        "0.3"
+      ]
+    },
+    {
+      "path": "paper-linked-create_owl.py",
+      "pickle_load": true,
+      "python2_print_syntax": false,
+      "removes_first_assertion": true,
+      "selected_mapping_branches": [
+        "T1",
+        "T15",
+        "T16",
+        "T2"
+      ],
+      "sha256": "3797efce629faabff2d5d1178b9374bab6385f4e81b6fa36f06be84f80b044f2",
+      "version_string": [
+        "0.3.1"
+      ]
+    }
+  ],
+  "issue": 241,
+  "license_evidence": {
+    "exact_link_present": true,
+    "html_sha256": "d074e1fc1ddeffa12e2733ed09aef6c6742219469b9f1369c95a59e2179572a2",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+    "note": "Official project footer;the selected export has no embedded license. This licenses the attributed definition extract, not a blanket MIT claim for the ontology or the unrelated discussion repository.",
+    "retrieved_on": "2026-10-29",
+    "url": "https://www.cognitiveatlas.org/"
+  },
+  "mode": "STATIC_GENERATOR_AND_RAW_INPUT_INSPECTION",
+  "model_change": "NONE",
+  "original_source_files_redistributed": false,
+  "paper_2011_equivalence": "NOT_ESTABLISHED",
+  "pickle_execution": "NOT_EXECUTED",
+  "python": "3.12.14",
+  "raw_RDF_parses": [
+    {
+      "error": "SAXParseException: <unknown>:6649:131: not well-formed (invalid token)",
+      "path": "ontology/all_concepts.rdf",
+      "result": "PARSE_FAIL",
+      "sha256": "b656a33d0099e84de128e23a7accf56a44276a269fead52721c6e9fcd4fe5626"
+    },
+    {
+      "error": "SAXParseException: <unknown>:41:52: not well-formed (invalid token)",
+      "path": "ontology/all_tasks.rdf",
+      "result": "PARSE_FAIL",
+      "sha256": "1e47d61dff70d43924e8ee9e659a7896ac003c8587bfd03afebf9079bdd1c4a4"
+    }
+  ],
+  "rdflib": "7.6.0",
+  "schema_version": "1.0",
+  "selected_assertion_polarities": {
+    "negative": 2,
+    "positive": 939
+  },
+  "source_manifest_sha256": "89c58477bd42bbe51b047d3664510a87ddef3c89dbcd46d51f89f8f48ba1019a",
+  "source_relation_counts": {
+    "T1": 173,
+    "T10": 53,
+    "T15": 22,
+    "T16": 585,
+    "T2": 107,
+    "T5": 1
+  },
+  "source_sha256": "701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8"
+}

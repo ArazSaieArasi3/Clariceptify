@@ -12,7 +12,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 CHECKERS = ['check_repository_language', 'check_schemas', 'check_model_structure',
             'check_requirements', 'check_source_support', 'check_traceability', 'check_bootstrap',
-            'check_reference_views', 'check_conceptualization_fixtures', 'check_review_state', 'check_publication_metadata', 'check_documentation', 'check_related_reviews', 'check_corpus_access', 'check_deep_reviews', 'check_dul_technical_review', 'check_iolite_catalog', 'check_bdi2026_review', 'check_ontolex_review', 'check_skos_review', 'check_o4oa_checkpoint']
+            'check_reference_views', 'check_conceptualization_fixtures', 'check_review_state', 'check_publication_metadata', 'check_documentation', 'check_related_reviews', 'check_corpus_access', 'check_deep_reviews', 'check_dul_technical_review', 'check_iolite_catalog', 'check_bdi2026_review', 'check_ontolex_review', 'check_skos_review', 'check_cognitiveatlas_review', 'check_o4oa_checkpoint']
 
 
 def encoded(value):

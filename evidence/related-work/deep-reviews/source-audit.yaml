@@ -561,6 +561,21 @@ discovery_attempts:
   limitation: Current foundations are not historical edition proof. No0.5 substitution for0.3;no author OWLUnit/LLM/SEMAS
     reproduction or semantic adoption.
 
+- id: CA241-S01
+  method: Pinned official export/generator plus exact-source parsing,catalogue and bounded semantic inspection
+  query: cogat.v2.owl header0.3;all classes/definitions;generator branches;source CSV and original RDF;official
+    license footer
+  checked_on: '2026-10-29'
+  checked_urls:
+  - https://github.com/CognitiveAtlas/cogat-ontology/tree/a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+  - https://github.com/poldrack/cogat/tree/8ae51f96b6116fb2b00ef70f9feac5bac8444071
+  - https://www.cognitiveatlas.org/
+  outcome: Selected sources match prior pinned digests.1696 local classes,1232 nonempty definitions,101
+    mixed identifiers,profile rejection and14 actual semantic expectations are recorded. Current official
+    homepage links CC-BY-SA3.0 US;the attributed definition extract keeps its separate license.
+  limitation: No raw original OWL/source redistribution,unpickling,author generator execution,historical2011
+    equivalence,independent expert acceptance or ontology adoption.
+
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -998,38 +1013,49 @@ records:
     evidence:
     - R01
     - COG-S01
+    - CA241-S01
     global_absence_claim: false
     paper_correspondence: PAPER_LINKED_SOURCE_FOUND_HISTORICAL_BYTE_FIDELITY_NOT_ESTABLISHED
-  artifact_state: OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING
+  artifact_state: BOUNDED_TECHNICAL_REVIEW_COMPLETE;IDENTIFIER_PROFILE_DEFINITION_AND_GENERATION_FINDINGS_RETAINED
   foundation:
-    family: SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established
+    family: SKOS/OBO RO/CogPO reuse;BFO1.1 namespace reference
     edition: null
-    relation: PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING
-    basis: AUTHOR_REPORTED
-    locator: Article pp.3-6; Figures1/2; selected generator and ontology/cogat.v2.owl header at a600c366e9e3.
+    relation: SOURCE_REFERENCES_WITHOUT_VERIFIED_UPPER_GROUNDING
+    basis: EXAMINED_SOURCE_HEADERS_AND_REFERENCES
+    locator: cogat.v2.owl header0.3;declared SKOS Concept/BFO Process;11 undeclared class references;no
+      owl:imports
     artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'Selected source has no declared imports. BFO1.1/CogPO2011 namespace hints in later export
-      do not establish2011 paper grounding or an imported edition. Full referenced definitions and correspondence
-      remain #241.'
+    limitations: BFO1.1 and CogPO2011 namespace strings are not imported foundational axioms. Current2015
+      export is not proved equivalent to the2011 article. See the technical authority and actual execution
+      receipts.
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
+    state: ALL1696_LOCAL_CLASS_AND_DEFINITION_STATES_ACCOUNTED;101_IDENTIFIER_COLLISIONS
+    local_classes: 1696
+    source_definition_candidates: 1232
+    missing_source_definitions: 464
+    empty_definitions: 55
+    absent_definitions: 409
+    catalog_path: evidence/related-work/cognitiveatlas-class-catalog.yaml
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    reasoner_scope: This audit/catalogue is structural.14 recorded HermiT cases and profile rejection
+      are in the separate technical authority.
+    definition_representation: Original definitions retained in an attributed,scope-licensed CC-BY-SA3.0-US
+      extract;no mass-generated paraphrases or independent adequacy claim.
   next_issues:
-  - 241
+  - 254
+  - 126
   paper_review:
     path: evidence/related-work/deep-reviews/CognitiveAtlas2011/review.yaml
     conceptual_relation_entries: 91
     prose_commitment_groups: 18
     figure_population: 4
     manual_critical_findings: 20
-    limits: 'Complete paper catalog and declared header observations;2011 term totals are author-reported,
-      not an OWL class/definition census. Full class/imported definitions and semantic checks remain #241.'
+    limits: Historical paper inventory remains separate. Current1696-class all-declaration/definition
+      inventory,profile rejection,identifier collisions and14 semantic expectations are in the technical
+      authority;no historical equivalence or imported foundation acceptance.
+  technical_review: evidence/related-work/artifacts/CognitiveAtlas.yaml
 - id: EmotionsOnto2014
   title: 'EmotionsOnto: an Ontology for Developing Affective Applications'
   primary_issue: 262

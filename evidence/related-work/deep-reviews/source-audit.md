@@ -18,7 +18,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE_NEGATIVE_FINDINGS_EXACT_ALIGNMENT_IMPORT_BLOCKED | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_AND_ACTUAL_ALIGNMENT_IMPORT_d0_THEN_DUL; edition: UNKNOWN | [22 classes](../bdi2026-class-catalog.md); 22 comment candidates; 0 missing | #256, #126 |
-| CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING | SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established; PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
+| CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE;IDENTIFIER_PROFILE_DEFINITION_AND_GENERATION_FINDINGS_RETAINED | SKOS/OBO RO/CogPO reuse;BFO1.1 namespace reference; SOURCE_REFERENCES_WITHOUT_VERIFIED_UPPER_GROUNDING; edition: UNKNOWN | [1696 classes](../cognitiveatlas-class-catalog.md); 1232 comment candidates; 464 missing | #254, #126 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED; [source](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl); [source](https://github.com/appliedontolab/DOLCE); PINNED_DUL4_2_ALL78_CLASS_GLOSSARY_AND29_SEMANTIC_CASES | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | [78 classes](../dul-class-catalog.md); 69 comment candidates; 9 missing | #271, #251, #126 |
 | CLR-RW-O4OA (#73) | REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY; [source](https://gitlab.com/bfmartins/o4oa); [source](https://gitlab.com/bfmartins/go4oa); SPECIFICATION_DOCUMENT_CHECKPOINT_COMPLETE_FORMAL_ROOT_UNAVAILABLE | UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants); PAPER_STATED_GROUNDING_THROUGH_ONTOUML; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
@@ -486,6 +486,18 @@ Query: `BDI0.5/bdi-dul import0.3;exact d0/DUL resources;all local classes;18 emb
 Official core/alignment pinned;HTTP d0/DUL retrieved and hashed;exact0.3 returned404. See technical-discovery.json and BDI2026.yaml for actual profile/query/semantic results.
 
 Limit: Current foundations are not historical edition proof. No0.5 substitution for0.3;no author OWLUnit/LLM/SEMAS reproduction or semantic adoption.
+
+### CA241-S01: Pinned official export/generator plus exact-source parsing,catalogue and bounded semantic inspection
+
+Query: `cogat.v2.owl header0.3;all classes/definitions;generator branches;source CSV and original RDF;official license footer`. Checked: 2026-10-29.
+
+- https://github.com/CognitiveAtlas/cogat-ontology/tree/a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+- https://github.com/poldrack/cogat/tree/8ae51f96b6116fb2b00ef70f9feac5bac8444071
+- https://www.cognitiveatlas.org/
+
+Selected sources match prior pinned digests.1696 local classes,1232 nonempty definitions,101 mixed identifiers,profile rejection and14 actual semantic expectations are recorded. Current official homepage links CC-BY-SA3.0 US;the attributed definition extract keeps its separate license.
+
+Limit: No raw original OWL/source redistribution,unpickling,author generator execution,historical2011 equivalence,independent expert acceptance or ontology adoption.
 
 ## Interpretation and next work
 

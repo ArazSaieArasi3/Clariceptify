@@ -1,0 +1,198 @@
+{
+  "catalog_indexes": {
+    "classes.jsonl": {
+      "path": "evidence/related-work/cognitiveatlas/classes.jsonl",
+      "rows": 1698,
+      "sha256": "38c1864b35340230749b649008d700f20fe8fcc4720ac477b6d1fcd434b4e876"
+    },
+    "source-definitions.jsonl": {
+      "path": "evidence/related-work/cognitiveatlas/source-definitions.jsonl",
+      "rows": 1698,
+      "sha256": "355ffc06900474735b65f9e7d1feb9ade023a7fb5dc4ec2c1ae1bd0cd65b880a"
+    }
+  },
+  "category_counts_mutually_exclusive": {
+    "cnt": 408,
+    "cnt+trm": 101,
+    "con": 323,
+    "helper/no_identifier": 1,
+    "trm": 766,
+    "tsk": 97
+  },
+  "counts": {
+    "datatype_properties": 0,
+    "declared_object_properties": 4,
+    "definition_absent_local_classes": 409,
+    "definition_empty_only_local_classes": 55,
+    "definition_nonempty_local_classes": 1232,
+    "deprecated_classes": 0,
+    "disjoint_axioms": 0,
+    "equivalent_class_axioms": 0,
+    "explicit_sameAs": 0,
+    "explicit_triples": 26175,
+    "external_declared_object_properties": 1,
+    "external_named_classes": 2,
+    "inverse_property_axioms": 0,
+    "local_classes_with_multiple_identifiers": 101,
+    "local_declared_object_properties": 3,
+    "local_identifier_values": 1796,
+    "local_named_classes": 1696,
+    "named_classes": 1698,
+    "named_subclass_statements": 1797,
+    "restriction_nodes": 2825,
+    "subclass_statements": 4622,
+    "undeclared_used_object_properties": 3,
+    "used_restriction_properties": 7
+  },
+  "foundation": "SKOS/OBO RO/CogPO and BFO1.1 namespace references;no owl:imports or verified foundational alignment",
+  "generator_path": "tools/inspect_cognitive_atlas.py",
+  "generator_sha256": "df7376c2b03c91d8e5ab4c5333426714acec4ef288ebe4f426960316f47995fb",
+  "imports": [],
+  "inferred_class_population": null,
+  "issue": 241,
+  "license_boundary": "Definitions are a separately attributed CC-BY-SA3.0 US extract based on the official project site license. Original OWL distribution and all upstream files are not republished or blanket-relicensed.",
+  "mode": "COMPLETE_DECLARATION_AND_DEFINITION_EXTRACTION_NOT_SEMANTIC_ACCEPTANCE",
+  "model_change": "NONE",
+  "ontology_iris": [
+    "http://www.cognitiveatlas.org/ontology/cogat.owl"
+  ],
+  "original_source_files_redistributed": false,
+  "properties": [
+    {
+      "axioms": [
+        {
+          "object": {
+            "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00049"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00049"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "declared": true,
+      "iri": "http://www.cognitiveatlas.org/ontology/cogat.owl#descended_from",
+      "population": "LOCAL"
+    },
+    {
+      "axioms": [
+        {
+          "object": {
+            "iri": "http://www.cognitiveatlas.org/ontology/cogat.owl#MentalConcept"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00049"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "declared": true,
+      "iri": "http://www.cognitiveatlas.org/ontology/cogat.owl#measured_by",
+      "population": "LOCAL"
+    },
+    {
+      "axioms": [
+        {
+          "object": {
+            "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00049"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        {
+          "object": {
+            "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00049"
+          },
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "declared": true,
+      "iri": "http://www.cognitiveatlas.org/ontology/cogat.owl#measures",
+      "population": "LOCAL"
+    },
+    {
+      "axioms": [],
+      "declared": false,
+      "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#has_contrast",
+      "population": "EXTERNAL"
+    },
+    {
+      "axioms": [],
+      "declared": false,
+      "iri": "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#is_related_to",
+      "population": "EXTERNAL"
+    },
+    {
+      "axioms": [
+        {
+          "object": {
+            "iri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+          },
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "declared": true,
+      "iri": "http://www.obofoundry.org/ro/ro.owl#has_part",
+      "population": "EXTERNAL"
+    },
+    {
+      "axioms": [],
+      "declared": false,
+      "iri": "http://www.obofoundry.org/ro/ro.owl#part_of",
+      "population": "EXTERNAL"
+    }
+  ],
+  "python": "3.12.14",
+  "rdflib": "7.6.0",
+  "referenced_undeclared_class_iris": [
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00344",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00386",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00458",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00461",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00526",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00654",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00689",
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#MentalConcept",
+    "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00049",
+    "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00109",
+    "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#COGPO_00300"
+  ],
+  "schema_version": "1.0",
+  "source_manifest_sha256": "89c58477bd42bbe51b047d3664510a87ddef3c89dbcd46d51f89f8f48ba1019a",
+  "source_sha256": "701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8",
+  "used_restriction_property_counts": {
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#descended_from": 20,
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#measured_by": 533,
+    "http://www.cognitiveatlas.org/ontology/cogat.owl#measures": 522,
+    "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#has_contrast": 509,
+    "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#is_related_to": 509,
+    "http://www.obofoundry.org/ro/ro.owl#has_part": 323,
+    "http://www.obofoundry.org/ro/ro.owl#part_of": 409
+  },
+  "version_info": [
+    "0.3"
+  ]
+}
