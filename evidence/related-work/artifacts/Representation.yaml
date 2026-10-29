@@ -1,0 +1,96 @@
+schema_version: '1.0'
+issue: 244
+status: BOUNDED_PUBLISHER_SUPPLEMENT_FORMALISM_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT
+checked_on: '2026-10-30'
+baseline_commit: 578c1d9c2745d41f4fdb65b7d00797172f7dce3a
+source:
+  work: CLR-RW-Representation
+  title: An Ontology of Representation
+  authors: [Riichiro Mizoguchi, Stefano Borgo]
+  version: Applied Ontology 20(2), 137-152, 2025; distinct from 2021 Towards paper
+  doi: 10.1177/15705838251337943
+  main_paper_sha256: 16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a
+  main_paper_pages: 16
+  main_paper_publisher_byte_parity: NOT_ESTABLISHED_OWNER_SUPPLIED_WATERMARKED_COPY
+  dossier: evidence/related-work/deep-reviews/CLR-RW-Representation/review.yaml
+  dossier_sha256: e2e7d4a67dd128ad563fe5c4492f27b8f8d211c60875d65ecf9a520ba2012719
+  formal_ledger: evidence/related-work/deep-reviews/CLR-RW-Representation/content-ledger.yaml
+  formal_ledger_sha256: b4190a374f58f4e3c8ea5064b56a5b9de7c458a58aee540a9de9b865f0547e3f
+  publisher_url: https://journals.sagepub.com/doi/10.1177/15705838251337943
+  publisher_supplement_url: https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+  supplement_pages: 10
+  supplement_raw_sha256: null
+  supplement_state: PUBLISHER_LINKED_PARSED_TEXT_COMPLETE_SELECTED_D11_VISUAL_CHECK
+  author_posted_supplement_byte_correspondence: NOT_ESTABLISHED
+  discovery: evaluation/related-work/representation244/discovery.json
+  machine_root: null
+  machine_root_version: null
+  machine_root_sha256: null
+  repository_commit: null
+  machine_syntax: null
+  machine_license: null
+  direct_imports: null
+  unresolved_imports: null
+  global_absence_claim: false
+access_license:
+  article: PUBLISHER_RESTRICTED_ACCESS_AUTHOR_COPY_OWNER_SUPPLIED
+  supplement: PUBLISHER_LINKED_NON_EXCLUSIVE_REUSE_TERMS_FOR_NON_OPEN_ACCESS_ARTICLE
+  raw_supplement_redistributed: false
+  original_pdf_redistributed: false
+population:
+  printed_labeled_supplement_expressions: 49
+  tabulated_predicate_signatures: 41
+  selected_paper_commitments: 8
+  local_machine_classes: null
+  imported_machine_classes: null
+  referenced_machine_classes: null
+  deprecated_machine_classes: null
+  inferred_machine_classes: null
+  named_machine_properties: null
+  machine_definition_candidates: null
+  machine_missing_definitions: null
+  complete_machine_glossary: null
+  boundary: Printed FOL predicates and expressions are not OWL classes, source class IRIs, implementation imports or an executable theorem-prover input.
+foundation:
+  paper_illustrative_hosts: [DOLCE, YAMATO]
+  family: HOST_AGNOSTIC_WITH_SEMIABSTRACT_AND_MEREOLOGY_REQUIREMENTS
+  exact_host_edition: null
+  actual_formal_import: null
+  established_alignment: false
+  note: The supplement leaves foundational specialization open; neither named family is an imported version or automatically compatible with Clariceptify's UFO typing.
+commitments:
+  - {id: R01, paper_id: K-Ax9, formula: Ax9, locator: 'CLR-RW-Representation:E19 supplement A PDF p.2', observation: 'For one form/content pair, distinct encoding methods collapse under pairwise functionality; alternate methods need a different pair or a revised theory.'}
+  - {id: R02, paper_id: K-D1, formula: D1, locator: 'CLR-RW-Representation:E19 supplement A PDF p.2', observation: 'Representation relation uses a mereological sum of form and content together with encoding method, conditional on a host mereology.'}
+  - {id: R03, paper_id: K-D2, formula: D2, locator: 'CLR-RW-Representation:E19 supplement A PDF p.3', observation: 'OREO is an existential projection from a representation relation, not the physical copy.'}
+  - {id: R04, paper_id: K-T1, formula: T1, locator: 'CLR-RW-Representation:E19 supplement A PDF p.3', observation: 'Four distinct arguments are author-stated as a theorem, whose proof relies on host sum properties and disjointness; not reproduced here.'}
+  - {id: R05, paper_id: K-T2, formula: T2, locator: 'CLR-RW-Representation:E19 supplement A PDF p.3', observation: 'Decomposition uniqueness is an author-stated theorem under prior axioms, not a machine result.'}
+  - {id: R06, paper_id: K-Ax15, formula: Ax15, locator: 'CLR-RW-Representation:E20 supplement A PDF p.5', observation: 'One physical entity has one PHPATTERNOF pattern in the selected relation; granularity and FEATUREOF need a host account.'}
+  - {id: R07, paper_id: K-D10, formula: D10, locator: 'CLR-RW-Representation:E20 supplement A PDF p.7', observation: 'Physical object or event satisfying content is a content-realisation; no SPECIFICATION conjunct or decision provenance follows.'}
+  - {id: R08, paper_id: K-D11, formula: D11, locator: 'CLR-RW-Representation:E21 supplement B PDF p.8', observation: 'Publisher PDF visual page shows f in FORMOF and PATTERNFORFORM but absent from the printed existential list o,r,p,p-prime. Scope and intended repair remain unresolved; this is a selected visual finding, not whole-theory inconsistency.'}
+scenarios:
+  positive: 'A form F and content C are bound by encoding method M; R is their host sum and satisfies D1; a physical book copy B realizes the form without being identical to R. This is a local illustrative configuration, not a full model of all 49 expressions.'
+  adverse: 'For the same F and C, ENCODINGVIA(F,C,M1) and ENCODINGVIA(F,C,M2) with M1 distinct from M2 contradict Ax9. A single medium with two distinct physical pattern assignments similarly violates Ax15 at that granularity. These are local axiom checks; host-dependent ontology consistency is unknown.'
+  paper_scenario_ids: [S06, S08, S11]
+decision:
+  disposition: REUSE_FORM_CONTENT_METHOD_AND_REALISATION_DISTINCTIONS_AS_COMPARISON_CANDIDATES; DEFER_FORMAL_IMPORT_AND_ALIGNMENT
+  candidate_model_ids: [CLR-C0017, CLR-C0021, CLR-C0026, CLR-C0047, CLR-C0057, CLR-C0062, CLR-C0101, CLR-C0123]
+  owner_status: OWNER_DECISION_REQUIRED
+  accepted_equivalences: []
+  export: 'For #255/#126 retain strong overlap on form/content/encoding and physical realization, counterevidence to novelty, alongside open agent/episode/decision/evidence/rationale and host-level mapping questions.'
+execution:
+  checker: tools/check_representation244.py
+  local_finite_axiom_cases: TWO_POSITIVE_TWO_ADVERSE
+  selected_d11_visual_review: PASS_PUBLISHER_LINKED_PDF_PAGE_8
+  raw_supplement_hash: NOT_OBTAINED
+  executable_root_parse: NOT_EXECUTED_NO_ROOT
+  reasoner: NOT_EXECUTED_NO_ROOT
+  theorem_prover: NOT_EXECUTED
+  author_proof_reproduction: NOT_EXECUTED
+limits:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  independent_expert_validation: NOT_PERFORMED
+  later_issues: [255, 126]
