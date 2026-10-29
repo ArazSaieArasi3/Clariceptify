@@ -100,6 +100,10 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 
 [IAO #240](../../evidence/related-work/artifacts/IAO.md) pins the official 2026-03-30 release root and its complete 266-name class census (210 IAO IRIs and 56 bundled external IRIs). The selected release has no direct imports; its BFO edition is not pinned by the file. Eight asserted commitments are checked, while profile, consistency and the 2015 paper's proposed reference taxonomy remain unverified. This input advances #254 and final #126 without accepting alignment or changing the model.
 
+## EFO paper formalism technical checkpoint - 2026-10-30
+
+[EFO #242](../../evidence/related-work/artifacts/EFO.md) verifies the original 21-page PDF hash and eight selected printed formula groups, with all 33 Figure 1 labels retained as paper categories. No author-linked executable ontology root was identified within the checked scope; OWL class/import counts remain unknown, not zero. A4/A12 spelling discrepancies, A11 inverse uniqueness and the conditional A14/A15 mixed-status counterexample are explicit inputs for #254 and #126, without a model change or reasoner claim.
+
 ## Third comparison batch - 2026-10-29
 
 [Comparison #253](../../evidence/related-work/comparisons/batch-3.md) integrates the completed OntoLex, SKOS and EmotionsCognition reviews into 12 version-bound cells, a shared positive/adverse conceptualization case, candidate model-ID mappings and a qualified export to #126. It retains provenance and mental-content counterevidence; no corpus-wide gap or formal equivalence is established. Remaining batches and O4OA #91 retain their own prerequisites.

@@ -1,6 +1,6 @@
 schema_version: '1.0'
 issue: 269
-checked_on: '2026-10-29'
+checked_on: '2026-10-30'
 population:
   paper_or_version_records: 19
   separate_document_sources: 4
@@ -695,7 +695,7 @@ records:
     - W02
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PAPER_FORMALISM_ONLY
+  artifact_state: PAPER_FORMALISM_TECHNICAL_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT
   foundation:
     family: EFO
     edition: null
@@ -707,7 +707,7 @@ records:
     limitations: Independent subject-relative foundation; no BFO/UFO parent is inferred from comparison with
       other ontologies.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: PAPER_FIGURE_33_CATEGORIES_CATALOGUED_FORMAL_ROOT_UNAVAILABLE
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
@@ -715,7 +715,8 @@ records:
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
   next_issues:
-  - 242
+  - 254
+  - 126
 - id: cDnS2007
   title: Norms and plans as unification criteria for social collectives
   primary_issue: 259
