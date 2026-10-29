@@ -67,6 +67,8 @@ The owner explicitly requested full reference-artifact access and medium-sized c
 
 All18 acquired full-paper reviews are complete. The owner-authorized bounded I&DA #84 summary review/citation guidance is now complete. Existing acquired technical artifacts can be inspected with the I&DA full-text limitation explicitly retained; the limitation is no longer a PDF wait gate. Artifact acquisition/inspection tasks, paper reviews and scenario comparisons remain distinct; access gaps do not promote scientific acceptance.
 
+[BDI2020 technical #247](../../evidence/related-work/artifacts/BDI2020.md) checks eight paper commitments and records a dated bounded search for an author executable root. None was identified in the checked scope. Machine class counts, imports, exact foundation edition, source license and executable tests remain unknown. The paper-level decision/intention evidence can enter #256 with these limits, without treating the distinct 2026 BDI work as the 2020 source.
+
 ## Reproduce the LMM inspection
 
 ```bash

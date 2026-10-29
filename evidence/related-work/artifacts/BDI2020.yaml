@@ -1,0 +1,113 @@
+schema_version: '1.0'
+issue: 247
+task_id: R2-ART-BDI2020
+status: BOUNDED_PAPER_FORMALISM_REVIEW_COMPLETE_NO_AUTHOR_MACHINE_ROOT
+checked_on: '2026-10-29'
+baseline_commit: 672fd2e9fae080dd059aeb15dc18610590e3494f
+paper:
+  title: Foundations for an Ontology of Belief, Desire and Intention
+  authors: [Fumiaki Toyoshima, Adrien Barton, Olivier Grenier]
+  doi: 10.3233/FAIA200667
+  year: 2020
+  retained_version: HAL hal-03041527 cover plus 15 article pages, printed 140-154
+  retained_sha256: 61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95
+  publisher_pdf_url: https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667?download=true
+  full_review: evidence/related-work/deep-reviews/BDI2020/review.yaml
+formal_source:
+  author_repository: null
+  selected_root: null
+  version: null
+  sha256: null
+  syntax: null
+  license: null
+  declared_direct_imports: null
+  unresolved_imports: UNKNOWN_NO_ORIGINAL_ROOT
+  discovery: evaluation/related-work/bdi2020/technical-discovery.json
+  public_redistribution: false
+  later_FOSSR_BDI2026_is_original_source: false
+paper_expression:
+  status: VISUAL_EDITORIAL_TEXT_NOT_EXECUTABLE_ONTOLOGY
+  syntax: MANCHESTER_LIKE_AND_PARAMETERIZED_CHAIN_NOTATION_WITH_SHORTHAND
+  named_core_displays: 8
+  expression_records: 31
+  selected_commitment_ids: [K03, K08, K12, K13, K15, K18, K28, K31]
+  selected_count: 8
+  paper_license: CC_BY_NC_4_0_ARTICLE_NOTICE
+  hal_cover_license: CC_BY_NC_SA_4_0_COVER_NOTICE
+population:
+  paper_catalog_entries: 71
+  local_machine_classes: null
+  imported_machine_classes: null
+  referenced_machine_classes: null
+  deprecated_machine_classes: null
+  inferred_machine_classes: null
+  source_definition_candidates: null
+  missing_source_definitions: null
+  complete_selected_root_glossary: null
+  paper_terms_are_machine_declarations: false
+foundation:
+  family: null
+  exact_edition: null
+  actual_formal_import: null
+  paper_conceptual_reuse: Dispositions and continuant/occurrent distinctions; OBI specified_output_of relation is borrowed in the paper.
+  related_citations_not_grounding: [BFO, MF, UFO-C]
+  accepted_alignment: false
+checks:
+  - id: Q01
+    selected_commitment_ids: []
+    locator: 'BDI2020:E01,E02,E19,M01,M02; publisher PDF pp.140-141 and 153-154; technical-discovery.json'
+    result: Exact paper identity and retained PDF hash are pinned; no original executable root, namespace, version, class glossary, import closure, file license or foundation edition identified in dated bounded searches.
+  - id: Q02
+    selected_commitment_ids: [K03, K18, K28]
+    locator: 'BDI2020:E04 PDF p.142 TRmin; E11 PDF p.148 Tmin(i); E14 PDF p.151 WISH shorthand'
+    result: TRmin/Tmin differ literally; DEL versus DES and bracket/chain/individual-output notation remain source-level discrepancies. No parser-corrected OWL translation is inferred.
+  - id: Q03
+    selected_commitment_ids: [K03, K08, K15]
+    locator: 'BDI2020:E03,E04 PDF pp.141-142 ONLY/PARTHOOD; E09 PDF pp.146-147 BelO,IntP'
+    result: ONLY limits allowed realization fillers without requiring a realization. PARTHOOD constrains selected maximal realization classes and parts, with per-individual schema and sure-fire/single-track assumptions. An absent realization is not a violated universal filler condition; neither approach supplies a whole-theory equivalence proof.
+  - id: Q04
+    selected_commitment_ids: [K12, K13]
+    locator: 'BDI2020:E07,E09 PDF pp.144-147 Dec and Int-Dec'
+    result: Dec requires at least an occurrent belief part and an occurrent desire part; Int-Dec sends each intention back to some decision process, not every decision forward to an intention. Same-agent/time/distinct-part and decision justification require further conditions.
+  - id: Q05
+    selected_commitment_ids: [K31]
+    locator: 'BDI2020:E12,E13,E15 PDF pp.148-152, weaker Dec and alternative desire theories'
+    result: Action, compound, pleasure and good-based variants are alternatives with explicit source axiom rejections. K31 weakens Dec to a belief-part requirement; combining all variants would misrepresent the author's theory choices.
+  - id: Q06
+    selected_commitment_ids: [K18]
+    locator: 'BDI2020:E07,E10,E11 PDF pp.144-148, optional trigger hypotheses'
+    result: Optional occurrent-belief triggers and minimal-trigger schema do not show actual triggering. Blocking/masking of realization is separate from an executed contradiction or guaranteed action.
+  - id: Q07
+    selected_commitment_ids: [K28]
+    locator: 'BDI2020:E14,E17 PDF pp.150-153, wishful-thinking example'
+    result: Existing wishful-thinking bias, triggered occurrent desire and newly specified belief output are distinct roles. Agent/time precedence and content identity are not formalized by the printed individual-output shorthand.
+  - id: Q08
+    selected_commitment_ids: [K03, K15]
+    locator: 'BDI2020:E03,E04,E09,E12,E18 PDF pp.141-149, identity and mode discussion'
+    result: Categorical basis, minimal trigger, maximal realization and mode parthood are paper-level distinctions. Exact-sum identity versus some-part conditions and executable profile cannot be tested without a selected author root; no parser, reasoner or author experiment is reported as run.
+scenarios:
+  positive: Ada has a belief and a desire relevant to a decision, then forms an intention. Model her decision episode, dated evidence and rationale explicitly while retaining belief/desire as separate antecedent parts.
+  adverse: A hesitant decision process has the two relevant mental parts but produces no intention; reversing Int-Dec would wrongly force an intention. Likewise a disposition with no actual realization does not violate an only-filler restriction.
+  status: CONCEPTUAL_PAPER_LEVEL_NOT_REASONER_PROVED
+decision:
+  disposition: RETAIN_DECISION_ORIGIN_AND_DISPOSITIONAL_DISTINCTIONS_AS_COMPARISON_CANDIDATES_DEFER_MACHINE_ALIGNMENT
+  candidate_model_ids: [CLR-C0004, CLR-C0021, CLR-C0027, CLR-C0042, CLR-C0065, CLR-C0123]
+  accepted_equivalences: []
+  owner_status: OWNER_DECISION_REQUIRED
+  export: 'For #256/#126, acknowledge the prior decision-process/intention lineage and mental-part overlap; test whether a dated conceptual decision with alternatives, evidence and rationale is represented natively, rather than claiming decisions are absent from prior work.'
+execution:
+  paper_source_locator_check: PASS_8_SELECTED_K_IDS
+  fresh_discovery: BOUNDED_NEGATIVE_NO_AUTHOR_ROOT
+  machine_root_parse: NOT_EXECUTED_NO_ROOT
+  complete_machine_glossary: UNKNOWN_NO_ROOT
+  reasoner: NOT_EXECUTED_NO_ROOT
+  author_experiment: NOT_REPRODUCED
+limits:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  scientific_acceptance: NOT_ASSESSED
+  global_absence_claim: false
+  next_issues: [256, 126]

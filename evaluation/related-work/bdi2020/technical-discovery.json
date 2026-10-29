@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "issue": 247,
+  "checked_on": "2026-10-29",
+  "work": "Toyoshima, Barton and Grenier 2020, DOI 10.3233/FAIA200667",
+  "paper_source_sha256": "61279226e453c5d262e39f6d0366c18d73ea535e345279a90c8495f4389b5e95",
+  "prior_search_receipt": "evaluation/related-work/bdi2020/deep-review-discovery.json",
+  "primary_endpoint": {
+    "url": "https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667?download=true",
+    "outcome": "Publisher PDF is indexed and viewable as 15 article pages; not byte-equated with the separately retained 16-page HAL cover-plus-paper copy."
+  },
+  "repository_search": [
+    {
+      "service": "Connected GitHub repository name/description search",
+      "query": "Foundations for an Ontology of Belief Desire Intention",
+      "returned": []
+    },
+    {
+      "service": "Connected GitHub repository name/description search",
+      "query": "Toyoshima Barton Grenier ontology",
+      "returned": []
+    }
+  ],
+  "code_search": [
+    {
+      "query": "\"Foundations for an Ontology of Belief, Desire and Intention\"",
+      "outcome": "Third-party commentary and citations, no identified author formal distribution in the checked results."
+    },
+    {
+      "query": "\"ONLY\" \"PARTHOOD\" \"Int-Dec\" Toyoshima",
+      "outcome": "Clariceptify's own review result only in the checked results."
+    }
+  ],
+  "author_formal_repository": null,
+  "selected_formal_root": null,
+  "formal_version": null,
+  "formal_source_sha256": null,
+  "full_native_class_inventory": null,
+  "global_absence_claim": false,
+  "separate_later_work": "FOSSR BDI2026 #249/#250 is a different work and is not substituted as the 2020 paper's formal source.",
+  "limits": "Finite checked searches and an indexed publisher PDF do not prove that an original executable source does not exist. Without its bytes, no machine declarations, imports, source syntax, license or reasoning results can be assigned."
+}

@@ -419,6 +419,14 @@ discovery_attempts:
     commentary/citation; later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
   limitation: 'HAL current access denied; retained full text available. Machine classes/imports/definitions/license
     and exact foundation edition remain unknown in #247.'
+- id: BDI20-TECH247
+  query: Exact BDI2020 publisher PDF and bounded author repository and code searches
+  method: PRIMARY_PUBLISHER_AND_CONNECTED_GITHUB_REPOSITORY_CODE_SEARCH
+  checked_on: '2026-10-29'
+  checked_urls:
+  - https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667?download=true
+  outcome: Publisher article PDF indexed as 15 pages; finite checked repository queries returned no author-controlled original executable root. See evaluation/related-work/bdi2020/technical-discovery.json.
+  limitation: Search scope does not prove global absence. Machine inventory, root imports, source license and exact upper ontology edition remain unknown.
 - id: BDI26-S01
   query: Exact preprint version, paper-linked FOSSR repository and pinned BDI/alignment/test sources
   method: OFFICIAL_ARXIV_PROJECT_METADATA_AND_CONNECTED_GITHUB_COMMIT_TREE
@@ -1034,9 +1042,10 @@ records:
     - BDI20-G02
     - BDI20-G03
     - BDI20-S01
+    - BDI20-TECH247
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED
+  artifact_state: BOUNDED_TECHNICAL_PAPER_FORMALISM_COMPLETE_AUTHOR_ROOT_NOT_IDENTIFIED
   foundation:
     family: null
     edition: null
@@ -1058,7 +1067,8 @@ records:
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
   next_issues:
-  - 247
+  - 256
+  - 126
   paper_review:
     path: evidence/related-work/deep-reviews/BDI2020/review.yaml
     conceptual_relation_entries: 71
