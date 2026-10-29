@@ -1,0 +1,26 @@
+# CMO: selected third-party root class glossary
+
+Issue #245. Exact mirror SHA256 `290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6`. One complete third-party mirror candidate root; original 2011 author release and imported closure not identified.
+
+The 12 rows below account for every explicit named class declaration: seven local and five external redeclarations. An external declaration is not an acquired import definition. The cited constraints are retained in the structured catalog and full census; comments are paraphrased, not redistributed.
+
+| Class IRI | Local? | Label | Source annotation / paraphrase | Named superclass | N3 locator |
+|---|---|---|---|---|---|
+| http://purl.obolibrary.org/obo/IAO_0000030 | external | none | NO_DEFINITION_IN_SELECTED_MIRROR: No source definition in the selected mirror; external definition not acquired. | none | CMO-db-32f457a.n3 lines 122 |
+| http://purl.org/twc/ontologies/cmo.owl#Quality | yes | Quality | COMMENT_CANDIDATE: Conceptual description of an inherent property or assigned attribute; source intentionally groups those cases. Subclass SKOS Concept only in selected local class axioms; no equivalence or value-filler existential. | http://www.w3.org/2004/02/skos/core#Concept | CMO-db-32f457a.n3 lines 124-128 |
+| http://purl.org/twc/ontologies/cmo.owl#Relation | yes | Relation | COMMENT_CANDIDATE: Conceptual relation between independent entities; SKOS Concept subtype. Endpoint properties are recorded in the property census, not encoded as a mandatory exact-two local class restriction. | http://www.w3.org/2004/02/skos/core#Concept | CMO-db-32f457a.n3 lines 129-133 |
+| http://purl.org/twc/ontologies/cmo.owl#Type | yes | Type | COMMENT_CANDIDATE: Conceptual generalization representing instances; SKOS Concept subtype, not the represented logical class itself. No local equivalence/closure requirement. | http://www.w3.org/2004/02/skos/core#Concept | CMO-db-32f457a.n3 lines 134-138 |
+| http://purl.org/twc/ontologies/cmo.owl#Universal | yes | Universal | COMMENT_CANDIDATE: Real-side entity category, under BFO1.1 IndependentContinuant plus representedBy min0 SKOS Concept. The zero minimum imposes no positive representation witness; philosophical category correspondence remains open. | http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant | CMO-db-32f457a.n3 lines 139-150 |
+| http://purl.org/twc/ontologies/cmo.owl#UniversalClass | yes | Universal Class | COMMENT_CANDIDATE: Realist-side natural grouping, under Universal plus representedBy min0 Type. The label and comment do not establish its extension or require an actual Type witness. | http://purl.org/twc/ontologies/cmo.owl#Universal | CMO-db-32f457a.n3 lines 152-163 |
+| http://purl.org/twc/ontologies/cmo.owl#UniversalQuality | yes | Universal Quality | DESCRIPTIVE_SEEALSO_LITERAL_NO_COMMENT: Real-side quality category according to a descriptive seeAlso literal; rdfs:comment absent. Under Universal plus representedBy min0 Quality. Preserve annotation kind; do not invent a comment or sufficient definition. | http://purl.org/twc/ontologies/cmo.owl#Universal | CMO-db-32f457a.n3 lines 165-174 |
+| http://purl.org/twc/ontologies/cmo.owl#UniversalRelation | yes | Universal Relation | COMMENT_CANDIDATE: Real-side relationship category, under Universal plus representedBy min0 Relation. The zero minimum is not a mandatory conceptual-link constraint. | http://purl.org/twc/ontologies/cmo.owl#Universal | CMO-db-32f457a.n3 lines 176-186 |
+| http://www.ifomis.org/bfo/1.1#Entity | external | none | NO_DEFINITION_IN_SELECTED_MIRROR: No source definition in the selected mirror; external definition not acquired. | none | CMO-db-32f457a.n3 lines 188 |
+| http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant | external | none | NO_DEFINITION_IN_SELECTED_MIRROR: No source definition in the selected mirror; external definition not acquired. | none | CMO-db-32f457a.n3 lines 190 |
+| http://www.w3.org/2002/07/owl#Thing | external | none | NO_DEFINITION_IN_SELECTED_MIRROR: No source definition in the selected mirror; external definition not acquired. | none | CMO-db-32f457a.n3 lines 192 |
+| http://www.w3.org/2004/02/skos/core#Concept | external | none | NO_DEFINITION_IN_SELECTED_MIRROR: No source definition in the selected mirror; external definition not acquired. | http://purl.obolibrary.org/obo/IAO_0000030 | CMO-db-32f457a.n3 lines 194-195 |
+
+Four local Universal-family classes additionally have anonymous representedBy minQualifiedCardinality 0 restrictions; they are fully indexed in [the structured catalog](CMO-class-catalog.yaml) and [the complete mirror census](../deep-reviews/CMO/mirror-census.json). No positive representation witness follows from a zero minimum.
+
+Referenced class IRIs in asserted subclass, domain, range and onClass slots: 8 (4 local; 4 external). Explicit local deprecated markers: 0. Imported-closure, inferred and original-release populations: unknown.
+
+The IAO and SKOS direct imports are unversioned and unresolved. BFO1.1 IRIs are references in this mirror, not a declared BFO import or proof of the original paper edition. Source license is unidentified in the selected file. The [technical review](CMO.md) records eight bounded findings and the decision for #255/#126. No formal import, equivalence, reasoner result or Clariceptify model change is accepted.
