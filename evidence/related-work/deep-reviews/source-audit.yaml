@@ -572,6 +572,18 @@ discovery_attempts:
   receipt: evaluation/related-work/ida/discovery.json
   limitation: Owner-authorized secondary-summary review only,with separately labeled metadata/partial indexed
     caution. No global absence,full reading,figure/formula certification or formal artifact completeness claimed.
+- id: IDA246-TECH
+  method: BOUNDED_PRIMARY_INDEX_AND_PUBLIC_REPOSITORY_DISCOVERY
+  query: Exact Fortier/Kassel2004 author-host PDF open,indexed sections3.1-4.1; GitHub repository DefOnto and Information
+    Discourse Acts ontology Fortier Kassel; code DefOnto ContentBearingObject and hasForSubject Discourse Kassel
+  checked_on: '2026-10-30'
+  checked_urls:
+  - https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  outcome: Checked paper direct open returned502; partial primary indexed prose is visible but formulas are glyph-lossy.
+    No author executable root or version found in checked searches. All formal class counts and imports remain unknown.
+  receipt: evaluation/related-work/ida/technical-discovery.json
+  limitation: Indexed excerpts are not original PDF bytes or complete formal source. Search scope does not establish
+    global source absence; exact formula glyphs and complete root glossary remain open in #246.
 - id: BDI250-S01
   method: Pinned official module plus exact HTTP import retrieval and declared query/semantic harnesses
   query: BDI0.5/bdi-dul import0.3;exact d0/DUL resources;all local classes;18 embedded CQ definitions
@@ -1358,20 +1370,23 @@ records:
     evidence:
     - G06
     - IDA2026LIMITED
+    - IDA246-TECH
     global_absence_claim: false
     paper_correspondence: OWNER_SUMMARY_CONTENT_WITH_SEPARATE_METADATA_CHECKS_NOT_ORIGINAL_FORMAL_FIDELITY
   artifact_state: ORIGINAL_FORMAL_SOURCE_NOT_ACQUIRED
   foundation:
-    family: DOLCE(summary-reported)
+    family: DOLCE
     edition: null
-    relation: SECONDARY_SUMMARY_STATED_GROUNDING
-    basis: REVIEWER_INTERPRETATION
-    locator: OwnerQuickRead I&DAOntologyStructure; summary-receiptSR007,limited-review and citation metadata.
+    relation: PAPER_INDEX_REPORTED_BACKBONE_WITH_DOLCE_LITE_PLUS_ACTION_CITATION
+    basis: PRIMARY_INDEXED_PROSE_WITH_OWNER_SUMMARY
+    locator: >-
+      OwnerQuickRead I&DAOntologyStructure; summary-receiptSR007; indexed original section3.1 and section3.2
+      footnote9; technical issue246.
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Family is reported by the supplied summary; exact DOLCEedition,original grounding axioms,formal
-      imports and source implementation are not verified. OntoClean connection is reported,not an executed
-      assessment.
+    limitations: DOLCE family is also named in indexed original section3.1; footnote9 cites DOLCE-LITE+ for Action.
+      Exact DOLCEedition,original grounding axioms,formal imports and source implementation are not verified.
+      OntoClean connection is reported,not an executed assessment.
   class_coverage:
     state: UNKNOWN_FORMAL_SOURCE_NOT_ACQUIRED
     local_classes: null
@@ -1380,9 +1395,10 @@ records:
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
-    limitations: 29summary-level catalog entries are not released classes. Every machine count and original
-      definition/import population remains unknown. Current bounded84review is complete; optional future primary
-      verification and technical246are separate from its removed PDF gate.
+    limitations: >-
+      29summary-level catalog entries are not released classes. Every machine count and original
+      definition/import population remains unknown. Bounded technical issue246 records eight paper-index leads but
+      remains open for a selected root,complete glossary and exact formulas; issue84's PDF gate remains removed.
   next_issues:
   - 246
   - 256

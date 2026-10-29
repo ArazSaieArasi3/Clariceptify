@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "issue": 246,
+  "checked_on": "2026-10-30",
+  "target": "One original I&DA formal module associated with the Fortier/Kassel 2004 paper",
+  "paper_url": "https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf",
+  "attempts": [
+    {
+      "method": "SEARCH_SERVICE_DIRECT_OPEN",
+      "target": "Original paper PDF at author/workshop host",
+      "outcome": "HTTP_502_IN_CHECKED_OPEN",
+      "limitation": "Search-index excerpts are visible, but exact PDF bytes, figures, formula glyphs, and page count were not acquired. This does not establish persistent unavailability."
+    },
+    {
+      "method": "SEARCH_SERVICE_INDEXED_PRIMARY_EXCERPTS",
+      "queries": [
+        "\"ecai2004-OM-Fortier-Kassel-13.pdf\"",
+        "site:www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf \"ContentBearingObjects\" \"Discourses\"",
+        "site:www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf \"Assertion(x)\" \"True\"",
+        "site:www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf \"hasForSubject\" \"consensual\""
+      ],
+      "outcome": "PARTIAL_INDEXED_PAPER_TEXT_SECTIONS_3_1_TO_4_1",
+      "limitation": "Index rendering corrupts some logical glyphs and does not certify the complete article or an executable ontology. Section-level prose leads only."
+    },
+    {
+      "method": "CONNECTED_GITHUB_REPOSITORY_SEARCH",
+      "queries": ["DefOnto", "Information Discourse Acts ontology Fortier Kassel"],
+      "outcome": "NO_MATCHING_AUTHOR_RELEASE_IN_CHECKED_NAME_DESCRIPTION_RESULTS",
+      "limitation": "Repository name/description search is not an exhaustive code search or proof that no source exists."
+    },
+    {
+      "method": "CONNECTED_GITHUB_CODE_SEARCH",
+      "queries": ["DefOnto ContentBearingObject", "hasForSubject Discourse Kassel"],
+      "outcome": "NO_AUTHOR_FORMAL_MODULE_IN_CHECKED_RESULTS",
+      "limitation": "Results contained Clariceptify's own secondary dossier; private, unindexed or non-GitHub source may exist."
+    }
+  ],
+  "author_formal_repository": null,
+  "selected_source_file": null,
+  "selected_source_sha256": null,
+  "original_paper_sha256": null,
+  "original_executable_class_inventory": null,
+  "global_absence_claim": false,
+  "next_action_if_found": "Pin author/work/version and raw bytes; enumerate all local declarations and direct imports; inspect exact formulas separately before closing #246."
+}
