@@ -99,6 +99,8 @@ jobs:
         run: python tools/check_comparison_batch3.py
       - name: Check IAO, Cognitive Atlas and EFO comparison and model bindings
         run: python tools/check_comparison_batch4.py
+      - name: Check COM, Representation and CMO comparison and model bindings
+        run: python tools/check_comparison_batch5.py
       - name: Check COM paper formalism and unavailable machine root
         run: python tools/check_com243.py
       - name: Check Representation supplement and machine-source boundaries
