@@ -87,3 +87,7 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 ## Cognitive Atlas technical inspection and reading-wave summary - 2026-10-29
 
 [Cognitive Atlas #241](../../evidence/related-work/artifacts/CognitiveAtlas.md) has a complete selected-root class/definition inventory and explicit negative findings. Its1696 local class IRIs are not the2011 paper904 terms. The [descriptive baseline](source-review-descriptives.md) records18 full-paper reviews,one distinct limited-summary review,1376 paper catalog items and351 critical-finding records;these are source-bound extraction units,not unique corpus concepts or all accepted defects. Twelve selected formal roots have separate local/external class and property counts. The deep-reading wave can be summarized now;source-specific technical prerequisites,the remaining comparison batches and final #126 remain open. No Clariceptify scientific artifact or release changes.
+
+## SKOS technical source checkpoint - 2026-10-29
+
+[SKOS #238](../../evidence/related-work/artifacts/SKOS.md) inventories all four named classes and eight selected asserted schema commitments of the pinned W3C RDF root. Its Recommendation-only integrity conditions remain separate from executed triple checks. This source input advances #253; no source-to-model equivalence or ontology change is accepted.
