@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-10-29",
+  "issue": 274,
+  "method": "Three exact URL GET probes with 12-second timeout; no HTML promoted to OWL",
+  "results": [
+    {
+      "url": "http://www.loa-cnr.it/codeps/owl/LMM_Alignments.owl",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_Alignments.owl",
+      "status": 200,
+      "final_url": "http://ontologydesignpatterns.org/index.php/Main_Page",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 34960,
+      "sha256": "3b8e239e070c9505934f79b2a53f5f53b91bb729efc4552ddf324d6e5eee3fa3",
+      "rdf_xml_prefix": false
+    },
+    {
+      "url": "https://www.loa-cnr.it/codeps/owl/LMM_Alignments.owl",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "historical_root_acquired": false,
+  "scope": "Bounded endpoints plus prior #260 discovery; no global absence claim"
+}

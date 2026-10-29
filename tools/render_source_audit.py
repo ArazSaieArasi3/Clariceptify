@@ -63,6 +63,7 @@ def render_audit(audit):
               'The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; '
               'the DUL 78-class glossary has nine absent and two label-only comments; the [IOLite shared glossary](shared-foundations/IOLite/README.md) accounts for all46 local classes with three absent comments. '
               'The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. '
+              '[LMM followup #274](../artifacts/LMM-correspondence.md) separately runs the exact selected closure profile and 13 isolated expectations; historical alignment remains unavailable. '
               'The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.', '',
               'Clariceptify model change: NONE. Final synthesis #126 stays open; later adoption requires the owner decision.', '']
     return '\n'.join(lines)
