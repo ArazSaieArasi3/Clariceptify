@@ -1,0 +1,140 @@
+schema_version: '1.0'
+issue: 248
+task_id: R2-ART-DOLCEMental
+status: BOUNDED_NATIVE_FOL_REVIEW_COMPLETE_WITH_PROOF_LIMITS
+checked_on: '2026-10-30'
+baseline_commit: 46ae169bc98894eeab1c851e80829d2689646440
+paper:
+  work_id: CLR-RW-DOLCEMental
+  title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
+  authors: [Luca Biccheri, Roberta Ferrario, Daniele Porello]
+  year: 2020
+  url: https://www.loa.istc.cnr.it/wp-content/uploads/2020/12/FAIA-330-FAIA200666.pdf
+  sha256: 55f6dc932422c646b04a1defafe176574e4c248fe827c9106dded222cb14f98f
+  reviewed_dossier: evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/review.yaml
+source:
+  owner: Daniele Porello with Luca Biccheri and Roberta Ferrario as acknowledged contributors
+  repository: https://github.com/diporello/DOLCE-mental_states-needs
+  commit: 93734dbe35c931338b3b9aba66b75c250baf6655
+  selected_root: dolce_needs.p
+  blob_sha: 73047de266cd6c1ea684befd1d05b6294ecc5265
+  sha256: 61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc
+  bytes: 15245
+  readme_sha256: cd4c83d31c07be3c0df52882d246961cc00082b26cee83a31c5dbc3458d3ded0
+  readme_date: May 2020
+  relation_to_paper: PAPER_LINKED_DRAFT_NOT_FORMULA_IDENTICAL_TO_PUBLISHED_PAPER
+  language: TPTP_FOF_STYLE_NATIVE_FIRST_ORDER_LOGIC
+  direct_include_statements: 0
+  declared_direct_imports: []
+  unpinned_foundational_closure: DOLCE_AND_DOLCE_CORE_FULL_AXIOMATIZATION_NOT_INCLUDED
+  source_license: NOT_IDENTIFIED_IN_EXACT_TWO_FILE_TREE
+  paper_license: CC_BY_NC_4_0_PAPER_ONLY
+  redistributed: false
+  discovery_receipt: evaluation/related-work/dolce-mental/discovery.json
+population:
+  active_fof_axioms: 58
+  active_fof_conjectures: 12
+  unique_active_formula_names: 62
+  duplicate_name_groups: 4
+  unique_native_predicates: 34
+  unary_predicates: 16
+  binary_predicates: 4
+  ternary_predicates: 14
+  inlined_foundation_predicates: 14
+  local_native_predicates: 20
+  selected_unary_predicates: 16
+  foundation_unary_predicates: 11
+  local_unary_predicates: 5
+  referenced_only_unary_predicates: [intState/1]
+  owl_class_declarations: NOT_APPLICABLE_NATIVE_FOL
+  formal_imported_predicates: 0
+  inferred_predicates: null
+  external_full_dolce_predicates: null
+  native_iri_namespace: null
+  all_selected_root_symbols_accounted_for: true
+evidence:
+  census:
+    path: evaluation/related-work/dolce-mental/technical-census.json
+    sha256: 57a76837a8680920723aafb61131db3f4dd329261692518498ac7d3d22dd43ec
+  glossary:
+    path: evidence/related-work/artifacts/DOLCEMental-symbol-catalog.md
+    sha256: bdb0efeb83c016512ebf6fa68fefdd3d7ce6c98ba29682189ca16c64caf21e80
+  isolated_cases:
+    path: evaluation/related-work/dolce-mental/semantic-cases.json
+    sha256: 2045d920980a6e62318fedae954e0a90179c81e5a9deef03d223525b4deb136a
+foundation:
+  family: DOLCE_AND_DOLCE_CORE
+  edition: null
+  paper_basis: Paper sections 2.3 and 4; DOLCE-CORE and D18 citations.
+  source_basis: File lines 4-5 and 16-88 inline a labeled excerpt, including con/1, pc/3 and cf/3.
+  actual_formal_import: NONE_IN_SELECTED_FILE
+  complete_edition_equivalence: NOT_ESTABLISHED
+  accepted_clariceptify_alignment: false
+checks:
+  - id: Q01
+    source_locators: [L16-L88, L95-L190, L202-L273, L287-L355]
+    paper_locator: 'PDF 7-13 / printed 131-137'
+    result: All 34 active predicate name/arity pairs and 16 unary analogues accounted for; 14 inlined foundation-family and 20 local, with full axiom/conjecture locators. intState appears in active disjointness/test formulas although its positive subtype and attitude projection are commented.
+  - id: Q02
+    source_locators: [L4-L8, L16-L88, L123-L149, L211]
+    paper_locator: 'PDF 6-8 / printed 130-132; notes 16,19,22'
+    result: Selected file embeds a DOLCE-family excerpt but declares no include/import; exact D18/DOLCE-CORE edition or modal background is not pinned. sat/3 has no event guard in its own biconditional. Paper and source are distinct draft/publication artifacts.
+  - id: Q03
+    source_locators: [L102-L106, L123-L149]
+    paper_locator: 'PDF 8-9 / printed 132-133, a4-a6,d1-d3'
+    result: Mental-state agent ownership uses APO participation with cross-time uniqueness. about1 has one content across times, and about2 is routed through classification. The source intObj/2 omits the printed explicit about1 conjunct; no whole-theory equivalence is inferred.
+  - id: Q04
+    source_locators: [L202-L203]
+    paper_locator: 'PDF 10 / printed 134, literal d6'
+    result: Source goal clause is balanced; printed d6 still lacks three closing parentheses. Its compatibility condition ranges over alternatives including the candidate itself; without a classifying satisfier for itself the selected source condition rejects it. This is a source-bound reading, not a repaired paper formula or full-theory test.
+  - id: Q05
+    source_locators: [L234, L267]
+    paper_locator: 'PDF 11-12 / printed 135-136, d8 and d11'
+    result: Two finite isolated truth-table cases show source existential E over the implication/biconditional can differ from the printed existence-of-satisfier operand. A nonsatisfying e2 witnesses the source while paper-level existence condition is false; no full-theory countermodel or causal-necessity proof claimed.
+  - id: Q06
+    source_locators: [L190, L261, L267, L273, L304-L305]
+    paper_locator: 'PDF 12-13 / printed 136-137, d10-d12'
+    result: need1 iff igoal; need2 contains igoal; need3 implies egoal and need0 only. Active author examples of need1/2 without need0 are asserted test fixtures, not separately reproduced models; absolute harm criterion remains absent from selected clause.
+  - id: Q07
+    source_locators: [L187-L211, L234-L273]
+    paper_locator: 'PDF 1-3,13-14 / printed 125-127,137-138, service scenarios'
+    result: A driving-licence goal and service may be described via desire/need0, instrumental goal and satisfier with explicit agents/times. An ascribed need or a typed service alone does not entail achievement, need3, or actual eventhood of a satisfier from these source predicates.
+  - id: Q08
+    source_locators: [L28-L41, L60-L61, L169-L177, L296-L355]
+    paper_locator: 'PDF 7 note15 / printed 131'
+    result: Four repeated FOF-name groups, seven active example axioms, twelve active conjectures and commented alternatives are separated. The line336 unique-desire antecedent includes both des(a9,c11,t) and no desire at all, so its antecedent is false in all isolated finite valuations. Line349 has an E binding/scope issue. No TPTP parser, Darwin/Hets version reproduction, prover run or successful theorem count is claimed.
+findings:
+  - id: DM248-F01
+    claim: Native FOL source and published display are not identical versions.
+    consequence: Keep separate locators and do not substitute the draft for the paper.
+  - id: DM248-F02
+    claim: Local mental-state subtype and role patterns have explicit gaps and guards.
+    consequence: Compare agent/content/time roles with Clariceptify without accepting class equivalence.
+  - id: DM248-F03
+    claim: Source satisfier and instrumental/necessary-goal quantifier scopes limit intended event/causal readings.
+    consequence: Require separate CQs and formal guards before reuse.
+  - id: DM248-F04
+    claim: Duplicate formula names, vacuous unique-desire antecedent and binding questions make author proof comments insufficient evidence.
+    consequence: A single-conjecture cleaned problem and separately pinned foundation are future verification work.
+decision:
+  disposition: RETAIN_AS_PRIOR_OVERLAP_AND_CQ_TEST_CANDIDATE_DEFER_NATIVE_IMPORT_AND_EQUIVALENCE
+  candidate_model_ids: [CLR-C0004, CLR-C0017, CLR-C0021, CLR-C0026, CLR-C0065, CLR-C0123]
+  positive_scenario: An agent wants to drive, considers a licence instrumental, and receives a dated service action; record content, subject, time and evidence without equating service delivery with goal achievement.
+  adverse_scenario: A service is merely proposed for an ascribed need while no citizen goal or qualifying event is established; inferring a satisfied absolute need or a justified conceptual decision from the service label overstates both source and Clariceptify evidence.
+  accepted_equivalences: []
+  owner_decision: PENDING
+  export_to: [256, 126]
+execution:
+  pinned_raw_hash_and_static_census: PASS_LOCAL_PRIVATE_SOURCE
+  isolated_truth_tables: PASS_3_CASES
+  full_tptp_parse: NOT_EXECUTED
+  darwin_1_4_4_hets: NOT_EXECUTED
+  full_foundation_profile: NOT_AVAILABLE
+  published_consistency_reproduction: NOT_PERFORMED
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  independent_scientific_acceptance: NOT_ASSESSED
