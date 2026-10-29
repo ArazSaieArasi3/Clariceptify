@@ -661,26 +661,28 @@ records:
     - R01
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_FILES_TECHNICAL_REVIEW_PENDING
+  artifact_state: SELECTED_2026_03_30_ROOT_TECHNICAL_REVIEW_COMPLETE
   foundation:
     family: BFO; MFO extension
     edition: null
-    relation: PAPER_STATED_GROUNDING
+    relation: PAPER_STATED_GROUNDING; RELEASE_EMBEDDED_BFO_REUSE_WITHOUT_DIRECT_IMPORT
     basis: REVIEWER_INTERPRETATION
     locator: IAO2015/review.yaml D7_grounding; E01/E02/E03/E05/E09
-    artifact_imports: null
+    artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: Exact edition of bundled BFO axioms and 2015-proposal implementation correspondence remain unassessed.
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
+    state: SELECTED_ROOT_COMPLETE_210_LOCAL_56_EXTERNAL
+    local_classes: 210
+    external_redeclared_classes: 56
+    source_definition_candidates: 197
+    missing_source_definitions: 13
+    catalog_path: evaluation/related-work/iao240/census.json
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
   next_issues:
-  - 240
+  - 254
+  - 126
 - id: EFO
   title: Fundamental choices in EFO
   primary_issue: 80
