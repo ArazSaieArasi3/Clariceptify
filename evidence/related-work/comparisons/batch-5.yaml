@@ -1,0 +1,244 @@
+schema_version: '1.0'
+batch_id: R2-CMP-005
+issue: 255
+status: BOUNDED_THREE_SOURCE_COMPARISON_COMPLETE_WITH_UNRESOLVED_SEMANTICS
+as_of: '2026-10-30'
+execution_baseline_commit: 0ab502fdece8677ebddfc8f33bcc89b721306e5e
+execution_commit: RECORDED_IN_MERGED_PR_AND_ISSUE_CLOSURE
+model:
+  release: v0.1.0
+  revision: input-r1-rev1
+  path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  comparison_only: true
+  accepted_equivalences: []
+scope:
+  works: [COM, Representation, CMO]
+  dimensions: [agency_activity, content_expression_referent, episode_decision_rationale, formal_evaluation_limits]
+  matrix_cells: 12
+  synthesis_target: 126
+  utilization_plan: docs/research/review-utilization-plan.md
+  owner_decision: OWNER_DECISION_REQUIRED
+  historical_boundary: 'COM2004 paper without an identified machine root; Representation2025 main and separate publisher supplement without an identified executable root; CMO2011 paper and a third-party mirror of unproven original fidelity are distinct evidence populations.'
+source_columns:
+  COM:
+    paper: {kind: ELEVEN_PAGE_FOIS2004_INSTITUTIONAL_PDF, version: 'Ferrario and Oltramari, FOIS 2004, pp.287-297', sha256: 16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245, review: evidence/related-work/deep-reviews/COM2004/review.yaml}
+    artifact: {kind: BOUNDED_PRINTED_FORMALISM_NO_EXECUTABLE_ROOT, version: null, sha256: null, review: evidence/related-work/artifacts/COM.yaml, source_sha256: 3e9c81e1ce55748958fd1de3e3351432831db09738641b227b406cdec6a928fe, paper_catalog: evidence/related-work/deep-reviews/COM2004/review.yaml}
+    repository: {state: NO_AUTHOR_CONTROLLED_ROOT_IDENTIFIED_IN_BOUNDED_SEARCH, public_repository: null, commit: null, standalone_paper_url: 'https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf', discovery: evaluation/related-work/com243/discovery.json, checked_on: '2026-10-29', global_absence_claim: false}
+    access_license: {paper_access: PUBLIC_INSTITUTIONAL_PDF, paper_license: NOT_ESTABLISHED_FOR_REDISTRIBUTION, machine_file_license: null, raw_redistributed: false}
+    classes: {paper_figure_labels: 50, paper_catalog_entries: 80, local_machine: null, imported_machine: null, referenced_machine: null, deprecated_machine: null, inferred_machine: null, machine_definition_candidates: null, machine_missing_definitions: null, selected_machine_glossary_complete: null, source: evidence/related-work/artifacts/COM.yaml}
+    foundation: {family: DOLCE, paper_claim: CONCEPTUAL_GROUNDING_AND_PREDICATE_REUSE, exact_edition: null, formal_import: null, alignment: NOT_ACCEPTED}
+    execution: {printed_labeled_formulas: 20, selected_formulas: 8, local_boolean_fragments: 2, machine_root_parse: NOT_EXECUTED_NO_ROOT, whole_theory_solver: NOT_EXECUTED}
+  Representation:
+    paper: {kind: SIXTEEN_PAGE_2025_OWNER_PDF, version: 'Applied Ontology 20(2), pp.137-152, 2025', sha256: 16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a, review: evidence/related-work/deep-reviews/CLR-RW-Representation/review.yaml, doi: 10.1177/15705838251337943}
+    artifact: {kind: PUBLISHER_LINKED_TEN_PAGE_SUPPLEMENT_PRINTED_FOL_NO_EXECUTABLE_ROOT, version: 'A-C supplement to the 2025 journal paper', sha256: null, review: evidence/related-work/artifacts/Representation.yaml, source_sha256: 16c1f044582eb6420d2ffebf5e28dea16b48b9dfbe12361df9176909e9e40440, raw_supplement_sha256: null}
+    repository: {state: NO_AUTHOR_EXECUTABLE_ROOT_IDENTIFIED_IN_BOUNDED_SEARCH, public_repository: null, commit: null, standalone_paper_url: 'https://journals.sagepub.com/doi/10.1177/15705838251337943', discovery: evaluation/related-work/representation244/discovery.json, checked_on: '2026-10-30', global_absence_claim: false}
+    access_license: {paper_access: PUBLISHER_RESTRICTED_OWNER_COPY, supplement_access: PUBLISHER_LINKED_PARSED_AND_SELECTED_VISUAL, supplement_license: NON_EXCLUSIVE_REUSE_TERMS_FOR_NON_OPEN_ACCESS_ARTICLE, machine_file_license: null, raw_redistributed: false}
+    classes: {printed_supplement_expressions: 49, tabulated_predicate_signatures: 41, local_machine: null, imported_machine: null, referenced_machine: null, deprecated_machine: null, inferred_machine: null, machine_definition_candidates: null, machine_missing_definitions: null, selected_machine_glossary_complete: null, source: evidence/related-work/artifacts/Representation.yaml}
+    foundation: {family: HOST_AGNOSTIC_WITH_MEREOLOGY, paper_illustrations: [DOLCE, YAMATO], exact_edition: null, formal_import: null, alignment: NOT_ACCEPTED}
+    execution: {selected_printed_formulas: 8, local_finite_ax9_ax15_cases: 4, selected_d11_visual_check: PASS_PUBLISHER_PDF_PAGE_8, full_theory_solver: NOT_EXECUTED}
+  CMO:
+    paper: {kind: NINE_PAGE_ICBO2011_CEUR_PROCEEDINGS_PDF, version: 'McCusker, Luciano and McGuinness, CEUR Vol.833, pp.191-199', sha256: 344fde1855db6b10dbc56d66874543163f75620d8d8b82078bee15db72b1ce49, review: evidence/related-work/deep-reviews/CMO/review.yaml}
+    artifact: {kind: THIRD_PARTY_MIRROR_N3_CANDIDATE, version: null, sha256: 290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6, review: evidence/related-work/artifacts/CMO.yaml, source_sha256: 4fb02ad27b26ca9dc1dfdf3c142664924f765bdab433e643852fd70f0136d7a1, class_catalog: evidence/related-work/artifacts/CMO-class-catalog.yaml}
+    repository: {state: THIRD_PARTY_MIRROR_PINNED_ORIGINAL_AUTHOR_RELEASE_UNKNOWN, public_repository: 'https://github.com/dbpedia/ontology-tracker', commit: 32f457a42b910e39ef087b26f1664bd8d507518b, path: ontologies/purl.org/cmo/v2006/2006-06-30.n3, discovery: evaluation/related-work/cmo/deep-review-discovery.json, checked_on: '2026-10-27', original_purl_result: HTTP_404, paper_mirror_correspondence: NOT_ESTABLISHED, path_date_is_release_date: false, global_absence_claim: false}
+    access_license: {paper_access: PUBLIC_CEUR_PDF, mirror_access: PUBLIC_THIRD_PARTY_SNAPSHOT_AND_OWNER_ARCHIVE, selected_source_license: NOT_IDENTIFIED, raw_redistributed: false}
+    classes: {local_mirror: 7, external_redeclarations: 5, referenced_named: 8, referenced_local: 4, referenced_external: 4, imported_closure: null, deprecated_local: 0, inferred: null, local_comment_candidates: 6, local_descriptive_seeAlso_without_comment: 1, local_missing_descriptive_annotation: 0, original_author_machine_classes: null, selected_mirror_glossary_complete: true, imported_glossary_complete: false, source: evidence/related-work/artifacts/CMO-class-catalog.yaml}
+    foundation: {family: BFO_WITH_IAO_SKOS_REUSE, paper_edition: null, mirror_bfo_namespace_reference: BFO_1_1, mirror_formal_imports: ['http://purl.obolibrary.org/obo/iao.owl', 'http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf'], bfo_formal_import: false, imported_versions_resolved: false, alignment: NOT_ACCEPTED}
+    execution: {explicit_mirror_triples: 147, selected_checks: 8, zero_min_qualified_restrictions: 4, reasoner: NOT_EXECUTED_UNRESOLVED_IMPORTS, paper_query_plot: NOT_REPRODUCED}
+scenario:
+  common: 'Ada at T examines a patient pulse observation E, forms concept K and chooses one interpretation; she records a language expression X with form F and content C using method M. Her conceptual decision D cites evidence V and rationale J, with a subject and perspective. A later physical copy P can realize F without being the concept, content or target E. This is a reviewer-constructed case, not a combined model of the three source theories.'
+  adverse: 'At T2 Ada revises D after learning that E was misidentified; a fictional target may still be expressed. If AdultPerson and MinorPerson concepts share Person as CMO primary anchor, an adult instance is not thereby a minor; a SKOS broader edge does not entail subclass. Two distinct encoding methods for the same F/C pair conflict with the selected Representation Ax9; unrestricted literal COM D1/D4 makes percept classification problematic. These are separate source-level and conceptual countercases, not an executed cross-ontology consistency test.'
+  status: CONCEPTUAL_REVIEW_ONLY
+matrix:
+- id: CMP5-01
+  dimension: agency_activity
+  work: COM
+  paper_locators: ['COM2004:E10 PDF p.7 D9 agent/state/object/time aboutness', 'COM2004:E14 PDF p.9 A5 intentional-agent necessary belief']
+  artifact_locators: ['COM.yaml C04,C08; COM2004 review K11,K20']
+  native_support: 'An intentional agent indexes a mental state and private mental object at a time; belief and desire are relevant kinds of state.'
+  required_specialization: 'Bind Ada to the purposeful conceptualization activity and selected interpretation without equating state/aboutness with the whole episode.'
+  unsupported_inference: 'The aboutness tuple by itself records Ada initiating D, approving a conceptual model or revising her choice.'
+  counterevidence: 'COM already supplies a person-indexed, time-indexed mental pattern; claiming that prior work never models agents in conceptualization would be false.'
+  unknowns: [No author executable root or original import closure; whole COM theory untested]
+  model_ids: [CLR-C0004, CLR-C0026, CLR-C0027, CLR-C0123]
+- id: CMP5-02
+  dimension: agency_activity
+  work: Representation
+  paper_locators: ['CLR-RW-Representation:E19 supplement A PDF pp.2-3 Ax9,D1; binding form/content by method', 'CLR-RW-Representation:E20 supplement A PDF p.7 D10 physical content-realisation']
+  artifact_locators: ['Representation.yaml R01,R02,R07; source.foundation']
+  native_support: 'The theory binds form to content through an encoding method and distinguishes realization by a physical entity; agency is not required by those selected axioms.'
+  required_specialization: 'Record Ada as a conceptualizer, her interpreting activity and perspective at T in a separate, explicitly grounded layer.'
+  unsupported_inference: 'A representation or encoding relation entails a uniquely identifiable deciding agent or intentional episode.'
+  counterevidence: 'The paper explicitly isolates form/content representation without settling every aboutness question; this is useful modularity, not a failure to model its declared target.'
+  unknowns: [Other agency commitments in unselected theory not ruled out; no host-specific executable version]
+  model_ids: [CLR-C0004, CLR-C0026, CLR-C0027, CLR-C0101]
+- id: CMP5-03
+  dimension: agency_activity
+  work: CMO
+  paper_locators: ['CMO:E02 PDF pp.191-192 cognitive/conceptual/logical levels', 'CMO:E06 PDF pp.193-194 concept-versus-instance discussion']
+  artifact_locators: ['CMO.yaml T02,T03; CMO-class-catalog.yaml local Type,Quality,Relation']
+  native_support: 'The paper recognizes a cognitive level and links common conceptual vocabulary to logical models; the mirror declares conceptual classes and representation properties.'
+  required_specialization: 'Represent Ada and her episode explicitly, while keeping a conceptual type distinct from Ada, its instances and the logical field.'
+  unsupported_inference: 'The mirror class Type or one representedBy edge entails an agent performing a dated act of conceptualization.'
+  counterevidence: 'CMO is directly about conceptual modeling and interoperability, not merely an unrelated terminological source.'
+  unknowns: [Original release correspondence and imported IAO/SKOS agency vocabulary unverified]
+  model_ids: [CLR-C0017, CLR-C0026, CLR-C0027]
+- id: CMP5-04
+  dimension: content_expression_referent
+  work: COM
+  paper_locators: ['COM2004:E10 PDF p.7 D9 aboutness tuple', 'COM2004:E11 PDF pp.7-8 D11,D12 belief/desire state conditions']
+  artifact_locators: ['COM.yaml C04-C06; COM2004 review K11,K13,K14']
+  native_support: 'Mental states and their mental objects are distinguished in an agent-indexed aboutness relation.'
+  required_specialization: 'Separate Ada’s concept K, expression X, encoded content C and putative target E; record failed reference without identifying all four.'
+  unsupported_inference: 'An aboutness tuple identifies an external successful referent, a linguistic encoding or evidence of truth.'
+  counterevidence: 'COM offers genuine aboutness and intentional-content prior art; it cannot be dismissed as lacking representation-related content.'
+  unknowns: [Original machine classification and full formal account of external successful reference unknown]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0101]
+- id: CMP5-05
+  dimension: content_expression_referent
+  work: Representation
+  paper_locators: ['CLR-RW-Representation:E19 supplement A PDF pp.2-3 D1,D2 and T1', 'CLR-RW-Representation:E20 supplement A PDF p.7 D10']
+  artifact_locators: ['Representation.yaml R02,R03,R04,R07; Ax9 in R01']
+  native_support: 'A representation has form and content bound by method; OREO projects its existence and physical content-realisation is not the representation.'
+  required_specialization: 'Keep X/F/C/M and P distinct from E and K; add an explicit referential success or failure policy only with host-compatible semantics.'
+  unsupported_inference: 'A content-realising physical copy entails a correct target E, one person’s interpretation or a decision rationale.'
+  counterevidence: 'This theory has stronger form/content/encoding and physical-realisation distinctions than a blanket Clariceptify novelty claim would admit.'
+  unknowns: [Aboutness intentionally bracketed; exact DOLCE/YAMATO host, raw supplement hash and full proof unavailable]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0101]
+- id: CMP5-06
+  dimension: content_expression_referent
+  work: CMO
+  paper_locators: ['CMO:E06-E07 PDF pp.193-195 and Figs.1-2 Type/Quality/Relation/Universal', 'CMO:E09 PDF pp.196-197 Fig.3 vocabulary query']
+  artifact_locators: ['CMO.yaml T01,T02,T04; CMO-class-catalog.yaml Universal and UniversalClass']
+  native_support: 'Conceptual Type, Quality and Relation classes are distinct from realist Universal categories; representedBy/represents connects concepts and entities in the mirror.'
+  required_specialization: 'Preserve K versus represented type versus individual E, qualifier and direction of each proposed reference or model bridge.'
+  unsupported_inference: 'The four minimum-zero restrictions guarantee a concept witness, or a shared anchor guarantees referential identity and class equivalence.'
+  counterevidence: 'CMO directly supplies conceptual-versus-logical and representation bridges, a material overlap with Clariceptify’s concept and representation areas.'
+  unknowns: [FiatEntity and representedByType paper terms absent from selected mirror; original release and imports unresolved]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0101]
+- id: CMP5-07
+  dimension: episode_decision_rationale
+  work: COM
+  paper_locators: ['COM2004:E10-E11 PDF pp.7-8 D9,D11,D12', 'COM2004:E14 PDF p.9 A5']
+  artifact_locators: ['COM.yaml C04-C06,C08; source discovery']
+  native_support: 'Agent/time-indexed mental state, aboutness, belief and desire can supply part of an intentional setting for Ada’s choice.'
+  required_specialization: 'Create a distinct D with alternatives, recorded rationale J, cited evidence V, episode and revision relation at T2; do not reify every belief as a decision.'
+  unsupported_inference: 'Co-participating belief or desire entails a chosen conceptual model, a justification link, or evidence-based revision.'
+  counterevidence: 'COM temporal/agent indexing and mental-state structure already cover parts of the proposed decision context.'
+  unknowns: [No verified full COM executable theory; no whole-theory proof of the D1/D4 issue]
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0123]
+- id: CMP5-08
+  dimension: episode_decision_rationale
+  work: Representation
+  paper_locators: ['CLR-RW-Representation:E19 supplement A PDF p.2 Ax9 and p.3 D2', 'CLR-RW-Representation:E20 supplement A PDF pp.5,7 Ax15,D10']
+  artifact_locators: ['Representation.yaml R01,R03,R06,R07']
+  native_support: 'An explicit encoding method supplies one component of how a selected representation is formed; physical realization and granularity are separately modeled.'
+  required_specialization: 'Tie Ada’s selection of M and F/C to D, source V, rationale J and T/T2; a revision may require a distinct pair under Ax9.'
+  unsupported_inference: 'One encoding method or a physical realization encodes the reason, evidence, deciding episode or later change.'
+  counterevidence: 'Representation’s explicit method parameter already captures part of a choice; the novelty question must concern decision provenance, not mere selection.'
+  unknowns: [No proved compatible host or full formal semantics of decisions in unselected sections]
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0123]
+- id: CMP5-09
+  dimension: episode_decision_rationale
+  work: CMO
+  paper_locators: ['CMO:E04-E05 PDF pp.192-193 three use cases and five requirements', 'CMO:E10-E11 PDF pp.196-198 mapping policy and future work']
+  artifact_locators: ['CMO.yaml T07,T08; CMO-class-catalog.yaml selected root']
+  native_support: 'Task-tailored weak or strict alignments and multiple source models make conceptual mapping choices salient.'
+  required_specialization: 'Record who approved each mapping, which qualifier and context were retained, its evidence, rationale and versioned replacement.'
+  unsupported_inference: 'The paper’s optional mapping rule or candidate mirror class declaration records the actor, authorization and revision history of a mapping.'
+  counterevidence: 'CMO explicitly recognizes mapping-policy flexibility and multi-resource interoperability; these are relevant prior design choices.'
+  unknowns: [Author rule implementation and historical datasets not reproduced; original and imported decision vocabulary unknown]
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0123]
+- id: CMP5-10
+  dimension: formal_evaluation_limits
+  work: COM
+  paper_locators: ['COM2004:E07-E11 PDF pp.6-8 D1,D4,D9,D14', 'COM2004:E14 PDF p.9 A5']
+  artifact_locators: ['COM.yaml C01-C08; evaluation/related-work/com243/discovery.json']
+  native_support: 'Twenty printed formulas and a complete 50-label Figure 1 taxonomy are reviewable; eight selected formulas and two bounded Boolean fragments are inspected.'
+  required_specialization: 'Recover author-controlled executable root and exact DOLCE edition/import policy before any formal alignment, then test literal D1/D4 and D14 spelling.'
+  unsupported_inference: 'Two Boolean fragments establish whole-theory inconsistency, an OWL class census or a DOLCE version.'
+  counterevidence: 'D9 agent-indexed aboutness remains a substantive paper formula despite the unexecuted machine theory and local formula concerns.'
+  unknowns: [Author root, machine syntax/license, local/imported/referenced/deprecated classes and reasoner result null]
+  model_ids: [CLR-C0004, CLR-C0017, CLR-C0123]
+- id: CMP5-11
+  dimension: formal_evaluation_limits
+  work: Representation
+  paper_locators: ['CLR-RW-Representation:E19-E21 supplement A-C PDF pp.2-8 Ax9,Ax15,D11', 'CLR-RW-Representation:E01 PDF p.1 abstract']
+  artifact_locators: ['Representation.yaml R01,R06,R08; evaluation/related-work/representation244/discovery.json']
+  native_support: 'Forty-nine printed expressions and 41 signatures are indexed, and four finite Ax9/Ax15 cases plus selected publisher-page D11 visual inspection are reproducible bounded observations.'
+  required_specialization: 'Pin raw supplement bytes and author executable host/proof obligations before importing formal claims or checking UFO correspondence.'
+  unsupported_inference: 'Finite local cases or D11’s free f certify a whole-theory inconsistency, all glyphs, or a reproduced proof of T1/T2.'
+  counterevidence: 'The printed theory is detailed and the author discusses varied realization cases; negative access results do not imply no formal contribution.'
+  unknowns: [Supplement raw hash, author root and license, machine class/import population, exact host edition and theorem proof null]
+  model_ids: [CLR-C0047, CLR-C0057, CLR-C0101]
+- id: CMP5-12
+  dimension: formal_evaluation_limits
+  work: CMO
+  paper_locators: ['CMO:E06-E10 PDF pp.193-197 Figs.1-6 and evaluation', 'CMO:E11 PDF p.198 differing granularity limitation']
+  artifact_locators: ['CMO.yaml T01-T08; CMO-class-catalog.yaml 12 declarations; CMO mirror census']
+  native_support: 'One 147-triple third-party mirror has a complete selected seven-local/five-external class census and two declared unversioned direct imports; three paper use cases, query plot and mapping rules are inspectable as claims.'
+  required_specialization: 'Resolve original source/import identity, qualifier and rule policy; run guarded mapping and noninterference tests before accepting a bridge.'
+  unsupported_inference: 'The mirror is a verified original release, its v2006 path is a release date, or shared anchors logically entail instance retyping/subclass.'
+  counterevidence: 'Seven local classes, 14 local properties and a concrete conceptual-modeling bridge survive the historical correspondence gap; this prior coverage must inform synthesis.'
+  unknowns: [Original author release and fidelity; imported closure, license, exact BFO paper edition, historical query and rule results null]
+  model_ids: [CLR-C0017, CLR-C0021, CLR-C0026, CLR-C0101]
+candidate_mappings:
+- id: M01
+  question: 'Can the existing conceptual decision and conceptualization IDs record Ada/T/T2, alternatives, cited evidence and rationale while respecting COM’s agent/time overlap?'
+  model_ids: [CLR-C0004, CLR-C0021, CLR-C0026, CLR-C0027, CLR-C0042, CLR-C0065, CLR-C0123]
+  supporting_cells: [CMP5-01, CMP5-07, CMP5-08, CMP5-09]
+  contrary_cells: [CMP5-01, CMP5-07]
+  candidate_action: TEST_EXISTING_MODEL_RELATIONS_BEFORE_NEW_CLASS
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+- id: M02
+  question: 'How should K/X/F/C/E/P and successful versus intended reference remain distinct under COM aboutness, Representation encoding/realization and CMO conceptual-versus-real categories?'
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0062, CLR-C0101]
+  supporting_cells: [CMP5-04, CMP5-05, CMP5-06]
+  contrary_cells: [CMP5-04, CMP5-05, CMP5-06]
+  candidate_action: DEFINE_DIRECTION_AND_IDENTITY_GUARDS_BEFORE_ALIGNMENT
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+- id: M03
+  question: 'Can a mapping-policy record preserve qualifiers, identity and approved inference direction, blocking shared-primary-anchor retyping and conceptual-broader-to-subclass shortcuts?'
+  model_ids: [CLR-C0017, CLR-C0021, CLR-C0042, CLR-C0065]
+  supporting_cells: [CMP5-03, CMP5-06, CMP5-09, CMP5-12]
+  contrary_cells: [CMP5-06, CMP5-12]
+  candidate_action: EVALUATE_GUARDED_CMO_BRIDGE_WITH_ADVERSE_CASE
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+- id: M04
+  question: 'Does a revision from T to T2 require a new decision/content pair, scoped evidence and validity interval, and can the existing model express it without importing incompatible foundation assumptions?'
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0047, CLR-C0065, CLR-C0123]
+  supporting_cells: [CMP5-07, CMP5-08, CMP5-09]
+  contrary_cells: [CMP5-08, CMP5-10, CMP5-11, CMP5-12]
+  candidate_action: TEST_TWO_DECISIONS_TWO_TIMES_AND_CONTRARY_EVIDENCE
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+synthesis_export:
+  target_issue: 126
+  supported_partial_finding: 'COM contributes agent/time-indexed mental aboutness; Representation contributes form/content/method and physical-realisation distinctions; CMO contributes conceptual/logical model and shared-vocabulary bridges. These overlaps are substantial and cannot be erased in a novelty claim.'
+  qualified_candidate_gap: 'Within these exact selected papers and available artifacts, a native, tested, single record joining Ada’s dated/revisable conceptual decision, an explicitly intended or successful referent, cited evidence V, rationale J and guarded source-model bridge was not established. This is a bounded integration hypothesis, not a universal absence or a proof that Clariceptify already satisfies it.'
+  contrary_evidence: 'COM already indexes mental states to an intentional agent and time; Representation explicitly binds content and form by method; CMO intentionally models conceptual knowledge, shared vocabulary and mapping policy. The missing original/formal versions limit every stronger conclusion.'
+  discovery_questions:
+    - {id: CMP5-Q01, related_gap_ids: [G01, G05], result: COM_AGENT_TIME_OVERLAP_AND_UNESTABLISHED_DECISION_PROVENANCE, test: Two agents and two times choose alternative concepts with distinct reasons and source evidence}
+    - {id: CMP5-Q02, related_gap_ids: [G02], result: REPRESENTATION_FORM_CONTENT_AND_CMO_REFERENCE_OVERLAP_WITH_NO_COMBINED_SUCCESS_POLICY, test: Express a mistaken or fictional target without collapsing content into observed entity}
+    - {id: CMP5-Q03, related_gap_ids: [G03], result: CMO_MAPPING_POLICY_NEEDS_QUALIFIER_IDENTITY_GUARDS, test: AdultPerson/MinorPerson share Person anchor while preserving competing interpretations and incompatible instance membership}
+    - {id: CMP5-Q04, related_gap_ids: [G04, G05], result: REVISION_VALIDITY_AND_EVIDENCE_LINK_NOT_ESTABLISHED_IN_THESE_SELECTED_SOURCES, test: Late recording at T2 of a changed decision valid at T1}
+  unresolved:
+    - Original COM executable root and DOLCE edition
+    - Representation host, formal bytes and proofs
+    - Original CMO release and IAO/SKOS import closure
+    - Other batches 252 and 256 plus O4OA 91
+    - Cross-source compatibility and independent expert validation
+  next_action: 'Integrate this four-dimension result with the remaining bounded batches under #126; do not add a class/domain/import until owner decision #129 with CQs, contrary evidence and scenario tests.'
+limits:
+  no_corpus_wide_novelty_claim: true
+  no_formal_equivalence: true
+  raw_external_sources_redistributed: false
+  semantic_acceptance: NOT_ASSESSED
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
