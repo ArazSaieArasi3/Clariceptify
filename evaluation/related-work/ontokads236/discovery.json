@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "issue": 236,
+  "checked_on": "2026-10-29",
+  "retained_paper_sha256": "040ad09c7efc2b988fdb0720c9ed580bce1778fa6494cdb484d827359d95026b",
+  "previous_repository_search": "source-audit.yaml#G01: connected GitHub repository name/description query OntoKADS, six-result limit, zero returned on 2026-10-26",
+  "checks": [
+    {
+      "id": "P01",
+      "method": "PRIMARY_PAPER_AND_AUTHOR_LINK_REVIEW",
+      "endpoint": "https://arxiv.org/abs/cs/0505081",
+      "outcome": "Primary metadata establishes the authors and May 2005 paper. The reviewed PDF and its OntoSpec/TERMINAE project descriptions provide no immutable machine ontology version or download link; no file/version inferred from author affiliation."
+    },
+    {
+      "id": "W01",
+      "method": "PUBLIC_WEB_SEARCH",
+      "queries": ["OntoKADS ontology OWL file Bruaux Kassel Morel LaRIA 2005", "OntoKADS ontology download owl GitHub Kassel Bruaux OntoSpec", "OntoKADS ontology OWL site:laria.u-picardie.fr", "OntoKADS filetype:owl OR filetype:rdf OR filetype:daml"],
+      "outcome": "Checked returned paper/bibliographic and unrelated ontology results; no author-controlled OntoKADS OWL/RDF root was identified within these queries. Search-index coverage is limited."
+    },
+    {
+      "id": "G01",
+      "method": "GITHUB_PUBLIC_CODE_SEARCH",
+      "endpoint": "https://api.github.com/search/code?q=OntoKADS+extension%3Aowl",
+      "reported_total_count": 0,
+      "incomplete_results": false,
+      "outcome": "No matching indexed public OWL code result for this query; this does not cover private, unindexed or other-format sources."
+    },
+    {
+      "id": "G02",
+      "method": "GITHUB_PUBLIC_CODE_SEARCH",
+      "endpoint": "https://api.github.com/search/code?q=%22OntoKADS%22",
+      "reported_total_count": 46,
+      "first_page_examples": ["davidar/dblp.yaml/conf/f-ic.bib", "ArazSaieArasi3/Clariceptify/evidence/related-work/deep-reviews/OntoKADS2005/report.md"],
+      "outcome": "The visible first page contains bibliography, paper mentions and this project's review; a keyword code hit is neither an author-controlled release nor exact ontology bytes. Remaining result pages were not inspected."
+    },
+    {
+      "id": "N01",
+      "method": "PROJECT_DOCUMENTATION_LINK_CHECK",
+      "endpoint": "https://neurolog.i3s.unice.fr/public_namespace/softwares",
+      "outcome": "NeuroLOG project software list names OntoKADS as a LARIA component but provides no download hyperlink for that name. Later project metadata is not the May 2005 formal distribution."
+    },
+    {
+      "id": "C01",
+      "method": "DISTINCT_PRECURSOR_CHECK",
+      "endpoint": "https://ceur-ws.org/Vol-118/paper6.pdf",
+      "outcome": "2004 Bruaux/Kassel workshop paper describes the method and foundational family; it is a distinct text, not a version-pinned executable root for the 2005 Bruaux/Kassel/Morel report."
+    }
+  ],
+  "author_controlled_machine_root_identified": false,
+  "repository_state": "NOT_IDENTIFIED_IN_BOUNDED_SEARCH",
+  "formal_artifact_state": "NOT_IDENTIFIED",
+  "global_absence_claim": false,
+  "limits": "No source bytes beyond the already retained exact paper were pinned. Missing root means machine syntax, license, imports, class/property counts, full glossary, consistency and source-to-artifact parity are unknown, not zero or false."
+}

@@ -8,7 +8,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 
 | Exact source | Repository / public files | Foundation and relation | Local glossary | Next issue |
 |---|---|---|---|---|
-| OntoKADS2005 (#74) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #236 |
+| OntoKADS2005 (#74) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; NOT_IDENTIFIED_IN_BOUNDED_DISCOVERY_2026_10_29 | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | NOT_EXECUTABLE_NO_FORMAL_ROOT_IDENTIFIED | #252, #126 |
 | IAO2015 (#78) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/information-artifact-ontology/IAO); PINNED_FILES_TECHNICAL_REVIEW_PENDING | BFO; MFO extension; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #240 |
 | EFO (#80) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | EFO; INDEPENDENT_FOUNDATION; edition: UNKNOWN | PENDING_FULL_CATALOG | #242 |
 | cDnS2007 (#259) | STANDALONE_FORMAL_FILE_REPOSITORY_NOT_IDENTIFIED; CORE267_PROFILE_FAIL_REASONER_REFUSED_SELECTED_CLASS_INVENTORY_COMPLETE | Foundation-neutral constructive framework; PAPER_STATED_GROUNDING; edition: UNKNOWN | [12 classes](cDnS2007/classes.md); 12 comment candidates; 0 missing | #263, #251, #126 |
@@ -499,10 +499,24 @@ Selected sources match prior pinned digests.1696 local classes,1232 nonempty def
 
 Limit: No raw original OWL/source redistribution,unpickling,author generator execution,historical2011 equivalence,independent expert acceptance or ontology adoption.
 
+### ONTOKADS236-S01: PRIMARY_PAPER_AUTHOR_PROJECT_LINKS_WEB_AND_GITHUB_CODE_SEARCH
+
+Query: `OntoKADS OWL/RDF Bruaux Kassel Morel LaRIA; exact public GitHub code query and OWL extension`. Checked: 2026-10-29.
+
+- https://arxiv.org/abs/cs/0505081
+- https://api.github.com/search/code?q=OntoKADS+extension%3Aowl
+- https://api.github.com/search/code?q=%22OntoKADS%22
+- https://neurolog.i3s.unice.fr/public_namespace/softwares
+- https://ceur-ws.org/Vol-118/paper6.pdf
+
+The paper and later project listing identify the work but no downloadable author-controlled formal root. The exact public OWL code query returns zero indexed hits; generic code search returns 46 mentions, with bibliographic/review examples on the visible first page. Eight paper formulas inspected, no machine class count, source edition, imports, license or reasoner result inferred.
+
+Limit: Bounded endpoints and indexed/public search only; no global absence or semantic result.
+
 ## Interpretation and next work
 
 All-local-class glossaries account for every declared class in their selected module boundary. Comment candidates are not automatically sufficient logical definitions. Missing definitions stay visible; imported definitions remain separate. Read the [mandatory catalogue contract](catalog-contract.yaml) and [coverage guide](coverage-guide.md) before interpreting completion.
 
-For LMM, 29 local classes have been catalogued; four lack source definition comments. The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; the DUL 78-class glossary has nine absent and two label-only comments; the [IOLite shared glossary](shared-foundations/IOLite/README.md) accounts for all46 local classes with three absent comments. The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. [LMM followup #274](../artifacts/LMM-correspondence.md) separately runs the exact selected closure profile and 13 isolated expectations; historical alignment remains unavailable. The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.
+For LMM, 29 local classes have been catalogued; four lack source definition comments. The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; the DUL 78-class glossary has nine absent and two label-only comments; the [IOLite shared glossary](shared-foundations/IOLite/README.md) accounts for all46 local classes with three absent comments. The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. [LMM followup #274](../artifacts/LMM-correspondence.md) separately runs the exact selected closure profile and 13 isolated expectations; historical alignment remains unavailable. [OntoKADS followup #236](../artifacts/OntoKADS.md) records bounded unsuccessful formal-root discovery and eight paper formulas; machine class counts and imports remain unknown, with no reasoner execution. The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.
 
 Clariceptify model change: NONE. Final synthesis #126 stays open; later adoption requires the owner decision.
