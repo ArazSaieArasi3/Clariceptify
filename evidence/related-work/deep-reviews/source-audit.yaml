@@ -480,6 +480,18 @@ discovery_attempts:
   checked_urls:
   - https://journals.sagepub.com/doi/10.1177/15705838251337943
   - https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+- id: REP2025-TECH-20261030
+  checked_on: '2026-10-30'
+  method: Publisher-linked PDF selected visual inspection and bounded connected public repository/code search
+  query: 'An Ontology of Representation Mizoguchi Borgo; ENCODINGVIA REPRESENTATREL'
+  outcome: 'Publisher supplement PDF p.8 visually verifies D11 free f in selected formula. No author-controlled
+    executable root identified within checked results; raw supplement SHA and all machine populations unknown.
+    Receipt: evaluation/related-work/representation244/discovery.json.'
+  limitation: One selected visual page is not all-glyph certification or byte-retained PDF identity; search result
+    limits do not establish global nonexistence or theorem validity.
+  checked_urls:
+  - https://journals.sagepub.com/doi/10.1177/15705838251337943
+  - https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
 - id: DUL2016-DISC-20261028
   checked_on: '2026-10-28'
   method: Exact paper URLs, canonical DUL bytes, two sample patterns, official LOA link and related repository
@@ -1290,7 +1302,7 @@ records:
 - id: CLR-RW-Representation
   title: An Ontology of Representation
   primary_issue: 82
-  source_state: DEEP_PAPER_REVIEW_COMPLETE_SUPPLEMENT_RAW_AND_ARTIFACT_OPEN
+  source_state: DEEP_PAPER_REVIEW_COMPLETE_SUPPLEMENT_RAW_UNPINNED
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
     urls:
@@ -1299,9 +1311,10 @@ records:
     evidence:
     - G05
     - REP2025-DISC-20261028
+    - REP2025-TECH-20261030
     global_absence_claim: false
     paper_correspondence: PRINTED_SUPPLEMENT_FOUND_NOT_EXECUTABLE_REPOSITORY
-  artifact_state: PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED
+  artifact_state: BOUNDED_PUBLISHER_SUPPLEMENT_FORMALISM_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT
   foundation:
     family: DOLCE and YAMATO (illustrative hosts)
     edition: null
@@ -1313,15 +1326,22 @@ records:
     limitations: Host must supply semiabstracts, mereology, patterns and satisfaction; no exact imported family
       edition or executable alignment established.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: COMPLETE_PAPER_FORMULA_AND_SIGNATURE_LEDGER_MACHINE_GLOSSARY_UNKNOWN
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+  technical_followup:
+    issue: 244
+    status: BOUNDED_PUBLISHER_SUPPLEMENT_FORMALISM_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT
+    evidence: evidence/related-work/artifacts/Representation.yaml
+    discovery: evaluation/related-work/representation244/discovery.json
+    limitation: Selected D11 visual check only; raw PDF SHA, exact machine class/import/glossary and theorem proof unknown.
   next_issues:
-  - 244
+  - 255
+  - 126
 - id: CLR-RW-IDA
   title: 'Managing Knowledge at the Information Level: an Ontological Approach'
   primary_issue: 84
