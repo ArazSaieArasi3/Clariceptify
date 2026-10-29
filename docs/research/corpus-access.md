@@ -16,6 +16,8 @@ The [O4OA2023 dossier](../../evidence/related-work/deep-reviews/CLR-RW-O4OA/repo
 
 The [Needs and Intentionality2020 dossier](../../evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/report.md), #86, completes all 15 pages, one figure, 18 labeled displays, 23 notes and 35 references. The owner PDF matches the actually fetched laboratory PDF. The linked May2020 draft FOL file differs in selected guards and quantifier scopes; consistency claims are author-reported. Full native-symbol definitions and proof/profile/version work remain #248; comparison #256 and synthesis #126 stay open. The distinct cDnS2008 journal work #263 is now complete; the full-paper queue is now complete.
 
+[DOLCE Mental technical #248](../../evidence/related-work/artifacts/DOLCEMental.md) now accounts for the full selected native root: 34 predicate name/arity pairs, all 16 unary class analogues, 58 active axioms, 12 conjectures and four duplicate-name groups. The [structured authority](../../evidence/related-work/artifacts/DOLCEMental.yaml), [complete symbol glossary](../../evidence/related-work/artifacts/DOLCEMental-symbol-catalog.md) and isolated truth tables preserve paper/draft differences. The selected FOL file has no include directive; DOLCE edition/full closure, source-file license and author Darwin/Hets proof reproduction remain unknown. This is bounded #256/#126 input, not OWL class equivalence or a Clariceptify release change.
+
 | Recent full-paper review | Primary issue | Current status |
 |---|---|---|
 | Norms and plans as unification criteria for social collectives | #263 | Complete 43-page journal review; selected 51-class glossary complete, technical #267 open |
