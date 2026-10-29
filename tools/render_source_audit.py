@@ -29,7 +29,8 @@ def render_audit(audit):
         coverage = c['state']
         if c['catalog_path']:
             relative = posixpath.relpath(c['catalog_path'], 'evidence/related-work/deep-reviews').replace('.yaml', '.md')
-            coverage = f"[{c['local_classes']} classes]({relative}); {c['source_definition_candidates']} comment candidates; {c['missing_source_definitions']} missing"
+            noun = 'source definitions' if row['id'] == 'IAO2015' else 'comment candidates'
+            coverage = f"[{c['local_classes']} classes]({relative}); {c['source_definition_candidates']} {noun}; {c['missing_source_definitions']} missing"
         cells = [f"{row['id']} (#{row['primary_issue']})", repo['state'] + ('; ' + repos if repos else '') + '; ' + row['artifact_state'],
                  cell(f['family']) + '; ' + f['relation'] + '; edition: ' + cell(f['edition']), coverage,
                  ', '.join('#' + str(n) for n in row['next_issues'])]
