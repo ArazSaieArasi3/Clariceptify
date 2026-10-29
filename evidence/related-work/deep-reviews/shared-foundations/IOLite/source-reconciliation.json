@@ -1,0 +1,1771 @@
+{
+  "generator": {
+    "path": "tools/inspect_iolite_source.py",
+    "sha256": "6aad12634861445c1c4b3561079e3e5fe4846e250e62167c48808927778868c1"
+  },
+  "modules": [
+    {
+      "asserted_closure_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "declared_import_iris": [],
+      "external_redeclaration_iris": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "id": "DUL",
+      "inferred_class_count": null,
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution"
+      ],
+      "namespace": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+      "resolved_closure_modules": [
+        "DUL"
+      ],
+      "source_sha256": "e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66"
+    },
+    {
+      "asserted_closure_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "declared_import_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+      ],
+      "external_redeclaration_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "id": "IOLite",
+      "inferred_class_count": null,
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing"
+      ],
+      "namespace": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#",
+      "resolved_closure_modules": [
+        "DUL",
+        "IOLite"
+      ],
+      "source_sha256": "15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f"
+    },
+    {
+      "asserted_closure_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "declared_import_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl"
+      ],
+      "external_redeclaration_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "id": "LMM_L1",
+      "inferred_class_count": null,
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+      ],
+      "namespace": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#",
+      "resolved_closure_modules": [
+        "DUL",
+        "IOLite",
+        "LMM_L1"
+      ],
+      "source_sha256": "955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb"
+    },
+    {
+      "asserted_closure_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "declared_import_iris": [
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl"
+      ],
+      "external_redeclaration_iris": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "id": "LMM_L2",
+      "inferred_class_count": null,
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext",
+        "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule"
+      ],
+      "namespace": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#",
+      "resolved_closure_modules": [
+        "DUL",
+        "IOLite",
+        "LMM_L1",
+        "LMM_L2"
+      ],
+      "source_sha256": "512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240"
+    }
+  ],
+  "parser": {
+    "name": "rdflib",
+    "version": "7.6.0"
+  },
+  "populations": {
+    "anonymous_class_declarations": 3,
+    "anonymous_restrictions": 40,
+    "builtin_class_position_iris": [
+      "http://www.w3.org/2002/07/owl#Thing"
+    ],
+    "deprecated_named_classes": [],
+    "external_redeclarations": [
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+      "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
+      "http://www.w3.org/2002/07/owl#Thing"
+    ],
+    "local_named_classes": [
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+      "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing"
+    ],
+    "named_rdfs_class_declarations": [],
+    "referenced_undeclared_nonbuiltin_classes": []
+  },
+  "reasoner_execution": "NOT_EXECUTED",
+  "rows": [
+    {
+      "annotation_records": [
+        {
+          "characters": 58,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "80da38bc3604c4d615c7cc0948edf6ad594c855291b1c45d059df707789464ac"
+        }
+      ],
+      "annotation_sha256": "ce4cb3d2202bdf83adb67d0e43d49f3b24001f30af7c383c29503d06e19d34e1",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion",
+      "label": "Bodily motion",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 83,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "0154446d7f9a3bc85d6ded93c2e4bbbce7a2089902828552268a13f66ce70416"
+        }
+      ],
+      "annotation_sha256": "6dab25d6ce9f9aa9870aa0665033e95c68642dc2fb15021c45c07fc2e5bc6b29",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code",
+      "label": "Code",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 298,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "b896327e757a3c5b08cf86e09fc4e351262aafefcb0e00bae819b40d0c4f3dd5"
+        }
+      ],
+      "annotation_sha256": "9f25c2d1bcd03e5ad07e3071ac77d6ffdce5f79661ef9fb5ccb7c1d281cc68b2",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction",
+      "label": "Communicative function",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 22,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "4f90fe5fb1197f258c346b2f2d25d5205210ecfdc49ce83c83e8a4b882aa2cd7"
+        }
+      ],
+      "annotation_sha256": "7f81b2bf8d024cc802b5aad28874db1aa8f91446ae7fa43b010a268c2e4045b5",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText",
+      "label": "Contract text",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 58,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "923f8438973b1389a3b985a4fba82cc94e1210a992ca2b469d181be69bf81e23"
+        }
+      ],
+      "annotation_sha256": "7edc8d0121c21468cef8a1d79e0519e87bb8a16c0ebbaef4da9f33bb1b810466",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema",
+      "label": "Database schema",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 95,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "95c338be5c9fd9d5982709a380e336e7d9039c8c3fc07816053a1385008228f0"
+        }
+      ],
+      "annotation_sha256": "6470ca122fc393da6f2d474a99aa5da4204d0304227a9be24f50fa84ef0e0445",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure",
+      "label": "Data structure",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 83,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "4b8ac9a9e7298e85b52d8c195fe01626d8c5526713c8e02e2d4212e71b0fe555"
+        }
+      ],
+      "annotation_sha256": "d0ba310c1bb441973a789d84ea386be93333dad9df11487b85c2b30dd4c35d58",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum",
+      "label": "Datum",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 339,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "44b613f388b2536c8c3719862b672b5fabffdaaa404ece50efe3263348e676d9"
+        }
+      ],
+      "annotation_sha256": "c5e180ab8e77835f25a815cd8bebd5eafe41d54d0945ebf0ff6d8c0fb6522a52",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction",
+      "label": "Depiction",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"
+      ]
+    },
+    {
+      "annotation_records": [],
+      "annotation_sha256": null,
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto",
+      "label": "Digital photo",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 159,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "cdd9e8da8b8b47e021ab717f55fcb420d9a92d58522a69da79b14acd36812bc6"
+        }
+      ],
+      "annotation_sha256": "5bae1210af629ad8e7fa42e2c0237066d7177ac3b96d78925f95332eba92c3fc",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+      "label": "Digital resource",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 174,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "123e91fbf7beca8e037ad70cd55d22438a42fc1a5bd9f28f48cc89835d4fd4fa"
+        }
+      ],
+      "annotation_sha256": "c414a4cf4ba2cb3144da8e5a74ec13589510fa78fcb78ccc0e46b852b5d7d030",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing",
+      "label": "Drawing",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 159,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "3cb45e161b1922575ed1908d7218fc0ef1d88b96ffe89bb95c15cd8efaa18ed2"
+        }
+      ],
+      "annotation_sha256": "c52c8930cec4eea5142251856f92cdfbb25a846492c3ef7ed0d7dc5085230179",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression",
+      "label": "Formal expression",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 267,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "93b339caf5b5bf5e9eb83388bb45fbb7ca4463ec181cd62d63a410e605ec2cd1"
+        }
+      ],
+      "annotation_sha256": "07038c65da422690f5c3181d9ed911dae384a1e8af230e248909078308c04cde",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage",
+      "label": "Formal language",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language"
+      ]
+    },
+    {
+      "annotation_records": [],
+      "annotation_sha256": null,
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture",
+      "label": "Gesture",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 521,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "22dedcc6bb060c578b7988af2d784802360f29a51eaa1102e9550937558ff4d4"
+        }
+      ],
+      "annotation_sha256": "1991ace05640b7f03fc058e419907b91be3f0e79e896b345818075b384280f4e",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme",
+      "label": "Grapheme",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 55,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "57fb4874c677559325f92b5361cd6ffeec9a3311c3fcd2b97a0e8a65fdc84b79"
+        }
+      ],
+      "annotation_sha256": "c53e6b8c47c3d97b999f20693758245085b15a466750c33ae8968bb79bfd4bfe",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt",
+      "label": "Graphic art",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 89,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "474082d527eb9029638a453b4cef4bace5add3267aa3937d0be3107265a7f89e"
+        }
+      ],
+      "annotation_sha256": "477473e74c3468331fc9f8e59a5736e7a9e6b2cd0a915bda093de5a541b0bb42",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage",
+      "label": "Iconic language",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 54,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "6266ff72dbcd0dacdb03a9d28528aee738a2a7f943dd95c3892b6534dcc35e9e"
+        }
+      ],
+      "annotation_sha256": "244a22280fb4ba309bbe17d92a9dfe7825293a98929e03bb45ba886c00ced385",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject",
+      "label": "Iconic object",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 106,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "20ca301a5b68a069c6956ed986b00ccf9330e7b45cd1142d1ffcf743111ea075"
+        }
+      ],
+      "annotation_sha256": "81fa66df638e655b12ba8e3cd44981150c9c774f9e9fecd791ffb045b5f8de1f",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS",
+      "label": "Knowledge organization system",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 819,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "e745d2e3e30579e201be7a2a1192eb659f8af85ed36895140372a8c6c588dbb4"
+        }
+      ],
+      "annotation_sha256": "37014bb63c232c10a3ad857b79c49fa9011ac4444f510b266e2fcf9fcbf13eb3",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language",
+      "label": "Language",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 96,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "9c88b6ee5c52eb2a009eeef7d26c2d759ebe57ec6dd4a8be12bf7d38a2cb79fe"
+        }
+      ],
+      "annotation_sha256": "aae3839e74563f7fa648cab9944b448ffa78ea33465d0b14dd8d61d038195cf8",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme",
+      "label": "Lexeme",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 102,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "9e6e018780dadccf4563586715b6c3738fcec12f55a9419c3327f947fa0a686e"
+        }
+      ],
+      "annotation_sha256": "83905d09de1e8c71143485576cfe23e8fa52aff862784d325efc446bb907ab35",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon",
+      "label": "Lexicon",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 258,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "aaf21006ec0c50d2959f4f4ea3a3c23472219f7fc16470cb1975117e418cf594"
+        }
+      ],
+      "annotation_sha256": "7910fae7244bfb528c15d71bf29427885a741846de13f241f3f476e0958bb4b1",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct",
+      "label": "Linguistic act",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 395,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "18bf4e36063fdde5a6e407b26b5bb0274f2542a66d02ddb11ea56ccf5432b0fe"
+        }
+      ],
+      "annotation_sha256": "bb00d55c06e83cafc74685d378811a36b1b0ba672d3cc93040850513e31d73ec",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction",
+      "label": "Linguistic function",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 54,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "217cb91f818b1f76ce0d86e774e8a3a84e06a2f78c5361d024efe836839dd65b"
+        }
+      ],
+      "annotation_sha256": "3ecdb81c3b697af38a1af9be54787200515e858634512a68f43a479daa37db1b",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject",
+      "label": "Linguistic object",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 173,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "55eaf3c78f71fd669536ff6dc7c9a592e3e1caedee8872058b4a830d57e3aef7"
+        }
+      ],
+      "annotation_sha256": "0f6eaa3030cdcdf8b29b70e9a40a6f1d7affa21f5773b81f02c36b166298628b",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory",
+      "label": "Linguistic theory",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 93,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "55903fc2b29ba9210a10254269d31ae1aca03e0a5dbcd6ce33a851910b17fcdc"
+        }
+      ],
+      "annotation_sha256": "e6a8239669302a12f66d00d92c6f3a705e41ca0f605322bc17e5cc75a2ef84fa",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme",
+      "label": "Morpheme",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 134,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "20fcdb19f50e8a500ee896d5640d083810cd442cf89b6831b5cf98e917d1ef32"
+        }
+      ],
+      "annotation_sha256": "1f64189c83184558329a7a5c263ea14b71760ff96728d399ab4c770b854a5f59",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject",
+      "label": "Multimedia object",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 111,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "cdd0614f1a7b739a2985116ab39a77e8d7d947fb7859423bf34e07a40d9b5775"
+        }
+      ],
+      "annotation_sha256": "782be31e968ff34fd92bf0e71d3af2ac5e0188b24f37da14714d7bfb72f54c88",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword",
+      "label": "Polyrhematic unit",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 330,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "ea3c021647f357e2d4d5aacc36b62543c76b2240a6aa27dc6d45ded0b1c969fa"
+        }
+      ],
+      "annotation_sha256": "e5d4410f554cae2cf12738f02d7f140dda81561c69330895465eb1dc887da9b4",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage",
+      "label": "Natural language",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 204,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "8b1d7e88e050946af508883ff7e848a00e85220c070e2e824fb99f3914ba0550"
+        }
+      ],
+      "annotation_sha256": "d14c676d1ffd96376b13277826dd773db5d5910c0b87631755d82fab250a59d5",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting",
+      "label": "Painting",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 376,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "99a8b6311d2caf2555a093777efcdf1b01e95150ce6711574dcdf4501ba07e57"
+        }
+      ],
+      "annotation_sha256": "53971c9719966e2fb884210f932c8d9f22020113739a96fee2aa75a65872f78e",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme",
+      "label": "Phoneme",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 117,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "e1067d66a3ae5072d47c30e9ee27fb5328b4d8ddd5c1be4ab94b6982472a63c3"
+        }
+      ],
+      "annotation_sha256": "5b7dcaac227a8d4c110948601bad22e04b932632ea4ee6201d152f11a452ad14",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase",
+      "label": "Phrase",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 63,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "a84c097f61ff7e4b79dbe57c73a8fb1736f008b90670b7fbd3a38d55a0da6feb"
+        }
+      ],
+      "annotation_sha256": "ddb4c3de4f1517fcf9a9b81a5cb366e4e6ab75986b823bf00378ab914d1e1af6",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt",
+      "label": "Plastic art",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 48,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "8ef576016e9ff07fcf3e12ce5438a8a3973284c9f62ff4eeb8b9f4eda5653c39"
+        }
+      ],
+      "annotation_sha256": "a2c0ac99af3134d1560191ca5560d8f1fb414662a1fae8433ff457aa6dbec231",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture",
+      "label": "Sculpture",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 159,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "e8fd52adc637d40973facc6ad72324e0704a6594d328266de06aa786bbac07d8"
+        }
+      ],
+      "annotation_sha256": "35748f5412ae930c67b3c0b07e54428d18f37372a9c8896ef1a43ffbe92c8cd5",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence",
+      "label": "Sentence",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 53,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "8c2f6479aa977dde2f338b7e168625cd9a45bbc272e3913c6651188c27cad6de"
+        }
+      ],
+      "annotation_sha256": "fe47ca6bb75cf5e6d6155acb142dfe04c7c1f87a78de3c4045c0035e4b1300b6",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound",
+      "label": "Sound",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 176,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "bb5705b4b042586e110d87f8aeefaa392f4fd6be24571034b3daa44e4c08e38a"
+        }
+      ],
+      "annotation_sha256": "81d417bfad9611dd1de03b79ed2c8e973002e256d8e24bb38fafb99f83c7e98d",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech",
+      "label": "Speech",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 51,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "b7c5b2dc21177e5e0601344499efc70ea252622b1ba1123095cb7aee80797e8b"
+        }
+      ],
+      "annotation_sha256": "e1e20829163436f4e445c04923434bad527f0b842608dc6f22e3e082fe5c7c06",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue",
+      "label": "Statue",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 87,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "b352424d78e4bc44a79a82cae2fbadeec1a2c7fa626073691aa9ad1ce2d4970a"
+        }
+      ],
+      "annotation_sha256": "2396e138b1a4ab8ecbdb75d51bdbbbc3e697ee2578b739e931af501c5b4b075e",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term",
+      "label": "Term",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 97,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "66a45a44bb0e6cd46121c3319771e0f2b7b13fed1b57fa3ce912f96969099bfa"
+        }
+      ],
+      "annotation_sha256": "9671c93c87aec22ce59d23a10d3e7cf0e3892dc961b410fa4b4b3824ac5d39e6",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text",
+      "label": "Text",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 205,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "fec092901a68539921c1fbf087732194e3c2b724c1bcd88ac30122b6c705bd65"
+        }
+      ],
+      "annotation_sha256": "d0cb2efcbd7cce9ee8e23d04e6dfa703782b6474f27b47fe8b90b122eb2aa626",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus",
+      "label": "Thesaurus",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 118,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "e40fdbb62afd0358715504832026be51a0e148241de38274d1f00cafa88cef6e"
+        }
+      ],
+      "annotation_sha256": "593873bb7c4aa468221d9ee05eeb2334abef0134863658ebd60f0ab3c8efa26b",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing",
+      "label": "Voicing",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound"
+      ]
+    },
+    {
+      "annotation_records": [],
+      "annotation_sha256": null,
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage",
+      "label": "Web page",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource",
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 855,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "01795e0f3712476b766cc33153672215105fdd440d2a8bb2e6e5436479be6458"
+        }
+      ],
+      "annotation_sha256": "b93cc0712086105b52abe83dd7b5e591b82d34909c018aae705a04a38a618f42",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word",
+      "label": "Word",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+      ]
+    },
+    {
+      "annotation_records": [
+        {
+          "characters": 292,
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "language": null,
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "text_sha256": "eb0a877b8408f80ae2705479053e21640f9ef696039c94423e41a1edf69120e1"
+        }
+      ],
+      "annotation_sha256": "1f4e5a493c14172bf8aa112694ca7ac24fbb3c9fe580bbe39ee5a5119c545df2",
+      "deprecated": false,
+      "equivalent_expressions": 0,
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing",
+      "label": "Writing",
+      "label_basis": "SOURCE_ENGLISH_LABEL",
+      "named_superclasses": [
+        "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction"
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "Exact declared populations and assertion-based import closure by unique IRI; not reasoning, historical equivalence or scientific acceptance.",
+  "source_sha256": "15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f",
+  "unresolved_imports": []
+}

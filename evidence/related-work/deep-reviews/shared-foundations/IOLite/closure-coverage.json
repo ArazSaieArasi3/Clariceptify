@@ -1,0 +1,786 @@
+{
+  "builtin_classes": 1,
+  "comment_candidates_reviewed": 43,
+  "coverage": [
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "INSUFFICIENT_LABEL_RESTATEMENT",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "INSUFFICIENT_LABEL_RESTATEMENT",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "DESCRIPTIVE_COMMENT_REVIEWED",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow"
+    },
+    {
+      "catalog": "evidence/related-work/dul-class-catalog.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalPhoto"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#MultimediaObject"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#WebPage"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/shared-foundations/IOLite/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Reference"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualReference"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#NamedEntity"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "PRESENT_COMMENT_CANDIDATE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext"
+    },
+    {
+      "catalog": "evidence/related-work/deep-reviews/LMM2008/classes.yaml",
+      "definition_state": "NOT_REPORTED_IN_SELECTED_SOURCE",
+      "iri": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule"
+    },
+    {
+      "catalog": null,
+      "definition_state": "BUILTIN_NOT_SOURCE_GLOSSARY",
+      "iri": "http://www.w3.org/2002/07/owl#Thing"
+    }
+  ],
+  "external_redeclarations": 20,
+  "lmm_asserted_closure_classes": 154,
+  "local_classes": 46,
+  "local_source_classes": 153,
+  "missing_comments": 3,
+  "model_change": "NONE",
+  "reasoner_execution": "NOT_EXECUTED",
+  "scope": "All selected definitions accounted for, including explicit gaps; not all definitions available or scientifically adequate.",
+  "source_reparsed": true,
+  "status": "PASS"
+}
