@@ -576,6 +576,23 @@ discovery_attempts:
   limitation: No raw original OWL/source redistribution,unpickling,author generator execution,historical2011
     equivalence,independent expert acceptance or ontology adoption.
 
+- id: ONTOKADS236-S01
+  method: PRIMARY_PAPER_AUTHOR_PROJECT_LINKS_WEB_AND_GITHUB_CODE_SEARCH
+  query: OntoKADS OWL/RDF Bruaux Kassel Morel LaRIA; exact public GitHub code query and OWL extension
+  checked_on: '2026-10-29'
+  checked_urls:
+  - https://arxiv.org/abs/cs/0505081
+  - https://api.github.com/search/code?q=OntoKADS+extension%3Aowl
+  - https://api.github.com/search/code?q=%22OntoKADS%22
+  - https://neurolog.i3s.unice.fr/public_namespace/softwares
+  - https://ceur-ws.org/Vol-118/paper6.pdf
+  outcome: The paper and later project listing identify the work but no downloadable author-controlled
+    formal root. The exact public OWL code query returns zero indexed hits; generic code search returns
+    46 mentions, with bibliographic/review examples on the visible first page. Eight paper formulas inspected,
+    no machine class count, source edition, imports, license or reasoner result inferred.
+  receipt: evaluation/related-work/ontokads236/discovery.json
+  limitation: Bounded endpoints and indexed/public search only; no global absence or semantic result.
+
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -586,9 +603,10 @@ records:
     urls: []
     evidence:
     - G01
+    - ONTOKADS236-S01
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: NOT_IDENTIFIED
+  artifact_state: NOT_IDENTIFIED_IN_BOUNDED_DISCOVERY_2026_10_29
   foundation:
     family: DOLCE
     edition: null
@@ -599,15 +617,22 @@ records:
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
     limitations: Edition and exact implementation correspondence remain unassessed.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: NOT_EXECUTABLE_NO_FORMAL_ROOT_IDENTIFIED
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+  technical_followup:
+    issue: 236
+    status: BOUNDED_NEGATIVE_ARTIFACT_DISCOVERY_AND_PAPER_FORMULA_INSPECTION_COMPLETE
+    evidence: evidence/related-work/artifacts/OntoKADS.yaml
+    discovery: evaluation/related-work/ontokads236/discovery.json
+    limitation: No formal root; all machine class/import/glossary populations remain unknown.
   next_issues:
-  - 236
+  - 252
+  - 126
 - id: IAO2015
   title: 'Aboutness: Towards Foundations for the Information Artifact Ontology'
   primary_issue: 78

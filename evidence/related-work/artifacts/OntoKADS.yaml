@@ -1,0 +1,76 @@
+schema_version: '1.0'
+issue: 236
+status: BOUNDED_NEGATIVE_ARTIFACT_DISCOVERY_AND_PAPER_FORMULA_INSPECTION_COMPLETE
+checked_on: '2026-10-29'
+baseline_commit: 40805638cff857f785d74f629a5f7090d86b7113
+source:
+  work: OntoKADS2005
+  authors: [Sabine Bruaux, Gilles Kassel, Gilles Morel]
+  version: LaRIA LRR 2005-03, May 2005; arXiv cs/0505081
+  primary_url: https://arxiv.org/abs/cs/0505081
+  paper_sha256: 040ad09c7efc2b988fdb0720c9ed580bce1778fa6494cdb484d827359d95026b
+  dossier: evidence/related-work/deep-reviews/OntoKADS2005/review.yaml
+  dossier_sha256: 3d0eb8232365a99effdd1a25c2a49395d4e9e95a4b15e496b43deb72ef93de7b
+  formal_root: null
+  root_version: null
+  root_sha256: null
+  license_for_formal_root: null
+  formal_syntax: null
+  declared_imports: null
+  unresolved_imports: null
+  original_paper_correspondence: NOT_ESTABLISHED
+  discovery_receipt: evaluation/related-work/ontokads236/discovery.json
+  universal_absence_claim: false
+population:
+  paper_catalog_records: 72
+  paper_labeled_commitments: 22
+  selected_paper_commitments: 8
+  local_machine_classes: null
+  imported_machine_classes: null
+  referenced_machine_classes: null
+  deprecated_machine_classes: null
+  inferred_machine_classes: null
+  named_machine_properties: null
+  class_glossary: NOT_POSSIBLE_NO_SELECTED_FORMAL_ROOT
+  paper_concepts_are_not_machine_classes: true
+foundation:
+  family: DOLCE
+  edition: null
+  relation: PAPER_STATED_SPECIALIZATION
+  evidence: 'OntoKADS2005:E03 PDF pp.3-4; 2004 precursor is separate from the May 2005 report.'
+  actual_formal_import: null
+  formal_alignment: NOT_ESTABLISHED
+commitments:
+  - {id: K01, formula: A1, locator: 'OntoKADS2005:E04 PDF p.4', observation: 'Reasoning implies Action; paper claim, no executable IRI.'}
+  - {id: K02, formula: D1, locator: 'OntoKADS2005:E04 PDF p.4', observation: 'Interaction requires an agent and a distinct participating agentive entity; dependence on the participation relation is stated.'}
+  - {id: K04, formula: A3, locator: 'OntoKADS2005:E04 PDF p.4', observation: 'Reasoning excludes Communication; converse is not supplied.'}
+  - {id: K08, formula: A7, locator: 'OntoKADS2005:E05 PDF p.5', observation: 'Time-indexed Task classification of a concept entails Reasoning subsumption; meta/classification level differs from domain instantiation.'}
+  - {id: K10, formula: A9, locator: 'OntoKADS2005:E07 PDF p.6', observation: 'hasForSubject constrains Proposition and Concept; no author file IRI is available.'}
+  - {id: K17, formula: A13, locator: 'OntoKADS2005:E09 PDF p.7', observation: 'Existential cutoff allows a vacuous prefix; no asserted PRE(y,t) or nonempty-prefix premise is printed.'}
+  - {id: K18, formula: D4, locator: 'OntoKADS2005:E09 PDF p.7', observation: 'Literal Data definition leaves y unbound; an existential quantifier would be an unapproved repair.'}
+  - {id: K21, formula: D5, locator: 'OntoKADS2005:E09 PDF p.7', observation: 'CalibrationData requires isDataOf a Calibrating occurrence; author implementation is unknown.'}
+scenarios:
+  positive: 'Paper scenario S03: a mathematical Model can serve as CalibrationData in a Calibrating action; a modeling primitive assigned to a concept at construction time is a distinct classification event. Source: E05/E09/E10. This is not a machine test.'
+  adverse: 'Paper scenario S04: choose a cutoff earlier than every time the action is present; A13 then imposes no participation at the start. This is a manual logical counterexample to sufficiency of the displayed axiom alone, not a full-theory model or solver result. Source: E09.'
+decision:
+  disposition: DEFER_FORMAL_REUSE_AND_ALIGNMENT
+  rationale: 'A source-linked paper can inform comparison, but no author-controlled formal root, exact class IRIs, import closure or license was identified in the checked scope. Preserve D4/A13 issues for #252/#126; do not reconstruct and attribute an OWL release.'
+  candidate_model_ids: [CLR-C0015, CLR-C0021, CLR-C0026, CLR-C0034, CLR-C0047, CLR-C0101]
+  model_use: OWNER_DECISION_REQUIRED
+  accepted_equivalences: []
+execution:
+  parser: NOT_EXECUTED_NO_FORMAL_ROOT
+  reasoner: NOT_EXECUTED_NO_FORMAL_ROOT
+  formula_solver: NOT_EXECUTED
+  validation: NOT_EXECUTED
+  reproduced_check: tools/check_ontokads236.py
+  scope: 'Local evidence integrity and exact paper locator checks only; neither formal correctness nor historical-release parity.'
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  source_redistribution: false
+  scientific_acceptance: NOT_ASSESSED
+  later_issues: [252, 126]
