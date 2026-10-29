@@ -186,6 +186,12 @@ def check(root=ROOT, source_dir=None):
         check_cognitive(root)
         cognitive = yaml.safe_load((root / cognitive_path).read_text())
         by_path[cognitive_path] = {'counts': cognitive['counts']}
+    dns_path = 'evidence/related-work/dns235-class-catalog.yaml'
+    if any(r['class_coverage']['catalog_path'] == dns_path for r in audit['records']):
+        from check_dns235 import check as check_dns
+        check_dns(root)
+        dns = yaml.safe_load((root / dns_path).read_text())
+        by_path[dns_path] = {'counts': dns['counts']}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:

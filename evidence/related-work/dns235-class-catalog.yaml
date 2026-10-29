@@ -1,0 +1,1349 @@
+schema_version: '1.0'
+issue: 235
+source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+state: ALL_SELECTED_ROOT_DECLARATIONS_ACCOUNTED_WITH_QUALIFICATIONS
+counts:
+  local_classes: 58
+  external_redeclarations: 10
+  source_definition_candidates: 58
+  missing_source_definitions: 0
+  insufficient_comment_definitions: 1
+  imported_signature_classes: 37
+  full_import_glossary_complete: false
+classes:
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: 105b4b24ec87db34c1f756c4d74ad754cad780cc78d666705a4cb90e52858e06
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Non-atomic event occurrence under the supplied DOLCE-Lite distinction.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: a4f47b487f8f54b41e95b26393e7e74ab279f45e6fe46209b387060032af6a63
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Whole present through change, distinguished from temporally extended occurrences.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: d02d49f9d268ac63376da9fcf490d391984e438f466d18b089fdfb01a5b1a143
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Individual within the broad DOLCE domain, partitioned into its principal categories.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: 02ba68cee0e1d153df046a7244939f65537035eb620dd9e4f6539c9146e1a7e7
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Occurrence extended through temporal parts and involving endurant participants.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: 97388729183078cfa397d6409329692f9cbe82c0315562473a19b01d6ce8c9a3
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Endurant with a direct physical quality.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-endurant
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: dcedca55bc644af2e0b3f9287ee537474bccc5cc171a93321b57b5165cc81739
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical endurant with unity and identity that can persist through part changes.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: 968c1ccb51ddb2502f9883c69c009d9e94687a474a681ddc0a201f71f5678686
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Quality inhering in a physical endurant.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: 05f1ea79de7ee894af48927b353ea55149f6db0463095c97fbc244d32e8afcb7
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Stative occurrence lacking the homeomericity attributed to states.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: 5c296f1a016ac6a898e9376b0dab3167caf7f2441589f480a6b24ae879db4f35
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Conceptual value space or position for qualities, distinct from the quality bearer.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region
+- iri: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-particular
+  population: EXTERNAL_REDECLARATION
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-particular
+  source_definition:
+    state: COMMENT_IN_PINNED_DIRECT_IMPORT_NOT_ROOT
+    annotations:
+    - text_sha256: f0e690f61e6922254e3164fba6ac21460316853c4fa3411a318d502ff19ceca3
+    definition_source_sha256: f8b71826274fbe35947570c90d55b2aa53081859b30a4f24e094cf175c9cc1cc
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Convenience category for particulars located in space-time rather than abstract entities.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: cea5096376c316bfe21bdb3c3753d4373dadcbce33c5b8c8370101ac77b4aa80
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-particular
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#action
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#action
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 4469900045c0381e1c126349b63e41d88a796f46ec5ba950cfb7049fd6f16553
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Intentional occurrence that can remain an action even if its intended result is incomplete.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: dec5606ee19cded799748ff9df8a84c6a26288fcf5c0d6c77b389578d9efe1c8
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#action
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#activity
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#activity
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 1dd46a3ef47a0dd50d9aa790d96146306ae779d3229069ebdf26f7de4c7869d9
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Conventionally planned action sequenced by a task and dependent on a plan shared at least partly by participants.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 634ea79c93085181e976fa07685d15d578f3a248a0e7ab3b4fb8d3dae839f91e
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#activity
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 59f0b60570dbcdc7a289e15540cf20bdf931b8ea921be0e7e1824525bbef0515
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical or social entity capable of internally representing descriptions; capability does not require
+      current action.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: e76c34da54a98ca28e3393b2ee590ac39ab38f617a320b329849ed2cb85c2479
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: c565dd99566973772ed572e76d90cf233feadea00a9cd9f9232df3c7f455d0a2
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Functional role whose possible players are restricted to agents.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: c18d4f16e15742d857e370cc6a7ace3f285dc6ef928e55b6575378c6fda8f1ab
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agent-driven-role
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 6afa450e838756d850f920f57eef5f4f659745e92faf5ac029a4da026076e5c6
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Socially assigned figure able to act through delegated roles and representatives.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: b414c7e9fcaabf102c4d4f643ca879c889f50d90e54c17282b2dca58a6f217b6
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-figure
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-physical-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-physical-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 835a53c3df45c591d3eb266a4fc524c652067f9406ce79ebe207bf80cdcfc94c
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical object attributed generic intentionality or the capacity for internal representation.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: a929a0848f4a69d655b6de15bbdf2145955f990d24facca0a003750bde3cc4a2
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-physical-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-social-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-social-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 65ec3c3a22e4dfb148ba6cd048db57496128a6cae3a3d83bd60d43fa4337cac0
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social entity attributed plan representation through the powers and physical agents supporting its action.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 1e57259a41fa6b5ef0f4a50d5c4bb9cdc4d8bf31fb22aadc3981a00ec06d5135
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#agentive-social-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-event
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-event
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: d42e089ba96f8497411302313d233f758b8f2f8fab639d3ef511245b153810d0
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: An occurrence situated in an embodied mind.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: c3551f6131407ccf3d3320dab026e97ec0184c2b67f68c553805a92c7fb3a5fd
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-event
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-modal-description
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-modal-description
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 49ed9358c0e35f73031b94551e72b4fb4e56a6146ffef74d434cba2c7faa0d74
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Modal description grounded in a mental attitude involving roles and courses.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 20d5c3224cb309cd03c10dab8b907b1f1b82277a3845aeb9ea6d55612db6002e
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-modal-description
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-state
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-state
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 993a3c9b708f813beaf19496c173a7009aa2b53f884ea59b539f17c4be46ea6a
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: A mental state attributed to an embodied mind.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: be047f07586b76bd012af084a0e685c73db9aeee07f61da0a3dea9c2a50e7d93
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#cognitive-state
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: f9efa9ba3cd6db179300a7461ec82d2029e3e9ae94b563c62d8da78126909d22
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social collection dependent on endurant members and classifying concepts or figures.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: a819741c6d041c6e5405dca2b542c5b1eec3b42e9f10a4efc6d3e2fe9e4bd122
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collection
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collective
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collective
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: ffd55ed359de02ab4985db3b975c9e5417d9f561c72607434822313c098402ad
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Collection restricted to agents as members.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: fc23c748d2c25b9b0f5ec6e52578d2936564ea6a5cd5fbb6f2f15f2bdd031ea0
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#collective
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#communication-event
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#communication-event
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 8a665ee6f7675999ef0633f05f432d4a40138e6f13f7a89eb1e356d2bfd1d5c4
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Communicative occurrence treated broadly enough to include intentional action or a phenomenon.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: dcd3c9d54dd4f23d452e7b40b98d58714bd8273d0d93367c1a41d9db2772addb
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#communication-event
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 5ea90d3606648d5631973348b04ecdf08ed96a9b2d418ee0a3f6a32f0b36ab8a
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description-defined social entity classifying ground entities for situations that can satisfy that description.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 39716a056a726962433ba0d41781c2a7022d01782c03a22817037fe6f8d55e91
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#concept
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#constitutive-description
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#constitutive-description
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 12edc2959b9e1ad3b3fda01ce3202f209238891e50d07f565038a57577fd1bd7
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description whose defining purpose is to establish a social figure.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 1f95faff33658e4b1c4148653e419b292f9b69b17d7b6582fd162330756dbbe2
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#constitutive-description
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#course
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#course
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 69b5f4780dcb4aefdd485e807ae350c3208c77e377502ce70316e423fefb8377
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Descriptive concept classifying occurrences and usable as a role-related modal target.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 71861d91d8db244f2cc70518d253c5c5ae2a0eeb20dfcae5e9cab9e8d4188e2a
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#course
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 306eff05863c38ae81630f62392a2439d05006f17a243fad4ec9706e34666036
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Communicable social representation of a conceptualization, using concepts or figures and expressible through
+      information objects.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: e22bb65e6427eefd4e911a05f51df4a383359f14d0fd535570ffaa0e5f31ce63
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description-role
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description-role
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: da744594f0c581070650cb1300e9b135dfda8374762b66b3b2372ff4471e682d
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Functional role restricted to description players, including metalinguistic levels and argumentation uses.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 9c5d360ca7175dae22577cd1b63df8624c0246aab4fcc1b15ad264099e1ee694
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#description-role
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#desire
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#desire
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 32d2cdd4b4a8c49e2fdd95a43fd5c18580c6a833fc10c810d72f099f87da1e87
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Cognitive modal description involving an agent attitude toward an actual or possible course.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: c99b4525b1152f9b3047d69652b07dc01371713e215a2588345321d1576b9d13
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#desire
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#figure
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#figure
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: d8eb573886eae7db4df9b005366df4a9c6ea214d96d18f144b076ed69c058fc1
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social individual defined or used by descriptions; unlike a concept, it does not classify ground entities.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: e06d445b73bdfc564d46c67715d3073ce4424decc4b5766cc374b273fb6e08b5
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#figure
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#flux
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#flux
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: ea765d2991f6b24af37b3e3fee243e4c2afb5aceba8a080e0874e30de84d3f19
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Process containing accomplishments as constituents.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 96fde1acc3a36270ef4978a1a50689141db35bcbb588b81ac55e47cbc4a976c5
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#flux
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#gestalt
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#gestalt
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: da38e0858a2e3ad4e4a6e0e90888d61aef8a7b457092bd61e88e01a305409b85
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Descriptive theory organizing a perceived configuration as a meaningful whole.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: c805e54300d2cf4b6837f15bc7fa5845ca78956ecb57cb9f64c4f809f13dbba6
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#gestalt
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 4f15eb4bbc9e78a7ca957c3e2636bf7a24f1720ebe0a12a05f2a877533bec192
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Desirable objective whose minimal formal characterization includes being a proper part of a plan.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 06d71569d72fb28033c44959b70622882a0279fd0043aa25470249f9d5231e04
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#goal
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#indicator
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#indicator
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: dbe482971b543f9e4d8387592ab0a93b17b2c0c450aa34418bb02a7263e9afa9
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Parameter whose region values serve to check a behavior or occurrence.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 9e79f73c780baeff1cfe03786c135a695c6ea5d33d09011386bd18fda2768752
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#indicator
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-encoding-system
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-encoding-system
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 7ee5a985d838470377f8358e271974d7a1db94a3f41dfc8ab79fe0eb56577352
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description organizing formal, combinatorial, classificatory or informal expression of information.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: abe1569eb32f49ddf2ce8f205539ce38839814d67ef05c380e82f10232fe7f1a
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-encoding-system
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 0dd31fc00b20c5fc29d38fff11d0f02bea563d9256a9a82a5c23da74d4376c0b
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social information entity dependent on encoding and realization, capable of expression, aboutness and
+      interpretation.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 425b640fd1a6c371f7b121babb8bd20dc1ce48276722d43bd060821eb5bda2fd
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#information-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#life-cycle
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#life-cycle
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 8d21fb85503dd425406b282d1054207cbb0498b49253a5bbc1c856b2380389c6
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Course describing occurrences characteristic of an object kind over its life.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 7f57cbb887027ed84e572ac0fbaa8f3474867591c5275a5ec5c3ce3f569a4a97
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#life-cycle
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#logical-role
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#logical-role
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: fee72d2fbcd828e5844cf7f61f80fceebfe569d337353d08c8f360243576faf8
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description role representing a logical or taxonomic level in a knowledge layering.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 84c266e4e962dc61125c04b10b5a8f68b5883ce3314ca3cf98bdb17165305d61
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#logical-role
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#material-artifact
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#material-artifact
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: f99d63d4b070b6d22361fba974afb77d8c546a249a37fa1e850da950b53a6e70
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical object treated as artifactual for a task, with structural unity linked to a plan or project.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: b4c9333bd02cb708b8593f91663238af7ea00bb89a22f1600494407bdc47016d
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#material-artifact
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#method
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#method
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 5e7dc9c726720993666cdbe132812867cbc7653e95fd1698b6b6873086b16f2f
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description specifying how to perform, produce or organize something.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: abe1569eb32f49ddf2ce8f205539ce38839814d67ef05c380e82f10232fe7f1a
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#method
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#modal-description
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#modal-description
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: e695dcb8278e217320eb602a87f4c4172cb7103b2ded9cbc38f5975dcf63e1f3
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Reified modal specification relating a target course to a unity criterion within descriptive content.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 54ebf9ae9f44cd1c6e6b4632a7d9d9a5ab16dd46fcccb085cf5f29d7977baccd
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#modal-description
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-figure
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-figure
+  source_definition:
+    state: INSUFFICIENT_COMMENT_TYPOLOGY_PENDING
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 48f237873cfcb9ca51cd76739fd3ea5fcfa84178a1e1cda46feaebfe9507cc25
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: The source postpones its typology and supplies no distinguishing class definition.
+    basis: EXPLICIT_INSUFFICIENT_SOURCE_DEFINITION
+  axiom_sha256: b5c0cbc3c2334d70f55f799c2166349b294bb06aadf501c71d09135eed25213f
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-figure
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-physical-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-physical-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: dc65fbd271f2ae0f5a221af95154d314153f4acfd9c58d5beae43f00fb62d70b
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical object not attributed generic intentionality; the source explains this mainly by contrast with
+      agentive objects.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 126679403dd82450d4ab14aa7d815979b72a087b31d65a1ef09bae5674c7cae5
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-physical-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-social-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-social-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 345454fd48f115b8ba67e5bda8e067593cb3710a16417a07cb4fb21e9989c456
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social entity not assumed to represent a description internally.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: d13ac91b00feb94b8e71907abd07c403d66afd13b80c5c2c045fa93d41f148d9
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#non-agentive-social-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 1ea599c35b2213033d40e730ab6806fb2d021b4692cda7811bf35bb9a81e39ca
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description-defined concept classifying regions and requiring at least one region value.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: dcceadde732ada704a217e2b08731d4ecb9ef2629ee0788d47e730dab2edc2e9
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#parameter
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#path
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#path
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 716c301dc804bb1a789d03a694aa5c2a2bf09522520e916663c9fc8e71f4f475
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Course sequencing phenomena rather than intentional processes.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 39dc59492c566522a05f0dfc7829be33dd50b5b78f8cad3ea3d89a3587c7cb49
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#path
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#phenomenon
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#phenomenon
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: d79e719f72541878bb2591813687912d80ec11be9389f437ac820efe7e0690e1
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Non-intentional occurrence whose placement between process and accomplishment is explicitly tentative.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: f60e74f446554c3705bee40281b0747276b050d87ae0a6468f4e5a691ec97c57
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#phenomenon
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-phenomenon
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-phenomenon
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: ada7197ef7f5f94de53545fe70770c536ad2720dda549b91811bb4b004b82a6b
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Phenomenon involving a physical endurant participant.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 79c09db0c059e0e2f2b58fa0657752e946a6adb0a67ec765eca276c45059dd3e
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-phenomenon
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-realization
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-realization
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 30556645d1da4430becc4cc26b7fb1762af03799a268412f882218249d87203f
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical particular realizing a nonphysical entity and ultimately dependent on a physical endurant.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: abdb4ae0d4f7ddd5fe613f665e88203a1e882e42fe53efff10d942cf9b18baed
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#physical-realization
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 3eab990fd5c89e29baa71d1a810e5fa52b7c85db68f05555919ad3d4e2a6cbc2
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Method organized around tasks, agent-playable roles and a goal, with optional additional descriptive parts.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: aa8a50fb6ac00d307e1930a5599ede600a7503c844760ddedfd5c83f39cca1b7
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#plan
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#practice
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#practice
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 14557ff6b6a7d5599cdb44e02442aadfb7570c23942572868205ce9a66ac0958
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social method followed through tradition, emergence or regulation.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: c410c42d624df08db62b82a05c12fbdf5045471a60cc1a2d941dbc634990b060
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#practice
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: f98ffd3ea3ba8528a061b0ddcc3523522ce2cc865633a646304c2cca02cbffc8
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Proactively satisfied method including a product or result role.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 1e08a31944f8698fa5a9d6e4e0bd4898ab1bc63dc4f05e38e416347d6ee1e4a6
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#project
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-agent
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-agent
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 560dd8f3f5e2a8fdeff6f43c90fecdd441889e32a695b451b145817944e4486f
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Rational physical agent or social agent acting through a rational physical representative.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: ae2270a5d17acc95589b3eaa419d4f9e73739a753c5aa4b17d20ee57f39a1d5e
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-agent
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-physical-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-physical-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 5858d319a470524d91de6ab3111c31d9b5aed6ea0a9cfb1739660c1e48218381
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Physical agent capable of meta-representation and choosing among descriptions or attitudes.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: ff96c28406d741465c56418585f35400c5875d59c21192e846c1032e2b4f2cdb
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#rational-physical-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#reconstructed-flux
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#reconstructed-flux
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 2f5cf0d69dc5a0b5726b8bf16f8d9b2b1fc9aca55da6fca7f8e22ddeba93833b
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Flux restricted to accomplishments as members.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 87131ea2c6b48fe1449834955ab07a6887efbd5c9da9258f0dbf81d39498689d
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#reconstructed-flux
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#regulation
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#regulation
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 82ede8fa0d6728d9290411fedcce9233cd175c32dc9bc47e565d266ec86d90b5
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social description such as a norm, associated with a designated satisfaction profile.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 372c16b139158149ce4c91214081856d524f617dcf020136dcfe6217287db9cc
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#regulation
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#relation
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#relation
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 940cd189229a79931a2bae2ace091b2e146e2309302eca65fc352c013a43e437
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Theory establishing an ordering or relationship outside the specifically social-relationship sense.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: c805e54300d2cf4b6837f15bc7fa5845ca78956ecb57cb9f64c4f809f13dbba6
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#relation
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 379b48781cfc3a6ca69ac9ae2f1720b8b9248ec6c9cf57361e56410604bf6126
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description-used concept classifying endurants, often associated with courses as modal targets.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: d4b8e2d2094b2c8a838544f2a44a977bf96f5d8d95ab7ec80b81b1a797d4dda2
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#role
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: c4fccc555597234ff497983d7a4de0bd24bfc29e36429fa793b49b632e304faa
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Socially contextualized setting requiring a satisfying description and at least one ground entity.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 1ee05d10578d167974fb21deec477f209e2a0365ec70223a44879f305d6f1531
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#situation
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-description
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-description
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: e846fe1096a36a9df601dbd065413f0c9246793ff5c00b7a6b42f7272ad12eb0
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Description dependent on a community of agents, such as a law or treaty.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: f77601128497b106e333e72ce299de4a3971a461baa5cccf482088d59c0aad8b
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-description
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-object
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-object
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 1bcc5706a275e1f387feacef46398cfda46bf984e1160552dce3058e6463331d
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Broad social-world entity category covering figures, descriptions, concepts, collections and information
+      objects.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: f6bbfd49fa0aa23c7f7036831bd8e6d0a0f98ed4c08d0cc6f4a1f4df49f54f0b
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-object
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-relationship
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-relationship
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: bbaf3cc5ac5186ca10f29620a15af3f19f0b488e6b44cc49dca49e6e2c2ffbfa
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social description defining roles for rational-agent interaction.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 67c097f6a8cbc2669a049606da46fe48f40d549db2bb000f8b409ef90cb59fd9
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-relationship
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-role
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-role
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: c230961798f02f0bf2bab7f31268a0913011f73d9fbabf82f2f5868114e04ec6
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Functional role instituted and maintained by a society.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 9f1c4ff906a37654b14d28115c4339de94c4640406056c4d068d679ed2c6326c
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#social-role
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#status
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#status
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 7968f9a640bbbe890898ed77829e684919844bb52f3216b4150b8a97f992760e
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Social agent role associated with responsibilities, rights or powers for task performance.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: eecd64100a87b1862b7a24e18f5d0024e7ebee67e45c46c594c0799ca0a318a8
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#status
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#symmetric-role
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#symmetric-role
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 55c5ce11ec97478f47f5c62ca64e9aee75716ce331799f344086c8f2d7ec259d
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Role intended to have exactly two simultaneous players; source intent and actual cardinality remain distinct.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 7349c2e863db8f9ac769edc2f877f32a8440d77d68cadd73404ace28e8ef197e
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#symmetric-role
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: e094fbc2e4e0dc34ec7b69091247d5bbf18e3b2dd405b65eb74f756578c241d6
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Course defined by a method to sequence controllable occurrences, distinct from its action or diagram notation.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 6288fc0355f2f1bc80802baf00f80e856fc8b9ff707fad81e81fa4a2af03a09e
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#task
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#technique
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#technique
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: aadd645ba8131012ee5a2e6d7b64b464667d3b73d9cee8cd5343f9ed6d12f6a0
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Practical method for modifying or evaluating an environment in fulfillment of a task.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: 1e08a31944f8698fa5a9d6e4e0bd4898ab1bc63dc4f05e38e416347d6ee1e4a6
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#technique
+- iri: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#theory
+  population: LOCAL
+  source_labels: []
+  source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+  source_locator: http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#theory
+  source_definition:
+    state: PRESENT_COMMENT_CANDIDATE
+    annotations:
+    - datatype: http://www.w3.org/2001/XMLSchema#string
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 1f8ddfeee2a1294be4180158f7616ddf68ff33074a34760a33f53eb6e91feada
+    definition_source_sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+    raw_text_public: false
+    adequacy: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    text: Systematic, communicable descriptive account, distinct from its possible axiomatic formal representation.
+    basis: REVIEWER_PARAPHRASE
+  axiom_sha256: abe1569eb32f49ddf2ce8f205539ce38839814d67ef05c380e82f10232fe7f1a
+  axioms_record: evaluation/related-work/dns235/census.json / classes / http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#theory
+model_change: NONE
