@@ -1,0 +1,846 @@
+{
+  "schema_version": "1.0",
+  "issue": 248,
+  "checked_on": "2026-10-30",
+  "source_commit": "93734dbe35c931338b3b9aba66b75c250baf6655",
+  "source_blob_sha": "73047de266cd6c1ea684befd1d05b6294ecc5265",
+  "source_sha256": "61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc",
+  "source_bytes": 15245,
+  "syntax": "TPTP_FOF_STYLE",
+  "direct_include_statements": 0,
+  "formula_counts": {
+    "axiom": 58,
+    "conjecture": 12
+  },
+  "duplicate_formula_names": {
+    "ax_bel_int_disj": [
+      169,
+      171,
+      173,
+      175,
+      177
+    ],
+    "ax_present_at": [
+      60,
+      61
+    ],
+    "ax_top_level": [
+      28,
+      40,
+      41
+    ],
+    "th_unicity_of_agent_ms": [
+      315,
+      328
+    ]
+  },
+  "active_predicates": 34,
+  "unary_predicates": 16,
+  "binary_predicates": 4,
+  "ternary_predicates": 14,
+  "inlined_foundation_predicates": 14,
+  "local_native_predicates": 20,
+  "referenced_only_local_predicates": [
+    "intState/1"
+  ],
+  "predicates": [
+    {
+      "symbol": "about1/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 116,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Mental state directed at a concept at a time; content unique across times.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        123,
+        125,
+        127,
+        129,
+        135,
+        149,
+        187,
+        188,
+        190,
+        298,
+        300
+      ],
+      "conjecture_lines": [
+        320,
+        324,
+        328,
+        340,
+        341
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "about2/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 132,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "Reference to an entity through about1 and concept classification.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        135
+      ],
+      "active_axiom_lines": [
+        135,
+        147,
+        301,
+        302
+      ],
+      "conjecture_lines": [
+        320,
+        349
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "apo/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 36,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "Agentive physical object constrained as an endurant.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "end/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        40,
+        42,
+        104,
+        106,
+        187,
+        188,
+        190,
+        296
+      ],
+      "conjecture_lines": [
+        315
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "bel/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 184,
+      "annotation_availability": "GROUP_HEADER_ONLY",
+      "reviewer_paraphrase": "Agent belief attitude defined via a belief state, about1 and participation.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        187
+      ],
+      "active_axiom_lines": [
+        187
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "belState/1",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 154,
+      "annotation_availability": "GROUP_HEADER_ONLY",
+      "reviewer_paraphrase": "Belief state constrained as state; not directly as ms.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "state/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        157,
+        167,
+        169,
+        171,
+        187,
+        301
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "cf/3",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 72,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Concept classification of a particular at a time.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        76,
+        77,
+        135,
+        202,
+        211
+      ],
+      "conjecture_lines": [
+        320,
+        332
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "con/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 23,
+      "annotation_availability": "LABEL_WITH_FOUNDATION_CITATION",
+      "reviewer_paraphrase": "DOLCE-CORE referenced concept; exact foundation edition unpinned.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        28,
+        30,
+        31,
+        32,
+        76,
+        123,
+        127,
+        135,
+        234
+      ],
+      "conjecture_lines": [
+        320
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "des/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 184,
+      "annotation_availability": "GROUP_HEADER_ONLY",
+      "reviewer_paraphrase": "Agent desire attitude defined via a desire state, about1 and participation.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        188
+      ],
+      "active_axiom_lines": [
+        188,
+        202
+      ],
+      "conjecture_lines": [
+        332,
+        336
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "desState/1",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 154,
+      "annotation_availability": "GROUP_HEADER_ONLY",
+      "reviewer_paraphrase": "Desire state constrained as state; not directly as ms.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "state/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        159,
+        167,
+        173,
+        175,
+        188,
+        301
+      ],
+      "conjecture_lines": [
+        340,
+        341
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "egoal/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 239,
+      "annotation_availability": "SECTION_HEADER_ONLY",
+      "reviewer_paraphrase": "Goal that is not an instrumental goal.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        242
+      ],
+      "active_axiom_lines": [
+        242,
+        273
+      ],
+      "conjecture_lines": [
+        341
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "end/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 22,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "DOLCE fragment: endurant.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        28,
+        29,
+        30,
+        40,
+        41,
+        68
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "event/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 49,
+      "annotation_availability": "NO_SYMBOL_SPECIFIC_COMMENT",
+      "reviewer_paraphrase": "Other branch of the perdurant partition; not imposed on sat.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "per/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        49,
+        50
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "goal/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 197,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Selected desire or need0 subject to the source compatibility condition.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        202
+      ],
+      "active_axiom_lines": [
+        202,
+        234,
+        242,
+        267
+      ],
+      "conjecture_lines": [
+        332,
+        336
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "igoal/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 229,
+      "annotation_availability": "SECTION_HEADER_ONLY",
+      "reviewer_paraphrase": "Instrumental goal with a later goal and source-scoped satisfier implication.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        234
+      ],
+      "active_axiom_lines": [
+        234,
+        242,
+        261,
+        267
+      ],
+      "conjecture_lines": [
+        340,
+        355
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "intCont/2",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 142,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Concept in an intentional-content role at a time.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        149
+      ],
+      "active_axiom_lines": [
+        149,
+        300
+      ],
+      "conjecture_lines": [
+        324
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "intObj/2",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 141,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Entity in an intentional-object role at a time.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        147
+      ],
+      "active_axiom_lines": [
+        147
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "intState/1",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 163,
+      "annotation_availability": "COMMENTED_OUT_FORMULA_ONLY",
+      "reviewer_paraphrase": "Intention-state typing is commented out; active disjointness/test references remain.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        171,
+        175,
+        177,
+        301
+      ],
+      "conjecture_lines": [],
+      "definition_state": "REFERENCED_ONLY_NO_ACTIVE_POSITIVE_TYPE",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "ms/1",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 95,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Mental state constrained as a state with an agentive participant.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "state/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        102,
+        104,
+        106,
+        123,
+        127,
+        135,
+        296
+      ],
+      "conjecture_lines": [
+        315
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "napo/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 37,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "Nonagentive physical object constrained as an endurant.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "end/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        41,
+        42
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "need0/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 250,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Mental need attitude projected through a need state.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        190
+      ],
+      "active_axiom_lines": [
+        190,
+        202,
+        273,
+        304,
+        305
+      ],
+      "conjecture_lines": [
+        353
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "need1/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 251,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Equivalent to instrumental goal in the source.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        261
+      ],
+      "active_axiom_lines": [
+        261,
+        304
+      ],
+      "conjecture_lines": [
+        345
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "need2/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 252,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Stronger instrumental condition with source-scoped satisfier biconditional.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        267
+      ],
+      "active_axiom_lines": [
+        267,
+        305
+      ],
+      "conjecture_lines": [
+        345,
+        349
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "need3/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 253,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "One-way necessary condition: end goal and mental need attitude.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        273
+      ],
+      "conjecture_lines": [
+        353,
+        355
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "needState/1",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 154,
+      "annotation_availability": "GROUP_HEADER_ONLY",
+      "reviewer_paraphrase": "Need state constrained as state; not directly as ms.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "state/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        161,
+        169,
+        173,
+        177,
+        190,
+        302
+      ],
+      "conjecture_lines": [
+        340,
+        341
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "pc/3",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 65,
+      "annotation_availability": "SECTION_HEADER_ONLY",
+      "reviewer_paraphrase": "Participation of an endurant in a perdurant at a time.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        68,
+        104,
+        106,
+        187,
+        188,
+        190,
+        296
+      ],
+      "conjecture_lines": [
+        315
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "per/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 21,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "DOLCE fragment: perdurant.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        49
+      ],
+      "active_axiom_lines": [
+        28,
+        29,
+        31,
+        49,
+        68
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "presentAt/2",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 56,
+      "annotation_availability": "DESCRIPTIVE_COMMENT",
+      "reviewer_paraphrase": "Presence of a particular at a time interval.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        60,
+        61,
+        77,
+        125,
+        211
+      ],
+      "conjecture_lines": [
+        320
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "process/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 52,
+      "annotation_availability": "NO_SYMBOL_SPECIFIC_COMMENT",
+      "reviewer_paraphrase": "Stative branch disjoint from state in the file.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "stative/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        52,
+        53
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "pt/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 20,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "DOLCE fragment: particular; top-level category.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        28
+      ],
+      "active_axiom_lines": [
+        28,
+        60,
+        61,
+        76
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "sat/3",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 207,
+      "annotation_availability": "COMMENT_EVENT_INTENT_NOT_AXIOM_GUARD",
+      "reviewer_paraphrase": "Source condition is presence and classification; eventhood is not required.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [
+        211
+      ],
+      "active_axiom_lines": [
+        211,
+        234,
+        267
+      ],
+      "conjecture_lines": [
+        349
+      ],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "state/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 46,
+      "annotation_availability": "SECTION_HEADER_ONLY",
+      "reviewer_paraphrase": "Stative branch to which mental states are assigned.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "stative/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        51,
+        53,
+        102,
+        157,
+        159,
+        161
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "stative/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 46,
+      "annotation_availability": "SECTION_HEADER_ONLY",
+      "reviewer_paraphrase": "Perdurant-side stative in the source partition.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [
+        "per/1"
+      ],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "succ/2",
+      "origin": "LOCAL_NATIVE_SYMBOL",
+      "comment_or_header_line": 214,
+      "annotation_availability": "SECTION_HEADER_ONLY",
+      "reviewer_paraphrase": "Temporal successor, typed, asymmetric, irreflexive and transitive.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        217,
+        219,
+        221,
+        223,
+        234,
+        267
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    },
+    {
+      "symbol": "time/1",
+      "origin": "INLINED_DOLCE_FAMILY_EXCERPT",
+      "comment_or_header_line": 24,
+      "annotation_availability": "LABEL_ONLY",
+      "reviewer_paraphrase": "Time interval.",
+      "paraphrase_basis": "SOURCE_FORMULAS_AND_AVAILABLE_COMMENTS",
+      "asserted_named_parents": [],
+      "biconditional_formula_lines": [],
+      "active_axiom_lines": [
+        28,
+        32,
+        60,
+        68,
+        76,
+        123,
+        135,
+        217
+      ],
+      "conjecture_lines": [],
+      "definition_state": "CONSTRAINED_OR_DEFINED_IN_ACTIVE_AXIOMS",
+      "source_iri": null,
+      "owl_deprecation": "NOT_APPLICABLE_NATIVE_FOL"
+    }
+  ],
+  "boundary": "Static lexical census only. No full TPTP parser, prover, model finder, DOLCE import closure or proof reproduction."
+}
