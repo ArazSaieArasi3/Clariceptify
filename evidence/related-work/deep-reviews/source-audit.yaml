@@ -542,6 +542,19 @@ discovery_attempts:
     qualified.
   limitation: Names/descriptions only in bounded searches; no global absence claim. No full native glossary,
     parser/prover run, software foundation parity or complete DOLCE satisfiability established.
+- id: MENTAL248-TECH
+  checked_on: '2026-10-30'
+  method: PINNED_AUTHOR_FOF_ROOT_FULL_SYMBOL_CENSUS_AND_ISOLATED_TRUTH_TABLES
+  query: Exact paper-linked author root dolce_needs.p at commit93734dbe; all active FOF declarations, unary predicates,
+    source comments, formula names, includes and paper d6/d8/d11/d12 correspondences
+  checked_urls:
+  - https://github.com/diporello/DOLCE-mental_states-needs/blob/93734dbe35c931338b3b9aba66b75c250baf6655/dolce_needs.p
+  outcome: Exact15245-byte hash verified; 58 axioms,12 conjectures,34 predicate name/arity pairs and all16 unary
+    analogues reconciled. No include directive; four duplicate FOF-name groups and isolated quantifier-scope
+    differences recorded. No external foundation closure or proof reproduced.
+  receipt: evaluation/related-work/dolce-mental/technical-census.json
+  limitation: Static lexical inspection and isolated finite truth tables are not a complete TPTP parser,
+    whole-theory consistency result or exact historical source edition proof. Source-file license unverified.
 - id: CDNS2008
   method: EXACT_PAPER_LINKS_HTTP_RDF_CENSUS_AND_BOUNDED_PUBLIC_SEARCH
   checked_on: '2026-10-28'
@@ -1406,7 +1419,7 @@ records:
 - id: CLR-RW-DOLCEMental
   title: 'Needs and Intentionality: An Ontological Analysis and an Application to Public Services'
   primary_issue: 86
-  source_state: DEEP_PAPER_REVIEW_COMPLETE_NATIVE_FOL_TECHNICAL_OPEN
+  source_state: DEEP_PAPER_AND_BOUNDED_NATIVE_FOL_REVIEW_COMPLETE
   repository:
     state: PUBLIC_REPOSITORY_PINNED
     urls:
@@ -1414,22 +1427,23 @@ records:
     evidence:
     - R01
     - MENTAL2026
+    - MENTAL248-TECH
     global_absence_claim: false
     paper_correspondence: PAPER_LINKED_DRAFT_SELECTED_FORMULA_DIFFERENCES
-  artifact_state: PINNED_TPTP_STYLE_FRAGMENT_SELECTED_CORRESPONDENCE_REVIEWED
+  artifact_state: PINNED_TPTP_STYLE_FRAGMENT_ALL34_PREDICATES_CATALOGUED_PROOFS_UNREPRODUCED
   foundation:
     family: DOLCE / DOLCE-CORE
     edition: null
     relation: PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT
     basis: AUTHOR_REPORTED
     locator: Paper sections2.3/4, notes 16/19/22; D18(2003) and DOLCE-CORE references; pinned source header
-    artifact_imports: null
+    artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
     limitations: Exact software edition and full modal theory not established. Source is a FOL/TPTP-style fragment;
       paper/draft quantifier and guard differences retained. Darwin 1.4.4/Hets claim is author-reported, not
       rerun. BFO/UFO are related work, not actual grounding imports.
   class_coverage:
-    state: PENDING_FULL_CATALOG
+    state: COMPLETE_NATIVE_PREDICATE_GLOSSARY_16_UNARY_ANALOGUES_NO_OWL_CLASS_IRIS
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
@@ -1437,10 +1451,12 @@ records:
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
     paper_catalog: evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/review.yaml
-    limitations: 'Complete paper predicate/category catalog is not an OWL class census or complete native source-symbol
-      glossary. Full selected native definitions and technical checks remain #248.'
+    limitations: 'The complete selected native 34-predicate inventory and 16 unary analogues are in
+      evidence/related-work/artifacts/DOLCEMental-symbol-catalog.md. OWL class counts are inapplicable; full external
+      DOLCE closure, parser/prover execution and author consistency reproduction remain unverified.'
   next_issues:
-  - 248
+  - 256
+  - 126
 - id: cDnS-journal-2008
   title: Norms and plans as unification criteria for social collectives
   primary_issue: 263
