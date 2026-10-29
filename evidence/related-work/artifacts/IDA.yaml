@@ -1,0 +1,126 @@
+schema_version: '1.0'
+issue: 246
+task_id: R2-ART-IDA
+status: BOUNDED_SOURCE_DISCOVERY_AND_PAPER_INDEX_REVIEW_PARTIAL_TECHNICAL_OPEN
+checked_on: '2026-10-30'
+baseline_commit: 0663ebd00c10589666ed5c754cbd2d133bb27e47
+work:
+  title: 'Managing Knowledge at the Information Level: an Ontological Approach'
+  authors: [Jean-Yves Fortier, Gilles Kassel]
+  year: 2004
+  paper_url: https://www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf
+  paper_sha256: null
+  original_full_text_review: NOT_PERFORMED
+  indexed_excerpt_status: PARTIAL_PRIMARY_PROSE_WITH_LOSSY_FORMULA_GLYPHS
+  prior_limited_review: evidence/related-work/deep-reviews/CLR-RW-IDA/limited-review.yaml
+  prior_summary_receipt: evidence/related-work/deep-reviews/CLR-RW-IDA/summary-receipt.yaml
+source:
+  owner: Fortier_Kassel_REPORTED_PAPER_AUTHORS_FORMAL_DISTRIBUTOR_UNVERIFIED
+  module: null
+  release_version: null
+  repository: null
+  file_sha256: null
+  discovery: evaluation/related-work/ida/technical-discovery.json
+  encoding: DefOnto_REPORTED_IN_PAPER_NOT_EXECUTABLE_SOURCE_VERIFIED
+  syntax: null
+  license: null
+  direct_imports: null
+  unresolved_imports: UNKNOWN_UNACQUIRED_MODULE
+  public_redistribution: false
+population:
+  local_named_classes: null
+  externally_redeclared_classes: null
+  imported_classes: null
+  referenced_undeclared_classes: null
+  inferred_classes: null
+  local_properties: null
+  selected_root_complete_glossary: NOT_POSSIBLE_WITHOUT_EXECUTABLE_ROOT
+  conceptual_terms_are_machine_classes: false
+foundation:
+  family: DOLCE
+  family_evidence: Paper-indexed section 3.1 explicitly reports DOLCE as backbone and names PT, ED, POB, NPO, PD, P and PC predicates.
+  edition: null
+  action_extension: DOLCE-LITE+_PAPER_FOOTNOTE_9
+  actual_import: null
+  alignment_or_reuse: PAPER_REPORTED_SUBSUMPTION_AND_AXIOMATIC_STYLE_NOT_MACHINE_VERIFIED
+  model_alignment_accepted: false
+checks:
+  - id: T01
+    topic: Signs and communication layers
+    paper_locator: indexed original section 3.1
+    summary_claims: [SR004, SR005]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper describes a general sign/content layer and a specialized discourse/information communication layer. No source namespace or released class declarations verified.
+  - id: T02
+    topic: DOLCE grounding and action
+    paper_locator: indexed original sections 3.1 and 3.2, footnote 9
+    summary_claims: [SR007, SR013]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper names DOLCE predicates and cites DOLCE-LITE+ for Action. Exact edition, import closure and whether any formal import exists remain unknown.
+  - id: T03
+    topic: Signs, contents and inscriptions
+    paper_locator: indexed original section 3.2
+    summary_claims: [SR015, SR016, SR017]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper prose distinguishes nonphysical content/sign and its physical inscription, with a represents/realizes pattern. Indexed logical glyphs are lossy; no biconditional or existential assertion is certified from them.
+  - id: T04
+    topic: Intentional acts and participant roles
+    paper_locator: indexed original sections 3.2 and 3.3, footnote 6
+    summary_claims: [SR013, SR014]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper names conceptualizing, encoding, decoding and inscribing; thematic-role ontology is explicitly omitted for space. Its complete role axiomatization cannot be inspected from this article.
+  - id: T05
+    topic: Discourse production versus communication
+    paper_locator: indexed original section 3.3
+    summary_claims: [SR005, SR020, SR021]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper distinguishes producing a discourse from transmitting it; the transmitter and receiver need not be the producer and addressee. This challenges any direct author=transmitter identity mapping.
+  - id: T06
+    topic: Assertion truth and textual information
+    paper_locator: indexed original section 4.1
+    summary_claims: [SR022, SR023, SR026, SR037]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper describes KB Assertions as organizationally attributed True and permits differing discourse viewpoints. The summary formula and indexed PDF glyphs are not exact axiom transcriptions or a global truth entailment.
+  - id: T07
+    topic: Subject as concept
+    paper_locator: indexed original section 4.1
+    summary_claims: [SR025, SR027]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Paper describes hasForSubject between proposition and concept as indirect reference; it contrasts generic Car with an individual car concept. Neither an executable property IRI nor domain/range source bytes are verified.
+  - id: T08
+    topic: Responsibility and contradictory viewpoints
+    paper_locator: indexed original sections 3.3 and 4.1
+    summary_claims: [SR024, SR037]
+    formal_iri: null
+    exact_formula_locator: null
+    result: Enunciating is described as joining production and communication with author/addressee responsibility; conflicting discourse viewpoints can remain textual while a coherent KB is consensual. No executable consistency test performed.
+decision:
+  disposition: RETAIN_AS_COMPARISON_CANDIDATE_DEFER_FORMAL_REUSE_AND_ALIGNMENT
+  candidate_model_ids: [CLR-C0004, CLR-C0017, CLR-C0026, CLR-C0047, CLR-C0057, CLR-C0101]
+  positive_scenario: Two documents convey a proposition through distinguishable acts of producing and transmitting, preserving the author and addressee separately from a physical inscription.
+  adverse_scenario: A transcript reports a claim that conflicts with an organizational KB assertion; treating the transcript as a True KB assertion or its messenger as its author loses the provenance and disagreement that the paper distinguishes.
+  accepted_equivalences: []
+  owner_decision: PENDING
+  carry_forward: '#256 may use paper-level qualified overlap and unknown formal cells; #126 must distinguish these from verified formal coverage.'
+acceptance:
+  ac1: BOUNDED_UNSUCCESSFUL_DISCOVERY_RECORDED
+  ac2: OPEN_NO_PINNED_MODULE_COMPLETE_CLASS_GLOSSARY_OR_EXACT_FORMULA_BYTES
+  ac3: BOUNDED_DECISION_AND_SCENARIOS_RECORDED
+  evidence: DISCOVERY_AND_REPRODUCIBLE_BOUNDARY_CHECK
+  issue_closure: OPEN
+limits:
+  reasoner: NOT_EXECUTED
+  model_change: NONE
+  requirements_change: NONE
+  fixture_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  scientific_acceptance: NOT_ASSESSED
+  next_issues: [246, 256, 126]
