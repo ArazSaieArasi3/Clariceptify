@@ -1,0 +1,4062 @@
+schema_version: '1.0'
+issue: 88
+candidate_id: CLR-RW-DUL
+review_date: '2026-10-29'
+baseline_commit: 0faa13a6108613289b7d0f02d6bcfc420f5a86d6
+status: LOCAL_CLASS_GLOSSARY_REVIEW_COMPLETE_WITH_EXPLICIT_GAPS
+source:
+  url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  ontology_version: '4.2'
+  sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  syntax: Turtle
+  retrieved_on: '2026-10-29'
+  source_redistributed: false
+  historical_2016_identity: NOT_ESTABLISHED
+declaration_policy: Distinct URI subjects declared owl:Class or rdfs:Class in this exact root. Local means DUL namespace.
+  External redeclarations, class-position references, builtin vocabulary and anonymous expressions are separated.
+  No imported module is folded into the local glossary.
+definition_policy: All local comment annotations inspected; descriptive comments paraphrased by an AI-assisted reviewer,
+  not independent expert validation. Raw comments are retained privately with source hash; public annotation records
+  carry language, length and text SHA256. Definition availability is not logical sufficiency. Absent comments and
+  label-only comments remain explicit; no invented definitions.
+class_iri_set_sha256: a350185af60f8e2c1e4f37a79701e3c81790280de97fde4a13d3de4b59212de8
+counts:
+  local_classes: 78
+  classes_with_comment_candidates: 69
+  accepted_descriptive_comment_classes: 67
+  insufficient_label_restatement_classes: 2
+  classes_without_comment: 9
+  reviewer_reconstructions: 0
+  classes_with_asserted_equivalence: 4
+populations:
+  local_declared_named_class_iris:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution
+  external_declared_named_class_iris:
+  - http://www.w3.org/2002/07/owl#Thing
+  referenced_undeclared_class_iris: []
+  builtin_class_position_iris:
+  - http://www.w3.org/2002/07/owl#Thing
+  declared_import_iris: []
+  deprecated_named_class_iris: []
+  anonymous_class_declarations: 14
+  anonymous_restrictions: 77
+  explicit_document_triples: 1917
+module_boundary:
+  included:
+  - DUL4.2 standalone root
+  excluded:
+  - 'IOLite (separate #271)'
+  - standalone description pattern
+  - TIP and other external patterns
+  - historical editions not recovered
+  imports: No owl:imports declarations in selected root; asserted root is its trivial import closure. No network
+    import resolution performed.
+  imported_glossary_coverage: NOT_APPLICABLE_TO_ROOT_WITH_NO_IMPORTS
+  inferred_class_population: null
+review_limits:
+- 67 usable annotation definitions do not imply all 78 concepts have adequate prose or logical definitions.
+- Nine missing prose annotations and two label-only annotations are recorded as source gaps, not repaired in Clariceptify.
+- All outgoing class constraints, including anonymous expressions, are transcribed structurally; inherited consequences
+  and satisfiability are outside this glossary check.
+- Root class inventory does not claim that the 2016 chapter contains exactly these classes.
+- No model, manuscript, release or adoption change.
+classes:
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+  label: Abstract
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: faa687578b18d295199a919391c887736c75602faf88e3042451365ec3dadce0
+    characters: 143
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: []
+  constraint_ref: DUL-C001
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+  constraint_sha256: e6890181738ab4ebf13f3399b4bdc52dbf0fe10f5d57e41e1ab5ebf6d3729c42
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An entity outside spatial and temporal location, including mathematical structures.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+  label: Action
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 8b9b33726fbc9e3c18d54a63ad36aaa3bc207609ca62e389e1840f6a9adaaa78
+    characters: 141
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  equivalent_expressions: []
+  constraint_ref: DUL-C002
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#minCardinality
+        object:
+          literal: '1'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  constraint_sha256: 754727d260f77fdf65f3b5fd7df0556a671afe0033a237b65302b63c4841d656
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An event involving an agent and execution of a task, commonly situated within a plan.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  label: Agent
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: de7e202c8bda86134c4a9a8fd0c6d1adae16bb88eecda9f50000f85210f4f8b8
+    characters: 406
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: bf89e4c48489c29eddfc2d658b90620888b2b29994b92260e4d8c4cfc772a698
+    characters: 131
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  equivalent_expressions: []
+  constraint_ref: DUL-C003
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  constraint_sha256: 3e2a968d3197c8c0010f93ee59a085dd4c0a4403efcbbe9cd88fd31f6b53296c
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An object treated as capable of agency, whether a physical bearer or a socially constituted
+    agent.
+  notes:
+  - 'Two comments: the generic agency description supports the paraphrase; the computational-agent discussion is
+    supplementary, not a second class definition.'
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount
+  label: Amount
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 710c5c482a61c54d090d550e75fb0b8272c2ad2ea991bd0be236d36421f1b603
+    characters: 65
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  equivalent_expressions: []
+  constraint_ref: DUL-C004
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  constraint_sha256: 681919964dc81ee457669526293ffabc1bc3ab16f7da4ede688a6ba3ceb34f66
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: Quantity considered without committing to a measurement procedure.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject
+  label: Biological object
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  equivalent_expressions: []
+  constraint_ref: DUL-C005
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  constraint_sha256: b4009ac735bc0deb98d2e3137b315a23cb37a01529554f525017b31fb29b8507
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject
+  label: Chemical object
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  equivalent_expressions: []
+  constraint_ref: DUL-C006
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  constraint_sha256: b4009ac735bc0deb98d2e3137b315a23cb37a01529554f525017b31fb29b8507
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification
+  label: Classification
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: aa6f451fc8bd9c30014c4b0ce4c95b91ee7252fac1404bb3a7a018ea4e2187da
+    characters: 670
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+  equivalent_expressions: []
+  constraint_ref: DUL-C007
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+  constraint_sha256: fd3b430239cedf96dcbd0d7975b77ac93ec3bfbb020a49cee581fcc44fe7bc93
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A situation recording which concept classifies an entity at a specified time.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  label: Collection
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: a8d36f88aaeaab346a41e6a23063b340cfe8c382b49132b4849d613d97cc2e41
+    characters: 401
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C008
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  constraint_sha256: 25f6f5ade72f3d4b3bf6837fc532f3f2a5c6a318acf66f73617b5532683a83de
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A first-order grouping united by shared characteristics, distinguished from both a logical
+    class and an aggregate.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective
+  label: Collective
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 498a32527ecd8b385d6b839f4bfa4b66742c909fd176d3fad46862b3101d4adc
+    characters: 352
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  equivalent_expressions: []
+  constraint_ref: DUL-C009
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  constraint_sha256: 421bd9714d19e0f6b831e8322d1bc8c44b2c0d901dd3749eb80401bb219baa0a
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A collection of agents; collective membership alone does not make that collection a social
+    agent.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+  label: Collective agent
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 697241c70197598bbb21787a1954037390643b4d9eeb592700b42d4cf5e7d139
+    characters: 941
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C010
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isIntroducedBy
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#actsThrough
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: 37a52c377b1a22316138e2bdc60373d3056eca0b7cd22d70f04a81553b7d96a9
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A social agent whose action is carried out by members of a corresponding collective, unified
+    through a description.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community
+  label: Community
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C011
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+  constraint_sha256: 9d23f9edbeea371a341016cb69fe01936aadbc04c53b3004eda71204bf9f0975
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  label: Concept
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: b5d46bc76c002c2037d69e85f26d6330dedfc04aced640abcd50340e580dc322
+    characters: 278
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C012
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: 504930630b31c0233d99e6d6d0724fd41fbe27e094eb4a959488ffb2ebbdf3cf
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A socially constituted entity defined within a description and potentially reused elsewhere
+    to classify entities.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration
+  label: Configuration
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 2b608c7ed735b94e95c870da4c52cc3d15d963c8e9ca749eb4c9aa3594a2e9e7
+    characters: 586
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  equivalent_expressions: []
+  constraint_ref: DUL-C013
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  constraint_sha256: 081dd52cf4a5894fd488d60b5495071cd60d68ed117c369029f04c586a923b3b
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A collection organized by a unifying schema expressible as a description.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract
+  label: Contract
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: fafe9583fa846cc2353934cb861da81072752e973e91ce88a090ae7c9eda3051
+    characters: 133
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C014
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: Agreement content connecting two or more parties around an undertaking to be performed.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  label: Description
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 34d7472f65aea458ccf3f3d51be60067084ca530c337ec7953993a884c0d270b
+    characters: 554
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C015
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: c6b31ec6bf5f873aabcd5f6014fafb3b4bcca40cc05454e5cddb3e5fafe3e23f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A social representation of a conceptualization that frames situations through concepts it
+    defines or uses.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design
+  label: Design
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 7e3f9c5268a74b3aa4a9a69fa510070232a9d5a869aef349248f58a6916e9963
+    characters: 700
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C016
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description of an entity's structural and functional arrangement, typically informed by
+    construction or repurposing reasons.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+  label: Designed artifact
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 5f1cc0e8f0d0788aa4fdc633c40a25e1dc8867a30fe541514e465275c85ba3e4
+    characters: 222
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+  equivalent_expressions: []
+  constraint_ref: DUL-C017
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+  constraint_sha256: 5e1d1f5dec91b8de463f148d59aa209cf62560f57fab1c71a023e738d9218ad7
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical artifact with an accompanying design, excluding mere reuse of an unchanged natural
+    object.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance
+  label: DesignedSubstance
+  label_basis: IRI_LOCAL_NAME
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance
+  equivalent_expressions: []
+  constraint_ref: DUL-C018
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance
+  constraint_sha256: 2c8ad4c4a50f20964c652aa89c0694611230f2854266abcb6bab6268ccc3cfa7
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis
+  label: Diagnosis
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: fc1d82fcb4b0445a842720832a55489d9870905b297d605b506efdf5adae4204
+    characters: 163
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C019
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description interpreting a system's situation, for example to explain deviations or regulate
+    its behavior.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  label: Entity
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: a2604a2eea1926bf82466dfd8cf703ef3c56ef4a3a5f09b2fb4792dbc78cacbc
+    characters: 97
+  named_superclasses: []
+  equivalent_expressions: []
+  constraint_ref: DUL-C020
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  constraint_sha256: bfa26cef55a51c9002de2d7df67623c09066669cd685798043527b1a25ca93f5
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: Whatever a modeler elects to discuss, including hypothetical or imagined referents.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  label: Event
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 90bcd59981f677883aa735b66b8364394b6cc4ee6be6d8af50ed6779dd91668b
+    characters: 5207
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: []
+  constraint_ref: DUL-C021
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+  constraint_sha256: 0d1606c2221da1d3e2c66687a56b01c357d2a4c08124bc6e904f0639c6e473ce
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical, social, or mental occurrence, process, or state; alternative interpretations
+    can be represented through distinct situations.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+  label: Event type
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: c3af47d107b0830aa6fc2f0043dba8f4a934dc31d464a2b6f85367687072a89e
+    characters: 201
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  equivalent_expressions: []
+  constraint_ref: DUL-C022
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  constraint_sha256: ccc7f8203db6e93d5e5f88437b56c6c19560eeb6ef47ad735702a1d36a685693
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A concept supplying a description-dependent interpretation or expectation for events.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+  label: Formal entity
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: dcb42267adff56094e867aaa5a015321d35b55bacf89a2c0ce1150d4a14e7d92
+    characters: 1700
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+  equivalent_expressions: []
+  constraint_ref: DUL-C023
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+  constraint_sha256: fc8d8c635a8ed042199406e2a1edb4dd476a5d314c37f8d1fd43e69fc206d70b
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An abstract formally defined entity considered independently of its social use, unlike socially
+    situated concepts or information objects.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance
+  label: Functional substance
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance
+  equivalent_expressions: []
+  constraint_ref: DUL-C024
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance
+  constraint_sha256: 57cbf9d7651fb255d527dd09ff2e5cf606f37bff2f13fed9805907cfff1f7241
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+  label: Goal
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 9eac4f4a54b7dd5fe98efcbb9671f8f3832815e1669dca6d10cf01c441bc5866
+    characters: 134
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C025
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description of a situation an agent wants to obtain, often linked to a plan for obtaining
+    it.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group
+  label: Group
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 6e8dabcf2647841744a2c1009507f35c207b758a4a08170004b85880f542f403
+    characters: 75
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C026
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+  constraint_sha256: 8842a2977b270b1ba0f4a4703d5deb7b5b5c63aa5e07bbde742b12692e1df60e
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A collective agent whose acting members conceptualize a shared social relation.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+  label: InformationEntity
+  label_basis: IRI_LOCAL_NAME
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 5ca386cc31ea7e5ac72cd2ad9da2cfd00974e54e45c5a88d99f29ef32b6311f7
+    characters: 553
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: []
+  constraint_ref: DUL-C027
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  constraint_sha256: 39ebac6102c0a4f3adf1d24556543c11b84bb0d86b3c61515eb999954c821775
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An umbrella for information content and its concrete realizations when their distinction
+    is intentionally left open.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  label: Information object
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 371e6bb2402c83f170eddefe464523cb7e7cc57e191ec0496e9115e1bb36bdbb
+    characters: 131
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C028
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: 550d887268324a922230ab85ceb29256d5f55aa41c02f28f918a70cdaad67101
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: Information content considered separately from the concrete forms that realize it.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+  label: Information realization
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: af52ac5fbe4d0a77a46d491d9d01e29f4c3ebc2040d8c4ea3bb7d2c974fe2865
+    characters: 941
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+  equivalent_expressions: []
+  constraint_ref: DUL-C029
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Class
+      - predicate: http://www.w3.org/2002/07/owl#unionOf
+        object:
+          anonymous_expression:
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            object:
+              anonymous_expression:
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                object:
+                  anonymous_expression:
+                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                    object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                    object:
+                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#hasSelf
+        object:
+          literal: 'true'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#boolean
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizesSelfInformation
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+  constraint_sha256: 43a44a9272c9d0067714653c20447157a0ad2a317f7ac66c41826e5e35036742
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A concrete embodiment or performance of information content, also capable of realizing information
+    about itself.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept
+  label: Local concept
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 9e346c586c89df84986dc9e100d691147fd6b7f99776374b75a79e7ed70265d1
+    characters: 329
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  equivalent_expressions: []
+  constraint_ref: DUL-C030
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  constraint_sha256: 3064c5d00735c9725dfabcdf5e674e058dd437edb0d26324ee00165a6199d240
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A concept defined by exactly one description; other descriptions may use it without becoming
+    its defining description.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method
+  label: Method
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 9449025bc713f594ed004d6d0ee1e07bcd0ac20d654e865d29c74d1b706189df
+    characters: 296
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C031
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description guiding problem-solving actions, potentially followed through different plans.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative
+  label: Narrative
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C032
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+  label: Natural person
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: f81a1cf60a77625dd17cc7b7b96c4c801e1e075a24ff0803bf59a8d42fac82d5
+    characters: 100
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C033
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  constraint_sha256: 7cca01557530f4d9a033f92169996127a9d4e736d1dec845e865a1e1980d2ba2
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A person considered as a physical human individual.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm
+  label: Norm
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 8bcfb80267eca037b965f5e3ea5477d012195bdf26405f60cbb46e137f15e393
+    characters: 14
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C034
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: INSUFFICIENT_LABEL_RESTATEMENT
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - The source comment merely restates the class label; insufficient descriptive content for an attributed paraphrase.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  label: Object
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 82f823911da69486608c083b240bbf48a4fa612b1a8d3d3426d49417ab04b9c4
+    characters: 178
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: []
+  constraint_ref: DUL-C035
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+  constraint_sha256: 09744a9e2d803ece69a58c53619b3c44f0b58ad219c3076c043a7613bd0ff3ea
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical, social, or mental object or substance, understood as spatially located and participating
+    in events.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+  label: ObjectAggregate
+  label_basis: IRI_LOCAL_NAME
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: ae7ffb955736f6d5f5a3df0a05366d8c3bc24e3ad17a0cdcd45ac93afea3d50b
+    characters: 379
+  named_superclasses: []
+  equivalent_expressions: []
+  constraint_ref: DUL-C036
+  constraints:
+  - predicate: http://purl.org/dc/elements/1.1/creator
+    object:
+      literal: Aldo Gangemi
+      language: null
+      datatype: null
+  - predicate: http://purl.org/dc/elements/1.1/date
+    object:
+      literal: '2021-02-21T23:35:02+00:00'
+      language: null
+      datatype: http://www.w3.org/2001/XMLSchema#dateTime
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Class
+      - predicate: http://www.w3.org/2002/07/owl#intersectionOf
+        object:
+          anonymous_expression:
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            object:
+              anonymous_expression:
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                object:
+                  anonymous_expression:
+                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                    object:
+                      iri: http://www.w3.org/2002/07/owl#Restriction
+                  - predicate: http://www.w3.org/2002/07/owl#onProperty
+                    object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+                  - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+                    object:
+                      anonymous_expression:
+                      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                        object:
+                          iri: http://www.w3.org/2002/07/owl#Class
+                      - predicate: http://www.w3.org/2002/07/owl#intersectionOf
+                        object:
+                          anonymous_expression:
+                          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                            object:
+                              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+                          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                            object:
+                              anonymous_expression:
+                              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                                object:
+                                  anonymous_expression:
+                                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                                    object:
+                                      iri: http://www.w3.org/2002/07/owl#Restriction
+                                  - predicate: http://www.w3.org/2002/07/owl#onProperty
+                                    object:
+                                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf
+                                  - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+                                    object:
+                                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+                              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                                object:
+                                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+  constraint_sha256: da05aa8027f63a5a4a8f8d79afea94ade660f2da17c0a7a63d580d302fa98fb4
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An aggregate of distributed objects belonging to one collection; the commentary cautions
+    that the shared-collection condition is not captured by an OWL equivalence.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism
+  label: Organism
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: c8c613bdf5fb9d0be289a7f3c41f8f4c8f793a5c196c5c4c32b6d5c5604d2003
+    characters: 96
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C037
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  constraint_sha256: 6837294d3e2ddc891c9a270c61fcf8fd1610a684a332bbbb805cc804148e70fc
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical object possessing biological characteristics, with reproduction presented as typical
+    rather than universally mandatory.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization
+  label: Organization
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: en
+    datatype: null
+    text_sha256: 6eeea8095eda0083360d62aa25e17ac87af3712ddb2cfb1ee7f7d854ba757aad
+    characters: 127
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: it
+    datatype: null
+    text_sha256: 6a83b567f342b112ace02718b66aaa7a869de9de4006e9278afac509f3794e76
+    characters: 128
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C038
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: e2d54d0be04ec2d922cf784abf9eaabf2c440b5b400adfe347673e96fbd91e3c
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A conventionally instituted, internally organized social agent that acts through agents occupying
+    designated roles.
+  notes:
+  - Two language-tagged comments convey the definition; the public paraphrase is English only.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+  label: Parameter
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 79339c05a27b84061a218dc02e80674efe4227dabd237ce10e969d1ee59aa254
+    characters: 592
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  equivalent_expressions: []
+  constraint_ref: DUL-C039
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  constraint_sha256: 38c3aa688a80415f3c9d0d7dacec8f94af72f6f007c7dea19c0a232e15b4d74d
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A concept that selects or constrains values represented by regions, including measurement
+    conventions.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood
+  label: parthood
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 0dff37ab68b1584dbf5c3e8ff5d833343efd6ed84625014a766b26023b00717e
+    characters: 824
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+  equivalent_expressions: []
+  constraint_ref: DUL-C040
+  constraints:
+  - predicate: http://purl.org/dc/elements/1.1/creator
+    object:
+      literal: Aldo Gangemi
+      language: null
+      datatype: null
+  - predicate: http://purl.org/dc/elements/1.1/date
+    object:
+      literal: '2021-04-03T13:53:57+00:00'
+      language: null
+      datatype: http://www.w3.org/2001/XMLSchema#dateTime
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesWhole
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesPart
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+  - predicate: http://www.w3.org/2002/07/owl#hasKey
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesPart
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        object:
+          anonymous_expression:
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesWhole
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            object:
+              iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+  constraint_sha256: 959b9076f4a60193b953e96aee9dfe39cd494411aef493936d9a35b83f14373a
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A reified situation for a time-qualified part-to-whole relation; additional mereological
+    behavior requires appropriate rules or chains.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern
+  label: Pattern
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 66203c4f1d42c21ddef7ceeab01259675b93fcbdb21dc01f911d2800528387ff
+    characters: 319
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  equivalent_expressions: []
+  constraint_ref: DUL-C041
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  constraint_sha256: dde8a4e8b9fbd353798e5ee7b5aec8b5d3a4e6e1aadf15711a27a1411bb6fdee
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An observed or proposed invariance whose concrete occurrence may be represented as a situation.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+  label: Person
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 404e0c6ef8eed9fd79c0fec0abfd12f16cda0963fd7ac3ec23a70153164fc1b6
+    characters: 113
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  equivalent_expressions: []
+  constraint_ref: DUL-C042
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  constraint_sha256: ca045c05ae4c681a128d0ba4b86e384506c519840748071e25323743c53c5c6f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An umbrella for ordinary talk of persons when physical and social personhood are not distinguished.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification
+  label: Personification
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 99836056a2678265997977453d22e6c5646b0096d0ffe76c5078fa28def644f2
+    characters: 247
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C043
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: e2d54d0be04ec2d922cf784abf9eaabf2c440b5b400adfe347673e96fbd91e3c
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A socially constructed agentive entity arising through a cultural interpretation of some
+    other entity.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  label: Physical agent
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: db05090c25421b835a1ab6a14e370c5711ba83aad0b3c81e00dd12600a386744
+    characters: 174
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C044
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  constraint_sha256: 9eb196bfc6a6c6c062ddfcbee67656d30a08ab1051b8e793fbf7a230bb9d350e
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical object able to conceptualize descriptions for planning action and able to act
+    for a social agent.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+  label: Physical artifact
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: cbe545b9a08a6d3c2b703cddfa6bf2f4f439fd64daae85f08e877a93fce7897c
+    characters: 729
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C045
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  constraint_sha256: 7f2af54c085aa633eb4870b38252a1ae57cfa75aa7053a21ea8605eee7725b73
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical object interpreted through a plan, including intentional reuse without structural
+    redesign.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute
+  label: Physical attribute
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 03951b2913060f58ea65a0099f79a706dfba35ae11d3f13c2f7e56d1f78a3137
+    characters: 62
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  equivalent_expressions: []
+  constraint_ref: DUL-C046
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  constraint_sha256: 626b04f8cc9aed9673b78da9f6ecfca7caaca7027a1b51e69840ba65402eec57
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A region representing a physical object's value along a physical dimension.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  label: Physical body
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 50ecfb2e6e25c820776865f5ad380a6ae1c8a21eda9f6d4036a5a7b1c6878679
+    characters: 197
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C047
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  constraint_sha256: af978cb0784dd573e8859f2aa582c8a80a524d2ef36cc81fa179ef7fa6b8be04
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical object considered without foregrounding any artifactual function, at a chosen
+    level of physical organization.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  label: Physical object
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 316c08c823d3bbd91932fd51648c453e1b52e147cf0e7e16a41ac834dd33c4a8
+    characters: 259
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  equivalent_expressions: []
+  constraint_ref: DUL-C048
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  constraint_sha256: d0fdff3f0b6cc6d2d1e5fda646580a25cf321bf686ab073f7046fb7d8509429c
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An object occupying its own spatial region; associated mass is typical but epistemically
+    qualified in the commentary.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+  label: Physical place
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 57c32915bb57397cfe36fcf06ce55c46a23838c685b1ae5f0d152a818c4060a3
+    characters: 72
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C049
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+  constraint_sha256: af978cb0784dd573e8859f2aa582c8a80a524d2ef36cc81fa179ef7fa6b8be04
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical object whose location is intrinsic to how it is identified.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+  label: Place
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 41e4abdab0cccb8ecf455a9726e47ab3177b2ec57c2109f82c80b06530b637fe
+    characters: 534
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C050
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#minCardinality
+        object:
+          literal: '1'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  constraint_sha256: 11ba19b8a8203fcf7f058b9a1c671a902e9e10fc671e0c0796638e0b907d4abd
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A location dependent on social or cognitive identification, contextual entities, events,
+    or signs rather than solely a dimensional region.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  label: Plan
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: dc4613cebb384de0386f215e2442756d028e5c4c475949de05e3f6068418f605
+    characters: 75
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C051
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: e5ef74e87fcb50fba72554503ed4914efc7126ef25678b5f761fb64183891101
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description specifying a goal to be achieved through its execution.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+  label: Plan execution
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: f96e873234d1e10733a75b42661687ae9ca9ebab3ef17e938a6baa699b8827f5
+    characters: 128
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  equivalent_expressions:
+  - anonymous_expression:
+    - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      object:
+        iri: http://www.w3.org/2002/07/owl#Restriction
+    - predicate: http://www.w3.org/2002/07/owl#onProperty
+      object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+    - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+      object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  constraint_ref: DUL-C052
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  - predicate: http://www.w3.org/2002/07/owl#equivalentClass
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  constraint_sha256: deb03714c1acad0b24806549a8ef237910a44d7fab1ad053f614a812dfbd268f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: ASSERTED_EQUIVALENCE_PRESENT
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A situation proactively satisfying a plan, with subplan executions treated as proper parts.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+  label: Process
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 55a5cf33247b94a33378304f084cc1865081c64b25b4a0ea232c8a350ed852a0
+    characters: 215
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  equivalent_expressions: []
+  constraint_ref: DUL-C053
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  constraint_sha256: b7689990d63bf5e090a1c8c6a28300bcf14e05e8a8303d1fe2b0b48b1a329ff3
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A provisional event category emphasizing evolution or weak dependence on agents, tasks, and
+    plans.
+  notes:
+  - Source explicitly treats this category as provisional; the paraphrase preserves that qualification.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project
+  label: Project
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: e05fd338aaad9c931a45620aff7e33c51006c898714d4e042b3eab708196888c
+    characters: 265
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  equivalent_expressions: []
+  constraint_ref: DUL-C054
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  constraint_sha256: 59088c48fdb5247e117b995459c84238ad74c03292501bbe2643fc6728d491ea
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A plan organizing multiple roles and tasks around a structured set of subgoals and an overall
+    goal.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+  label: Quality
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 08db2aa33b58068a65eeea41ac0bda8803793aef897d90d8d11698b01f3c429c
+    characters: 987
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions: []
+  constraint_ref: DUL-C055
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  constraint_sha256: addf4d16b2ac6387e42f0e9823d7aae3558ba27bea6d069e20f1bab9631c47ee
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A dependent aspect of an individual entity, distinguished from the region used to encode
+    its value.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  label: Region
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: f0e9697463a6efdb025f3e7a64d2516f190199d7a41547585c64a2d56d242436
+    characters: 426
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+  equivalent_expressions: []
+  constraint_ref: DUL-C056
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#overlaps
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+  constraint_sha256: 24daf60faf9e270e3956c0cf206fa7a083098f0502c3a51b890e29c789022a4a
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A portion of a dimensional space usable as an entity's quality value, distinct from an ordinary
+    datatype literal.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  label: Relation
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: bd0cd093a881b358c33631e695659869ba9fc8af0c83a88287cd5de314789cc7
+    characters: 511
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C057
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: aae48a6c9dd8c6ce030e9c69144775667e1f7efa3237326b5acd46bb0de2cc2f
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A socially situated description of a relation-like arrangement whose argument positions can
+    be represented by concepts.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right
+  label: Right
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 8277ac9b269f6254dd7b67630651bf8234d2b4dbc9586dc7987f4998c28c946f
+    characters: 185
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C058
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#minCardinality
+        object:
+          literal: '1'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#minCardinality
+        object:
+          literal: '2'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: 8ea57397cac2e1d7f89470f20fa58b508604cdb60b9aa3d88a4d73731a12cdbb
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A legally supported entitlement of an agent to obtain something from another under stated
+    conditions.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  label: Role
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 929f72c2e68c4115a1e467b2ecd3773afa9264a2f9e36317920857ce10607dc2
+    characters: 35
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  equivalent_expressions: []
+  constraint_ref: DUL-C059
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  constraint_sha256: accea606e47c297ca637fe11d559b46b280df8bef89c01214dc59aed15423dbe
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A concept used to classify objects.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set
+  label: Set
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+  equivalent_expressions: []
+  constraint_ref: DUL-C060
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+  constraint_sha256: 2c3a753b1aa262c3a24bdf47e2309dfe8a7ce43f081f255559ed030db34d8895
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  label: Situation
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 8a78fe7c17a47ac673cce0bb95e50e0c9d33a9ce6151a665ab494bc239c57405
+    characters: 915
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  equivalent_expressions:
+  - anonymous_expression:
+    - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      object:
+        iri: http://www.w3.org/2002/07/owl#Restriction
+    - predicate: http://www.w3.org/2002/07/owl#onProperty
+      object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+    - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+      object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_ref: DUL-C061
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+  - predicate: http://www.w3.org/2002/07/owl#equivalentClass
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: 078acb9e5b9a545d87a7f3a7ae3139c2c8495c1f8d15b67918ba4c3aee5853ea
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: ASSERTED_EQUIVALENCE_PRESENT
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description-framed view of entities that can represent a relational context or reified
+    multi-argument relation.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  label: Social agent
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: ef437d72108846404eb5877e20f31ce53d48b6db2377eee158031cd489d60f4c
+    characters: 133
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  equivalent_expressions: []
+  constraint_ref: DUL-C062
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#actsThrough
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  constraint_sha256: b52d8517d1c6438bdd277f2db96270a5344844970a5af8cde994619b51d90d7d
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An agent whose socially communicated existence and capacity for action depend on physical
+    agents acting for it.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+  label: Social object
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 60344448961951a4a5368ba3d8a4adba9419839a95f2b115f948cbb52e50f6e2
+    characters: 591
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  equivalent_expressions: []
+  constraint_ref: DUL-C063
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  constraint_sha256: 503b2636a0a84528286a482bc99554b61aeb214ae75ccd4ef3122290a0a8a4a3
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An object constituted through communication and expressed through information, rather than
+    existing independently of social communication.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute
+  label: Social attribute
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: e822668ed3d4d3a4f14a5d8a465c89817824e1d64db7483dcde6fcf375b30fc1
+    characters: 195
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  equivalent_expressions: []
+  constraint_ref: DUL-C064
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  constraint_sha256: 81933ad844098414bb6da08c23f20f71ea467568185921f4d62ee61df8f4e733
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A dimensional region used to characterize a social object, such as a judgment or statistical
+    value.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson
+  label: Social person
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: d6d309732283d237fc62748a70c99bf4adff855642611cf8da5e84b41614dcc1
+    characters: 168
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  equivalent_expressions: []
+  constraint_ref: DUL-C065
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#cardinality
+        object:
+          literal: '1'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#actsThrough
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+  constraint_sha256: f10e7bc2c9c0b375292ed9a3a2bc9c3c6d765b998e832bd97fce5c252e667576
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A social agent depending on a particular natural person for action, without requiring identical
+    lifetimes.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation
+  label: Social relation
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 008a282da2d18565d4dc763a00deb162a6beb2298a8a70cb7959d3ea5bc8401a
+    characters: 23
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  equivalent_expressions: []
+  constraint_ref: DUL-C066
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  constraint_sha256: dde8a4e8b9fbd353798e5ee7b5aec8b5d3a4e6e1aadf15711a27a1411bb6fdee
+  source_definition:
+    status: INSUFFICIENT_LABEL_RESTATEMENT
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - The source comment merely restates the class label; insufficient descriptive content for an attributed paraphrase.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+  label: Space region
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 0e04919432e9a8c6c47d404abc3f8ceff93469e769a6c249132a7a99eaefdbf0
+    characters: 279
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  equivalent_expressions: []
+  constraint_ref: DUL-C067
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  constraint_sha256: 4357b881a89aa1962821ecc8b4c1c52acbe234b2195201fe0c9d4bf83edf37fe
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A region in a specified spatial dimensional system used for locating entities rather than
+    representing nonspatial characteristics.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion
+  label: SpatioTemporalRegion
+  label_basis: IRI_LOCAL_NAME
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  equivalent_expressions: []
+  constraint_ref: DUL-C068
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  constraint_sha256: f46719ebb69d2330f4c5dce7b9b6c96201ec626cf068558684bd06f5578e64dd
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance
+  label: Substance
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 1f785067d93eb4269e852d3eb5034379c4c9d21047fd0ab3ef8ec144b005295a
+    characters: 433
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  equivalent_expressions: []
+  constraint_ref: DUL-C069
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+  constraint_sha256: b4009ac735bc0deb98d2e3137b315a23cb37a01529554f525017b31fb29b8507
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A physical body whose boundaries need not be intentionally specified by a design.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+  label: Task
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 0feb66c80fd85110eec59fa30aad796d62c39c85b31e7bb155bb1a7766debb2f
+    characters: 510
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+  equivalent_expressions: []
+  constraint_ref: DUL-C070
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExecutedIn
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+  constraint_sha256: 326a13c997c157dc9e431f7180784c8ce62cdca7e378ca360a8818ba5a5b30ab
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: An event type specifying an action to perform; its defining plan may differ from the plan
+    chosen to execute it.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+  label: Theory
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: c119dc70b80f04b8934172e2146d18ba7ee139a06d013be2f09c36b34a68153f
+    characters: 394
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  equivalent_expressions: []
+  constraint_ref: DUL-C071
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+  constraint_sha256: 47f8cf55078258a4e05b1afa816ef65bdd265dd9bd68aabee553b85156a39459
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A description representing assumptions for explaining or characterizing a subject, including
+    scientific and everyday theories.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+  label: TimeIndexedRelation
+  label_basis: IRI_LOCAL_NAME
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 416b7bcbb890ec24180f26214f396fbe69d8cadb17510e6be72c9dfd96ba7532
+    characters: 120
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  equivalent_expressions:
+  - anonymous_expression:
+    - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      object:
+        iri: http://www.w3.org/2002/07/owl#Class
+    - predicate: http://www.w3.org/2002/07/owl#intersectionOf
+      object:
+        anonymous_expression:
+        - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+        - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          object:
+            anonymous_expression:
+            - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              object:
+                anonymous_expression:
+                - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                  object:
+                    iri: http://www.w3.org/2002/07/owl#Restriction
+                - predicate: http://www.w3.org/2002/07/owl#onProperty
+                  object:
+                    iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+                - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+                  object:
+                    iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+            - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+              object:
+                iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+  constraint_ref: DUL-C072
+  constraints:
+  - predicate: http://purl.org/dc/elements/1.1/creator
+    object:
+      literal: Aldo Gangemi
+      language: null
+      datatype: null
+  - predicate: http://purl.org/dc/elements/1.1/date
+    object:
+      literal: '2021-02-24T14:24:23+00:00'
+      language: null
+      datatype: http://www.w3.org/2001/XMLSchema#dateTime
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  - predicate: http://www.w3.org/2002/07/owl#equivalentClass
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Class
+      - predicate: http://www.w3.org/2002/07/owl#intersectionOf
+        object:
+          anonymous_expression:
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            object:
+              anonymous_expression:
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                object:
+                  anonymous_expression:
+                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                    object:
+                      iri: http://www.w3.org/2002/07/owl#Restriction
+                  - predicate: http://www.w3.org/2002/07/owl#onProperty
+                    object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+                  - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+                    object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+  constraint_sha256: 986e72762bf7f9acb0fda7bba364dee07103a53a6ddc13badbc6414e7020aac2
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: ASSERTED_EQUIVALENCE_PRESENT
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A situation adding a time argument to the context of a binary relation.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+  label: Time interval
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 412b35efef7da91eb1794c3171853ef624c00c935564920305b407276e2e03ab
+    characters: 65
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  equivalent_expressions: []
+  constraint_ref: DUL-C073
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  constraint_sha256: f1bf2dbcb63cc1219b56db6b9374ecb108909244f3509c103a224f1c9165330e
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A region of a dimensional system used to represent temporal extent.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition
+  label: Transition
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: dd707ccdea1674ba048003a537fe2f3cbd07daafd3a66134a339eee2506ab87d
+    characters: 888
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  equivalent_expressions: []
+  constraint_ref: DUL-C074
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          anonymous_expression:
+          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+            object:
+              iri: http://www.w3.org/2002/07/owl#Class
+          - predicate: http://www.w3.org/2002/07/owl#intersectionOf
+            object:
+              anonymous_expression:
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                object:
+                  anonymous_expression:
+                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                    object:
+                      anonymous_expression:
+                      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                        object:
+                          iri: http://www.w3.org/2002/07/owl#Restriction
+                      - predicate: http://www.w3.org/2002/07/owl#onProperty
+                        object:
+                          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes
+                      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+                        object:
+                          anonymous_expression:
+                          - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                            object:
+                              iri: http://www.w3.org/2002/07/owl#Class
+                          - predicate: http://www.w3.org/2002/07/owl#intersectionOf
+                            object:
+                              anonymous_expression:
+                              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                                object:
+                                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+                              - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                                object:
+                                  anonymous_expression:
+                                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                                    object:
+                                      anonymous_expression:
+                                      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                                        object:
+                                          iri: http://www.w3.org/2002/07/owl#Restriction
+                                      - predicate: http://www.w3.org/2002/07/owl#onProperty
+                                        object:
+                                          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes
+                                      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+                                        object:
+                                          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+                                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                                    object:
+                                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                    object:
+                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+        object:
+          literal: '2'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onClass
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+        object:
+          literal: '3'
+          language: null
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+      - predicate: http://www.w3.org/2002/07/owl#onClass
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  constraint_sha256: cb776bed7b2d1674c8790faee4bc07051e1bffe034dbea217f28abd4520c2ec8
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A situation coordinating before-and-after situations, an event, a process, objects, and temporal
+    intervals to describe change.
+  notes:
+  - The commentary contains historical OWL expressivity claims. This glossary does not adopt those claims as a current
+    profile judgment.
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection
+  label: Type collection
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 013fc2bae29126887044620b82b8c2b89e10f98a49a26626ed317770b7f0cf98
+    characters: 425
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  equivalent_expressions: []
+  constraint_ref: DUL-C075
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+  constraint_sha256: 081dd52cf4a5894fd488d60b5495071cd60d68ed117c369029f04c586a923b3b
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A collection representing the maximal extension of a named type, distinct from a concept's
+    intensional role.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
+  label: Unit of measure
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 18f5baed61cec8851e38cdf0a16a32dba4bb8c9841586af0ebe40b6e20de35cf
+    characters: 106
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+  equivalent_expressions: []
+  constraint_ref: DUL-C076
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+  constraint_sha256: c96175389564d47fc49445086a359f54bbb38b2852637e57d5c45d670631619c
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A parameter applied to regions to support measurement through datatype values.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+  label: Workflow
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records:
+  - predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    language: null
+    datatype: null
+    text_sha256: 800af086cb0fb4314c8e57c69b6c36f5545191b34579bc6249bc2aded6fa1b6e
+    characters: 135
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  equivalent_expressions: []
+  constraint_ref: DUL-C077
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+  constraint_sha256: 59088c48fdb5247e117b995459c84238ad74c03292501bbe2643fc6728d491ea
+  source_definition:
+    status: DESCRIPTIVE_COMMENT_REVIEWED
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: NO_ASSERTED_EQUIVALENCE
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: A plan structuring roles and tasks, typically for an organization's work.
+  notes: []
+- iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution
+  label: Workflow execution
+  label_basis: SOURCE_ENGLISH_LABEL
+  module: DUL4.2 standalone root
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  population: LOCAL_DECLARED_NAMED_CLASS
+  deprecated: false
+  annotation_records: []
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  equivalent_expressions:
+  - anonymous_expression:
+    - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      object:
+        iri: http://www.w3.org/2002/07/owl#Restriction
+    - predicate: http://www.w3.org/2002/07/owl#onProperty
+      object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+    - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+      object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+  constraint_ref: DUL-C078
+  constraints:
+  - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    object:
+      iri: http://www.w3.org/2002/07/owl#Class
+  - predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+    object:
+      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+  - predicate: http://www.w3.org/2002/07/owl#equivalentClass
+    object:
+      anonymous_expression:
+      - predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+        object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+      - predicate: http://www.w3.org/2002/07/owl#onProperty
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+      - predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+        object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+  constraint_sha256: 19b2c74727ba9616ea3f694e7298a67eaea44ce67c333d5d7fbd047376db5bc9
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locator: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    annotation_text_publication: NOT_REDISTRIBUTED
+    logical_definition_status: ASSERTED_EQUIVALENCE_PRESENT
+    interpretation: Descriptive prose candidate, not a necessary-and-sufficient formal definition.
+  reviewer_definition: null
+  notes:
+  - No prose definition is supplied in the selected root. Hierarchy or equivalence is preserved separately; no reconstruction
+    is presented as an author definition.
+  - An explicit equivalent-class expression is present even though an annotation definition is absent; prose and
+    formal definition availability are different measures.

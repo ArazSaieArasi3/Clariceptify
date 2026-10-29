@@ -28,7 +28,7 @@ def render_audit(audit):
         c = row['class_coverage']
         coverage = c['state']
         if c['catalog_path']:
-            relative = str(Path(c['catalog_path']).relative_to('evidence/related-work/deep-reviews')).replace('.yaml', '.md')
+            relative = posixpath.relpath(c['catalog_path'], 'evidence/related-work/deep-reviews').replace('.yaml', '.md')
             coverage = f"[{c['local_classes']} classes]({relative}); {c['source_definition_candidates']} comment candidates; {c['missing_source_definitions']} missing"
         cells = [f"{row['id']} (#{row['primary_issue']})", repo['state'] + ('; ' + repos if repos else '') + '; ' + row['artifact_state'],
                  cell(f['family']) + '; ' + f['relation'] + '; edition: ' + cell(f['edition']), coverage,
@@ -61,8 +61,9 @@ def render_audit(audit):
               '[coverage guide](coverage-guide.md) before interpreting completion.', '',
               'For LMM, 29 local classes have been catalogued; four lack source definition comments. '
               'The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; '
-              'their glossary remains #88/#271. Conceptualization also consumes #88. '
-              'No reasoner run, historically exact paper implementation or final synthesis is claimed.', '',
+              'the DUL 78-class glossary is now complete with nine absent and two label-only comments; IOLite remains #271. '
+              'The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. '
+              'The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.', '',
               'Clariceptify model change: NONE. Final synthesis #126 stays open; later adoption requires the owner decision.', '']
     return '\n'.join(lines)
 

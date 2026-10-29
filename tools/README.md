@@ -124,3 +124,11 @@ a missing reader target and a stale profile/report binding. Current primary CI
 has twelve layers; the issued v0.1.0 release retains its original eleven.
 
 `build_manuscript_figure.py --output OUTPUT.svg` derives the selected 13-class/14-association portrait figure and its exact row bindings. `check_documentation.py` rejects stale figure, manuscript asset and evidence identities. The owner-managed article remains a draft; its raw bytes are not part of public CI. `readback_pages.py` compares actual public current/frozen reader bytes against each exact build manifest.
+
+## DUL source-bound technical review
+
+`check_dul_technical_review.py` and `check_dul_class_catalog.py` validate public evidence/claim bindings without private inputs or network access. They do not rerun reasoning. For exact-source reconciliation, run the glossary checker with `--source DUL.owl`.
+
+The optional research runners `inspect_dul_semantics.py` and `inspect_dul_modules.py` consume private hash-pinned source files. Use rdflib 7.6.0, owlready2 0.51 and Java for the semantic runner; keep complete combined source graphs and logs outside the public repository with `--private-dir`. The former runs isolated full-root consistency/adverse cases; the latter inventories selected asserted module closures with blank nodes standardized apart. Neither downloads sources, modifies Clariceptify, redistributes third-party bytes or establishes scientific acceptance. Run under a bounded process timeout (the recorded 29-case run used 240 seconds).
+
+Install the optional pinned runner dependencies with `python -m pip install -r requirements-dul-review.txt`; Java must also be available.

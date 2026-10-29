@@ -1,0 +1,20 @@
+{
+  "catalog_sha256": "25f93f87fab8055a2fe4e31b0625464b5fbcfd48ec4cfd669be304fb1f55c675",
+  "checker_sha256": "7dba3b15eb697c471a0c5f780a49cd391a3286ae4308af3b851bce642881c96e",
+  "class_iri_set_sha256": "a350185af60f8e2c1e4f37a79701e3c81790280de97fde4a13d3de4b59212de8",
+  "counts": {
+    "accepted_descriptive_comment_classes": 67,
+    "classes_with_asserted_equivalence": 4,
+    "classes_with_comment_candidates": 69,
+    "classes_without_comment": 9,
+    "insufficient_label_restatement_classes": 2,
+    "local_classes": 78,
+    "reviewer_reconstructions": 0
+  },
+  "errors": [],
+  "scope": "Set, annotation provenance, explicit axiom and record integrity; not scientific validation or reasoning",
+  "semantic_acceptance": "NOT_ASSESSED",
+  "source_reparsed": true,
+  "source_sha256": "e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66",
+  "status": "PASS"
+}

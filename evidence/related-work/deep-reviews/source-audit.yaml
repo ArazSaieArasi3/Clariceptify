@@ -1,6 +1,6 @@
 schema_version: '1.0'
 issue: 269
-checked_on: '2026-10-28'
+checked_on: '2026-10-29'
 population:
   paper_or_version_records: 19
   separate_document_sources: 4
@@ -1059,7 +1059,7 @@ records:
 - id: CLR-RW-DUL
   title: Dolce+D&S Ultralite and its main Ontology Design Patterns
   primary_issue: 70
-  source_state: DEEP_CHAPTER_REVIEW_COMPLETE_ARTIFACT_GLOSSARY_OPEN
+  source_state: CHAPTER_AND_BOUNDED_TECHNICAL_REVIEW_COMPLETE_WITH_EXPLICIT_GAPS
   repository:
     state: STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED
     urls:
@@ -1071,31 +1071,39 @@ records:
     - DUL2016-DISC-20261028
     global_absence_claim: false
     paper_correspondence: DUL4_2_RETAINED_NOT_EXACT_2016; RELATED_DOLCE_REPO_NOT_SUBSTITUTED
-  artifact_state: PINNED_DUL4_2
+  artifact_state: PINNED_DUL4_2_ALL78_CLASS_GLOSSARY_AND29_SEMANTIC_CASES
   foundation:
     family: DOLCE + DnS
     edition: Retained DUL4.2
     relation: INDEPENDENT_FOUNDATION
     basis: EXECUTED
-    locator: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not an owl:imports
-      claim'
+    locator: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not an
+      owl:imports claim'
     artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: '2016 chapter read: five contributing theories and lost temporal/modal detail are explicit.
-      Retained4.2 exact axioms, original2016 identity and full local definitions remain #88; compatibility
-      or reuse is not an imported foundation claim.'
-    edition_evidence: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description, not
-      an owl:imports claim'
+    limitations: Current4.2 local glossary and bounded technical cases complete. Exact2016 implementation
+      identity and semantic equivalence remain unestablished; compatibility/reuse is not an imported foundation
+      claim.
+    edition_evidence: 'Retained DUL4.2 header and pinned #90 parser output; family is self-description,
+      not an owl:imports claim'
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
-    imported_definitions_complete: false
+    state: ALL_LOCAL_CLASSES_ACCOUNTED_WITH_EXPLICIT_GAPS
+    local_classes: 78
+    source_definition_candidates: 69
+    missing_source_definitions: 9
+    catalog_path: evidence/related-work/dul-class-catalog.yaml
+    imported_definitions_complete: true
     reasoner_execution: NOT_EXECUTED
+    insufficient_label_only_comments: 2
+    reasoner_scope: This glossary/source-audit record does not execute reasoning;29 separate root cases
+      are in technical_review.
+    imported_scope: 'Root declares no imports. Does not complete IOLite #271 or every external pattern
+      glossary.'
   next_issues:
-  - 88
+  - 271
+  - 251
+  - 126
+  technical_review: evidence/related-work/artifacts/DUL-technical-review.yaml
 - id: CLR-RW-O4OA
   title: The Ontology for Conceptual Characterization of Ontologies
   primary_issue: 73
