@@ -1,0 +1,160 @@
+schema_version: '1.0'
+register_id: CLR-REFERENCE-COLLECTION-CROSSWALK
+recorded_on: '2026-10-29'
+baseline_commit: 0faa13a6108613289b7d0f02d6bcfc420f5a86d6
+count_scope: 24 historical source-collection rows = 19 original candidate identities
+  + 1 existing bibliography identity + 4 supplementary leads; not 24 distinct executable
+  ontologies or 24 completed reviews.
+review_status_authority: evidence/related-work/deep-reviews/register.yaml and individual
+  dossiers. This crosswalk is an identity index, not a status snapshot or review queue.
+existing_candidate_register: evidence/related-work/candidate-register.yaml
+frozen_bibliography_register: evidence/source-register.yaml
+supplementary_register: evidence/related-work/supplemental-reference-register.yaml
+records:
+- reference_row: 1
+  label: Epistemic Foundational Ontology (EFO)
+  canonical_id: CLR-RW-EFO
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 2
+  label: Constructive Descriptions and Situations (c.DnS)
+  canonical_id: CLR-RW-cDnS
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 3
+  label: Conceptualization.owl
+  canonical_id: CLR-RW-DULConceptualization
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 4
+  label: DOLCE+DnS Ultralite (DUL)
+  canonical_id: CLR-RW-DUL
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 5
+  label: Linguistic Meta-Model (LMM)
+  canonical_id: CLR-RW-LMM
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 6
+  label: An Ontology of Representation
+  canonical_id: CLR-RW-Representation
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 7
+  label: Conceptual Model Ontology (CMO)
+  canonical_id: CLR-RW-CMO
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 8
+  label: Ontology for Ontological Analysis (O4OA)
+  canonical_id: CLR-RW-O4OA
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 9
+  label: Computational Ontology of Mind (COM)
+  canonical_id: CLR-RW-COM
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 10
+  label: Information and Discourse Acts (I&DA)
+  canonical_id: CLR-RW-IDA
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 11
+  label: Descriptions and Situations (DnS)
+  canonical_id: CLR-RW-DnS
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 12
+  label: OntoKADS
+  canonical_id: CLR-RW-OntoKADS
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 13
+  label: Foundations for an Ontology of Belief, Desire and Intention
+  canonical_id: CLR-RW-BDI
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 14
+  label: DOLCE Mental States and Needs
+  canonical_id: CLR-RW-DOLCEMental
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 15
+  label: Information Artifact Ontology (IAO)
+  canonical_id: CLR-RW-IAO
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 16
+  label: OntoLex-Lemon
+  canonical_id: CLR-RW-OntoLex
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 17
+  label: SKOS
+  canonical_id: CLR-RW-SKOS
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks:
+  - CLR-SRC0039
+  identity_note: Original candidate tracking and bibliography entry have different
+    roles; not two independent sources.
+- reference_row: 18
+  label: Emotions & Cognition Ontology
+  canonical_id: CLR-RW-EmotionsCognition
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 19
+  label: Cognitive Atlas
+  canonical_id: CLR-RW-CognitiveAtlas
+  register_path: evidence/related-work/candidate-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 20
+  label: A Plea for Epistemic Ontologies
+  canonical_id: CLR-RW-PleaEpistemic
+  register_path: evidence/related-work/supplemental-reference-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 21
+  label: Ontologies epistemiques vs referentielles
+  canonical_id: CLR-RW-EpistemicReferential
+  register_path: evidence/related-work/supplemental-reference-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 22
+  label: Foundations for a Realist Ontology of Mental Representation
+  canonical_id: CLR-RW-RealistMentalRepresentation
+  register_path: evidence/related-work/supplemental-reference-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.
+- reference_row: 23
+  label: 'Linguistic and Ontological Concept Formation: The LION Method'
+  canonical_id: CLR-SRC0014
+  register_path: evidence/source-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Already imported as CLR-SRC0014; do not allocate a duplicate LION
+    candidate or bibliography record.
+- reference_row: 24
+  label: 'Concepts in Context: Ontological Coherence in Political Science Research'
+  canonical_id: CLR-RW-ConceptsInContext
+  register_path: evidence/related-work/supplemental-reference-register.yaml
+  bibliography_crosslinks: []
+  identity_note: Source identity retained; consult current authority for review scope/status.

@@ -1,0 +1,81 @@
+schema_version: '1.0'
+register_id: CLR-SUPPLEMENTAL-REFERENCES
+purpose: Retain four additional theoretical or methodological source leads separately
+  from the frozen imported bibliography and original 19-candidate research corpus.
+recorded_on: '2026-10-29'
+baseline_commit: 0faa13a6108613289b7d0f02d6bcfc420f5a86d6
+authority_boundary: Source retention only. Does not change ontology, requirements,
+  manuscript, release, R1 denominator, or current paper/artifact review status.
+identity_policy: Preserve existing CLR-RW candidate and CLR-SRC bibliography IDs.
+  These four new CLR-RW IDs identify supplementary source leads, not completed review
+  tasks or implemented ontologies.
+provenance: Recovered from the owner-designated prior reference collection. Private
+  conversation provenance is retained separately and excluded from publication.
+verification_boundary: Titles and public locators recovered, not newly verified. No
+  authors, dates, DOI metadata, downloads, full-text reading, comparison findings
+  or citation readiness asserted.
+records:
+- candidate_id: CLR-RW-PleaEpistemic
+  recovered_label: A Plea for Epistemic Ontologies
+  record_kind: theoretical_or_methodological_source_lead
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  review_evidence: []
+  citation_ready: false
+  paper_review_issue: null
+  article_inclusion: not_decided
+  resources:
+  - url: https://doi.org/10.3233/AO-230031
+    resource_role: publication_or_documentation
+    locator_status: recovered_not_reverified
+  - url: https://ceur-ws.org/Vol-3882/journal-first-2.pdf
+    resource_role: extended_abstract_not_full_article
+    locator_status: recovered_not_reverified
+  limitation: Open two-page extended abstract is not the full article.
+- candidate_id: CLR-RW-EpistemicReferential
+  recovered_label: Ontologies epistemiques vs referentielles
+  record_kind: theoretical_or_methodological_source_lead
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  review_evidence: []
+  citation_ready: false
+  paper_review_issue: null
+  article_inclusion: not_decided
+  resources:
+  - url: https://hal.science/hal-05238539/document
+    resource_role: publication_or_documentation
+    locator_status: recovered_not_reverified
+  limitation: French-language theoretical work; do not infer an executable ontology.
+- candidate_id: CLR-RW-RealistMentalRepresentation
+  recovered_label: Foundations for a Realist Ontology of Mental Representation
+  record_kind: theoretical_or_methodological_source_lead
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  review_evidence: []
+  citation_ready: false
+  paper_review_issue: null
+  article_inclusion: not_decided
+  resources:
+  - url: https://ceur-ws.org/Vol-3637/paper7.pdf
+    resource_role: paper_pdf_or_document
+    locator_status: recovered_not_reverified
+  limitation: Research-foundation proposal, not a verified complete implemented ontology.
+- candidate_id: CLR-RW-ConceptsInContext
+  recovered_label: 'Concepts in Context: Ontological Coherence in Political Science
+    Research'
+  record_kind: theoretical_or_methodological_source_lead
+  metadata_status: recovered_not_reverified
+  access_status: not_checked
+  full_text_review: not_assessed
+  review_evidence: []
+  citation_ready: false
+  paper_review_issue: null
+  article_inclusion: not_decided
+  resources:
+  - url: https://doi.org/10.1177/00483931241254514
+    resource_role: publication_or_documentation
+    locator_status: recovered_not_reverified
+  limitation: Theoretical conceptual-analysis source, not a verified executable ontology.
