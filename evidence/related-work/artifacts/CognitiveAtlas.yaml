@@ -1,0 +1,330 @@
+schema_version: '1.0'
+issue: 241
+status: BOUNDED_TECHNICAL_REVIEW_COMPLETE_WITH_SOURCE_AND_ENCODING_FINDINGS
+reviewed_on: '2026-10-29'
+baseline_commit: a7678eb99104767091dc2c4e4276d6cff0231fc2
+source_root:
+  repository: CognitiveAtlas/cogat-ontology
+  commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+  path: ontology/cogat.v2.owl
+  version: '0.3'
+  sha256: 701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8
+source_manifest:
+  path: evidence/related-work/corpus/cognitiveatlas-inputs.yaml
+  sha256: 89c58477bd42bbe51b047d3664510a87ddef3c89dbcd46d51f89f8f48ba1019a
+paper_review:
+  path: evidence/related-work/deep-reviews/CognitiveAtlas2011/review.yaml
+  sha256: ef54ad3edcf712dd8522257fa9bc23dc14c41d48e8128b91b3038fa5cdc59376
+evidence:
+  catalog:
+    path: evidence/related-work/cognitiveatlas-class-catalog.yaml
+    sha256: 73aaea68c6770a178a8803d92be0682eb15493134d307e5251d1ae4b302fed81
+  census:
+    path: evaluation/related-work/cognitiveatlas/technical-census.json
+    sha256: 4fca49a5bf3307f7dd9c71a601375c40c9724d4ac096bc1c6033afae2a1075fb
+  static:
+    path: evaluation/related-work/cognitiveatlas/static-source-inspection.json
+    sha256: 20ef215e4ed887065358a39fc116f2976ecce5df758193a35826d9da6a25cb93
+  semantic:
+    path: evaluation/related-work/cognitiveatlas/semantic-cases.json
+    sha256: 72d78b286a1d79587a62a72f09191240e6bd9a6b1c454027038adcf982f2f11a
+  descriptives:
+    path: evaluation/related-work/corpus-descriptives.json
+    sha256: 6b38a285e56df4e84140c7f67de64cf12e18f0400e2b60948054fad688a57d00
+questions:
+- id: Q01
+  title: Root, complete class population and historical provenance
+  result: The selected 13-file official snapshot and exact cogat.v2.owl bytes/header 0.3 are pinned separately from
+    the paper-linked generator. The 1698 declared named classes contain 1696 local IRIs and two external declarations.
+    They are not the 2011 paper 904 terms or today's website vocabulary. No other source module is folded into this
+    selected count. There are 1796 distinct identifier values distributed across 1695 identified local class IRIs
+    and one helper; 101 IRIs carry two identifiers. Exact 2011 byte equivalence remains unestablished.
+  evidence:
+  - census
+  - static
+  - catalog
+  finding_ids:
+  - CA241-F01
+  - CA241-F02
+  locators:
+  - ontology header
+  - dc:identifier, all class IRIs
+  - paper E12/E18; R01-R04
+- id: Q02
+  title: Lexical record versus OWL class
+  result: The generator turns skos:Concept element names into owl:Class and assigns CAO identifiers. This is an
+    engineering transformation, not an argument that lexical entries are universally instantiated domain types.
+    Header CAO_00001 subclasses a declared SKOS Concept class; concrete generated classes add hierarchy/restrictions.
+    Full raw RDF parsing fails in both selected input dumps; the generated export itself parses. A concept/task
+    co-instance is logically allowed; no intended category separation or epistemic agreement is proved.
+  evidence:
+  - census
+  - static
+  - semantic
+  finding_ids:
+  - CA241-F01
+  - CA241-F03
+  locators:
+  - create_owl.v2.py:skos:Concept replacement
+  - CAO_00001
+  - paper E05/E12
+- id: Q03
+  title: Measurement direction and actual restrictions
+  result: 'measured_by has undeclared MentalConcept domain and CogPO Task range. Its helper domain is not joined
+    to CAO_00001. measures also ranges over Task despite its mental-concept description, and no inverse is asserted.
+    A concrete Abductive reasoning class has additional all-values restrictions to named contrasts: its task-only
+    filler denial contradicts those restrictions. A neutral concept without that concrete-class restriction permits
+    a task-only filler. The initial broad range-only expectation was therefore split into these two explicit controls.
+    Denying the declared domain/range is inconsistent; denying the reverse edge is consistent.'
+  evidence:
+  - census
+  - semantic
+  finding_ids:
+  - CA241-F04
+  locators:
+  - measured_by/measures domain/range
+  - CAO_00101 restriction
+  - paper E10
+- id: Q04
+  title: Condition/contrast structure and signed semantics
+  result: The source has 323 condition records, 510 contrast records and 509 contrast identifiers occurring in class
+    declarations; one supplied contrast is not mapped to a declared class. N-back condition CAO_00980 has a required
+    part_of task witness; denying all such witnesses is inconsistent. Label strings containing minus do not encode
+    signed coefficients or arithmetic; the graph has no datatype properties for a contrast expression. The article
+    0-back-minus-2-back illustration was not located in the selected exported labels or source contrast names; it
+    is not silently replaced with a different contrast. Task nesting and contrast associations are retained as restrictions,
+    not validated signed measurement functions.
+  evidence:
+  - census
+  - static
+  - semantic
+  finding_ids:
+  - CA241-F05
+  locators:
+  - CAO_00980/CAO_01210
+  - type_condition/type_contrast CSV
+  - has_contrast/is_related_to
+  - paper E06/E08
+- id: Q05
+  title: Basic mappings and foundation boundary
+  result: The selected generator branches on T1, T2, T15, T16; the source relation table additionally contains synonym
+    T10, preceded-by T5 and literature T17 descriptors. The actual 941 assertion rows include 173 T1, 107 T2, 22
+    T15, 585 T16, 53 synonym and one temporal relation. Imported RO axioms/inverse part relations are absent; seven
+    restriction-property IRIs are used but only four are declared. Eleven class-position IRIs are undeclared, eight
+    local including MentalConcept and three CogPO. A referenced BFO Process class and namespaces do not prove foundational
+    grounding or imported edition closure.
+  evidence:
+  - census
+  - static
+  finding_ids:
+  - CA241-F06
+  locators:
+  - source relation CSV and generator T-branches
+  - owl:imports empty
+  - RO part_of/has_part; CogPO2011 references
+  - paper E09/R02
+- id: Q06
+  title: Every definition, citations and provenance
+  result: 'All 1696 local class definitions are accounted: 1232 nonempty, 55 empty annotations and 409 absent. The
+    glossary supplies source IRIs, annotation digests and the exact attributed wording in a separate CC-BY-SA 3.0-US
+    definition extract using the observed official project license. This intentionally avoids mass-generated paraphrases
+    and invented completions; source wording is not accepted logical adequacy. Contributor/date annotations are
+    hashed and retained as provenance. No CiTO/SWAN support/refutation structure is implemented in this selected
+    export. Two negative source assertion rows are not inspected by polarity in the generator''s mapping branches.'
+  evidence:
+  - census
+  - static
+  - catalog
+  finding_ids:
+  - CA241-F07
+  - CA241-F08
+  locators:
+  - skos:definition; dc:Contributor/Date
+  - source-definitions.jsonl
+  - assertion polarity column
+  - paper E11/E13
+- id: Q07
+  title: Disagreement, synonyms and identifier collisions
+  result: The source includes 53 synonym assertion rows; the selected generator does not map T10 to equivalence,
+    sameAs or a sense/fork model. All 101 multi-identifier class IRIs mix one trm construct identifier and one cnt
+    contrast identifier. Example CAO_01573 combines sense of body ownership with a Wechsler vocabulary contrast.
+    The raw logical source admits such an instance; adding an explicitly reviewer-defined separation of mental concept
+    and contrast exposes a contradiction. This control is not an author disjointness axiom. Stale undeclared local
+    class references remain explicit, not silently repaired or treated as expert consensus.
+  evidence:
+  - census
+  - static
+  - semantic
+  finding_ids:
+  - CA241-F02
+  - CA241-F08
+  locators:
+  - CAO_01573 and 101 exact collision records
+  - T10
+  - paper E13/E14
+- id: Q08
+  title: Executed checks and generation limits
+  result: RDFLib parsing/census, CSV profiling, definition extraction, OWLAPI profile and 14 isolated HermiT expectations
+    actually ran. The exact root fails the profile with 7341 undeclared-entity violations; the loaded logical ontology
+    is consistent and has no unsatisfiable named classes under the recorded tool. This is not a conformance or adequacy
+    certificate. Both raw RDF dumps fail strict parsing. The Python 2 generator reads a pickle and discards the
+    first assertion although the supplied table has no header; it was inspected rather than executed or ported.
+    No pickle loading, current-data generation, author CQ suite or historical reproduction is claimed.
+  evidence:
+  - census
+  - static
+  - semantic
+  finding_ids:
+  - CA241-F03
+  - CA241-F09
+  locators:
+  - raw RDF error locators
+  - OWLAPI/HermiT recorded receipts
+  - create_owl.v2.py:relations.remove(relations[0]); pickle.load
+  - paper E12/R02
+findings:
+- id: CA241-F01
+  title: Class encoding is not paper population or current website
+  detail: 1696 local IRIs encode a later generated vocabulary, not the 904 terms reported in 2011 or current live
+    counts; strict raw inputs fail parsing.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F02
+  title: Identifier collision conflates meanings
+  detail: 101 class IRIs share a construct identifier and a contrast identifier; logical consistency does not establish
+    successful sense management.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F03
+  title: Strict profile and raw-source parsing fail
+  detail: 7341 checked profile violations concern undeclared entities; both retained raw RDF input files also fail
+    parsing.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F04
+  title: Measurement schema and concrete restrictions differ
+  detail: Task-valued range, unjoined MentalConcept helper, no inverse and a wrong measures range require source-specific
+    interpretation; concrete all-values restrictions add further constraints.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F05
+  title: Signed contrast semantics are not formalized
+  detail: Task/condition/contrast nesting and minus labels are not coefficients, indicator lineage or an executable
+    contrast function; one supplied contrast is unmapped.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F06
+  title: Mappings omit some source relation kinds
+  detail: T10/T5/T17 descriptors, undeclared properties and class references are not imported RO/foundation semantics.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F07
+  title: Definition coverage is incomplete and ambiguity is retained
+  detail: 1232 local classes have nonempty definition text; 55 are empty and 409 absent. Presence is not sufficiency;
+    collisions retain multiple labels/identifiers.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F08
+  title: Disagreement and citation polarity are lost
+  detail: No complete sense/fork/support/refutation export is present; 53 synonym assertions and two negative source
+    rows must not be promoted to accepted identity or consensus.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+- id: CA241-F09
+  title: Exact generation is not reproduced
+  detail: Python 2/pickle/string-splitting and dropping a real first assertion prevent an unqualified generation
+    or historical byte-parity claim; original code/data stay unchanged.
+  next_issues:
+  - 254
+  - 126
+  disposition: RETAIN_NO_SOURCE_OR_MODEL_REPAIR
+reuse:
+  decision: DEFER_AUTOMATIC_ALIGNMENT;USE_COMPARISON_DIMENSIONS_ONLY
+  positive_scenario: A contrast-qualified empirical measurement claim with explicit task,condition,source and time
+    context is a useful comparison candidate.
+  counterexample: An IRI conflating body ownership with an unrelated test contrast shows why stable keys and logical
+    consistency do not establish conceptual identity.
+definition_export:
+  decision: ATTRIBUTED_ORIGINAL_DEFINITION_REGISTER_INSTEAD_OF_MASS_SYNTHETIC_PARAPHRASES
+  license_url: https://creativecommons.org/licenses/by-sa/3.0/us/
+  attribution: Cognitive Atlas contributors
+  license_scope: The separately attributed source-definitions.jsonl extract, not all repository code, data or original
+    OWL files.
+  permission_basis:
+    exact_link_present: true
+    html_sha256: d074e1fc1ddeffa12e2733ed09aef6c6742219469b9f1369c95a59e2179572a2
+    license_url: https://creativecommons.org/licenses/by-sa/3.0/us/
+    note: Official project footer;the selected export has no embedded license. This licenses the attributed definition
+      extract, not a blanket MIT claim for the ontology or the unrelated discussion repository.
+    retrieved_on: '2026-10-29'
+    url: https://www.cognitiveatlas.org/
+  raw_original_files_distributed: false
+execution_summary:
+  class_counts:
+    datatype_properties: 0
+    declared_object_properties: 4
+    definition_absent_local_classes: 409
+    definition_empty_only_local_classes: 55
+    definition_nonempty_local_classes: 1232
+    deprecated_classes: 0
+    disjoint_axioms: 0
+    equivalent_class_axioms: 0
+    explicit_sameAs: 0
+    explicit_triples: 26175
+    external_declared_object_properties: 1
+    external_named_classes: 2
+    inverse_property_axioms: 0
+    local_classes_with_multiple_identifiers: 101
+    local_declared_object_properties: 3
+    local_identifier_values: 1796
+    local_named_classes: 1696
+    named_classes: 1698
+    named_subclass_statements: 1797
+    restriction_nodes: 2825
+    subclass_statements: 4622
+    undeclared_used_object_properties: 3
+    used_restriction_properties: 7
+  semantic:
+    errors: 0
+    failed: 0
+    passed: 14
+    total: 14
+  profile: FAIL_UNDECLARED_ENTITIES
+  logical_consistency: CONSISTENT_UNDER_RECORDED_LOADER
+  raw_RDF_generation_inputs: BOTH_STRICT_PARSES_FAIL
+  author_generator: NOT_EXECUTED
+  pickle: NOT_EXECUTED
+  author_CQ_suite: NOT_REPORTED
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  independent_expert_review: NOT_PERFORMED
+  semantic_acceptance: NOT_ASSESSED
+  adoption: OWNER_DECISION_REQUIRED
+  original_source_files_redistributed: false
+closure:
+  meaning: Every selected declaration, definition availability state and eight technical questions are accounted
+    for; negative outcomes are preserved, not source repair or semantic acceptance.
+  next_issues:
+  - 91
+  - 254
+  - 126

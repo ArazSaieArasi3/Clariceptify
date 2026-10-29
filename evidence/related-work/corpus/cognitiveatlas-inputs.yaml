@@ -1,0 +1,80 @@
+schema_version: '1.0'
+issue: 241
+baseline_commit: a7678eb99104767091dc2c4e4276d6cff0231fc2
+checked_on: '2026-10-29'
+selected_repository: CognitiveAtlas/cogat-ontology
+repository_commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951
+selected_root: ontology/cogat.v2.owl
+selected_header_version: '0.3'
+artifacts:
+- id: README.md
+  filename: README.md
+  sha256: 1a02844686f8e70ca6ea555974d0ac6c1464fbacee1012bcb58a572447ee38df
+  bytes: 309
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/README.md
+- id: create_owl.v2.py
+  filename: create_owl.v2.py
+  sha256: 6e16d65328a011a0e32f8fe7dfb08a4f67595d6c103ea8871341f848759c61b0
+  bytes: 20184
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/create_owl.v2.py
+- id: current-homepage.html
+  filename: current-homepage.html
+  sha256: d074e1fc1ddeffa12e2733ed09aef6c6742219469b9f1369c95a59e2179572a2
+  bytes: 18836
+  source_url: https://www.cognitiveatlas.org/
+- id: ontology/all_concepts.rdf
+  filename: ontology/all_concepts.rdf
+  sha256: b656a33d0099e84de128e23a7accf56a44276a269fead52721c6e9fcd4fe5626
+  bytes: 1076507
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/all_concepts.rdf
+- id: ontology/all_tasks.rdf
+  filename: ontology/all_tasks.rdf
+  sha256: 1e47d61dff70d43924e8ee9e659a7896ac003c8587bfd03afebf9079bdd1c4a4
+  bytes: 749689
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/all_tasks.rdf
+- id: ontology/all_tasks.rdf.b64
+  filename: ontology/all_tasks.rdf.b64
+  sha256: 342a674eabc6e906c6f1163117a555ec8cdc26031e54649b4f686b5e4a46b85d
+  bytes: 880000
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/all_tasks.rdf.b64
+- id: ontology/cogat.v2.owl
+  filename: ontology/cogat.v2.owl
+  sha256: 701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8
+  bytes: 1437590
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/cogat.v2.owl
+- id: ontology/table_assertion.csv
+  filename: ontology/table_assertion.csv
+  sha256: e454cf6a01e7353a7cbf2aabbc730aaea02db7137bc9620e54d2f51d7ca84a1c
+  bytes: 246240
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/table_assertion.csv
+- id: ontology/table_assertion.csv.b64
+  filename: ontology/table_assertion.csv.b64
+  sha256: 4d2163a62833b8f66cf491b846f348651f25653138cb090cf34d4fec1eb36d75
+  bytes: 240000
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/table_assertion.csv.b64
+- id: ontology/table_relation.csv
+  filename: ontology/table_relation.csv
+  sha256: 5484f2275d1c58df42a51e20bb592b8a01b7f183fdf726aa96a4ab15f3a258a6
+  bytes: 1342
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/table_relation.csv
+- id: ontology/type_condition.csv
+  filename: ontology/type_condition.csv
+  sha256: 33badc8be2244c9ed564b6e0153559b329ee56534cdccba1f98212577523d732
+  bytes: 62030
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/type_condition.csv
+- id: ontology/type_contrast.csv
+  filename: ontology/type_contrast.csv
+  sha256: 8cd88a9fa6217483ba805ebcfc7a0f634d3aeabe4466ec18fb3a12fea58a65ae
+  bytes: 60474
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/type_contrast.csv
+- id: ontology/type_contrast.csv.b64
+  filename: ontology/type_contrast.csv.b64
+  sha256: 78b32537f4861d1dc846f229716d3bddf3fb8f38b4c261b241c2dc7e1a80e756
+  bytes: 40000
+  source_url: https://raw.githubusercontent.com/CognitiveAtlas/cogat-ontology/a600c366e9e3d3647a85cbc2c6e53e78abcf1951/ontology/type_contrast.csv.b64
+- id: paper-linked-create_owl.py
+  filename: paper-linked-create_owl.py
+  sha256: 3797efce629faabff2d5d1178b9374bab6385f4e81b6fa36f06be84f80b044f2
+  bytes: 19061
+  source_url: https://raw.githubusercontent.com/poldrack/cogat/8ae51f96b6116fb2b00ef70f9feac5bac8444071/create_owl.py
+original_source_files_redistributed: false

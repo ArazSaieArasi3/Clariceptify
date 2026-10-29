@@ -180,6 +180,12 @@ def check(root=ROOT, source_dir=None):
         by_path[bdi_path] = {'counts': {'local_classes': len(rows),
             'source_definition_candidates': sum(bool(r['annotation_records']) for r in rows),
             'missing_source_definitions': sum(not r['annotation_records'] for r in rows)}}
+    cognitive_path = 'evidence/related-work/cognitiveatlas-class-catalog.yaml'
+    if any(r['class_coverage']['catalog_path'] == cognitive_path for r in audit['records']):
+        from check_cognitiveatlas_review import check as check_cognitive
+        check_cognitive(root)
+        cognitive = yaml.safe_load((root / cognitive_path).read_text())
+        by_path[cognitive_path] = {'counts': cognitive['counts']}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:

@@ -19,3 +19,10 @@ underlying publications. Historical private source documents, third-party full
 texts and embedded font programs are excluded from the distributable package.
 Python dependencies and pinned GitHub Actions remain separately licensed by
 their providers; they are referenced, not bundled as project-owned software.
+
+The Cognitive Atlas definition-content extract at
+`evidence/related-work/cognitiveatlas/source-definitions.jsonl` is separately
+attributed CC-BY-SA-3.0-US content, not project-owned CC-BY-4.0/MIT material.
+Its exact source, project-site license evidence, changes and scope are recorded
+in `evidence/related-work/cognitiveatlas/ATTRIBUTION.md`. Original third-party
+ontology files, source dumps, generator and pickle are not redistributed.
