@@ -22,7 +22,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED; [source](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl); [source](https://github.com/appliedontolab/DOLCE); PINNED_DUL4_2_ALL78_CLASS_GLOSSARY_AND29_SEMANTIC_CASES | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | [78 classes](../dul-class-catalog.md); 69 comment candidates; 9 missing | #271, #251, #126 |
 | CLR-RW-O4OA (#73) | REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY; [source](https://gitlab.com/bfmartins/o4oa); [source](https://gitlab.com/bfmartins/go4oa); SPECIFICATION_DOCUMENT_CHECKPOINT_COMPLETE_FORMAL_ROOT_UNAVAILABLE | UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants); PAPER_STATED_GROUNDING_THROUGH_ONTOUML; edition: UNKNOWN | PENDING_FULL_CATALOG | #91 |
-| CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); PRINTED_FOL_TEXT_AVAILABLE_RAW_SUPPLEMENT_AND_MACHINE_SOURCE_UNPINNED | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #244 |
+| CLR-RW-Representation (#82) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](https://journals.sagepub.com/doi/10.1177/15705838251337943); [source](https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf); BOUNDED_PUBLISHER_SUPPLEMENT_FORMALISM_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT | DOLCE and YAMATO (illustrative hosts); ILLUSTRATIVE_COMPATIBILITY_NOT_IMPORT; edition: UNKNOWN | COMPLETE_PAPER_FORMULA_AND_SIGNATURE_LEDGER_MACHINE_GLOSSARY_UNKNOWN | #255, #126 |
 | CLR-RW-IDA (#84) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; ORIGINAL_FORMAL_SOURCE_NOT_ACQUIRED | DOLCE(summary-reported); SECONDARY_SUMMARY_STATED_GROUNDING; edition: UNKNOWN | UNKNOWN_FORMAL_SOURCE_NOT_ACQUIRED | #246, #256, #126 |
 | CLR-RW-DOLCEMental (#86) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/diporello/DOLCE-mental_states-needs); PINNED_TPTP_STYLE_FRAGMENT_SELECTED_CORRESPONDENCE_REVIEWED | DOLCE / DOLCE-CORE; PAPER_STATED_GROUNDING_AND_SELECTED_FOL_FRAGMENT; edition: UNKNOWN | PENDING_FULL_CATALOG | #248 |
 | cDnS-journal-2008 (#263) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](http://www.loa-cnr.it/ontologies/collInt.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/ground.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl); SELECTED51_CLASS_INVENTORY_COMPLETE_CORE267_PROFILE_FAIL_EXTENSION_NOT_EXECUTED | Constructive DnS; ground-ontology independent; INDEPENDENT_FOUNDATION_WITH_ACTUAL_SELECTED_MODULE_IMPORTS; edition: UNKNOWN | [51 classes](cDnS-journal-2008/classes.md); 51 comment candidates; 0 missing | #251, #126 |
@@ -426,6 +426,17 @@ Query: `"An Ontology of Representation"; OREO Mizoguchi Borgo`. Checked: 2026-10
 No repository returned; publisher and author-posted supplemental text found; no global absence claim. Receipt: evaluation/related-work/representation/discovery.json
 
 Limit: Two name/description searches, not a global code/host search. Supplement raw bytes and machine-source correspondence unverified.
+
+### REP2025-TECH-20261030: Publisher-linked PDF selected visual inspection and bounded connected public repository/code search
+
+Query: `An Ontology of Representation Mizoguchi Borgo; ENCODINGVIA REPRESENTATREL`. Checked: 2026-10-30.
+
+- https://journals.sagepub.com/doi/10.1177/15705838251337943
+- https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf
+
+Publisher supplement PDF p.8 visually verifies D11 free f in selected formula. No author-controlled executable root identified within checked results; raw supplement SHA and all machine populations unknown. Receipt: evaluation/related-work/representation244/discovery.json.
+
+Limit: One selected visual page is not all-glyph certification or byte-retained PDF identity; search result limits do not establish global nonexistence or theorem validity.
 
 ### DUL2016-DISC-20261028: Exact paper URLs, canonical DUL bytes, two sample patterns, official LOA link and related repository tree
 
