@@ -115,3 +115,7 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 ## COM technical source checkpoint - 2026-10-29
 
 [COM #243](../../evidence/related-work/artifacts/COM.md) anchors eight printed FOIS 2004 commitments to the exact 11-page institutional PDF, preserves the 50 Figure 1 labels as paper categories and records a bounded negative search for an author-controlled executable root. The local D1/D4 and co-participation Boolean fragments are not whole-theory solver results. Machine class counts, original import closure, license and exact DOLCE edition remain unknown. Its agent/state/object/time support and adverse formula findings advance #255 and #126 without a model change.
+
+## Representation technical source checkpoint - 2026-10-30
+
+[Representation #244](../../evidence/related-work/artifacts/Representation.md) distinguishes the 2025 owner-supplied main PDF from the publisher-linked ten-page A-C supplement, with 49 printed expressions and 41 predicate signatures. Eight selected commitments and four local finite axiom cases were checked; publisher PDF p.8 visually verifies the D11 free variable, without certifying the remaining glyphs or any theorem. The supplement raw SHA, executable root, machine classes, imports, license and host edition remain unknown. Form/content/method and physical realization overlap, Ax9/Ax15 limits and the unresolved decision provenance feed #255/#126; no model change.
