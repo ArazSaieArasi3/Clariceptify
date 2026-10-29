@@ -1,0 +1,45 @@
+schema_version: '1.0'
+issue: 241
+status: ALL_SELECTED_DECLARATIONS_AND_SOURCE_DEFINITIONS_ACCOUNTED
+source_sha256: 701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8
+namespace: http://www.cognitiveatlas.org/ontology/cogat.owl#
+source_census:
+  path: evaluation/related-work/cognitiveatlas/technical-census.json
+  sha256: 4fca49a5bf3307f7dd9c71a601375c40c9724d4ac096bc1c6033afae2a1075fb
+indexes:
+  classes.jsonl:
+    path: evidence/related-work/cognitiveatlas/classes.jsonl
+    rows: 1698
+    sha256: 38c1864b35340230749b649008d700f20fe8fcc4720ac477b6d1fcd434b4e876
+  source-definitions.jsonl:
+    path: evidence/related-work/cognitiveatlas/source-definitions.jsonl
+    rows: 1698
+    sha256: 355ffc06900474735b65f9e7d1feb9ade023a7fb5dc4ec2c1ae1bd0cd65b880a
+counts:
+  local_classes: 1696
+  external_class_declarations: 2
+  source_definition_candidates: 1232
+  empty_definition_annotations: 55
+  absent_definition_annotations: 409
+  missing_source_definitions: 464
+  ambiguous_multi_identifier_classes: 101
+  reviewer_reconstructions: 0
+definition_representation:
+  decision: ATTRIBUTED_ORIGINAL_DEFINITION_REGISTER_INSTEAD_OF_MASS_SYNTHETIC_PARAPHRASES
+  reason: Preserve the actual definitions and ambiguity of this large vocabulary; do not invent definitions or claim
+    1696 independent semantic judgments. Every class has a source definition locator/state and every available author
+    wording is retained in the separately licensed extract.
+  rights_evidence:
+    path: evaluation/related-work/cognitiveatlas/static-source-inspection.json
+    sha256: 20ef215e4ed887065358a39fc116f2976ecce5df758193a35826d9da6a25cb93
+  definition_extract_license: CC-BY-SA-3.0-US
+  source_definition_sufficiency: NOT_ASSESSED
+  no_original_OWL_file_distribution: true
+foundation:
+  family: Selected SKOS/OBO RO/CogPO reuse and BFO1.1 namespace references
+  edition: null
+  relation: REFERENCES_WITHOUT_ACTUAL_IMPORT_OR_VERIFIED_UPPER_GROUNDING
+  artifact_imports: []
+  limitations: A Process declaration or a namespace does not establish imported BFO1.1/CogPO2011 axioms or2011 paper
+    equivalence. Eleven referenced classes and three used properties are undeclared.
+model_change: NONE
