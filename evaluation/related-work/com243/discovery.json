@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "issue": 243,
+  "checked_on": "2026-10-29",
+  "selected_work": "Ferrario and Oltramari, FOIS 2004 institutional author PDF, 11 pages",
+  "paper_sha256": "16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245",
+  "prior_receipt": "evaluation/related-work/com/deep-review-discovery.json",
+  "checks": [
+    {
+      "id": "P01",
+      "method": "OFFICIAL_LABORATORY_PUBLICATION_AND_PAPER",
+      "urls": ["https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html", "https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf"],
+      "outcome": "The lab lists the FOIS 2004 work and hosts the 11-page paper; the checked publication entry and paper do not identify a COM machine-file link, namespace, release or import manifest. This is not a global site inventory."
+    },
+    {
+      "id": "W01",
+      "method": "PUBLIC_PRIMARY_SOURCE_WEB_SEARCH",
+      "queries": ["site:loa.istc.cnr.it Computational Ontology of Mind OWL ontology download Ferrario Oltramari", "COM Ferrario Oltramari ontology file source download DOLCE", "site:loa.istc.cnr.it/old/Ontologies COM computational ontology of mind download", "Towards a Computational Ontology of Mind owl Ferrario Oltramari"],
+      "outcome": "Official LOA paper and publication pages and a distinct modern DOLCE repository appeared. No author-controlled COM 2004 executable root identified in the returned results; current DOLCE cannot be substituted for a COM edition."
+    },
+    {
+      "id": "G01",
+      "method": "CONNECTED_GITHUB_REPOSITORY_NAME_DESCRIPTION_SEARCH",
+      "query": "Computational Ontology of Mind Ferrario",
+      "result_limit": 10,
+      "returned_repositories": [],
+      "outcome": "No matching public repository returned by this bounded query; no universal absence claim."
+    },
+    {
+      "id": "G02",
+      "method": "CONNECTED_GITHUB_CODE_SEARCH",
+      "query": "Ferrario Oltramari COM ontology",
+      "result_limit": 10,
+      "outcome": "Returned this project's review, bibliographic citations and unrelated ontology mentions; no exact original COM root. Earlier search found Drammar annotations citing the separate 2005 Aerospace work."
+    },
+    {
+      "id": "V01",
+      "method": "VERSION_AND_FOUNDATION_SEPARATION",
+      "urls": ["https://www.loa.istc.cnr.it/index.php/dolce/", "https://github.com/appliedontolab/DOLCE"],
+      "outcome": "The current official DOLCE page links a modern DOLCE OWL repository, not the 2004 COM machine root. The paper's D17(2002) DOLCE citation is family grounding, not an exact imported edition. The same-title 2005 Aerospace work, SWAP and COME are separate."
+    }
+  ],
+  "author_controlled_com_root_identified": false,
+  "paper_to_formal_file_correspondence": null,
+  "global_absence_claim": false,
+  "no_machine_population_inferred": true
+}

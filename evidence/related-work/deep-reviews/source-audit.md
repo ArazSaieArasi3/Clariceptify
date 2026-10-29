@@ -15,7 +15,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | LMM2008 (#260) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; SELECTED_FOUR_MODULE_PROFILE_AND13_HERMIT_CASES_PASS_HISTORICAL_ALIGNMENT_UNAVAILABLE | DOLCE via DUL and IOLite; ACTUAL_IMPORT; edition: Retained L2 1.2 -> L1 1.8 -> IOLite1.8 -> DUL4.2 | [29 classes](LMM2008/classes.md); 25 comment candidates; 4 missing | #252, #126 |
 | DnS2003 (#261) | OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://www.loa.istc.cnr.it/dolce/overview.html); [source](https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip); SELECTED_LATER_EXTENDEDDNS397_REVIEW_COMPLETE_WITH_HISTORICAL_LIMITS | DOLCE-Lite; ACTUAL_PINNED_IMPORTS_IN_SELECTED_LATER_MODULE; edition: Supplied 397-family modules | [58 classes](../dns235-class-catalog.md); 58 comment candidates; 0 missing | #251, #126 |
 | CMO (#83) | THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://github.com/dbpedia/ontology-tracker); [source](https://github.com/tetherless-world/whyis); MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN | BFO with IAO reuse; PAPER_STATED_GROUNDING; edition: UNKNOWN | ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN | #245 |
-| COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
+| COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; BOUNDED_PAPER_FORMALISM_REVIEW_COMPLETE_NO_IDENTIFIED_COM_ROOT | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED_BOUNDED_TECHNICAL_REVIEW | #255, #126 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE_NEGATIVE_FINDINGS_EXACT_ALIGNMENT_IMPORT_BLOCKED | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_AND_ACTUAL_ALIGNMENT_IMPORT_d0_THEN_DUL; edition: UNKNOWN | [22 classes](../bdi2026-class-catalog.md); 22 comment candidates; 0 missing | #256, #126 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE;IDENTIFIER_PROFILE_DEFINITION_AND_GENERATION_FINDINGS_RETAINED | SKOS/OBO RO/CogPO reuse;BFO1.1 namespace reference; SOURCE_REFERENCES_WITHOUT_VERIFIED_UPPER_GROUNDING; edition: UNKNOWN | [1696 classes](../cognitiveatlas-class-catalog.md); 1232 comment candidates; 464 missing | #254, #126 |
@@ -316,6 +316,18 @@ Query: `COM2004 official links, exact-title code and other-host discovery`. Chec
 FOIS2004 identity confirmed; no author formal distribution identified. Limited code search returned this repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
 
 Limit: No exact namespace, imports, machine declaration populations or historical fidelity established; different works not substituted.
+
+### COM-S02: OFFICIAL_LAB_PRIMARY_SOURCE_WEB_AND_CONNECTED_GITHUB_SEARCH
+
+Query: `COM2004 bounded technical root and foundation recheck`. Checked: 2026-10-29.
+
+- https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html
+- https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
+- https://www.loa.istc.cnr.it/index.php/dolce/
+
+No author-controlled executable COM 2004 root identified in the bounded results. Modern official DOLCE repository is a distinct work; paper formulas and Figure 1 are not machine class counts. See evaluation/related-work/com243/discovery.json.
+
+Limit: Search result and endpoint bounds prevent a global absence conclusion; exact COM license/imports/classes and historical correspondence remain unknown.
 
 ### BDI20-G01: CONNECTED_GITHUB_REPOSITORY_SEARCH
 

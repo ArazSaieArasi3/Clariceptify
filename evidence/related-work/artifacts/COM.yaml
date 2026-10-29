@@ -1,0 +1,84 @@
+schema_version: '1.0'
+issue: 243
+status: BOUNDED_PAPER_FORMALISM_REVIEW_COMPLETE_NO_IDENTIFIED_COM_ROOT
+checked_on: '2026-10-29'
+baseline_commit: 24a4af3515b76f711262ddc16c387c9f42b6d761
+source:
+  work: COM2004
+  title: Towards a Computational Ontology of Mind
+  authors: [Roberta Ferrario, Alessandro Oltramari]
+  version: FOIS 2004, institutional author PDF, 11 pages; publication pp.287-297
+  paper_url: https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
+  paper_sha256: 16bce2d1a344a7cd1717f0f28b5b7fd94ee1f151ebea632f5b9f3593c187b245
+  dossier: evidence/related-work/deep-reviews/COM2004/review.yaml
+  dossier_sha256: 35caf0869875aa6bc35420038751f9b61dec4e53bf389298435d30eb4961306b
+  discovery: evaluation/related-work/com243/discovery.json
+  formal_root: null
+  root_version: null
+  root_sha256: null
+  source_syntax: PRINTED_MODAL_FIRST_ORDER_FORMULAS_AND_TAXONOMY
+  machine_syntax: null
+  author_repository_commit: null
+  machine_license: null
+  declared_imports: null
+  unresolved_imports: null
+  same_title_2005_substituted: false
+  global_absence_claim: false
+population:
+  figure_categories: 50
+  bold_com_additions_in_figure: 11
+  paper_catalog_entries: 80
+  labeled_paper_formulas: 20
+  selected_paper_commitments: 8
+  local_machine_classes: null
+  imported_machine_classes: null
+  referenced_machine_classes: null
+  deprecated_machine_classes: null
+  inferred_machine_classes: null
+  named_machine_properties: null
+  source_definition_candidates_for_machine_classes: null
+  missing_source_definitions_for_machine_classes: null
+  complete_machine_glossary: null
+  paper_category_boundary: Figure labels and the paper catalog are not class IRIs, a released glossary or a machine hierarchy.
+foundation:
+  family: DOLCE
+  paper_claim: DOLCE grounding and conceptual predicate reuse; 2002 D17 cited
+  exact_edition: null
+  machine_import: null
+  bfo_or_ufo_alignment: NOT_ESTABLISHED
+  note: The current DOLCE OWL repository is not a 2004 COM release or verified historical import.
+commitments:
+  - {id: C01, paper_id: K01, formula: D1, locator: 'COM2004:E07 PDF p.6', observation: 'General dependence is necessary existence implication without an inequality guard; substituting y=x yields BOX(P implies P) under normal-modal reading.'}
+  - {id: C02, paper_id: K04, formula: D4, locator: 'COM2004:E08 PDF p.6', observation: 'Percept excludes any mental object on which it generally depends; unrestricted y includes itself under literal D1.'}
+  - {id: C03, paper_id: K08, formula: D6, locator: 'COM2004:E10 PDF p.7', observation: 'Computed belief requires a direct historical percept predecessor; the printed dependency chain inherits the D1/D4 concern, not an executed proof of whole-theory inconsistency.'}
+  - {id: C04, paper_id: K11, formula: D9, locator: 'COM2004:E10 PDF p.7', observation: 'Aboutness has agent, state, object and time arguments; owner dependence and simultaneous co-participation suffice as printed.'}
+  - {id: C05, paper_id: K13, formula: D11, locator: 'COM2004:E11 PDF p.7', observation: 'Belief state is existentially classified by an aboutness tuple and a computed-belief object; no justification or truth condition is displayed.'}
+  - {id: C06, paper_id: K14, formula: D12, locator: 'COM2004:E11 PDF p.8', observation: 'Desire state is existentially classified by a computed-desire object; D9 permits multiple objects to co-participate in one state.'}
+  - {id: C07, paper_id: K16, formula: D14, locator: 'COM2004:E11 PDF p.8', observation: 'The printed union uses PER, whereas D10/Figure 1 use PES; no silent predicate repair.'}
+  - {id: C08, paper_id: K20, formula: A5, locator: 'COM2004:E14 PDF p.9', observation: 'Present intentional agent implies a present, owner-dependent computed belief; this necessary condition is not an iff definition or a decision-history pattern.'}
+scenarios:
+  positive: 'At the local D9 fragment level, one agent a, mental state s and private mental object z co-participate at t with z owner-dependent on a; AB(a,s,z,t) follows. This is not a witness for the full D1-D15/A1-A5 theory.'
+  adverse: 'Under unrestricted normal-modal D1, GED(x,x) is tautological; D4 then cannot classify a mental object x as PRC. Separately, if a state co-participates with a computed belief and desire both owned by a, D9 and D11/D12 classify that state as both BEL and DES. These are conditional fragment analyses, not solver-proved full-theory defects.'
+  paper_scenario_ids: [S11, S12, S13]
+decision:
+  disposition: DEFER_FORMAL_REUSE_AND_ALIGNMENT; RETAIN_AGENT_STATE_CONTENT_TIME_PATTERN_AS_COMPARISON_CANDIDATE
+  reason: No identifiable author COM root/edition/imports/license; literal formula limitations and missing decision/evidence/rationale pattern need #255 comparison and #126 synthesis.
+  candidate_model_ids: [CLR-C0004, CLR-C0017, CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0083, CLR-C0123]
+  owner_status: OWNER_DECISION_REQUIRED
+  accepted_equivalences: []
+execution:
+  integrity_checker: tools/check_com243.py
+  local_fragment_boolean_checks: TWO_BOUNDED_TRUTH_TABLES
+  machine_root_parser: NOT_EXECUTED_NO_ROOT
+  owl_profile: NOT_EXECUTED_NO_ROOT
+  formal_theory_solver: NOT_EXECUTED
+  author_experiment_reproduction: NOT_EXECUTED
+limits:
+  source_redistribution: false
+  scientific_acceptance: NOT_ASSESSED
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  later_issues: [255, 126]

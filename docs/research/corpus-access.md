@@ -111,3 +111,7 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 ## Fourth comparison batch - 2026-10-29
 
 [Comparison #254](../../evidence/related-work/comparisons/batch-4.md) binds the IAO 2015 proposal and separate 2026 release, Cognitive Atlas 2011 paper and later export, and paper-only EFO to 12 cells, a shared positive/adverse case and four candidate model-ID mapping questions. The bounded candidate gap is a dated, revisable, evidence-and-rationale-linked conceptual decision record; native provenance, subject and temporal features are retained as counterevidence to an absolute novelty claim. All equivalences require owner decisions. Final #126 still depends on the remaining comparison batches and O4OA #91; no scientific model or release changes.
+
+## COM technical source checkpoint - 2026-10-29
+
+[COM #243](../../evidence/related-work/artifacts/COM.md) anchors eight printed FOIS 2004 commitments to the exact 11-page institutional PDF, preserves the 50 Figure 1 labels as paper categories and records a bounded negative search for an author-controlled executable root. The local D1/D4 and co-participation Boolean fragments are not whole-theory solver results. Machine class counts, original import closure, license and exact DOLCE edition remain unknown. Its agent/state/object/time support and adverse formula findings advance #255 and #126 without a model change.

@@ -363,6 +363,19 @@ discovery_attempts:
     this repository and Drammar citation annotations, not an original COM file. See evaluation/related-work/com/deep-review-discovery.json.
   limitation: No exact namespace, imports, machine declaration populations or historical fidelity established;
     different works not substituted.
+- id: COM-S02
+  query: COM2004 bounded technical root and foundation recheck
+  method: OFFICIAL_LAB_PRIMARY_SOURCE_WEB_AND_CONNECTED_GITHUB_SEARCH
+  checked_on: '2026-10-29'
+  checked_urls:
+  - https://www.loa.istc.cnr.it/old/Papers/Publications_sira.html
+  - https://www.loa.istc.cnr.it/old/Papers/focomf2.pdf
+  - https://www.loa.istc.cnr.it/index.php/dolce/
+  outcome: No author-controlled executable COM 2004 root identified in the bounded results. Modern official
+    DOLCE repository is a distinct work; paper formulas and Figure 1 are not machine class counts.
+    See evaluation/related-work/com243/discovery.json.
+  limitation: Search result and endpoint bounds prevent a global absence conclusion; exact COM license/imports/classes
+    and historical correspondence remain unknown.
 - id: BDI20-G01
   query: '"Foundations for an Ontology of Belief"'
   method: CONNECTED_GITHUB_REPOSITORY_SEARCH
@@ -924,9 +937,10 @@ records:
     - COM-G01
     - COM-G02
     - COM-S01
+    - COM-S02
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PAPER_FORMALISM_ONLY
+  artifact_state: BOUNDED_PAPER_FORMALISM_REVIEW_COMPLETE_NO_IDENTIFIED_COM_ROOT
   foundation:
     family: DOLCE
     edition: null
@@ -938,15 +952,22 @@ records:
     limitations: DOLCE family and conceptual predicate reuse explicit;2002 D17 citation is not an exact acquired
       edition or machine import. No DUL/DOLCE-Lite/UFO/BFO correspondence established.
   class_coverage:
-    state: PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED
+    state: PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED_BOUNDED_TECHNICAL_REVIEW
     local_classes: null
     source_definition_candidates: null
     missing_source_definitions: null
     catalog_path: null
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+  technical_followup:
+    issue: 243
+    status: BOUNDED_PAPER_FORMALISM_REVIEW_COMPLETE_NO_IDENTIFIED_COM_ROOT
+    evidence: evidence/related-work/artifacts/COM.yaml
+    discovery: evaluation/related-work/com243/discovery.json
+    limitation: All machine class/import/glossary populations remain unknown; two local Boolean fragments are not whole-theory proofs.
   next_issues:
-  - 243
+  - 255
+  - 126
   paper_review:
     path: evidence/related-work/deep-reviews/COM2004/review.yaml
     named_figure_categories: 50
