@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "issue": 244,
+  "checked_on": "2026-10-30",
+  "paper_sha256": "16db8e02cde831898224f0cf00600c7c8e30369e591c0acc3823806c200e733a",
+  "prior_receipt": "evaluation/related-work/representation/discovery.json",
+  "checks": [
+    {
+      "id": "P01",
+      "method": "PUBLISHER_ARTICLE_AND_LINKED_SUPPLEMENT",
+      "article_url": "https://journals.sagepub.com/doi/10.1177/15705838251337943",
+      "supplement_url": "https://journals.sagepub.com/doi/suppl/10.1177/15705838251337943/suppl_file/sj-pdf-1-apo-10.1177_15705838251337943.pdf",
+      "outcome": "The publisher identifies the 2025 two-author article and links a ten-page A-C PDF supplement. Its parsed text was inspected in the paper dossier and the linked PDF was opened through the search service. No original supplement bytes were retained or hashed in this technical run. The selected paper is not the distinct 2021 Towards work."
+    },
+    {
+      "id": "V01",
+      "method": "PUBLISHER_PDF_PAGE_SCREENSHOT",
+      "supplement_pdf_page": 8,
+      "pdf_zero_based_page": 7,
+      "locator": "Appendix B D11, publisher-linked PDF p.8, following D10 in A and before D12",
+      "outcome": "Visual PDF page shows an existential list o,r,p,p-prime, followed by FORMOF(f,r) and PATTERNFORFORM(p,f). The f is visibly present but not in the printed existential list. This selected formula glyph/quantifier observation is verified visually; remaining supplement glyphs and raw PDF byte identity are not certified."
+    },
+    {
+      "id": "G01",
+      "method": "CONNECTED_GITHUB_REPOSITORY_NAME_DESCRIPTION_SEARCH",
+      "query": "An Ontology of Representation Mizoguchi Borgo",
+      "result_limit": 10,
+      "returned_repositories": [],
+      "outcome": "No matching public author repository returned in this bounded query."
+    },
+    {
+      "id": "G02",
+      "method": "CONNECTED_GITHUB_CODE_SEARCH",
+      "query": "ENCODINGVIA REPRESENTATREL",
+      "result_limit": 10,
+      "outcome": "Returned only this project's review, report and ledger. No author-controlled machine source was identified in the returned hits."
+    },
+    {
+      "id": "W01",
+      "method": "PUBLIC_SEARCH_MULTIPLE_QUERIES",
+      "queries": ["An Ontology of Representation Mizoguchi Borgo ontology OWL FOL repository download", "REPRESENTATREL ENCODINGVIA source github ontology Mizoguchi Borgo"],
+      "outcome": "Publisher article and a distinct 2021 paper surfaced; no attributable executable representation root in these bounded results."
+    }
+  ],
+  "author_executable_root_identified": false,
+  "raw_supplement_sha256": null,
+  "global_absence_claim": false,
+  "source_license_scope": "Publisher article marked restricted access; supplemental reuse permissions refer to a non-exclusive license for non-open-access articles. No blanket redistribution or machine-root license is inferred."
+}
