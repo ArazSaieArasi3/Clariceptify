@@ -1,0 +1,166 @@
+{
+  "issue": 238,
+  "source_sha256": "e79633b8d0564816cee8a99f5c9acf9a0e6fc7257c7209acd684ecad53a89dd6",
+  "source_bytes": 28966,
+  "source_url": "https://www.w3.org/2009/08/skos-reference/skos.rdf",
+  "syntax": "RDF/XML",
+  "triples": 252,
+  "ontology_imports": [],
+  "population": {
+    "local_named_classes": 4,
+    "external_redeclared_classes": 0,
+    "imported_classes": 0,
+    "inferred_classes": null,
+    "referenced_non_class_iris": [
+      "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "http://www.w3.org/2004/02/skos/core#inScheme",
+      "http://www.w3.org/2004/02/skos/core#member",
+      "http://www.w3.org/2004/02/skos/core#memberList",
+      "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "http://www.w3.org/2004/02/skos/core#topConceptOf"
+    ],
+    "property_declarations": {
+      "ObjectProperty": 17,
+      "DatatypeProperty": 1,
+      "AnnotationProperty": 10,
+      "Property": 28
+    },
+    "anonymous_owl_class_nodes": 1
+  },
+  "classes": [
+    {
+      "iri": "http://www.w3.org/2004/02/skos/core#Collection",
+      "population": "LOCAL",
+      "label": [
+        "Collection"
+      ],
+      "definition_candidates": [
+        "A meaningful collection of concepts."
+      ],
+      "comment_candidates": [],
+      "definition_locator": "SKOS.rdf::http://www.w3.org/2004/02/skos/core#Collection skos:definition",
+      "paraphrase": "A meaningful grouping of concepts, distinct from a concept.",
+      "axioms": {
+        "subClassOf": [],
+        "equivalentClass": [],
+        "disjointWith": [
+          "http://www.w3.org/2004/02/skos/core#Concept",
+          "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        ]
+      },
+      "deprecated": false
+    },
+    {
+      "iri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "population": "LOCAL",
+      "label": [
+        "Concept"
+      ],
+      "definition_candidates": [
+        "An idea or notion; a unit of thought."
+      ],
+      "comment_candidates": [],
+      "definition_locator": "SKOS.rdf::http://www.w3.org/2004/02/skos/core#Concept skos:definition",
+      "paraphrase": "An identifiable unit of thought; the RDF class itself does not identify an agent or mental episode.",
+      "axioms": {
+        "subClassOf": [],
+        "equivalentClass": [],
+        "disjointWith": []
+      },
+      "deprecated": false
+    },
+    {
+      "iri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "population": "LOCAL",
+      "label": [
+        "Concept Scheme"
+      ],
+      "definition_candidates": [
+        "A set of concepts, optionally including statements about semantic relationships between those concepts."
+      ],
+      "comment_candidates": [],
+      "definition_locator": "SKOS.rdf::http://www.w3.org/2004/02/skos/core#ConceptScheme skos:definition",
+      "paraphrase": "A grouping of concepts that may carry their semantic relations.",
+      "axioms": {
+        "subClassOf": [],
+        "equivalentClass": [],
+        "disjointWith": [
+          "http://www.w3.org/2004/02/skos/core#Concept"
+        ]
+      },
+      "deprecated": false
+    },
+    {
+      "iri": "http://www.w3.org/2004/02/skos/core#OrderedCollection",
+      "population": "LOCAL",
+      "label": [
+        "Ordered Collection"
+      ],
+      "definition_candidates": [
+        "An ordered collection of concepts, where both the grouping and the ordering are meaningful."
+      ],
+      "comment_candidates": [],
+      "definition_locator": "SKOS.rdf::http://www.w3.org/2004/02/skos/core#OrderedCollection skos:definition",
+      "paraphrase": "A collection for which order has meaning.",
+      "axioms": {
+        "subClassOf": [
+          "http://www.w3.org/2004/02/skos/core#Collection"
+        ],
+        "equivalentClass": [],
+        "disjointWith": []
+      },
+      "deprecated": false
+    }
+  ],
+  "selected_assertions": [
+    {
+      "id": "S01",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#OrderedCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Collection>",
+      "asserted": true,
+      "reading": "Hierarchy asserted in RDF."
+    },
+    {
+      "id": "S02",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#Concept>",
+      "asserted": true,
+      "reading": "Explicit class disjointness."
+    },
+    {
+      "id": "S03",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#Concept>",
+      "asserted": true,
+      "reading": "Explicit class disjointness."
+    },
+    {
+      "id": "S04",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#broaderTransitive>",
+      "asserted": true,
+      "reading": "Hierarchy link propagates to transitive property."
+    },
+    {
+      "id": "S05",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty>",
+      "asserted": true,
+      "reading": "Transitivity declared; no cycle prohibition."
+    },
+    {
+      "id": "S06",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty>",
+      "asserted": true,
+      "reading": "Symmetry declared."
+    },
+    {
+      "id": "S07",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty>",
+      "asserted": true,
+      "reading": "Transitivity declared for exactMatch; avoid treating closeMatch likewise."
+    },
+    {
+      "id": "S08",
+      "locator": "SKOS.rdf::<http://www.w3.org/2004/02/skos/core#memberList> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#OrderedCollection>",
+      "asserted": true,
+      "reading": "Member-list domain asserted."
+    }
+  ],
+  "execution": "RDF parse and explicit triple checks only; OWL profile, reasoner and recommendation-only integrity rules NOT_EXECUTED"
+}

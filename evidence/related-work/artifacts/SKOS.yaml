@@ -1,0 +1,66 @@
+schema_version: '1.0'
+issue: 238
+status: SELECTED_OFFICIAL_RDF_SCHEMA_REVIEW_COMPLETE
+checked_on: '2026-10-29'
+baseline_commit: 3b3aef370cc77997d73972a6ce2e025949a86a4f
+source:
+  owner: W3C Semantic Web Deployment Working Group
+  work: SKOS Simple Knowledge Organization System Reference
+  recommendation: https://www.w3.org/TR/2009/REC-skos-reference-20090818/
+  schema: https://www.w3.org/2009/08/skos-reference/skos.rdf
+  namespace_document: https://www.w3.org/2009/08/skos-reference/skos.html
+  version: 18 August 2009 Recommendation edition
+  selected_root_sha256: e79633b8d0564816cee8a99f5c9acf9a0e6fc7257c7209acd684ecad53a89dd6
+  selected_root_bytes: 28966
+  syntax: RDF/XML
+  direct_imports: []
+  access: PUBLIC_STANDALONE_W3C_SCHEMA
+  public_git_repository: NOT_IDENTIFIED_WITHIN_CHECKED_W3C_LINKS
+  historical_original_bytes_equivalence: NOT_ESTABLISHED_BEYOND_PINNED_SCHEMA
+  redistribution: false
+  license: W3C_DOCUMENT_USE_TERMS_NOT_RELICENSED_HERE
+  discovery_scope: 'W3C Recommendation and linked namespace RDF/HTML endpoints, checked 2026-10-29; no public repository commit was used as a source identity.'
+population:
+  census: evaluation/related-work/skos238/census.json
+  complete_selected_root_glossary: evaluation/related-work/skos238/census.json#classes
+  local_declared_named_classes: 4
+  external_redeclared_classes: 0
+  imported_classes: 0
+  inferred_classes: null
+  local_definition_candidates: 4
+  local_rdfs_comments: 0
+  local_missing_source_definitions: 0
+  deprecated_classes: 0
+  local_object_properties: 17
+  local_datatype_properties: 1
+  local_annotation_properties: 10
+  note: 'These property categories overlap the 28 rdf:Property declarations. No sum or inferred population is claimed.'
+foundation:
+  family: RDF_RDFS_OWL_WEB_VOCABULARY
+  relation: 'SKOS is a knowledge-organization vocabulary formalized with RDF and OWL constructs; not an imported upper ontology.'
+  actual_foundational_imports: []
+  BFO_or_UFO_edition: null
+  evidence: 'Selected root has no owl:imports; SKOS Reference sections 1.3, 3.5.1, and Appendix D.'
+selected_commitments:
+  assertion_receipt: evaluation/related-work/skos238/census.json#selected_assertions
+  count: 8
+  recommendation_only_conditions_not_encoded_as_selected_assertions:
+    - 'S14: at most one preferred label per language (including untagged handling in errata).'
+    - 'S13: disjoint literal extensions of preferred, alternative and hidden labels.'
+  distinction: 'The eight checks confirm exact RDF triples. Recommendation integrity conditions require separate validation and are not certified by these checks.'
+scenarios:
+  positive: 'A vocabulary concept can have a preferred lexical label, belong to a concept scheme, and carry a definition. The selected root declares the relevant vocabulary; no human conceptualization activity follows.'
+  counterexample: 'A concept with two prefLabel literals in the same language violates the Recommendation S14 integrity condition even though the selected RDF schema alone does not encode a cardinality constraint. This is a paper-level adverse example, not a reasoner run.'
+decision:
+  disposition: REUSE_AS_KNOWLEDGE_ORGANIZATION_AND_LABELING_CANDIDATE
+  formal_alignment: DEFER
+  accepted_equivalences: []
+  model_change: NONE
+  next_issues: [253, 126]
+limitations:
+  owl2_dl_profile: NOT_EXECUTED
+  reasoner: NOT_EXECUTED
+  rule_validation: NOT_EXECUTED
+  xls_extension: OUT_OF_SELECTED_ROOT
+  translation_to_Clariceptify: CANDIDATE_ONLY
+  expert_acceptance: NOT_PERFORMED
