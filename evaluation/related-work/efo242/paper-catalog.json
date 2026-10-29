@@ -1,0 +1,422 @@
+{
+  "issue": 242,
+  "source_pdf_sha256": "8cf3372ac6bd19b88dfc15f07485695a6aab0f45d91d7864afef6f5f353729a6",
+  "source_url": "https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175/49600",
+  "pdf_pages": 21,
+  "paper_review_sha256": "2e9f301af3ea3d9a07f3c51eaa408b55c8cd01043edfc380a468a71b13d7b3ec",
+  "population": {
+    "figure_category_labels": 33,
+    "paper_category_iri_count": null,
+    "executable_root": null,
+    "local_owl_classes": null,
+    "imported_owl_classes": null,
+    "referenced_owl_classes": null,
+    "deprecated_owl_classes": null,
+    "inferred_owl_classes": null
+  },
+  "figure_categories": [
+    {
+      "paper_id": "C01",
+      "label": "Entity",
+      "attributed_paraphrase": "Root of the category overview.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C02",
+      "label": "Worldly Entity",
+      "attributed_paraphrase": "An entity in a world; physical/mental partition is stated in sec.3.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C03",
+      "label": "World",
+      "attributed_paraphrase": "World containing worldly entities; real/fictional distinction.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C04",
+      "label": "Physical Entity",
+      "attributed_paraphrase": "World-relative independence from being thought by subjects in that world.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C05",
+      "label": "Mental Entity",
+      "attributed_paraphrase": "Mental branch in the selected world, not a label applied indiscriminately to all fictional inhabitants.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C06",
+      "label": "Spatial Region",
+      "attributed_paraphrase": "Timeless spatial category; distinct from temporary occupants.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C07",
+      "label": "Time",
+      "attributed_paraphrase": "Timeless temporal category in the account; not assumed to be a spatial-like dimension.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C08",
+      "label": "Temporary Entity",
+      "attributed_paraphrase": "Exists at some times and not at others; endowed with world occupancy.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C09",
+      "label": "Real World",
+      "attributed_paraphrase": "World of causally real physical entities; multiverse motivation is noted.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C10",
+      "label": "Temporary Physical Entity",
+      "attributed_paraphrase": "Temporary physical branch in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C11",
+      "label": "Temporary Mental Entity",
+      "attributed_paraphrase": "Temporary mental branch in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C12",
+      "label": "Physical Substrate",
+      "attributed_paraphrase": "Physical branch specializing into object and process.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C13",
+      "label": "Physical Quality",
+      "attributed_paraphrase": "Physical branch specializing into object/process qualities.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C14",
+      "label": "Physical Magnitude",
+      "attributed_paraphrase": "Magnitude branch; temperature example varies continuously.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C15",
+      "label": "Physical Connection",
+      "attributed_paraphrase": "Connections support material integrity and truthmakers of qualitative change.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C16",
+      "label": "Psychical Continuant",
+      "attributed_paraphrase": "Mental persistent category; includes Concepts, Events, Properties, Propositions and fictional-world structure in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C17",
+      "label": "Psychical Occurrent",
+      "attributed_paraphrase": "Mental occurrence branch, with Judging and Representing.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C18",
+      "label": "Physical Object",
+      "attributed_paraphrase": "Material object category, e.g. patient/physician/thermometer.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C19",
+      "label": "Physical Process",
+      "attributed_paraphrase": "Process branch under physical substrate; avoid equating its name to DOLCE perdurant.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C20",
+      "label": "Object Quality",
+      "attributed_paraphrase": "Quality inherent to an object; temperature example.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C21",
+      "label": "Process Quality",
+      "attributed_paraphrase": "Quality of process, displayed in Fig.1 without a detailed axiom set here.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C22",
+      "label": "Concept",
+      "attributed_paraphrase": "Subject-specific vehicle for thinking its object; not identical to variable conception.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C23",
+      "label": "Event",
+      "attributed_paraphrase": "Psychical Continuant historically accounting for a change; not a materially existing change itself in the example.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C24",
+      "label": "Property",
+      "attributed_paraphrase": "Psychical continuant category; relation specializes it in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C25",
+      "label": "Proposition",
+      "attributed_paraphrase": "Psychical continuant category displayed without detailed core axioms here.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C26",
+      "label": "Fictional World",
+      "attributed_paraphrase": "Created world in which characters can be physical; also presented within the mental taxonomy.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C27",
+      "label": "Referential Concept",
+      "attributed_paraphrase": "Concept with an in-itself existing represented target; D1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C28",
+      "label": "Non-referential Concept",
+      "attributed_paraphrase": "Concept lacking that reference status; D2.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C29",
+      "label": "State",
+      "attributed_paraphrase": "Specialization of Event in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C30",
+      "label": "Change",
+      "attributed_paraphrase": "Specialization of Event in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C31",
+      "label": "Relation",
+      "attributed_paraphrase": "Specialization of Property in Fig.1.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C32",
+      "label": "Judging",
+      "attributed_paraphrase": "Psychical Occurrent branch; existence attribution is an act of judgment.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    },
+    {
+      "paper_id": "C33",
+      "label": "Representing",
+      "attributed_paraphrase": "Psychical Occurrent branch; do not confuse with binary represents between concepts.",
+      "locator": "Figure 1, PDF p.10 / printed p.62",
+      "owl_iri": null,
+      "owl_definition": null,
+      "formal_hierarchy": null,
+      "status": "PAPER_FIGURE_LABEL_ONLY"
+    }
+  ],
+  "selected_commitments": [
+    {
+      "id": "F01",
+      "printed_label": "A2",
+      "review_id": "K02",
+      "locator": "PDF p.15 / printed p.67",
+      "source_anchor_extracted": true,
+      "bounded_reading": "WorldlyEntity(x) implies exists-unique w: World(w) and in(x,w). This encodes exactly one world per entity, not a separate axiom about all possible cross-world counterparts."
+    },
+    {
+      "id": "F02",
+      "printed_label": "A4",
+      "review_id": "K04",
+      "locator": "PDF p.16 / printed p.68",
+      "source_anchor_extracted": true,
+      "bounded_reading": "TemporaryEntity(x) implies some Time t with presentAt(x,t), and some Time t with NOT presentAt-accented(x,t). The printed second predicate contains an accented e; retain the mismatch rather than silently unifying symbols."
+    },
+    {
+      "id": "F03",
+      "printed_label": "A9",
+      "review_id": "K09",
+      "locator": "PDF p.16 / printed p.68",
+      "source_anchor_extracted": true,
+      "bounded_reading": "Concept(x) implies exists-unique y: HumanBeing(y) and possessedBy(x,y). Individual human possessor, not collective subject."
+    },
+    {
+      "id": "F04",
+      "printed_label": "A11",
+      "review_id": "K11",
+      "locator": "PDF p.17 / printed p.69",
+      "source_anchor_extracted": true,
+      "bounded_reading": "Entity(x) implies exists-unique y: object(y,x). This gives each entity one concept; it does not give each concept exactly one object."
+    },
+    {
+      "id": "F05",
+      "printed_label": "A12",
+      "review_id": "K12",
+      "locator": "PDF p.17 / printed p.69",
+      "source_anchor_extracted": true,
+      "bounded_reading": "As printed: existsAsSuch(x) implies Concept(x). Surrounding prose and D1-D2 instead use existsInItself. No equivalence axiom between these names is printed."
+    },
+    {
+      "id": "F06",
+      "printed_label": "D1-D2",
+      "review_id": "K13+K14",
+      "locator": "PDF p.17 / printed p.69",
+      "source_anchor_extracted": true,
+      "bounded_reading": "ReferentialConcept(x) iff Concept(x) and existsInItself(x). Non-ReferentialConcept(x) iff Concept(x) and NOT existsInItself(x). Predicate typography includes a hyphen; implementation needs an explicit encoding decision."
+    },
+    {
+      "id": "F07",
+      "printed_label": "A14",
+      "review_id": "K16",
+      "locator": "PDF p.17 / printed p.69",
+      "source_anchor_extracted": true,
+      "bounded_reading": "represents(x,y) and ReferentialConcept(y) imply ReferentialConcept(x)."
+    },
+    {
+      "id": "F08",
+      "printed_label": "A15",
+      "review_id": "K17",
+      "locator": "PDF p.17 / printed p.69",
+      "source_anchor_extracted": true,
+      "bounded_reading": "represents(x,y) and Non-referentialConcept(y) imply Non-referentialConcept(x). Capitalization differs across formulas; preserve source identity."
+    }
+  ],
+  "source_discrepancies": [
+    "A4 accented présentAt versus presentAt",
+    "A12 existsAsSuch versus surrounding existsInItself and D1-D2",
+    "A11 inverse uniqueness is not uniqueness of object per concept",
+    "A14/A15 mixed reference-status propagation is conditionally incompatible under normalized D1/D2"
+  ],
+  "execution": "PDF SHA and page count verified; formula anchors extracted by pdftotext; figure visually reviewed in deep dossier and in this review. No FOL parser, theorem prover, OWL profile or reasoner run."
+}
