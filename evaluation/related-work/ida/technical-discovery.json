@@ -14,10 +14,10 @@
     {
       "method": "SEARCH_SERVICE_INDEXED_PRIMARY_EXCERPTS",
       "queries": [
-        "exact original PDF filename mirror",
-        "site:original PDF ContentBearingObjects Discourses",
-        "site:original PDF Assertion True",
-        "site:original PDF hasForSubject"
+        "\"ecai2004-OM-Fortier-Kassel-13.pdf\"",
+        "site:www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf \"ContentBearingObjects\" \"Discourses\"",
+        "site:www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf \"Assertion(x)\" \"True\"",
+        "site:www-sop.inria.fr/acacia/WORKSHOPS/ECAI2004-OM/articlesPDF/ecai2004-OM-Fortier-Kassel-13.pdf \"hasForSubject\" \"consensual\""
       ],
       "outcome": "PARTIAL_INDEXED_PAPER_TEXT_SECTIONS_3_1_TO_4_1",
       "limitation": "Index rendering corrupts some logical glyphs and does not certify the complete article or an executable ontology. Section-level prose leads only."
