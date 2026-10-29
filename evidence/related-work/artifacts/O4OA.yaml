@@ -1,0 +1,330 @@
+schema_version: '1.0'
+issue: 91
+candidate_id: CLR-RW-O4OA
+checked_on: '2026-10-29'
+baseline_commit: 85d5c753d706f098bbc105ce90461969adcba2ac
+status: PARTIAL_SPECIFICATION_REVIEW_BLOCKED_FORMAL_ARTIFACT
+issue_completion: false
+review_kind: SUPPORTING_SPECIFICATION_CHECKPOINT_NOT_FORMAL_ARTIFACT_COMPLETION
+identity:
+  title: O4OA Specification
+  report: PROS-TR-2023-I
+  document_version: '1'
+  reference_ontology_version_at_front: '2.6'
+  reference_ontology_version_in_conclusion: '6.2'
+  version_conflict_resolved: false
+  source_url: https://riunet.upv.es/server/api/core/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/content
+  source_sha256: 8bbcc649518217e34ca0f12b486fda58042d055da45792c7b6f706e5356bfdfb
+  source_bytes: 4107800
+  pdf_pages: 44
+  paper_identity: 'Separate from ER2023 paper reviewed in #73'
+  formal_root: null
+  formal_root_sha256: null
+  reference_repository_commit: null
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  reasoner_execution: NOT_EXECUTED
+  solver_execution: NOT_EXECUTED
+  api_execution: NOT_EXECUTED
+  machine_class_census: NOT_PERFORMED
+  source_redistribution: false
+  scientific_acceptance: NOT_ASSESSED
+  adoption: OWNER_DECISION_REQUIRED
+  full_paper_denominator_change: 0
+  issue_must_remain_open: true
+populations:
+  local_machine_classes: null
+  imported_machine_classes: null
+  inferred_machine_classes: null
+  document_table5_entries: 138
+  document_cqs: 24
+  document_figures: 29
+  document_tables: 16
+evidence:
+  discovery:
+    path: evaluation/related-work/o4oa/technical-discovery-2026-10-29.json
+    sha256: a1879b15c64ecd97cbd908e19ab6386576aca4e9ace1a683fea067d72ac9c3b0
+  terms:
+    path: evidence/related-work/artifacts/O4OA-specification-terms.json
+    sha256: de8bf461102c0ec534f9660dff43ee9c163d0ad078eb136fd17b37b8b65f3c8b
+  reading:
+    path: evaluation/related-work/o4oa/specification-reading.json
+    sha256: 33db40d7e3836907fbca5b5426b704bd7fa532d37c1b9fcaae96a33fd8a2fa18
+questions:
+- id: Q01
+  status: PARTIAL_SPECIFICATION_ONLY
+  judgment: Document identity and Table5 entries can be inspected, but no reference/operational machine root, module
+    census, imports, complete released-class glossary or license is established.
+  finding_ids:
+  - O4OA91-F01
+  - O4OA91-F09
+  - O4OA91-F12
+- id: Q02
+  status: DOCUMENT_DISCREPANCIES_RETAINED
+  judgment: Core/Domain direction, mental versus artifact Concept and relator identity are explicitly distinguished.
+    Missing machine model prevents a resolved implementation judgment.
+  finding_ids:
+  - O4OA91-F02
+  - O4OA91-F03
+  - O4OA91-F04
+- id: Q03
+  status: DOCUMENT_COMMITMENTS_INSPECTED_NOT_EXECUTED
+  judgment: Selected mediation/material, participation and definition-containment commitments are read; version/definition
+    tension and relation-name ambiguity are not silently repaired.
+  finding_ids:
+  - O4OA91-F08
+  - O4OA91-F14
+  - O4OA91-F16
+  - O4OA91-F17
+- id: Q04
+  status: BLOCKED_EXACT_FOUNDATION_AND_IMPORTS
+  judgment: UFO grounding is reported at conceptual level. Exact UFO/gUFO editions, actual imports and translation
+    preservation require unavailable machine sources.
+  finding_ids:
+  - O4OA91-F10
+- id: Q05
+  status: DOCUMENT_PROFILES_INSPECTED_NOT_EXECUTED
+  judgment: Comparative relation conflict, role-disjointness version difference, membership and direct-self exclusion
+    are retained; no integrated OCL/Alloy proof or path-cycle test is executed.
+  finding_ids:
+  - O4OA91-F05
+  - O4OA91-F06
+  - O4OA91-F07
+- id: Q06
+  status: DOCUMENT_IDENTITY_LIMITS_RETAINED
+  judgment: Document terms and source definitions are catalogued without forcing semantic identity; contexts, revisions
+    and divergent meanings need exact artifact contracts.
+  finding_ids:
+  - O4OA91-F01
+  - O4OA91-F08
+  - O4OA91-F13
+- id: Q07
+  status: BLOCKED_EXECUTABLE_CONSTRAINTS
+  judgment: One diagram annotation and document CQ answers are not executable OCL/Alloy inputs, configured solver
+    scopes or independently executed CQ evidence.
+  finding_ids:
+  - O4OA91-F07
+  - O4OA91-F11
+- id: Q08
+  status: BLOCKED_IMPLEMENTATION_AND_CASE_EXECUTION
+  judgment: No implementation/API source or replayable case execution acquired. Reported compatibility/FAIRness
+    and scale values remain author statements, not independent measurements.
+  finding_ids:
+  - O4OA91-F10
+  - O4OA91-F12
+  - O4OA91-F15
+findings:
+- id: O4OA91-F01
+  locator: Specification PDF/printed pp.1-2,39
+  judgment: Document v1 names reference ontology 2.6 at the beginning but 6.2 in the conclusion. Preserve both literals;
+    exact version cannot be silently normalized.
+  kind: VERSION_IDENTITY_CONFLICT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F02
+  locator: Specification PDF/printed pp.5,9,23; Figure17 p33 and Figure20 p34
+  judgment: Core is described as more general than Domain, while the displayed generalization places Core below
+    Domain. No acquired machine root resolves intended ordering.
+  kind: DOCUMENT_INTERNAL_DISCREPANCY
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F03
+  locator: Specification PDF/printed p9; Figures4 p27 and16 p32
+  judgment: Concept-as-ability and conceptualization-as-mental content are discussed, but the selected diagram uses
+    the Concept role of Term and the Conceptualization role of Reference Ontology. Do not conflate these identity
+    levels.
+  kind: DISTINCT_REPRESENTATION_LEVELS
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F04
+  locator: Specification PDF/printed pp.16
+  judgment: Ontology Version prose associates Operational with Domain Description and Reference with Ontology Schema
+    in the reverse order of the surrounding definitions. This appears to be a textual reversal, not a correction
+    applied here.
+  kind: DOCUMENT_INTERNAL_DISCREPANCY
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F05
+  locator: Specification PDF/printed pp.20, Table7
+  judgment: Comparisons are labeled reflexive and asymmetric together. Under ordinary binary-relation semantics
+    these cannot both hold on a nonempty domain; the intended strict versus non-strict order is unresolved.
+  kind: LOGICAL_PROFILE_CONFLICT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F06
+  locator: Specification PDF/printed pp.17,23,36; Table15 and Figure27
+  judgment: Reused/Reuser roles are explicitly disjoint and complete in this specification. The later conference-paper
+    review reports legal overlapping reuse roles. Preserve source/version difference rather than transfer the later
+    correction to these bytes.
+  kind: CROSS_SOURCE_DISCREPANCY
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F07
+  locator: Specification PDF/printed pp.36, Figure26
+  judgment: A visible OCL-like annotation excludes direct self-subOntology targets. It is not an acquired executable
+    constraint file or a demonstrated transitive-path cycle check.
+  kind: UNEXECUTED_DIAGRAM_CONSTRAINT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F08
+  locator: Specification PDF/printed pp.33,38; Figure19 and CQ2.6/2.7 answers
+  judgment: Figure19 depicts required version membership and at least two definitions, while CQ answers allow definitions
+    outside an ontology version. Exact identity, containment and exception semantics remain unresolved.
+  kind: DOCUMENT_INTERNAL_TENSION
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F09
+  locator: Specification PDF/printed pp.10,20
+  judgment: Data Dictionaries contains a missing citation marker; XML DTDs has no printed stereotype in Table5.
+    Preserve missing source metadata rather than infer it from neighboring rows.
+  kind: MISSING_SOURCE_METADATA
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F10
+  locator: Specification PDF/printed pp.3,2; Table1
+  judgment: UFO through OntoUML and UFO-A/B/C are author-stated grounding modules. Compatibility High is an author
+    judgment, not an executed import, edition identity or validated mapping.
+  kind: FOUNDATION_LIMIT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F11
+  locator: Specification PDF/printed pp.7,38-39; Tables4 and16
+  judgment: Three group questions and21 subordinate questions provide document-level coverage assertions. Prose
+    answers and diagram pointers do not reproduce query execution or adequacy validation.
+  kind: VALIDATION_LIMIT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F12
+  locator: Specification PDF/printed pp.2,39
+  judgment: NoSQL/REST implementation is reported. No acquired implementation root, API experiment, persistence
+    test or reasoner execution supports independent reproduction.
+  kind: IMPLEMENTATION_ACCESS_GAP
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F13
+  locator: Specification PDF/printed pp.9,17-18
+  judgment: Definitions may differ or be shared; document sources support traceability. Neither shared terms nor
+    equality of strings establishes meaning equivalence, source reliability or consensus.
+  kind: SEMANTIC_IDENTITY_LIMIT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F14
+  locator: Specification PDF/printed pp.6,20-23
+  judgment: Relation tables contain naming inconsistencies (usedToImplement for representation, later usedToRepresent;
+    spelling variants). Record literal labels and locators; no cross-version equivalence or corrected relation IRIs
+    are invented.
+  kind: RELATION_IDENTITY_AMBIGUITY
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F15
+  locator: Specification PDF/printed pp.10; Table5
+  judgment: Formalization, expressiveness and axiomatization dimensions are described on 1-100 scales; no calibration,
+    empirical measurement or validated comparison procedure is supplied by those definitions.
+  kind: MEASUREMENT_LIMIT
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F16
+  locator: Specification Table16 CQ2.8 p38; Figures19 p33 and29 p37
+  judgment: CQ2.8 describes contains with Concept as part; the diagrams use Concept Definition. Preserve the distinction
+    rather than invent an equivalence.
+  kind: SOURCE_ENDPOINT_MISMATCH
+  next_issues:
+  - 91
+  - 252
+  - 126
+- id: O4OA91-F17
+  locator: Specification Table16 CQ3.5 p39; Figure16 p32
+  judgment: CQ3.5 attributes implementationFor to the schema mediation; Figure16 uses usedToImplement there and
+    separates the implementationFor support relation. Exact source-model correspondence remains blocked.
+  kind: SOURCE_RELATION_MISMATCH
+  next_issues:
+  - 91
+  - 252
+  - 126
+closure:
+  AC-REPOSITORY: PARTIAL_PUBLIC_METADATA_REFERENCE_TREE_HTTP403
+  AC-ALL-CLASSES: BLOCKED_NO_RELEASED_ROOT
+  AC-FOUNDATION: PARTIAL_CONCEPTUAL_CLAIM_ONLY
+  AC-1: BLOCKED_NO_FORMAL_ARTIFACT
+  AC-2: PARTIAL_DOCUMENT_ONLY
+  decision: KEEP_ISSUE_91_OPEN
+  required_input: An owner-authorized exact reference or operational model export/source archive, with version identity,
+    module/import boundary and licensing information; executable constraints and API sources for remaining execution
+    claims.
+  later_issues:
+  - 252
+  - 126
+rights:
+  public_content: Reviewer paraphrases, identifiers, counts and hashes only; no PDF, source screenshots or copied
+    definition corpus.
+  model_relicense_permission: NOT_ESTABLISHED
+  document_license_assessment: NOT_PERFORMED
+conceptual_adverse_cases:
+- id: A01
+  scenario: Take one comparison-domain element x. Reflexivity requires R(x,x), asymmetry prohibits it.
+  disposition: Literal Table7 profile cannot describe a nonempty relation domain under these ordinary definitions;
+    no machine semantics executed.
+  findings:
+  - O4OA91-F05
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_SOLVER_RUN
+- id: A02
+  scenario: A reuses B and B reuses C. B must occupy both reuse roles.
+  disposition: Disjoint role annotation excludes the intermediate B witness under a direct role reading; preserve
+    source/version conflict.
+  findings:
+  - O4OA91-F06
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_SOLVER_RUN
+- id: A03
+  scenario: A contains B, B contains C and C contains A, with no direct self edge.
+  disposition: A direct-self exclusion alone does not reject this path cycle unless further relation semantics enforce
+    closure; no executable source supplied.
+  findings:
+  - O4OA91-F07
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_SOLVER_RUN
+- id: A04
+  scenario: A source definition belongs to no ontology version.
+  disposition: Table16 allows this case while the displayed required version endpoint appears to exclude it; do
+    not choose a correction silently.
+  findings:
+  - O4OA91-F08
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_SOLVER_RUN
+- id: A05
+  scenario: Two sources use the same term with divergent definitions.
+  disposition: Traceable distinct definitions do not entail synonymy, equivalence, truth or accepted consensus.
+  findings:
+  - O4OA91-F13
+  execution: REVIEWER_CONCEPTUAL_ANALYSIS_NOT_SOLVER_RUN

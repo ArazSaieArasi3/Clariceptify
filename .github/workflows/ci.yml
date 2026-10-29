@@ -85,6 +85,8 @@ jobs:
         run: python tools/test_ontolex_review.py
       - name: Check SKOS document evidence boundaries
         run: python tools/test_skos_review.py
+      - name: Check blocked O4OA technical-evidence boundaries
+        run: python tools/test_o4oa_checkpoint.py
       - name: Check Cognitive Atlas coverage and descriptive-unit boundaries
         run: python tools/test_cognitiveatlas_review.py
       - name: Preserve exact input and validator evidence

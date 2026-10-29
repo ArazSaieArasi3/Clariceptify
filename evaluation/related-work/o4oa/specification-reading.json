@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0",
+  "issue": 91,
+  "source_sha256": "8bbcc649518217e34ca0f12b486fda58042d055da45792c7b6f706e5356bfdfb",
+  "method": "AI-assisted complete text reading and actual page/figure image inspection. Dense composite figures28/29 inspected as native-resolution halves for topology and selected relationships, not an exhaustive machine class/edge census.",
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "figures": [
+    {
+      "figure": 1,
+      "page": 3,
+      "note": "Stakeholder-perspective illustration, not empirical validation."
+    },
+    {
+      "figure": 2,
+      "page": 5,
+      "note": "Four classification dimensions and illustrative categories, not a parsed model."
+    },
+    {
+      "figure": 3,
+      "page": 27,
+      "note": "Term kind, Concept role, Cloud collective, memberOf with 2..* concepts and1..*clouds."
+    },
+    {
+      "figure": 4,
+      "page": 27,
+      "note": "Definition relator mediates Concept/Source; Source specializes Documents; describes material derivation."
+    },
+    {
+      "figure": 5,
+      "page": 27,
+      "note": "Combined cloud/document/definition fragment, document subclasses disjoint."
+    },
+    {
+      "figure": 6,
+      "page": 28,
+      "note": "Five document kinds beneath Documents category; no complete annotation."
+    },
+    {
+      "figure": 7,
+      "page": 28,
+      "note": "Appropriateness relator, symbolic and limitation roles, type-level meta-characterization/comparisons."
+    },
+    {
+      "figure": 8,
+      "page": 28,
+      "note": "Anti-pattern representation and unintended behavior roles mediated by Semantic Anti-Pattern."
+    },
+    {
+      "figure": 9,
+      "page": 29,
+      "note": "Representation Pattern and Intended Behaviour mediated by Semantic Pattern."
+    },
+    {
+      "figure": 10,
+      "page": 29,
+      "note": "Graphy mode hierarchy, knowledge graphs/triple stores/NoSQL schemas; literal disjoint sets."
+    },
+    {
+      "figure": 11,
+      "page": 30,
+      "note": "Representation hierarchy and graphical/textual complete set; logic-family subdivisions."
+    },
+    {
+      "figure": 12,
+      "page": 30,
+      "note": "Combined Graphy/Representation/Behavior presentation."
+    },
+    {
+      "figure": 13,
+      "page": 31,
+      "note": "Cross-cutting formalization/axiomatization categories and shared named subclasses."
+    },
+    {
+      "figure": 14,
+      "page": 31,
+      "note": "Axiomatization categories, degree dimension, comparison; does not define measured numeric values."
+    },
+    {
+      "figure": 15,
+      "page": 32,
+      "note": "Formalization/Expressiveness categories and integer dimensions; no computed metrics."
+    },
+    {
+      "figure": 16,
+      "page": 32,
+      "note": "Applicability partition, conceptualization/implementation roles, two language mediations and support relator."
+    },
+    {
+      "figure": 17,
+      "page": 33,
+      "note": "Foundation/non-foundation, domain/core hierarchy and grounding relator."
+    },
+    {
+      "figure": 18,
+      "page": 33,
+      "note": "Direct versus indirect foundation roles and foundation-driven metamodel."
+    },
+    {
+      "figure": 19,
+      "page": 33,
+      "note": "OntologyVersion category with Schema/Description partition, version identification/copyright, definitions2..*."
+    },
+    {
+      "figure": 20,
+      "page": 34,
+      "note": "Applicability/generality partitions and characterization categories."
+    },
+    {
+      "figure": 21,
+      "page": 34,
+      "note": "Language specification and ontology-driven specification, CL/CODL subset annotation."
+    },
+    {
+      "figure": 22,
+      "page": 35,
+      "note": "Language type instantiation, computational/noncomputational partition and language subdivisions."
+    },
+    {
+      "figure": 23,
+      "page": 35,
+      "note": "Metamodel/grounding routes, OC/OFC and CL/CODL subsets, ontology-driven specification."
+    },
+    {
+      "figure": 24,
+      "page": 35,
+      "note": "Ontology-driven specification commitments, external dependence and multiplicities."
+    },
+    {
+      "figure": 25,
+      "page": 36,
+      "note": "Language specification mediations, four mode commitments and external dependence."
+    },
+    {
+      "figure": 26,
+      "page": 36,
+      "note": "Ontology artifact/type/network distinction, component/member multiplicities, profile and one self-exclusion note."
+    },
+    {
+      "figure": 27,
+      "page": 36,
+      "note": "Reused/Reuser roles explicitly disjoint and complete, Reusability mediation."
+    },
+    {
+      "figure": 28,
+      "page": 37,
+      "note": "Ontological composite, native-resolution halves inspected; reuse disjointness retained."
+    },
+    {
+      "figure": 29,
+      "page": 37,
+      "note": "Root composite including Domain, characterization, implementation and reuse; definition/version participation retained."
+    }
+  ],
+  "tables": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "table5_rows": 138,
+  "cq_groups": 3,
+  "cq_subordinate_questions": 21,
+  "bibliography_entries": 79,
+  "execution": "DOCUMENT_REVIEW_ONLY",
+  "coverage_units": [
+    {
+      "pages": [
+        1,
+        2
+      ],
+      "scope": "Cover, identity, introduction, foundation, reference-model claims"
+    },
+    {
+      "pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "scope": "Philosophical base, commitment, relation summaries and CQ table"
+    },
+    {
+      "pages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "scope": "Complete Table5 document term inventory, all 138 rows"
+    },
+    {
+      "pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "scope": "Relations and specialization Tables6-15"
+    },
+    {
+      "pages": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "scope": "Package hierarchy and Figures3-29"
+    },
+    {
+      "pages": [
+        38,
+        39
+      ],
+      "scope": "CQ coverage statements, not executed query results"
+    },
+    {
+      "pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "scope": "Conclusion, acknowledgments and all79 bibliography entries"
+    }
+  ],
+  "expert_acceptance": "NOT_ASSESSED",
+  "solver_execution": "NOT_EXECUTED"
+}

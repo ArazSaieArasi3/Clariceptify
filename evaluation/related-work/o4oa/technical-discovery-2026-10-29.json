@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "issue": 91,
+  "checked_on": "2026-10-29",
+  "baseline_commit": "85d5c753d706f098bbc105ce90461969adcba2ac",
+  "method": "Read exact official public endpoints once. Reference-tree HTTP403 retained; no bypass or guessed raw/private paths. Reacquired supporting specification matches retained bytes.",
+  "retrievals": [
+    {
+      "id": "specification",
+      "url": "https://riunet.upv.es/server/api/core/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/content",
+      "final_url": "https://riunet.upv.es/server/api/core/bitstreams/9fef1f27-cc50-4100-9ebc-989493557b73/content",
+      "status": 200,
+      "bytes": 4107800,
+      "sha256": "8bbcc649518217e34ca0f12b486fda58042d055da45792c7b6f706e5356bfdfb"
+    },
+    {
+      "id": "reference-project",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa",
+      "status": 200,
+      "bytes": 1127,
+      "sha256": "dcd49a5dd242207f6acc30e161465914589befccd09eaf24958edbd26011f5fc"
+    },
+    {
+      "id": "reference-tree",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa/repository/tree?recursive=true&per_page=100",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fo4oa/repository/tree?recursive=true&per_page=100",
+      "status": 403,
+      "bytes": 27,
+      "sha256": "049f7d7b2d353566dca3e37d91ae2d886e11e6d9a6db69f0526650bdad244f78"
+    },
+    {
+      "id": "light-tree",
+      "url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/tree?recursive=true&per_page=100&ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "final_url": "https://gitlab.com/api/v4/projects/bfmartins%2Fgo4oa/repository/tree?recursive=true&per_page=100&ref=3be36c642b2cfca33de3d0788471bc185880bde8",
+      "status": 200,
+      "bytes": 992,
+      "sha256": "0f7ab9c9b3e2567b142c5d176f7a3cb31d30a37011f453d6d2ce220992d28828"
+    },
+    {
+      "id": "author-doc",
+      "url": "https://bfmartins.gitlab.io/o4oa/content/o4oa.html",
+      "final_url": "https://bfmartins.gitlab.io/o4oa/content/o4oa.html",
+      "status": 200,
+      "bytes": 29020,
+      "sha256": "e843153e73f4573eec96ced4eb619640364ac109566fa0e945ca37bbf25e3ab0"
+    }
+  ],
+  "reference_root_acquired": false,
+  "reference_commit": null,
+  "light_variant_commit": "3be36c642b2cfca33de3d0788471bc185880bde8",
+  "light_tree_entries": 8,
+  "light_tree_files": 5,
+  "formal_root_in_selected_light_tree": "NOT_IDENTIFIED",
+  "global_absence_claim": false,
+  "license_permission": "NOT_ESTABLISHED",
+  "reference_403_disposition": "STOPPED_REPOSITORY_TREE_ACCESS; continue acquired specification only"
+}
