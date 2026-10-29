@@ -1,0 +1,819 @@
+schema_version: '1.0'
+batch_id: R2-CMP-001
+issue: 251
+status: BOUNDED_COMPARISON_COMPLETE_WITH_UNRESOLVED_SEMANTICS
+as_of: '2026-10-29'
+execution_baseline_commit: 661cb4d40238a77f8f321fd99e232676716561b5
+execution_commit: RECORDED_IN_MERGED_PR_AND_ISSUE_CLOSURE
+model:
+  release: v0.1.0
+  revision: input-r1-rev1
+  path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  comparison_only: true
+  accepted_equivalences: []
+scope:
+  works:
+  - DnS
+  - cDnS
+  - DUL
+  - DULConceptualization
+  dimensions:
+  - agency_activity
+  - content_expression_referent
+  - episode_decision_rationale
+  - formal_evaluation_limits
+  source_population: Four candidate labels, not four interchangeable historical OWL releases.
+  synthesis_target: 126
+  utilization_plan: docs/research/review-utilization-plan.md
+  owner_decision: OWNER_DECISION_REQUIRED
+source_columns:
+  DnS:
+    paper:
+      id: DnS2003
+      version: 2003 OTM/ODBASE author PDF, 18 pages
+      sha256: d06ecaa6bc2f0274a02dcfe945a3d722f7eb13bbd982d4c569c83134de23f278
+      dossier: evidence/related-work/deep-reviews/DnS2003/review.yaml
+    artifact:
+      version: ExtendedDnS.owl header 397, later 2005-copyright DLP3971 archive
+      sha256: 7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41
+      archive_sha256: b88ce73648ffdbb200a371ac8c51e51739c3ad1760680e644e8cf5cde322bcc2
+      review: evidence/related-work/artifacts/DnS.yaml
+      census: evaluation/related-work/dns235/census.json
+    repository:
+      state: OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED
+      discovery: 2026-10-27; source-audit.yaml W08 and dns/deep-review-discovery.json; bounded three-query
+        search
+      public_url: https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip
+      commit: null
+      exact_2003_correspondence: NOT_ESTABLISHED
+    access_license:
+      access: OFFICIAL_ZIP_RETAINED_PRIVATELY
+      license: Distribution README reports LGPL-2.1-or-later; do not transfer this to the 2003 paper or other
+        sources
+      raw_redistributed: false
+    classes:
+      declaration_policy: Unique named declarations in selected root, external redeclarations and resolved
+        asserted import closure kept separate
+      local: 58
+      external_redeclarations: 10
+      imported_distinct_beyond_root_declarations: 27
+      import_closure_unique: 95
+      referenced_undeclared_root: 3
+      referenced_undeclared_closure: 0
+      deprecated_declared_root: 0
+      anonymous: null
+      source_comment_candidates: 58
+      usable_comment_candidates: 57
+      insufficient_comments: 1
+      missing_comments: 0
+      imported_glossary_complete: false
+      inferred: null
+      catalog: evidence/related-work/dns235-class-catalog.yaml
+      limitation: 37 classes belong to imported signatures relative to the 58 local root; ten external root
+        redeclarations overlap that signature. The imported glossary is not independently complete.
+    foundation:
+      family: DOLCE-Lite
+      edition: Supplied 397-family modules; exact 2003 edition unknown
+      relation: ACTUAL_PINNED_IMPORTS_IN_SELECTED_LATER_MODULE
+      imports:
+      - DOLCE-Lite.owl
+      - SpatialRelations.owl
+      - TemporalRelations.owl
+      paper_grounding: DnS2003:E03-E06; ground ontology account
+      alignment: NOT_ACCEPTED
+      limitation: Later module imports do not certify original-paper fidelity.
+  cDnS:
+    paper:
+      id: cDnS2007
+      version: 2007 author PDF, 40 pages
+      sha256: ad6204de62649f271b89196dd0a00d301c52dfa19a0b11f8fcbc0ce218160066
+      dossier: evidence/related-work/deep-reviews/cDnS2007/review.yaml
+    additional_paper:
+      id: cDnS-journal-2008
+      version: 2008 journal paper, 43 pages, 147 displays
+      sha256: 272d9cf81057480eb9380f6142bef68d6687f4c559688ef053d159bbd329be65
+      dossier: evidence/related-work/deep-reviews/cDnS-journal-2008/review.yaml
+      relation: DISTINCT_PAPER_NOT_2007_ALIAS
+    artifact:
+      version: cDnS.owl core 1.1
+      sha256: f0d7b6c795fe9e1a699eda2d80089371336869e981e938648edd5db88358658a
+      review: evidence/related-work/artifacts/cDnS-core-followup.yaml
+      execution: evaluation/related-work/cdns267/execution.json
+    extension:
+      version: Selected collInt1.0 / ground1.0 / core1.1 file map, not certified original closure
+      root_sha256: 379ada879ccf8e87bc912635f9bebd25df004b033dfa3f65c165480772679200
+      ground_sha256: ac10db67bbb3fd7b611ea492c5ae828889974892329b61f1f75e8ba45b57182b
+      map: evidence/related-work/deep-reviews/cDnS-journal-2008/import-map.json
+    repository:
+      state: STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+      discovery: 2026-10-26 G09; 2026-10-28 CDNS2008; 2026-10-29 exact core HTTP receipt, source-audit.yaml
+      public_url: http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl
+      commit: null
+      exact_2007_or_2008_correspondence: NOT_ESTABLISHED
+    access_license:
+      access: CURRENT_CORE_AND_SELECTED_EXTENSION_RETAINED_PRIVATELY
+      license: NO_HEADER_PERMISSION_ESTABLISHED
+      raw_redistributed: false
+    classes:
+      declaration_policy: Core and mapped extension are separate populations; map deduplicated by IRI
+      local_core: 12
+      external_redeclarations_core: 0
+      imported_core: 0
+      referenced_undeclared_core: null
+      deprecated_core: 0
+      source_comment_candidates_core: 12
+      missing_comments_core: 0
+      selected_map_root_local: 25
+      selected_map_ground_local: 14
+      selected_map_core_local: 12
+      selected_map_unique: 51
+      selected_map_comment_candidates: 51
+      selected_map_missing_comments: 0
+      selected_map_deprecated: 0
+      inferred: null
+      catalog: evidence/related-work/deep-reviews/cDnS-journal-2008/classes.yaml
+      core_catalog: evidence/related-work/deep-reviews/cDnS2007/classes.yaml
+      limitation: Referenced-only class IRI population in the exact core was not separately reconciled; unknown
+        is not zero. The 51 mapped classes include the same 12 core classes, with original-host import parity
+        and reasoning unverified.
+    foundation:
+      family: Constructive DnS, foundation-neutral claim
+      edition: null
+      relation: PAPER_STATED_GROUNDING_AND_SELECTED_INTERNAL_IMPORTS
+      imports_core: []
+      imports_mapped_extension:
+      - ground.owl -> cDnS.owl
+      - collInt.owl -> ground.owl
+      paper_grounding: cDnS2007:E03-E04; cDnS-journal-2008:E04
+      alignment: NOT_ACCEPTED
+      limitation: DOLCE discussion does not establish a DOLCE import or exact edition.
+  DUL:
+    paper:
+      id: CLR-RW-DUL
+      version: 2016 chapter 5, printed pages 81-103 / PDF pages 98-120 only
+      sha256: 6605f2d66dbd6a0a7af21bfa7f0802050abd2c5122c0c5410bfb073479a29ca8
+      dossier: evidence/related-work/deep-reviews/CLR-RW-DUL/review.yaml
+    artifact:
+      version: DUL.owl 4.2 current root
+      sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+      review: evidence/related-work/artifacts/DUL-technical-review.yaml
+      catalog: evidence/related-work/dul-class-catalog.yaml
+    repository:
+      state: STANDALONE_DUL_FILE_RELATED_DOLCE_REPO_NOT_EXACT_SOURCE
+      discovery: 2026-10-28 to 2026-10-29; source-audit.yaml DUL2016-DISC-20261028 and DUL-technical-review.yaml
+        discovery
+      public_url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+      related_repo: https://github.com/appliedontolab/DOLCE
+      related_repo_commit: cca21e82b38fe6956e9619516dad92116782a4a2
+      exact_2016_correspondence: NOT_ESTABLISHED
+    access_license:
+      access: CURRENT_FILE_AND_SELECTED_PATTERNS_RETAINED_PRIVATELY
+      license: NO_HEADER_PERMISSION_ESTABLISHED
+      raw_redistributed: false
+    classes:
+      declaration_policy: Exact DUL4.2 root, local namespace; one external owl:Thing declaration and builtin
+        kept separate
+      local: 78
+      external_redeclarations: 1
+      imported: 0
+      referenced_undeclared: 0
+      deprecated: 0
+      anonymous_class_declarations: 14
+      source_comment_candidates: 69
+      usable_descriptive_comments: 67
+      insufficient_label_only: 2
+      missing_comments: 9
+      inferred: null
+      catalog: evidence/related-work/dul-class-catalog.yaml
+      limitation: Complete local glossary with qualified missing definitions; selected nine-pattern closure
+        and imported IOLite are different boundaries.
+    foundation:
+      family: DOLCE + DnS Ultralite
+      edition: Selected DUL4.2
+      relation: INDEPENDENT_INTEGRATED_FOUNDATION
+      imports: []
+      paper_grounding: CLR-RW-DUL:E03,E05; five integrated theories
+      alignment: NOT_ACCEPTED
+      limitation: 2016 chapter does not certify current 4.2 release equivalence or every standalone pattern
+        constraint.
+  DULConceptualization:
+    documentation:
+      id: RW-DUL-CONCEPTUALIZATION-0.1
+      version: Embedded primary documentation, preliminary 0.1; no separate paper established
+      sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+      review: evidence/related-work/reviews/DULConceptualization.yaml
+    artifact:
+      version: Conceptualization.owl 0.1
+      sha256: 75f17194b4096abecf57ebbe1e0f54af665e43f3b75952630744e423fa6365c3
+      review: evidence/related-work/artifacts/DULConceptualization.yaml
+      census: evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+    repository:
+      state: STANDALONE_FILE_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH
+      discovery: 2026-10-26; source-audit.yaml G11, bounded name/description query
+      public_url: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl
+      commit: null
+      original_import_edition: NOT_ESTABLISHED
+    access_license:
+      access: AUTHOR_FILE_RETAINED_PRIVATELY
+      license: NO_HEADER_PERMISSION_ESTABLISHED
+      raw_redistributed: false
+    classes:
+      declaration_policy: Selected root and resolved pinned DUL4.2 import; builtin owl:Thing separate
+      local: 1
+      external_redeclarations_root: 0
+      imported_DUL_local: 78
+      builtin_in_resolved_closure: 1
+      closure_unique_including_builtin: 80
+      referenced_undeclared_root: null
+      deprecated_local: 0
+      source_comment_candidates_local: 1
+      missing_comments_local: 0
+      imported_glossary: 'DUL4.2 78 local classes reviewed in #88 with 67 descriptive, two label-only and nine
+        absent comments; this does not certify original 0.1 import edition'
+      inferred: null
+      catalog: evidence/related-work/deep-reviews/shared-foundations/Conceptualization/classes.yaml
+      limitation: Exact root referenced-only class-position count was not independently reconciled.
+    foundation:
+      family: DUL
+      edition: Resolved DUL4.2 snapshot; original 0.1 import edition unknown
+      relation: ACTUAL_IMPORT
+      imports:
+      - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+      paper_grounding: Embedded header/comment and declared owl:imports
+      alignment: NOT_ACCEPTED
+      limitation: Mutable import URL; no historical compatibility proof.
+matrix:
+- id: CMP1-01
+  dimension: agency_activity
+  work: DnS
+  paper_locators:
+  - DnS2003:E08 PDF10-11 sec.3 Fig.2
+  - DnS2003:E10 PDF13-14 sec.3.2 Fig.3
+  artifact_locators:
+  - evidence/related-work/artifacts/DnS.yaml DNS235-F06
+  native_support: Communication roles, peer/user interaction and human-derived software intentionality are
+    described; later ExtendedDnS selected root has selected agent/role structures.
+  required_specialization: Identify the actual conceptualizing participant, process and role/agent identity
+    policy in the case.
+  unsupported_inference: A peer process is a verified human mental act or a full history of agent decisions.
+  counterevidence: 'DnS2003:F13: human interpretation remains external; later OWL release is not the 2003 theory.'
+  unknowns:
+  - Historical OWL fidelity and same-agent entailment
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  use_ids:
+  - U01
+  - U02
+  - U05
+- id: CMP1-02
+  dimension: agency_activity
+  work: cDnS
+  paper_locators:
+  - cDnS2007:E15 PDF22-25 displays81-97
+  - cDnS-journal-2008:E15 PDF24-26 displays78-87
+  artifact_locators:
+  - evidence/related-work/artifacts/cDnS-core-followup.yaml CDNS267-F02
+  - evidence/related-work/deep-reviews/cDnS-journal-2008/classes.yaml collInt/ground map
+  native_support: SocialAgent conceptualizes schematic entities in the core; later mapped extension introduces
+    physical agents, roles and action-related classes.
+  required_specialization: Specify agent role, process/event and temporal setting separately from conceptualizes.
+  unsupported_inference: Binary core conceptualizes alone records a temporally identified conceptualization
+    episode.
+  counterevidence: 'CDNS267-F02: generalized range is already in the 2008 journal; core has no Time class or
+    explicit time argument (F04).'
+  unknowns:
+  - Mapped extension reasoning and original release parity
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  - CLR-C0123
+  use_ids:
+  - U03
+  - U06
+- id: CMP1-03
+  dimension: agency_activity
+  work: DUL
+  paper_locators:
+  - CLR-RW-DUL:E06 printed87 sec.5.3.1
+  - CLR-RW-DUL:E08 printed89-90 sec.5.3.4
+  artifact_locators:
+  - evidence/related-work/artifacts/DUL-technical-review.yaml Q04
+  - 'evidence/related-work/dul-class-catalog.yaml DUL4.2 #Agent/#Action/#Task'
+  native_support: Agent, Action and task/role classification give typed agency and event resources in the selected
+    root.
+  required_specialization: Represent a particular conceptualization act, author and task commitment under a
+    specified identity rule.
+  unsupported_inference: A generic Action/Agent is identical to Clariceptify Conceptualization/Agent or supplies
+    a recorded rationale.
+  counterevidence: Chapter patterns and integrated DUL root differ in commitments (CLR-RW-DUL:F01,F21); 2016
+    parity unknown.
+  unknowns:
+  - Cross-ontology identity and historical profile
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  use_ids:
+  - U02
+  - U05
+- id: CMP1-04
+  dimension: agency_activity
+  work: DULConceptualization
+  paper_locators:
+  - RW-DUL-CONCEPTUALIZATION-0.1 observations/purpose and mental_representation
+  artifact_locators:
+  - 'evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+    #InternalRepresentation nested realizes/expresses/isConceptualizedBy'
+  - evidence/related-work/artifacts/DULConceptualization.yaml selected_iri_locators
+  native_support: Agent/social-object attitude properties and InternalRepresentation provide a conceptualization
+    relation pattern.
+  required_specialization: Name the cognitive system, conceptualizing agent and episode, with explicit co-reference
+    if intended.
+  unsupported_inference: Nested existential witnesses force the cognitive system and conceptualizing Agent
+    to be the same individual.
+  counterevidence: RW-DUL-CONCEPTUALIZATION-0.1 comparison explicitly rejects the same-agent inference; file
+    is preliminary.
+  unknowns:
+  - Same-agent policy, episode identity, imported historical DUL edition
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  - CLR-C0101
+  use_ids:
+  - U03
+  - U05
+  - U07
+- id: CMP1-05
+  dimension: content_expression_referent
+  work: DnS
+  paper_locators:
+  - DnS2003:E09 PDF11-13 sec.3.1 unnumbered interpretation map
+  - DnS2003:E10 PDF13-14 Fig.3
+  artifact_locators:
+  - evidence/related-work/artifacts/DnS.yaml DNS235-F04
+  - evidence/related-work/deep-reviews/DnS2003/review.yaml K13 display13 PDF7
+  native_support: Expression/message as roles of information objects, meaning as description and context/referent
+    as distinct roles.
+  required_specialization: Record the chosen content, physical/digital expression and target referent for the
+    specific interpretation.
+  unsupported_inference: A message role is the meaning or automatically identifies one referent in all contexts.
+  counterevidence: DnS2003:F10 maintains role/filler difference; K13 witnesses need not be one common description.
+  unknowns:
+  - Interpretation reference identity for a selected case
+  model_ids:
+  - CLR-C0047
+  - CLR-C0057
+  - CLR-C0101
+  - CLR-C0062
+  use_ids:
+  - U03
+  - U04
+- id: CMP1-06
+  dimension: content_expression_referent
+  work: cDnS
+  paper_locators:
+  - cDnS2007:E10 PDF15-16 displays38-51
+  - cDnS-journal-2008:E11 PDF18-19 displays38-50
+  artifact_locators:
+  - evidence/related-work/artifacts/cDnS-core-followup.yaml CDNS267-F03
+  - 'evidence/related-work/deep-reviews/cDnS2007/classes.yaml #InformationObject/#SchematicEntity'
+  native_support: Core expresses relates InformationObject to SchematicEntity; paper differentiates information
+    expression and derived aboutness.
+  required_specialization: Provide referent and composition path with exact version-specific property directions.
+  unsupported_inference: Core expresses alone proves the paper aboutness chain or all information objects express
+    only Description.
+  counterevidence: 'CDNS267-F03: 2008 already has schematic range, while source aboutness derivation was not
+    reproduced.'
+  unknowns:
+  - Whole-core logical entailment after profile failure
+  model_ids:
+  - CLR-C0047
+  - CLR-C0057
+  - CLR-C0101
+  - CLR-C0017
+  use_ids:
+  - U03
+  - U04
+  - U09
+- id: CMP1-07
+  dimension: content_expression_referent
+  work: DUL
+  paper_locators:
+  - CLR-RW-DUL:E12 printed92 sec.5.3.10
+  - CLR-RW-DUL:E13 printed92-93 sec.5.3.11
+  artifact_locators:
+  - evidence/related-work/artifacts/DUL-technical-review.yaml Q02,Q05
+  - 'evidence/related-work/dul-class-catalog.yaml #InformationObject/#InformationRealization/#Description/#Concept'
+  native_support: InformationObject and InformationRealization are distinct; Description and Concept support
+    explicit conceptual content and classification.
+  required_specialization: Specify referent/meaning and the representation-realization identity policy for
+    this case.
+  unsupported_inference: Every InformationObject in DUL4.2 must have a realization, or the standalone Description
+    disjointness holds unchanged in the integrated root.
+  counterevidence: 'DUL88 Q02/Q05: no-realization fixture is consistent; chapter/sample Concept-Description
+    disjointness differs from root4.2.'
+  unknowns:
+  - Historical 2016 axiom parity and complete aboutness of scenario
+  model_ids:
+  - CLR-C0017
+  - CLR-C0047
+  - CLR-C0057
+  - CLR-C0101
+  use_ids:
+  - U03
+  - U05
+  - U08
+- id: CMP1-08
+  dimension: content_expression_referent
+  work: DULConceptualization
+  paper_locators:
+  - RW-DUL-CONCEPTUALIZATION-0.1 observations/mental_representation
+  artifact_locators:
+  - 'evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+    #InternalRepresentation'
+  - 'evidence/related-work/artifacts/DULConceptualization.yaml #assumes/#adopts/#believes/#knows'
+  native_support: InternalRepresentation is a subtype of InformationRealization with nested realizes, expresses
+    and conceptualized-by restrictions; attitudes target Description/Concept or Situation.
+  required_specialization: Represent the intended expression/referent pairing and match its witnesses only
+    with explicit constraints.
+  unsupported_inference: All nested existential witnesses denote one named content or one named referent.
+  counterevidence: 0.1 is preliminary and comment examples do not add OWL identity axioms.
+  unknowns:
+  - Co-reference, referent identity and full imported semantics
+  model_ids:
+  - CLR-C0017
+  - CLR-C0057
+  - CLR-C0101
+  - CLR-C0062
+  use_ids:
+  - U03
+  - U04
+  - U10
+- id: CMP1-09
+  dimension: episode_decision_rationale
+  work: DnS
+  paper_locators:
+  - DnS2003:E08 PDF10-11 sec.3
+  - DnS2003:E11 PDF15 Fig.4
+  - DnS2003:E12 PDF16-17 Fig.5
+  artifact_locators:
+  - evidence/related-work/artifacts/DnS.yaml DNS235-F06,F08
+  native_support: Situation descriptions and communication/query role specialization can situate an interaction.
+  required_specialization: Add persistent episode identity, selected decision content, author and cited rationale/evidence.
+  unsupported_inference: The nine query-flow actions are a tracked conceptual decision log with justification.
+  counterevidence: 'DnS2003:F13-F14: human interpretation external and SWAP example illustrative rather than
+    measured evaluation.'
+  unknowns:
+  - Complete decision-record pattern in later module not established
+  model_ids:
+  - CLR-C0021
+  - CLR-C0026
+  - CLR-C0042
+  use_ids:
+  - U02
+  - U11
+- id: CMP1-10
+  dimension: episode_decision_rationale
+  work: cDnS
+  paper_locators:
+  - cDnS2007:E16 PDF25-26 displays98-108
+  - cDnS-journal-2008:E17 PDF28-31 displays95-117
+  - cDnS-journal-2008:E18 PDF31-35 displays118-133
+  artifact_locators:
+  - evidence/related-work/artifacts/cDnS-core-followup.yaml CDNS267-F05
+  - 'evidence/related-work/deep-reviews/cDnS-journal-2008/classes.yaml #Plan/#Norm selected extension'
+  native_support: Paper and mapped extension distinguish plan, role, goal, adoption, execution and norm application.
+  required_specialization: Record the actual decision act, chosen content, evidence and rationale with distinct
+    execution time.
+  unsupported_inference: A plan or norm occurrence automatically supplies the decision provenance, justification
+    or actual compliance.
+  counterevidence: Core12 lacks Plan/Norm and extension was not reasoned as a whole; journal separates falling
+    under, compliance and execution.
+  unknowns:
+  - Extension profile/consistency, accepted decision record mapping
+  model_ids:
+  - CLR-C0021
+  - CLR-C0054
+  - CLR-C0042
+  - CLR-C0123
+  use_ids:
+  - U02
+  - U06
+  - U07
+- id: CMP1-11
+  dimension: episode_decision_rationale
+  work: DUL
+  paper_locators:
+  - CLR-RW-DUL:E13 printed92-93 plan/goal
+  - CLR-RW-DUL:E14 printed93-94 situation setting
+  artifact_locators:
+  - evidence/related-work/artifacts/DUL-technical-review.yaml Q03,Q04
+  - 'evidence/related-work/dul-class-catalog.yaml #Plan/#Goal/#Situation/#TimeIndexedRelation'
+  native_support: Plan/Goal, Situation and current root contextual relations can structure a goal-directed
+    context.
+  required_specialization: Create an episode-scoped decision record, reason and source evidence; fix temporal
+    identity across contextual relations.
+  unsupported_inference: A Plan without a named Goal lacks any Goal, or a Parthood key distinguishes records
+    solely by different time witnesses.
+  counterevidence: DUL88 Q04 allows unnamed Goal; Q03 shared part/whole key ignores time even with distinct
+    time nodes.
+  unknowns:
+  - 2016-to-4.2 correspondence and episode identity requirements
+  model_ids:
+  - CLR-C0021
+  - CLR-C0026
+  - CLR-C0054
+  - CLR-C0123
+  use_ids:
+  - U05
+  - U06
+  - U10
+- id: CMP1-12
+  dimension: episode_decision_rationale
+  work: DULConceptualization
+  paper_locators:
+  - RW-DUL-CONCEPTUALIZATION-0.1 observations/attitude_distinctions
+  artifact_locators:
+  - 'evidence/related-work/artifacts/DULConceptualization.yaml #assumes/#adopts/#believes/#knows'
+  - evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+    selected restrictions
+  native_support: Different attitude relations can connect agents to descriptions/concepts or situations.
+  required_specialization: Record an episode, dated decision, stated rationale and cited evidence independently
+    of mental attitude.
+  unsupported_inference: adopts or believes alone establishes when, why and on which evidence the agent decided.
+  counterevidence: Documentation is preliminary; no ORSD/CQ execution/empirical evaluation is supplied by the
+    selected file.
+  unknowns:
+  - Epistemic semantics, justification constraints, episode identity
+  model_ids:
+  - CLR-C0021
+  - CLR-C0026
+  - CLR-C0042
+  - CLR-C0044
+  use_ids:
+  - U02
+  - U03
+  - U10
+- id: CMP1-13
+  dimension: formal_evaluation_limits
+  work: DnS
+  paper_locators:
+  - DnS2003:E04 PDF6 displays1-4
+  - DnS2003:E05 PDF7 displays5-13
+  - DnS2003:E13 PDF17-18 sec.4
+  artifact_locators:
+  - evidence/related-work/artifacts/DnS.yaml execution and DNS235-F01..F09
+  - evaluation/related-work/dns235/semantics.json
+  native_support: 23 numbered paper displays; later ExtendedDnS397 selected profile and 15 bounded positive/adverse
+    HermiT expectations passed.
+  required_specialization: Verify each intended episode/meaning constraint against an exact version and an
+    adverse fixture.
+  unsupported_inference: 15 later-module tests prove the 2003 paper formula14, SWAP implementation or empirical
+    superiority.
+  counterevidence: DnS2003:F07 preserves unparenthesized display14; 2003 fidelity and imported glossary remain
+    unestablished.
+  unknowns:
+  - Original implementation parity, full theory and external validation
+  model_ids:
+  - CLR-C0026
+  - CLR-C0042
+  use_ids:
+  - U09
+  - U10
+  - U11
+- id: CMP1-14
+  dimension: formal_evaluation_limits
+  work: cDnS
+  paper_locators:
+  - cDnS2007:E08 PDF12-13 displays13-28
+  - cDnS-journal-2008:E10 PDF16-17 displays24-37
+  - cDnS-journal-2008:E13 PDF22-24 display65
+  artifact_locators:
+  - evidence/related-work/artifacts/cDnS-core-followup.yaml Q01-Q08
+  - evaluation/related-work/cdns267/execution.json
+  native_support: Formal paper displays and eight executed asserted RDF ASK results are structural comparison
+    evidence.
+  required_specialization: Independent DL-compatible formalization decision and scenario tests before semantic
+    adoption; preserve unmodified source.
+  unsupported_inference: The unchanged cDnS1.1 core is OWL2 DL consistent, or eight ASK results constitute
+    whole-core positive/adverse reasoning.
+  counterevidence: 'CDNS267-F08: non-simple transitive hasProperPart cardinality fails profile; HermiT refuses;
+    consistency remains unknown. Paper display65 does not explicitly distinguish d1/d2.'
+  unknowns:
+  - Whole-core consistency, original2007/2008 fidelity, mapped extension reasoning
+  model_ids:
+  - CLR-C0017
+  - CLR-C0026
+  use_ids:
+  - U04
+  - U07
+  - U10
+- id: CMP1-15
+  dimension: formal_evaluation_limits
+  work: DUL
+  paper_locators:
+  - CLR-RW-DUL:E16 printed95-99 component interfaces
+  - CLR-RW-DUL:E17 printed97/99 cited reuse
+  - CLR-RW-DUL:E23 current root header
+  artifact_locators:
+  - evidence/related-work/artifacts/DUL-technical-review.yaml Q01-Q08
+  - evaluation/related-work/dul/semantic-cases.json
+  native_support: Current DUL4.2 root has 29 bounded HermiT cases; selected nine chapter-pattern roots and
+    21-file asserted closure were inspected.
+  required_specialization: Fix specific version and module boundary, test referent/episode/time requirements
+    with adverse examples.
+  unsupported_inference: Chapter diagrams prove current imports, all nineteen patterns are DUL-native, or cited
+    reuse is controlled comparative validation.
+  counterevidence: TIP is external illustration; current root differs from standalone disjointness; later 2021
+    content prevents exact2016 parity.
+  unknowns:
+  - Historical axiom identity, source rights, general task effectiveness
+  model_ids:
+  - CLR-C0021
+  - CLR-C0042
+  - CLR-C0123
+  use_ids:
+  - U08
+  - U10
+  - U11
+- id: CMP1-16
+  dimension: formal_evaluation_limits
+  work: DULConceptualization
+  paper_locators:
+  - RW-DUL-CONCEPTUALIZATION-0.1 observations/requirements_method_evaluation and limits
+  artifact_locators:
+  - evidence/related-work/artifacts/DULConceptualization.yaml limits
+  - evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+    reasoner_execution
+  native_support: A 92-triple preliminary 0.1 document with one local class, eight local object properties
+    and structural nested restrictions.
+  required_specialization: Run exact pinned import/profile and positive/adverse co-reference scenarios before
+    formal reuse.
+  unsupported_inference: The file has completed semantic or empirical evaluation, or its nested existential
+    agents are identical.
+  counterevidence: No recorded reasoner run, profile proof, ORSD/CQ suite or historical DUL import parity for
+    this exact 0.1 review.
+  unknowns:
+  - Import-era compatibility and whole-closure consistency
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  - CLR-C0101
+  use_ids:
+  - U07
+  - U10
+common_scenario:
+  id: CMP1-S01
+  label: Conceptualization of a transit event
+  positive: Agent Ada interprets a sensor report as an expression of a candidate Transit concept about observed
+    event E; during episode T she chooses a definition and records decision D with evidence V and a stated
+    rationale. Distinguish the content, expression, event referent, agent and process, and date the choice.
+  adverse: Agent Ben realizes a copy of the report, while Ada conceptualizes a different description at another
+    time; the report cites no evidence for D, and two descriptions have distinct identity. Do not equate agents,
+    expressions, descriptions or episodes from nested existential witnesses, shared labels or missing named
+    triples.
+  model_ids:
+  - CLR-C0004
+  - CLR-C0017
+  - CLR-C0021
+  - CLR-C0026
+  - CLR-C0042
+  - CLR-C0047
+  - CLR-C0057
+  - CLR-C0062
+  - CLR-C0101
+  - CLR-C0123
+  assessment_basis: REVIEWER_THOUGHT_EXPERIMENT_NOT_NEW_EXECUTED_REASONER_FIXTURE
+  cross_source_disposition:
+    DnS:
+      native: Situated descriptions and communication roles
+      specialization: Decision/evidence episode record
+      unsupported: Automatic joint description witness or human understanding
+      cells:
+      - CMP1-01
+      - CMP1-05
+      - CMP1-09
+      - CMP1-13
+    cDnS:
+      native: Agent/schematic conceptualization and information expression
+      specialization: Temporal episode and decision/rationale
+      unsupported: Core OWL2 DL consistency or extension-wide norm/plan reasoning
+      cells:
+      - CMP1-02
+      - CMP1-06
+      - CMP1-10
+      - CMP1-14
+    DUL:
+      native: Description/Concept, information realization and Situation/Plan
+      specialization: Decision provenance and episode identity
+      unsupported: Historical edition equivalence or named existential Goal
+      cells:
+      - CMP1-03
+      - CMP1-07
+      - CMP1-11
+      - CMP1-15
+    DULConceptualization:
+      native: Attitude and internal representation pattern
+      specialization: Same-agent, referent, rationale and dated decision constraints
+      unsupported: Co-reference of nested witnesses
+      cells:
+      - CMP1-04
+      - CMP1-08
+      - CMP1-12
+      - CMP1-16
+candidate_mappings:
+- id: CMP1-C01
+  model_ids:
+  - CLR-C0004
+  - CLR-C0026
+  question: Which participant/process identity constraints must be explicit?
+  supporting_cells:
+  - CMP1-01
+  - CMP1-02
+  - CMP1-03
+  - CMP1-04
+  contrary_cells:
+  - CMP1-04
+  utilization:
+  - U02
+  - U05
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+- id: CMP1-C02
+  model_ids:
+  - CLR-C0017
+  - CLR-C0047
+  - CLR-C0057
+  - CLR-C0062
+  - CLR-C0101
+  question: Which content, expression, realization and referent identities survive a case-specific interpretation?
+  supporting_cells:
+  - CMP1-05
+  - CMP1-06
+  - CMP1-07
+  - CMP1-08
+  contrary_cells:
+  - CMP1-06
+  - CMP1-07
+  utilization:
+  - U03
+  - U04
+  - U08
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+- id: CMP1-C03
+  model_ids:
+  - CLR-C0021
+  - CLR-C0026
+  - CLR-C0042
+  - CLR-C0044
+  - CLR-C0054
+  - CLR-C0123
+  question: What extra episode, decision, rationale, evidence and time record is required?
+  supporting_cells:
+  - CMP1-09
+  - CMP1-10
+  - CMP1-11
+  - CMP1-12
+  contrary_cells:
+  - CMP1-10
+  - CMP1-11
+  utilization:
+  - U01
+  - U02
+  - U06
+  - U10
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+- id: CMP1-C04
+  model_ids:
+  - CLR-C0017
+  - CLR-C0026
+  - CLR-C0123
+  question: How would version-bound adverse tests and DL profile limits affect any future reuse?
+  supporting_cells:
+  - CMP1-13
+  - CMP1-14
+  - CMP1-15
+  - CMP1-16
+  contrary_cells:
+  - CMP1-14
+  - CMP1-15
+  utilization:
+  - U07
+  - U09
+  - U10
+  - U11
+  status: OWNER_DECISION_REQUIRED
+  equivalence: NOT_ESTABLISHED
+limits:
+- Candidate comparison and structural/executed technical receipts have different evidence levels; no new whole-theory
+  solver run was performed for this batch.
+- Source class counts, paper catalogs and Clariceptify's 137 conceptual entries are not commensurate quality
+  measures.
+- Bounded repository discovery does not prove global repository absence; unsupported in the selected file does
+  not prove absence in all author versions.
+- The selected cDnS core profile failure leaves its consistency unknown; no source axiom was repaired.
+- No new ontology, requirement, fixture, manuscript, frozen R1 or release changes; no accepted alignment, priority-of-novelty
+  or human assessment.
