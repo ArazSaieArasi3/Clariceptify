@@ -125,3 +125,5 @@ Shared research foundation: [IOLite1.8 complete selected-class glossary and LMM 
 - [O4OA supporting specification checkpoint](evidence/related-work/artifacts/O4OA.md): 138 document rows; #91 remains blocked on the formal artifact.
 
 Research checkpoint: [bounded later ExtendedDnS397 technical review](evidence/related-work/artifacts/DnS.md) and its complete selected class register preserve historical-version limits and source-specific positive/adverse outcomes.
+
+Research checkpoint: [cDnS1.1 profile and eight correspondence checks](evidence/related-work/artifacts/cDnS-core-followup.md) records a failed OWL2 DL profile and HermiT refusal; it does not claim inconsistency, source repair or executed semantic scenarios.
