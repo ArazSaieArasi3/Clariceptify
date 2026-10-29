@@ -1135,7 +1135,7 @@ records:
 - id: CLR-RW-O4OA
   title: The Ontology for Conceptual Characterization of Ontologies
   primary_issue: 73
-  source_state: DEEP_PAPER_REVIEW_COMPLETE_ARTIFACT_OPEN
+  source_state: PAPER_AND_SPECIFICATION_REVIEWED_FORMAL_ARTIFACT_BLOCKED
   repository:
     state: REFERENCE_PROJECT_TREE_403_LIGHT_VARIANT_TREE_PINNED_METADATA_ONLY
     urls:
@@ -1147,7 +1147,8 @@ records:
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
     evidence_path: evaluation/related-work/o4oa/discovery.json
-  artifact_state: PAPER_COMPLETE_CQS_AND_SPEC_ACQUIRED_TECHNICAL_REVIEW_PENDING
+    current_evidence_path: evaluation/related-work/o4oa/technical-discovery-2026-10-29.json
+  artifact_state: SPECIFICATION_DOCUMENT_CHECKPOINT_COMPLETE_FORMAL_ROOT_UNAVAILABLE
   foundation:
     family: UFO (paper); UFO-A/B/C and gUFO/gO4OA (current documentation variants)
     edition: null
@@ -1168,8 +1169,12 @@ records:
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
     paper_catalog: evidence/related-work/deep-reviews/CLR-RW-O4OA/review.yaml
-    limitations: 'All displayed paper types and concepts are cataloged; full released class/definition coverage
-      remains #91. 161/73/18 are author-reported case populations, not machine class counts.'
+    limitations: 'Paper catalog and all 138 specification Table 5 document rows are accounted for, but neither is
+      a released-machine-class census. Reference tree remains HTTP403; full released class/definition coverage
+      remains blocked in #91. The specification has unresolved 2.6/6.2 version wording. 161/73/18 are paper-reported
+      case populations, not machine class counts.'
+    document_catalog_path: evidence/related-work/artifacts/O4OA-specification-terms.json
+    technical_checkpoint: evidence/related-work/artifacts/O4OA.yaml
   next_issues:
   - 91
 - id: CLR-RW-Representation

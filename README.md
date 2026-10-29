@@ -120,3 +120,5 @@ Research checkpoint: [DUL4.2 technical review and 78-class glossary](evidence/re
 Shared research foundation: [IOLite1.8 complete selected-class glossary and LMM import coverage](evidence/related-work/deep-reviews/shared-foundations/IOLite/README.md). This accounts for source-definition gaps without changing the Clariceptify model.
 
 - [SKOS Reference critical document review](evidence/related-work/reviews/SKOS.md): source and errata evidence; formal artifact work remains separate.
+
+- [O4OA supporting specification checkpoint](evidence/related-work/artifacts/O4OA.md): 138 document rows; #91 remains blocked on the formal artifact.
