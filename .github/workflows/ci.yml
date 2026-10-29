@@ -103,6 +103,8 @@ jobs:
         run: python tools/check_com243.py
       - name: Check Representation supplement and machine-source boundaries
         run: python tools/check_representation244.py
+      - name: Check CMO mirror class glossary and original-source boundaries
+        run: python tools/check_cmo245.py
       - name: Check IAO selected-root technical census and provenance
         run: python tools/check_iao240.py
       - name: Check EFO paper formalism and unavailable executable root
