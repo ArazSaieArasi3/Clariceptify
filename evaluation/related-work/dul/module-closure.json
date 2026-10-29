@@ -1,0 +1,1689 @@
+{
+  "checked_on": "2026-10-29",
+  "closures": [
+    {
+      "asserted_union_triples": 78,
+      "files": [
+        "cpannotationschema.owl",
+        "description.owl"
+      ],
+      "root": "description.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 3,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 72,
+      "files": [
+        "cpannotationschema.owl",
+        "informationrealization.owl"
+      ],
+      "root": "informationrealization.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationRealization"
+      ],
+      "unique_declared_classes": 2,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 68,
+      "files": [
+        "cpannotationschema.owl",
+        "participation.owl"
+      ],
+      "root": "participation.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+      ],
+      "unique_declared_classes": 2,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 59,
+      "files": [
+        "collectionentity.owl",
+        "cpannotationschema.owl"
+      ],
+      "root": "collectionentity.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 2,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 54,
+      "files": [
+        "cpannotationschema.owl",
+        "partof.owl"
+      ],
+      "root": "partof.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 1,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 91,
+      "files": [
+        "componency.owl",
+        "cpannotationschema.owl",
+        "partof.owl"
+      ],
+      "root": "componency.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#Object",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 2,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 76,
+      "files": [
+        "cpannotationschema.owl",
+        "sequence.owl"
+      ],
+      "root": "sequence.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 1,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 814,
+      "files": [
+        "agentrole.owl",
+        "basicplan.owl",
+        "basicplandescription.owl",
+        "basicplanexecution.owl",
+        "classification.owl",
+        "cpannotationschema.owl",
+        "description.owl",
+        "objectrole.owl",
+        "parameter.owl",
+        "participation.owl",
+        "partof.owl",
+        "region.owl",
+        "sequence.owl",
+        "situation.owl",
+        "taskrole.owl"
+      ],
+      "root": "basicplan.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#GoalSituation",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Action",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Agent",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 21,
+      "unresolved_files": []
+    },
+    {
+      "asserted_union_triples": 264,
+      "files": [
+        "cpannotationschema.owl",
+        "participation.owl",
+        "situation.owl",
+        "timeindexedparticipation.owl",
+        "timeindexedsituation.owl",
+        "timeinterval.owl"
+      ],
+      "root": "timeindexedparticipation.owl",
+      "scope": "Asserted union only, no inferred classes or completed imported glossary",
+      "unique_declared_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "unique_declared_classes": 7,
+      "unresolved_files": []
+    }
+  ],
+  "definition_scope": "DUL root glossary is separate. This receipt inventories selected pattern declarations and import closure; it is not a completed glossary of every pattern class.",
+  "generator_path": "tools/inspect_dul_modules.py",
+  "generator_sha256": "bca2d70bad6e7a49fca53f0d7ba31889268585f5b20301795a59b576fc9d53df",
+  "historical_2016_byte_parity": "NOT_ESTABLISHED",
+  "inference": "NOT_EXECUTED",
+  "issue": 88,
+  "license_conclusion": "Header absence is not a legal determination. No third-party source is relicensed or redistributed.",
+  "modules": [
+    {
+      "bytes": 5904,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 35,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
+      ],
+      "filename": "agentrole.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"
+      ],
+      "object_properties": [],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl"
+      ],
+      "sha256": "741de7379f33977994724db45992ed5b27c71e56f6b3d983e291d5d55d17df3a",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
+      "version_annotation_sha256": "8b67ebc0b05aac94aa3ec323b7f4379a65f22d0ff004c68b7a8a199e95b86e01"
+    },
+    {
+      "bytes": 18959,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 155,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Action",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Agent",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#PlanExecution",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Parameter",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+      ],
+      "filename": "basicplan.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#GoalSituation"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#conceptualizes",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#executesTask",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isConceptualizedBy",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isExecutedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isParametrizedBy",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isSatisfiedBy",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#parametrizes",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#satisfies",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"
+      ],
+      "sha256": "0b5864ff00f3472eb2faf6bf70a1828e65f72f64d454b835ad374f7963174a9c",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 14480,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl",
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 124,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "basicplandescription.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#definesRole",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#definesTask",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#hasMainGoal",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#isMainGoalIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#isRoleDefinedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#isTaskDefinedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#defines",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isDefinedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept",
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart",
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows",
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl"
+      ],
+      "sha256": "cccff7275bee816e41a39d6ecb5a363d4798ef6b8fe25edf03520f9a067de9ba",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 17118,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 145,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+      ],
+      "filename": "basicplanexecution.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Action",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#PlanExecution"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#actionHasParticipant",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#includesAction",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#includesAgent",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#includesObject",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#includesRegion",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#isActionIncludedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#isAgentIncludedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#isObjectIncludedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#isParticipantInAction",
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#isRegionIncludedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl"
+      ],
+      "sha256": "847ebdd36b926c1487c5353d8f09e588ca6f3c12190128ed16d0eb59056f9346",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 7460,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 43,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "classification.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl"
+      ],
+      "sha256": "0b77f1ef723b87b7ec637711dc45e9de2c3771a2050482763238388759332884",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 6694,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 42,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "collectionentity.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#hasMember",
+        "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#isMemberOf"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl"
+      ],
+      "sha256": "1fe26c97e76b67ab0f2f26d7a6d6e8a90cfb999ffda79f28c855203ecac4b5cd",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+      "version_annotation_sha256": "8b67ebc0b05aac94aa3ec323b7f4379a65f22d0ff004c68b7a8a199e95b86e01"
+    },
+    {
+      "bytes": 7833,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl"
+      ],
+      "explicit_triples": 49,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "componency.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#Object"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#hasComponent",
+        "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#isComponentOf",
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart",
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/componency.owl"
+      ],
+      "sha256": "a2b51e1d2960e9264f30b2f293b5c9b8c1ca5eb29e314920a02761b739f4c4f1",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl",
+      "version_annotation_sha256": "9c598ba524b24abebb8775f7f9e4521717bc09844d097bce64cf35f250a010fb"
+    },
+    {
+      "bytes": 7261,
+      "datatype_properties": [],
+      "declared_imports": [],
+      "explicit_triples": 23,
+      "external_class_redeclarations": [],
+      "filename": "cpannotationschema.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [],
+      "object_properties": [],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "sha256": "a8047424ea3efb828ae50bab1312f1c7ab38731e495f6b580f4e94afd40ee170",
+      "short_version_labels": [],
+      "source_url": "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl",
+      "version_annotation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 8187,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 55,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "description.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#defines",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isDefinedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/description.owl"
+      ],
+      "sha256": "be6080e6efb6f9f774a574455dc30bf0d0959ac2ed4a0e29cbd042934cad78ef",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
+      "version_annotation_sha256": "8b67ebc0b05aac94aa3ec323b7f4379a65f22d0ff004c68b7a8a199e95b86e01"
+    },
+    {
+      "bytes": 8016,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 55,
+      "external_class_redeclarations": [],
+      "filename": "informationrealization.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject",
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationRealization"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#isRealizedBy",
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#realizes"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl"
+      ],
+      "sha256": "46c0b271f549ac004a9a9691592aba62d9d8ebf9fa083de174adb73a66113aea",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl",
+      "version_annotation_sha256": "8b67ebc0b05aac94aa3ec323b7f4379a65f22d0ff004c68b7a8a199e95b86e01"
+    },
+    {
+      "bytes": 8094,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 55,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"
+      ],
+      "filename": "objectrole.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
+        "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole",
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"
+      ],
+      "sha256": "4ba0428f5674e2451f3ff7cbca3a35c58a88d6dc222d56d8621d308d693151d5",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 8286,
+      "datatype_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue"
+      ],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 48,
+      "external_class_redeclarations": [],
+      "filename": "parameter.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Concept",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Parameter"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter",
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl"
+      ],
+      "sha256": "602a08291188f64c6d890cadbc2473cc6a9f9539a70ec1393bd81b2114dff325",
+      "short_version_labels": [
+        "1.0",
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl",
+      "version_annotation_sha256": "0995d99629020782e23eb2bde4014f1660323eba31ed064cfe2352454429d512"
+    },
+    {
+      "bytes": 7624,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 51,
+      "external_class_redeclarations": [],
+      "filename": "participation.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl"
+      ],
+      "sha256": "9ae417b4e3aa059f4942e8586ea8031ccfbed22b638cfc02e8997c370f2ce91a",
+      "short_version_labels": [
+        "1.0",
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+      "version_annotation_sha256": "1b2c11e67977d30a580195cf194389ea7a766a4193a168e1ef040f4a3f3dce5d"
+    },
+    {
+      "bytes": 6225,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 36,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "partof.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart",
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/partof.owl"
+      ],
+      "sha256": "f603e7ef973854776fb904dfa761959db861d2ef8fdda791aa7bd172a8d18040",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 7708,
+      "datatype_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue"
+      ],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 48,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "region.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion",
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/region.owl"
+      ],
+      "sha256": "91d4b8b45f5ab376fbd62ea52c8b489950c160e87418796aa810f4dffa709494",
+      "short_version_labels": [
+        "1.0",
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+      "version_annotation_sha256": "fff1fd5e7e5cc696c6150e1cb46cca93bfee146de2c9c386e2acc5595bb84e6c"
+    },
+    {
+      "bytes": 8311,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 57,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "sequence.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows",
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes",
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows",
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl"
+      ],
+      "sha256": "85c6f8e6364f479169fbaaa9b57a02d9b78fbc83a153f051e2db01a16ff4ba5d",
+      "short_version_labels": [
+        "1.0",
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+      "version_annotation_sha256": "0d0f67cdb662cf236f935aa8f29599d6f94407470213ba7f73828f2a64ea7c69"
+    },
+    {
+      "bytes": 7233,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 42,
+      "external_class_redeclarations": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "situation.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl"
+      ],
+      "sha256": "b4b676b5a79a69835d7254a28b8f0b41de5bc5d755c6002804d3f8995d97db7f",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+      "version_annotation_sha256": "8b67ebc0b05aac94aa3ec323b7f4379a65f22d0ff004c68b7a8a199e95b86e01"
+    },
+    {
+      "bytes": 7694,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 57,
+      "external_class_redeclarations": [],
+      "filename": "taskrole.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask",
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl"
+      ],
+      "sha256": "62f2b23b8f3bd5ab108e3fbe05a73631e43972a27438158c640122e2fd74d5f5",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    },
+    {
+      "bytes": 12432,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"
+      ],
+      "explicit_triples": 87,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+        "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "timeindexedparticipation.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesEvent",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesObject",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#isEventIncludedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#isObjectIncludedIn",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl"
+      ],
+      "sha256": "011ae1f01ba7712c7426a07e23550a976d6b636b0cf62596b957b9f8db245017",
+      "short_version_labels": [
+        "0.1",
+        "0.2",
+        "1.0",
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl",
+      "version_annotation_sha256": "8f8085399c5ebcabab27e24fead5df2ec2f607fbea3123f503c1284706ffd014"
+    },
+    {
+      "bytes": 9859,
+      "datatype_properties": [],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 73,
+      "external_class_redeclarations": [
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "filename": "timeindexedsituation.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+      ],
+      "object_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
+        "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor"
+      ],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"
+      ],
+      "sha256": "99991bc966afd07161aadf7db81f6e92b81f0da90c9dfd1ad91724427de0434d",
+      "short_version_labels": [
+        "0.1",
+        "1.0",
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+      "version_annotation_sha256": "28af8c89c463358ed6d3bf56defbb56a5ff68b0988a0feca3018f089fd7b7461"
+    },
+    {
+      "bytes": 8008,
+      "datatype_properties": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate"
+      ],
+      "declared_imports": [
+        "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+      ],
+      "explicit_triples": 52,
+      "external_class_redeclarations": [],
+      "filename": "timeinterval.owl",
+      "header_license_rights_annotations": [],
+      "local_class_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+      ],
+      "object_properties": [],
+      "ontology_iris": [
+        "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"
+      ],
+      "sha256": "250c2e0d327146e8072b0552e685d923033c66d76194aab2970b8e0faf602acd",
+      "short_version_labels": [
+        "1.1"
+      ],
+      "source_url": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+      "version_annotation_sha256": "91a0884fe4d295f5ca4866975d399e60048b87abb375bf1d59b078bbe0ab3c41"
+    }
+  ],
+  "raw_annotations": "NOT_REDISTRIBUTED",
+  "roots": [
+    "description.owl",
+    "informationrealization.owl",
+    "participation.owl",
+    "collectionentity.owl",
+    "partof.owl",
+    "componency.owl",
+    "sequence.owl",
+    "basicplan.owl",
+    "timeindexedparticipation.owl"
+  ],
+  "schema_version": "1.0",
+  "selected_explicit_axioms": [
+    {
+      "file": "description.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+    },
+    {
+      "file": "description.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+      },
+      "predicate": "http://www.w3.org/2002/07/owl#disjointWith",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+    },
+    {
+      "file": "informationrealization.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#isRealizedBy"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationRealization"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject"
+    },
+    {
+      "file": "informationrealization.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationRealization"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#isRealizedBy"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject"
+    },
+    {
+      "file": "informationrealization.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationRealization"
+      },
+      "predicate": "http://www.w3.org/2002/07/owl#disjointWith",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject"
+    },
+    {
+      "file": "informationrealization.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#realizes"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationRealization"
+    },
+    {
+      "file": "participation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+    },
+    {
+      "file": "participation.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+      },
+      "predicate": "http://www.w3.org/2002/07/owl#disjointWith",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+    },
+    {
+      "file": "participation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+    },
+    {
+      "file": "componency.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#Object"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#isComponentOf"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#Object"
+    },
+    {
+      "file": "componency.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#Object"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#hasComponent"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#Object"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#hasMainGoal"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#maxCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#hasMainGoal"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#someValuesFrom"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#definesRole"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#definesTask"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Concept"
+      },
+      "predicate": "http://www.w3.org/2002/07/owl#equivalentClass",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#isRoleDefinedIn"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#allValuesFrom"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#isTaskDefinedIn"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+    },
+    {
+      "file": "basicplandescription.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept"
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"
+    },
+    {
+      "file": "timeindexedparticipation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesObject"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+    },
+    {
+      "file": "timeindexedparticipation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "3"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+    },
+    {
+      "file": "timeindexedparticipation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+    },
+    {
+      "file": "timeindexedparticipation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesEvent"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+    },
+    {
+      "file": "timeindexedparticipation.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation"
+    },
+    {
+      "file": "timeindexedsituation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+    },
+    {
+      "file": "timeindexedsituation.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#minCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+    },
+    {
+      "file": "timeindexedsituation.owl",
+      "object": {
+        "iri": "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+    },
+    {
+      "file": "timeinterval.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#maxCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+    },
+    {
+      "file": "timeinterval.owl",
+      "object": {
+        "anonymous_expression": [
+          {
+            "object": {
+              "iri": "http://www.w3.org/2002/07/owl#Restriction"
+            },
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "object": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+              "language": null,
+              "literal": "1"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#maxCardinality"
+          },
+          {
+            "object": {
+              "iri": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate"
+            },
+            "predicate": "http://www.w3.org/2002/07/owl#onProperty"
+          }
+        ]
+      },
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "subject": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+    }
+  ],
+  "source_redistributed": false,
+  "unresolved": []
+}

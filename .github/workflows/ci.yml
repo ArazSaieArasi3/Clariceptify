@@ -73,6 +73,10 @@ jobs:
         run: python tools/test_corpus_access.py
       - name: Check deep-review evidence and closure boundaries
         run: python tools/test_deep_reviews.py
+      - name: Check DUL catalogue and technical evidence boundaries
+        run: |
+          python tools/test_dul_class_catalog.py
+          python tools/test_dul_technical_review.py
       - name: Preserve exact input and validator evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

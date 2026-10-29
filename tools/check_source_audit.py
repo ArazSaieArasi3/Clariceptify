@@ -155,6 +155,15 @@ def check(root=ROOT, source_dir=None):
             raise ValueError('Stale class glossary reader')
         summary.append({'work_id': catalog['work_id'], **catalog['counts']})
     by_path = {str(p.relative_to(root)): yaml.safe_load(p.read_text()) for p in base.rglob('classes.yaml')}
+    dul_path = 'evidence/related-work/dul-class-catalog.yaml'
+    if any(r['class_coverage']['catalog_path'] == dul_path for r in audit['records']):
+        from check_dul_class_catalog import validate
+        dul = yaml.safe_load((root / dul_path).read_text())
+        if validate(dul)['status'] != 'PASS':
+            raise ValueError('Invalid DUL complete glossary')
+        by_path[dul_path] = {'counts': {'local_classes': dul['counts']['local_classes'],
+            'source_definition_candidates': dul['counts']['classes_with_comment_candidates'],
+            'missing_source_definitions': dul['counts']['classes_without_comment']}}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:

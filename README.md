@@ -113,3 +113,5 @@ The [initial manuscript alignment](docs/research/manuscript-contract.yaml) binds
 The [first DnS-family comparison](docs/research/dns-family-comparison.md) records scoped primary-source reviews and pinned artifact inspections. See the [execution guide](evidence/related-work/execution-guide.md) for evidence and reproducible counts; full corpus synthesis and two DUL prerequisites remain open.
 
 The [source-access and archive report](docs/research/corpus-access.md) records all 19 original candidates, seven requested texts, five pinned repository snapshots and the completed LMM paper/artifact review. The [23 medium-sized extension tasks](evidence/related-work/corpus/extension-tasks.json) preserve the original plan and keep source access separate from comparative evaluation.
+
+Research checkpoint: [DUL4.2 technical review and 78-class glossary](evidence/related-work/artifacts/DUL-technical-review.md), with version-qualified semantic cases and retained source gaps. This evidence does not change the Clariceptify ontology or complete final synthesis.

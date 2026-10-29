@@ -1,0 +1,260 @@
+schema_version: '1.0'
+issue: 88
+candidate_id: CLR-RW-DUL
+checked_on: '2026-10-29'
+baseline_commit: 0faa13a6108613299b7d0f02d6bcfc420f5a86d6
+status: BOUNDED_TECHNICAL_REVIEW_COMPLETE_WITH_EXPLICIT_SOURCE_GAPS
+source_root:
+  url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  version: '4.2'
+  sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  syntax: Turtle
+  imports: []
+chapter_evidence:
+  path: evidence/related-work/deep-reviews/CLR-RW-DUL/review.yaml
+  sha256: 516673e0fc1fb3f09185f5aff48218f04f58e92ddead526c29af078bba89da1d
+  use: Previously completed chapter review and exact page/section locators; no claim of a new full-book review.
+  original_2016_byte_parity: NOT_ESTABLISHED
+evidence:
+  class_catalog:
+    path: evidence/related-work/dul-class-catalog.yaml
+    sha256: 25f93f87fab8055a2fe4e31b0625464b5fbcfd48ec4cfd669be304fb1f55c675
+  class_checks:
+    path: evaluation/related-work/dul/class-catalog-check.json
+    sha256: 16eddd3fd19d1e46b64e3953c23233b532a239545037528a7f6b82c6e7fa7d40
+  semantic_tests:
+    path: evaluation/related-work/dul/semantic-cases.json
+    sha256: e4fbedf90f53374188e1f523f8f8dfd160b14da8a1ffdd6461dd3dee29708c4c
+  module_closure:
+    path: evaluation/related-work/dul/module-closure.json
+    sha256: c4910852e08ccfb92568d5e51bdf8712a0cecc2b52a9c164956b7537d5a18446
+questions:
+- id: Q01
+  title: Complete root census and version boundary
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E05
+  - E23
+  result: 'All 78 local named classes, one owl:Thing redeclaration, anonymous expressions and asserted constraints
+    are accounted for. There are 69 comment-candidate classes: 67 usable descriptive paraphrases, two label-only
+    comments, and nine classes without comments. No definitions were invented. Root has no imports. Current TimeIndexedRelation
+    and Parthood carry 2021 dates, so this exact graph is not established as the 2016 chapter implementation. HermiT
+    baseline is consistent and reports no unsatisfiable classes; no inferred population or independent OWL2 profile
+    certification is claimed.'
+  evidence:
+  - class_catalog
+  - class_checks
+  - semantic_tests
+  finding_ids:
+  - DUL88-F01
+  - DUL88-F02
+- id: Q02
+  title: Disjointness and source-version correspondence
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E12
+  - E13
+  - E23
+  - E24
+  result: Whole-root co-instance tests are consistent for Description/Concept, InformationObject/Description and
+    InformationObject/Concept, providing bounded non-disjointness countermodels beyond mere missing-triple inspection.
+    InformationObject plus InformationRealization is inconsistent. The separately pinned Description pattern explicitly
+    asserts Concept/Description disjointness. The standalone InformationRealization sample contains mutual existence
+    restrictions; root 4.2 requires a realization to realize an InformationObject but does not require every InformationObject
+    to have a realization. Do not transfer one module/version result to another.
+  evidence:
+  - semantic_tests
+  - module_closure
+  finding_ids:
+  - DUL88-F03
+- id: Q03
+  title: Temporal parthood and chapter discrepancy
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E03
+  - E14
+  - E20
+  result: 'The reviewed Figure 5.1/prose discrepancy is retained: diagram temporal row versus prose atemporal Abstract
+    parthood. This review cannot determine the authors intended correction. Current root adds TimeIndexedRelation
+    (Situation with a TimeInterval setting) and Parthood with part/whole witnesses. Its inverse-includesWhole/includesPart
+    chain entails binary hasPart. A counterexample test confirms that two named Parthood records with shared part
+    and whole cannot be forced different even when distinct time nodes are supplied: the declared key includes part
+    and whole, not time. The matched control allows the records to coincide while keeping time witnesses explicitly
+    different and is consistent. Temporal contextual identity and semantic preservation therefore remain qualified.'
+  evidence:
+  - semantic_tests
+  - class_catalog
+  finding_ids:
+  - DUL88-F04
+  - DUL88-F05
+- id: Q04
+  title: Typed composition and Plan goal
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E13
+  - E16
+  - E19
+  result: SocialObject/PhysicalObject co-instantiation is inconsistent in the root. A Concept with a PhysicalObject
+    part is inconsistent because its parts must be Concepts, which are SocialObjects. Plan with no components is
+    inconsistent; Plan without a named Goal remains consistent because an existential Goal component can be unnamed.
+    These tests do not endorse the chapter generalization that all pattern classes are social objects; physical
+    information realizations retain their separate typing.
+  evidence:
+  - semantic_tests
+  - class_catalog
+  finding_ids: []
+- id: Q05
+  title: Unknown, empty and existential witnesses
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E06
+  - E09
+  - E12
+  result: Unknown-members, explicitly empty-members and existential unnamed-member Collection fixtures are each
+    consistent; combining empty membership and an existential membership is inconsistent. Root Object requires Event
+    participation, Event requires an Object participant, and InformationRealization requires an InformationObject;
+    denying each witness is inconsistent. Denying all realizations for an InformationObject is consistent in this
+    root. No named witness is manufactured and closed-world absence is not substituted for emptiness.
+  evidence:
+  - semantic_tests
+  - module_closure
+  finding_ids:
+  - DUL88-F03
+- id: Q06
+  title: Relation profiles with adverse fixtures
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E10
+  - E11
+  result: Component chains permit both an asserted shortcut and an explicitly denied shortcut, so the root imposes
+    neither transitivity nor intransitivity for hasComponent. Reverse component edges contradict asymmetry. Denying
+    the shortcut of hasPart or precedes chains is inconsistent; precedence cycles remain consistent. Overlap symmetry
+    is enforced, while overlap transitivity and direct-precedence transitivity are not entailed in the tested chains.
+    These are exact-input logical observations, not a general claim that all applications tolerate those patterns.
+  evidence:
+  - semantic_tests
+  finding_ids:
+  - DUL88-F06
+- id: Q07
+  title: TIP modules, names and date alternatives
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E14
+  - E25
+  result: Pinned TimeIndexedParticipation closure contains six documents with seven unique named declared classes
+    including owl:Thing, no unresolved import. TIP directly imports Participation and TimeIndexedSituation; the
+    latter imports Situation, TimeInterval and the annotation schema. TimeIndexedParticipation is a subclass of
+    TimeIndexedSituation with at least one object, event and atTime value and minimum three forEntity values. atTime
+    is an object property targeting TimeInterval. TimeInterval defines datatype start/end/date properties with at-most-one
+    start/end, but no start-before-end comparison. The chapter datatype-shortcut alternative is not declared as
+    a direct TIP atTime datatype property in these files. TIP remains an external illustration, not a native DUL
+    root import.
+  evidence:
+  - module_closure
+  finding_ids:
+  - DUL88-F07
+- id: Q08
+  title: Selected sources, interfaces and licenses
+  status: ASSESSED_WITH_EXPLICIT_LIMITS
+  chapter_evidence:
+  - E19
+  - E21
+  - E23
+  - E24
+  - E25
+  result: 'Nine chapter pattern roots and their complete asserted import closure are pinned:21 distinct parseable
+    files. The DUL root and two previously inspected samples retain matching digests. Header license/right annotations
+    are absent in inspected module headers; that observation grants no redistribution permission. isAbout/isReferenceOf
+    and direct sequence interfaces exist in current DUL, but conceptual component diagrams are not exact release
+    or import graphs. Shared IOLite definitions remain #271. Fresh bounded searches and the 2016 W3C namespace/governance
+    record support continuity of the namespace, not exact historical bytes or a source license.'
+  evidence:
+  - module_closure
+  - class_catalog
+  finding_ids:
+  - DUL88-F02
+  - DUL88-F08
+findings:
+- id: DUL88-F01
+  title: Eleven classes lack adequate descriptive comments
+  detail: Nine lack comment annotations; Norm and SocialRelation merely repeat labels. Preserve absent/insufficient
+    distinction in synthesis.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F02
+  title: Exact historical implementation remains unpinned
+  detail: A stable namespace and present4.2 source do not establish a 2016 byte-level release. Dates on current
+    added terms demonstrate later content.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F03
+  title: Realization and disjointness differ across modules
+  detail: Use module-specific constraints. Root and standalone patterns must not be treated as semantically interchangeable.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F04
+  title: Abstract parthood source discrepancy remains
+  detail: Figure 5.1/prose conflict is preserved, not silently repaired or assigned author intent.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F05
+  title: Parthood key omits temporal context
+  detail: Shared part and whole can identify records even with different time nodes. Preserve this concern in contextual
+    identity comparison; no source/model change is made.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F06
+  title: Relation labels do not establish strict order
+  detail: Transitive precedes permits cycles; non-transitive component is not intransitive. Downstream requirements
+    must state desired behavior separately.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F07
+  title: TIP date ordering is not enforced
+  detail: At-most-one endpoints and date ranges do not implement chronological interval comparison. TIP is not an
+    imported DUL root module.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 251
+- id: DUL88-F08
+  title: Source license permission remains unestablished
+  detail: No third-party raw source files are republished or relicensed; private bytes are used for reproducible
+    inspection.
+  disposition: PRESERVE_IN_SYNTHESIS_NO_MODEL_CHANGE
+  next_issue: 126
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  source_redistribution: false
+  scientific_acceptance: NOT_ASSESSED
+  independent_expert_review: NOT_PERFORMED
+  adoption: OWNER_DECISION_REQUIRED
+discovery:
+  checked_on: '2026-10-29'
+  inherited_record: evaluation/related-work/dul/discovery.json
+  queries:
+  - DUL ontology 2016 DOLCE Ultralite 3.34 source GitHub
+  - site.ontologydesignpatterns.org DUL.owl 4.2 license
+  primary_pages:
+  - url: https://www.w3.org/2015/spatial/track/actions/210
+    observation: 2016 namespace governance and stability discussion; no exact byte release or license evidence.
+  - url: https://www.loa.istc.cnr.it/index.php/dolce/
+    observation: Official DOLCE page points to appliedontolab/DOLCE for current DOLCE OWL, not an exact 2016 DUL
+      release.
+  - url: http://www.ontologydesignpatterns.org/wiki/Ontology:DOLCE%2BDnS_Ultralite
+    observation: Browser fetch unavailable; no content or license inferred.
+  candidate_outcome: No exact original 2016 DUL release identified within this bounded search. Related repositories
+    and third-party mirrors are not promoted to author release.
+  global_absence_claim: false
+closure:
+  local_glossary: ALL_78_ACCOUNTED_WITH_EXPLICIT_GAPS
+  semantic_cases: 29
+  pattern_roots: 9
+  pattern_closure_files: 21
+  next_issues:
+  - 271
+  - 251
+  - 126
+  claim: Bounded research inspection complete; original 2016 parity, independent expert review, source-license permission
+    and adoption remain unestablished. Negative findings stay tracked, not treated as repaired.
