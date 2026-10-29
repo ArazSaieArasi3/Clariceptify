@@ -78,7 +78,7 @@ def render(d):
         '|---|---:|---:|---:|---:|']
     for m in d['modules']:
         lines.append('| '+m['module']+' | '+' | '.join(str(m[k]) for k in ['local_classes','external_class_redeclarations','local_declared_object_properties','external_object_property_redeclarations'])+' |')
-    lines+=['','An object-property declaration is a relation type, not the number of relation statements, restrictions, assertions or paper relation groups. Cognitive Atlas additionally has 2, 825 restriction nodes and 4, 622 subclass statements in its selected graph; they are not additional object properties.','',
+    lines+=['','An object-property declaration is a relation type, not the number of relation statements, restrictions, assertions or paper relation groups. Cognitive Atlas additionally has 2,825 restriction nodes and 4,622 subclass statements in its selected graph; they are not additional object properties.','',
         '## Per-paper extraction','',
         '| Work | Catalog items | Relation-index groups | Commitment records | Critical findings |',
         '|---|---:|---:|---:|---:|']

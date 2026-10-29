@@ -21,7 +21,7 @@ The deep-reading wave can be summarized: 18/18 retained full-text dossiers are c
 | DUL4.2 | 78 | 1 | 113 | 0 |
 | Cognitive Atlas export0.3 | 1696 | 2 | 3 | 1 |
 
-An object-property declaration is a relation type, not the number of relation statements, restrictions, assertions or paper relation groups. Cognitive Atlas additionally has 2, 825 restriction nodes and 4, 622 subclass statements in its selected graph; they are not additional object properties.
+An object-property declaration is a relation type, not the number of relation statements, restrictions, assertions or paper relation groups. Cognitive Atlas additionally has 2,825 restriction nodes and 4,622 subclass statements in its selected graph; they are not additional object properties.
 
 ## Per-paper extraction
 
