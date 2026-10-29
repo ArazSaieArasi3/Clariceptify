@@ -192,6 +192,15 @@ def check(root=ROOT, source_dir=None):
         check_dns(root)
         dns = yaml.safe_load((root / dns_path).read_text())
         by_path[dns_path] = {'counts': dns['counts']}
+    ontolex_path = 'evidence/related-work/ontolex237-class-catalog.yaml'
+    if any(r['class_coverage']['catalog_path'] == ontolex_path for r in audit['records']):
+        from check_ontolex237 import check as check_ontolex237
+        check_ontolex237(root)
+        ontolex = yaml.safe_load((root / ontolex_path).read_text())
+        by_path[ontolex_path] = {'counts': {
+            'local_classes': ontolex['counts']['local_classes'],
+            'source_definition_candidates': ontolex['counts']['local_comment_candidates'],
+            'missing_source_definitions': ontolex['counts']['local_missing_comments']}}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:

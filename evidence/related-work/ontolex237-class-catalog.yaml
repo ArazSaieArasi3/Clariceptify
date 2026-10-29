@@ -1,0 +1,194 @@
+schema_version: '1.0'
+issue: 237
+source_sha256: b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee
+selected_root: http://www.w3.org/ns/lemon/ontolex
+population_policy: All 16 declared named classes in one exact official core graph;
+  eight local and eight external redeclarations. Anonymous expressions and external
+  references are separate. No declared imports.
+counts:
+  named_declarations: 16
+  local_classes: 8
+  external_redeclarations: 8
+  local_comment_candidates: 8
+  local_missing_comments: 0
+  external_missing_comments: 8
+  imported_classes: 0
+  inferred_classes: null
+rows:
+- iri: http://www.w3.org/ns/lemon/ontolex#Affix
+  population: LOCAL
+  label_en: affix
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: f69f746ebfd6672f6d7923c53ffef7262266927fc2ef51c39158cab3e0af34a1
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#Affix rdfs:comment
+  reviewer_paraphrase: A lexical entry for a bound morpheme attached to a word stem
+    to make a new word.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#Affix]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#ConceptSet
+  population: LOCAL
+  label_en: concept set
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: 17b1a4b9fab9ec2c9305c896b5661e193ef08ce39bef8e4c0bfee032c8137028
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#ConceptSet
+    rdfs:comment
+  reviewer_paraphrase: A collection of lexical concepts; the formal membership direction
+    is separately recorded.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#ConceptSet]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#Form
+  population: LOCAL
+  label_en: form
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: cb211c792adabdf85f1c2b4a0bb53fe7e0f36560c467237944217728790554e2
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#Form rdfs:comment
+  reviewer_paraphrase: A grammatical realization of a lexical entry.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#Form]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#LexicalConcept
+  population: LOCAL
+  label_en: lexical concept
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: 27d49a0ad07f2ca61983ebf3c4b98bcfd510ee1018f53d76719bbc2578b56556
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#LexicalConcept
+    rdfs:comment
+  reviewer_paraphrase: A mental abstraction or thought unit conveying the meanings
+    of lexical entries.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#LexicalConcept]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+  population: LOCAL
+  label_en: lexical entry
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: 8a72094415a0c0b9646a03a2d836b25f74cdba98f44e5dcf5619dc5ed0a52946
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+    rdfs:comment
+  reviewer_paraphrase: A lexicon unit grouping related grammatical forms and associated
+    base meanings.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#LexicalEntry]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#LexicalSense
+  population: LOCAL
+  label_en: lexical sense
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: 558a182f36a13d6bd29b9634be65dcfcd6e6fbb2ff5f71a5b64edc4094b929cc
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#LexicalSense
+    rdfs:comment
+  reviewer_paraphrase: The meaning of an entry when interpreted in relation to a particular
+    ontology element.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#LexicalSense]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#MultiWordExpression
+  population: LOCAL
+  label_en: multi-word expression
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: 0a5a61811af9513259bba26e202a0b23fe02c977831aacff172c9313bc37a170
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#MultiWordExpression
+    rdfs:comment
+  reviewer_paraphrase: A lexical entry comprising at least two words.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#MultiWordExpression]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/ontolex#Word
+  population: LOCAL
+  label_en: word
+  source_definition_status: PRESENT_ENGLISH_COMMENT
+  source_definition_sha256: 62c7ceb83b8cc2c000fc33cc1b4aa18441698e10b2f1739adfc6878af7ce3750
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#Word rdfs:comment
+  reviewer_paraphrase: A lexical entry consisting of one token.
+  reviewer_basis: ATTRIBUTED_COMMENT_PARAPHRASE
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/ontolex#Word]
+  deprecated: false
+- iri: http://purl.org/vocommons/voaf#Vocabulary
+  population: EXTERNAL_REDECLARATION
+  label_en: null
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://purl.org/vocommons/voaf#Vocabulary no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://purl.org/vocommons/voaf#Vocabulary]
+  deprecated: false
+- iri: http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+  population: EXTERNAL_REDECLARATION
+  label_en: expression
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+    no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression]
+  deprecated: false
+- iri: http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning
+  population: EXTERNAL_REDECLARATION
+  label_en: meaning
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning
+    no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning]
+  deprecated: false
+- iri: http://www.w3.org/2004/02/skos/core#Concept
+  population: EXTERNAL_REDECLARATION
+  label_en: concept
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://www.w3.org/2004/02/skos/core#Concept no
+    rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/2004/02/skos/core#Concept]
+  deprecated: false
+- iri: http://www.w3.org/2004/02/skos/core#ConceptScheme
+  population: EXTERNAL_REDECLARATION
+  label_en: concept scheme
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://www.w3.org/2004/02/skos/core#ConceptScheme
+    no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/2004/02/skos/core#ConceptScheme]
+  deprecated: false
+- iri: http://www.w3.org/ns/lemon/synsem#OntoMap
+  population: EXTERNAL_REDECLARATION
+  label_en: null
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://www.w3.org/ns/lemon/synsem#OntoMap no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://www.w3.org/ns/lemon/synsem#OntoMap]
+  deprecated: false
+- iri: http://xmlns.com/foaf/0.1/Organization
+  population: EXTERNAL_REDECLARATION
+  label_en: null
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://xmlns.com/foaf/0.1/Organization no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://xmlns.com/foaf/0.1/Organization]
+  deprecated: false
+- iri: http://xmlns.com/foaf/0.1/Person
+  population: EXTERNAL_REDECLARATION
+  label_en: null
+  source_definition_status: MISSING_IN_SELECTED_ROOT
+  source_definition_sha256: null
+  source_locator: OntoLex-core.ttl::http://xmlns.com/foaf/0.1/Person no rdfs:comment
+  reviewer_paraphrase: null
+  reviewer_basis: MISSING_IN_SELECTED_ROOT
+  hierarchy_and_constraints_ref: evaluation/related-work/ontolex237/census.json::classes[iri=http://xmlns.com/foaf/0.1/Person]
+  deprecated: false
+other_modules: NOT_INCLUDED
+no_reviewer_invented_external_definitions: true
+model_change: NONE

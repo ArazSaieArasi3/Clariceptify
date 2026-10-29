@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "issue": 237,
+  "checked_on": "2026-10-29",
+  "checks": [
+    {
+      "id": "W01",
+      "method": "OFFICIAL_W3C_REPORT_READBACK",
+      "url": "https://www.w3.org/2016/05/ontolex/",
+      "retained_sha256": "ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2",
+      "outcome": "2016-05-10 W3C Community Group Final Report, not W3C Standard; document-only critical review #75 remains separate."
+    },
+    {
+      "id": "W02",
+      "method": "OFFICIAL_CORE_DIRECT_BYTE_RETRIEVAL",
+      "url": "https://www.w3.org/ns/lemon/ontolex",
+      "sha256": "b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee",
+      "bytes": 54456,
+      "outcome": "Exact previously acquired digest matched. RDF/XML detected despite the archived OntoLex-core.ttl filename. Header ontology IRI http://www.w3.org/ns/lemon/ontolex, versionInfo 1.1, CC0 marker."
+    },
+    {
+      "id": "G01",
+      "method": "COMMUNITY_LINK_FOLLOWED_TO_PUBLIC_GITHUB_REPOSITORY",
+      "url": "https://www.w3.org/community/ontolex/",
+      "linked_repository": "https://github.com/cimiano/ontolex",
+      "resolved_repository": "https://github.com/ontolex/ontolex",
+      "repository_id": 20124549,
+      "archived": false,
+      "disabled": false,
+      "default_branch": "master",
+      "pushed_at": "2026-10-23T11:10:53Z",
+      "commit": "ab0165605301413e64a66d53d23c3095fa879a26",
+      "tree": "463af47eef62fe99641bc33d0cc416363c58ba69",
+      "tree_truncated": false,
+      "tree_entries": 229,
+      "tree_files": 212,
+      "outcome": "Public official-linked project repository. Observed push/archived flags do not establish historic release fidelity or ontology quality."
+    },
+    {
+      "id": "G02",
+      "method": "PINNED_REPOSITORY_FILE_BYTE_READBACK",
+      "url": "https://github.com/ontolex/ontolex/blob/ab0165605301413e64a66d53d23c3095fa879a26/Ontologies/ontolex.owl",
+      "blob_sha": "10783b4c747bbc5f08fbae8f4169d6e02fc22565",
+      "sha256": "76e4c74fae4013944f60701df83828836c22a7f19c8cc8f72f994e321d12efd9",
+      "bytes": 54553,
+      "outcome": "Distinct from the official W3C core despite the same 1.1 header. Canonical RDF comparison shows a changed ConceptSet property direction; do not substitute for the selected W3C root."
+    }
+  ],
+  "selected_root": "W02",
+  "declared_imports": [],
+  "separate_modules": ["synsem", "decomp", "vartrans", "lime"],
+  "unresolved_imports": [],
+  "source_redistributed": false,
+  "limit": "The 2016 report and two exact core files have different authority/version roles. Repository tree and core do not certify all five modules, prior release equivalence, imported external definitions or scientific acceptance."
+}
