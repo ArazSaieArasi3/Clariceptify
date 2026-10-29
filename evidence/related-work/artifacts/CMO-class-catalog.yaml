@@ -1,0 +1,360 @@
+schema_version: '1.0'
+issue: 245
+work_id: CMO
+scope: One complete third-party mirror candidate root; original 2011 author release and imported closure not identified.
+source_sha256: 290e0df08c016020d888a88261b54ce4f5f070314020390f31788c82985fa4c6
+census_sha256: bb4f4f3e0220a0e12d6568f720328de05e171429e4feb656b7ddfb6d35998a0b
+paper_dossier_sha256: a5cccec6cf1641d7a21fdfdd02b13ee43f33c6e4b54fc3c7a4a51e8a246fddd0
+source_license: NOT_IDENTIFIED_IN_SELECTED_FILE
+counts:
+  local_classes: 7
+  external_redeclarations: 5
+  referenced_named_classes: 8
+  referenced_local_classes: 4
+  referenced_external_classes: 4
+  local_source_comment_candidates: 6
+  local_descriptive_seeAlso_without_comment: 1
+  local_missing_descriptive_annotations: 0
+  local_explicit_deprecated: 0
+  imported_closure_classes: null
+  inferred_classes: null
+  original_author_release_classes: null
+direct_imports: &id001
+- http://purl.obolibrary.org/obo/iao.owl
+- http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf
+unresolved_imports: *id001
+imported_definitions_complete: false
+referenced_class_iris:
+- http://purl.obolibrary.org/obo/IAO_0000030
+- http://purl.org/twc/ontologies/cmo.owl#Quality
+- http://purl.org/twc/ontologies/cmo.owl#Relation
+- http://purl.org/twc/ontologies/cmo.owl#Type
+- http://purl.org/twc/ontologies/cmo.owl#Universal
+- http://www.ifomis.org/bfo/1.1#Entity
+- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant
+- http://www.w3.org/2004/02/skos/core#Concept
+classes:
+- iri: http://purl.obolibrary.org/obo/IAO_0000030
+  population: EXTERNAL_REDECLARATION_NOT_RESOLVED_IMPORT
+  label: null
+  source_locator: private archive member CMO-db-32f457a.n3 lines 122; census classes[0]
+  source_definition_state: NO_DEFINITION_IN_SELECTED_MIRROR
+  source_comment_sha256: null
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: null
+  review_evidence: []
+  asserted_named_superclasses: []
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/0
+- iri: http://purl.org/twc/ontologies/cmo.owl#Quality
+  population: LOCAL_DECLARATION
+  label: Quality
+  source_locator: private archive member CMO-db-32f457a.n3 lines 124-128; census classes[1]
+  source_definition_state: COMMENT_CANDIDATE
+  source_comment_sha256: 0c724ce7c4bc5ae6f5959c18b7c7a58be2b6ebcc7968150a7c28acde8f40ca28
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: Conceptual description of an inherent property or assigned attribute; source intentionally
+    groups those cases. Subclass SKOS Concept only in selected local class axioms; no equivalence or value-filler
+    existential.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://www.w3.org/2004/02/skos/core#Concept
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      iri: http://www.w3.org/2004/02/skos/core#Concept
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/1
+- iri: http://purl.org/twc/ontologies/cmo.owl#Relation
+  population: LOCAL_DECLARATION
+  label: Relation
+  source_locator: private archive member CMO-db-32f457a.n3 lines 129-133; census classes[2]
+  source_definition_state: COMMENT_CANDIDATE
+  source_comment_sha256: ce057326f14249cd668ce69990fd686d3f9d8bd8fd6070a3dc85df0b05889d56
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: Conceptual relation between independent entities; SKOS Concept subtype. Endpoint properties
+    are recorded in the property census, not encoded as a mandatory exact-two local class restriction.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://www.w3.org/2004/02/skos/core#Concept
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      iri: http://www.w3.org/2004/02/skos/core#Concept
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/2
+- iri: http://purl.org/twc/ontologies/cmo.owl#Type
+  population: LOCAL_DECLARATION
+  label: Type
+  source_locator: private archive member CMO-db-32f457a.n3 lines 134-138; census classes[3]
+  source_definition_state: COMMENT_CANDIDATE
+  source_comment_sha256: d1fffcd19bd50e1bb416a78f8e217348abf9d5987c2f9fbbc3d2f7ae9f2bc25b
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: Conceptual generalization representing instances; SKOS Concept subtype, not the represented
+    logical class itself. No local equivalence/closure requirement.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://www.w3.org/2004/02/skos/core#Concept
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      iri: http://www.w3.org/2004/02/skos/core#Concept
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/3
+- iri: http://purl.org/twc/ontologies/cmo.owl#Universal
+  population: LOCAL_DECLARATION
+  label: Universal
+  source_locator: private archive member CMO-db-32f457a.n3 lines 139-150; census classes[4]
+  source_definition_state: COMMENT_CANDIDATE
+  source_comment_sha256: 6952e4c56d45ee128f4bb558973d268994914eaa2c75e1dc4400f97e3d6b8f76
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: Real-side entity category, under BFO1.1 IndependentContinuant plus representedBy min0 SKOS
+    Concept. The zero minimum imposes no positive representation witness; philosophical category correspondence
+    remains open.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '0'
+        predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+      - object:
+          iri: http://www.w3.org/2004/02/skos/core#Concept
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#representedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/4
+- iri: http://purl.org/twc/ontologies/cmo.owl#UniversalClass
+  population: LOCAL_DECLARATION
+  label: Universal Class
+  source_locator: private archive member CMO-db-32f457a.n3 lines 152-163; census classes[5]
+  source_definition_state: COMMENT_CANDIDATE
+  source_comment_sha256: d6f6d7a99c9e09b054356f5b536bd333b1a063248b4fc2a7e3965bd49598f326
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: Realist-side natural grouping, under Universal plus representedBy min0 Type. The label and
+    comment do not establish its extension or require an actual Type witness.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://purl.org/twc/ontologies/cmo.owl#Universal
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '0'
+        predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#Type
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#representedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: http://purl.org/twc/ontologies/cmo.owl#Universal
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/5
+- iri: http://purl.org/twc/ontologies/cmo.owl#UniversalQuality
+  population: LOCAL_DECLARATION
+  label: Universal Quality
+  source_locator: private archive member CMO-db-32f457a.n3 lines 165-174; census classes[6]
+  source_definition_state: DESCRIPTIVE_SEEALSO_LITERAL_NO_COMMENT
+  source_comment_sha256: null
+  source_seeAlso_literal_sha256: 31ae387dac4c66480abf2af68362771e7461d96f1ed0091a67d9596462d1e319
+  reviewer_paraphrase: Real-side quality category according to a descriptive seeAlso literal; rdfs:comment absent.
+    Under Universal plus representedBy min0 Quality. Preserve annotation kind; do not invent a comment or sufficient
+    definition.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://purl.org/twc/ontologies/cmo.owl#Universal
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '0'
+        predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#Quality
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#representedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: http://purl.org/twc/ontologies/cmo.owl#Universal
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/6
+- iri: http://purl.org/twc/ontologies/cmo.owl#UniversalRelation
+  population: LOCAL_DECLARATION
+  label: Universal Relation
+  source_locator: private archive member CMO-db-32f457a.n3 lines 176-186; census classes[7]
+  source_definition_state: COMMENT_CANDIDATE
+  source_comment_sha256: 45e217bf58727b52403e0aed934f894c0fd09f47300e7f60eb06b4be941abb6f
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: Real-side relationship category, under Universal plus representedBy min0 Relation. The zero
+    minimum is not a mandatory conceptual-link constraint.
+  review_evidence:
+  - CMO:A01
+  asserted_named_superclasses:
+  - http://purl.org/twc/ontologies/cmo.owl#Universal
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '0'
+        predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#Relation
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: http://purl.org/twc/ontologies/cmo.owl#representedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: http://purl.org/twc/ontologies/cmo.owl#Universal
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/7
+- iri: http://www.ifomis.org/bfo/1.1#Entity
+  population: EXTERNAL_REDECLARATION_NOT_RESOLVED_IMPORT
+  label: null
+  source_locator: private archive member CMO-db-32f457a.n3 lines 188; census classes[8]
+  source_definition_state: NO_DEFINITION_IN_SELECTED_MIRROR
+  source_comment_sha256: null
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: null
+  review_evidence: []
+  asserted_named_superclasses: []
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/8
+- iri: http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant
+  population: EXTERNAL_REDECLARATION_NOT_RESOLVED_IMPORT
+  label: null
+  source_locator: private archive member CMO-db-32f457a.n3 lines 190; census classes[9]
+  source_definition_state: NO_DEFINITION_IN_SELECTED_MIRROR
+  source_comment_sha256: null
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: null
+  review_evidence: []
+  asserted_named_superclasses: []
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/9
+- iri: http://www.w3.org/2002/07/owl#Thing
+  population: EXTERNAL_REDECLARATION_NOT_RESOLVED_IMPORT
+  label: null
+  source_locator: private archive member CMO-db-32f457a.n3 lines 192; census classes[10]
+  source_definition_state: NO_DEFINITION_IN_SELECTED_MIRROR
+  source_comment_sha256: null
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: null
+  review_evidence: []
+  asserted_named_superclasses: []
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/10
+- iri: http://www.w3.org/2004/02/skos/core#Concept
+  population: EXTERNAL_REDECLARATION_NOT_RESOLVED_IMPORT
+  label: null
+  source_locator: private archive member CMO-db-32f457a.n3 lines 194-195; census classes[11]
+  source_definition_state: NO_DEFINITION_IN_SELECTED_MIRROR
+  source_comment_sha256: null
+  source_seeAlso_literal_sha256: null
+  reviewer_paraphrase: null
+  review_evidence: []
+  asserted_named_superclasses:
+  - http://purl.obolibrary.org/obo/IAO_0000030
+  asserted_equivalent_expressions: 0
+  explicit_deprecated: false
+  asserted_constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Class
+    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  - object:
+      iri: http://purl.obolibrary.org/obo/IAO_0000030
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  constraint_ref: evidence/related-work/deep-reviews/CMO/mirror-census.json#classes/11
+machine_reasoner: NOT_EXECUTED
+paper_fidelity: NOT_ESTABLISHED
+model_change: NONE
