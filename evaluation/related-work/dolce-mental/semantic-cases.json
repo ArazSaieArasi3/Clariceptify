@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "issue": 248,
+  "source_sha256": "61a88f4d392b9659b53bee1329df17bc2640464e2f34c79c867a93a36d91e1dc",
+  "regime": "ISOLATED_FINITE_TRUTH_TABLE_NOT_WHOLE_FOL_THEORY",
+  "individual_domain": ["e1", "e2"],
+  "cases": [
+    {
+      "id": "S01",
+      "source_line": 234,
+      "source_scope": "exists E (sat(E,Y,T) implies exists E1 sat(E1,W,T1))",
+      "paper_scope": "(exists E sat(E,Y,T)) implies (exists E1 sat(E1,W,T1))",
+      "satisfiers_of_Y": ["e1"],
+      "satisfiers_of_W": [],
+      "source_fragment_result": true,
+      "paper_fragment_result": false,
+      "limitation": "This is an isolated quantifier-scope difference. The surrounding igoal, goal, time and classification axioms are not satisfied or refuted by this truth table."
+    },
+    {
+      "id": "S02",
+      "source_line": 267,
+      "source_scope": "exists E (sat(E,Y,T) iff exists E1 sat(E1,W,T1))",
+      "paper_scope": "(exists E sat(E,Y,T)) iff (exists E1 sat(E1,W,T1))",
+      "satisfiers_of_Y": ["e1"],
+      "satisfiers_of_W": [],
+      "source_fragment_result": true,
+      "paper_fragment_result": false,
+      "limitation": "The source existential can choose the nonsatisfying e2. The full need2 axiom and foundation fragment are not certified by this finite assignment."
+    },
+    {
+      "id": "S03",
+      "source_line": 336,
+      "source_scope": "des(a9,c11,t) and not exists Y des(a9,Y,t)",
+      "domain_of_Y": ["c11", "c12"],
+      "antecedent_satisfiable_for_any_desire_set": false,
+      "limitation": "The literal conjunction in this active conjecture antecedent is contradictory by its own c11 witness; any success is vacuous, not a meaningful unique-desire check. No prover or whole-theory run was performed."
+    }
+  ],
+  "structural_observations": [
+    {
+      "source_line": 211,
+      "predicate": "sat/3",
+      "result": "Its active biconditional mentions presentAt and cf but no event(E) guard; event-only satisfiers are not established by this clause alone."
+    },
+    {
+      "source_line": 273,
+      "predicate": "need3/3",
+      "result": "One-way implication toward egoal and need0; no reverse characterization or operational harm threshold in this clause."
+    },
+    {
+      "source_line": 349,
+      "predicate": "about2/3",
+      "result": "E occurs inside a quantified antecedent and again outside it in the consequent; binder scope and about2 argument position need a parsed review before theorem status can be claimed."
+    }
+  ],
+  "tptp_parser": "NOT_EXECUTED",
+  "darwin_hets": "NOT_EXECUTED",
+  "whole_theory_consistency": "NOT_ASSESSED",
+  "owner_model_change": "NONE"
+}
