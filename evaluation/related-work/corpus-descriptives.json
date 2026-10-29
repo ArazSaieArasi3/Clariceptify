@@ -15,12 +15,12 @@
     "full_paper_reviews": 18,
     "full_reviews_complete": 18,
     "limited_summary_reviews": 1,
-    "module_rows": 11,
+    "module_rows": 12,
     "papers_with_relation_index": 15,
     "separate_document_sources": 4
   },
   "generator_path": "tools/build_corpus_descriptives.py",
-  "generator_sha256": "ee4daaea847eedbbf5b011a77f1c862f44e6fc7b8ad0fdef3c25927cddea55dd",
+  "generator_sha256": "1d2559452880e4a7bbfdf78c842e3f2e25e818b706127d2b376116acd911e4fd",
   "model_change": "NONE",
   "modules": [
     {
@@ -132,6 +132,16 @@
       "module": "ExtendedDnS397 (later candidate)",
       "source": "evaluation/related-work/dns235/census.json",
       "source_sha256": "7d69150ed0b67ef4b0cbe0b50b03e64634de02f6a30988f83c26e90c33aadb41"
+    },
+    {
+      "all_declared_object_properties": 17,
+      "external_class_redeclarations": 8,
+      "external_object_property_redeclarations": 0,
+      "local_classes": 8,
+      "local_declared_object_properties": 17,
+      "module": "OntoLex 2016 core (selected root)",
+      "source": "evaluation/related-work/ontolex237/census.json",
+      "source_sha256": "b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee"
     }
   ],
   "papers": [
@@ -341,6 +351,7 @@
     "evaluation/related-work/bdi2026/technical-census.json": "1bd330a7f400e4689fa43853f80ac4631e5d6daf8bf86d4d827027c7f9b157b9",
     "evaluation/related-work/cognitiveatlas/technical-census.json": "4fca49a5bf3307f7dd9c71a601375c40c9724d4ac096bc1c6033afae2a1075fb",
     "evaluation/related-work/dns235/census.json": "927b2771ac0d04f4361b2b4c53c04f35e80b5fac2f7080166a0e6d6e55713450",
+    "evaluation/related-work/ontolex237/census.json": "f1df54411ded40d20cf73e4e431e1ea0300a178af71ef91ce7f593aa09394d8c",
     "evidence/related-work/deep-reviews/BDI2020/review.yaml": "46515acbe7dc06f9fa99f317007100cf89b418748c14eab7d86f644a4b654c5c",
     "evidence/related-work/deep-reviews/BDI2026Preprint/review.yaml": "fe1e61afab197054396a7786749ad1408676e405f9dcedd43504f844d5e23505",
     "evidence/related-work/deep-reviews/CLR-RW-DOLCEMental/review.yaml": "3d2279bb26cdf29a24fed0c6a987c0a354de3147a63c51693f1258bf5e11fb67",

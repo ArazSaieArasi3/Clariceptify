@@ -1,0 +1,306 @@
+{
+  "checked_on": "2026-10-29",
+  "classes": [
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#Affix",
+      "label_en": "affix",
+      "population": "LOCAL",
+      "source_comment_sha256": "f69f746ebfd6672f6d7923c53ffef7262266927fc2ef51c39158cab3e0af34a1",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#Affix rdfs:comment",
+      "subclass_of": [
+        "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [
+        {
+          "Restriction": {
+            "minQualifiedCardinality": "1",
+            "onClass": "http://www.w3.org/ns/lemon/ontolex#LexicalConcept",
+            "onProperty": "http://www.w3.org/2004/02/skos/core#inScheme"
+          }
+        }
+      ],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#ConceptSet",
+      "label_en": "concept set",
+      "population": "LOCAL",
+      "source_comment_sha256": "17b1a4b9fab9ec2c9305c896b5661e193ef08ce39bef8e4c0bfee032c8137028",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#ConceptSet rdfs:comment",
+      "subclass_of": [
+        "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#Form",
+      "label_en": "form",
+      "population": "LOCAL",
+      "source_comment_sha256": "cb211c792adabdf85f1c2b4a0bb53fe7e0f36560c467237944217728790554e2",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#Form rdfs:comment",
+      "subclass_of": [
+        "http://www.w3.org/2002/07/owl#Thing",
+        {
+          "Restriction": {
+            "minQualifiedCardinality": "1",
+            "onDataRange": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "onProperty": "http://www.w3.org/ns/lemon/ontolex#writtenRep"
+          }
+        }
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#LexicalConcept",
+      "label_en": "lexical concept",
+      "population": "LOCAL",
+      "source_comment_sha256": "27d49a0ad07f2ca61983ebf3c4b98bcfd510ee1018f53d76719bbc2578b56556",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#LexicalConcept rdfs:comment",
+      "subclass_of": [
+        "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning",
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#LexicalEntry",
+      "label_en": "lexical entry",
+      "population": "LOCAL",
+      "source_comment_sha256": "8a72094415a0c0b9646a03a2d836b25f74cdba98f44e5dcf5619dc5ed0a52946",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#LexicalEntry rdfs:comment",
+      "subclass_of": [
+        "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression",
+        "http://www.w3.org/2002/07/owl#Thing",
+        {
+          "Restriction": {
+            "maxQualifiedCardinality": "1",
+            "onClass": "http://www.w3.org/ns/lemon/ontolex#Form",
+            "onProperty": "http://www.w3.org/ns/lemon/ontolex#canonicalForm"
+          }
+        },
+        {
+          "Restriction": {
+            "minQualifiedCardinality": "1",
+            "onClass": "http://www.w3.org/ns/lemon/ontolex#Form",
+            "onProperty": "http://www.w3.org/ns/lemon/ontolex#lexicalForm"
+          }
+        }
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#LexicalSense",
+      "label_en": "lexical sense",
+      "population": "LOCAL",
+      "source_comment_sha256": "558a182f36a13d6bd29b9634be65dcfcd6e6fbb2ff5f71a5b64edc4094b929cc",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#LexicalSense rdfs:comment",
+      "subclass_of": [
+        "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning",
+        {
+          "Restriction": {
+            "onClass": "http://www.w3.org/ns/lemon/ontolex#LexicalEntry",
+            "onProperty": "http://www.w3.org/ns/lemon/ontolex#isSenseOf",
+            "qualifiedCardinality": "1"
+          }
+        },
+        {
+          "Restriction": {
+            "cardinality": "1",
+            "onProperty": "http://www.w3.org/ns/lemon/ontolex#reference"
+          }
+        }
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#MultiWordExpression",
+      "label_en": "multi-word expression",
+      "population": "LOCAL",
+      "source_comment_sha256": "0a5a61811af9513259bba26e202a0b23fe02c977831aacff172c9313bc37a170",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#MultiWordExpression rdfs:comment",
+      "subclass_of": [
+        "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/ontolex#Word",
+      "label_en": "word",
+      "population": "LOCAL",
+      "source_comment_sha256": "62c7ceb83b8cc2c000fc33cc1b4aa18441698e10b2f1739adfc6878af7ce3750",
+      "source_comment_status": "PRESENT_ENGLISH_COMMENT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/ontolex#Word rdfs:comment",
+      "subclass_of": [
+        "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+      ]
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://purl.org/vocommons/voaf#Vocabulary",
+      "label_en": null,
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://purl.org/vocommons/voaf#Vocabulary no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression",
+      "label_en": "expression",
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning",
+      "label_en": "meaning",
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "label_en": "concept",
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/2004/02/skos/core#Concept no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "label_en": "concept scheme",
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/2004/02/skos/core#ConceptScheme no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://www.w3.org/ns/lemon/synsem#OntoMap",
+      "label_en": null,
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://www.w3.org/ns/lemon/synsem#OntoMap no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://xmlns.com/foaf/0.1/Organization",
+      "label_en": null,
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://xmlns.com/foaf/0.1/Organization no rdfs:comment",
+      "subclass_of": []
+    },
+    {
+      "deprecated": false,
+      "disjoint_with": [],
+      "equivalent_class": [],
+      "iri": "http://xmlns.com/foaf/0.1/Person",
+      "label_en": null,
+      "population": "EXTERNAL_REDECLARATION",
+      "source_comment_sha256": null,
+      "source_comment_status": "MISSING_IN_SELECTED_ROOT",
+      "source_locator": "OntoLex-core.ttl::http://xmlns.com/foaf/0.1/Person no rdfs:comment",
+      "subclass_of": []
+    }
+  ],
+  "comparison": {
+    "concept_set_2016_on_property": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "concept_set_repo_on_property": "owl:inverseOf http://www.w3.org/2004/02/skos/core#inScheme",
+    "correspondence": "LOGICAL_DIRECTION_DIFFERS; SAME_VERSION_INFO_DOES_NOT_CERTIFY_IDENTICAL_AXIOMS",
+    "other_nonlabel_difference": "One duplicate spelling cc:licence only in selected W3C bytes; cc:license exists in both.",
+    "repo_only_nonlabel_triples": 6,
+    "w3c_only_nonlabel_triples": 6
+  },
+  "counts": {
+    "anonymous_owl_class_nodes": 2,
+    "external_class_redeclarations": 8,
+    "external_english_comments": 0,
+    "local_classes": 8,
+    "local_datatype_properties": 3,
+    "local_english_comment_candidates": 8,
+    "local_object_properties": 17,
+    "named_classes": 16
+  },
+  "declared_import_iris": [],
+  "imported_class_population": 0,
+  "issue": 237,
+  "model_change": "NONE",
+  "parsed_as": "RDF/XML despite acquired .ttl filename",
+  "referenced_without_declaration": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "http://www.w3.org/2002/07/owl#Thing"
+  ],
+  "repo_snapshot": {
+    "blob": "10783b4c747bbc5f08fbae8f4169d6e02fc22565",
+    "commit": "ab0165605301413e64a66d53d23c3095fa879a26",
+    "sha256": "76e4c74fae4013944f60701df83828836c22a7f19c8cc8f72f994e321d12efd9",
+    "tree": "463af47eef62fe99641bc33d0cc416363c58ba69",
+    "triples": 589
+  },
+  "schema_version": "1.0",
+  "source_iri": "http://www.w3.org/ns/lemon/ontolex",
+  "source_licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "source_rights": [
+    "CC-Zero"
+  ],
+  "source_sha256": "b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee",
+  "triples": 589,
+  "version_info": [
+    "1.1"
+  ]
+}

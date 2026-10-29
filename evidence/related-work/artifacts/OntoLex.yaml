@@ -1,0 +1,63 @@
+schema_version: '1.0'
+issue: 237
+status: BOUNDED_OFFICIAL_CORE_REVIEW_COMPLETE_WITH_PROFILE_AND_VERSION_DIFFERENCE
+checked_on: '2026-10-29'
+baseline_commit: e0cdfee856eb919caec4fafe5a57560ee287da67
+source:
+  document: {url: 'https://www.w3.org/2016/05/ontolex/', sha256: ce0996a09f6ab97633c0aaad0b6eb02120615f2f4b8d5aa5c4b2558ce5f5c9b2, review: evidence/related-work/reviews/OntoLex.yaml, review_sha256: d7f0ba9672168b51fbb9a6c809f14a1edfdb103b8a7854689f35ad979527c26a}
+  selected_core: {url: 'https://www.w3.org/ns/lemon/ontolex', acquired_filename: 'OntoLex-core.ttl', bytes: 54456, sha256: b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee, ontology_iri: 'http://www.w3.org/ns/lemon/ontolex', header_version: '1.1', syntax: RDF/XML, header_rights: CC-Zero, license_iri: 'https://creativecommons.org/publicdomain/zero/1.0/', declared_imports: []}
+  author_repository: {url: 'https://github.com/ontolex/ontolex', linked_from: 'https://www.w3.org/community/ontolex/', commit: ab0165605301413e64a66d53d23c3095fa879a26, tree: 463af47eef62fe99641bc33d0cc416363c58ba69, path: Ontologies/ontolex.owl, blob: 10783b4c747bbc5f08fbae8f4169d6e02fc22565, bytes: 54553, sha256: 76e4c74fae4013944f60701df83828836c22a7f19c8cc8f72f994e321d12efd9, observed_archived: false, observed_pushed_at: '2026-10-23T11:10:53Z'}
+  discovery: evaluation/related-work/ontolex237/discovery.json
+  source_redistribution: false
+  historical_equivalence: NOT_ESTABLISHED
+population:
+  selected_root_triples: 589
+  local_declared_named_classes: 8
+  external_redeclared_named_classes: 8
+  total_declared_named_classes: 16
+  anonymous_owl_class_nodes: 2
+  local_object_properties: 17
+  local_datatype_properties: 3
+  imported_classes: 0
+  inferred_classes: null
+  local_comment_candidates: 8
+  local_missing_comments: 0
+  external_missing_comments: 8
+  glossary: evidence/related-work/ontolex237-class-catalog.yaml
+  census: evaluation/related-work/ontolex237/census.json
+  interpretation: 'No owl:imports is declared. External redeclarations are not imported definitions; this one root is not all five modules.'
+foundation:
+  family: 'Lexical interface with semiotics Expression/Meaning and SKOS Concept/ConceptScheme external redeclarations'
+  relation: 'ASSERTED_SUBCLASS_REFERENCES_WITHOUT_OWL_IMPORTS; paper documents inspirations and SKOS links'
+  exact_semiotics_or_skos_edition: null
+  UFO_BFO_grounding: NOT_ESTABLISHED
+  evidence: 'OntoLex2016 report sections 2.1, 3, 10.1; root rdfs:subClassOf triples in census.'
+execution:
+  receipt: evaluation/related-work/ontolex237/execution.json
+  script: tools/inspect_ontolex237.py
+  parsed_graph: PASS
+  owl2_dl_profile: FAIL
+  profile_violations: 37
+  hermit_baseline_observation: CONSISTENT_WITH_NO_UNSAT_NAMED_CLASSES
+  entailment_certification: NOT_ESTABLISHED_PROFILE_FAIL
+  isolated_semantic_cases: NOT_EXECUTED_PROFILE_FAIL
+  validation_or_benchmark: NOT_EXECUTED
+selected_commitments:
+  - {id: C01, locator: 'OntoLex-core.ttl::ontolex:LexicalEntry rdfs:subClassOf restriction(ontolex:lexicalForm minQualifiedCardinality 1 ontolex:Form)', reading: 'At least one lexicalForm Form witness is required for a LexicalEntry in the selected graph.', adverse: 'No named Form assertion need exist under open-world semantics.'}
+  - {id: C02, locator: 'OntoLex-core.ttl::ontolex:LexicalEntry rdfs:subClassOf restriction(ontolex:canonicalForm maxQualifiedCardinality 1 ontolex:Form)', reading: 'At most one canonicalForm Form filler up to equality; not an explicit exactly-one named form.', adverse: 'Two distinct names without owl:differentFrom do not refute the maximum.'}
+  - {id: C03, locator: 'OntoLex-core.ttl::ontolex:Form rdfs:subClassOf restriction(ontolex:writtenRep minQualifiedCardinality 1 rdf:langString)', reading: 'The form carries an existential writtenRep datatype constraint as encoded.', adverse: 'The profile flags rdf:langString as an unknown datatype in this OWLAPI run; do not certify a DL consequence.'}
+  - {id: C04, locator: 'OntoLex-core.ttl::ontolex:LexicalConcept rdfs:subClassOf semiotics:Meaning, skos:Concept', reading: 'A lexical concept has two external superclass references, without importing those source ontologies.', adverse: 'Sharing a superclass does not equate mental content, a lexical entry or Clariceptify Conceptualization.'}
+  - {id: C05, locator: 'OntoLex-core.ttl::ontolex:LexicalSense rdfs:subClassOf restriction(ontolex:isSenseOf qualifiedCardinality 1 ontolex:LexicalEntry), restriction(ontolex:reference cardinality 1)', reading: 'A sense is constrained to one entry and one reference in this graph.', adverse: 'No real-world identification, lexical accuracy or historical release parity follows.'}
+  - {id: C06, locator: 'OntoLex-core.ttl::ontolex:ConceptSet owl:equivalentClass restriction(skos:inScheme minQualifiedCardinality 1 ontolex:LexicalConcept); repo Ontologies/ontolex.owl uses owl:inverseOf skos:inScheme', reading: 'Published W3C bytes use the outward inScheme direction; pinned current repository bytes wrap that property in inverseOf. Same header version 1.1 does not establish equivalent axioms.', adverse: 'Do not silently replace published bytes or infer that a ConceptSet is a conceptualization activity.'}
+  - {id: C07, locator: 'OntoLex-core.ttl::ontolex:evokes owl:propertyChainAxiom (ontolex:sense ontolex:isLexicalizedSenseOf)', reading: 'The asserted chain derives an entry-to-concept link when the intermediate sense-to-concept link holds.', adverse: 'A link does not model an agent intention or decision episode.'}
+  - {id: C08, locator: 'OntoLex-core.ttl::ontolex:denotes owl:propertyChainAxiom (ontolex:sense ontolex:reference)', reading: 'The asserted chain links an entry to a referenced resource through its sense.', adverse: 'The target resource need not equal the evoked lexical concept.'}
+scenarios:
+  positive: 'An entry with a form and a sense can refer to an ontology resource through ontolex:reference while evoking a distinct lexical concept through ontolex:isLexicalizedSenseOf; the two property chains express denotes and evokes paths. Source-level scenario only; no accuracy test.'
+  counterexample: 'The 2016 W3C ConceptSet equivalence uses skos:inScheme outward from the set, whereas the accompanying use case links a concept to a scheme. The pinned repository file has an explicit inverseOf in that restriction. This is a version-bound axiom-direction discrepancy, not a complete ontology countermodel.'
+decision:
+  disposition: DEFER_FORMAL_ALIGNMENT; REUSE_AS_LEXICAL_INTERFACE_CANDIDATE
+  candidate_model_ids: [CLR-C0026, CLR-C0047, CLR-C0062, CLR-C0101]
+  status: OWNER_DECISION_REQUIRED
+  accepted_equivalences: []
+  next_issues: [253, 126]
+boundary: {model_change: NONE, requirements_change: NONE, fixtures_change: NONE, manuscript_change: NONE, release_change: NONE, independent_expert_validation: NOT_PERFORMED, source_redistribution: false}

@@ -24,7 +24,7 @@ class ReviewBoundaries(unittest.TestCase):
     def test_relation_unit_substitution(self):self.reject(lambda:self.d['census']['counts'].update(local_declared_object_properties=2825))
     def test_no_corpus_class_total(self):
         s=calculate();self.assertEqual(s['counts']['full_paper_reviews'],18);self.assertEqual(s['counts']['limited_summary_reviews'],1)
-        self.assertNotIn('total_classes',s['counts']);self.assertEqual(s['counts']['module_rows'],11)
+        self.assertNotIn('total_classes',s['counts']);self.assertEqual(s['counts']['module_rows'],12)
         self.assertEqual(sum(p['indexed_relation_groups'] is None for p in s['papers']),3)
 
 

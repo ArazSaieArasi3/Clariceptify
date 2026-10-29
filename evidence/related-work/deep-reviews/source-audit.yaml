@@ -593,6 +593,22 @@ discovery_attempts:
   receipt: evaluation/related-work/ontokads236/discovery.json
   limitation: Bounded endpoints and indexed/public search only; no global absence or semantic result.
 
+- id: ONTOLEX237-S01
+  method: OFFICIAL_COMMUNITY_LINK_W3C_CORE_EXACT_BYTES_AND_PINNED_GITHUB_TREE
+  query: Official 2016 report/core; group-linked moved repository; one pinned root and its axiom delta
+  checked_on: '2026-10-29'
+  checked_urls:
+  - https://www.w3.org/2016/05/ontolex/
+  - https://www.w3.org/ns/lemon/ontolex
+  - https://www.w3.org/community/ontolex/
+  - https://github.com/ontolex/ontolex/tree/ab0165605301413e64a66d53d23c3095fa879a26/Ontologies
+  outcome: Exact W3C bytes match retained core SHA256;selected W3C RDF/XML root has eight local classes,
+    eight external redeclarations and no owl:imports. Repository file differs in ConceptSet inverseOf
+    restriction despite the shared1.1 header. Profile and HermiT baseline outcomes separately recorded.
+  receipt: evaluation/related-work/ontolex237/discovery.json
+  limitation: One root, not the five-module closure or historical paper implementation parity; profile FAIL
+    precludes certified OWL2 DL entailment from the HermiT observation.
+
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -1498,34 +1514,41 @@ records:
   primary_issue: 75
   source_state: OFFICIAL_DOCUMENT_REVIEW_COMPLETE
   repository:
-    state: PUBLIC_REPOSITORY_IDENTIFIED_SNAPSHOT_PENDING
+    state: PUBLIC_REPOSITORY_PINNED_SELECTED_ROOT
     urls:
     - https://github.com/ontolex/ontolex
     evidence:
     - G14
     - W06
+    - ONTOLEX237-S01
     global_absence_claim: false
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
-  artifact_state: PINNED_CORE_PENDING_TECHNICAL_REVIEW_SPECIFICATION_REVIEW_COMPLETE
+  artifact_state: PINNED_W3C_CORE_TECHNICAL_REVIEW_COMPLETE_WITH_PROFILE_FAILURE
   foundation:
     family: Lexical-interface vocabulary with SKOS and semiotics reuse
     edition: null
-    relation: DOCUMENTED_REUSE_NOT_VERIFIED_IMPORT
+    relation: DOCUMENTED_REUSE_AND_ASSERTED_EXTERNAL_SUBCLASS_REFERENCE_NO_OWL_IMPORT
     basis: PINNED_REPORT
     locator: https://www.w3.org/2016/05/ontolex/#purpose-of-the-model
-    artifact_imports: null
+    artifact_imports: []
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: "No UFO/BFO edition or formal import closure inferred from cited inspirations; #237 remains open."
+    limitations: "No UFO/BFO edition or external SKOS/semiotics source definition closure; selected root has no imports."
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
+    state: COMPLETE_SELECTED_ROOT_WITH_EXTERNAL_DEFINITION_GAPS
+    local_classes: 8
+    source_definition_candidates: 8
+    missing_source_definitions: 0
+    catalog_path: evidence/related-work/ontolex237-class-catalog.yaml
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+  technical_followup:
+    issue: 237
+    status: BOUNDED_OFFICIAL_CORE_REVIEW_COMPLETE_WITH_PROFILE_AND_VERSION_DIFFERENCE
+    evidence: evidence/related-work/artifacts/OntoLex.yaml
+    execution: evaluation/related-work/ontolex237/execution.json
+    limitation: Eight external redeclarations lack local definition comments; profile FAIL and current repository
+      ConceptSet direction differs. Audit row itself does not execute reasoning.
   next_issues:
-  - 237
   - 253
   - 126
 - id: SKOS
@@ -1669,7 +1692,12 @@ additional_public_repository_observations:
   default_branch: master
   source: https://www.w3.org/community/ontolex/ links cimiano/ontolex; API redirects repository ID20124549
     to the same ID observed for ontolex/ontolex.
-  snapshot_state: NOT_YET_ACQUIRED
+  snapshot_state: PINNED_2026_10_29_SELECTED_ROOT_ONLY
+  retained_commit: ab0165605301413e64a66d53d23c3095fa879a26
+  retained_tree: 463af47eef62fe99641bc33d0cc416363c58ba69
+  selected_file: Ontologies/ontolex.owl
+  selected_blob: 10783b4c747bbc5f08fbae8f4169d6e02fc22565
+  selected_sha256: 76e4c74fae4013944f60701df83828836c22a7f19c8cc8f72f994e321d12efd9
 o4oa_repository_boundary: 'O4OA reference/documentation project metadata is public, but its checked tree API
   returned HTTP403. Separately linked bfmartins/go4oa is pinned at 3be36c642b2cfca33de3d0788471bc185880bde8;
   its complete eight-entry tree has five files (README, ignore file, two logos and metadata), with no formal

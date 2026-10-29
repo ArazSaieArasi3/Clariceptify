@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-29",
+  "command": "python tools/inspect_ontolex237.py --official PRIVATE/OntoLex-core.ttl --repository PRIVATE/ontolex-repository-current.owl --census evaluation/related-work/ontolex237/census.json --execution evaluation/related-work/ontolex237/execution.json",
+  "generator": "tools/inspect_ontolex237.py",
+  "generator_sha256": "b48ce896e773db36af1c06cc917bf5f1566678d9d6f43737373c63fe747477b4",
+  "hermit_baseline_consistent": true,
+  "hermit_unsatisfiable_named_classes": [],
+  "isolated_semantic_cases": "NOT_EXECUTED_PROFILE_FAIL",
+  "issue": 237,
+  "jpype": "1.6.0",
+  "owl2_dl_profile_pass": false,
+  "owlapi_axioms": 521,
+  "owlready2": "0.51",
+  "parsed_graph_triples": 589,
+  "profile_violation_count": 37,
+  "profile_violation_types": {
+    "UseOfReservedVocabularyForClassIRI": 5,
+    "UseOfUndeclaredAnnotationProperty": 22,
+    "UseOfUndeclaredClass": 5,
+    "UseOfUnknownDatatype": 5
+  },
+  "python": "3.12.14",
+  "rdflib": "7.6.0",
+  "reasoning_limit": "Profile fails; HermiT observations on original bytes are recorded, but not certified OWL 2 DL consequences or all-resource validation.",
+  "remote_imports_loaded": 0,
+  "schema_version": "1.0",
+  "source_repair": "NONE",
+  "source_sha256": "b4265ab8bf1fc61dc413ed3eb6c70b951cb69c76c406a6f4bfef7684acf014ee"
+}

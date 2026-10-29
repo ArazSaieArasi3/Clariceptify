@@ -28,7 +28,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | cDnS-journal-2008 (#263) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED_IN_BOUNDED_SEARCH; [source](http://www.loa-cnr.it/ontologies/collInt.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/ground.owl); [source](http://www.ontologydesignpatterns.org/ont/cdns/cDnS.owl); SELECTED51_CLASS_INVENTORY_COMPLETE_CORE267_PROFILE_FAIL_EXTENSION_NOT_EXECUTED | Constructive DnS; ground-ontology independent; INDEPENDENT_FOUNDATION_WITH_ACTUAL_SELECTED_MODULE_IMPORTS; edition: UNKNOWN | [51 classes](cDnS-journal-2008/classes.md); 51 comment candidates; 0 missing | #251, #126 |
 | Emotions-2015 (#77) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](https://rhizomik.net/ontologies/2015/05/emotionsonto.owl); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_LINKED_MAY2015_CANDIDATE_WITH27_MISSING_COMMENTS_TECHNICAL_OPEN | DOLCE / DnS; PAPER_STATED_GROUNDING_AND_SELECTED_CANDIDATE_IMPORTS; edition: UNKNOWN | [28 classes](Emotions-2015/classes.md); 1 comment candidates; 27 missing | #239, #253, #126 |
 | Conceptualization (#71) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PINNED_CONCEPTUALIZATION0_1 | DUL; ACTUAL_IMPORT; edition: Retained Conceptualization0.1; DUL source snapshot | [1 classes](shared-foundations/Conceptualization/classes.md); 1 comment candidates; 0 missing | #272, #88 |
-| OntoLex (#75) | PUBLIC_REPOSITORY_IDENTIFIED_SNAPSHOT_PENDING; [source](https://github.com/ontolex/ontolex); PINNED_CORE_PENDING_TECHNICAL_REVIEW_SPECIFICATION_REVIEW_COMPLETE | Lexical-interface vocabulary with SKOS and semiotics reuse; DOCUMENTED_REUSE_NOT_VERIFIED_IMPORT; edition: UNKNOWN | PENDING_FULL_CATALOG | #237, #253, #126 |
+| OntoLex (#75) | PUBLIC_REPOSITORY_PINNED_SELECTED_ROOT; [source](https://github.com/ontolex/ontolex); PINNED_W3C_CORE_TECHNICAL_REVIEW_COMPLETE_WITH_PROFILE_FAILURE | Lexical-interface vocabulary with SKOS and semiotics reuse; DOCUMENTED_REUSE_AND_ASSERTED_EXTERNAL_SUBCLASS_REFERENCE_NO_OWL_IMPORT; edition: UNKNOWN | [8 classes](../ontolex237-class-catalog.md); 8 comment candidates; 0 missing | #253, #126 |
 | SKOS (#76) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PINNED_SCHEMA_AND_SPECIFICATION | RDF/RDFS/OWL Full representation basis; no upper ontology grounding established; REPRESENTATION_LANGUAGE_NOT_UPPER_ONTOLOGY_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #238, #253, #126 |
 | EmotionsCognition-guide (#77) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; PINNED_OWL_AND_GUIDE | DOLCE / DnS; DOCUMENTATION_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 
@@ -513,10 +513,23 @@ The paper and later project listing identify the work but no downloadable author
 
 Limit: Bounded endpoints and indexed/public search only; no global absence or semantic result.
 
+### ONTOLEX237-S01: OFFICIAL_COMMUNITY_LINK_W3C_CORE_EXACT_BYTES_AND_PINNED_GITHUB_TREE
+
+Query: `Official 2016 report/core; group-linked moved repository; one pinned root and its axiom delta`. Checked: 2026-10-29.
+
+- https://www.w3.org/2016/05/ontolex/
+- https://www.w3.org/ns/lemon/ontolex
+- https://www.w3.org/community/ontolex/
+- https://github.com/ontolex/ontolex/tree/ab0165605301413e64a66d53d23c3095fa879a26/Ontologies
+
+Exact W3C bytes match retained core SHA256;selected W3C RDF/XML root has eight local classes, eight external redeclarations and no owl:imports. Repository file differs in ConceptSet inverseOf restriction despite the shared1.1 header. Profile and HermiT baseline outcomes separately recorded.
+
+Limit: One root, not the five-module closure or historical paper implementation parity; profile FAIL precludes certified OWL2 DL entailment from the HermiT observation.
+
 ## Interpretation and next work
 
 All-local-class glossaries account for every declared class in their selected module boundary. Comment candidates are not automatically sufficient logical definitions. Missing definitions stay visible; imported definitions remain separate. Read the [mandatory catalogue contract](catalog-contract.yaml) and [coverage guide](coverage-guide.md) before interpreting completion.
 
-For LMM, 29 local classes have been catalogued; four lack source definition comments. The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; the DUL 78-class glossary has nine absent and two label-only comments; the [IOLite shared glossary](shared-foundations/IOLite/README.md) accounts for all46 local classes with three absent comments. The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. [LMM followup #274](../artifacts/LMM-correspondence.md) separately runs the exact selected closure profile and 13 isolated expectations; historical alignment remains unavailable. [OntoKADS followup #236](../artifacts/OntoKADS.md) records bounded unsuccessful formal-root discovery and eight paper formulas; machine class counts and imports remain unknown, with no reasoner execution. The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.
+For LMM, 29 local classes have been catalogued; four lack source definition comments. The remaining 125 unique asserted-closure class IRIs comprise 124 local DUL/IOLite classes and owl:Thing; the DUL 78-class glossary has nine absent and two label-only comments; the [IOLite shared glossary](shared-foundations/IOLite/README.md) accounts for all46 local classes with three absent comments. The separate [DUL technical review](../artifacts/DUL-technical-review.md) records 29 bounded HermiT cases. [LMM followup #274](../artifacts/LMM-correspondence.md) separately runs the exact selected closure profile and 13 isolated expectations; historical alignment remains unavailable. [OntoKADS followup #236](../artifacts/OntoKADS.md) records bounded unsuccessful formal-root discovery and eight paper formulas; machine class counts and imports remain unknown, with no reasoner execution. [OntoLex core #237](../artifacts/OntoLex.md) accounts for all eight local and eight external named declarations in the selected W3C RDF/XML root, with no declared imports and eight missing external comments; the separately pinned repository root differs in ConceptSet direction and the selected W3C source fails OWL2 DL profile. The source-audit table itself is a glossary/discovery record, not a reasoner run, historical equivalence or final synthesis.
 
 Clariceptify model change: NONE. Final synthesis #126 stays open; later adoption requires the owner decision.
