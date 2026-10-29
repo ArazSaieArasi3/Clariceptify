@@ -170,6 +170,16 @@ def check(root=ROOT, source_dir=None):
         by_path[dul_path] = {'counts': {'local_classes': dul['counts']['local_classes'],
             'source_definition_candidates': dul['counts']['classes_with_comment_candidates'],
             'missing_source_definitions': dul['counts']['classes_without_comment']}}
+    bdi_path = 'evidence/related-work/bdi2026-class-catalog.yaml'
+    if any(r['class_coverage']['catalog_path'] == bdi_path for r in audit['records']):
+        from check_bdi2026_review import check as check_bdi
+        check_bdi(root)
+        bdi = yaml.safe_load((root / bdi_path).read_text())
+        rows = [r for r in bdi['classes'] if r['module'] == 'bdi/bdi.ttl'
+                and r['population'] == 'LOCAL_DECLARED_NAMED_CLASS']
+        by_path[bdi_path] = {'counts': {'local_classes': len(rows),
+            'source_definition_candidates': sum(bool(r['annotation_records']) for r in rows),
+            'missing_source_definitions': sum(not r['annotation_records'] for r in rows)}}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:

@@ -1,0 +1,338 @@
+schema_version: '1.0'
+issue: 250
+task_id: R2-ART-BDI2026
+status: BOUNDED_TECHNICAL_REVIEW_COMPLETE_WITH_NEGATIVE_FINDINGS_AND_IMPORT_LIMIT
+reviewed_on: '2026-10-29'
+baseline_commit: 224f31e55cdb7ceebee510cbf4b746c5b53ff6a0
+paper_review:
+  path: evidence/related-work/deep-reviews/BDI2026Preprint/review.yaml
+  sha256: fe1e61afab197054396a7786749ad1408676e405f9dcedd43504f844d5e23505
+  identity: arXiv2511.17162v2;2026-08-09;final journal byte equivalence NOT_ESTABLISHED
+source_repository:
+  url: https://github.com/fossr-project/ontology
+  commit: 57a91037d803519db5ee8d65d53c14901e28a0d1
+  scope:
+  - bdi/bdi.ttl
+  - bdi-dul/bdi-dul.rdf
+  excluded: Unrelated survey/RISIS modules, old root and serialization copies are not merged into local counts.
+    Test datasets/annotations have independent populations.
+source_manifest:
+  path: evidence/related-work/corpus/bdi2026-inputs.yaml
+  sha256: d381c6ff4ee8dbd33d200aebcbec5a66e2fddbd7253d1fa6f5f7828a207f0b3f
+evidence:
+  catalog:
+    path: evidence/related-work/bdi2026-class-catalog.yaml
+    sha256: fb23c165f0a07b8d4911bf8dc833ec39c6e37fa91f2b5e549feaad62d8ccca78
+  census:
+    path: evaluation/related-work/bdi2026/technical-census.json
+    sha256: 1bd330a7f400e4689fa43853f80ac4631e5d6daf8bf86d4d827027c7f9b157b9
+  discovery:
+    path: evaluation/related-work/bdi2026/technical-discovery.json
+    sha256: 9784134dcb6ded0a2f1f3d8235aae9e71f2a6cba3e547f8fb151109c93bd9218
+  semantic:
+    path: evaluation/related-work/bdi2026/semantic-cases.json
+    sha256: b303f4741fd53df03bca03cf6d35406c0ef90b58a3e5fd28cbc73032dbf8f663
+  cqs:
+    path: evaluation/related-work/bdi2026/cq-execution.json
+    sha256: 829e9446d252c9a14eb503d7412cf85161d5e28932d1c0bb901606d20d9dbcf5
+  application:
+    path: evaluation/related-work/bdi2026/application-inspection.json
+    sha256: b22a9530aae0acdd8b48701bfdad61d5cb97e5bc20909bf09c1d7465a72561d4
+questions:
+- id: Q01
+  title: Version, populations and foundation
+  result: Core0.5 and exact alignment are pinned separately. All22 local core classes, three external metadata/test
+    declarations and all10 local d0 classes are inventoried. All78 local DUL classes reuse the exact existing glossary;89
+    unique declared foundation IRIs include owl:Thing. Alignment has zero explicit class declarations and24 named
+    class-position references, not24 new classes. d0 versionInfo lists history1.2-1.5;DUL is4.2. The exact BDI0.3
+    import returned404, so full alignment-imported populations/historical equivalence remain unestablished. Older
+    root bdi.ttl uses a different namespace and is not a replacement.
+  evidence:
+  - catalog
+  - census
+  - discovery
+  finding_ids:
+  - BDI250-F01
+  - BDI250-F02
+  locators:
+  - header owl:versionIRI/owl:imports
+  - class catalogue per-IRI constraints
+  - paper PDF6,8;AppendixB
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q02
+  title: Profile and satisfiability
+  result: 'OWLAPI OWL2DLProfile rejects the exact core because rdf:type is declared owl:AnnotationProperty. HermiT
+    accepts the loaded logical ontology: baseline consistent and no unsatisfiable named core classes were returned.
+    This is not a profile PASS. All isolated semantic cases keep the whole exact core. Exact alignment/core0.3 joint
+    profile, cognitive/activity typing and type satisfiability are BLOCKED by missing0.3; no0.5 substitution or
+    import stripping is used to pretend completion.'
+  evidence:
+  - semantic
+  - census
+  - discovery
+  finding_ids:
+  - BDI250-F01
+  - BDI250-F03
+  locators:
+  - core rdf:type annotation declaration
+  - MentalProcess subclass axioms
+  - paper PDF6,8;AppendixB23-32
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q03
+  title: Witnesses, ownership and targets
+  result: 'Belief with unnamed witnesses is consistent; forbidding all motivates values is inconsistent. In contrast,
+    forbidding supports values is consistent: the paper belief-to-Intention existential is absent. Core per-state
+    exactly-one qualified Agent ownership rejects two different owners of one Belief, but a Belief motivating a
+    Desire with another owner remains consistent. No shared-agent/shared-world target join is inferred; named CQ
+    results are separate from anonymous witnesses.'
+  evidence:
+  - semantic
+  - catalog
+  - census
+  finding_ids:
+  - BDI250-F04
+  locators:
+  - Belief/motivates/supports/isBeliefOf
+  - Desire/isDesireOf
+  - paper AppendixB13-22,33-38
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q04
+  title: Parts and actual author fixtures
+  result: The same-type Desire-part case is consistent; Belief and Intention parts each contradict the source allValuesFrom
+    Desire plus B/D/I disjointness. Both unchanged author datasets contain such cross-type parts and are inconsistent
+    with core0.5. Their successful SPARQL output is therefore not consistency validation. All part restrictions,
+    incoming disjointness and the complete all-disjoint list are retained in the census/catalogue.
+  evidence:
+  - semantic
+  - cqs
+  - catalog
+  finding_ids:
+  - BDI250-F05
+  locators:
+  - Desire/hasPart;owl:AllDisjointClasses
+  - data-unit-testing.ttl:Desire_Graduate
+  - paper AppendixB15,18,21
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q05
+  title: Time and interval obligations
+  result: Unlike paper axiom77, core MentalEntity permits no atTime values, while hasValidity remains required.
+    A generated Belief need not inherit its process time. A TimeInstant may have no date value; bdi:time has TimeInterval
+    domain, allowing instant/interval co-typing because they are not declared disjoint. Distinct interval starts
+    are inconsistent but two names may identify; missing ends and reversed date values are allowed. CQ9 uses atTime/interval
+    start rather than a generation event;CQ17 filters dates procedurally and likewise uses atTime, not hasValidity;CQ18
+    lists explicit change links rather than computing a revised world/state.
+  evidence:
+  - semantic
+  - cqs
+  - catalog
+  finding_ids:
+  - BDI250-F06
+  locators:
+  - MentalEntity/atTime/hasValidity
+  - TimeInstant/time;TimeInterval/hasStartTime/hasEndTime
+  - unit-test-9,17,18
+  - paper AppendixB71-78
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q06
+  title: Plans, ordering and execution
+  result: 'A Plan may lack components or an execution; mandatory component and intention-specifies-Plan existentials
+    from the paper are absent in the core. hasPart is reflexive: no-parts contradicts it, but a Plan whose only
+    part is itself is consistent, so a proper subplan is not forced. Task precedence admits cycles and branches;
+    transitivity does force shortcuts. beginsWith is asserted inverseOf endsWith, a questionable endpoint correspondence,
+    rather than a tested requirement of a total task order. CQ15 orders rows by task IRI, not by a verified topological
+    sequence. No actual action completion or goal success follows.'
+  evidence:
+  - semantic
+  - cqs
+  - catalog
+  finding_ids:
+  - BDI250-F07
+  locators:
+  - Plan/hasPart/hasComponent;Intention/specifies
+  - precedes/follows;beginsWith/endsWith
+  - unit-test-15
+  - paper AppendixB44-70
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q07
+  title: All eighteen CQs and metrics
+  result: 'All18 embedded OWLUnit CQ annotations correspond by number to Table1 and are acquired with expected JSON.
+    Exact RDFLib SPARQL executions on two unchanged datasets yield36 runs: the local example.org dataset matches17/18
+    expected multisets;CQ4 misses three inverse-derived processing edges under the declared asserted-graph regime.
+    The published bdi-tests namespace dataset matches0/18 because query constants/expected IRIs use example.org.
+    CQ11 duplicates CQ9 timestamp query/expected data despite asking for justifications. Thus17 matches are not17
+    semantically validated requirements. OWLUnit itself is not executed. Paper Table2 counts22 domain classes/547
+    axioms/288 logical axioms/71 object properties; current raw core has22 local plus3 external explicit class declarations;OWLAPI
+    signature additionally includes owl:Thing. Exact current metrics are separate from historical paper denominators,
+    embedded test individuals/annotations and serializer-dependent triple counts.'
+  evidence:
+  - cqs
+  - semantic
+  - census
+  finding_ids:
+  - BDI250-F08
+  - BDI250-F09
+  locators:
+  - unit-test-1 through unit-test-18
+  - bdi/unittesting.md
+  - paper Table1/Table2
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+- id: Q08
+  title: Applications and changes
+  result: 'Static inspection accounts for19 test-method declarations,18 unique names and15 retained output records;
+    a duplicate method name overwrites an earlier definition at Python class construction. The script expects absent
+    bdi-v0.2.rdf, so it does not pin the reviewed0.5 bytes. LLM/SEMAS experiments are not rerun and no API calls
+    occur. Hotel conditions/payment timestamps/self-trigger claims remain illustrative, not OWL entailments. A new
+    adverse test shows that ANY modifies edge is inconsistent with core0.5: its subject receives both MentalProcess
+    and MentalState domains, which are disjoint. A fulfills/fulfils alias countermodel confirms that spelling is
+    not identity. These findings are retained for #256/#126; author source and Clariceptify remain unchanged.'
+  evidence:
+  - application
+  - semantic
+  - catalog
+  finding_ids:
+  - BDI250-F10
+  - BDI250-F11
+  locators:
+  - modifies rdfs:domain twice;MentalProcess owl:disjointWith MentalState
+  - fulfills versus undeclared fulfils
+  - code/bdi-experiment.py
+  - paper PDF8-12;applications/AppendixA
+  assessment: ASSESSED_WITH_EXPLICIT_LIMITS
+findings:
+- id: BDI250-F01
+  title: Exact alignment import unavailable
+  detail: Core0.5 is not automatically the source required by alignment0.3. Missing historical import prevents a
+    claim of joint alignment validation.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F02
+  title: Definition and version qualifications
+  detail: One Belief comment is truncated; three external metadata/test declarations lack source comments. DUL retains
+    nine absent and two label-only comments; d0 Event is deprecated only in prose.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F03
+  title: Exact core outside checked OWL2 DL profile
+  detail: Reserved rdf:type is declared an annotation property. HermiT consistency of loaded logical axioms does
+    not repair or certify the raw source profile.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F04
+  title: Paper and core mental-state commitments differ
+  detail: Ownership cardinalities are stronger in the core, while the Belief supports existential is absent. Shared
+    owners/content across a cognitive chain are not enforced.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F05
+  title: Unchanged story fixtures conflict with part constraints
+  detail: Both author datasets include Desire parts typed Belief/Intention, contradicting same-type parts and disjointness
+    under the core.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F06
+  title: Time anchoring and validity are not update semantics
+  detail: Core lacks the paper MentalEntity atTime existential; date ordering and generation-time propagation are
+    not enforced; queries use interval dates operationally.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F07
+  title: Order and plans do not guarantee proper structure or success
+  detail: Self-parts, branching/cyclic precedence, absent components/executions and inverse endpoint declaration
+    must be assessed against explicit intended requirements.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F08
+  title: Dataset/query namespaces and entailment regimes matter
+  detail: All18 published-namespace runs mismatch unmodified expected IRIs. Local-data CQ4 requires additional inverse
+    entailment; no silent namespace/data repairs are made.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F09
+  title: Expected JSON matches do not establish CQ adequacy
+  detail: CQ11 repeats a timestamp query despite asking for justifications;CQ15 IRI sorting is not a task-order
+    proof. Current machine metrics are not the paper Table2 population.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F10
+  title: Modification property cannot have instances in the loaded core
+  detail: Two asserted modifies domains force the source into disjoint MentalState/MentalProcess. A neutral edge
+    suffices to make the whole logical graph inconsistent.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+- id: BDI250-F11
+  title: Application results are historical and source-bound
+  detail: Absent runtime ontology file, duplicate Python method,15 retained outputs and alias vocabulary prevent
+    treating the current script as a reproduction of the paper evaluation.
+  disposition: PRESERVE_FOR_COMPARISON_NO_SOURCE_OR_MODEL_REPAIR
+  next_issues:
+  - 256
+  - 126
+license:
+  root_repository: MIT notice retained separately
+  selected_ontology: CC-BY-4.0 header notice
+  d0_DUL: No source redistribution permission inferred from absent header license. Raw sources retained externally;
+    annotations publicly represented by digests and short reviewer paraphrases.
+  source_redistributed: false
+reuse_decision:
+  status: DEFER_ADOPTION_PENDING_COMPARISON_AND_OWNER_DECISION
+  rationale: Useful agency/state/process/specification distinctions and explicit CQ/test artifacts, but current
+    source/version/profile/data mismatches prevent automatic alignment or copying.
+  positive_scenario: Use explicit state/process/plan/execution distinctions as candidate comparison dimensions with
+    separate named evidence and temporal context.
+  counterexample: A generic modifies edge or the unchanged Desire-with-Belief-part story contradicts the exact loaded
+    core; prompt plausibility or matching SPARQL rows cannot override it.
+execution_summary:
+  core_profile: FAIL_RESERVED_RDF_TYPE_ANNOTATION_DECLARATION
+  core_logical_consistency: CONSISTENT_UNDER_RECORDED_OWLAPI_HERMIT_LOADING
+  core_unsatisfiable_named_classes: []
+  semantic_cases:
+    errors: 0
+    failed: 0
+    passed: 30
+    total: 30
+  asserted_query_executions:
+    matches: 17
+    mismatches: 19
+    total: 36
+  exact_alignment: BLOCKED_EXACT_BDI_0_3_HTTP404
+  author_OWLUnit: NOT_EXECUTED
+  author_LLM_SEMAS: NOT_EXECUTED
+boundary:
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  scientific_acceptance: NOT_ASSESSED
+  independent_expert_review: NOT_PERFORMED
+  source_redistribution: false
+  adoption: OWNER_DECISION_REQUIRED
+closure:
+  claim: All selected available declarations and eight bounded technical questions accounted for. Review closure
+    preserves failures and the exact import blocker; it does not establish source correctness, full alignment validation,
+    paper equivalence or accepted reuse.
+  next_issues:
+  - 241
+  - 271
+  - 256
+  - 126

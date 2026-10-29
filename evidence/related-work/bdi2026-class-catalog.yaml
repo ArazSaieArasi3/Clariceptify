@@ -1,0 +1,2706 @@
+schema_version: '1.0'
+issue: 250
+reviewed_on: '2026-10-29'
+baseline_commit: 224f31e55cdb7ceebee510cbf4b746c5b53ff6a0
+status: ALL_SELECTED_DECLARATIONS_ACCOUNTED_WITH_EXPLICIT_IMPORT_LIMITS
+source_census:
+  path: evaluation/related-work/bdi2026/technical-census.json
+  sha256: 1bd330a7f400e4689fa43853f80ac4631e5d6daf8bf86d4d827027c7f9b157b9
+declaration_policy: Distinct URI subjects explicitly owl:Class or rdfs:Class; BDI and d0 local namespaces separate.
+  Alignment references are not new declarations. RDF/XML serialization isomorphic to Turtle is not counted twice.
+  Unrelated modules and data-instance types are not class declarations.
+definition_policy: All comment/definition annotations inspected. Publish short attributed reviewer paraphrases and
+  annotation digests, never bulk raw comments. Incomplete, absent and prose-only deprecation states stay explicit.
+  No independently accepted logical definition or human validation is inferred.
+counts:
+  core_local_classes: 22
+  core_external_declarations: 3
+  d0_local_classes: 10
+  glossary_rows: 35
+  source_comment_candidates: 32
+  partial_comment_classes: 1
+  missing_comment_classes: 3
+  reviewer_reconstructions: 0
+modules:
+  DUL:
+    source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+    explicit_triples: 1917
+    imports: []
+    version_iris: []
+    local_class_iris:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parthood
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution
+    external_class_iris:
+    - http://www.w3.org/2002/07/owl#Thing
+    referenced_undeclared_nonbuiltin_class_iris: []
+    builtin_class_references:
+    - http://www.w3.org/2002/07/owl#Thing
+    anonymous_class_expressions: 91
+    deprecated_class_iris: []
+  bdi-dul/bdi-dul.rdf:
+    source_sha256: cd7d37d41d787b1766741285402861f13388219e52b60cb930d012de03cd9a98
+    explicit_triples: 23
+    imports:
+    - http://www.ontologydesignpatterns.org/ont/d0.owl
+    - https://w3id.org/fossr/bdi/ontology/0.3/
+    version_iris: []
+    local_class_iris: []
+    external_class_iris: []
+    referenced_undeclared_nonbuiltin_class_iris:
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Activity
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Eventuality
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+    - https://w3id.org/fossr/ontology/bdi/Action
+    - https://w3id.org/fossr/ontology/bdi/Agent
+    - https://w3id.org/fossr/ontology/bdi/Goal
+    - https://w3id.org/fossr/ontology/bdi/Justification
+    - https://w3id.org/fossr/ontology/bdi/MentalEntity
+    - https://w3id.org/fossr/ontology/bdi/MentalProcess
+    - https://w3id.org/fossr/ontology/bdi/Plan
+    - https://w3id.org/fossr/ontology/bdi/PlanExecution
+    - https://w3id.org/fossr/ontology/bdi/Task
+    - https://w3id.org/fossr/ontology/bdi/TemporalEntity
+    - https://w3id.org/fossr/ontology/bdi/TimeInterval
+    - https://w3id.org/fossr/ontology/bdi/WorldState
+    builtin_class_references: []
+    anonymous_class_expressions: 0
+    deprecated_class_iris: []
+  bdi/bdi.ttl:
+    source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+    explicit_triples: 1161
+    imports: []
+    version_iris:
+    - https://w3id.org/fossr/bdi/ontology/0.5/
+    local_class_iris:
+    - https://w3id.org/fossr/ontology/bdi/Action
+    - https://w3id.org/fossr/ontology/bdi/Agent
+    - https://w3id.org/fossr/ontology/bdi/Belief
+    - https://w3id.org/fossr/ontology/bdi/BeliefProcess
+    - https://w3id.org/fossr/ontology/bdi/Desire
+    - https://w3id.org/fossr/ontology/bdi/DesireProcess
+    - https://w3id.org/fossr/ontology/bdi/Goal
+    - https://w3id.org/fossr/ontology/bdi/GoalProcess
+    - https://w3id.org/fossr/ontology/bdi/Intention
+    - https://w3id.org/fossr/ontology/bdi/IntentionProcess
+    - https://w3id.org/fossr/ontology/bdi/Justification
+    - https://w3id.org/fossr/ontology/bdi/MentalEntity
+    - https://w3id.org/fossr/ontology/bdi/MentalProcess
+    - https://w3id.org/fossr/ontology/bdi/MentalState
+    - https://w3id.org/fossr/ontology/bdi/Plan
+    - https://w3id.org/fossr/ontology/bdi/PlanExecution
+    - https://w3id.org/fossr/ontology/bdi/Planning
+    - https://w3id.org/fossr/ontology/bdi/Task
+    - https://w3id.org/fossr/ontology/bdi/TemporalEntity
+    - https://w3id.org/fossr/ontology/bdi/TimeInstant
+    - https://w3id.org/fossr/ontology/bdi/TimeInterval
+    - https://w3id.org/fossr/ontology/bdi/WorldState
+    external_class_iris:
+    - http://purl.org/vocommons/voaf#Vocabulary
+    - https://w3id.org/OWLunit/ontology/CompetencyQuestionVerification
+    - https://w3id.org/OWLunit/ontology/TestSuite
+    referenced_undeclared_nonbuiltin_class_iris: []
+    builtin_class_references:
+    - http://www.w3.org/2002/07/owl#Thing
+    anonymous_class_expressions: 64
+    deprecated_class_iris: []
+  d0:
+    source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+    explicit_triples: 158
+    imports:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+    version_iris: []
+    local_class_iris:
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Activity
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#CollectiveEntity
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Domain
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Event
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Eventuality
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Location
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#Subject
+    - http://www.ontologydesignpatterns.org/ont/d0.owl#System
+    external_class_iris: []
+    referenced_undeclared_nonbuiltin_class_iris:
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+    - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+    builtin_class_references:
+    - http://www.w3.org/2002/07/owl#Thing
+    anonymous_class_expressions: 13
+    deprecated_class_iris: []
+classes:
+- all_disjoint_groups: []
+  annotation_records: []
+  constraint_ref: bdi/bdi.ttl:C001
+  constraint_sha256: 5ae1625b488b3935122d8dd627fe575b388a5aa360378fa4407aad08baaed1e2
+  constraints: []
+  deprecated: false
+  equivalent_expressions: []
+  iri: http://purl.org/vocommons/voaf#Vocabulary
+  label: Vocabulary
+  label_basis: IRI_LOCAL_NAME
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: EXTERNAL_DECLARATION
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locators: []
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: MISSING_SOURCE_DEFINITION
+    text: null
+  notes: []
+- all_disjoint_groups: []
+  annotation_records: []
+  constraint_ref: bdi/bdi.ttl:C002
+  constraint_sha256: 5ae1625b488b3935122d8dd627fe575b388a5aa360378fa4407aad08baaed1e2
+  constraints: []
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/OWLunit/ontology/CompetencyQuestionVerification
+  label: CompetencyQuestionVerification
+  label_basis: IRI_LOCAL_NAME
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: EXTERNAL_DECLARATION
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locators: []
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: MISSING_SOURCE_DEFINITION
+    text: null
+  notes: []
+- all_disjoint_groups: []
+  annotation_records: []
+  constraint_ref: bdi/bdi.ttl:C003
+  constraint_sha256: 5ae1625b488b3935122d8dd627fe575b388a5aa360378fa4407aad08baaed1e2
+  constraints: []
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/OWLunit/ontology/TestSuite
+  label: TestSuite
+  label_basis: IRI_LOCAL_NAME
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: EXTERNAL_DECLARATION
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: NOT_REPORTED_IN_SELECTED_SOURCE
+    locators: []
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: MISSING_SOURCE_DEFINITION
+    text: null
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 785
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 9c6664306c048b651e87eba9c1874681c1de573b79ce897f54a2f23eeec72015
+  constraint_ref: bdi/bdi.ttl:C004
+  constraint_sha256: c3949272b21becd969e786995a9723677cade68f9e1ae616cad86df8aa1807fb
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/bringsAbout
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/WorldState
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/atTime
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/Task
+    predicate: http://www.w3.org/2002/07/owl#disjointWith
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Action
+  label: Action
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Action
+      characters: 785
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 9c6664306c048b651e87eba9c1874681c1de573b79ce897f54a2f23eeec72015
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An activity that an agent actually performs, distinguished from an activity specification.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 391
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 17a73da64d8dfc70e9aa34482c6e019ee6d47638b7b69e6c8e93b61708115403
+  constraint_ref: bdi/bdi.ttl:C005
+  constraint_sha256: fa9395a38fca2ffc6bc27eff6c6aba120158748dae58004cbc3b168808573f13
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/perceives
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/WorldState
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasMentalState
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalState
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/executes
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/PlanExecution
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/cognises
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/WorldState
+    predicate: http://www.w3.org/2002/07/owl#disjointWith
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Agent
+  label: Agent
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Agent
+      characters: 391
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 17a73da64d8dfc70e9aa34482c6e019ee6d47638b7b69e6c8e93b61708115403
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An autonomous perceiver and actor whose beliefs, desires and intentions guide its conduct.
+  notes: []
+- all_disjoint_groups:
+  - - https://w3id.org/fossr/ontology/bdi/Belief
+    - https://w3id.org/fossr/ontology/bdi/Desire
+    - https://w3id.org/fossr/ontology/bdi/Intention
+  annotation_records:
+  - characters: 309
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: c769a20183855bf9ad61eff7d58f517f1d10bd5d0cadfbb34121194a86b220d0
+  constraint_ref: bdi/bdi.ttl:C006
+  constraint_sha256: 29587524a30f3723d20a99cf1c197ba8b15ae07c946a0e0fbbbfbd1d8aed6180
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Belief
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/motivates
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Desire
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isBeliefOf
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#qualifiedCardinality
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalState
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Belief
+  label: Belief
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalState
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PARTIAL_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Belief
+      characters: 309
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: c769a20183855bf9ad61eff7d58f517f1d10bd5d0cadfbb34121194a86b220d0
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An agent takes a state of affairs to hold, without a guarantee that it matches reality.
+  notes:
+  - The author comment ends mid-sentence; use only its supported opening meaning, not an invented completion.
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 580
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 7e0a7dc17943f4ad12fdaa8c989fc7fee2ae68733250acf0e5c8b760851bab32
+  constraint_ref: bdi/bdi.ttl:C007
+  constraint_sha256: 57163e3fce5c8e2999c1cda6c8786249c29980786813abf6ca737d05c6fbbe42
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/BeliefProcess
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Belief
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/affects
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/BeliefProcess
+  label: Belief Formation
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalProcess
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/BeliefProcess
+      characters: 580
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 7e0a7dc17943f4ad12fdaa8c989fc7fee2ae68733250acf0e5c8b760851bab32
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A cognitive operation that forms or revises belief through observation, inference or communication.
+  notes: []
+- all_disjoint_groups:
+  - - https://w3id.org/fossr/ontology/bdi/Belief
+    - https://w3id.org/fossr/ontology/bdi/Desire
+    - https://w3id.org/fossr/ontology/bdi/Intention
+  annotation_records:
+  - characters: 403
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 51a0a6cd9603fbe4dcdd4d7ebe219e22f8920d0e89da359bf571da3163cb19b5
+  constraint_ref: bdi/bdi.ttl:C008
+  constraint_sha256: 172744daaec884d87556b676c4eb0f1dd6f63efd3ed6263c84ec3cbb2356d580
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isMotivatedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Belief
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Desire
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isDesireOf
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#qualifiedCardinality
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalState
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Desire
+  label: Desire
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalState
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Desire
+      characters: 403
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 51a0a6cd9603fbe4dcdd4d7ebe219e22f8920d0e89da359bf571da3163cb19b5
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A motivational preference for an outcome that does not itself commit the agent to act.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 602
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 8579ac4888fec40f5ca99a78c6ba9d6a5aa63af0a656c14760a3340b450ea69a
+  constraint_ref: bdi/bdi.ttl:C009
+  constraint_sha256: a2e57217380b557fb8de2a5b85cd94aef98ab3d07d4a4b63445e67a3c8ac7b4d
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Desire
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/affects
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/DesireProcess
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/DesireProcess
+  label: Desire Formation
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalProcess
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/DesireProcess
+      characters: 602
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 8579ac4888fec40f5ca99a78c6ba9d6a5aa63af0a656c14760a3340b450ea69a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An operation that develops or changes an agent's motivational preferences.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 434
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 5a12f8b9025526153e97f0e37e9584cea5d57b600c2bf553a3dbf4be8bc038b8
+  constraint_ref: bdi/bdi.ttl:C010
+  constraint_sha256: b7749eb17dcda04effd6c104ad6efc1fe7723a5b90205c7ca52673de78911ae1
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Plan
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isAddressedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Goal
+  label: Goal
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Goal
+      characters: 434
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 5a12f8b9025526153e97f0e37e9584cea5d57b600c2bf553a3dbf4be8bc038b8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A preferred outcome used to orient later commitment and planning; its comment overlaps desire terminology.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 895
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 751a23275101eafa525d165c2ff23a4db6f9838c3727e089cc45f827f382084c
+  constraint_ref: bdi/bdi.ttl:C011
+  constraint_sha256: 0f4613da918f25444ef68193da8753d1ecfb68af3520b1256791e3afba53804e
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/GoalProcess
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Goal
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/affects
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/GoalProcess
+  label: Goal Process
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalProcess
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/GoalProcess
+      characters: 895
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 751a23275101eafa525d165c2ff23a4db6f9838c3727e089cc45f827f382084c
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An operation that turns broad preferences into more specific outcomes to pursue.
+  notes: []
+- all_disjoint_groups:
+  - - https://w3id.org/fossr/ontology/bdi/Belief
+    - https://w3id.org/fossr/ontology/bdi/Desire
+    - https://w3id.org/fossr/ontology/bdi/Intention
+  annotation_records:
+  - characters: 701
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 00c185235b5681527cc2fba74c714cbda46e47e8d58772184a3e55c2247d9514
+  constraint_ref: bdi/bdi.ttl:C012
+  constraint_sha256: 119f8961479895481a1b9833cef19796c8a90191bd1bea49762f62f0cc4773f2
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Intention
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/fulfills
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Goal
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isIntentionOf
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#qualifiedCardinality
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalState
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Intention
+  label: Intention
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalState
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Intention
+      characters: 701
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 00c185235b5681527cc2fba74c714cbda46e47e8d58772184a3e55c2247d9514
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A deliberative commitment to pursue an outcome or course of action under perceived conditions.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 573
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 54d6f7ecaf2ee6e2825fc88b5acf8ee0aaa8057574ef42959570d1d372326cfa
+  constraint_ref: bdi/bdi.ttl:C013
+  constraint_sha256: 23b0fe2f2da57279ad13b7d4f317e5393f9d9022fa96c03ca2d283465278707c
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/IntentionProcess
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Intention
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/affects
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/IntentionProcess
+  label: Intention Formation
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalProcess
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/IntentionProcess
+      characters: 573
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 54d6f7ecaf2ee6e2825fc88b5acf8ee0aaa8057574ef42959570d1d372326cfa
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An operation that selects and refines commitments in light of desires and resources.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 419
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 95f11d2f9c7f07ea5112cae229a68cf7ef22e0f4ef97d321ca8784c8513272db
+  constraint_ref: bdi/bdi.ttl:C014
+  constraint_sha256: b5b7456cb81810afe016111712e9d69d5d03db5ead9550d397d1bb9fe040c284
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/justifies
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Justification
+  label: Justification
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Justification
+      characters: 419
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 95f11d2f9c7f07ea5112cae229a68cf7ef22e0f4ef97d321ca8784c8513272db
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A stated rationale or evidence offered in support of mental content.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 841
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: e4b43a9652857223b8eccc722b432be837ef1d66de70285bfab8d3b541c53470
+  constraint_ref: bdi/bdi.ttl:C015
+  constraint_sha256: b7fabe87ab67740d1bdbe6c946f34b6bbcfe15b30f7f414c6be749a76732f7e6
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isJustifiedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Justification
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isCognisedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/refersTo
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/WorldState
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasValidity
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+  label: Mental entity
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+      characters: 841
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: e4b43a9652857223b8eccc722b432be837ef1d66de70285bfab8d3b541c53470
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A general category spanning mental states and the cognitive processes that operate on them.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 995
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 8af13f19669b51644993b64825351eb725eff2fe0f345ec6df12f1be05c18462
+  constraint_ref: bdi/bdi.ttl:C016
+  constraint_sha256: d9f56dbf86b02bf5123cbbed6bbda1b2c36ae708f5b2f6762df9bed543b89cc9
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/reasonsUpon
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalState
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isTriggeredBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isMentalProcessOf
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#qualifiedCardinality
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalState
+    predicate: http://www.w3.org/2002/07/owl#disjointWith
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+  label: Mental Process
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalEntity
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+      characters: 995
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 8af13f19669b51644993b64825351eb725eff2fe0f345ec6df12f1be05c18462
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A cognitive operation that considers, produces or changes mental content.
+  notes:
+  - Comment mentions d0:Activity; the import-free core contains no such subclass axiom. Alignment is separate.
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 406
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 4812f511119da2349d32767de367ca216cf526d86d264dba8745ef15b17932ee
+  constraint_ref: bdi/bdi.ttl:C017
+  constraint_sha256: e1f7bb3008c69caf1b8c7471f5cbb4b5fbd98169fb96593d3bffa25cc78f7d04
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isJustifiedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Justification
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isReasonedUponBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasValidity
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/TimeInterval
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalState
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isMentalStateOf
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#qualifiedCardinality
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/MentalState
+  label: Mental state
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalEntity
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms:
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    subject: https://w3id.org/fossr/ontology/bdi/MentalProcess
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/MentalState
+      characters: 406
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 4812f511119da2349d32767de367ca216cf526d86d264dba8745ef15b17932ee
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An internal cognitive or affective condition that can change with context or reasoning.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 267
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 80dc57a4ecdabfd4e9ac13f7be9f82643b98a978058e2cbcfd841579252950a1
+  constraint_ref: bdi/bdi.ttl:C018
+  constraint_sha256: e91f316ca7d6ebfe595488638e2db06aba529fa8775900641248044cb1e06090
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/PlanExecution
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isSatisfiedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasComponent
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Plan
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isDefinedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Planning
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/endsWith
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/beginsWith
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/endsWith
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/beginsWith
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/addresses
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Goal
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/PlanExecution
+    predicate: http://www.w3.org/2002/07/owl#disjointWith
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Plan
+  label: Plan
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Plan
+      characters: 267
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 80dc57a4ecdabfd4e9ac13f7be9f82643b98a978058e2cbcfd841579252950a1
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A structured description of steps by which an agent proposes to pursue an outcome.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 842
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: f0588d8c0ea6a81a48f88ab6e468d5557a57f6f3f168f74718c9504694df2a34
+  constraint_ref: bdi/bdi.ttl:C019
+  constraint_sha256: 8360f3a8ca9c517e239ef8d38d20ef5d6854b643ba0e1abd61ddbf97d9810f8f
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isExecutedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/bringsAbout
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/WorldState
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/satisfies
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Plan
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/atTime
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/PlanExecution
+  label: Plan
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms:
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    subject: https://w3id.org/fossr/ontology/bdi/Plan
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/PlanExecution
+      characters: 842
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: f0588d8c0ea6a81a48f88ab6e468d5557a57f6f3f168f74718c9504694df2a34
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: The situated enactment of a plan, distinct from its prospective specification.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 672
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 10750464bd6763ef2436bc86e06bf3479fa0f87aefbf9862c4b02f9400c53e7f
+  constraint_ref: bdi/bdi.ttl:C020
+  constraint_sha256: fc516c1fef7a3de532dc733354f00f20c9070d2c4eb58a296307ac35fa3116a9
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Intention
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/reasonsUpon
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/reasonsUpon
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Intention
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Planning
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasPart
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/defines
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Plan
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/MentalProcess
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Planning
+  label: Planning
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/MentalProcess
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Planning
+      characters: 672
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 10750464bd6763ef2436bc86e06bf3479fa0f87aefbf9862c4b02f9400c53e7f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A cognitive operation that organizes candidate steps and resources into a plan.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 680
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: d70de2621944d36bb075f504b17a13b25be40275dcb842de99324cd7adffa9ad
+  constraint_ref: bdi/bdi.ttl:C021
+  constraint_sha256: a0e1ba4fbc7db6733d704646cc6316388b0c30229826d8a7448ba3c1cf2340f2
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/precedes
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Task
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/follows
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/Task
+  label: Task
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms:
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    subject: https://w3id.org/fossr/ontology/bdi/Action
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/Task
+      characters: 680
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: d70de2621944d36bb075f504b17a13b25be40275dcb842de99324cd7adffa9ad
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: The specification of an intended activity in a plan, distinct from its enactment.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 262
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 8b9290b74ec3fc8013ee927804666ee90a07d358df686c64e6460f355019ac16
+  constraint_ref: bdi/bdi.ttl:C022
+  constraint_sha256: 5ae1625b488b3935122d8dd627fe575b388a5aa360378fa4407aad08baaed1e2
+  constraints: []
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+  label: Temporal entity
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+      characters: 262
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 8b9290b74ec3fc8013ee927804666ee90a07d358df686c64e6460f355019ac16
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A general representation of temporal points and extended spans.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 112
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: bd22c282bce2b5c174d2bc28cb90d2507cda10c0304db96cede3f8052fdf30fb
+  constraint_ref: bdi/bdi.ttl:C023
+  constraint_sha256: a1e316dfb83492301ba5cdcbdfe0d901281b46dadc888b978153fa5faa8bc7fe
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+      - object:
+          iri: http://www.w3.org/2001/XMLSchema#dateTime
+        predicate: http://www.w3.org/2002/07/owl#onDataRange
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/time
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/TimeInstant
+  label: Time istant
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/TemporalEntity
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/TimeInstant
+      characters: 112
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: bd22c282bce2b5c174d2bc28cb90d2507cda10c0304db96cede3f8052fdf30fb
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A temporal point used to anchor occurrences or interval boundaries.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 163
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: f1427489a74f047926621aa51a3696db3feb595135146c407608746da4b914b9
+  constraint_ref: bdi/bdi.ttl:C024
+  constraint_sha256: 491f6195c1c2bc833c4980fd9f1ebb8d09f5bcf9c4e0af4a818879b2554bb585
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/TimeInstant
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasStartTime
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#qualifiedCardinality
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+          language: null
+          literal: '1'
+        predicate: http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/TimeInstant
+        predicate: http://www.w3.org/2002/07/owl#onClass
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/hasEndTime
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: https://w3id.org/fossr/ontology/bdi/TemporalEntity
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/TimeInterval
+  label: Time interval
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses:
+  - https://w3id.org/fossr/ontology/bdi/TemporalEntity
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/TimeInterval
+      characters: 163
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: f1427489a74f047926621aa51a3696db3feb595135146c407608746da4b914b9
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A temporal span used to represent an occurrence or validity extent.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 458
+    language: en
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 778db651adf62b206c2da128ed80e75c75ff857d775b3df5086a2ddd7eba4443
+  constraint_ref: bdi/bdi.ttl:C025
+  constraint_sha256: c8cef030840193e98eb0014e0b7514f104de5f277c1eccb43c92e9295291eeeb
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/Agent
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isPerceivedBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/MentalEntity
+        predicate: http://www.w3.org/2002/07/owl#allValuesFrom
+      - object:
+          iri: https://w3id.org/fossr/ontology/bdi/isReferredBy
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: https://w3id.org/fossr/ontology/bdi/WorldState
+  label: World state
+  label_basis: SOURCE_LABEL
+  module: bdi/bdi.ttl
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms:
+  - predicate: http://www.w3.org/2002/07/owl#disjointWith
+    subject: https://w3id.org/fossr/ontology/bdi/Agent
+  source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: 250e02bf7987802f6051fbf01f9af53990863f5edc3a8ea52de09c382cbde984
+      iri: https://w3id.org/fossr/ontology/bdi/WorldState
+      characters: 458
+      language: en
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 778db651adf62b206c2da128ed80e75c75ff857d775b3df5086a2ddd7eba4443
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A contextual environmental condition represented or perceived by an agent.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 265
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: bcba8e0f390a62e19b597eee435f228219a47ff6e45cabfed8762c2c994e0d10
+  constraint_ref: d0:C001
+  constraint_sha256: 81a0d1d30f67e389636874f69139d54a0721d84862e9b005fd76ffac4445dd17
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Class
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        anonymous_expression:
+        - object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        - object:
+            anonymous_expression:
+            - object:
+                iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            - object:
+                iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+      predicate: http://www.w3.org/2002/07/owl#unionOf
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Activity
+  label: activity
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Activity
+      characters: 265
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: bcba8e0f390a62e19b597eee435f228219a47ff6e45cabfed8762c2c994e0d10
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A deliberately caused action or task, grouping planned specifications and occurrences when data are ambiguous.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 285
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: dfd01f35a6576b66bf134d5369189dc7ae692d0c88e09083c95044d6a9bf129c
+  constraint_ref: d0:C002
+  constraint_sha256: d55cd81b79dd163aa5056524b1e012a5462f81aadf4254793d3cf30dd407ba9e
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  anonymous_expression:
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                  - object:
+                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Class
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        anonymous_expression:
+        - object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        - object:
+            anonymous_expression:
+            - object:
+                iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            - object:
+                anonymous_expression:
+                - object:
+                    iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+                  predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                - object:
+                    iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                  predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+      predicate: http://www.w3.org/2002/07/owl#unionOf
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic
+  label: characteristic
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic
+      characters: 285
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: dfd01f35a6576b66bf134d5369189dc7ae692d0c88e09083c95044d6a9bf129c
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An aspect or dimensional attribute of something, spanning several possible formal categories.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 702
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 96652f90cc731968e1bdc6c2956cfffd44fd0aec51699383a30d2d28cd635276
+  constraint_ref: d0:C003
+  constraint_sha256: d4ad85dfedb2147b9accf6fd234dcafb20dafe0f45cbaa2d09a4f77b61de92ad
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  anonymous_expression:
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                  - object:
+                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity
+  label: cognitive entity
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity
+      characters: 702
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 96652f90cc731968e1bdc6c2956cfffd44fd0aec51699383a30d2d28cd635276
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: Cognitive phenomena that may be modeled at object, occurrence, attribute or public-concept levels.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 266
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: bf548c0fc4307785ea07f9f01eb0d69faf4eb45f4b7e67441f52eb92693f54a2
+  constraint_ref: d0:C004
+  constraint_sha256: 0de55ce590380d699af8cc114ba4354ea669ba9017b13cd332bc87831963b869
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Class
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        anonymous_expression:
+        - object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        - object:
+            anonymous_expression:
+            - object:
+                iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            - object:
+                iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+      predicate: http://www.w3.org/2002/07/owl#unionOf
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#CollectiveEntity
+  label: CollectiveEntity
+  label_basis: IRI_LOCAL_NAME
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#CollectiveEntity
+      characters: 266
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: bf548c0fc4307785ea07f9f01eb0d69faf4eb45f4b7e67441f52eb92693f54a2
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A broad category spanning socially constituted collections and distributed aggregates.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 402
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 0f142a0a3b806d756bce2dc52cc7794d697dd29a4d4389a5e11c145f82ec0f17
+  constraint_ref: d0:C005
+  constraint_sha256: cba33d5df0c78d49a9bdbb7269f24018f523f1e70642f709cf6629436e73e2aa
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/d0.owl#System
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  anonymous_expression:
+                  - object:
+                      iri: http://www.w3.org/2002/07/owl#Restriction
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                  - object:
+                      datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+                      language: null
+                      literal: '2'
+                    predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+                    predicate: http://www.w3.org/2002/07/owl#onClass
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
+                    predicate: http://www.w3.org/2002/07/owl#onProperty
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#intersectionOf
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Subject
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Domain
+  label: domain
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses:
+  - http://www.ontologydesignpatterns.org/ont/d0.owl#Subject
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Domain
+      characters: 402
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 0f142a0a3b806d756bce2dc52cc7794d697dd29a4d4389a5e11c145f82ec0f17
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An organized field of knowledge synthesizing subjects and other cultural content.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 290
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 04e03daff76594001a4860598844f699352dfed6fa69d402f5050ef761ff02a8
+  constraint_ref: d0:C006
+  constraint_sha256: 941c24c45079b9304cdb1bcf785f15da3b1d08815afd03fb717e638a123032f1
+  constraints:
+  - object:
+      iri: http://www.w3.org/2002/07/owl#Thing
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Class
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        anonymous_expression:
+        - object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        - object:
+            anonymous_expression:
+            - object:
+                iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            - object:
+                iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+      predicate: http://www.w3.org/2002/07/owl#unionOf
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Event
+  label: event
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses:
+  - http://www.w3.org/2002/07/owl#Thing
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Event
+      characters: 290
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 04e03daff76594001a4860598844f699352dfed6fa69d402f5050ef761ff02a8
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A broad event-or-event-type category; its comment expressly marks it deprecated.
+  notes:
+  - Deprecated in the source comment, not by an asserted owl:deprecated true flag. Preserve both states.
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 367
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: e062c90f29aabdb226737e13282d5cec16d471420cdf9299a4789d67d0f7a953
+  constraint_ref: d0:C007
+  constraint_sha256: aedaf3bdc05e71358f3b9c25ada0825e767d708064eeec11bd015e7dcccc61ad
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  anonymous_expression:
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                  - object:
+                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Class
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        anonymous_expression:
+        - object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        - object:
+            anonymous_expression:
+            - object:
+                iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            - object:
+                anonymous_expression:
+                - object:
+                    iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+                  predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                - object:
+                    iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                  predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+      predicate: http://www.w3.org/2002/07/owl#unionOf
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Eventuality
+  label: eventuality
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Eventuality
+      characters: 367
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: e062c90f29aabdb226737e13282d5cec16d471420cdf9299a4789d67d0f7a953
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A category grouping occurrences, activities, types and relational settings without forcing their disambiguation.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 347
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: eae442d8e87b3b840f2b4a84b65a166dc49016b87322957d4378478fe0edc30f
+  constraint_ref: d0:C008
+  constraint_sha256: 89599511b30fc962ca4595819f050ac8d5c3de6a5489de708d62ee9bc87b18da
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  anonymous_expression:
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                  - object:
+                      iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#unionOf
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Class
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        anonymous_expression:
+        - object:
+            iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+        - object:
+            anonymous_expression:
+            - object:
+                iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            - object:
+                anonymous_expression:
+                - object:
+                    iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+                  predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+                - object:
+                    iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                  predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+              predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+          predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+      predicate: http://www.w3.org/2002/07/owl#unionOf
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Location
+  label: location
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Location
+      characters: 347
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: eae442d8e87b3b840f2b4a84b65a166dc49016b87322957d4378478fe0edc30f
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: A broad location category spanning geographic entities, situated artifacts and spatial representations.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 360
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: 0d80b9445509553f00e4f016291846d82b9c5264a8b74b5524bdd9661026b34a
+  constraint_ref: d0:C009
+  constraint_sha256: 5eb110b9f1e9fe808d40ac0504217803c047410be20f7ce923273b487e98b87a
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Restriction
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          iri: http://www.ontologydesignpatterns.org/ont/d0.owl#isFocusOf
+        predicate: http://www.w3.org/2002/07/owl#onProperty
+      - object:
+          iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+        predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+    predicate: http://www.w3.org/2002/07/owl#equivalentClass
+  deprecated: false
+  equivalent_expressions:
+  - anonymous_expression:
+    - object:
+        iri: http://www.w3.org/2002/07/owl#Restriction
+      predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+    - object:
+        iri: http://www.ontologydesignpatterns.org/ont/d0.owl#isFocusOf
+      predicate: http://www.w3.org/2002/07/owl#onProperty
+    - object:
+        iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+      predicate: http://www.w3.org/2002/07/owl#someValuesFrom
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Subject
+  label: subject
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#Subject
+      characters: 360
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: 0d80b9445509553f00e4f016291846d82b9c5264a8b74b5524bdd9661026b34a
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: Anything treated as the focus of an informational or communicative act.
+  notes: []
+- all_disjoint_groups: []
+  annotation_records:
+  - characters: 563
+    language: null
+    predicate: http://www.w3.org/2000/01/rdf-schema#comment
+    text_sha256: f91571adfefcd42d68453559118eff4c5723dbdf36ebe68b2ca395ba0951ab20
+  constraint_ref: d0:C010
+  constraint_sha256: 09ae89ce17809f337652791587d44b3cda3eb220d150db744ac3349c11b3f07b
+  constraints:
+  - object:
+      anonymous_expression:
+      - object:
+          iri: http://www.w3.org/2002/07/owl#Class
+        predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+      - object:
+          anonymous_expression:
+          - object:
+              iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+          - object:
+              anonymous_expression:
+              - object:
+                  anonymous_expression:
+                  - object:
+                      iri: http://www.w3.org/2002/07/owl#Restriction
+                    predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+                  - object:
+                      datatype: http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+                      language: null
+                      literal: '2'
+                    predicate: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+                    predicate: http://www.w3.org/2002/07/owl#onClass
+                  - object:
+                      iri: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
+                    predicate: http://www.w3.org/2002/07/owl#onProperty
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+              - object:
+                  iri: http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+                predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+            predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+        predicate: http://www.w3.org/2002/07/owl#intersectionOf
+    predicate: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  deprecated: false
+  equivalent_expressions: []
+  iri: http://www.ontologydesignpatterns.org/ont/d0.owl#System
+  label: system
+  label_basis: SOURCE_LABEL
+  module: d0
+  named_superclasses: []
+  population: LOCAL_DECLARED_NAMED_CLASS
+  related_axioms: []
+  source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+  source_definition:
+    status: PRESENT_COMMENT_CANDIDATE
+    locators:
+    - source_sha256: cce97e892f117d7f7b2518eae4a24fb21a77b0de5d9cc1af6d1bffc747d69b29
+      iri: http://www.ontologydesignpatterns.org/ont/d0.owl#System
+      characters: 563
+      language: null
+      predicate: http://www.w3.org/2000/01/rdf-schema#comment
+      text_sha256: f91571adfefcd42d68453559118eff4c5723dbdf36ebe68b2ca395ba0951ab20
+    raw_text_public: false
+    logical_sufficiency: NOT_INFERRED_FROM_COMMENT
+  reviewer_definition:
+    basis: REVIEWER_PARAPHRASE
+    text: An organized physical, social or abstract whole whose components have interdependencies.
+  notes: []
+shared_DUL_glossary:
+  path: evidence/related-work/dul-class-catalog.yaml
+  sha256: 25f93f87fab8055a2fe4e31b0625464b5fbcfd48ec4cfd669be304fb1f55c675
+  local_classes: 78
+  source_sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66
+  absent_comments: 9
+  label_only_comments: 2
+  duplicate_rows_added: false
+import_closure:
+  core: COMPLETE_NO_IMPORTS
+  foundation: COMPLETE_ASSERTED_d0_TO_DUL;89 declared named IRIs including owl:Thing
+  alignment: BLOCKED_EXACT_BDI_0_3_HTTP404
+  unresolved:
+  - https://w3id.org/fossr/bdi/ontology/0.3/
+  imported_definitions_complete: false
+  limitation: Current d0 and DUL definitions are accounted, with explicit gaps. Exact full alignment-imported BDI0.3
+    populations remain unknown, not zero. Three external core metadata/test vocabulary redeclarations have no source
+    definitions; their upstream vocabulary definitions are not imported or completed.
+foundation:
+  family: DOLCE-0 and DOLCE+DnS Ultralite
+  relation: PAPER_STATED_GROUNDING;ACTUAL_ALIGNMENT_IMPORT_d0;ACTUAL_d0_IMPORT_DUL
+  edition: d0 versionInfo contains history1.2-1.5 without versionIRI;DUL4.2 current exact source
+  historical_paper_byte_parity: NOT_ESTABLISHED
+model_change: NONE

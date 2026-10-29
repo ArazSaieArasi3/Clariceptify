@@ -77,6 +77,8 @@ jobs:
         run: |
           python tools/test_dul_class_catalog.py
           python tools/test_dul_technical_review.py
+      - name: Check BDI technical evidence and negative-result boundaries
+        run: python tools/test_bdi2026_review.py
       - name: Check IOLite shared-catalogue boundaries
         run: python tools/test_iolite_catalog.py
       - name: Preserve exact input and validator evidence
