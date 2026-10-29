@@ -1,0 +1,63 @@
+{
+  "alignment_imports": [
+    "http://www.ontologydesignpatterns.org/ont/d0.owl",
+    "https://w3id.org/fossr/bdi/ontology/0.3/"
+  ],
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "id": "bdi03",
+      "requested": "https://w3id.org/fossr/bdi/ontology/0.3/"
+    },
+    {
+      "error": "HTTP Error 503: Service Unavailable",
+      "id": "d0",
+      "requested": "https://www.ontologydesignpatterns.org/ont/d0.owl"
+    },
+    {
+      "error": "HTTP Error 503: Service Unavailable",
+      "id": "dul",
+      "requested": "https://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+    },
+    {
+      "bytes": 20915,
+      "final": "http://www.ontologydesignpatterns.org/ont/d0.owl",
+      "status": 200,
+      "url": "http://www.ontologydesignpatterns.org/ont/d0.owl"
+    },
+    {
+      "error": "HTTP Error 503: Service Unavailable",
+      "url": "https://ontologydesignpatterns.org/ont/d0.owl"
+    },
+    {
+      "bytes": 186902,
+      "final": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+      "status": 200,
+      "url": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+    }
+  ],
+  "checked_on": "2026-10-29",
+  "core_imports": [],
+  "issue": 250,
+  "model_change": "NONE",
+  "notes": [
+    "Exact HTTP d0/DUL resources succeeded after HTTPS variants failed. They are current retained bytes, not pinned historical paper releases.",
+    "The exact BDI0.3 IRI returned HTTP404. Older root bdi.ttl uses a different namespace and unversioned header; core RDF and Turtle copies are both0.5. None is silently substituted for0.3.",
+    "No broad absence claim or historical equivalence. Public source discovery is separate from semantic validation."
+  ],
+  "schema_version": "1.0",
+  "selected_repository": {
+    "archived": false,
+    "commit": "57a91037d803519db5ee8d65d53c14901e28a0d1",
+    "prior_metadata": "evaluation/related-work/bdi2026/deep-review-discovery.json",
+    "public": true,
+    "tracked_blobs": 198,
+    "tree_truncated": false,
+    "url": "https://github.com/fossr-project/ontology"
+  },
+  "source_manifest": "evidence/related-work/corpus/bdi2026-inputs.yaml",
+  "source_redistributed": false,
+  "unresolved_imports": [
+    "https://w3id.org/fossr/bdi/ontology/0.3/"
+  ]
+}

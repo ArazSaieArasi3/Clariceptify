@@ -1,0 +1,28 @@
+{
+  "duplicate_names": [
+    "test_11_severe_contradictions"
+  ],
+  "execution": "NOT_EXECUTED",
+  "findings": [
+    "Current script references a local bdi-v0.2.rdf filename absent from the retained198-file tree; it is not an exact core0.5 experiment binding.",
+    "Nineteen method declarations include a duplicate test_11_severe_contradictions; static inventory is not nineteen independent executed tests.",
+    "Fifteen retained output records are acquired author results, not the thirteen-case paper evaluation reproduced here.",
+    "Prompt examples require contextual business/location/precondition knowledge not entailed merely by core classes. Hotel and invoice/payment examples remain illustrations, not certified inference or temporal propagation.",
+    "Aliases fulfils/fulfills and isProcessedBy/isMentalProcessOf are distinct IRIs with no equivalence assumed.",
+    "The historical SEMAS/T2B2T implementation/version is outside this exact module inspection."
+  ],
+  "issue": 250,
+  "method": "Python ast.parse and static source/retained-output inspection; no import, API call or execution of author script",
+  "model": "gpt-4o",
+  "model_change": "NONE",
+  "output_sha256": "d59145f51045d3efa92aad77e4104e5564f81d8e09b2b149709ede524ad1a8d3",
+  "paid_api_calls": 0,
+  "retained_output_records": 15,
+  "runtime_ontology_filename": "bdi-v0.2.rdf",
+  "runtime_ontology_in_selected_tree": false,
+  "schema_version": "1.0",
+  "source_redistributed": false,
+  "source_sha256": "38e25a7dc3bf097cd1e17cbc3f5aa88f58dd12d51822c8fba9f3035a6ec9a766",
+  "test_function_declarations": 19,
+  "unique_test_function_names": 18
+}

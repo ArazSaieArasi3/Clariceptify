@@ -17,7 +17,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | CMO (#83) | THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://github.com/dbpedia/ontology-tracker); [source](https://github.com/tetherless-world/whyis); MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN | BFO with IAO reuse; PAPER_STATED_GROUNDING; edition: UNKNOWN | ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN | #245 |
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED | #243 |
 | BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
-| BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS; edition: UNKNOWN | PENDING_FULL_CATALOG | #250 |
+| BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE_NEGATIVE_FINDINGS_EXACT_ALIGNMENT_IMPORT_BLOCKED | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_AND_ACTUAL_ALIGNMENT_IMPORT_d0_THEN_DUL; edition: UNKNOWN | [22 classes](../bdi2026-class-catalog.md); 22 comment candidates; 0 missing | #256, #126 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); OFFICIAL_EXPORT_0_3_HEADER_PARSED_ALL_CLASS_GLOSSARY_PENDING | SKOS/CogPO/OBO RO conceptual reuse; upper-ontology grounding not established; PAPER_STATED_REUSE_NOT_FORMAL_UPPER_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #241 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
 | CLR-RW-DUL (#70) | STANDALONE_DUL_FILE_RELATED_FOUNDATION_REPO_IDENTIFIED; [source](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl); [source](https://github.com/appliedontolab/DOLCE); PINNED_DUL4_2_ALL78_CLASS_GLOSSARY_AND29_SEMANTIC_CASES | DOLCE + DnS; INDEPENDENT_FOUNDATION; edition: Retained DUL4.2 | [78 classes](../dul-class-catalog.md); 69 comment candidates; 9 missing | #271, #251, #126 |
@@ -473,6 +473,19 @@ Limit: No author repository identified in two eight-result name/description quer
 Query: `Exact linked title/author header,workshop metadata,quoted-title DOI and Crossref-domain lookup; workshop index open`. Checked: 2026-10-28.
 
 Limit: Owner-authorized secondary-summary review only,with separately labeled metadata/partial indexed caution. No global absence,full reading,figure/formula certification or formal artifact completeness claimed.
+
+### BDI250-S01: Pinned official module plus exact HTTP import retrieval and declared query/semantic harnesses
+
+Query: `BDI0.5/bdi-dul import0.3;exact d0/DUL resources;all local classes;18 embedded CQ definitions`. Checked: 2026-10-29.
+
+- https://github.com/fossr-project/ontology/tree/57a91037d803519db5ee8d65d53c14901e28a0d1
+- https://w3id.org/fossr/bdi/ontology/0.3/
+- http://www.ontologydesignpatterns.org/ont/d0.owl
+- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+
+Official core/alignment pinned;HTTP d0/DUL retrieved and hashed;exact0.3 returned404. See technical-discovery.json and BDI2026.yaml for actual profile/query/semantic results.
+
+Limit: Current foundations are not historical edition proof. No0.5 substitution for0.3;no author OWLUnit/LLM/SEMAS reproduction or semantic adoption.
 
 ## Interpretation and next work
 

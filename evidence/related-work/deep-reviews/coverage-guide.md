@@ -73,3 +73,7 @@ The four selected raw source files were actually reconciled against the 42 class
 The new journal51-class glossary includes the12 existing cDnS core IRIs. Across the selected cDnS/NIC, LMM and Conceptualization glossaries there are 81 unique local class IRIs, 77 comment candidates and four explicit LMM missing comments; overlapping source catalogs are deduplicated, never summed as 93 distinct classes. These are selected-current-source comment records, not sufficient-definition or historical-release certification.
 
 The additional selected May2015 glossary accounts for28 local class IRIs,one comment candidate and27missing source comments. The paper taxonomy39 and later cognition root are distinct. Source comments do not replace paper definitions or prove logical sufficiency; no imported glossary completion is claimed.
+
+## Completed BDI technical boundary
+
+The [#250 technical report](../artifacts/BDI2026.md) and [class glossary](../bdi2026-class-catalog.md) supersede earlier pending-module statements for this exact selected0.5 inspection. All available core/d0 declarations are covered;DUL definitions reuse the exact shared glossary. MissingBDI0.3 blocks exact full alignment closure. A raw-profile failure,contradictory author datasets and mismatched expected query bindings remain explicit. No paper/model equivalence,author application reproduction or independent approval is inferred.

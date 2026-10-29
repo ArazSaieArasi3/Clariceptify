@@ -547,6 +547,20 @@ discovery_attempts:
   receipt: evaluation/related-work/ida/discovery.json
   limitation: Owner-authorized secondary-summary review only,with separately labeled metadata/partial indexed
     caution. No global absence,full reading,figure/formula certification or formal artifact completeness claimed.
+- id: BDI250-S01
+  method: Pinned official module plus exact HTTP import retrieval and declared query/semantic harnesses
+  query: BDI0.5/bdi-dul import0.3;exact d0/DUL resources;all local classes;18 embedded CQ definitions
+  checked_on: '2026-10-29'
+  checked_urls:
+  - https://github.com/fossr-project/ontology/tree/57a91037d803519db5ee8d65d53c14901e28a0d1
+  - https://w3id.org/fossr/bdi/ontology/0.3/
+  - http://www.ontologydesignpatterns.org/ont/d0.owl
+  - http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
+  outcome: Official core/alignment pinned;HTTP d0/DUL retrieved and hashed;exact0.3 returned404. See technical-discovery.json
+    and BDI2026.yaml for actual profile/query/semantic results.
+  limitation: Current foundations are not historical edition proof. No0.5 substitution for0.3;no author OWLUnit/LLM/SEMAS
+    reproduction or semantic adoption.
+
 records:
 - id: OntoKADS2005
   title: An Ontological approach to the construction of problem-solving models
@@ -923,34 +937,43 @@ records:
     evidence:
     - R01
     - BDI26-S01
+    - BDI250-S01
     global_absence_claim: false
     paper_correspondence: EXACT_PAPER_LINKED_REPOSITORY_VERSION_EQUIVALENCE_NOT_ESTABLISHED
-  artifact_state: OFFICIAL_MODULE_0_5_ALIGNMENT_IMPORT_0_3_TECHNICAL_REVIEW_PENDING
+  artifact_state: BOUNDED_TECHNICAL_REVIEW_COMPLETE_NEGATIVE_FINDINGS_EXACT_ALIGNMENT_IMPORT_BLOCKED
   foundation:
     family: DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment
     edition: null
-    relation: PAPER_STATED_GROUNDING_WITH_PINNED_ALIGNMENT_IMPORTS
-    basis: AUTHOR_REPORTED
-    locator: PDF6 sec.3.2/footnote9; PDF17-21 AppendixB1-78; pinned bdi0.5 header and bdi-dul header at57a9103.
+    relation: PAPER_STATED_GROUNDING_AND_ACTUAL_ALIGNMENT_IMPORT_d0_THEN_DUL
+    basis: SOURCE_HEADERS_AND_ASSERTED_IMPORTS_WITH_PAPER_GROUNDING
+    locator: Pinned core0.5/bdi-dul header;d0 exact HTTP source versionInfo history1.2-1.5 and DUL4.2;see
+      BDI2026 technical authority.
     artifact_imports:
       selected_core: []
       selected_alignment:
       - http://www.ontologydesignpatterns.org/ont/d0.owl
       - https://w3id.org/fossr/bdi/ontology/0.3/
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: 'DOLCE-0 is a supplementary generalization of DUL, not an edition named DOLCE version0. Current
-      core0.5/alignment-import0.3 mismatch is unresolved; exact foundation edition/import closure and semantic
-      compatibility remain #250.'
+    limitations: Core0.5 has no imports. Alignment0.3 import returned404;current d0/DUL bytes are separately
+      pinned, not historical article equivalence. DOLCE-0 is a family name, not an edition number. Exact
+      full joint alignment validation remains blocked;negative core findings are preserved in BDI2026.yaml.
   class_coverage:
-    state: PENDING_FULL_CATALOG
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
+    state: ALL22_CORE_LOCAL_CLASSES_ACCOUNTED;10_d0_AND_SHARED_DUL78;EXACT_ALIGNMENT_IMPORT_LIMIT
+    local_classes: 22
+    source_definition_candidates: 22
+    missing_source_definitions: 0
+    partial_comment_classes: 1
+    catalog_path: evidence/related-work/bdi2026-class-catalog.yaml
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+    reasoner_scope: This catalogue/audit is structural. The separate technical authority records30 actual
+      HermiT cases and36 asserted query executions, including negative outcomes.
+    supporting_d0_local_classes: 10
+    external_core_metadata_declarations: 3
+    external_missing_comments: 3
   next_issues:
-  - 250
+  - 256
+  - 126
   paper_review:
     path: evidence/related-work/deep-reviews/BDI2026Preprint/review.yaml
     conceptual_relation_requirement_entries: 131
@@ -958,8 +981,10 @@ records:
     numbered_axiom_records: 78
     separately_typed_prose_operational_records: 3
     manual_critical_findings: 21
-    limits: 'Paper catalog is complete; all-class machine/imported definition glossary and semantic checks
-      remain #250. Author-reported counts are not an independent class census.'
+    limits: Historical completed paper scope preserved. Current module glossary,profile,30 bounded semantic
+      cases and36 asserted query results are separate in BDI2026.yaml;exact alignment0.3 import remains
+      unavailable. No paper/artifact equivalence or automatic adoption.
+  technical_review: evidence/related-work/artifacts/BDI2026.yaml
 - id: CognitiveAtlas2011
   title: 'The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience'
   primary_issue: 79
