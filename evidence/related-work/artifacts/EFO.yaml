@@ -1,0 +1,83 @@
+schema_version: '1.0'
+issue: 242
+status: BOUNDED_PAPER_FORMALISM_TECHNICAL_REVIEW_COMPLETE_NO_EXECUTABLE_ROOT
+checked_on: '2026-10-30'
+baseline_commit: 886fe183a09d726b5e6ee116ecefb87926f9f3c3
+identity:
+  author: Gilles Kassel
+  publisher_url: https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175
+  publisher_pdf: https://periodicos.ufmg.br/index.php/advances-kr/article/view/59175/49600
+  pdf_sha256: 8cf3372ac6bd19b88dfc15f07485695a6aab0f45d91d7864afef6f5f353729a6
+  printed_title: Fundamental choices in Epistemic Foundational Ontology
+  page_title: Fundamental choices in EFO
+  publication_boundary: 'PDF/footer: volume 5 number 3 (2025), pp.53-73; publisher webpage date 2026-09-22. Do not normalize the discrepancy.'
+  printed_deposit_doi: 10.5281/zenodo.17209778
+  separate_journal_doi: null
+  publisher_page_license: CC-BY-4.0
+  source_syntax: PRINTED_FIRST_ORDER_LOGIC_OUTLINE_AND_FIGURE
+  machine_root_version: null
+  repository_commit: null
+discovery:
+  status: NO_AUTHORITATIVE_EXECUTABLE_ROOT_IDENTIFIED_WITHIN_CHECKED_SCOPE
+  prior: evidence/related-work/deep-reviews/source-audit.yaml#W02
+  checked_on: '2026-10-30'
+  checks:
+    - {method: PUBLISHER_PAGE_AND_PDF, query: 'publisher article 59175 and PDF 49600', result: 'Paper and 21-page PDF retrieved with original review SHA; no linked executable ontology distribution on checked article page.'}
+    - {method: GITHUB_REPOSITORY_NAME_DESCRIPTION, query: '"Epistemic Foundational Ontology"', result: 'No repository returned in checked connected search.'}
+    - {method: GITHUB_REPOSITORY_NAME_DESCRIPTION, query: '"Gilles Kassel" ontology', result: 'No repository returned in checked connected search.'}
+    - {method: GITHUB_REPOSITORY_NAME_DESCRIPTION, query: '"EFO" Kassel', result: 'No repository returned in checked connected search.'}
+    - {method: WEB_PUBLIC_SEARCH, query: '"Epistemic Foundational Ontology" Kassel OWL GitHub repository', result: 'Publisher article and paper mirrors located; no authenticated author-linked OWL/FOL repository identified in the bounded results.'}
+  caveat: 'Search is bounded by date, endpoints, query families and public visibility; no global absence claim. Experimental Factor Ontology and Emotion Frame Ontology are not this EFO.'
+population:
+  catalog: evaluation/related-work/efo242/paper-catalog.json
+  paper_figure_category_labels: 33
+  additional_prose_distinctions_in_paper_review: 11
+  paper_axioms: 15
+  paper_definitions: 2
+  selected_formula_groups: 8
+  selected_owl_root: null
+  local_owl_classes: null
+  imported_owl_classes: null
+  referenced_owl_classes: null
+  deprecated_owl_classes: null
+  inferred_owl_classes: null
+  direct_imports: null
+  unresolved_imports: null
+  source_definition_candidates_for_owl_classes: null
+  missing_source_definitions_for_owl_classes: null
+  boundary: 'The 33 visually reviewed labels have paper IDs, paraphrases and Figure 1 locator, not minted class IRIs. A paper diagram is not a published class glossary or formal hierarchy; unknown formal counts are not zero.'
+foundation:
+  family: INDEPENDENT_EPISTEMIC_FOUNDATIONAL_ONTOLOGY
+  project_claim: 'Subject-relative general thought objects under nominalist, presentist and fictional-world commitments.'
+  formal_import: UNKNOWN_NO_EXECUTABLE_ROOT
+  bfo_edition: null
+  ufo_edition: null
+  compatibility: NOT_ESTABLISHED
+  note: 'BFO/UFO comparison in prose does not establish dependence. EFO Event and Concept are not mapped to same-name entities by label.'
+selected_commitments:
+  receipt: evaluation/related-work/efo242/paper-catalog.json#selected_commitments
+  ids: [A2, A4, A9, A11, A12, D1-D2, A14, A15]
+  source_locators: 'PDF pp.15-17 / printed pp.67-69, sec.4.1-4.2; EFO review K02/K04/K09/K11/K12/K13/K14/K16/K17.'
+  qualification: 'Static reading of printed FOL with exact OCR/text anchors, not an executable signature, proof, full theory or consistency check.'
+  findings:
+    - 'A4 prints accented présentAt alongside presentAt; no silent normalization.'
+    - 'A12 prints existsAsSuch but surrounding prose and D1-D2 use existsInItself; no printed equivalence.'
+    - 'A11 gives each Entity one inverse Concept object link, not each Concept exactly one Entity object.'
+    - 'If one source Concept represents both positively and negatively classified target Concepts, A14/A15 propagate both statuses; under normalized D1-D2 their conjunction is contradictory, conditional on that configuration and normalization.'
+scenarios:
+  positive: 'A human has one concept whose thought object is world-relative; a belief that it refers to a real target can be recorded separately from its immanent content. This is a conceptual paper case, not a tested ABox.'
+  counterexample: 'A source concept represents both one ReferentialConcept and one Non-ReferentialConcept. A14 and A15 then propagate opposite labels; D1/D2 are incompatible under the same normalized existsInItself predicate. The paper supplies no disjoint-target restriction or executed repair; neither inconsistency of the whole published theory nor universal model failure is proved here.'
+decision:
+  disposition: REUSE_EPISTEMIC_DISTINCTIONS_AS_COMPARISON_CANDIDATES; DEFER_FORMAL_ALIGNMENT
+  accepted_equivalences: []
+  next_issues: [254, 126]
+execution:
+  script: tools/inspect_efo242.py
+  receipt: evaluation/related-work/efo242/paper-catalog.json
+  pdf_sha_and_pages: PASS_21_PAGES
+  selected_printed_anchors: 8_GROUPS_PASS
+  formal_root_parse: NOT_EXECUTED_NO_ROOT
+  owl_profile: NOT_EXECUTED_NO_ROOT
+  fol_theorem_prover: NOT_EXECUTED
+  expert_review: NOT_PERFORMED
+boundary: {model_change: NONE, requirements_change: NONE, fixtures_change: NONE, manuscript_change: NONE, release_change: NONE}
