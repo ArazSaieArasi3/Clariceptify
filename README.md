@@ -47,6 +47,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [OntoLex 2016 official-document critical review](evidence/related-work/reviews/OntoLex.md), separate from the paper corpus and pending formal-artifact task
 - [Shared deep-paper review framework and current queue](evidence/related-work/deep-reviews/README.md)
 - [BDI2020 bounded technical dossier](evidence/related-work/artifacts/BDI2020.md), with paper-only commitments and unknown machine inventory
+- [I&DA, BDI2020 and DOLCE Mental comparison](evidence/related-work/comparisons/batch-6.md), with 12 bounded evidence cells for synthesis
 - [Plan for using the related-work reviews](docs/research/review-utilization-plan.md), a maintained 13-category table linking source evidence to model comparison and proposed actions
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
