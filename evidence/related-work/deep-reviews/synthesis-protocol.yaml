@@ -1,6 +1,12 @@
 schema_version: '1.0'
 issue: 126
 state: PLANNED_NOT_FINAL_SYNTHESIS
+utilization_plan:
+  id: CLR-REVIEW-USE-PLAN
+  path: docs/research/review-utilization-plan.md
+  revision: '1.0'
+  state: OWNER_AUTHORIZED_PLAN_NOT_EXECUTED_SYNTHESIS
+  application: Tag evidence-backed findings and proposed uses with stable U01-U13 category IDs; retain unknowns and later owner decisions.
 input_authority: Versioned dossiers and their evidence IDs, plus separately inspected artifact results
 outputs:
 - path: evidence/related-work/deep-reviews/synthesis/matrix.yaml
