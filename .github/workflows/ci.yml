@@ -109,6 +109,8 @@ jobs:
         run: python tools/check_cmo245.py
       - name: Validate I&DA bounded technical evidence
         run: python tools/check_ida246.py
+      - name: Validate DOLCE Mental native symbol and isolated-case evidence
+        run: python tools/check_dolcemental248.py
       - name: Check IAO selected-root technical census and provenance
         run: python tools/check_iao240.py
       - name: Check EFO paper formalism and unavailable executable root
