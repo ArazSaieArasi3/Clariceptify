@@ -201,6 +201,15 @@ def check(root=ROOT, source_dir=None):
             'local_classes': ontolex['counts']['local_classes'],
             'source_definition_candidates': ontolex['counts']['local_comment_candidates'],
             'missing_source_definitions': ontolex['counts']['local_missing_comments']}}
+    iao_path = 'evaluation/related-work/iao240/census.json'
+    if any(r['class_coverage']['catalog_path'] == iao_path for r in audit['records']):
+        from check_iao240 import check as check_iao
+        check_iao(root)
+        iao = json.loads((root / iao_path).read_text())
+        by_path[iao_path] = {'counts': {
+            'local_classes': iao['population']['local_iao_named_classes'],
+            'source_definition_candidates': iao['population']['local_definition_states']['PRESENT'],
+            'missing_source_definitions': iao['population']['local_definition_states']['MISSING']}}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:
