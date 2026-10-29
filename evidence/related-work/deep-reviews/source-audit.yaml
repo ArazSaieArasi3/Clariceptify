@@ -916,15 +916,21 @@ records:
     limitations: Paper edition unknown. Candidate actual ifomis.org/bfo/1.1 namespace references are not a
       confirmed author-paper edition or pinned BFO import; bfo2 prefix is not BFO2 proof.
   class_coverage:
-    state: ALL_7_CANDIDATE_LOCAL_CLASSES_REVIEWED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN
-    local_classes: null
-    source_definition_candidates: null
-    missing_source_definitions: null
-    catalog_path: null
+    state: ALL_7_MIRROR_LOCAL_CLASSES_AND_5_EXTERNAL_REDECLARATIONS_ACCOUNTED_ORIGINAL_AND_IMPORTED_GLOSSARIES_UNKNOWN
+    local_classes: 7
+    source_definition_candidates: 6
+    missing_source_definitions: 1
+    catalog_path: evidence/related-work/artifacts/CMO-class-catalog.yaml
     imported_definitions_complete: false
     reasoner_execution: NOT_EXECUTED
+  technical_followup:
+    issue: 245
+    status: BOUNDED_THIRD_PARTY_CANDIDATE_REVIEW_COMPLETE_ORIGINAL_RELEASE_UNKNOWN
+    evidence: evidence/related-work/artifacts/CMO.yaml
+    limitation: One third-party root fully cataloged; unversioned IAO/SKOS imports, author-release fidelity and original machine populations remain unknown.
   next_issues:
-  - 245
+  - 255
+  - 126
   related_distribution:
     repository: dbpedia/ontology-tracker
     commit: 32f457a42b910e39ef087b26f1664bd8d507518b
