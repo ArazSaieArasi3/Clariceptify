@@ -1,0 +1,84 @@
+schema_version: '1.0'
+issue: 239
+status: SELECTED_2015_12_MODULE_AND_DIRECT_LEGACY_IMPORT_REVIEW_COMPLETE_WITH_PROFILE_FAILURE
+checked_on: '2026-10-29'
+baseline_commit: 075428da0fadc863f715b34494ba6c597b2dd6bb
+identity:
+  work: Emotions and Cognition Ontology
+  author_page: https://rhizomik.net/html/ontologies/emotions%26cognitionontology/
+  selected_dated_file: https://rhizomik.net/ontologies/2015/12/emotions%26cognitionontology.owl
+  selected_sha256: 0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2
+  current_file: https://rhizomik.net/ontologies/emotions%26cognitionontology.owl
+  current_sha256: 0e19f81a2933032def83bd579e0f6bfc125b0be944fa8cfd27639a6319f041c2
+  dated_current_byte_identity: VERIFIED_ON_2026_10_29
+  ontology_iri: 'http://rhizomik.net/ontologies/emotions&cognitionontology.owl'
+  ontology_version_info: null
+  syntax: RDF/XML
+  license_in_selected_root: NOT_DECLARED
+  public_repository: NOT_IDENTIFIED_WITHIN_CHECKED_AUTHOR_PAGE_AND_BOUNDED_PUBLIC_SEARCH
+  public_source_kind: AUTHOR_HOSTED_STANDALONE_OWL
+  redistribution: false
+  predecessor_2015_05_sha256: fa719ad28a2eb6acb1d335542a70a36edf6be9f8477ac4354d79cf9815d700d7
+  original_2014_file_correspondence: NOT_ESTABLISHED
+  paper_2015_file_correspondence: CANDIDATE_WITHOUT_PUBLICATION_BYTE_PROOF
+  discovery: evaluation/related-work/emotionsonto/deep-review-discovery.json
+population:
+  census: evaluation/related-work/emotions239/census.json
+  complete_selected_root_class_glossary: evaluation/related-work/emotions239/census.json#classes
+  local_named_classes: 33
+  external_redeclared_classes: 0
+  local_comment_candidates: 1
+  local_missing_comment_or_definition: 32
+  local_object_properties: 8
+  local_datatype_properties: 4
+  deprecated_local_classes: 0
+  direct_import_module_class_occurrences: 133
+  distinct_import_closure_class_count: null
+  inferred_classes: null
+  referenced_external_named_superclasses: 7
+  predecessor_local_named_classes: 28
+  predecessor_shared_local_names: 26
+  predecessor_later_only_names: [Approach, Avoidance, Behavioral, Emotion, Motivation, NeutralBehavior, NonNeutralBehavior]
+  predecessor_earlier_only_names: [Behavioural, EmergentEmotion]
+  caution: 'Class occurrences across three directly imported modules do not establish a distinct union, imported inference count, or paper taxonomy count.'
+imports:
+  direct:
+    - {iri: 'http://www.loa-cnr.it/ontologies/DUL.owl', sha256: b27e0111f1201d8815d6a68fdf1c3d8eaa9f34327bece17c75a3410fbe626485, local_classes: 75, header_version: '3.22'}
+    - {iri: 'http://www.loa-cnr.it/ontologies/IOLite.owl', sha256: 98b9ddcbfdef997f89668c3738f9343ff8ce15079acca023bd6f870e0173e075, local_classes: 46, header_version: '1.5', declared_import: 'http://www.loa-cnr.it/ontologies/DUL.owl'}
+    - {iri: 'http://www.loa-cnr.it/codeps/owl/ofntb.owl', sha256: d223c298e8c1997e02f9a538289f766bbdb744c1094454a44f46e7d55a50d289, local_classes: 12, header_version: UNKNOWN}
+  exact_source_and_reference_receipt: evaluation/related-work/emotions239/census.json
+  unresolved_in_profile: 'Eleven ofntb superclass references to DUL/IOLite IRIs lack declarations in this exact closure.'
+foundation:
+  paper_or_project_claim: DOLCE_BASED_CONTEXTUAL_MODELING
+  formal_import: LEGACY_DUL_3_22_WITH_IOLITE_1_5_AND_OFNTB_UNVERSIONED
+  relation: 'DUL provides Description, Situation and process categories; ofntb provides frame-related categories. Formal imports are not a proof of faithful semantic alignment.'
+  UFO_or_BFO_edition: null
+selected_commitments:
+  receipt: evaluation/related-work/emotions239/census.json#selected_commitments
+  count: 8
+  interpretation: 'All eight are source assertions. Universal restrictions alone do not require observed property fillers; one threshold minimum does not prove a measured value.'
+questions:
+  Q01: 'Selected December root has 33 local named classes, one comment candidate, 32 missing root definitions; May predecessor has 28 different-namespace declarations with 26 shared local names. Original 2014 bytes remain unestablished.'
+  Q02: 'All three declared direct legacy imports resolve to pinned bytes; IOLite also imports the same DUL IRI. Historical grounding is DOLCE/DUL family, not UFO/BFO.'
+  Q03: 'The 2015 paper Figure 2 has 39 labels; this later module has 33 local classes. No one-to-one taxonomy equivalence follows, and two May labels disappear while seven later names appear.'
+  Q04: 'Eight selected restrictions trace input, output, perception, memory, motivation and expression roles. Universal quantification does not imply actual input/output instances or causal triggering.'
+  Q05: 'ofntb Frame and source paper examples are separate from this local class census. Frame-role identity or instance/class translation was not proved by this test.'
+  Q06: 'Memory, Perception and Motivation exist as local class/constraint names. Personalized learning, rule updates, cold start and agency remain application behavior not demonstrated in the selected OWL.'
+  Q07: 'Four-file import closure loaded; OWL 2 DL profile fails with 11 UseOfUndeclaredClass violations. HermiT consistency and recognition efficacy not tested.'
+  Q08: 'Dated/current bytes match; explicit root license and publication-byte identity are absent. Export to #253/#126 is candidate evidence only.'
+scenarios:
+  positive: 'A Perception individual with asserted hasInput Sensation, hasOutput DUL Description and uses Memory fits selected source property types at the structural level; no isolated reasoner acceptance or empirical cognition is claimed.'
+  counterexample: 'A Perception individual with no named hasOutput Description is not refuted by its allValuesFrom restriction alone under open-world semantics. Treating the restriction as a required observed description would be an unsupported inference.'
+decision:
+  disposition: REUSE_CONTEXT_AND_DESCRIPTION_PATTERN_AS_CANDIDATE; DEFER_FORMAL_ALIGNMENT
+  accepted_equivalences: []
+  next_issues: [253, 126]
+execution:
+  script: tools/inspect_emotions239.py
+  receipt: evaluation/related-work/emotions239/census.json
+  rdf_parse: PASS
+  selected_assertions: 8_PASS
+  owl2_dl_profile: FAIL_11_UNDECLARED_CLASSES
+  reasoner: NOT_EXECUTED_PROFILE_FAIL
+  expert_validation: NOT_PERFORMED
+boundary: {model_change: NONE, requirements_change: NONE, fixtures_change: NONE, manuscript_change: NONE, release_change: NONE}
