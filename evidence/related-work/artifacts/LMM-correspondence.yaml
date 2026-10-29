@@ -1,0 +1,110 @@
+schema_version: '1.0'
+issue: 274
+status: BOUNDED_CORRESPONDENCE_COMPLETE_WITH_HISTORICAL_ALIGNMENT_GAP
+reviewed_on: '2026-10-29'
+baseline_commit: 62a912e8b4cf87f9c670c4d5cfa4688fb164d7f1
+source:
+  paper: {id: LMM2008, version: '2008 LREC, printed 2413-2419 / PDF 1-7', sha256: e32e763cfc0c9b50f146cbf2d65bb81828b5176f16a822eebbd5cb75fb598903, dossier: evidence/related-work/deep-reviews/LMM2008/review.yaml}
+  manifest: evidence/related-work/corpus/lmm-inputs.yaml
+  modules:
+    LMM_L2: {version: '1.2', sha256: 512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240, imports: [LMM_L1]}
+    LMM_L1: {version: '1.8', sha256: 955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb, imports: [IOLite]}
+    IOLite: {version: '1.8', sha256: 15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f, imports: [DUL]}
+    DUL: {version: '4.2', sha256: e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66, imports: []}
+  local_classes: {LMM_L1: 8, LMM_L2: 21, selected_pair_total: 29, asserted_closure_unique: 154, inferred_population: null, catalog: evidence/related-work/deep-reviews/LMM2008/classes.yaml}
+  root_iri: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl
+  historical_paper_axiom_fidelity: NOT_ESTABLISHED
+  license: 'No header license/right annotation in selected LMM roots; no raw source redistribution or permission inferred.'
+  discovery: {current: evaluation/related-work/lmm274/discovery.json, earlier: evaluation/related-work/lmm/deep-review-discovery.json, historical_LMM_Alignments_root: NOT_ACQUIRED, universal_repository_absence: false}
+execution:
+  receipt: evaluation/related-work/lmm274/execution.json
+  script: tools/inspect_lmm274.py
+  input_policy: 'Exact unchanged four-module offline IRI map; separate isolated fixture per test.'
+  rdf_parsing: 'Four exact SHA256-matched sources parse; parsing is not logical inference.'
+  owl2_dl_profile: PASS
+  profile_violations: 0
+  whole_import_closure_consistency: true
+  unsatisfiable_named_classes: []
+  isolated_positive_adverse_cases: {passed: 13, failed: 0, errors: 0}
+  asserted_sparql_queries: 0
+  historical_alignment_execution: NOT_EXECUTED_NO_EXACT_ROOT
+  validation_or_performance: NOT_EXECUTED
+  limits: 'These OWL2 DL/HermiT observations are exact current-root consequences, not a 2008 OWL release reconstruction, complete evaluation, lexical benchmark or Clariceptify acceptance.'
+questions:
+  - id: Q01
+    finding: LMM274-F01
+    paper: ['LMM2008:E02 PDF1 original URL', 'LMM2008:E11 PDF5 sec.4 resource alignments']
+    artifact: 'Original http://www.loa-cnr.it/codeps/owl/LMM_Alignments.owl; bounded discovery receipts'
+    result: 'Original alignment root still unavailable: original HTTP and HTTPS endpoints returned403; guessed ODP URL returned HTML after redirect. L1/L2 are exact matched current files, not substitute alignment bytes.'
+    adverse: 'Do not treat HTTP200 HTML, a figure arrow, or name similarity as an acquired OWL alignment.'
+    test_ids: [baseline]
+    state: HISTORICAL_ALIGNMENT_UNAVAILABLE_BOUNDED_SEARCH
+  - id: Q02
+    finding: LMM274-F02
+    paper: ['LMM2008:E06 PDF2 Fig.2', 'LMM2008:E13 PDF6 Fig.6']
+    artifact: 'LMM_L1.owl#Expression/#Meaning/#Reference; DUL.owl#expresses/#isExpressedBy; LMM_L1.owl#denotes/#hasInterpretation/#isInterpretationOf'
+    result: 'Current Expression equivalent union accepts an expresses or denotes existential branch, whereas Fig.6 displays expresses minimum1. Meaning requires some isExpressedBy Expression. Fig.2 interprets/isInterpretedAs and later hasInterpretation/isInterpretationOf are not silently identified. Baseline and bounded cases below pass; a denial of both expression branches or the meaning expression witness is inconsistent.'
+    adverse: 'Neither an unnamed union witness nor a changed property label proves a unique interpreted referent or original figure fidelity.'
+    test_ids: [expression-denotes, expression-neither-arm, meaning-no-expression]
+    state: CURRENT_ROOT_SEMANTICS_WITH_VERSION_CONFLICT
+  - id: Q03
+    finding: LMM274-F03
+    paper: ['LMM2008:E07 PDF3 Fig.3', 'LMM2008:E08 PDF4 sec.3.2', 'LMM2008:E12 PDF6 Fig.5']
+    artifact: 'LMM_L1.owl#Context/#Reference; LMM_L2.owl#ConceptReference/#IndividualReference; DUL.owl#Concept/#Description/#Situation'
+    result: 'Current L1 places Situation under Reference and Context; L2 puts Concept/Description under Meaning. Named concept individuals and isInstanceOf links are consistent in a selected fixture, but this does not make them OWL classes or entail an rdfs:subClassOf between referents. The paper allows a Situation to serve as Meaning in an interpretation without asserting every current Situation is Meaning.'
+    adverse: 'No class equivalence follows from Fig.5 arrows or one shared name.'
+    test_ids: [concept-individual-not-class]
+    state: LEVEL_DISTINCTION_PRESERVED
+  - id: Q04
+    finding: LMM274-F04
+    paper: ['LMM2008:E04 PDF2 speech act/intention', 'LMM2008:E10 PDF4-5 expression and social context']
+    artifact: 'LMM_L1.owl#Context equivalent some isContextOf Entity; #hasContext inverse #isContextOf; #Paradigm/#CoText'
+    result: 'A named Context without a named interpretation is consistent in the selected closure; OWL may supply an anonymous isContextOf Entity witness. Generic hasContext has no tested rule binding one expression, meaning, referent, speech act, agent and communicative intention into a disambiguated event.'
+    adverse: 'A missing named interpretation is not proof that no anonymous context target exists; consistency is not disambiguation performance.'
+    test_ids: [context-without-named-interpretation]
+    state: INTERPRETATION_SPECIFIC_BINDING_NOT_ESTABLISHED
+  - id: Q05
+    finding: LMM274-F05
+    paper: ['LMM2008:E07 PDF3 sec.3.1/Fig.3', 'LMM2008:E16 PDF4 lexical references']
+    artifact: 'LMM_L2.owl#IndividualReference/#MultipleReference/#ConceptReference/#ExtensionalReference/#isInstanceOf; DUL.owl#hasMember/#isMemberOf'
+    result: 'IndividualReference requires some Concept via isInstanceOf and some MultipleReference via isMemberOf. MultipleReference without a named member is consistent; ExtensionalReference with hasMember forced empty is inconsistent. ConceptReference is a MultipleReference/TypeCollection with an isDenotedBy ConceptExpression witness. Neither missing named members nor one individual name means the collection is empty.'
+    adverse: 'The paper wording on individual membership conflicts with its example/figure; do not silently repair it or infer all named members under open world.'
+    test_ids: [individual-no-concept, individual-no-membership, multiple-no-named-member, extensional-no-member]
+    state: BOUNDED_EXISTENTIAL_AND_OWA_RESULT
+  - id: Q06
+    finding: LMM274-F06
+    paper: ['LMM2008:E10 PDF4-5 Name', 'LMM2008:E13 PDF6 Fig.6', 'LMM2008:E16 PDF4 expression subtypes']
+    artifact: 'LMM_L2.owl#Name/#ContextualExpression/#ConceptExpression asserted disjointWith; #SimpleConceptExpression/#EnumeratedExpression'
+    result: 'A single Name/ContextualExpression or ConceptExpression/Name individual is inconsistent. Two explicitly distinct expressions with the same rdfs:label bank, one Name and one ConceptExpression, are consistent. Their spelling does not merge identity; no tokenization or polysemy evaluation was run.'
+    adverse: 'The paper permits metalinguistic referents; subtype disjointness is not a universal prohibition on talking about an expression.'
+    test_ids: [name-contextual-same-individual, concept-name-same-individual, same-lexeme-distinct-expressions]
+    state: DISJOINTNESS_AND_LABEL_IDENTITY_BOUNDED
+  - id: Q07
+    finding: LMM274-F07
+    paper: ['LMM2008:E13 PDF6 Fig.6', 'LMM2008:A02 selected L2 artifact', 'LMM2008:R02 local glossary']
+    artifact: 'LMM2008/classes.yaml all29 local IRIs/comments; LMM_L2.owl#AssociativeContext/#EnumeratedExpression/#SimpleConceptExpression'
+    result: 'Twenty-five of 29 local classes have source comment candidates. AssociativeRule, LSARule, LatentContext and SyntacticRule have no definition comment in the pinned L2 file. AssociativeContext comment calls itself a rule; EnumeratedExpression comment uses AnaphoricExpression while superclass is ContextualExpression; SimpleConceptExpression comment says ClassReference while restriction targets ConceptReference. No comment is promoted into a logical axiom or corrected upstream.'
+    adverse: 'A reviewer paraphrase does not fill a missing author definition or prove those divergent terms equivalent.'
+    test_ids: []
+    state: FOUR_MISSING_COMMENTS_THREE_TERMINOLOGY_GAPS
+  - id: Q08
+    finding: LMM274-F08
+    paper: ['LMM2008:E11 PDF5 sec.4', 'LMM2008:E12 PDF6 Fig.5']
+    artifact: 'Exact LMM_Alignments.owl unavailable; current L1/L2 and their four-module import closure contain no verified WordNet alignment root in this selected input.'
+    result: 'WordNet hypernymy versus specializes is only a displayed illustrative direction in the paper. Without the cited alignment OWL root, exact IRIs, axioms and range consequences cannot be executed or certified. The current four-file reasoner results do not test that alignment.'
+    adverse: 'Do not assert every lexical resource is aligned or semantically equivalent from one figure.'
+    test_ids: []
+    state: NOT_EXECUTED_EXACT_ROOT_UNAVAILABLE
+findings:
+  - {id: LMM274-F01, disposition: HISTORICAL_ALIGNMENT_GAP, next_issues: [252, 126]}
+  - {id: LMM274-F02, disposition: VERSION_BOUND_EXPRESSION_DIFFERENCE, next_issues: [252, 126]}
+  - {id: LMM274-F03, disposition: OBJECT_CLASS_LEVEL_DISTINCTION, next_issues: [252, 126]}
+  - {id: LMM274-F04, disposition: CONTEXT_BINDING_NOT_PROVEN, next_issues: [252, 126]}
+  - {id: LMM274-F05, disposition: OPEN_WORLD_MEMBERSHIP_SCOPE, next_issues: [252, 126]}
+  - {id: LMM274-F06, disposition: DISJOINT_TYPES_DISTINCT_SAME_LABEL, next_issues: [252, 126]}
+  - {id: LMM274-F07, disposition: SOURCE_ANNOTATION_GAPS, next_issues: [252, 126]}
+  - {id: LMM274-F08, disposition: ALIGNMENT_DIRECTION_UNEXECUTED, next_issues: [252, 126]}
+candidate_uses:
+  - {model_ids: ['CLR-C0017', 'CLR-C0047', 'CLR-C0057', 'CLR-C0101'], question: 'Distinguish named expressions, content and reference identity across contexts.', utilization: [U03, U04, U05], status: OWNER_DECISION_REQUIRED}
+  - {model_ids: ['CLR-C0004', 'CLR-C0026', 'CLR-C0062'], question: 'Assess agent, process, communication and context bindings before mapping.', utilization: [U02, U06, U10], status: OWNER_DECISION_REQUIRED}
+boundary: {model_change: NONE, requirements_change: NONE, fixtures_change: NONE, manuscript_change: NONE, release_change: NONE, raw_source_redistribution: NONE, independent_expert_review: NOT_DONE, accepted_equivalences: [], scientific_acceptance: NOT_ESTABLISHED}

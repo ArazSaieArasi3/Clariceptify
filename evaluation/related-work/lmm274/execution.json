@@ -1,0 +1,172 @@
+{
+  "baseline_consistent": true,
+  "baseline_error": null,
+  "command": "python tools/inspect_lmm274.py --source-dir PRIVATE --private-dir PRIVATE --output evaluation/related-work/lmm274/execution.json",
+  "date": "2026-10-29",
+  "generator": "tools/inspect_lmm274.py",
+  "generator_sha256": "272eeede3ca0fc9eecbb7e92c833bee9f7d1a4d8100757746c70786ee9821385",
+  "hermit": "bundled 1.3.8.1099",
+  "hermit_jar_sha256": "97e53f519720a0a2e328556e03b806aa239347c85e57637a935e6433ed2ad3a8",
+  "import_policy": "Exact four retained files mapped by ontology IRI; no source alteration, network import, alignment-root substitution or ontology repair.",
+  "issue": 274,
+  "java_version": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)",
+  "jpype": "1.6.0",
+  "kind": "EXACT_PINNED_IMPORT_PROFILE_AND_ISOLATED_HERMIT",
+  "limitations": "Isolated whole-closure OWL cases; not original 2008 parity, all-resource alignment, disambiguation evaluation or accepted Clariceptify equivalence. No published source bytes.",
+  "loaded_imports": [
+    "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl",
+    "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl",
+    "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl"
+  ],
+  "owl2_dl_profile_pass": true,
+  "owlready2": "0.51",
+  "profile_violations": [],
+  "python": "3.12.14",
+  "rdflib": "7.6.0",
+  "source_sha256": {
+    "DUL": "e5f6429596d2c7014730bad85aaaa9c39530235f27f596cd0e7ce85e6bbcba66",
+    "IOLite": "15f8ac177bc2b481e13f326cdccd0c9551f0721506adbac10ea694778a35f23f",
+    "LMM_L1": "955518d71f6feb09f9a31a226d329e9f6fe1cdc4d91b735b15cf28d45e5802fb",
+    "LMM_L2": "512f7a2c877a446144415c96c2da531eb51a9843fa82719d9a629466046dc240"
+  },
+  "summary": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 13,
+    "total": 13
+  },
+  "tests": [
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "",
+      "fixture_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "id": "baseline",
+      "observed_consistent": true,
+      "question": "Q01",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:e> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes> <urn:clariceptify:lmm274:r> .\n<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression> .\n",
+      "fixture_sha256": "becc93a954f8da6b21897de63c6beb60ca6714f13d8a6414b003e641b5ea78bc",
+      "id": "expression-denotes",
+      "observed_consistent": true,
+      "question": "Q02",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression> .\n<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb6d2fb9ad89e93ef04720d04647ad934c422e1a1e644cb8312352ba354d1be88b .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#denotes> .\n_:cb6d2fb9ad89e93ef04720d04647ad934c422e1a1e644cb8312352ba354d1be88b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb6d2fb9ad89e93ef04720d04647ad934c422e1a1e644cb8312352ba354d1be88b <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb6d2fb9ad89e93ef04720d04647ad934c422e1a1e644cb8312352ba354d1be88b <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> .\n",
+      "fixture_sha256": "d030218252d9198e84e579df980b881669f3ba43d60bd79f15b3efb285f36ae0",
+      "id": "expression-neither-arm",
+      "observed_consistent": false,
+      "question": "Q02",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning> .\n<urn:clariceptify:lmm274:m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> .\n",
+      "fixture_sha256": "34a7f29b108869b0af75416850f2a5e7c987c7005d28bc8c197697e2d622123d",
+      "id": "meaning-no-expression",
+      "observed_consistent": false,
+      "question": "Q02",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isInstanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .\n<urn:clariceptify:lmm274:r> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isInstanceOf> <urn:clariceptify:lmm274:c> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference> .\n",
+      "fixture_sha256": "8b5031cdf8921dcc5624cc9ac5a2fa043e64c224350499b63e8648139ad455d2",
+      "id": "concept-individual-not-class",
+      "observed_consistent": true,
+      "question": "Q03",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<urn:clariceptify:lmm274:c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Context> .\n",
+      "fixture_sha256": "d2815cefa28e8fcf3ecaf38110224c94f9317ba420e89f1a0de68bf4d4756984",
+      "id": "context-without-named-interpretation",
+      "observed_consistent": true,
+      "question": "Q04",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isInstanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#isInstanceOf> .\n",
+      "fixture_sha256": "481522e31ba6c053809217d2729f741fb92130decec3978ae8552052db5c23d0",
+      "id": "individual-no-concept",
+      "observed_consistent": false,
+      "question": "Q05",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#IndividualReference> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> .\n",
+      "fixture_sha256": "c8e501c3e2f69a0a20920335dafaad8ecdac76403011cf228774b6c53a2cc7ad",
+      "id": "individual-no-membership",
+      "observed_consistent": false,
+      "question": "Q05",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference> .\n",
+      "fixture_sha256": "89577c5242a0d3b96de51020c18324aa735a0b11f1e92309bf7d210b2ef8977d",
+      "id": "multiple-no-named-member",
+      "observed_consistent": true,
+      "question": "Q05",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference> .\n<urn:clariceptify:lmm274:r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:cb0 .\n_:cb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:cb0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Nothing> .\n_:cb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .\n",
+      "fixture_sha256": "48a1d794ddf337e57cd09a528ee7b4ad9cc014762f945737c2b3a411feb9c808",
+      "id": "extensional-no-member",
+      "observed_consistent": false,
+      "question": "Q05",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression> .\n<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name> .\n",
+      "fixture_sha256": "a38feda7d1d9228c7e7addbddf47429b3740daddc6ddefe4e3791f5080aee8a0",
+      "id": "name-contextual-same-individual",
+      "observed_consistent": false,
+      "question": "Q06",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": false,
+      "fixture_nt": "<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression> .\n<urn:clariceptify:lmm274:e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name> .\n",
+      "fixture_sha256": "0a0ff15e60a87d638603a072b0244b0cba75e16e915683759c04549fb62c8e38",
+      "id": "concept-name-same-individual",
+      "observed_consistent": false,
+      "question": "Q06",
+      "result": "PASS"
+    },
+    {
+      "error": null,
+      "expected_consistent": true,
+      "fixture_nt": "<urn:clariceptify:lmm274:c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression> .\n<urn:clariceptify:lmm274:c> <http://www.w3.org/2000/01/rdf-schema#label> \"bank\" .\n<urn:clariceptify:lmm274:n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name> .\n<urn:clariceptify:lmm274:n> <http://www.w3.org/2000/01/rdf-schema#label> \"bank\" .\n<urn:clariceptify:lmm274:n> <http://www.w3.org/2002/07/owl#differentFrom> <urn:clariceptify:lmm274:c> .\n",
+      "fixture_sha256": "c6e4664a253b68d88e5a1cb40ad42413e9ee02344134b6392b1aaf2136a92fda",
+      "id": "same-lexeme-distinct-expressions",
+      "observed_consistent": true,
+      "question": "Q06",
+      "result": "PASS"
+    }
+  ],
+  "unsatisfiable_named_classes": []
+}

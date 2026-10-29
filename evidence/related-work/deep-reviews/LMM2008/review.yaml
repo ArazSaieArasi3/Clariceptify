@@ -2799,3 +2799,9 @@ artifact:
     - DUL 4.2
     historical_fidelity: NOT_ESTABLISHED
     BFO_or_UFO_grounding: NOT_CLAIMED
+technical_followup_2026_10_29:
+  issue: 274
+  status: BOUNDED_SELECTED_CURRENT_CLOSURE_REVIEW_COMPLETE
+  authority: evidence/related-work/artifacts/LMM-correspondence.yaml
+  execution: evaluation/related-work/lmm274/execution.json
+  limits: Original 2008 alignment root and historical byte parity unestablished; paper review remains a distinct source.
