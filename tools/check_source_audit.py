@@ -210,6 +210,16 @@ def check(root=ROOT, source_dir=None):
             'local_classes': iao['population']['local_iao_named_classes'],
             'source_definition_candidates': iao['population']['local_definition_states']['PRESENT'],
             'missing_source_definitions': iao['population']['local_definition_states']['MISSING']}}
+    cmo_path = 'evidence/related-work/artifacts/CMO-class-catalog.yaml'
+    if any(r['class_coverage']['catalog_path'] == cmo_path for r in audit['records']):
+        from check_cmo245 import check as check_cmo
+        check_cmo(root)
+        cmo = yaml.safe_load((root / cmo_path).read_text())
+        by_path[cmo_path] = {'counts': {
+            'local_classes': cmo['counts']['local_classes'],
+            'source_definition_candidates': cmo['counts']['local_source_comment_candidates'],
+            'missing_source_definitions': cmo['counts']['local_descriptive_seeAlso_without_comment'] +
+                                          cmo['counts']['local_missing_descriptive_annotations']}}
     for r in audit['records']:
         c = r['class_coverage']
         if c['catalog_path']:
