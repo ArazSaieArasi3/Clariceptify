@@ -257,8 +257,9 @@ separate_document_tasks:
 - id: SKOS
   issue: 76
   artifact_issue: 238
-  state: QUEUED
-  note: W3C Recommendation, not a journal article
+  state: OFFICIAL_DOCUMENT_REVIEW_COMPLETE
+  review_path: evidence/related-work/reviews/SKOS.yaml
+  note: Exact 2009 W3C Reference and official errata reviewed; 143 section headings, 62 statements and 90 examples. Separate document review, not a new paper; schema and comparison tasks remain open.
 - id: EmotionsCognition-guide
   issue: 77
   artifact_issue: 239

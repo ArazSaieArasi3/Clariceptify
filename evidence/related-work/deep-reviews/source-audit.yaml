@@ -1449,7 +1449,7 @@ records:
 - id: SKOS
   title: SKOS
   primary_issue: 76
-  source_state: QUEUED
+  source_state: OFFICIAL_DOCUMENT_REVIEW_COMPLETE
   repository:
     state: NOT_IDENTIFIED_IN_BOUNDED_SEARCH
     urls: []
@@ -1459,14 +1459,14 @@ records:
     paper_correspondence: NOT_ESTABLISHED_FOR_CURRENT_BYTES
   artifact_state: PINNED_SCHEMA_AND_SPECIFICATION
   foundation:
-    family: null
+    family: RDF/RDFS/OWL Full representation basis; no upper ontology grounding established
     edition: null
-    relation: UNKNOWN
-    basis: UNKNOWN
-    locator: Not yet established for this exact source
+    relation: REPRESENTATION_LANGUAGE_NOT_UPPER_ONTOLOGY_GROUNDING
+    basis: SOURCE_DOCUMENT_REVIEW
+    locator: https://www.w3.org/TR/2009/REC-skos-reference-20090818/#L1045
     artifact_imports: null
     alignment_status: NOT_SEMANTICALLY_ACCEPTED
-    limitations: Edition and exact implementation correspondence remain unassessed.
+    limitations: Document evidence only. This does not establish a UFO/BFO/DOLCE alignment or actual schema imports.
   class_coverage:
     state: PENDING_FULL_CATALOG
     local_classes: null
@@ -1477,6 +1477,20 @@ records:
     reasoner_execution: NOT_EXECUTED
   next_issues:
   - 238
+  - 253
+  - 126
+  document_review:
+    path: evidence/related-work/reviews/SKOS.yaml
+    source_sha256: 3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c
+    source_type: W3C Recommendation, 18 August 2009; official errata separately pinned
+    sections: 143
+    semantic_statements: 62
+    numbered_examples: 90
+    text_diagrams: 2
+    artifact_issue: 238
+    reasoner_execution: NOT_EXECUTED
+    note: Document and correction review only; no schema class count, full glossary, import closure or semantic
+      execution.
 - id: EmotionsCognition-guide
   title: EmotionsCognition-guide
   primary_issue: 77

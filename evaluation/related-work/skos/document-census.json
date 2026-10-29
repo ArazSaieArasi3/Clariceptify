@@ -1,0 +1,3364 @@
+{
+  "anchors": [
+    "Collection",
+    "Concept",
+    "ConceptScheme",
+    "L1045",
+    "L1101",
+    "L1120",
+    "L1129",
+    "L1160",
+    "L1170",
+    "L1193",
+    "L1195",
+    "L1228",
+    "L1289",
+    "L1291",
+    "L1302",
+    "L1304",
+    "L1309",
+    "L1329",
+    "L1368",
+    "L1409",
+    "L1437",
+    "L1501",
+    "L1539",
+    "L1541",
+    "L155",
+    "L1567",
+    "L1581",
+    "L1606",
+    "L1629",
+    "L1638",
+    "L1693",
+    "L1738",
+    "L1812",
+    "L1877",
+    "L1879",
+    "L1917",
+    "L1930",
+    "L2007",
+    "L2010",
+    "L2039",
+    "L2055",
+    "L2064",
+    "L2118",
+    "L21181",
+    "L2145",
+    "L2157",
+    "L2249",
+    "L2251",
+    "L2255",
+    "L2344",
+    "L2376",
+    "L2413",
+    "L2422",
+    "L2430",
+    "L2446",
+    "L2449",
+    "L2457",
+    "L2484",
+    "L2497",
+    "L2518",
+    "L2531",
+    "L2542",
+    "L2543",
+    "L2557",
+    "L2577",
+    "L2584",
+    "L2611",
+    "L2613",
+    "L2637",
+    "L2646",
+    "L2655",
+    "L2805",
+    "L2810",
+    "L2831",
+    "L2860",
+    "L2942",
+    "L2994",
+    "L3260",
+    "L3282",
+    "L3312",
+    "L3424",
+    "L3460",
+    "L3512",
+    "L3514",
+    "L3551",
+    "L3588",
+    "L3625",
+    "L3732",
+    "L375",
+    "L3806",
+    "L4138",
+    "L4160",
+    "L4186",
+    "L4261",
+    "L4307",
+    "L4316",
+    "L434",
+    "L4394",
+    "L4412",
+    "L4414",
+    "L4499",
+    "L4564",
+    "L4858",
+    "L4945",
+    "L5212",
+    "L5429",
+    "L5444",
+    "L5518",
+    "L5525",
+    "L5675",
+    "L5716",
+    "L5739",
+    "L5981",
+    "L648",
+    "L649",
+    "L661",
+    "L677",
+    "L7127",
+    "L7130",
+    "L7196",
+    "L724",
+    "L7307",
+    "L744",
+    "L778",
+    "L780",
+    "L831",
+    "L842",
+    "L8421",
+    "L879",
+    "L881",
+    "L8810",
+    "L895",
+    "L896",
+    "L899",
+    "Label",
+    "OrderedCollection",
+    "S1",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S2",
+    "S20",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S3",
+    "S30",
+    "S31",
+    "S32",
+    "S33",
+    "S34",
+    "S35",
+    "S36",
+    "S37",
+    "S38",
+    "S39",
+    "S4",
+    "S40",
+    "S41",
+    "S42",
+    "S43",
+    "S44",
+    "S45",
+    "S46",
+    "S47",
+    "S48",
+    "S49",
+    "S5",
+    "S50",
+    "S51",
+    "S52",
+    "S53",
+    "S54",
+    "S55",
+    "S56",
+    "S57",
+    "S58",
+    "S59",
+    "S6",
+    "S60",
+    "S61",
+    "S62",
+    "S7",
+    "S8",
+    "S9",
+    "abstract",
+    "ack",
+    "altLabel",
+    "broadMatch",
+    "broader",
+    "broaderTransitive",
+    "changeNote",
+    "changes",
+    "closeMatch",
+    "collections",
+    "concepts",
+    "conformance",
+    "definition",
+    "dereference",
+    "div-abstract",
+    "div-appendices",
+    "div-appendix-namespace",
+    "div-appendix-overview",
+    "div-appendix-overview-classes",
+    "div-appendix-overview-properties",
+    "div-appendix-semantics-as-triples",
+    "div-appendix-uri-dereference-behavior",
+    "div-appendix-xl",
+    "div-collections",
+    "div-concept-schemes",
+    "div-conceptual-resources",
+    "div-content",
+    "div-ft",
+    "div-hd",
+    "div-intro",
+    "div-intro1",
+    "div-intro2",
+    "div-lexical-labels",
+    "div-mapping",
+    "div-mapping1",
+    "div-notations",
+    "div-notes",
+    "div-quick-access",
+    "div-semantic-relations",
+    "div-sotd",
+    "div-synopsis",
+    "div-toc",
+    "div-vocab",
+    "div-xl-overview-classes",
+    "div-xl-overview-properties",
+    "editorialNote",
+    "exactMatch",
+    "example",
+    "example-1",
+    "example-10",
+    "example-11",
+    "example-12",
+    "example-13",
+    "example-14",
+    "example-15",
+    "example-16",
+    "example-17",
+    "example-18",
+    "example-19",
+    "example-2",
+    "example-20",
+    "example-21",
+    "example-22",
+    "example-23",
+    "example-24",
+    "example-25",
+    "example-26",
+    "example-27",
+    "example-28",
+    "example-29",
+    "example-3",
+    "example-30",
+    "example-31",
+    "example-32",
+    "example-33",
+    "example-34",
+    "example-35",
+    "example-36",
+    "example-37",
+    "example-38",
+    "example-39",
+    "example-4",
+    "example-40",
+    "example-41",
+    "example-42",
+    "example-43",
+    "example-44",
+    "example-45",
+    "example-46",
+    "example-47",
+    "example-48",
+    "example-49",
+    "example-5",
+    "example-50",
+    "example-51",
+    "example-52",
+    "example-53",
+    "example-54",
+    "example-55",
+    "example-56",
+    "example-57",
+    "example-58",
+    "example-59",
+    "example-6",
+    "example-60",
+    "example-61",
+    "example-62",
+    "example-63",
+    "example-64",
+    "example-65",
+    "example-66",
+    "example-67",
+    "example-68",
+    "example-69",
+    "example-7",
+    "example-70",
+    "example-71",
+    "example-72",
+    "example-73",
+    "example-74",
+    "example-75",
+    "example-76",
+    "example-77",
+    "example-78",
+    "example-79",
+    "example-8",
+    "example-80",
+    "example-81",
+    "example-82",
+    "example-83",
+    "example-84",
+    "example-85",
+    "example-86",
+    "example-87",
+    "example-88",
+    "example-89",
+    "example-9",
+    "example-90",
+    "hasTopConcept",
+    "hiddenLabel",
+    "historyNote",
+    "holdall",
+    "inScheme",
+    "intro",
+    "labels",
+    "mapping",
+    "mapping-cycles-exactMatch",
+    "mappingRelation",
+    "member",
+    "memberList",
+    "namespace",
+    "namespace-document-html",
+    "namespace-document-rdf",
+    "namespace-documents",
+    "narrowMatch",
+    "narrower",
+    "narrowerTransitive",
+    "notation",
+    "notations",
+    "notations-note-domain",
+    "note",
+    "notes",
+    "overview",
+    "prefLabel",
+    "rationale",
+    "rdf-schema-owl-dl",
+    "ref-AGROVOC",
+    "ref-BCP47",
+    "ref-BS8723-2",
+    "ref-BS8723-3",
+    "ref-COOLURIS",
+    "ref-ISO2788",
+    "ref-LCSH",
+    "ref-NTRIPLES",
+    "ref-OWL-GUIDE",
+    "ref-OWL-REFERENCE",
+    "ref-OWL-SEMANTICS",
+    "ref-RDF-CONCEPTS",
+    "ref-RDF-PRIMER",
+    "ref-RDF-SEMANTICS",
+    "ref-RDF-XML",
+    "ref-RDFS",
+    "ref-RECIPES",
+    "ref-SKOS-HTML",
+    "ref-SKOS-PRIMER",
+    "ref-SKOS-RDF",
+    "ref-SKOS-RDF-OWL1-DL",
+    "ref-SKOS-UCR",
+    "ref-SKOS-XL-HTML",
+    "ref-SKOS-XL-RDF",
+    "ref-SPARQL",
+    "ref-SW",
+    "ref-SWBP-DATATYPES",
+    "ref-TURTLE",
+    "ref-WEBARCH",
+    "ref-XML-SCHEMA",
+    "references",
+    "related",
+    "relatedMatch",
+    "schemes",
+    "scopeNote",
+    "semantic-relations",
+    "semanticRelation",
+    "status",
+    "toc",
+    "topConceptOf",
+    "vocab",
+    "w3c-doctype",
+    "xl",
+    "xl-Label",
+    "xl-altLabel",
+    "xl-hiddenLabel",
+    "xl-label-relations",
+    "xl-labelRelation",
+    "xl-labels",
+    "xl-literalForm",
+    "xl-namespace-document-html",
+    "xl-namespace-document-rdf",
+    "xl-overview",
+    "xl-prefLabel",
+    "xl-vocab"
+  ],
+  "counts": {
+    "badges": 2,
+    "numbered_examples": 90,
+    "sections": 143,
+    "semantic_statements": 62,
+    "substantive_image_figures": 0,
+    "text_diagrams": 2
+  },
+  "examples": [
+    {
+      "id": "example-1",
+      "label": "Example 1",
+      "normalized_table_sha256": "3987598f315e9d0ea2fc94c8abb7fe4b6cba39d724537c1c789101493404bada",
+      "section_anchor": "L1501"
+    },
+    {
+      "id": "example-2",
+      "label": "Example 2 (consistent)",
+      "normalized_table_sha256": "ca998508fdedf64ae9c7d8d50acde012386263887bbdeb60fee9a6e70cfffda0",
+      "section_anchor": "L2118"
+    },
+    {
+      "id": "example-3",
+      "label": "Example 3 (consistent)",
+      "normalized_table_sha256": "5c273e849a69084b8353f331b66d48e1df912e0d63e23936fb7b839fe4328873",
+      "section_anchor": "L896"
+    },
+    {
+      "id": "example-4",
+      "label": "Example 4 (consistent)",
+      "normalized_table_sha256": "4a26478e05d350676a1d80f678b25a3ad98a6fe85f2fdf27cd2fb032940aa58f",
+      "section_anchor": "L896"
+    },
+    {
+      "id": "example-5",
+      "label": "Example 5 (consistent)",
+      "normalized_table_sha256": "b5a1af34e11f77483039201d294a716d93f5b0660bd78b290d9b26d2c5ebefe2",
+      "section_anchor": "L21181"
+    },
+    {
+      "id": "example-6",
+      "label": "Example 6 (consistent)",
+      "normalized_table_sha256": "2178a3af10d266d1697ccfb75832d955d79dd0dc8ccb282d5ebbfd0781fa20c3",
+      "section_anchor": "L1101"
+    },
+    {
+      "id": "example-7",
+      "label": "Example 7 (consistent)",
+      "normalized_table_sha256": "bcbeb39f7c0365bc157247a2bc5d0f7e51a754106e991349dd5f80be8ae3610b",
+      "section_anchor": "L1170"
+    },
+    {
+      "id": "example-8",
+      "label": "Example 8 (consistent)",
+      "normalized_table_sha256": "8116fb72b7b902b87ae0884a7b22534e54c4172611da7f9240f843e8606736d0",
+      "section_anchor": "L2446"
+    },
+    {
+      "id": "example-9",
+      "label": "Example 9 (non-entailment)",
+      "normalized_table_sha256": "d427dee2b24a714c076fb8d759a2e3c861fb02af3062a7857937439d075455af",
+      "section_anchor": "L2577"
+    },
+    {
+      "id": "example-10",
+      "label": "Example 10 (consistent)",
+      "normalized_table_sha256": "4381b04ccc228cb541acce5b5ab003965bf8ad3c76c2ef17ef76d294f6374a84",
+      "section_anchor": "L1409"
+    },
+    {
+      "id": "example-11",
+      "label": "Example 11 (consistent)",
+      "normalized_table_sha256": "f85149afe85264cc49b167baec1f2faa2218616d17e0021b3f6c043ada3d8832",
+      "section_anchor": "L1409"
+    },
+    {
+      "id": "example-12",
+      "label": "Example 12 (not consistent)",
+      "normalized_table_sha256": "2f9ba1afa389f1da7bbbb69fe3ffaa7abea32988e27fa6db7d9fdfd4068c3615",
+      "section_anchor": "L1409"
+    },
+    {
+      "id": "example-13",
+      "label": "Example 13 (not consistent)",
+      "normalized_table_sha256": "78d27f8f77bae4b9e14a3127d5615c42c0c68bf7718f3b4adcdd0ccd26b0778d",
+      "section_anchor": "L1409"
+    },
+    {
+      "id": "example-14",
+      "label": "Example 14 (not consistent)",
+      "normalized_table_sha256": "439a1568e29cbeb01d1e016f768a905d2fcc71e7217254de67ae673fefb1b73b",
+      "section_anchor": "L1409"
+    },
+    {
+      "id": "example-15",
+      "label": "Example 15 (not consistent)",
+      "normalized_table_sha256": "d38f8883812e398560ee3e387194f30d888a15d9e2450639cdb058eaad8ec4a6",
+      "section_anchor": "L1409"
+    },
+    {
+      "id": "example-16",
+      "label": "Example 16 (consistent)",
+      "normalized_table_sha256": "b768c12b875405335c5eac3273f160a4447ddec6a32a682b7fbd45468e4866b8",
+      "section_anchor": "L1541"
+    },
+    {
+      "id": "example-17",
+      "label": "Example 17 (consistent)",
+      "normalized_table_sha256": "bc72cef3e9c558eab8d70014efaeacaad26c839259350dc1c49ffbb6b92ec62e",
+      "section_anchor": "L1606"
+    },
+    {
+      "id": "example-18",
+      "label": "Example 18 (consistent)",
+      "normalized_table_sha256": "3a128fe5989345cb8ecb2da92241f2eb5d73d55d9da0fb328c61f7f1ac77a0c6",
+      "section_anchor": "L1629"
+    },
+    {
+      "id": "example-19",
+      "label": "Example 19 (consistent)",
+      "normalized_table_sha256": "bf04e4eda7d3bcd1381cf91495c5f86d4b61eabcb2ce10519bfb6fd2cc149097",
+      "section_anchor": "L1629"
+    },
+    {
+      "id": "example-20",
+      "label": "Example 20 (consistent)",
+      "normalized_table_sha256": "4513ec4416d13d88f5d9284f5e65daf5a0a37c8524c01d8a2afcf5527ac31f2c",
+      "section_anchor": "L2584"
+    },
+    {
+      "id": "example-21",
+      "label": "Example 21 (consistent)",
+      "normalized_table_sha256": "72362198a000258da298ea6ec7dd12c3fcfe049164240c39094401d0253ed333",
+      "section_anchor": "L2655"
+    },
+    {
+      "id": "example-22",
+      "label": "Example 22 (consistent)",
+      "normalized_table_sha256": "a8e220a7b9644c17b8cd861565988eb2a1dcbce1e6287419041e10fa32d6bf87",
+      "section_anchor": "L1812"
+    },
+    {
+      "id": "example-23",
+      "label": "Example 23 (consistent)",
+      "normalized_table_sha256": "16fbb428974932479f961fa289a62899a161edfab28586d824d37662ed7981db",
+      "section_anchor": "L1812"
+    },
+    {
+      "id": "example-24",
+      "label": "Example 24 (consistent)",
+      "normalized_table_sha256": "cc4a7d99acd80e3ec9897ee1164449e1596d9f859c36d984396d0e02d2de03ec",
+      "section_anchor": "L1879"
+    },
+    {
+      "id": "example-25",
+      "label": "Example 25 (consistent)",
+      "normalized_table_sha256": "6ca162bf4be77cf21a940ef53197b1c4225bb281cacd65bae21e40e7f687d4e7",
+      "section_anchor": "L2157"
+    },
+    {
+      "id": "example-26",
+      "label": "Example 26 (not consistent)",
+      "normalized_table_sha256": "48f854c8e8935b03e28bb3878e1f674723ddd1256d45dadc2a5d343720fa7226",
+      "section_anchor": "L2157"
+    },
+    {
+      "id": "example-27",
+      "label": "Example 27 (not consistent)",
+      "normalized_table_sha256": "d184c5b9f97ac3fc2de75244c036e999ee114f6d151fe903460ab4277a6bad07",
+      "section_anchor": "L2157"
+    },
+    {
+      "id": "example-28",
+      "label": "Example 28 (not consistent)",
+      "normalized_table_sha256": "fbc58e571c511d6f9dcde351319117e939c7e3c3b09dda2da8593e60fdcddad7",
+      "section_anchor": "L2157"
+    },
+    {
+      "id": "example-29",
+      "label": "Example 29 (not consistent)",
+      "normalized_table_sha256": "ba01aeca89fba050bb2e15c46120508198a4c15d5dc892eb56211293dec02b71",
+      "section_anchor": "L2157"
+    },
+    {
+      "id": "example-30",
+      "label": "Example 30 (entailment)",
+      "normalized_table_sha256": "1c7a372b06af60cbeb14a416080560904201869b4fce576f9a0b3dfeed9275e2",
+      "section_anchor": "L2255"
+    },
+    {
+      "id": "example-31",
+      "label": "Example 31 (entailment)",
+      "normalized_table_sha256": "20ed77147e93a0ece42b8db11448b3a134a090494e321b0f9be458e5f59068cd",
+      "section_anchor": "L2255"
+    },
+    {
+      "id": "example-32",
+      "label": "Example 32 (non-entailment)",
+      "normalized_table_sha256": "a9498b0e478192e9ed846149340f1a9019cf08b4c90879f26b862dcbecfb0b1a",
+      "section_anchor": "L2344"
+    },
+    {
+      "id": "example-33",
+      "label": "Example 33 (consistent)",
+      "normalized_table_sha256": "d8c3ed7a92795c3ca5dd71d5e233d0f2223f5acfcb589f403c7d9d9127f82826",
+      "section_anchor": "L2376"
+    },
+    {
+      "id": "example-34",
+      "label": "Example 34 (non-entailment)",
+      "normalized_table_sha256": "a8365a1b1ed5479140646517da7c1fd679a8bd9269d18428efa3d8459a486e03",
+      "section_anchor": "L2413"
+    },
+    {
+      "id": "example-35",
+      "label": "Example 35 (entailment)",
+      "normalized_table_sha256": "bd0dcdfb4544fbf88a6766e51079732f2a013d70db817fb3ce0e23a1de8e565f",
+      "section_anchor": "L2413"
+    },
+    {
+      "id": "example-36",
+      "label": "Example 36 (consistent)",
+      "normalized_table_sha256": "fe4ce7454ec4edcc3be81b26fd3f67c5cbf0a971918dae39d4d368d6d30d145f",
+      "section_anchor": "L2449"
+    },
+    {
+      "id": "example-37",
+      "label": "Example 37 (consistent)",
+      "normalized_table_sha256": "f36049924111e46b2141c91774f2cd0d8b511ce3c365fd0e66162027512f9e62",
+      "section_anchor": "L2484"
+    },
+    {
+      "id": "example-38",
+      "label": "Example 38 (consistent)",
+      "normalized_table_sha256": "c17ca0c53c4af48933a50a8963a5a9937eaf1c28db764a109954a677220d77a8",
+      "section_anchor": "L2518"
+    },
+    {
+      "id": "example-39",
+      "label": "Example 39 (consistent)",
+      "normalized_table_sha256": "aad45577dbd6031396af2cf9fb81cd68305e3b53f021321c588c2ba1bee674b4",
+      "section_anchor": "L2518"
+    },
+    {
+      "id": "example-40",
+      "label": "Example 40 (consistent)",
+      "normalized_table_sha256": "0fe25a0426f5ecbe515332aea8851b0c51b4de7c44796ad984f62a5e23cac353",
+      "section_anchor": "L3460"
+    },
+    {
+      "id": "example-41",
+      "label": "Example 41 (consistent)",
+      "normalized_table_sha256": "d52722ad1291de1356c0c8bcffa2285265bbe0ad7041bc2fe4ccbf0288440d02",
+      "section_anchor": "L3460"
+    },
+    {
+      "id": "example-42",
+      "label": "Example 42 (entailment)",
+      "normalized_table_sha256": "d96df50d03d54e6a4dd70bacc920269abb7b4dc93cd2cd14da449b6ba796d66a",
+      "section_anchor": "L3514"
+    },
+    {
+      "id": "example-43",
+      "label": "Example 43 (entailment)",
+      "normalized_table_sha256": "392de580500d373883bfd3dfd36a157efabf8534f22bee3c9d68d5a8abbdff4a",
+      "section_anchor": "L3551"
+    },
+    {
+      "id": "example-44",
+      "label": "Example 44 (consistent)",
+      "normalized_table_sha256": "0d189ebc093a5d5d44f9e2573c87447d2adbcd1a50b8217603713a3b39d23294",
+      "section_anchor": "L3588"
+    },
+    {
+      "id": "example-45",
+      "label": "Example 45 (not consistent)",
+      "normalized_table_sha256": "1311eb32677219150ce2c3180dd7ddcaed3299a9e242a6bf2134e1bebefd4515",
+      "section_anchor": "L3625"
+    },
+    {
+      "id": "example-46",
+      "label": "Example 46 (not consistent)",
+      "normalized_table_sha256": "84b5f941fca1a7b1c71045d2c403af862a73246ae342e30beae304a441d671ea",
+      "section_anchor": "L3625"
+    },
+    {
+      "id": "example-47",
+      "label": "Example 47 (not consistent)",
+      "normalized_table_sha256": "897c42628f3d0cec57286da44c38912ffea7be166091a44234e3318bacbd968d",
+      "section_anchor": "L3625"
+    },
+    {
+      "id": "example-48",
+      "label": "Example 48 (consistent)",
+      "normalized_table_sha256": "eb31572da0f24ccba0af470b21b19c72897536639e85b6dd215e56429c2b2200",
+      "section_anchor": "L3625"
+    },
+    {
+      "id": "example-49",
+      "label": "Example 49 (consistent)",
+      "normalized_table_sha256": "4f19aa27a14222ba7301116ed3547683ba2ea717bdd70c03fa166d1e7e9a8c2e",
+      "section_anchor": "L4316"
+    },
+    {
+      "id": "example-50",
+      "label": "Example 50 (consistent)",
+      "normalized_table_sha256": "b24c8f1360fe3ae5080f3df8db753b892c47e43141d80cd56cf71e337aa2a0d0",
+      "section_anchor": "L4316"
+    },
+    {
+      "id": "example-51",
+      "label": "Example 51 (consistent)",
+      "normalized_table_sha256": "119f577f31a7b1fafe34f6f6e3a114ca57d151212717555b739fcaa13f4f020b",
+      "section_anchor": "L4316"
+    },
+    {
+      "id": "example-52",
+      "label": "Example 52 (not consistent)",
+      "normalized_table_sha256": "b41f82225a7acc92eba8b14ee4c2bd0715515829879838e1f0128210b659694b",
+      "section_anchor": "L4316"
+    },
+    {
+      "id": "example-53",
+      "label": "Example 53 (not consistent)",
+      "normalized_table_sha256": "bfc48cbe8dcabe063f1b4638a0265482243ebbe80c529dbac18c5b48315009cc",
+      "section_anchor": "L4316"
+    },
+    {
+      "id": "example-54",
+      "label": "Example 54 (entailment)",
+      "normalized_table_sha256": "e3b68c4ad7455a7ecf8d975b18d740f90f58a841977a3a1ba335eee4a4c03fa1",
+      "section_anchor": "L4160"
+    },
+    {
+      "id": "example-55",
+      "label": "Example 55 (entailment)",
+      "normalized_table_sha256": "1f20909809414a210eee07702c6cab75d74f016cbbd18d3b83ec17d617535c9f",
+      "section_anchor": "L4160"
+    },
+    {
+      "id": "example-56",
+      "label": "Example 56 (entailment)",
+      "normalized_table_sha256": "12bf3f6f3509f8bcd2058de3f7395e2e5f6bdbdfe63baef34f621d436ad4daef",
+      "section_anchor": "L4160"
+    },
+    {
+      "id": "example-57",
+      "label": "Example 57 (entailment)",
+      "normalized_table_sha256": "b74ab302f277597ce6509c6ee37db4970ea53bc2cdded66fb23415a61cd89f22",
+      "section_anchor": "L4160"
+    },
+    {
+      "id": "example-58",
+      "label": "Example 58 (consistent)",
+      "normalized_table_sha256": "aeccdca94b1e83a793f431950136ce93cb9c72edfa8f99de5ccd472b40e6c119",
+      "section_anchor": "L4160"
+    },
+    {
+      "id": "example-59",
+      "label": "Example 59 (not consistent)",
+      "normalized_table_sha256": "7eb1914f0d1832d67b5f417f8886604d7c8556b02f56841c0f09e5024bd27dc8",
+      "section_anchor": "L4394"
+    },
+    {
+      "id": "example-60",
+      "label": "Example 60 (not consistent)",
+      "normalized_table_sha256": "7557c5d55249866d0ee21d16bd176d55df94482dc71019b13b758e855886611a",
+      "section_anchor": "L4394"
+    },
+    {
+      "id": "example-61",
+      "label": "Example 61 (not consistent)",
+      "normalized_table_sha256": "d94ed193381554e9cfa2d0b1da8c0d31be6ee5cdb6d8e14b4281aed3ad2d0bec",
+      "section_anchor": "L4394"
+    },
+    {
+      "id": "example-62",
+      "label": "Example 62 (entailment)",
+      "normalized_table_sha256": "bb57c7b54239e75a639ab88949fba5ce3f76ed9dde0ee0fbd1e28df3cfa89c65",
+      "section_anchor": "L4414"
+    },
+    {
+      "id": "example-63",
+      "label": "Example 63 (non-entailment)",
+      "normalized_table_sha256": "1b9a3db4102b5a4d4e9600f1cc5ab9a117c02fd918d0fae072901ad5323bfe39",
+      "section_anchor": "L4414"
+    },
+    {
+      "id": "example-64",
+      "label": "Example 64 (non-entailment)",
+      "normalized_table_sha256": "549a98534782fba18a914715e079a99e9bc05e02bcd3b4e84c4ba987f5feae78",
+      "section_anchor": "L4414"
+    },
+    {
+      "id": "example-65",
+      "label": "Example 65 (non-entailment)",
+      "normalized_table_sha256": "a4823e1ccfb72615e8954a93efeafb7e821837a8f80d5a60f129b35a70cc8317",
+      "section_anchor": "L4414"
+    },
+    {
+      "id": "example-66",
+      "label": "Example 66 (consistent)",
+      "normalized_table_sha256": "23c199082231116370d627104f8444975c8a8765bf6aef2f768794f6c20d66c2",
+      "section_anchor": "L4499"
+    },
+    {
+      "id": "example-67",
+      "label": "Example 67 (consistent)",
+      "normalized_table_sha256": "b9fec7f64d44438eb0293a62d2594afa37735a9f120ed748daf8cacc12dbc858",
+      "section_anchor": "L4564"
+    },
+    {
+      "id": "example-68",
+      "label": "Example 68 (consistent)",
+      "normalized_table_sha256": "10010b6c80cdbe42fa4c2dc2f5dbe55ebea3096eede4bdf80b694ee90fbaee7c",
+      "section_anchor": "L4564"
+    },
+    {
+      "id": "example-69",
+      "label": "Example 69 (entailment)",
+      "normalized_table_sha256": "9ff5ebdbb79573013b9ef360b7238986e9cf5d4c7c9192b7b3d5d695065b9509",
+      "section_anchor": "mapping-cycles-exactMatch"
+    },
+    {
+      "id": "example-70",
+      "label": "Example 70 (non-entailment)",
+      "normalized_table_sha256": "159e5e7ab31b26318fad7b13140d14b2500550cb81395b8039c7a547aff8bd9a",
+      "section_anchor": "L5675"
+    },
+    {
+      "id": "example-71",
+      "label": "Example 71 (non-entailment)",
+      "normalized_table_sha256": "91a6b311d0c5983f787ff6acbf0c3e507a2b2e30931338345eea81c9537bc038",
+      "section_anchor": "L5675"
+    },
+    {
+      "id": "example-72",
+      "label": "Example 72 (non-entailment)",
+      "normalized_table_sha256": "1d422ea2f4608d764f3e6db791b564b7e037d3872dfb6ef828900064bad0937a",
+      "section_anchor": "L5675"
+    },
+    {
+      "id": "example-73",
+      "label": "Example 73 (non-entailment)",
+      "normalized_table_sha256": "1d7a2ccbe992acbad0d80ecb2a9cbfdda21aefcc6ed823f7d29ad665527e92dd",
+      "section_anchor": "L5675"
+    },
+    {
+      "id": "example-74",
+      "label": "Example 74 (entailment)",
+      "normalized_table_sha256": "0f68410dc13ee031b477cdddbfc54d8f608716d7cc3576b7406b782ac7f93615",
+      "section_anchor": "L4858"
+    },
+    {
+      "id": "example-75",
+      "label": "Example 75 (consistent)",
+      "normalized_table_sha256": "7c5a11d8937f28a7a8284db270a60fd22dcd2b18b85f955ea9e77919bc39629a",
+      "section_anchor": "L5525"
+    },
+    {
+      "id": "example-76",
+      "label": "Example 76 (not consistent)",
+      "normalized_table_sha256": "e87abd6403a056ca4b6174871a3ac3f57c2b7aa8a280577389670ae0b9cd195b",
+      "section_anchor": "L5525"
+    },
+    {
+      "id": "example-77",
+      "label": "Example 77 (not consistent)",
+      "normalized_table_sha256": "4eb461720e1958c6416d0162fae2b4497e3f4ae383b69ca532f4d005260e461e",
+      "section_anchor": "L5525"
+    },
+    {
+      "id": "example-78",
+      "label": "Example 78 (not consistent)",
+      "normalized_table_sha256": "4f731885c6662c8a78a8e6404045d05c02a433c58e61c47a78490cfd7ce56750",
+      "section_anchor": "L5525"
+    },
+    {
+      "id": "example-79",
+      "label": "Example 79 (not consistent)",
+      "normalized_table_sha256": "807bbc368d86ff3682537ced20462cb4dbc4e9fe5672df1328a3ec168ef47046",
+      "section_anchor": "L5525"
+    },
+    {
+      "id": "example-80",
+      "label": "Example 80 (non-entailment)",
+      "normalized_table_sha256": "500c397a7218fc222b9571972bf563c6beaffb81c2450dd8b1297f0165f35a8b",
+      "section_anchor": "L5739"
+    },
+    {
+      "id": "example-81",
+      "label": "Example 81 (consistent)",
+      "normalized_table_sha256": "a0c42c1102f8312295bc8dfbdb7a9f06e02400c94cca9516a040c1bb6c7684ed",
+      "section_anchor": "L648"
+    },
+    {
+      "id": "example-82",
+      "label": "Example 82 (consistent)",
+      "normalized_table_sha256": "de6a52183d8ffbc1e5fb4910ebc10005abf0d551106ed154a9b7e46148443073",
+      "section_anchor": "L724"
+    },
+    {
+      "id": "example-83",
+      "label": "Example 83 (entailment)",
+      "normalized_table_sha256": "15d6741c4a867ba01220c19990bb81701d69aed5b2d3424e1c83e201e1e3aeff",
+      "section_anchor": "L780"
+    },
+    {
+      "id": "example-84",
+      "label": "Example 84 (not consistent)",
+      "normalized_table_sha256": "9ae279bbfad161c2a0368f3c6b59de8d7d5d1aaabc35a6d1fc3702cf0d5c3450",
+      "section_anchor": "L899"
+    },
+    {
+      "id": "example-85",
+      "label": "Example 85 (not consistent)",
+      "normalized_table_sha256": "92efaf221f1838c769ce87b50ad861731e120423ba60ef61d3777a796ef1e21c",
+      "section_anchor": "L899"
+    },
+    {
+      "id": "example-86",
+      "label": "Example 86 (not consistent)",
+      "normalized_table_sha256": "f6bb1ddcd1e3b19ce05844f332cd847aad3a3e019379e6abd82163aa109190e2",
+      "section_anchor": "L899"
+    },
+    {
+      "id": "example-87",
+      "label": "Example 87 (not consistent)",
+      "normalized_table_sha256": "8659442c882fdf81541507e715c31d75152a1f2b43548474e30862f43dca63cb",
+      "section_anchor": "L899"
+    },
+    {
+      "id": "example-88",
+      "label": "Example 88 (consistent)",
+      "normalized_table_sha256": "25df3e30133033176fd54c94b7709ad38ee6cdf26afbd7ce204825ebf1a5701e",
+      "section_anchor": "L1160"
+    },
+    {
+      "id": "example-89",
+      "label": "Example 89 (consistent)",
+      "normalized_table_sha256": "2bb55f6df99604b3f9b5699161aa8010914e4961cc4288701d198e58044b3f65",
+      "section_anchor": "L1195"
+    },
+    {
+      "id": "example-90",
+      "label": "Example 90 (non-entailment)",
+      "normalized_table_sha256": "f5063958970b5a64f942ba83bd3fd38619c914cf93c6febecccaeafcde07bc17",
+      "section_anchor": "namespace"
+    }
+  ],
+  "headings": [
+    {
+      "anchor": null,
+      "key": "H001",
+      "level": 1,
+      "locator_anchor": null,
+      "title": "SKOS Simple Knowledge Organization System Reference"
+    },
+    {
+      "anchor": "w3c-doctype",
+      "key": "H002",
+      "level": 2,
+      "locator_anchor": "w3c-doctype",
+      "title": "W3C Recommendation 18 August 2009"
+    },
+    {
+      "anchor": "abstract",
+      "key": "H003",
+      "level": 2,
+      "locator_anchor": "abstract",
+      "title": "Abstract"
+    },
+    {
+      "anchor": null,
+      "key": "H004",
+      "level": 3,
+      "locator_anchor": "abstract",
+      "title": "Synopsis"
+    },
+    {
+      "anchor": "status",
+      "key": "H005",
+      "level": 2,
+      "locator_anchor": "status",
+      "title": "Status of This Document"
+    },
+    {
+      "anchor": "toc",
+      "key": "H006",
+      "level": 2,
+      "locator_anchor": "toc",
+      "title": "Table of Contents"
+    },
+    {
+      "anchor": "L155",
+      "key": "H007",
+      "level": 2,
+      "locator_anchor": "L155",
+      "title": "1. Introduction"
+    },
+    {
+      "anchor": "L879",
+      "key": "H008",
+      "level": 3,
+      "locator_anchor": "L879",
+      "title": "1.1. Background and Motivation"
+    },
+    {
+      "anchor": "L895",
+      "key": "H009",
+      "level": 3,
+      "locator_anchor": "L895",
+      "title": "1.2. SKOS Overview"
+    },
+    {
+      "anchor": "L1045",
+      "key": "H010",
+      "level": 3,
+      "locator_anchor": "L1045",
+      "title": "1.3. SKOS, RDF and OWL"
+    },
+    {
+      "anchor": "L831",
+      "key": "H011",
+      "level": 3,
+      "locator_anchor": "L831",
+      "title": "1.4. Consistency and Integrity"
+    },
+    {
+      "anchor": "L881",
+      "key": "H012",
+      "level": 3,
+      "locator_anchor": "L881",
+      "title": "1.5. Inference, Dependency and the Open World Assumption"
+    },
+    {
+      "anchor": "rationale",
+      "key": "H013",
+      "level": 3,
+      "locator_anchor": "rationale",
+      "title": "1.6. Design Rationale"
+    },
+    {
+      "anchor": "L649",
+      "key": "H014",
+      "level": 3,
+      "locator_anchor": "L649",
+      "title": "1.7. How to Read this Document"
+    },
+    {
+      "anchor": "L1291",
+      "key": "H015",
+      "level": 4,
+      "locator_anchor": "L1291",
+      "title": "1.7.1. Formal Definitions"
+    },
+    {
+      "anchor": "L1368",
+      "key": "H016",
+      "level": 4,
+      "locator_anchor": "L1368",
+      "title": "1.7.2. URI Abbreviations"
+    },
+    {
+      "anchor": "L1501",
+      "key": "H017",
+      "level": 4,
+      "locator_anchor": "L1501",
+      "title": "1.7.3. Examples"
+    },
+    {
+      "anchor": "L434",
+      "key": "H018",
+      "level": 3,
+      "locator_anchor": "L434",
+      "title": "1.8. Conformance"
+    },
+    {
+      "anchor": "L1302",
+      "key": "H019",
+      "level": 2,
+      "locator_anchor": "L1302",
+      "title": "2. SKOS Namespace and Vocabulary"
+    },
+    {
+      "anchor": "L1289",
+      "key": "H020",
+      "level": 2,
+      "locator_anchor": "L1289",
+      "title": "3. The skos:Concept Class"
+    },
+    {
+      "anchor": "L1437",
+      "key": "H021",
+      "level": 3,
+      "locator_anchor": "L1437",
+      "title": "3.1. Preamble"
+    },
+    {
+      "anchor": "L2039",
+      "key": "H022",
+      "level": 3,
+      "locator_anchor": "L2039",
+      "title": "3.2. Vocabulary"
+    },
+    {
+      "anchor": "L842",
+      "key": "H023",
+      "level": 3,
+      "locator_anchor": "L842",
+      "title": "3.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L2118",
+      "key": "H024",
+      "level": 3,
+      "locator_anchor": "L2118",
+      "title": "3.4. Examples"
+    },
+    {
+      "anchor": "L2145",
+      "key": "H025",
+      "level": 3,
+      "locator_anchor": "L2145",
+      "title": "3.5. Notes"
+    },
+    {
+      "anchor": "L896",
+      "key": "H026",
+      "level": 4,
+      "locator_anchor": "L896",
+      "title": "3.5.1. SKOS Concepts, OWL Classes and OWL Properties"
+    },
+    {
+      "anchor": "L2430",
+      "key": "H027",
+      "level": 2,
+      "locator_anchor": "L2430",
+      "title": "4. Concept Schemes"
+    },
+    {
+      "anchor": "L1638",
+      "key": "H028",
+      "level": 3,
+      "locator_anchor": "L1638",
+      "title": "4.1. Preamble"
+    },
+    {
+      "anchor": "L2457",
+      "key": "H029",
+      "level": 3,
+      "locator_anchor": "L2457",
+      "title": "4.2. Vocabulary"
+    },
+    {
+      "anchor": "L8421",
+      "key": "H030",
+      "level": 3,
+      "locator_anchor": "L8421",
+      "title": "4.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L1228",
+      "key": "H031",
+      "level": 3,
+      "locator_anchor": "L1228",
+      "title": "4.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L21181",
+      "key": "H032",
+      "level": 3,
+      "locator_anchor": "L21181",
+      "title": "4.5. Examples"
+    },
+    {
+      "anchor": "L2497",
+      "key": "H033",
+      "level": 3,
+      "locator_anchor": "L2497",
+      "title": "4.6. Notes"
+    },
+    {
+      "anchor": "L1101",
+      "key": "H034",
+      "level": 4,
+      "locator_anchor": "L1101",
+      "title": "4.6.1. Closed vs. Open Systems"
+    },
+    {
+      "anchor": "L1170",
+      "key": "H035",
+      "level": 4,
+      "locator_anchor": "L1170",
+      "title": "4.6.2. SKOS Concept Schemes and OWL Ontologies"
+    },
+    {
+      "anchor": "L2446",
+      "key": "H036",
+      "level": 4,
+      "locator_anchor": "L2446",
+      "title": "4.6.3. Top Concepts and Semantic Relations"
+    },
+    {
+      "anchor": "L2577",
+      "key": "H037",
+      "level": 4,
+      "locator_anchor": "L2577",
+      "title": "4.6.4. Scheme Containment and Semantic Relations"
+    },
+    {
+      "anchor": "L2805",
+      "key": "H038",
+      "level": 4,
+      "locator_anchor": "L2805",
+      "title": "4.6.5. Domain of skos:inScheme"
+    },
+    {
+      "anchor": "L2831",
+      "key": "H039",
+      "level": 2,
+      "locator_anchor": "L2831",
+      "title": "5. Lexical Labels"
+    },
+    {
+      "anchor": "L2007",
+      "key": "H040",
+      "level": 3,
+      "locator_anchor": "L2007",
+      "title": "5.1. Preamble"
+    },
+    {
+      "anchor": "L1304",
+      "key": "H041",
+      "level": 3,
+      "locator_anchor": "L1304",
+      "title": "5.2. Vocabulary"
+    },
+    {
+      "anchor": "L1329",
+      "key": "H042",
+      "level": 3,
+      "locator_anchor": "L1329",
+      "title": "5.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L1567",
+      "key": "H043",
+      "level": 3,
+      "locator_anchor": "L1567",
+      "title": "5.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L1409",
+      "key": "H044",
+      "level": 3,
+      "locator_anchor": "L1409",
+      "title": "5.5. Examples"
+    },
+    {
+      "anchor": "L1539",
+      "key": "H045",
+      "level": 3,
+      "locator_anchor": "L1539",
+      "title": "5.6. Notes"
+    },
+    {
+      "anchor": "L1541",
+      "key": "H046",
+      "level": 4,
+      "locator_anchor": "L1541",
+      "title": "5.6.1. Domain of SKOS Lexical Labeling Properties"
+    },
+    {
+      "anchor": "L1581",
+      "key": "H047",
+      "level": 4,
+      "locator_anchor": "L1581",
+      "title": "5.6.2. Range of SKOS Lexical Labeling Properties"
+    },
+    {
+      "anchor": "L3260",
+      "key": "H048",
+      "level": 4,
+      "locator_anchor": "L3260",
+      "title": "5.6.3. Defining Label Relations"
+    },
+    {
+      "anchor": "L1606",
+      "key": "H049",
+      "level": 4,
+      "locator_anchor": "L1606",
+      "title": "5.6.4. Alternates Without Preferred"
+    },
+    {
+      "anchor": "L1629",
+      "key": "H050",
+      "level": 4,
+      "locator_anchor": "L1629",
+      "title": "5.6.5. Labeling and Language Tags"
+    },
+    {
+      "anchor": "L2064",
+      "key": "H051",
+      "level": 2,
+      "locator_anchor": "L2064",
+      "title": "6. Notations"
+    },
+    {
+      "anchor": "L2531",
+      "key": "H052",
+      "level": 3,
+      "locator_anchor": "L2531",
+      "title": "6.1. Preamble"
+    },
+    {
+      "anchor": "L2542",
+      "key": "H053",
+      "level": 3,
+      "locator_anchor": "L2542",
+      "title": "6.2. Vocabulary"
+    },
+    {
+      "anchor": "L2557",
+      "key": "H054",
+      "level": 3,
+      "locator_anchor": "L2557",
+      "title": "6.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L2584",
+      "key": "H055",
+      "level": 3,
+      "locator_anchor": "L2584",
+      "title": "6.4. Examples"
+    },
+    {
+      "anchor": "L2611",
+      "key": "H056",
+      "level": 3,
+      "locator_anchor": "L2611",
+      "title": "6.5. Notes"
+    },
+    {
+      "anchor": "L2613",
+      "key": "H057",
+      "level": 4,
+      "locator_anchor": "L2613",
+      "title": "6.5.1. Notations, Typed Literals and Datatypes"
+    },
+    {
+      "anchor": "L2637",
+      "key": "H058",
+      "level": 4,
+      "locator_anchor": "L2637",
+      "title": "6.5.2. Multiple Notations"
+    },
+    {
+      "anchor": "L2646",
+      "key": "H059",
+      "level": 4,
+      "locator_anchor": "L2646",
+      "title": "6.5.3. Unique Notations in Concept Schemes"
+    },
+    {
+      "anchor": "L2655",
+      "key": "H060",
+      "level": 4,
+      "locator_anchor": "L2655",
+      "title": "6.5.4. Notations and Preferred Labels"
+    },
+    {
+      "anchor": "notations-note-domain",
+      "key": "H061",
+      "level": 4,
+      "locator_anchor": "notations-note-domain",
+      "title": "6.5.5. Domain of skos:notation"
+    },
+    {
+      "anchor": "L2860",
+      "key": "H062",
+      "level": 2,
+      "locator_anchor": "L2860",
+      "title": "7. Documentation Properties (Note Properties)"
+    },
+    {
+      "anchor": "L2543",
+      "key": "H063",
+      "level": 3,
+      "locator_anchor": "L2543",
+      "title": "7.1. Preamble"
+    },
+    {
+      "anchor": "L1693",
+      "key": "H064",
+      "level": 3,
+      "locator_anchor": "L1693",
+      "title": "7.2. Vocabulary"
+    },
+    {
+      "anchor": "L1738",
+      "key": "H065",
+      "level": 3,
+      "locator_anchor": "L1738",
+      "title": "7.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L1812",
+      "key": "H066",
+      "level": 3,
+      "locator_anchor": "L1812",
+      "title": "7.4. Examples"
+    },
+    {
+      "anchor": "L1877",
+      "key": "H067",
+      "level": 3,
+      "locator_anchor": "L1877",
+      "title": "7.5. Notes"
+    },
+    {
+      "anchor": "L1879",
+      "key": "H068",
+      "level": 4,
+      "locator_anchor": "L1879",
+      "title": "7.5.1. Domain of the SKOS Documentation Properties"
+    },
+    {
+      "anchor": "L1917",
+      "key": "H069",
+      "level": 4,
+      "locator_anchor": "L1917",
+      "title": "7.5.2. Range of the SKOS Documentation Properties"
+    },
+    {
+      "anchor": "L1930",
+      "key": "H070",
+      "level": 2,
+      "locator_anchor": "L1930",
+      "title": "8. Semantic Relations"
+    },
+    {
+      "anchor": "L2810",
+      "key": "H071",
+      "level": 3,
+      "locator_anchor": "L2810",
+      "title": "8.1. Preamble"
+    },
+    {
+      "anchor": "L2010",
+      "key": "H072",
+      "level": 3,
+      "locator_anchor": "L2010",
+      "title": "8.2. Vocabulary"
+    },
+    {
+      "anchor": "L2055",
+      "key": "H073",
+      "level": 3,
+      "locator_anchor": "L2055",
+      "title": "8.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L2422",
+      "key": "H074",
+      "level": 3,
+      "locator_anchor": "L2422",
+      "title": "8.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L2157",
+      "key": "H075",
+      "level": 3,
+      "locator_anchor": "L2157",
+      "title": "8.5. Examples"
+    },
+    {
+      "anchor": "L2249",
+      "key": "H076",
+      "level": 3,
+      "locator_anchor": "L2249",
+      "title": "8.6. Notes"
+    },
+    {
+      "anchor": "L3732",
+      "key": "H077",
+      "level": 4,
+      "locator_anchor": "L3732",
+      "title": "8.6.1. Sub-Property Relationships"
+    },
+    {
+      "anchor": "L2251",
+      "key": "H078",
+      "level": 4,
+      "locator_anchor": "L2251",
+      "title": "8.6.2. Domain and Range of SKOS Semantic Relation Properties"
+    },
+    {
+      "anchor": "L2255",
+      "key": "H079",
+      "level": 4,
+      "locator_anchor": "L2255",
+      "title": "8.6.3. Symmetry of skos:related"
+    },
+    {
+      "anchor": "L2344",
+      "key": "H080",
+      "level": 4,
+      "locator_anchor": "L2344",
+      "title": "8.6.4. skos:related and Transitivity"
+    },
+    {
+      "anchor": "L2376",
+      "key": "H081",
+      "level": 4,
+      "locator_anchor": "L2376",
+      "title": "8.6.5. skos:related and Reflexivity"
+    },
+    {
+      "anchor": "L2413",
+      "key": "H082",
+      "level": 4,
+      "locator_anchor": "L2413",
+      "title": "8.6.6. skos:broader and Transitivity"
+    },
+    {
+      "anchor": "L2449",
+      "key": "H083",
+      "level": 4,
+      "locator_anchor": "L2449",
+      "title": "8.6.7. skos:broader and Reflexivity"
+    },
+    {
+      "anchor": "L2484",
+      "key": "H084",
+      "level": 4,
+      "locator_anchor": "L2484",
+      "title": "8.6.8. Cycles in the Hierarchical Relation (skos:broaderTransitive and Reflexivity)"
+    },
+    {
+      "anchor": "L2518",
+      "key": "H085",
+      "level": 4,
+      "locator_anchor": "L2518",
+      "title": "8.6.9. Alternate Paths in the Hierarchical Relation"
+    },
+    {
+      "anchor": "L4261",
+      "key": "H086",
+      "level": 4,
+      "locator_anchor": "L4261",
+      "title": "8.6.10. Disjointness of skos:related and skos:broaderTransitive"
+    },
+    {
+      "anchor": "L2942",
+      "key": "H087",
+      "level": 2,
+      "locator_anchor": "L2942",
+      "title": "9. Concept Collections"
+    },
+    {
+      "anchor": "L3806",
+      "key": "H088",
+      "level": 3,
+      "locator_anchor": "L3806",
+      "title": "9.1. Preamble"
+    },
+    {
+      "anchor": "L3282",
+      "key": "H089",
+      "level": 3,
+      "locator_anchor": "L3282",
+      "title": "9.2. Vocabulary"
+    },
+    {
+      "anchor": "L3312",
+      "key": "H090",
+      "level": 3,
+      "locator_anchor": "L3312",
+      "title": "9.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L3424",
+      "key": "H091",
+      "level": 3,
+      "locator_anchor": "L3424",
+      "title": "9.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L3460",
+      "key": "H092",
+      "level": 3,
+      "locator_anchor": "L3460",
+      "title": "9.5. Examples"
+    },
+    {
+      "anchor": "L3512",
+      "key": "H093",
+      "level": 3,
+      "locator_anchor": "L3512",
+      "title": "9.6. Notes"
+    },
+    {
+      "anchor": "L3514",
+      "key": "H094",
+      "level": 4,
+      "locator_anchor": "L3514",
+      "title": "9.6.1. Inferring Collections from Ordered Collections"
+    },
+    {
+      "anchor": "L3551",
+      "key": "H095",
+      "level": 4,
+      "locator_anchor": "L3551",
+      "title": "9.6.2. skos:memberList Integrity"
+    },
+    {
+      "anchor": "L3588",
+      "key": "H096",
+      "level": 4,
+      "locator_anchor": "L3588",
+      "title": "9.6.3. Nested Collections"
+    },
+    {
+      "anchor": "L3625",
+      "key": "H097",
+      "level": 4,
+      "locator_anchor": "L3625",
+      "title": "9.6.4. SKOS Concepts, Concept Collections and Semantic Relations"
+    },
+    {
+      "anchor": "L1309",
+      "key": "H098",
+      "level": 2,
+      "locator_anchor": "L1309",
+      "title": "10. Mapping Properties"
+    },
+    {
+      "anchor": "L4307",
+      "key": "H099",
+      "level": 3,
+      "locator_anchor": "L4307",
+      "title": "10.1. Preamble"
+    },
+    {
+      "anchor": "L4138",
+      "key": "H100",
+      "level": 3,
+      "locator_anchor": "L4138",
+      "title": "10.2. Vocabulary"
+    },
+    {
+      "anchor": "L4186",
+      "key": "H101",
+      "level": 3,
+      "locator_anchor": "L4186",
+      "title": "10.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L5429",
+      "key": "H102",
+      "level": 3,
+      "locator_anchor": "L5429",
+      "title": "10.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L4316",
+      "key": "H103",
+      "level": 3,
+      "locator_anchor": "L4316",
+      "title": "10.5. Examples"
+    },
+    {
+      "anchor": "L4412",
+      "key": "H104",
+      "level": 3,
+      "locator_anchor": "L4412",
+      "title": "10.6. Notes"
+    },
+    {
+      "anchor": "L4160",
+      "key": "H105",
+      "level": 4,
+      "locator_anchor": "L4160",
+      "title": "10.6.1. Mapping Properties, Semantic Relation Properties and Concept Schemes"
+    },
+    {
+      "anchor": "L4394",
+      "key": "H106",
+      "level": 4,
+      "locator_anchor": "L4394",
+      "title": "10.6.2. Clashes Between Hierarchical and Associative Links"
+    },
+    {
+      "anchor": "L4414",
+      "key": "H107",
+      "level": 4,
+      "locator_anchor": "L4414",
+      "title": "10.6.3. Mapping Properties and Transitivity"
+    },
+    {
+      "anchor": "L4499",
+      "key": "H108",
+      "level": 4,
+      "locator_anchor": "L4499",
+      "title": "10.6.4. Mapping Properties and Reflexivity"
+    },
+    {
+      "anchor": "L4564",
+      "key": "H109",
+      "level": 4,
+      "locator_anchor": "L4564",
+      "title": "10.6.5. Cycles and Alternate Paths Involving skos:broadMatch"
+    },
+    {
+      "anchor": "mapping-cycles-exactMatch",
+      "key": "H110",
+      "level": 4,
+      "locator_anchor": "mapping-cycles-exactMatch",
+      "title": "10.6.6. Cycles Involving skos:exactMatch and skos:closeMatch"
+    },
+    {
+      "anchor": "L5675",
+      "key": "H111",
+      "level": 4,
+      "locator_anchor": "L5675",
+      "title": "10.6.7. Sub-Property Chains Involving skos:exactMatch"
+    },
+    {
+      "anchor": "L4858",
+      "key": "H112",
+      "level": 4,
+      "locator_anchor": "L4858",
+      "title": "10.6.8. skos:closeMatch, skos:exactMatch, owl:sameAs, owl:equivalentClass, owl:equivalentProperty"
+    },
+    {
+      "anchor": "L744",
+      "key": "H113",
+      "level": 2,
+      "locator_anchor": "L744",
+      "title": "11. References"
+    },
+    {
+      "anchor": "ack",
+      "key": "H114",
+      "level": 2,
+      "locator_anchor": "ack",
+      "title": "12. Acknowledgments"
+    },
+    {
+      "anchor": "L7127",
+      "key": "H115",
+      "level": 2,
+      "locator_anchor": "L7127",
+      "title": "Appendix A. SKOS Properties and Classes"
+    },
+    {
+      "anchor": "L7130",
+      "key": "H116",
+      "level": 3,
+      "locator_anchor": "L7130",
+      "title": "A.1. Classes in the SKOS Data Model"
+    },
+    {
+      "anchor": "L7307",
+      "key": "H117",
+      "level": 3,
+      "locator_anchor": "L7307",
+      "title": "A.2. Properties in the SKOS Data Model"
+    },
+    {
+      "anchor": "L4945",
+      "key": "H118",
+      "level": 2,
+      "locator_anchor": "L4945",
+      "title": "Appendix B. SKOS eXtension for Labels (SKOS-XL)"
+    },
+    {
+      "anchor": "L5212",
+      "key": "H119",
+      "level": 3,
+      "locator_anchor": "L5212",
+      "title": "B.1. SKOS-XL Namespace and Vocabulary"
+    },
+    {
+      "anchor": "L5444",
+      "key": "H120",
+      "level": 3,
+      "locator_anchor": "L5444",
+      "title": "B.2. The skosxl:Label Class"
+    },
+    {
+      "anchor": "L375",
+      "key": "H121",
+      "level": 4,
+      "locator_anchor": "L375",
+      "title": "B.2.1. Preamble"
+    },
+    {
+      "anchor": "L5518",
+      "key": "H122",
+      "level": 4,
+      "locator_anchor": "L5518",
+      "title": "B.2.2. Class and Property Definitions"
+    },
+    {
+      "anchor": "L5525",
+      "key": "H123",
+      "level": 4,
+      "locator_anchor": "L5525",
+      "title": "B.2.3. Examples"
+    },
+    {
+      "anchor": "L5716",
+      "key": "H124",
+      "level": 4,
+      "locator_anchor": "L5716",
+      "title": "B.2.4. Notes"
+    },
+    {
+      "anchor": "L5739",
+      "key": "H125",
+      "level": 5,
+      "locator_anchor": "L5739",
+      "title": "B.2.4.1. Identity and Entailment"
+    },
+    {
+      "anchor": "L648",
+      "key": "H126",
+      "level": 5,
+      "locator_anchor": "L648",
+      "title": "B.2.4.2. Membership of Concept Schemes"
+    },
+    {
+      "anchor": "L5981",
+      "key": "H127",
+      "level": 3,
+      "locator_anchor": "L5981",
+      "title": "B.3. Preferred, Alternate and Hidden skosxl:Labels"
+    },
+    {
+      "anchor": "L661",
+      "key": "H128",
+      "level": 4,
+      "locator_anchor": "L661",
+      "title": "B.3.1. Preamble"
+    },
+    {
+      "anchor": "L677",
+      "key": "H129",
+      "level": 4,
+      "locator_anchor": "L677",
+      "title": "B.3.2. Class and Property Definitions"
+    },
+    {
+      "anchor": "L724",
+      "key": "H130",
+      "level": 4,
+      "locator_anchor": "L724",
+      "title": "B.3.3. Examples"
+    },
+    {
+      "anchor": "L778",
+      "key": "H131",
+      "level": 4,
+      "locator_anchor": "L778",
+      "title": "B.3.4. Notes"
+    },
+    {
+      "anchor": "L780",
+      "key": "H132",
+      "level": 5,
+      "locator_anchor": "L780",
+      "title": "B.3.4.1. Dumbing-Down to SKOS Lexical Labels"
+    },
+    {
+      "anchor": "L899",
+      "key": "H133",
+      "level": 5,
+      "locator_anchor": "L899",
+      "title": "B.3.4.2. SKOS+XL Labeling Integrity"
+    },
+    {
+      "anchor": "L7196",
+      "key": "H134",
+      "level": 3,
+      "locator_anchor": "L7196",
+      "title": "B.4. Links Between skosxl:Labels"
+    },
+    {
+      "anchor": "L1120",
+      "key": "H135",
+      "level": 4,
+      "locator_anchor": "L1120",
+      "title": "B.4.1. Preamble"
+    },
+    {
+      "anchor": "L1129",
+      "key": "H136",
+      "level": 4,
+      "locator_anchor": "L1129",
+      "title": "B.4.2. Class and Property Definitions"
+    },
+    {
+      "anchor": "L1160",
+      "key": "H137",
+      "level": 4,
+      "locator_anchor": "L1160",
+      "title": "B.4.3. Examples"
+    },
+    {
+      "anchor": "L1193",
+      "key": "H138",
+      "level": 4,
+      "locator_anchor": "L1193",
+      "title": "B.4.4. Notes"
+    },
+    {
+      "anchor": "L1195",
+      "key": "H139",
+      "level": 5,
+      "locator_anchor": "L1195",
+      "title": "B.4.4.1. Refinements of this Pattern"
+    },
+    {
+      "anchor": "xl-overview",
+      "key": "H140",
+      "level": 3,
+      "locator_anchor": "xl-overview",
+      "title": "B.5. SKOS-XL Schema Overview"
+    },
+    {
+      "anchor": null,
+      "key": "H141",
+      "level": 3,
+      "locator_anchor": "xl-overview",
+      "title": "B.5.1 Classes in the SKOS-XL Data Model"
+    },
+    {
+      "anchor": null,
+      "key": "H142",
+      "level": 3,
+      "locator_anchor": "xl-overview",
+      "title": "B.5.2.Properties in the SKOS-XL Data Model"
+    },
+    {
+      "anchor": "L2994",
+      "key": "H143",
+      "level": 2,
+      "locator_anchor": "L2994",
+      "title": "Appendix C. SKOS and SKOS-XL Namespace Documents"
+    },
+    {
+      "anchor": "namespace-document-html",
+      "key": "H144",
+      "level": 3,
+      "locator_anchor": "namespace-document-html",
+      "title": "C.1. SKOS Namespace Document - HTML Variant (normative)"
+    },
+    {
+      "anchor": "namespace-document-rdf",
+      "key": "H145",
+      "level": 3,
+      "locator_anchor": "namespace-document-rdf",
+      "title": "C.2. SKOS Namespace Document - RDF/XML Variant (normative)"
+    },
+    {
+      "anchor": "rdf-schema-owl-dl",
+      "key": "H146",
+      "level": 3,
+      "locator_anchor": "rdf-schema-owl-dl",
+      "title": "C.3. SKOS RDF Schema - OWL 1 DL Sub-set (informative)"
+    },
+    {
+      "anchor": "xl-namespace-document-html",
+      "key": "H147",
+      "level": 3,
+      "locator_anchor": "xl-namespace-document-html",
+      "title": "C.4. SKOS-XL Namespace Document - HTML Variant (normative)"
+    },
+    {
+      "anchor": "xl-namespace-document-rdf",
+      "key": "H148",
+      "level": 3,
+      "locator_anchor": "xl-namespace-document-rdf",
+      "title": "C.5. SKOS-XL Namespace Document - RDF/XML Variant (normative)"
+    },
+    {
+      "anchor": "namespace",
+      "key": "H149",
+      "level": 2,
+      "locator_anchor": "namespace",
+      "title": "Appendix D. SKOS Namespace: a historical note"
+    }
+  ],
+  "images": [
+    {
+      "alt": "W3C",
+      "role": "BADGE_NOT_CONTENT_FIGURE",
+      "url": "https://www.w3.org/Icons/w3c_home"
+    },
+    {
+      "alt": "Valid XHTML + RDFa",
+      "role": "BADGE_NOT_CONTENT_FIGURE",
+      "url": "https://www.w3.org/Icons/valid-xhtml-rdfa-blue"
+    }
+  ],
+  "population_policy": "Document headings, prose statements, examples and text diagrams only; not executable ontology class populations.",
+  "reasoner_execution": "NOT_EXECUTED",
+  "sections": [
+    {
+      "anchor": "L155",
+      "key": "H007",
+      "level": 2,
+      "locator_anchor": "L155",
+      "title": "1. Introduction"
+    },
+    {
+      "anchor": "L879",
+      "key": "H008",
+      "level": 3,
+      "locator_anchor": "L879",
+      "title": "1.1. Background and Motivation"
+    },
+    {
+      "anchor": "L895",
+      "key": "H009",
+      "level": 3,
+      "locator_anchor": "L895",
+      "title": "1.2. SKOS Overview"
+    },
+    {
+      "anchor": "L1045",
+      "key": "H010",
+      "level": 3,
+      "locator_anchor": "L1045",
+      "title": "1.3. SKOS, RDF and OWL"
+    },
+    {
+      "anchor": "L831",
+      "key": "H011",
+      "level": 3,
+      "locator_anchor": "L831",
+      "title": "1.4. Consistency and Integrity"
+    },
+    {
+      "anchor": "L881",
+      "key": "H012",
+      "level": 3,
+      "locator_anchor": "L881",
+      "title": "1.5. Inference, Dependency and the Open World Assumption"
+    },
+    {
+      "anchor": "rationale",
+      "key": "H013",
+      "level": 3,
+      "locator_anchor": "rationale",
+      "title": "1.6. Design Rationale"
+    },
+    {
+      "anchor": "L649",
+      "key": "H014",
+      "level": 3,
+      "locator_anchor": "L649",
+      "title": "1.7. How to Read this Document"
+    },
+    {
+      "anchor": "L1291",
+      "key": "H015",
+      "level": 4,
+      "locator_anchor": "L1291",
+      "title": "1.7.1. Formal Definitions"
+    },
+    {
+      "anchor": "L1368",
+      "key": "H016",
+      "level": 4,
+      "locator_anchor": "L1368",
+      "title": "1.7.2. URI Abbreviations"
+    },
+    {
+      "anchor": "L1501",
+      "key": "H017",
+      "level": 4,
+      "locator_anchor": "L1501",
+      "title": "1.7.3. Examples"
+    },
+    {
+      "anchor": "L434",
+      "key": "H018",
+      "level": 3,
+      "locator_anchor": "L434",
+      "title": "1.8. Conformance"
+    },
+    {
+      "anchor": "L1302",
+      "key": "H019",
+      "level": 2,
+      "locator_anchor": "L1302",
+      "title": "2. SKOS Namespace and Vocabulary"
+    },
+    {
+      "anchor": "L1289",
+      "key": "H020",
+      "level": 2,
+      "locator_anchor": "L1289",
+      "title": "3. The skos:Concept Class"
+    },
+    {
+      "anchor": "L1437",
+      "key": "H021",
+      "level": 3,
+      "locator_anchor": "L1437",
+      "title": "3.1. Preamble"
+    },
+    {
+      "anchor": "L2039",
+      "key": "H022",
+      "level": 3,
+      "locator_anchor": "L2039",
+      "title": "3.2. Vocabulary"
+    },
+    {
+      "anchor": "L842",
+      "key": "H023",
+      "level": 3,
+      "locator_anchor": "L842",
+      "title": "3.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L2118",
+      "key": "H024",
+      "level": 3,
+      "locator_anchor": "L2118",
+      "title": "3.4. Examples"
+    },
+    {
+      "anchor": "L2145",
+      "key": "H025",
+      "level": 3,
+      "locator_anchor": "L2145",
+      "title": "3.5. Notes"
+    },
+    {
+      "anchor": "L896",
+      "key": "H026",
+      "level": 4,
+      "locator_anchor": "L896",
+      "title": "3.5.1. SKOS Concepts, OWL Classes and OWL Properties"
+    },
+    {
+      "anchor": "L2430",
+      "key": "H027",
+      "level": 2,
+      "locator_anchor": "L2430",
+      "title": "4. Concept Schemes"
+    },
+    {
+      "anchor": "L1638",
+      "key": "H028",
+      "level": 3,
+      "locator_anchor": "L1638",
+      "title": "4.1. Preamble"
+    },
+    {
+      "anchor": "L2457",
+      "key": "H029",
+      "level": 3,
+      "locator_anchor": "L2457",
+      "title": "4.2. Vocabulary"
+    },
+    {
+      "anchor": "L8421",
+      "key": "H030",
+      "level": 3,
+      "locator_anchor": "L8421",
+      "title": "4.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L1228",
+      "key": "H031",
+      "level": 3,
+      "locator_anchor": "L1228",
+      "title": "4.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L21181",
+      "key": "H032",
+      "level": 3,
+      "locator_anchor": "L21181",
+      "title": "4.5. Examples"
+    },
+    {
+      "anchor": "L2497",
+      "key": "H033",
+      "level": 3,
+      "locator_anchor": "L2497",
+      "title": "4.6. Notes"
+    },
+    {
+      "anchor": "L1101",
+      "key": "H034",
+      "level": 4,
+      "locator_anchor": "L1101",
+      "title": "4.6.1. Closed vs. Open Systems"
+    },
+    {
+      "anchor": "L1170",
+      "key": "H035",
+      "level": 4,
+      "locator_anchor": "L1170",
+      "title": "4.6.2. SKOS Concept Schemes and OWL Ontologies"
+    },
+    {
+      "anchor": "L2446",
+      "key": "H036",
+      "level": 4,
+      "locator_anchor": "L2446",
+      "title": "4.6.3. Top Concepts and Semantic Relations"
+    },
+    {
+      "anchor": "L2577",
+      "key": "H037",
+      "level": 4,
+      "locator_anchor": "L2577",
+      "title": "4.6.4. Scheme Containment and Semantic Relations"
+    },
+    {
+      "anchor": "L2805",
+      "key": "H038",
+      "level": 4,
+      "locator_anchor": "L2805",
+      "title": "4.6.5. Domain of skos:inScheme"
+    },
+    {
+      "anchor": "L2831",
+      "key": "H039",
+      "level": 2,
+      "locator_anchor": "L2831",
+      "title": "5. Lexical Labels"
+    },
+    {
+      "anchor": "L2007",
+      "key": "H040",
+      "level": 3,
+      "locator_anchor": "L2007",
+      "title": "5.1. Preamble"
+    },
+    {
+      "anchor": "L1304",
+      "key": "H041",
+      "level": 3,
+      "locator_anchor": "L1304",
+      "title": "5.2. Vocabulary"
+    },
+    {
+      "anchor": "L1329",
+      "key": "H042",
+      "level": 3,
+      "locator_anchor": "L1329",
+      "title": "5.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L1567",
+      "key": "H043",
+      "level": 3,
+      "locator_anchor": "L1567",
+      "title": "5.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L1409",
+      "key": "H044",
+      "level": 3,
+      "locator_anchor": "L1409",
+      "title": "5.5. Examples"
+    },
+    {
+      "anchor": "L1539",
+      "key": "H045",
+      "level": 3,
+      "locator_anchor": "L1539",
+      "title": "5.6. Notes"
+    },
+    {
+      "anchor": "L1541",
+      "key": "H046",
+      "level": 4,
+      "locator_anchor": "L1541",
+      "title": "5.6.1. Domain of SKOS Lexical Labeling Properties"
+    },
+    {
+      "anchor": "L1581",
+      "key": "H047",
+      "level": 4,
+      "locator_anchor": "L1581",
+      "title": "5.6.2. Range of SKOS Lexical Labeling Properties"
+    },
+    {
+      "anchor": "L3260",
+      "key": "H048",
+      "level": 4,
+      "locator_anchor": "L3260",
+      "title": "5.6.3. Defining Label Relations"
+    },
+    {
+      "anchor": "L1606",
+      "key": "H049",
+      "level": 4,
+      "locator_anchor": "L1606",
+      "title": "5.6.4. Alternates Without Preferred"
+    },
+    {
+      "anchor": "L1629",
+      "key": "H050",
+      "level": 4,
+      "locator_anchor": "L1629",
+      "title": "5.6.5. Labeling and Language Tags"
+    },
+    {
+      "anchor": "L2064",
+      "key": "H051",
+      "level": 2,
+      "locator_anchor": "L2064",
+      "title": "6. Notations"
+    },
+    {
+      "anchor": "L2531",
+      "key": "H052",
+      "level": 3,
+      "locator_anchor": "L2531",
+      "title": "6.1. Preamble"
+    },
+    {
+      "anchor": "L2542",
+      "key": "H053",
+      "level": 3,
+      "locator_anchor": "L2542",
+      "title": "6.2. Vocabulary"
+    },
+    {
+      "anchor": "L2557",
+      "key": "H054",
+      "level": 3,
+      "locator_anchor": "L2557",
+      "title": "6.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L2584",
+      "key": "H055",
+      "level": 3,
+      "locator_anchor": "L2584",
+      "title": "6.4. Examples"
+    },
+    {
+      "anchor": "L2611",
+      "key": "H056",
+      "level": 3,
+      "locator_anchor": "L2611",
+      "title": "6.5. Notes"
+    },
+    {
+      "anchor": "L2613",
+      "key": "H057",
+      "level": 4,
+      "locator_anchor": "L2613",
+      "title": "6.5.1. Notations, Typed Literals and Datatypes"
+    },
+    {
+      "anchor": "L2637",
+      "key": "H058",
+      "level": 4,
+      "locator_anchor": "L2637",
+      "title": "6.5.2. Multiple Notations"
+    },
+    {
+      "anchor": "L2646",
+      "key": "H059",
+      "level": 4,
+      "locator_anchor": "L2646",
+      "title": "6.5.3. Unique Notations in Concept Schemes"
+    },
+    {
+      "anchor": "L2655",
+      "key": "H060",
+      "level": 4,
+      "locator_anchor": "L2655",
+      "title": "6.5.4. Notations and Preferred Labels"
+    },
+    {
+      "anchor": "notations-note-domain",
+      "key": "H061",
+      "level": 4,
+      "locator_anchor": "notations-note-domain",
+      "title": "6.5.5. Domain of skos:notation"
+    },
+    {
+      "anchor": "L2860",
+      "key": "H062",
+      "level": 2,
+      "locator_anchor": "L2860",
+      "title": "7. Documentation Properties (Note Properties)"
+    },
+    {
+      "anchor": "L2543",
+      "key": "H063",
+      "level": 3,
+      "locator_anchor": "L2543",
+      "title": "7.1. Preamble"
+    },
+    {
+      "anchor": "L1693",
+      "key": "H064",
+      "level": 3,
+      "locator_anchor": "L1693",
+      "title": "7.2. Vocabulary"
+    },
+    {
+      "anchor": "L1738",
+      "key": "H065",
+      "level": 3,
+      "locator_anchor": "L1738",
+      "title": "7.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L1812",
+      "key": "H066",
+      "level": 3,
+      "locator_anchor": "L1812",
+      "title": "7.4. Examples"
+    },
+    {
+      "anchor": "L1877",
+      "key": "H067",
+      "level": 3,
+      "locator_anchor": "L1877",
+      "title": "7.5. Notes"
+    },
+    {
+      "anchor": "L1879",
+      "key": "H068",
+      "level": 4,
+      "locator_anchor": "L1879",
+      "title": "7.5.1. Domain of the SKOS Documentation Properties"
+    },
+    {
+      "anchor": "L1917",
+      "key": "H069",
+      "level": 4,
+      "locator_anchor": "L1917",
+      "title": "7.5.2. Range of the SKOS Documentation Properties"
+    },
+    {
+      "anchor": "L1930",
+      "key": "H070",
+      "level": 2,
+      "locator_anchor": "L1930",
+      "title": "8. Semantic Relations"
+    },
+    {
+      "anchor": "L2810",
+      "key": "H071",
+      "level": 3,
+      "locator_anchor": "L2810",
+      "title": "8.1. Preamble"
+    },
+    {
+      "anchor": "L2010",
+      "key": "H072",
+      "level": 3,
+      "locator_anchor": "L2010",
+      "title": "8.2. Vocabulary"
+    },
+    {
+      "anchor": "L2055",
+      "key": "H073",
+      "level": 3,
+      "locator_anchor": "L2055",
+      "title": "8.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L2422",
+      "key": "H074",
+      "level": 3,
+      "locator_anchor": "L2422",
+      "title": "8.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L2157",
+      "key": "H075",
+      "level": 3,
+      "locator_anchor": "L2157",
+      "title": "8.5. Examples"
+    },
+    {
+      "anchor": "L2249",
+      "key": "H076",
+      "level": 3,
+      "locator_anchor": "L2249",
+      "title": "8.6. Notes"
+    },
+    {
+      "anchor": "L3732",
+      "key": "H077",
+      "level": 4,
+      "locator_anchor": "L3732",
+      "title": "8.6.1. Sub-Property Relationships"
+    },
+    {
+      "anchor": "L2251",
+      "key": "H078",
+      "level": 4,
+      "locator_anchor": "L2251",
+      "title": "8.6.2. Domain and Range of SKOS Semantic Relation Properties"
+    },
+    {
+      "anchor": "L2255",
+      "key": "H079",
+      "level": 4,
+      "locator_anchor": "L2255",
+      "title": "8.6.3. Symmetry of skos:related"
+    },
+    {
+      "anchor": "L2344",
+      "key": "H080",
+      "level": 4,
+      "locator_anchor": "L2344",
+      "title": "8.6.4. skos:related and Transitivity"
+    },
+    {
+      "anchor": "L2376",
+      "key": "H081",
+      "level": 4,
+      "locator_anchor": "L2376",
+      "title": "8.6.5. skos:related and Reflexivity"
+    },
+    {
+      "anchor": "L2413",
+      "key": "H082",
+      "level": 4,
+      "locator_anchor": "L2413",
+      "title": "8.6.6. skos:broader and Transitivity"
+    },
+    {
+      "anchor": "L2449",
+      "key": "H083",
+      "level": 4,
+      "locator_anchor": "L2449",
+      "title": "8.6.7. skos:broader and Reflexivity"
+    },
+    {
+      "anchor": "L2484",
+      "key": "H084",
+      "level": 4,
+      "locator_anchor": "L2484",
+      "title": "8.6.8. Cycles in the Hierarchical Relation (skos:broaderTransitive and Reflexivity)"
+    },
+    {
+      "anchor": "L2518",
+      "key": "H085",
+      "level": 4,
+      "locator_anchor": "L2518",
+      "title": "8.6.9. Alternate Paths in the Hierarchical Relation"
+    },
+    {
+      "anchor": "L4261",
+      "key": "H086",
+      "level": 4,
+      "locator_anchor": "L4261",
+      "title": "8.6.10. Disjointness of skos:related and skos:broaderTransitive"
+    },
+    {
+      "anchor": "L2942",
+      "key": "H087",
+      "level": 2,
+      "locator_anchor": "L2942",
+      "title": "9. Concept Collections"
+    },
+    {
+      "anchor": "L3806",
+      "key": "H088",
+      "level": 3,
+      "locator_anchor": "L3806",
+      "title": "9.1. Preamble"
+    },
+    {
+      "anchor": "L3282",
+      "key": "H089",
+      "level": 3,
+      "locator_anchor": "L3282",
+      "title": "9.2. Vocabulary"
+    },
+    {
+      "anchor": "L3312",
+      "key": "H090",
+      "level": 3,
+      "locator_anchor": "L3312",
+      "title": "9.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L3424",
+      "key": "H091",
+      "level": 3,
+      "locator_anchor": "L3424",
+      "title": "9.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L3460",
+      "key": "H092",
+      "level": 3,
+      "locator_anchor": "L3460",
+      "title": "9.5. Examples"
+    },
+    {
+      "anchor": "L3512",
+      "key": "H093",
+      "level": 3,
+      "locator_anchor": "L3512",
+      "title": "9.6. Notes"
+    },
+    {
+      "anchor": "L3514",
+      "key": "H094",
+      "level": 4,
+      "locator_anchor": "L3514",
+      "title": "9.6.1. Inferring Collections from Ordered Collections"
+    },
+    {
+      "anchor": "L3551",
+      "key": "H095",
+      "level": 4,
+      "locator_anchor": "L3551",
+      "title": "9.6.2. skos:memberList Integrity"
+    },
+    {
+      "anchor": "L3588",
+      "key": "H096",
+      "level": 4,
+      "locator_anchor": "L3588",
+      "title": "9.6.3. Nested Collections"
+    },
+    {
+      "anchor": "L3625",
+      "key": "H097",
+      "level": 4,
+      "locator_anchor": "L3625",
+      "title": "9.6.4. SKOS Concepts, Concept Collections and Semantic Relations"
+    },
+    {
+      "anchor": "L1309",
+      "key": "H098",
+      "level": 2,
+      "locator_anchor": "L1309",
+      "title": "10. Mapping Properties"
+    },
+    {
+      "anchor": "L4307",
+      "key": "H099",
+      "level": 3,
+      "locator_anchor": "L4307",
+      "title": "10.1. Preamble"
+    },
+    {
+      "anchor": "L4138",
+      "key": "H100",
+      "level": 3,
+      "locator_anchor": "L4138",
+      "title": "10.2. Vocabulary"
+    },
+    {
+      "anchor": "L4186",
+      "key": "H101",
+      "level": 3,
+      "locator_anchor": "L4186",
+      "title": "10.3. Class & Property Definitions"
+    },
+    {
+      "anchor": "L5429",
+      "key": "H102",
+      "level": 3,
+      "locator_anchor": "L5429",
+      "title": "10.4. Integrity Conditions"
+    },
+    {
+      "anchor": "L4316",
+      "key": "H103",
+      "level": 3,
+      "locator_anchor": "L4316",
+      "title": "10.5. Examples"
+    },
+    {
+      "anchor": "L4412",
+      "key": "H104",
+      "level": 3,
+      "locator_anchor": "L4412",
+      "title": "10.6. Notes"
+    },
+    {
+      "anchor": "L4160",
+      "key": "H105",
+      "level": 4,
+      "locator_anchor": "L4160",
+      "title": "10.6.1. Mapping Properties, Semantic Relation Properties and Concept Schemes"
+    },
+    {
+      "anchor": "L4394",
+      "key": "H106",
+      "level": 4,
+      "locator_anchor": "L4394",
+      "title": "10.6.2. Clashes Between Hierarchical and Associative Links"
+    },
+    {
+      "anchor": "L4414",
+      "key": "H107",
+      "level": 4,
+      "locator_anchor": "L4414",
+      "title": "10.6.3. Mapping Properties and Transitivity"
+    },
+    {
+      "anchor": "L4499",
+      "key": "H108",
+      "level": 4,
+      "locator_anchor": "L4499",
+      "title": "10.6.4. Mapping Properties and Reflexivity"
+    },
+    {
+      "anchor": "L4564",
+      "key": "H109",
+      "level": 4,
+      "locator_anchor": "L4564",
+      "title": "10.6.5. Cycles and Alternate Paths Involving skos:broadMatch"
+    },
+    {
+      "anchor": "mapping-cycles-exactMatch",
+      "key": "H110",
+      "level": 4,
+      "locator_anchor": "mapping-cycles-exactMatch",
+      "title": "10.6.6. Cycles Involving skos:exactMatch and skos:closeMatch"
+    },
+    {
+      "anchor": "L5675",
+      "key": "H111",
+      "level": 4,
+      "locator_anchor": "L5675",
+      "title": "10.6.7. Sub-Property Chains Involving skos:exactMatch"
+    },
+    {
+      "anchor": "L4858",
+      "key": "H112",
+      "level": 4,
+      "locator_anchor": "L4858",
+      "title": "10.6.8. skos:closeMatch, skos:exactMatch, owl:sameAs, owl:equivalentClass, owl:equivalentProperty"
+    },
+    {
+      "anchor": "L744",
+      "key": "H113",
+      "level": 2,
+      "locator_anchor": "L744",
+      "title": "11. References"
+    },
+    {
+      "anchor": "ack",
+      "key": "H114",
+      "level": 2,
+      "locator_anchor": "ack",
+      "title": "12. Acknowledgments"
+    },
+    {
+      "anchor": "L7127",
+      "key": "H115",
+      "level": 2,
+      "locator_anchor": "L7127",
+      "title": "Appendix A. SKOS Properties and Classes"
+    },
+    {
+      "anchor": "L7130",
+      "key": "H116",
+      "level": 3,
+      "locator_anchor": "L7130",
+      "title": "A.1. Classes in the SKOS Data Model"
+    },
+    {
+      "anchor": "L7307",
+      "key": "H117",
+      "level": 3,
+      "locator_anchor": "L7307",
+      "title": "A.2. Properties in the SKOS Data Model"
+    },
+    {
+      "anchor": "L4945",
+      "key": "H118",
+      "level": 2,
+      "locator_anchor": "L4945",
+      "title": "Appendix B. SKOS eXtension for Labels (SKOS-XL)"
+    },
+    {
+      "anchor": "L5212",
+      "key": "H119",
+      "level": 3,
+      "locator_anchor": "L5212",
+      "title": "B.1. SKOS-XL Namespace and Vocabulary"
+    },
+    {
+      "anchor": "L5444",
+      "key": "H120",
+      "level": 3,
+      "locator_anchor": "L5444",
+      "title": "B.2. The skosxl:Label Class"
+    },
+    {
+      "anchor": "L375",
+      "key": "H121",
+      "level": 4,
+      "locator_anchor": "L375",
+      "title": "B.2.1. Preamble"
+    },
+    {
+      "anchor": "L5518",
+      "key": "H122",
+      "level": 4,
+      "locator_anchor": "L5518",
+      "title": "B.2.2. Class and Property Definitions"
+    },
+    {
+      "anchor": "L5525",
+      "key": "H123",
+      "level": 4,
+      "locator_anchor": "L5525",
+      "title": "B.2.3. Examples"
+    },
+    {
+      "anchor": "L5716",
+      "key": "H124",
+      "level": 4,
+      "locator_anchor": "L5716",
+      "title": "B.2.4. Notes"
+    },
+    {
+      "anchor": "L5739",
+      "key": "H125",
+      "level": 5,
+      "locator_anchor": "L5739",
+      "title": "B.2.4.1. Identity and Entailment"
+    },
+    {
+      "anchor": "L648",
+      "key": "H126",
+      "level": 5,
+      "locator_anchor": "L648",
+      "title": "B.2.4.2. Membership of Concept Schemes"
+    },
+    {
+      "anchor": "L5981",
+      "key": "H127",
+      "level": 3,
+      "locator_anchor": "L5981",
+      "title": "B.3. Preferred, Alternate and Hidden skosxl:Labels"
+    },
+    {
+      "anchor": "L661",
+      "key": "H128",
+      "level": 4,
+      "locator_anchor": "L661",
+      "title": "B.3.1. Preamble"
+    },
+    {
+      "anchor": "L677",
+      "key": "H129",
+      "level": 4,
+      "locator_anchor": "L677",
+      "title": "B.3.2. Class and Property Definitions"
+    },
+    {
+      "anchor": "L724",
+      "key": "H130",
+      "level": 4,
+      "locator_anchor": "L724",
+      "title": "B.3.3. Examples"
+    },
+    {
+      "anchor": "L778",
+      "key": "H131",
+      "level": 4,
+      "locator_anchor": "L778",
+      "title": "B.3.4. Notes"
+    },
+    {
+      "anchor": "L780",
+      "key": "H132",
+      "level": 5,
+      "locator_anchor": "L780",
+      "title": "B.3.4.1. Dumbing-Down to SKOS Lexical Labels"
+    },
+    {
+      "anchor": "L899",
+      "key": "H133",
+      "level": 5,
+      "locator_anchor": "L899",
+      "title": "B.3.4.2. SKOS+XL Labeling Integrity"
+    },
+    {
+      "anchor": "L7196",
+      "key": "H134",
+      "level": 3,
+      "locator_anchor": "L7196",
+      "title": "B.4. Links Between skosxl:Labels"
+    },
+    {
+      "anchor": "L1120",
+      "key": "H135",
+      "level": 4,
+      "locator_anchor": "L1120",
+      "title": "B.4.1. Preamble"
+    },
+    {
+      "anchor": "L1129",
+      "key": "H136",
+      "level": 4,
+      "locator_anchor": "L1129",
+      "title": "B.4.2. Class and Property Definitions"
+    },
+    {
+      "anchor": "L1160",
+      "key": "H137",
+      "level": 4,
+      "locator_anchor": "L1160",
+      "title": "B.4.3. Examples"
+    },
+    {
+      "anchor": "L1193",
+      "key": "H138",
+      "level": 4,
+      "locator_anchor": "L1193",
+      "title": "B.4.4. Notes"
+    },
+    {
+      "anchor": "L1195",
+      "key": "H139",
+      "level": 5,
+      "locator_anchor": "L1195",
+      "title": "B.4.4.1. Refinements of this Pattern"
+    },
+    {
+      "anchor": "xl-overview",
+      "key": "H140",
+      "level": 3,
+      "locator_anchor": "xl-overview",
+      "title": "B.5. SKOS-XL Schema Overview"
+    },
+    {
+      "anchor": null,
+      "key": "H141",
+      "level": 3,
+      "locator_anchor": "xl-overview",
+      "title": "B.5.1 Classes in the SKOS-XL Data Model"
+    },
+    {
+      "anchor": null,
+      "key": "H142",
+      "level": 3,
+      "locator_anchor": "xl-overview",
+      "title": "B.5.2.Properties in the SKOS-XL Data Model"
+    },
+    {
+      "anchor": "L2994",
+      "key": "H143",
+      "level": 2,
+      "locator_anchor": "L2994",
+      "title": "Appendix C. SKOS and SKOS-XL Namespace Documents"
+    },
+    {
+      "anchor": "namespace-document-html",
+      "key": "H144",
+      "level": 3,
+      "locator_anchor": "namespace-document-html",
+      "title": "C.1. SKOS Namespace Document - HTML Variant (normative)"
+    },
+    {
+      "anchor": "namespace-document-rdf",
+      "key": "H145",
+      "level": 3,
+      "locator_anchor": "namespace-document-rdf",
+      "title": "C.2. SKOS Namespace Document - RDF/XML Variant (normative)"
+    },
+    {
+      "anchor": "rdf-schema-owl-dl",
+      "key": "H146",
+      "level": 3,
+      "locator_anchor": "rdf-schema-owl-dl",
+      "title": "C.3. SKOS RDF Schema - OWL 1 DL Sub-set (informative)"
+    },
+    {
+      "anchor": "xl-namespace-document-html",
+      "key": "H147",
+      "level": 3,
+      "locator_anchor": "xl-namespace-document-html",
+      "title": "C.4. SKOS-XL Namespace Document - HTML Variant (normative)"
+    },
+    {
+      "anchor": "xl-namespace-document-rdf",
+      "key": "H148",
+      "level": 3,
+      "locator_anchor": "xl-namespace-document-rdf",
+      "title": "C.5. SKOS-XL Namespace Document - RDF/XML Variant (normative)"
+    },
+    {
+      "anchor": "namespace",
+      "key": "H149",
+      "level": 2,
+      "locator_anchor": "namespace",
+      "title": "Appendix D. SKOS Namespace: a historical note"
+    }
+  ],
+  "source_bytes": 227150,
+  "source_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+  "source_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+  "statements": [
+    {
+      "id": "S1",
+      "normalized_row_sha256": "0a21e2fe78ae776e3dc2743cbed3a66ab6fc6be406b3e48767dabf360464eb91",
+      "section_anchor": "L842"
+    },
+    {
+      "id": "S2",
+      "normalized_row_sha256": "2df7999bcc56d88c4c06e79d96eb0053842dd7de1d4c137c4511c733599916c5",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S3",
+      "normalized_row_sha256": "fba419007ff7bd5d6d1e036a683dfe0c7d71fd49e569fddab85e0437c297cfd0",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S4",
+      "normalized_row_sha256": "0e3f29623e7a3ef2da3c92b0d709df4466000de11e2b8f7c881e23626e01749e",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S5",
+      "normalized_row_sha256": "1ca592ac0d02062f105fa01d5d9828eb8a063f49d28380dff036e22300067576",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S6",
+      "normalized_row_sha256": "d0ea318c96e8daaa1d7d355be117920707d17e84861eb3baeb3312a2c29747d7",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S7",
+      "normalized_row_sha256": "0afd2adbad3848a44ef49b92ccc3dc66f9246afa3ad006539eb2ab6e2b7d2c69",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S8",
+      "normalized_row_sha256": "4845f13e2c415ec82e90e7839e1fb4fe885c80170aa7444b281da682b4ae1f7b",
+      "section_anchor": "L8421"
+    },
+    {
+      "id": "S9",
+      "normalized_row_sha256": "b08f81a1297a6b5e976da34dd6e55c6df65df6308dc28b18bdb94cf5f8409269",
+      "section_anchor": "L1228"
+    },
+    {
+      "id": "S10",
+      "normalized_row_sha256": "203ec4a6f8cc9df6b9c66dad3e88990fb4367889a4f726f2a5085228fe98b57a",
+      "section_anchor": "L1329"
+    },
+    {
+      "id": "S11",
+      "normalized_row_sha256": "5fe329b63701a4ba0eec84e26a8a955a2b035ab1d3e250ea828c439950dd8967",
+      "section_anchor": "L1329"
+    },
+    {
+      "id": "S12",
+      "normalized_row_sha256": "e48c3b10bea61250cefaa43fc4794d6d59781392f83ecca0722f44f5d236a72f",
+      "section_anchor": "L1329"
+    },
+    {
+      "id": "S13",
+      "normalized_row_sha256": "4dd6cd61cab500d628b6f1442512fc38c3c77bdf2bbdcdaff74c9db129db9265",
+      "section_anchor": "L1567"
+    },
+    {
+      "id": "S14",
+      "normalized_row_sha256": "6e2bc245786e6ebbd951e8a79f51d929002c9d8522d7485246f623ef34a00c41",
+      "section_anchor": "L1567"
+    },
+    {
+      "id": "S15",
+      "normalized_row_sha256": "c9d028c4f0f3315fa36e97d2d95e95559fafe2d1941ecdadc8c022de7b7d0b5f",
+      "section_anchor": "L2557"
+    },
+    {
+      "id": "S16",
+      "normalized_row_sha256": "60285fca21cd69378025f7941314acf53aeb0383264bcd31c1cc38a3317a4488",
+      "section_anchor": "L1738"
+    },
+    {
+      "id": "S17",
+      "normalized_row_sha256": "052e1deb6d25e0baed1ba1313c8e467c95495f8057cf8340a9fd9c4bbe8129cc",
+      "section_anchor": "L1738"
+    },
+    {
+      "id": "S18",
+      "normalized_row_sha256": "fa2b115a76968d7e5ee8f1b3fea0020b54245867ddb2ebe2f41710220a1bcf49",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S19",
+      "normalized_row_sha256": "f0237aaa593f1165f556ef365b1aac3e7e93483bda5813ca5cbf7df37105ccbb",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S20",
+      "normalized_row_sha256": "cd36e2ee73b5968e3f10c423707b3e77b1cd016432a0da10fcb8bd15bd945c7c",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S21",
+      "normalized_row_sha256": "388444a7e6989d014ea898c52dc0c0ca375ecf4a6cc3a32e15426a872d395970",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S22",
+      "normalized_row_sha256": "f887ea3657a5f6514546cdfe0e4768c15403e4903029c2fc23596f56919f4775",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S23",
+      "normalized_row_sha256": "bc1df65f6a06ab931139b2a0fe62cc8cbb8e124794ae2e5a562100309de7a5dc",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S24",
+      "normalized_row_sha256": "50b619236ca1bcc8bc3f3002facff9b859a2c97f8986b55b5dd9245e468931e1",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S25",
+      "normalized_row_sha256": "8c63d7d90c9d2faeb8dc94a31ff6bc3563557f345fe900f1870271e7bc66406c",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S26",
+      "normalized_row_sha256": "df7f79973abbf32ee73fc7f0544316e9403a43f2bd82c5ff883ed02e2684568e",
+      "section_anchor": "L2055"
+    },
+    {
+      "id": "S27",
+      "normalized_row_sha256": "45e4dea2cd853be3a076a3475d87daeb13f39604d05c61b795fc43e950ff978e",
+      "section_anchor": "L2422"
+    },
+    {
+      "id": "S28",
+      "normalized_row_sha256": "290b468a68e8bbb8383399e5879bdd7ec412085dad59e2d0a332f19cc8636ce7",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S29",
+      "normalized_row_sha256": "05714a46e3e258caa56ef0b9339a21531b2fa0b06e6cbefb5b257d0df965431d",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S30",
+      "normalized_row_sha256": "653704d845533a1124cb3d5a323447cf9e01597c716e9b22bc47475e7d420304",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S31",
+      "normalized_row_sha256": "c050bc7b7bcc75d61540da28b5ec4bba26ff0e62cc1896463e8274ddeb1b4a69",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S32",
+      "normalized_row_sha256": "fc6ca2d916c408539ffbffee68d44cd22db318671d34f88d9f8fb63249b936a3",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S33",
+      "normalized_row_sha256": "99944077cca6d1ac42b64620474d7674a138aac97f0989eb6ca80cb2cbc6cc57",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S34",
+      "normalized_row_sha256": "1a8aec32851e211d1c3b726b72e12bf433c8c03e55a57cba8034319f67d06323",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S35",
+      "normalized_row_sha256": "71029b712e4f413616507130d532213e165a828151cf12452d01882beb0d9191",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S36",
+      "normalized_row_sha256": "5f0c746ae01e6fed75b5bf86011b92ccc2fcaee4c3cc358ba897929f07de4250",
+      "section_anchor": "L3312"
+    },
+    {
+      "id": "S37",
+      "normalized_row_sha256": "850e43d74d17c211f3916fa11bb9fb0a600f1cf413623e746d916a00fd01490f",
+      "section_anchor": "L3424"
+    },
+    {
+      "id": "S38",
+      "normalized_row_sha256": "5c890c97569835bc7a42da6f0be4674fa47da8123c60d88023caba18b6cc2062",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S39",
+      "normalized_row_sha256": "7e4101b2c0e895add5a205444516289a01ef4846c2e956cfbb15d5caa91b097f",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S40",
+      "normalized_row_sha256": "56cde61aabceb1c67164dc82374e6c69a6bda7353939f3791be191fbfb577dfa",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S41",
+      "normalized_row_sha256": "eb2bafbc74afa2832e69389ad2db1124ba3c73a7bb0cdb7f953b8a07978474f0",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S42",
+      "normalized_row_sha256": "106888a66916d0945e686f357e28c971af33b91423970be37a41b4eb42dac91e",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S43",
+      "normalized_row_sha256": "0624d99e270621f2326ef13928f606996618808c05bb82119fb1d869294a75b1",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S44",
+      "normalized_row_sha256": "19ff0fb323b2dc7b634f0ef391f1a0e0b0eca478fa4826623f259493f988464b",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S45",
+      "normalized_row_sha256": "cd73cb51443562b131b91d984c4adae55a4c6384a78104c11c307f8a86d20854",
+      "section_anchor": "L4186"
+    },
+    {
+      "id": "S46",
+      "normalized_row_sha256": "c6720f9c1933756a99728e6dc3952a34445209d7d7c1645d3cc575042d250e67",
+      "section_anchor": "L5429"
+    },
+    {
+      "id": "S47",
+      "normalized_row_sha256": "d3ece3ba36fc268e57344f5b9cc8a9548abf94006dfd53921b475a1b9430bd26",
+      "section_anchor": "L5518"
+    },
+    {
+      "id": "S48",
+      "normalized_row_sha256": "b952dfb45834817f8cb2bbba36e0234138aa460879b9a5632d176e87e0d83ae7",
+      "section_anchor": "L5518"
+    },
+    {
+      "id": "S49",
+      "normalized_row_sha256": "d9d37d2a49e17010d29c6768e3adab018b3091329e0529a2ab27bbb01569f7ed",
+      "section_anchor": "L5518"
+    },
+    {
+      "id": "S50",
+      "normalized_row_sha256": "052d8bb3e14e2186730b4e19e18f6584a6e582d83138e10bfe61b315c1f70887",
+      "section_anchor": "L5518"
+    },
+    {
+      "id": "S51",
+      "normalized_row_sha256": "e4a3f42c757ad40709d6891a186fc59feb6f47ace508a5ab094759dad4af67bd",
+      "section_anchor": "L5518"
+    },
+    {
+      "id": "S52",
+      "normalized_row_sha256": "fd1c3a28c430ded80cb1ba2b67841b6a6292bd7d643fd9ee46f94eba33c145a6",
+      "section_anchor": "L5518"
+    },
+    {
+      "id": "S53",
+      "normalized_row_sha256": "f05112e8a6b34d8f2954ba96ac0c93079ceb8dc46871c11afc9f683b62d2a84f",
+      "section_anchor": "L677"
+    },
+    {
+      "id": "S54",
+      "normalized_row_sha256": "c0004eee183638b3655de9bb6cf3a1bf8173a6353b3e81bb19dc5d8946682bff",
+      "section_anchor": "L677"
+    },
+    {
+      "id": "S55",
+      "normalized_row_sha256": "69628f9091be5f138c4e081a8fffb33a150301808e6887a4fa884fd0bd7e224a",
+      "section_anchor": "L677"
+    },
+    {
+      "id": "S56",
+      "normalized_row_sha256": "cb8223b01e15e823ea09e262704273c2954726f08234add06e0926c03cf9454e",
+      "section_anchor": "L677"
+    },
+    {
+      "id": "S57",
+      "normalized_row_sha256": "fdb370843eca4cceb90cef15a1a1ffcf65950ac6a9aac2c10fd52f5f9b015fff",
+      "section_anchor": "L677"
+    },
+    {
+      "id": "S58",
+      "normalized_row_sha256": "aa294b3e767d807f021a9b8e4bbd62032fb7d3ecbc7f4d1f2fa943615d5556f0",
+      "section_anchor": "L677"
+    },
+    {
+      "id": "S59",
+      "normalized_row_sha256": "082bebda5f22e5c6536d7c11e95fd150024c53f93cb4e6b128062c9d6b0deb9f",
+      "section_anchor": "L1129"
+    },
+    {
+      "id": "S60",
+      "normalized_row_sha256": "232295569d7703b1f7b331de2be7e3cc3b363d168e25697564f1d026a6646883",
+      "section_anchor": "L1129"
+    },
+    {
+      "id": "S61",
+      "normalized_row_sha256": "e533b5596a43864fec95c4974422844779015ee5dedefe297629117bc72e37d7",
+      "section_anchor": "L1129"
+    },
+    {
+      "id": "S62",
+      "normalized_row_sha256": "a99d6b2c3c95d121a1e6025a6be37c318defb62b85136f3a4596c78d57477000",
+      "section_anchor": "L1129"
+    }
+  ],
+  "text_diagrams": [
+    {
+      "id": "TD01",
+      "kind": "TEXT_SUBPROPERTY_TREE",
+      "normalized_sha256": "b472f81cefb242e686e8e17a936901287dd16763533107b8bc158a8542b4c3b2",
+      "section_anchor": "L3732"
+    },
+    {
+      "id": "TD02",
+      "kind": "TEXT_SUBPROPERTY_TREE",
+      "normalized_sha256": "12eb5acbe06acd0157958563bfac4c8a2ffd4b423a916693125e0788f58c2bdc",
+      "section_anchor": "L4160"
+    }
+  ]
+}
