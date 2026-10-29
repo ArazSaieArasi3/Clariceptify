@@ -97,6 +97,8 @@ jobs:
         run: python tools/check_comparison_batch1.py
       - name: Check the three-source comparison batch and synthesis boundaries
         run: python tools/check_comparison_batch3.py
+      - name: Check IAO, Cognitive Atlas and EFO comparison and model bindings
+        run: python tools/check_comparison_batch4.py
       - name: Check IAO selected-root technical census and provenance
         run: python tools/check_iao240.py
       - name: Check EFO paper formalism and unavailable executable root

@@ -1,0 +1,206 @@
+schema_version: '1.0'
+batch_id: R2-CMP-004
+issue: 254
+status: BOUNDED_THREE_SOURCE_COMPARISON_COMPLETE_WITH_UNRESOLVED_SEMANTICS
+as_of: '2026-10-30'
+execution_baseline_commit: 49252e32f9cdf82a38ddba2e876defe4dccfbd41
+execution_commit: RECORDED_IN_MERGED_PR_AND_ISSUE_CLOSURE
+model:
+  release: v0.1.0
+  revision: input-r1-rev1
+  path: model/concepts.yaml
+  sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  comparison_only: true
+  accepted_equivalences: []
+scope:
+  works: [IAO, CognitiveAtlas, EFO]
+  dimensions: [agency_activity, content_expression_referent, episode_decision_rationale, formal_evaluation_limits]
+  matrix_cells: 12
+  synthesis_target: 126
+  utilization_plan: docs/research/review-utilization-plan.md
+  owner_decision: OWNER_DECISION_REQUIRED
+  historical_boundary: 'IAO 2015 proposal versus 2026 release; Cognitive Atlas 2011 paper versus later generated root 0.3; EFO paper-only FOL versus an unidentified executable distribution. These are three different correspondence problems.'
+source_columns:
+  IAO:
+    paper: {kind: FIVE_PAGE_2015_CONCEPTUAL_PROPOSAL, version: 'Smith and Ceusters, CEUR Vol.1515 pp.1-5', sha256: 11c3413eb339aadc8baed9c6991a986c9f489d0ff2ca2b16508bb2688ff77b37, review: evidence/related-work/deep-reviews/IAO2015/review.yaml}
+    artifact: {kind: OFFICIAL_RELEASE_RDF_XML, version: '2026-03-30', sha256: c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41, review: evidence/related-work/artifacts/IAO.yaml, class_catalog: evaluation/related-work/iao240/census.json}
+    repository: {state: PUBLIC_OFFICIAL_COMMIT_PINNED, url: 'https://github.com/information-artifact-ontology/IAO', commit: 3006aedacbf813ffd1d2ac15cda10766ca9ed388, path: iao.owl, paper_release_correspondence: NOT_ESTABLISHED, discovery: evidence/related-work/deep-reviews/source-audit.yaml}
+    access_license: {access: PUBLIC_OFFICIAL_RELEASE, selected_root_license: CC-BY-4.0, raw_redistributed: false}
+    classes: {local: 210, external_redeclarations: 56, imported: 0, referenced_only_named_hierarchy_targets: ['http://www.w3.org/2002/07/owl#Thing'], deprecated_local: 16, local_source_definitions: 197, local_missing_definitions: 13, external_source_definitions: 32, external_missing_definitions: 24, inferred: null, glossary_complete_for_selected_root: true, source: evaluation/related-work/iao240/census.json}
+    foundation: {family: BFO_EMBEDDED_REUSE, paper_claim: BFO_WITH_PROPOSED_MFO_EXTENSION, formal_release_imports: [], embedded_bfo_classes: 35, exact_bfo_edition: null, ufo_edition: null, alignment: NOT_ACCEPTED}
+    execution: {selected_assertions: 8, owl2_dl_profile: NOT_EXECUTED, reasoner: NOT_EXECUTED}
+  CognitiveAtlas:
+    paper: {kind: ELEVEN_PAGE_2011_JOURNAL_PAPER, version: 'Frontiers in Neuroinformatics 5:17, 6 September 2011', sha256: c69f953e6bde21e40e9408124b2ef1c2aa53ff5131bdb1dac8dca4adac92fed4, review: evidence/related-work/deep-reviews/CognitiveAtlas2011/review.yaml}
+    artifact: {kind: LATER_GENERATED_OWL_EXPORT, version: 'header 0.3 in selected historical snapshot', sha256: 701aa9e8351fcec3de0122df7ed49158cff83fe4e7353bd540122d8a34ce5fd8, review: evidence/related-work/artifacts/CognitiveAtlas.yaml, class_catalog: evidence/related-work/cognitiveatlas-class-catalog.yaml}
+    repository: {state: PUBLIC_OFFICIAL_SNAPSHOT_PINNED, url: 'https://github.com/CognitiveAtlas/cogat-ontology', commit: a600c366e9e3d3647a85cbc2c6e53e78abcf1951, path: ontology/cogat.v2.owl, paper_export_correspondence: NOT_ESTABLISHED, discovery: evidence/related-work/corpus/cognitiveatlas-inputs.yaml}
+    access_license: {access: PUBLIC_OFFICIAL_SNAPSHOT, selected_root_embedded_license: NOT_DECLARED, attributed_definition_extract_license: CC-BY-SA-3.0-US, whole_repository_license_not_inferred: true, raw_redistributed: false}
+    classes: {local: 1696, external_redeclarations: 2, imported: 0, referenced_undeclared_class_iris: 11, deprecated: 0, local_nonempty_definitions: 1232, local_empty_definition_annotations: 55, local_absent_definition_annotations: 409, local_missing_usable_definitions: 464, multi_identifier_class_iris: 101, inferred: null, glossary_complete_for_selected_root: true, source: evidence/related-work/cognitiveatlas-class-catalog.yaml}
+    foundation: {family: COGNITIVE_VOCABULARY_WITH_SKOS_RO_COGPO_REFERENCES, formal_imports: [], exact_bfo_or_ufo_edition: null, bfo_namespace_or_paper_mention_not_grounding: true, alignment: NOT_ACCEPTED}
+    execution: {owl2_dl_profile: FAIL_7341_UNDECLARED_ENTITIES, isolated_hermit_expectations: 14_OF_14_PASS, loaded_ontology_consistent: true, adequacy_or_profile_certificate: false}
+  EFO:
+    paper: {kind: TWENTY_ONE_PAGE_PUBLISHER_PDF_WITH_PRINTED_FOL, version: 'PDF volume 5(3) pp.53-73 (2025); webpage dated 2026-09-22', sha256: 8cf3372ac6bd19b88dfc15f07485695a6aab0f45d91d7864afef6f5f353729a6, review: evidence/related-work/deep-reviews/EFO/review.yaml, printed_deposit_doi: 10.5281/zenodo.17209778}
+    artifact: {kind: NO_IDENTIFIED_EXECUTABLE_ROOT, version: null, sha256: null, review: evidence/related-work/artifacts/EFO.yaml, paper_catalog: evaluation/related-work/efo242/paper-catalog.json}
+    repository: {state: NOT_IDENTIFIED_WITHIN_BOUNDED_PUBLIC_SEARCH, url: null, commit: null, global_absence_claim: false, discovery: evidence/related-work/artifacts/EFO.yaml}
+    access_license: {access: PUBLIC_PUBLISHER_PDF, publisher_page_license: CC-BY-4.0, executable_file_license: null, raw_redistributed: false}
+    classes: {paper_figure_labels: 33, additional_prose_distinctions: 11, local_owl: null, imported_owl: null, referenced_owl: null, deprecated_owl: null, inferred_owl: null, complete_machine_glossary: null, source: evaluation/related-work/efo242/paper-catalog.json}
+    foundation: {family: INDEPENDENT_EPISTEMIC_FOUNDATION, formal_imports: null, exact_bfo_or_ufo_edition: null, paper_claim: SUBJECT_RELATIVE_THOUGHT_OBJECTS_WITH_PRESENTISM_AND_FICTIONAL_WORLDS, alignment: NOT_ACCEPTED}
+    execution: {selected_printed_formula_groups: 8, machine_root_parse: NOT_EXECUTED_NO_ROOT, theorem_prover: NOT_EXECUTED, owl_profile: NOT_EXECUTED_NO_ROOT}
+scenario:
+  common: 'Ada observes a patient pulse E, forms a concept about it, writes a document M and selects a named cognitive construct K for interpretation at time T. She records conceptual decision D with evidence V and justification J. The document, a construct label, a thought object and E must not be assumed identical; mappings among source terms and Clariceptify IDs are candidate questions.'
+  adverse: 'At T2 Ada learns her initial target identification was mistaken; a fictional or nonreferential concept is still intelligible. A Cognitive Atlas construct/contrast collision and a disputed measured_by edge cannot settle reference to E. In EFO a source concept representing targets of opposite reference status would inherit both statuses under A14/A15 if normalized with D1/D2. IAO release aboutness supplies an existential BFO entity without identifying the successful real-world referent, agent, error correction or D and J. This is a reviewer-constructed comparison, not an executed cross-ontology test.'
+  status: CONCEPTUAL_REVIEW_ONLY
+matrix:
+- id: CMP4-01
+  dimension: agency_activity
+  work: IAO
+  paper_locators: ['IAO2015 E01-E03 pp.1-2; cognitive creation/understanding and direct representation', 'IAO2015 F06; appropriate causation/intention unoperationalized']
+  artifact_locators: ['IAO.yaml I01-I03; iao240 census IAO_0000030 and IAO_0000136']
+  native_support: 'The release types information content and aboutness; the paper separately proposes cognitive qualities and acts grounded in a subject.'
+  required_specialization: 'Bind Ada and the specific purposeful conceptualization episode to M, E and the selected concept without treating paper proposal as implemented axioms.'
+  unsupported_inference: 'An asserted is_about edge identifies the cognitive agent, creation act or successful reference.'
+  counterevidence: 'IAO2015 recognizes subject-origin and cognitive activity; the selected release existential/domain axioms do not encode that entire 2015 proposal.'
+  unknowns: [Implementation correspondence of proposed MFO/cognitive representation, person-indexed activity in unselected modules]
+  model_ids: [CLR-C0004, CLR-C0026, CLR-C0027, CLR-C0092]
+- id: CMP4-02
+  dimension: agency_activity
+  work: CognitiveAtlas
+  paper_locators: ['CognitiveAtlas2011 E02-E05; community contribution and curation', 'CognitiveAtlas2011 F08,F18; agents excluded from schema and fork lineage unmeasured']
+  artifact_locators: ['CognitiveAtlas.yaml Q02,Q05; CAO_00001 and absent has_agent/has_participant']
+  native_support: 'Native knowledge-base discussion and curators can record vocabulary changes; export classes distinguish constructs, tasks and conditions in selected cases.'
+  required_specialization: 'Identify Ada as the conceptualizer and distinguish her decision episode from a task, database contributor or class declaration.'
+  unsupported_inference: 'A generated construct OWL class is Ada’s mental concept formation event, or metadata contributor is its participant.'
+  counterevidence: 'The paper discusses community process, but F08 says agent/participant relations are outside the selected source representation.'
+  unknowns: [Current API person/provenance capabilities, exact 2011-to-2015 export identity]
+  model_ids: [CLR-C0004, CLR-C0017, CLR-C0026, CLR-C0027]
+- id: CMP4-03
+  dimension: agency_activity
+  work: EFO
+  paper_locators: ['EFO E02-E03/E08 printed pp.55-57,64-65; subject, concept, conception', 'EFO E13 printed pp.68-69; A8-A9 unique human possessor']
+  artifact_locators: ['EFO.yaml F03 A9; paper-catalog Figure 1 Concept/Judging/Representing; no OWL root']
+  native_support: 'The paper makes concepts subject-specific and A9 gives a concept one human possessor; judging and representing appear as psychical occurrents.'
+  required_specialization: 'Model a purposeful, dated conceptualization act and distinguish Ada’s concept, thought object and changing conception.'
+  unsupported_inference: 'A9 covers collective agents, records decision D, or establishes a tested implementation of an agent workflow.'
+  counterevidence: 'The subject-specific account is a strong overlap; footnote 16 explicitly leaves collective subjects unformalized and no executable root is pinned.'
+  unknowns: [Executable signature, collective agency, concept-formation event identity]
+  model_ids: [CLR-C0004, CLR-C0017, CLR-C0026, CLR-C0027]
+- id: CMP4-04
+  dimension: content_expression_referent
+  work: IAO
+  paper_locators: ['IAO2015 E03-E05 pp.2-3; intended versus successful aboutness and misinformation', 'IAO2015 F01,F02,F05; ICE/IQE/bearer and portion-of-reality limits']
+  artifact_locators: ['IAO.yaml I01-I03,I06-I08; iao240 census IAO_0000030/IAO_0000178/RO_0000058']
+  native_support: 'Current root separates information content from material bearer and places ICE under is_about some BFO entity; concretization links are present.'
+  required_specialization: 'Separate M’s content, physical/electronic carrier and Ada’s interpretation; represent mistaken or intended E separately from successful reference.'
+  unsupported_inference: 'The OWL existential witness is an observed real-world E, or the proposed paper representation taxonomy is implemented in the release.'
+  counterevidence: 'The 2015 paper explicitly analyzes false composites, fiction and targets not reducible to a current observed entity; release represents property is deprecated.'
+  unknowns: [Formal 2015-proposal adoption, identity rule for shared/revised content]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0062, CLR-C0101]
+- id: CMP4-05
+  dimension: content_expression_referent
+  work: CognitiveAtlas
+  paper_locators: ['CognitiveAtlas2011 E02-E03/E10; ambiguous labels, construct/task/measurement', 'CognitiveAtlas2011 F02,F05,F10; sense ambiguity and disputed measurement']
+  artifact_locators: ['CognitiveAtlas.yaml Q02-Q04,Q07; CAO_01573 multi-ID collision and measured_by/measures']
+  native_support: 'Constructs, tasks, conditions, contrasts and source definitions supply cognitive vocabulary; measured-by associations can express proposed empirical links.'
+  required_specialization: 'Keep K as a theory-sensitive construct, its label distinct from E and its measurement contrast, and qualify the observation used by Ada.'
+  unsupported_inference: 'A label, task and construct denote the same entity, or a measured_by edge proves causal reference or universal validity.'
+  counterevidence: 'The 101 mixed construct/contrast class identifiers and Q03 asymmetrical measured-by directions oppose a one-to-one lexical or measurement mapping.'
+  unknowns: [Consensus sense identity, signed contrast semantics, 2011/2015 correspondence]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0062, CLR-C0084, CLR-C0101]
+- id: CMP4-06
+  dimension: content_expression_referent
+  work: EFO
+  paper_locators: ['EFO E03/E08/E11 printed pp.57,64-67; concept/conception/object and co-reference', 'EFO E14 printed p.69; A12,D1-D2 and outside-quantification target']
+  artifact_locators: ['EFO.yaml F05-F06; paper-catalog Concept/Referential Concept/Non-referential Concept; no class IRIs']
+  native_support: 'Concept as subject-specific vehicle, mutable conception, immanent thought object and transcendent target are distinguished in prose; D1-D2 classify concepts by reference status.'
+  required_specialization: 'Keep Ada’s mental object distinct from event E and the expression M, with source-relative reference and correction time.'
+  unsupported_inference: 'An EFO Entity or Event is the same as a BFO entity, IAO information content, or Clariceptify Event by name.'
+  counterevidence: 'The epistemic foundation quantifies singular thought objects; A12 changes predicate spelling from D1-D2 and no executable alignment exists.'
+  unknowns: [General-concept formalization, exact target identity across worlds, machine class hierarchy]
+  model_ids: [CLR-C0017, CLR-C0047, CLR-C0062, CLR-C0083, CLR-C0101]
+- id: CMP4-07
+  dimension: episode_decision_rationale
+  work: IAO
+  paper_locators: ['IAO2015 E03-E04/E06 pp.2-4; origin, temporal truth and recognition correction', 'IAO2015 E07-E08 pp.4-5; primitives and conformity']
+  artifact_locators: ['IAO.yaml I01-I08; no selected assertion for decision D with evidence V and J']
+  native_support: 'ICE/document/aboutness and bearer distinction can support the content and documentary traces of a conceptual decision.'
+  required_specialization: 'Identify Ada, T, D, V and J, with evidence stance and revision lineage separate from the document’s mere aboutness.'
+  unsupported_inference: 'An IAO document about E is by itself an auditable decision record or proves causal recognition of E.'
+  counterevidence: 'The 2015 paper includes historical/indexical ICEs and correction examples, so blanket claims of no temporal or provenance concepts are false.'
+  unknowns: [Additional IAO modules and application provenance patterns, paper-to-release correspondence]
+  model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0123]
+- id: CMP4-08
+  dimension: episode_decision_rationale
+  work: CognitiveAtlas
+  paper_locators: ['CognitiveAtlas2011 E11-E14; assertions, citation, community disagreement and curation', 'CognitiveAtlas2011 F09,F18; polarity and fork/merge limits']
+  artifact_locators: ['CognitiveAtlas.yaml Q05-Q07; 53 synonym rows, T10 unmapped, two negative assertion rows not polarity-checked']
+  native_support: 'Native system contains discussion and citation practices and semantic relations can support construct/task claims; contributors are visible in the workflow.'
+  required_specialization: 'Record a dated decision D, alternatives, cited V and J, and the polarity/stance of contested links across revisions.'
+  unsupported_inference: 'A generated OWL class with a citation is a consensus decision, or an informative citation is support for a measured-by claim.'
+  counterevidence: 'The paper aims for evidence-sensitive consensus, but F09 reports only informative citation implemented and F18 lacks executed fork/merge lineage; export omits some native richness.'
+  unknowns: [Current live curation history, exact original assertion polarity and decision identity]
+  model_ids: [CLR-C0021, CLR-C0042, CLR-C0044, CLR-C0065, CLR-C0110]
+- id: CMP4-09
+  dimension: episode_decision_rationale
+  work: EFO
+  paper_locators: ['EFO E08/E11 printed pp.64-67; changing conceptions and ephemeral/encyclopedic concepts', 'EFO E13-E14 printed pp.68-69; A9,A11,D1-D2,A14-A15']
+  artifact_locators: ['EFO.yaml F03-F08; paper-only FOL, no decision/evidence class catalog']
+  native_support: 'Subject possession, persistent concept and changing conception express useful conditions for a belief correction; Judging appears as a paper category.'
+  required_specialization: 'Add identifiable conceptual decision episode, accepted/rejected alternative, evidence V, justification J and T/T2 without assuming a single fixed reference status.'
+  unsupported_inference: 'A9 possession or A14/A15 propagation records why Ada revised D or which evidence she used.'
+  counterevidence: 'EFO’s thought experiments include co-reference and fictional targets; A11 inverse uniqueness and conditional mixed-status propagation challenge a simple decision-history mapping.'
+  unknowns: [Executable event/decision pattern, collective or multi-agent judgment]
+  model_ids: [CLR-C0017, CLR-C0021, CLR-C0042, CLR-C0065, CLR-C0123]
+- id: CMP4-10
+  dimension: formal_evaluation_limits
+  work: IAO
+  paper_locators: ['IAO2015 E07-E10 pp.4-5; elucidations and proposed definitions, no executable validation', 'IAO2015 Q01/F05; proposal/release and POR/BFO mapping']
+  artifact_locators: ['IAO.yaml execution; iao240 census 266 named declarations and eight asserted commitments']
+  native_support: 'Official 2026 root, complete 210/56 named class inventory, 197/13 local definition present/missing states and eight byte-bound assertions are inspectable.'
+  required_specialization: 'Compare the exact chosen release with the 2015 claims and test foundational mapping/profile before any formal import or entailment claim.'
+  unsupported_inference: 'No owl:imports means no BFO reuse, or bundled BFO classes prove a particular BFO edition and 2015 proposal adoption.'
+  counterevidence: 'The root embeds 35 BFO declarations and RO relations but declares no import; OWL profile, reasoner and expert review were not executed for this selected root.'
+  unknowns: [Exact BFO axiom edition, DL profile, consistency, accepted correspondence]
+  model_ids: [CLR-C0017, CLR-C0026, CLR-C0101]
+- id: CMP4-11
+  dimension: formal_evaluation_limits
+  work: CognitiveAtlas
+  paper_locators: ['CognitiveAtlas2011 E12-E14; 904 paper terms, prototype OWL and evaluation limits', 'CognitiveAtlas2011 F10,F14-F19; definition/provenance/version gaps']
+  artifact_locators: ['CognitiveAtlas.yaml Q01,Q06-Q08; class catalog, static and semantic receipts']
+  native_support: 'Selected later root has 1696 local/two external class declarations and all local definition states, with 14/14 isolated HermiT expectations recorded.'
+  required_specialization: 'Separate paper MySQL/native source, 2015 export and current service; repair or formally scope profile violations before claiming a reusable DL import.'
+  unsupported_inference: 'A consistent loaded ontology with no unsatisfiable named classes passes OWL 2 DL profile or proves agreement/construct validity.'
+  counterevidence: 'Profile fails with 7,341 undeclared-entity violations; 101 ID collisions, 464 missing usable local definitions and unexecuted generator/pickle constrain adoption.'
+  unknowns: [Historical 2011 byte parity, complete original data transformation, current service quality]
+  model_ids: [CLR-C0017, CLR-C0026, CLR-C0039, CLR-C0040]
+- id: CMP4-12
+  dimension: formal_evaluation_limits
+  work: EFO
+  paper_locators: ['EFO E12-E15 printed pp.67-70; A1-A15/D1-D2 and unfinished domains', 'EFO F01-F07; validation and cross-foundation limits']
+  artifact_locators: ['EFO.yaml execution; efo242 paper-catalog 33 figure labels and eight formula groups, no executable root']
+  native_support: 'A bounded philosophical foundation and printed FOL outline make paper claims and unusual identity/reference assumptions inspectable.'
+  required_specialization: 'Resolve symbol mismatches, define an executable signature and run prover/competency cases before formal adoption; retain paper-only status until an author-linked root is found.'
+  unsupported_inference: 'Thirty-three paper labels are OWL classes, the printed formulas were mechanically checked, or the conditional mixed-status case proves the entire theory inconsistent.'
+  counterevidence: 'A4 and A12 change predicate spelling; A11 is inverse uniqueness; A14/A15 propagate opposite statuses conditionally; no root, import, machine-class count or reasoner result is available.'
+  unknowns: [Machine distribution, formal hierarchy, consistency under a repaired signature, foundational bridge]
+  model_ids: [CLR-C0017, CLR-C0021, CLR-C0101, CLR-C0123]
+candidate_mappings:
+- {id: CMP4-C01, model_ids: [CLR-C0004, CLR-C0017, CLR-C0026, CLR-C0027], question: 'Which identified subject and occurrence distinguish aboutness content, a Cognitive Atlas construct and the human-possessed EFO concept?', supporting_cells: [CMP4-01, CMP4-02, CMP4-03], contrary_cells: [CMP4-01, CMP4-02, CMP4-03], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+- {id: CMP4-C02, model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0062, CLR-C0101], question: 'How do content, expression, construct label, immanent thought object and observed or intended E remain distinct under error correction?', supporting_cells: [CMP4-04, CMP4-05, CMP4-06], contrary_cells: [CMP4-04, CMP4-05, CMP4-06], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+- {id: CMP4-C03, model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0123], question: 'What person-indexed, dated and revisable decision record connects V and J while preserving disputed claims and source provenance?', supporting_cells: [CMP4-07, CMP4-08, CMP4-09], contrary_cells: [CMP4-07, CMP4-08, CMP4-09], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+- {id: CMP4-C04, model_ids: [CLR-C0017, CLR-C0026, CLR-C0101], question: 'Which executable source edition and formal checks could justify a bridge across BFO reuse, a failed-profile cognitive export and paper-only epistemic FOL?', supporting_cells: [CMP4-10, CMP4-11, CMP4-12], contrary_cells: [CMP4-10, CMP4-11, CMP4-12], status: OWNER_DECISION_REQUIRED, equivalence: NOT_ESTABLISHED}
+synthesis_export:
+  target_issue: 126
+  supported_partial_finding: 'IAO supplies content/bearer/aboutness distinctions; Cognitive Atlas supplies construct/task/contrast and curation resources; EFO supplies subject-specific concept/conception/thought-object and reference-status arguments. Each contributes to different parts of a conceptualization case.'
+  qualified_candidate_gap: 'Across these exact selected sources and versions, a native, tested record joining Ada, T/T2, a revisable conceptual choice D, its content/referent and evidence V with justification J is not established. This is a bounded three-source result, not a universal absence or accepted novelty claim.'
+  contrary_evidence: 'The 2015 IAO proposal discusses cognitive acts and historical content; Cognitive Atlas has contributors, discussion and citations in its native system; EFO directly models human possession and changing conception. None should be described as lacking these features altogether.'
+  unresolved: ['IAO 2015-proposal versus 2026-release correspondence and BFO edition/profile', 'Cognitive Atlas 2011-native versus later export parity, ID collisions and profile failure', 'EFO executable root, symbol normalization and formal consistency', 'Other comparison batches #252/#255/#256 and O4OA #91']
+  next_action: 'Combine with other bounded batches under #126 after their prerequisites; route any model or domain addition to #129 after owner review.'
+limits:
+  no_corpus_wide_novelty_claim: true
+  no_formal_equivalence: true
+  no_human_validation: true
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  raw_external_sources_redistributed: false

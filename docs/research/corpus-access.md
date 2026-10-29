@@ -107,3 +107,7 @@ The [bounded FOSSR technical report](../../evidence/related-work/artifacts/BDI20
 ## Third comparison batch - 2026-10-29
 
 [Comparison #253](../../evidence/related-work/comparisons/batch-3.md) integrates the completed OntoLex, SKOS and EmotionsCognition reviews into 12 version-bound cells, a shared positive/adverse conceptualization case, candidate model-ID mappings and a qualified export to #126. It retains provenance and mental-content counterevidence; no corpus-wide gap or formal equivalence is established. Remaining batches and O4OA #91 retain their own prerequisites.
+
+## Fourth comparison batch - 2026-10-29
+
+[Comparison #254](../../evidence/related-work/comparisons/batch-4.md) binds the IAO 2015 proposal and separate 2026 release, Cognitive Atlas 2011 paper and later export, and paper-only EFO to 12 cells, a shared positive/adverse case and four candidate model-ID mapping questions. The bounded candidate gap is a dated, revisable, evidence-and-rationale-linked conceptual decision record; native provenance, subject and temporal features are retained as counterevidence to an absolute novelty claim. All equivalences require owner decisions. Final #126 still depends on the remaining comparison batches and O4OA #91; no scientific model or release changes.
