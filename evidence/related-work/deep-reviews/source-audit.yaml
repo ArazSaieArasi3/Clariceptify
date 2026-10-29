@@ -422,7 +422,7 @@ discovery_attempts:
 - id: BDI20-TECH247
   query: Exact BDI2020 publisher PDF and bounded author repository and code searches
   method: PRIMARY_PUBLISHER_AND_CONNECTED_GITHUB_REPOSITORY_CODE_SEARCH
-  checked_on: '2026-10-30'
+  checked_on: '2026-10-29'
   checked_urls:
   - https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667?download=true
   outcome: Publisher article PDF indexed as 15 pages; finite checked repository queries returned no author-controlled original executable root. See evaluation/related-work/bdi2020/technical-discovery.json.
