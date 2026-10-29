@@ -16,7 +16,7 @@ The latest-push and archive flags below are observations, not maintenance or qua
 | DnS2003 (#261) | OFFICIAL_STANDALONE_DISTRIBUTION_RETAINED_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://www.loa.istc.cnr.it/dolce/overview.html); [source](https://www.loa.istc.cnr.it/old/ontologies/DLP3971.zip); SELECTED_LATER_EXTENDEDDNS397_REVIEW_COMPLETE_WITH_HISTORICAL_LIMITS | DOLCE-Lite; ACTUAL_PINNED_IMPORTS_IN_SELECTED_LATER_MODULE; edition: Supplied 397-family modules | [58 classes](../dns235-class-catalog.md); 58 comment candidates; 0 missing | #251, #126 |
 | CMO (#83) | THIRD_PARTY_MIRROR_PINNED_ORIGINAL_DEVELOPMENT_REPOSITORY_NOT_IDENTIFIED; [source](https://github.com/dbpedia/ontology-tracker); [source](https://github.com/tetherless-world/whyis); MATCHING_NAMESPACE_THIRD_PARTY_MIRROR_RETAINED_ORIGINAL_UNKNOWN | BFO with IAO reuse; PAPER_STATED_GROUNDING; edition: UNKNOWN | [7 classes](../artifacts/CMO-class-catalog.md); 6 comment candidates; 1 missing | #255, #126 |
 | COM2004 (#81) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; BOUNDED_PAPER_FORMALISM_REVIEW_COMPLETE_NO_IDENTIFIED_COM_ROOT | DOLCE; PAPER_STATED_GROUNDING; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_ARTIFACT_NOT_IDENTIFIED_BOUNDED_TECHNICAL_REVIEW | #255, #126 |
-| BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; PAPER_FORMALISM_ONLY_AUTHOR_DISTRIBUTION_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #247 |
+| BDI2020 (#85) | NOT_IDENTIFIED_IN_BOUNDED_SEARCH; BOUNDED_TECHNICAL_PAPER_FORMALISM_COMPLETE_AUTHOR_ROOT_NOT_IDENTIFIED | UNKNOWN; UNKNOWN; edition: UNKNOWN | PAPER_CATALOG_COMPLETE_MACHINE_GLOSSARY_UNKNOWN | #256, #126 |
 | BDI2026Preprint (#249) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/fossr-project/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE_NEGATIVE_FINDINGS_EXACT_ALIGNMENT_IMPORT_BLOCKED | DOLCE-0; DOLCE+DnS UltraLite (DUL) alignment; PAPER_STATED_GROUNDING_AND_ACTUAL_ALIGNMENT_IMPORT_d0_THEN_DUL; edition: UNKNOWN | [22 classes](../bdi2026-class-catalog.md); 22 comment candidates; 0 missing | #256, #126 |
 | CognitiveAtlas2011 (#79) | PUBLIC_REPOSITORY_PINNED; [source](https://github.com/poldrack/cogat); [source](https://github.com/CognitiveAtlas/cogat-ontology); [source](https://github.com/CognitiveAtlas/ontology); BOUNDED_TECHNICAL_REVIEW_COMPLETE;IDENTIFIER_PROFILE_DEFINITION_AND_GENERATION_FINDINGS_RETAINED | SKOS/OBO RO/CogPO reuse;BFO1.1 namespace reference; SOURCE_REFERENCES_WITHOUT_VERIFIED_UPPER_GROUNDING; edition: UNKNOWN | [1696 classes](../cognitiveatlas-class-catalog.md); 1232 comment candidates; 464 missing | #254, #126 |
 | EmotionsOnto2014 (#262) | STANDALONE_FORMAL_FILES_REPOSITORY_NOT_IDENTIFIED; [source](http://rhizomik.net/ontologies/emotionsonto/); [source](https://rhizomik.net/html/ontologies/emotions%26cognitionontology/); AUTHOR_PREDECESSOR_LINKS_CHECKED_LATER_EXTENSION_HEADERS_ONLY | DOLCE / DnS; PAPER_STATED_GROUNDING; edition: UNKNOWN | PENDING_FULL_CATALOG | #239 |
@@ -368,6 +368,16 @@ Query: `BDI2020 primary author/publisher links, title code and other-host search
 Publisher and author identity verified; original executable module not identified. Code hits are commentary/citation; later FOSSR not substituted. See evaluation/related-work/bdi2020/deep-review-discovery.json.
 
 Limit: HAL current access denied; retained full text available. Machine classes/imports/definitions/license and exact foundation edition remain unknown in #247.
+
+### BDI20-TECH247: PRIMARY_PUBLISHER_AND_CONNECTED_GITHUB_REPOSITORY_CODE_SEARCH
+
+Query: `Exact BDI2020 publisher PDF and bounded author repository and code searches`. Checked: 2026-10-30.
+
+- https://journals.sagepub.com/doi/pdf/10.3233/FAIA200667?download=true
+
+Publisher article PDF indexed as 15 pages; finite checked repository queries returned no author-controlled original executable root. See evaluation/related-work/bdi2020/technical-discovery.json.
+
+Limit: Search scope does not prove global absence. Machine inventory, root imports, source license and exact upper ontology edition remain unknown.
 
 ### BDI26-S01: OFFICIAL_ARXIV_PROJECT_METADATA_AND_CONNECTED_GITHUB_COMMIT_TREE
 
