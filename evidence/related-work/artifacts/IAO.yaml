@@ -1,0 +1,83 @@
+schema_version: '1.0'
+issue: 240
+status: SELECTED_2026_03_30_ROOT_TECHNICAL_REVIEW_COMPLETE
+checked_on: '2026-10-29'
+baseline_commit: 1212c665ca73d59fad6bf7862f998dc14ad06fd1
+identity:
+  owner: Information Artifact Ontology project
+  repository: https://github.com/information-artifact-ontology/IAO
+  retained_commit: 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+  selected_path: iao.owl
+  selected_sha256: c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41
+  ontology_iri: http://purl.obolibrary.org/obo/iao.owl
+  version_iri: http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl
+  syntax: RDF/XML
+  license: CC-BY-4.0
+  project_readme_sha256: 6e3cd3dc7a60001efb42952d75cae1d04c4f306ccfede6598fe6c5705cd56de9
+  paper_correspondence: NOT_ESTABLISHED_FOR_2015_PROPOSAL
+  discovery_receipt: evidence/related-work/deep-reviews/source-audit.yaml#repository_observations
+population:
+  census: evaluation/related-work/iao240/census.json
+  complete_selected_root_class_glossary: evaluation/related-work/iao240/census.json#classes
+  local_iao_named_classes: 210
+  external_redeclared_named_classes: 56
+  external_prefixes: {BFO: 35, APOLLO: 6, PATO: 5, OBI: 4, UO: 3, COB: 2, oboInOwl_ObsoleteClass: 1}
+  local_definitions_present: 197
+  local_definitions_missing: 13
+  external_definitions_present: 32
+  external_definitions_missing: 24
+  local_deprecated_classes: 16
+  anonymous_class_nodes: 31
+  referenced_only_named_hierarchy_targets: ['http://www.w3.org/2002/07/owl#Thing']
+  direct_imported_classes: 0
+  inferred_classes: null
+  note: 'Counts apply only to one release root; external-IRI declarations are bundled in that root and are not direct imports. Original source annotations and locators accompany every class in the catalog. No invented definitions fill missing values.'
+imports:
+  direct_declared_in_selected_root: []
+  unresolved_direct_imports: []
+  development_readme_list_only: ['BFO latest release', 'OMO latest release', 'RO core latest release', 'import-OBO.owl', 'externalByHand.owl', 'obsolete.owl']
+  note: 'The README describes development iao-edit.owl imports, not imports declared by the selected release iao.owl. Neither a direct-import edition nor a historical closure is inferred from this list.'
+foundation:
+  paper_2015: BFO_AND_PROPOSED_MFO_EXTENSION
+  project_documentation: DEVELOPMENT_FILE_IMPORTS_LATEST_BFO
+  selected_release_formal_import: NONE
+  selected_release_embedded_bfo_classes: 35
+  exact_bfo_edition_for_embedded_axioms: UNKNOWN_FROM_SELECTED_ROOT
+  ufo_edition: null
+  relation: 'The release structurally uses BFO classes and RO concretization properties; no formal direct import pins an exact BFO edition. The proposed MFO integration in the 2015 paper is not verified as an implemented release dependency.'
+selected_commitments:
+  receipt: evaluation/related-work/iao240/census.json#selected_commitments
+  count: 8
+  selected_glosses:
+    I01: 'IAO places information content within the BFO generically dependent category.'
+    I02: 'An ICE must bear an aboutness relation to some BFO entity in the encoded restriction.'
+    I03: 'An asserted is-about edge classifies its subject as an ICE through the domain axiom.'
+    I04: 'Data entities inherit the information-content category; their truthfulness intention is described in the source annotation, not proved for each data record.'
+    I05: 'A document is modeled as information content rather than equated with a physical carrier.'
+    I06: 'The material bearer is typed beneath BFO material entity; this does not identify it with the content.'
+    I07: 'The concretization links are inverse properties in the selected graph.'
+    I08: 'The former represents relation is explicitly deprecated.'
+  scope: 'RDF assertions and structural descriptions only; no separate entailment or intended-target test.'
+paper_to_release:
+  paper: evidence/related-work/deep-reviews/IAO2015/review.yaml
+  relation: PROPOSAL_AND_CURRENT_RELEASE_SEPARATED
+  supported_overlap: 'ICE/is_about and content/carrier distinctions occur in the selected release.'
+  not_established: 'The 2015 proposed representation/referring-unit taxonomy, intended versus successful aboutness, temporally varying reference and MFO integration are not shown to be adopted by the selected 2026 root. The only selected property named represents is deprecated; absence of a same-name term is not proof of universal absence of a design pattern.'
+scenarios:
+  positive: 'A document instance about a recorded observed event can use the IAO ICE/document classes, is_about property and a distinct material bearer. This illustrates vocabulary compatibility, not an executed ABox or Clariceptify alignment.'
+  counterexample: 'A fictional or mistaken report can intend to refer to a non-existent target. The selected ICE existential aboutness axiom supplies some BFO entity in OWL, but does not by itself distinguish intended reference, successful reference or the reporter and episode. Treating the OWL witness as a verified real-world referent would exceed the asserted model.'
+decision:
+  disposition: REUSE_CONTENT_CARRIER_AND_ABOUTNESS_AS_CANDIDATE; DEFER_SEMANTIC_ALIGNMENT
+  accepted_equivalences: []
+  next_issues: [254, 126]
+execution:
+  script: tools/inspect_iao240.py
+  receipt: evaluation/related-work/iao240/census.json
+  source_command: 'python tools/inspect_iao240.py /path/to/pinned/iao.owl'
+  rdf_parse: PASS_5210_TRIPLES
+  exact_sha: PASS
+  selected_assertions: 8_PASS
+  owl2_dl_profile: NOT_EXECUTED
+  reasoner_consistency: NOT_EXECUTED
+  expert_validation: NOT_PERFORMED
+boundary: {model_change: NONE, requirements_change: NONE, fixtures_change: NONE, manuscript_change: NONE, release_change: NONE}
