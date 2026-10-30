@@ -1,0 +1,20 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_content_representation_join
+model_revision: input-r1-rev1
+id: DOM05-NEG-001
+expected: reject_representation_mismatch
+description: 'The process interprets representation A, but the assigned content is linked only to unrelated representation B.'
+nodes:
+  - {id: analyst, concept_id: CLR-C0004}
+  - {id: process, concept_id: CLR-C0063}
+  - {id: state, concept_id: CLR-C0062}
+  - {id: content, concept_id: CLR-C0105}
+  - {id: representation_a, concept_id: CLR-C0101}
+  - {id: representation_b, concept_id: CLR-C0101}
+edges:
+  - {relation_id: CLR-R0009, source: analyst, target: state}
+  - {relation_id: CLR-R0093, source: process, target: representation_a}
+  - {relation_id: CLR-R0094, source: process, target: state}
+  - {relation_id: CLR-R0090, source: state, target: content}
+  - {relation_id: CLR-R0144, source: content, target: representation_b}
+claim_ceiling: 'A selected query join fails for A. This does not assert that the whole record violates an existing formal constraint or that B cannot also be interpreted in another episode.'

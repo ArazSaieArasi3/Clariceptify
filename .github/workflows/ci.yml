@@ -113,6 +113,8 @@ jobs:
         run: python tools/check_domain_cognition94.py
       - name: Check Abstraction domain assessment
         run: python tools/check_domain_abstraction95.py
+      - name: Check Semantics domain assessment
+        run: python tools/check_domain_semantics96.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root
