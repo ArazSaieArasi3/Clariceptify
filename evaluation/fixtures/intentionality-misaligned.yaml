@@ -1,0 +1,19 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_join
+model_revision: input-r1-rev1
+id: DOM02-NEG-001
+constraint_id: CLR-SC0003
+description: 'A fictional analyst participates in the episode while an outsider bears its motivating intention.'
+expected: reject_agent_alignment
+nodes:
+  - {id: episode, concept_id: CLR-C0026}
+  - {id: analyst, concept_id: CLR-C0027}
+  - {id: outsider, concept_id: CLR-C0004}
+  - {id: intention, concept_id: CLR-C0061}
+  - {id: goal, concept_id: CLR-C0054}
+edges:
+  - {relation_id: CLR-R0054, source: analyst, target: episode}
+  - {relation_id: CLR-R0007, source: outsider, target: intention}
+  - {relation_id: CLR-R0051, source: episode, target: intention}
+  - {relation_id: CLR-R0089, source: intention, target: goal}
+claim_ceiling: 'One selected agent-alignment join, not full constraint, cardinality, CQ or semantic execution.'
