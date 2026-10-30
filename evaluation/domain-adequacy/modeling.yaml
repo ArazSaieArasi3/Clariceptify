@@ -1,0 +1,104 @@
+schema_version: '1.0'
+issue: 99
+task_id: R2-DOM-08
+domain_id: CLR-D0008
+domain_name: Modeling
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: 6c660743e111120177b49fc5c1846e9245ab3ee2
+model_revision: input-r1-rev1
+purpose: Support explicit conceptual modeling, model views and reuse of representations.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 17
+  domain_member_ids: [CLR-C0005, CLR-C0011, CLR-C0023, CLR-C0024, CLR-C0035, CLR-C0038, CLR-C0050, CLR-C0073, CLR-C0074, CLR-C0076, CLR-C0077, CLR-C0079, CLR-C0087, CLR-C0098, CLR-C0111, CLR-C0113, CLR-C0131]
+  in_model_support_p: [CLR-C0005, CLR-C0011, CLR-C0035, CLR-C0038, CLR-C0076, CLR-C0079, CLR-C0098, CLR-C0111, CLR-C0131]
+  relevant_requirements: [FR-04, FR-17, FR-18, FR-30]
+  relevant_cqs: [CQ-04, CQ-17, CQ-18, CQ-30]
+  adjacent_domains: [CLR-D0001, CLR-D0007, CLR-D0012, CLR-D0019]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0005, label: Analysis Model, stereotype: '«subkind»', source_support: P, state: SPECIALIZATION_PASSAGE_PENDING, finding: 'G0004 below Model; exact defining source passage is pending, not evidence of an extra domain.'}
+  - {id: CLR-C0011, label: Business Model, stereotype: '«subkind»', source_support: P, state: OPTIONAL_SPECIALIZATION_PASSAGE_PENDING, finding: 'G0009 below Model; optional baseline specialization, not a claim that all business-model theories are covered.'}
+  - {id: CLR-C0023, label: Conceptual Model, stereotype: '«subkind»', source_support: D, state: MODEL_ARTIFACT_PATH, finding: 'G0021 below Model; can encode a Conceptual Artifact via inherited R0140 without equating model and artifact.'}
+  - {id: CLR-C0024, label: Conceptual Modeling, stereotype: '«event»', source_support: D, state: PROCESS_PRODUCT_PATH, finding: 'G0022 below Modeling; R0041 produces or revises a Conceptual Model without asserting new identity.'}
+  - {id: CLR-C0035, label: Domain Model, stereotype: '«subkind»', source_support: P, state: SPECIALIZATION_PASSAGE_PENDING, finding: 'G0032 below Model; this label does not import a separate Domain Engineering subject domain.'}
+  - {id: CLR-C0038, label: Enterprise Modeling, stereotype: '«event»', source_support: P, state: OPTIONAL_PROCESS_PASSAGE_PENDING, finding: 'G0035 below Modeling; exact source passage and enterprise scope are not reverified.'}
+  - {id: CLR-C0050, label: Formal Model, stereotype: '«subkind»', source_support: B, state: LANGUAGE_FORMALITY_PENDING, finding: 'G0046 below Model; R0075 contains Formula, but syntax/semantics and actual formal interpretation remain to be checked.'}
+  - {id: CLR-C0073, label: Model, stereotype: '«subkind»', source_support: D, state: SELECTED_MODEL_VIEW_JOIN, finding: 'G0066 below Representation; R0110/R0109 link Modeling to Model and Model View, while R0140 may encode an Artifact.'}
+  - {id: CLR-C0074, label: Model Kind, stereotype: '«type»', source_support: B, state: METALEVEL_IDENTITY_PENDING, finding: 'G0067 below Type and R0106 classifies Model; it is distinct from a model individual and a declared conformity link does not prove conformance.'}
+  - {id: CLR-C0076, label: Model View, stereotype: '«subkind»', source_support: P, state: VIEW_ALIGNMENT_AND_PASSAGE_PENDING, finding: 'G0069 below Representation; R0109 is view of Model and R0108 conforms to Viewpoint; exact model-specific viewpoint support is pending.'}
+  - {id: CLR-C0077, label: Modeling, stereotype: '«event»', source_support: D, state: SELECTED_PROCESS_PATH, finding: 'G0070 below Conceptual Process; R0110 produces or revises Model and R0111 uses Modeling Language, without automatic creation.'}
+  - {id: CLR-C0079, label: Multi-Dimensional Modeling, stereotype: '«event»', source_support: P, state: SPECIALIZATION_PASSAGE_PENDING, finding: 'G0072 below Modeling; no dimensional data-warehouse meaning is inferred from the name.'}
+  - {id: CLR-C0087, label: Ontology-Driven Conceptual Modeling, stereotype: '«event»', source_support: D, state: GROUNDING_PATH_PENDING, finding: 'G0079 below Conceptual Modeling; guided ontological decisions require explicit commitments and evidence, not subclass membership alone.'}
+  - {id: CLR-C0098, label: Reference Model, stereotype: '«subkind»', source_support: P, state: SPECIALIZATION_PASSAGE_PENDING, finding: 'G0089 below Model; reusable guidance is not proof of verified transfer or conformance.'}
+  - {id: CLR-C0111, label: Specification Model, stereotype: '«subkind»', source_support: P, state: SPECIALIZATION_PASSAGE_PENDING, finding: 'G0101 below Model; prescriptive scope needs exact source passage.'}
+  - {id: CLR-C0113, label: Structural Conceptual Model, stereotype: '«subkind»', source_support: D, state: STRUCTURAL_SPECIALIZATION, finding: 'G0102 below Conceptual Model; structural emphasis does not prove disjointness from other model specializations.'}
+  - {id: CLR-C0131, label: Viewpoint, stereotype: '«subkind»', source_support: P, state: SPECIFICATION_PASSAGE_PENDING, finding: 'G0116 below Information Object; R0108 scopes a Model View, but the exact viewpoint contract and mental Perspective distinction need review.'}
+domain_questions:
+  - id: DQ01
+    purpose: Distinguish a mental Perspective adopted in an episode from its articulated Viewpoint and a Model View.
+    contracts: [FR-04, CQ-04]
+    model_ids: [CLR-C0093, CLR-C0131, CLR-C0076, CLR-C0026, CLR-C0004]
+    relation_ids: [CLR-R0126, CLR-R0108, CLR-R0109]
+    constraint_ids: []
+    outcome: STRUCTURAL_PERSPECTIVE_VIEW_PATH_BEARER_ALIGNMENT_UNEXECUTED
+    evidence: 'R0126 expresses Perspective by Viewpoint and R0108 scopes a Model View; identical labels do not make a mental mode identical to an information object. CQ-04 remains uncomputed.'
+  - id: DQ02
+    purpose: Trace a Modeling activity to its model, the Model View of that same model, its Viewpoint and the encoded Artifact.
+    contracts: [FR-17, CQ-17]
+    model_ids: [CLR-C0077, CLR-C0073, CLR-C0023, CLR-C0076, CLR-C0131, CLR-C0019]
+    relation_ids: [CLR-R0110, CLR-R0109, CLR-R0108, CLR-R0140]
+    constraint_ids: []
+    outcome: SELECTED_ACTIVITY_MODEL_VIEW_JOIN_PASS_FULL_CQ_PENDING
+    evidence: 'The positive synthetic fixture joins the produced model and its view; an adverse view points only to another model. This tests a selected answer path, not a full CQ-17 answer or the imported optional model-type support.'
+  - id: DQ03
+    purpose: Retrieve a declared Model Kind and model-to-Metamodel conformity while separating the kind, artifact and verified rule satisfaction.
+    contracts: [FR-18, CQ-18]
+    model_ids: [CLR-C0073, CLR-C0074, CLR-C0071, CLR-C0125]
+    relation_ids: [CLR-R0105, CLR-R0106]
+    constraint_ids: [CLR-SC0023, CLR-SC0024]
+    outcome: STRUCTURAL_KIND_CONFORMANCE_PATH_RULES_UNEXECUTED
+    evidence: 'The two links are recorded; SC0023 identity and SC0024 rule satisfaction remain textual and unexecuted.'
+  - id: DQ04
+    purpose: Distinguish model creation from revision and verify subprocess composition where stated.
+    contracts: [FR-30, CQ-30]
+    model_ids: [CLR-C0024, CLR-C0077, CLR-C0023, CLR-C0073, CLR-C0025]
+    relation_ids: [CLR-R0041, CLR-R0110]
+    constraint_ids: [CLR-SC0010, CLR-SC0009]
+    outcome: PRODUCES_OR_REVISES_NOT_CREATION_AND_COMPOSITION_UNEXECUTED
+    evidence: 'R0041/R0110 say produces or revises; neither actual new-individual identity nor acyclic subprocess structure is established.'
+scenarios:
+  positive: {id: DOM08-POS-001, locator: evaluation/fixtures/modeling-view-aligned.yaml, selected_result: SELECTED_MODEL_VIEW_JOIN, relevant_cqs: [CQ-17]}
+  adverse: {id: DOM08-NEG-001, locator: evaluation/fixtures/modeling-view-misaligned.yaml, selected_result: NO_SELECTED_MODEL_VIEW_JOIN, relevant_cqs: [CQ-17]}
+  conceptual_countercase: {id: DOM08-CC01, description: 'A Domain Model is treated as an imported engineering domain; a Model Kind is identified with an individual model, and a revision edge is treated as newly created content.', expected: 'Retain specialization, metalevel and creation/revision distinctions until exact source/CQ/formal evidence supports a change.', execution: NOT_EXECUTED, relevant_cqs: [CQ-17, CQ-18, CQ-30]}
+findings:
+  - {id: DOM08-F01, state: SELECTED_MODEL_VIEW_ALIGNMENT, claim: 'Modeling, its resulting Model, and a view of that same Model can be joined in the selected synthetic path; a view of another model yields no selected answer.', evidence_ids: [CLR-R0110, CLR-R0109, CLR-R0108, CLR-R0140, CQ-17], contrary: 'A selected join is not full CQ-17 execution, actual creation, source approval or semantic adequacy; the adverse record may legitimately describe another model.', route: '#124'}
+  - {id: DOM08-F02, state: IN_MODEL_SOURCE_PENDING, claim: 'Nine of seventeen primary Modeling concepts retain in-model P support and require exact source passage review.', evidence_ids: [CLR-C0005, CLR-C0011, CLR-C0035, CLR-C0038, CLR-C0076, CLR-C0079, CLR-C0098, CLR-C0111, CLR-C0131], contrary: 'P means qualified support pending exact passages, not absent concepts or unsupported classes; none is silently removed.', route: '#112/#113'}
+  - {id: DOM08-F03, state: METALEVEL_CONFORMANCE_UNASSESSED, claim: 'Model Kind, Model and Metamodel have distinct IDs and declaration paths, but rule-level conformance is not executed.', evidence_ids: [CLR-C0073, CLR-C0074, CLR-C0071, CLR-R0105, CLR-R0106, CLR-SC0023, CLR-SC0024], contrary: 'A recorded conformance link is not evidence that constructs satisfy metamodel rules; no correction is established yet.', route: '#124 and #129 if confirmed'}
+  - {id: DOM08-F04, state: PERSPECTIVE_VIEWPOINT_ALIGNMENT_UNASSESSED, claim: 'Mental Perspective, Viewpoint specification and Model View have separate paths without a tested bearer/episode alignment.', evidence_ids: [CLR-C0093, CLR-C0131, CLR-C0076, CLR-R0126, CLR-R0108, CQ-04], contrary: 'Sharing a label or having a view edge does not establish identity or the intended perspective of a particular agent.', route: '#123 and #129 if confirmed'}
+  - {id: DOM08-F05, state: CREATION_REVISION_AND_SPECIALIZATION_PENDING, claim: 'Produces-or-revises paths and several model specializations exist; neither a new artifact identity nor whole-discipline scope follows.', evidence_ids: [CLR-C0024, CLR-C0077, CLR-C0035, CLR-R0041, CLR-R0110, CLR-SC0010, CQ-30], contrary: 'Do not infer a new domain, partition, disjointness or creation merely from class names and product edges.', route: '#125 and #129 if confirmed'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP1-08, CMP2-05, CMP5-02, CMP5-06]
+  interpretation: 'Prior description, ontology and representation work overlaps modeling and conceptual model expression; broad cells contextualize and do not verify the nine P passages, exact typing or label novelty.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Review nine P support passages, Model Kind identity, metamodel rule conformance, Viewpoint/Perspective bearer and create/revise semantics before #129.'
+  next_issues: [100, 112, 113, 123, 124, 125, 129]

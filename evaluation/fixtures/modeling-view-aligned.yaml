@@ -1,0 +1,18 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_activity_model_view_join
+model_revision: input-r1-rev1
+id: DOM08-POS-001
+expected: selected_model_view_join
+description: 'A fictional Modeling activity revises a Conceptual Model encoded from an Artifact; a Model View of that very model conforms to a Viewpoint.'
+nodes:
+  - {id: activity, concept_id: CLR-C0077}
+  - {id: model, concept_id: CLR-C0023}
+  - {id: view, concept_id: CLR-C0076}
+  - {id: viewpoint, concept_id: CLR-C0131}
+  - {id: artifact, concept_id: CLR-C0019}
+edges:
+  - {relation_id: CLR-R0110, source: activity, target: model}
+  - {relation_id: CLR-R0109, source: view, target: model}
+  - {relation_id: CLR-R0108, source: view, target: viewpoint}
+  - {relation_id: CLR-R0140, source: model, target: artifact}
+claim_ceiling: 'One selected CQ-17 join; no full CQ, actual new model creation, passage approval, Viewpoint/Perspective identity or metamodel rule check.'
