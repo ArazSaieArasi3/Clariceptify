@@ -1,0 +1,18 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_structure_parthood_join
+model_revision: input-r1-rev1
+id: DOM09-POS-001
+expected: selected_shared_parthood_description
+description: 'A fictional Structure organizes a Part and a Whole description and specifies their shared Part-Whole Relation description.'
+nodes:
+  - {id: structure, concept_id: CLR-C0116}
+  - {id: relation, concept_id: CLR-C0089}
+  - {id: part, concept_id: CLR-C0088}
+  - {id: whole, concept_id: CLR-C0137}
+edges:
+  - {relation_id: CLR-R0156, source: structure, target: part}
+  - {relation_id: CLR-R0156, source: structure, target: whole}
+  - {relation_id: CLR-R0157, source: structure, target: relation}
+  - {relation_id: CLR-R0122, source: relation, target: part}
+  - {relation_id: CLR-R0123, source: relation, target: whole}
+claim_ceiling: 'One selected CQ-11 join; no full CQ, formal endpoint refinement, physical composition or semantic adequacy.'

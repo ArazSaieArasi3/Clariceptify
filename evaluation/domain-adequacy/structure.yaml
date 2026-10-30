@@ -1,0 +1,76 @@
+schema_version: '1.0'
+issue: 100
+task_id: R2-DOM-09
+domain_id: CLR-D0009
+domain_name: Structure
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: f1bab3769fda065e6820c81034c2793b9068ba4d
+model_revision: input-r1-rev1
+purpose: Make internal composition and structural organization explicit without assuming every link is composition.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 6
+  domain_member_ids: [CLR-C0069, CLR-C0088, CLR-C0089, CLR-C0115, CLR-C0116, CLR-C0137]
+  relevant_requirements: [FR-11]
+  relevant_cqs: [CQ-11]
+  adjacent_domains: [CLR-D0001, CLR-D0006, CLR-D0007, CLR-D0013, CLR-D0019]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0069, label: Meronomization, stereotype: '«event»', source_support: B, state: PROCESS_PRODUCT_PATH, finding: 'G0062 below Conceptual Process; R0101 produces or revises a Part-Whole Relation description, not physical parts.'}
+  - {id: CLR-C0088, label: Part, stereotype: '«role»', source_support: B, state: CONTEXTUAL_ROLE_PENDING, finding: 'G0080 below Concept; R0122 identifies a part description within a specified relation. Its role context and identity are not formally checked.'}
+  - {id: CLR-C0089, label: Part-Whole Relation, stereotype: '«subkind»', source_support: B, state: REIFIED_DESCRIPTION_PATH, finding: 'G0081 below Relation; R0122 and R0123 describe contextual endpoints. No specific UFO mereological relation or UML composition follows.'}
+  - {id: CLR-C0115, label: Structuralization, stereotype: '«event»', source_support: B, state: PROCESS_PRODUCT_PATH, finding: 'G0104 below Conceptual Process; R0155 produces or revises Structure, without proving new content identity.'}
+  - {id: CLR-C0116, label: Structure, stereotype: '«subkind»', source_support: B, state: SELECTED_ORGANIZATION_PATH, finding: 'G0105 below Information Object; R0156 organizes Conceptual Elements and R0157 specifies Relations; this does not itself enforce endpoint alignment.'}
+  - {id: CLR-C0137, label: Whole, stereotype: '«role»', source_support: B, state: CONTEXTUAL_ROLE_PENDING, finding: 'G0122 below Concept; R0123 identifies a whole description within a specified relation. Wholehood is not equated with physical composition.'}
+domain_questions:
+  - id: DQ01
+    purpose: Retrieve Part and Whole descriptions under the same Part-Whole Relation specified by a Structure that organizes those conceptual elements.
+    contracts: [FR-11, CQ-11]
+    model_ids: [CLR-C0116, CLR-C0022, CLR-C0099, CLR-C0089, CLR-C0088, CLR-C0137]
+    relation_ids: [CLR-R0156, CLR-R0157, CLR-R0122, CLR-R0123]
+    constraint_ids: [CLR-SC0005, CLR-SC0008]
+    outcome: SELECTED_SHARED_DESCRIPTION_JOIN_PASS_FULL_CQ_PENDING
+    evidence: 'The selected positive fixture joins the structure to one described relation with both endpoints; the adverse fixture splits the endpoints across two relation descriptions. It tests one answer path, not physical composition, endpoint refinement or the full CQ-11 contract.'
+  - id: DQ02
+    purpose: Distinguish process/product paths from a specific composition semantics and inspect cross-domain structural alignment.
+    contracts: [FR-11, CQ-11]
+    model_ids: [CLR-C0069, CLR-C0089, CLR-C0115, CLR-C0116, CLR-C0119]
+    relation_ids: [CLR-R0101, CLR-R0155, CLR-R0031]
+    constraint_ids: [CLR-SC0007, CLR-SC0008, CLR-SC0009]
+    outcome: STRUCTURAL_PRODUCT_AND_TAXONOMY_PATHS_UNEXECUTED
+    evidence: 'Meronomization and Structuralization produce or revise descriptions; Taxonomy is a Structure specialization. SC0007 alignment, SC0008 composition non-inference and SC0009 acyclicity remain textual, not executable checks.'
+scenarios:
+  positive: {id: DOM09-POS-001, locator: evaluation/fixtures/structure-parthood-shared.yaml, selected_result: SELECTED_SHARED_DESCRIPTION_JOIN, relevant_cqs: [CQ-11]}
+  adverse: {id: DOM09-NEG-001, locator: evaluation/fixtures/structure-parthood-split.yaml, selected_result: NO_SELECTED_SHARED_DESCRIPTION_JOIN, relevant_cqs: [CQ-11]}
+  conceptual_countercase: {id: DOM09-CC01, description: 'A described Part is identified with a physical component, two independently described Part/Whole endpoints are treated as a shared parthood record, or Taxonomy membership alone proves acyclic hierarchy.', expected: 'Preserve contextual relation identity and distinguish described conceptual parthood from a particular mereology; require separate tests for hierarchy and temporal/process claims.', execution: NOT_EXECUTED, relevant_cqs: [CQ-11]}
+findings:
+  - {id: DOM09-F01, state: SELECTED_SHARED_DESCRIPTION_ALIGNMENT, claim: 'A Structure can organize Part and Whole descriptions and specify their shared Part-Whole Relation in the selected synthetic path; splitting endpoints between descriptions yields no selected answer.', evidence_ids: [CLR-R0156, CLR-R0157, CLR-R0122, CLR-R0123, CQ-11], contrary: 'The adverse record may contain independently valid descriptions; this is neither a formal violation nor a full CQ-11 execution.', route: '#123'}
+  - {id: DOM09-F02, state: ROLE_AND_ENDPOINT_REFINEMENT_UNASSESSED, claim: 'Part and Whole are contextual Concept roles, with distinct R0122/R0123 links from a relation description.', evidence_ids: [CLR-C0088, CLR-C0137, CLR-C0089, CLR-SC0005], contrary: 'SC0005 endpoint refinement is textual and unexecuted; a role label alone does not settle identity or the actual bearer of parthood.', route: '#124 and #129 if confirmed'}
+  - {id: DOM09-F03, state: COMPOSITION_SEMANTICS_UNASSESSED, claim: 'The imported boundary explicitly prohibits deriving UML composition or a specific UFO mereological relation from conceptual parthood.', evidence_ids: [CLR-SC0008, FR-11, CQ-11], contrary: 'Textual prohibition is not a formal entailment or complete account of mereology; additional relation vocabulary requires an independently justified commitment.', route: '#124 and #129 if confirmed'}
+  - {id: DOM09-F04, state: TAXONOMY_ALIGNMENT_UNASSESSED, claim: 'Taxonomy specializes Structure, but category/link alignment and acyclic Generalization descriptions remain textual.', evidence_ids: [CLR-C0119, CLR-C0116, CLR-SC0007], contrary: 'A specialization edge does not prove the endpoint, membership and acyclicity clauses.', route: '#105 and #124'}
+  - {id: DOM09-F05, state: PROCESS_PRODUCT_IDENTITY_PENDING, claim: 'Meronomization and Structuralization have separate process/product paths to relation and Structure descriptions.', evidence_ids: [CLR-C0069, CLR-C0115, CLR-R0101, CLR-R0155], contrary: 'Produces-or-revises does not establish actual creation, temporal containment or new identity; no new domain is established by these labels.', route: '#125 and #129 if confirmed'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP1-07, CMP1-11, CMP3-05]
+  interpretation: 'DUL description/context and SKOS concept scheme resources offer bounded comparison surfaces; these broad cells do not certify a universal parthood gap, exact role typing or source passage approval for the six members.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Inspect role identity, description endpoint refinement, parthood versus physical composition and taxonomy acyclicity in their separately tracked CQ/domain units before #129.'
+  next_issues: [101, 105, 123, 124, 125, 129]
