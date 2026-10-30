@@ -1,0 +1,93 @@
+schema_version: '1.0'
+issue: 96
+task_id: R2-DOM-05
+domain_id: CLR-D0005
+domain_name: Semantics
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: 390dd1dfc9877079301bdc96b63d96d047f080de
+model_revision: input-r1-rev1
+purpose: Connect representations to interpreted content and expose interpretive dependencies.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 7
+  domain_member_ids: [CLR-C0062, CLR-C0063, CLR-C0068, CLR-C0105, CLR-C0106, CLR-C0107, CLR-C0108]
+  relevant_requirements: [FR-06, FR-16, FR-21, FR-24]
+  relevant_cqs: [CQ-06, CQ-16, CQ-21, CQ-24]
+  adjacent_domains: [CLR-D0003, CLR-D0007, CLR-D0010, CLR-D0018, CLR-D0019]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0062, label: Interpretation, stereotype: '«subkind»', source_support: B, state: MODE_TYPING_AND_BEARER_PENDING, finding: 'G0056 places Interpretation below Understanding «mode», while R0094 originates it from a process and R0090 assigns content. Source support specifies a mental state rather than a model-theoretic interpretation function; native typing remains unassessed.'}
+  - {id: CLR-C0063, label: Interpretation Process, stereotype: '«event»', source_support: B, state: SELECTED_PROCESS_PATH, finding: 'G0057 below Cognition; R0093 interprets Representation and R0094 originates Interpretation, but a path does not establish the interpreting agent or temporal adequacy.'}
+  - {id: CLR-C0068, label: Meaningfulness, stereotype: '«quality»', source_support: B, state: VALUE_SPACE_UNASSESSED, finding: 'R0136 characterizes Representation; definition requires an interpretive frame and assessment rule still to be specified, distinct from a criterion record or evaluation result.'}
+  - {id: CLR-C0105, label: Semantic Information, stereotype: '«subkind»', source_support: B, state: CONTENT_REFERENCE_GUARD_PENDING, finding: 'G0096 below Information Object; R0090/R0144 associate assigned content and Representation. Factivity, truth and successful external reference are not implied.'}
+  - {id: CLR-C0106, label: Semantic Interoperability, stereotype: '«mode»', source_support: B, state: COMPATIBILITY_TEST_PENDING, finding: 'R0138 bearer Representation and R0145 counterpart dependence encode a disposition; a shared schema or counterpart edge alone does not prove compatible interpretation.'}
+  - {id: CLR-C0107, label: Semanticization, stereotype: '«event»', source_support: B, state: SPECIFICATION_PRODUCTION_PATH, finding: 'G0097 below Conceptual Process; R0146 produces or revises a Semantics specification without implying its adoption or truth.'}
+  - {id: CLR-C0108, label: Semantics, stereotype: '«subkind»', source_support: B, state: RULE_SCOPE_UNEXECUTED, finding: 'G0098 below Information Object; R0098 binds Language specification and R0147 constrains Expression interpretation; scope/adoption and consistency with commitments require assessment.'}
+domain_questions:
+  - id: DQ01
+    purpose: Identify agent-borne Interpretation and distinguish it from an Interpretation Process and a genuinely shared situation.
+    contracts: [FR-06, CQ-06]
+    model_ids: [CLR-C0004, CLR-C0062, CLR-C0063, CLR-C0109, CLR-C0127]
+    relation_ids: [CLR-R0009, CLR-R0094, CLR-R0148, CLR-R0149, CLR-R0150]
+    constraint_ids: [CLR-SC0011, CLR-SC0012]
+    outcome: STRUCTURAL_BEARER_PATH_SHARED_STATE_UNEXECUTED
+    evidence: 'R0009 inherited through G0056 locates the Understanding bearer, and R0094 separates process and state; distinct bearers and compatible shared content in SC0012 are not executed.'
+  - id: DQ02
+    purpose: Trace a selected process, interpreted Representation, resulting Interpretation and assigned Semantic Information for the same Representation.
+    contracts: [FR-16, CQ-16]
+    model_ids: [CLR-C0063, CLR-C0062, CLR-C0105, CLR-C0101, CLR-C0004]
+    relation_ids: [CLR-R0093, CLR-R0094, CLR-R0090, CLR-R0144, CLR-R0009]
+    constraint_ids: []
+    outcome: SELECTED_CONTENT_REPRESENTATION_JOIN_PASS_FULL_CQ_PENDING
+    evidence: 'A synthetic join accepts a common interpreted Representation and rejects content associated only with a second one. It does not test actual compatible interpretation, truth or the full CQ-16 answer.'
+  - id: DQ03
+    purpose: Locate a declared Semantics specification and adopted Commitment with constrained expressions, vocabulary and artifact scope.
+    contracts: [FR-21, CQ-21]
+    model_ids: [CLR-C0107, CLR-C0108, CLR-C0066, CLR-C0047, CLR-C0086, CLR-C0019, CLR-C0134]
+    relation_ids: [CLR-R0146, CLR-R0098, CLR-R0147, CLR-R0029, CLR-R0121]
+    constraint_ids: [CLR-SC0016]
+    outcome: STRUCTURAL_RULE_AND_COMMITMENT_PATH_SCOPE_UNEXECUTED
+    evidence: 'Rule production, language specification and artifact adoption have distinct links. The constraint aligning commitment scope and interpretation has not run.'
+  - id: DQ04
+    purpose: Distinguish Meaningfulness quality and interoperability disposition from criterion specification and an actual assessment result.
+    contracts: [FR-24, CQ-24]
+    model_ids: [CLR-C0068, CLR-C0106, CLR-C0039, CLR-C0101, CLR-C0040]
+    relation_ids: [CLR-R0136, CLR-R0138, CLR-R0145, CLR-R0061, CLR-R0065]
+    constraint_ids: [CLR-SC0011, CLR-SC0017]
+    outcome: STRUCTURAL_MOMENT_CRITERION_DISTINCTION_UNEXECUTED
+    evidence: 'R0136/R0138/R0145 describe bearer and counterpart, while criterion/result paths remain separate. No value scale, compatibility evidence or favorable outcome is computed.'
+scenarios:
+  positive: {id: DOM05-POS-001, locator: evaluation/fixtures/semantics-interpretation-positive.yaml, selected_result: ACCEPTED_SAME_REPRESENTATION_JOIN_ONLY, relevant_cqs: [CQ-16]}
+  adverse: {id: DOM05-NEG-001, locator: evaluation/fixtures/semantics-interpretation-misaligned.yaml, selected_result: REJECTED_REPRESENTATION_MISMATCH_ONLY, relevant_cqs: [CQ-16]}
+  conceptual_countercase: {id: DOM05-CC01, description: 'Two representations use one schema, but their agents assign incompatible meanings to the same expression; one content claim is fictional and a favorable Meaningfulness outcome is asserted from a criterion alone.', expected: 'Do not infer interpretation compatibility, successful reference or quality result without distinct evidence and scope.', execution: NOT_EXECUTED, relevant_cqs: [CQ-06, CQ-16, CQ-24]}
+findings:
+  - {id: DOM05-F01, state: SELECTED_REPRESENTATION_JOIN, claim: 'The model can connect process, state and assigned content to one selected Representation; a mismatched content target fails the selected join.', evidence_ids: [CLR-R0093, CLR-R0094, CLR-R0090, CLR-R0144, CQ-16], contrary: 'No full CQ-16, author identity, content truth, referential success or cross-representation compatibility is tested.', route: '#124'}
+  - {id: DOM05-F02, state: INTERPRETATION_TYPING_UNASSESSED, claim: 'Interpretation is an imported subkind specializing Understanding mode although its definition calls it a state; foundational stereotype validity needs review.', evidence_ids: [CLR-C0062, CLR-C0127, CLR-G0056], contrary: 'This is a typing question, not an established invalidity; imported support has no independent typing approval.', route: '#122 and #129 if confirmed'}
+  - {id: DOM05-F03, state: CONTENT_REFERENCE_AND_CONTEXT_PARTIAL, claim: 'Assigned Semantic Information and declared Semantics rules have paths, but they do not establish truth, successful reference or a verified commitment-scoped interpretation.', evidence_ids: [CLR-C0105, CLR-C0108, CLR-R0090, CLR-R0144, CLR-R0147, CLR-SC0016], contrary: 'LMM, I&DA and Representation have prior content/context distinctions; no new class or novelty claim is justified by the selected join.', route: '#124/#125 and #129 if confirmed'}
+  - {id: DOM05-F04, state: INTEROPERABILITY_DISPOSITION_UNTESTED, claim: 'Representation bears a compatibility disposition dependent on a counterpart, but actual compatible interpretation is untested.', evidence_ids: [CLR-C0106, CLR-R0138, CLR-R0145, FR-16], contrary: 'Existing constraints or CQ execution may supply the missing alignment without a new concept.', route: '#124 and #129 if confirmed'}
+  - {id: DOM05-F05, state: QUALITY_VERSUS_CRITERION_UNTESTED, claim: 'Meaningfulness quality and criterion/result records have distinct roles, with no declared assessment value space or executed result.', evidence_ids: [CLR-C0068, CLR-R0136, CLR-SC0011, CLR-SC0017, CQ-24], contrary: 'A named quality is not a measured favorable result; the distinction does not alone prove a model defect.', route: '#125 and #129 if confirmed'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP1-07, CMP2-04, CMP3-05, CMP5-05, CMP6-04]
+  interpretation: 'Prior work contains meaning, expression, content and reference distinctions. These broad source cells supply overlap/context, not direct proof of the seven imported stereotypes, a complete bridge or absent prior solutions.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Investigate interpretation typing, content/reference guard, counterpart compatibility and meaningfulness assessment under existing CQ/foundation reviews before #129.'
+  next_issues: [97, 122, 124, 125, 129]

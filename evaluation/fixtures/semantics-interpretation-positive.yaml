@@ -1,0 +1,19 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_content_representation_join
+model_revision: input-r1-rev1
+id: DOM05-POS-001
+expected: accept_same_representation_join
+description: 'A fictional analyst interprets one representation, yielding an interpretation that assigns information about that same representation.'
+nodes:
+  - {id: analyst, concept_id: CLR-C0004}
+  - {id: process, concept_id: CLR-C0063}
+  - {id: state, concept_id: CLR-C0062}
+  - {id: content, concept_id: CLR-C0105}
+  - {id: representation, concept_id: CLR-C0101}
+edges:
+  - {relation_id: CLR-R0009, source: analyst, target: state}
+  - {relation_id: CLR-R0093, source: process, target: representation}
+  - {relation_id: CLR-R0094, source: process, target: state}
+  - {relation_id: CLR-R0090, source: state, target: content}
+  - {relation_id: CLR-R0144, source: content, target: representation}
+claim_ceiling: 'A selected model-path join with inherited Understanding bearer; no full CQ-16, verified meaning, truth, successful external reference or compatible interpretation proof.'
