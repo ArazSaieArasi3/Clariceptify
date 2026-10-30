@@ -71,6 +71,8 @@ All18 acquired full-paper reviews are complete. The owner-authorized bounded I&D
 
 [Batch six comparison](../../evidence/related-work/comparisons/batch-6.md) records 12 source-by-dimension cells for I&DA, BDI2020 and DOLCE Mental, with four adverse-test questions for #126. I&DA #246 remains open for its exact original-source criteria. The owner-directed bounded comparison carries this unknown forward instead of waiting or assigning a zero class population.
 
+[Batch two comparison](../../evidence/related-work/comparisons/batch-2.md) records the remaining 12 cells for LMM, O4OA and OntoKADS. Current executable LMM evidence is separated from its unavailable historical alignment; the O4OA 44-page specification is used with #91 still open, and OntoKADS paper expressions are not converted into machine classes. All six bounded comparisons are now available for synthesis #126.
+
 ## Reproduce the LMM inspection
 
 ```bash
