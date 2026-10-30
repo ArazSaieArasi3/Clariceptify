@@ -1,0 +1,98 @@
+schema_version: '1.0'
+issue: 98
+task_id: R2-DOM-07
+domain_id: CLR-D0007
+domain_name: Representation
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: e7d738a162a9aadc8cb4ca33a6ab69c43440f430
+model_revision: input-r1-rev1
+purpose: Distinguish conceptual content from its visual, schematic, presentational and temporal encodings.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 12
+  domain_member_ids: [CLR-C0049, CLR-C0064, CLR-C0090, CLR-C0091, CLR-C0094, CLR-C0095, CLR-C0101, CLR-C0102, CLR-C0103, CLR-C0124, CLR-C0132, CLR-C0133]
+  relevant_requirements: [FR-13, FR-16, FR-29, FR-30]
+  relevant_cqs: [CQ-13, CQ-16, CQ-29, CQ-30]
+  adjacent_domains: [CLR-D0001, CLR-D0005, CLR-D0008, CLR-D0010, CLR-D0019]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0049, label: Form, stereotype: '«subkind»', source_support: B, state: DESCRIPTION_NOT_CARRIER, finding: 'G0045 below Information Object and R0141 specifies a Representation form; a form description does not identify a physical or digital file carrier.'}
+  - {id: CLR-C0064, label: Interval-Based Time Representation, stereotype: '«subkind»', source_support: B, state: INTERVAL_AXIOMS_PENDING, finding: 'G0058 below Time Representation; SC0014 requires interval denotation, but exact temporal axioms are deferred.'}
+  - {id: CLR-C0090, label: Pattern, stereotype: '«subkind»', source_support: B, state: REUSE_PATH, finding: 'G0082 below Information Object; R0135 links a Representation to a reusable arrangement without proving applicability or conformity.'}
+  - {id: CLR-C0091, label: Patternization, stereotype: '«event»', source_support: B, state: PROCESS_PRODUCT_PATH, finding: 'G0083 below Conceptual Process; R0124 produces or revises a Pattern, without asserting a new individual on every revision.'}
+  - {id: CLR-C0094, label: Point-Based Time Representation, stereotype: '«subkind»', source_support: B, state: POINT_AXIOMS_PENDING, finding: 'G0085 below Time Representation; an instant-denoting expression is distinct from the represented Time.'}
+  - {id: CLR-C0095, label: Presentation, stereotype: '«subkind»', source_support: B, state: PRESENTATION_PATH, finding: 'G0086 below Representation; R0127 presents other representations, while audience, content identity and nesting semantics remain untested.'}
+  - {id: CLR-C0101, label: Representation, stereotype: '«subkind»', source_support: D, state: SELECTED_DISTINCT_ENCODINGS_CHECK, finding: 'G0092 below Information Object; R0140 encodes an Artifact and R0141/R0139/R0135 link Form/Schema/Pattern. Distinct representations may encode one artifact without being identical to it.'}
+  - {id: CLR-C0102, label: Schema, stereotype: '«subkind»', source_support: P, state: EXACT_SOURCE_PASSAGE_PENDING, finding: 'G0093 below Information Object; R0139 records schema conformity. Its imported support is P and the exact general definition needs passage-level review in #112/#113.'}
+  - {id: CLR-C0103, label: Schematization, stereotype: '«event»', source_support: B, state: PROCESS_PRODUCT_PATH, finding: 'G0094 below Conceptual Process; R0143 produces or revises Schema and does not by itself establish actual creation.'}
+  - {id: CLR-C0124, label: Time Representation, stereotype: '«subkind»', source_support: B, state: TEMPORAL_ALIGNMENT_PENDING, finding: 'G0112 below Representation; R0164 denotes Time and R0165 represents event extent. SC0014 agreement and point/interval typing have not run.'}
+  - {id: CLR-C0132, label: Visual, stereotype: '«subkind»', source_support: B, state: VISUAL_ENCODING_PATH, finding: 'G0117 below Representation; R0172 connects Visualization to Visual, without equating an artifact, its encoded content and a visual file.'}
+  - {id: CLR-C0133, label: Visualization, stereotype: '«event»', source_support: D, state: PROCESS_PRODUCT_PATH, finding: 'G0118 below Conceptual Process; R0172 produces or revises Visual, with creation identity still governed by SC0010.'}
+domain_questions:
+  - id: DQ01
+    purpose: Retrieve two distinct representations encoding one Conceptual Artifact, including an explicitly stated Form or Schema where present.
+    contracts: [FR-13, CQ-13]
+    model_ids: [CLR-C0019, CLR-C0101, CLR-C0132, CLR-C0095, CLR-C0049, CLR-C0102, CLR-C0090]
+    relation_ids: [CLR-R0140, CLR-R0141, CLR-R0139, CLR-R0135, CLR-R0127]
+    constraint_ids: []
+    outcome: SELECTED_TWO_ENCODING_WITNESS_PASS_FULL_CQ_PENDING
+    evidence: 'A synthetic fixture has separate Visual and Presentation individuals encoding one Artifact; the adverse fixture contains only one. The selected witness count does not test complete CQ-13, file identity, physical carriers or semantic equivalence.'
+  - id: DQ02
+    purpose: Find interpreted content linked to a Representation without inferring compatible meaning from a common Schema.
+    contracts: [FR-16, CQ-16]
+    model_ids: [CLR-C0101, CLR-C0062, CLR-C0063, CLR-C0105, CLR-C0102]
+    relation_ids: [CLR-R0093, CLR-R0094, CLR-R0090, CLR-R0144, CLR-R0139]
+    constraint_ids: []
+    outcome: STRUCTURAL_INTERPRETATION_PATH_COMPATIBILITY_PENDING
+    evidence: 'The selected interpretation-content query join in #96 does not prove semantic compatibility, truth or successful reference for multiple representations.'
+  - id: DQ03
+    purpose: Distinguish Time and event extent from Point-Based and Interval-Based Time Representations.
+    contracts: [FR-29, CQ-29]
+    model_ids: [CLR-C0124, CLR-C0094, CLR-C0064, CLR-C0123, CLR-C0041]
+    relation_ids: [CLR-R0164, CLR-R0165]
+    constraint_ids: [CLR-SC0014]
+    outcome: STRUCTURAL_TEMPORAL_PATH_EXACT_ALIGNMENT_UNEXECUTED
+    evidence: 'Both temporal subclasses and denotation/extent links exist; SC0014 remains textual and detailed point/interval axioms are deferred.'
+  - id: DQ04
+    purpose: Distinguish new visual/schema/pattern creation from revision and subprocess composition.
+    contracts: [FR-30, CQ-30]
+    model_ids: [CLR-C0091, CLR-C0103, CLR-C0133, CLR-C0090, CLR-C0102, CLR-C0132, CLR-C0025]
+    relation_ids: [CLR-R0124, CLR-R0143, CLR-R0172]
+    constraint_ids: [CLR-SC0010, CLR-SC0009]
+    outcome: PRODUCES_OR_REVISES_PATH_CREATION_AND_SUBPROCESS_UNEXECUTED
+    evidence: 'Three process/product relations say produces or revises; they do not assert creation identity or test acyclic subprocess structure.'
+scenarios:
+  positive: {id: DOM07-POS-001, locator: evaluation/fixtures/representation-two-encodings-positive.yaml, selected_result: TWO_DISTINCT_ENCODINGS, relevant_cqs: [CQ-13]}
+  adverse: {id: DOM07-NEG-001, locator: evaluation/fixtures/representation-one-encoding.yaml, selected_result: NO_TWO_ENCODING_WITNESS, relevant_cqs: [CQ-13]}
+  conceptual_countercase: {id: DOM07-CC01, description: 'A visual file is identified with the artifact it encodes, two syntactically matching outputs are declared semantically identical, and a revised visual is assumed to be a newly created artifact.', expected: 'Keep artifact, representation, carrier, interpreted meaning and creation/revision identity separately evidenced.', execution: NOT_EXECUTED, relevant_cqs: [CQ-13, CQ-16, CQ-30]}
+findings:
+  - {id: DOM07-F01, state: SELECTED_TWO_ENCODING_WITNESS, claim: 'Two distinct Representation individuals can encode one Artifact in the selected synthetic record; the one-encoding record lacks that witness.', evidence_ids: [CLR-C0101, CLR-C0132, CLR-C0095, CLR-R0140, CQ-13], contrary: 'One representation is not intrinsically invalid; the adverse fixture only fails the selected two-encoding CQ witness, not a formal constraint or full CQ.', route: '#124'}
+  - {id: DOM07-F02, state: CONTENT_FORM_SCHEMA_PATTERN_DISTINCTION_PARTIAL, claim: 'Representation, Form, Schema and Pattern have separate IDs and paths, but conformance, carrier identity and interpreted content are unexecuted.', evidence_ids: [CLR-C0101, CLR-C0049, CLR-C0102, CLR-C0090, CLR-R0141, CLR-R0139, CLR-R0135], contrary: 'Schema support is P and exact passage review remains open; no class addition or content identity follows.', route: '#112/#113, #124 and #129 if confirmed'}
+  - {id: DOM07-F03, state: TEMPORAL_ENCODING_ALIGNMENT_UNASSESSED, claim: 'Time Representation has point/interval subtypes and links to time/event, while extent alignment is only textual.', evidence_ids: [CLR-C0124, CLR-C0094, CLR-C0064, CLR-R0164, CLR-R0165, CLR-SC0014], contrary: 'A timestamp expression is not the denoted temporal entity; detailed temporal axioms were deferred.', route: '#125 and #129 if confirmed'}
+  - {id: DOM07-F04, state: CREATION_REVISION_DISTINCTION_UNEXECUTED, claim: 'Patternization, Schematization and Visualization use produces-or-revises links without deciding creation of a new individual.', evidence_ids: [CLR-C0091, CLR-C0103, CLR-C0133, CLR-R0124, CLR-R0143, CLR-R0172, CLR-SC0010], contrary: 'No full FR/CQ-30 or SC0010/SC0009 execution follows from product paths.', route: '#125 and #129 if confirmed'}
+  - {id: DOM07-F05, state: INTERPRETED_COMPATIBILITY_UNASSESSED, claim: 'Two encodings, even under one Schema, do not establish equal meaning, successful reference or compatible interpretation.', evidence_ids: [CLR-R0140, CLR-R0139, CLR-R0144, CQ-16], contrary: 'LMM, I&DA and Representation sources already distinguish parts of content/form/reference; no absence or formal equivalence elsewhere is claimed.', route: '#124 and #129 if confirmed'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP2-04, CMP3-04, CMP5-05, CMP6-04]
+  interpretation: 'Selected prior work has strong expression/form/content/reference distinctions; these broad comparison cells contextualize rather than approve exact imported stereotypes or claim novel labels.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Review Schema source passage, temporal alignment, carrier/content identity, interpretation compatibility and create/revise semantics in existing bounded issues before #129.'
+  next_issues: [99, 112, 113, 124, 125, 129]
