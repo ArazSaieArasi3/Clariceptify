@@ -75,6 +75,8 @@ All18 acquired full-paper reviews are complete. The owner-authorized bounded I&D
 
 The [bounded final gap comparison](gap-comparison.md) integrates all six batches into five qualified gap questions, six candidate reuse routes, existing domain/model IDs, and distinct registers for ten in-model Pending-support concepts and 260 unselected historical IDs. The 23-row [source audit](../../evidence/related-work/deep-reviews/source-audit.md) supplies exact repository, class/glossary and foundation boundaries. No new model concept/domain, equivalence or release decision is accepted by this research synthesis.
 
+The first post-synthesis [Conceptualization domain assessment](../../evaluation/domain-adequacy/README.md) binds nine primary members and seven FR/CQ pairs to actual model paths, a selected positive/negative subject-union fixture and five findings. It preserves unexecuted CQ, foundational and revision questions for existing bounded issues; the domain name and model baseline are unchanged.
+
 ## Reproduce the LMM inspection
 
 ```bash
