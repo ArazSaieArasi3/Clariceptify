@@ -1,0 +1,84 @@
+schema_version: '1.0'
+issue: 95
+task_id: R2-DOM-04
+domain_id: CLR-D0004
+domain_name: Abstraction
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: 2514eb5ac39c8f0a5ca2566cbb7779c0477b4b42
+model_revision: input-r1-rev1
+purpose: Explain selective simplification and distinguish concept descriptions, instance descriptions and their links.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 6
+  domain_member_ids: [CLR-C0001, CLR-C0002, CLR-C0003, CLR-C0053, CLR-C0059, CLR-C0060]
+  relevant_requirements: [FR-07, FR-09, FR-19]
+  relevant_cqs: [CQ-07, CQ-09, CQ-19]
+  adjacent_domains: [CLR-D0003, CLR-D0007, CLR-D0012, CLR-D0013]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0001, label: Abstraction, stereotype: '«event»', source_support: B, state: FEATURE_PATH_PARTIAL, finding: 'G0001 places it below Cognition; R0001 contributes to Concept Formation and R0002 selects features from Concept, but the selected feature and input/output roles are not explicit.'}
+  - {id: CLR-C0002, label: Abstraction Hierarchy, stereotype: '«subkind»', source_support: B, state: ORDERING_UNEXECUTED, finding: 'G0002 below Structure and R0003 orders concepts; ordering relation and declared criterion are not tested.'}
+  - {id: CLR-C0003, label: Abstraction Level, stereotype: '«quality»', source_support: B, state: SCALE_AND_BEARER_REVIEW_PENDING, finding: 'R0142 characterizes Representation, not a world object; a declared scale, subject and purpose are required by its definition but not executed.'}
+  - {id: CLR-C0053, label: Generalization, stereotype: '«subkind»', source_support: B, state: SELECTED_ENDPOINT_CHECK, finding: 'G0049 makes it a reified Relation description; R0079/R0080 distinguish general/specific concepts and inherited R0132/R0133 describe source/target. No automatic OntoUML generalization assertion follows.'}
+  - {id: CLR-C0059, label: Instance, stereotype: '«subkind»', source_support: B, state: DESCRIPTION_REFERENT_DISTINCTION, finding: 'G0054 below Conceptual Element; R0083–R0086 describe possible referents. The description is distinct from its particular object, event, structure or time.'}
+  - {id: CLR-C0060, label: Instantiation, stereotype: '«subkind»', source_support: B, state: CLASSIFICATION_ALIGNMENT_PENDING, finding: 'G0055 below Relation; R0087/R0088 link instance/type descriptions. SC0005/SC0006 endpoints and classification assignment remain textual and unexecuted.'}
+domain_questions:
+  - id: DQ01
+    purpose: Trace an Abstraction event contributing to Concept Formation and its resulting Concept; locate a Representation level only when recorded.
+    contracts: [FR-07, CQ-07]
+    model_ids: [CLR-C0001, CLR-C0015, CLR-C0017, CLR-C0018, CLR-C0003, CLR-C0101]
+    relation_ids: [CLR-R0001, CLR-R0002, CLR-R0028, CLR-R0142]
+    constraint_ids: []
+    outcome: STRUCTURAL_PATH_FEATURE_AND_SCALE_UNASSESSED
+    evidence: 'R0001/R0028 connect Abstraction to formation and a resulting Concept; R0142 optionally locates a Representation level. R0002 alone does not identify a selected feature or prove a declared scale; no CQ answer was computed.'
+  - id: DQ02
+    purpose: Retrieve general/specific and instance/type description endpoints without asserting a formal class connector from a record.
+    contracts: [FR-09, CQ-09]
+    model_ids: [CLR-C0053, CLR-C0059, CLR-C0060, CLR-C0017, CLR-C0022, CLR-C0099]
+    relation_ids: [CLR-R0079, CLR-R0080, CLR-R0087, CLR-R0088, CLR-R0132, CLR-R0133]
+    constraint_ids: [CLR-SC0005]
+    outcome: SELECTED_GENERALIZATION_ENDPOINT_PASS_FULL_CQ_PENDING
+    evidence: 'Synthetic positive and adverse records check only whether specific=source and general=target for a Generalization; Instantiation endpoint equality and full CQ-09 remain unexecuted.'
+  - id: DQ03
+    purpose: Follow an assignment from Classification to an Instance description and its Concept category, then inspect Taxonomy membership.
+    contracts: [FR-19, CQ-19]
+    model_ids: [CLR-C0014, CLR-C0017, CLR-C0059, CLR-C0060, CLR-C0119, CLR-C0053]
+    relation_ids: [CLR-R0022, CLR-R0023, CLR-R0087, CLR-R0088, CLR-R0159, CLR-R0160]
+    constraint_ids: [CLR-SC0006, CLR-SC0007]
+    outcome: STRUCTURAL_PATH_CLASSIFICATION_AND_ACYCLICITY_UNEXECUTED
+    evidence: 'The assignment, category and hierarchical link paths exist; type consistency, membership and acyclicity are textual constraints with no execution.'
+scenarios:
+  positive: {id: DOM04-POS-001, locator: evaluation/fixtures/abstraction-generalization-positive.yaml, selected_result: ACCEPTED_ENDPOINT_ALIGNMENT_ONLY, relevant_cqs: [CQ-09]}
+  adverse: {id: DOM04-NEG-001, locator: evaluation/fixtures/abstraction-generalization-misaligned.yaml, selected_result: REJECTED_ENDPOINT_MISMATCH_ONLY, relevant_cqs: [CQ-09]}
+  conceptual_countercase: {id: DOM04-CC01, description: 'A record about a specific and general concept is treated as an asserted OntoUML inheritance connector; an instance description is collapsed into the object it describes and a level is treated as another world object.', expected: 'Retain description/connector, description/referent and representation-level distinctions.', execution: NOT_EXECUTED, relevant_cqs: [CQ-07, CQ-09, CQ-19]}
+findings:
+  - {id: DOM04-F01, state: SELECTED_ENDPOINT_CHECK, claim: 'The Generalization record can align specific/general with inherited source/target in a selected SC0005 clause; a swapped target is rejected.', evidence_ids: [CLR-C0053, CLR-R0079, CLR-R0080, CLR-R0132, CLR-R0133, CLR-SC0005], contrary: 'Synthetic join tests neither Instantiation endpoints nor full SC0005/CQ-09, cardinalities or native OntoUML semantics.', route: '#123'}
+  - {id: DOM04-F02, state: FEATURE_AND_LEVEL_PARTIAL, claim: 'Formation and level have separate paths, but the selected feature, ordering scale, subject and purpose are not established by these links.', evidence_ids: [CLR-C0001, CLR-C0003, CLR-R0001, CLR-R0002, CLR-R0028, CLR-R0142, CQ-07], contrary: 'No new feature class or direct formation-to-level edge is justified until existing model and CQ semantics are inspected.', route: '#123 and #129 if confirmed'}
+  - {id: DOM04-F03, state: DESCRIPTION_VERSUS_ASSERTION, claim: 'Generalization and Instantiation are candidate relation descriptions rather than automatic class generalizations or real-world membership facts.', evidence_ids: [CLR-C0053, CLR-C0060, CLR-G0049, CLR-G0055, CLR-SC0005, CQ-09], contrary: 'The distinction is already explicit in definitions and FR-09; its formal representation and query behavior remain unassessed.', route: '#123 and #129 if a formalization change is needed'}
+  - {id: DOM04-F04, state: CLASSIFICATION_ALIGNMENT_UNASSESSED, claim: 'Classification assignment, instance description and type category have model paths, but their equality and taxonomy membership are not executed.', evidence_ids: [CLR-R0022, CLR-R0023, CLR-R0087, CLR-R0088, CLR-SC0006, CLR-SC0007, CQ-19], contrary: 'A path is not an answered CQ or a demonstrated inconsistent assignment.', route: '#124 and #129 if confirmed'}
+  - {id: DOM04-F05, state: HIERARCHY_AND_SOURCE_UNASSESSED, claim: 'Hierarchy ordering, SC0007 acyclicity and exact source-based typing remain pending.', evidence_ids: [CLR-C0002, CLR-C0003, CLR-R0003, CLR-R0160, CLR-SC0007], contrary: 'Support grades B are imported qualifications; source passages were not reverified in import and no semantic inadequacy is established.', route: '#124 and #129 if confirmed'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP1-05, CMP2-04, CMP3-05, CMP4-06]
+  interpretation: 'Prior work has concept, description, expression and classification distinctions. These broad cells are overlap/context, not direct evidence of exact Abstraction stereotypes, endpoint correspondence or absence elsewhere.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Test feature/level semantics, instance/type assignment and taxonomy acyclicity in the existing CQ/semantic reviews before #129.'
+  next_issues: [96, 123, 124, 129]

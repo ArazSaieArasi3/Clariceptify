@@ -1,0 +1,17 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_description_endpoint_alignment
+model_revision: input-r1-rev1
+id: DOM04-POS-001
+constraint_id: CLR-SC0005
+expected: accept_selected_generalization_endpoints
+description: 'A fictional description relates specific Inspection to general Examination without asserting a diagram connector.'
+nodes:
+  - {id: description, concept_id: CLR-C0053}
+  - {id: specific, concept_id: CLR-C0017}
+  - {id: general, concept_id: CLR-C0017}
+edges:
+  - {relation_id: CLR-R0080, source: description, target: specific}
+  - {relation_id: CLR-R0079, source: description, target: general}
+  - {relation_id: CLR-R0132, source: description, target: specific}
+  - {relation_id: CLR-R0133, source: description, target: general}
+claim_ceiling: 'One selected SC0005 endpoint join through Generalization-as-Relation and Concept-as-Conceptual-Element. No asserted class hierarchy, full constraint, CQ, cardinality or semantic validation.'

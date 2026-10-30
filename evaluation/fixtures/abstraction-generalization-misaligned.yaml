@@ -1,0 +1,17 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_description_endpoint_alignment
+model_revision: input-r1-rev1
+id: DOM04-NEG-001
+constraint_id: CLR-SC0005
+expected: reject_selected_generalization_endpoints
+description: 'The generic source/target are swapped relative to the specific/general concept endpoints.'
+nodes:
+  - {id: description, concept_id: CLR-C0053}
+  - {id: specific, concept_id: CLR-C0017}
+  - {id: general, concept_id: CLR-C0017}
+edges:
+  - {relation_id: CLR-R0080, source: description, target: specific}
+  - {relation_id: CLR-R0079, source: description, target: general}
+  - {relation_id: CLR-R0132, source: description, target: general}
+  - {relation_id: CLR-R0133, source: description, target: specific}
+claim_ceiling: 'Selected Generalization endpoint mismatch only. No class inheritance, instance/type, full constraint, CQ or semantic validation.'
