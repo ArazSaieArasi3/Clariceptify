@@ -50,6 +50,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [I&DA, BDI2020 and DOLCE Mental comparison](evidence/related-work/comparisons/batch-6.md), with 12 bounded evidence cells for synthesis
 - [LMM, O4OA and OntoKADS comparison](evidence/related-work/comparisons/batch-2.md), with the O4OA formal-source gap retained
 - [Bounded final gap table and research synthesis](docs/research/gap-comparison.md), linking 76 comparison cells, model IDs, domains and candidate uses
+- [Conceptualization domain assessment](evaluation/domain-adequacy/README.md), the first bounded R2 domain checkpoint against seven FR/CQ pairs
 - [Plan for using the related-work reviews](docs/research/review-utilization-plan.md), a maintained 13-category table linking source evidence to model comparison and proposed actions
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 

@@ -1,0 +1,162 @@
+schema_version: '1.0'
+issue: 92
+task_id: R2-DOM-01
+domain_id: CLR-D0001
+domain_name: Conceptualization
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: 237f9a7bd6239e4d005aa540d2ddd808507ced53
+model_revision: input-r1-rev1
+purpose: Anchor the ontology in agents, perspectives, conceptual processes and their conceptual products.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+  evaluation/fixtures/conceptualization-positive.yaml: c3e85e73d99c7ff0d1df4594dcc597e4cd89d9e7a900a6bf8f1bd7685eac6e8e
+  evaluation/fixtures/conceptualization-negative.yaml: fb354b15bbe55bcba5c4a2109b80cce6885326c9627b0048199479c28775d292
+  evaluation/conceptualization-fixtures.json: 33c4c7906ef5de95c4a430e9ceaa5322c4bad30e98eaca1112859874b760bd96
+scope:
+  primary_domain_concepts: 9
+  domain_member_ids: [CLR-C0017, CLR-C0018, CLR-C0019, CLR-C0025, CLR-C0026, CLR-C0027, CLR-C0055, CLR-C0093, CLR-C0130]
+  relevant_requirements: [FR-01, FR-02, FR-04, FR-07, FR-12, FR-26, FR-30]
+  relevant_cqs: [CQ-01, CQ-02, CQ-04, CQ-07, CQ-12, CQ-26, CQ-30]
+  adjacent_domains: [CLR-D0002, CLR-D0004, CLR-D0007, CLR-D0008, CLR-D0016, CLR-D0020, CLR-D0021]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0017, label: Concept, stereotype: '«subkind»', finding: 'Description of a type or category, distinct from its universal; R0026 connects it to Type.', state: STRUCTURALLY_SUPPORTED, source_support: B}
+  - {id: CLR-C0018, label: Concept Formation, stereotype: '«event»', finding: 'G0016 specializes Conceptualization and R0028 originates a Concept; abstraction linkage is cross-domain.', state: STRUCTURALLY_SUPPORTED, source_support: D}
+  - {id: CLR-C0019, label: Conceptual Artifact, stereotype: '«subkind»', finding: 'Information-object product of R0048, with R0032 elements; not the producing process.', state: STRUCTURALLY_SUPPORTED, source_support: B}
+  - {id: CLR-C0025, label: Conceptual Process, stereotype: '«event»', finding: 'General event supertype; G0024 places Conceptualization below it; R0049 gives a candidate subprocess link.', state: STRUCTURALLY_SUPPORTED, source_support: B}
+  - {id: CLR-C0026, label: Conceptualization, stereotype: '«event»', finding: 'Central purposeful process with participation, perspective, subject-family, creation and decision links; union/agent constraints remain textual except the one selected union check.', state: PARTIAL_EXECUTION, source_support: B}
+  - {id: CLR-C0027, label: Conceptualizer, stereotype: '«historicalRoleMixin»', finding: 'Historical role of Agent via G0025 and R0054; SC0004 states persistence after the episode, but native OntoUML role validity is unassessed.', state: PARTIAL_FOUNDATIONAL_REVIEW, source_support: B}
+  - {id: CLR-C0055, label: Idea, stereotype: '«mode»', finding: 'Agent-dependent mental content via R0006; R0082 externalizes it in an artifact without identifying the two.', state: STRUCTURALLY_SUPPORTED, source_support: B}
+  - {id: CLR-C0093, label: Perspective, stereotype: '«mode»', finding: 'Agent-borne orientation R0008 and adopted by episode R0042; R0126 connects to Viewpoint, but an articulated View is not automatically retrievable from that link.', state: PARTIAL_VIEW_BRIDGE, source_support: B}
+  - {id: CLR-C0130, label: View, stereotype: '«subkind»', finding: 'A selected representation via G0115 and R0171; no direct Viewpoint-to-View identity or correspondence is asserted.', state: PARTIAL_VIEW_BRIDGE, source_support: B}
+domain_questions:
+  - id: DQ01
+    purpose: Identify the actor and episode without assigning an unrelated person.
+    contracts: [FR-01, CQ-01]
+    model_ids: [CLR-C0004, CLR-C0026, CLR-C0027]
+    relation_ids: [CLR-R0054]
+    constraint_ids: [CLR-SC0003, CLR-SC0004]
+    outcome: STRUCTURAL_PATH_PRESENT_EXECUTION_PENDING
+    evidence: 'Positive fixture R0054 links analyst to episode; no negative unrelated-agent CQ run.'
+  - id: DQ02
+    purpose: Identify a nonempty object/event/state/time/type subject without equating its description with referent.
+    contracts: [FR-02, CQ-02]
+    model_ids: [CLR-C0026, CLR-C0041, CLR-C0083, CLR-C0112, CLR-C0123, CLR-C0125]
+    relation_ids: [CLR-R0043, CLR-R0044, CLR-R0045, CLR-R0046, CLR-R0047]
+    constraint_ids: [CLR-SC0001, CLR-SC0023]
+    outcome: SELECTED_SUBJECT_UNION_FIXTURE_PASS_OTHER_SEMANTICS_PENDING
+    evidence: 'Positive inspection event and negative removal of all five subject-family edges; evaluation/conceptualization-fixtures.json reports accepted/rejected for only SC0001.'
+  - id: DQ03
+    purpose: Distinguish an agent-borne mental perspective, articulated viewpoint and external View.
+    contracts: [FR-04, CQ-04]
+    model_ids: [CLR-C0004, CLR-C0026, CLR-C0093, CLR-C0130, CLR-C0131]
+    relation_ids: [CLR-R0008, CLR-R0042, CLR-R0126, CLR-R0171]
+    constraint_ids: [CLR-SC0003]
+    outcome: PARTIAL_VIEW_CORRESPONDENCE_NOT_ESTABLISHED
+    evidence: 'Positive fixture exercises adopted Perspective; R0126 reaches Viewpoint while View R0171 selects from Artifact. No direct Viewpoint-to-View mapping or CQ answer has been executed.'
+  - id: DQ04
+    purpose: Trace formation through abstraction to a newly described concept.
+    contracts: [FR-07, CQ-07]
+    model_ids: [CLR-C0001, CLR-C0017, CLR-C0018, CLR-C0026]
+    relation_ids: [CLR-R0001, CLR-R0002, CLR-R0028]
+    generalization_ids: [CLR-G0016]
+    outcome: STRUCTURAL_PATH_PRESENT_EXECUTION_PENDING
+    evidence: 'G0016 and R0028 distinguish formation from result; abstraction R0001/R0002 is cross-domain, with no CQ execution.'
+  - id: DQ05
+    purpose: Distinguish producing episode, explicit artifact, included conceptual elements and a selected view.
+    contracts: [FR-12, CQ-12]
+    model_ids: [CLR-C0019, CLR-C0022, CLR-C0026, CLR-C0130]
+    relation_ids: [CLR-R0048, CLR-R0032, CLR-R0171]
+    generalization_ids: [CLR-G0017]
+    outcome: STRUCTURAL_PATH_PRESENT_EXECUTION_PENDING
+    evidence: 'Positive fixture contains R0048 and R0032; View R0171 is separate. No process=product negative CQ execution.'
+  - id: DQ06
+    purpose: Trace a decision record to actor, episode, artifact and rationale without treating the record as an act.
+    contracts: [FR-26, CQ-26]
+    model_ids: [CLR-C0019, CLR-C0021, CLR-C0026, CLR-C0027, CLR-C0065]
+    relation_ids: [CLR-R0052, CLR-R0035, CLR-R0036, CLR-R0037, CLR-R0039]
+    constraint_ids: [CLR-SC0003, CLR-SC0020]
+    outcome: STRUCTURAL_CORE_PRESENT_ALTERNATIVES_AND_TIME_PENDING
+    evidence: 'Decision path and rationale exist; no explicit rejected-alternative role or dated validity check is executed. This is G01/LR-07, not proof that Decision is absent.'
+  - id: DQ07
+    purpose: Distinguish subprocess, creation and revision while excluding cycles and false new identities.
+    contracts: [FR-30, CQ-30]
+    model_ids: [CLR-C0019, CLR-C0025, CLR-C0026]
+    relation_ids: [CLR-R0048, CLR-R0049]
+    constraint_ids: [CLR-SC0010]
+    outcome: STRUCTURAL_PATH_PRESENT_CYCLE_AND_REVISION_TEST_PENDING
+    evidence: 'R0049 and R0048 provide distinct labels; SC0010 is textual and no cyclic or same-content revision case was run.'
+scenarios:
+  positive:
+    id: CLR-FIX-POS-001
+    locator: evaluation/fixtures/conceptualization-positive.yaml
+    description: Fictional analyst participates in an equipment-inspection conceptualization, adopts a perspective, concerns an event and creates an artifact containing a concept.
+    selected_result: ACCEPTED_FOR_SUBJECT_UNION_ONLY
+    relevant_cqs: [CQ-01, CQ-02, CQ-04, CQ-12]
+  adverse:
+    id: CLR-FIX-NEG-001
+    locator: evaluation/fixtures/conceptualization-negative.yaml
+    description: Remove all five subject-family edges from the episode; empty union violates SC0001.
+    selected_result: REJECTED_AS_EXPECTED_EMPTY_SUBJECT_UNION_ONLY
+    relevant_cqs: [CQ-02]
+  conceptual_countercase:
+    id: DOM01-CC01
+    description: Bea did not participate but is named as decision maker; the decision is treated as an event and its artifact as the same object as the episode.
+    expected: Reject the attribution and identities under FR-01, FR-12, FR-26 and SC0003/SC0020.
+    execution: NOT_EXECUTED
+findings:
+  - id: DOM01-F01
+    state: SUPPORTED_STRUCTURAL_COVERAGE
+    claim: Nine domain members form a purposeful process, agent role, mental orientation, formation, concept and artifact product with typed cross-domain links.
+    evidence_ids: [CLR-C0017, CLR-C0018, CLR-C0019, CLR-C0025, CLR-C0026, CLR-C0027, CLR-C0055, CLR-C0093, CLR-C0130, CLR-R0048, CLR-R0054]
+    contrary: A connected graph and correct labels are not a proof of semantic adequacy or native OntoUML validity.
+    route: KEEP_DOMAIN_NAME_AND_CANDIDATE_SCOPE
+  - id: DOM01-F02
+    state: PARTIAL_CQ_COVERAGE
+    claim: SC0001 subject-union clause passes one positive and one negative synthetic fixture; six other domain questions have only candidate structural paths and unexecuted CQ contracts.
+    evidence_ids: [CLR-SC0001, CQ-02]
+    contrary: The selected fixture does not test all branches, multiple agents, temporal decisions or formal entailment.
+    route: '#123 for CQ-01..10 and #125 for CQ-26..30'
+  - id: DOM01-F03
+    state: SUPPORTED_NEED_FOR_FOCUSED_TEST
+    claim: Decision, actor and rationale paths exist, while an explicit rejected-alternative and validity-time policy has not been demonstrated in the selected model/fixtures.
+    evidence_ids: [CLR-R0036, CLR-R0037, CLR-R0039, CLR-R0052, CLR-SC0020, CQ-26]
+    contrary: R0039 already selects or revises an element; do not claim all alternative structure is absent without inspecting source and CQ semantics.
+    route: 'LR-07 and #125; if inadequacy is confirmed, disposition in #129'
+  - id: DOM01-F04
+    state: PARTIAL_BRIDGE
+    claim: Perspective links to Viewpoint, and View selects from Artifact; a direct, justified Viewpoint-to-View correspondence has not been established.
+    evidence_ids: [CLR-R0008, CLR-R0042, CLR-R0126, CLR-R0171, CQ-04]
+    contrary: FR-04 requires an articulated view only where present; absence of a direct edge does not alone prove a model defect.
+    route: '#114/#123 for distinction and CQ; if needed #129'
+  - id: DOM01-F05
+    state: FOUNDATION_AND_PROVENANCE_UNASSESSED
+    claim: HistoricalRoleMixin, event, mode and information-object typing is preserved from input; passage support for nine concepts was not reverified in import, and native stereotype validity remains unassessed.
+    evidence_ids: [CLR-C0027, CLR-C0055, CLR-C0093, CLR-C0130, CLR-G0025]
+    contrary: A support B or D grade records prior screening, not an approved exact definition or an invalid typing.
+    route: '#121/#122 foundational review and #129 only after evidence'
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP2-03, CMP5-01, CMP5-07, CMP6-02, CMP6-03, CMP6-08]
+  interpretation: Decision processes and agent/time patterns are prior coverage; the domain review tests the current integrated model rather than claiming novelty from label absence.
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  fixtures_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: OWNER_DECISION_REQUIRED_AFTER_CQ_AND_FOUNDATIONAL_REVIEW
+  next_issues: [93, 114, 115, 121, 122, 123, 125, 129]
