@@ -1,0 +1,16 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_endpoint_property_query
+model_revision: input-r1-rev1
+id: DOM06-NEG-001
+expected: no_selected_query_answer
+description: 'The same fictional relation record has a source and a Property description but no recorded target endpoint.'
+nodes:
+  - {id: process, concept_id: CLR-C0100}
+  - {id: relation, concept_id: CLR-C0099}
+  - {id: source_concept, concept_id: CLR-C0017}
+  - {id: target_property, concept_id: CLR-C0096}
+edges:
+  - {relation_id: CLR-R0134, source: process, target: relation}
+  - {relation_id: CLR-R0132, source: relation, target: source_concept}
+  - {relation_id: CLR-R0128, source: target_property, target: source_concept}
+claim_ceiling: 'No complete answer to the selected query. Imported multiplicity labels and CQ-10 are not executed as formal constraints.'

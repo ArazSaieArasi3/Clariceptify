@@ -1,0 +1,91 @@
+schema_version: '1.0'
+issue: 97
+task_id: R2-DOM-06
+domain_id: CLR-D0006
+domain_name: Relations
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: b9aa1ba74c7cc58739f053aefd51aebb81735983
+model_revision: input-r1-rev1
+purpose: Provide the relational vocabulary needed to form an integrated conceptual artifact.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 5
+  domain_member_ids: [CLR-C0020, CLR-C0031, CLR-C0096, CLR-C0099, CLR-C0100]
+  relevant_requirements: [FR-09, FR-10, FR-11, FR-21]
+  relevant_cqs: [CQ-09, CQ-10, CQ-11, CQ-21]
+  adjacent_domains: [CLR-D0001, CLR-D0004, CLR-D0008, CLR-D0013, CLR-D0015]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0020, label: Conceptual Connection, stereotype: '«subkind»', source_support: B, state: RELATION_DESCRIPTION_PATH, finding: 'G0018 specializes Relation; the definition does not require a particular relation family or prove an external domain connection.'}
+  - {id: CLR-C0031, label: Correspondence, stereotype: '«subkind»', source_support: B, state: MAPPING_SEMANTICS_PENDING, finding: 'G0028 specializes Relation and names an alignment/mapping description; direction, identity and support conditions are not inferred from a label or structural connector.'}
+  - {id: CLR-C0096, label: Property, stereotype: '«subkind»', source_support: B, state: DESCRIPTION_FEATURE_DISTINCTION, finding: 'G0087 specializes Conceptual Element and R0128 describes a feature of Concept; this information description is distinct from a bearer quality or predicate denotation.'}
+  - {id: CLR-C0099, label: Relation, stereotype: '«subkind»', source_support: B, state: SELECTED_ENDPOINT_QUERY, finding: 'G0090 specializes Conceptual Element; R0132/R0133 name source/target descriptions. The class is not automatically a UFO relator or an asserted diagram association.'}
+  - {id: CLR-C0100, label: Relationization, stereotype: '«event»', source_support: B, state: PROCESS_PRODUCT_PATH, finding: 'G0091 specializes Conceptual Process and R0134 produces or revises Relation; this path alone does not establish the agent, evidence, truth or acceptance of that description.'}
+domain_questions:
+  - id: DQ01
+    purpose: Retrieve a Generalization or Instantiation description and its specialized endpoints while preserving the distinction from formal inheritance.
+    contracts: [FR-09, CQ-09]
+    model_ids: [CLR-C0099, CLR-C0053, CLR-C0060, CLR-C0017, CLR-C0059, CLR-C0022]
+    relation_ids: [CLR-R0132, CLR-R0133, CLR-R0079, CLR-R0080, CLR-R0087, CLR-R0088]
+    constraint_ids: [CLR-SC0005]
+    outcome: SPECIALIZED_ENDPOINT_AND_CONNECTOR_DISTINCTION_PENDING
+    evidence: 'G0049/G0055 specialize Relation, and specialized endpoint links exist; the selected SC0005 Generalization join is covered in #95, not a full CQ-09 or automatic class connector.'
+  - id: DQ02
+    purpose: Identify a Relation description with source/target conceptual elements and a Property describing the source Concept.
+    contracts: [FR-10, CQ-10]
+    model_ids: [CLR-C0100, CLR-C0099, CLR-C0096, CLR-C0017, CLR-C0022]
+    relation_ids: [CLR-R0134, CLR-R0132, CLR-R0133, CLR-R0128]
+    constraint_ids: []
+    outcome: SELECTED_ENDPOINT_PROPERTY_QUERY_PASS_FULL_CQ_PENDING
+    evidence: 'Positive synthetic record yields the selected source, target and described-concept query join; an adverse record without target does not. Neither executes full CQ-10 nor interprets imported multiplicities as enforceable restrictions.'
+  - id: DQ03
+    purpose: Distinguish conceptual part/whole relation descriptions from physical composition.
+    contracts: [FR-11, CQ-11]
+    model_ids: [CLR-C0099, CLR-C0089, CLR-C0088, CLR-C0137, CLR-C0116]
+    relation_ids: [CLR-R0132, CLR-R0133, CLR-R0122, CLR-R0123, CLR-R0157]
+    constraint_ids: [CLR-SC0005, CLR-SC0008]
+    outcome: STRUCTURAL_PARTHOOD_PATH_FORMAL_MEANING_UNEXECUTED
+    evidence: 'Part-Whole Relation specializes Relation, with part/whole links; SC0005 alignment and SC0008 no-fabricated-composition remain textual and unexecuted.'
+  - id: DQ04
+    purpose: Inspect a commitment-scoped relation description and ensure its endpoints belong to the adopted artifact.
+    contracts: [FR-21, CQ-21]
+    model_ids: [CLR-C0099, CLR-C0086, CLR-C0022, CLR-C0019, CLR-C0134]
+    relation_ids: [CLR-R0119, CLR-R0029, CLR-R0121, CLR-R0132, CLR-R0133]
+    constraint_ids: [CLR-SC0016]
+    outcome: STRUCTURAL_COMMITMENT_PATH_SCOPE_UNEXECUTED
+    evidence: 'Commitment-to-element and artifact adoption links exist; agreement of relation endpoints, vocabulary and artifact scope remains a textual constraint.'
+scenarios:
+  positive: {id: DOM06-POS-001, locator: evaluation/fixtures/relations-endpoints-positive.yaml, selected_result: COMPLETE_SELECTED_QUERY_JOIN, relevant_cqs: [CQ-10]}
+  adverse: {id: DOM06-NEG-001, locator: evaluation/fixtures/relations-endpoints-no-target.yaml, selected_result: NO_SELECTED_QUERY_ANSWER, relevant_cqs: [CQ-10]}
+  conceptual_countercase: {id: DOM06-CC01, description: 'A recorded Correspondence is treated as verified equivalence; a conceptual Part-Whole description is inferred as physical composition, and a Relation description is treated as a UFO relator.', expected: 'Require direction, scope, evidence and independent foundational semantics before these inferences.', execution: NOT_EXECUTED, relevant_cqs: [CQ-09, CQ-10, CQ-11, CQ-21]}
+findings:
+  - {id: DOM06-F01, state: SELECTED_QUERY_PATH, claim: 'A Relation description can be queried with source and target conceptual elements and an associated Property description; omitting the target removes the selected complete answer.', evidence_ids: [CLR-C0099, CLR-C0096, CLR-R0132, CLR-R0133, CLR-R0128, CQ-10], contrary: 'This is a synthetic query join, not complete CQ-10 execution, asserted OWL cardinality, a detected inconsistency or a claim of semantic adequacy.', route: '#123'}
+  - {id: DOM06-F02, state: REIFIED_RELATION_DISTINCTION, claim: 'Conceptual Connection, Correspondence and Relation are information descriptions, not automatically UFO relators or formal model connectors.', evidence_ids: [CLR-C0020, CLR-C0031, CLR-C0099, CLR-G0018, CLR-G0028, CLR-G0090], contrary: 'Imported source support is qualified and exact foundational typing is not approved; no new class is justified by this distinction alone.', route: '#122 and #129 if confirmed'}
+  - {id: DOM06-F03, state: PROPERTY_BEARER_DISTINCTION, claim: 'Property describes a feature of Concept, with a separate path from an actual quality inhering in a bearer.', evidence_ids: [CLR-C0096, CLR-R0128, CLR-G0087], contrary: 'The exact property/predicate semantics and feature identity are not formally tested.', route: '#123 and #129 if confirmed'}
+  - {id: DOM06-F04, state: SPECIALIZED_ENDPOINTS_AND_PARTHOOD_UNEXECUTED, claim: 'Specialized generalization, instantiation and part/whole descriptions require endpoint alignment without fabricated physical composition.', evidence_ids: [CLR-SC0005, CLR-SC0008, CLR-C0053, CLR-C0060, CLR-C0089, CQ-11], contrary: 'The #95 selected Generalization join is narrower than all SC0005 branches or CQ-11; no physical mereology follows.', route: '#123/#124 and #129 if confirmed'}
+  - {id: DOM06-F05, state: MAPPING_AND_COMMITMENT_SCOPE_PENDING, claim: 'A Correspondence label and commitment path do not establish verified equivalence, mapping direction or artifact-scoped endpoint consistency.', evidence_ids: [CLR-C0031, CLR-C0086, CLR-R0119, CLR-R0132, CLR-R0133, CLR-SC0016], contrary: 'Prior mapping and description ontologies cover parts of this space; no safe external equivalence is accepted from this review.', route: '#125 and #129 if confirmed'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP1-05, CMP1-06, CMP2-04, CMP5-06, CMP6-04]
+  interpretation: 'Prior DnS/cDnS, LMM, CMO and I&DA work has description, content and mapping patterns; these broad comparison cells contextualize, but do not prove exact Relation typing, endpoint constraints or absence elsewhere.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Test generic/specialized endpoint alignment, property meaning, commitment scope and mapping direction in CQ/foundational reviews before #129.'
+  next_issues: [98, 122, 123, 124, 125, 129]

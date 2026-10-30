@@ -1,0 +1,17 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_endpoint_property_query
+model_revision: input-r1-rev1
+id: DOM06-POS-001
+expected: complete_selected_query_join
+description: 'A fictional relationization articulates a relation from a Concept to a Property that describes a feature of that Concept.'
+nodes:
+  - {id: process, concept_id: CLR-C0100}
+  - {id: relation, concept_id: CLR-C0099}
+  - {id: source_concept, concept_id: CLR-C0017}
+  - {id: target_property, concept_id: CLR-C0096}
+edges:
+  - {relation_id: CLR-R0134, source: process, target: relation}
+  - {relation_id: CLR-R0132, source: relation, target: source_concept}
+  - {relation_id: CLR-R0133, source: relation, target: target_property}
+  - {relation_id: CLR-R0128, source: target_property, target: source_concept}
+claim_ceiling: 'One selected query join only; no full CQ, enforced cardinality, real-world relation, verified correspondence or foundation typing claim.'
