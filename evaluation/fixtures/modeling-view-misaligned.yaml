@@ -1,0 +1,19 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_activity_model_view_join
+model_revision: input-r1-rev1
+id: DOM08-NEG-001
+expected: no_selected_model_view_join
+description: 'The Modeling activity revises model A, but the only Model View points to a separate model B.'
+nodes:
+  - {id: activity, concept_id: CLR-C0077}
+  - {id: model_a, concept_id: CLR-C0023}
+  - {id: model_b, concept_id: CLR-C0073}
+  - {id: view, concept_id: CLR-C0076}
+  - {id: viewpoint, concept_id: CLR-C0131}
+  - {id: artifact, concept_id: CLR-C0019}
+edges:
+  - {relation_id: CLR-R0110, source: activity, target: model_a}
+  - {relation_id: CLR-R0109, source: view, target: model_b}
+  - {relation_id: CLR-R0108, source: view, target: viewpoint}
+  - {relation_id: CLR-R0140, source: model_a, target: artifact}
+claim_ceiling: 'No selected answer for model A; model B and its view may be independently valid. This does not execute a formal constraint or full CQ-17.'
