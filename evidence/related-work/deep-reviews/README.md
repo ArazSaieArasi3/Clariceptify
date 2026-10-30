@@ -93,3 +93,5 @@ OntoKADS followup #236: [bounded formal-artifact search and eight paper commitme
 OntoLex core followup #237: [pinned formal review](../artifacts/OntoLex.md) and [complete selected class register](../ontolex237-class-catalog.md) account for eight local and eight external named class declarations. The official 2016 W3C core differs from a pinned later repository file in the ConceptSet restriction direction despite their shared 1.1 header. The selected root declares no imports and fails the OWL 2 DL profile; the recorded HermiT baseline observation is not DL entailment certification. Comparison #253 and synthesis #126 retain these version and execution limits; no alignment or model change is accepted.
 
 Batch six: [I&DA, BDI2020 and DOLCE Mental comparison](../comparisons/batch-6.md) exports bounded evidence to #126 with the #246 source limit retained.
+
+Batch two: [LMM, O4OA and OntoKADS comparison](../comparisons/batch-2.md) completes the six bounded comparison inputs to #126 with #91 formal limits retained.
