@@ -1,0 +1,14 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_observation_union
+model_revision: input-r1-rev1
+id: DOM03-NEG-001
+constraint_id: CLR-SC0001
+derived_from: DOM03-POS-001
+expected: reject_empty_observation_union
+description: 'Remove every Object, Event and State subject edge, retaining the observer participation.'
+nodes:
+  - {id: observer, concept_id: CLR-C0085}
+  - {id: observation, concept_id: CLR-C0084}
+edges:
+  - {relation_id: CLR-R0118, source: observer, target: observation}
+claim_ceiling: 'Observation subject-union clause only; not a complete observation, CQ, cardinality or semantic validation.'

@@ -1,0 +1,108 @@
+schema_version: '1.0'
+issue: 94
+task_id: R2-DOM-03
+domain_id: CLR-D0003
+domain_name: Cognition
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: df8ae82c867e87b6a8de015a252e356bff6b747f
+model_revision: input-r1-rev1
+purpose: Connect concept formation with observation, experience, understanding and feedback.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 13
+  domain_member_ids: [CLR-C0008, CLR-C0009, CLR-C0015, CLR-C0028, CLR-C0043, CLR-C0048, CLR-C0058, CLR-C0084, CLR-C0085, CLR-C0092, CLR-C0109, CLR-C0126, CLR-C0127]
+  relevant_requirements: [FR-05, FR-07, FR-23, FR-28]
+  relevant_cqs: [CQ-05, CQ-07, CQ-23, CQ-28]
+  adjacent_domains: [CLR-D0001, CLR-D0004, CLR-D0017, CLR-D0019, CLR-D0020]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - {id: CLR-C0008, label: Awareness, stereotype: '«mode»', source_support: B, state: BEARER_PATH, finding: 'Agent-borne state R0004, distinct from Awareness Formation event.'}
+  - {id: CLR-C0009, label: Awareness Formation, stereotype: '«event»', source_support: B, state: STRUCTURAL_PATH, finding: 'G0007 below Cognition; R0013 originates Awareness without identifying process and state.'}
+  - {id: CLR-C0015, label: Cognition, stereotype: '«event»', source_support: D, state: STRUCTURAL_PATH, finding: 'G0013 below Conceptual Process and R0050 informs Conceptualization; not identical to product.'}
+  - {id: CLR-C0028, label: Consciousness, stereotype: '«mode»', source_support: D, state: FOUNDATION_PENDING, finding: 'Agent-borne through R0005, with R0025 to Cognition; philosophical source does not settle mode typing.'}
+  - {id: CLR-C0043, label: Experience, stereotype: '«event»', source_support: D, state: STRUCTURAL_PATH, finding: 'G0039 below Cognition and R0069 informs Understanding; a reported experience is not automatically verified.'}
+  - {id: CLR-C0048, label: Feedback, stereotype: '«subkind»', source_support: B, state: REVISION_TRACE_PENDING, finding: 'G0044 below Message; R0072 reports finding, R0073 informs artifact revision and R0074 reports on episode.'}
+  - {id: CLR-C0058, label: Insight, stereotype: '«subkind»', source_support: B, state: TYPING_REVIEW_REQUIRED, finding: 'G0053 places subkind Insight below mode Understanding; support note distinguishes sudden occurrence from resultant state. Native stereotype/identity review needed.'}
+  - {id: CLR-C0084, label: Observation, stereotype: '«event»', source_support: B, state: SELECTED_SUBJECT_CHECK, finding: 'G0076 below Cognition; R0115–R0117 cover object/event/state subjects; SC0001 requires nonempty union.'}
+  - {id: CLR-C0085, label: Observer, stereotype: '«roleMixin»', source_support: B, state: ROLE_REVIEW_PENDING, finding: 'G0077 to Agent and R0118 participates in Observation; roleMixin validity requires foundation review.'}
+  - {id: CLR-C0092, label: Perception, stereotype: '«event»', source_support: D, state: STRUCTURAL_PATH, finding: 'G0084 below Cognition; R0125 provides input to Observation, not proof of an observation result.'}
+  - {id: CLR-C0109, label: Shared Understanding, stereotype: '«situation»', source_support: B, state: DISTINCT_BEARER_TEST_PENDING, finding: 'G0099 below State; R0148–R0150 link content, agents and compatible states, but SC0012 distinct bearer alignment is textual.'}
+  - {id: CLR-C0126, label: Understandability, stereotype: '«mode»', source_support: B, state: DISPOSITION_REVIEW_PENDING, finding: 'R0137 ties suitability to Representation and R0166 to interpreter; suitability is not actual Understanding.'}
+  - {id: CLR-C0127, label: Understanding, stereotype: '«mode»', source_support: D, state: BEARER_PATH, finding: 'R0009 bearer, R0167 concept and R0168 articulated content; state is distinct from artifact and event.'}
+domain_questions:
+  - id: DQ01
+    purpose: Identify observer and event-only subject without inventing an Object; distinguish observed event from Awareness state.
+    contracts: [FR-05, CQ-05]
+    model_ids: [CLR-C0004, CLR-C0008, CLR-C0084, CLR-C0085, CLR-C0041, CLR-C0127]
+    relation_ids: [CLR-R0116, CLR-R0118, CLR-R0004, CLR-R0009]
+    constraint_ids: [CLR-SC0001]
+    outcome: SELECTED_OBSERVATION_UNION_PASS_FULL_CQ_PENDING
+    evidence: 'New positive/adverse synthetic fixtures test event-only subject versus empty object/event/state union; no full CQ answer or bearer cardinality proof.'
+  - id: DQ02
+    purpose: Trace cognitive input and abstraction into formation and separate resultant concept and insight state.
+    contracts: [FR-07, CQ-07]
+    model_ids: [CLR-C0001, CLR-C0015, CLR-C0018, CLR-C0017, CLR-C0058, CLR-C0127]
+    relation_ids: [CLR-R0001, CLR-R0002, CLR-R0028, CLR-R0050]
+    constraint_ids: []
+    outcome: STRUCTURAL_PATH_AND_INSIGHT_TYPING_REVIEW_PENDING
+    evidence: 'G0053 places Insight below Understanding, yet support discusses a sudden occurrence versus resultant state; no CQ execution.'
+  - id: DQ03
+    purpose: Find explicit Domain Knowledge used by an episode or formation, without treating an agent state as a guaranteed truth.
+    contracts: [FR-23, CQ-23]
+    model_ids: [CLR-C0026, CLR-C0018, CLR-C0034, CLR-C0017, CLR-C0127]
+    relation_ids: [CLR-R0053, CLR-R0059, CLR-R0060, CLR-R0168]
+    constraint_ids: []
+    outcome: STRUCTURAL_CONTENT_PATH_EXECUTION_PENDING
+    evidence: 'R0053/R0060 bind explicit knowledge to episodes/formations; R0168 articulates Understanding content. No knowledge truth or CQ answer inferred.'
+  - id: DQ04
+    purpose: Trace Feedback, finding and target artifact while rejecting a finding transfer to an unrelated artifact.
+    contracts: [FR-28, CQ-28]
+    model_ids: [CLR-C0048, CLR-C0040, CLR-C0019, CLR-C0026, CLR-C0021]
+    relation_ids: [CLR-R0072, CLR-R0073, CLR-R0074]
+    constraint_ids: []
+    outcome: STRUCTURAL_PATH_TARGET_ALIGNMENT_UNTESTED
+    evidence: 'The three feedback links exist, but none alone asserts that the reported finding is about the same target artifact; no adverse target-identity run.'
+additional_domain_question:
+  id: DQ05
+  purpose: Require at least two distinct bearers with compatible Understanding about the same shared artifact.
+  related_contract: [FR-05, CQ-05]
+  model_ids: [CLR-C0109, CLR-C0127, CLR-C0004, CLR-C0019]
+  relation_ids: [CLR-R0148, CLR-R0149, CLR-R0150, CLR-R0009]
+  constraint_ids: [CLR-SC0012]
+  outcome: TEXTUAL_CONSTRAINT_NOT_EXECUTED
+  evidence: 'R0149/R0150 advertise 2..* participants/states; they do not by themselves align each state bearer with a distinct participant or prove compatibility.'
+scenarios:
+  positive: {id: DOM03-POS-001, locator: evaluation/fixtures/cognition-observation-positive.yaml, selected_result: ACCEPTED_EVENT_ONLY_SUBJECT, relevant_cqs: [CQ-05]}
+  adverse: {id: DOM03-NEG-001, locator: evaluation/fixtures/cognition-observation-empty.yaml, selected_result: REJECTED_EMPTY_OBSERVATION_UNION, relevant_cqs: [CQ-05]}
+  conceptual_countercase: {id: DOM03-CC01, description: 'Two labels for Understanding states belong to one agent yet Shared Understanding is asserted for two listed participants; feedback about artifact A is attached to unrelated artifact B.', expected: 'Reject bearer mismatch and unrelated target after semantics are specified.', execution: NOT_EXECUTED, relevant_cqs: [CQ-05, CQ-28]}
+findings:
+  - {id: DOM03-F01, state: SELECTED_OBSERVATION_CHECK, claim: 'Event-only observation satisfies selected SC0001 union; removing every subject branch is rejected.', evidence_ids: [CLR-C0084, CLR-R0116, CLR-SC0001], contrary: 'Synthetic selected clause is not full CQ-05 execution or general constraint enforcement.', route: '#123'}
+  - {id: DOM03-F02, state: STRUCTURAL_COGNITIVE_DISTINCTIONS, claim: 'Cognitive events, agent-borne states, explicit knowledge and feedback have distinct model paths.', evidence_ids: [CLR-C0015, CLR-C0127, CLR-C0034, CLR-C0048], contrary: 'Connected paths do not prove valid OntoUML typing or cognitive empirical adequacy.', route: '#122/#123/#125'}
+  - {id: DOM03-F03, state: SHARED_UNDERSTANDING_PARTIAL, claim: 'At least two participant/state multiplicities are recorded, but distinct bearers and common content are not executed.', evidence_ids: [CLR-C0109, CLR-R0148, CLR-R0149, CLR-R0150, CLR-SC0012], contrary: 'A structural edge count cannot establish compatible mental states or real shared understanding.', route: '#122/#123; #129 if confirmed'}
+  - {id: DOM03-F04, state: FEEDBACK_TARGET_PARTIAL, claim: 'Feedback can report a finding and inform artifact revision, while target identity and decision trace are untested.', evidence_ids: [CLR-C0048, CLR-R0072, CLR-R0073, CLR-R0074, CQ-28], contrary: 'Existing edges might suffice with a bounded constraint or query; no new class is justified yet.', route: '#125; #129 if confirmed'}
+  - {id: DOM03-F05, state: INSIGHT_FOUNDATION_UNASSESSED, claim: 'The imported Insight subkind specializes Understanding mode although the source support contrasts an occurrence and resulting state.', evidence_ids: [CLR-C0058, CLR-C0127, CLR-G0053], contrary: 'This is a typing question requiring foundational review, not an established invalidity or model correction.', route: '#122 and #129'}
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP3-03, CMP3-06, CMP4-02, CMP4-05, CMP5-01, CMP6-03]
+  interpretation: 'Perception, memory, mental states and cognitive vocabulary have substantive prior coverage; inspect episode, agent, content and revision integration without label novelty claims.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Investigate Insight typing, shared bearer alignment and feedback target identity in existing bounded reviews before #129.'
+  next_issues: [95, 122, 123, 125, 129]

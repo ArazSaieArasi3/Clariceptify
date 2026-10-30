@@ -52,6 +52,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Bounded final gap table and research synthesis](docs/research/gap-comparison.md), linking 76 comparison cells, model IDs, domains and candidate uses
 - [Conceptualization domain assessment](evaluation/domain-adequacy/README.md), the first bounded R2 domain checkpoint against seven FR/CQ pairs
 - [Intentionality domain assessment](evaluation/domain-adequacy/intentionality.yaml), a bounded R2 check of agent, intention, goal and value distinctions
+- [Cognition domain assessment](evaluation/domain-adequacy/cognition.yaml), a bounded R2 observation and cognitive-state review
 - [Plan for using the related-work reviews](docs/research/review-utilization-plan.md), a maintained 13-category table linking source evidence to model comparison and proposed actions
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
