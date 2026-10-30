@@ -1,0 +1,20 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_structure_parthood_join
+model_revision: input-r1-rev1
+id: DOM09-NEG-001
+expected: no_selected_shared_parthood_description
+description: 'The same Structure specifies two Part-Whole Relation descriptions; one describes only the selected Part and the other only the selected Whole.'
+nodes:
+  - {id: structure, concept_id: CLR-C0116}
+  - {id: relation_a, concept_id: CLR-C0089}
+  - {id: relation_b, concept_id: CLR-C0089}
+  - {id: part, concept_id: CLR-C0088}
+  - {id: whole, concept_id: CLR-C0137}
+edges:
+  - {relation_id: CLR-R0156, source: structure, target: part}
+  - {relation_id: CLR-R0156, source: structure, target: whole}
+  - {relation_id: CLR-R0157, source: structure, target: relation_a}
+  - {relation_id: CLR-R0157, source: structure, target: relation_b}
+  - {relation_id: CLR-R0122, source: relation_a, target: part}
+  - {relation_id: CLR-R0123, source: relation_b, target: whole}
+claim_ceiling: 'No selected shared-description answer; each record may be independently valid. This does not test formal cardinalities, a complete CQ or physical mereology.'

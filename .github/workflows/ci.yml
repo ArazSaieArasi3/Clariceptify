@@ -121,6 +121,8 @@ jobs:
         run: python tools/check_domain_representation98.py
       - name: Check Modeling domain assessment
         run: python tools/check_domain_modeling99.py
+      - name: Check Structure domain assessment
+        run: python tools/check_domain_structure100.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root
