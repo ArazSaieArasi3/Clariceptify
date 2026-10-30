@@ -1,0 +1,15 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_two_encoding_witness
+model_revision: input-r1-rev1
+id: DOM07-POS-001
+expected: two_distinct_encodings
+description: 'A fictional Visual and a distinct Presentation both encode the same conceptual Artifact.'
+nodes:
+  - {id: artifact, concept_id: CLR-C0019}
+  - {id: visual, concept_id: CLR-C0132}
+  - {id: presentation, concept_id: CLR-C0095}
+edges:
+  - {relation_id: CLR-R0140, source: visual, target: artifact}
+  - {relation_id: CLR-R0140, source: presentation, target: artifact}
+  - {relation_id: CLR-R0127, source: presentation, target: visual}
+claim_ceiling: 'Two distinct instance IDs in one selected CQ-13 witness; no full CQ, file/carrier identity, semantic equivalence or formal validation.'

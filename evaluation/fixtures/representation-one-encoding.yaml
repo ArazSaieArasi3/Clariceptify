@@ -1,0 +1,12 @@
+schema_version: '1.0'
+evidence_kind: synthetic_adverse_selected_two_encoding_witness
+model_revision: input-r1-rev1
+id: DOM07-NEG-001
+expected: no_two_encoding_witness
+description: 'Only one recorded Visual encodes the fictional Artifact; no second Representation is recorded.'
+nodes:
+  - {id: artifact, concept_id: CLR-C0019}
+  - {id: visual, concept_id: CLR-C0132}
+edges:
+  - {relation_id: CLR-R0140, source: visual, target: artifact}
+claim_ceiling: 'Missing selected two-encoding witness, not a violation of a model constraint or invalidity of a one-representation record.'

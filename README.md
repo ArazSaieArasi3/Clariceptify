@@ -56,6 +56,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Abstraction domain assessment](evaluation/domain-adequacy/abstraction.yaml), a bounded R2 review of descriptions, endpoints and levels
 - [Semantics domain assessment](evaluation/domain-adequacy/semantics.yaml), a bounded R2 interpretation and content-path review
 - [Relations domain assessment](evaluation/domain-adequacy/relations.yaml), a bounded R2 endpoint, property and description review
+- [Representation domain assessment](evaluation/domain-adequacy/representation.yaml), a bounded R2 content, encoding and temporal-form review
 - [Plan for using the related-work reviews](docs/research/review-utilization-plan.md), a maintained 13-category table linking source evidence to model comparison and proposed actions
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
