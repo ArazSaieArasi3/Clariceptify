@@ -1,0 +1,136 @@
+schema_version: '1.0'
+issue: 93
+task_id: R2-DOM-02
+domain_id: CLR-D0002
+domain_name: Intentionality
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-10-30'
+baseline_commit: eae4103549161760f92c165d8816e3653e4182aa
+model_revision: input-r1-rev1
+purpose: Explain why a conceptualization is undertaken and which goals and values guide selection.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+  evaluation/fixtures/conceptualization-positive.yaml: c3e85e73d99c7ff0d1df4594dcc597e4cd89d9e7a900a6bf8f1bd7685eac6e8e
+scope:
+  primary_domain_concepts: 4
+  domain_member_ids: [CLR-C0054, CLR-C0061, CLR-C0128, CLR-C0129]
+  relevant_requirements: [FR-03, FR-24, FR-26]
+  relevant_cqs: [CQ-03, CQ-24, CQ-26]
+  adjacent_domains: [CLR-D0001, CLR-D0018, CLR-D0019, CLR-D0020]
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+  - id: CLR-C0054
+    label: Goal
+    stereotype: '«subkind»'
+    state: STRUCTURAL_CONTENT_PATH
+    source_support: B
+    finding: 'Information-object desired outcome, below Information Object through G0050; R0089 links it to an Intention without identifying them.'
+  - id: CLR-C0061
+    label: Intention
+    stereotype: '«mode»'
+    state: AGENT_ALIGNMENT_SELECTED_CHECK_ONLY
+    source_support: D
+    finding: 'Agent-dependent commitment via R0007, with R0051 to episode and R0089 to goal content. Mode grounding and complete cardinality remain unassessed.'
+  - id: CLR-C0128
+    label: Valuation
+    stereotype: '«event»'
+    state: STRUCTURAL_PATH_EXECUTION_PENDING
+    source_support: B
+    finding: 'Specializes Conceptual Process via G0113; R0169 assesses an artifact and R0170 uses a Value. No valuation result is entailed.'
+  - id: CLR-C0129
+    label: Value
+    stereotype: '«subkind»'
+    state: DISTINCT_FROM_EVALUATION_CRITERION
+    source_support: B
+    finding: 'Stated standard below Information Object through G0114; R0081 connects Goal to Value. It is not automatically Evaluation Criterion C0039 or an observed quality.'
+domain_questions:
+  - id: DQ01
+    purpose: For a designated episode, find its intention, actual bearer, separate articulated goal and recorded value if present.
+    contracts: [FR-03, CQ-03]
+    model_ids: [CLR-C0004, CLR-C0026, CLR-C0054, CLR-C0061, CLR-C0129]
+    relation_ids: [CLR-R0007, CLR-R0051, CLR-R0089, CLR-R0081, CLR-R0054]
+    constraint_ids: [CLR-SC0003]
+    outcome: SELECTED_AGENT_ALIGNMENT_CHECK_PASS_FULL_CQ_PENDING
+    evidence: 'The existing positive fixture links participating analyst to intention and separate goal; the new adverse fixture assigns that intention to a nonparticipant. The selected checker accepts/rejects this join only. Neither fixture has a Value, and CQ-03 remains not_computed.'
+  - id: DQ02
+    purpose: Distinguish a declared Value used in Valuation from an Evaluation Criterion and an observed assessment result.
+    contracts: [FR-24, CQ-24]
+    model_ids: [CLR-C0019, CLR-C0039, CLR-C0040, CLR-C0054, CLR-C0128, CLR-C0129]
+    relation_ids: [CLR-R0169, CLR-R0170, CLR-R0081, CLR-R0061, CLR-R0065]
+    constraint_ids: [CLR-SC0017]
+    outcome: PARTIAL_CRITERION_BRIDGE_AND_RESULT_UNASSESSED
+    evidence: 'R0169/R0170 bind Valuation to Artifact and Value; R0061 binds Evaluation Criterion to Goal, while R0065 judges against that Criterion. No asserted identity or explicit bridge between Value and Evaluation Criterion is in the selected paths; CQ-24 has not been executed.'
+  - id: DQ03
+    purpose: Link a recorded conceptual decision to the episode, responsible agent, goal and rationale without inferring goal satisfaction.
+    contracts: [FR-26, CQ-26]
+    model_ids: [CLR-C0021, CLR-C0026, CLR-C0027, CLR-C0054, CLR-C0065]
+    relation_ids: [CLR-R0052, CLR-R0037, CLR-R0040, CLR-R0036, CLR-R0054]
+    constraint_ids: [CLR-SC0003]
+    outcome: STRUCTURAL_PATH_PRESENT_EXECUTION_PENDING
+    evidence: 'R0052/R0037/R0040/R0036 provide distinct episode, agent, goal and rationale links. No CQ answer, dated choice or goal-satisfaction test has been executed.'
+scenarios:
+  positive:
+    id: CLR-FIX-POS-001
+    locator: evaluation/fixtures/conceptualization-positive.yaml
+    description: 'Fictional analyst participates in an inspection conceptualization, bears an Intention that motivates the episode and has a separate Goal.'
+    selected_result: ACCEPTED_FOR_AGENT_ALIGNMENT_ONLY
+    relevant_cqs: [CQ-03]
+  adverse:
+    id: DOM02-NEG-001
+    locator: evaluation/fixtures/intentionality-misaligned.yaml
+    description: 'The analyst participates, but a distinct outsider bears the Intention motivating the episode.'
+    selected_result: REJECTED_FOR_AGENT_ALIGNMENT_ONLY
+    relevant_cqs: [CQ-03]
+  conceptual_countercase:
+    id: DOM02-CC01
+    description: 'A goal specification is treated as the agent mental Intention; a Value used as a criterion is treated as evidence of a favorable result and a decision as proof of achieved goal.'
+    expected: 'Reject all three identity/result inferences; distinguish agent mode, goal content, evaluative standard, criterion, assessment and outcome.'
+    execution: NOT_EXECUTED
+findings:
+  - id: DOM02-F01
+    state: SELECTED_STRUCTURE_AND_ALIGNMENT
+    claim: 'The model distinguishes agent-borne Intention, Goal content and episode; one positive/adverse synthetic join tests the SC0003 participation condition.'
+    evidence_ids: [CLR-C0061, CLR-C0054, CLR-R0007, CLR-R0051, CLR-R0089, CLR-R0054, CLR-SC0003]
+    contrary: 'A selected join is not complete constraint enforcement, native OntoUML validity, full CQ-03 execution or proof of intention satisfaction.'
+    route: '#123 and #121/#122 for formal and foundational checks'
+  - id: DOM02-F02
+    state: PARTIAL_VALUE_CRITERION_BRIDGE
+    claim: 'Value and Evaluation Criterion have separate IDs and paths; selected relations do not by themselves connect a Valuation standard to a CQ-24 criterion specification.'
+    evidence_ids: [CLR-C0129, CLR-C0039, CLR-R0170, CLR-R0061, CLR-SC0017, CQ-24]
+    contrary: 'Absence of a direct edge alone does not establish that an extra class or relation is required; query semantics and source definitions remain unchecked.'
+    route: '#109/#110 and #125, followed by #129 if an actual correction is justified'
+  - id: DOM02-F03
+    state: STRUCTURAL_EVALUATION_PATH_UNEXECUTED
+    claim: 'Valuation is an event assessing an artifact with a Value; no favorable outcome or Decision acceptance follows from those links.'
+    evidence_ids: [CLR-C0128, CLR-R0169, CLR-R0170, CLR-G0113]
+    contrary: 'Selected paths do not assess the whole Evaluation domain or measure semantic quality.'
+    route: '#109/#110 and #125'
+  - id: DOM02-F04
+    state: SOURCE_AND_FOUNDATION_UNASSESSED
+    claim: 'The four members retain imported support grades B/D; exact passages were not reverified in import and stereotype typing approval is not assessed.'
+    evidence_ids: [CLR-C0054, CLR-C0061, CLR-C0128, CLR-C0129]
+    contrary: 'BDI and DOLCE Mental already cover parts of agency, mental content, goals and decisions; no label novelty is claimed.'
+    route: '#121/#122 and #129 after source/CQ review'
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells: [CMP5-01, CMP5-07, CMP6-02, CMP6-03, CMP6-08, CMP6-09]
+  interpretation: 'Intentionality and goal-directed behavior have genuine prior coverage; test integration and decision trace without asserting absence elsewhere or formal equivalence.'
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Clarify the Value/Evaluation Criterion bridge only after CQ-24 and source analysis; retain existing IDs pending #129.'
+  next_issues: [94, 109, 110, 121, 122, 123, 125, 129]
