@@ -47,7 +47,7 @@ The current 20 subject domains are Conceptualization, Intentionality, Cognition,
 
 ## Next work toward v0.2.0
 
-The [domain assessment register](../../evaluation/domain-adequacy/README.md) now contains Conceptualization (#92) and Intentionality (#93) checkpoints. Their findings qualify the G01/G05 hypotheses: agent–intention alignment has a selected positive/adverse check, while Value-to-Evaluation-Criterion correspondence and all three Intentionality CQ answers remain unassessed. These checks do not change the five gap dispositions or promote a candidate class.
+The [domain assessment register](../../evaluation/domain-adequacy/README.md) now contains Conceptualization (#92), Intentionality (#93) and Cognition (#94) checkpoints. Their findings qualify G01/G04/G05: selected subject-union and agent-alignment positive/adverse checks pass; Value-to-Evaluation-Criterion correspondence, Shared Understanding distinct bearers, Feedback target identity and Insight typing remain unassessed. The domain CQ answers remain uncomputed. These checks do not change the five gap dispositions or promote a candidate class.
 
 | Order | Work | Completion evidence |
 |---:|---|---|
