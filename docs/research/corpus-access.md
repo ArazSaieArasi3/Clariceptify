@@ -73,6 +73,8 @@ All18 acquired full-paper reviews are complete. The owner-authorized bounded I&D
 
 [Batch two comparison](../../evidence/related-work/comparisons/batch-2.md) records the remaining 12 cells for LMM, O4OA and OntoKADS. Current executable LMM evidence is separated from its unavailable historical alignment; the O4OA 44-page specification is used with #91 still open, and OntoKADS paper expressions are not converted into machine classes. All six bounded comparisons are now available for synthesis #126.
 
+The [bounded final gap comparison](gap-comparison.md) integrates all six batches into five qualified gap questions, six candidate reuse routes, existing domain/model IDs, and distinct registers for ten in-model Pending-support concepts and 260 unselected historical IDs. The 23-row [source audit](../../evidence/related-work/deep-reviews/source-audit.md) supplies exact repository, class/glossary and foundation boundaries. No new model concept/domain, equivalence or release decision is accepted by this research synthesis.
+
 ## Reproduce the LMM inspection
 
 ```bash

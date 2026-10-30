@@ -1,0 +1,138 @@
+schema_version: '1.0'
+issue: 126
+task_id: R2-SYN-001
+status: BOUNDED_FINAL_RELATED_WORK_SYNTHESIS_COMPLETE_MODEL_DECISIONS_PENDING
+as_of: '2026-10-30'
+baseline:
+  release: v0.1.0
+  model_revision: input-r1-rev1
+  model_path: model/concepts.yaml
+  model_sha256: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  selected_concepts: 137
+  subject_domains: 20
+  foundations_domain: 1
+  associations: 174
+  generalizations: 122
+  textual_constraints: 24
+  principal_cqs: 30
+inputs:
+  comparison_paths: [evidence/related-work/comparisons/batch-1.yaml, evidence/related-work/comparisons/batch-2.yaml, evidence/related-work/comparisons/batch-3.yaml, evidence/related-work/comparisons/batch-4.yaml, evidence/related-work/comparisons/batch-5.yaml, evidence/related-work/comparisons/batch-6.yaml]
+  comparison_source_labels: 19
+  comparison_cells: 76
+  full_paper_dossiers: 18
+  limited_summary_dossiers: 1
+  standalone_document_sources: 4
+  source_audit: evidence/related-work/deep-reviews/source-audit.yaml
+  source_audit_records: 23
+  source_register_contract: 'For each exact paper/version/document, use source-audit.records keyed by id, repository/discovery evidence, artifact state, class_coverage and foundation family/edition/relation; linked per-module catalogs and dossier paths are authoritative. These are not summed into a unique class population.'
+  repository_license_boundary: 'Public availability, source license, exact historical correspondence and redistribution are independent. A null count/import/edition is unknown rather than zero. The source-audit records and artifact dossiers give version-specific evidence.'
+  utilization_plan: docs/research/review-utilization-plan.md
+  migration_ledger: traceability/migration/entity-ledger.yaml
+finding_categories:
+  - {id: S1, kind: PRIOR_COVERAGE, claim: 'Prior work already models parts of agency, activity, intentionality, content, expression, referents, context, ontology roles, time, provenance and decision processes.', evidence_batches: [1, 2, 3, 4, 5, 6]}
+  - {id: S2, kind: BOUNDED_INTEGRATION_HYPOTHESIS, claim: 'Across inspected versions a single tested native record combining a dated revisable conceptual choice among alternatives, responsibility, evidence, rationale, guarded reference and viewpoint was not established.', evidence_batches: [1, 2, 3, 4, 5, 6]}
+  - {id: S3, kind: MODEL_ADEQUACY_UNKNOWN, claim: 'The current 137 candidate concepts and links have not yet passed all 20 domain and 30 CQ assessments; source overlap or a plausible gap does not establish model adequacy or the need for an additional class.', evidence_batches: [1, 2, 3, 4, 5, 6]}
+gap_table:
+  - id: G01
+    label: Agent-indexed conceptual choice and rationale
+    question: Can a dated conceptual decision represent selected and rejected alternatives, deciding agent, episode, cited evidence and justification?
+    existing_model_ids: [CLR-C0004, CLR-C0021, CLR-C0026, CLR-C0027, CLR-C0042, CLR-C0065, CLR-C0123]
+    current_domains: [CLR-D0001, CLR-D0002, CLR-D0020]
+    prior_overlap: 'COM agent/time aboutness; BDI2020 Dec/Int-Dec; DOLCE Mental agent/time; OntoKADS reasoning/action/task; O4OA ontology roles; CMO mapping policy.'
+    source_cells: [CMP2-03, CMP2-08, CMP5-01, CMP5-07, CMP5-09, CMP6-02, CMP6-03, CMP6-08]
+    contrary_evidence: 'Decision processes and agent/time roles are already explicit in some sources; do not claim these notions were invented here.'
+    evidence_state: BOUNDED_INTEGRATION_NOT_ESTABLISHED
+    model_defect_state: UNASSESSED_PENDING_DOMAIN_AND_CQ
+    test: 'Two agents and two alternatives; a hesitant decision with no intention; distinguish actor, selection, source V and J at T.'
+    potential_action: TEST_EXISTING_RELATIONS_THEN_CONSIDER_DECISION_ALTERNATIVE_ROLE
+    decision: OWNER_DECISION_REQUIRED
+  - id: G02
+    label: Concept, content, expression, carrier and reference
+    question: Can intended versus successful reference and a false/fictional target be represented without collapsing content, expression and physical carrier?
+    existing_model_ids: [CLR-C0017, CLR-C0047, CLR-C0057, CLR-C0101]
+    current_domains: [CLR-D0005, CLR-D0007, CLR-D0010, CLR-D0011]
+    prior_overlap: 'LMM meaning/expression/reference; I&DA sign/content/inscription; Representation form/content/method/realization; COM and DOLCE Mental intentional aboutness; OntoLex/SKOS lexical resources.'
+    source_cells: [CMP2-04, CMP2-05, CMP2-06, CMP3-05, CMP5-04, CMP5-05, CMP6-04, CMP6-05, CMP6-06]
+    contrary_evidence: 'Several sources provide richer native content and expression distinctions than a broad novelty claim would allow.'
+    evidence_state: BOUNDED_INTEGRATION_NOT_ESTABLISHED
+    model_defect_state: UNASSESSED_PENDING_IDENTITY_AND_CQ
+    test: 'Two expressions share spelling; a fictional or mistaken target does not force an external referent or truth.'
+    potential_action: TEST_EXISTING_IDENTITY_GUARDS_THEN_CONSIDER_REFERENCE_OUTCOME
+    decision: OWNER_DECISION_REQUIRED
+  - id: G03
+    label: Context, provenance and competing accounts
+    question: Can different actors transmit, assert or interpret competing claims while retaining their source, perspective and mapping qualification?
+    existing_model_ids: [CLR-C0004, CLR-C0021, CLR-C0042, CLR-C0057, CLR-C0065]
+    current_domains: [CLR-D0005, CLR-D0017, CLR-D0020]
+    prior_overlap: 'I&DA distinguishes producer/transmitter and organization-attributed truth; CMO has mapping policies; LMM context, SKOS notes and OntoLex provenance examples address parts.'
+    source_cells: [CMP2-07, CMP2-08, CMP5-06, CMP5-09, CMP6-01, CMP6-07]
+    contrary_evidence: 'Conflicting viewpoints and producer/transmitter roles have direct prior coverage.'
+    evidence_state: BOUNDED_INTEGRATION_NOT_ESTABLISHED
+    model_defect_state: UNASSESSED_PENDING_DOMAIN_AND_CQ
+    test: 'Bea transmits Ada’s X while an organizational KB records a conflicting assertion; no author=transmitter or discourse=True shortcut.'
+    potential_action: TEST_PROVENANCE_AND_PERSPECTIVE_RELATIONS_THEN_CONSIDER_ASSERTION_CONTEXT
+    decision: OWNER_DECISION_REQUIRED
+  - id: G04
+    label: Revision, validity and decision lineage
+    question: Can a later conceptual decision replace or qualify an earlier one without erasing the earlier valid interval, evidence or viewpoint?
+    existing_model_ids: [CLR-C0021, CLR-C0026, CLR-C0042, CLR-C0065, CLR-C0123]
+    current_domains: [CLR-D0001, CLR-D0008, CLR-D0019, CLR-D0020]
+    prior_overlap: 'O4OA document versions, CMO mapping alternatives, LMM contextual interpretations and Representation encoding choices provide partial patterns.'
+    source_cells: [CMP2-07, CMP2-08, CMP5-08, CMP5-09, CMP6-07, CMP6-08, CMP6-09]
+    contrary_evidence: 'A version or context is not automatically a justified revision, yet the underlying source patterns exist.'
+    evidence_state: BOUNDED_INTEGRATION_NOT_ESTABLISHED
+    model_defect_state: UNASSESSED_PENDING_TEMPORAL_CQ
+    test: 'At T2 new evidence revises D, with T1 state still queryable and no assumed goal satisfaction.'
+    potential_action: TEST_TEMPORAL_RELATIONS_THEN_CONSIDER_REVISION_EVENT_OR_VALIDITY_INTERVAL
+    decision: OWNER_DECISION_REQUIRED
+  - id: G05
+    label: Criterion, evidence, outcome and uncertainty
+    question: Can a decision or assessment state the tested criterion, evidence, observed result and residual uncertainty separately?
+    existing_model_ids: [CLR-C0021, CLR-C0042, CLR-C0065, CLR-C0123]
+    current_domains: [CLR-D0018, CLR-D0019, CLR-D0020]
+    prior_overlap: 'O4OA document CQs, IAO information entities, Cognitive Atlas term evidence and source-specific formal tests offer parts; none substitutes for an executed Clariceptify CQ.'
+    source_cells: [CMP2-10, CMP2-11, CMP2-12, CMP5-10, CMP5-11, CMP5-12, CMP6-10, CMP6-11, CMP6-12]
+    contrary_evidence: 'Existing source CQs, constraints and successful isolated tests are real prior evaluation evidence, though not joint validation.'
+    evidence_state: BOUNDED_INTEGRATION_NOT_ESTABLISHED
+    model_defect_state: UNASSESSED_PENDING_CQ_EXECUTION
+    test: 'Distinguish a documented CQ from an executed answer and record contrary evidence and unknown result.'
+    potential_action: TEST_EVALUATION_LINKS_THEN_CONSIDER_CRITERION_RESULT_UNCERTAINTY_ROLES
+    decision: OWNER_DECISION_REQUIRED
+candidate_use_register:
+  - {id: U01, source: SKOS_2009, route: LEXICAL_BROADER_NOT_SUBCLASS, scope: 'Labels, notes and concept schemes', prerequisites: 'Direction, version, non-entailment and license review; batch 3', cost_risk: 'Broader does not imply class subsumption', status: OWNER_DECISION_REQUIRED}
+  - {id: U02, source: OntoLex_2016, route: LEXICAL_BRIDGE, scope: 'Lexical entry, sense and reference', prerequisites: 'Pinned official core, profile limits and ConceptSet direction; batch 3', cost_risk: 'Lexical senses do not establish conceptual identity', status: OWNER_DECISION_REQUIRED}
+  - {id: U03, source: IAO_and_CMO, route: INFORMATION_AND_CONCEPTUAL_MODEL_BRIDGE, scope: 'Information entity and conceptual representation', prerequisites: 'IAO selected-root import/license check; original CMO correspondence remains unknown; batches 4/5', cost_risk: 'Third-party CMO mirror and mixed foundation assumptions', status: OWNER_DECISION_REQUIRED}
+  - {id: U04, source: DUL_IOLite_LMM, route: MEANING_EXPRESSION_CONTEXT_BRIDGE, scope: 'Meaning, expression, reference and context', prerequisites: 'Pin exact current four-module closure and test identity/direction; historical LMM alignment unavailable; batch 2', cost_risk: 'Current consequences differ from unverified 2008 release', status: OWNER_DECISION_REQUIRED}
+  - {id: U05, source: DnS_cDnS, route: DESCRIPTION_SITUATION_PATTERN, scope: 'Descriptions, roles and context', prerequisites: 'Versioned module selection and source-checked identity; batch 1', cost_risk: 'Historical/extension modules and foundation assumptions differ', status: OWNER_DECISION_REQUIRED}
+  - {id: U06, source: BDI2020_DOLCEMental, route: CONCEPTUAL_COMPARISON_NO_DIRECT_IMPORT, scope: 'Decision/intention, mental content and need/goal distinctions', prerequisites: 'BDI2020 original root unknown; DOLCE Mental is native FOL with unpinned full foundation; batch 6', cost_risk: 'No safe OWL class equivalence or file license established', status: OWNER_DECISION_REQUIRED}
+domain_review:
+  current_registry: model/domains.yaml
+  current_population: TWENTY_SUBJECT_PLUS_FOUNDATIONS
+  existing_priority_domains: [CLR-D0001, CLR-D0002, CLR-D0005, CLR-D0007, CLR-D0008, CLR-D0010, CLR-D0011, CLR-D0017, CLR-D0018, CLR-D0019, CLR-D0020, CLR-D0021]
+  proposed_new_domain: null
+  proposal_rule: 'Assess each of 20 subject domains #92-#111, 30 CQs and relation/typing adequacy first. A new domain requires a distinct purpose, scope boundary, concepts, positive/adverse CQs and a #129 decision; Provenance and Evaluation already exist.'
+unmodeled_concept_register:
+  current_selected: 137
+  support_pending_within_selected: {count: 10, ids: [CLR-C0005, CLR-C0011, CLR-C0035, CLR-C0038, CLR-C0076, CLR-C0079, CLR-C0098, CLR-C0102, CLR-C0111, CLR-C0131], route: '#112/#113 source passages; not outside-model candidates'}
+  historical_unselected: {count: 260, inventory_ids: 254, thesis_core_ids: 6, path: traceability/migration/entity-ledger.yaml, disposition: NOT_SELECTED_FOR_THIS_SLICE_NO_DELETION, labels_in_ledger: false, unique_new_concept_count: null}
+  additional_IandDA_leads: ['Content carrier', 'Physical inscription', 'Conceptualizing', 'Encoding', 'Decoding', 'Communicative act', 'Addressee', 'Proposition', 'Assertion', 'Discourse', 'Truth value']
+  lead_boundary: 'These are prior discussion/source terms, not verified absent Clariceptify concepts. Agent, Concept, Expression, Information Object and Context-related terms require exact existing-ID mapping before any addition.'
+  classification_queue: [SAME_AS_EXISTING_OR_ALIAS, BROADER_OR_NARROWER, CANDIDATE_ADDITION, EXTERNAL_VOCABULARY, OUT_OF_SCOPE_WITH_REASON, EVIDENCE_REQUIRED]
+  process: 'For each historical ID or lead, recover exact label/definition/source, compare with all 137 selected IDs and domain purpose, record broader/narrower/related/conflicting direction, evidence/contrary case, CQ witness and decision; preserve provenance and stable ID lineage. Do not equate 260 IDs with 260 distinct additions.'
+  disposition: OWNER_DECISION_REQUIRED_AFTER_129
+next_steps:
+  - {order: 1, issue: 126, task: 'Freeze and review this bounded final research table and source-audit links', gate: SOURCE_LINK_AND_COUNTEREVIDENCE_REVIEW}
+  - {order: 2, issue_range: '92-111', task: 'Assess all 20 subject domains and relevant CQ coverage', gate: DOMAIN_ADEQUACY}
+  - {order: 3, issues: [112, 113], task: 'Resolve the ten selected support-P concepts', gate: EXACT_SOURCE_PASSAGES}
+  - {order: 4, issues: [123, 124, 125], task: 'Run 30 CQ batches with positive and adverse witnesses', gate: CQ_ASSESSMENT}
+  - {order: 5, issue: 129, task: 'Decide keep/clarify/split/add/defer and ontology connection proposals', gate: OWNER_SEMANTIC_DECISION}
+  - {order: 6, issue: 'v0.2.0-series', task: 'Build and validate a scoped release candidate from accepted dispositions', gate: R2_READINESS_AND_PUBLIC_READBACK}
+limits:
+  no_universal_novelty_claim: true
+  no_accepted_equivalences: true
+  no_model_change: true
+  no_domain_added: true
+  no_release_decision: true
+  semantic_adequacy: NOT_ASSESSED
+  expert_validation: NOT_ASSESSED
+  unresolved_source_followups: [91, 246]
