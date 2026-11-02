@@ -59,3 +59,7 @@ The [domain assessment register](../../evaluation/domain-adequacy/README.md) now
 | 6 | Prepare a scoped v0.2.0 candidate from accepted changes and run release checks | Versioned model, requirements, fixtures, diagram, documentation and public readback. |
 
 The O4OA formal source (#91) and I&DA original source (#246) remain open followups. Their unknowns do not block this bounded synthesis. No model, domain, formal import, manuscript or release has changed in #126.
+
+### Language review contribution (#101)
+
+[Language](../../evaluation/domain-adequacy/language.yaml) adds a selected message-to-its-own-language/syntax join with recorded agents. The wrong-language adverse graph has no selected answer; syntax does not prove equal meaning, receipt or compatible interpretation. DOM10-F01 through DOM10-F05 separately track these boundaries, language partition uncertainty and creation/revision identity. This is the tenth of twenty subject-domain reviews, not semantic acceptance or a change to the five gap dispositions.
