@@ -1,0 +1,219 @@
+schema_version: '1.0'
+issue: 106
+task_id: R2-DOM-15
+domain_id: CLR-D0015
+domain_name: Ontology
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 2c62ed6790545ed44a4db07f4dac5eb4d164d02b
+model_revision: input-r1-rev1
+purpose: Add only Ontological Commitment to connect vocabulary with intended interpretation.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 1
+  domain_member_ids: &id002
+  - CLR-C0086
+  relevant_requirements:
+  - FR-21
+  relevant_cqs: &id001
+  - CQ-21
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0086
+  label: Ontological Commitment
+  stereotype: "\xABsubkind\xBB"
+  definition: An explicit semantic specification connecting a vocabulary to the entities and relations assumed in
+    an intended conceptualization; here it denotes recorded content, not an agent mental state.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-86
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-86
+  source_passages: '[13] sec. 2; [8] sec. 2; [12] sec. 4'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Ontological Commitment is an Information Object subkind (G0078), recorded semantic specification relating
+    vocabulary to assumed entities/relations in an intended conceptualization. Imported B refs8/12/13; not an agent
+    mental attitude or proof of truth.
+domain_questions:
+- id: DQ01
+  purpose: Adopted commitment and included element admit a scoped-element witness.
+  cqs:
+  - CQ-21
+  model_ids:
+  - CLR-C0019
+  - CLR-C0086
+  - CLR-C0022
+  relation_ids:
+  - CLR-R0029
+  - CLR-R0032
+  - CLR-R0119
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: two commitments agree on artifact membership but impose incompatible
+    interpretations; the scoped-element witness cannot establish consistency.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0029
+  - CLR-R0032
+  - CLR-R0119
+  - CLR-R0121
+  - CLR-R0120
+  constraint_ids:
+  - CLR-SC0016
+  - CLR-SC0023
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0016: Commitment alignment. The vocabulary and element descriptions linked by an Ontological Commitment
+    belong to its adopted artifact scope. Existing Term designations and Relation endpoints must agree with the
+    commitment; it is not a second conflicting interpretation.
+  CLR-SC0023: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+    with its referent, or a Model with its Model Kind. Information Object identity follows a declared content-equivalence
+    policy, not the identity of a physical file.
+selected_query:
+  anchors:
+    artifact: artifact
+  patterns:
+  - - CLR-R0029
+    - artifact
+    - commitment
+  - - CLR-R0032
+    - artifact
+    - element
+  - - CLR-R0119
+    - commitment
+    - element
+scenarios:
+  positive:
+    id: DOM15-POS-001
+    locator: evaluation/fixtures/ontology-join-positive.yaml
+  adverse:
+    id: DOM15-NEG-001
+    locator: evaluation/fixtures/ontology-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM15-CC01
+    description: 'Unexecuted semantic countercase: two commitments agree on artifact membership but impose incompatible
+      interpretations; the scoped-element witness cannot establish consistency.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Adopted commitment and included element admit a scoped-element witness.
+  evidence_ids:
+  - CLR-R0029
+  - CLR-R0032
+  - CLR-R0119
+  - CLR-SC0016
+  contrary: Commitment can refer only to an element included elsewhere.
+  route: '#125: execute CQ21 adopted commitment and artifact-scoped description retrieval; current join covers only
+    selected element alignment.'
+  id: DOM15-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Vocabulary and designation agreement require more than the element witness.
+  evidence_ids:
+  - CLR-R0121
+  - CLR-SC0016
+  contrary: Vocabulary or relation endpoints may conflict despite the witness.
+  route: '#125: CQ21 execution must inspect vocabulary/designation and relation-endpoint scope beyond the selected
+    witness. #129: decide any demonstrated SC0016 coverage or wording correction.'
+  id: DOM15-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Recorded commitment is distinct from agent mental acceptance or truth.
+  evidence_ids:
+  - CLR-C0086
+  - CLR-G0078
+  - CLR-SC0023
+  contrary: An artifact may record a commitment no particular agent believes.
+  route: '#125: CQ21 execution must preserve recorded-content versus mental-attitude distinction. #129: decide a
+    correction only if concrete cases show conflation.'
+  id: DOM15-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Interpretation links do not establish semantic consistency.
+  evidence_ids:
+  - CLR-R0120
+  - CLR-SC0016
+  contrary: Two adopted commitments may constrain interpretations incompatibly.
+  route: '#125: CQ21 execution records interpretation links without claiming consistency. #129: decide requirement-backed
+    correction for demonstrated incompatible commitments or missing consistency scope.'
+  id: DOM15-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: A single primary member is not itself a completeness failure.
+  evidence_ids:
+  - CLR-C0086
+  - CLR-D0015
+  contrary: An additional concept requires an evidenced unmet question, not a quota.
+  route: '#129: consider domain expansion only upon a demonstrated unmet requirement; no member-count quota. #125:
+    CQ21 execution supplies the bounded requirement evidence, not a mandate for expansion.'
+  id: DOM15-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP2-05
+  - CMP1-06
+  - CMP5-06
+  interpretation:
+    interpretation: O4OA version/IRI uncertainty, cDnS expresses/aboutness distinction and CMO type/context comparison
+      preclude automatic equivalence or commitment validation.
+    evidence:
+    - cell: CMP2-05
+      path: evidence/related-work/comparisons/batch-2.yaml
+      paper_locators:
+      - CLR-RW-O4OA:E09-E14 PDF pp.8-11 representations/ontology views
+      artifact_locators:
+      - O4OA.yaml Q02,Q06; specification pp.9,16
+      unsupported_inference: The document labels Core and Domain or Reference and Operational consistently identify
+        formal subclass direction.
+      counterevidence: O4OA has explicit representation and ontology-level constructs, materially overlapping the
+        model.
+      unknowns:
+      - Reference version 2.6 versus 6.2 and actual formal class IRIs unresolved
+    - cell: CMP1-06
+      path: evidence/related-work/comparisons/batch-1.yaml
+      paper_locators:
+      - cDnS2007:E10 PDF15-16 displays38-51
+      - cDnS-journal-2008:E11 PDF18-19 displays38-50
+      artifact_locators:
+      - evidence/related-work/artifacts/cDnS-core-followup.yaml CDNS267-F03
+      - 'evidence/related-work/deep-reviews/cDnS2007/classes.yaml #InformationObject/#SchematicEntity'
+      unsupported_inference: Core expresses alone proves the paper aboutness chain or all information objects express
+        only Description.
+      counterevidence: 'CDNS267-F03: 2008 already has schematic range, while source aboutness derivation was not
+        reproduced.'
+      unknowns:
+      - Whole-core logical entailment after profile failure
+    - cell: CMP5-06
+      path: evidence/related-work/comparisons/batch-5.yaml
+      paper_locators:
+      - CMO:E06-E07 PDF pp.193-195 and Figs.1-2 Type/Quality/Relation/Universal
+      - CMO:E09 PDF pp.196-197 Fig.3 vocabulary query
+      artifact_locators:
+      - CMO.yaml T01,T02,T04; CMO-class-catalog.yaml Universal and UniversalClass
+      unsupported_inference: The four minimum-zero restrictions guarantee a concept witness, or a shared anchor
+        guarantees referential identity and class equivalence.
+      counterevidence: "CMO directly supplies conceptual-versus-logical and representation bridges, a material overlap\
+        \ with Clariceptify\u2019s concept and representation areas."
+      unknowns:
+      - FiatEntity and representedByType paper terms absent from selected mirror; original release and imports unresolved
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 125
+  - 129

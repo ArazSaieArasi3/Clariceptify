@@ -55,3 +55,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Logic checkpoint
 
 [Issue #105 assessment](logic.yaml) reviews all 4 primary members and CQ-20. The [positive](../fixtures/logic-join-positive.yaml) and [adverse](../fixtures/logic-join-adverse.yaml) scenarios test a selected finite graph join. Constraint expression and axiom acceptance can share an artifact context. Acceptance only in another artifact removes the same-context witness. Findings DOM14-F01 through DOM14-F05 separately route remaining questions to #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Ontology checkpoint
+
+[Issue #106 assessment](ontology.yaml) reviews all 1 primary members and CQ-21. The [positive](../fixtures/ontology-join-positive.yaml) and [adverse](../fixtures/ontology-join-adverse.yaml) scenarios test a selected finite graph join. Adopted commitment and included element admit a scoped-element witness. Commitment can refer only to an element included elsewhere. Findings DOM15-F01 through DOM15-F05 separately route remaining questions to #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.

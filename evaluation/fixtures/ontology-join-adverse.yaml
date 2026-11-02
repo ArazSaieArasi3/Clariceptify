@@ -1,0 +1,32 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_ontology_join
+model_revision: input-r1-rev1
+id: DOM15-NEG-001
+expected_selected_answer: false
+description: Commitment can refer only to an element included elsewhere.
+nodes:
+- id: artifact
+  concept_id: CLR-C0019
+- id: other_artifact
+  concept_id: CLR-C0019
+- id: commitment
+  concept_id: CLR-C0086
+- id: element
+  concept_id: CLR-C0022
+- id: other_element
+  concept_id: CLR-C0022
+edges:
+- relation_id: CLR-R0029
+  source: artifact
+  target: commitment
+- relation_id: CLR-R0032
+  source: artifact
+  target: element
+- relation_id: CLR-R0119
+  source: commitment
+  target: other_element
+- relation_id: CLR-R0032
+  source: other_artifact
+  target: other_element
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.
