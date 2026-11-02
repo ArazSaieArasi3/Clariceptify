@@ -71,6 +71,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Evaluation domain assessment](evaluation/domain-adequacy/evaluation.yaml), a bounded R2 selected graph review
 - [Provenance domain assessment](evaluation/domain-adequacy/provenance.yaml), a bounded R2 selected graph review
 - [Plan for using the related-work reviews](docs/research/review-utilization-plan.md), a maintained 13-category table linking source evidence to model comparison and proposed actions
+- [Pending-source passage reviews](evidence/passports/), preserving original support and open semantic gates
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
 ## Structure and status
