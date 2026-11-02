@@ -136,7 +136,7 @@ def check(slug, issue, domain_number, count):
     require(report['scenarios']['conceptual_countercase']['execution']=='NOT_EXECUTED', 'countercase overclaim')
     require(len(report['findings']) >= 3, 'missing findings')
     require(len({x['id'] for x in report['findings']})==len(report['findings']), 'duplicate findings')
-    known_ids = concepts.keys() | relations.keys() | constraints.keys() | frs.keys() | cqs.keys() | gens.keys()
+    known_ids = domains.keys() | concepts.keys() | relations.keys() | constraints.keys() | frs.keys() | cqs.keys() | gens.keys()
     for finding in report['findings']:
         require(set(finding['evidence_ids']) <= known_ids, 'finding evidence identifier')
         require(bool(finding['route']) and bool(finding['contrary']), 'finding followup/ceiling')

@@ -79,3 +79,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Logic review contribution (#105)
 
 [Logic](../../evaluation/domain-adequacy/logic.yaml) reviews 4 primary members against bounded source comparisons and a selected positive/adverse graph join. Constraint expression and axiom acceptance can share an artifact context. Acceptance only in another artifact removes the same-context witness. DOM14-F01 through DOM14-F05 preserve independent open findings. This is subject-domain checkpoint 14 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Ontology review contribution (#106)
+
+[Ontology](../../evaluation/domain-adequacy/ontology.yaml) reviews 1 primary members against bounded source comparisons and a selected positive/adverse graph join. Adopted commitment and included element admit a scoped-element witness. Commitment can refer only to an element included elsewhere. DOM15-F01 through DOM15-F05 preserve independent open findings. This is subject-domain checkpoint 15 of twenty, not semantic acceptance or a change to the five gap dispositions.
