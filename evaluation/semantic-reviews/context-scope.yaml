@@ -1,0 +1,648 @@
+schema_version: '1.0'
+issue: 118
+task_id: R2-SEM-goal-intention.b
+status: BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: 1311f0a08543f83598a407e7673fc0696e0ae9f4
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+semantic_acceptance: not_assessed
+model_changes: none
+expert_review: not_performed
+method: AI-assisted manual source-to-model conceptual comparison, exact versioned evidence, positive/adverse
+  examples and independent internal QA in PR; not native OntoUML validation, philosophical consensus or
+  automated logical proof
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/artifact-authority.md: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+  docs/decisions/artifact-versioning.md: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+source_refs:
+- id: CM2020
+  path: evidence/semantic-sources/semantic117-119-cm2020.yaml
+  sha256: 5d9d81b5defe516128d51ba86b2e843feeab91c22991e10a49ddd9c2b3254801
+- id: SEP_INDEXICAL2026
+  path: evidence/semantic-sources/semantic117-119-sep-indexical2026.yaml
+  sha256: 10bcc5df5e836940559a85707a27b9f7e314ae373702640c75e346201840ca7d
+- id: SEP_MODELS2025
+  path: evidence/semantic-sources/semantic117-119-sep-models2025.yaml
+  sha256: 0088795e4d7aa38268fce827d11550bf3942ac344b67a245b8a9b0ef3c600f65
+- id: GP2001
+  path: evidence/semantic-sources/semantic117-119-gp2001.yaml
+  sha256: 66c28573cda404b9f80687d740f2ba4d50486ecd49e5bc8912171ade5148b3ba
+model_snapshot:
+  model/concepts.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-4
+    id: CLR-C0004
+    label_en: Agent
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An object capable of intentional participation in conceptual activities, including an
+      individual or an appropriately constituted collective agent.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0023
+    notes: 'Input reference display: [11], [23]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-7
+    id: CLR-C0007
+    label_en: Assumption
+    ufo_type: Endurant / information object in a role
+    ontouml_stereotype: «role»
+    definition: An information object expressing a proposition provisionally accepted for a conceptualization
+      without being established within that context.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0028
+    - CLR-SRC0046
+    notes: 'Input reference display: [28], [46]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-10
+    id: CLR-C0010
+    label_en: Axiom
+    ufo_type: Endurant / information object in a role
+    ontouml_stereotype: «role»
+    definition: A formula playing the role of an accepted starting assertion in a specified theory or
+      conceptual artifact; acceptance may differ between theories.
+    is_abstract: null
+    primary_domain_id: CLR-D0014
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0006
+    - CLR-SRC0051
+    notes: 'Input reference display: [6], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-19
+    id: CLR-C0019
+    label_en: Conceptual Artifact
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object produced by conceptualization that assembles explicit conceptual
+      elements into a reviewable account of a subject.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0034
+    notes: 'Input reference display: [12], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-26
+    id: CLR-C0026
+    label_en: Conceptualization
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A purposeful process in which agents select and organize features of a subject to form
+      an explicit conceptual artifact from a perspective.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0013
+    - CLR-SRC0014
+    notes: 'Input reference display: [12], [13], [14]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-30
+    id: CLR-C0030
+    label_en: Constraint
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a restriction on admissible conceptual elements, relationships,
+      interpretations or model configurations.
+    is_abstract: null
+    primary_domain_id: CLR-D0014
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0006
+    - CLR-SRC0051
+    notes: 'Input reference display: [6], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-39
+    id: CLR-C0039
+    label_en: Evaluation Criterion
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a basis and conditions for judging a conceptual artifact,
+      including what evidence would support the judgment.
+    is_abstract: null
+    primary_domain_id: CLR-D0019
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0047
+    - CLR-SRC0048
+    notes: 'Input reference display: [47], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-41
+    id: CLR-C0041
+    label_en: Event
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: An occurrence that unfolds in time and may have temporal parts, including conceptual activities
+      and occurrences being conceptualized.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0010
+    - CLR-SRC0011
+    notes: 'Input reference display: [10], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-47
+    id: CLR-C0047
+    label_en: Expression
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A representation formulated in a language according to its expression conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0010
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0037
+    - CLR-SRC0051
+    notes: 'Input reference display: [37], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-52
+    id: CLR-C0052
+    label_en: Formula
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An expression constructed under the syntax of a formal language and capable of interpretation
+      under its semantics.
+    is_abstract: null
+    primary_domain_id: CLR-D0014
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0015
+    - CLR-SRC0051
+    notes: 'Input reference display: [15], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-54
+    id: CLR-C0054
+    label_en: Goal
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a desired outcome that gives explicit content to an agent's
+      intention.
+    is_abstract: null
+    primary_domain_id: CLR-D0002
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0026
+    notes: 'Input reference display: [11], [26]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-57
+    id: CLR-C0057
+    label_en: Information Object
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «kind»
+    definition: A repeatable, identifiable unit of information content that may be carried by different
+      physical or digital manifestations; identity follows content under an explicit equivalence policy.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0015
+    notes: 'Input reference display: [12], [15]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-62
+    id: CLR-C0062
+    label_en: Interpretation
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «subkind»
+    definition: An understanding state that assigns meaning to a representation in a context, distinguished
+      from the interpreting process.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0021
+    - CLR-SRC0022
+    notes: 'Input reference display: [21], [22]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-83
+    id: CLR-C0083
+    label_en: Object
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An endurant that persists through change and is wholly present whenever it exists; the
+      broad object category excludes events, moments and types.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0011
+    notes: 'Input reference display: [7], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-84
+    id: CLR-C0084
+    label_en: Observation
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A cognitive process in which an observer attends to a subject and identifies features
+      relevant to an inquiry.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0019
+    - CLR-SRC0025
+    notes: 'Input reference display: [19], [25]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-86
+    id: CLR-C0086
+    label_en: Ontological Commitment
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An explicit semantic specification connecting a vocabulary to the entities and relations
+      assumed in an intended conceptualization; here it denotes recorded content, not an agent mental
+      state.
+    is_abstract: null
+    primary_domain_id: CLR-D0015
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0008
+    - CLR-SRC0012
+    - CLR-SRC0013
+    notes: 'Input reference display: [8], [12], [13]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-99
+    id: CLR-C0099
+    label_en: Relation
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A conceptual element describing a connection between source and target conceptual elements;
+      it is not automatically a UFO relator.
+    is_abstract: null
+    primary_domain_id: CLR-D0006
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0013
+    - CLR-SRC0030
+    - CLR-SRC0039
+    notes: 'Input reference display: [13], [30], [39]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-104
+    id: CLR-C0104
+    label_en: Semantic Completeness
+    ufo_type: Endurant / criterion specification
+    ontouml_stereotype: «subkind»
+    definition: An evaluation criterion requiring coverage of the meanings and distinctions needed by
+      the agreed scope and competency questions; it does not demand universal coverage.
+    is_abstract: null
+    primary_domain_id: CLR-D0018
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0048
+    notes: 'Input reference display: [18], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-110
+    id: CLR-C0110
+    label_en: Source
+    ufo_type: Endurant / object in a role
+    ontouml_stereotype: «roleMixin»
+    definition: An agent or information object treated as an origin or reference for conceptual content
+      within a specified attribution context; events are linked separately as generating activities.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0028
+    - CLR-SRC0041
+    notes: 'Input reference display: [28], [41]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-112
+    id: CLR-C0112
+    label_en: State
+    ufo_type: Situation
+    ontouml_stereotype: «situation»
+    definition: A configuration of entities and their properties or relations that holds under specified
+      conditions and can serve as a subject or precondition of change.
+    is_abstract: null
+    primary_domain_id: CLR-D0016
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0035
+    notes: 'Input reference display: [11], [35]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-120
+    id: CLR-C0120
+    label_en: Term
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An expression used within a vocabulary to designate a concept.
+    is_abstract: null
+    primary_domain_id: CLR-D0011
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0036
+    - CLR-SRC0037
+    - CLR-SRC0039
+    notes: 'Input reference display: [36], [37], [39]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-123
+    id: CLR-C0123
+    label_en: Time
+    ufo_type: Abstract temporal entity
+    ontouml_stereotype: «abstract»
+    definition: A temporal position or extent used to locate or order occurrences. In this model the label
+      ranges over instants and intervals, not clocks or representations of them.
+    is_abstract: null
+    primary_domain_id: CLR-D0016
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0033
+    - CLR-SRC0040
+    notes: 'Input reference display: [33], [40]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-125
+    id: CLR-C0125
+    label_en: Type
+    ufo_type: Universal / type
+    ontouml_stereotype: «category»
+    definition: A universal that classifies entities according to shared characteristics; this category
+      includes types of objects, events and higher-order types.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0011
+    notes: 'Input reference display: [7], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  model/relations.yaml: []
+  model/generalizations.yaml: []
+  model/constraints.yaml:
+  - id: CLR-SC0001
+    text: Subject coverage. Every Conceptualization concerns at least one subject across Object, Event,
+      Type, State and Time. Every Observation concerns at least one Object, Event or State. Optional individual
+      branches do not permit an empty combined subject.
+    referenced_ids:
+    - CLR-C0026
+    - CLR-C0041
+    - CLR-C0083
+    - CLR-C0084
+    - CLR-C0112
+    - CLR-C0123
+    - CLR-C0125
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-1
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0015
+    text: Logical use. A Formula uses a language whose formal syntax and semantics are declared. Axioms
+      are accepted formulas within named Conceptual Artifacts. A Constraint applies to an artifact or
+      at least one element; referenced elements belong to the relevant artifact scope.
+    referenced_ids:
+    - CLR-C0030
+    - CLR-C0052
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-15
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0016
+    text: Commitment alignment. The vocabulary and element descriptions linked by an Ontological Commitment
+      belong to its adopted artifact scope. Existing Term designations and Relation endpoints must agree
+      with the commitment; it is not a second conflicting interpretation.
+    referenced_ids:
+    - CLR-C0086
+    - CLR-C0099
+    - CLR-C0120
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-16
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0017
+    text: Criterion interpretation. The five Quality classes denote criterion specifications specializing
+      Evaluation Criterion. They are not measured bearer qualities or evaluation findings. Criteria are
+      scoped by Goal; Semantic Completeness is relative to those goals and the agreed subject coverage.
+    referenced_ids:
+    - CLR-C0039
+    - CLR-C0054
+    - CLR-C0104
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-17
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0022
+    text: Contextual roles. Each Source is an Agent or Information Object cited or attributed in at least
+      one recorded context. Assumption is an Information Object adopted in at least one artifact; Axiom
+      is a Formula accepted in at least one artifact. Roles can vary across contexts.
+    referenced_ids:
+    - CLR-C0004
+    - CLR-C0007
+    - CLR-C0010
+    - CLR-C0052
+    - CLR-C0057
+    - CLR-C0083
+    - CLR-C0110
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-22
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+bounded_commitment: 'Operational distinction proposed for review: scope delimits subject/coverage/claims
+  for a purpose; application context records relevant situation, users, time, assumptions and interpretation
+  conditions. Neither is an existing named class. Purpose selects relevant questions but does not make
+  false propositions true.'
+findings:
+- id: SEM118-F01
+  affected_ids:
+  - CLR-C0007
+  - CLR-C0052
+  - CLR-C0086
+  - CLR-SC0015
+  - CLR-SC0016
+  - CLR-SC0022
+  finding: Context and validity scope are textually implicit; no explicit Context/Scope/Proposition entity
+    or universal validity axiom exists in137 concepts.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Joint129 decide documentation contract versus explicit schema extension. Do not invent
+    relator/class as review repair.
+  source_ids: []
+  evidence_kind: model-internal observation; no external source claimed to prove current structure
+  research_draft_id: PREP118-F01
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM118-F02
+  affected_ids:
+  - CLR-C0104
+  - CLR-SC0017
+  finding: Scope-relative completeness is already explicit; do not confuse with logical validity or truth.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Record distinct coverage, applicability, acceptance, and truth-evaluation claims in future
+    evidence, pending agreed implementation.
+  source_ids:
+  - GP2001
+  - SEP_MODELS2025
+  evidence_kind: reviewer comparison using exact cited source passages, not semantic acceptance
+  research_draft_id: PREP118-F02
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+case_review:
+  countercases:
+  - id: 118-EX1
+    setup: Transit map excludes tunnel humidity for route planning; maintenance inspection needs humidity.
+    expected_by_read_model: Exclusion may be purpose-appropriate for first scope, incompleteness for second.
+      No universal completeness inference.
+    affected_ids:
+    - CLR-C0054
+    - CLR-C0104
+    - CLR-SC0017
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids:
+    - CM2020
+    - GP2001
+  - id: 118-EX2
+    setup: The natural-language Expression today the bridge is open, with its language and interpretation
+      explicitly declared, is reused tomorrow or for another bridge. It is not asserted to be a formal
+      Formula.
+    expected_by_read_model: Interpretation, temporal and referent conditions must be supplied to evaluate
+      content. Expression reuse does not prove content identity or truth. No Proposition class or automatic
+      formal Formula typing is inferred.
+    affected_ids:
+    - CLR-C0047
+    - CLR-C0062
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids:
+    - SEP_INDEXICAL2026
+  - id: 118-EX3
+    setup: Axiom accepted in artifactA is imported into artifactB without adoption/semantics.
+    expected_by_read_model: SC15/22 do not license global acceptance; B needs its own artifact-bound adoption
+      and formal-language interpretation.
+    affected_ids:
+    - CLR-C0010
+    - CLR-C0052
+    - CLR-SC0015
+    - CLR-SC0022
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids: []
+  - id: 118-EX4
+    setup: A useful approximation gives accurate route times in ordinary traffic but fails during a closure.
+    expected_by_read_model: Success in application context1 does not assert universal validity or coverage;
+      record assumptions/context limits.
+    affected_ids:
+    - CLR-C0007
+    - CLR-C0030
+    - CLR-C0104
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids:
+    - SEP_MODELS2025
+  absent_named_classes:
+  - Context
+  - Scope
+  - Proposition
+  method: Manual conceptual inspection; examples are focal scenarios, not proven complete valid instances;
+    absent information is not falsity. Local executable predicates, where supplied, test only declared
+    finite rules.
+scope_boundaries:
+- No source definition automatically validates imported stereotypes.
+- No creation of new classes, identities, relations or constraints.
+- A completed negative/uncertain review does not resolve its findings.
+- Frozen constraint execution_status values remain unchanged; local probes are separate evidence.
+- 'Research proposals and philosophical alternatives await #129 joint decision.'
+verification:
+  command: python tools/check_semantic_reviews.py --issue 118
+  result_location: Exact PR and Public integrity run
+  limits: Integrity and selected local predicates only; no human expert acceptance or complete formal
+    model proof.
