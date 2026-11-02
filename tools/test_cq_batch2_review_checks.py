@@ -16,3 +16,10 @@ fails('nested capability removed',lambda x:x['records'][0]['analysis'].pop('capa
 fails('decision promoted',lambda x:x['records'][0]['analysis']['finding'].update(status='accepted'))
 fails('outer execution promoted',lambda x:x['records'][0].update(executable_semantics='passed'))
 print('PASS: 8 batch-two evidence mutations; not semantic instance tests')
+
+fails("nested NAC promotion",lambda x:x["records"][0]["analysis"]["nac_assessment"].update(status="formal_solver_PASS"))
+def coordinated_promotion(x):
+    x["records"][0]["analysis"]["ac_assessment"]["status"]="formal_solver_PASS"
+    x["records"][0]["manual_conclusion"]="formal_solver_PASS"
+fails("coordinated manual-to-formal promotion",coordinated_promotion)
+print("PASS: 2 manual-status promotion mutations")

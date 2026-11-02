@@ -11,8 +11,13 @@ def require(ok,message):
 
 def read(path):return yaml.safe_load((ROOT/path).read_text())
 
+MANUAL_STATUSES = {1: {'ac_assessment': ['conceptually_supported', 'conceptually_supported_for_artifact_scoped_input', 'conceptually_supported_for_recorded_abstraction', 'conceptually_supported_given_compatibility_record', 'conceptually_supported_textually', 'partial'], 'nac_assessment': ['conceptually_supported', 'conceptually_supported_not_formally_enforced', 'conceptually_supported_textually', 'conceptually_supported_with_query_scope', 'partial_terminological_mismatch'], 'conclusion': ['completed_with_limitations']}, 2: {'ac_assessment': ['bounded_manual_support', 'partial_support_metalevel_interpretation_unresolved'], 'nac_assessment': ['manual_support_not_automated'], 'conclusion': ['bounded_manual_support', 'partial_support_metalevel_interpretation_unresolved']}, 3: {'conclusion': ['BOUNDED_MANUAL_CONTRACT_SUPPORT_EXECUTION_UNASSESSED', 'CONCEPTUALLY_CONDITIONAL_COMPARISON_POLICY_REQUIRED', 'CONCEPTUALLY_SUPPORTED_FROZEN_SCOPE', 'CONCEPTUALLY_SUPPORTED_RECORDED_USE_AND_ARTICULATION_WITH_CAUSAL_SCOPE_LIMITATION', 'CONCEPTUALLY_SUPPORTED_SELECTED_CASE_WITH_SCOPE_LIMITATION', 'CONCEPTUALLY_SUPPORTED_SINGLE_ARTIFACT_CRITERION_CASE', 'CONCEPTUALLY_SUPPORTED_TEXTUAL_ATOMICITY_AND_ALIGNMENT', 'CONCEPTUALLY_SUPPORTED_WITH_CONTEXT_QUALIFICATION', 'PARTIAL_OPERATION_DISAMBIGUATION_WITH_OPTIONAL_SCOPE_QUESTION']}}
+
 def validate_analysis(row, cq, fr, batch):
     a=row['analysis']
+    require(row['manual_conclusion'] in MANUAL_STATUSES[batch]['conclusion'],'manual conclusion promoted')
+    for key in ['ac_assessment','nac_assessment'] if batch in {1,2} else []:
+        require(a.get(key,{}).get('status') in MANUAL_STATUSES[batch][key],'nested manual assessment promoted')
     require(a.get('cq_id')==cq['id'],'nested CQ identity')
     if batch==1:
         require(a.get('requirement_id')==fr['id'] and a.get('origin')==fr['origin'],'nested FR/origin')
