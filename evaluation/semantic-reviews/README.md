@@ -16,3 +16,4 @@ new bounded issues with AC/NAC; review closure is not correction closure.
 - [#119: quality-evaluation](quality-evaluation.yaml) — bounded review with open findings.
 - [#120: sortal-identity](sortal-identity.yaml) — bounded review with open findings.
 - [#121: roles](roles.yaml) — bounded review with open findings.
+- [#122: modes-relators](modes-relators.yaml) — bounded review with open findings.
