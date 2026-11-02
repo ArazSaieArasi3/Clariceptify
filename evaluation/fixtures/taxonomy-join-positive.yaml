@@ -1,0 +1,36 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_taxonomy_join
+model_revision: input-r1-rev1
+id: DOM13-POS-001
+expected_selected_answer: true
+description: Classification and instantiation endpoints admit a selected alignment
+  check.
+nodes:
+- id: classification
+  concept_id: CLR-C0014
+- id: category
+  concept_id: CLR-C0017
+- id: other_category
+  concept_id: CLR-C0017
+- id: instance
+  concept_id: CLR-C0059
+- id: assignment
+  concept_id: CLR-C0060
+edges:
+- relation_id: CLR-R0021
+  source: classification
+  target: category
+- relation_id: CLR-R0022
+  source: classification
+  target: instance
+- relation_id: CLR-R0023
+  source: classification
+  target: assignment
+- relation_id: CLR-R0087
+  source: assignment
+  target: instance
+- relation_id: CLR-R0088
+  source: assignment
+  target: category
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.

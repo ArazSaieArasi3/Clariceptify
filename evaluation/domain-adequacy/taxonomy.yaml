@@ -1,0 +1,284 @@
+schema_version: '1.0'
+issue: 104
+task_id: R2-DOM-13
+domain_id: CLR-D0013
+domain_name: Taxonomy
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 6471e47ec91199865b83751c14bc7d28b8f19083
+model_revision: input-r1-rev1
+purpose: Connect category formation and instance classification to concepts and generalization.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 3
+  domain_member_ids: &id002
+  - CLR-C0012
+  - CLR-C0014
+  - CLR-C0119
+  relevant_requirements:
+  - FR-19
+  - FR-07
+  - FR-09
+  - FR-11
+  relevant_cqs: &id001
+  - CQ-19
+  - CQ-07
+  - CQ-09
+  - CQ-11
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0012
+  label: Categorization
+  stereotype: "\xABevent\xBB"
+  definition: A cognitive process that forms or applies category boundaries by identifying relevant commonalities
+    and differences among subjects.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-12
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-12
+  source_passages: '[20] introduction; [18] ch. 3 description'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Categorization is a cognitive event (G0010) forming/applying category boundaries by commonalities and
+    differences. Imported D refs18/20; not identical to assignment to an established category.
+- id: CLR-C0014
+  label: Classification
+  stereotype: "\xABevent\xBB"
+  definition: A process that assigns instance descriptions to established concept categories under stated membership
+    rules. This selected sense distinguishes assignment from forming categories.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-14
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-14
+  source_passages: '[18] ch. 3 description; [39] schemes'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Classification is a cognitive event (G0012), assigning instance descriptions to established concepts
+    under membership rules. Imported B refs18/39; assignment records do not establish real-world membership truth.
+- id: CLR-C0119
+  label: Taxonomy
+  stereotype: "\xABsubkind\xBB"
+  definition: A structure organizing concept categories through explicit hierarchical classification relations,
+    usually specialization; it is distinct from the process of classification.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-119
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-119
+  source_passages: '[39] semantic relations; [7] ch. 4'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Taxonomy is a Structure subkind (G0108), organizing categories through hierarchy, usually specialization.
+    Imported D refs7/39; not the classification process and not automatically an acyclic subclass graph. SC0007
+    explicitly requires Generalization descriptions to be acyclic; this review has not executed that requirement.
+domain_questions:
+- id: DQ01
+  purpose: Classification and instantiation endpoints admit a selected alignment check.
+  cqs:
+  - CQ-19
+  model_ids:
+  - CLR-C0014
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0060
+  relation_ids:
+  - CLR-R0021
+  - CLR-R0022
+  - CLR-R0023
+  - CLR-R0087
+  - CLR-R0088
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: aligned assignment records classify a real-world object incorrectly;
+    graph endpoint alignment cannot establish membership truth or taxonomic adequacy.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0021
+  - CLR-R0022
+  - CLR-R0023
+  - CLR-R0087
+  - CLR-R0088
+  - CLR-R0015
+  - CLR-R0016
+  - CLR-R0024
+  - CLR-R0159
+  - CLR-R0160
+  constraint_ids:
+  - CLR-SC0005
+  - CLR-SC0006
+  - CLR-SC0007
+  - CLR-SC0023
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0005: Description endpoints. The specific and general concepts of a Generalization equal its source and
+    target elements. The Instance and Concept endpoints of an Instantiation equal its source and target. Part and
+    Whole endpoints similarly refine those of Part-Whole Relation.
+  CLR-SC0006: Classification alignment. Every Instantiation recorded by a Classification links one of its classified
+    Instance descriptions to one of its assigned Concept categories. Each stated classification assignment is represented
+    by such a link.
+  CLR-SC0007: Structure alignment. Taxonomy categories are among its organized elements. Its hierarchical links
+    are among its specified connections, and both endpoints belong to its categories. Generalization descriptions
+    form an acyclic hierarchy.
+  CLR-SC0023: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+    with its referent, or a Model with its Model Kind. Information Object identity follows a declared content-equivalence
+    policy, not the identity of a physical file.
+selected_query:
+  anchors:
+    classification: classification
+  patterns:
+  - - CLR-R0021
+    - classification
+    - category
+  - - CLR-R0022
+    - classification
+    - instance
+  - - CLR-R0023
+    - classification
+    - assignment
+  - - CLR-R0087
+    - assignment
+    - instance
+  - - CLR-R0088
+    - assignment
+    - category
+scenarios:
+  positive:
+    id: DOM13-POS-001
+    locator: evaluation/fixtures/taxonomy-join-positive.yaml
+  adverse:
+    id: DOM13-NEG-001
+    locator: evaluation/fixtures/taxonomy-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM13-CC01
+    description: 'Unexecuted semantic countercase: aligned assignment records classify a real-world object incorrectly;
+      graph endpoint alignment cannot establish membership truth or taxonomic adequacy.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Classification and instantiation endpoints admit a selected alignment check.
+  evidence_ids:
+  - CLR-R0021
+  - CLR-R0022
+  - CLR-R0023
+  - CLR-R0087
+  - CLR-R0088
+  - CLR-SC0006
+  contrary: Assignment can name a different category from the classification.
+  route: '#124: execute CQ19 including assignment/category/instance alignment; current SC0006 witness checks only
+    a selected slice.'
+  id: DOM13-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Category formation and established-category assignment have different routes.
+  evidence_ids:
+  - CLR-C0012
+  - CLR-C0014
+  - CLR-R0015
+  - CLR-R0016
+  - CLR-R0021
+  contrary: The same broader cognitive episode may involve both.
+  route: '#124: execute CQ19 formation-versus-assignment cases. #129: decide definition or boundary corrections
+    only if those cases demonstrate ambiguity; do not infer process disjointness.'
+  id: DOM13-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Taxonomy hierarchy and category organization exist but acyclicity is unexecuted.
+  evidence_ids:
+  - CLR-R0024
+  - CLR-R0159
+  - CLR-R0160
+  - CLR-SC0007
+  contrary: A hierarchy may contain cycles or misaligned endpoint descriptions. SC0007 already requires Generalization
+    acyclicity; possible cyclic data would violate that textual requirement, not demonstrate a missing requirement.
+  route: '#124: CQ19 execution must retain taxonomy applicability and assignment context. #129: decide requirement-backed
+    SC0007 hierarchy/alignment corrections; this fixture does not execute acyclicity.'
+  id: DOM13-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Description endpoints are not actual-world membership assertions.
+  evidence_ids:
+  - CLR-C0059
+  - CLR-C0060
+  - CLR-SC0005
+  - CLR-SC0023
+  contrary: Aligned records can still misdescribe the world.
+  route: '#123: execute CQ09 description/instance cases; #124: execute CQ11 and CQ19 without equating description
+    alignment to actual-world membership. #129 decides demonstrated identity/endpoint wording corrections.'
+  id: DOM13-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Imported hierarchy evidence does not establish universal subclass semantics.
+  evidence_ids:
+  - CLR-C0119
+  - CLR-R0160
+  - CLR-SC0007
+  contrary: SKOS broader links and permitted cycles defeat that generalization.
+  route: '#129: decide any evidenced taxonomy/hierarchy wording correction using the bounded SKOS comparison; no
+    blanket subclass or acyclicity inference. #124: CQ19 execution retains this limitation.'
+  id: DOM13-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP3-05
+  - CMP3-11
+  - CMP1-07
+  interpretation:
+    interpretation: SKOS concepts/schemes and integrity limitations distinguish hierarchical organization from closed-world
+      subclass enforcement; DUL distinguishes descriptions/concepts.
+    evidence:
+    - cell: CMP3-05
+      path: evidence/related-work/comparisons/batch-3.yaml
+      paper_locators:
+      - SKOS Reference sections 3-7; review F01,F04
+      - SKOS Reference sections 8-10; review F11
+      artifact_locators:
+      - 'SKOS.yaml selected schema; census #Concept/#ConceptScheme and prefLabel/definition/semanticRelation'
+      unsupported_inference: skos:exactMatch is owl:sameAs or a class equivalence, or a scheme enumerates all concepts
+        under closed-world semantics.
+      counterevidence: F11 rejects sameAs; F01 permits shared concepts across schemes; S14 preferred-label integrity
+        is in the Recommendation, not an executed cardinality check on the selected RDF root.
+      unknowns:
+      - Contextual referent and identity of a researcher-held concept
+    - cell: CMP3-11
+      path: evidence/related-work/comparisons/batch-3.yaml
+      paper_locators:
+      - SKOS review F03,F07,F08,F15,F16; Reference S14 and Appendix D
+      artifact_locators:
+      - SKOS.yaml selected commitments; skos238 census eight asserted triples
+      unsupported_inference: The RDF schema alone validates S14, forbids cycles, or proves all Recommendation conditions
+        through OWL reasoning.
+      counterevidence: F03 untagged preferred-label rule; F08 cycles allowed; selected schema inspection ran no
+        OWL profile, reasoner or integrity validator.
+      unknowns:
+      - Executable S14 validation and external application quality
+    - cell: CMP1-07
+      path: evidence/related-work/comparisons/batch-1.yaml
+      paper_locators:
+      - CLR-RW-DUL:E12 printed92 sec.5.3.10
+      - CLR-RW-DUL:E13 printed92-93 sec.5.3.11
+      artifact_locators:
+      - evidence/related-work/artifacts/DUL-technical-review.yaml Q02,Q05
+      - 'evidence/related-work/dul-class-catalog.yaml #InformationObject/#InformationRealization/#Description/#Concept'
+      unsupported_inference: Every InformationObject in DUL4.2 must have a realization, or the standalone Description
+        disjointness holds unchanged in the integrated root.
+      counterevidence: 'DUL88 Q02/Q05: no-realization fixture is consistent; chapter/sample Concept-Description
+        disjointness differs from root4.2.'
+      unknowns:
+      - Historical 2016 axiom parity and complete aboutness of scenario
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 123
+  - 124
+  - 129

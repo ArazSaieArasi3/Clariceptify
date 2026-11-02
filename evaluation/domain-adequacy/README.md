@@ -47,3 +47,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Metamodeling checkpoint
 
 [Issue #103 assessment](metamodeling.yaml) reviews all 4 primary members and CQ-18, CQ-17, CQ-30. The [positive](../fixtures/metamodeling-join-positive.yaml) and [adverse](../fixtures/metamodeling-join-adverse.yaml) scenarios test a selected finite graph join. A shared produced/declared metamodel plus model-kind path is available. Declarations may disagree about the metamodel; selected join then has no witness. Findings DOM12-F01 through DOM12-F05 separately route remaining questions to #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Taxonomy checkpoint
+
+[Issue #104 assessment](taxonomy.yaml) reviews all 3 primary members and CQ-19, CQ-07, CQ-09, CQ-11. The [positive](../fixtures/taxonomy-join-positive.yaml) and [adverse](../fixtures/taxonomy-join-adverse.yaml) scenarios test a selected finite graph join. Classification and instantiation endpoints admit a selected alignment check. Assignment can name a different category from the classification. Findings DOM13-F01 through DOM13-F05 separately route remaining questions to #123, #124, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
