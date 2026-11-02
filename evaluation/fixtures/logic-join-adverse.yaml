@@ -1,0 +1,27 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_logic_join
+model_revision: input-r1-rev1
+id: DOM14-NEG-001
+expected_selected_answer: false
+description: Acceptance only in another artifact removes the same-context witness.
+nodes:
+- id: artifact
+  concept_id: CLR-C0019
+- id: other_artifact
+  concept_id: CLR-C0019
+- id: constraint
+  concept_id: CLR-C0030
+- id: axiom
+  concept_id: CLR-C0010
+edges:
+- relation_id: CLR-R0033
+  source: artifact
+  target: constraint
+- relation_id: CLR-R0055
+  source: constraint
+  target: axiom
+- relation_id: CLR-R0014
+  source: axiom
+  target: other_artifact
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.

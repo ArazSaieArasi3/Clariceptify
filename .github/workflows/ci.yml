@@ -134,6 +134,8 @@ jobs:
         run: python tools/check_domain_metamodeling103.py
       - name: Check Taxonomy domain assessment
         run: python tools/check_domain_taxonomy104.py
+      - name: Check Logic domain assessment
+        run: python tools/check_domain_logic105.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root

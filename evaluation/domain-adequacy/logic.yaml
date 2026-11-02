@@ -1,0 +1,289 @@
+schema_version: '1.0'
+issue: 105
+task_id: R2-DOM-14
+domain_id: CLR-D0014
+domain_name: Logic
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: a6f4a3e3b9209184f7d16024aa1feae899fcb76a
+model_revision: input-r1-rev1
+purpose: Make conceptual commitments precise enough to state and examine constraints.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 4
+  domain_member_ids: &id002
+  - CLR-C0010
+  - CLR-C0030
+  - CLR-C0051
+  - CLR-C0052
+  relevant_requirements:
+  - FR-20
+  relevant_cqs: &id001
+  - CQ-20
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0010
+  label: Axiom
+  stereotype: "\xABrole\xBB"
+  definition: A formula playing the role of an accepted starting assertion in a specified theory or conceptual artifact;
+    acceptance may differ between theories.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-10
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-10
+  source_passages: '[51] formal systems; [6] axioms'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: 'Axiom is a contextual role of Formula (G0008): accepted starting assertion in a specified theory/artifact.
+    Imported B refs6/51, not context-free empirical truth.'
+- id: CLR-C0030
+  label: Constraint
+  stereotype: "\xABsubkind\xBB"
+  definition: An information object specifying a restriction on admissible conceptual elements, relationships, interpretations
+    or model configurations.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-30
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-30
+  source_passages: "[6] axioms; [51] secs. 2\u20134"
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Constraint is an Information Object subkind (G0027) restricting admissible elements, relationships, interpretations
+    or configurations. Imported B refs6/51; not all constraints are OWL-expressible.
+- id: CLR-C0051
+  label: Formalization
+  stereotype: "\xABevent\xBB"
+  definition: A conceptual process that expresses conceptual content in a formal language with explicit syntax and
+    semantics.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-51
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-51
+  source_passages: "[16] languages chapter contents; [51] secs. 2\u20134"
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Formalization is a Conceptual Process event (G0047), expressing content in formal language with explicit
+    syntax and semantics. Imported B refs16/51; output links do not establish correct formalization.
+- id: CLR-C0052
+  label: Formula
+  stereotype: "\xABsubkind\xBB"
+  definition: An expression constructed under the syntax of a formal language and capable of interpretation under
+    its semantics.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-52
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-52
+  source_passages: '[51] sec. 2; [15] logic companion'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Formula is an Expression subkind (G0048), constructed in a formal syntax and interpretable under its
+    semantics. Imported D refs15/51; typing does not establish parsing, truth or entailment.
+domain_questions:
+- id: DQ01
+  purpose: Constraint expression and axiom acceptance can share an artifact context.
+  cqs:
+  - CQ-20
+  model_ids:
+  - CLR-C0019
+  - CLR-C0030
+  - CLR-C0010
+  relation_ids:
+  - CLR-R0033
+  - CLR-R0055
+  - CLR-R0014
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: an axiom accepted in the selected artifact is inconsistent with another
+    accepted axiom; the acceptance join still exists and cannot detect inconsistency.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0033
+  - CLR-R0055
+  - CLR-R0014
+  - CLR-R0071
+  - CLR-R0098
+  - CLR-R0099
+  - CLR-R0056
+  - CLR-R0076
+  - CLR-R0077
+  - CLR-R0078
+  constraint_ids:
+  - CLR-SC0015
+  - CLR-SC0022
+  - CLR-SC0010
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0015: Logical use. A Formula uses a language whose formal syntax and semantics are declared. Axioms are
+    accepted formulas within named Conceptual Artifacts. A Constraint applies to an artifact or at least one element;
+    referenced elements belong to the relevant artifact scope.
+  CLR-SC0022: Contextual roles. Each Source is an Agent or Information Object cited or attributed in at least one
+    recorded context. Assumption is an Information Object adopted in at least one artifact; Axiom is a Formula accepted
+    in at least one artifact. Roles can vary across contexts.
+  CLR-SC0010: Creation and revision. Creation identifies actual origination of a new individual; produces or revises
+    does not assert origination. Each Conceptual Artifact in this scope has one originating Conceptualization. Each
+    Evaluation Result has one creating evaluation.
+selected_query:
+  anchors:
+    artifact: artifact
+  patterns:
+  - - CLR-R0033
+    - artifact
+    - constraint
+  - - CLR-R0055
+    - constraint
+    - axiom
+  - - CLR-R0014
+    - axiom
+    - artifact
+scenarios:
+  positive:
+    id: DOM14-POS-001
+    locator: evaluation/fixtures/logic-join-positive.yaml
+  adverse:
+    id: DOM14-NEG-001
+    locator: evaluation/fixtures/logic-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM14-CC01
+    description: 'Unexecuted semantic countercase: an axiom accepted in the selected artifact is inconsistent with
+      another accepted axiom; the acceptance join still exists and cannot detect inconsistency.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Constraint expression and axiom acceptance can share an artifact context.
+  evidence_ids:
+  - CLR-R0033
+  - CLR-R0055
+  - CLR-R0014
+  - CLR-G0008
+  contrary: Acceptance only in another artifact removes the same-context witness.
+  route: '#124: execute CQ20 artifact-scoped formal-assertion retrieval; the selected acceptance join is not full
+    CQ20.'
+  id: DOM14-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Axiom acceptance is contextual rather than a truth assertion.
+  evidence_ids:
+  - CLR-C0010
+  - CLR-R0014
+  - CLR-SC0022
+  contrary: Accepted axioms can differ between artifacts.
+  route: '#124: CQ20 execution must retain artifact-relative acceptance rather than truth. #129: decide correction
+    if contextual axiom wording or typing fails a concrete case.'
+  id: DOM14-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Language/syntax/semantics records do not execute parsing or entailment.
+  evidence_ids:
+  - CLR-C0052
+  - CLR-R0071
+  - CLR-R0098
+  - CLR-R0099
+  - CLR-SC0015
+  contrary: A recorded formula may be malformed or unsupported under intended semantics.
+  route: '#124: execute CQ20 with explicit distinction between retrievable formulas and assessed syntax/semantics.
+    #129: decide any demonstrated logical-use coverage correction; no entailment validation claimed.'
+  id: DOM14-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Constraint target scope and formalism sufficiency remain untested.
+  evidence_ids:
+  - CLR-C0030
+  - CLR-R0056
+  - CLR-SC0015
+  contrary: A selected formalism may not express a required restriction.
+  route: '#124: CQ20 execution must record constraint scope and expressivity limits. #129: decide requirement-backed
+    formalism or constraint-coverage corrections; no automatic OWL sufficiency.'
+  id: DOM14-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Formalization output does not decide creation versus revision.
+  evidence_ids:
+  - CLR-C0051
+  - CLR-R0076
+  - CLR-R0077
+  - CLR-R0078
+  - CLR-SC0010
+  contrary: An output can revise an existing formal model.
+  route: '#125: execute CQ30 creation/revision cases relevant to formalization output. #129: decide an identity-policy
+    correction only if demonstrated; formalization correctness remains separately unassessed.'
+  id: DOM14-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP1-13
+  - CMP1-14
+  - CMP3-11
+  - CMP2-12
+  interpretation:
+    interpretation: Printed DnS/cDnS/OntoKADS formalizations and SKOS integrity limitations do not prove full-theory
+      consistency or Clariceptify expressivity.
+    evidence:
+    - cell: CMP1-13
+      path: evidence/related-work/comparisons/batch-1.yaml
+      paper_locators:
+      - DnS2003:E04 PDF6 displays1-4
+      - DnS2003:E05 PDF7 displays5-13
+      - DnS2003:E13 PDF17-18 sec.4
+      artifact_locators:
+      - evidence/related-work/artifacts/DnS.yaml execution and DNS235-F01..F09
+      - evaluation/related-work/dns235/semantics.json
+      unsupported_inference: 15 later-module tests prove the 2003 paper formula14, SWAP implementation or empirical
+        superiority.
+      counterevidence: DnS2003:F07 preserves unparenthesized display14; 2003 fidelity and imported glossary remain
+        unestablished.
+      unknowns:
+      - Original implementation parity, full theory and external validation
+    - cell: CMP1-14
+      path: evidence/related-work/comparisons/batch-1.yaml
+      paper_locators:
+      - cDnS2007:E08 PDF12-13 displays13-28
+      - cDnS-journal-2008:E10 PDF16-17 displays24-37
+      - cDnS-journal-2008:E13 PDF22-24 display65
+      artifact_locators:
+      - evidence/related-work/artifacts/cDnS-core-followup.yaml Q01-Q08
+      - evaluation/related-work/cdns267/execution.json
+      unsupported_inference: The unchanged cDnS1.1 core is OWL2 DL consistent, or eight ASK results constitute whole-core
+        positive/adverse reasoning.
+      counterevidence: 'CDNS267-F08: non-simple transitive hasProperPart cardinality fails profile; HermiT refuses;
+        consistency remains unknown. Paper display65 does not explicitly distinguish d1/d2.'
+      unknowns:
+      - Whole-core consistency, original2007/2008 fidelity, mapped extension reasoning
+    - cell: CMP3-11
+      path: evidence/related-work/comparisons/batch-3.yaml
+      paper_locators:
+      - SKOS review F03,F07,F08,F15,F16; Reference S14 and Appendix D
+      artifact_locators:
+      - SKOS.yaml selected commitments; skos238 census eight asserted triples
+      unsupported_inference: The RDF schema alone validates S14, forbids cycles, or proves all Recommendation conditions
+        through OWL reasoning.
+      counterevidence: F03 untagged preferred-label rule; F08 cycles allowed; selected schema inspection ran no
+        OWL profile, reasoner or integrity validator.
+      unknowns:
+      - Executable S14 validation and external application quality
+    - cell: CMP2-12
+      path: evidence/related-work/comparisons/batch-2.yaml
+      paper_locators:
+      - OntoKADS2005:E03,E04,E09 PDF pp.3-7 DOLCE/D4/A13
+      artifact_locators:
+      - OntoKADS.yaml K01,K17,K18; discovery.json
+      unsupported_inference: Local A13 counterexample proves whole theory inconsistent, or unbound D4 defines a
+        valid released class.
+      counterevidence: The printed action/task/concept framework remains relevant despite missing source bytes.
+      unknowns:
+      - All machine class/import populations, exact source syntax/license and solver result null
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 124
+  - 125
+  - 129

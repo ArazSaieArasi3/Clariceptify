@@ -60,6 +60,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Modeling domain assessment](evaluation/domain-adequacy/modeling.yaml), a bounded R2 activity, model, view and metalevel review
 - [Structure domain assessment](evaluation/domain-adequacy/structure.yaml), a bounded R2 conceptual parthood and organization review
 - [Language domain assessment](evaluation/domain-adequacy/language.yaml), a bounded R2 message/language/syntax review
+- [Logic domain assessment](evaluation/domain-adequacy/logic.yaml), a bounded R2 selected graph review
 - [Taxonomy domain assessment](evaluation/domain-adequacy/taxonomy.yaml), a bounded R2 selected graph review
 - [Metamodeling domain assessment](evaluation/domain-adequacy/metamodeling.yaml), a bounded R2 selected graph review
 - [Terminology domain assessment](evaluation/domain-adequacy/terminology.yaml), a bounded R2 selected graph review

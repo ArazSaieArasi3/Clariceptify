@@ -75,3 +75,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Taxonomy review contribution (#104)
 
 [Taxonomy](../../evaluation/domain-adequacy/taxonomy.yaml) reviews 3 primary members against bounded source comparisons and a selected positive/adverse graph join. Classification and instantiation endpoints admit a selected alignment check. Assignment can name a different category from the classification. DOM13-F01 through DOM13-F05 preserve independent open findings. This is subject-domain checkpoint 13 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Logic review contribution (#105)
+
+[Logic](../../evaluation/domain-adequacy/logic.yaml) reviews 4 primary members against bounded source comparisons and a selected positive/adverse graph join. Constraint expression and axiom acceptance can share an artifact context. Acceptance only in another artifact removes the same-context witness. DOM14-F01 through DOM14-F05 preserve independent open findings. This is subject-domain checkpoint 14 of twenty, not semantic acceptance or a change to the five gap dispositions.
