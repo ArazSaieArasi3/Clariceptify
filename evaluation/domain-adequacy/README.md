@@ -67,3 +67,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Knowledge checkpoint
 
 [Issue #108 assessment](knowledge.yaml) reviews all 1 primary members and CQ-23, CQ-06, CQ-07, CQ-16. The [positive](../fixtures/knowledge-join-positive.yaml) and [adverse](../fixtures/knowledge-join-adverse.yaml) scenarios test a selected finite graph join. Episode and interpretation process can draw on the same explicit content. They may instead draw on distinct contents. Findings DOM17-F01 through DOM17-F05 separately route remaining questions to #123, #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Quality checkpoint
+
+[Issue #109 assessment](quality.yaml) reviews all 5 primary members and CQ-24, CQ-03, CQ-25. The [positive](../fixtures/quality-join-positive.yaml) and [adverse](../fixtures/quality-join-adverse.yaml) scenarios test a selected finite graph join. A selected applied-criterion and goal path can be joined for one assessed artifact. An unrelated criterion may hold the only goal edge. Findings DOM18-F01 through DOM18-F05 separately route remaining questions to #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.

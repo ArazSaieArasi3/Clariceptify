@@ -1,0 +1,264 @@
+schema_version: '1.0'
+issue: 109
+task_id: R2-DOM-18
+domain_id: CLR-D0018
+domain_name: Quality
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 6294108590c3583c396df56523f1f0bddb14bf81
+model_revision: input-r1-rev1
+purpose: Make quality expectations explicit as criterion specifications rather than ungrounded numeric scores.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 5
+  domain_member_ids: &id002
+  - CLR-C0016
+  - CLR-C0029
+  - CLR-C0045
+  - CLR-C0104
+  - CLR-C0136
+  relevant_requirements:
+  - FR-24
+  - FR-03
+  - FR-25
+  relevant_cqs: &id001
+  - CQ-24
+  - CQ-03
+  - CQ-25
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0016
+  label: Coherence
+  stereotype: "\xABsubkind\xBB"
+  definition: An evaluation criterion requiring conceptual distinctions and relations to form an intelligible, mutually
+    compatible account of the subject; connectivity alone is insufficient.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-16
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-16
+  source_passages: '[8] design criteria; [48] evaluation criteria'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Coherence \xABsubkind\xBB: An evaluation criterion requiring conceptual distinctions and relations to\
+    \ form an intelligible, mutually compatible account of the subject; connectivity alone is insufficient. G0014\
+    \ specializes Evaluation Criterion C0039. Imported B refs8/48; graph connectivity is not semantic coherence."
+- id: CLR-C0029
+  label: Consistency
+  stereotype: "\xABsubkind\xBB"
+  definition: An evaluation criterion requiring the adopted assertions and constraints to admit a joint interpretation
+    under the stated semantics.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-29
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-29
+  source_passages: '[48] abstract; [51] model-theoretic semantics'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Consistency \xABsubkind\xBB: An evaluation criterion requiring the adopted assertions and constraints\
+    \ to admit a joint interpretation under the stated semantics. G0026 specializes C0039. Imported B refs48/51;\
+    \ criterion membership is not a consistency judgment or solver result."
+- id: CLR-C0045
+  label: Explanatory Adequacy
+  stereotype: "\xABsubkind\xBB"
+  definition: An evaluation criterion requiring the model to explain relevant distinctions, dependencies and examples
+    at the level needed for its intended purpose.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-45
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-45
+  source_passages: '[22] sec. 4.1; [49] abstract'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Explanatory Adequacy \xABsubkind\xBB: An evaluation criterion requiring the model to explain relevant\
+    \ distinctions, dependencies and examples at the level needed for its intended purpose. G0041 specializes C0039.\
+    \ Imported B refs22/49; no universal numeric metric is specified."
+- id: CLR-C0104
+  label: Semantic Completeness
+  stereotype: "\xABsubkind\xBB"
+  definition: An evaluation criterion requiring coverage of the meanings and distinctions needed by the agreed scope
+    and competency questions; it does not demand universal coverage.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-104
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-104
+  source_passages: '[48] abstract; [18] SEQUAL overview'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Semantic Completeness \xABsubkind\xBB: An evaluation criterion requiring coverage of the meanings and\
+    \ distinctions needed by the agreed scope and competency questions; it does not demand universal coverage. G0095\
+    \ specializes C0039. Imported B refs18/48; scope coverage is not universal or deductive completeness."
+- id: CLR-C0136
+  label: Well-Definedness
+  stereotype: "\xABsubkind\xBB"
+  definition: An evaluation criterion requiring definitions to delimit intended meaning and distinguish concepts
+    sufficiently for the stated purpose.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-136
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-136
+  source_passages: "[8] design criteria; [29] secs. 1\u20132"
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Well-Definedness \xABsubkind\xBB: An evaluation criterion requiring definitions to delimit intended\
+    \ meaning and distinguish concepts sufficiently for the stated purpose. G0121 specializes C0039. Imported B\
+    \ refs8/29; nonempty definition strings do not prove meaningful delimitation."
+domain_questions:
+- id: DQ01
+  purpose: A selected applied-criterion and goal path can be joined for one assessed artifact.
+  cqs:
+  - CQ-24
+  model_ids:
+  - CLR-C0097
+  - CLR-C0019
+  - CLR-C0029
+  - CLR-C0054
+  relation_ids:
+  - CLR-R0130
+  - CLR-R0129
+  - CLR-R0061
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: the selected consistency criterion is goal-scoped and applied, but
+    the artifact assertions contradict under their adopted semantics. The selected graph join cannot prove consistency.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0129
+  - CLR-R0130
+  - CLR-R0061
+  constraint_ids:
+  - CLR-SC0017
+  - CLR-SC0019
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0017: Criterion interpretation. The five Quality classes denote criterion specifications specializing Evaluation
+    Criterion. They are not measured bearer qualities or evaluation findings. Criteria are scoped by Goal; Semantic
+    Completeness is relative to those goals and the agreed subject coverage.
+  CLR-SC0019: Review alignment. A Structural Review examines structures belonging to its assessed artifacts. Any
+    examined Conceptual Model encodes an assessed artifact. Criterion goals must be relevant to the artifact conceptualization
+    goals.
+selected_query:
+  anchors:
+    evaluation: evaluation
+  patterns:
+  - - CLR-R0130
+    - evaluation
+    - artifact
+  - - CLR-R0129
+    - evaluation
+    - criterion
+  - - CLR-R0061
+    - criterion
+    - goal
+scenarios:
+  positive:
+    id: DOM18-POS-001
+    locator: evaluation/fixtures/quality-join-positive.yaml
+  adverse:
+    id: DOM18-NEG-001
+    locator: evaluation/fixtures/quality-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM18-CC01
+    description: 'Unexecuted semantic countercase: the selected consistency criterion is goal-scoped and applied,
+      but the artifact assertions contradict under their adopted semantics. The selected graph join cannot prove
+      consistency.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: A selected applied-criterion and goal path can be joined for one assessed artifact.
+  evidence_ids:
+  - CLR-R0129
+  - CLR-R0130
+  - CLR-R0061
+  contrary: An unrelated criterion may hold the only goal edge.
+  route: 'Execute selected witness only; full CQ24 belongs to #125.'
+  id: DOM18-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Quality members specify evaluation criteria, not measured qualities or result findings.
+  evidence_ids:
+  - CLR-C0016
+  - CLR-C0029
+  - CLR-C0045
+  - CLR-C0104
+  - CLR-C0136
+  - CLR-C0039
+  - CLR-C0040
+  - CLR-SC0017
+  contrary: A consistency-criterion node does not establish that the artifact is consistent.
+  route: 'Preserve criterion/result boundary; unconfirmed correction candidates go to #129.'
+  id: DOM18-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Semantic Completeness is relative to agreed scope and competency questions.
+  evidence_ids:
+  - CLR-C0104
+  - CLR-SC0017
+  contrary: Complete graph connectivity may omit a required meaning or distinction.
+  route: 'Leave scope adequacy unassessed; CQ24/25 execution #125, possible corrections #129.'
+  id: DOM18-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Coherence and Well-Definedness require content assessment beyond field presence.
+  evidence_ids:
+  - CLR-C0016
+  - CLR-C0136
+  contrary: Nonempty mutually circular definitions can still fail the stated purpose.
+  route: 'Imported source support is not typing approval; unconfirmed corrections #129.'
+  id: DOM18-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Criterion goal relevance to the assessed conceptualization remains unexecuted.
+  evidence_ids:
+  - CLR-R0061
+  - CLR-SC0019
+  contrary: A goal edge can exist but concern an unrelated conceptualization.
+  route: 'Full CQ24 execution #125; do not declare all SC0019 satisfied.'
+  id: DOM18-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP2-11
+  - CMP4-11
+  interpretation:
+    interpretation: Document CQs, isolated consistency tests and definition/profile findings are different evidence
+      classes; neither comparison proves all five Clariceptify criteria.
+    evidence:
+    - paper_locators:
+      - CLR-RW-O4OA:E17-E19 PDF pp.13-16 evaluation and conclusion
+      artifact_locators:
+      - O4OA.yaml Q01-Q08; specification-reading.json
+      unsupported_inference: Document terms are machine class counts or author-reported solver/API performance was
+        reproduced.
+      counterevidence: The full paper and specification contain substantial native constructs and test intentions.
+      unknowns:
+      - 'Machine classes/imports/license, exact UFO edition, solver/API output; #91 open'
+      cell: CMP2-11
+      path: evidence/related-work/comparisons/batch-2.yaml
+    - paper_locators:
+      - CognitiveAtlas2011 E12-E14; 904 paper terms, prototype OWL and evaluation limits
+      - CognitiveAtlas2011 F10,F14-F19; definition/provenance/version gaps
+      artifact_locators:
+      - CognitiveAtlas.yaml Q01,Q06-Q08; class catalog, static and semantic receipts
+      unsupported_inference: A consistent loaded ontology with no unsatisfiable named classes passes OWL 2 DL profile
+        or proves agreement/construct validity.
+      counterevidence: Profile fails with 7,341 undeclared-entity violations; 101 ID collisions, 464 missing usable
+        local definitions and unexecuted generator/pickle constrain adoption.
+      unknowns:
+      - Historical 2011 byte parity
+      - complete original data transformation
+      - current service quality
+      cell: CMP4-11
+      path: evidence/related-work/comparisons/batch-4.yaml
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 125
+  - 129

@@ -142,6 +142,8 @@ jobs:
         run: python tools/check_domain_metaphysics107.py
       - name: Check Knowledge domain assessment
         run: python tools/check_domain_knowledge108.py
+      - name: Check Quality domain assessment
+        run: python tools/check_domain_quality109.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root

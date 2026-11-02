@@ -91,3 +91,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Knowledge review contribution (#108)
 
 [Knowledge](../../evaluation/domain-adequacy/knowledge.yaml) reviews 1 primary members against bounded source comparisons and a selected positive/adverse graph join. Episode and interpretation process can draw on the same explicit content. They may instead draw on distinct contents. DOM17-F01 through DOM17-F05 preserve independent open findings. This is subject-domain checkpoint 17 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Quality review contribution (#109)
+
+[Quality](../../evaluation/domain-adequacy/quality.yaml) reviews 5 primary members against bounded source comparisons and a selected positive/adverse graph join. A selected applied-criterion and goal path can be joined for one assessed artifact. An unrelated criterion may hold the only goal edge. DOM18-F01 through DOM18-F05 preserve independent open findings. This is subject-domain checkpoint 18 of twenty, not semantic acceptance or a change to the five gap dispositions.
