@@ -35,9 +35,11 @@ def validate(report, issue):
         for field in ['url','locator','paraphrase','title','authors']:
             require(src.get(field), 'source metadata missing '+field)
         require(src.get('version',src.get('version_date')), 'source edition missing')
-    all_ids=set()
+    all_ids=set();captured_ids=set()
+    require(set(report['model_snapshot'])=={'model/concepts.yaml','model/relations.yaml','model/generalizations.yaml','model/constraints.yaml'}, 'missing snapshot family')
     for path,rows in report['model_snapshot'].items():
         actual={r['id']:r for r in read(path)['records']};all_ids.update(actual)
+        captured_ids.update(r['id'] for r in rows)
         require(len({r['id'] for r in rows})==len(rows), 'duplicate model snapshot')
         for row in rows: require(row['id'] in actual and actual[row['id']]==row, 'model snapshot changed')
     require(report['findings'], 'findings missing')
@@ -45,7 +47,9 @@ def validate(report, issue):
         require(f['id']==f'SEM{issue}-F{i:02d}', 'finding identity')
         require(f['decision_gate']=='unapproved_joint_user_decision_129', 'decision promoted')
         require(f.get('observation',f.get('finding')), 'finding evidence missing')
-        require(set(f.get('model_ids',f.get('affected_ids',[])))<=all_ids, 'unknown affected id')
+        affected=set(f.get('model_ids',f.get('affected_ids',[])))
+        require(affected<=all_ids, 'unknown affected id')
+        require(affected<=captured_ids, 'cited snapshot missing')
         require(set(f.get('source_ids',f.get('sources',[])))<=sources.keys(), 'unknown source')
     return len(report['findings'])
 
@@ -74,12 +78,12 @@ def atomic_result(artifacts,criteria,origins,episode_artifacts,episode_criteria)
 
 def finite_checks(issue):
     checks={
-      114:[('one bearer',single_bearer(['a']),True),('two bearers',single_bearer(['a','b']),False),('shared distinct agents',shared_distinct_agents(['a','b'],['a','b']),True),('same-agent states not shared',shared_distinct_agents(['a','a'],['a','b']),False)],
-      115:[('one origin',one_origin(['e1']),True),('second origin',one_origin(['e1','e2']),False),('unknown origin not accepted',one_origin([]),False)],
-      116:[('one referent',exclusive_referent({'object':[],'event':['e']}),True),('empty union',exclusive_referent({'object':[],'event':[]}),False),('two branches',exclusive_referent({'object':['o'],'event':['e']}),False)],
-      117:[('aligned bearer',aligned_agent('a',['a','b']),True),('nonparticipant bearer',aligned_agent('c',['a','b']),False)],
-      119:[('atomic aligned result',atomic_result(['a'],['c'],['e'],['a'],['c']),True),('two criteria',atomic_result(['a'],['c','d'],['e'],['a'],['c','d']),False),('wrong target',atomic_result(['b'],['c'],['e'],['a'],['c']),False)],
-      122:[('single mode bearer',single_bearer(['r']),True),('orphan mode',single_bearer([]),False),('duplicate distinct bearers',single_bearer(['r','s']),False)]}.get(issue,[])
+      114:lambda:[('one bearer',single_bearer(['a']),True),('two bearers',single_bearer(['a','b']),False),('shared distinct agents',shared_distinct_agents(['a','b'],['a','b']),True),('same-agent states not shared',shared_distinct_agents(['a','a'],['a','b']),False)],
+      115:lambda:[('one origin',one_origin(['e1']),True),('second origin',one_origin(['e1','e2']),False),('unknown origin not accepted',one_origin([]),False)],
+      116:lambda:[('one referent',exclusive_referent({'object':[],'event':['e']}),True),('empty union',exclusive_referent({'object':[],'event':[]}),False),('two branches',exclusive_referent({'object':['o'],'event':['e']}),False)],
+      117:lambda:[('aligned bearer',aligned_agent('a',['a','b']),True),('nonparticipant bearer',aligned_agent('c',['a','b']),False)],
+      119:lambda:[('atomic aligned result',atomic_result(['a'],['c'],['e'],['a'],['c']),True),('two criteria',atomic_result(['a'],['c','d'],['e'],['a'],['c','d']),False),('wrong target',atomic_result(['b'],['c'],['e'],['a'],['c']),False)],
+      122:lambda:[('single mode bearer',single_bearer(['r']),True),('orphan mode',single_bearer([]),False),('duplicate distinct bearers',single_bearer(['r','s']),False)]}.get(issue,lambda:[])()
     for label,observed,expected in checks: require(observed==expected,'finite predicate '+label)
     return len(checks)
 
