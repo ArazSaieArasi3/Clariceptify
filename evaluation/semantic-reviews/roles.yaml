@@ -1,0 +1,483 @@
+schema_version: '1.0'
+issue: 121
+task_id: R2-SEM-foundational-grounding.b
+status: BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: 4ff34901ead26b396fe926305dbad0d11c06964f
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+semantic_acceptance: not_assessed
+model_changes: none
+expert_review: not_performed
+method: AI-assisted manual source-to-model conceptual comparison, exact versioned evidence, positive/adverse
+  examples and independent internal QA in PR; not native OntoUML validation, philosophical consensus or
+  automated logical proof
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/artifact-authority.md: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+  docs/decisions/artifact-versioning.md: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+source_refs:
+- id: UFO-TYPES2021
+  path: evidence/semantic-sources/semantic120-122-ufo-types2021.yaml
+  sha256: befd4db72201a866da326c188ef6078462b52d027e007bf7f62eebf6f78bbcf3
+- id: TONTO2024
+  path: evidence/semantic-sources/semantic120-122-tonto2024.yaml
+  sha256: b9b4282ce188c84519f41d4330e81e1bc9588ee100f2e70cd95c7eaaf44a1195
+- id: ONTO-ROLE-DOC
+  path: evidence/semantic-sources/semantic120-122-onto-role-doc.yaml
+  sha256: fbbcc21eb25fe17978a6f104ee1526e1104d3826ddff374f53bd30cf0c2ffff4
+- id: ONTO-ROLEMIXIN-DOC
+  path: evidence/semantic-sources/semantic120-122-onto-rolemixin-doc.yaml
+  sha256: d6e3af4bc3799dd93211287f322ae7130b233d6f6a98e5cbde3fa6e8eaacaa33
+model_snapshot:
+  model/concepts.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-4
+    id: CLR-C0004
+    label_en: Agent
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An object capable of intentional participation in conceptual activities, including an
+      individual or an appropriately constituted collective agent.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0023
+    notes: 'Input reference display: [11], [23]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-7
+    id: CLR-C0007
+    label_en: Assumption
+    ufo_type: Endurant / information object in a role
+    ontouml_stereotype: «role»
+    definition: An information object expressing a proposition provisionally accepted for a conceptualization
+      without being established within that context.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0028
+    - CLR-SRC0046
+    notes: 'Input reference display: [28], [46]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-10
+    id: CLR-C0010
+    label_en: Axiom
+    ufo_type: Endurant / information object in a role
+    ontouml_stereotype: «role»
+    definition: A formula playing the role of an accepted starting assertion in a specified theory or
+      conceptual artifact; acceptance may differ between theories.
+    is_abstract: null
+    primary_domain_id: CLR-D0014
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0006
+    - CLR-SRC0051
+    notes: 'Input reference display: [6], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-27
+    id: CLR-C0027
+    label_en: Conceptualizer
+    ufo_type: Endurant / agent in a historical role
+    ontouml_stereotype: «historicalRoleMixin»
+    definition: An agent classified by its participation in a conceptualization episode, with that historical
+      dependence retained after the episode ends.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0012
+    notes: 'Input reference display: [11], [12]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-42
+    id: CLR-C0042
+    label_en: Evidence
+    ufo_type: Endurant / information object in a role
+    ontouml_stereotype: «role»
+    definition: An information object used to support or challenge a conceptual choice, interpretation
+      or evaluative judgment in a specified argumentative context.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0027
+    - CLR-SRC0041
+    notes: 'Input reference display: [27], [41]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-57
+    id: CLR-C0057
+    label_en: Information Object
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «kind»
+    definition: A repeatable, identifiable unit of information content that may be carried by different
+      physical or digital manifestations; identity follows content under an explicit equivalence policy.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0015
+    notes: 'Input reference display: [12], [15]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-85
+    id: CLR-C0085
+    label_en: Observer
+    ufo_type: Endurant / agent in a role
+    ontouml_stereotype: «roleMixin»
+    definition: An agent in the context-dependent role of attending to a subject in an observation episode.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0025
+    notes: 'Input reference display: [11], [25]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-88
+    id: CLR-C0088
+    label_en: Part
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «role»
+    definition: A concept description considered as a constituent in a specified part-whole description;
+      parthood here is a role of the description.
+    is_abstract: null
+    primary_domain_id: CLR-D0009
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0032
+    notes: 'Input reference display: [7], [32]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-110
+    id: CLR-C0110
+    label_en: Source
+    ufo_type: Endurant / object in a role
+    ontouml_stereotype: «roleMixin»
+    definition: An agent or information object treated as an origin or reference for conceptual content
+      within a specified attribution context; events are linked separately as generating activities.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0028
+    - CLR-SRC0041
+    notes: 'Input reference display: [28], [41]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-137
+    id: CLR-C0137
+    label_en: Whole
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «role»
+    definition: A concept description considered as comprising parts in a specified part-whole description;
+      wholehood here is a role of the description.
+    is_abstract: null
+    primary_domain_id: CLR-D0009
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0032
+    notes: 'Input reference display: [7], [32]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  model/relations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-11
+    id: CLR-R0011
+    label_en: is adopted in
+    source_id: CLR-C0007
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «role» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-14
+    id: CLR-R0014
+    label_en: is accepted in
+    source_id: CLR-C0010
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «role» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-54
+    id: CLR-R0054
+    label_en: participates in
+    source_id: CLR-C0027
+    target_id: CLR-C0026
+    source_multiplicity: 1..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: «participation»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «historicalRoleMixin» / «event». Multiplicities are the labels at the
+      respective diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-118
+    id: CLR-R0118
+    label_en: participates in
+    source_id: CLR-C0085
+    target_id: CLR-C0084
+    source_multiplicity: 1..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: «participation»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «roleMixin» / «event». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  model/generalizations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-199
+    id: CLR-G0025
+    child_id: CLR-C0027
+    parent_id: CLR-C0004
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «historicalRoleMixin» / «category». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-251
+    id: CLR-G0077
+    child_id: CLR-C0085
+    parent_id: CLR-C0004
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «roleMixin» / «category». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-274
+    id: CLR-G0100
+    child_id: CLR-C0110
+    parent_id: CLR-C0083
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «roleMixin» / «category». No partition axiom inferred.'
+  model/constraints.yaml:
+  - id: CLR-SC0004
+    text: Historical role. Conceptualizer classification is founded on participation in a conceptualization
+      episode and may persist after it. The participation link records that historical episode; it does
+      not imply that the activity is still underway.
+    referenced_ids:
+    - CLR-C0027
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-4
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0021
+    text: Justification and evidence. Every Justification supports at least one Conceptual Decision or
+      Evaluation Result. Every Evidence role instance is cited by at least one justification or result.
+      Source attribution identifies provenance and does not establish evidential truth.
+    referenced_ids:
+    - CLR-C0021
+    - CLR-C0040
+    - CLR-C0042
+    - CLR-C0065
+    - CLR-C0110
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-21
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0022
+    text: Contextual roles. Each Source is an Agent or Information Object cited or attributed in at least
+      one recorded context. Assumption is an Information Object adopted in at least one artifact; Axiom
+      is a Formula accepted in at least one artifact. Roles can vary across contexts.
+    referenced_ids:
+    - CLR-C0004
+    - CLR-C0007
+    - CLR-C0010
+    - CLR-C0052
+    - CLR-C0057
+    - CLR-C0083
+    - CLR-C0110
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-22
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+bounded_commitment: Roles depend on context without manufacturing new bearer identities; ordinary versus
+  historical participation must be explicit. Anti-rigidity concerns modal contingency, not a guarantee
+  every role ends in actual time.
+findings:
+- id: SEM121-F01
+  title: Five roles inherit one declared identity provider
+  observation: Assumption C0007,Axiom C0010,Evidence C0042,Part C0088,Whole C0137 each have exactly C0057
+    as provider ancestor in static graph. Assumption uses R0011(0..* to1..* artifacts); Axiom R0014 likewise.
+    Contextual use does not create another information object.
+  affected_ids:
+  - CLR-C0007
+  - CLR-C0010
+  - CLR-C0042
+  - CLR-C0088
+  - CLR-C0137
+  - CLR-C0057
+  - CLR-R0011
+  - CLR-R0014
+  - CLR-SC0022
+  sources:
+  - UFO-TYPES2021
+  - ONTO-ROLE-DOC
+  proposal_not_applied: Test same information object adopted in one artifact but not another. Do not conflate
+    role loss with destruction or semantic-content revision.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM121-F01
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM121-F02
+  title: Historical and active participation differ
+  observation: C0027 historicalRoleMixin through G0025 and R0054(1..* to1..*) is governed by SC0004 historical
+    persistence. C0085 roleMixin through G0077 and R0118(1..* to1..*) is observation-context dependent.
+    Whether observer status ends with episode needs policy; historical conceptualizer status need not
+    end. Neither role provides identity.
+  affected_ids:
+  - CLR-C0027
+  - CLR-C0085
+  - CLR-G0025
+  - CLR-G0077
+  - CLR-R0054
+  - CLR-R0118
+  - CLR-SC0004
+  sources:
+  - TONTO2024
+  - UFO-TYPES2021
+  proposal_not_applied: Evaluate completed episode versus never-participated counterfactual; do not demand
+    a historical role cease after completion merely to exhibit anti-rigidity.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM121-F02
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM121-F03
+  title: Source disjunction needs context and identity coverage
+  observation: Source C0110 roleMixin can be Agent or Information Object under SC0022; G0100 gives Object
+    ancestor. Citation/attribution context is required textually. No direct sortal ancestor is present,
+    compatible with a non-sortal graph shape but not proof of covered identity kinds. Its abstractness
+    is null.
+  affected_ids:
+  - CLR-C0110
+  - CLR-G0100
+  - CLR-C0004
+  - CLR-C0057
+  - CLR-SC0022
+  sources:
+  - UFO-TYPES2021
+  - ONTO-ROLEMIXIN-DOC
+  proposal_not_applied: Check agent-source and document-source cases with actual attribution; do not treat
+    a file path or existence of person alone as Source participation.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM121-F03
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM121-F04
+  title: Native dependency patterns not established by plain associations
+  observation: Role-defining project links are generally unstereotyped, while observations use participation.
+    The cited Role documentation C2 lists specific dependency patterns. Imported contextual text may be
+    semantically appropriate, but exact native-profile compliance requires selected edition and translation;
+    creating fake mediation or relators would violate scope.
+  affected_ids:
+  - CLR-R0011
+  - CLR-R0014
+  - CLR-R0118
+  - CLR-SC0021
+  - CLR-SC0022
+  sources:
+  - ONTO-ROLE-DOC
+  - TONTO2024
+  proposal_not_applied: Preserve contextual commitment; ask foundation reviewer to select profile and
+    encode appropriate dependence without claiming unsupported native validity.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM121-F04
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+case_review:
+  examples:
+    positive: One formula is an accepted Axiom in theoryA but not theoryB; its information identity persists.
+      Analyst remains historically a Conceptualizer after the episode ends.
+    negative: Create a new person when they become Observer; infer that a completed episode remains ongoing
+      because R0054 persists; label an uncited document Source solely from its filename.
+  checks:
+  - Five roles each have one provider ancestor in read-only graph census
+  - No logical anti-rigidity demonstration or native dependency-profile validation performed
+  method: Manual conceptual inspection; examples are focal scenarios, not proven complete valid instances;
+    absent information is not falsity. Local executable predicates, where supplied, test only declared
+    finite rules.
+scope_boundaries:
+- No source definition automatically validates imported stereotypes.
+- No creation of new classes, identities, relations or constraints.
+- A completed negative/uncertain review does not resolve its findings.
+- Frozen constraint execution_status values remain unchanged; local probes are separate evidence.
+- 'Research proposals and philosophical alternatives await #129 joint decision.'
+verification:
+  command: python tools/check_semantic_reviews.py --issue 121
+  result_location: Exact PR and Public integrity run
+  limits: Integrity and selected local predicates only; no human expert acceptance or complete formal
+    model proof.
