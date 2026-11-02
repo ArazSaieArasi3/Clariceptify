@@ -178,6 +178,11 @@ jobs:
           python tools/check_pending_passports.py --batch 2
           python tools/test_pending_passports.py
           python -O tools/test_pending_passports.py
+      - name: Check bounded semantic review 114 and integrity failure boundaries
+        run: |
+          python tools/check_semantic_reviews.py --issue 114
+          python tools/test_semantic_review_checks.py
+          python -O tools/test_semantic_review_checks.py
       - name: Preserve exact input and validator evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
