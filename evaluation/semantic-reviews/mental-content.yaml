@@ -1,0 +1,1304 @@
+schema_version: '1.0'
+issue: 114
+task_id: R2-SEM-mental-content
+status: BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: 40225c4c414efbf589dcee1ba6069a30a5659a43
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+semantic_acceptance: not_assessed
+model_changes: none
+expert_review: not_performed
+method: AI-assisted manual source-to-model conceptual comparison, exact versioned evidence, positive/adverse
+  examples and independent internal QA in PR; not native OntoUML validation, philosophical consensus or
+  automated logical proof
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/artifact-authority.md: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+  docs/decisions/artifact-versioning.md: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+source_refs:
+- id: SEP-CONCEPTS
+  path: evidence/semantic-sources/semantic114-116-sep-concepts.yaml
+  sha256: 9ccdb1d54f963c8aba70508459f2a330aa475f237b86fad864389e26e43974d1
+- id: SEP-MENTAL
+  path: evidence/semantic-sources/semantic114-116-sep-mental.yaml
+  sha256: e925ffddab65cdb02e3214e2e0cf937b4493cbb1f7fdef247a896435738696b0
+- id: UFO-ODE2008
+  path: evidence/semantic-sources/semantic114-116-ufo-ode2008.yaml
+  sha256: e95de0e7fba82060c1a9d0591da8d27ceca7413653bc35feaf35f569bb1ed65e
+model_snapshot:
+  model/concepts.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-4
+    id: CLR-C0004
+    label_en: Agent
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An object capable of intentional participation in conceptual activities, including an
+      individual or an appropriately constituted collective agent.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0023
+    notes: 'Input reference display: [11], [23]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-8
+    id: CLR-C0008
+    label_en: Awareness
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent mental state in which a subject or feature is available to attention.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0021
+    - CLR-SRC0024
+    notes: 'Input reference display: [21], [24]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-15
+    id: CLR-C0015
+    label_en: Cognition
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A mental process through which an agent acquires, organizes or uses information and understanding.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0019
+    - CLR-SRC0021
+    notes: 'Input reference display: [19], [21]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-17
+    id: CLR-C0017
+    label_en: Concept
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A conceptual element describing a type or category through selected characteristics; the
+      description is distinct from the universal it describes.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0020
+    - CLR-SRC0037
+    notes: 'Input reference display: [12], [20], [37]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-19
+    id: CLR-C0019
+    label_en: Conceptual Artifact
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object produced by conceptualization that assembles explicit conceptual
+      elements into a reviewable account of a subject.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0034
+    notes: 'Input reference display: [12], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-21
+    id: CLR-C0021
+    label_en: Conceptual Decision
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object recording a selected conceptual choice made during one conceptualization
+      episode, including its affected artifact, deciding agent and stated rationale. It is the recorded
+      decision content, not the act of deciding.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0041
+    - CLR-SRC0047
+    notes: 'Input reference display: [41], [47]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-22
+    id: CLR-C0022
+    label_en: Conceptual Element
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object that contributes a concept, relation, property or instance description
+      to a conceptual artifact.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0039
+    notes: 'Input reference display: [12], [39]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-25
+    id: CLR-C0025
+    label_en: Conceptual Process
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A temporally extended activity through which an agent forms, transforms, interprets or
+      communicates conceptual content.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0014
+    - CLR-SRC0021
+    notes: 'Input reference display: [14], [21]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-26
+    id: CLR-C0026
+    label_en: Conceptualization
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A purposeful process in which agents select and organize features of a subject to form
+      an explicit conceptual artifact from a perspective.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0013
+    - CLR-SRC0014
+    notes: 'Input reference display: [12], [13], [14]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-28
+    id: CLR-C0028
+    label_en: Consciousness
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent state of subjective awareness within which conscious cognitive activity
+      can occur.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0021
+    - CLR-SRC0024
+    notes: 'Input reference display: [21], [24]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-34
+    id: CLR-C0034
+    label_en: Domain Knowledge
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: Explicitly articulable information content concerning a subject area that informs conceptual
+      choices and interpretations; an agent knowing that content is a separate mental state.
+    is_abstract: null
+    primary_domain_id: CLR-D0017
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0015
+    - CLR-SRC0028
+    notes: 'Input reference display: [15], [28]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-47
+    id: CLR-C0047
+    label_en: Expression
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A representation formulated in a language according to its expression conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0010
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0037
+    - CLR-SRC0051
+    notes: 'Input reference display: [37], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-54
+    id: CLR-C0054
+    label_en: Goal
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a desired outcome that gives explicit content to an agent's
+      intention.
+    is_abstract: null
+    primary_domain_id: CLR-D0002
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0026
+    notes: 'Input reference display: [11], [26]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-55
+    id: CLR-C0055
+    label_en: Idea
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent mental content or conception that can motivate concept formation and
+      be externalized in a conceptual artifact.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0020
+    - CLR-SRC0021
+    notes: 'Input reference display: [20], [21]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-57
+    id: CLR-C0057
+    label_en: Information Object
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «kind»
+    definition: A repeatable, identifiable unit of information content that may be carried by different
+      physical or digital manifestations; identity follows content under an explicit equivalence policy.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0015
+    notes: 'Input reference display: [12], [15]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-59
+    id: CLR-C0059
+    label_en: Instance
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A conceptual element describing a particular object or event as an instance of a type;
+      it is distinct from that particular entity.
+    is_abstract: null
+    primary_domain_id: CLR-D0004
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0003
+    - CLR-SRC0007
+    notes: 'Input reference display: [3], [7]. Stable bindings are in evidence/concept-support.yaml. Source
+      support is qualified, not independent typing approval; historical correspondences remain unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-61
+    id: CLR-C0061
+    label_en: Intention
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent mental commitment to pursue a goal through a course of action.
+    is_abstract: null
+    primary_domain_id: CLR-D0002
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0026
+    notes: 'Input reference display: [11], [26]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-62
+    id: CLR-C0062
+    label_en: Interpretation
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «subkind»
+    definition: An understanding state that assigns meaning to a representation in a context, distinguished
+      from the interpreting process.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0021
+    - CLR-SRC0022
+    notes: 'Input reference display: [21], [22]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-63
+    id: CLR-C0063
+    label_en: Interpretation Process
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A cognitive process that interprets a representation and brings about or develops an interpretation
+      state.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0021
+    - CLR-SRC0046
+    notes: 'Input reference display: [21], [46]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-66
+    id: CLR-C0066
+    label_en: Language
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information system of expression conventions, syntax and semantic rules through which
+      content can be formulated and interpreted.
+    is_abstract: null
+    primary_domain_id: CLR-D0010
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0015
+    - CLR-SRC0051
+    notes: 'Input reference display: [15], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-73
+    id: CLR-C0073
+    label_en: Model
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A structured representation that selectively describes a subject for a purpose using explicit
+      modeling conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0034
+    notes: 'Input reference display: [18], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-74
+    id: CLR-C0074
+    label_en: Model Kind
+    ufo_type: Universal / higher-order type
+    ontouml_stereotype: «type»
+    definition: A higher-order type whose instances are types of models, such as the type Conceptual Model;
+      it is not a particular model artifact.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0003
+    - CLR-SRC0038
+    notes: 'Input reference display: [3], [38]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-83
+    id: CLR-C0083
+    label_en: Object
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An endurant that persists through change and is wholly present whenever it exists; the
+      broad object category excludes events, moments and types.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0011
+    notes: 'Input reference display: [7], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-93
+    id: CLR-C0093
+    label_en: Perspective
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent orientation that selects what is relevant and how a subject is approached
+      in conceptualization.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0021
+    notes: 'Input reference display: [12], [21]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-101
+    id: CLR-C0101
+    label_en: Representation
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object that encodes conceptual content in a form suitable for interpretation
+      or communication.
+    is_abstract: null
+    primary_domain_id: CLR-D0007
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0034
+    notes: 'Input reference display: [12], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-105
+    id: CLR-C0105
+    label_en: Semantic Information
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: Information content that conveys an interpreted meaning about a subject.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0052
+    notes: 'Input reference display: [12], [52]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-106
+    id: CLR-C0106
+    label_en: Semantic Interoperability
+    ufo_type: Endurant / externally dependent mode
+    ontouml_stereotype: «mode»
+    definition: A disposition of a representation to support compatible interpretation with another representation
+      under stated semantic conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0013
+    - CLR-SRC0049
+    notes: 'Input reference display: [13], [49]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-108
+    id: CLR-C0108
+    label_en: Semantics
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying meaning assignments and interpretation rules for a language
+      or representation system.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0051
+    notes: 'Input reference display: [12], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-109
+    id: CLR-C0109
+    label_en: Shared Understanding
+    ufo_type: Situation
+    ontouml_stereotype: «situation»
+    definition: A situation in which at least two agents bear compatible understandings of the same conceptual
+      content in a specified context.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0023
+    - CLR-SRC0046
+    notes: 'Input reference display: [23], [46]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-112
+    id: CLR-C0112
+    label_en: State
+    ufo_type: Situation
+    ontouml_stereotype: «situation»
+    definition: A configuration of entities and their properties or relations that holds under specified
+      conditions and can serve as a subject or precondition of change.
+    is_abstract: null
+    primary_domain_id: CLR-D0016
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0035
+    notes: 'Input reference display: [11], [35]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-125
+    id: CLR-C0125
+    label_en: Type
+    ufo_type: Universal / type
+    ontouml_stereotype: «category»
+    definition: A universal that classifies entities according to shared characteristics; this category
+      includes types of objects, events and higher-order types.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0011
+    notes: 'Input reference display: [7], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-126
+    id: CLR-C0126
+    label_en: Understandability
+    ufo_type: Endurant / externally dependent mode
+    ontouml_stereotype: «mode»
+    definition: A disposition of a representation to support understanding by an intended interpreter
+      under specified conditions.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0022
+    notes: 'Input reference display: [18], [22]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-127
+    id: CLR-C0127
+    label_en: Understanding
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent mental state that organizes and makes sense of conceptual content sufficiently
+      for a specified purpose.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0022
+    - CLR-SRC0028
+    notes: 'Input reference display: [22], [28]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-131
+    id: CLR-C0131
+    label_en: Viewpoint
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object prescribing concerns, selection rules and conventions for constructing
+      and interpreting a view.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0043
+    notes: 'Input reference display: [18], [43]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  model/relations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-4
+    id: CLR-R0004
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0008
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-5
+    id: CLR-R0005
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0028
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-6
+    id: CLR-R0006
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0055
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-7
+    id: CLR-R0007
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0061
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-8
+    id: CLR-R0008
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0093
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-9
+    id: CLR-R0009
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0127
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-25
+    id: CLR-R0025
+    label_en: occurs with
+    source_id: CLR-C0015
+    target_id: CLR-C0028
+    source_multiplicity: 0..*
+    target_multiplicity: 0..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram
+      ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-71
+    id: CLR-R0071
+    label_en: uses language
+    source_id: CLR-C0047
+    target_id: CLR-C0066
+    source_multiplicity: 0..*
+    target_multiplicity: '1'
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-82
+    id: CLR-R0082
+    label_en: is externalized in
+    source_id: CLR-C0055
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: 0..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-89
+    id: CLR-R0089
+    label_en: has desired content
+    source_id: CLR-C0061
+    target_id: CLR-C0054
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-90
+    id: CLR-R0090
+    label_en: assigns content
+    source_id: CLR-C0062
+    target_id: CLR-C0105
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-93
+    id: CLR-R0093
+    label_en: interprets
+    source_id: CLR-C0063
+    target_id: CLR-C0101
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-94
+    id: CLR-R0094
+    label_en: originates
+    source_id: CLR-C0063
+    target_id: CLR-C0062
+    source_multiplicity: 0..1
+    target_multiplicity: 1..*
+    ontouml_stereotype: «creation»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-126
+    id: CLR-R0126
+    label_en: is expressed by
+    source_id: CLR-C0093
+    target_id: CLR-C0131
+    source_multiplicity: 0..*
+    target_multiplicity: 0..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-140
+    id: CLR-R0140
+    label_en: encodes
+    source_id: CLR-C0101
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-144
+    id: CLR-R0144
+    label_en: interprets content of
+    source_id: CLR-C0105
+    target_id: CLR-C0101
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-147
+    id: CLR-R0147
+    label_en: constrains interpretation of
+    source_id: CLR-C0108
+    target_id: CLR-C0047
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-148
+    id: CLR-R0148
+    label_en: concerns shared content
+    source_id: CLR-C0109
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «situation» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-149
+    id: CLR-R0149
+    label_en: has participants
+    source_id: CLR-C0109
+    target_id: CLR-C0004
+    source_multiplicity: 0..*
+    target_multiplicity: 2..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «situation» / «category». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-150
+    id: CLR-R0150
+    label_en: includes compatible states
+    source_id: CLR-C0109
+    target_id: CLR-C0127
+    source_multiplicity: 0..*
+    target_multiplicity: 2..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «situation» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-167
+    id: CLR-R0167
+    label_en: concerns
+    source_id: CLR-C0127
+    target_id: CLR-C0017
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-168
+    id: CLR-R0168
+    label_en: has articulated content
+    source_id: CLR-C0127
+    target_id: CLR-C0034
+    source_multiplicity: 0..*
+    target_multiplicity: 0..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  model/generalizations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-177
+    id: CLR-G0003
+    child_id: CLR-C0004
+    parent_id: CLR-C0083
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «category» / «category». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-187
+    id: CLR-G0013
+    child_id: CLR-C0015
+    parent_id: CLR-C0025
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «event» / «event». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-189
+    id: CLR-G0015
+    child_id: CLR-C0017
+    parent_id: CLR-C0022
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-191
+    id: CLR-G0017
+    child_id: CLR-C0019
+    parent_id: CLR-C0057
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «kind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-205
+    id: CLR-G0031
+    child_id: CLR-C0034
+    parent_id: CLR-C0057
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «kind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-217
+    id: CLR-G0043
+    child_id: CLR-C0047
+    parent_id: CLR-C0101
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-226
+    id: CLR-G0052
+    child_id: CLR-C0057
+    parent_id: CLR-C0083
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «kind» / «category». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-230
+    id: CLR-G0056
+    child_id: CLR-C0062
+    parent_id: CLR-C0127
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «mode». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-231
+    id: CLR-G0057
+    child_id: CLR-C0063
+    parent_id: CLR-C0015
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «event» / «event». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-234
+    id: CLR-G0060
+    child_id: CLR-C0066
+    parent_id: CLR-C0057
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «kind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-266
+    id: CLR-G0092
+    child_id: CLR-C0101
+    parent_id: CLR-C0057
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «kind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-270
+    id: CLR-G0096
+    child_id: CLR-C0105
+    parent_id: CLR-C0057
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «kind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-273
+    id: CLR-G0099
+    child_id: CLR-C0109
+    parent_id: CLR-C0112
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «situation» / «situation». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-290
+    id: CLR-G0116
+    child_id: CLR-C0131
+    parent_id: CLR-C0057
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «kind». No partition axiom inferred.'
+  model/constraints.yaml:
+  - id: CLR-SC0003
+    text: Agent alignment. The bearers of the Intention and Perspective adopted by a Conceptualization
+      participate in that episode. A Conceptual Decision is made by agents participating in its recording
+      episode.
+    referenced_ids:
+    - CLR-C0004
+    - CLR-C0021
+    - CLR-C0026
+    - CLR-C0061
+    - CLR-C0093
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-3
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0011
+    text: Moment identity. Each mode or quality has exactly one bearer through characterization, directly
+      or by inheritance. Distinct Understandability or Semantic Interoperability instances may depend
+      on different interpreters or counterpart representations.
+    referenced_ids:
+    - CLR-C0106
+    - CLR-C0126
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-11
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0012
+    text: Shared understanding. Shared Understanding specializes State. Its Understanding bearers are
+      at least two distinct participating agents; their understandings are compatible about the stated
+      shared artifact. Its configured objects include those agents.
+    referenced_ids:
+    - CLR-C0109
+    - CLR-C0112
+    - CLR-C0127
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-12
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0023
+    text: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+      with its referent, or a Model with its Model Kind. Information Object identity follows a declared
+      content-equivalence policy, not the identity of a physical file.
+    referenced_ids:
+    - CLR-C0017
+    - CLR-C0057
+    - CLR-C0059
+    - CLR-C0073
+    - CLR-C0074
+    - CLR-C0083
+    - CLR-C0125
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-23
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0024
+    text: Content-level conformance. A model conforms to a metamodel only if its constructs satisfy that
+      metamodel rules. A stated conformity link is not itself proof. No disjointness or exhaustive partition
+      is inferred merely from two different class names.
+    referenced_ids: []
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-24
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+bounded_commitment: Treat agent-borne mental states, repeatable articulated information and linguistic
+  expressions as distinct modeling roles; do not assume shared content implies shared state identity or
+  expression implies actual understanding.
+findings:
+- id: SEM114-F01
+  title: Explicit local sense of Concept
+  observation: C0017 describes a type/category; C0055 is an agent-dependent mode and R0082 externalizes
+    it into an artifact. This separates entities but does not settle what philosophers mean by concept.
+  model_ids:
+  - CLR-C0017
+  - CLR-C0055
+  - CLR-R0006
+  - CLR-R0082
+  source_ids:
+  - SEP-CONCEPTS
+  - SEP-MENTAL
+  status: OPEN_REVIEW_FINDING_NOT_MODEL_DEFECT_PROOF
+  route: '#129 joint owner decision'
+  proposal_not_applied: Retain bounded description reading; document philosophical alternatives and ask
+    owner whether terminology clarification is necessary, not automatic rename.
+  research_draft_id: SEM114-F01
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM114-F02
+  title: Bearer identity versus shared content
+  observation: R0006/R0009 source multiplicity1 and SC0011 require individual bearers. R0149/R0150 require2..*
+    participants/states, but cardinalities alone do not enforce distinct aligned bearers or compatible
+    content under SC0012.
+  model_ids:
+  - CLR-R0006
+  - CLR-R0009
+  - CLR-R0149
+  - CLR-R0150
+  - CLR-SC0011
+  - CLR-SC0012
+  source_ids:
+  - UFO-ODE2008
+  - SEP-MENTAL
+  status: OPEN_REVIEW_FINDING_NOT_MODEL_DEFECT_PROOF
+  route: '#129 joint owner decision'
+  proposal_not_applied: Add bounded distinct-bearer and compatibility-policy checks only after identity/compatibility
+    interpretation agreed; do not label shared understanding a relator.
+  research_draft_id: SEM114-F02
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM114-F03
+  title: Expression does not certify understanding
+  observation: R0071 assigns one Language per Expression; R0090 connects Interpretation state to1..* Semantic
+    Information and R0144 connects that content to1..* Representations. These paths do not certify truth
+    or another recipient state.
+  model_ids:
+  - CLR-R0071
+  - CLR-R0090
+  - CLR-R0144
+  - CLR-C0062
+  - CLR-C0105
+  source_ids:
+  - SEP-MENTAL
+  status: OPEN_REVIEW_FINDING_NOT_MODEL_DEFECT_PROOF
+  route: '#129 joint owner decision'
+  proposal_not_applied: Evaluate a multilingual same-content case and a misunderstanding case; keep content
+    equivalence and actual understanding separate.
+  research_draft_id: SEM114-F03
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+case_review:
+  positive: Two agents bear distinct Understanding instances concerning the same artifact. A declared
+    hypothetical compatibility policy stipulates compatible content for this example; compatibility is
+    not derived merely from a shared target. Two expressions in different languages encode that artifact
+    without identifying the expressions or mental states.
+  counterexamples:
+  - 'One Understanding individual is borne by two agents: violates the single-bearer commitment, even
+    if content agrees.'
+  - 'Two states belonging to one agent are counted as understanding shared by two participants: cardinality
+    alone is insufficient; SC0012 alignment fails.'
+  - 'A recipient receives an expression but interprets it differently: expression existence is not proof
+    of shared understanding.'
+  checks_recommended:
+  - Exact structural snapshot assertions for R0006,R0009,R0071,R0090,R0144 and SC0011/12
+  - Positive and negative distinct-bearer fixtures; clearly label local predicate checks, not full cognitive
+    validation
+  method: Manual conceptual inspection; examples are focal scenarios, not proven complete valid instances;
+    absent information is not falsity. Local executable predicates, where supplied, test only declared
+    finite rules.
+scope_boundaries:
+- No source definition automatically validates imported stereotypes.
+- No creation of new classes, identities, relations or constraints.
+- A completed negative/uncertain review does not resolve its findings.
+- Frozen constraint execution_status values remain unchanged; local probes are separate evidence.
+- 'Research proposals and philosophical alternatives await #129 joint decision.'
+verification:
+  command: python tools/check_semantic_reviews.py --issue 114
+  result_location: Exact PR and Public integrity run
+  limits: Integrity and selected local predicates only; no human expert acceptance or complete formal
+    model proof.
