@@ -1,0 +1,33 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_terminology_join
+model_revision: input-r1-rev1
+id: DOM11-NEG-001
+expected_selected_answer: false
+description: A supplied definition may instead define a different concept; typed presence
+  of all four relations then has no same-concept witness.
+nodes:
+- id: terminology
+  concept_id: CLR-C0121
+- id: term
+  concept_id: CLR-C0120
+- id: concept
+  concept_id: CLR-C0017
+- id: other_concept
+  concept_id: CLR-C0017
+- id: definition
+  concept_id: CLR-C0046
+edges:
+- relation_id: CLR-R0173
+  source: terminology
+  target: term
+- relation_id: CLR-R0161
+  source: term
+  target: concept
+- relation_id: CLR-R0162
+  source: terminology
+  target: definition
+- relation_id: CLR-R0057
+  source: definition
+  target: other_concept
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.

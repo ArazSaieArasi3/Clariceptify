@@ -1,0 +1,379 @@
+schema_version: '1.0'
+issue: 102
+task_id: R2-DOM-11
+domain_id: CLR-D0011
+domain_name: Terminology
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 23fdf692e3b2812f7242cb197f23abd406a0d2a5
+model_revision: input-r1-rev1
+purpose: Stabilize naming and definitions so concepts can be compared and communicated.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 10
+  domain_member_ids: &id002
+  - CLR-C0032
+  - CLR-C0036
+  - CLR-C0046
+  - CLR-C0056
+  - CLR-C0081
+  - CLR-C0120
+  - CLR-C0121
+  - CLR-C0122
+  - CLR-C0134
+  - CLR-C0135
+  relevant_requirements:
+  - FR-15
+  - FR-16
+  - FR-21
+  - FR-30
+  relevant_cqs: &id001
+  - CQ-15
+  - CQ-16
+  - CQ-21
+  - CQ-30
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0032
+  label: Definition
+  stereotype: "\xABsubkind\xBB"
+  definition: An expression specifying the intended meaning and delimitation of a concept.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-32
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-32
+  source_passages: "[29] secs. 1\u20132; [37] official scope"
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Definition (\xABsubkind\xBB): An expression specifying the intended meaning and delimitation of a concept.\
+    \ Generalization CLR-G0029 to CLR-C0047. Imported D support; source passage and typing not reverified. Its defining\
+    \ expression is not the designated concept itself; R0057 does not execute semantic delimitation."
+- id: CLR-C0036
+  label: Domain Vocabulary
+  stereotype: "\xABsubkind\xBB"
+  definition: A vocabulary collecting terms relevant to a particular subject area.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-36
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-36
+  source_passages: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Domain Vocabulary (\xABsubkind\xBB): A vocabulary collecting terms relevant to a particular subject\
+    \ area. Generalization CLR-G0033 to CLR-C0134. Imported D support; source passage and typing not reverified.\
+    \ Domain specialization G0033 does not establish a closed vocabulary or unique subject boundary."
+- id: CLR-C0046
+  label: Explicit Definition
+  stereotype: "\xABsubkind\xBB"
+  definition: A definition that directly states the defining characteristics or conditions of a concept.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-46
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-46
+  source_passages: '[29] sec. 2, especially 2.6; [51] language and semantics'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Explicit Definition (\xABsubkind\xBB): A definition that directly states the defining characteristics\
+    \ or conditions of a concept. Generalization CLR-G0042 to CLR-C0032. Imported D support; source passage and\
+    \ typing not reverified. Direct statement of characteristics specializes Definition through G0042; no exhaustiveness\
+    \ or disjointness from Implicit Definition is established."
+- id: CLR-C0056
+  label: Implicit Definition
+  stereotype: "\xABsubkind\xBB"
+  definition: A definition that fixes a concept's interpretation through its place in a system of constraints or
+    relationships.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-56
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-56
+  source_passages: '[29] sec. 2, especially 2.6; [51] language and semantics'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Implicit Definition (\xABsubkind\xBB): A definition that fixes a concept's interpretation through its\
+    \ place in a system of constraints or relationships. Generalization CLR-G0051 to CLR-C0032. Imported D support;\
+    \ source passage and typing not reverified. Constraint-mediated interpretation specializes Definition through\
+    \ G0051; constraint satisfaction has not been executed."
+- id: CLR-C0081
+  label: Naming
+  stereotype: "\xABevent\xBB"
+  definition: A conceptual process that assigns a term to a concept within a naming context or vocabulary.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-81
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-81
+  source_passages: '[37] official scope; [36] vocabulary scope'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Naming (\xABevent\xBB): A conceptual process that assigns a term to a concept within a naming context\
+    \ or vocabulary. Generalization CLR-G0074 to CLR-C0025. Imported D support; source passage and typing not reverified.\
+    \ R0112 assigns a term and R0113 names a concept, but those two links alone do not prove that the assigned term\
+    \ designates the named concept."
+- id: CLR-C0120
+  label: Term
+  stereotype: "\xABsubkind\xBB"
+  definition: An expression used within a vocabulary to designate a concept.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-120
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-120
+  source_passages: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Term (\xABsubkind\xBB): An expression used within a vocabulary to designate a concept. Generalization\
+    \ CLR-G0109 to CLR-C0047. Imported D support; source passage and typing not reverified. R0161 designation is\
+    \ distinct from expression spelling; equal labels cannot merge concepts."
+- id: CLR-C0121
+  label: Terminology
+  stereotype: "\xABsubkind\xBB"
+  definition: A vocabulary that systematically connects terms to defined concepts and their intended meanings.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-121
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-121
+  source_passages: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Terminology (\xABsubkind\xBB): A vocabulary that systematically connects terms to defined concepts and\
+    \ their intended meanings. Generalization CLR-G0110 to CLR-C0134. Imported D support; source passage and typing\
+    \ not reverified. G0110 permits inherited vocabulary membership R0173; R0162 supplies definitions but does not\
+    \ prove all terms and definitions align."
+- id: CLR-C0122
+  label: Terminology Engineering
+  stereotype: "\xABevent\xBB"
+  definition: A conceptual process that organizes terms and definitions into a coherent terminology; retained here
+    only for conceptual articulation.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-122
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-122
+  source_passages: '[37] official scope; [16] methodology chapter contents'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Terminology Engineering (\xABevent\xBB): A conceptual process that organizes terms and definitions into\
+    \ a coherent terminology; retained here only for conceptual articulation. Generalization CLR-G0111 to CLR-C0025.\
+    \ Imported B support; source passage and typing not reverified. R0163 produces or revises terminology and does\
+    \ not establish new artifact identity; retained for conceptual articulation, not an engineering tool feature."
+- id: CLR-C0134
+  label: Vocabulary
+  stereotype: "\xABsubkind\xBB"
+  definition: An organized information object collecting terms available for use in a specified context.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-134
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-134
+  source_passages: '[36] vocabulary scope; [37] official scope; [39] labels/schemes'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Vocabulary (\xABsubkind\xBB): An organized information object collecting terms available for use in\
+    \ a specified context. Generalization CLR-G0119 to CLR-C0057. Imported D support; source passage and typing\
+    \ not reverified. R0173 records term membership in a specified context; membership alone does not prove semantic\
+    \ coherence or closed-world completeness."
+- id: CLR-C0135
+  label: Vocabulary Elicitation
+  stereotype: "\xABevent\xBB"
+  definition: A terminology activity that identifies terms used or required to express concepts relevant to a subject.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-135
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-135
+  source_passages: '[37] official scope; [16] methodology chapter contents'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Vocabulary Elicitation (\xABevent\xBB): A terminology activity that identifies terms used or required\
+    \ to express concepts relevant to a subject. Generalization CLR-G0120 to CLR-C0122. Imported B support; source\
+    \ passage and typing not reverified. G0120 specializes Terminology Engineering, but R0174 identifying terms\
+    \ does not demonstrate a completed coherent terminology."
+domain_questions:
+- id: DQ01
+  purpose: Term designation and a supplied explicit definition admit a selected same-concept witness.
+  cqs:
+  - CQ-15
+  model_ids:
+  - CLR-C0121
+  - CLR-C0120
+  - CLR-C0017
+  - CLR-C0046
+  relation_ids:
+  - CLR-R0173
+  - CLR-R0161
+  - CLR-R0162
+  - CLR-R0057
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: two distinct terms have identical spelling but designate different
+    concepts; spelling cannot justify merging the concepts. The executed graph subset must use node identity, not
+    labels, and is not a full lexical identity policy.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0173
+  - CLR-R0161
+  - CLR-R0162
+  - CLR-R0057
+  - CLR-R0112
+  - CLR-R0113
+  - CLR-R0121
+  - CLR-R0163
+  - CLR-R0174
+  constraint_ids:
+  - CLR-SC0010
+  - CLR-SC0016
+  - CLR-SC0023
+  - CLR-SC0024
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0010: Creation and revision. Creation identifies actual origination of a new individual; produces or revises
+    does not assert origination. Each Conceptual Artifact in this scope has one originating Conceptualization. Each
+    Evaluation Result has one creating evaluation.
+  CLR-SC0016: Commitment alignment. The vocabulary and element descriptions linked by an Ontological Commitment
+    belong to its adopted artifact scope. Existing Term designations and Relation endpoints must agree with the
+    commitment; it is not a second conflicting interpretation.
+  CLR-SC0023: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+    with its referent, or a Model with its Model Kind. Information Object identity follows a declared content-equivalence
+    policy, not the identity of a physical file.
+  CLR-SC0024: Content-level conformance. A model conforms to a metamodel only if its constructs satisfy that metamodel
+    rules. A stated conformity link is not itself proof. No disjointness or exhaustive partition is inferred merely
+    from two different class names.
+selected_query:
+  anchors:
+    terminology: terminology
+    term: term
+  patterns:
+  - - CLR-R0173
+    - terminology
+    - term
+  - - CLR-R0161
+    - term
+    - concept
+  - - CLR-R0162
+    - terminology
+    - definition
+  - - CLR-R0057
+    - definition
+    - concept
+scenarios:
+  positive:
+    id: DOM11-POS-001
+    locator: evaluation/fixtures/terminology-join-positive.yaml
+  adverse:
+    id: DOM11-NEG-001
+    locator: evaluation/fixtures/terminology-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM11-CC01
+    description: 'Unexecuted semantic countercase: two distinct terms have identical spelling but designate different
+      concepts; spelling cannot justify merging the concepts. The executed graph subset must use node identity,
+      not labels, and is not a full lexical identity policy.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- id: DOM11-F01
+  state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Term designation and a supplied explicit definition admit a selected same-concept witness.
+  evidence_ids:
+  - CLR-R0173
+  - CLR-R0161
+  - CLR-R0162
+  - CLR-R0057
+  - CLR-G0110
+  - CLR-G0042
+  contrary: A supplied definition may instead define a different concept; typed presence of all four relations then
+    has no same-concept witness.
+  route: 'Execute selected anchored CQ15 subset; full CQ15/CQ16 work remains #124.'
+- id: DOM11-F02
+  state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Identical term spelling does not establish concept identity.
+  evidence_ids:
+  - CLR-C0120
+  - CLR-C0017
+  - CLR-SC0023
+  contrary: Two expressions can share spelling but designate different concepts in their contexts.
+  route: 'Retain unexecuted identity countercase for #124 (CQ15/16); route confirmed correction proposals to #129.'
+- id: DOM11-F03
+  state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Naming assignments require an additional alignment question, not an assumed defect.
+  evidence_ids:
+  - CLR-R0112
+  - CLR-R0113
+  - CLR-R0161
+  contrary: A naming activity can link a term and concept without the recorded designation joining that same pair.
+  route: 'Assess naming/designation alignment under #124; propose model corrections only under #129 if justified.'
+- id: DOM11-F04
+  state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Vocabulary and definition membership do not prove commitment-scope coherence.
+  evidence_ids:
+  - CLR-R0173
+  - CLR-R0162
+  - CLR-R0121
+  - CLR-SC0016
+  contrary: Terms and definitions can be listed while intended interpretations conflict or lie outside an adopted
+    artifact scope.
+  route: 'Cross-reference Ontology #106; CQ21 checks belong to #125; any confirmed correction to #129.'
+- id: DOM11-F05
+  state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Definition specializations and terminology activities preserve unresolved partition and identity boundaries.
+  evidence_ids:
+  - CLR-G0042
+  - CLR-G0051
+  - CLR-G0120
+  - CLR-R0163
+  - CLR-R0174
+  - CLR-SC0024
+  - CLR-SC0010
+  contrary: A definition may have explicit and implicit aspects; identifying terms need not finish a terminology,
+    and producing or revising may revise an existing artifact.
+  route: 'Do not infer partitions or origination; CQ30 execution belongs to #125 and corrections to #129.'
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP2-04
+  - CMP3-04
+  - CMP3-05
+  interpretation:
+    interpretation: LMM expression/meaning/reference, OntoLex entry/form/sense/concept/reference, and SKOS labels/definitions/schemes
+      provide bounded comparisons. They establish neither local class equivalence nor passage-verified support for
+      every member.
+    evidence:
+    - cell: CMP2-04
+      path: evidence/related-work/comparisons/batch-2.yaml
+      paper_locators:
+      - LMM2008:E03,E04,E07,E08,E10 PDF pp.2-4 referent/meaning/expression
+      artifact_locators:
+      - LMM-correspondence.yaml Q03-Q06; selected current L1/L2
+      unsupported_inference: The same spelling yields identity, a named member, or an existing referent under open
+        world.
+      counterevidence: LMM provides a strong prior distinction between expression/meaning/reference.
+      unknowns:
+      - Historical alignments and some source comments unacquired
+    - cell: CMP3-04
+      path: evidence/related-work/comparisons/batch-3.yaml
+      paper_locators:
+      - 'OntoLex review F04; 2016 report #lexical-sense-reference'
+      - 'OntoLex review F10; 2016 report #translation'
+      artifact_locators:
+      - OntoLex.yaml C01,C04,C05,C07,C08; LexicalEntry/Form/Sense/Concept/reference
+      unsupported_inference: The evoked LexicalConcept and referent are identical, or any single lexical link certifies
+        interpretation.
+      counterevidence: C06 version-direction discrepancy for ConceptSet and F04 chain-equivalence caution constrain
+        formal reuse.
+      unknowns:
+      - Historical module parity and cross-model identity
+    - cell: CMP3-05
+      path: evidence/related-work/comparisons/batch-3.yaml
+      paper_locators:
+      - SKOS Reference sections 3-7; review F01,F04
+      - SKOS Reference sections 8-10; review F11
+      artifact_locators:
+      - 'SKOS.yaml selected schema; census #Concept/#ConceptScheme and prefLabel/definition/semanticRelation'
+      unsupported_inference: skos:exactMatch is owl:sameAs or a class equivalence, or a scheme enumerates all concepts
+        under closed-world semantics.
+      counterevidence: F11 rejects sameAs; F01 permits shared concepts across schemes; S14 preferred-label integrity
+        is in the Recommendation, not an executed cardinality check on the selected RDF root.
+      unknowns:
+      - Contextual referent and identity of a researcher-held concept
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 106
+  - 124
+  - 125
+  - 129
