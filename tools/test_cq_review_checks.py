@@ -19,3 +19,11 @@ fails('manual review called execution',lambda x:x['records'][0].update(executabl
 fails('human approval invented',lambda x:x['records'][0].update(human_expert_validation='approved'))
 fails('stale input',lambda x:x['input_bindings'].update({'model/concepts.yaml':'0'*64}))
 print('PASS: 11 adverse review-integrity cases; not negative ontology-instance tests')
+
+fails("nested AC removed",lambda x:x["records"][0]["analysis"].pop("ac_assessment"))
+fails("nested execution promoted",lambda x:x["records"][0]["analysis"]["preserved_input_states"].update(test_execution="PASS"))
+fails("nested origin promoted",lambda x:x["records"][0]["analysis"].update(origin="E"))
+fails("nested evidence drift",lambda x:x["records"][0]["analysis"].update(evidence_ids=[]))
+fails("nested expected drift",lambda x:x["records"][0]["analysis"]["positive_scenario"].update(expected="changed"))
+fails("nested capability removed",lambda x:x["records"][0]["analysis"].pop("full_capability_assessment"))
+print("PASS: 6 nested-evidence retention and consistency mutations")
