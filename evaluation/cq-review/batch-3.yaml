@@ -1,0 +1,1592 @@
+schema_version: '1.0'
+issue: 125
+task_id: R2-CQ-3
+status: MANUAL_FULL_CONTRACT_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: ed31e53badd1822796cde1ac55b650e26707ba67
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+input_bindings:
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  requirements/scope-and-scenarios.yaml: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+  traceability/requirements-model.yaml: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+requirement_status: retrospectively_reconstructed_review_draft
+method: Every frozen capability/question, required answer field, acceptance and adverse criterion is manually
+  compared to explicit scenarios and model evidence. Full review coverage is not full semantic satisfaction.
+  No original contract, origin, execution status or denominator is changed.
+case_scope: Synthetic focal examples assume consistent stated background; no complete instance satisfiability
+  proof is claimed. Missing assertions are not real-world falsity. A supported bounded case is not universal
+  satisfaction.
+records:
+- cq_id: CQ-21
+  fr_id: FR-21
+  frozen_cq_contract:
+    id: CQ-21
+    requirement_id: FR-21
+    question: Which ontological commitments are adopted in an artifact?
+    required_answer_fields: Artifact; commitment; vocabulary; elements; constrained interpretations
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve the artifact and adopted descriptions associated with one commitment.
+    adverse_case: Reject a commitment whose constrained elements fall outside its stated artifact context.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-21
+    source_cells:
+    - 'CQ-21
+
+      FR-21'
+    - Which ontological commitments are adopted in an artifact?
+    - Artifact; commitment; vocabulary; elements; constrained interpretations
+  frozen_fr_contract:
+    id: FR-21
+    priority: MUST
+    title: Ontological commitments
+    origin: R
+    release_target: R1
+    capability: The ontology shall connect explicit ontological commitments to the conceptual elements,
+      vocabulary and interpretations they constrain.
+    acceptance: Retrieve the artifact and adopted descriptions associated with one commitment.
+    adverse_case: Reject a commitment whose constrained elements fall outside its stated artifact context.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-21
+    source_cells:
+    - 'FR-21  MUST
+
+      Ontological commitments
+
+      Origin R | R1'
+    - The ontology shall connect explicit ontological commitments to the conceptual elements, vocabulary
+      and interpretations they constrain.
+    - 'AC: Retrieve the artifact and adopted descriptions associated with one commitment.
+
+      NAC: Reject a commitment whose constrained elements fall outside its stated artifact context.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id002
+    Artifact: R0029 inverse identifies adopting artifact(s), preserve query a rather than joining all
+      adopters
+    commitment: R0029 selected k
+    vocabulary: R0121 mandatory1..*; scope in SC0016 textual
+    elements: R0119 mandatory1..*; compare with R0032 membership
+    constrained interpretations: R0120 optional0..*; returned only if explicitly recorded
+  positive_case:
+    scenario: Artifact a includes descriptions e1,e2 (e1 explicitly a Concept CLR-C0017, hence a Conceptual
+      Element; e2 a Conceptual Element) via R0032 and adopts commitment k via R0029. k commits to e1 via
+      R0119, interprets vocabulary v via R0121 and constrains Interpretation i via R0120. v contains term
+      t and t designates e1 via R0161. All descriptions, vocabulary and interpretation are stipulated
+      within a context.
+    expected: &id001
+      Artifact: a
+      commitment: k
+      vocabulary:
+      - v
+      elements:
+      - e1
+      constrained interpretations:
+      - i
+    observed: 'Manually supported for the declared one-artifact case: R0029 identifies adoption, R0119
+      supplies descriptions, R0121 vocabulary, optional R0120 interpretations. R0119/R0121 target1..*
+      ensure commitment content/vocabulary; R0029 source1..* permits reuse of one commitment by several
+      artifacts. Absence of R0120 is reported as no recorded constrained interpretation, not no possible
+      interpretation.'
+  adverse_case:
+    scenario: Replace k-to-e1 with k-to-eX where eX belongs only to unrelated artifact b; retain adoption
+      of k in a and no a/eX inclusion or documented shared scope.
+    expected: Reject eX as outside the adopted artifact context.
+    observed: 'SC0016 text requires commitment vocabulary/elements to belong to adopted scope; manual
+      reading rejects this explicit mismatch. Relation multiplicities alone allow it. If k is adopted
+      in a and b, scope aggregation is unspecified: union versus per-artifact coverage must not be chosen
+      silently.'
+  model_evidence_ids:
+  - CLR-R0029
+  - CLR-R0032
+  - CLR-R0119
+  - CLR-R0120
+  - CLR-R0121
+  - CLR-R0161
+  - CLR-R0173
+  - CLR-SC0016
+  analysis:
+    cq_id: CQ-21
+    requirement_id: FR-21
+    origin: R
+    question: Which ontological commitments are adopted in an artifact?
+    capability: The ontology shall connect explicit ontological commitments to the conceptual elements,
+      vocabulary and interpretations they constrain.
+    required_answer_fields: Artifact; commitment; vocabulary; elements; constrained interpretations
+    frozen_AC: Retrieve the artifact and adopted descriptions associated with one commitment.
+    frozen_NAC: Reject a commitment whose constrained elements fall outside its stated artifact context.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-21
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-21
+      cq_contract_sha256: 6e3dab86fc9f49714c4aaa078aa4236275ed2efd3a8ddc6a1a2253f5ea3ed12c
+      requirement_contract_sha256: 4467a2af98484af0df6eb235f4f9b8c47f5b82ca37416c542892a35d4b08f231
+    manual_review:
+      positive_case: Artifact a includes descriptions e1,e2 (e1 explicitly a Concept CLR-C0017, hence
+        a Conceptual Element; e2 a Conceptual Element) via R0032 and adopts commitment k via R0029. k
+        commits to e1 via R0119, interprets vocabulary v via R0121 and constrains Interpretation i via
+        R0120. v contains term t and t designates e1 via R0161. All descriptions, vocabulary and interpretation
+        are stipulated within a context.
+      expected_answer: *id001
+      AC_observed: 'Manually supported for the declared one-artifact case: R0029 identifies adoption,
+        R0119 supplies descriptions, R0121 vocabulary, optional R0120 interpretations. R0119/R0121 target1..*
+        ensure commitment content/vocabulary; R0029 source1..* permits reuse of one commitment by several
+        artifacts. Absence of R0120 is reported as no recorded constrained interpretation, not no possible
+        interpretation.'
+      adverse_case: Replace k-to-e1 with k-to-eX where eX belongs only to unrelated artifact b; retain
+        adoption of k in a and no a/eX inclusion or documented shared scope.
+      NAC_expected: Reject eX as outside the adopted artifact context.
+      NAC_observed: 'SC0016 text requires commitment vocabulary/elements to belong to adopted scope; manual
+        reading rejects this explicit mismatch. Relation multiplicities alone allow it. If k is adopted
+        in a and b, scope aggregation is unspecified: union versus per-artifact coverage must not be chosen
+        silently.'
+      answer_field_assessment: *id002
+      capability_assessment: Frozen capability is conditionally supported by explicit links and SC0016;
+        semantic interpretation compatibility is not computed and shared-commitment scope is underdetermined.
+      overall: CONCEPTUALLY_SUPPORTED_SELECTED_CASE_WITH_SCOPE_LIMITATION
+    finding:
+      id: CQ125-F01
+      state: OPEN_REVIEW_FINDING
+      finding: Adoption and required description/vocabulary paths exist; SC0016 rejects explicit out-of-scope
+        elements manually, but multi-artifact commitment scope policy and executable enforcement are unresolved.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0029
+    - CLR-R0032
+    - CLR-R0119
+    - CLR-R0120
+    - CLR-R0121
+    - CLR-R0161
+    - CLR-R0173
+    constraint_ids:
+    - CLR-SC0016
+  manual_conclusion: CONCEPTUALLY_SUPPORTED_SELECTED_CASE_WITH_SCOPE_LIMITATION
+  finding_id: CQ125-F01
+  finding: Adoption and required description/vocabulary paths exist; SC0016 rejects explicit out-of-scope
+    elements manually, but multi-artifact commitment scope policy and executable enforcement are unresolved.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-22
+  fr_id: FR-22
+  frozen_cq_contract:
+    id: CQ-22
+    requirement_id: FR-22
+    question: What state changes, and what temporal reference applies?
+    required_answer_fields: Change; prior state; resulting state; affected object; time
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify prior and resulting states of a change and its affected objects.
+    adverse_case: Reject a purported change with indistinguishable prior and resulting states under the
+      declared comparison.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-22
+    source_cells:
+    - 'CQ-22
+
+      FR-22'
+    - What state changes, and what temporal reference applies?
+    - Change; prior state; resulting state; affected object; time
+  frozen_fr_contract:
+    id: FR-22
+    priority: MUST
+    title: States change and time
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish a state from a change event and relate change to prior
+      and resulting states and temporal reference.
+    acceptance: Identify prior and resulting states of a change and its affected objects.
+    adverse_case: Reject a purported change with indistinguishable prior and resulting states under the
+      declared comparison.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-22
+    source_cells:
+    - 'FR-22  MUST
+
+      States change and time
+
+      Origin R | R1'
+    - The ontology shall distinguish a state from a change event and relate change to prior and resulting
+      states and temporal reference.
+    - 'AC: Identify prior and resulting states of a change and its affected objects.
+
+      NAC: Reject a purported change with indistinguishable prior and resulting states under the declared
+      comparison.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id004
+    Change: C0013 event; G0011 to Event
+    prior state: R0020 exactly1 target
+    resulting state: R0019 exactly1 target
+    affected object: R0018 at least1; SC0013 aligns both states
+    time: R0066 inherited event extent plus R0152; ordering declared in narrative, not calculated by model
+  positive_case:
+    scenario: Change ch affects pump o. Prior State s0 configures o with declared pressure=2; resulting
+      State s1 configures o with pressure=3. R0020(ch,s0),R0019(ch,s1),R0018(ch,o). States hold at t0,t1
+      and ch has extent [t0,t1] under an explicitly stipulated ordered-time and pressure-comparison convention.
+    expected: &id003
+      Change: ch
+      prior state: s0 pressure2
+      resulting state: s1 pressure3
+      affected object:
+      - o
+      time: t0<t1;extent[t0,t1]
+    observed: R0019/R0020 each target1; R0018 target1..*; R0151 links states to affected objects and R0152/R0066
+      supply temporal entities. Manual comparison detects pressure difference. The registry has no declared
+      pressure attribute/value evaluator or general time comparator; supplied feature values/convention
+      are explicit synthetic narrative inputs, not fields found in model.
+  adverse_case:
+    scenario: Use two differently named states s0 and s1 with equal pressure=2 and no other relevant differences;
+      names/IDs differ but the declared comparison finds none.
+    expected: Reject as a change under this chosen granularity.
+    observed: SC0013 expressly requires a relevant difference and temporal consistency; manually rejects
+      equal configurations. Distinct state IDs alone neither satisfy nor refute it. No executable comparison
+      policy is provided by these links.
+  model_evidence_ids:
+  - CLR-R0018
+  - CLR-R0019
+  - CLR-R0020
+  - CLR-R0066
+  - CLR-R0151
+  - CLR-R0152
+  - CLR-SC0013
+  analysis:
+    cq_id: CQ-22
+    requirement_id: FR-22
+    origin: R
+    question: What state changes, and what temporal reference applies?
+    capability: The ontology shall distinguish a state from a change event and relate change to prior
+      and resulting states and temporal reference.
+    required_answer_fields: Change; prior state; resulting state; affected object; time
+    frozen_AC: Identify prior and resulting states of a change and its affected objects.
+    frozen_NAC: Reject a purported change with indistinguishable prior and resulting states under the
+      declared comparison.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-22
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-22
+      cq_contract_sha256: 38351763036fe9429c165fd48ae8fbd75a128def37eaa801978b4904e7b91780
+      requirement_contract_sha256: 8693a14199bd5b8bd333fc35e4476e0687b13971792140dd65e016cadfda6dc0
+    manual_review:
+      positive_case: Change ch affects pump o. Prior State s0 configures o with declared pressure=2; resulting
+        State s1 configures o with pressure=3. R0020(ch,s0),R0019(ch,s1),R0018(ch,o). States hold at t0,t1
+        and ch has extent [t0,t1] under an explicitly stipulated ordered-time and pressure-comparison
+        convention.
+      expected_answer: *id003
+      AC_observed: R0019/R0020 each target1; R0018 target1..*; R0151 links states to affected objects
+        and R0152/R0066 supply temporal entities. Manual comparison detects pressure difference. The registry
+        has no declared pressure attribute/value evaluator or general time comparator; supplied feature
+        values/convention are explicit synthetic narrative inputs, not fields found in model.
+      adverse_case: Use two differently named states s0 and s1 with equal pressure=2 and no other relevant
+        differences; names/IDs differ but the declared comparison finds none.
+      NAC_expected: Reject as a change under this chosen granularity.
+      NAC_observed: SC0013 expressly requires a relevant difference and temporal consistency; manually
+        rejects equal configurations. Distinct state IDs alone neither satisfy nor refute it. No executable
+        comparison policy is provided by these links.
+      answer_field_assessment: *id004
+      capability_assessment: Entity/state/event distinction and temporal links support the case, but a
+        reusable feature comparison/time-order mechanism remains unspecified. Do not treat narrative metadata
+        as native attributes.
+      overall: CONCEPTUALLY_CONDITIONAL_COMPARISON_POLICY_REQUIRED
+    finding:
+      id: CQ125-F02
+      state: OPEN_REVIEW_FINDING
+      finding: Full AC/NAC can be manually assessed under a declared comparison; generic state-difference
+        and temporal convention remain an explicit evaluation dependency rather than a proven executable
+        capability.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0018
+    - CLR-R0019
+    - CLR-R0020
+    - CLR-R0066
+    - CLR-R0151
+    - CLR-R0152
+    constraint_ids:
+    - CLR-SC0013
+  manual_conclusion: CONCEPTUALLY_CONDITIONAL_COMPARISON_POLICY_REQUIRED
+  finding_id: CQ125-F02
+  finding: Full AC/NAC can be manually assessed under a declared comparison; generic state-difference
+    and temporal convention remain an explicit evaluation dependency rather than a proven executable capability.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-23
+  fr_id: FR-23
+  frozen_cq_contract:
+    id: CQ-23
+    requirement_id: FR-23
+    question: What explicit domain knowledge informs the conceptual account?
+    required_answer_fields: Knowledge content; episode or interpretation; subject concepts
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Trace an episode or interpretation to the explicit knowledge content used.
+    adverse_case: Reject equating an explicit knowledge artifact with an agent mental state or guaranteed
+      truth.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-23
+    source_cells:
+    - 'CQ-23
+
+      FR-23'
+    - What explicit domain knowledge informs the conceptual account?
+    - Knowledge content; episode or interpretation; subject concepts
+  frozen_fr_contract:
+    id: FR-23
+    priority: MUST
+    title: Explicit domain knowledge
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent articulated subject knowledge that informs conceptualization,
+      concept formation and interpretation.
+    acceptance: Trace an episode or interpretation to the explicit knowledge content used.
+    adverse_case: Reject equating an explicit knowledge artifact with an agent mental state or guaranteed
+      truth.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-23
+    source_cells:
+    - 'FR-23  MUST
+
+      Explicit domain knowledge
+
+      Origin R | R1'
+    - The ontology shall represent articulated subject knowledge that informs conceptualization, concept
+      formation and interpretation.
+    - 'AC: Trace an episode or interpretation to the explicit knowledge content used.
+
+      NAC: Reject equating an explicit knowledge artifact with an agent mental state or guaranteed truth.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id006
+    Knowledge content: C0034 k, not mental bearer state
+    episode or interpretation: R0053 episode use; R0092 process use; G0056 inherited R0168 state articulated
+      content without origin; optional R0094 origin bridge must not conflate articulation with causal
+      use
+    subject concepts: R0059 target1..*
+  positive_case:
+    scenario: Episode ep explicitly uses Domain Knowledge information object k via R0053; k describes
+      Concept c via R0059. Interpretation Process ip draws on k via R0092 and originates Interpretation
+      state s via R0094. State s inherits Understanding through G0056 and explicitly has articulated content
+      k via R0168; Agent Alice bears s through inherited R0009. A second Interpretation s2 has articulated
+      content k2 via inherited R0168 with no recorded originating process; k2 describes c2. These articulated
+      content links do not alone establish causal knowledge use. Neither k nor k2 is a mental state.
+    expected: &id005
+      Knowledge content: k for ep/ip; k articulated by s; k2 articulated by s2 (causal use not asserted)
+      episode or interpretation: ep/ip explicit knowledge use; s/s2 explicit articulated content, with
+        no origin process required for that content relation
+      subject concepts:
+      - c for k
+      - c2 for k2
+    observed: R0053 and R0092 support recorded knowledge use, R0059 requires1..* subject concepts, and
+      R0060 separately supports concept formation. Interpretation inherits Understanding via G0056, so
+      R0168 directly permits0..* articulated Domain Knowledge items even without an R0094 origin record.
+      R0168 means articulated content, not necessarily causally prior knowledge used. Inverse R0094 followed
+      by R0092 supplies an optional origin-process knowledge-use trace, not the only state/content path
+      or proof that every input was used for every resulting state. Thus episode use is directly supported;
+      interpretation-state articulated content is directly representable, while causal use needs its own
+      evidence.
+  adverse_case:
+    scenario: Identify knowledge artifact k with an agent Understanding u or infer the proposition in
+      k is true merely because R0053 marks use.
+    expected: Reject identity and guaranteed-truth inference.
+    observed: C0034 definition explicitly separates articulable content from a knowing mental state; G0031
+      specializes Information Object, while Understanding is agent-borne mode. Neither use nor articulation
+      asserts truth. SC0023 supports information identity discipline; no logical disjointness is inferred
+      just from names.
+  model_evidence_ids:
+  - CLR-R0053
+  - CLR-R0059
+  - CLR-R0060
+  - CLR-R0092
+  - CLR-R0094
+  - CLR-R0168
+  - CLR-R0009
+  - CLR-SC0023
+  analysis:
+    cq_id: CQ-23
+    requirement_id: FR-23
+    origin: R
+    question: What explicit domain knowledge informs the conceptual account?
+    capability: The ontology shall represent articulated subject knowledge that informs conceptualization,
+      concept formation and interpretation.
+    required_answer_fields: Knowledge content; episode or interpretation; subject concepts
+    frozen_AC: Trace an episode or interpretation to the explicit knowledge content used.
+    frozen_NAC: Reject equating an explicit knowledge artifact with an agent mental state or guaranteed
+      truth.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-23
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-23
+      cq_contract_sha256: e667becea5d5093274622a6b91e5cef8b7861dc819c7893891a5f4e6b4c722f4
+      requirement_contract_sha256: ce2f194fe49c6b5b1b4946b1da679d0e3f7ca49e237b8bc1120ae006c5b95a95
+    manual_review:
+      positive_case: Episode ep explicitly uses Domain Knowledge information object k via R0053; k describes
+        Concept c via R0059. Interpretation Process ip draws on k via R0092 and originates Interpretation
+        state s via R0094. State s inherits Understanding through G0056 and explicitly has articulated
+        content k via R0168; Agent Alice bears s through inherited R0009. A second Interpretation s2 has
+        articulated content k2 via inherited R0168 with no recorded originating process; k2 describes
+        c2. These articulated content links do not alone establish causal knowledge use. Neither k nor
+        k2 is a mental state.
+      expected_answer: *id005
+      AC_observed: R0053 and R0092 support recorded knowledge use, R0059 requires1..* subject concepts,
+        and R0060 separately supports concept formation. Interpretation inherits Understanding via G0056,
+        so R0168 directly permits0..* articulated Domain Knowledge items even without an R0094 origin
+        record. R0168 means articulated content, not necessarily causally prior knowledge used. Inverse
+        R0094 followed by R0092 supplies an optional origin-process knowledge-use trace, not the only
+        state/content path or proof that every input was used for every resulting state. Thus episode
+        use is directly supported; interpretation-state articulated content is directly representable,
+        while causal use needs its own evidence.
+      adverse_case: Identify knowledge artifact k with an agent Understanding u or infer the proposition
+        in k is true merely because R0053 marks use.
+      NAC_expected: Reject identity and guaranteed-truth inference.
+      NAC_observed: C0034 definition explicitly separates articulable content from a knowing mental state;
+        G0031 specializes Information Object, while Understanding is agent-borne mode. Neither use nor
+        articulation asserts truth. SC0023 supports information identity discipline; no logical disjointness
+        is inferred just from names.
+      answer_field_assessment: *id006
+      capability_assessment: Explicit knowledge use and state-articulated content are separately representable
+        without asserting truth. Optional use/articulation links leave missing answers unassessed. Exact
+        interpretation of knowledge content used for an interpretation state requires distinguishing articulation
+        from causal provenance.
+      overall: CONCEPTUALLY_SUPPORTED_RECORDED_USE_AND_ARTICULATION_WITH_CAUSAL_SCOPE_LIMITATION
+    finding:
+      id: CQ125-F03
+      state: OPEN_REVIEW_FINDING
+      finding: Recorded episode/process use and inherited interpretation-state articulation are supported,
+        with content/state distinction preserved. R0168 articulation does not prove causal knowledge use;
+        R0094 is an optional origin trace, not the only state/content route. Decide the query meaning
+        and evidence for state-level causal use rather than requiring origin records universally.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0053
+    - CLR-R0059
+    - CLR-R0060
+    - CLR-R0092
+    - CLR-R0094
+    - CLR-R0168
+    - CLR-R0009
+    constraint_ids:
+    - CLR-SC0023
+  manual_conclusion: CONCEPTUALLY_SUPPORTED_RECORDED_USE_AND_ARTICULATION_WITH_CAUSAL_SCOPE_LIMITATION
+  finding_id: CQ125-F03
+  finding: Recorded episode/process use and inherited interpretation-state articulation are supported,
+    with content/state distinction preserved. R0168 articulation does not prove causal knowledge use;
+    R0094 is an optional origin trace, not the only state/content route. Decide the query meaning and
+    evidence for state-level causal use rather than requiring origin records universally.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-24
+  fr_id: FR-24
+  frozen_cq_contract:
+    id: CQ-24
+    requirement_id: FR-24
+    question: Against which semantic criteria is an artifact assessed?
+    required_answer_fields: Artifact; criterion; criterion type; guiding goal
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify the criterion specification used to assess an artifact.
+    adverse_case: Reject interpreting a Consistency criterion instance as proof that the artifact is consistent.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-24
+    source_cells:
+    - 'CQ-24
+
+      FR-24'
+    - Against which semantic criteria is an artifact assessed?
+    - Artifact; criterion; criterion type; guiding goal
+  frozen_fr_contract:
+    id: FR-24
+    priority: MUST
+    title: Semantic quality criteria
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish semantic quality criteria from measured qualities and from
+      assessment results.
+    acceptance: Identify the criterion specification used to assess an artifact.
+    adverse_case: Reject interpreting a Consistency criterion instance as proof that the artifact is consistent.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-24
+    source_cells:
+    - 'FR-24  MUST
+
+      Semantic quality criteria
+
+      Origin R | R1'
+    - The ontology shall distinguish semantic quality criteria from measured qualities and from assessment
+      results.
+    - 'AC: Identify the criterion specification used to assess an artifact.
+
+      NAC: Reject interpreting a Consistency criterion instance as proof that the artifact is consistent.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id008
+    Artifact: R0130 evaluation target; designated a retained
+    criterion: R0129 applied cr; do not Cartesian-product many artifacts/criteria without context
+    criterion type: Declared C0029 with G0026; five classes not exhaustive partition
+    guiding goal: R0061 cr-to-g mandatory1..*
+  positive_case:
+    scenario: Qualitative Evaluation ev assesses artifact a via R0130 and applies criterion cr via R0129.
+      cr is a Consistency C0029 instance (G0026 to Evaluation Criterion) scoped by goal g via R0061. No
+      evaluation result or consistency proof is assumed merely from criterion presence.
+    expected: &id007
+      Artifact: a
+      criterion: cr
+      criterion type: Consistency
+      guiding goal:
+      - g
+    observed: R0130/R0129 require1..* artifacts/criteria and R0061 requires1..* goals. For the chosen
+      one-artifact evaluation the criterion used is identifiable. In a multi-artifact/multi-criterion
+      evaluation these two edges alone do not pair each criterion with each artifact; an atomic result
+      R0062/R0065 can disambiguate a completed finding.
+  adverse_case:
+    scenario: Add Consistency criterion cr to ev but no sound consistency assessment; claim a is therefore
+      consistent.
+    expected: Reject criterion-as-success inference.
+    observed: SC0017 explicitly classifies five quality classes as criterion specifications rather than
+      measured qualities or findings. C0029 defines what to require, not that a satisfies it; manual review
+      rejects success inference without result/evidence.
+  model_evidence_ids:
+  - CLR-R0061
+  - CLR-R0129
+  - CLR-R0130
+  - CLR-R0131
+  - CLR-R0062
+  - CLR-R0065
+  - CLR-SC0017
+  - CLR-SC0018
+  analysis:
+    cq_id: CQ-24
+    requirement_id: FR-24
+    origin: R
+    question: Against which semantic criteria is an artifact assessed?
+    capability: The ontology shall distinguish semantic quality criteria from measured qualities and from
+      assessment results.
+    required_answer_fields: Artifact; criterion; criterion type; guiding goal
+    frozen_AC: Identify the criterion specification used to assess an artifact.
+    frozen_NAC: Reject interpreting a Consistency criterion instance as proof that the artifact is consistent.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-24
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-24
+      cq_contract_sha256: d0b73a29dd69aa6a54d5d7d9d93493d692b6929ac0e8c878f43461d1b058e503
+      requirement_contract_sha256: 366d5cf13dc966d92cbab881d9d37ed0663ae67377aca4ce7a80b8812940a200
+    manual_review:
+      positive_case: Qualitative Evaluation ev assesses artifact a via R0130 and applies criterion cr
+        via R0129. cr is a Consistency C0029 instance (G0026 to Evaluation Criterion) scoped by goal g
+        via R0061. No evaluation result or consistency proof is assumed merely from criterion presence.
+      expected_answer: *id007
+      AC_observed: R0130/R0129 require1..* artifacts/criteria and R0061 requires1..* goals. For the chosen
+        one-artifact evaluation the criterion used is identifiable. In a multi-artifact/multi-criterion
+        evaluation these two edges alone do not pair each criterion with each artifact; an atomic result
+        R0062/R0065 can disambiguate a completed finding.
+      adverse_case: Add Consistency criterion cr to ev but no sound consistency assessment; claim a is
+        therefore consistent.
+      NAC_expected: Reject criterion-as-success inference.
+      NAC_observed: SC0017 explicitly classifies five quality classes as criterion specifications rather
+        than measured qualities or findings. C0029 defines what to require, not that a satisfies it; manual
+        review rejects success inference without result/evidence.
+      answer_field_assessment: *id008
+      capability_assessment: The criterion/result separation supports frozen AC/NAC for this case; deciding
+        whether artifact meets criterion is intentionally a separate evaluation.
+      overall: CONCEPTUALLY_SUPPORTED_SINGLE_ARTIFACT_CRITERION_CASE
+    finding:
+      id: CQ125-F04
+      state: OPEN_REVIEW_FINDING
+      finding: Criterion selection and goal are available; many-to-many assessment pairing requires a
+        result or explicit contextual assignment. Mere criterion instance never certifies consistency.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0061
+    - CLR-R0129
+    - CLR-R0130
+    - CLR-R0131
+    - CLR-R0062
+    - CLR-R0065
+    constraint_ids:
+    - CLR-SC0017
+    - CLR-SC0018
+  manual_conclusion: CONCEPTUALLY_SUPPORTED_SINGLE_ARTIFACT_CRITERION_CASE
+  finding_id: CQ125-F04
+  finding: Criterion selection and goal are available; many-to-many assessment pairing requires a result
+    or explicit contextual assignment. Mere criterion instance never certifies consistency.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-25
+  fr_id: FR-25
+  frozen_cq_contract:
+    id: CQ-25
+    requirement_id: FR-25
+    question: What finding was produced for which artifact and criterion?
+    required_answer_fields: Evaluation; result; artifact; criterion; justification
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve the assessment, artifact, criterion and rationale for a finding.
+    adverse_case: Reject a result attached to a different artifact or criterion from its generating assessment.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-25
+    source_cells:
+    - 'CQ-25
+
+      FR-25'
+    - What finding was produced for which artifact and criterion?
+    - Evaluation; result; artifact; criterion; justification
+  frozen_fr_contract:
+    id: FR-25
+    priority: MUST
+    title: Atomic evaluation findings
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent evaluation activities and atomic results bound to one assessed
+      artifact and one criterion.
+    acceptance: Retrieve the assessment, artifact, criterion and rationale for a finding.
+    adverse_case: Reject a result attached to a different artifact or criterion from its generating assessment.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-25
+    source_cells:
+    - 'FR-25  MUST
+
+      Atomic evaluation findings
+
+      Origin R | R1'
+    - The ontology shall represent evaluation activities and atomic results bound to one assessed artifact
+      and one criterion.
+    - 'AC: Retrieve the assessment, artifact, criterion and rationale for a finding.
+
+      NAC: Reject a result attached to a different artifact or criterion from its generating assessment.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id010
+    Evaluation: inverse R0131 unique creator ev
+    result: C0040 selected res, information object not process
+    artifact: R0062 exactly1 and included in ev R0130
+    criterion: R0065 exactly1 and included in ev R0129
+    justification: R0064 at least1; SC0021 support context
+  positive_case:
+    scenario: Evaluation ev assesses a, applies cr, and creates result res via R0131. res assesses exactly
+      a via R0062, judges exactly cr via R0065, and has rationale j via R0064. j states the reason for
+      the case finding. For multiple criteria create distinct results.
+    expected: &id009
+      Evaluation: ev
+      result: res
+      artifact: a
+      criterion: cr
+      justification:
+      - j
+    observed: R0131 source1 fixes one creating evaluation per result; target1..* allows multiple findings.
+      R0062/R0065 targets1 fix atomic artifact and criterion; R0064 target1..* supplies rationale. SC0018
+      requires both targets be included in creating evaluation. Manual case fulfills these substantive
+      conditions; no criterion truth is presumed.
+  adverse_case:
+    scenario: Keep ev assessing a and applying cr, but point res to unrelated b or criterion cr2 not included
+      by ev; all individual multiplicities still hold.
+    expected: Reject result/evaluation target mismatch.
+    observed: SC0018 directly rules it out; manual comparison of the selected identities rejects b/cr2.
+      Cardinality alone does not enforce cross-record inclusion. A declared rationale can itself be unsound,
+      consistent with C0065 definition.
+  model_evidence_ids:
+  - CLR-R0061
+  - CLR-R0062
+  - CLR-R0063
+  - CLR-R0064
+  - CLR-R0065
+  - CLR-R0129
+  - CLR-R0130
+  - CLR-R0131
+  - CLR-SC0018
+  - CLR-SC0019
+  - CLR-SC0021
+  analysis:
+    cq_id: CQ-25
+    requirement_id: FR-25
+    origin: R
+    question: What finding was produced for which artifact and criterion?
+    capability: The ontology shall represent evaluation activities and atomic results bound to one assessed
+      artifact and one criterion.
+    required_answer_fields: Evaluation; result; artifact; criterion; justification
+    frozen_AC: Retrieve the assessment, artifact, criterion and rationale for a finding.
+    frozen_NAC: Reject a result attached to a different artifact or criterion from its generating assessment.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-25
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-25
+      cq_contract_sha256: 3762f4400710f565978fea46d8fb725558c178930c7ebb6a4b370df36f2839d3
+      requirement_contract_sha256: 02608bb50cc9d9d9eac4ad9d35fed4d8419a0706c310393ba3723bf6cfcd2efe
+    manual_review:
+      positive_case: Evaluation ev assesses a, applies cr, and creates result res via R0131. res assesses
+        exactly a via R0062, judges exactly cr via R0065, and has rationale j via R0064. j states the
+        reason for the case finding. For multiple criteria create distinct results.
+      expected_answer: *id009
+      AC_observed: R0131 source1 fixes one creating evaluation per result; target1..* allows multiple
+        findings. R0062/R0065 targets1 fix atomic artifact and criterion; R0064 target1..* supplies rationale.
+        SC0018 requires both targets be included in creating evaluation. Manual case fulfills these substantive
+        conditions; no criterion truth is presumed.
+      adverse_case: Keep ev assessing a and applying cr, but point res to unrelated b or criterion cr2
+        not included by ev; all individual multiplicities still hold.
+      NAC_expected: Reject result/evaluation target mismatch.
+      NAC_observed: SC0018 directly rules it out; manual comparison of the selected identities rejects
+        b/cr2. Cardinality alone does not enforce cross-record inclusion. A declared rationale can itself
+        be unsound, consistent with C0065 definition.
+      answer_field_assessment: *id010
+      capability_assessment: Frozen atomic-finding capability is conceptually specified, including its
+        negative alignment. Result-status content described in SC0018 is not an implemented enum/property
+        or truth-proving engine.
+      overall: CONCEPTUALLY_SUPPORTED_TEXTUAL_ATOMICITY_AND_ALIGNMENT
+    finding:
+      id: CQ125-F05
+      state: OPEN_REVIEW_FINDING
+      finding: Atomicity/alignment specified and manually evaluated; actual enforcement, result-content
+        representation and criterion adjudication remain separate from successful structural retrieval.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0061
+    - CLR-R0062
+    - CLR-R0063
+    - CLR-R0064
+    - CLR-R0065
+    - CLR-R0129
+    - CLR-R0130
+    - CLR-R0131
+    constraint_ids:
+    - CLR-SC0018
+    - CLR-SC0019
+    - CLR-SC0021
+  manual_conclusion: CONCEPTUALLY_SUPPORTED_TEXTUAL_ATOMICITY_AND_ALIGNMENT
+  finding_id: CQ125-F05
+  finding: Atomicity/alignment specified and manually evaluated; actual enforcement, result-content representation
+    and criterion adjudication remain separate from successful structural retrieval.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-26
+  fr_id: FR-26
+  frozen_cq_contract:
+    id: CQ-26
+    requirement_id: FR-26
+    question: Who recorded a conceptual decision, about what and why?
+    required_answer_fields: Decision; agent; episode; artifact; goal; justification
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Trace one recorded decision to its conceptualization, actor and rationale.
+    adverse_case: Reject treating a decision record as the deciding event or proof of successful implementation.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-26
+    source_cells:
+    - 'CQ-26
+
+      FR-26'
+    - Who recorded a conceptual decision, about what and why?
+    - Decision; agent; episode; artifact; goal; justification
+  frozen_fr_contract:
+    id: FR-26
+    priority: MUST
+    title: Conceptual decisions and rationale
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent recorded conceptual decision content and its agent, episode,
+      artifact, goal and rationale.
+    acceptance: Trace one recorded decision to its conceptualization, actor and rationale.
+    adverse_case: Reject treating a decision record as the deciding event or proof of successful implementation.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-26
+    source_cells:
+    - 'FR-26  MUST
+
+      Conceptual decisions and rationale
+
+      Origin R | R1'
+    - The ontology shall represent recorded conceptual decision content and its agent, episode, artifact,
+      goal and rationale.
+    - 'AC: Trace one recorded decision to its conceptualization, actor and rationale.
+
+      NAC: Reject treating a decision record as the deciding event or proof of successful implementation.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id012
+    Decision: d information-object record
+    agent: R0037 plus participant check R0054/SC0003; role persists historically under SC0004
+    episode: inverse R0052 exactly1
+    artifact: R0035 at least1 with ep creator alignment SC0020
+    goal: R0040 at least1
+    justification: R0036 at least1; validity not inferred
+  positive_case:
+    scenario: Conceptualization ep records decision d by R0052; d is made by participating Conceptualizer
+      ag, concerns artifact a created by ep, serves goal g and has rationale j. d records selecting element
+      e belonging to a. No implementation success is asserted.
+    expected: &id011
+      Decision: d
+      agent:
+      - ag
+      episode: ep
+      artifact:
+      - a
+      goal:
+      - g
+      justification:
+      - j
+    observed: R0052 source1 gives one episode per decision; R0037/R0035/R0040/R0036 each require1..* actors/artifacts/goals/rationales.
+      R0054 participation and SC0003 align actors; SC0020 aligns artifacts/elements. C0021 and G0019 make
+      d recorded content rather than deciding event. The case provides every required field.
+  adverse_case:
+    scenario: Treat decision information object d as identical to ep or infer selected change e is already
+      implemented successfully.
+    expected: Reject both inference steps.
+    observed: C0021 explicitly distinguishes recorded content from act. R0039 says selects or revises
+      element, not that acceptance criteria or implementation have succeeded. Manual reading rejects conflation
+      without needing to invent an execution-status class.
+  model_evidence_ids:
+  - CLR-R0035
+  - CLR-R0036
+  - CLR-R0037
+  - CLR-R0038
+  - CLR-R0039
+  - CLR-R0040
+  - CLR-R0048
+  - CLR-R0052
+  - CLR-R0054
+  - CLR-SC0003
+  - CLR-SC0004
+  - CLR-SC0020
+  - CLR-SC0021
+  analysis:
+    cq_id: CQ-26
+    requirement_id: FR-26
+    origin: R
+    question: Who recorded a conceptual decision, about what and why?
+    capability: The ontology shall represent recorded conceptual decision content and its agent, episode,
+      artifact, goal and rationale.
+    required_answer_fields: Decision; agent; episode; artifact; goal; justification
+    frozen_AC: Trace one recorded decision to its conceptualization, actor and rationale.
+    frozen_NAC: Reject treating a decision record as the deciding event or proof of successful implementation.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-26
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-26
+      cq_contract_sha256: 3ae5f306286b368712442778542f3ee46f9fef288fbaa7537998c8d5dfc92cc2
+      requirement_contract_sha256: 5d38cd267a47209965ffb2bd2d521b95a61675b8819b7494a597b0f62738dc62
+    manual_review:
+      positive_case: Conceptualization ep records decision d by R0052; d is made by participating Conceptualizer
+        ag, concerns artifact a created by ep, serves goal g and has rationale j. d records selecting
+        element e belonging to a. No implementation success is asserted.
+      expected_answer: *id011
+      AC_observed: R0052 source1 gives one episode per decision; R0037/R0035/R0040/R0036 each require1..*
+        actors/artifacts/goals/rationales. R0054 participation and SC0003 align actors; SC0020 aligns
+        artifacts/elements. C0021 and G0019 make d recorded content rather than deciding event. The case
+        provides every required field.
+      adverse_case: Treat decision information object d as identical to ep or infer selected change e
+        is already implemented successfully.
+      NAC_expected: Reject both inference steps.
+      NAC_observed: C0021 explicitly distinguishes recorded content from act. R0039 says selects or revises
+        element, not that acceptance criteria or implementation have succeeded. Manual reading rejects
+        conflation without needing to invent an execution-status class.
+      answer_field_assessment: *id012
+      capability_assessment: All frozen fields and AC/NAC can be satisfied in this bounded case. Rejected
+        alternatives, timestamped decision validity and implementation status are NOT required by this
+        frozen contract; their absence must not manufacture a failure here.
+      overall: CONCEPTUALLY_SUPPORTED_FROZEN_SCOPE
+    finding:
+      id: CQ125-F06
+      state: OPEN_REVIEW_FINDING
+      finding: Frozen decision contract is conceptually supported; additional alternatives/time/implementation
+        tracking remains candidate enhancement, not hidden AC or evidence of success.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0035
+    - CLR-R0036
+    - CLR-R0037
+    - CLR-R0038
+    - CLR-R0039
+    - CLR-R0040
+    - CLR-R0048
+    - CLR-R0052
+    - CLR-R0054
+    constraint_ids:
+    - CLR-SC0003
+    - CLR-SC0004
+    - CLR-SC0020
+    - CLR-SC0021
+  manual_conclusion: CONCEPTUALLY_SUPPORTED_FROZEN_SCOPE
+  finding_id: CQ125-F06
+  finding: Frozen decision contract is conceptually supported; additional alternatives/time/implementation
+    tracking remains candidate enhancement, not hidden AC or evidence of success.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-27
+  fr_id: FR-27
+  frozen_cq_contract:
+    id: CQ-27
+    requirement_id: FR-27
+    question: Which sources, evidence and assumptions support a rationale?
+    required_answer_fields: Justification; evidence; assumption; source; use context
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve the evidence or assumptions used and the attributed source where present.
+    adverse_case: Reject source attribution interpreted automatically as evidential truth or source agreement.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-27
+    source_cells:
+    - 'CQ-27
+
+      FR-27'
+    - Which sources, evidence and assumptions support a rationale?
+    - Justification; evidence; assumption; source; use context
+  frozen_fr_contract:
+    id: FR-27
+    priority: MUST
+    title: Evidence assumptions and sources
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish evidence use, adopted assumptions and cited sources within
+      conceptual justification.
+    acceptance: Retrieve the evidence or assumptions used and the attributed source where present.
+    adverse_case: Reject source attribution interpreted automatically as evidential truth or source agreement.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-27
+    source_cells:
+    - 'FR-27  MUST
+
+      Evidence assumptions and sources
+
+      Origin R | R1'
+    - The ontology shall distinguish evidence use, adopted assumptions and cited sources within conceptual
+      justification.
+    - 'AC: Retrieve the evidence or assumptions used and the attributed source where present.
+
+      NAC: Reject source attribution interpreted automatically as evidential truth or source agreement.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id014
+    Justification: j and support target via R0036 or R0064
+    evidence: R0096 optional; used evidence attribution via R0068
+    assumption: R0097 optional; R0011 provides adoption context separately
+    source: R0095 and/or R0068, distinguish asserted source from proof
+    use context: decision/result target via rationale link; preserve exact artifact rather than global
+      adoption
+  positive_case:
+    scenario: Justification j supports decision d in artifact a via d-to-j rationale and d-to-a target.
+      j cites evidence e via R0096 and uses assumption ass via R0097; ass is adopted in a via R0011. e
+      is attributed to source s via R0068; j may additionally attribute s via R0095. This records use,
+      not endorsement.
+    expected: &id013
+      Justification: j
+      evidence:
+      - e
+      assumption:
+      - ass
+      source:
+      - s
+      use context: decision d concerning artifact a
+    observed: 'R0096/R0097/R0095 are optional0..*: a rationale may contain no evidence/assumptions/source;
+      return not recorded rather than invent them. Evidence R0068 target1..* requires source attribution
+      when evidence individual exists. SC0021 requires support/citation use; SC0022 scopes assumptions
+      and source roles. Case distinguishes all fields.'
+  adverse_case:
+    scenario: Because e is attributed to s, infer s agrees with j or that e is true. Alternatively transfer
+      assumption accepted only in unrelated b as accepted in a without adoption evidence.
+    expected: Reject automatic truth/agreement; do not report unrelated assumption as adopted in a.
+    observed: SC0021 says provenance does not establish evidential truth; C0065 rationale definition permits
+      unsound reasons. SC0022 makes adoption contextual. Source agreement has no established entailment.
+      The model does not expressly align each j-used assumption with every target-artifact adoption, so
+      contextual acceptance must be checked rather than inferred from use alone.
+  model_evidence_ids:
+  - CLR-R0011
+  - CLR-R0030
+  - CLR-R0036
+  - CLR-R0063
+  - CLR-R0064
+  - CLR-R0068
+  - CLR-R0095
+  - CLR-R0096
+  - CLR-R0097
+  - CLR-SC0021
+  - CLR-SC0022
+  analysis:
+    cq_id: CQ-27
+    requirement_id: FR-27
+    origin: R
+    question: Which sources, evidence and assumptions support a rationale?
+    capability: The ontology shall distinguish evidence use, adopted assumptions and cited sources within
+      conceptual justification.
+    required_answer_fields: Justification; evidence; assumption; source; use context
+    frozen_AC: Retrieve the evidence or assumptions used and the attributed source where present.
+    frozen_NAC: Reject source attribution interpreted automatically as evidential truth or source agreement.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-27
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-27
+      cq_contract_sha256: 5cef3e6f421b08fd8b57b035842bcbc1663bea12ab5dac0d6df153ddf40b0501
+      requirement_contract_sha256: 62eb513675fbb0a93b8717d025a30f388084604e6728c8e131b0ae33532e2ac0
+    manual_review:
+      positive_case: Justification j supports decision d in artifact a via d-to-j rationale and d-to-a
+        target. j cites evidence e via R0096 and uses assumption ass via R0097; ass is adopted in a via
+        R0011. e is attributed to source s via R0068; j may additionally attribute s via R0095. This records
+        use, not endorsement.
+      expected_answer: *id013
+      AC_observed: 'R0096/R0097/R0095 are optional0..*: a rationale may contain no evidence/assumptions/source;
+        return not recorded rather than invent them. Evidence R0068 target1..* requires source attribution
+        when evidence individual exists. SC0021 requires support/citation use; SC0022 scopes assumptions
+        and source roles. Case distinguishes all fields.'
+      adverse_case: Because e is attributed to s, infer s agrees with j or that e is true. Alternatively
+        transfer assumption accepted only in unrelated b as accepted in a without adoption evidence.
+      NAC_expected: Reject automatic truth/agreement; do not report unrelated assumption as adopted in
+        a.
+      NAC_observed: SC0021 says provenance does not establish evidential truth; C0065 rationale definition
+        permits unsound reasons. SC0022 makes adoption contextual. Source agreement has no established
+        entailment. The model does not expressly align each j-used assumption with every target-artifact
+        adoption, so contextual acceptance must be checked rather than inferred from use alone.
+      answer_field_assessment: *id014
+      capability_assessment: Frozen retrieval and negative epistemic claim are supported for explicit
+        case. Absence is not falsehood; source reference is not agreement or independent corroboration.
+      overall: CONCEPTUALLY_SUPPORTED_WITH_CONTEXT_QUALIFICATION
+    finding:
+      id: CQ125-F07
+      state: OPEN_REVIEW_FINDING
+      finding: Provenance/epistemic separation supported; assumption-use versus target-artifact adoption
+        alignment remains contextual and must not be presumed from citation.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0011
+    - CLR-R0030
+    - CLR-R0036
+    - CLR-R0063
+    - CLR-R0064
+    - CLR-R0068
+    - CLR-R0095
+    - CLR-R0096
+    - CLR-R0097
+    constraint_ids:
+    - CLR-SC0021
+    - CLR-SC0022
+  manual_conclusion: CONCEPTUALLY_SUPPORTED_WITH_CONTEXT_QUALIFICATION
+  finding_id: CQ125-F07
+  finding: Provenance/epistemic separation supported; assumption-use versus target-artifact adoption alignment
+    remains contextual and must not be presumed from citation.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-28
+  fr_id: FR-28
+  frozen_cq_contract:
+    id: CQ-28
+    requirement_id: FR-28
+    question: Which feedback and findings inform a conceptual revision?
+    required_answer_fields: Feedback; result; target artifact; revision decision where present
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Trace a finding through feedback to its target artifact or a documented revision context.
+    adverse_case: Reject a feedback link that silently transfers a finding to an unrelated artifact.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-28
+    source_cells:
+    - 'CQ-28
+
+      FR-28'
+    - Which feedback and findings inform a conceptual revision?
+    - Feedback; result; target artifact; revision decision where present
+  frozen_fr_contract:
+    id: FR-28
+    priority: MUST
+    title: Feedback and revision
+    origin: R
+    release_target: R1
+    capability: The ontology shall connect feedback and evaluation findings to the conceptualization or
+      artifact whose revision they inform.
+    acceptance: Trace a finding through feedback to its target artifact or a documented revision context.
+    adverse_case: Reject a feedback link that silently transfers a finding to an unrelated artifact.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-28
+    source_cells:
+    - 'FR-28  MUST
+
+      Feedback and revision
+
+      Origin R | R1'
+    - The ontology shall connect feedback and evaluation findings to the conceptualization or artifact
+      whose revision they inform.
+    - 'AC: Trace a finding through feedback to its target artifact or a documented revision context.
+
+      NAC: Reject a feedback link that silently transfers a finding to an unrelated artifact.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id016
+    Feedback: fb C0048 message
+    result: R0072 optional0..*; retain res identity
+    target artifact: Use res R0062 for the finding target, and R0073 separately for the artifact whose
+      revision feedback informs; do not conflate the two.
+    revision decision where present: inverse R0038 optional, then R0035/R0052; if absent do not fabricate
+  positive_case:
+    scenario: Feedback fb communicates finding res via R0072. res assesses artifact a via R0062; fb informs
+      revision of same a via R0073 and reports on originating episode ep via R0074. Optional decision
+      d responds to res and concerns a, recorded by ep. No finding is silently re-targeted.
+    expected: &id015
+      Feedback: fb
+      result:
+      - res
+      target artifact:
+      - a
+      revision decision where present:
+      - d
+    observed: 'Direct links support the same-target case: optional R0072/R0073 allow zero or multiple
+      findings/artifacts, R0074 requires1..* episodes. Optional decision found by inverse R0038 and checked
+      through R0035/SC0020. Neither feedback nor response means revision occurred.'
+  adverse_case:
+    scenario: Feedback fb communicates result res about artifact a (R0062), and also informs revision
+      of another artifact b (R0073). An erroneous answer now reports res as assessing b solely because
+      of the feedback-to-b link, without any result-target change or documented revision justification.
+    expected: Reject attribution of a finding about a as a finding about b.
+    observed: Reject the erroneous answer by preserving res identity and its R0062 target a. Coexisting
+      R0072(res) and R0073(b) do not themselves retarget res or make the graph invalid; cross-artifact
+      feedback can be legitimate. SC0020 further constrains responding decisions where present. An executable
+      answer/transfer policy is not tested here; missing a universal same-target Feedback constraint is
+      not by itself a frozen-NAC failure.
+  model_evidence_ids:
+  - CLR-R0035
+  - CLR-R0038
+  - CLR-R0039
+  - CLR-R0048
+  - CLR-R0052
+  - CLR-R0062
+  - CLR-R0072
+  - CLR-R0073
+  - CLR-R0074
+  - CLR-SC0020
+  analysis:
+    cq_id: CQ-28
+    requirement_id: FR-28
+    origin: R
+    question: Which feedback and findings inform a conceptual revision?
+    capability: The ontology shall connect feedback and evaluation findings to the conceptualization or
+      artifact whose revision they inform.
+    required_answer_fields: Feedback; result; target artifact; revision decision where present
+    frozen_AC: Trace a finding through feedback to its target artifact or a documented revision context.
+    frozen_NAC: Reject a feedback link that silently transfers a finding to an unrelated artifact.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-28
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-28
+      cq_contract_sha256: 8be99707b464b068bba2293f4a9545b7d064d2f5e6e5b023ee7c8685e8a07779
+      requirement_contract_sha256: 8e033e4c724303e9c973e43d8abf24c31e08a30adc9b713f8718ece69ede9e9d
+    manual_review:
+      positive_case: Feedback fb communicates finding res via R0072. res assesses artifact a via R0062;
+        fb informs revision of same a via R0073 and reports on originating episode ep via R0074. Optional
+        decision d responds to res and concerns a, recorded by ep. No finding is silently re-targeted.
+      expected_answer: *id015
+      AC_observed: 'Direct links support the same-target case: optional R0072/R0073 allow zero or multiple
+        findings/artifacts, R0074 requires1..* episodes. Optional decision found by inverse R0038 and
+        checked through R0035/SC0020. Neither feedback nor response means revision occurred.'
+      adverse_case: Feedback fb communicates result res about artifact a (R0062), and also informs revision
+        of another artifact b (R0073). An erroneous answer now reports res as assessing b solely because
+        of the feedback-to-b link, without any result-target change or documented revision justification.
+      NAC_expected: Reject attribution of a finding about a as a finding about b.
+      NAC_observed: Reject the erroneous answer by preserving res identity and its R0062 target a. Coexisting
+        R0072(res) and R0073(b) do not themselves retarget res or make the graph invalid; cross-artifact
+        feedback can be legitimate. SC0020 further constrains responding decisions where present. An executable
+        answer/transfer policy is not tested here; missing a universal same-target Feedback constraint
+        is not by itself a frozen-NAC failure.
+      answer_field_assessment: *id016
+      capability_assessment: Same-target and documented cross-artifact trace can be represented while
+        retaining finding identity. The frozen prohibition on silently transferring a finding is supported
+        by preserving its explicit target; implementation of answer/transfer checks remains unassessed.
+      overall: BOUNDED_MANUAL_CONTRACT_SUPPORT_EXECUTION_UNASSESSED
+    finding:
+      id: CQ125-F08
+      state: OPEN_REVIEW_FINDING
+      finding: Preserve the distinction between a result target and the artifact whose revision feedback
+        informs. Cross-artifact feedback is not automatically a transferred finding or model defect; documenting
+        permissible transfer/lineage policy is a qualified follow-up, not proof the frozen contract fails.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0035
+    - CLR-R0038
+    - CLR-R0039
+    - CLR-R0048
+    - CLR-R0052
+    - CLR-R0062
+    - CLR-R0072
+    - CLR-R0073
+    - CLR-R0074
+    constraint_ids:
+    - CLR-SC0020
+  manual_conclusion: BOUNDED_MANUAL_CONTRACT_SUPPORT_EXECUTION_UNASSESSED
+  finding_id: CQ125-F08
+  finding: Preserve the distinction between a result target and the artifact whose revision feedback informs.
+    Cross-artifact feedback is not automatically a transferred finding or model defect; documenting permissible
+    transfer/lineage policy is a qualified follow-up, not proof the frozen contract fails.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-29
+  fr_id: FR-29
+  frozen_cq_contract:
+    id: CQ-29
+    requirement_id: FR-29
+    question: How is the time of a represented occurrence expressed?
+    required_answer_fields: Occurrence or time; temporal representation; point/interval form
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify a temporal representation and the time or occurrence it represents.
+    adverse_case: Reject identity of a timestamp expression with the represented time entity.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-29
+    source_cells:
+    - 'CQ-29
+
+      FR-29'
+    - How is the time of a represented occurrence expressed?
+    - Occurrence or time; temporal representation; point/interval form
+  frozen_fr_contract:
+    id: FR-29
+    priority: MUST
+    title: Temporal representations
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish temporal entities from point-based and interval-based representations
+      of them.
+    acceptance: Identify a temporal representation and the time or occurrence it represents.
+    adverse_case: Reject identity of a timestamp expression with the represented time entity.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-29
+    source_cells:
+    - 'FR-29  MUST
+
+      Temporal representations
+
+      Origin R | R1'
+    - The ontology shall distinguish temporal entities from point-based and interval-based representations
+      of them.
+    - 'AC: Identify a temporal representation and the time or occurrence it represents.
+
+      NAC: Reject identity of a timestamp expression with the represented time entity.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id018
+    Occurrence or time: Return time via R0164 or occurrence via R0165; both links may exist even when
+      the answer selects only one.
+    temporal representation: tr distinct from represented Time; G0112 to Representation
+    point/interval form: declared C0064/C0094 specialization, not inferred solely from text formatting;
+      no disjoint/exhaustive partition assumed
+  positive_case:
+    scenario: Occurrence ev has interval t via R0066. Interval-Based Time Representation tr denotes t
+      via R0164 and represents ev extent via R0165. tr has its declared form and encodes artifact a through
+      inherited Representation relations. Time t and expression tr are distinct. A point-based variant
+      locates an instant of an occurrence under a stated convention.
+    expected: &id017
+      Occurrence or time: ev and t
+      temporal representation: tr
+      point/interval form: interval-based C0064 (or declared point-based C0094 variant)
+    observed: 'G0058/G0085 specialize Time Representation; R0164/R0165 each target1..*. SC0014 aligns
+      denoted time and event extent. The interval case supplies the time or occurrence answer. An answer-field
+      alternative does not require permitting occurrence-free representations: time can be returned while
+      a linked occurrence exists. No frozen AC failure is established.'
+  adverse_case:
+    scenario: Identify timestamp expression tr with time t because its text names that instant; or use
+      an interval representation to denote an unrelated instant while claiming its occurrence extent agrees.
+    expected: Reject representation/time identity and mismatched extent/form.
+    observed: C0123 excludes representations and C0124 defines a representation; SC0014 explicitly constrains
+      form/extent agreement. Manual reading rejects conflation. Formal temporal axioms are deferred, so
+      point/interval validation is not a reproduced temporal reasoner result.
+  model_evidence_ids:
+  - CLR-R0066
+  - CLR-R0140
+  - CLR-R0141
+  - CLR-R0164
+  - CLR-R0165
+  - CLR-SC0014
+  - CLR-SC0023
+  analysis:
+    cq_id: CQ-29
+    requirement_id: FR-29
+    origin: R
+    question: How is the time of a represented occurrence expressed?
+    capability: The ontology shall distinguish temporal entities from point-based and interval-based representations
+      of them.
+    required_answer_fields: Occurrence or time; temporal representation; point/interval form
+    frozen_AC: Identify a temporal representation and the time or occurrence it represents.
+    frozen_NAC: Reject identity of a timestamp expression with the represented time entity.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-29
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-29
+      cq_contract_sha256: 3e96d747e3e15d1da161bde39b3f42a61b0f28b6c1445ab18d27ed67531544c4
+      requirement_contract_sha256: a0021157cbbdca6c7c6ca4106b1f6c9511ddba543488df1521ce6e33f67ea6a2
+    manual_review:
+      positive_case: Occurrence ev has interval t via R0066. Interval-Based Time Representation tr denotes
+        t via R0164 and represents ev extent via R0165. tr has its declared form and encodes artifact
+        a through inherited Representation relations. Time t and expression tr are distinct. A point-based
+        variant locates an instant of an occurrence under a stated convention.
+      expected_answer: *id017
+      AC_observed: 'G0058/G0085 specialize Time Representation; R0164/R0165 each target1..*. SC0014 aligns
+        denoted time and event extent. The interval case supplies the time or occurrence answer. An answer-field
+        alternative does not require permitting occurrence-free representations: time can be returned
+        while a linked occurrence exists. No frozen AC failure is established.'
+      adverse_case: Identify timestamp expression tr with time t because its text names that instant;
+        or use an interval representation to denote an unrelated instant while claiming its occurrence
+        extent agrees.
+      NAC_expected: Reject representation/time identity and mismatched extent/form.
+      NAC_observed: C0123 excludes representations and C0124 defines a representation; SC0014 explicitly
+        constrains form/extent agreement. Manual reading rejects conflation. Formal temporal axioms are
+        deferred, so point/interval validation is not a reproduced temporal reasoner result.
+      answer_field_assessment: *id018
+      capability_assessment: The event-linked example supports the frozen representation/time distinction.
+        Occurrence-free representations would be an optional scope extension, not required by the answer-field
+        OR alone. Formal temporal axioms and lexical parsing remain separately unassessed.
+      overall: BOUNDED_MANUAL_CONTRACT_SUPPORT_EXECUTION_UNASSESSED
+    finding:
+      id: CQ125-F09
+      state: OPEN_REVIEW_FINDING
+      finding: No frozen CQ29 deficiency follows from mandatory occurrence linkage. If the user later
+        needs occurrence-free temporal representations, assess that new scope explicitly; preserve representation/time
+        identity and do not change cardinality merely because answer fields allow either occurrence or
+        time.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0066
+    - CLR-R0140
+    - CLR-R0141
+    - CLR-R0164
+    - CLR-R0165
+    constraint_ids:
+    - CLR-SC0014
+    - CLR-SC0023
+  manual_conclusion: BOUNDED_MANUAL_CONTRACT_SUPPORT_EXECUTION_UNASSESSED
+  finding_id: CQ125-F09
+  finding: No frozen CQ29 deficiency follows from mandatory occurrence linkage. If the user later needs
+    occurrence-free temporal representations, assess that new scope explicitly; preserve representation/time
+    identity and do not change cardinality merely because answer fields allow either occurrence or time.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-30
+  fr_id: FR-30
+  frozen_cq_contract:
+    id: CQ-30
+    requirement_id: FR-30
+    question: Which activities compose an episode and what do they create or revise?
+    required_answer_fields: Episode; subprocesses; created or revised artifact; operation meaning
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Represent an acyclic subprocess structure and distinguish a creation from a revision statement.
+    adverse_case: Reject cyclic subprocess containment or a revision assertion automatically generating
+      a new content identity.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-30
+    source_cells:
+    - 'CQ-30
+
+      FR-30'
+    - Which activities compose an episode and what do they create or revise?
+    - Episode; subprocesses; created or revised artifact; operation meaning
+  frozen_fr_contract:
+    id: FR-30
+    priority: MUST
+    title: Process composition and artifact creation
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish conceptual subprocess containment, creation of new artifacts
+      and revision of existing content.
+    acceptance: Represent an acyclic subprocess structure and distinguish a creation from a revision statement.
+    adverse_case: Reject cyclic subprocess containment or a revision assertion automatically generating
+      a new content identity.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-30
+    source_cells:
+    - 'FR-30  MUST
+
+      Process composition and artifact creation
+
+      Origin R | R1'
+    - The ontology shall distinguish conceptual subprocess containment, creation of new artifacts and
+      revision of existing content.
+    - 'AC: Represent an acyclic subprocess structure and distinguish a creation from a revision statement.
+
+      NAC: Reject cyclic subprocess containment or a revision assertion automatically generating a new
+      content identity.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id020
+    Episode: ep C0026
+    subprocesses: R0049 directly; nested parent must itself satisfy C0026; do not assume generic process
+      recursion
+    created or revised artifact: R0048 creates a; R0110 m only produces-or-revises; R0140 maps model to
+      artifact
+    operation meaning: SC0010 actual new individual versus weaker product relation; operation-specific
+      revision status not represented by disjunctive link alone
+  positive_case:
+    scenario: Conceptualization ep has subprocess p via R0049. ep creates artifact a via R0048. p is a
+      Modeling process and produces or revises Model m through R0110; m encodes a via R0140 (do not identify
+      m with a). The subprocess graph is declared acyclic with p temporal extent contained in ep. R0110
+      alone does not specify whether m is newly originated.
+    expected: &id019
+      Episode: ep
+      subprocesses:
+      - p
+      created or revised artifact: a explicitly created; m produced-or-revised without stronger choice
+      operation meaning: R0048 origination vs R0110 weaker disjunction
+    observed: R0049 source0..1 permits each ConceptualProcess at most one immediate containing Conceptualization;
+      target0..* permits empty or multiple subprocesses. SC0009 supplies acyclicity/irreflexivity/temporal
+      containment. R0048/SC0010 assert actual origin; product relations such as R0110 do not. A statement
+      specifically identifying revision cannot be inferred from produces-or-revises alone.
+  adverse_case:
+    scenario: Use ep1 and ep2 both Conceptualizations, with R0049(ep1,ep2) and R0049(ep2,ep1); then treat
+      a later R0110 edit/copy edge as automatic new content identity.
+    expected: Reject cycle and unjustified new identity.
+    observed: 'SC0009 explicitly rejects cycle even though each node can meet local parent multiplicity;
+      SC0010/SC0023 block automatic origination/file identity inference. Manual rejection is supported.
+      Separately, arbitrary generic-process recursion is not required by this frozen FR: R0049 parents
+      must be Conceptualizations, an optional scope-extension question, not an additional NAC failure.
+      Temporal containment and content equivalence need declared conventions, not label checks.'
+  model_evidence_ids:
+  - CLR-R0028
+  - CLR-R0041
+  - CLR-R0048
+  - CLR-R0049
+  - CLR-R0077
+  - CLR-R0110
+  - CLR-R0140
+  - CLR-SC0008
+  - CLR-SC0009
+  - CLR-SC0010
+  - CLR-SC0023
+  analysis:
+    cq_id: CQ-30
+    requirement_id: FR-30
+    origin: R
+    question: Which activities compose an episode and what do they create or revise?
+    capability: The ontology shall distinguish conceptual subprocess containment, creation of new artifacts
+      and revision of existing content.
+    required_answer_fields: Episode; subprocesses; created or revised artifact; operation meaning
+    frozen_AC: Represent an acyclic subprocess structure and distinguish a creation from a revision statement.
+    frozen_NAC: Reject cyclic subprocess containment or a revision assertion automatically generating
+      a new content identity.
+    contract_integrity:
+      cq_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-30
+      fr_source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-30
+      cq_contract_sha256: 6ce7f3e41355e1986d0e4e6b6f8ba986bd353c5368cb854e0fc51893832361e0
+      requirement_contract_sha256: 99b1bb5bd2cf25241e4e6635e44b62ac7435be5f9a6e7cc2c339710fdb539720
+    manual_review:
+      positive_case: Conceptualization ep has subprocess p via R0049. ep creates artifact a via R0048.
+        p is a Modeling process and produces or revises Model m through R0110; m encodes a via R0140 (do
+        not identify m with a). The subprocess graph is declared acyclic with p temporal extent contained
+        in ep. R0110 alone does not specify whether m is newly originated.
+      expected_answer: *id019
+      AC_observed: R0049 source0..1 permits each ConceptualProcess at most one immediate containing Conceptualization;
+        target0..* permits empty or multiple subprocesses. SC0009 supplies acyclicity/irreflexivity/temporal
+        containment. R0048/SC0010 assert actual origin; product relations such as R0110 do not. A statement
+        specifically identifying revision cannot be inferred from produces-or-revises alone.
+      adverse_case: Use ep1 and ep2 both Conceptualizations, with R0049(ep1,ep2) and R0049(ep2,ep1); then
+        treat a later R0110 edit/copy edge as automatic new content identity.
+      NAC_expected: Reject cycle and unjustified new identity.
+      NAC_observed: 'SC0009 explicitly rejects cycle even though each node can meet local parent multiplicity;
+        SC0010/SC0023 block automatic origination/file identity inference. Manual rejection is supported.
+        Separately, arbitrary generic-process recursion is not required by this frozen FR: R0049 parents
+        must be Conceptualizations, an optional scope-extension question, not an additional NAC failure.
+        Temporal containment and content equivalence need declared conventions, not label checks.'
+      answer_field_assessment: *id020
+      capability_assessment: Frozen cycle/nonautomatic-creation negative cases are conceptually specified.
+        Positive distinction is supported as strong creation versus weaker produces-or-revises, not unambiguous
+        identification of revision from every product link. Broader recursion allowing any ConceptualProcess
+        as parent is an optional scope proposal, not an explicit frozen requirement or a diagnosed FR
+        failure.
+      overall: PARTIAL_OPERATION_DISAMBIGUATION_WITH_OPTIONAL_SCOPE_QUESTION
+    finding:
+      id: CQ125-F10
+      state: OPEN_REVIEW_FINDING
+      finding: Disjunctive output edges alone cannot recover whether the operation was production or revision.
+        Content equivalence needs a declared policy; do not promote a product edge to creation. Broader
+        generic-process-parent recursion is only an optional scope question, not a frozen FR30 failure.
+      route: '#129 joint decision; no correction approved'
+      no_model_change: true
+    relation_ids:
+    - CLR-R0028
+    - CLR-R0041
+    - CLR-R0048
+    - CLR-R0049
+    - CLR-R0077
+    - CLR-R0110
+    - CLR-R0140
+    constraint_ids:
+    - CLR-SC0008
+    - CLR-SC0009
+    - CLR-SC0010
+    - CLR-SC0023
+  manual_conclusion: PARTIAL_OPERATION_DISAMBIGUATION_WITH_OPTIONAL_SCOPE_QUESTION
+  finding_id: CQ125-F10
+  finding: Disjunctive output edges alone cannot recover whether the operation was production or revision.
+    Content equivalence needs a declared policy; do not promote a product edge to creation. Broader generic-process-parent
+    recursion is only an optional scope question, not a frozen FR30 failure.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+limits:
+- Independent internal QA is not external expert or stakeholder approval.
+- Optional extensions and scientific limitations are distinguished from frozen requirement failures.
+- Declared source/type interpretation and textual constraints remain separate from executable semantic
+  validation.
+- 'Open findings are proposals for joint decision #129; no model or requirement changes applied.'
+checks:
+  command: python tools/check_cq_reviews.py --batch 3
+  result_location: Exact PR and Public integrity run
+  scope: Frozen contracts, answer-field coverage, evidence IDs, manual evidence completeness and decision/execution
+    boundaries only.

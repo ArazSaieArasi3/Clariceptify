@@ -11,3 +11,4 @@ All proposed changes await joint decision #129. Review closure does not resolve 
 
 - [Batch 1, #123](batch-1.yaml): CQ-01 through CQ-10, ten full-contract manual reviews.
 - [Batch 2, #124](batch-2.yaml): CQ-11 through CQ-20, ten full-contract manual reviews.
+- [Batch 3, #125](batch-3.yaml): CQ-21 through CQ-30, ten full-contract manual reviews.
