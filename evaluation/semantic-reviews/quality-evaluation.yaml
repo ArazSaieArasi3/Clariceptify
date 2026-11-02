@@ -1,0 +1,754 @@
+schema_version: '1.0'
+issue: 119
+task_id: R2-SEM-quality-evaluation
+status: BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: caa52b074a1fdc381999da37d7fe3bfb1f3ab8c4
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+semantic_acceptance: not_assessed
+model_changes: none
+expert_review: not_performed
+method: AI-assisted manual source-to-model conceptual comparison, exact versioned evidence, positive/adverse
+  examples and independent internal QA in PR; not native OntoUML validation, philosophical consensus or
+  automated logical proof
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/artifact-authority.md: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+  docs/decisions/artifact-versioning.md: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+source_refs:
+- id: DQV2016
+  path: evidence/semantic-sources/semantic117-119-dqv2016.yaml
+  sha256: 2e46f907e78f2510b120cb228593caf2603d8c9a049218dd737a4478dbe56603
+- id: GP2001
+  path: evidence/semantic-sources/semantic117-119-gp2001.yaml
+  sha256: 66c28573cda404b9f80687d740f2ba4d50486ecd49e5bc8912171ade5148b3ba
+model_snapshot:
+  model/concepts.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-16
+    id: CLR-C0016
+    label_en: Coherence
+    ufo_type: Endurant / criterion specification
+    ontouml_stereotype: «subkind»
+    definition: An evaluation criterion requiring conceptual distinctions and relations to form an intelligible,
+      mutually compatible account of the subject; connectivity alone is insufficient.
+    is_abstract: null
+    primary_domain_id: CLR-D0018
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0008
+    - CLR-SRC0048
+    notes: 'Input reference display: [8], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-19
+    id: CLR-C0019
+    label_en: Conceptual Artifact
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object produced by conceptualization that assembles explicit conceptual
+      elements into a reviewable account of a subject.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0034
+    notes: 'Input reference display: [12], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-21
+    id: CLR-C0021
+    label_en: Conceptual Decision
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object recording a selected conceptual choice made during one conceptualization
+      episode, including its affected artifact, deciding agent and stated rationale. It is the recorded
+      decision content, not the act of deciding.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0041
+    - CLR-SRC0047
+    notes: 'Input reference display: [41], [47]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-23
+    id: CLR-C0023
+    label_en: Conceptual Model
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A model expressing a conceptualization through explicit concepts, relations and constraints
+      at the intended level of abstraction.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0017
+    - CLR-SRC0050
+    notes: 'Input reference display: [12], [17], [50]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-26
+    id: CLR-C0026
+    label_en: Conceptualization
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A purposeful process in which agents select and organize features of a subject to form
+      an explicit conceptual artifact from a perspective.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0013
+    - CLR-SRC0014
+    notes: 'Input reference display: [12], [13], [14]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-29
+    id: CLR-C0029
+    label_en: Consistency
+    ufo_type: Endurant / criterion specification
+    ontouml_stereotype: «subkind»
+    definition: An evaluation criterion requiring the adopted assertions and constraints to admit a joint
+      interpretation under the stated semantics.
+    is_abstract: null
+    primary_domain_id: CLR-D0018
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0048
+    - CLR-SRC0051
+    notes: 'Input reference display: [48], [51]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-39
+    id: CLR-C0039
+    label_en: Evaluation Criterion
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a basis and conditions for judging a conceptual artifact,
+      including what evidence would support the judgment.
+    is_abstract: null
+    primary_domain_id: CLR-D0019
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0047
+    - CLR-SRC0048
+    notes: 'Input reference display: [47], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-40
+    id: CLR-C0040
+    label_en: Evaluation Result
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object recording one assessment finding about one conceptual artifact against
+      one evaluation criterion, produced by one evaluation episode. A review with several criteria records
+      several results.
+    is_abstract: null
+    primary_domain_id: CLR-D0019
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0042
+    - CLR-SRC0048
+    notes: 'Input reference display: [42], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-42
+    id: CLR-C0042
+    label_en: Evidence
+    ufo_type: Endurant / information object in a role
+    ontouml_stereotype: «role»
+    definition: An information object used to support or challenge a conceptual choice, interpretation
+      or evaluative judgment in a specified argumentative context.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0027
+    - CLR-SRC0041
+    notes: 'Input reference display: [27], [41]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-45
+    id: CLR-C0045
+    label_en: Explanatory Adequacy
+    ufo_type: Endurant / criterion specification
+    ontouml_stereotype: «subkind»
+    definition: An evaluation criterion requiring the model to explain relevant distinctions, dependencies
+      and examples at the level needed for its intended purpose.
+    is_abstract: null
+    primary_domain_id: CLR-D0018
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0022
+    - CLR-SRC0049
+    notes: 'Input reference display: [22], [49]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-54
+    id: CLR-C0054
+    label_en: Goal
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a desired outcome that gives explicit content to an agent's
+      intention.
+    is_abstract: null
+    primary_domain_id: CLR-D0002
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0026
+    notes: 'Input reference display: [11], [26]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-65
+    id: CLR-C0065
+    label_en: Justification
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object giving explicit reasons for a conceptual decision or evaluation
+      result, potentially drawing on evidence, assumptions and attributed sources. It records a rationale
+      without implying that the rationale is sound.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0028
+    - CLR-SRC0047
+    notes: 'Input reference display: [28], [47]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-73
+    id: CLR-C0073
+    label_en: Model
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A structured representation that selectively describes a subject for a purpose using explicit
+      modeling conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0034
+    notes: 'Input reference display: [18], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-97
+    id: CLR-C0097
+    label_en: Qualitative Evaluation
+    ufo_type: Event / assessment process
+    ontouml_stereotype: «event»
+    definition: An assessment process that judges conceptual content against explicit criteria using reasoned
+      interpretation and documented evidence.
+    is_abstract: null
+    primary_domain_id: CLR-D0019
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0048
+    notes: 'Input reference display: [18], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-104
+    id: CLR-C0104
+    label_en: Semantic Completeness
+    ufo_type: Endurant / criterion specification
+    ontouml_stereotype: «subkind»
+    definition: An evaluation criterion requiring coverage of the meanings and distinctions needed by
+      the agreed scope and competency questions; it does not demand universal coverage.
+    is_abstract: null
+    primary_domain_id: CLR-D0018
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0048
+    notes: 'Input reference display: [18], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-110
+    id: CLR-C0110
+    label_en: Source
+    ufo_type: Endurant / object in a role
+    ontouml_stereotype: «roleMixin»
+    definition: An agent or information object treated as an origin or reference for conceptual content
+      within a specified attribution context; events are linked separately as generating activities.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0028
+    - CLR-SRC0041
+    notes: 'Input reference display: [28], [41]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-114
+    id: CLR-C0114
+    label_en: Structural Review
+    ufo_type: Event / assessment process
+    ontouml_stereotype: «event»
+    definition: A qualitative evaluation process that examines a model organization, type distinctions
+      and relations for defects or missing connections.
+    is_abstract: null
+    primary_domain_id: CLR-D0019
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0048
+    notes: 'Input reference display: [18], [48]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-136
+    id: CLR-C0136
+    label_en: Well-Definedness
+    ufo_type: Endurant / criterion specification
+    ontouml_stereotype: «subkind»
+    definition: An evaluation criterion requiring definitions to delimit intended meaning and distinguish
+      concepts sufficiently for the stated purpose.
+    is_abstract: null
+    primary_domain_id: CLR-D0018
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0008
+    - CLR-SRC0029
+    notes: 'Input reference display: [8], [29]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  model/relations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-61
+    id: CLR-R0061
+    label_en: is scoped by goal
+    source_id: CLR-C0039
+    target_id: CLR-C0054
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-62
+    id: CLR-R0062
+    label_en: assesses artifact
+    source_id: CLR-C0040
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: '1'
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-63
+    id: CLR-R0063
+    label_en: cites evidence
+    source_id: CLR-C0040
+    target_id: CLR-C0042
+    source_multiplicity: 0..*
+    target_multiplicity: 0..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «role». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-64
+    id: CLR-R0064
+    label_en: has rationale
+    source_id: CLR-C0040
+    target_id: CLR-C0065
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-65
+    id: CLR-R0065
+    label_en: judges against
+    source_id: CLR-C0040
+    target_id: CLR-C0039
+    source_multiplicity: 0..*
+    target_multiplicity: '1'
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-129
+    id: CLR-R0129
+    label_en: applies criterion
+    source_id: CLR-C0097
+    target_id: CLR-C0039
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-130
+    id: CLR-R0130
+    label_en: assesses artifact
+    source_id: CLR-C0097
+    target_id: CLR-C0019
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-131
+    id: CLR-R0131
+    label_en: creates result
+    source_id: CLR-C0097
+    target_id: CLR-C0040
+    source_multiplicity: '1'
+    target_multiplicity: 1..*
+    ontouml_stereotype: «creation»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  model/generalizations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-188
+    id: CLR-G0014
+    child_id: CLR-C0016
+    parent_id: CLR-C0039
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-200
+    id: CLR-G0026
+    child_id: CLR-C0029
+    parent_id: CLR-C0039
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-215
+    id: CLR-G0041
+    child_id: CLR-C0045
+    parent_id: CLR-C0039
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-269
+    id: CLR-G0095
+    child_id: CLR-C0104
+    parent_id: CLR-C0039
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-295
+    id: CLR-G0121
+    child_id: CLR-C0136
+    parent_id: CLR-C0039
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «subkind» / «subkind». No partition axiom inferred.'
+  model/constraints.yaml:
+  - id: CLR-SC0010
+    text: Creation and revision. Creation identifies actual origination of a new individual; produces
+      or revises does not assert origination. Each Conceptual Artifact in this scope has one originating
+      Conceptualization. Each Evaluation Result has one creating evaluation.
+    referenced_ids:
+    - CLR-C0019
+    - CLR-C0026
+    - CLR-C0040
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-10
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0017
+    text: Criterion interpretation. The five Quality classes denote criterion specifications specializing
+      Evaluation Criterion. They are not measured bearer qualities or evaluation findings. Criteria are
+      scoped by Goal; Semantic Completeness is relative to those goals and the agreed subject coverage.
+    referenced_ids:
+    - CLR-C0039
+    - CLR-C0054
+    - CLR-C0104
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-17
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0018
+    text: Atomic evaluation result. Each Evaluation Result concerns exactly one artifact and one criterion,
+      both included in its creating evaluation. Multiple criteria produce multiple findings. Its information
+      content records a judgment such as satisfied, not satisfied or undetermined and the rationale for
+      it.
+    referenced_ids:
+    - CLR-C0040
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-18
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0019
+    text: Review alignment. A Structural Review examines structures belonging to its assessed artifacts.
+      Any examined Conceptual Model encodes an assessed artifact. Criterion goals must be relevant to
+      the artifact conceptualization goals.
+    referenced_ids:
+    - CLR-C0023
+    - CLR-C0073
+    - CLR-C0114
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-19
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0021
+    text: Justification and evidence. Every Justification supports at least one Conceptual Decision or
+      Evaluation Result. Every Evidence role instance is cited by at least one justification or result.
+      Source attribution identifies provenance and does not establish evidential truth.
+    referenced_ids:
+    - CLR-C0021
+    - CLR-C0040
+    - CLR-C0042
+    - CLR-C0065
+    - CLR-C0110
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-21
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+bounded_commitment: 'SC17 explicitly treats five Quality classes as criterion specifications, not measured
+  qualities or findings. SC18 makes one Evaluation Result one artifact/criterion judgment with rationale;
+  multiple criteria need multiple results. Evaluation is an event, result an information object. No separate
+  Finding class exists: finding is content of Evaluation Result.'
+findings:
+- id: SEM119-F01
+  affected_ids:
+  - CLR-C0097
+  - CLR-R0131
+  finding: Required output lower bound may assume completed evaluation episodes; in-progress evaluations
+    are not clearly scoped.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Joint129 choose completed-only scope or lifecycle treatment; no multiplicity change now.
+  source_ids: []
+  evidence_kind: model-internal observation; no external source claimed to prove current structure
+  research_draft_id: PREP119-F01
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM119-F02
+  affected_ids:
+  - CLR-C0040
+  - CLR-SC0018
+  finding: Judgment/rationale specified textually, but listed relation structure alone cannot validate
+    content or distinguish unknown from pass.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Implement instance/content checks only after agreed authority; report semantic rule as
+    textual, not solver-certified.
+  source_ids: []
+  evidence_kind: model-internal observation; no external source claimed to prove current structure
+  research_draft_id: PREP119-F02
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM119-F03
+  affected_ids:
+  - CLR-C0039
+  - CLR-C0040
+  - CLR-C0097
+  finding: DQV supports useful separation but does not entail these exact1-cardinalities or identity with
+    qualitative evaluations.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Keep source adaptation explicit; expert gate on semantic acceptance.
+  source_ids:
+  - DQV2016
+  evidence_kind: reviewer comparison using exact cited source passages, not semantic acceptance
+  research_draft_id: PREP119-F03
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+case_review:
+  countercases:
+  - id: 119-EX1
+    setup: One evaluation judges artifactA against clarity and completeness, assigns one result linked
+      to both criteria.
+    expected_by_read_model: Violates R0065/SC18; needs separate atomic findings.
+    affected_ids:
+    - CLR-R0065
+    - CLR-SC0018
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids:
+    - DQV2016
+  - id: 119-EX2
+    setup: Result about artifactB is created by evaluation that assessed onlyA.
+    expected_by_read_model: Endpoint counts may pass, but SC18 alignment fails.
+    affected_ids:
+    - CLR-R0062
+    - CLR-R0130
+    - CLR-SC0018
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids: []
+  - id: 119-EX3
+    setup: Criterion Consistency exists but has never been applied.
+    expected_by_read_model: Permitted reverse0..* R0129; existence proves no consistent artifact or assessment.
+    affected_ids:
+    - CLR-C0029
+    - CLR-R0129
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids:
+    - GP2001
+  - id: 119-EX4
+    setup: A documented assessment concludes undetermined with rationale and no cited evidence.
+    expected_by_read_model: Potentially valid under SC18/R0063/R0064; absence of evidence is not PASS,
+      nor necessarily schema failure.
+    affected_ids:
+    - CLR-C0040
+    - CLR-R0063
+    - CLR-R0064
+    - CLR-SC0018
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids: []
+  - id: 119-EX5
+    setup: Evaluation underway has not yet generated result.
+    expected_by_read_model: If cardinality is checked against a current-snapshot population, R0131 requires
+      at least one result and an unfinished evaluation would need explicit lifecycle/scope treatment.
+      The model does not declare that temporal validation regime; under a completed-history interpretation
+      the same inference need not hold. This is a lifecycle interpretation question, not unconditional
+      invalidity, and no placeholder result should be fabricated.
+    affected_ids:
+    - CLR-C0097
+    - CLR-R0131
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+    source_ids: []
+  - id: 119-EX6
+    setup: Two independent evaluations disagree on same artifact/criterion.
+    expected_by_read_model: Separate results allowed; neither overwritten merely to force one truth value.
+      Requires explicit provenance/versions.
+    affected_ids:
+    - CLR-R0062
+    - CLR-R0065
+    - CLR-R0131
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+  cardinality_review:
+  - 'R0129/0130: evaluation applies1..* criteria to1..* artifacts; reverse ends0..*.'
+  - 'R0131: evaluation creates1..* results, each result exactly1 creating evaluation. SC10 repeats originating-event
+    policy.'
+  - 'R0062/R0065: result exactly1 artifact and1 criterion; each artifact/criterion may have0..* results.
+    SC18 additionally aligns each endpoint with creator evaluation.'
+  - R0064 result has1..* rationale objects; R0063 cites0..* evidence items. No evidence link alone therefore
+    does not violate endpoint counts, but result still needs rationale.
+  - R0061 criterion scoped by1..* goals; SC19 requires their relevance to evaluated-artifact conceptualization
+    goals.
+  - Five criterion specializations have unknown set completeness/disjointness; do not infer exhaustive
+    quality taxonomy or disjointness.
+  method: Manual conceptual inspection; examples are focal scenarios, not proven complete valid instances;
+    absent information is not falsity. Local executable predicates, where supplied, test only declared
+    finite rules.
+scope_boundaries:
+- No source definition automatically validates imported stereotypes.
+- No creation of new classes, identities, relations or constraints.
+- A completed negative/uncertain review does not resolve its findings.
+- Frozen constraint execution_status values remain unchanged; local probes are separate evidence.
+- 'Research proposals and philosophical alternatives await #129 joint decision.'
+verification:
+  command: python tools/check_semantic_reviews.py --issue 119
+  result_location: Exact PR and Public integrity run
+  limits: Integrity and selected local predicates only; no human expert acceptance or complete formal
+    model proof.
