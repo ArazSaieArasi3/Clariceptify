@@ -1,0 +1,375 @@
+schema_version: '1.0'
+issue: 101
+task_id: R2-DOM-10
+domain_id: CLR-D0010
+domain_name: Language
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 7ea8649ab439e94369c76e4ea357bc307d07bc74
+model_revision: input-r1-rev1
+purpose: Provide expression, syntax and communication mechanisms for conceptual articulation.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 12
+  domain_member_ids:
+  - CLR-C0006
+  - CLR-C0033
+  - CLR-C0037
+  - CLR-C0044
+  - CLR-C0047
+  - CLR-C0066
+  - CLR-C0067
+  - CLR-C0070
+  - CLR-C0078
+  - CLR-C0082
+  - CLR-C0117
+  - CLR-C0118
+  relevant_requirements:
+  - FR-14
+  - FR-16
+  - FR-30
+  relevant_cqs:
+  - CQ-14
+  - CQ-16
+  - CQ-30
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0006
+  label: Artificial Language
+  stereotype: «subkind»
+  definition: A language whose expression and interpretation conventions are deliberately designed.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-6
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-6
+  source_passages: '[51] introduction and sec. 2; [15] logic/language companion'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0005 specializes Language; deliberate design does not imply that a parser or semantic theory has been
+    executed.
+- id: CLR-C0033
+  label: Discourse
+  stereotype: «event»
+  definition: A communicative conceptual process in which agents exchange and interpret messages about a subject.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-33
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-33
+  source_passages: '[46] grounding; [52] introduction'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0030 specializes Conceptual Process; R0058 connects Discourse to Message, without establishing actual
+    receipt or compatible interpretation.
+- id: CLR-C0037
+  label: Domain-Specific Language
+  stereotype: «subkind»
+  definition: A language whose constructs and conventions are tailored to a particular subject area or class of
+    concerns.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-37
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-37
+  source_passages: '[12] sec. 4.3; [18] modeling-language overview'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0034 specializes Language directly. Domain specialization is not declared disjoint from natural, artificial
+    or modeling languages.
+- id: CLR-C0044
+  label: Explanation
+  stereotype: «subkind»
+  definition: An expression that makes conceptual content intelligible by stating relevant reasons, dependencies
+    or organizing principles.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-44
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-44
+  source_passages: '[49] abstract; [22] sec. 4.1'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0040 specializes Expression and R0070 explains an Artifact; a recorded explanation does not prove recipient
+    understanding or sufficiency of its reasons.
+- id: CLR-C0047
+  label: Expression
+  stereotype: «subkind»
+  definition: A representation formulated in a language according to its expression conventions.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-47
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-47
+  source_passages: '[51] sec. 2; [37] official scope'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0043 specializes Representation and R0071 chooses a Language; expression identity is not reduced to
+    a spelling or physical carrier.
+- id: CLR-C0066
+  label: Language
+  stereotype: «subkind»
+  definition: An information system of expression conventions, syntax and semantic rules through which content can
+    be formulated and interpreted.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-66
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-66
+  source_passages: '[51] introduction and sec. 2; [15] logic/language companion'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0060 specializes Information Object; R0098 and R0099 separately link semantic and syntax specifications.
+    Syntax does not determine equal meaning.
+- id: CLR-C0067
+  label: Languagization
+  stereotype: «event»
+  definition: A conceptual process that expresses conceptual content through a language; a project-specific label
+    for linguistic articulation.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-67
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-67
+  source_passages: '[37] scope; [46] communication grounding'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0061 specializes Conceptual Process; R0100 produces or revises Expression. The project-specific process
+    label is imported with qualified support, not independent typing approval.
+- id: CLR-C0070
+  label: Message
+  stereotype: «subkind»
+  definition: An expression communicated or intended to be communicated from an agent to one or more recipients.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-70
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-70
+  source_passages: '[46] grounding; [52] introduction'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0063 specializes Expression; R0102 and R0103 identify intended recipients and senders. Intended reception
+    does not assert actual reception, authorship of every claim or truth.
+- id: CLR-C0078
+  label: Modeling Language
+  stereotype: «subkind»
+  definition: A language defining constructs and rules for expressing models.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-78
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-78
+  source_passages: '[12] sec. 3; [18] ch. 3; [38] specification'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0071 specializes Language; R0111 links Modeling to this language. A language-use link is not metamodel
+    conformance evidence.
+- id: CLR-C0082
+  label: Natural Language
+  stereotype: «subkind»
+  definition: A language whose conventions develop through community use and historical linguistic practice.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-82
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-82
+  source_passages: '[51] introduction and sec. 2; [15] logic/language companion'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0075 specializes Language; historical community conventions do not create an exhaustive or disjoint
+    partition with Artificial Language.
+- id: CLR-C0117
+  label: Syntax
+  stereotype: «subkind»
+  definition: An information object specifying admissible expression structures and combination rules in a language.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-117
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-117
+  source_passages: '[51] sec. 2; [38] specification'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0106 specializes Information Object; R0099 names a specification, not a demonstrated well-formedness
+    result for an expression.
+- id: CLR-C0118
+  label: Syntaxization
+  stereotype: «event»
+  definition: A conceptual process that specifies admissible expression forms and their combination rules.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-118
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-118
+  source_passages: '[51] sec. 2; [38] modeling-language infrastructure'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: G0107 specializes Conceptual Process; R0158 produces or revises Syntax. Origination, temporal containment
+    and revised content identity require distinct evidence.
+domain_questions:
+- id: DQ01
+  purpose: Retrieve the designated discourse message, its own language and syntax, and recorded sender and intended
+    recipient.
+  cqs:
+  - CQ-14
+  model_ids:
+  - CLR-C0033
+  - CLR-C0070
+  - CLR-C0047
+  - CLR-C0066
+  - CLR-C0117
+  - CLR-C0004
+  relation_ids:
+  - CLR-R0058
+  - CLR-R0071
+  - CLR-R0099
+  - CLR-R0102
+  - CLR-R0103
+  constraint_ids: []
+  outcome: SELECTED_LANGUAGE_SYNTAX_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: Keep semantic interpretation, language taxonomy and creation versus revision separate from recorded syntax
+    and communication paths.
+  cqs:
+  - CQ-14
+  - CQ-16
+  - CQ-30
+  model_ids:
+  - CLR-C0006
+  - CLR-C0033
+  - CLR-C0037
+  - CLR-C0044
+  - CLR-C0047
+  - CLR-C0066
+  - CLR-C0067
+  - CLR-C0070
+  - CLR-C0078
+  - CLR-C0082
+  - CLR-C0117
+  - CLR-C0118
+  relation_ids:
+  - CLR-R0098
+  - CLR-R0147
+  - CLR-R0100
+  - CLR-R0158
+  - CLR-R0070
+  - CLR-R0111
+  constraint_ids:
+  - CLR-SC0009
+  - CLR-SC0010
+  - CLR-SC0023
+  - CLR-SC0024
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0009: Subprocess structure. The has subprocess relation is acyclic and irreflexive; a process is not its
+    own subprocess. Temporal containment must hold for an actual subprocess.
+  CLR-SC0010: Creation and revision. Creation identifies actual origination of a new individual; produces or revises
+    does not assert origination. Each Conceptual Artifact in this scope has one originating Conceptualization. Each
+    Evaluation Result has one creating evaluation.
+  CLR-SC0023: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+    with its referent, or a Model with its Model Kind. Information Object identity follows a declared content-equivalence
+    policy, not the identity of a physical file.
+  CLR-SC0024: Content-level conformance. A model conforms to a metamodel only if its constructs satisfy that metamodel
+    rules. A stated conformity link is not itself proof. No disjointness or exhaustive partition is inferred merely
+    from two different class names.
+selected_query:
+  anchors:
+    discourse: discourse
+    message: message
+  patterns:
+  - - CLR-R0058
+    - discourse
+    - message
+  - - CLR-R0071
+    - message
+    - language
+  - - CLR-R0099
+    - language
+    - syntax
+  - - CLR-R0103
+    - message
+    - sender
+  - - CLR-R0102
+    - message
+    - recipient
+scenarios:
+  positive:
+    id: DOM10-POS-001
+    locator: evaluation/fixtures/language-syntax-aligned.yaml
+  adverse:
+    id: DOM10-NEG-001
+    locator: evaluation/fixtures/language-syntax-other-language.yaml
+  conceptual_countercase:
+    id: DOM10-CC01
+    description: Two expressions use the same syntax but have different interpretations; intended reception is mistaken
+      for actual shared understanding.
+    expected: Do not infer equal meaning, reception or compatibility from the selected syntax/communication join.
+    execution: NOT_EXECUTED
+    relevant_cqs:
+    - CQ-14
+    - CQ-16
+findings:
+- id: DOM10-F01
+  state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: The designated Message is linked to its own Language and Syntax and recorded agents; moving the syntax
+    link to another language removes this selected answer.
+  evidence_ids:
+  - CLR-R0058
+  - CLR-R0071
+  - CLR-R0099
+  - CLR-R0102
+  - CLR-R0103
+  - CQ-14
+  contrary: The adverse finite graph is incomplete for this query, not an OWL inconsistency or full CQ failure.
+  route: '#124'
+- id: DOM10-F02
+  state: MEANING_NONINFERENCE_UNASSESSED
+  claim: Language has separate syntax and semantic specification links; the FR-14 adverse contract rejects meaning
+    equality from syntax alone.
+  evidence_ids:
+  - CLR-R0098
+  - CLR-R0099
+  - CLR-R0147
+  - FR-14
+  - CQ-16
+  contrary: No semantic interpretation equivalence or parser execution occurs in the selected fixture.
+  route: '#124 and #129 if a correction is confirmed'
+- id: DOM10-F03
+  state: COMMUNICATION_ALIGNMENT_PARTIAL
+  claim: Discourse communicates Message and Message records sender/intended recipient; Explanation separately targets
+    an Artifact.
+  evidence_ids:
+  - CLR-C0033
+  - CLR-C0070
+  - CLR-C0044
+  - CLR-R0058
+  - CLR-R0070
+  - CLR-R0102
+  - CLR-R0103
+  contrary: Receipt, attribution of each claim, recipient understanding and explanatory adequacy are not entailed
+    by these labels.
+  route: '#124 and #129 if confirmed'
+- id: DOM10-F04
+  state: LANGUAGE_PARTITION_UNASSESSED
+  claim: Natural, Artificial, Domain-Specific and Modeling Language are direct Language specializations with unknown
+    partition annotations.
+  evidence_ids:
+  - CLR-G0005
+  - CLR-G0034
+  - CLR-G0071
+  - CLR-G0075
+  - CLR-SC0024
+  contrary: Different class names do not establish disjointness or exhaustive coverage; no new language categories
+    are required by this review.
+  route: '#129 if confirmed'
+- id: DOM10-F05
+  state: PROCESS_IDENTITY_PARTIAL
+  claim: Languagization and Syntaxization produce or revise Expression and Syntax respectively.
+  evidence_ids:
+  - CLR-C0067
+  - CLR-C0118
+  - CLR-R0100
+  - CLR-R0158
+  - CLR-SC0010
+  - CQ-30
+  contrary: Imported broad source support is not verified passage or typing approval; produces-or-revises does not
+    prove new identity.
+  route: '#125 and #129 if confirmed'
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP2-04
+  - CMP3-04
+  - CMP3-05
+  interpretation: LMM meaning/reference disambiguation, OntoLex lexical distinctions and SKOS labels/concept schemes
+    are bounded comparison evidence. Exact selected cells preserve source locators; they do not independently approve
+    all twelve imported concept definitions or establish a universal language gap.
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: 'Test interpretation compatibility, communication context and process identity in the separate
+    CQ/typing units before deciding any correction in #129.'
+  next_issues:
+  - 102
+  - 124
+  - 125
+  - 129

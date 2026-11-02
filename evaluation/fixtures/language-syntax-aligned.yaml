@@ -1,0 +1,40 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_language_syntax_join
+model_revision: input-r1-rev1
+id: DOM10-POS-001
+expected_selected_answer: true
+description: Fictional discourse/message graph; the adverse syntax belongs only to
+  a different language.
+nodes:
+- id: discourse
+  concept_id: CLR-C0033
+- id: message
+  concept_id: CLR-C0070
+- id: language
+  concept_id: CLR-C0066
+- id: other_language
+  concept_id: CLR-C0066
+- id: syntax
+  concept_id: CLR-C0117
+- id: sender
+  concept_id: CLR-C0004
+- id: recipient
+  concept_id: CLR-C0004
+edges:
+- relation_id: CLR-R0058
+  source: discourse
+  target: message
+- relation_id: CLR-R0071
+  source: message
+  target: language
+- relation_id: CLR-R0099
+  source: language
+  target: syntax
+- relation_id: CLR-R0103
+  source: message
+  target: sender
+- relation_id: CLR-R0102
+  source: message
+  target: recipient
+claim_ceiling: One finite graph query; not full CQ-14, parsing, meaning equality,
+  receipt, formal consistency or semantic adequacy.

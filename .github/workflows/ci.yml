@@ -123,6 +123,11 @@ jobs:
         run: python tools/check_domain_modeling99.py
       - name: Check Structure domain assessment
         run: python tools/check_domain_structure100.py
+      - name: Check Language domain assessment and checker failure boundaries
+        run: |
+          python tools/check_domain_language101.py
+          python tools/test_domain_review_checks.py
+          python -O tools/test_domain_review_checks.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root
