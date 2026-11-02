@@ -1,0 +1,266 @@
+schema_version: '1.0'
+issue: 107
+task_id: R2-DOM-16
+domain_id: CLR-D0016
+domain_name: Metaphysics
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 26b128ece415fa5a819dc2608e1837151b872615
+model_revision: input-r1-rev1
+purpose: Extend what can be conceptualized to states and changes, with temporal reference.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 3
+  domain_member_ids: &id002
+  - CLR-C0013
+  - CLR-C0112
+  - CLR-C0123
+  relevant_requirements:
+  - FR-22
+  - FR-02
+  - FR-08
+  - FR-29
+  relevant_cqs: &id001
+  - CQ-22
+  - CQ-02
+  - CQ-08
+  - CQ-29
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0013
+  label: Change
+  stereotype: "\xABevent\xBB"
+  definition: An event through which a subject passes from one state to another, with the relevant difference explicitly
+    identified.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-13
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-13
+  source_passages: '[11] sec. 3; [10] abstract; [33] persistence topics'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Change is an Event specialization (G0011), passage of a subject between states with an explicitly relevant
+    difference. Imported B refs10/11/33; distinct state identifiers alone do not establish change.
+- id: CLR-C0112
+  label: State
+  stereotype: "\xABsituation\xBB"
+  definition: A configuration of entities and their properties or relations that holds under specified conditions
+    and can serve as a subject or precondition of change.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-112
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-112
+  source_passages: '[11] sec. 3; [35] introduction'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: 'State is typed situation: configuration of entities/properties/relations under conditions. Imported
+    B refs11/35; source treatment includes non-obtaining states, wider than an actual-situation reading.'
+- id: CLR-C0123
+  label: Time
+  stereotype: "\xABabstract\xBB"
+  definition: A temporal position or extent used to locate or order occurrences. In this model the label ranges
+    over instants and intervals, not clocks or representations of them.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-123
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-123
+  source_passages: "[33] introduction; [40] secs. 3\u20134"
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Time is abstract temporal position or extent, including instants and intervals, not a clock or representation.
+    Imported D refs33/40; this does not settle philosophical or physical time theory.
+domain_questions:
+- id: DQ01
+  purpose: Change has prior/result states that can configure its affected object.
+  cqs:
+  - CQ-22
+  model_ids:
+  - CLR-C0013
+  - CLR-C0083
+  - CLR-C0112
+  relation_ids:
+  - CLR-R0018
+  - CLR-R0020
+  - CLR-R0019
+  - CLR-R0151
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: distinct prior/result state records configure the same object with
+    identical relevant features. The subject-alignment witness exists but no relevant change is demonstrated.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0018
+  - CLR-R0019
+  - CLR-R0020
+  - CLR-R0151
+  - CLR-R0066
+  - CLR-R0152
+  - CLR-R0164
+  constraint_ids:
+  - CLR-SC0013
+  - CLR-SC0014
+  - CLR-SC0002
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0013: 'Change and time. Each modeled Change is atomic relative to the chosen granularity: its prior and
+    resulting State differ in at least one relevant feature and concern the affected objects. Time supplies a declared
+    ordering/extent convention; the states and event extents must respect the transition.'
+  CLR-SC0014: Temporal representation. The temporal entities denoted by a Time Representation agree with the extents
+    of the events it represents. Point-Based Time Representation denotes instants and Interval-Based Time Representation
+    denotes intervals. Their detailed temporal axioms are deferred.
+  CLR-SC0002: Instance referent. Each Instance description denotes exactly one referent across Object, Event, State
+    and Time. These referent branches are exclusive in this scope.
+selected_query:
+  anchors:
+    change: change
+  patterns:
+  - - CLR-R0018
+    - change
+    - object
+  - - CLR-R0020
+    - change
+    - prior
+  - - CLR-R0019
+    - change
+    - result
+  - - CLR-R0151
+    - prior
+    - object
+  - - CLR-R0151
+    - result
+    - object
+scenarios:
+  positive:
+    id: DOM16-POS-001
+    locator: evaluation/fixtures/metaphysics-join-positive.yaml
+  adverse:
+    id: DOM16-NEG-001
+    locator: evaluation/fixtures/metaphysics-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM16-CC01
+    description: 'Unexecuted semantic countercase: distinct prior/result state records configure the same object
+      with identical relevant features. The subject-alignment witness exists but no relevant change is demonstrated.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Change has prior/result states that can configure its affected object.
+  evidence_ids:
+  - CLR-R0018
+  - CLR-R0019
+  - CLR-R0020
+  - CLR-R0151
+  - CLR-SC0013
+  contrary: Result state may configure only an unrelated object.
+  route: '#125: execute CQ22 prior/result/affected-object retrieval; selected subject alignment is not the full
+    transition test.'
+  id: DOM16-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: State identifier inequality does not prove a relevant changed feature.
+  evidence_ids:
+  - CLR-C0013
+  - CLR-C0112
+  - CLR-SC0013
+  contrary: Two state descriptions may differ only in record identity.
+  route: '#125: CQ22 execution must assess a declared relevant-difference convention, not identifier inequality.
+    #129: decide correction if SC0013 cannot express a demonstrated requirement.'
+  id: DOM16-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Atomic granularity and temporal alignment remain untested.
+  evidence_ids:
+  - CLR-R0066
+  - CLR-R0152
+  - CLR-SC0013
+  - CLR-SC0014
+  contrary: Recorded state extents may be inconsistent with the selected temporal convention.
+  route: '#125: execute CQ22 and CQ29 temporal-reference cases with explicit conventions. #129: decide requirement-backed
+    granularity/order/extent corrections; current fixture does not execute temporal axioms.'
+  id: DOM16-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: State situation typing needs its source-scope caveat.
+  evidence_ids:
+  - CLR-C0112
+  contrary: States-of-affairs discussions can include non-obtaining states.
+  route: '#129: decide whether State situation typing needs clarification against non-obtaining-state source scope,
+    using a concrete requirement case. #125: CQ22 execution must not silently widen actual-state semantics.'
+  id: DOM16-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Temporal entity and temporal representation are distinct.
+  evidence_ids:
+  - CLR-C0123
+  - CLR-C0124
+  - CLR-R0164
+  - CLR-SC0014
+  contrary: Two representations can denote one temporal entity; representation identity is not time identity.
+  route: '#125: execute CQ29 temporal entity/representation cases; #123: CQ02 and CQ08 retain referent distinctions
+    where applicable. #129: decide any demonstrated identity or temporal-representation correction.'
+  id: DOM16-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP1-11
+  - CMP5-04
+  - CMP6-06
+  interpretation:
+    interpretation: DUL temporal keys, COM agent/state/object/time aboutness and DOLCE Mental time-indexed states
+      demonstrate bounded distinctions, not complete transition or temporal-axiom validation.
+    evidence:
+    - cell: CMP1-11
+      path: evidence/related-work/comparisons/batch-1.yaml
+      paper_locators:
+      - CLR-RW-DUL:E13 printed92-93 plan/goal
+      - CLR-RW-DUL:E14 printed93-94 situation setting
+      artifact_locators:
+      - evidence/related-work/artifacts/DUL-technical-review.yaml Q03,Q04
+      - 'evidence/related-work/dul-class-catalog.yaml #Plan/#Goal/#Situation/#TimeIndexedRelation'
+      unsupported_inference: A Plan without a named Goal lacks any Goal, or a Parthood key distinguishes records
+        solely by different time witnesses.
+      counterevidence: DUL88 Q04 allows unnamed Goal; Q03 shared part/whole key ignores time even with distinct
+        time nodes.
+      unknowns:
+      - 2016-to-4.2 correspondence and episode identity requirements
+    - cell: CMP5-04
+      path: evidence/related-work/comparisons/batch-5.yaml
+      paper_locators:
+      - COM2004:E10 PDF p.7 D9 aboutness tuple
+      - COM2004:E11 PDF pp.7-8 D11,D12 belief/desire state conditions
+      artifact_locators:
+      - COM.yaml C04-C06; COM2004 review K11,K13,K14
+      unsupported_inference: An aboutness tuple identifies an external successful referent, a linguistic encoding
+        or evidence of truth.
+      counterevidence: COM offers genuine aboutness and intentional-content prior art; it cannot be dismissed as
+        lacking representation-related content.
+      unknowns:
+      - Original machine classification and full formal account of external successful reference unknown
+    - cell: CMP6-06
+      path: evidence/related-work/comparisons/batch-6.yaml
+      paper_locators:
+      - CLR-RW-DOLCEMental:E10,E11 PDF pp.135-136 a4-a6,d1-d3
+      artifact_locators:
+      - DOLCEMental.yaml Q03; source L123-L149
+      unsupported_inference: An intentional object is an existing external referent or source and paper clauses
+        are identical.
+      counterevidence: The paper and root formalize mental content/object distinctions already.
+      unknowns:
+      - Exact edition and source-paper equivalence unresolved
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 123
+  - 125
+  - 129
