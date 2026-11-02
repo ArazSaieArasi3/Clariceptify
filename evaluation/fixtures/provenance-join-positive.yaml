@@ -1,0 +1,62 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_provenance_join
+model_revision: input-r1-rev1
+id: DOM20-POS-001
+expected_selected_answer: true
+description: One selected episode decision can align artifact, participating conceptualizer
+  and explicit rationale links.
+nodes:
+- id: episode
+  concept_id: CLR-C0026
+- id: decision
+  concept_id: CLR-C0021
+- id: artifact
+  concept_id: CLR-C0019
+- id: other_artifact
+  concept_id: CLR-C0019
+- id: conceptualizer
+  concept_id: CLR-C0027
+- id: justification
+  concept_id: CLR-C0065
+- id: evidence
+  concept_id: CLR-C0042
+- id: assumption
+  concept_id: CLR-C0007
+- id: source
+  concept_id: CLR-C0110
+edges:
+- relation_id: CLR-R0052
+  source: episode
+  target: decision
+- relation_id: CLR-R0048
+  source: episode
+  target: artifact
+- relation_id: CLR-R0035
+  source: decision
+  target: artifact
+- relation_id: CLR-R0037
+  source: decision
+  target: conceptualizer
+- relation_id: CLR-R0054
+  source: conceptualizer
+  target: episode
+- relation_id: CLR-R0036
+  source: decision
+  target: justification
+- relation_id: CLR-R0096
+  source: justification
+  target: evidence
+- relation_id: CLR-R0097
+  source: justification
+  target: assumption
+- relation_id: CLR-R0095
+  source: justification
+  target: source
+- relation_id: CLR-R0068
+  source: evidence
+  target: source
+- relation_id: CLR-R0011
+  source: assumption
+  target: artifact
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.

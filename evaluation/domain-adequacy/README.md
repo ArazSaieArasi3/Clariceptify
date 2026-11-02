@@ -1,4 +1,35 @@
-# Conceptualization domain adequacy checkpoint
+# Domain adequacy assessment register
+
+The bounded subject-domain wave #92–#111 contains all 20 assessments for `input-r1-rev1`, covering 131 primary members. The six Foundations members (`CLR-D0021`) are separate. The #101–#111 continuation covers 52 members and records 55 separately identified findings; these counts describe coverage, not semantic quality. Each report preserves its exact baseline/input hashes, positive/adverse evidence and open findings. Full CQ answers, source-passage/typing approval and semantic adequacy remain unassessed. No model or release change follows.
+
+Next scoped work is the ten in-model `P` source-support cases in #112/#113, full CQ batches #123–#125 and applicable semantic tasks, then evidence-backed change decisions in #129. Those tasks are not performed by this domain wave.
+
+## Inventory
+
+| Issue | Domain assessment | Primary members |
+|---:|---|---:|
+| #92 | [Conceptualization](conceptualization.yaml) | 9 |
+| #93 | [Intentionality](intentionality.yaml) | 4 |
+| #94 | [Cognition](cognition.yaml) | 13 |
+| #95 | [Abstraction](abstraction.yaml) | 6 |
+| #96 | [Semantics](semantics.yaml) | 7 |
+| #97 | [Relations](relations.yaml) | 5 |
+| #98 | [Representation](representation.yaml) | 12 |
+| #99 | [Modeling](modeling.yaml) | 17 |
+| #100 | [Structure](structure.yaml) | 6 |
+| #101 | [Language](language.yaml) | 12 |
+| #102 | [Terminology](terminology.yaml) | 10 |
+| #103 | [Metamodeling](metamodeling.yaml) | 4 |
+| #104 | [Taxonomy](taxonomy.yaml) | 3 |
+| #105 | [Logic](logic.yaml) | 4 |
+| #106 | [Ontology](ontology.yaml) | 1 |
+| #107 | [Metaphysics](metaphysics.yaml) | 3 |
+| #108 | [Knowledge](knowledge.yaml) | 1 |
+| #109 | [Quality](quality.yaml) | 5 |
+| #110 | [Evaluation](evaluation.yaml) | 4 |
+| #111 | [Provenance](provenance.yaml) | 5 |
+
+## Conceptualization checkpoint
 
 [Issue #92 assessment](conceptualization.yaml) checks the nine primary members of `CLR-D0001` against seven relevant requirement/CQ pairs, source-bound relations and constraints, and the existing positive/negative synthetic fixture. It identifies structural coverage of actor, episode, subject and product, with partial or unexecuted treatment of view correspondence, decision alternatives, validity time and revision. The negative fixture checks only the empty subject union under `CLR-SC0001`; it is not a full CQ execution or semantic validation.
 
@@ -75,3 +106,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Evaluation checkpoint
 
 [Issue #110 assessment](evaluation.yaml) reviews all 4 primary members and CQ-24, CQ-25, CQ-28, CQ-30. The [positive](../fixtures/evaluation-join-positive.yaml) and [adverse](../fixtures/evaluation-join-adverse.yaml) scenarios test a selected finite graph join. Evaluation and its result admit a selected same-artifact/same-criterion rationale join. The result may assess a different artifact from its creating evaluation. Findings DOM19-F01 through DOM19-F05 separately route remaining questions to #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Provenance checkpoint
+
+[Issue #111 assessment](provenance.yaml) reviews all 5 primary members and CQ-26, CQ-27, CQ-28. The [positive](../fixtures/provenance-join-positive.yaml) and [adverse](../fixtures/provenance-join-adverse.yaml) scenarios test a selected finite graph join. One selected episode decision can align artifact, participating conceptualizer and explicit rationale links. The decision can concern a different artifact from the episode-created artifact. Findings DOM20-F01 through DOM20-F05 separately route remaining questions to #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.

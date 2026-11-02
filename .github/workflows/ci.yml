@@ -146,6 +146,8 @@ jobs:
         run: python tools/check_domain_quality109.py
       - name: Check Evaluation domain assessment
         run: python tools/check_domain_evaluation110.py
+      - name: Check Provenance domain assessment
+        run: python tools/check_domain_provenance111.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root

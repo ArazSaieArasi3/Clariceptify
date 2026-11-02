@@ -20,3 +20,7 @@ Stations are planned unless the actual release index says issued. The
 [central issue roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 record evidence gates. Existing scientific reviews retain their AC/NAC and
 prerequisites. Archive/DOI and full formalization are separate tracks.
+
+## Bounded domain-review checkpoint
+
+The [20 subject-domain assessments](../../evaluation/domain-adequacy/README.md) for #92–#111 are recorded against `input-r1-rev1`: 131 primary members, with six Foundations members separate. This completes the bounded domain-review wave, not full CQ execution, source-passage/typing approval, semantic acceptance or a release gate. Continue separately with the ten in-model `P` support cases (#112/#113), the full CQ batches (#123–#125) and applicable semantic prerequisites, then evidence-backed change decisions in #129.
