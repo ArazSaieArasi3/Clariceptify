@@ -1,0 +1,35 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_metaphysics_join
+model_revision: input-r1-rev1
+id: DOM16-NEG-001
+expected_selected_answer: false
+description: Result state may configure only an unrelated object.
+nodes:
+- id: change
+  concept_id: CLR-C0013
+- id: object
+  concept_id: CLR-C0083
+- id: other_object
+  concept_id: CLR-C0083
+- id: prior
+  concept_id: CLR-C0112
+- id: result
+  concept_id: CLR-C0112
+edges:
+- relation_id: CLR-R0018
+  source: change
+  target: object
+- relation_id: CLR-R0020
+  source: change
+  target: prior
+- relation_id: CLR-R0019
+  source: change
+  target: result
+- relation_id: CLR-R0151
+  source: prior
+  target: object
+- relation_id: CLR-R0151
+  source: result
+  target: other_object
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.
