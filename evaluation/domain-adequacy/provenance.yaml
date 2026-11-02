@@ -1,0 +1,344 @@
+schema_version: '1.0'
+issue: 111
+task_id: R2-DOM-20
+domain_id: CLR-D0020
+domain_name: Provenance
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 823a6385912cafa8edd832e1f9c755f913f89c89
+model_revision: input-r1-rev1
+purpose: Make conceptual choices and their justifications traceable, and distinguish evidence from provisional assumptions.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 5
+  domain_member_ids: &id002
+  - CLR-C0007
+  - CLR-C0021
+  - CLR-C0042
+  - CLR-C0065
+  - CLR-C0110
+  relevant_requirements:
+  - FR-26
+  - FR-27
+  - FR-28
+  relevant_cqs: &id001
+  - CQ-26
+  - CQ-27
+  - CQ-28
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0007
+  label: Assumption
+  stereotype: "\xABrole\xBB"
+  definition: An information object expressing a proposition provisionally accepted for a conceptualization without
+    being established within that context.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-7
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-7
+  source_passages: '[46] common ground; [28] knowledge and justification'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Assumption \xABrole\xBB: An information object expressing a proposition provisionally accepted for a\
+    \ conceptualization without being established within that context. G0006 specializes Information Object C0057.\
+    \ Imported B refs28/46; provisionally accepted content is not established truth."
+- id: CLR-C0021
+  label: Conceptual Decision
+  stereotype: "\xABsubkind\xBB"
+  definition: An information object recording a selected conceptual choice made during one conceptualization episode,
+    including its affected artifact, deciding agent and stated rationale. It is the recorded decision content, not
+    the act of deciding.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-21
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-21
+  source_passages: '[47] abstract; [41] attribution'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Conceptual Decision \xABsubkind\xBB: An information object recording a selected conceptual choice made\
+    \ during one conceptualization episode, including its affected artifact, deciding agent and stated rationale.\
+    \ It is the recorded decision content, not the act of deciding. G0019 specializes C0057. Imported B refs41/47;\
+    \ recorded decision content is not the deciding event or proof of implementation."
+- id: CLR-C0042
+  label: Evidence
+  stereotype: "\xABrole\xBB"
+  definition: An information object used to support or challenge a conceptual choice, interpretation or evaluative
+    judgment in a specified argumentative context.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-42
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-42
+  source_passages: '[27] introduction; [41] attribution'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Evidence \xABrole\xBB: An information object used to support or challenge a conceptual choice, interpretation\
+    \ or evaluative judgment in a specified argumentative context. G0038 specializes C0057. Imported B refs27/41;\
+    \ contextual support or challenge is not automatic verification."
+- id: CLR-C0065
+  label: Justification
+  stereotype: "\xABsubkind\xBB"
+  definition: An information object giving explicit reasons for a conceptual decision or evaluation result, potentially
+    drawing on evidence, assumptions and attributed sources. It records a rationale without implying that the rationale
+    is sound.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-65
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-65
+  source_passages: '[47] design justifications; [28] sec. 3'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Justification \xABsubkind\xBB: An information object giving explicit reasons for a conceptual decision\
+    \ or evaluation result, potentially drawing on evidence, assumptions and attributed sources. It records a rationale\
+    \ without implying that the rationale is sound. G0059 specializes C0057. Imported B refs28/47; explicit reasons\
+    \ may be unsound."
+- id: CLR-C0110
+  label: Source
+  stereotype: "\xABroleMixin\xBB"
+  definition: An agent or information object treated as an origin or reference for conceptual content within a specified
+    attribution context; events are linked separately as generating activities.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-110
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-110
+  source_passages: '[41] attribution and derivation; [28] sec. 5'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Source \xABroleMixin\xBB: An agent or information object treated as an origin or reference for conceptual\
+    \ content within a specified attribution context; events are linked separately as generating activities. G0100\
+    \ specializes Object C0083. Imported B refs28/41; SC0022 restricts Source to Agent or Information Object, not\
+    \ generating event. This restriction remains textual."
+domain_questions:
+- id: DQ01
+  purpose: One selected episode decision can align artifact, participating conceptualizer and explicit rationale
+    links.
+  cqs:
+  - CQ-26
+  model_ids:
+  - CLR-C0026
+  - CLR-C0021
+  - CLR-C0019
+  - CLR-C0027
+  - CLR-C0065
+  - CLR-C0042
+  - CLR-C0007
+  - CLR-C0110
+  relation_ids:
+  - CLR-R0052
+  - CLR-R0048
+  - CLR-R0035
+  - CLR-R0037
+  - CLR-R0054
+  - CLR-R0036
+  - CLR-R0096
+  - CLR-R0097
+  - CLR-R0095
+  - CLR-R0068
+  - CLR-R0011
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: an episode records a decision, rationale, evidence and attributed source
+    with every selected endpoint aligned, but the evidence is false or the rationale unsound. Provenance is not
+    truth.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0052
+  - CLR-R0048
+  - CLR-R0035
+  - CLR-R0037
+  - CLR-R0054
+  - CLR-R0036
+  - CLR-R0039
+  - CLR-R0095
+  - CLR-R0068
+  - CLR-R0096
+  - CLR-R0097
+  - CLR-R0011
+  - CLR-R0038
+  constraint_ids:
+  - CLR-SC0003
+  - CLR-SC0020
+  - CLR-SC0021
+  - CLR-SC0022
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0003: Agent alignment. The bearers of the Intention and Perspective adopted by a Conceptualization participate
+    in that episode. A Conceptual Decision is made by agents participating in its recording episode.
+  CLR-SC0020: Decision alignment. A Conceptual Decision concerns artifacts produced by its recording Conceptualization;
+    selected elements belong to those artifacts. A decision responding to a finding concerns that finding target
+    or an explicitly documented revision of it.
+  CLR-SC0021: Justification and evidence. Every Justification supports at least one Conceptual Decision or Evaluation
+    Result. Every Evidence role instance is cited by at least one justification or result. Source attribution identifies
+    provenance and does not establish evidential truth.
+  CLR-SC0022: Contextual roles. Each Source is an Agent or Information Object cited or attributed in at least one
+    recorded context. Assumption is an Information Object adopted in at least one artifact; Axiom is a Formula accepted
+    in at least one artifact. Roles can vary across contexts.
+selected_query:
+  anchors:
+    episode: episode
+  patterns:
+  - - CLR-R0052
+    - episode
+    - decision
+  - - CLR-R0048
+    - episode
+    - artifact
+  - - CLR-R0035
+    - decision
+    - artifact
+  - - CLR-R0037
+    - decision
+    - conceptualizer
+  - - CLR-R0054
+    - conceptualizer
+    - episode
+  - - CLR-R0036
+    - decision
+    - justification
+  - - CLR-R0096
+    - justification
+    - evidence
+  - - CLR-R0097
+    - justification
+    - assumption
+  - - CLR-R0095
+    - justification
+    - source
+  - - CLR-R0068
+    - evidence
+    - source
+  - - CLR-R0011
+    - assumption
+    - artifact
+scenarios:
+  positive:
+    id: DOM20-POS-001
+    locator: evaluation/fixtures/provenance-join-positive.yaml
+  adverse:
+    id: DOM20-NEG-001
+    locator: evaluation/fixtures/provenance-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM20-CC01
+    description: 'Unexecuted semantic countercase: an episode records a decision, rationale, evidence and attributed
+      source with every selected endpoint aligned, but the evidence is false or the rationale unsound. Provenance
+      is not truth.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: One selected episode decision can align artifact, participating conceptualizer and explicit rationale links.
+  evidence_ids:
+  - CLR-R0052
+  - CLR-R0048
+  - CLR-R0035
+  - CLR-R0037
+  - CLR-R0054
+  - CLR-R0036
+  - CLR-SC0003
+  - CLR-SC0020
+  contrary: The decision can concern a different artifact from the episode-created artifact.
+  route: 'Execute selected join only; full CQ26/27 execution #125.'
+  id: DOM20-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: A Conceptual Decision is recorded content, not the deciding act or implemented change.
+  evidence_ids:
+  - CLR-C0021
+  - CLR-G0019
+  - CLR-R0039
+  - CLR-SC0010
+  contrary: Selecting or revising an element does not demonstrate execution or new artifact identity.
+  route: 'Retain creation/revision limitation; possible corrections #129, CQ26/30 execution #125.'
+  id: DOM20-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Source attribution does not establish truth, accepted viewpoint or rationale soundness.
+  evidence_ids:
+  - CLR-C0065
+  - CLR-C0110
+  - CLR-R0095
+  - CLR-R0068
+  - CLR-SC0021
+  contrary: Conflicting claims can have traceable sources and explicit reasons.
+  route: 'CQ27 traceability execution #125, not a truth-validation claim.'
+  id: DOM20-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Evidence and Assumption are contextual information-object roles, not a demonstrated disjoint partition.
+  evidence_ids:
+  - CLR-C0007
+  - CLR-C0042
+  - CLR-R0096
+  - CLR-R0097
+  - CLR-R0011
+  - CLR-SC0021
+  - CLR-SC0022
+  contrary: One information object could play different argumentative roles in different contexts.
+  route: 'Keep role context and Source restriction unassessed; unconfirmed typing corrections #129.'
+  id: DOM20-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Decision/evaluation/revision target alignment is broader than the selected episode witness.
+  evidence_ids:
+  - CLR-R0038
+  - CLR-R0039
+  - CLR-SC0020
+  contrary: A decision may cite a result but select an element outside the target artifact or any documented revision.
+  route: 'CQ28 execution #125; alternative/time/history adequacy and unconfirmed corrections #129.'
+  id: DOM20-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP6-07
+  - CMP6-08
+  - CMP1-11
+  interpretation:
+    interpretation: I&DA attribution/viewpoints and BDI decision-process origin are genuine prior coverage; neither
+      entails a justified recorded choice. DUL contextual relations do not by themselves settle episode identity.
+    evidence:
+    - paper_locators:
+      - IDA indexed original sec.3.3,4.1; summary SR020-SR027,SR037
+      artifact_locators:
+      - IDA.yaml T05,T06,T08
+      unsupported_inference: "A reported discourse claim is an accepted True assertion or proof of the author\u2019\
+        s choice."
+      counterevidence: Conflicting viewpoints and attribution already have prior source coverage.
+      unknowns:
+      - Full original proposition/role axiom text and executable source unknown
+      cell: CMP6-07
+      path: evidence/related-work/comparisons/batch-6.yaml
+    - paper_locators:
+      - BDI2020:E09,E12,E15 PDF pp.146-152 Int-Dec and alternatives
+      artifact_locators:
+      - BDI2020.yaml Q04,Q05; K12,K13,K31
+      unsupported_inference: All decision variants can be conjoined or every process yields a justified K1 selection.
+      counterevidence: Decision-process origin is genuine native coverage and limits novelty.
+      unknowns:
+      - Source-level axioms, import closure and machine identity unknown
+      cell: CMP6-08
+      path: evidence/related-work/comparisons/batch-6.yaml
+    - paper_locators:
+      - CLR-RW-DUL:E13 printed92-93 plan/goal
+      - CLR-RW-DUL:E14 printed93-94 situation setting
+      artifact_locators:
+      - evidence/related-work/artifacts/DUL-technical-review.yaml Q03,Q04
+      - 'evidence/related-work/dul-class-catalog.yaml #Plan/#Goal/#Situation/#TimeIndexedRelation'
+      unsupported_inference: A Plan without a named Goal lacks any Goal, or a Parthood key distinguishes records
+        solely by different time witnesses.
+      counterevidence: DUL88 Q04 allows unnamed Goal; Q03 shared part/whole key ignores time even with distinct
+        time nodes.
+      unknowns:
+      - 2016-to-4.2 correspondence and episode identity requirements
+      cell: CMP1-11
+      path: evidence/related-work/comparisons/batch-1.yaml
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 125
+  - 129
