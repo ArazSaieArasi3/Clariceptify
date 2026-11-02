@@ -209,6 +209,11 @@ jobs:
           python tools/check_cq_reviews.py --batch 2
           python tools/test_cq_batch2_review_checks.py
           python -O tools/test_cq_batch2_review_checks.py
+      - name: Check full-contract CQ review batch 3 and integrity boundaries
+        run: |
+          python tools/check_cq_reviews.py --batch 3
+          python tools/test_cq_batch3_review_checks.py
+          python -O tools/test_cq_batch3_review_checks.py
       - name: Preserve exact input and validator evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

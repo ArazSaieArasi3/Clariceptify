@@ -1,6 +1,7 @@
 """Integrity/coverage of manual CQ reviews, not execution of the ontology."""
 import argparse
 import hashlib
+import json
 from pathlib import Path
 import yaml
 ROOT=Path(__file__).resolve().parents[1]
@@ -57,6 +58,11 @@ def validate_analysis(row, cq, fr, batch):
         require(a.get('requirement_id')==fr['id'] and a.get('origin')==fr['origin'],'nested FR/origin')
         for ak,expected in [('question',cq['question']),('required_answer_fields',cq['required_answer_fields']),('capability',fr['capability']),('frozen_AC',fr['acceptance']),('frozen_NAC',fr['adverse_case'])]:
             require(a.get(ak)==expected,'nested contract drift')
+        ci=a.get('contract_integrity',{})
+        for key,contract in [('cq_contract_sha256',cq),('requirement_contract_sha256',fr)]:
+            digest=hashlib.sha256(json.dumps(contract,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
+            require(ci.get(key)==digest,'nested contract hash drift')
+        require(ci.get('cq_source_locator')==cq['source_locator'] and ci.get('fr_source_locator')==fr['source_locator'],'nested contract locator drift')
         m=a.get('manual_review',{})
         require(row['positive_case']==dict(scenario=m.get('positive_case'),expected=m.get('expected_answer'),observed=m.get('AC_observed')),'nested positive drift')
         require(row['adverse_case']==dict(scenario=m.get('adverse_case'),expected=m.get('NAC_expected'),observed=m.get('NAC_observed')),'nested adverse drift')
