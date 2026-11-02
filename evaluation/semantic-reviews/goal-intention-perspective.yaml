@@ -1,0 +1,449 @@
+schema_version: '1.0'
+issue: 117
+task_id: R2-SEM-goal-intention.a
+status: BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: 386910be408b05d97097e3c92304a1e7b4c192f1
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+semantic_acceptance: not_assessed
+model_changes: none
+expert_review: not_performed
+method: AI-assisted manual source-to-model conceptual comparison, exact versioned evidence, positive/adverse
+  examples and independent internal QA in PR; not native OntoUML validation, philosophical consensus or
+  automated logical proof
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/artifact-authority.md: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+  docs/decisions/artifact-versioning.md: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+source_refs:
+- id: UFO2008
+  path: evidence/semantic-sources/semantic117-119-ufo2008.yaml
+  sha256: 95e4e82e1b75547cc191ce53671760a233f07d87446ad6bd8fbf2d6da88b1080
+- id: SEP_INTENTION2022
+  path: evidence/semantic-sources/semantic117-119-sep-intention2022.yaml
+  sha256: 15dd5d11242b5389f174e21a4b1a821c45c7dfa6fa43eb09762489427f04f8ff
+- id: CM2020
+  path: evidence/semantic-sources/semantic117-119-cm2020.yaml
+  sha256: 5d9d81b5defe516128d51ba86b2e843feeab91c22991e10a49ddd9c2b3254801
+- id: SEP_MENTAL2022
+  path: evidence/semantic-sources/semantic117-119-sep-mental2022.yaml
+  sha256: 0a3e459243688b151d20a637c0811f2a1401c1741c2449e1d991bbcfc926180b
+model_snapshot:
+  model/concepts.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-4
+    id: CLR-C0004
+    label_en: Agent
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An object capable of intentional participation in conceptual activities, including an
+      individual or an appropriately constituted collective agent.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0023
+    notes: 'Input reference display: [11], [23]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-21
+    id: CLR-C0021
+    label_en: Conceptual Decision
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object recording a selected conceptual choice made during one conceptualization
+      episode, including its affected artifact, deciding agent and stated rationale. It is the recorded
+      decision content, not the act of deciding.
+    is_abstract: null
+    primary_domain_id: CLR-D0020
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0041
+    - CLR-SRC0047
+    notes: 'Input reference display: [41], [47]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-26
+    id: CLR-C0026
+    label_en: Conceptualization
+    ufo_type: Event / process
+    ontouml_stereotype: «event»
+    definition: A purposeful process in which agents select and organize features of a subject to form
+      an explicit conceptual artifact from a perspective.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0013
+    - CLR-SRC0014
+    notes: 'Input reference display: [12], [13], [14]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-54
+    id: CLR-C0054
+    label_en: Goal
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object specifying a desired outcome that gives explicit content to an agent's
+      intention.
+    is_abstract: null
+    primary_domain_id: CLR-D0002
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0026
+    notes: 'Input reference display: [11], [26]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-61
+    id: CLR-C0061
+    label_en: Intention
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent mental commitment to pursue a goal through a course of action.
+    is_abstract: null
+    primary_domain_id: CLR-D0002
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0026
+    notes: 'Input reference display: [11], [26]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-93
+    id: CLR-C0093
+    label_en: Perspective
+    ufo_type: Endurant / intrinsic mode
+    ontouml_stereotype: «mode»
+    definition: An agent-dependent orientation that selects what is relevant and how a subject is approached
+      in conceptualization.
+    is_abstract: null
+    primary_domain_id: CLR-D0001
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0021
+    notes: 'Input reference display: [12], [21]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-106
+    id: CLR-C0106
+    label_en: Semantic Interoperability
+    ufo_type: Endurant / externally dependent mode
+    ontouml_stereotype: «mode»
+    definition: A disposition of a representation to support compatible interpretation with another representation
+      under stated semantic conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0005
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0013
+    - CLR-SRC0049
+    notes: 'Input reference display: [13], [49]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-126
+    id: CLR-C0126
+    label_en: Understandability
+    ufo_type: Endurant / externally dependent mode
+    ontouml_stereotype: «mode»
+    definition: A disposition of a representation to support understanding by an intended interpreter
+      under specified conditions.
+    is_abstract: null
+    primary_domain_id: CLR-D0003
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0022
+    notes: 'Input reference display: [18], [22]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-131
+    id: CLR-C0131
+    label_en: Viewpoint
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: An information object prescribing concerns, selection rules and conventions for constructing
+      and interpreting a view.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0043
+    notes: 'Input reference display: [18], [43]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  model/relations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-7
+    id: CLR-R0007
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0061
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-8
+    id: CLR-R0008
+    label_en: bears
+    source_id: CLR-C0004
+    target_id: CLR-C0093
+    source_multiplicity: '1'
+    target_multiplicity: 0..*
+    ontouml_stereotype: «characterization»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «category» / «mode». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-42
+    id: CLR-R0042
+    label_en: adopts
+    source_id: CLR-C0026
+    target_id: CLR-C0093
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram
+      ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-51
+    id: CLR-R0051
+    label_en: is motivated by
+    source_id: CLR-C0026
+    target_id: CLR-C0061
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «event» / «mode». Multiplicities are the labels at the respective diagram
+      ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-89
+    id: CLR-R0089
+    label_en: has desired content
+    source_id: CLR-C0061
+    target_id: CLR-C0054
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-126
+    id: CLR-R0126
+    label_en: is expressed by
+    source_id: CLR-C0093
+    target_id: CLR-C0131
+    source_multiplicity: 0..*
+    target_multiplicity: 0..*
+    ontouml_stereotype: null
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «mode» / «subkind». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  model/generalizations.yaml: []
+  model/constraints.yaml:
+  - id: CLR-SC0003
+    text: Agent alignment. The bearers of the Intention and Perspective adopted by a Conceptualization
+      participate in that episode. A Conceptual Decision is made by agents participating in its recording
+      episode.
+    referenced_ids:
+    - CLR-C0004
+    - CLR-C0021
+    - CLR-C0026
+    - CLR-C0061
+    - CLR-C0093
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-3
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0011
+    text: Moment identity. Each mode or quality has exactly one bearer through characterization, directly
+      or by inheritance. Distinct Understandability or Semantic Interoperability instances may depend
+      on different interpreters or counterpart representations.
+    referenced_ids:
+    - CLR-C0106
+    - CLR-C0126
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-11
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+bounded_commitment: The current model explicitly chooses agent-dependent commitment/orientation modes
+  versus reusable informational goal content. This is a coherent declared choice within a mental-state
+  approach, not universal philosophical consensus.
+findings:
+- id: SEM117-F01
+  affected_ids:
+  - CLR-C0054
+  - CLR-R0089
+  finding: 'Potential definition/cardinality tension: goal definition refers to agent intention but multiplicity
+    permits orphan goal content.'
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Joint129 decide reusable hypothetical/archived content policy; do not silently raise
+    lower bound.
+  research_draft_id: PREP117-F01
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+  source_ids: []
+  evidence_kind: model-internal comparison
+- id: SEM117-F02
+  affected_ids:
+  - CLR-C0061
+  - CLR-C0093
+  - CLR-SC0011
+  finding: Mental-state commitment is philosophical/modeling choice. Perspective exact mode typing still
+    not established by selective-modeling passages.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Expert gate on interpretation/identity, not automatic UFO equivalence.
+  research_draft_id: PREP117-F02
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+  source_ids:
+  - UFO2008
+  - SEP_INTENTION2022
+  - CM2020
+  - SEP_MENTAL2022
+  evidence_kind: reviewer model application of the cited source passages, not source acceptance of this
+    model
+- id: SEM117-F03
+  affected_ids:
+  - CLR-C0061
+  finding: Through a course of action must not be overread as a fully specified plan; open commitments
+    and partial plans are supported.
+  status: open_research_finding
+  proposed_delta: none applied
+  next_decision: Clarify through documentation in stage4 if needed; no model change now.
+  research_draft_id: PREP117-F03
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+  source_ids:
+  - SEP_INTENTION2022
+  - UFO2008
+  evidence_kind: reviewer model application of the cited source passages, not source acceptance of this
+    model
+case_review:
+  countercases:
+  - id: 117-EX1
+    setup: Alice and Bob each commit to reducing ambiguity and share one informational Goal content; sharing
+      a physical file alone is not the identity premise.
+    expected_by_read_model: Two intention individuals, each one bearer, same goal content permissible.
+      One intention with two bearers violates R0007/SC11.
+    affected_ids:
+    - CLR-C0061
+    - CLR-C0054
+    - CLR-R0007
+    - CLR-R0089
+    - CLR-SC0011
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+  - id: 117-EX2
+    setup: Alice values cleaner definitions but has not committed to act.
+    expected_by_read_model: Desire/desired result alone insufficient for defined Intention; no fabricated
+      intention should be inserted.
+    affected_ids:
+    - CLR-C0061
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+  - id: 117-EX3
+    setup: Alice intends to model next week but no episode has started.
+    expected_by_read_model: Permitted by0..* episode end R0051; not evidence goal accomplished.
+    affected_ids:
+    - CLR-R0051
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+  - id: 117-EX4
+    setup: A Conceptualization episode C0026 adopts Bob's Perspective, but Bob does not participate in
+      that episode. Physical co-location is not the participation criterion.
+    expected_by_read_model: SC0003 disallows even if endpoint counts satisfy R0042.
+    affected_ids:
+    - CLR-R0042
+    - CLR-SC0003
+    - CLR-C0026
+    - CLR-C0093
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+  - id: 117-EX5
+    setup: A goal template is stored without any current intention.
+    expected_by_read_model: R0089 permits zero linked intentions; decide whether hypothetical/archived
+      goal content fits definition rather than automatically reject.
+    affected_ids:
+    - CLR-C0054
+    - CLR-R0089
+    status: conceptual_countercase_not_executed_as_formal_solver_test
+  cardinality_review:
+  - 'R0007/R0008: each intention/perspective has exactly1 agent; agent may bear0..*. This is bearer identity,
+    not an assertion each agent always intends something.'
+  - 'R0089: each intention has1..* goal contents; each goal may have0..* intentions. Multiple agents can
+    use common content without sharing one mode.'
+  - 'R0042/R0051: each conceptualization adopts1..* perspectives and is motivated by1..* intentions; each
+    mode may feature in0..* episodes. SC0003 requires each selected bearer participate.'
+  - 'R0126: perspective and viewpoint related0..* each way; an unexpressed perspective is permitted, viewpoint
+    text is not the mental orientation.'
+  method: Manual conceptual inspection; examples are focal scenarios, not proven complete valid instances;
+    absent information is not falsity. Local executable predicates, where supplied, test only declared
+    finite rules.
+scope_boundaries:
+- No source definition automatically validates imported stereotypes.
+- No creation of new classes, identities, relations or constraints.
+- A completed negative/uncertain review does not resolve its findings.
+- Frozen constraint execution_status values remain unchanged; local probes are separate evidence.
+- 'Research proposals and philosophical alternatives await #129 joint decision.'
+verification:
+  command: python tools/check_semantic_reviews.py --issue 117
+  result_location: Exact PR and Public integrity run
+  limits: Integrity and selected local predicates only; no human expert acceptance or complete formal
+    model proof.
