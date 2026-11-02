@@ -12,3 +12,4 @@ new bounded issues with AC/NAC; review closure is not correction closure.
 - [#115: process-product](process-product.yaml) — bounded review with open findings.
 - [#116: description-referent](description-referent.yaml) — bounded review with open findings.
 - [#117: goal-intention-perspective](goal-intention-perspective.yaml) — bounded review with open findings.
+- [#118: context-scope](context-scope.yaml) — bounded review with open findings.
