@@ -9,3 +9,4 @@ Findings are open inputs for joint decision #129. Approved corrections require
 new bounded issues with AC/NAC; review closure is not correction closure.
 
 - [#114: mental-content](mental-content.yaml) — bounded review with open findings.
+- [#115: process-product](process-product.yaml) — bounded review with open findings.

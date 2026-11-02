@@ -1,0 +1,24 @@
+id: PROV-DM2013
+url: https://www.w3.org/TR/2013/REC-prov-dm-20130430/
+version: W3C Recommendation2013-04-30
+locator: Sections5.1.1 Entity,5.1.2 Activity,5.1.3 Generation,5.2.2 Revision
+paraphrase: PROV distinguishes activities from entities. Generation marks completion of production of
+  a new entity, whereas revision is derivation of a revised entity from an earlier one retaining substantial
+  content. This offers a version-specific provenance alternative, not a mandate to equate every edit with
+  creation of a new Clariceptify information object. Entity identity depends on selected fixed aspects.
+verification: Dated recommendation and passages opened2026-11-02; no verbatim quotation; W3C document-use
+  terms linked by source
+title: 'PROV-DM: The PROV Data Model'
+authors: []
+editors:
+- Luc Moreau
+- Paolo Missier
+author_attribution_note: Editors verified on dated recommendation; do not re-label editors as sole authors.
+  Named contributors separately listed by source.
+year: 2013
+publisher: World Wide Web Consortium (W3C)
+edition: W3C Recommendation30April2013
+license_reuse_boundary: Copyright2011–2013 W3C(MIT,ERCIM,Keio,Beihang); source states All Rights Reserved
+  and links W3C document-use rules. This review reproduces no source full text or quotes; citation/paraphrase
+  only.
+metadata_checked: '2026-11-02'
