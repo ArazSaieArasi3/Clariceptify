@@ -95,3 +95,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Quality review contribution (#109)
 
 [Quality](../../evaluation/domain-adequacy/quality.yaml) reviews 5 primary members against bounded source comparisons and a selected positive/adverse graph join. A selected applied-criterion and goal path can be joined for one assessed artifact. An unrelated criterion may hold the only goal edge. DOM18-F01 through DOM18-F05 preserve independent open findings. This is subject-domain checkpoint 18 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Evaluation review contribution (#110)
+
+[Evaluation](../../evaluation/domain-adequacy/evaluation.yaml) reviews 4 primary members against bounded source comparisons and a selected positive/adverse graph join. Evaluation and its result admit a selected same-artifact/same-criterion rationale join. The result may assess a different artifact from its creating evaluation. DOM19-F01 through DOM19-F05 preserve independent open findings. This is subject-domain checkpoint 19 of twenty, not semantic acceptance or a change to the five gap dispositions.
