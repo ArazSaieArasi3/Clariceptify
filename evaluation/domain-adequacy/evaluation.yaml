@@ -1,0 +1,307 @@
+schema_version: '1.0'
+issue: 110
+task_id: R2-DOM-19
+domain_id: CLR-D0019
+domain_name: Evaluation
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 5a6c1005d6b5d99e1a20b3616a50398bd654bcc3
+model_revision: input-r1-rev1
+purpose: Support assessment against explicit criteria, record findings, and connect review to feedback and revision.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 4
+  domain_member_ids: &id002
+  - CLR-C0039
+  - CLR-C0040
+  - CLR-C0097
+  - CLR-C0114
+  relevant_requirements:
+  - FR-24
+  - FR-25
+  - FR-28
+  - FR-30
+  relevant_cqs: &id001
+  - CQ-24
+  - CQ-25
+  - CQ-28
+  - CQ-30
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0039
+  label: Evaluation Criterion
+  stereotype: "\xABsubkind\xBB"
+  definition: An information object specifying a basis and conditions for judging a conceptual artifact, including
+    what evidence would support the judgment.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-39
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-39
+  source_passages: '[48] abstract; [47] abstract'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Evaluation Criterion \xABsubkind\xBB: An information object specifying a basis and conditions for judging\
+    \ a conceptual artifact, including what evidence would support the judgment. G0036 specializes Information Object\
+    \ C0057. Imported D refs47/48; criterion evidence conditions are not their fulfillment."
+- id: CLR-C0040
+  label: Evaluation Result
+  stereotype: "\xABsubkind\xBB"
+  definition: An information object recording one assessment finding about one conceptual artifact against one evaluation
+    criterion, produced by one evaluation episode. A review with several criteria records several results.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-40
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-40
+  source_passages: '[42] secs. 4.1 and 4.7; [48] evaluation context'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Evaluation Result \xABsubkind\xBB: An information object recording one assessment finding about one\
+    \ conceptual artifact against one evaluation criterion, produced by one evaluation episode. A review with several\
+    \ criteria records several results. G0037 specializes C0057. Imported B refs42/48; one finding is distinct from\
+    \ its assessment event and from truth."
+- id: CLR-C0097
+  label: Qualitative Evaluation
+  stereotype: "\xABevent\xBB"
+  definition: An assessment process that judges conceptual content against explicit criteria using reasoned interpretation
+    and documented evidence.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-97
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-97
+  source_passages: '[48] evaluation criteria/taxonomy errors; [18] quality framework'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Qualitative Evaluation \xABevent\xBB: An assessment process that judges conceptual content against explicit\
+    \ criteria using reasoned interpretation and documented evidence. G0088 specializes Conceptual Process C0025.\
+    \ Imported B refs18/48; an event is not a stored result."
+- id: CLR-C0114
+  label: Structural Review
+  stereotype: "\xABevent\xBB"
+  definition: A qualitative evaluation process that examines a model organization, type distinctions and relations
+    for defects or missing connections.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-114
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-114
+  source_passages: '[48] evaluation criteria/taxonomy errors; [18] quality framework'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: "Structural Review \xABevent\xBB: A qualitative evaluation process that examines a model organization,\
+    \ type distinctions and relations for defects or missing connections. G0103 specializes Qualitative Evaluation\
+    \ C0097. Imported B refs18/48; structural review is not connectivity checking alone."
+domain_questions:
+- id: DQ01
+  purpose: Evaluation and its result admit a selected same-artifact/same-criterion rationale join.
+  cqs:
+  - CQ-24
+  model_ids:
+  - CLR-C0097
+  - CLR-C0040
+  - CLR-C0019
+  - CLR-C0039
+  - CLR-C0065
+  relation_ids:
+  - CLR-R0131
+  - CLR-R0130
+  - CLR-R0129
+  - CLR-R0062
+  - CLR-R0065
+  - CLR-R0064
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: every selected evaluation/result endpoint aligns but the recorded finding
+    declares satisfaction on unsupported reasoning. The graph join does not establish the judgment.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0131
+  - CLR-R0130
+  - CLR-R0129
+  - CLR-R0062
+  - CLR-R0065
+  - CLR-R0064
+  - CLR-R0153
+  - CLR-R0154
+  - CLR-R0072
+  - CLR-R0073
+  - CLR-R0074
+  - CLR-R0038
+  constraint_ids:
+  - CLR-SC0010
+  - CLR-SC0018
+  - CLR-SC0019
+  - CLR-SC0021
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0010: Creation and revision. Creation identifies actual origination of a new individual; produces or revises
+    does not assert origination. Each Conceptual Artifact in this scope has one originating Conceptualization. Each
+    Evaluation Result has one creating evaluation.
+  CLR-SC0018: Atomic evaluation result. Each Evaluation Result concerns exactly one artifact and one criterion,
+    both included in its creating evaluation. Multiple criteria produce multiple findings. Its information content
+    records a judgment such as satisfied, not satisfied or undetermined and the rationale for it.
+  CLR-SC0019: Review alignment. A Structural Review examines structures belonging to its assessed artifacts. Any
+    examined Conceptual Model encodes an assessed artifact. Criterion goals must be relevant to the artifact conceptualization
+    goals.
+  CLR-SC0021: Justification and evidence. Every Justification supports at least one Conceptual Decision or Evaluation
+    Result. Every Evidence role instance is cited by at least one justification or result. Source attribution identifies
+    provenance and does not establish evidential truth.
+selected_query:
+  anchors:
+    evaluation: evaluation
+  patterns:
+  - - CLR-R0131
+    - evaluation
+    - result
+  - - CLR-R0130
+    - evaluation
+    - artifact
+  - - CLR-R0129
+    - evaluation
+    - criterion
+  - - CLR-R0062
+    - result
+    - artifact
+  - - CLR-R0065
+    - result
+    - criterion
+  - - CLR-R0064
+    - result
+    - justification
+scenarios:
+  positive:
+    id: DOM19-POS-001
+    locator: evaluation/fixtures/evaluation-join-positive.yaml
+  adverse:
+    id: DOM19-NEG-001
+    locator: evaluation/fixtures/evaluation-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM19-CC01
+    description: 'Unexecuted semantic countercase: every selected evaluation/result endpoint aligns but the recorded
+      finding declares satisfaction on unsupported reasoning. The graph join does not establish the judgment.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Evaluation and its result admit a selected same-artifact/same-criterion rationale join.
+  evidence_ids:
+  - CLR-R0131
+  - CLR-R0130
+  - CLR-R0129
+  - CLR-R0062
+  - CLR-R0065
+  - CLR-R0064
+  - CLR-SC0018
+  contrary: The result may assess a different artifact from its creating evaluation.
+  route: 'Execute bounded join; full CQ25 execution #125.'
+  id: DOM19-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Atomic result cardinality and creation remain broader than the selected witness.
+  evidence_ids:
+  - CLR-C0040
+  - CLR-R0131
+  - CLR-SC0010
+  - CLR-SC0018
+  contrary: A second artifact, criterion or creator could coexist with the selected matching witness.
+  route: 'Do not claim full SC0010/0018; CQ25/30 execution #125.'
+  id: DOM19-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: A recorded judgment and rationale do not establish correctness or expert approval.
+  evidence_ids:
+  - CLR-C0039
+  - CLR-C0040
+  - CLR-C0065
+  - CLR-SC0018
+  contrary: A well-linked satisfied judgment may have an unsound rationale.
+  route: 'Judgment-content evaluation #125; unconfirmed correction candidates #129.'
+  id: DOM19-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Structural Review has explicit model and structure targets whose alignment remains untested.
+  evidence_ids:
+  - CLR-C0114
+  - CLR-R0153
+  - CLR-R0154
+  - CLR-SC0019
+  contrary: The reviewed structure can fail to belong to the assessed model.
+  route: 'Retain full structural-target alignment limitation for #125.'
+  id: DOM19-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Feedback and decision links alone do not prove an implemented, correctly targeted revision.
+  evidence_ids:
+  - CLR-C0048
+  - CLR-R0072
+  - CLR-R0073
+  - CLR-R0074
+  - CLR-C0021
+  - CLR-R0038
+  - CLR-SC0020
+  contrary: Feedback or decision can reference a finding while revising an unrelated artifact.
+  route: 'CQ28 execution #125; unconfirmed correction candidates #129.'
+  id: DOM19-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP4-11
+  - CMP1-14
+  - CMP2-11
+  interpretation:
+    interpretation: CognitiveAtlas profile and definition gaps coexist with isolated HermiT successes; cDnS asserted
+      ASK and O4OA document CQ evidence cannot be promoted to whole-theory semantic validation.
+    evidence:
+    - paper_locators:
+      - CognitiveAtlas2011 E12-E14; 904 paper terms, prototype OWL and evaluation limits
+      - CognitiveAtlas2011 F10,F14-F19; definition/provenance/version gaps
+      artifact_locators:
+      - CognitiveAtlas.yaml Q01,Q06-Q08; class catalog, static and semantic receipts
+      unsupported_inference: A consistent loaded ontology with no unsatisfiable named classes passes OWL 2 DL profile
+        or proves agreement/construct validity.
+      counterevidence: Profile fails with 7,341 undeclared-entity violations; 101 ID collisions, 464 missing usable
+        local definitions and unexecuted generator/pickle constrain adoption.
+      unknowns:
+      - Historical 2011 byte parity
+      - complete original data transformation
+      - current service quality
+      cell: CMP4-11
+      path: evidence/related-work/comparisons/batch-4.yaml
+    - paper_locators:
+      - cDnS2007:E08 PDF12-13 displays13-28
+      - cDnS-journal-2008:E10 PDF16-17 displays24-37
+      - cDnS-journal-2008:E13 PDF22-24 display65
+      artifact_locators:
+      - evidence/related-work/artifacts/cDnS-core-followup.yaml Q01-Q08
+      - evaluation/related-work/cdns267/execution.json
+      unsupported_inference: The unchanged cDnS1.1 core is OWL2 DL consistent, or eight ASK results constitute whole-core
+        positive/adverse reasoning.
+      counterevidence: 'CDNS267-F08: non-simple transitive hasProperPart cardinality fails profile; HermiT refuses;
+        consistency remains unknown. Paper display65 does not explicitly distinguish d1/d2.'
+      unknowns:
+      - Whole-core consistency, original2007/2008 fidelity, mapped extension reasoning
+      cell: CMP1-14
+      path: evidence/related-work/comparisons/batch-1.yaml
+    - paper_locators:
+      - CLR-RW-O4OA:E17-E19 PDF pp.13-16 evaluation and conclusion
+      artifact_locators:
+      - O4OA.yaml Q01-Q08; specification-reading.json
+      unsupported_inference: Document terms are machine class counts or author-reported solver/API performance was
+        reproduced.
+      counterevidence: The full paper and specification contain substantial native constructs and test intentions.
+      unknowns:
+      - 'Machine classes/imports/license, exact UFO edition, solver/API output; #91 open'
+      cell: CMP2-11
+      path: evidence/related-work/comparisons/batch-2.yaml
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 125
+  - 129

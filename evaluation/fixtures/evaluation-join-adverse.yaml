@@ -1,0 +1,40 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_evaluation_join
+model_revision: input-r1-rev1
+id: DOM19-NEG-001
+expected_selected_answer: false
+description: The result may assess a different artifact from its creating evaluation.
+nodes:
+- id: evaluation
+  concept_id: CLR-C0097
+- id: result
+  concept_id: CLR-C0040
+- id: artifact
+  concept_id: CLR-C0019
+- id: other_artifact
+  concept_id: CLR-C0019
+- id: criterion
+  concept_id: CLR-C0039
+- id: justification
+  concept_id: CLR-C0065
+edges:
+- relation_id: CLR-R0131
+  source: evaluation
+  target: result
+- relation_id: CLR-R0130
+  source: evaluation
+  target: artifact
+- relation_id: CLR-R0129
+  source: evaluation
+  target: criterion
+- relation_id: CLR-R0062
+  source: result
+  target: other_artifact
+- relation_id: CLR-R0065
+  source: result
+  target: criterion
+- relation_id: CLR-R0064
+  source: result
+  target: justification
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.

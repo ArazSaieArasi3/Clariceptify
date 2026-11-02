@@ -71,3 +71,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Quality checkpoint
 
 [Issue #109 assessment](quality.yaml) reviews all 5 primary members and CQ-24, CQ-03, CQ-25. The [positive](../fixtures/quality-join-positive.yaml) and [adverse](../fixtures/quality-join-adverse.yaml) scenarios test a selected finite graph join. A selected applied-criterion and goal path can be joined for one assessed artifact. An unrelated criterion may hold the only goal edge. Findings DOM18-F01 through DOM18-F05 separately route remaining questions to #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Evaluation checkpoint
+
+[Issue #110 assessment](evaluation.yaml) reviews all 4 primary members and CQ-24, CQ-25, CQ-28, CQ-30. The [positive](../fixtures/evaluation-join-positive.yaml) and [adverse](../fixtures/evaluation-join-adverse.yaml) scenarios test a selected finite graph join. Evaluation and its result admit a selected same-artifact/same-criterion rationale join. The result may assess a different artifact from its creating evaluation. Findings DOM19-F01 through DOM19-F05 separately route remaining questions to #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
