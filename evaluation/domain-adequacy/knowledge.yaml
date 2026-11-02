@@ -1,0 +1,248 @@
+schema_version: '1.0'
+issue: 108
+task_id: R2-DOM-17
+domain_id: CLR-D0017
+domain_name: Knowledge
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 5849f77f5e7bf03bc5990e972bcc32c2ab10ddf1
+model_revision: input-r1-rev1
+purpose: Add the relevant prior content through Domain Knowledge without importing knowledge management.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 1
+  domain_member_ids: &id002
+  - CLR-C0034
+  relevant_requirements:
+  - FR-23
+  - FR-06
+  - FR-07
+  - FR-16
+  relevant_cqs: &id001
+  - CQ-23
+  - CQ-06
+  - CQ-07
+  - CQ-16
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0034
+  label: Domain Knowledge
+  stereotype: "\xABsubkind\xBB"
+  definition: Explicitly articulable information content concerning a subject area that informs conceptual choices
+    and interpretations; an agent knowing that content is a separate mental state.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-34
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-34
+  source_passages: "[15] knowledge-representation companion; [28] secs. 2\u20133"
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: 'Domain Knowledge is an Information Object subkind (G0031): articulable subject-area content informing
+    choices and interpretations. Imported B refs15/28; knowing this content is a separate mental state, and the
+    label does not guarantee truth.'
+domain_questions:
+- id: DQ01
+  purpose: Episode and interpretation process can draw on the same explicit content.
+  cqs:
+  - CQ-23
+  model_ids:
+  - CLR-C0026
+  - CLR-C0063
+  - CLR-C0034
+  - CLR-C0017
+  relation_ids:
+  - CLR-R0053
+  - CLR-R0092
+  - CLR-R0059
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: two agents share an articulated content object but understand it differently
+    or the content is false; the shared-content witness cannot establish shared understanding or truth.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0053
+  - CLR-R0092
+  - CLR-R0059
+  - CLR-R0168
+  - CLR-R0167
+  - CLR-R0060
+  - CLR-R0028
+  constraint_ids:
+  - CLR-SC0011
+  - CLR-SC0012
+  - CLR-SC0023
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0011: Moment identity. Each mode or quality has exactly one bearer through characterization, directly or
+    by inheritance. Distinct Understandability or Semantic Interoperability instances may depend on different interpreters
+    or counterpart representations.
+  CLR-SC0012: Shared understanding. Shared Understanding specializes State. Its Understanding bearers are at least
+    two distinct participating agents; their understandings are compatible about the stated shared artifact. Its
+    configured objects include those agents.
+  CLR-SC0023: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+    with its referent, or a Model with its Model Kind. Information Object identity follows a declared content-equivalence
+    policy, not the identity of a physical file.
+selected_query:
+  anchors:
+    episode: episode
+    interpretation_process: interpretation_process
+  patterns:
+  - - CLR-R0053
+    - episode
+    - knowledge
+  - - CLR-R0092
+    - interpretation_process
+    - knowledge
+  - - CLR-R0059
+    - knowledge
+    - concept
+scenarios:
+  positive:
+    id: DOM17-POS-001
+    locator: evaluation/fixtures/knowledge-join-positive.yaml
+  adverse:
+    id: DOM17-NEG-001
+    locator: evaluation/fixtures/knowledge-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM17-CC01
+    description: 'Unexecuted semantic countercase: two agents share an articulated content object but understand
+      it differently or the content is false; the shared-content witness cannot establish shared understanding or
+      truth.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: Episode and interpretation process can draw on the same explicit content.
+  evidence_ids:
+  - CLR-R0053
+  - CLR-R0092
+  - CLR-R0059
+  contrary: They may instead draw on distinct contents.
+  route: '#125: execute CQ23 explicit domain-knowledge input retrieval; selected shared-content witness is neither
+    full CQ23 nor a validity requirement.'
+  id: DOM17-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Content identity is distinct from bearer-dependent understanding.
+  evidence_ids:
+  - CLR-C0034
+  - CLR-C0127
+  - CLR-R0168
+  - CLR-SC0011
+  - CLR-SC0023
+  contrary: One content object may inform different agents or states.
+  route: '#123: execute CQ06 content/understanding cases; #124: CQ16 interpretation execution preserves bearer/content
+    distinctions. #129: decide any demonstrated identity or typing correction.'
+  id: DOM17-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Shared content does not establish shared understanding or truth.
+  evidence_ids:
+  - CLR-R0167
+  - CLR-R0168
+  - CLR-SC0012
+  contrary: Agents can read the same content and interpret it differently.
+  route: '#123: CQ06 execution must not infer shared understanding from shared content; #125: CQ23 must not infer
+    truth from the Domain Knowledge label. #129: decide corrections only from demonstrated conflation.'
+  id: DOM17-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Informing formation does not establish origination or certainty.
+  evidence_ids:
+  - CLR-R0060
+  - CLR-R0028
+  contrary: Content may influence formation without originating the resulting concept.
+  route: '#123: execute CQ07 formation/origination cases; #125: CQ23 execution distinguishes informing content from
+    sufficient cause or certainty. #129: decide any demonstrated relation-scope correction.'
+  id: DOM17-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Single-member content role does not imply coverage of all epistemology.
+  evidence_ids:
+  - CLR-C0034
+  - CLR-D0017
+  contrary: A knowledge-management feature needs a demonstrated unmet requirement.
+  route: '#129: consider expansion only for a demonstrated unmet epistemic-content requirement; no quota. #125:
+    CQ23 execution supplies evidence for that decision without claiming all-epistemology coverage.'
+  id: DOM17-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP2-06
+  - CMP4-04
+  - CMP6-06
+  - CMP1-08
+  interpretation:
+    interpretation: OntoKADS proposition subjects, IAO intended/successful aboutness and misinformation, and mental-state/attitude
+      comparisons limit claims about content, knowing and co-reference.
+    evidence:
+    - cell: CMP2-06
+      path: evidence/related-work/comparisons/batch-2.yaml
+      paper_locators:
+      - OntoKADS2005:E07,E09 PDF pp.6-7 hasForSubject/Data/KnowledgeRole
+      artifact_locators:
+      - OntoKADS.yaml K10,K18,K21
+      unsupported_inference: A subject concept is the same entity as its real-world target, or unbound D4 yields
+        an executable Data class.
+      counterevidence: The paper gives substantial concept-as-subject prior support.
+      unknowns:
+      - Literal D4 variable unbound; author repair and machine source unknown
+    - cell: CMP4-04
+      path: evidence/related-work/comparisons/batch-4.yaml
+      paper_locators:
+      - IAO2015 E03-E05 pp.2-3; intended versus successful aboutness and misinformation
+      - IAO2015 F01,F02,F05; ICE/IQE/bearer and portion-of-reality limits
+      artifact_locators:
+      - IAO.yaml I01-I03,I06-I08; iao240 census IAO_0000030/IAO_0000178/RO_0000058
+      unsupported_inference: The OWL existential witness is an observed real-world E, or the proposed paper representation
+        taxonomy is implemented in the release.
+      counterevidence: The 2015 paper explicitly analyzes false composites, fiction and targets not reducible to
+        a current observed entity; release represents property is deprecated.
+      unknowns:
+      - Formal 2015-proposal adoption
+      - identity rule for shared/revised content
+    - cell: CMP6-06
+      path: evidence/related-work/comparisons/batch-6.yaml
+      paper_locators:
+      - CLR-RW-DOLCEMental:E10,E11 PDF pp.135-136 a4-a6,d1-d3
+      artifact_locators:
+      - DOLCEMental.yaml Q03; source L123-L149
+      unsupported_inference: An intentional object is an existing external referent or source and paper clauses
+        are identical.
+      counterevidence: The paper and root formalize mental content/object distinctions already.
+      unknowns:
+      - Exact edition and source-paper equivalence unresolved
+    - cell: CMP1-08
+      path: evidence/related-work/comparisons/batch-1.yaml
+      paper_locators:
+      - RW-DUL-CONCEPTUALIZATION-0.1 observations/mental_representation
+      artifact_locators:
+      - 'evidence/related-work/deep-reviews/shared-foundations/Conceptualization/DULConceptualization-census.json
+        #InternalRepresentation'
+      - 'evidence/related-work/artifacts/DULConceptualization.yaml #assumes/#adopts/#believes/#knows'
+      unsupported_inference: All nested existential witnesses denote one named content or one named referent.
+      counterevidence: 0.1 is preliminary and comment examples do not add OWL identity axioms.
+      unknowns:
+      - Co-reference, referent identity and full imported semantics
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 123
+  - 124
+  - 125
+  - 129

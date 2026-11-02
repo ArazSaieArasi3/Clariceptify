@@ -87,3 +87,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Metaphysics review contribution (#107)
 
 [Metaphysics](../../evaluation/domain-adequacy/metaphysics.yaml) reviews 3 primary members against bounded source comparisons and a selected positive/adverse graph join. Change has prior/result states that can configure its affected object. Result state may configure only an unrelated object. DOM16-F01 through DOM16-F05 preserve independent open findings. This is subject-domain checkpoint 16 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Knowledge review contribution (#108)
+
+[Knowledge](../../evaluation/domain-adequacy/knowledge.yaml) reviews 1 primary members against bounded source comparisons and a selected positive/adverse graph join. Episode and interpretation process can draw on the same explicit content. They may instead draw on distinct contents. DOM17-F01 through DOM17-F05 preserve independent open findings. This is subject-domain checkpoint 17 of twenty, not semantic acceptance or a change to the five gap dispositions.

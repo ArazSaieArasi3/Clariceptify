@@ -63,3 +63,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Metaphysics checkpoint
 
 [Issue #107 assessment](metaphysics.yaml) reviews all 3 primary members and CQ-22, CQ-02, CQ-08, CQ-29. The [positive](../fixtures/metaphysics-join-positive.yaml) and [adverse](../fixtures/metaphysics-join-adverse.yaml) scenarios test a selected finite graph join. Change has prior/result states that can configure its affected object. Result state may configure only an unrelated object. Findings DOM16-F01 through DOM16-F05 separately route remaining questions to #123, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Knowledge checkpoint
+
+[Issue #108 assessment](knowledge.yaml) reviews all 1 primary members and CQ-23, CQ-06, CQ-07, CQ-16. The [positive](../fixtures/knowledge-join-positive.yaml) and [adverse](../fixtures/knowledge-join-adverse.yaml) scenarios test a selected finite graph join. Episode and interpretation process can draw on the same explicit content. They may instead draw on distinct contents. Findings DOM17-F01 through DOM17-F05 separately route remaining questions to #123, #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
