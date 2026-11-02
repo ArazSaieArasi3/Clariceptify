@@ -1,0 +1,257 @@
+schema_version: '1.0'
+issue: 103
+task_id: R2-DOM-12
+domain_id: CLR-D0012
+domain_name: Metamodeling
+status: BOUNDED_DOMAIN_REVIEW_COMPLETE_WITH_OPEN_SEMANTIC_QUESTIONS
+checked_on: '2026-11-02'
+baseline_commit: 028974705986aa87bc751efec9b230989b70ef3f
+model_revision: input-r1-rev1
+purpose: Explain model conformance and distinguish models, metamodels and models of models.
+input_bindings:
+  model/domains.yaml: 1f33e5fb5c23c92c23b621ddc41c195e3d8e1d72eae5368d1e0b2830528a18b3
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  docs/research/gap-comparison.yaml: 981aba7c9a6fd126147817e0131a76e24267f8ebb1da989218d2e4fa20670671
+scope:
+  primary_domain_concepts: 4
+  domain_member_ids: &id002
+  - CLR-C0071
+  - CLR-C0072
+  - CLR-C0075
+  - CLR-C0080
+  relevant_requirements:
+  - FR-18
+  - FR-17
+  - FR-30
+  relevant_cqs: &id001
+  - CQ-18
+  - CQ-17
+  - CQ-30
+  quantity_rule: Purpose and question coverage, not a minimum class count.
+concept_review:
+- id: CLR-C0071
+  label: Metamodel
+  stereotype: "\xABsubkind\xBB"
+  definition: A model specifying the constructs, relationships and well-formedness conditions to which a family
+    of models conforms.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-71
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-71
+  source_passages: '[38] specification; [18] ch. 3 description'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Metamodel is a subkind of Model (G0064), prescribing constructs, relationships and well-formedness conditions.
+    Imported D support refs18/38; a declared conformance edge does not execute those conditions.
+- id: CLR-C0072
+  label: Metamodeling
+  stereotype: "\xABevent\xBB"
+  definition: A modeling process that constructs or revises a specification of the constructs and admissible structures
+    of models.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-72
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-72
+  source_passages: '[38] specification; [18] ch. 3 description'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Metamodeling is an event specializing Modeling (G0065), producing or revising a metamodel. Imported D
+    refs18/38; production/revision identity is not settled by R0104.
+- id: CLR-C0075
+  label: Model of Models
+  stereotype: "\xABsubkind\xBB"
+  definition: A model whose subject includes other models and their relationships; unlike a metamodel, it need not
+    prescribe their admissible form.
+  source_support: B
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-75
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-76
+  source_passages: '[38] metamodel infrastructure; [3] higher-order types'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Model of Models is a Model subkind (G0068), describing models and their relationships without necessarily
+    prescribing admissible form. Imported B refs3/38; neither equivalence to nor disjointness from Metamodel follows.
+- id: CLR-C0080
+  label: Multi-Level Modeling
+  stereotype: "\xABevent\xBB"
+  definition: A modeling process that relates multiple classification levels and makes the type-instance distinctions
+    between those levels explicit.
+  source_support: D
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-80
+  support_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-80
+  source_passages: '[3] abstract; [38] modeling infrastructure'
+  state: STRUCTURAL_PATH_PRESENT_SEMANTIC_APPROVAL_PENDING
+  finding: Multi-Level Modeling is an event specializing Modeling (G0073), relating classification levels with type-instance
+    distinctions. Imported D refs3/38; no tested level-indexing policy follows from its typing.
+domain_questions:
+- id: DQ01
+  purpose: A shared produced/declared metamodel plus model-kind path is available.
+  cqs:
+  - CQ-18
+  model_ids:
+  - CLR-C0072
+  - CLR-C0071
+  - CLR-C0073
+  - CLR-C0074
+  relation_ids:
+  - CLR-R0104
+  - CLR-R0105
+  - CLR-R0106
+  constraint_ids: []
+  outcome: SELECTED_GRAPH_JOIN_CHECKED_FULL_CQ_PENDING
+- id: DQ02
+  purpose: 'Unexecuted semantic countercase: a model declares R0105 but violates a metamodel well-formedness rule;
+    the declaration alone cannot establish conformance.'
+  cqs: *id001
+  model_ids: *id002
+  relation_ids:
+  - CLR-R0104
+  - CLR-R0105
+  - CLR-R0106
+  constraint_ids:
+  - CLR-SC0023
+  - CLR-SC0024
+  - CLR-SC0010
+  outcome: STRUCTURAL_REVIEW_ONLY_NOT_EXECUTED
+constraint_review:
+  CLR-SC0023: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+    with its referent, or a Model with its Model Kind. Information Object identity follows a declared content-equivalence
+    policy, not the identity of a physical file.
+  CLR-SC0024: Content-level conformance. A model conforms to a metamodel only if its constructs satisfy that metamodel
+    rules. A stated conformity link is not itself proof. No disjointness or exhaustive partition is inferred merely
+    from two different class names.
+  CLR-SC0010: Creation and revision. Creation identifies actual origination of a new individual; produces or revises
+    does not assert origination. Each Conceptual Artifact in this scope has one originating Conceptualization. Each
+    Evaluation Result has one creating evaluation.
+selected_query:
+  anchors:
+    activity: activity
+    model: model
+  patterns:
+  - - CLR-R0104
+    - activity
+    - metamodel
+  - - CLR-R0105
+    - model
+    - metamodel
+  - - CLR-R0106
+    - model
+    - kind
+scenarios:
+  positive:
+    id: DOM12-POS-001
+    locator: evaluation/fixtures/metamodeling-join-positive.yaml
+  adverse:
+    id: DOM12-NEG-001
+    locator: evaluation/fixtures/metamodeling-join-adverse.yaml
+  conceptual_countercase:
+    id: DOM12-CC01
+    description: 'Unexecuted semantic countercase: a model declares R0105 but violates a metamodel well-formedness
+      rule; the declaration alone cannot establish conformance.'
+    expected: Do not promote the selected graph witness to this semantic claim.
+    execution: NOT_EXECUTED
+    relevant_cqs: *id001
+findings:
+- state: SELECTED_QUERY_PATH_SUPPORTED
+  claim: A shared produced/declared metamodel plus model-kind path is available.
+  evidence_ids:
+  - CLR-R0104
+  - CLR-R0105
+  - CLR-R0106
+  contrary: Declarations may disagree about the metamodel; selected join then has no witness.
+  route: '#124: execute CQ18 model/metamodel/kind retrieval with explicit conformance declaration semantics; selected
+    join is not full CQ execution.'
+  id: DOM12-F01
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Conformance links are declarations, not executed well-formedness rules.
+  evidence_ids:
+  - CLR-R0105
+  - CLR-SC0024
+  contrary: A linked model can violate an unexecuted metamodel rule.
+  route: '#124: CQ18 must distinguish declared conformance from executed well-formedness. #129: decide a correction
+    only if requirement-backed rule coverage or declaration wording proves inadequate.'
+  id: DOM12-F02
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Descriptive model-of-models and prescriptive metamodel retain distinct definitions but no demonstrated
+    partition.
+  evidence_ids:
+  - CLR-C0071
+  - CLR-C0075
+  - CLR-G0064
+  - CLR-G0068
+  contrary: A model can potentially both describe models and prescribe their forms.
+  route: '#129: decide whether demonstrated Model of Models/Metamodel ambiguity requires clarification; do not impose
+    disjointness or equivalence without evidence. #124: preserve the distinction in CQ18 execution.'
+  id: DOM12-F03
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Multi-level process typing does not resolve level policy or identity.
+  evidence_ids:
+  - CLR-C0080
+  - CLR-G0073
+  - CLR-SC0023
+  contrary: Unindexed type-instance usage can conflate levels.
+  route: '#124: execute CQ18 with explicit classification-level distinctions. #129: decide any evidenced missing
+    level-policy correction; current typing alone does not justify new model concepts.'
+  id: DOM12-F04
+- state: PARTIAL_WITH_OPEN_SEMANTIC_QUESTION
+  claim: Produces or revises cannot establish new identity.
+  evidence_ids:
+  - CLR-R0104
+  - CLR-SC0010
+  contrary: An activity could revise an existing metamodel.
+  route: '#125: execute CQ30 creation/revision identity cases; #129 decides any demonstrated identity-policy correction.
+    The selected R0104 fixture does not resolve creation versus revision.'
+  id: DOM12-F05
+source_comparison:
+  synthesis: docs/research/gap-comparison.yaml
+  source_cells:
+  - CMP5-06
+  - CMP5-12
+  interpretation:
+    interpretation: CMO type/quality/relation/universal and evaluation comparisons provide distinctions, not executable
+      Clariceptify conformance.
+    evidence:
+    - cell: CMP5-06
+      path: evidence/related-work/comparisons/batch-5.yaml
+      paper_locators:
+      - CMO:E06-E07 PDF pp.193-195 and Figs.1-2 Type/Quality/Relation/Universal
+      - CMO:E09 PDF pp.196-197 Fig.3 vocabulary query
+      artifact_locators:
+      - CMO.yaml T01,T02,T04; CMO-class-catalog.yaml Universal and UniversalClass
+      unsupported_inference: The four minimum-zero restrictions guarantee a concept witness, or a shared anchor
+        guarantees referential identity and class equivalence.
+      counterevidence: "CMO directly supplies conceptual-versus-logical and representation bridges, a material overlap\
+        \ with Clariceptify\u2019s concept and representation areas."
+      unknowns:
+      - FiatEntity and representedByType paper terms absent from selected mirror; original release and imports unresolved
+    - cell: CMP5-12
+      path: evidence/related-work/comparisons/batch-5.yaml
+      paper_locators:
+      - CMO:E06-E10 PDF pp.193-197 Figs.1-6 and evaluation
+      - CMO:E11 PDF p.198 differing granularity limitation
+      artifact_locators:
+      - CMO.yaml T01-T08; CMO-class-catalog.yaml 12 declarations; CMO mirror census
+      unsupported_inference: The mirror is a verified original release, its v2006 path is a release date, or shared
+        anchors logically entail instance retyping/subclass.
+      counterevidence: Seven local classes, 14 local properties and a concrete conceptual-modeling bridge survive
+        the historical correspondence gap; this prior coverage must inform synthesis.
+      unknowns:
+      - Original author release and fidelity; imported closure
+      - license
+      - exact BFO paper edition
+      - historical query and rule results null
+decision:
+  domain_name: KEEP
+  no_new_domain: true
+  no_class_quota: true
+  model_change: NONE
+  requirements_change: NONE
+  manuscript_change: NONE
+  release_change: NONE
+  semantic_adequacy: NOT_ASSESSED
+  candidate_changes: Keep each separately identified finding open in its routed CQ/correction unit; no model edit
+    or expert approval follows from a finite graph witness.
+  next_issues:
+  - 124
+  - 125
+  - 129

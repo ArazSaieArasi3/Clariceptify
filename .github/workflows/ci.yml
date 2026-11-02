@@ -130,6 +130,8 @@ jobs:
           python -O tools/test_domain_review_checks.py
       - name: Check Terminology domain assessment
         run: python tools/check_domain_terminology102.py
+      - name: Check Metamodeling domain assessment
+        run: python tools/check_domain_metamodeling103.py
       - name: Check I&DA, BDI2020 and DOLCE Mental comparison and model bindings
         run: python tools/check_comparison_batch6.py
       - name: Check COM paper formalism and unavailable machine root

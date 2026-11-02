@@ -67,3 +67,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Terminology review contribution (#102)
 
 [Terminology](../../evaluation/domain-adequacy/terminology.yaml) reviews 10 primary members against bounded source comparisons and a selected positive/adverse graph join. Term designation and a supplied explicit definition admit a selected same-concept witness. A supplied definition may instead define a different concept; typed presence of all four relations then has no same-concept witness. DOM11-F01 through DOM11-F05 preserve independent open findings. This is subject-domain checkpoint 11 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Metamodeling review contribution (#103)
+
+[Metamodeling](../../evaluation/domain-adequacy/metamodeling.yaml) reviews 4 primary members against bounded source comparisons and a selected positive/adverse graph join. A shared produced/declared metamodel plus model-kind path is available. Declarations may disagree about the metamodel; selected join then has no witness. DOM12-F01 through DOM12-F05 preserve independent open findings. This is subject-domain checkpoint 12 of twenty, not semantic acceptance or a change to the five gap dispositions.

@@ -43,3 +43,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Terminology checkpoint
 
 [Issue #102 assessment](terminology.yaml) reviews all 10 primary members and CQ-15, CQ-16, CQ-21, CQ-30. The [positive](../fixtures/terminology-join-positive.yaml) and [adverse](../fixtures/terminology-join-adverse.yaml) scenarios test a selected finite graph join. Term designation and a supplied explicit definition admit a selected same-concept witness. A supplied definition may instead define a different concept; typed presence of all four relations then has no same-concept witness. Findings DOM11-F01 through DOM11-F05 separately route remaining questions to #106, #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Metamodeling checkpoint
+
+[Issue #103 assessment](metamodeling.yaml) reviews all 4 primary members and CQ-18, CQ-17, CQ-30. The [positive](../fixtures/metamodeling-join-positive.yaml) and [adverse](../fixtures/metamodeling-join-adverse.yaml) scenarios test a selected finite graph join. A shared produced/declared metamodel plus model-kind path is available. Declarations may disagree about the metamodel; selected join then has no witness. Findings DOM12-F01 through DOM12-F05 separately route remaining questions to #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
