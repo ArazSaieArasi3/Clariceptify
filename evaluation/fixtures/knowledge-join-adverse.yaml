@@ -1,0 +1,29 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_knowledge_join
+model_revision: input-r1-rev1
+id: DOM17-NEG-001
+expected_selected_answer: false
+description: They may instead draw on distinct contents.
+nodes:
+- id: episode
+  concept_id: CLR-C0026
+- id: interpretation_process
+  concept_id: CLR-C0063
+- id: knowledge
+  concept_id: CLR-C0034
+- id: other_knowledge
+  concept_id: CLR-C0034
+- id: concept
+  concept_id: CLR-C0017
+edges:
+- relation_id: CLR-R0053
+  source: episode
+  target: knowledge
+- relation_id: CLR-R0092
+  source: interpretation_process
+  target: other_knowledge
+- relation_id: CLR-R0059
+  source: knowledge
+  target: concept
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.
