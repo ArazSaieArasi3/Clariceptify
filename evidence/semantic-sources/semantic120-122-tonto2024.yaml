@@ -1,0 +1,23 @@
+id: TONTO2024
+url: https://www.utwente.nl/en/eemcs/fois2024/resources/papers/coutinho-et-al-a-textual-syntax-and-toolset-for-well-founded-ontologies.pdf
+version: Author paper PDF header March2024;14pages; inspected2026-11-02
+locator: 'Section2 Research Baseline: OntoUML, PDFp3'
+paraphrase: The paper includes historical roles and historical role mixins tied to events, distinguishing
+  one versus multiple substance-sortals. It also separates single-bearer qualities/modes from multiple-dependent
+  relators, and allows a mode to depend externally on entities other than its bearer. Historical role
+  typing thus does not require that the originating event remain ongoing.
+qualification: Last sentence is application to project SC0004, not a quoted theorem proving every historical
+  persistence policy. No historicalRoleMixin equivalence or full profile validation inferred.
+title: A Textual Syntax and Toolset for Well-Founded Ontologies
+authors:
+- Matheus L. Coutinho
+- João Paulo A. Almeida
+- Tiago Prince Sales
+- Giancarlo Guizzardi
+year: 2024
+edition: Author manuscript PDF header March2024 hosted under FOIS2024 resources
+publication_metadata_limit: Exact final proceedings metadata/DOI not verified in this research; cite inspected
+  manuscript and PDF-relative section/page.
+license_reuse_boundary: Reuse license not verified in inspected manuscript. Citation and bounded original
+  paraphrases only; zero quotation or full-text redistribution.
+metadata_checked: '2026-11-02'
