@@ -1,0 +1,492 @@
+issue: 113
+access_date: '2026-11-02'
+baseline_commit: fc2fe2039e27caf69e59c75d11c073b204cd4c0d
+model_revision: input-r1-rev1
+frozen_ids:
+- CLR-C0079
+- CLR-C0098
+- CLR-C0102
+- CLR-C0111
+- CLR-C0131
+sources:
+- id: S17
+  title: Handbook of Conceptual Modeling
+  authors: D. W. Embley and B. Thalheim (eds.)
+  url: https://link.springer.com/book/10.1007/978-3-642-15865-0
+  locator: Publisher metadata and table of contents
+  access_scope: metadata_contents_only
+  paraphrase: Publisher confirms book identity and database-schema chapter, not requested general definitions.
+  independence_lineage: Original CLR-SRC0017; no duplicate independent evidence.
+  license_copyright: Springer copyrighted; no full text redistributed
+  version_or_date: '2011'
+  original_source_id: CLR-SRC0017
+- id: S17C5
+  title: Mapping Conceptual Models to Database Schemas
+  authors: D. W. Embley and Wai Yin Mok
+  url: https://link.springer.com/chapter/10.1007/978-3-642-15865-0_5
+  locator: Abstract; chapter pp.123–163, no interior page verified
+  access_scope: publisher_abstract_read
+  paraphrase: Maps conceptual models into relational and nested database schemas including XML storage.
+  independence_lineage: Chapter in CLR-SRC0017, not independent from that book.
+  license_copyright: Springer copyrighted; no full text redistributed
+  version_or_date: '2011-01-01'
+  original_source_id: CLR-SRC0017
+- id: S18C2
+  title: Methodologies for Computerised Information Systems Support in Organisations
+  authors: John Krogstie
+  url: https://link.springer.com/chapter/10.1007/978-1-4471-2936-3_2
+  locator: Abstract; chapter pp.19–87
+  access_scope: publisher_abstract_read
+  paraphrase: Announces development tasks and model types without defining Reference Model or Specification
+    Model.
+  independence_lineage: Retained CLR-SRC0018 chapter.
+  license_copyright: Springer copyrighted; subscription body not read or redistributed
+  version_or_date: '2012-01-01'
+  original_source_id: CLR-SRC0018
+- id: S18C3
+  title: 'Modelling Languages: Perspectives and Abstraction Mechanisms'
+  authors: John Krogstie
+  url: https://link.springer.com/chapter/10.1007/978-1-4471-2936-3_3
+  locator: Abstract paragraphs2–3; chapter pp.89–204, no interior page verified
+  access_scope: publisher_abstract_read
+  paraphrase: Distinguishes eight phenomenon-oriented modeling perspectives and discusses simultaneous
+    integrated use in UML/EEML.
+  independence_lineage: Retained CLR-SRC0018 chapter; no independent second source.
+  license_copyright: Springer copyrighted; subscription body not read or redistributed
+  version_or_date: '2012-01-01'
+  original_source_id: CLR-SRC0018
+- id: S43
+  title: Visualization Analysis and Design author companion
+  authors: Tamara Munzner
+  url: https://www.cs.ubc.ca/~tmm/vadbook/
+  locator: List of Chapters, chapter12; Videos & Slides
+  access_scope: author_companion_contents_read
+  paraphrase: Chapter12 treats faceting into multiple visualization views, not a verified normative viewpoint
+    definition.
+  independence_lineage: Retained CLR-SRC0043 author site; independent author but different notion.
+  license_copyright: Figures CC BY4.0 only; do not extend permission to book. Linked slides fetch too
+    large, body unread.
+  version_or_date: Book2014; linked slides2021
+  original_source_id: CLR-SRC0043
+- id: OASIS2006
+  title: Reference Model for Service Oriented Architecture1.0
+  authors: C. Matthew MacKenzie, Ken Laskey, Francis McCabe, Peter F Brown, Rebekah Metz (eds.)
+  url: https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html
+  locator: Abstract; Introduction; §1.1, printed p.4
+  access_scope: primary_standard_passage_read
+  paraphrase: Common abstract concepts and relationships enable consistent architecture development independently
+    of implementation details; the specification limits coverage to software architecture.
+  independence_lineage: Independent supplementary standards source, not original-citation verification.
+    FAQ is same lineage.
+  license_copyright: OASIS2005–2006 notice permits specified copying with notices; only short paraphrase
+    used
+  version_or_date: OASIS Standard2006-10-12
+- id: W3C2012
+  title: 'XSD1.1 Part1: Structures'
+  authors: Shudi Gao, C. M. Sperberg-McQueen, Henry S. Thompson (eds.)
+  url: https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/
+  accessed_url: https://www.w3.org/TR/xmlschema11-1/
+  locator: Abstract; §2.2; §3.17.2
+  access_scope: primary_standard_passages_read
+  paraphrase: XSD schemas comprise declarations, definitions and constraints in an implementation-independent
+    abstract model; schema documents encode components.
+  independence_lineage: Independent supplementary W3C source, not verification of SRC0017/18.
+  license_copyright: W3C2012 copyright and document-use rules; no full text redistributed
+  version_or_date: W3C Recommendation2012-04-05
+- id: K2013
+  title: Quality of Conceptual Data Models
+  authors: John Krogstie
+  url: https://folk.idi.ntnu.no/krogstie/publications/2013/ICISO/iciso-2013-art.pdf
+  locator: §2 Goals and Levels of Data Modeling; PDF page2 (zero-based1)
+  access_scope: primary_author_hosted_passage_read
+  paraphrase: Distinguishes current-state descriptive modeling from wanted-future-state prescriptive modeling,
+    with possible alternative future scenarios.
+  independence_lineage: 'Same author as SRC0018 and cites2012 book: NOT independent corroboration.'
+  license_copyright: No open license verified; paraphrase only
+  version_or_date: 2013 author-hosted manuscript; version-of-record DOI not verified
+- id: ISO_TC204_2011_LINEAGE
+  title: 'ITS Vocabulary: architecture viewpoint'
+  authors: ISO TC204
+  url: https://isotc204.org/iso14812/v1.1.2-alpha.3/terms/architecture%20viewpoint/
+  locator: Clause3.1.3.6; source ISO/IEC/IEEE42010:2011 §3.6
+  access_scope: standards_committee_vocabulary_entry_read
+  paraphrase: Architecture viewpoint is a work product governing conventions for views and framing concerns;
+    relationships connect concerns, views and model kinds.
+  independence_lineage: Independent of original books; derived2011 ISO definition. Vocabulary and ISO
+    are one lineage.
+  license_copyright: Website CC BY4.0; alpha snapshot, not current normative standard
+  version_or_date: Version1.1.2-alpha.3; page2026-06-01; source42010:2011
+- id: ISO2022_METADATA
+  title: ISO/IEC/IEEE42010:2022
+  authors: ISO/IEC/IEEE
+  url: https://www.iso.org/standard/74393.html
+  locator: Official edition metadata and abstract
+  access_scope: metadata_only; OBP clause body unavailable (JavaScript)
+  paraphrase: Confirms edition2 and architecture-description scope; no2022 viewpoint clause verified.
+  independence_lineage: Same standards lineage, cannot count as independent definition confirmation.
+  license_copyright: ISO copyrighted; no standard full text redistributed
+  version_or_date: Edition2,2022-11
+concepts:
+- concept_id: CLR-C0079
+  label: Multi-Dimensional Modeling
+  original_citations_inspected: &id001
+  - CLR-SRC0018
+  - CLR-SRC0043
+  uncertainty: No dimensional-datawarehouse conflation. Munzner visual views are not independent definition
+    confirmation.
+  proposed_delta:
+    status: unapproved_research_only
+    text: Consider multi-perspective scope or terminology note, not implemented.
+  next_decision: Obtain interior passage/independent process definition; joint129 decides naming/scope.
+  typing_approval: not_assessed
+  recommended_support_transition: none; preserve P pending full-definition acceptance
+  inspected_original_source_entries:
+  - S18C3
+  - S43
+  original_passage_status: Retained S18C3 abstract supplies bounded analytical-perspectives evidence;
+    original book-body defining pages and SRC43 chapter remain unverified.
+  frozen_definition: A modeling process that organizes a subject through several explicitly distinguished
+    dimensions or analytical perspectives.
+  frozen_stereotype: «event»
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-79
+  original_support_record:
+    concept_id: CLR-C0079
+    input_label: Multi-Dimensional Modeling
+    support_type: P
+    source_ids: *id001
+    input_reference_display: '[18], [43]'
+    support_scope_and_limit: Candidate support for multiple perspectives and views; not a claim of dimensional
+      data-warehouse semantics.
+    input_source_locations: '[18] modeling perspectives; [43] ch. 12 contents'
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-79
+    passage_verification: not_reverified_in_import
+    typing_approval: not_assessed
+  preserve_imported_support: P
+  clause_support:
+  - clause: process
+    status: partial
+    evidence:
+    - S18C3
+    scope_note: partial
+  - clause: multiple distinguished perspectives
+    status: supported
+    evidence:
+    - S18C3
+    scope_note: supported_by_S18C3_in_conceptual_modeling
+  - clause: exact label
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  - clause: explicit dimensions
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  finding_id: SRC113-F01
+  overall_outcome: PARTIAL_SUPPORT_WITH_UNRESOLVED_SCOPE_OR_PASSAGE_GAPS
+  decision_route:
+    issue: 129
+    status: awaiting_joint_user_decision
+    execution_rule: Approved independent corrections need bounded issues with AC/NAC before implementation.
+- concept_id: CLR-C0098
+  label: Reference Model
+  original_citations_inspected: &id002
+  - CLR-SRC0017
+  - CLR-SRC0018
+  uncertainty: Original defining passages not retrieved; OASIS narrower and emphasizes common abstract
+    concepts.
+  proposed_delta:
+    status: unapproved_research_only
+    text: Consider adding domain/common-concept qualifier or evidence for comparison clause.
+  next_decision: Joint129 decides broad definition versus scoped reference-model sense.
+  typing_approval: not_assessed
+  recommended_support_transition: none; preserve P pending full-definition acceptance
+  inspected_original_source_entries:
+  - S17
+  - S18C2
+  original_passage_status: Original defining body passages remain unverified; source-specific metadata/abstract/contents
+    access is recorded separately.
+  frozen_definition: A model designed to provide reusable guidance for constructing or comparing models
+    of related subjects.
+  frozen_stereotype: «subkind»
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-98
+  original_support_record:
+    concept_id: CLR-C0098
+    input_label: Reference Model
+    support_type: P
+    source_ids: *id002
+    input_reference_display: '[17], [18]'
+    support_scope_and_limit: Relevant model-type literature located; each named specialization needs a
+      precise defining passage.
+    input_source_locations: '[18] development tasks/model types; [17] contents'
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-98
+    passage_verification: not_reverified_in_import
+    typing_approval: not_assessed
+  preserve_imported_support: P
+  clause_support:
+  - clause: reusable guidance
+    status: supported
+    evidence:
+    - OASIS2006
+    scope_note: supported_scoped_OASIS2006
+  - clause: constructing architectures
+    status: supported
+    evidence:
+    - OASIS2006
+    scope_note: supported_scoped_OASIS2006
+  - clause: constructing arbitrary related models
+    status: partial
+    evidence:
+    - OASIS2006
+    scope_note: partial
+  - clause: comparing models
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  finding_id: SRC113-F02
+  overall_outcome: PARTIAL_SUPPORT_WITH_UNRESOLVED_SCOPE_OR_PASSAGE_GAPS
+  decision_route:
+    issue: 129
+    status: awaiting_joint_user_decision
+    execution_rule: Approved independent corrections need bounded issues with AC/NAC before implementation.
+- concept_id: CLR-C0102
+  label: Schema
+  original_citations_inspected: &id003
+  - CLR-SRC0017
+  - CLR-SRC0018
+  uncertainty: XML and database evidence does not prove universal schema concept; schema differs from
+    schema document.
+  proposed_delta:
+    status: unapproved_research_only
+    text: Consider explicit representational-schema scope; preserve schema/document distinction.
+  next_decision: Joint129 decides scope; obtain general defining passage before stronger support.
+  typing_approval: not_assessed
+  recommended_support_transition: none; preserve P pending full-definition acceptance
+  inspected_original_source_entries:
+  - S17C5
+  - S18C2
+  original_passage_status: Original defining body passages remain unverified; source-specific metadata/abstract/contents
+    access is recorded separately.
+  frozen_definition: An information object specifying a template of admissible elements, organization
+    and constraints for representations.
+  frozen_stereotype: «subkind»
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-102
+  original_support_record:
+    concept_id: CLR-C0102
+    input_label: Schema
+    support_type: P
+    source_ids: *id003
+    input_reference_display: '[17], [18]'
+    support_scope_and_limit: Conceptual schema literature located; exact general schema definition needs
+      a passage-level review.
+    input_source_locations: '[17] database-schema contents; [18] modeling overview'
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-102
+    passage_verification: not_reverified_in_import
+    typing_approval: not_assessed
+  preserve_imported_support: P
+  clause_support:
+  - clause: admissible elements
+    status: supported
+    evidence:
+    - W3C2012
+    scope_note: supported_scoped_W3C2012
+  - clause: organization
+    status: partial
+    evidence:
+    - W3C2012
+    scope_note: partial
+  - clause: constraints
+    status: supported
+    evidence:
+    - W3C2012
+    scope_note: supported_scoped_W3C2012
+  - clause: arbitrary representations
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  - clause: information object typing
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  - clause: template
+    status: partial
+    evidence:
+    - W3C2012
+    scope_note: partial_reviewer_inference_from_component_constraints
+  finding_id: SRC113-F03
+  overall_outcome: PARTIAL_SUPPORT_WITH_UNRESOLVED_SCOPE_OR_PASSAGE_GAPS
+  decision_route:
+    issue: 129
+    status: awaiting_joint_user_decision
+    execution_rule: Approved independent corrections need bounded issues with AC/NAC before implementation.
+- concept_id: CLR-C0111
+  label: Specification Model
+  original_citations_inspected: &id004
+  - CLR-SRC0017
+  - CLR-SRC0018
+  uncertainty: Same-author manuscript is not independent corroboration; wanted future is not necessarily
+    required; model-use role versus essential subtype unresolved.
+  proposed_delta:
+    status: unapproved_research_only
+    text: Consider descriptive/prescriptive intended-use qualification only after joint decision.
+  next_decision: Obtain retained chapter defining passage or normative model source; joint129 determines
+    label/scope/typing.
+  typing_approval: not_assessed
+  recommended_support_transition: none; preserve P pending full-definition acceptance
+  inspected_original_source_entries:
+  - S17
+  - S18C2
+  original_passage_status: Original defining body passages remain unverified; source-specific metadata/abstract/contents
+    access is recorded separately.
+  frozen_definition: A model prescribing required or admissible characteristics of a subject or intended
+    artifact.
+  frozen_stereotype: «subkind»
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-111
+  original_support_record:
+    concept_id: CLR-C0111
+    input_label: Specification Model
+    support_type: P
+    source_ids: *id004
+    input_reference_display: '[17], [18]'
+    support_scope_and_limit: Relevant model-type literature located; each named specialization needs a
+      precise defining passage.
+    input_source_locations: '[18] development tasks/model types; [17] contents'
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-111
+    passage_verification: not_reverified_in_import
+    typing_approval: not_assessed
+  preserve_imported_support: P
+  clause_support:
+  - clause: prescriptive orientation
+    status: supported
+    evidence:
+    - K2013
+    scope_note: supported_scoped_K2013
+  - clause: intended future subject
+    status: supported
+    evidence:
+    - K2013
+    scope_note: supported_scoped_K2013
+  - clause: required or admissible characteristics
+    status: partial
+    evidence:
+    - K2013
+    scope_note: partial
+  - clause: exact label
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  finding_id: SRC113-F04
+  overall_outcome: PARTIAL_SUPPORT_WITH_UNRESOLVED_SCOPE_OR_PASSAGE_GAPS
+  decision_route:
+    issue: 129
+    status: awaiting_joint_user_decision
+    execution_rule: Approved independent corrections need bounded issues with AC/NAC before implementation.
+- concept_id: CLR-C0131
+  label: Viewpoint
+  original_citations_inspected: &id005
+  - CLR-SRC0018
+  - CLR-SRC0043
+  uncertainty: Original perspectives/visual views do not prove normative contract; 2011 wording must not
+    be labeled2022; iso-architecture timeout and OBP unavailable.
+  proposed_delta:
+    status: unapproved_research_only
+    text: Consider architecture-specific scope or obtain general normative viewpoint source.
+  next_decision: Joint129 decides broad versus architecture-specific notion; verify current standard clause
+    separately.
+  typing_approval: not_assessed
+  recommended_support_transition: none; preserve P pending full-definition acceptance
+  inspected_original_source_entries:
+  - S18C3
+  - S43
+  original_passage_status: Original defining body passages remain unverified; source-specific metadata/abstract/contents
+    access is recorded separately.
+  frozen_definition: An information object prescribing concerns, selection rules and conventions for constructing
+    and interpreting a view.
+  frozen_stereotype: «subkind»
+  source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-131
+  original_support_record:
+    concept_id: CLR-C0131
+    input_label: Viewpoint
+    support_type: P
+    source_ids: *id005
+    input_reference_display: '[18], [43]'
+    support_scope_and_limit: Perspective/view literature located; model-specific viewpoint contract needs
+      a precise passage.
+    input_source_locations: '[18] modeling perspectives; [43] ch. 12 contents'
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-8/data-row-131
+    passage_verification: not_reverified_in_import
+    typing_approval: not_assessed
+  preserve_imported_support: P
+  clause_support:
+  - clause: concerns
+    status: supported
+    evidence:
+    - ISO_TC204_2011_LINEAGE
+    scope_note: supported_scoped_ISO_TC204_2011_LINEAGE
+  - clause: construction interpretation conventions
+    status: supported
+    evidence:
+    - ISO_TC204_2011_LINEAGE
+    scope_note: supported_scoped_ISO_TC204_2011_LINEAGE
+  - clause: selection rules
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  - clause: arbitrary views
+    status: not_verified
+    evidence: []
+    scope_note: not_verified
+  - clause: information object
+    status: partial
+    evidence:
+    - ISO_TC204_2011_LINEAGE
+    scope_note: partial_work_product_alignment
+  finding_id: SRC113-F05
+  overall_outcome: PARTIAL_SUPPORT_WITH_UNRESOLVED_SCOPE_OR_PASSAGE_GAPS
+  decision_route:
+    issue: 129
+    status: awaiting_joint_user_decision
+    execution_rule: Approved independent corrections need bounded issues with AC/NAC before implementation.
+analysis_policy: Clause statuses and proposed deltas are reviewer inference, not source quotations or
+  semantic acceptance.
+limitations: Original full defining body passages unverified; limited retained abstract support distinguished
+  from full definition. No OntoUML proof, expert approval, or model edits.
+schema_version: '1.0'
+task_id: R2-SRC-002
+status: BOUNDED_SOURCE_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+review_method: AI-assisted manual passage comparison and lineage review; independent internal QA recorded
+  in PR, not external expert approval
+semantic_acceptance: not_assessed
+model_changes: none
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/source-support-import.md: 818b9a2a7c018275dc3095273cde908a0934659aea13200e0e077b9a42364f8a
+prerequisites:
+- issue: 27
+  state_observed: closed
+  checked_on: '2026-11-02'
+- issue: 67
+  state_observed: closed
+  checked_on: '2026-11-02'
+search_boundary:
+  cutoff: '2026-11-02'
+  scope: Second five frozen P concepts; original cited works and targeted standards/author literature,
+    not exhaustive systematic review.
+  selection: Original publisher/author pages first; supplementary primary standards and originating disciplinary
+    work; no source count threshold.
+  access_rule: Exact inspected section or page required for clause evidence; unavailable full text is
+    not negative evidence.
+  reuse_rule: Short paraphrases and metadata only; no third-party PDFs or figures redistributed.
+checks:
+  command: python tools/check_pending_passports.py --batch 2
+  scope: Input hashes, frozen IDs/definitions/stereotypes/P provenance, source locators, evidence refs,
+    decision and typing gates; does not mechanically verify source meaning.
+  result_location: Exact PR and GitHub Public integrity run; checker stdout retained by CI
+  semantic_result: not_assessed
+  external_expert_review: not_performed

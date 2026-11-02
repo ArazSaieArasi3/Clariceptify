@@ -175,6 +175,7 @@ jobs:
       - name: Check pending source passports and integrity failure boundaries
         run: |
           python tools/check_pending_passports.py --batch 1
+          python tools/check_pending_passports.py --batch 2
           python tools/test_pending_passports.py
           python -O tools/test_pending_passports.py
       - name: Preserve exact input and validator evidence

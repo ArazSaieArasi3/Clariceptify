@@ -27,3 +27,10 @@ These are new review links, not edits to the frozen artifact/link inventory.
 The root README links this family; baseline evidence/traceability READMEs are
 protected scientific release members and are intentionally preserved byte-for-byte.
 No `satisfies` or typing-acceptance link is asserted.
+
+- [Batch 2, #113](pending-batch-2.yaml): Multi-Dimensional Modeling, Reference Model,
+  Schema, Specification Model and Viewpoint. Five bounded reviews; retained abstract
+  and supplementary standards support scoped clauses, not full definition or typing.
+  Findings SRC113-F01 through SRC113-F05 remain open for #129.
+
+Run `python tools/check_pending_passports.py --batch 2`.
