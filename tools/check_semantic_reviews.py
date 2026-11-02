@@ -15,6 +15,13 @@ def require(ok, message):
 def read(path):
     return yaml.safe_load((ROOT/path).read_text())
 
+def validate_attribution(src):
+    # Unnamed documentation pages retain organizational provenance without
+    # inventing personal authors. Both publisher and explicit limitation are required.
+    require(src.get('authors') or src.get('editors') or
+            (src.get('publisher') and src.get('author_attribution_note')),
+            'source author/editor or qualified organizational attribution missing')
+
 def validate(report, issue):
     require(report['issue']==issue, 'issue identity')
     require(report['status']=='BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS', 'review status')
@@ -34,7 +41,7 @@ def validate(report, issue):
         src=yaml.safe_load(path.read_text());require(src['id']==ref['id'], 'source mismatch')
         for field in ['url','locator','paraphrase','title']:
             require(src.get(field), 'source metadata missing '+field)
-        require(src.get('authors') or src.get('editors'), 'source author/editor attribution missing')
+        validate_attribution(src)
         require(src.get('version',src.get('version_date')), 'source edition missing')
     all_ids=set();captured_ids=set()
     require(set(report['model_snapshot'])=={'model/concepts.yaml','model/relations.yaml','model/generalizations.yaml','model/constraints.yaml'}, 'missing snapshot family')

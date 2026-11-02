@@ -1,0 +1,352 @@
+schema_version: '1.0'
+issue: 120
+task_id: R2-SEM-foundational-grounding.a
+status: BOUNDED_SEMANTIC_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: d2b6c9d6381e1f2d641c28cc71fad8fdfa53303d
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+semantic_acceptance: not_assessed
+model_changes: none
+expert_review: not_performed
+method: AI-assisted manual source-to-model conceptual comparison, exact versioned evidence, positive/adverse
+  examples and independent internal QA in PR; not native OntoUML validation, philosophical consensus or
+  automated logical proof
+input_bindings:
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+  evidence/concept-support.yaml: c2891e75162ebb93d6faa5470105abbb4d8055a00891af330c8fcd3e6637e54b
+  evidence/source-register.yaml: 3dce39889c1d03c79b8d3b85a458559238c49df3e452e3a28f7199a2bfcbb0b4
+  evidence/related-work/review-protocol.yaml: 7a59bac32a36a1f73d8320512112f9029ab65de5135d8d8f067f0deff609b6b8
+  docs/decisions/artifact-authority.md: cf03c3084daecc9c00e53847a1797b81c76aab62c10e6b51c4c30901ef0369ef
+  docs/decisions/artifact-versioning.md: a2cf67ab0c7d82d23068b16c62945d31666d80e5c13ae754f5fa9f76db512477
+source_refs:
+- id: SEP-SORTALS2025
+  path: evidence/semantic-sources/semantic120-122-sep-sortals2025.yaml
+  sha256: 2f8c85ec4cfad3b25a0f4ebf01e82ac5a71b809a2805a4cd223803bc14ad70a3
+- id: UFO-TYPES2021
+  path: evidence/semantic-sources/semantic120-122-ufo-types2021.yaml
+  sha256: befd4db72201a866da326c188ef6078462b52d027e007bf7f62eebf6f78bbcf3
+- id: UFO-HIGHER2022
+  path: evidence/semantic-sources/semantic120-122-ufo-higher2022.yaml
+  sha256: eefd525f963fd94db0cd24b550dc9d268fca95838f2be05cee12503d4d6cba45
+- id: ONTO-KIND-DOC
+  path: evidence/semantic-sources/semantic120-122-onto-kind-doc.yaml
+  sha256: 107d07fe5f7e7b21373bc831bd9798c8fe46b12b3aa2ab66959c5ebd94920c6a
+- id: ONTO-CATEGORY-DOC
+  path: evidence/semantic-sources/semantic120-122-onto-category-doc.yaml
+  sha256: 2590467f0183d5d8c06dce98ec902986b5726064e1c91fac360894cd92854d51
+- id: ONTO-MIXIN-DOC
+  path: evidence/semantic-sources/semantic120-122-onto-mixin-doc.yaml
+  sha256: 53fc038a779cb521f2c3056e891566a86666cc17f74b30b78d7118a9524f62a1
+model_snapshot:
+  model/concepts.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-4
+    id: CLR-C0004
+    label_en: Agent
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An object capable of intentional participation in conceptual activities, including an
+      individual or an appropriately constituted collective agent.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0011
+    - CLR-SRC0023
+    notes: 'Input reference display: [11], [23]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-57
+    id: CLR-C0057
+    label_en: Information Object
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «kind»
+    definition: A repeatable, identifiable unit of information content that may be carried by different
+      physical or digital manifestations; identity follows content under an explicit equivalence policy.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0012
+    - CLR-SRC0015
+    notes: 'Input reference display: [12], [15]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-73
+    id: CLR-C0073
+    label_en: Model
+    ufo_type: Endurant / information object
+    ontouml_stereotype: «subkind»
+    definition: A structured representation that selectively describes a subject for a purpose using explicit
+      modeling conventions.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0018
+    - CLR-SRC0034
+    notes: 'Input reference display: [18], [34]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-74
+    id: CLR-C0074
+    label_en: Model Kind
+    ufo_type: Universal / higher-order type
+    ontouml_stereotype: «type»
+    definition: A higher-order type whose instances are types of models, such as the type Conceptual Model;
+      it is not a particular model artifact.
+    is_abstract: null
+    primary_domain_id: CLR-D0008
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0003
+    - CLR-SRC0038
+    notes: 'Input reference display: [3], [38]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-83
+    id: CLR-C0083
+    label_en: Object
+    ufo_type: Endurant / object
+    ontouml_stereotype: «category»
+    definition: An endurant that persists through change and is wholly present whenever it exists; the
+      broad object category excludes events, moments and types.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0011
+    notes: 'Input reference display: [7], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-2/data-row-125
+    id: CLR-C0125
+    label_en: Type
+    ufo_type: Universal / type
+    ontouml_stereotype: «category»
+    definition: A universal that classifies entities according to shared characteristics; this category
+      includes types of objects, events and higher-order types.
+    is_abstract: null
+    primary_domain_id: CLR-D0021
+    aliases: []
+    source_reference_ids:
+    - CLR-SRC0007
+    - CLR-SRC0011
+    notes: 'Input reference display: [7], [11]. Stable bindings are in evidence/concept-support.yaml.
+      Source support is qualified, not independent typing approval; historical correspondences remain
+      unreviewed.'
+  model/relations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-106
+    id: CLR-R0106
+    label_en: is classified by
+    source_id: CLR-C0073
+    target_id: CLR-C0074
+    source_multiplicity: 0..*
+    target_multiplicity: 1..*
+    ontouml_stereotype: «instantiation»
+    connector: 'Solid line
+
+      No arrowhead'
+    notes: 'Input end stereotypes: «subkind» / «type». Multiplicities are the labels at the respective
+      diagram ends; no OWL restriction is inferred.'
+  model/generalizations.yaml:
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-177
+    id: CLR-G0003
+    child_id: CLR-C0004
+    parent_id: CLR-C0083
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «category» / «category». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-226
+    id: CLR-G0052
+    child_id: CLR-C0057
+    parent_id: CLR-C0083
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «kind» / «category». No partition axiom inferred.'
+  - lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#table-5/data-row-241
+    id: CLR-G0067
+    child_id: CLR-C0074
+    parent_id: CLR-C0125
+    set_completeness: unknown
+    set_disjointness: unknown
+    notes: 'Input connector: Solid line
+
+      Hollow triangle at C2. End stereotypes: «type» / «category». No partition axiom inferred.'
+  model/constraints.yaml:
+  - id: CLR-SC0023
+    text: Identity and metalevel. Do not identify a Concept with its described Type, an Instance description
+      with its referent, or a Model with its Model Kind. Information Object identity follows a declared
+      content-equivalence policy, not the identity of a physical file.
+    referenced_ids:
+    - CLR-C0017
+    - CLR-C0057
+    - CLR-C0059
+    - CLR-C0073
+    - CLR-C0074
+    - CLR-C0083
+    - CLR-C0125
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-23
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+  - id: CLR-SC0024
+    text: Content-level conformance. A model conforms to a metamodel only if its constructs satisfy that
+      metamodel rules. A stated conformity link is not itself proof. No disjointness or exhaustive partition
+      is inferred merely from two different class names.
+    referenced_ids: []
+    enforcement: textual
+    execution_status: not_executed
+    lifecycle: candidate
+    introduced_version: input-r1-rev1
+    source_locator: SRC-SPEC@sha256:c0a1f1aabb878800ee8485e13a0aa5130320c54c435fa19ea32114139cdc6d4e#section-6/constraint-24
+    notes: Referenced IDs are case-sensitive lexical mention candidates only; completeness and contextual
+      interpretation require review. Text is preserved without translation or formalization.
+bounded_commitment: Assess identity provision/inheritance separately from stable identifiers and from
+  names; select an explicit theory/profile before interpreting kind/category/mixin.
+findings:
+- id: SEM120-F01
+  title: Information content identity remains a semantic question
+  observation: C0057 is sole kind and G0052 places it below Object category. Its definition and SC0023
+    require content equivalence, not physical-file equality. Existing artifact-versioning.md governs project
+    asset/revision bindings; artifact-authority.md explicitly separates engineering records from modeled
+    instances. Therefore do not claim no version policy exists.
+  affected_ids:
+  - CLR-C0057
+  - CLR-G0052
+  - CLR-SC0023
+  sources:
+  - SEP-SORTALS2025
+  - UFO-TYPES2021
+  proposal_not_applied: Specify examples of same/different modeled information objects, contextual equivalence
+    and cross-time persistence before accepting a semantic identity policy; preserve existing governance.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM120-F01
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM120-F02
+  title: Category abstraction and identity coverage are qualified
+  observation: Agent C0004,Object C0083,Type C0125 are categories; all is_abstract fields null. Null is
+    unassessed, not explicit nonabstract. Agent definition covers individual and collective agents, but
+    does not supply their separate ultimate identity kinds. Selected slice may deliberately omit these;
+    unsupported direct instantiation is a risk, not an established contradiction.
+  affected_ids:
+  - CLR-C0004
+  - CLR-C0083
+  - CLR-C0125
+  - CLR-G0003
+  - CLR-SC0024
+  sources:
+  - UFO-TYPES2021
+  - ONTO-CATEGORY-DOC
+  proposal_not_applied: Select supported profile and declare abstraction/external identity coverage without
+    inventing Person/Organization classes or expanding domain scope.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM120-F02
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM120-F03
+  title: No mixin should be inferred from a shared label
+  observation: Model census contains no exact mixin stereotype. A broad Agent or Object name alone cannot
+    decide rigid category versus semi-rigid mixin. Candidate class stereotypes remain imported.
+  affected_ids:
+  - CLR-C0004
+  - CLR-C0083
+  sources:
+  - SEP-SORTALS2025
+  - UFO-TYPES2021
+  - ONTO-MIXIN-DOC
+  proposal_not_applied: Use essential-versus-contingent membership cases if reclassification is proposed;
+    no need to create a mixin just to fill a category.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM120-F03
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+- id: SEM120-F04
+  title: Model Kind level interpretation gate
+  observation: 'C0074 is a higher-order type whose instances are model types. R0106 connects base class
+    Model C0073 to Model Kind C0074 using the instantiation stereotype (source0..*, target1..*). C0073
+    is a class, not an individual artifact. UFO-HIGHER2022 section4.1 PDFp9 explicitly interprets this
+    association as a base-type/higher-order-type connection: isPowertype=true denotes Cardelli powertype,
+    otherwise categorization. R0106 can therefore be appropriate notation rather than a skipped-level
+    error. The imported registry does not declare the selected profile, order, isPowertype setting or
+    formal translation; that interpretation gate remains open.'
+  affected_ids:
+  - CLR-C0073
+  - CLR-C0074
+  - CLR-C0125
+  - CLR-R0106
+  - CLR-G0067
+  - CLR-SC0023
+  sources:
+  - UFO-HIGHER2022
+  proposal_not_applied: At#129 document the selected OntoUML higher-order profile, base type, categorization/powertype
+    choice and translation before assessing or changing R0106. Preserve the existing definition and edge;
+    do not infer a defect from ordinary association semantics.
+  route: '#129 joint decision'
+  state: REVIEW_FINDING_NOT_FINAL_SEMANTIC_ACCEPTANCE
+  research_draft_id: SEM120-F04
+  decision_gate: unapproved_joint_user_decision_129
+  implementation: none; approved independent changes require bounded follow-up issues with AC/NAC
+case_review:
+  examples:
+    positive: Two identical-content exports may carry one modeled information object under an explicitly
+      chosen equivalence policy, while keeping distinct file assets. A person remains the same agent after
+      role change.
+    negative: 'Treat changing a file hash as proof of new content identity. Boundary/unknown case, not
+      proved inconsistency: instantiate only broad Object without a specified identity ground; flag the
+      missing declared identity obligation and possible external coverage. Reject treating an individual
+      model artifact as a type of model types without a declared bridge; do not mistake the class-level
+      R0106 specialized association itself for that individual assertion.'
+  checks:
+  - Read-only ancestry/provider census completed in/tmp/semantic120-122-static.json
+  - Full identity, modal and higher-order semantics remain NOT_ASSESSED; no OCL/TPTP/native validator
+    executed
+  method: Manual conceptual inspection; examples are focal scenarios, not proven complete valid instances;
+    absent information is not falsity. Local executable predicates, where supplied, test only declared
+    finite rules.
+scope_boundaries:
+- No source definition automatically validates imported stereotypes.
+- No creation of new classes, identities, relations or constraints.
+- A completed negative/uncertain review does not resolve its findings.
+- Frozen constraint execution_status values remain unchanged; local probes are separate evidence.
+- 'Research proposals and philosophical alternatives await #129 joint decision.'
+verification:
+  command: python tools/check_semantic_reviews.py --issue 120
+  result_location: Exact PR and Public integrity run
+  limits: Integrity and selected local predicates only; no human expert acceptance or complete formal
+    model proof.

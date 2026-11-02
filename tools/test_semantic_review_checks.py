@@ -1,6 +1,6 @@
 """Adverse report-integrity tests; not philosophical or native OntoUML proofs."""
 from copy import deepcopy
-from check_semantic_reviews import read, validate, SemanticReviewError, finite_checks
+from check_semantic_reviews import read, validate, SemanticReviewError, finite_checks, validate_attribution
 base=read('evaluation/semantic-reviews/mental-content.yaml')
 validate(base,114)
 def fails(name,mutate):
@@ -22,3 +22,11 @@ fails('unknown source',lambda x:x['findings'][0].update(source_ids=['unknown']))
 fails('missing cases',lambda x:x.update(case_review={}))
 if finite_checks(114)!=4:raise RuntimeError('fixture denominator changed')
 print('PASS: 12 adverse integrity cases and 4 bounded mental-content predicates')
+
+# A documentation page may honestly have no named personal authors.
+validate_attribution({"authors": [], "publisher": "Documentation project", "author_attribution_note": "Individual page authors not specified."})
+for source in [{}, {"publisher": "Documentation project"}, {"author_attribution_note": "No named authors"}]:
+    try: validate_attribution(source)
+    except SemanticReviewError: print("EXPECTED_REJECTION: incomplete source attribution")
+    else: raise RuntimeError("unqualified source attribution accepted")
+print("PASS: qualified organizational attribution and 3 incomplete-attribution rejections")

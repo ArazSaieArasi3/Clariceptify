@@ -1,0 +1,33 @@
+id: UFO-HIGHER2022
+registry_id: CLR-SRC0003
+url: https://www.danieleporello.net/papers/FonsecaEtAlER2022.pdf
+doi: 10.1007/978-3-031-17995-2_2
+version: Author-hosted15-pagePDF inspected2026-11-02; do not substitute publisher pagination18–34 for
+  its page numbers
+locator: Section3 PDFpp5–7, axioms a1–a5 and discussion of first-, higher- and orderless types; section4.1
+  PDFp9 lines292–299, instantiation association base-type/categorizer or powertype interpretation
+paraphrase: The extension permits types themselves to instantiate types, distinguishing individuals from
+  types and first-order from higher-order and orderless classification. Specialization and instantiation
+  are different relations. Higher-order Model Kind must therefore be interpreted with a declared level
+  discipline, rather than assuming an individual model and a type of models are interchangeable. Section4.1
+  defines instantiation associations between base types and higher-order types, with isPowertype distinguishing
+  powertype from categorization.
+qualification: The displayed a3 uses entity(t) while its left side uses individual(i); retain this apparent
+  variable discrepancy if formalizing, do not silently correct or claim reproduced proof. Author-PDF license
+  not verified; citation/paraphrase only.
+title: Incorporating Types of Types in Ontology-Driven Conceptual Modeling
+authors:
+- Claudenir M. Fonseca
+- Giancarlo Guizzardi
+- João Paulo A. Almeida
+- Tiago Prince Sales
+- Daniele Porello
+year: 2022
+container: Conceptual Modeling, ER2022; LNCS13607
+publisher: Springer
+publication_pages: 18–34 (publication metadata); inspected author PDF has15pages
+edition: Author-hosted PDF, not silently equated to publisher pagination
+license_reuse_boundary: Author-hostedPDF license not established. Institutional publication record marks
+  all rights reserved and distinguishes accepted manuscript from version of record. Citation and bounded
+  original paraphrases only; zero quotation/full-text redistribution.
+metadata_checked: '2026-11-02'
