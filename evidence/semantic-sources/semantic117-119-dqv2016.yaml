@@ -1,0 +1,13 @@
+id: DQV2016
+title: 'Data on the Web Best Practices: Data Quality Vocabulary'
+authors: W3C Data on the Web Best Practices Working Group
+version_date: Working Group Note2016-12-15
+url: https://www.w3.org/TR/vocab-dqv/
+locator: Abstract; §§4.1–4.2; §6.3 provenance of single quality measurements
+access_scope: specified_passages_actually_read
+paraphrase: Separates quality metric from measurement, observed value, assessed resource and generating
+  activity. Fitness for purpose is user-relevant rather than a complete universal definition of quality.
+limitations: Working Group Note, not W3C Recommendation or membership endorsement; dataset measurements
+  are analogies, not identity mapping to qualitative findings.
+independence_lineage: Retained CLR-SRC0042; primary standard-group publication.
+copyright: Short paraphrase only; no fulltext redistribution; no blanket open license assumed.
