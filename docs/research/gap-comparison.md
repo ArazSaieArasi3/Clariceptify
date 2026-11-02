@@ -71,3 +71,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Metamodeling review contribution (#103)
 
 [Metamodeling](../../evaluation/domain-adequacy/metamodeling.yaml) reviews 4 primary members against bounded source comparisons and a selected positive/adverse graph join. A shared produced/declared metamodel plus model-kind path is available. Declarations may disagree about the metamodel; selected join then has no witness. DOM12-F01 through DOM12-F05 preserve independent open findings. This is subject-domain checkpoint 12 of twenty, not semantic acceptance or a change to the five gap dispositions.
+
+### Taxonomy review contribution (#104)
+
+[Taxonomy](../../evaluation/domain-adequacy/taxonomy.yaml) reviews 3 primary members against bounded source comparisons and a selected positive/adverse graph join. Classification and instantiation endpoints admit a selected alignment check. Assignment can name a different category from the classification. DOM13-F01 through DOM13-F05 preserve independent open findings. This is subject-domain checkpoint 13 of twenty, not semantic acceptance or a change to the five gap dispositions.
