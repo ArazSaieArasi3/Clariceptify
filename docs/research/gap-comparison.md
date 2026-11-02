@@ -63,3 +63,7 @@ The O4OA formal source (#91) and I&DA original source (#246) remain open followu
 ### Language review contribution (#101)
 
 [Language](../../evaluation/domain-adequacy/language.yaml) adds a selected message-to-its-own-language/syntax join with recorded agents. The wrong-language adverse graph has no selected answer; syntax does not prove equal meaning, receipt or compatible interpretation. DOM10-F01 through DOM10-F05 separately track these boundaries, language partition uncertainty and creation/revision identity. This is the tenth of twenty subject-domain reviews, not semantic acceptance or a change to the five gap dispositions.
+
+### Terminology review contribution (#102)
+
+[Terminology](../../evaluation/domain-adequacy/terminology.yaml) reviews 10 primary members against bounded source comparisons and a selected positive/adverse graph join. Term designation and a supplied explicit definition admit a selected same-concept witness. A supplied definition may instead define a different concept; typed presence of all four relations then has no same-concept witness. DOM11-F01 through DOM11-F05 preserve independent open findings. This is subject-domain checkpoint 11 of twenty, not semantic acceptance or a change to the five gap dispositions.
