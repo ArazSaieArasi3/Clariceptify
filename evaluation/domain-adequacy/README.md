@@ -51,3 +51,7 @@ Five findings route the remaining questions to #114, #115, #121–#123, #125 and
 ## Taxonomy checkpoint
 
 [Issue #104 assessment](taxonomy.yaml) reviews all 3 primary members and CQ-19, CQ-07, CQ-09, CQ-11. The [positive](../fixtures/taxonomy-join-positive.yaml) and [adverse](../fixtures/taxonomy-join-adverse.yaml) scenarios test a selected finite graph join. Classification and instantiation endpoints admit a selected alignment check. Assignment can name a different category from the classification. Findings DOM13-F01 through DOM13-F05 separately route remaining questions to #123, #124, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
+
+## Logic checkpoint
+
+[Issue #105 assessment](logic.yaml) reviews all 4 primary members and CQ-20. The [positive](../fixtures/logic-join-positive.yaml) and [adverse](../fixtures/logic-join-adverse.yaml) scenarios test a selected finite graph join. Constraint expression and axiom acceptance can share an artifact context. Acceptance only in another artifact removes the same-context witness. Findings DOM14-F01 through DOM14-F05 separately route remaining questions to #124, #125, #129. Full CQ execution, source passage/typing approval and semantic adequacy remain unassessed; no model, domain or release change follows.
