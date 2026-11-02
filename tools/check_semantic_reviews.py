@@ -32,8 +32,9 @@ def validate(report, issue):
     for ref in sources.values():
         path=ROOT/ref['path']; require(hashlib.sha256(path.read_bytes()).hexdigest()==ref['sha256'], 'source record drift')
         src=yaml.safe_load(path.read_text());require(src['id']==ref['id'], 'source mismatch')
-        for field in ['url','locator','paraphrase','title','authors']:
+        for field in ['url','locator','paraphrase','title']:
             require(src.get(field), 'source metadata missing '+field)
+        require(src.get('authors') or src.get('editors'), 'source author/editor attribution missing')
         require(src.get('version',src.get('version_date')), 'source edition missing')
     all_ids=set();captured_ids=set()
     require(set(report['model_snapshot'])=={'model/concepts.yaml','model/relations.yaml','model/generalizations.yaml','model/constraints.yaml'}, 'missing snapshot family')
