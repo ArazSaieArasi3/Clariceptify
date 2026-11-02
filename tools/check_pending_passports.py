@@ -41,6 +41,7 @@ def validate(report, batch):
                       'paraphrase', 'independence_lineage', 'license_copyright'):
             require(isinstance(source.get(field), str) and source[field].strip(), f'missing source {field}')
         require(source['url'].startswith('https://'), 'source URL')
+    original_sources = {s.get('original_source_id') for s in sources.values()}
     rows = report['concepts']
     require([r['concept_id'] for r in rows] == EXPECTED[batch], 'five exact records')
     for i, row in enumerate(rows, 1):
@@ -51,6 +52,7 @@ def validate(report, batch):
         require(row['source_locator'] == concept['source_locator'], 'changed provenance')
         require(row['original_support_record'] == support, 'changed original support')
         require(row['original_citations_inspected'] == support['source_ids'], 'lost original citations')
+        require(set(support['source_ids']) <= original_sources, 'missing original source metadata')
         require(row['preserve_imported_support'] == support['support_type'] == 'P', 'support promotion')
         require(row['typing_approval'] == 'not_assessed', 'typing promotion')
         require(row['proposed_delta']['status'] == 'unapproved_research_only', 'proposal promoted')

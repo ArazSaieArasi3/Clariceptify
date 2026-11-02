@@ -19,6 +19,7 @@ sources:
   paraphrase: Conceptual modeling collection; no defining passage verified.
   independence_lineage: Original source; no exact passage corroboration
   license_copyright: Copyright protected; paraphrase only; no source full text retained or redistributed
+  original_source_id: CLR-SRC0017
 - id: SRC18
   title: 'Model-Based Development and Evolution of Information Systems: A Quality Approach'
   authors: John Krogstie
@@ -29,6 +30,7 @@ sources:
   paraphrase: Chapter2 concerns development tasks, model types and methodologies.
   independence_lineage: Both chapters same book/author, not independent
   license_copyright: Copyright protected; paraphrase only; no source full text retained or redistributed
+  original_source_id: CLR-SRC0018
 - id: SRC43
   title: Visualization Analysis and Design
   authors: Tamara Munzner
@@ -39,6 +41,7 @@ sources:
   paraphrase: Chapter12 concerns multiple visualization views.
   independence_lineage: Original source; does not verify model viewpoint contract
   license_copyright: Copyright book; figures explicitly CC-BY4.0, not proof text is open licensed
+  original_source_id: CLR-SRC0043
 - id: N1
   title: UML Profile for Schedulability, Performance, and Time Specification
   authors: Object Management Group
@@ -103,8 +106,9 @@ sources:
   url: https://isotc204.org/iso14812/v1.1.2-alpha.3/terms/architecture%20view/
   locator: Clauses3.1.3.7 and3.1.3.6; corresponding architecture%20viewpoint/ page; source42010:2011 3.5/3.6
   access_scope: Actual definition and relationship tables read; not full42010 inspected
-  paraphrase: Views express system concerns; viewpoints govern conventions; views aggregate architecture
-    models.
+  paraphrase: Views express system concerns; viewpoints govern conventions; an existential aggregation
+    links views to architecture models. That restriction alone settles neither exact-one nor multiple-model
+    cardinality.
   independence_lineage: Committee derivative explicitly cites42010:2011, not independent original standard
     or2022 verification
   license_copyright: CC-BY4.0 page
@@ -172,7 +176,7 @@ concepts:
     status: supported
     evidence:
     - N2
-  - clause: any activities or organization suffice
+  - clause: broad activities/organization scope (reviewer interpretation)
     status: mismatch
     evidence:
     - N2
@@ -328,11 +332,12 @@ concepts:
     evidence:
     - N1
   - clause: single-model restriction as general view rule
-    status: mismatch
+    status: not_verified
     evidence:
     - N6
-  uncertainty: N1 direct only for analysis views; N6 architecture view can aggregate models; SRC43 contents
-    insufficient.
+  uncertainty: 'N1 direct only for analysis views. N6 aggregates some architectureModel: no exact-one
+    bound is established, but no multiple-model counterexample is proved by that existential restriction.
+    SRC43 contents insufficient.'
   proposed_delta:
     status: unapproved_research_only
     text: Choose single-model projection versus multi-model concern view and explicit correspondence contract.

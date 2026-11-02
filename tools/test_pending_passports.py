@@ -23,5 +23,6 @@ fails('unapproved decision applied', lambda x: x['concepts'][0]['proposed_delta'
 fails('unknown evidence', lambda x: x['concepts'][0]['clause_support'][0].update(evidence=['missing']))
 fails('source locator absent', lambda x: x['sources'][0].update(locator=''))
 fails('stale input', lambda x: x['input_bindings'].update({'model/concepts.yaml':'0'*64}))
+fails('original source audit removed', lambda x: x['sources'].pop(0))
 fails('misleading result', lambda x: x.update(status='SEMANTIC_PASS'))
-print('PASS: 10 adverse passport-integrity cases; not source-semantic tests')
+print('PASS: 11 adverse passport-integrity cases; not source-semantic tests')
