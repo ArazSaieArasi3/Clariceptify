@@ -1,0 +1,30 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_metamodeling_join
+model_revision: input-r1-rev1
+id: DOM12-NEG-001
+expected_selected_answer: false
+description: Declarations may disagree about the metamodel; selected join then has
+  no witness.
+nodes:
+- id: activity
+  concept_id: CLR-C0072
+- id: metamodel
+  concept_id: CLR-C0071
+- id: other_metamodel
+  concept_id: CLR-C0071
+- id: model
+  concept_id: CLR-C0073
+- id: kind
+  concept_id: CLR-C0074
+edges:
+- relation_id: CLR-R0104
+  source: activity
+  target: metamodel
+- relation_id: CLR-R0105
+  source: model
+  target: other_metamodel
+- relation_id: CLR-R0106
+  source: model
+  target: kind
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.
