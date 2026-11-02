@@ -1,0 +1,1755 @@
+schema_version: '1.0'
+issue: 124
+task_id: R2-CQ-2
+status: MANUAL_FULL_CONTRACT_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: ab46d5e5da691fbd5d7145b622c5a6e76f89c594
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+input_bindings:
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  requirements/scope-and-scenarios.yaml: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+  traceability/requirements-model.yaml: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+requirement_status: retrospectively_reconstructed_review_draft
+method: Every frozen capability/question, required answer field, acceptance and adverse criterion is manually
+  compared to explicit scenarios and model evidence. Full review coverage is not full semantic satisfaction.
+  No original contract, origin, execution status or denominator is changed.
+case_scope: Synthetic focal examples assume consistent stated background; no complete instance satisfiability
+  proof is claimed. Missing assertions are not real-world falsity. A supported bounded case is not universal
+  satisfaction.
+records:
+- cq_id: CQ-11
+  fr_id: FR-11
+  frozen_cq_contract:
+    id: CQ-11
+    requirement_id: FR-11
+    question: How are conceptual elements structured into parts and wholes?
+    required_answer_fields: Structure; elements; parthood description; part; whole
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve part and whole within the same parthood description.
+    adverse_case: Reject automatic inference of physical composition from conceptual parthood.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-11
+    source_cells:
+    - 'CQ-11
+
+      FR-11'
+    - How are conceptual elements structured into parts and wholes?
+    - Structure; elements; parthood description; part; whole
+  frozen_fr_contract:
+    id: FR-11
+    priority: MUST
+    title: Structure and conceptual parthood
+    origin: R
+    release_target: R1
+    capability: The ontology shall organize conceptual elements and distinguish contextual part and whole
+      descriptions.
+    acceptance: Retrieve part and whole within the same parthood description.
+    adverse_case: Reject automatic inference of physical composition from conceptual parthood.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-11
+    source_cells:
+    - 'FR-11  MUST
+
+      Structure and conceptual parthood
+
+      Origin R | R1'
+    - The ontology shall organize conceptual elements and distinguish contextual part and whole descriptions.
+    - 'AC: Retrieve part and whole within the same parthood description.
+
+      NAC: Reject automatic inference of physical composition from conceptual parthood.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id001
+    Structure: s via designated structure
+    elements: s R0156 p,w
+    parthood description: s R0157 d, where d is Part-Whole Relation
+    part: d R0122 p
+    whole: d R0123 w
+  positive_case: &id003
+    scenario: Designate structure s. It organizes concept descriptions p and w and specifies part-whole
+      description d. d has p as Part/source and w as Whole/target.
+    expected: Return (s,{p,w},d,p,w), retaining d identity; no mixing endpoints from another parthood
+      description.
+    observed: R0156 permits multiple organized elements; R0157 permits d via G0081 Relation. R0122/R0123
+      give exactly1 part/whole per d; G0080/G0122 type endpoints as concepts. SC5 aligns inherited relation
+      endpoints. This makes requested tuple interpretable, not just a name match.
+    result: bounded_manual_support
+  adverse_case: &id004
+    scenario: Same d is asserted to mean physical composition, or d1 part p is paired with d2 whole w2.
+    expected: Reject physical composition inferred from description alone and reject cross-description
+      endpoint pairing.
+    observed: SC8 explicitly prohibits composition/UFO-mereology inference without independent semantics;
+      R0122/0123 and SC5 bind endpoints to the same d. Structural checks alone do not execute SC8.
+  model_evidence_ids: &id002
+  - CLR-R0122
+  - CLR-R0123
+  - CLR-R0132
+  - CLR-R0133
+  - CLR-R0156
+  - CLR-R0157
+  - CLR-G0080
+  - CLR-G0081
+  - CLR-G0122
+  - CLR-SC0005
+  - CLR-SC0008
+  - CLR-C0088
+  - CLR-C0089
+  - CLR-C0116
+  - CLR-C0137
+  - CLR-SC0007
+  analysis:
+    cq_id: CQ-11
+    fr_id: FR-11
+    frozen_cq_contract:
+      id: CQ-11
+      requirement_id: FR-11
+      question: How are conceptual elements structured into parts and wholes?
+      required_answer_fields: Structure; elements; parthood description; part; whole
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retrieve part and whole within the same parthood description.
+      adverse_case: Reject automatic inference of physical composition from conceptual parthood.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-11
+      source_cells:
+      - 'CQ-11
+
+        FR-11'
+      - How are conceptual elements structured into parts and wholes?
+      - Structure; elements; parthood description; part; whole
+    frozen_fr_contract:
+      id: FR-11
+      priority: MUST
+      title: Structure and conceptual parthood
+      origin: R
+      release_target: R1
+      capability: The ontology shall organize conceptual elements and distinguish contextual part and
+        whole descriptions.
+      acceptance: Retrieve part and whole within the same parthood description.
+      adverse_case: Reject automatic inference of physical composition from conceptual parthood.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-11
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-11  MUST
+
+        Structure and conceptual parthood
+
+        Origin R | R1'
+      - The ontology shall organize conceptual elements and distinguish contextual part and whole descriptions.
+      - 'AC: Retrieve part and whole within the same parthood description.
+
+        NAC: Reject automatic inference of physical composition from conceptual parthood.'
+    answer_field_analysis: *id001
+    model_evidence_ids: *id002
+    positive_case: *id003
+    adverse_case_assessment: *id004
+    capability_assessment: Organization and contextual descriptive parthood supported locally. General
+      well-formedness and physical-identity claims remain unproven.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: 'General Structure connections lack an explicit endpoint-membership invariant: s
+      may organize p,w while R0157 links d whose endpoints are unrelated q,z. SC7 supplies membership
+      only for Taxonomy. Physical-composition rejection remains a textual boundary, not a tested solver
+      rule.'
+    finding:
+      id: CQ124-F01
+      decision_route: '#129'
+      recommendation: Decide whether to add a general structure membership constraint or retain documented
+        incomplete structures; do not silently import taxonomy constraints.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F01
+  finding: 'General Structure connections lack an explicit endpoint-membership invariant: s may organize
+    p,w while R0157 links d whose endpoints are unrelated q,z. SC7 supplies membership only for Taxonomy.
+    Physical-composition rejection remains a textual boundary, not a tested solver rule.'
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-12
+  fr_id: FR-12
+  frozen_cq_contract:
+    id: CQ-12
+    requirement_id: FR-12
+    question: What explicit conceptual content results from conceptualization?
+    required_answer_fields: Episode; artifact; elements; selected view
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify the produced artifact and its elements, including a selected view.
+    adverse_case: Reject equivalence of an artifact with the activity that produces it.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-12
+    source_cells:
+    - 'CQ-12
+
+      FR-12'
+    - What explicit conceptual content results from conceptualization?
+    - Episode; artifact; elements; selected view
+  frozen_fr_contract:
+    id: FR-12
+    priority: MUST
+    title: Conceptual artifacts and elements
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish a conceptualization episode from its explicit artifact
+      and the elements belonging to that artifact.
+    acceptance: Identify the produced artifact and its elements, including a selected view.
+    adverse_case: Reject equivalence of an artifact with the activity that produces it.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-12
+    source_cells:
+    - 'FR-12  MUST
+
+      Conceptual artifacts and elements
+
+      Origin R | R1'
+    - The ontology shall distinguish a conceptualization episode from its explicit artifact and the elements
+      belonging to that artifact.
+    - 'AC: Identify the produced artifact and its elements, including a selected view.
+
+      NAC: Reject equivalence of an artifact with the activity that produces it.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id005
+    Episode: e Conceptualization
+    artifact: e R0048 a
+    elements: a R0032 x,y
+    selected view: v R0171 a
+  positive_case: &id007
+    scenario: Designate conceptualization e creating artifact a with elements x,y. A separate view v selects
+      from a and encodes a.
+    expected: Return e,a,{x,y},v; distinguish producing occurrence from explicit informational content.
+    observed: R0048 has exactly1 originating conceptualization per artifact and1..* outputs per episode;
+      R0032 requires1..* elements. R0171 supports a view selected from a; view is Representation by G0115.
+      Definitions type e as event and a as information object, while SC10 clarifies creation identity.
+    result: bounded_manual_support
+  adverse_case: &id008
+    scenario: Treat e and a as identical solely because e creates a; or return a view selecting only unrelated
+      artifact b.
+    expected: Reject activity/output conflation and unrelated view retrieval.
+    observed: Creation describes a producing relation, not identity; definitions support the distinction.
+      Query subject a must match R0171 endpoint, so b-only view does not answer. No disjointness axiom
+      is inferred merely from different names.
+  model_evidence_ids: &id006
+  - CLR-R0032
+  - CLR-R0048
+  - CLR-R0171
+  - CLR-R0140
+  - CLR-G0017
+  - CLR-G0115
+  - CLR-SC0010
+  - CLR-SC0023
+  - CLR-C0019
+  - CLR-C0022
+  - CLR-C0026
+  - CLR-C0130
+  analysis:
+    cq_id: CQ-12
+    fr_id: FR-12
+    frozen_cq_contract:
+      id: CQ-12
+      requirement_id: FR-12
+      question: What explicit conceptual content results from conceptualization?
+      required_answer_fields: Episode; artifact; elements; selected view
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify the produced artifact and its elements, including a selected view.
+      adverse_case: Reject equivalence of an artifact with the activity that produces it.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-12
+      source_cells:
+      - 'CQ-12
+
+        FR-12'
+      - What explicit conceptual content results from conceptualization?
+      - Episode; artifact; elements; selected view
+    frozen_fr_contract:
+      id: FR-12
+      priority: MUST
+      title: Conceptual artifacts and elements
+      origin: R
+      release_target: R1
+      capability: The ontology shall distinguish a conceptualization episode from its explicit artifact
+        and the elements belonging to that artifact.
+      acceptance: Identify the produced artifact and its elements, including a selected view.
+      adverse_case: Reject equivalence of an artifact with the activity that produces it.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-12
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-12  MUST
+
+        Conceptual artifacts and elements
+
+        Origin R | R1'
+      - The ontology shall distinguish a conceptualization episode from its explicit artifact and the
+        elements belonging to that artifact.
+      - 'AC: Identify the produced artifact and its elements, including a selected view.
+
+        NAC: Reject equivalence of an artifact with the activity that produces it.'
+    answer_field_analysis: *id005
+    model_evidence_ids: *id006
+    positive_case: *id007
+    adverse_case_assessment: *id008
+    capability_assessment: Scenario satisfies informational output distinction; existence of selected
+      view is conditional on data, not universally entailed.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: An artifact may have no recorded view (reverse R0171 0..*), yielding an incomplete
+      answer for that input, not a blanket failure of the positive-scenario AC. Report unrecorded view
+      without inventing one. Element-level selection is an optional enhancement, not a frozen-contract
+      requirement or failure.
+    finding:
+      id: CQ124-F02
+      decision_route: '#129'
+      recommendation: Clarify missing-view reporting without requiring every artifact to have a view.
+        Consider element-level selection only as optional129enhancement; retain event/artifact distinction.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F02
+  finding: An artifact may have no recorded view (reverse R0171 0..*), yielding an incomplete answer for
+    that input, not a blanket failure of the positive-scenario AC. Report unrecorded view without inventing
+    one. Element-level selection is an optional enhancement, not a frozen-contract requirement or failure.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-13
+  fr_id: FR-13
+  frozen_cq_contract:
+    id: CQ-13
+    requirement_id: FR-13
+    question: How is conceptual content represented externally?
+    required_answer_fields: Artifact; representations; form; schema or pattern where stated
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retain two different representations of one conceptual artifact.
+    adverse_case: Reject merging the artifact with a visual file merely because it expresses that artifact.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-13
+    source_cells:
+    - 'CQ-13
+
+      FR-13'
+    - How is conceptual content represented externally?
+    - Artifact; representations; form; schema or pattern where stated
+  frozen_fr_contract:
+    id: FR-13
+    priority: MUST
+    title: External representation
+    origin: R
+    release_target: R1
+    capability: The ontology shall separate conceptual content from its representations, forms, schemas,
+      patterns and visual expressions.
+    acceptance: Retain two different representations of one conceptual artifact.
+    adverse_case: Reject merging the artifact with a visual file merely because it expresses that artifact.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-13
+    source_cells:
+    - 'FR-13  MUST
+
+      External representation
+
+      Origin R | R1'
+    - The ontology shall separate conceptual content from its representations, forms, schemas, patterns
+      and visual expressions.
+    - 'AC: Retain two different representations of one conceptual artifact.
+
+      NAC: Reject merging the artifact with a visual file merely because it expresses that artifact.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id009
+    Artifact: a
+    representations: rText,rDiagram each R0140 a
+    form: R0141 textForm,diagramForm
+    schema or pattern where stated: rDiagram R0139 schemaS and R0135 patternP; absent links returned as
+      unrecorded
+  positive_case: &id011
+    scenario: Designate a with separately identified textual representation rText and diagram representation
+      rDiagram, each with its form. Only rDiagram declares schemaS and patternP.
+    expected: Retain both representations for a with separate forms and optional declared schema/pattern;
+      do not collapse either into content a.
+    observed: R0140 allows0..* representations per artifact and1..* artifacts per representation. R0141
+      gives exactly1 form per representation. R0135/R0139 are optional many-to-many, so omitted schema/pattern
+      is not invented. The same content can therefore have multiple representational realizations.
+    result: bounded_manual_support
+  adverse_case: &id012
+    scenario: A file named diagram.svg expresses a; infer file, representation and artifact are one individual
+      merely from that fact.
+    expected: Reject identity inference from expression/encoding alone.
+    observed: R0140 is encoding, not identity; SC23 requires declared information-content identity policy
+      rather than physical-file identity. It does not mandate disjoint classes for every representational/content
+      role.
+  model_evidence_ids: &id010
+  - CLR-R0135
+  - CLR-R0139
+  - CLR-R0140
+  - CLR-R0141
+  - CLR-G0043
+  - CLR-G0066
+  - CLR-SC0023
+  - CLR-C0019
+  - CLR-C0049
+  - CLR-C0090
+  - CLR-C0101
+  - CLR-C0102
+  - CLR-C0132
+  analysis:
+    cq_id: CQ-13
+    fr_id: FR-13
+    frozen_cq_contract:
+      id: CQ-13
+      requirement_id: FR-13
+      question: How is conceptual content represented externally?
+      required_answer_fields: Artifact; representations; form; schema or pattern where stated
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retain two different representations of one conceptual artifact.
+      adverse_case: Reject merging the artifact with a visual file merely because it expresses that artifact.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-13
+      source_cells:
+      - 'CQ-13
+
+        FR-13'
+      - How is conceptual content represented externally?
+      - Artifact; representations; form; schema or pattern where stated
+    frozen_fr_contract:
+      id: FR-13
+      priority: MUST
+      title: External representation
+      origin: R
+      release_target: R1
+      capability: The ontology shall separate conceptual content from its representations, forms, schemas,
+        patterns and visual expressions.
+      acceptance: Retain two different representations of one conceptual artifact.
+      adverse_case: Reject merging the artifact with a visual file merely because it expresses that artifact.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-13
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-13  MUST
+
+        External representation
+
+        Origin R | R1'
+      - The ontology shall separate conceptual content from its representations, forms, schemas, patterns
+        and visual expressions.
+      - 'AC: Retain two different representations of one conceptual artifact.
+
+        NAC: Reject merging the artifact with a visual file merely because it expresses that artifact.'
+    answer_field_analysis: *id009
+    model_evidence_ids: *id010
+    positive_case: *id011
+    adverse_case_assessment: *id012
+    capability_assessment: Separation is conceptually available; file-to-content identity and schema conformity
+      remain unassessed.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: The positive scenario supports two declared representations and rejects identity
+      inferred from encoding alone. Automatic ontology-level content identity remains unassessed. Physical-carrier/provenance
+      links are optional enhancements, not unmet FR13. Existing artifact-versioning.md engineering governance
+      is present and distinct from modeled content-equivalence semantics.
+    finding:
+      id: CQ124-F03
+      decision_route: '#129'
+      recommendation: Preserve existing engineering version policy. Optional129carrier/identity tooling
+        must not be counted as a frozen-contract failure; no automatic all-purpose disjointness.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F03
+  finding: The positive scenario supports two declared representations and rejects identity inferred from
+    encoding alone. Automatic ontology-level content identity remains unassessed. Physical-carrier/provenance
+    links are optional enhancements, not unmet FR13. Existing artifact-versioning.md engineering governance
+    is present and distinct from modeled content-equivalence semantics.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-14
+  fr_id: FR-14
+  frozen_cq_contract:
+    id: CQ-14
+    requirement_id: FR-14
+    question: In which language and expressions is content communicated?
+    required_answer_fields: Expression; language; syntax; message; sender/recipient if present
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify an expression, its language and syntax, and a message sender or recipient when
+      recorded.
+    adverse_case: Reject inference of equal meaning solely from syntactically well-formed expressions.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-14
+    source_cells:
+    - 'CQ-14
+
+      FR-14'
+    - In which language and expressions is content communicated?
+    - Expression; language; syntax; message; sender/recipient if present
+  frozen_fr_contract:
+    id: FR-14
+    priority: MUST
+    title: Language and communication
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent language, syntax, expressions and communication activities
+      without reducing meaning to syntax.
+    acceptance: Identify an expression, its language and syntax, and a message sender or recipient when
+      recorded.
+    adverse_case: Reject inference of equal meaning solely from syntactically well-formed expressions.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-14
+    source_cells:
+    - 'FR-14  MUST
+
+      Language and communication
+
+      Origin R | R1'
+    - The ontology shall represent language, syntax, expressions and communication activities without
+      reducing meaning to syntax.
+    - 'AC: Identify an expression, its language and syntax, and a message sender or recipient when recorded.
+
+      NAC: Reject inference of equal meaning solely from syntactically well-formed expressions.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id013
+    Expression: message m inherits Expression via G0063
+    language: m R0071 L
+    syntax: L R0099 syntaxS
+    message: m communicated by discourse d R0058
+    sender/recipient if present: m R0103 Alice and R0102 Bob
+  positive_case: &id015
+    scenario: Designate message m in discourse d, using language L with syntaxS and semanticsSem. Sender
+      Alice and intended recipient Bob are recorded.
+    expected: Return m,L,syntaxS,d/m,Alice,Bob and keep semantic interpretation distinct from syntactic
+      well-formedness.
+    observed: G0063 makes m an Expression; R0071 gives exactly1 language, R0099 gives1..* syntax specifications.
+      R0058 links discourse to messages. R0102/R0103 each require1..* recorded endpoint agents for a modeled
+      Message. R0098 and R0147 provide separate semantic specification links, not equality of meanings.
+    result: bounded_manual_support
+  adverse_case: &id016
+    scenario: Two grammatically valid expressions in L are treated as semantically equivalent solely because
+      they satisfy syntaxS.
+    expected: Do not infer equal meaning from grammar alone.
+    observed: No inspected relation equates meaning on shared syntax; separate semantics/interpretation
+      distinctions make inference unwarranted. SC15 requires declared semantics for Formula specifically,
+      not a universal equivalence algorithm for all Expressions.
+  model_evidence_ids: &id014
+  - CLR-R0058
+  - CLR-R0071
+  - CLR-R0098
+  - CLR-R0099
+  - CLR-R0102
+  - CLR-R0103
+  - CLR-R0147
+  - CLR-G0030
+  - CLR-G0043
+  - CLR-G0063
+  - CLR-SC0015
+  - CLR-C0033
+  - CLR-C0047
+  - CLR-C0066
+  - CLR-C0070
+  - CLR-C0108
+  - CLR-C0117
+  analysis:
+    cq_id: CQ-14
+    fr_id: FR-14
+    frozen_cq_contract:
+      id: CQ-14
+      requirement_id: FR-14
+      question: In which language and expressions is content communicated?
+      required_answer_fields: Expression; language; syntax; message; sender/recipient if present
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify an expression, its language and syntax, and a message sender or recipient when
+        recorded.
+      adverse_case: Reject inference of equal meaning solely from syntactically well-formed expressions.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-14
+      source_cells:
+      - 'CQ-14
+
+        FR-14'
+      - In which language and expressions is content communicated?
+      - Expression; language; syntax; message; sender/recipient if present
+    frozen_fr_contract:
+      id: FR-14
+      priority: MUST
+      title: Language and communication
+      origin: R
+      release_target: R1
+      capability: The ontology shall represent language, syntax, expressions and communication activities
+        without reducing meaning to syntax.
+      acceptance: Identify an expression, its language and syntax, and a message sender or recipient when
+        recorded.
+      adverse_case: Reject inference of equal meaning solely from syntactically well-formed expressions.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-14
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-14  MUST
+
+        Language and communication
+
+        Origin R | R1'
+      - The ontology shall represent language, syntax, expressions and communication activities without
+        reducing meaning to syntax.
+      - 'AC: Identify an expression, its language and syntax, and a message sender or recipient when recorded.
+
+        NAC: Reject inference of equal meaning solely from syntactically well-formed expressions.'
+    answer_field_analysis: *id013
+    model_evidence_ids: *id014
+    positive_case: *id015
+    adverse_case_assessment: *id016
+    capability_assessment: Communication tuple is representable when declared; generic incomplete-message
+      handling and semantic validation are not established.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: R0102/R0103 require1..* sender/recipient for Message while contract says when recorded.
+      A partial imported message record with unknown sender is not a fully well-formed Message instance
+      under these multiplicities; distinguish missing data from proved no sender. Syntax links do not
+      themselves test well-formedness or semantic inequivalence.
+    finding:
+      id: CQ124-F04
+      decision_route: '#129'
+      recommendation: Decide incomplete-record policy and explicit unknown reporting, not automatic lower-bound
+        relaxation; retain meaning-versus-syntax boundary.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F04
+  finding: R0102/R0103 require1..* sender/recipient for Message while contract says when recorded. A partial
+    imported message record with unknown sender is not a fully well-formed Message instance under these
+    multiplicities; distinguish missing data from proved no sender. Syntax links do not themselves test
+    well-formedness or semantic inequivalence.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-15
+  fr_id: FR-15
+  frozen_cq_contract:
+    id: CQ-15
+    requirement_id: FR-15
+    question: Which terms and definitions designate a concept?
+    required_answer_fields: Concept; term; vocabulary; definition; definition kind
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve the concept designated by a term and its vocabulary and definition.
+    adverse_case: Reject merging concepts solely because two terms have identical spelling.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-15
+    source_cells:
+    - 'CQ-15
+
+      FR-15'
+    - Which terms and definitions designate a concept?
+    - Concept; term; vocabulary; definition; definition kind
+  frozen_fr_contract:
+    id: FR-15
+    priority: MUST
+    title: Terminology and definitions
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent terms, vocabularies and explicit or implicit definitions
+      for selected concepts.
+    acceptance: Retrieve the concept designated by a term and its vocabulary and definition.
+    adverse_case: Reject merging concepts solely because two terms have identical spelling.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-15
+    source_cells:
+    - 'FR-15  MUST
+
+      Terminology and definitions
+
+      Origin R | R1'
+    - The ontology shall represent terms, vocabularies and explicit or implicit definitions for selected
+      concepts.
+    - 'AC: Retrieve the concept designated by a term and its vocabulary and definition.
+
+      NAC: Reject merging concepts solely because two terms have identical spelling.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id017
+    Concept: cRiver
+    term: tRiver R0161 cRiver
+    vocabulary: vRiver R0173 tRiver
+    definition: defRiver R0057 cRiver; terminology vRiver R0162 defRiver
+    definition kind: defRiver Explicit Definition via G0042; implicit variant via G0051
+  positive_case: &id019
+    scenario: Designate term tRiver with spelling bank in river vocabulary vRiver (a Terminology), designating
+      concept cRiver and explicit definition defRiver. A separate term tFinance has same spelling in vFinance
+      but designates cFinance.
+    expected: Return correct concept/vocabulary/definition/kind for each term without merging bank senses.
+    observed: R0161 permits1..* designated concepts per term and R0173 allows terms in multiple vocabularies.
+      R0057 connects definitions to1..* concepts; R0162 ties Terminology to definitions. Exact joins through
+      designated cRiver avoid unrelated definitions. G0042/G0051 supply definition kinds, but no exhaustive/disjoint
+      partition follows.
+    result: bounded_manual_support
+  adverse_case: &id020
+    scenario: Merge cRiver and cFinance solely from identical lexical string bank.
+    expected: Reject same-spelling identity inference; retain distinct declared concepts and scoped designations.
+    observed: No key/equality rule uses spelling. SC16 requires commitment/vocabulary/description coherence
+      and SC23 refers identity to declared content-equivalence policy, not spelling. Distinct fixture
+      concepts are an assumption, not a demonstrated universal identity test.
+  model_evidence_ids: &id018
+  - CLR-R0057
+  - CLR-R0161
+  - CLR-R0162
+  - CLR-R0173
+  - CLR-G0029
+  - CLR-G0042
+  - CLR-G0051
+  - CLR-G0110
+  - CLR-SC0016
+  - CLR-SC0023
+  - CLR-C0017
+  - CLR-C0032
+  - CLR-C0046
+  - CLR-C0056
+  - CLR-C0120
+  - CLR-C0121
+  - CLR-C0134
+  analysis:
+    cq_id: CQ-15
+    fr_id: FR-15
+    frozen_cq_contract:
+      id: CQ-15
+      requirement_id: FR-15
+      question: Which terms and definitions designate a concept?
+      required_answer_fields: Concept; term; vocabulary; definition; definition kind
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retrieve the concept designated by a term and its vocabulary and definition.
+      adverse_case: Reject merging concepts solely because two terms have identical spelling.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-15
+      source_cells:
+      - 'CQ-15
+
+        FR-15'
+      - Which terms and definitions designate a concept?
+      - Concept; term; vocabulary; definition; definition kind
+    frozen_fr_contract:
+      id: FR-15
+      priority: MUST
+      title: Terminology and definitions
+      origin: R
+      release_target: R1
+      capability: The ontology shall represent terms, vocabularies and explicit or implicit definitions
+        for selected concepts.
+      acceptance: Retrieve the concept designated by a term and its vocabulary and definition.
+      adverse_case: Reject merging concepts solely because two terms have identical spelling.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-15
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-15  MUST
+
+        Terminology and definitions
+
+        Origin R | R1'
+      - The ontology shall represent terms, vocabularies and explicit or implicit definitions for selected
+        concepts.
+      - 'AC: Retrieve the concept designated by a term and its vocabulary and definition.
+
+        NAC: Reject merging concepts solely because two terms have identical spelling.'
+    answer_field_analysis: *id017
+    model_evidence_ids: *id018
+    positive_case: *id019
+    adverse_case_assessment: *id020
+    capability_assessment: Correct scoped retrieval is possible for enriched Terminology scenario; arbitrary
+      generic-vocabulary records may not supply every field.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: Generic Vocabulary need not be Terminology; absent definition or definition-kind
+      records require incomplete-answer reporting, not a blanket failure of the supplied scenario. Explicit
+      spelling/language datatypes and automatic sense resolution are optional enhancements, not required
+      fields. Context-scoped joins must avoid unrelated definitions.
+    finding:
+      id: CQ124-F05
+      decision_route: '#129'
+      recommendation: Clarify missing-definition reporting; consider sense-resolution/datatypes only as
+        optional129enhancements. Never infer identity from equal spelling.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F05
+  finding: Generic Vocabulary need not be Terminology; absent definition or definition-kind records require
+    incomplete-answer reporting, not a blanket failure of the supplied scenario. Explicit spelling/language
+    datatypes and automatic sense resolution are optional enhancements, not required fields. Context-scoped
+    joins must avoid unrelated definitions.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-16
+  fr_id: FR-16
+  frozen_cq_contract:
+    id: CQ-16
+    requirement_id: FR-16
+    question: What meaning is interpreted from a representation?
+    required_answer_fields: Representation; semantic information; interpretation; interpreter where recorded
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify interpreted content and its representation, retaining the interpreter where recorded.
+    adverse_case: Reject compatibility of interpretations inferred from a shared schema alone.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-16
+    source_cells:
+    - 'CQ-16
+
+      FR-16'
+    - What meaning is interpreted from a representation?
+    - Representation; semantic information; interpretation; interpreter where recorded
+  frozen_fr_contract:
+    id: FR-16
+    priority: MUST
+    title: Meaning and interpretation
+    origin: R
+    release_target: R1
+    capability: The ontology shall relate representations to interpreted semantic information and the
+      interpretation activities that produce understanding.
+    acceptance: Identify interpreted content and its representation, retaining the interpreter where recorded.
+    adverse_case: Reject compatibility of interpretations inferred from a shared schema alone.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-16
+    source_cells:
+    - 'FR-16  MUST
+
+      Meaning and interpretation
+
+      Origin R | R1'
+    - The ontology shall relate representations to interpreted semantic information and the interpretation
+      activities that produce understanding.
+    - 'AC: Identify interpreted content and its representation, retaining the interpreter where recorded.
+
+      NAC: Reject compatibility of interpretations inferred from a shared schema alone.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id021
+    Representation: r
+    semantic information: s assigned by interpretation i R0090 and linked to r by R0144
+    interpretation: i Interpretation, originated by process p R0094
+    interpreter where recorded: Alice bears i through G0056 Understanding and R0009
+  positive_case: &id023
+    scenario: Designate representation r. Interpretation process p interprets r and originates interpretation
+      i. i assigns semantic information s, s interprets content of r, and Alice bears i.
+    expected: Return r,s,i,Alice, distinguish process p from resulting state and keep content/representation/agent
+      attribution together.
+    observed: R0093/R0094 support process-input/result traversal; R0090 supplies1..* content items and
+      R0144 their1..* represented inputs. G0056 plus R0009 gives exactly1 bearer for i under SC11. No
+      uniqueness of interpreter is inferred from shared process participation; inherited bearer provides
+      it.
+    result: bounded_manual_support
+  adverse_case: &id024
+    scenario: Representations r1/r2 share schemaS; their interpretations i1/i2 are declared compatible
+      solely on schema. Alternatively p interprets both r1/r2 but i1 assigns only content of r2, and query
+      for r1 returns i1 unqualified.
+    expected: Reject shared-schema compatibility inference; require direct content/representation alignment
+      rather than cross-product of process links.
+    observed: R0139 carries schema conformity only; interoperability disposition R0145 depends on counterpart
+      and SC12 requires compatible states for shared understanding. Existing process links are many-valued
+      and do not bind every originated interpretation to every input; R0090+R0144 must corroborate queried
+      representation.
+  model_evidence_ids: &id022
+  - CLR-R0009
+  - CLR-R0090
+  - CLR-R0093
+  - CLR-R0094
+  - CLR-R0139
+  - CLR-R0144
+  - CLR-R0145
+  - CLR-G0056
+  - CLR-G0057
+  - CLR-SC0011
+  - CLR-SC0012
+  - CLR-C0062
+  - CLR-C0063
+  - CLR-C0101
+  - CLR-C0105
+  - CLR-C0106
+  - CLR-C0127
+  analysis:
+    cq_id: CQ-16
+    fr_id: FR-16
+    frozen_cq_contract:
+      id: CQ-16
+      requirement_id: FR-16
+      question: What meaning is interpreted from a representation?
+      required_answer_fields: Representation; semantic information; interpretation; interpreter where
+        recorded
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify interpreted content and its representation, retaining the interpreter where
+        recorded.
+      adverse_case: Reject compatibility of interpretations inferred from a shared schema alone.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-16
+      source_cells:
+      - 'CQ-16
+
+        FR-16'
+      - What meaning is interpreted from a representation?
+      - Representation; semantic information; interpretation; interpreter where recorded
+    frozen_fr_contract:
+      id: FR-16
+      priority: MUST
+      title: Meaning and interpretation
+      origin: R
+      release_target: R1
+      capability: The ontology shall relate representations to interpreted semantic information and the
+        interpretation activities that produce understanding.
+      acceptance: Identify interpreted content and its representation, retaining the interpreter where
+        recorded.
+      adverse_case: Reject compatibility of interpretations inferred from a shared schema alone.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-16
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-16  MUST
+
+        Meaning and interpretation
+
+        Origin R | R1'
+      - The ontology shall relate representations to interpreted semantic information and the interpretation
+        activities that produce understanding.
+      - 'AC: Identify interpreted content and its representation, retaining the interpreter where recorded.
+
+        NAC: Reject compatibility of interpretations inferred from a shared schema alone.'
+    answer_field_analysis: *id021
+    model_evidence_ids: *id022
+    positive_case: *id023
+    adverse_case_assessment: *id024
+    capability_assessment: All required fields support a consistent local scenario; unqualified process
+      cross-product retrieval fails the adverse scenario.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: No explicit constraint aligns every process-originated interpretation/content with
+      that process input set, or guarantees all interpretations have recorded generating process (R0094
+      reverse0..1). Mere path traversal can yield spurious representation/content pairing. Compatibility
+      itself remains semantic, not schema-derived.
+    finding:
+      id: CQ124-F06
+      decision_route: '#129'
+      recommendation: Decide input/result/content alignment constraint and declared-context policy; retain
+        inherited interpreter binding. Do not add invented direct interpreter class/link.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F06
+  finding: No explicit constraint aligns every process-originated interpretation/content with that process
+    input set, or guarantees all interpretations have recorded generating process (R0094 reverse0..1).
+    Mere path traversal can yield spurious representation/content pairing. Compatibility itself remains
+    semantic, not schema-derived.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-17
+  fr_id: FR-17
+  frozen_cq_contract:
+    id: CQ-17
+    requirement_id: FR-17
+    question: Which models and views express the conceptual account?
+    required_answer_fields: Modeling activity; model; model specialization; model view
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Represent a modeling activity, its model and a model view.
+    adverse_case: Reject interpreting a domain-model specialization as importing an entire engineering
+      domain.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-17
+    source_cells:
+    - 'CQ-17
+
+      FR-17'
+    - Which models and views express the conceptual account?
+    - Modeling activity; model; model specialization; model view
+  frozen_fr_contract:
+    id: FR-17
+    priority: MUST
+    title: Models and modeling activities
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish modeling activities, resulting model artifacts and the
+      selected model specializations.
+    acceptance: Represent a modeling activity, its model and a model view.
+    adverse_case: Reject interpreting a domain-model specialization as importing an entire engineering
+      domain.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-17
+    source_cells:
+    - 'FR-17  MUST
+
+      Models and modeling activities
+
+      Origin R | R1'
+    - The ontology shall distinguish modeling activities, resulting model artifacts and the selected model
+      specializations.
+    - 'AC: Represent a modeling activity, its model and a model view.
+
+      NAC: Reject interpreting a domain-model specialization as importing an entire engineering domain.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id025
+    Modeling activity: mActivity Modeling
+    model: mActivity R0110 m
+    model specialization: m Domain Model via G0032
+    model view: mv R0109 m and R0108 viewpointV
+  positive_case: &id027
+    scenario: Designate modeling activity mActivity using Modeling Language L, producing domain model
+      m. Model view mv belongs to m and conforms to declared viewpointV.
+    expected: Return activity,m,Domain Model,mv without treating the specialization as importing a methodology/domain.
+    observed: R0110 gives1..* produced/revised models, distinct from G0070 conceptual-process activity.
+      Domain Model G0032 inherits Model; R0109 binds mv to exactly1 model, R0108 requires1..* viewpoints.
+      R0111 records language. Model is representation via G0066, not the modeling event.
+    result: bounded_manual_support
+  adverse_case: &id028
+    scenario: Domain Model instance m is used to assert all Domain Engineering concepts/requirements have
+      been imported or fulfilled.
+    expected: Reject domain expansion inferred solely from a model specialization.
+    observed: C0035 explicitly restricts sense to a selected subject model and denies importing Domain
+      Engineering. Its G0032 inheritance provides model typing, no import relation or external-domain
+      completion claim.
+  model_evidence_ids: &id026
+  - CLR-R0041
+  - CLR-R0108
+  - CLR-R0109
+  - CLR-R0110
+  - CLR-R0111
+  - CLR-G0032
+  - CLR-G0066
+  - CLR-G0069
+  - CLR-G0070
+  - CLR-SC0023
+  - CLR-C0023
+  - CLR-C0024
+  - CLR-C0035
+  - CLR-C0073
+  - CLR-C0076
+  - CLR-C0077
+  - CLR-C0078
+  analysis:
+    cq_id: CQ-17
+    fr_id: FR-17
+    frozen_cq_contract:
+      id: CQ-17
+      requirement_id: FR-17
+      question: Which models and views express the conceptual account?
+      required_answer_fields: Modeling activity; model; model specialization; model view
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Represent a modeling activity, its model and a model view.
+      adverse_case: Reject interpreting a domain-model specialization as importing an entire engineering
+        domain.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-17
+      source_cells:
+      - 'CQ-17
+
+        FR-17'
+      - Which models and views express the conceptual account?
+      - Modeling activity; model; model specialization; model view
+    frozen_fr_contract:
+      id: FR-17
+      priority: MUST
+      title: Models and modeling activities
+      origin: R
+      release_target: R1
+      capability: The ontology shall distinguish modeling activities, resulting model artifacts and the
+        selected model specializations.
+      acceptance: Represent a modeling activity, its model and a model view.
+      adverse_case: Reject interpreting a domain-model specialization as importing an entire engineering
+        domain.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-17
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-17  MUST
+
+        Models and modeling activities
+
+        Origin R | R1'
+      - The ontology shall distinguish modeling activities, resulting model artifacts and the selected
+        model specializations.
+      - 'AC: Represent a modeling activity, its model and a model view.
+
+        NAC: Reject interpreting a domain-model specialization as importing an entire engineering domain.'
+    answer_field_analysis: *id025
+    model_evidence_ids: *id026
+    positive_case: *id027
+    adverse_case_assessment: *id028
+    capability_assessment: Scenario meets distinction and view retrieval; arbitrary models may lack a
+      view and scope compliance is manual, not solver proof.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: R0109 permits models with no recorded view, requiring incomplete-answer reporting
+      for those inputs, not failure of the demonstrated scenario AC or a new requirement that every model
+      possess a view. Viewpoint conformity is not proven by links. Produced-or-revised does not identify
+      origination.
+    finding:
+      id: CQ124-F07
+      decision_route: '#129'
+      recommendation: Decide missing-view answer behavior and origin/provenance distinction, keeping domain-boundary
+        note; do not import an unrelated engineering ontology.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F07
+  finding: R0109 permits models with no recorded view, requiring incomplete-answer reporting for those
+    inputs, not failure of the demonstrated scenario AC or a new requirement that every model possess
+    a view. Viewpoint conformity is not proven by links. Produced-or-revised does not identify origination.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-18
+  fr_id: FR-18
+  frozen_cq_contract:
+    id: CQ-18
+    requirement_id: FR-18
+    question: Which metamodel and model kind constrain a model?
+    required_answer_fields: Model; metamodel; model kind; declared conformance
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify an explicitly declared model-to-metamodel conformance link and model-kind classification.
+    adverse_case: Reject equating a model instance with its model kind or treating a conformance link
+      as proof.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-18
+    source_cells:
+    - 'CQ-18
+
+      FR-18'
+    - Which metamodel and model kind constrain a model?
+    - Model; metamodel; model kind; declared conformance
+  frozen_fr_contract:
+    id: FR-18
+    priority: MUST
+    title: Metamodels and classification levels
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish a model, its metamodel, model kinds and modeling across
+      classification levels.
+    acceptance: Identify an explicitly declared model-to-metamodel conformance link and model-kind classification.
+    adverse_case: Reject equating a model instance with its model kind or treating a conformance link
+      as proof.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-18
+    source_cells:
+    - 'FR-18  MUST
+
+      Metamodels and classification levels
+
+      Origin R | R1'
+    - The ontology shall distinguish a model, its metamodel, model kinds and modeling across classification
+      levels.
+    - 'AC: Identify an explicitly declared model-to-metamodel conformance link and model-kind classification.
+
+      NAC: Reject equating a model instance with its model kind or treating a conformance link as proof.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id029
+    Model: m
+    metamodel: mm via declared R0105
+    model kind: R0106 names Model base type and Model Kind; individual-model answer requires selected-profile
+      interpretation, not naive endpoint traversal
+    declared conformance: statement m R0105 mm, report as declaration only
+  positive_case: &id031
+    scenario: Designate model m classified by model kind k and explicitly linked as conforming to metamodel
+      mm.
+    expected: Return m,mm,k and conformance declaration without identifying m with k or certifying semantic
+      conformance.
+    observed: R0105 records declared conformity. R0106 is stereotyped instantiation, whose2022 profile
+      semantics can relate a base type to higher-order categorizer/powertype (Fonseca et al.2022 §4.1
+      PDFp9), not an ordinary artifact-instance edge. Therefore the proposed m,k scenario is conditional
+      on explicit interpretation/bridge; individual classification not established by registry alone.
+      G0064 and SC23/24 preserve metamodel/model/kind distinctions and declaration-versus-proof boundary.
+    result: partial_support_metalevel_interpretation_unresolved
+  adverse_case: &id032
+    scenario: A single m R0105 mm edge is treated as validation PASS, or model m is equated with kind
+      k.
+    expected: Reject both purported proof from assertion and level collapse.
+    observed: SC24 expressly denies conformance-link proof and SC23 denies model/kind identity. Neither
+      is executable content validation in this imported model; the manual adverse reasoning rejects the
+      inference, not a machine-derived unsatisfiability proof.
+  model_evidence_ids: &id030
+  - CLR-R0104
+  - CLR-R0105
+  - CLR-R0106
+  - CLR-R0107
+  - CLR-G0064
+  - CLR-G0066
+  - CLR-SC0023
+  - CLR-SC0024
+  - CLR-C0071
+  - CLR-C0072
+  - CLR-C0073
+  - CLR-C0074
+  - CLR-C0075
+  - CLR-C0080
+  analysis:
+    cq_id: CQ-18
+    fr_id: FR-18
+    frozen_cq_contract:
+      id: CQ-18
+      requirement_id: FR-18
+      question: Which metamodel and model kind constrain a model?
+      required_answer_fields: Model; metamodel; model kind; declared conformance
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify an explicitly declared model-to-metamodel conformance link and model-kind classification.
+      adverse_case: Reject equating a model instance with its model kind or treating a conformance link
+        as proof.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-18
+      source_cells:
+      - 'CQ-18
+
+        FR-18'
+      - Which metamodel and model kind constrain a model?
+      - Model; metamodel; model kind; declared conformance
+    frozen_fr_contract:
+      id: FR-18
+      priority: MUST
+      title: Metamodels and classification levels
+      origin: R
+      release_target: R1
+      capability: The ontology shall distinguish a model, its metamodel, model kinds and modeling across
+        classification levels.
+      acceptance: Identify an explicitly declared model-to-metamodel conformance link and model-kind classification.
+      adverse_case: Reject equating a model instance with its model kind or treating a conformance link
+        as proof.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-18
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-18  MUST
+
+        Metamodels and classification levels
+
+        Origin R | R1'
+      - The ontology shall distinguish a model, its metamodel, model kinds and modeling across classification
+        levels.
+      - 'AC: Identify an explicitly declared model-to-metamodel conformance link and model-kind classification.
+
+        NAC: Reject equating a model instance with its model kind or treating a conformance link as proof.'
+    answer_field_analysis: *id029
+    model_evidence_ids: *id030
+    positive_case: *id031
+    adverse_case_assessment: *id032
+    capability_assessment: Declared conformity supported; model-kind answer is metalevel-interpretation
+      dependent. Neither actual conformity nor level correctness established.
+    ac_assessment:
+      status: partial_support_metalevel_interpretation_unresolved
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: R0106 level semantics are not selected:2022 profile uses specialized base-type/categorizer
+      association, with order/isPowertype values. Do not diagnose an inherent level error or infer individual
+      m classification from graph endpoints alone. R0105 remains optional and not proof of metamodel rule
+      satisfaction. Multi-level coverage and explicit instance/type bridge require adjudication.
+    finding:
+      id: CQ124-F08
+      decision_route: '#129'
+      recommendation: 'At129 select profile/order/powertype-or-categorizer meaning and explain individual-model
+        query bridge; preserve frozen CQ fields and model unchanged. Source: https://www.danieleporello.net/papers/FonsecaEtAlER2022.pdf
+        §4.1 PDFp9.'
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: partial_support_metalevel_interpretation_unresolved
+  finding_id: CQ124-F08
+  finding: R0106 level semantics are not selected:2022 profile uses specialized base-type/categorizer
+    association, with order/isPowertype values. Do not diagnose an inherent level error or infer individual
+    m classification from graph endpoints alone. R0105 remains optional and not proof of metamodel rule
+    satisfaction. Multi-level coverage and explicit instance/type bridge require adjudication.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-19
+  fr_id: FR-19
+  frozen_cq_contract:
+    id: CQ-19
+    requirement_id: FR-19
+    question: How are categories formed and instances classified?
+    required_answer_fields: Categorization; category; classification; instance; assignment; taxonomy
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Trace a classification to its assigned category, instance description and assignment record.
+    adverse_case: Reject classification assignments whose category differs from the recorded instantiation
+      type.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-19
+    source_cells:
+    - 'CQ-19
+
+      FR-19'
+    - How are categories formed and instances classified?
+    - Categorization; category; classification; instance; assignment; taxonomy
+  frozen_fr_contract:
+    id: FR-19
+    priority: MUST
+    title: Categories and taxonomies
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent category formation, recorded classification assignments and
+      taxonomy organization.
+    acceptance: Trace a classification to its assigned category, instance description and assignment record.
+    adverse_case: Reject classification assignments whose category differs from the recorded instantiation
+      type.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-19
+    source_cells:
+    - 'FR-19  MUST
+
+      Categories and taxonomies
+
+      Origin R | R1'
+    - The ontology shall represent category formation, recorded classification assignments and taxonomy
+      organization.
+    - 'AC: Trace a classification to its assigned category, instance description and assignment record.
+
+      NAC: Reject classification assignments whose category differs from the recorded instantiation type.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id033
+    Categorization: cat R0016 c
+    category: c Concept
+    classification: classify
+    instance: x Instance description R0022
+    assignment: a Instantiation R0023; a R0087 x and R0088 c
+    taxonomy: tax via R0024, organizing c via R0159
+  positive_case: &id035
+    scenario: Designate classification classify assigning instance description x to category c by assignment
+      a. Assume the declared scenario records cat as forming c earlier; R0016 alone only says forms or
+      revises and entails no temporal priority. Taxonomy tax organizes c and is used by classify.
+    expected: Return classify,x,c,a plus linked category formation and taxonomy; align assignment endpoints
+      with classification records.
+    observed: R0021/22/23 each require1..* categories/descriptions/assignments. R0087/88 each give exactly1
+      endpoint per assignment. SC6 requires assignments pair classified descriptions with assigned categories
+      and covers stated assignments; SC5 aligns inherited relation endpoints. R0016 and R0024/R0159 provide
+      formation/organization context.
+    result: bounded_manual_support
+  adverse_case: &id036
+    scenario: classify assigns only c but a R0088 points to unrelated category d; or a points to description
+      y not classified by classify.
+    expected: Reject mismatched assignment category/instance even if every local edge count is valid.
+    observed: SC6 rejects both mismatches; SC5 checks inherited endpoints. Endpoint names/counts alone
+      miss this relational invariant. SC7 additionally constrains taxonomy hierarchy membership and acyclicity,
+      not a proof that arbitrary fixtures are semantically correct.
+  model_evidence_ids: &id034
+  - CLR-R0016
+  - CLR-R0021
+  - CLR-R0022
+  - CLR-R0023
+  - CLR-R0024
+  - CLR-R0079
+  - CLR-R0080
+  - CLR-R0087
+  - CLR-R0088
+  - CLR-R0159
+  - CLR-R0160
+  - CLR-G0055
+  - CLR-SC0005
+  - CLR-SC0006
+  - CLR-SC0007
+  - CLR-SC0023
+  - CLR-C0012
+  - CLR-C0014
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0060
+  - CLR-C0119
+  analysis:
+    cq_id: CQ-19
+    fr_id: FR-19
+    frozen_cq_contract:
+      id: CQ-19
+      requirement_id: FR-19
+      question: How are categories formed and instances classified?
+      required_answer_fields: Categorization; category; classification; instance; assignment; taxonomy
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Trace a classification to its assigned category, instance description and assignment
+        record.
+      adverse_case: Reject classification assignments whose category differs from the recorded instantiation
+        type.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-19
+      source_cells:
+      - 'CQ-19
+
+        FR-19'
+      - How are categories formed and instances classified?
+      - Categorization; category; classification; instance; assignment; taxonomy
+    frozen_fr_contract:
+      id: FR-19
+      priority: MUST
+      title: Categories and taxonomies
+      origin: R
+      release_target: R1
+      capability: The ontology shall represent category formation, recorded classification assignments
+        and taxonomy organization.
+      acceptance: Trace a classification to its assigned category, instance description and assignment
+        record.
+      adverse_case: Reject classification assignments whose category differs from the recorded instantiation
+        type.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-19
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-19  MUST
+
+        Categories and taxonomies
+
+        Origin R | R1'
+      - The ontology shall represent category formation, recorded classification assignments and taxonomy
+        organization.
+      - 'AC: Trace a classification to its assigned category, instance description and assignment record.
+
+        NAC: Reject classification assignments whose category differs from the recorded instantiation
+        type.'
+    answer_field_analysis: *id033
+    model_evidence_ids: *id034
+    positive_case: *id035
+    adverse_case_assessment: *id036
+    capability_assessment: Assignment distinction and manually rejected mismatch are supported; universal
+      category-formation/taxonomy provenance is not entailed.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: SC6 remains textual, not solver-executed. Missing categorization/taxonomy links
+      yield partial contextual answers, not blanket failure of assignment-retrieval AC. R0016 does not
+      distinguish first formation from revision or establish temporal priority; same-category links alone
+      do not prove causal provenance.
+    finding:
+      id: CQ124-F09
+      decision_route: '#129'
+      recommendation: Decide executable alignment tests and optional-context reporting, without inventing
+        category provenance or changing frozen CQ fields.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F09
+  finding: SC6 remains textual, not solver-executed. Missing categorization/taxonomy links yield partial
+    contextual answers, not blanket failure of assignment-retrieval AC. R0016 does not distinguish first
+    formation from revision or establish temporal priority; same-category links alone do not prove causal
+    provenance.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-20
+  fr_id: FR-20
+  frozen_cq_contract:
+    id: CQ-20
+    requirement_id: FR-20
+    question: Which formal assertions restrict a conceptual artifact?
+    required_answer_fields: Artifact; formula; axiom role; constraint; formalization
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve an axiom as a formula accepted in a specified artifact.
+    adverse_case: Reject an axiom interpreted as a context-free claim of empirical truth.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-20
+    source_cells:
+    - 'CQ-20
+
+      FR-20'
+    - Which formal assertions restrict a conceptual artifact?
+    - Artifact; formula; axiom role; constraint; formalization
+  frozen_fr_contract:
+    id: FR-20
+    priority: MUST
+    title: Logic and formal assertions
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent formulas, contextually accepted axioms, constraints and formalization
+      activities.
+    acceptance: Retrieve an axiom as a formula accepted in a specified artifact.
+    adverse_case: Reject an axiom interpreted as a context-free claim of empirical truth.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-20
+    source_cells:
+    - 'FR-20  MUST
+
+      Logic and formal assertions
+
+      Origin R | R1'
+    - The ontology shall represent formulas, contextually accepted axioms, constraints and formalization
+      activities.
+    - 'AC: Retrieve an axiom as a formula accepted in a specified artifact.
+
+      NAC: Reject an axiom interpreted as a context-free claim of empirical truth.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id037
+    Artifact: a
+    formula: f in formal model fm via R0075
+    axiom role: f Axiom G0008 Formula; f R0014 a
+    constraint: a R0033 constraintC; constraintC R0055 f
+    formalization: formalize R0076 a, R0077 fm and R0078 artificialLanguageL
+  positive_case: &id039
+    scenario: Designate artifact a with accepted axiom f (also Formula), constraintC expressed by f, and
+      formalization formalize producing formal model fm containing f in declared language L.
+    expected: Return artifact-specific acceptance of f with formula/constraint/formalization links; preserve
+      role versus empirical truth distinction.
+    observed: G0008 and R0014 express Axiom as Formula accepted in1..* artifacts. R0033/R0055 link constraints
+      when stated; R0076/77/78 and R0075 trace formalization. SC15 requires declared formal syntax/semantics
+      and scope of referenced elements; SC22 allows differing adoption/acceptance across artifacts.
+    result: bounded_manual_support
+  adverse_case: &id040
+    scenario: Because f is accepted as axiom in a, report f as empirically true everywhere or accepted
+      in unrelated artifact b.
+    expected: Reject universal-truth or cross-artifact acceptance inference from local axiom role.
+    observed: C0010 definition plus SC15/22 restrict acceptance to specified artifacts; no empirical-truth
+      inference relation exists. Query b requires its own R0014 link. Imported role semantics do not establish
+      that f is true or logically valid.
+  model_evidence_ids: &id038
+  - CLR-R0014
+  - CLR-R0033
+  - CLR-R0055
+  - CLR-R0056
+  - CLR-R0075
+  - CLR-R0076
+  - CLR-R0077
+  - CLR-R0078
+  - CLR-G0008
+  - CLR-G0046
+  - CLR-G0047
+  - CLR-SC0015
+  - CLR-SC0022
+  - CLR-C0010
+  - CLR-C0019
+  - CLR-C0030
+  - CLR-C0050
+  - CLR-C0051
+  - CLR-C0052
+  analysis:
+    cq_id: CQ-20
+    fr_id: FR-20
+    frozen_cq_contract:
+      id: CQ-20
+      requirement_id: FR-20
+      question: Which formal assertions restrict a conceptual artifact?
+      required_answer_fields: Artifact; formula; axiom role; constraint; formalization
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retrieve an axiom as a formula accepted in a specified artifact.
+      adverse_case: Reject an axiom interpreted as a context-free claim of empirical truth.
+      test_execution: not_executed
+      answer_status: not_computed
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-20
+      source_cells:
+      - 'CQ-20
+
+        FR-20'
+      - Which formal assertions restrict a conceptual artifact?
+      - Artifact; formula; axiom role; constraint; formalization
+    frozen_fr_contract:
+      id: FR-20
+      priority: MUST
+      title: Logic and formal assertions
+      origin: R
+      release_target: R1
+      capability: The ontology shall represent formulas, contextually accepted axioms, constraints and
+        formalization activities.
+      acceptance: Retrieve an axiom as a formula accepted in a specified artifact.
+      adverse_case: Reject an axiom interpreted as a context-free claim of empirical truth.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-20
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      source_cells:
+      - 'FR-20  MUST
+
+        Logic and formal assertions
+
+        Origin R | R1'
+      - The ontology shall represent formulas, contextually accepted axioms, constraints and formalization
+        activities.
+      - 'AC: Retrieve an axiom as a formula accepted in a specified artifact.
+
+        NAC: Reject an axiom interpreted as a context-free claim of empirical truth.'
+    answer_field_analysis: *id037
+    model_evidence_ids: *id038
+    positive_case: *id039
+    adverse_case_assessment: *id040
+    capability_assessment: Specified artifact acceptance is supported in scenario; complete logical consistency,
+      validity and universal formalization coverage remain unassessed.
+    ac_assessment:
+      status: bounded_manual_support
+      contract_field: frozen_fr_contract.acceptance
+      expected_observed_evidence: positive_case
+    nac_assessment:
+      status: manual_support_not_automated
+      contract_field: frozen_fr_contract.adverse_case
+      expected_observed_evidence: adverse_case_assessment
+    failure_analysis: Formula semantics and constraint compliance are textual obligations, not executed
+      proof. Artifact axioms need not appear in a recorded formalization/model because corresponding links
+      are optional; no cross-link invariant shown guarantees formal model formula belongs to the artifact
+      formalized. Formalization path alone can conflate artifacts.
+    finding:
+      id: CQ124-F10
+      decision_route: '#129'
+      recommendation: Decide formal artifact/formula alignment and validation contract; retain context-bound
+        role and explicitly unknown truth rather than strengthening axioms.
+      status: proposal_only_unresolved
+      affected_ids_ref: model_evidence_ids
+      text_ref: failure_analysis
+  manual_conclusion: bounded_manual_support
+  finding_id: CQ124-F10
+  finding: Formula semantics and constraint compliance are textual obligations, not executed proof. Artifact
+    axioms need not appear in a recorded formalization/model because corresponding links are optional;
+    no cross-link invariant shown guarantees formal model formula belongs to the artifact formalized.
+    Formalization path alone can conflate artifacts.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+limits:
+- Independent internal QA is not external expert or stakeholder approval.
+- Optional extensions and scientific limitations are distinguished from frozen requirement failures.
+- Declared source/type interpretation and textual constraints remain separate from executable semantic
+  validation.
+- 'Open findings are proposals for joint decision #129; no model or requirement changes applied.'
+checks:
+  command: python tools/check_cq_reviews.py --batch 2
+  result_location: Exact PR and Public integrity run
+  scope: Frozen contracts, answer-field coverage, evidence IDs, manual evidence completeness and decision/execution
+    boundaries only.
