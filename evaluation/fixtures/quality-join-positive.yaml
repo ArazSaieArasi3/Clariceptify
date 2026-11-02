@@ -1,0 +1,30 @@
+schema_version: '1.0'
+evidence_kind: synthetic_selected_quality_join
+model_revision: input-r1-rev1
+id: DOM18-POS-001
+expected_selected_answer: true
+description: A selected applied-criterion and goal path can be joined for one assessed
+  artifact.
+nodes:
+- id: evaluation
+  concept_id: CLR-C0097
+- id: artifact
+  concept_id: CLR-C0019
+- id: criterion
+  concept_id: CLR-C0029
+- id: other_criterion
+  concept_id: CLR-C0029
+- id: goal
+  concept_id: CLR-C0054
+edges:
+- relation_id: CLR-R0130
+  source: evaluation
+  target: artifact
+- relation_id: CLR-R0129
+  source: evaluation
+  target: criterion
+- relation_id: CLR-R0061
+  source: criterion
+  target: goal
+claim_ceiling: One finite graph query; not full CQ execution, formal consistency,
+  truth, source passage approval or semantic adequacy.
