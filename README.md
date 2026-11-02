@@ -73,6 +73,7 @@ Previous engineering checkpoint: [v0.1.0-alpha.3](https://github.com/ArazSaieAra
 - [Plan for using the related-work reviews](docs/research/review-utilization-plan.md), a maintained 13-category table linking source evidence to model comparison and proposed actions
 - [Pending-source passage reviews](evidence/passports/), preserving original support and open semantic gates
 - [Bounded semantic distinction reviews](evaluation/semantic-reviews/), with open philosophical and typing gates
+- [Full-contract conceptual CQ reviews](evaluation/cq-review/), distinct from executable or expert acceptance
 - [Execution roadmap](https://github.com/ArazSaieArasi3/Clariceptify/issues/1)
 
 ## Structure and status

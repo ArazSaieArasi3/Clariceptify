@@ -1,0 +1,1695 @@
+schema_version: '1.0'
+issue: 123
+task_id: R2-CQ-1
+status: MANUAL_FULL_CONTRACT_REVIEW_COMPLETE_WITH_OPEN_FINDINGS
+checked_on: '2026-11-02'
+baseline_commit: d9bd07c6da381b4df344b3305d0f1db99eda8e7a
+model_revision: input-r1-rev1
+model_tree: 3e2d5b627af1b92cdb70c6bd7198868fa784e977
+input_bindings:
+  requirements/functional.yaml: 1103692749d5a6584ad1eb795206be07f90c393e55ced40f8bbc313692115608
+  requirements/competency-questions.yaml: 144cdbed8b076697c129c93dab790b418c43a8c90246af0c1bfcf731e63330c5
+  requirements/scope-and-scenarios.yaml: 38b1c65937b88997b24371506aef391b45279c93c1bd8dc0e7a1c86c4989c848
+  traceability/requirements-model.yaml: f85d76ff9ed31f903de5467adcc10afb753370a3d06e6f9b314d26b4f76b837f
+  model/concepts.yaml: 4770b72d6104caad0a19ee778c8c455c3a10aaaf6c7bdcb9aafd306bb52712cf
+  model/relations.yaml: 6e39ff6512c061603a9117509599654afa83d3c20a3e933bbe37194bf835b4ac
+  model/generalizations.yaml: f66033e283edbe83824878e1e7241392b5692dd76c335258052d6b858c15d84c
+  model/constraints.yaml: 337ce29d568affb01815f1e9a6dcd3b9b9ec5997429ae2f00ce5476e007c5fd4
+origins:
+  E: explicit owner instruction
+  R: reconstructed from model; not prior stakeholder agreement
+  I: inferred or proposed from purpose
+requirement_status: retrospectively_reconstructed_review_draft
+method: Every frozen capability/question, required answer field, acceptance and adverse criterion is manually
+  compared to explicit scenarios and model evidence. Full review coverage is not full semantic satisfaction.
+  No original contract, origin, execution status or denominator is changed.
+case_scope: Synthetic focal examples assume consistent stated background; no complete instance satisfiability
+  proof is claimed. Missing assertions are not real-world falsity. A supported bounded case is not universal
+  satisfaction.
+records:
+- cq_id: CQ-01
+  fr_id: FR-01
+  frozen_cq_contract:
+    id: CQ-01
+    requirement_id: FR-01
+    question: Who performs a specified conceptualization?
+    required_answer_fields: Episode; agent; participation
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify an episode and its participating conceptualizer.
+    adverse_case: Reject an attribution to an agent unrelated to that episode.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-1
+    source_cells:
+    - 'CQ-01
+
+      FR-01'
+    - Who performs a specified conceptualization?
+    - Episode; agent; participation
+  frozen_fr_contract:
+    id: FR-01
+    priority: MUST
+    title: Conceptualization and agency
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent conceptualization episodes and the agents participating in
+      them.
+    acceptance: Identify an episode and its participating conceptualizer.
+    adverse_case: Reject an attribution to an agent unrelated to that episode.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-1
+    source_cells:
+    - 'FR-01  MUST
+
+      Conceptualization and agency
+
+      Origin R | R1'
+    - The ontology shall represent conceptualization episodes and the agents participating in them.
+    - 'AC: Identify an episode and its participating conceptualizer.
+
+      NAC: Reject an attribution to an agent unrelated to that episode.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id002
+    Episode: represented by C0026 e1
+    agent: Ada as C0027 and Agent via G0025
+    participation: R0054 recorded for e1; generic R0010 is distinct
+  positive_case:
+    scenario: Episode e1 is performed by agent Ada playing Conceptualizer; Ben participates only in distinct
+      episode e2. Query subject is e1. Ada-e1 and Ben-e2 are separate R0054 assertions; e1 has its other
+      mandatory context.
+    expected: Answer (e1,Ada,R0054 participation); do not return Ben. Preserve historical attribution
+      after e1 ends.
+    observed: R0054 relates each episode to 1..* conceptualizers and each conceptualizer to 1..* episodes.
+      G0025 supplies Agent typing. SC0004 makes historical participation meaningful; nothing requires
+      ongoing activity. The specific tuple is representable and a declared-link interpretation excludes
+      Ben.
+  adverse_case:
+    scenario: 'Ben is known to be a Conceptualizer globally, but there is no Ben-e1 participation; a report
+      nevertheless attributes e1 to Ben. Separate declared-complete focal variant: Ada-e1 is recorded
+      in specialized R0054 but omitted from generic R0010 participation.'
+    expected: Withhold Ben attribution without an episode link. In the separate complete-record variant,
+      flag a possible missing specialized-to-generic subsetting rule for decision, not an already established
+      model contradiction; generic participation need not equal Conceptualizer participation.
+    observed: Episode scoping rejects the first answer. R0010 is inherited through G0024; no explicit
+      subsetting connects R0054 participation to R0010. Generic participants need not be conceptualizers,
+      so extra generic participants are not a defect. Whether every R0054 participant must also appear
+      in R0010 is a proposed refinement question, not proven inconsistency.
+  model_evidence_ids: &id001
+  - CLR-C0004
+  - CLR-C0025
+  - CLR-C0026
+  - CLR-C0027
+  - CLR-R0010
+  - CLR-R0054
+  - CLR-G0024
+  - CLR-G0025
+  - CLR-SC0003
+  - CLR-SC0004
+  analysis:
+    cq_id: CQ-01
+    requirement_id: FR-01
+    finding_id: CQ123-F01
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: Who performs a specified conceptualization?
+      required_answer_fields: Episode; agent; participation
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify an episode and its participating conceptualizer.
+      adverse_case: Reject an attribution to an agent unrelated to that episode.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-1
+    fr_capability: The ontology shall represent conceptualization episodes and the agents participating
+      in them.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-1
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id001
+    positive_scenario:
+      synthetic: true
+      description: Episode e1 is performed by agent Ada playing Conceptualizer; Ben participates only
+        in distinct episode e2. Query subject is e1. Ada-e1 and Ben-e2 are separate R0054 assertions;
+        e1 has its other mandatory context.
+      expected: Answer (e1,Ada,R0054 participation); do not return Ben. Preserve historical attribution
+        after e1 ends.
+      observed_manual_interpretation: R0054 relates each episode to 1..* conceptualizers and each conceptualizer
+        to 1..* episodes. G0025 supplies Agent typing. SC0004 makes historical participation meaningful;
+        nothing requires ongoing activity. The specific tuple is representable and a declared-link interpretation
+        excludes Ben.
+    adverse_scenario:
+      synthetic: true
+      description: 'Ben is known to be a Conceptualizer globally, but there is no Ben-e1 participation;
+        a report nevertheless attributes e1 to Ben. Separate declared-complete focal variant: Ada-e1 is
+        recorded in specialized R0054 but omitted from generic R0010 participation.'
+      expected: Withhold Ben attribution without an episode link. In the separate complete-record variant,
+        flag a possible missing specialized-to-generic subsetting rule for decision, not an already established
+        model contradiction; generic participation need not equal Conceptualizer participation.
+      observed_manual_interpretation: Episode scoping rejects the first answer. R0010 is inherited through
+        G0024; no explicit subsetting connects R0054 participation to R0010. Generic participants need
+        not be conceptualizers, so extra generic participants are not a defect. Whether every R0054 participant
+        must also appear in R0010 is a proposed refinement question, not proven inconsistency.
+    answer_field_assessment: *id002
+    ac_assessment:
+      status: conceptually_supported
+      reason: Exact episode-to-conceptualizer association supplies all answer fields; historical meaning
+        explicit.
+    nac_assessment:
+      status: conceptually_supported_with_query_scope
+      reason: Global role classification cannot substitute for episode-specific link; no executed rejection
+        claimed.
+    full_capability_assessment: Agency is representable; correspondence between generic Agent participation
+      and specialized Conceptualizer participation remains underspecified.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Possible specialized-to-generic participation subsetting is undeclared; equality is not required
+      and generic participants may legitimately be non-conceptualizers. No runtime failure is claimed.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Consider whether R0054 must subset/refine R0010 and record intended historical participation
+        identity; retain episode scoping.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F01
+  finding: Possible specialized-to-generic participation subsetting is undeclared; equality is not required
+    and generic participants may legitimately be non-conceptualizers. No runtime failure is claimed.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-02
+  fr_id: FR-02
+  frozen_cq_contract:
+    id: CQ-02
+    requirement_id: FR-02
+    question: What is conceptualized, and what kind of subject is it?
+    required_answer_fields: Episode; subject; subject category
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve a subject through its declared subject category.
+    adverse_case: Reject an episode with no subject across the allowed subject branches.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-2
+    source_cells:
+    - 'CQ-02
+
+      FR-02'
+    - What is conceptualized, and what kind of subject is it?
+    - Episode; subject; subject category
+  frozen_fr_contract:
+    id: FR-02
+    priority: MUST
+    title: Subjects of conceptualization
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish object, event, state and type subjects without treating
+      their descriptions as their referents.
+    acceptance: Retrieve a subject through its declared subject category.
+    adverse_case: Reject an episode with no subject across the allowed subject branches.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-2
+    source_cells:
+    - 'FR-02  MUST
+
+      Subjects of conceptualization
+
+      Origin R | R1'
+    - The ontology shall distinguish object, event, state and type subjects without treating their descriptions
+      as their referents.
+    - 'AC: Retrieve a subject through its declared subject category.
+
+      NAC: Reject an episode with no subject across the allowed subject branches.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id004
+    Episode: C0026
+    subject: R0043/44/45/46/47 object at chosen branch
+    subject category: branch declaration, not name matching
+  positive_case:
+    scenario: Episode e concerns a deployment occurrence d by R0044; d is an Event, not a diagram of the
+      deployment. Parallel independent cases concern an Object, State or Type through their respective
+      branches.
+    expected: (e,d,Event), or corresponding branch category in each parallel case, without inventing Object
+      subjects or confusing descriptions.
+    observed: R0043–47 have optional per-branch targets; R0044 directly carries the occurrence. SC0001
+      imposes a nonempty union across five categories. Definitions of Object/Event and SC0023 preserve
+      referent/description intent; no disjointness inferred solely from labels.
+  adverse_case:
+    scenario: All five subject branches of e are empty. Boundary variant e concerns only a Time t via
+      R0046 although FR-02 enumerates Object, Event, State and Type.
+    expected: Empty combined subjects rejected. Time-only case is an additional modeled subject branch,
+      not one of the four explicitly required categories. FR-02 does not say only four; record a non-blocking
+      scope clarification rather than an unmet frozen requirement.
+    observed: SC0001 explicitly excludes empty combined subjects even though each separate association
+      is 0..*. A Time-only subject is allowed by that text. FR-02 requires four categories without excluding
+      others, and the CQ refers to allowed branches. No frozen-contract contradiction follows from this
+      additional branch; whether to enumerate Time explicitly is an owner scope/documentation question.
+  model_evidence_ids: &id003
+  - CLR-C0026
+  - CLR-C0041
+  - CLR-C0083
+  - CLR-C0112
+  - CLR-C0123
+  - CLR-C0125
+  - CLR-R0043
+  - CLR-R0044
+  - CLR-R0045
+  - CLR-R0046
+  - CLR-R0047
+  - CLR-G0024
+  - CLR-SC0001
+  - CLR-SC0023
+  - CLR-SC0024
+  analysis:
+    cq_id: CQ-02
+    requirement_id: FR-02
+    finding_id: CQ123-F02
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: What is conceptualized, and what kind of subject is it?
+      required_answer_fields: Episode; subject; subject category
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retrieve a subject through its declared subject category.
+      adverse_case: Reject an episode with no subject across the allowed subject branches.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-2
+    fr_capability: The ontology shall distinguish object, event, state and type subjects without treating
+      their descriptions as their referents.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-2
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id003
+    positive_scenario:
+      synthetic: true
+      description: Episode e concerns a deployment occurrence d by R0044; d is an Event, not a diagram
+        of the deployment. Parallel independent cases concern an Object, State or Type through their respective
+        branches.
+      expected: (e,d,Event), or corresponding branch category in each parallel case, without inventing
+        Object subjects or confusing descriptions.
+      observed_manual_interpretation: R0043–47 have optional per-branch targets; R0044 directly carries
+        the occurrence. SC0001 imposes a nonempty union across five categories. Definitions of Object/Event
+        and SC0023 preserve referent/description intent; no disjointness inferred solely from labels.
+    adverse_scenario:
+      synthetic: true
+      description: All five subject branches of e are empty. Boundary variant e concerns only a Time t
+        via R0046 although FR-02 enumerates Object, Event, State and Type.
+      expected: Empty combined subjects rejected. Time-only case is an additional modeled subject branch,
+        not one of the four explicitly required categories. FR-02 does not say only four; record a non-blocking
+        scope clarification rather than an unmet frozen requirement.
+      observed_manual_interpretation: SC0001 explicitly excludes empty combined subjects even though each
+        separate association is 0..*. A Time-only subject is allowed by that text. FR-02 requires four
+        categories without excluding others, and the CQ refers to allowed branches. No frozen-contract
+        contradiction follows from this additional branch; whether to enumerate Time explicitly is an
+        owner scope/documentation question.
+    answer_field_assessment: *id004
+    ac_assessment:
+      status: conceptually_supported
+      reason: All four FR-listed categories have explicit branches; example requires only occurrence.
+    nac_assessment:
+      status: conceptually_supported_textually
+      reason: SC0001 rejects zero subjects across the combined branches; not an executable axiom.
+    full_capability_assessment: Four required branches and description distinction are present. The additional
+      Time branch is not a frozen-contract failure; optional clarification can establish whether the owner
+      intended an exhaustive list. Foundational category validation remains separately open.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Time is an additional modeled subject branch. FR-02 requires four categories but does not
+      say only four, so this is a non-blocking scope clarification, not unmet FR or demonstrated contradiction.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Jointly clarify whether FR-02 intentionally permits temporal subjects, without changing
+        this review denominator or source requirement.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F02
+  finding: Time is an additional modeled subject branch. FR-02 requires four categories but does not say
+    only four, so this is a non-blocking scope clarification, not unmet FR or demonstrated contradiction.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-03
+  fr_id: FR-03
+  frozen_cq_contract:
+    id: CQ-03
+    requirement_id: FR-03
+    question: Which intentions, goals and values guide an episode?
+    required_answer_fields: Episode; intention; bearer; goal; value when recorded
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify the intention bearer and the articulated goal used in the episode.
+    adverse_case: Reject substitution of the goal content for the mental intention itself.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-3
+    source_cells:
+    - 'CQ-03
+
+      FR-03'
+    - Which intentions, goals and values guide an episode?
+    - Episode; intention; bearer; goal; value when recorded
+  frozen_fr_contract:
+    id: FR-03
+    priority: MUST
+    title: Intentions goals and values
+    origin: R
+    release_target: R1
+    capability: The ontology shall connect the purpose of conceptualization to intentions, articulated
+      goals and evaluation values.
+    acceptance: Identify the intention bearer and the articulated goal used in the episode.
+    adverse_case: Reject substitution of the goal content for the mental intention itself.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-3
+    source_cells:
+    - 'FR-03  MUST
+
+      Intentions goals and values
+
+      Origin R | R1'
+    - The ontology shall connect the purpose of conceptualization to intentions, articulated goals and
+      evaluation values.
+    - 'AC: Identify the intention bearer and the articulated goal used in the episode.
+
+      NAC: Reject substitution of the goal content for the mental intention itself.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id006
+    Episode: e via R0051
+    intention: i C0061
+    bearer: Ada via inverse R0007
+    goal: g via R0089
+    value when recorded: v via R0081; absence is allowed
+  positive_case:
+    scenario: Ada participates in e, bears mental intention i through R0007, e is motivated by i through
+      R0051, i has goal g (reduce ambiguity) through R0089, and g is assessed against recorded value v
+      (clarity) via R0081.
+    expected: (e,i,Ada,g,v); omit value as unrecorded rather than infer it if R0081 absent.
+    observed: R0051 requires 1..* intentions, R0089 1..* goals and R0007 exactly one bearer per intention.
+      SC0003 aligns that bearer to episode participation. R0081 explicitly allows 0..* values. Thus stated
+      goal and optional value can be returned while maintaining intention/content distinction.
+  adverse_case:
+    scenario: Replace i with information-object goal g as the mental motivator; separately let i be borne
+      by Ben, who does not participate in e.
+    expected: Do not identify goal content with mental intention; reject nonparticipant intention bearer.
+    observed: C0061 defines agent-dependent mental commitment and C0054 desired-outcome information; their
+      distinct roles make substitution conceptually wrong. SC0003 directly excludes the Ben case. SC0024
+      warns class-name differences alone are not disjointness; type separation is a manual semantic reading,
+      not a computed consistency result.
+  model_evidence_ids: &id005
+  - CLR-C0004
+  - CLR-C0026
+  - CLR-C0054
+  - CLR-C0061
+  - CLR-C0129
+  - CLR-R0007
+  - CLR-R0051
+  - CLR-R0054
+  - CLR-R0081
+  - CLR-R0089
+  - CLR-G0050
+  - CLR-G0025
+  - CLR-SC0003
+  - CLR-SC0011
+  - CLR-SC0024
+  analysis:
+    cq_id: CQ-03
+    requirement_id: FR-03
+    finding_id: CQ123-F03
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: Which intentions, goals and values guide an episode?
+      required_answer_fields: Episode; intention; bearer; goal; value when recorded
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify the intention bearer and the articulated goal used in the episode.
+      adverse_case: Reject substitution of the goal content for the mental intention itself.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-3
+    fr_capability: The ontology shall connect the purpose of conceptualization to intentions, articulated
+      goals and evaluation values.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-3
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id005
+    positive_scenario:
+      synthetic: true
+      description: Ada participates in e, bears mental intention i through R0007, e is motivated by i
+        through R0051, i has goal g (reduce ambiguity) through R0089, and g is assessed against recorded
+        value v (clarity) via R0081.
+      expected: (e,i,Ada,g,v); omit value as unrecorded rather than infer it if R0081 absent.
+      observed_manual_interpretation: R0051 requires 1..* intentions, R0089 1..* goals and R0007 exactly
+        one bearer per intention. SC0003 aligns that bearer to episode participation. R0081 explicitly
+        allows 0..* values. Thus stated goal and optional value can be returned while maintaining intention/content
+        distinction.
+    adverse_scenario:
+      synthetic: true
+      description: Replace i with information-object goal g as the mental motivator; separately let i
+        be borne by Ben, who does not participate in e.
+      expected: Do not identify goal content with mental intention; reject nonparticipant intention bearer.
+      observed_manual_interpretation: C0061 defines agent-dependent mental commitment and C0054 desired-outcome
+        information; their distinct roles make substitution conceptually wrong. SC0003 directly excludes
+        the Ben case. SC0024 warns class-name differences alone are not disjointness; type separation
+        is a manual semantic reading, not a computed consistency result.
+    answer_field_assessment: *id006
+    ac_assessment:
+      status: conceptually_supported
+      reason: Mandatory intention, bearer and goal chain plus SC0003 supports the episode-scoped positive
+        case.
+    nac_assessment:
+      status: conceptually_supported_not_formally_enforced
+      reason: Definitions distinguish mode and content; SC0003 enforces bearer alignment in prose, not
+        software.
+    full_capability_assessment: Purpose and value attribution can be represented. The model permits several
+      goals for one intention reused in several episodes; it does not select which goal is operative in
+      a particular episode beyond motivation by that intention.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: An intention shared across episodes with several desired goals makes episode-specific goal
+      relevance underdetermined, although the simple AC example works.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Clarify whether every desired goal of an adopted intention guides every adopting episode,
+        or introduce scoped goal relevance after joint decision.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F03
+  finding: An intention shared across episodes with several desired goals makes episode-specific goal
+    relevance underdetermined, although the simple AC example works.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-04
+  fr_id: FR-04
+  frozen_cq_contract:
+    id: CQ-04
+    requirement_id: FR-04
+    question: From which perspective is a subject conceptualized?
+    required_answer_fields: Episode; perspective; bearer; view if articulated
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve the adopted perspective and its articulated view where present.
+    adverse_case: Reject identity of a mental perspective with a view document solely because labels agree.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-4
+    source_cells:
+    - 'CQ-04
+
+      FR-04'
+    - From which perspective is a subject conceptualized?
+    - Episode; perspective; bearer; view if articulated
+  frozen_fr_contract:
+    id: FR-04
+    priority: MUST
+    title: Perspectives and views
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent an adopted mental perspective and distinguish it from an
+      explicit view or viewpoint specification.
+    acceptance: Retrieve the adopted perspective and its articulated view where present.
+    adverse_case: Reject identity of a mental perspective with a view document solely because labels agree.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-4
+    source_cells:
+    - 'FR-04  MUST
+
+      Perspectives and views
+
+      Origin R | R1'
+    - The ontology shall represent an adopted mental perspective and distinguish it from an explicit view
+      or viewpoint specification.
+    - 'AC: Retrieve the adopted perspective and its articulated view where present.
+
+      NAC: Reject identity of a mental perspective with a view document solely because labels agree.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id008
+    Episode: represented
+    perspective: R0042 represented
+    bearer: R0008 represented and SC0003 aligned
+    view if articulated: 'gap: general View cannot be identified as articulation of adopted perspective
+      solely through declared links'
+  positive_case:
+    scenario: e adopts mental perspective p borne by Ada. R0126 expresses p in viewpoint specification
+      vp. Artifact A is created by e; general View v selects A by R0171. There are two views v1,v2 of
+      A with different concerns, only one intended as p articulation.
+    expected: Return e,p,Ada and the particular articulated View when supplied; do not replace View by
+      Viewpoint or return every view of A.
+    observed: R0042 and R0008 identify adopted perspective/bearer; R0126 identifies Viewpoint only. R0171
+      associates View with artifact, but no relation connects general View to its governing Viewpoint
+      or the adopted Perspective. R0108 connects Model View to Viewpoint; G0069 makes Model View a Representation,
+      not a general View subtype. Therefore the full view field is underdetermined even if v1/v2 are recorded.
+  adverse_case:
+    scenario: A mental p and document v have identical labels. A shortcut treats them as one entity, or
+      chooses v1 solely because its label matches p.
+    expected: Withhold identity and arbitrary view selection; preserve mental-state versus information-object
+      distinction.
+    observed: C0093 defines dependent mental orientation; C0130 a representation; C0131 prescribes conventions.
+      Label agreement is not an identity rule. SC0024 prevents invented disjointness but also does not
+      authorize label identity. There is no declared bridge sufficient to select v1 over v2.
+  model_evidence_ids: &id007
+  - CLR-C0004
+  - CLR-C0026
+  - CLR-C0093
+  - CLR-C0130
+  - CLR-C0131
+  - CLR-C0076
+  - CLR-R0008
+  - CLR-R0042
+  - CLR-R0048
+  - CLR-R0108
+  - CLR-R0109
+  - CLR-R0126
+  - CLR-R0171
+  - CLR-G0115
+  - CLR-G0116
+  - CLR-G0069
+  - CLR-SC0003
+  - CLR-SC0011
+  - CLR-SC0024
+  analysis:
+    cq_id: CQ-04
+    requirement_id: FR-04
+    finding_id: CQ123-F04
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: From which perspective is a subject conceptualized?
+      required_answer_fields: Episode; perspective; bearer; view if articulated
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retrieve the adopted perspective and its articulated view where present.
+      adverse_case: Reject identity of a mental perspective with a view document solely because labels
+        agree.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-4
+    fr_capability: The ontology shall represent an adopted mental perspective and distinguish it from
+      an explicit view or viewpoint specification.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-4
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id007
+    positive_scenario:
+      synthetic: true
+      description: e adopts mental perspective p borne by Ada. R0126 expresses p in viewpoint specification
+        vp. Artifact A is created by e; general View v selects A by R0171. There are two views v1,v2 of
+        A with different concerns, only one intended as p articulation.
+      expected: Return e,p,Ada and the particular articulated View when supplied; do not replace View
+        by Viewpoint or return every view of A.
+      observed_manual_interpretation: R0042 and R0008 identify adopted perspective/bearer; R0126 identifies
+        Viewpoint only. R0171 associates View with artifact, but no relation connects general View to
+        its governing Viewpoint or the adopted Perspective. R0108 connects Model View to Viewpoint; G0069
+        makes Model View a Representation, not a general View subtype. Therefore the full view field is
+        underdetermined even if v1/v2 are recorded.
+    adverse_scenario:
+      synthetic: true
+      description: A mental p and document v have identical labels. A shortcut treats them as one entity,
+        or chooses v1 solely because its label matches p.
+      expected: Withhold identity and arbitrary view selection; preserve mental-state versus information-object
+        distinction.
+      observed_manual_interpretation: C0093 defines dependent mental orientation; C0130 a representation;
+        C0131 prescribes conventions. Label agreement is not an identity rule. SC0024 prevents invented
+        disjointness but also does not authorize label identity. There is no declared bridge sufficient
+        to select v1 over v2.
+    answer_field_assessment: *id008
+    ac_assessment:
+      status: partial
+      reason: Perspective and bearer recoverable; Viewpoint is not the requested general View; full articulated-view
+        case lacks correspondence.
+    nac_assessment:
+      status: conceptually_supported
+      reason: Definitions distinguish mental perspective and representation; label equality provides no
+        identity basis.
+    full_capability_assessment: Mental perspective versus specification distinction is explicit, but the
+      full CQ articulation correspondence is not represented.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Missing scoped bridge from adopted perspective/viewpoint to general View makes CQ-04 full
+      answer ambiguous.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Choose an explicit general View-to-Viewpoint or Perspective articulation correspondence,
+        cardinalities and artifact/episode alignment; do not reuse Model View silently.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F04
+  finding: Missing scoped bridge from adopted perspective/viewpoint to general View makes CQ-04 full answer
+    ambiguous.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-05
+  fr_id: FR-05
+  frozen_cq_contract:
+    id: CQ-05
+    requirement_id: FR-05
+    question: Which cognitive activities and mental states inform the conceptualization?
+    required_answer_fields: Activity; observer or bearer; observed subject; state
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Represent an observation of an event and the observer without inventing an object subject.
+    adverse_case: Reject assignment of a mental state to no bearer or to incompatible bearers.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-5
+    source_cells:
+    - 'CQ-05
+
+      FR-05'
+    - Which cognitive activities and mental states inform the conceptualization?
+    - Activity; observer or bearer; observed subject; state
+  frozen_fr_contract:
+    id: FR-05
+    priority: MUST
+    title: Cognitive activities and states
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish cognitive occurrences from awareness and other agent-dependent
+      mental states.
+    acceptance: Represent an observation of an event and the observer without inventing an object subject.
+    adverse_case: Reject assignment of a mental state to no bearer or to incompatible bearers.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-5
+    source_cells:
+    - 'FR-05  MUST
+
+      Cognitive activities and states
+
+      Origin R | R1'
+    - The ontology shall distinguish cognitive occurrences from awareness and other agent-dependent mental
+      states.
+    - 'AC: Represent an observation of an event and the observer without inventing an object subject.
+
+      NAC: Reject assignment of a mental state to no bearer or to incompatible bearers.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id010
+    Activity: o C0084 via R0050 and G0076
+    observer or bearer: Ada R0118; c bearer R0005
+    observed subject: d R0116 without R0115
+    state: c through R0025; generic awareness relevance not established merely by same bearer
+  positive_case:
+    scenario: e is informed by cognition o, specifically Observation of deployment event d via R0116.
+      Ada plays Observer and participates in o by R0118. o occurs with consciousness state c by inherited
+      R0025; Ada bears c through R0005. No object observation is asserted.
+    expected: (o,Ada,d,c); retain d as Event, with mental state and cognitive occurrence distinct.
+    observed: Observation specializes Cognition through G0076; R0050 scopes o to e; R0116 permits the
+      event subject and SC0001 allows event-only observation. R0118 has 1..* observers. Inherited R0025
+      and R0005 provide consciousness and bearer; optional cognitive-state links cannot force an invented
+      state.
+  adverse_case:
+    scenario: Awareness w has zero bearers, or the same w has distinct Ada and Ben bearers; variant assigns
+      w to a nonagent. Another case records Ada awareness w but no declared connection from w to o/e.
+    expected: Invalid absent/multiple/nonagent bearer assignments rejected; do not infer that every mental
+      state borne by Ada informs this observation.
+    observed: 'R0004 source multiplicity1 and Agent endpoint, together with SC0011, exclude those bearer
+      cases conceptually. However Ada may bear many states about different episodes: a shared bearer alone
+      does not establish w relevance to o. R0025 directly connects Consciousness, not arbitrary Awareness,
+      so broad state enumeration from the episode is incomplete.'
+  model_evidence_ids: &id009
+  - CLR-C0004
+  - CLR-C0008
+  - CLR-C0015
+  - CLR-C0026
+  - CLR-C0028
+  - CLR-C0041
+  - CLR-C0084
+  - CLR-C0085
+  - CLR-R0004
+  - CLR-R0005
+  - CLR-R0025
+  - CLR-R0050
+  - CLR-R0115
+  - CLR-R0116
+  - CLR-R0117
+  - CLR-R0118
+  - CLR-G0013
+  - CLR-G0076
+  - CLR-G0077
+  - CLR-SC0001
+  - CLR-SC0011
+  - CLR-SC0024
+  analysis:
+    cq_id: CQ-05
+    requirement_id: FR-05
+    finding_id: CQ123-F05
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: Which cognitive activities and mental states inform the conceptualization?
+      required_answer_fields: Activity; observer or bearer; observed subject; state
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Represent an observation of an event and the observer without inventing an object subject.
+      adverse_case: Reject assignment of a mental state to no bearer or to incompatible bearers.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-5
+    fr_capability: The ontology shall distinguish cognitive occurrences from awareness and other agent-dependent
+      mental states.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-5
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id009
+    positive_scenario:
+      synthetic: true
+      description: e is informed by cognition o, specifically Observation of deployment event d via R0116.
+        Ada plays Observer and participates in o by R0118. o occurs with consciousness state c by inherited
+        R0025; Ada bears c through R0005. No object observation is asserted.
+      expected: (o,Ada,d,c); retain d as Event, with mental state and cognitive occurrence distinct.
+      observed_manual_interpretation: Observation specializes Cognition through G0076; R0050 scopes o
+        to e; R0116 permits the event subject and SC0001 allows event-only observation. R0118 has 1..*
+        observers. Inherited R0025 and R0005 provide consciousness and bearer; optional cognitive-state
+        links cannot force an invented state.
+    adverse_scenario:
+      synthetic: true
+      description: Awareness w has zero bearers, or the same w has distinct Ada and Ben bearers; variant
+        assigns w to a nonagent. Another case records Ada awareness w but no declared connection from
+        w to o/e.
+      expected: Invalid absent/multiple/nonagent bearer assignments rejected; do not infer that every
+        mental state borne by Ada informs this observation.
+      observed_manual_interpretation: 'R0004 source multiplicity1 and Agent endpoint, together with SC0011,
+        exclude those bearer cases conceptually. However Ada may bear many states about different episodes:
+        a shared bearer alone does not establish w relevance to o. R0025 directly connects Consciousness,
+        not arbitrary Awareness, so broad state enumeration from the episode is incomplete.'
+    answer_field_assessment: *id010
+    ac_assessment:
+      status: conceptually_supported
+      reason: Event-only observation with an observer is explicitly representable.
+    nac_assessment:
+      status: conceptually_supported_textually
+      reason: Exactly-one Agent bearer is stated structurally and SC0011; no executable rejection or psychological
+        validation claimed.
+    full_capability_assessment: Occurrence/state categories and narrow AC are represented; all mental
+      states informing a particular episode cannot be inferred from bearer sharing alone.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Episode-relevant awareness lacks an explicit general cognitive-occurrence/state relevance
+      contract; do not return unrelated states via common agent.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Clarify scope of informing states and alignment of observer, cognitive participant and
+        state bearer; choose any needed relation only after scope decision.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F05
+  finding: Episode-relevant awareness lacks an explicit general cognitive-occurrence/state relevance contract;
+    do not return unrelated states via common agent.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-06
+  fr_id: FR-06
+  frozen_cq_contract:
+    id: CQ-06
+    requirement_id: FR-06
+    question: Who understands which content, and when is understanding shared?
+    required_answer_fields: Bearer; understanding; content; distinct participants
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify at least two distinct bearers and the shared conceptual content.
+    adverse_case: Reject shared understanding inferred from common vocabulary alone or one bearer counted
+      twice.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-6
+    source_cells:
+    - 'CQ-06
+
+      FR-06'
+    - Who understands which content, and when is understanding shared?
+    - Bearer; understanding; content; distinct participants
+  frozen_fr_contract:
+    id: FR-06
+    priority: MUST
+    title: Individual and shared understanding
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish individual understanding, an interpretation state and a
+      situation of shared understanding.
+    acceptance: Identify at least two distinct bearers and the shared conceptual content.
+    adverse_case: Reject shared understanding inferred from common vocabulary alone or one bearer counted
+      twice.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-6
+    source_cells:
+    - 'FR-06  MUST
+
+      Individual and shared understanding
+
+      Origin R | R1'
+    - The ontology shall distinguish individual understanding, an interpretation state and a situation
+      of shared understanding.
+    - 'AC: Identify at least two distinct bearers and the shared conceptual content.
+
+      NAC: Reject shared understanding inferred from common vocabulary alone or one bearer counted twice.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id012
+    Bearer: R0009 identities distinct by SC0012
+    understanding: R0150 individual modes
+    content: R0148 artifact plus SC0012 alignment; R0167 concept content
+    distinct participants: R0149 and SC0012, not count of mode nodes
+  positive_case:
+    scenario: Shared state s has distinct participants Ada and Ben, understanding modes uA/uB borne separately,
+      both concerning concept c included in artifact A. R0148 names A as shared content; R0150 links uA/uB,
+      R0149 names participants; compatibility about A is explicitly stipulated, not inferred. s holds
+      at t.
+    expected: List two distinct bearer identities with their understanding states and A as shared content;
+      when asked, return declared t rather than invent duration.
+    observed: R0149 requires2..* agents and R0150 requires2..* understandings; R0009 gives each understanding
+      one bearer. SC0012 additionally aligns distinct bearers, participating agents, compatible understandings
+      and shared artifact. G0099 permits state time R0152. G0056 distinguishes Interpretation as specialization
+      of individual Understanding, not the shared situation.
+  adverse_case:
+    scenario: One Ada bears both u1 and u2 and is counted twice; alternatively Ada and Ben merely use
+      the same word but disagree about its concept.
+    expected: Neither establishes Shared Understanding. Distinct understanding IDs or shared vocabulary
+      are insufficient; compatibility about A must be evidenced.
+    observed: SC0012 explicitly rejects the one-bearer duplication despite two understanding nodes. Vocabulary
+      sharing is not one of its sufficient conditions and no model inference rule asserts it. Compatibility
+      remains an uninterpreted substantive assertion; the model records it but supplies no assessment
+      protocol proving people agree.
+  model_evidence_ids: &id011
+  - CLR-C0004
+  - CLR-C0017
+  - CLR-C0019
+  - CLR-C0062
+  - CLR-C0109
+  - CLR-C0112
+  - CLR-C0127
+  - CLR-R0009
+  - CLR-R0032
+  - CLR-R0090
+  - CLR-R0148
+  - CLR-R0149
+  - CLR-R0150
+  - CLR-R0151
+  - CLR-R0152
+  - CLR-R0167
+  - CLR-G0056
+  - CLR-G0099
+  - CLR-SC0011
+  - CLR-SC0012
+  - CLR-SC0014
+  analysis:
+    cq_id: CQ-06
+    requirement_id: FR-06
+    finding_id: CQ123-F06
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: Who understands which content, and when is understanding shared?
+      required_answer_fields: Bearer; understanding; content; distinct participants
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify at least two distinct bearers and the shared conceptual content.
+      adverse_case: Reject shared understanding inferred from common vocabulary alone or one bearer counted
+        twice.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-6
+    fr_capability: The ontology shall distinguish individual understanding, an interpretation state and
+      a situation of shared understanding.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-6
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id011
+    positive_scenario:
+      synthetic: true
+      description: Shared state s has distinct participants Ada and Ben, understanding modes uA/uB borne
+        separately, both concerning concept c included in artifact A. R0148 names A as shared content;
+        R0150 links uA/uB, R0149 names participants; compatibility about A is explicitly stipulated, not
+        inferred. s holds at t.
+      expected: List two distinct bearer identities with their understanding states and A as shared content;
+        when asked, return declared t rather than invent duration.
+      observed_manual_interpretation: R0149 requires2..* agents and R0150 requires2..* understandings;
+        R0009 gives each understanding one bearer. SC0012 additionally aligns distinct bearers, participating
+        agents, compatible understandings and shared artifact. G0099 permits state time R0152. G0056 distinguishes
+        Interpretation as specialization of individual Understanding, not the shared situation.
+    adverse_scenario:
+      synthetic: true
+      description: One Ada bears both u1 and u2 and is counted twice; alternatively Ada and Ben merely
+        use the same word but disagree about its concept.
+      expected: Neither establishes Shared Understanding. Distinct understanding IDs or shared vocabulary
+        are insufficient; compatibility about A must be evidenced.
+      observed_manual_interpretation: SC0012 explicitly rejects the one-bearer duplication despite two
+        understanding nodes. Vocabulary sharing is not one of its sufficient conditions and no model inference
+        rule asserts it. Compatibility remains an uninterpreted substantive assertion; the model records
+        it but supplies no assessment protocol proving people agree.
+    answer_field_assessment: *id012
+    ac_assessment:
+      status: conceptually_supported_given_compatibility_record
+      reason: All answer fields have declared relations and explicit cross-link constraint.
+    nac_assessment:
+      status: conceptually_supported_textually
+      reason: SC0012 blocks duplicated bearer and insufficient vocabulary-only inference; no behavioral
+        test run.
+    full_capability_assessment: Individual/interpretation/shared distinctions are represented. Epistemic
+      evidence for compatibility and interpretation of contextual/time agreement are not operationalized.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Compatible understanding is asserted textually without an evidence/criterion protocol; retrieving
+      its link does not establish actual shared comprehension.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Define evidence and purpose-relative compatibility criteria, including disagreement/undetermined
+        cases, without equating vocabulary agreement to shared understanding.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F06
+  finding: Compatible understanding is asserted textually without an evidence/criterion protocol; retrieving
+    its link does not establish actual shared comprehension.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-07
+  fr_id: FR-07
+  frozen_cq_contract:
+    id: CQ-07
+    requirement_id: FR-07
+    question: How is a concept formed through abstraction?
+    required_answer_fields: Formation; abstraction; resulting concept; level when represented
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Relate a formation episode to its resulting concept and the abstraction used.
+    adverse_case: Reject treating an abstraction level specification as a new world object.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-7
+    source_cells:
+    - 'CQ-07
+
+      FR-07'
+    - How is a concept formed through abstraction?
+    - Formation; abstraction; resulting concept; level when represented
+  frozen_fr_contract:
+    id: FR-07
+    priority: MUST
+    title: Concept formation and abstraction
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent concept formation informed by abstraction, selected features
+      and levels of generality.
+    acceptance: Relate a formation episode to its resulting concept and the abstraction used.
+    adverse_case: Reject treating an abstraction level specification as a new world object.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-7
+    source_cells:
+    - 'FR-07  MUST
+
+      Concept formation and abstraction
+
+      Origin R | R1'
+    - The ontology shall represent concept formation informed by abstraction, selected features and levels
+      of generality.
+    - 'AC: Relate a formation episode to its resulting concept and the abstraction used.
+
+      NAC: Reject treating an abstraction level specification as a new world object.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id014
+    Formation: f C0018
+    abstraction: a via inverse R0001 when recorded
+    resulting concept: c R0028
+    level when represented: only for explicitly linked r R0142; no unique formation level or scale-specification
+      identity
+  positive_case:
+    scenario: Formation f originates concept c through R0028. Abstraction a contributes to f via R0001
+      and selects features from prior concept d via R0002. Artifact A created by f contains c. Representation
+      r encodes A and bears abstraction-level quality l via R0142; a declared scale is supplied in explanatory
+      content.
+    expected: Identify f,a,c; retrieve l only as a quality of specified representation r, not as a newly
+      created independent subject. Explain actual selected features if required by full capability.
+    observed: R0028 requires at least one resulting concept; R0001 is optional0..* on both ends but supports
+      recorded abstraction. Level is associated with Representation, not directly with formation or concept.
+      R0002 points to a Concept, not individuated selected Property features; no declared relation identifies
+      which features a suppressed/selected. R0142 permits one level per representation, whose scale is
+      required by definition but not linked as a modeled entity.
+  adverse_case:
+    scenario: An abstraction-level specification is treated as a new world object; or level l on an unrelated
+      representation is returned as the level of f. Variant f has no recorded abstraction although it
+      is a valid Concept Formation.
+    expected: No unrelated level and no automatic object creation. Report unavailable abstraction rather
+      than invent it; distinguish quality from a specification of its scale.
+    observed: C0003 defines a bearer-dependent quality, not the specification named in the NAC. SC0011/R0142
+      require its representation bearer; nothing creates a world object from it. However the NAC wording
+      and model category need reconciliation. Optional R0001 permits formation without abstraction link;
+      no rule can recover an unrecorded abstraction.
+  model_evidence_ids: &id013
+  - CLR-C0001
+  - CLR-C0003
+  - CLR-C0017
+  - CLR-C0018
+  - CLR-C0019
+  - CLR-C0101
+  - CLR-R0001
+  - CLR-R0002
+  - CLR-R0028
+  - CLR-R0048
+  - CLR-R0140
+  - CLR-R0142
+  - CLR-G0001
+  - CLR-G0016
+  - CLR-SC0010
+  - CLR-SC0011
+  - CLR-SC0023
+  analysis:
+    cq_id: CQ-07
+    requirement_id: FR-07
+    finding_id: CQ123-F07
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: How is a concept formed through abstraction?
+      required_answer_fields: Formation; abstraction; resulting concept; level when represented
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Relate a formation episode to its resulting concept and the abstraction used.
+      adverse_case: Reject treating an abstraction level specification as a new world object.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-7
+    fr_capability: The ontology shall represent concept formation informed by abstraction, selected features
+      and levels of generality.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-7
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id013
+    positive_scenario:
+      synthetic: true
+      description: Formation f originates concept c through R0028. Abstraction a contributes to f via
+        R0001 and selects features from prior concept d via R0002. Artifact A created by f contains c.
+        Representation r encodes A and bears abstraction-level quality l via R0142; a declared scale is
+        supplied in explanatory content.
+      expected: Identify f,a,c; retrieve l only as a quality of specified representation r, not as a newly
+        created independent subject. Explain actual selected features if required by full capability.
+      observed_manual_interpretation: R0028 requires at least one resulting concept; R0001 is optional0..*
+        on both ends but supports recorded abstraction. Level is associated with Representation, not directly
+        with formation or concept. R0002 points to a Concept, not individuated selected Property features;
+        no declared relation identifies which features a suppressed/selected. R0142 permits one level
+        per representation, whose scale is required by definition but not linked as a modeled entity.
+    adverse_scenario:
+      synthetic: true
+      description: An abstraction-level specification is treated as a new world object; or level l on
+        an unrelated representation is returned as the level of f. Variant f has no recorded abstraction
+        although it is a valid Concept Formation.
+      expected: No unrelated level and no automatic object creation. Report unavailable abstraction rather
+        than invent it; distinguish quality from a specification of its scale.
+      observed_manual_interpretation: C0003 defines a bearer-dependent quality, not the specification
+        named in the NAC. SC0011/R0142 require its representation bearer; nothing creates a world object
+        from it. However the NAC wording and model category need reconciliation. Optional R0001 permits
+        formation without abstraction link; no rule can recover an unrecorded abstraction.
+    answer_field_assessment: *id014
+    ac_assessment:
+      status: conceptually_supported_for_recorded_abstraction
+      reason: R0001 and R0028 express the simple positive case; not every formation has an abstraction
+        record.
+    nac_assessment:
+      status: partial_terminological_mismatch
+      reason: Model quality is not NAC level specification; cannot claim specification treatment validated
+        by finding a similarly named class.
+    full_capability_assessment: Formation and abstraction links work, but selected feature identity, level
+      scale and episode/result alignment are incomplete for the full capability.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Level-specification/quality mismatch and missing selected-feature/formation-level correspondence
+      prevent blanket full adequacy.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Decide quality versus scale specification distinction, required feature provenance and
+        whether formation must record abstraction; retain optionality until approved.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F07
+  finding: Level-specification/quality mismatch and missing selected-feature/formation-level correspondence
+    prevent blanket full adequacy.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-08
+  fr_id: FR-08
+  frozen_cq_contract:
+    id: CQ-08
+    requirement_id: FR-08
+    question: What does a concept or instance description describe?
+    required_answer_fields: Description; described type or referent; referent category
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Retrieve exactly one referent category and referent for an instance description.
+    adverse_case: Reject one instance description denoting incompatible object and event referents simultaneously.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-8
+    source_cells:
+    - 'CQ-08
+
+      FR-08'
+    - What does a concept or instance description describe?
+    - Description; described type or referent; referent category
+  frozen_fr_contract:
+    id: FR-08
+    priority: MUST
+    title: Descriptions and referents
+    origin: R
+    release_target: R1
+    capability: The ontology shall distinguish concepts and instance descriptions from described types
+      and individual referents.
+    acceptance: Retrieve exactly one referent category and referent for an instance description.
+    adverse_case: Reject one instance description denoting incompatible object and event referents simultaneously.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-8
+    source_cells:
+    - 'FR-08  MUST
+
+      Descriptions and referents
+
+      Origin R | R1'
+    - The ontology shall distinguish concepts and instance descriptions from described types and individual
+      referents.
+    - 'AC: Retrieve exactly one referent category and referent for an instance description.
+
+      NAC: Reject one instance description denoting incompatible object and event referents simultaneously.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id016
+    Description: D C0059 or c C0017
+    described type or referent: R0083–86 plus union constraint; R0026 optional
+    referent category: branch selected by SC0002, not a name heuristic
+  positive_case:
+    scenario: Instance description D describes deployment event d only through R0084. Concept c describes
+      type T via R0026; D and c remain information descriptions rather than d/T themselves.
+    expected: For D return (D,d,Event) exactly once. For c return recorded T; absence of a type link is
+      unrecorded, not an invented universal.
+    observed: Each of R0083–86 has0..1 referent, but SC0002 constrains the union to exactly one and excludes
+      simultaneous branches. SC0023 forbids conflation with referents. R0026 permits0..1 Type, so the
+      concept half of the question is not guaranteed complete for every concept.
+  adverse_case:
+    scenario: D simultaneously describes object o and event d. Boundary variant D describes only a State
+      or Time.
+    expected: Reject dual branch; report scope inconsistency in state/time descriptive cases rather than
+      infer acceptance from label matching.
+    observed: SC0002 rejects object-plus-event even though individual branches each satisfy0..1. State/time
+      is allowed by R0085/86 and SC0002, but C0059 definition restricts wording to particular object or
+      event. That discrepancy must be resolved before full generic description coverage is claimed.
+  model_evidence_ids: &id015
+  - CLR-C0017
+  - CLR-C0059
+  - CLR-C0083
+  - CLR-C0041
+  - CLR-C0112
+  - CLR-C0123
+  - CLR-C0125
+  - CLR-R0026
+  - CLR-R0083
+  - CLR-R0084
+  - CLR-R0085
+  - CLR-R0086
+  - CLR-G0015
+  - CLR-G0054
+  - CLR-SC0002
+  - CLR-SC0023
+  - CLR-SC0024
+  analysis:
+    cq_id: CQ-08
+    requirement_id: FR-08
+    finding_id: CQ123-F08
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: What does a concept or instance description describe?
+      required_answer_fields: Description; described type or referent; referent category
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Retrieve exactly one referent category and referent for an instance description.
+      adverse_case: Reject one instance description denoting incompatible object and event referents simultaneously.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-8
+    fr_capability: The ontology shall distinguish concepts and instance descriptions from described types
+      and individual referents.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-8
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id015
+    positive_scenario:
+      synthetic: true
+      description: Instance description D describes deployment event d only through R0084. Concept c describes
+        type T via R0026; D and c remain information descriptions rather than d/T themselves.
+      expected: For D return (D,d,Event) exactly once. For c return recorded T; absence of a type link
+        is unrecorded, not an invented universal.
+      observed_manual_interpretation: Each of R0083–86 has0..1 referent, but SC0002 constrains the union
+        to exactly one and excludes simultaneous branches. SC0023 forbids conflation with referents. R0026
+        permits0..1 Type, so the concept half of the question is not guaranteed complete for every concept.
+    adverse_scenario:
+      synthetic: true
+      description: D simultaneously describes object o and event d. Boundary variant D describes only
+        a State or Time.
+      expected: Reject dual branch; report scope inconsistency in state/time descriptive cases rather
+        than infer acceptance from label matching.
+      observed_manual_interpretation: SC0002 rejects object-plus-event even though individual branches
+        each satisfy0..1. State/time is allowed by R0085/86 and SC0002, but C0059 definition restricts
+        wording to particular object or event. That discrepancy must be resolved before full generic description
+        coverage is claimed.
+    answer_field_assessment: *id016
+    ac_assessment:
+      status: conceptually_supported_textually
+      reason: Exact-one union and exclusivity are explicit in SC0002 for instance descriptions.
+    nac_assessment:
+      status: conceptually_supported_textually
+      reason: SC0002 rejects incompatible object/event referents; no executable constraint evaluation
+        claimed.
+    full_capability_assessment: Instance/referent distinction is clear for object/event examples; state/time
+      definition mismatch and optional concept-type link limit complete question coverage.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: C0059 definition versus R0085/86/SC0002 allowed referents diverges; Type optionality also
+      requires honest unanswered concept queries.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Jointly reconcile allowed referent categories and define behavior for concepts with no
+        Type link; never make optional links mandatory by test rewriting.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F08
+  finding: C0059 definition versus R0085/86/SC0002 allowed referents diverges; Type optionality also requires
+    honest unanswered concept queries.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-09
+  fr_id: FR-09
+  frozen_cq_contract:
+    id: CQ-09
+    requirement_id: FR-09
+    question: Which descriptions express generalization or instantiation?
+    required_answer_fields: Relation description; specific/general or instance/type endpoints
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify specific and general concepts, or instance and type descriptions.
+    adverse_case: Reject reading a Generalization information object as an automatic class hierarchy assertion.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-9
+    source_cells:
+    - 'CQ-09
+
+      FR-09'
+    - Which descriptions express generalization or instantiation?
+    - Relation description; specific/general or instance/type endpoints
+  frozen_fr_contract:
+    id: FR-09
+    priority: MUST
+    title: Generalization and instantiation descriptions
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent descriptions of conceptual generalization and instantiation
+      separately from OntoUML generalization connectors.
+    acceptance: Identify specific and general concepts, or instance and type descriptions.
+    adverse_case: Reject reading a Generalization information object as an automatic class hierarchy assertion.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-9
+    source_cells:
+    - 'FR-09  MUST
+
+      Generalization and instantiation descriptions
+
+      Origin R | R1'
+    - The ontology shall represent descriptions of conceptual generalization and instantiation separately
+      from OntoUML generalization connectors.
+    - 'AC: Identify specific and general concepts, or instance and type descriptions.
+
+      NAC: Reject reading a Generalization information object as an automatic class hierarchy assertion.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review:
+    Relation description: g C0053 or j C0060
+    specific/general or instance/type endpoints: 'Specific/general branch: R0080/R0079 exactly1 each Instance/type
+      branch: R0087/R0088 exactly1 each, description types'
+  positive_case:
+    scenario: Generalization description g has specific concept cDog and general concept cAnimal; inherited
+      source/target equal those concepts. Alternative Instantiation j links instance description dFido
+      to concept cDog with matching inherited endpoints.
+    expected: Return (g,cDog,cAnimal) or (j,dFido,cDog) as descriptive tuples, not new metamodel class
+      connectors or actual universal instantiation facts.
+    observed: R0079/80 each require one Concept; R0087/88 each require one Instance/Concept description.
+      G0049/G0055 inherit Relation endpoints and SC0005 aligns their identities. C0053/C0060 explicitly
+      distinguish reified descriptions from connector/ontological instantiation.
+  adverse_case:
+    scenario: A consumer promotes g to an OntoUML class-hierarchy edge and reports that an actual Dog
+      universal is subsumed by Animal, or interprets j as direct individual/type instantiation without
+      checking denotations.
+    expected: Reject automatic semantic promotion; a description claim may be disputed or incomplete and
+      must not generate class-level truth.
+    observed: Definitions and SC0023 preserve metalevel boundaries, and SC0005 aligns descriptive endpoints
+      only. No promotion rule is present. SC0007 adds acyclicity to descriptions, but that is not proof
+      that asserted domain subsumption is true.
+  model_evidence_ids: &id017
+  - CLR-C0017
+  - CLR-C0053
+  - CLR-C0059
+  - CLR-C0060
+  - CLR-C0099
+  - CLR-R0079
+  - CLR-R0080
+  - CLR-R0087
+  - CLR-R0088
+  - CLR-R0132
+  - CLR-R0133
+  - CLR-G0049
+  - CLR-G0055
+  - CLR-G0090
+  - CLR-SC0005
+  - CLR-SC0007
+  - CLR-SC0023
+  analysis:
+    cq_id: CQ-09
+    requirement_id: FR-09
+    finding_id: CQ123-F09
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: Which descriptions express generalization or instantiation?
+      required_answer_fields: Relation description; specific/general or instance/type endpoints
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify specific and general concepts, or instance and type descriptions.
+      adverse_case: Reject reading a Generalization information object as an automatic class hierarchy
+        assertion.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-9
+    fr_capability: The ontology shall represent descriptions of conceptual generalization and instantiation
+      separately from OntoUML generalization connectors.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-9
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id017
+    positive_scenario:
+      synthetic: true
+      description: Generalization description g has specific concept cDog and general concept cAnimal;
+        inherited source/target equal those concepts. Alternative Instantiation j links instance description
+        dFido to concept cDog with matching inherited endpoints.
+      expected: Return (g,cDog,cAnimal) or (j,dFido,cDog) as descriptive tuples, not new metamodel class
+        connectors or actual universal instantiation facts.
+      observed_manual_interpretation: R0079/80 each require one Concept; R0087/88 each require one Instance/Concept
+        description. G0049/G0055 inherit Relation endpoints and SC0005 aligns their identities. C0053/C0060
+        explicitly distinguish reified descriptions from connector/ontological instantiation.
+    adverse_scenario:
+      synthetic: true
+      description: A consumer promotes g to an OntoUML class-hierarchy edge and reports that an actual
+        Dog universal is subsumed by Animal, or interprets j as direct individual/type instantiation without
+        checking denotations.
+      expected: Reject automatic semantic promotion; a description claim may be disputed or incomplete
+        and must not generate class-level truth.
+      observed_manual_interpretation: Definitions and SC0023 preserve metalevel boundaries, and SC0005
+        aligns descriptive endpoints only. No promotion rule is present. SC0007 adds acyclicity to descriptions,
+        but that is not proof that asserted domain subsumption is true.
+    answer_field_assessment:
+      Relation description: g C0053 or j C0060
+      specific/general endpoints: R0080/R0079 exactly1 each
+      instance/type endpoints: R0087/R0088 exactly1 each, description types
+    ac_assessment:
+      status: conceptually_supported
+      reason: Explicit endpoint pairs and inherited equality satisfy both alternatives of the AC.
+    nac_assessment:
+      status: conceptually_supported
+      reason: Definitions explicitly reject connector equivalence; no automatic hierarchy rule warranted.
+    full_capability_assessment: Reification versus actual ontology connections is adequately stated for
+      this CQ; truth, acceptance and disputed scope of the description are not captured by endpoint recovery.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: Returning a Generalization description supplies no warrant for acceptance/truth of its domain
+      claim; contextual stance is not part of this CQ tuple.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Keep descriptive/semantic levels separate; if accepted/disputed claim evaluation is needed,
+        decide explicit assertion-context policy instead of exporting connector facts automatically.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F09
+  finding: Returning a Generalization description supplies no warrant for acceptance/truth of its domain
+    claim; contextual stance is not part of this CQ tuple.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+- cq_id: CQ-10
+  fr_id: FR-10
+  frozen_cq_contract:
+    id: CQ-10
+    requirement_id: FR-10
+    question: Which elements are related, and which features are described?
+    required_answer_fields: Relation; source; target; property; described concept
+    input_contract: A designated episode, artifact or record identified by the query subject; related
+      records only through declared links.
+    acceptance: Identify both endpoints of a relation description and the concept described by a property.
+    adverse_case: Reject specialized endpoints inconsistent with inherited source and target constraints.
+    test_execution: not_executed
+    answer_status: not_computed
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-10
+    source_cells:
+    - 'CQ-10
+
+      FR-10'
+    - Which elements are related, and which features are described?
+    - Relation; source; target; property; described concept
+  frozen_fr_contract:
+    id: FR-10
+    priority: MUST
+    title: Relations properties and endpoints
+    origin: R
+    release_target: R1
+    capability: The ontology shall represent relation and property descriptions with explicit conceptual
+      endpoints or described features.
+    acceptance: Identify both endpoints of a relation description and the concept described by a property.
+    adverse_case: Reject specialized endpoints inconsistent with inherited source and target constraints.
+    source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-10
+    source_cells:
+    - 'FR-10  MUST
+
+      Relations properties and endpoints
+
+      Origin R | R1'
+    - The ontology shall represent relation and property descriptions with explicit conceptual endpoints
+      or described features.
+    - 'AC: Identify both endpoints of a relation description and the concept described by a property.
+
+      NAC: Reject specialized endpoints inconsistent with inherited source and target constraints.'
+    satisfaction_status: not_assessed
+    acceptance_status: not_assessed
+    test_execution: not_executed
+  origin: R
+  method: AI manual full-contract conceptual review; not query execution, formal proof or human expert
+    acceptance
+  answer_field_review: &id019
+    Relation: r C0099 or specialized description
+    source: R0132 exactly1
+    target: R0133 exactly1
+    property: p C0096 linked by artifact scope
+    described concept: R0128 one-or-more, so may produce multiple appropriate tuples
+  positive_case:
+    scenario: Artifact A explicitly includes relation r with source concept c1 and target c2, plus property
+      description p describing a feature of c1 via R0128. Query subject is A, not a bare globally named
+      relation.
+    expected: Return r,c1,c2,p,c1 with all elements scoped to A through declared inclusion links; do not
+      attach unrelated property q from another artifact solely because it describes c1.
+    observed: R0132/33 give exactly one source and target Conceptual Element. R0128 supplies1..* described
+      concepts for p, allowing the intended tuple. R0032 provides artifact scope. If query subject were
+      only r, there is no direct r-to-property association, so full tuple requires declared common artifact/context
+      rather than global property enumeration.
+  adverse_case:
+    scenario: Generalization g has specific c1/general c2 but inherited source c3/target c2; alternative
+      j Instantiation has source different from its instance description.
+    expected: Reject contradictory specialized and inherited endpoints even though each endpoint association
+      individually has exactly one value.
+    observed: SC0005 explicitly equates specific/general and Instance/Concept with source/target; G0049/G0055
+      supply the inheritance. Thus the adverse construction violates the textual constraint. Mere endpoint
+      cardinality cannot detect the equality failure.
+  model_evidence_ids: &id018
+  - CLR-C0017
+  - CLR-C0019
+  - CLR-C0022
+  - CLR-C0053
+  - CLR-C0059
+  - CLR-C0060
+  - CLR-C0096
+  - CLR-C0099
+  - CLR-R0032
+  - CLR-R0079
+  - CLR-R0080
+  - CLR-R0087
+  - CLR-R0088
+  - CLR-R0128
+  - CLR-R0132
+  - CLR-R0133
+  - CLR-G0049
+  - CLR-G0055
+  - CLR-G0087
+  - CLR-G0090
+  - CLR-SC0005
+  - CLR-SC0016
+  - CLR-SC0024
+  analysis:
+    cq_id: CQ-10
+    requirement_id: FR-10
+    finding_id: CQ123-F10
+    origin: R
+    origin_meaning: reconstructed from model; not prior stakeholder agreement
+    contract:
+      question: Which elements are related, and which features are described?
+      required_answer_fields: Relation; source; target; property; described concept
+      input_contract: A designated episode, artifact or record identified by the query subject; related
+        records only through declared links.
+      acceptance: Identify both endpoints of a relation description and the concept described by a property.
+      adverse_case: Reject specialized endpoints inconsistent with inherited source and target constraints.
+      source_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-5/data-row-10
+    fr_capability: The ontology shall represent relation and property descriptions with explicit conceptual
+      endpoints or described features.
+    fr_locator: SRC-ORSD@sha256:d635edf4650eaee252fb8024f7e4d62b55e127c0711146af8891869cf4a9f0e1#table-3/data-row-10
+    preserved_input_states:
+      satisfaction_status: not_assessed
+      acceptance_status: not_assessed
+      test_execution: not_executed
+      cq_answer_status: not_computed
+      cq_test_execution: not_executed
+    witness_status: not_assessed
+    evidence_ids: *id018
+    positive_scenario:
+      synthetic: true
+      description: Artifact A explicitly includes relation r with source concept c1 and target c2, plus
+        property description p describing a feature of c1 via R0128. Query subject is A, not a bare globally
+        named relation.
+      expected: Return r,c1,c2,p,c1 with all elements scoped to A through declared inclusion links; do
+        not attach unrelated property q from another artifact solely because it describes c1.
+      observed_manual_interpretation: R0132/33 give exactly one source and target Conceptual Element.
+        R0128 supplies1..* described concepts for p, allowing the intended tuple. R0032 provides artifact
+        scope. If query subject were only r, there is no direct r-to-property association, so full tuple
+        requires declared common artifact/context rather than global property enumeration.
+    adverse_scenario:
+      synthetic: true
+      description: Generalization g has specific c1/general c2 but inherited source c3/target c2; alternative
+        j Instantiation has source different from its instance description.
+      expected: Reject contradictory specialized and inherited endpoints even though each endpoint association
+        individually has exactly one value.
+      observed_manual_interpretation: SC0005 explicitly equates specific/general and Instance/Concept
+        with source/target; G0049/G0055 supply the inheritance. Thus the adverse construction violates
+        the textual constraint. Mere endpoint cardinality cannot detect the equality failure.
+    answer_field_assessment: *id019
+    ac_assessment:
+      status: conceptually_supported_for_artifact_scoped_input
+      reason: Both endpoint and property descriptive targets represented; declared common artifact must
+        anchor relevance.
+    nac_assessment:
+      status: conceptually_supported_textually
+      reason: SC0005 supplies equality beyond independently valid multiplicities.
+    full_capability_assessment: Endpoint equality is explicit; query relevance linking relation and property
+      is not inherent and needs stated artifact/context scope for the full answer.
+    conceptual_review_status: completed_with_limitations
+    executable_validation: not_executed
+    human_expert_validation: not_assessed
+    finding: A bare relation input does not determine which property descriptions belong in the answer;
+      reverse lookup by common Concept may leak unrelated artifacts.
+    proposed_stage4_decision:
+      status: unapproved
+      route: '#129'
+      proposal: Specify allowed answer-scope joins and multiple-property behavior without inventing direct
+        relation/property ownership or changing source input contract.
+  manual_conclusion: completed_with_limitations
+  finding_id: CQ123-F10
+  finding: A bare relation input does not determine which property descriptions belong in the answer;
+    reverse lookup by common Concept may leak unrelated artifacts.
+  decision_gate: unapproved_joint_user_decision_129
+  model_changes: none
+  executable_semantics: not_executed
+  human_expert_validation: not_assessed
+limits:
+- Independent internal QA is not external expert or stakeholder approval.
+- Optional extensions and scientific limitations are distinguished from frozen requirement failures.
+- Declared source/type interpretation and textual constraints remain separate from executable semantic
+  validation.
+- 'Open findings are proposals for joint decision #129; no model or requirement changes applied.'
+checks:
+  command: python tools/check_cq_reviews.py --batch 1
+  result_location: Exact PR and Public integrity run
+  scope: Frozen contracts, answer-field coverage, evidence IDs, manual evidence completeness and decision/execution
+    boundaries only.
