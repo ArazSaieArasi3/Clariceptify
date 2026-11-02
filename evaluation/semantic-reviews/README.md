@@ -10,3 +10,4 @@ new bounded issues with AC/NAC; review closure is not correction closure.
 
 - [#114: mental-content](mental-content.yaml) — bounded review with open findings.
 - [#115: process-product](process-product.yaml) — bounded review with open findings.
+- [#116: description-referent](description-referent.yaml) — bounded review with open findings.
